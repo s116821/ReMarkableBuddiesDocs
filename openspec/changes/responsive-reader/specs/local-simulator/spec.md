@@ -14,7 +14,7 @@ The simulator SHALL model changed operation timing and reachable delayed/stale/c
 - **WHEN** production sequencing receives immediate, delayed, missing, duplicate, out-of-order, stale or wrong-owner signals, or cancellation
 - **THEN** modeled checks assert fresh correlated completion or bounded safe failure, no duplicate mutations and no late revival of cancelled work; timed simulation is not proof of native event availability.
 
-### Requirement: Current-tool drawing regressions
+### Requirement: Source feedback retirement regressions
 The simulator SHALL exercise the production retirement boundary and assert zero
 source-page feedback drawing, erasure and tool leases across success/refusal/failure.
 Historical diagnostic tests SHALL remain distinct from normal product scenarios.
@@ -25,12 +25,12 @@ Modeled tool footprints SHALL NOT establish native safety.
 - **THEN** the shared recovery/dismissal adapter permits at most one fresh capture under the retained guards, never a second tap; changed content/input/owner or expired budgets stop the workflow. Modeled faults do not prove native allocator detection.
 
 #### Scenario: No simulated tool switching
-- **WHEN** a supported current-tool indicator or a suppressed unsuitable-tool case runs
+- **WHEN** normal Reader runs with any declared tool or layout
 - **THEN** the operation records zero source feedback, tool lease or toolbar/menu operations and unchanged original tool settings; core Q&A retains exact content and normal safety gates.
 
-#### Scenario: Footprint and recovery faults
-- **WHEN** a stroke or eraser envelope approaches neighboring ink, or owner/input/journal/cleanup observations fail
-- **THEN** unsupported tool/layout eligibility suppresses optional ink; owner/input/capture/journal errors fail closed even before drawing, and post-mutation uncertainty retains recovery evidence; no broadened erasure or stale success occurs.
+#### Scenario: Retired operation faults
+- **WHEN** a normal scenario requests a legacy indicator fault
+- **THEN** validation rejects it or reports it explicitly unreachable rather than silently claiming the fault was exercised; normal capture/input/ownership failures still stop safely without feedback mutations.
 
 #### Scenario: Declared unsupported status capability
 - **WHEN** a page declares an unsuitable tool, unknown tool or unverified layout
