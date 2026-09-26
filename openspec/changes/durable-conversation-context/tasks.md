@@ -9,7 +9,7 @@
 - [ ] 2.1 Implement versioned conversation, turn, source-use and binding schemas over existing Store namespaces with stable IDs and explicit outcomes.
 - [ ] 2.2 Implement atomic chronological sequence allocation, full-head conflicts and fingerprint-checked operation idempotency, including concurrent duplicate tests.
 - [ ] 2.3 Implement streaming exact-image preparation/retrieval, parent/crop/viewport provenance and media-bound failure before provider dispatch.
-- [ ] 2.4 Implement binding CAS and receipt retry reconciliation with one deterministic page claim; reject legacy/imported identity as native authorization.
+- [ ] 2.4 Implement binding CAS and receipt retry reconciliation with the frozen installation-independent key and create-or-identical cardinality; historical acknowledgment precedes stale-head checks without restoring current authority; reject legacy/imported identity as native authorization.
 - [ ] 2.5 Implement exact context inspection/export, explicit correction records, caller budget refusal and missing-media reporting for both Buddy modes.
 - [ ] 2.6 Implement lightweight export marker/association and uncertain-outcome reconciliation contract with fake backend fixtures; leave real adapters to REM-23.
 - [ ] 2.7 Implement full-head logical deletion and retained-reference reporting; preserve shared/revision media and all native/external documents.
@@ -24,7 +24,7 @@
 ## 4. Verification and evidence
 
 - [ ] 4.1 Test Store reopen, Reader-Writer-Reader API chronology, multiple targets, exact images, corrections and explicit context limits.
-- [ ] 4.2 Test crash/failed writes at staging, commit and effect acknowledgment boundaries, duplicate/concurrent operations, multihead conflict and competing bindings.
+- [ ] 4.2 Test crash/failed writes at staging, commit and effect acknowledgment boundaries, duplicate/concurrent operations, multihead conflict, same-conversation/different-page races, lost acknowledgment after append/delete, reinstall key continuity and intended/observed target mismatch.
 - [ ] 4.3 Test partial restore, absent/corrupt image objects, unknown schema, legacy coexistence, marker reconciliation and reference-safe logical deletion.
 - [ ] 4.4 Test actual Reader orchestration with a recording provider: every submitted image equals retrieved bytes; storage failure yields zero provider calls/device mutations; source remains unchanged.
 - [ ] 4.5 Run required Rust formatting, complete tests, strict lint and ARM/AArch64 release builds; record exact revisions and actual outputs.

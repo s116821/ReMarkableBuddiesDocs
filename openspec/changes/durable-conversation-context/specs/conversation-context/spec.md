@@ -30,11 +30,19 @@ The ledger SHALL distinguish prepared interpretation, verified request, generate
 - **THEN** restart retains the operation/evidence as uncertain, does not claim a completed visible answer and does not type or invoke the provider again automatically.
 
 ### Requirement: Qualified page binding with full-head CAS
-The domain SHALL atomically associate a conversation and deterministic device/document/Buddy-page binding record using complete expected heads and REM-25's exact NativeCommitted receipt. Intended and observed target IDs SHALL remain distinct until qualified. The REM-25 device-local journal SHALL remain the sole native operation journal. Source: REM-25 acquisition interface and REM-37 binding acceptance.
+The domain SHALL atomically associate a conversation and deterministic document/Buddy-page logical binding record using complete expected heads and REM-25's exact NativeCommitted receipt. Its versioned key SHALL remain stable across reinstall/restore; current-device qualification SHALL remain a separate requirement. Initial acquisition SHALL be create-or-identical for both page claim and conversation binding. Intended and observed target IDs SHALL remain distinct until qualified, and a mismatch after accepting a caller-assigned intended UUID SHALL require reconciliation. The REM-25 device-local journal SHALL remain the sole native operation journal. Source: REM-25 acquisition interface and REM-37 binding acceptance.
 
 #### Scenario: Lost acknowledgment or competing binding
 - **WHEN** a qualified binding receipt is retried or another conversation claims the same Buddy page
 - **THEN** the identical committed association is returned once, while a conflicting association is refused and reconciled without repeating page insertion.
+
+#### Scenario: Retry after later append or deletion
+- **WHEN** the exact operation and immutable receipt fingerprint are retried with stale original heads after later appends or deletion
+- **THEN** historical acknowledgment is found before ordinary CAS validation, current state is reported separately, and a deleted/conflicted binding is not restored or authorized for native use.
+
+#### Scenario: Competing target or reinstalled actor
+- **WHEN** one conversation concurrently claims different pages, or an installation actor changes after restore
+- **THEN** only one initial page claim succeeds, the logical document/page key remains identical across actor changes, and current-device receipt qualification is still required.
 
 #### Scenario: Legacy header and restored association
 - **WHEN** only a legacy header match or imported association is available
