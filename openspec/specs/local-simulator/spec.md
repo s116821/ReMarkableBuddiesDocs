@@ -15,7 +15,7 @@ The simulator SHALL implement the same device-facing interface as the real table
 
 #### Scenario: Declined or disagreeing question
 - **WHEN** a proposal is NONE or independent reading disagrees
-- **THEN** the source receives an X without successor navigation or answer text.
+- **THEN** the source receives no feedback ink, successor navigation or answer text; the matching non-ink diagnostic is recorded.
 
 ### Requirement: Structured reproducible scenarios
 Scenarios SHALL specify initial page snapshots, active page, bounded iterations, gesture frames, scripted model replies, operation-indexed faults and expected results. Unknown fields, unsupported modes and invalid page/fault/gesture values SHALL fail before execution. Relative asset/output paths SHALL resolve from the scenario location. Source: src/simulator/scenario.rs; src/simulator/mod.rs.
@@ -29,7 +29,7 @@ Scenarios SHALL specify initial page snapshots, active page, bounded iterations,
 - **THEN** execution records a bounded error instead of waiting forever.
 
 ### Requirement: Page and fault model
-The simulator SHALL retain ordered pages and page-local text/marks, model end boundaries, cached header recognition and requested delays, and inject capture, input, rendering, no-motion and stale-capture conditions at declared operation calls. Shared recovery SHALL never exceed one reverse swipe. Source: src/simulator/device.rs; src/workflow/navigation.rs.
+The simulator SHALL retain ordered pages and page-local text/marks, model end boundaries, cached header recognition and requested delays, and inject capture, input, rendering, no-motion and stale-capture conditions at declared operation calls. Shared recovery SHALL never exceed one reverse swipe. Explicit owner-change and external-input faults SHALL invalidate the retained request independently of wrong-page pixels. Source: src/simulator/device.rs; src/workflow/navigation.rs.
 
 #### Scenario: Existing answers
 - **WHEN** a later iteration reaches a cached-header successor
@@ -37,11 +37,15 @@ The simulator SHALL retain ordered pages and page-local text/marks, model end bo
 
 #### Scenario: Failed return
 - **WHEN** an occupied successor rejects output and its return swipe makes no movement
-- **THEN** the X appears on the successor, no answer is written and no second return occurs.
+- **THEN** the Device diagnostic is recorded without feedback ink or an answer, and no second return occurs.
 
 #### Scenario: End page
 - **WHEN** no successor exists
-- **THEN** the workflow stays on the source and draws an X without reverse navigation or insertion.
+- **THEN** the workflow stays on the source and records NoSuccessor without feedback ink, reverse navigation or insertion.
+
+#### Scenario: Owner or external input changes at operation boundary
+- **WHEN** capture, navigation or keyboard output observes changed ownership or external input
+- **THEN** cancellation remains latched, later operations stop and a fresh capture cannot silently repin the request.
 
 ### Requirement: Inspectable results and meaningful assertions
 Every executed scenario SHALL export page PNGs and a JSON report of exact rendered text, marks, active page, model calls, errors and ordered timestamped operations. Expected-result mismatches SHALL fail the command after output is saved. Optional text_contains assertions SHALL check stable substrings while exact text assertions remain supported. Reports SHALL label scripted-offline or live-provider execution. Source: src/simulator/mod.rs; tests/simulator.rs.
@@ -56,35 +60,6 @@ Documentation SHALL attribute modeled dimensions, holds, delays, masks and recov
 #### Scenario: Unsupported product
 - **WHEN** a scenario requests Writer or combined mode
 - **THEN** validation fails explicitly without simulated claims of those workflows.
-
-### Requirement: Observable indicator lifecycle
-
-The simulator SHALL exercise production indicator eligibility and cleanup, record shared triangle/circle path state, repeated-stroke darkness, stage transitions, stroke times and ordered progress events, and support indicator faults. Temporary marks SHALL be distinct from persistent Q&A/line state. Captures, navigation and typing SHALL be asserted free of temporary marks, with deterministic scripted timing and separate explicit live wait tests. Source: src/simulator/device.rs; src/simulator/mod.rs; src/simulator/scenario.rs; tests/simulator.rs; tests/live_simulator.rs.
-
-#### Scenario: Completion and failure
-- **WHEN** scripted success, rejection, provider failure or recovery scenarios execute
-- **THEN** reports expose ticks and cleanup ordering and no completed successful page retains a temporary mark.
-
-#### Scenario: Existing content
-- **WHEN** the corner contains an input sentinel
-- **THEN** status is suppressed, the sentinel remains unchanged and normal Reader processing continues.
-
-#### Scenario: Faulted cleanup
-- **WHEN** a declared cleanup operation fails
-- **THEN** assertions can detect the error, remaining mark state and absence of subsequent navigation/output.
-
-#### Scenario: Geometry and cadence
-- **WHEN** scripted stages and repeated pending ticks execute
-- **THEN** the raster uses production geometry and virtual timestamps verify 333 ms stroke scheduling, stage completion and auxiliary-circle distinction.
-
-#### Scenario: Failure code and partial stroke
-- **WHEN** a classified failure or partial status-draw fault is injected
-- **THEN** reports expose the appropriate persistent segment or bounded owned-path cleanup, and cleanup failure prevents navigation/output.
-
-
-#### Scenario: Native erase has no visible effect
-- **WHEN** StatusClear receives a no_move fault representing accepted input without visible cleanup
-- **THEN** marks remain and the workflow stops before navigation or typing.
 
 ### Requirement: Reproducible history sessions
 The simulator SHALL drive the shared last-Q&A history state using declared undo/redo holds, departures/returns, new iterations and intervening edits. Reports SHALL expose transaction state, ordered events and exact page text. Faults SHALL exercise uncertain/partial mutation without silently claiming rollback. Source: src/simulator/scenario.rs; src/simulator/device.rs; tests/simulator.rs.
@@ -138,34 +113,11 @@ The simulator SHALL exercise production center parsing, normalization and Q&A fo
 
 #### Scenario: Invalid center
 - **WHEN** a reply has a missing, malformed or out-of-bounds center
-- **THEN** no successor navigation or answer occurs, and existing decline/status preservation behavior remains.
+- **THEN** no successor navigation or answer occurs, and non-ink decline diagnostics preserve the source page.
 
 #### Scenario: Tagged history
 - **WHEN** a tagged Q&A is undone and redone
 - **THEN** its tag and full text toggle together, preserving the header and earlier untagged answers with no extra model calls.
-
-### Requirement: Status style lifecycle and rollback model
-
-The local test suite SHALL model status-style acquisition, unavailability and restoration faults, and reject capture/navigation/typing/history while a style lease remains active. A deterministic toolbar state model SHALL exercise exact primary/secondary preference restoration, partial acquisition actions, page changes and pre-mutation layout refusal. Native screenshot fixtures SHALL check the supported layout classifier. These models SHALL NOT claim native UI timing, persistence convergence or legibility proof.
-
-#### Scenario: Restoration fails
-- **WHEN** native style restoration or the final cleanup verification is modeled to fail
-- **THEN** further page input and later iterations stop while unresolved style/cleanup state remains.
-
-#### Scenario: Unsupported controls
-- **WHEN** style acquisition reports an unsupported layout
-- **THEN** status is suppressed without repeatedly toggling controls or preventing model analysis.
-
-
-#### Scenario: Stale preference file during style probing
-- **WHEN** actual UI settings differ from advisory persisted preferences and an input fails during probing, setting or restoration
-- **THEN** modeled rollback uses durably captured UI values only, restores only potentially changed dimensions, and stops after unverified restoration instead of copying the stale file's values.
-
-#### Scenario: Temporary cleanup transaction ordering
-- **WHEN** temporary paths are cleared
-- **THEN** the model observes restored original style before erasure and a separate successful finish before releasing its lease.
-- **AND** faults at restoration, pending-cleanup checkpoint, erasure and final verification retain unresolved state and prohibit later input, including a second cleanup attempt.
-- **AND** native frame fixtures exercise erase-induced PDF redraw, unchanged invariant page regions and rejected viewport, owner, session and tool changes without weakening the pre-restoration guard.
 
 ### Requirement: Development fixture and acceptance practice
 The simulator testing skill SHALL choose maintained fixtures by changed behavior, assert exact text/forbidden operations and preserve negative cases and failed artifacts. Applicable model-facing checks SHALL include representative connected cursive/shorthand and ambiguous or absent questions, with scientific values and actual input/output inspected. Native findings SHALL extend the shared model, faults, fixtures or assertions in the same implementation PR where representable; remaining fidelity gaps SHALL be explicit. Source: REM33; .agents/skills/reader-simulator-testing/SKILL.md; docs/simulator.md; docs/validation/README.md.
@@ -177,3 +129,44 @@ The simulator testing skill SHALL choose maintained fixtures by changed behavior
 #### Scenario: Native-only behavior discovered
 - **WHEN** device observation reveals behavior the current simulator omits
 - **THEN** the implementation PR adds meaningful model/regression coverage when possible and retains native evidence or an explicit unsupported limit without claiming emulation of unmodeled typography, persistence or physical input.
+
+### Requirement: Responsiveness state and timing regressions
+The simulator SHALL model changed operation timing and reachable delayed/stale/changed-state outcomes in the same implementation PR, preserving exact output, forbidden writes/navigation, history ownership and bounded failure behavior. Simulated time SHALL be labeled modeled time rather than native latency. Source: REM9.
+
+#### Scenario: Faster path with delayed observation
+- **WHEN** a changed workflow sees delayed convergence or a changed page
+- **THEN** it either verifies a fresh eligible state within its bound or refuses safely without stale input, preserving existing negative assertions.
+
+#### Scenario: History remains free of status switching
+- **WHEN** undo or redo is exercised after a complete answer
+- **THEN** its exact content and ownership rules remain unchanged and no new status tool acquisition or indicator loop occurs.
+
+#### Scenario: Completion signal ordering and cancellation
+- **WHEN** production sequencing receives immediate, delayed, missing, duplicate, out-of-order, stale or wrong-owner signals, or cancellation
+- **THEN** modeled checks assert fresh correlated completion or bounded safe failure, no duplicate mutations and no late revival of cancelled work; timed simulation is not proof of native event availability.
+
+### Requirement: Source feedback retirement regressions
+The simulator SHALL exercise the production retirement boundary and assert zero
+source-page feedback drawing, erasure and tool leases across success/refusal/failure.
+Historical diagnostic tests SHALL remain distinct from normal product scenarios.
+Modeled tool footprints SHALL NOT establish native safety.
+
+#### Scenario: Trigger observation recovery is read-only
+- **WHEN** a modeled recoverable observation fault occurs after the single outside dismissal tap
+- **THEN** the shared recovery/dismissal adapter permits at most one fresh capture under the retained guards, never a second tap; changed content/input/owner or expired budgets stop the workflow. Modeled faults do not prove native allocator detection.
+
+#### Scenario: No simulated tool switching
+- **WHEN** normal Reader runs with any declared tool or layout
+- **THEN** the operation records zero source feedback, tool lease or toolbar/menu operations and unchanged original tool settings; core Q&A retains exact content and normal safety gates.
+
+#### Scenario: Retired operation faults
+- **WHEN** a normal scenario requests a legacy indicator fault
+- **THEN** validation rejects it or reports it explicitly unreachable rather than silently claiming the fault was exercised; normal capture/input/ownership failures still stop safely without feedback mutations.
+
+#### Scenario: Declared unsupported status capability
+- **WHEN** a page declares an unsuitable tool, unknown tool or unverified layout
+- **THEN** the shared workflow preserves exact core Q&A with no status drawing or erasure; this declaration is a modeled input and does not prove native recognition or notes-page eligibility.
+
+#### Scenario: Conditional trigger dismissal
+- **WHEN** a modeled hold qualifies
+- **THEN** a declared closed overlay emits no tap, a qualified known-open panel receives one outside-panel tap, and unknown or failed dismissal stops before Q&A mutations; actual native overlay behavior remains a separate acceptance gate.

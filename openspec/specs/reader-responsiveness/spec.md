@@ -1,4 +1,11 @@
-## ADDED Requirements
+# reader-responsiveness
+
+## Purpose
+
+Define guarded Reader sequencing, source-feedback retirement and honest measurement boundaries for the revised REM-9 implementation.
+
+## Requirements
+
 ### Requirement: Measured responsive Reader interaction
 Reader SHALL measure and distinguish trigger qualification/release, provider request/response, answer rendering and ready state. Local phase costs and provider time SHALL be separated. Source-page ink feedback SHALL be retired rather than optimized. Representative native trigger/capture/navigation/text and source-preservation evidence SHALL validate this salvage change; revised integrated feedback/latency/history acceptance belongs to REM40/43/35. Historical marker-width matrices SHALL remain explicitly superseded, not marked passed.
 

@@ -67,3 +67,33 @@ The simulator SHALL exercise production center parsing, normalization and Q&A fo
 #### Scenario: Tagged history
 - **WHEN** a tagged Q&A is undone and redone
 - **THEN** its tag and full text toggle together, preserving the header and earlier untagged answers with no extra model calls.
+
+### Requirement: Shared workflow execution
+The simulator SHALL implement the same device-facing interface as the real tablet and run the production Reader orchestrator, model content/parsing/verification, image classification and recovery policies. Deterministic scenarios SHALL use scripted LLMEngine replies with no credentials or network calls. Explicit live scenarios SHALL use the configured provider through the same orchestration and result path. Source: src/device/backend.rs; src/simulator; src/workflow/orchestrator.rs.
+
+#### Scenario: Accepted question
+- **WHEN** proposal and independent transcription agree and the successor is blank
+- **THEN** the production workflow writes one header and the exact Q&A block to the successor while preserving the source.
+
+#### Scenario: Declined or disagreeing question
+- **WHEN** a proposal is NONE or independent reading disagrees
+- **THEN** the source receives no feedback ink, successor navigation or answer text; the matching non-ink diagnostic is recorded.
+
+### Requirement: Page and fault model
+The simulator SHALL retain ordered pages and page-local text/marks, model end boundaries, cached header recognition and requested delays, and inject capture, input, rendering, no-motion and stale-capture conditions at declared operation calls. Shared recovery SHALL never exceed one reverse swipe. Explicit owner-change and external-input faults SHALL invalidate the retained request independently of wrong-page pixels. Source: src/simulator/device.rs; src/workflow/navigation.rs.
+
+#### Scenario: Existing answers
+- **WHEN** a later iteration reaches a cached-header successor
+- **THEN** it appends a Q&A block without duplicating the header or erasing prior answers.
+
+#### Scenario: Failed return
+- **WHEN** an occupied successor rejects output and its return swipe makes no movement
+- **THEN** the Device diagnostic is recorded without feedback ink or an answer, and no second return occurs.
+
+#### Scenario: End page
+- **WHEN** no successor exists
+- **THEN** the workflow stays on the source and records NoSuccessor without feedback ink, reverse navigation or insertion.
+
+#### Scenario: Owner or external input changes at operation boundary
+- **WHEN** capture, navigation or keyboard output observes changed ownership or external input
+- **THEN** cancellation remains latched, later operations stop and a fresh capture cannot silently repin the request.

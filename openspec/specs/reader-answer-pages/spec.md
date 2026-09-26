@@ -6,15 +6,15 @@ Describe the implemented reader answer pages contracts, initially baselined from
 ## Requirements
 
 ### Requirement: Successor navigation and identity heuristic
-After agreement, the system SHALL recapture the source, swipe left toward its immediate successor, wait and compare masked screenshots. Similarity at least 0.999 SHALL mean no navigation occurred, causing an X on the source without a reverse swipe. Source: src/workflow/orchestrator.rs render_answer; src/workflow/navigation.rs; src/workflow/xochitl_integration.rs.
+After agreement, the system SHALL recapture the source and resolve one successor attempt. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract. Unsupported layouts retain the explicitly identified legacy fallback. Masked screenshot similarity at least0.999 SHALL still reject unchanged pages without a reverse swipe. Neither failure nor refusal draws source feedback.
 
 #### Scenario: End of document
-- **WHEN** the next-page attempt leaves the screenshot sufficiently similar to the source
-- **THEN** the iteration draws the failure X and does not attempt to create a page or swipe backward.
+- **WHEN** the known native page order has no successor or the next-page attempt leaves the screenshot sufficiently similar to the source
+- **THEN** no answer is written and a non-ink NoSuccessor diagnostic is recorded without creating a page or swiping backward.
 
-#### Scenario: Fixed navigation timing
-- **WHEN** the answer workflow requests next or previous navigation
-- **THEN** the swipe uses 15 steps with 10 ms per step after a 50 ms initial contact, followed by 500 ms transition delay and an 800 ms settling wait.
+#### Scenario: Physical gesture and completion
+- **WHEN** navigation requires a swipe
+- **THEN** physical gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims.
 
 ### Requirement: Blank and existing answer page classification
 The classifier SHALL compare the current screenshot to white using masked grayscale similarity and classify at least 0.998 as Blank. Otherwise it SHALL compare the top 150 pixels with the cached header at threshold 0.998, classifying a match as ExistingQA and other pages as Invalid. Source: src/workflow/mod.rs is_valid_answer_page/compute_image_similarity_masked.
@@ -53,16 +53,16 @@ On Blank pages the system SHALL select body style, type === Reader Buddy Answers
 - **THEN** appending a new delimited block preserves those existing answers exactly without migration, and does not claim to provide follow-up extraction or scrolled-page recognition.
 
 ### Requirement: Invalid successor recovery
-An Invalid successor SHALL trigger a source-identity check before any reverse swipe. If already on the saved source at similarity 0.999, recovery SHALL not navigate. Otherwise it SHALL attempt at most one previous-page swipe and verify the result once, with no retry after failed verification or an input/capture error. The caller SHALL attempt the existing failure X on the current page after recovery or recovery failure. Source: src/workflow/navigation.rs; src/workflow/mod.rs return_to_original_page; src/workflow/orchestrator.rs render_answer.
+An Invalid successor SHALL trigger a source-identity check before any reverse swipe. If already on the saved source at similarity 0.999, recovery SHALL not navigate. Otherwise it SHALL attempt at most one previous-page swipe and verify the result once, with no retry after failed verification or an input/capture error. The caller SHALL record a non-ink typed failure after recovery or recovery failure, with no source-page display mutation. Source: src/workflow/navigation.rs; src/workflow/mod.rs return_to_original_page; src/workflow/orchestrator.rs render_answer.
 
 #### Scenario: First return fails
 - **WHEN** the single previous-page swipe does not restore source similarity
-- **THEN** recovery reports Unconfirmed and the caller draws the failure X without another swipe.
+- **THEN** recovery reports Unconfirmed and the caller records the Device diagnostic without another swipe.
 
 #### Scenario: Already on the source
 - **WHEN** recovery's initial check matches the saved source, including a forward attempt that did not leave it
 - **THEN** recovery reports AlreadySource with no previous-page swipe.
-- **AND** the existing forward no-movement guard still draws an X without invoking reverse recovery at end of document.
+- **AND** the existing forward no-movement guard records NoSuccessor without invoking reverse recovery at end of document.
 
 #### Scenario: Successful return
 - **WHEN** the source is initially absent and the single previous-page swipe restores it
@@ -70,34 +70,33 @@ An Invalid successor SHALL trigger a source-identity check before any reverse sw
 
 #### Scenario: Navigation or capture error
 - **WHEN** a source-identity check or the previous-page operation returns an error
-- **THEN** recovery propagates that error and performs no further navigation; the existing render-error handler attempts an X.
+- **THEN** recovery propagates that error and performs no further navigation; the render-error handler records Device without feedback input.
 
 ### Requirement: Failure display and loop errors
-
-Every failure outcome SHALL obey guarded display policy: clear all temporary owned marks, then draw the constant X plus exactly one of six segments in a centered half-size box within the existing status region. The top edge SHALL mean unreadable/missing/ambiguous selection or malformed proposal; right edge transcription disagreement/invalid transcription; bottom edge provider unavailable/timeout/transport failure; left edge no successor movement; horizontal midpoint line unsuitable successor after confirmed recovery; vertical midpoint line device/render/recovery failure. Existing/unknown corner content SHALL suppress drawing and erasure. Cleanup failure SHALL stop further input. Failure marks SHALL persist, never enter the temporary ledger, and be attempted at most once per iteration. Render errors SHALL be logged and attempt the device code. Single-iteration provider/device errors SHALL propagate after guarded display; loop mode SHALL log them without typing arbitrary Error text into the document. Source: src/workflow/indicator.rs; src/workflow/mod.rs; src/workflow/orchestrator.rs.
+Reader SHALL retain distinct Selection, Transcription, Provider, NoSuccessor, InvalidSuccessor and Device failure classifications without drawing, erasing, selecting tools or typing errors on source pages. The diagnostic SHALL be recorded at most once per iteration; it is not visible Buddy-page feedback. Provider/device errors in single-iteration mode SHALL propagate; loop mode SHALL log recoverable errors without arbitrary Error text and terminate on latched input/cancellation failure. REM40 supplies later sanitized conversation error turns.
 
 #### Scenario: Proposal transport error
-- **WHEN** a proposal request returns a provider error
-- **THEN** temporary activity is cleared and the provider X/code is attempted safely before the error propagates; loop mode does not insert Error text.
+- **WHEN** a proposal request fails
+- **THEN** Provider is recorded without ink and the original error propagates; loop mode writes no error text.
 
-#### Scenario: Failure after visible progress
-- **WHEN** an eligible page has activity and the question is declined
-- **THEN** all owned paths are erased before the constant X and selection-code top edge are drawn.
+#### Scenario: Selection or transcription refusal
+- **WHEN** analysis declines or independent transcription disagrees
+- **THEN** the corresponding diagnostic is recorded with no answer/navigation or source feedback mutation.
 
 #### Scenario: Six distinct causes
-- **WHEN** selection, transcription, provider, no-motion, invalid-successor or device failures occur on eligible pages
-- **THEN** each uses its documented unique segment over the same X.
+- **WHEN** selection, transcription, provider, no-motion, invalid-successor or device failures occur
+- **THEN** logs/simulator diagnostics retain distinct classifications without any persistent X or segment.
 
-#### Scenario: Unconfirmed recovery
-- **WHEN** invalid-successor recovery cannot confirm the saved source
-- **THEN** the device/recovery code is attempted only if the current corner is known safe.
+#### Scenario: Unconfirmed recovery or input loss
+- **WHEN** recovery is unconfirmed or guarded input is cancelled
+- **THEN** no additional swipe or feedback input occurs; latched input failure prevents another iteration.
 
-#### Scenario: Existing corner handwriting
-- **WHEN** the corner is occupied before the iteration draws status marks
-- **THEN** the failure mark is suppressed without erasing existing handwriting.
+#### Scenario: Existing handwriting
+- **WHEN** the former status corner contains user ink
+- **THEN** it remains untouched on success and failure, with no new feedback eligibility requirement.
 
 ### Requirement: Reusable page decisions and Q&A composition
-The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and delays. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
+The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and verified completion semantics, with documented unsupported-layout timing exceptions. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
 
 #### Scenario: Equivalent navigation comparison
 - **WHEN** forward movement or return-to-source is verified

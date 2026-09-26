@@ -42,11 +42,11 @@ RM2 SHALL select four-byte BGRA for IMG_VERSION major/minor at least 3.24 and th
 - **THEN** grayscale conversion uses (77R+150G+29B+128)>>8, preserving neutral values exactly and keeping yellow background lighter than black text.
 
 ### Requirement: Corner hold trigger
-The shared history-capable input path SHALL recognize one stationary contact in the configured 68-pixel corner region of the virtual 768 by 1024 screen after a continuous two-second hold and full release. The legacy fallback SHALL retain its slot-zero two-second trigger. Both paths SHALL evaluate complete input frames and support stationary holds without new position events. Source: src/device/interaction.rs; src/device/native_history.rs; src/device/touch.rs.
+The shared history-capable input path SHALL recognize one stationary contact in the configured 68-pixel corner region of the virtual 768 by 1024 screen after a continuous two-second hold and full release. The legacy fallback SHALL retain its slot-zero two-second trigger. Both paths SHALL evaluate complete input frames and support stationary holds without new position events. Reader admission SHALL use guarded conditional overlay dismissal instead of an unconditional tap. Source: src/device/interaction.rs; src/device/native_history.rs; src/device/touch.rs; src/device/trigger_dismiss.rs.
 
 #### Scenario: Stationary hold
 - **WHEN** a valid single contact stays in the selected corner for two seconds and releases
-- **THEN** the shared path recognizes Reader once without requiring movement, and Workflow injects its middle-bottom dismissal tap before capture.
+- **THEN** the shared path recognizes Reader once without requiring movement; a positively absent overlay receives no tap, a qualified known panel receives one guarded outside-panel tap, and unknown or failed dismissal stops admission.
 
 #### Scenario: Contact ends or exits
 - **WHEN** contact ends before two seconds or its complete frame leaves the trigger region
@@ -54,7 +54,7 @@ The shared history-capable input path SHALL recognize one stationary contact in 
 
 #### Scenario: Legacy fallback
 - **WHEN** the shared native history observer is unavailable
-- **THEN** the existing slot-zero polling trigger remains available at its two-second threshold, without native history ownership.
+- **THEN** the existing slot-zero polling trigger remains available at its two-second threshold, without native history ownership; this does not bypass conditional dismissal checks.
 
 ### Requirement: Coordinate and output assumptions
 Input and workflow operations SHALL use virtual portrait coordinates 768 by 1024 with device-specific transformations; RM2 touch Y is inverted and Paper Pro touch is directly scaled. Pen and keyboard output SHALL use Linux input injection, not direct native document edits. Source: src/device/touch.rs virtual_to_input; src/device/pen.rs; src/device/keyboard.rs.
@@ -108,3 +108,56 @@ While awaiting the next Reader action, tablet input SHALL recognize stationary f
 #### Scenario: History observer unavailable
 - **WHEN** the native history observer cannot initialize
 - **THEN** history is discarded and disabled for the process, while the ordinary Reader trigger remains available without a restart loop.
+
+### Requirement: Equivalent direct capture pixels
+Screenshot normalization SHALL preserve exact decoded pixels, dimensions, orientation, luminance and nearest-neighbor overview sampling for every implemented format while avoiding unnecessary PNG encode/decode work. Status observation MAY consume a fresh image directly without serializing native/overviewPNG. Discovery ambiguity, invalid-length and owner/session checks SHALL remain enforced, and frames SHALL NOT be reused across mutation boundaries. Source: REM9; src/device/screenshot.rs and backend.rs.
+
+#### Scenario: Direct status image
+- **WHEN** fresh status pixels replace the prior serialization path
+- **THEN** exact normalized pixels match the prior codec pipeline and identity is checked around that observation before any dependent input.
+
+#### Scenario: Format equivalence
+- **WHEN** modern RM2BGRA, legacy RM2 or PaperProRGBA is processed
+- **THEN** exact legacy conversion/rotation/flip, colored luminance and alpha/nearest sampling are preserved; software equivalence does not claim native PaperPro timing validation.
+
+### Requirement: Preserve the selected drawing tool
+Automatic drawing SHALL preserve the user's selected pen, slot, color and width.
+It SHALL NOT simulate menu presses to select or inspect drawing tools. A future
+selection mechanism requires evidence of a robust supported direct interface.
+Normal status and failure ink SHALL be retired entirely. Legacy diagnostic-only
+marks SHALL be suppressed before input when fresh
+non-mutating observations cannot establish a visible, bounded, safely erasable
+current tool. Saved preferences alone SHALL NOT establish actual tool state.
+Normal Q&A SHALL remain available when optional feedback is suppressed.
+
+#### Scenario: Supported current pen
+- **WHEN** the current pen is positively recognized and its full supported width range fits the verified blank footprint and cleanup envelope
+- **THEN** normal Reader emits no feedback ink; explicitly invoked historical diagnostic marks, if retained, use that pen and slot with zero tool-selection presses and all ownership/journal/neighbor-ink checks enforced.
+
+#### Scenario: Unknown or unsuitable current tool
+- **WHEN** the toolbar is unknown, the tool is destructive, or visibility/maximum footprint/cleanup coverage is unproven
+- **THEN** optional ink is suppressed without opening menus or changing settings; Q&A continues and the missing visual feedback is reported honestly.
+
+#### Scenario: Unsafe cleanup or external change
+- **WHEN** owner, content, input activity, controls or cleanup postconditions change after owned ink begins
+- **THEN** further mutation fails closed and recovery evidence is retained; the implementation never broadens erasure to hide the failure.
+
+#### Scenario: Uncalibrated notes toolbar
+- **WHEN** a notes/blank page toolbar or other layout differs from the calibrated PDF annotation toolbar
+- **THEN** optional ink is suppressed before journal creation or drawing, without changing tools or blocking core Q&A; the reduced feedback coverage is explicit.
+
+#### Scenario: Trigger release does not navigate menus
+- **WHEN** a Reader trigger qualifies
+- **THEN** the workflow must not navigate menus; the proposed removal of the automatic bottom-center tap requires native trigger/overlay verification. A necessary verified non-menu tap remains allowed, and subsequent operations retain their ownership checks.
+
+#### Scenario: Known trigger overlay needs an outside dismissal
+- **WHEN** a released Reader trigger leaves the positively qualified overflow panel visible
+- **THEN** one guarded tap outside every menu item may dismiss it, followed by fresh unchanged-owner/tool/native-content and panel-absence verification; no menu item is selected.
+
+#### Scenario: Missing or unknown trigger overlay
+- **WHEN** the trigger overlay is positively absent or its layout cannot be qualified
+- **THEN** absence emits no dismissal input, while unknown layout fails closed; no guessed or repeated tap occurs.
+
+#### Scenario: Discovery candidate vanishes during trigger observation
+- **WHEN** a trigger observation fails with the typed verified-unmapped discovery-header EIO
+- **THEN** at most one complete fresh read-only retry is allowed within500ms and the overall5s dismissal deadline, with the same retained input observer and unchanged pinned owner/session/native bytes; all other errors or guard changes refuse, and no tap is repeated.

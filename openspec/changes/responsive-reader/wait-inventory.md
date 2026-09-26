@@ -5,8 +5,7 @@ pen/style acquisition and restoration are retired from normal Reader. The curren
 wait disposition is the table in [design.md](design.md#current-implementation-wait-audit-and-handoff):
 verified navigation omits redundant caller waits; legacy layout, physical contact,
 header-template fallback and native persistence retain their stated limits.
-Modeled time reductions are not native latency proof. The final native batch and
-REM35 integrated audit remain required.
+Modeled time reductions are not native latency proof. The revised native batch is recorded in verification.md; the REM35 integrated audit remains required.
 
 # Wait inventory and measurement contract
 

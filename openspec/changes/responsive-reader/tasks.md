@@ -10,6 +10,6 @@ work is superseded, never passed. This list governs the current retirement deliv
 - [x] 5. Repair only bounded trigger observation recovery with composed policy tests and retained input/owner/native/outer-deadline guards.
 - [x] 6. Update simulator scenarios, zero-ink success/refusal/error assertions and wait inventory; preserve reusable negative regressions.
 - [x] 7. Write Rust root docs legacy findings with exact source/timing/evidence limits and downstream REM38/40/43/35 handoff.
-- [ ] 8. Pass format, strict lint, host/Linux policy tests and both target builds on exact source; independent source review.
-- [ ] 9. Validate representative native trigger/capture/navigation/text and source preservation, inspect screenshots and restore authorized idle tablet; preserve unavailable/failed gates honestly.
+- [x] 8. Pass format, strict lint, host/Linux policy tests and both target builds on exact source; independent source review.
+- [x] 9. Validate representative native trigger/capture/navigation/text and source preservation, inspect screenshots and restore authorized idle tablet; preserve unavailable/failed gates honestly.
 - [ ] 10. Re-read comments, publish linked PR/evidence set, pass required CI and final review, sync as-built canonical Docs specs and archive only completed change; coordinate merges.
