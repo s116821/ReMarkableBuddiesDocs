@@ -1,0 +1,123 @@
+## Context and evidence
+
+Plan baseline: Docs `d34c14d5d25eee671f7441a69f4feef7bd2c5d69`, Rust `6fc7f9e978901f6e8510d19d7f5eed5e892e44ad`. REM-36 description and all comments (none at read time), revised September 26 roadmap and central guidance were read. Current code has no generic record store or Drive sync. `src/main.rs` loads `.env`, resolves explicit key/endpoint overrides and initializes devices; the service reads `/home/root/.config/reader-buddy/environment`. Header cache is under `/var/cache/reader-buddy`; optional images are `/tmp/reader-buddy-*`; legacy symbol state is `/home/root/.reader-buddy-symbol-state`. REM-9 owns indicator/status recovery retirement, so this lane does not move/delete its artifacts.
+
+Official API findings and limits are in [research.md](research.md). In particular, there is no verified v3 media-update compare-and-swap guarantee here. The design deliberately needs no remote mutable shared head.
+
+## Goals and non-goals
+
+Deliver one reusable Rust persistence/sync layer and public offline contract. Preserve local operation without credentials/network; domain models remain independent and arrive in their owning issues. No new Buddy listener, rich sync framework, cross-backend identity registry, automatic remote deletion/garbage collection, user Drive access, device reset/update or tablet mutation. No claim of native power-loss/update survival from host fixtures.
+
+## 1. Owned layout and survival
+
+The version-1 contract reports absolute locations and ownership. Defaults on tablet:
+
+| Category | Proposed location | Contract |
+| -- | -- | -- |
+| Durable logical records/media | `/home/root/.local/share/remarkable-buddies/` | Owned marker, persistent identity, `CURRENT`, immutable generations/objects/commits, local sync outbox/checkpoints |
+| Nonsecret configuration | `/home/root/.config/remarkable-buddies/config.json` | Versioned JSON, atomically replaced only after validation; owner-only write |
+| Credentials | `/home/root/.config/remarkable-buddies/credentials/` | Owner-only directory/files; OAuth/client/account binding material; never in ordinary records/exports |
+| Existing model credentials | `/home/root/.config/reader-buddy/environment` | Remains supported unchanged; loaded by existing unit |
+| Rebuildable indexes/cache | `/home/root/.cache/remarkable-buddies/` | Derived from committed durable content; safe rebuild under ownership lock |
+| New transient diagnostics | `/tmp/remarkable-buddies/` | Disposable opt-in diagnostic artifacts, never the only retained source image |
+| Runtime binaries/unit/extensions | Existing `/opt/bin/reader-buddy`, service unit; extension paths owned by REM-41 | Never children of the data root or removed by data cleanup |
+
+New domain source images belong to the durable content store through `put_blob`; diagnostic paths are not a retention API. Existing Reader caches/status journals remain untouched until their owning changes migrate/retire them. Nothing in the xochitl document tree is treated as Buddy-owned.
+
+Tests use explicit `StorePaths` roots. A documented `REMARKABLE_BUDDIES_CONFIG` override can select a nonsecret config file; explicit data/cache roots in that file are validated before creation. Refuse root/system/xochitl locations, overlapping credential/cache/data roots, symlink traversals and preexisting non-owned populated destinations. A valid ownership marker binds a root to this store; do not adopt arbitrary content or follow remote paths.
+
+App binary replacement/reinstall scripts must preserve user roots; verify that contract with fixture packaging/reinstall tests. Source inspection supports separation, not actual firmware survival. Vendor-update survival remains unverified and no automatic recovery is promised (REM-19 is separately gated). Factory reset is treated as potentially destructive: external verified export or a verified selected Drive recovery set is required, and local credentials may need reauthorization. Never perform reset/update to validate this lane.
+
+## 2. Identity, records and atomic commit boundary
+
+Use a small generic envelope, not shared domain semantics:
+
+```json
+{
+  "envelope_version": 1,
+  "namespace": "subject-memory",
+  "domain_schema_version": 1,
+  "record_id": "opaque-uuid",
+  "revision_id": "opaque-uuid",
+  "parents": ["prior-revision-uuid"],
+  "operation_id": "stable-retry-uuid",
+  "actor_id": "installation-uuid",
+  "kind": "value",
+  "payload": {},
+  "blobs": [{"sha256": "hex", "bytes": 123, "media_type": "image/png"}]
+}
+```
+
+Namespaces are separately registered: `conversation`, `source`, `export-association`, `subject-memory`, `handwriting`. Reader and Writer receive separate typed domain adapters over the same engine; opaque generic fixtures do not establish actual memory/handwriting/conversation behavior. Payload version dispatch belongs to each domain. The engine validates envelope versions, ID formats, bounds, lineage and referenced hashes. Unknown future versions are preserved in quarantine/read-only recovery, never silently interpreted, overwritten or republished.
+
+IDs are generated once before a mutation and retained across retries. Record/revision/operation IDs are distinct from Drive file IDs and native note IDs. A retry with the same operation ID and different content fails; identical retries return the prior result. Wall time is advisory only, never the ordering/conflict authority.
+
+Write immutable objects into an owned staging directory using create-new files; write all bytes and `sync_all`, verify digests and sizes, then publish into content-addressed `objects/`. Publish a versioned commit manifest last by same-filesystem rename and sync its directory. The manifest references the exact object/revision set and local transaction ID. Readers consider only objects reachable from valid committed manifests. Thus an interrupted multi-record operation cannot publish half its records or referenced source media. A derived heads/index file may be atomically refreshed afterwards but is not authoritative.
+
+Hold an in-process store mutex while publishing and use one process-owned exclusive file lease for the store lifetime (see maintenance below). Local expected-parent checks happen under that lease. Concurrent remote branches are retained as multiple heads; the engine returns `Conflict` with revision IDs rather than picking a clock winner or merging opaque JSON. Explicit resolution creates a new revision naming every observed head. A stale resolver fails/retries if the head set changed.
+
+Tombstones are immutable revisions with `kind: tombstone`, the same identity and explicit parents, not inferred file absence. A concurrent delete and edit leaves a conflict with both branches recoverable. Ordinary list hides only an unambiguous tombstone head; history/export retains it. No automatic physical remote deletion or tombstone expiry in v1. Quota/full-disk refusal keeps committed data and pending work intact instead of silently evicting records or source images.
+
+Bound all parsing and batches (initial record-envelope limit 1 MiB, metadata/ID counts, configurable media/batch limits with safe upper bounds). Stream media rather than base64 it into records. Missing/corrupt referenced bytes make a commit unavailable/quarantined with a sanitized status; never claim a successful complete restore. Recovery scans committed manifests, ignores incomplete staging and rebuilds derived indexes. Cleanup of unreferenced data is explicit, ownership/reference checked and reserved for the REM-42 contract.
+
+## 3. Configuration and startup compatibility
+
+No new production CLI flags. Existing explicit CLI values remain highest priority. Next are existing relevant environment values (`OPENAI_API_KEY`, `OPENAI_BASE_URL`, `RUST_LOG`, `READER_BUDDY_DEBUG_DUMP`), including the existing optional `.env` behavior; then validated nonsecret JSON; then existing defaults (model/corner/logging). For model/corner, which currently have no corresponding environment controls, distinguish an explicitly supplied CLI value from its old parser default so file configuration can take effect without changing the default experience. Do not invent an environment override that changes established semantics.
+
+Credentials are never embedded in the new JSON. Model key resolution retains CLI/environment precedence; an explicitly selected protected credential reference may provide a final fallback. Invalid/blank selected secrets fail with a value-free error. Never derive Debug or log raw OAuth responses, authorization headers, upload-session URLs, keys or record payloads from this new subsystem. Export/normal inspection excludes credentials and environment files. File permissions are 0700 directories/0600 secrets on Linux; insecure or symlinked credential files are rejected. Windows host tests exercise the adapter abstraction and report Linux permission limits honestly.
+
+The config carries `config_schema_version`, model/endpoint/corner/log controls, owned paths, retention limits and sync policy. Unknown fields/versions and invalid configured roots fail before device initialization without replacing the last usable file. Configuration edits are staged and atomically replaced under maintenance; a controlled systemd restart applies them. Provide a redacted effective-config descriptor with per-field source labels so Manager can explain that a service environment override wins over its file edit.
+
+Scripted simulation continues branching before production credential/storage initialization, uses fixture roots and never starts Drive sync implicitly. Existing diagnostic examples remain outside the production CLI. Main integration is kept small and rebased after REM-9; startup-delay/service/logging changes stay out of scope.
+
+## 4. Public file/OS maintenance contract
+
+Ship offline-readable schema/location/capability descriptors with the component and publish matching central docs. Runtime writes an atomic `capabilities.json` under the owned root containing `contract_version: 1`, supported read/write envelope/config/store formats, paths, lock protocol, domain names, sync policies and status codes. Version ranges are independent of app semantic versions. A read-only companion can inspect that file, immutable manifests and redacted health summaries via SSH/files; no in-process request protocol is introduced.
+
+One stable `store.lock` inode lives outside swappable generation directories and is never deleted/replaced. Production opens it with exclusive OS file locking for the store lifetime; all Reader/Writer/sync access shares that Store handle and in-process transaction mutex. A second service/store instance refuses ownership before input. Lock release follows process exit, so a stale PID file is not authority.
+
+Mutating companion maintenance: remember the prior unit state; stop `reader-buddy.service`; wait for confirmed inactive state; acquire that same nonblocking exclusive OS lock; verify supported versions/owned roots and an expected revision; perform snapshot/config/import/cache work using staged content and atomic publication; release; restart only if appropriate for the prior state and successful validation. If stop, lock, validation or commit fails, keep data and surface a stable error; never force-delete locks or restart through a partial restore. A disconnected session releases its OS lease; incomplete staging remains invisible.
+
+On Linux the current Rust standard file lock maps to `flock`; companion transport must probe for a compatible host lock tool/adapter. If unavailable, refuse mutation rather than rely only on a stop command or elapsed delay. REM-41/42 own transport implementation; REM-36 tests a second process with the same lock and publishes the exact protocol. Read-only inspection can tolerate an explicitly labeled stale health snapshot; consistent export requires the exclusive maintenance contract. No assumption is made that stock firmware has a particular shell utility installed.
+
+## 5. Export, restore and migrations
+
+Export a portable owned directory bundle: versioned manifest, exact immutable objects/commits and nonsecret configuration snapshot. Include size/hash inventory and domain/schema versions; exclude credentials, environment, temporary staging, caches and installed binaries. Create into a new empty destination and mark complete only after verification. Users can transfer/archive that directory with normal public tools. Do not claim that an unverified copy is a backup.
+
+Restore validates the complete manifest, bounds, hashes, IDs and schemas into an isolated generation; refuse path traversal, symlink members, unsupported format, partial/corrupt input or insufficient space before switching visibility. Preserve original source and current store for rollback. Existing-store restore is additive/reconciliation by logical revisions; it never interprets missing exported records as deletions. Retain tombstones/conflicts. An empty device gets a new actor ID for future writes while preserving record/revision IDs; it does not replay a cloned actor's pending outbox as fresh edits.
+
+Separate store/envelope/config versions from domain schema versions. Migration code registers explicit source/target versions, stages an entire new generation, validates it and atomically switches `CURRENT`; original generation remains until verified cleanup. Test the migration engine with clearly synthetic v1-to-v2 adapters and inject failures before/after the switch. v1 does not claim an older deployed generic store existed. Actual unsupported versions fail safely; actual domain migrations will be supplied by REM-37/24/26. Legacy Reader files are not silently converted or discarded.
+
+## 6. Drive storage and policy
+
+Default `sync.enabled=false`; local persistence never depends on network or token availability. When enabled with explicit credentials and collection binding, `subject-memory` and `handwriting` are independently selectable; one never enables the other. Conversation/export records and source media are separately configurable and default off. Source screenshots remain locally durable regardless of sync. A history-only recovery set explicitly reports missing/local-only media; it is not a complete source-image backup. Configured media size/batch limits must report deferred items, never silently omit them from a supposedly complete manifest.
+
+Use Drive `appDataFolder` with `drive.appdata` scope and non-Workspace JSON/binary files. It is app-private recovery storage, not a shareable backup folder; users can delete it and removing the app from Drive can remove it. Keep local copies and a separate export path. No share/move/trash operations are part of this adapter. Normal operation only creates immutable content and reads/list changes; no automatic physical delete.
+
+Each remote item has a versioned logical header plus opaque collection/domain/record/revision identity and digest. App-private properties help discovery but media content validates identity/integrity. The sync protocol publishes an immutable transaction manifest after every required record/media object is confirmed, rather than mutating one common head file. Local/rebuilt indexes derive from valid remote commits and explicit parent links; concurrent devices cannot overwrite each other's revisions. Do not use unverified `If-Match`, Drive numeric version, timestamps or filenames as CAS.
+
+Before an upload, get a Drive-generated ID for `appDataFolder` and durably journal that ID, operation identity, exact byte hashes and upload state locally. Retry using the same ID. On ambiguous success or 409, fetch and verify existing identity/media hashes before acknowledging; a conflicting object is an error, not a successful retry. A crash between ID allocation and journaling wastes an unused ID, not a domain write. Restores without an outbox discover existing logical revision IDs before allocating new ones; identical duplicates can be recognized by content, never by filename alone.
+
+Small JSON uses bounded multipart create. Optional large media uses documented resumable upload: store the session URI only in restricted local sync state, query server-confirmed offsets after interruption, and restart an expired session for the same generated file ID. A final manifest cannot claim pending/corrupt media complete. Network retry is bounded exponential backoff with jitter/cancellation, Retry-After when supplied, and per-batch budgets; quota/auth errors surface sanitized statuses while local work continues. Never loop forever or block foreground tablet input on network completion.
+
+## 7. Discovery, restore and checkpoints
+
+Initial state is unbound/discovering, not an empty remote mirror. With explicit authorization, enumerate complete paginated appData contents and available logical collection IDs. Bind an existing collection deliberately; if several exist, report selection-required. Only explicit create-new after a successful complete empty discovery may establish a new collection. An empty local store never uploads default empty state or tombstones over remote content. App/token/account mismatch leaves sync paused; account binding metadata stays protected with credentials.
+
+Capture a start token before the initial listing, then consume changes after that token so concurrent new uploads are not missed. Use `spaces=appDataFolder`; process all pages; persist a page/checkpoint only after its validated observations and logical commits are durable locally. Replaying a page is idempotent. Incomplete paginated listings, rejected cursors or network failures are not evidence of deletion; restart read-only discovery when needed.
+
+Drive `removed=true`, 404, access denial or appData removal means remote transport visibility changed. Preserve local values and tombstones and report recovery/access-required; never synthesize a domain tombstone. Valid explicit tombstones in immutable logical revisions alone propagate domain deletion. Do not automatically rebuild a disappeared remote collection from local defaults; restoration/rebinding must be explicit.
+
+Fetch objects into staging, verify complete transaction manifests and ancestry, and only then publish local commits. Out-of-order parent/manifest arrival remains pending until dependencies resolve; malformed cycles or identity collisions are quarantined without advancing a false complete watermark. A local concurrent edit made during remote recovery remains a branch, not overwritten. Resolution requires an explicit new revision referencing all competing heads.
+
+## 8. Credentials and transport boundaries
+
+Implement a `DriveTransport` interface plus real HTTPS Drive v3 adapter, with a separate credential provider for protected access/refresh tokens and expiry. OAuth grant acquisition/interactive consent UX belongs to Manager REM-41/42; public manual provisioning is documented, not executed here. Adapter validates selected scope/account/collection binding and refreshes authorized expired tokens through the documented OAuth token endpoint; missing/revoked authorization disables sync with local data intact. Never send records to configurable arbitrary hosts in production; mock endpoints are test-injected, with fake credentials only.
+
+All acceptance in this lane uses a hermetic in-memory or localhost HTTP fixture, fake credentials and synthetic records. Test real request construction/parsing/pagination/retries against that fixture, not merely a pure merge function. Clearly label that official protocol implementation has not been exercised against a live account. A later separately authorized integration check may use a dedicated test account; no user Drive upload/connect is authorized now. No live-model requests are required for generic storage.
+
+## Validation and rollout
+
+Before code: independent plan review and explicit coordinator confirmation that REM-21 foundation is accepted. During implementation: fault-injected filesystem tests, two-process locking, two-device transport histories, malformed/corrupt/unknown schema fixtures, config-precedence/secret-redaction regressions, recovery/index rebuild, snapshots and migration interruption. Run existing offline simulator regressions to ensure no default I/O/network leakage, strict clippy, host tests and both ARM builds. Preserve known protocol limitations in docs rather than claiming native/live evidence.
+
+After code: linked Docs/Rust PRs with exact revisions, narrow platform-runtime delta, public contract and grouped evidence comments. Rebase against REM-9/Manager accepted mains and rerun affected integration checks. Sync only verified capabilities and archive this change when its tests/gates pass. Parent coordinator alone squash-merges after independent review and CI, Docs contract paired with Rust delivery. No standalone planning PR or premature completion; REM-35 retains final ecosystem/hardware gates.
