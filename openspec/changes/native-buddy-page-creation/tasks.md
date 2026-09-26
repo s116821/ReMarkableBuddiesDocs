@@ -5,7 +5,8 @@
 - [x] 1.4 Write full proposal/design/tasks/deltas and bounded candidate/qualification matrix before code.
 - [x] 1.5 Validate Docs/OpenSpec, commit exact plan and obtain independent acceptance at a0f4d9c; no planning-only feature PR/archive.
 - [x] 1.7 Obtain coordinator plan acceptance at a0f4d9c plus discovery runbook at8294500; acceptance does not release the REM9/native gates.
-- [ ] 1.6 Rebase onto accepted REM9; reconcile four deltas before code. Confirm local-only journal namespace/API with REM36 and binding ownership with REM37.
+- [x] 1.6 Rebase onto accepted REM-9 Docs e7fbdc44/Rust 3df3b1e6 and reconcile the four answer-page delta blocks, preserving ordered/fresh completion, sticky ownership/cancellation, one-attempt recovery and non-ink diagnostics.
+- [ ] 1.8 Confirm final local-only journal registration/API with REM-36 and binding interface with REM-37; qualify the actual native operation before production adapter/journal code.
 
 ## 2. Investigation and selection
 - [ ] 2.1 After coordinator dispatch, Q0 restorable notebook/PDF fixtures and native-produced page diffs, preserving unknown fields and PDF bytes.
