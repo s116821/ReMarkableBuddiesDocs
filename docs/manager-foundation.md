@@ -18,7 +18,9 @@ Run `npx playwright install --with-deps chromium`, `npm run check`,
 `npm run package`, then `npm run test:package`. Headless Linux requires
 `xvfb-run -a npm run check` and `xvfb-run -a npm run test:package`.
 `check` includes ESLint, version tests, Angular production build, responsive
-browser checks and actual sandboxed Electron renderer checks. Package verification
+browser checks and actual sandboxed Electron renderer checks. Optional desktop
+screenshots use `MANAGER_CAPTURE=1`; required checks assert actual rendered content,
+runtime identity and isolation independently of headless screenshot support. Package verification
 launches the packaged desktop executable. Windows x64 and Linux x64 are the
 foundation's portable desktop targets. macOS, signing/notarization and desktop
 automatic updates remain later delivery; do not infer their support.
@@ -52,13 +54,15 @@ claims these outcomes or RM2/Paper Pro validation.
 Manager tags/releases are independent of the
 [Rust application](https://github.com/s116821/ReMarkableBuddies/releases).
 The package manifest version 0.0.0 is a non-authoritative tooling placeholder.
-Development builds display `0.0.0-dev.<commit>[.dirty]`. Official builds contain
+Development builds display `0.0.0-dev-<commit>[-dirty]`. Official builds contain
 the exact semantic tag version and commit in both UI and package metadata.
 
 The release policy is adapted from actual Rust revision
 `33db26add721cea6c0121ad769a54d06ae600b4e`: git-cliff 2.14.2 computes versions;
 release-it 19.0.6 creates immutable annotated tags on application squash commits.
-There are no generated version-bump commits. An initially untagged Manager starts
+There are no generated version-bump commits. For a new repository, the initial
+calculation excludes its verified docs-only history prefix so a non-semantic
+GitHub README initialization cannot block the first application release. An initially untagged Manager starts
 at v0.1.0; feat increments minor, fix/maintenance increments patch, and breaking
 changes calculate major. A publication guard blocks major 1+ until a reviewed
 REM-35 change enables the completed ecosystem's release.

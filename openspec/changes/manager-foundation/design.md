@@ -32,7 +32,10 @@ include dependencies, tests, packaging and workflow changes; only explicit docs
 paths are excluded. Reject docs titles concealing application changes.
 
 Manager is initially untagged: git-cliff's initial tag is v0.1.0, applied to the
-first eligible application commit, never a generated bump commit. Later feat
+first eligible application commit, never a generated bump commit. The initial
+git-cliff range excludes the already-verified docs-only prefix (including a
+non-conventional GitHub README initialization); application title validation
+remains mandatory. Later feat
 increments minor; fix/maintenance patch; breaking changes calculate major but
 publication refuses major 1+ until REM-35 explicitly changes that gate.
 
@@ -56,7 +59,9 @@ as an experiment in this lane.
 
 Real Angular build and ESLint checks; browser automation against built static
 output; actual Electron renderer smoke with sandbox/Node absence assertions;
-package and reopen the packaged desktop app. Run host checks on Windows locally
+package and reopen the packaged desktop app. Optional native screenshots are
+separate from mandatory rendered-content/runtime/isolation assertions because
+headless compositors can reject hidden-surface capture. Run host checks on Windows locally
 and Linux/Windows CI where supported. Deterministic temporary Git repositories
 exercise initial release, feat/fix/breaking, mixed docs/code, docs-only no build,
 reverts, renamed paths, stale queued merges, failed build/upload retries,
