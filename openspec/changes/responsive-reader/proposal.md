@@ -1,12 +1,18 @@
 ## Why
-Reader interaction contains long local stalls and repeated guarded refusals. REM9's September22 clarification requires full interaction responsiveness, not just a one-second reduction in old sleeps; REM34 also carries two unresolved no-answer availability failures.
+The September26 roadmap retires source-page status/error ink. Remove its acquisition,
+cadence, restoration and erasure costs from normal Reader execution while preserving
+the reusable capture/navigation/input work and honestly handing off unresolved native
+text/history problems. This revision supersedes the earlier indicator matrix; it is
+not evidence that those old acceptance gates passed.
 
 ## What Changes
 - Prefer supported completion events plus verified postconditions; otherwise use bounded fresh-state polling with deadlines and cancellation instead of sleep-based completion assumptions.
 - Measure capture, tool verification, provider, navigation, rendering and ready-state costs separately with bounded reproducible diagnostics.
 - Eliminate redundant image serialization and repeated work while preserving exact pixels and ownership/session checks.
-- Investigate repeated native status refusal using exact internal frames; retain strict pre-mutation and cleanup safety.
-- Define and test explicit latency budgets across ordinary/nondefault primary/secondary tools, success, failures and history.
+- Retire all normal source status/error drawing and active indicator recovery operations; retain unresolved-record refusal and never automatically erase old ink or delete old journals.
+- Preserve historical experiments in the Rust root docs findings record with exact revisions, measured limits and downstream ownership.
+- Resolve the demonstrated trigger observation capture gap with bounded read-only recovery, without repeating input or weakening ownership/content guards.
+- Validate zero status mutations through normal success/decline/error paths and representative native trigger/capture/navigation/text observations; REM35 owns the revised integrated performance gate.
 - Establish concise repo-local AGENTS guidance for future Reader/Writer sequencing and document necessary fixed-wait exceptions.
 - Extend simulator timing/state coverage and publish before/after evidence, retaining unverified hardware limits.
 
@@ -21,8 +27,8 @@ Reader interaction contains long local stalls and repeated guarded refusals. REM
 ## Impact
 Screenshot conversion and status observation, bounded diagnostic examples, workflow timing/state transitions where evidence justifies changes, regression fixtures and public guidance. No provider/prompt redesign, key change, Writer feature, account operation or release1.0. REM35 retains integrated Reader+Writer acceptance.
 
-September22 local-time user amendment: preserve the selected tool for all drawing;
-stop pursuing simulated menu swaps as the default. Use only safely recognized
-current tools, with verified full-width/cleanup footprints, and suppress optional
-marks when those guarantees are unavailable while preserving core Q&A. See the
-superseding design section and task4 for the revised method and coverage tradeoff.
+All specification work lives in RemarkableBuddiesDocs. Deliver this change through
+linked Docs and Rust implementation PRs with exact reviewed revisions and merge
+ordering, canonical sync/archive only when the revised tasks pass. The preserved
+September23 branch da8838d and imported baseline/design retain historical evidence.
+No new Buddy-page feedback is claimed here; REM40 implements that after its dependencies.

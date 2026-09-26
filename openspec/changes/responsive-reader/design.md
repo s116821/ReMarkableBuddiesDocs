@@ -801,3 +801,83 @@ tap across a recoverable post-tap failure, plus changed owner/native/input,
 ineligible errors, repeated failure and late completion. Update simulator impact
 as an observation fault without implying native allocator recognition. Source
 review and exact checks precede any further native run; retain the prior failure.
+## Current authority: September26 retirement and salvage
+
+This section supersedes earlier status-optimization and marker-matrix design below.
+Keep those sections as historical provenance, not instructions to run more pen tests.
+Rust source starts from preserved da8838d in a separate retirement worktree; old
+branch and diagnostic evidence remain intact. Docs migration dd9d5e1 records the
+exact imported source blobs. All further OpenSpec edits occur in this Docs repo.
+
+### Triage before implementation
+
+| Work | Disposition |
+| --- | --- |
+| Exact fused screenshot conversion, measurement spans | Retain and verify pixel equivalence and phase boundaries |
+| Native ordered-neighbor navigation, input ownership and deadlines | Retain; failure is never successful movement |
+| Single known-overlay outside tap and owned-touch delivery | Retain; repair only typed post-tap capture recovery gap |
+| Native exact-text persistence and opaque scene ownership | Retain conservative guards; ~9.805s persistence and counter semantics go to REM38/43/35 |
+| Indicator geometry, stage cadence, tool leases and normal recovery writes | Retire from normal workflow; no new ink, erase, menu or journal operations |
+| Legacy marker width/error matrix and historical timing targets | Superseded, not passed; preserve findings and source revision |
+| Buddy-page status/error turns and responsive cancellation UX | REM40; this change does not invent a placeholder UI or claim that feature complete |
+
+### Retirement boundary
+
+Remove Workflow staged geometry/state, pen lease acquisition/restoration, tick loops
+and cleanup. Provider progress callbacks may retain non-mutating cancellation checks,
+but must never draw, erase, sleep for status cadence, or manipulate recovery records.
+Retain typed failure reasons as log/simulator diagnostics without writing them on a
+source page. All normal success, invalid selection, disagreement, provider failure,
+occupied successor, navigation and partial-output paths must emit zero status/pen
+operations. Core exact answer and conservative decline behavior remain intact.
+
+Hard-disable normal RealDevice status entrypoints as defense in depth. Historical
+native diagnostic mechanics may remain only behind an explicitly named diagnostic
+constructor used by bounded examples; they must not be reachable from normal Reader
+construction, simulator execution or service configuration. No diagnostic marker run
+is needed for retirement. Reusing old tests must not pretend legacy drawing is still
+a product requirement. Preserve the old branch as the source of the original tests.
+
+Keep the startup unresolved recovery-record check read-only and fail closed, including
+unreadable/malformed records. Do not delete, overwrite, auto-migrate, auto-erase or
+attempt tool restoration from a stale record. A future deliberate recovery requires
+owner/content/tool verification; retirement itself authorizes no such mutation.
+
+Generic public drawing/erasure helpers are outside normal feedback and do not inherit
+safety from this retirement. No new callers; audit them explicitly and preserve the
+no-menu contract. Retain trigger cancellation as a workflow input-failure latch with
+neutral naming after removing indicator-specific failure state.
+
+### Trigger capture gap
+
+Apply the reviewed f1255db plan only to NativeTriggerDismiss observation. Compose the
+real capture_recovery policy with the dismissal policy, retaining the same input
+observer, pinned initial identity and bounded Option<native bytes>. Every retry start
+and completion must respect the encompassing5s deadline as well as the stricter500ms
+observation budget. Maximum2 complete fresh capture attempts; only the typed proven
+unmapped allocation-header EIO qualifies. No repeated tap, observer reset, stale scan,
+baseline refresh or cancellation reset. Preserve first error chain on failed recovery.
+Test actual shared-policy composition for successful recovery after one tap and
+owner/native-byte/None-Some/input changes, untyped errors, persistent failure and late
+completion. Native platform replay is distinct from host/emulator policy evidence.
+
+### Sequencing and validation
+
+Audit remaining waits and remove redundant post-navigation waits only where existing
+verified completion supplies the same postcondition. Unsupported-layout fallback,
+physical gesture timings and header/text persistence must retain honest bounds and
+limitations; do not replace native save semantics with a guessed short sleep.
+Update simulator scenarios/reports around zero ink and non-mutating failure codes.
+Obsolete injected indicator faults are rejected or explicitly diagnostic-only, never
+silently unused in passing product scenarios. Preserve capture/navigation negatives.
+
+Checks: format, strict clippy, host tests, Linux/ARM policy tests, ARM/AArch64 builds,
+independent exact-plan/source review, and one serialized native retirement batch with
+verified source preservation and restoration. Native batch requires reachable idle
+authorized RM2; no firmware/account changes. Record original tool/document/runtime,
+bound test processes, preserve failed runs, inspect actual screenshots and restore.
+No claimed native gate if hardware is unavailable. Prompts/model behavior are unchanged;
+representative live Q&A may validate the integrated path under existing authorization.
+Final linked Docs/Rust PR set includes required CI/bug-bot review and evidence comments.
+Merge the as-built Docs sync in the coordinated implementation delivery, never archive
+unfinished migration or claim REM35/1.0 completion.

@@ -15,8 +15,10 @@ The simulator SHALL model changed operation timing and reachable delayed/stale/c
 - **THEN** modeled checks assert fresh correlated completion or bounded safe failure, no duplicate mutations and no late revival of cancelled work; timed simulation is not proof of native event availability.
 
 ### Requirement: Current-tool drawing regressions
-The simulator SHALL exercise the production current-tool eligibility and cleanup
-path without pretending modeled tool footprints establish native safety.
+The simulator SHALL exercise the production retirement boundary and assert zero
+source-page feedback drawing, erasure and tool leases across success/refusal/failure.
+Historical diagnostic tests SHALL remain distinct from normal product scenarios.
+Modeled tool footprints SHALL NOT establish native safety.
 
 #### Scenario: Trigger observation recovery is read-only
 - **WHEN** a modeled recoverable observation fault occurs after the single outside dismissal tap
@@ -24,7 +26,7 @@ path without pretending modeled tool footprints establish native safety.
 
 #### Scenario: No simulated tool switching
 - **WHEN** a supported current-tool indicator or a suppressed unsuitable-tool case runs
-- **THEN** the operation records zero toolbar selection/menu presses and unchanged original tool settings; unsupported feedback does not prevent core Q&A.
+- **THEN** the operation records zero source feedback, tool lease or toolbar/menu operations and unchanged original tool settings; core Q&A retains exact content and normal safety gates.
 
 #### Scenario: Footprint and recovery faults
 - **WHEN** a stroke or eraser envelope approaches neighboring ink, or owner/input/journal/cleanup observations fail

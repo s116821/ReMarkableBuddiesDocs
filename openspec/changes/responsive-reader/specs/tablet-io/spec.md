@@ -14,14 +14,15 @@ Screenshot normalization SHALL preserve exact decoded pixels, dimensions, orient
 Automatic drawing SHALL preserve the user's selected pen, slot, color and width.
 It SHALL NOT simulate menu presses to select or inspect drawing tools. A future
 selection mechanism requires evidence of a robust supported direct interface.
-Optional status and failure marks SHALL be suppressed before input when fresh
+Normal status and failure ink SHALL be retired entirely. Legacy diagnostic-only
+marks SHALL be suppressed before input when fresh
 non-mutating observations cannot establish a visible, bounded, safely erasable
 current tool. Saved preferences alone SHALL NOT establish actual tool state.
 Normal Q&A SHALL remain available when optional feedback is suppressed.
 
 #### Scenario: Supported current pen
 - **WHEN** the current pen is positively recognized and its full supported width range fits the verified blank footprint and cleanup envelope
-- **THEN** marks use that pen and slot with zero tool-selection presses; ownership, journal, neighbor-ink and cleanup checks remain enforced.
+- **THEN** normal Reader emits no feedback ink; explicitly invoked historical diagnostic marks, if retained, use that pen and slot with zero tool-selection presses and all ownership/journal/neighbor-ink checks enforced.
 
 #### Scenario: Unknown or unsuitable current tool
 - **WHEN** the toolbar is unknown, the tool is destructive, or visibility/maximum footprint/cleanup coverage is unproven
