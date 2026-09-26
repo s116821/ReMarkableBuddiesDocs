@@ -4,7 +4,7 @@
 - [x] 1.3 Pin primary source/license inspection and distinguish native hypotheses.
 - [x] 1.4 Write full proposal/design/tasks/deltas and bounded candidate/qualification matrix before code.
 - [x] 1.5 Validate Docs/OpenSpec, commit exact plan and obtain independent acceptance at a0f4d9c; no planning-only feature PR/archive.
-- [ ] 1.7 Obtain coordinator plan acceptance; independent acceptance does not release the REM9/native gates.
+- [x] 1.7 Obtain coordinator plan acceptance at a0f4d9c plus discovery runbook at8294500; acceptance does not release the REM9/native gates.
 - [ ] 1.6 Rebase onto accepted REM9; reconcile four deltas before code. Confirm local-only journal namespace/API with REM36 and binding ownership with REM37.
 
 ## 2. Investigation and selection
