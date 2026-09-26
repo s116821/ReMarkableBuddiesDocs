@@ -8,7 +8,9 @@ September 26, 2026. Research and planning only; implementation and native qualif
 - Rust reference checkout unchanged; no production code, tablet/SSH, service, firmware, account or model operation.
 - REM-36 worker confirmed generic envelope/CAS/lease boundaries and required device-local native journal. Proposed new namespace registration and final storage API adoption remain pending before code; synced/restored records never replay native effects.
 - Coordinator reserved this change and four future reader-answer-pages blocks. Rebase/reconcile onto accepted REM-9 remains required.
-- Exact committed-plan independent/coordinator review is pending. No canonical sync, archive, feature PR, tag or release is appropriate at this checkpoint.
+- Independent review accepted all eight artifacts at `a0f4d9c3b67e27c2835e20bb145e0197311a6471` with no blocking plan finding. Coordinator acceptance remains pending. This is plan acceptance, not implementation/native qualification acceptance.
+- Before code: accepted REM-9 rebase and four delta reconciliations, final REM-36 API/local-only journal registration, and REM-37 binding handoff remain gates. No canonical sync, archive, feature PR, tag or release is appropriate now.
+- Subsequent offline preparation in discovery-runbook.md has not been executed against a tablet and does not expand hardware authorization.
 
 Public manual reproduction from this Docs checkout:
 
