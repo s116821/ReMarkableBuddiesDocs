@@ -1,0 +1,29 @@
+## 1. Planning and ownership
+- [x] 1.1 Read current REM25/all comments, complete revised roadmap and REM37/38/41 contracts; publish material requirements for public contributors.
+- [x] 1.2 Reserve change/new capability and four future reader-answer-pages blocks; isolate public clones and inspect baseline.
+- [x] 1.3 Pin primary source/license inspection and distinguish native hypotheses.
+- [x] 1.4 Write full proposal/design/tasks/deltas and bounded candidate/qualification matrix before code.
+- [ ] 1.5 Validate Docs/OpenSpec, commit exact plan, obtain coordinator and independent acceptance; no planning-only feature PR/archive.
+- [ ] 1.6 Rebase onto accepted REM9; reconcile four deltas before code. Confirm local-only journal namespace/API with REM36 and binding ownership with REM37.
+
+## 2. Investigation and selection
+- [ ] 2.1 After coordinator dispatch, Q0 restorable notebook/PDF fixtures and native-produced page diffs, preserving unknown fields and PDF bytes.
+- [ ] 2.2 Execute A/B bounded native discovery/prototypes with exact ABI/Qt/firmware evidence and real notebook/open-PDF results, no menus.
+- [ ] 2.3 Execute C/D safe metadata/round-trip/cache alternatives and E credible additional routes; record corrections, barriers and unresolved leads.
+- [ ] 2.4 Independent candidate selection review; automatic required unless exhaustive real evidence justifies exercised fallback, not timeout/search miss alone.
+
+## 3. Accepted implementation
+- [ ] 3.1 Rust capability/owner guards and create/reuse; minimal correlated bounded extension only if accepted, no generic evaluator/admin API.
+- [ ] 3.2 REM36 CAS/local-only journal and REM37 bindings with native/binding/reconcile phases, cancellation/crash/retry recovery. No synced native side effects or parallel registry.
+- [ ] 3.3 Safe full-native blankness/manual preparation, preserving unrelated/legacy/user edits and refusing unknown formats.
+- [ ] 3.4 Exact extension compatibility/provenance/licenses/minimal packaging/activation/rollback/remove handoff to REM41; no incidental boot/firmware/account change.
+- [ ] 3.5 Learned fixtures/simulator faults for persistence, identity, uncertain outcome and mappings in same delivery; add local-simulator delta if canonical behavior changes.
+- [ ] 3.6 Reader/Writer/blank-start contract tests and explicit downstream native gates; no fabricated question/empty model call.
+
+## 4. Verification and delivery
+- [ ] 4.1 Required Rust format/lint/tests/ARM build and targeted simulator checks with public manual equivalents.
+- [ ] 4.2 Coordinator executes Q1-Q10 on final candidate; inspect screenshots and preservation hashes/semantics; separate evidence types.
+- [ ] 4.3 Failure/rollback and public manual instructions exercised; fallback outcome needs exhaustive independent review and real fallback tests.
+- [ ] 4.4 Reread latest comments, verify exact spec/code revisions and task coverage, resolve CI/review; unavailable bot is not a clean review.
+- [ ] 4.5 Sync only implemented verified canonical requirements, preserve other lanes, validate strictly and archive only completed change.
+- [ ] 4.6 Linked Summary-only PRs with detailed evidence/explained embedded images in comments; coordinator-only squash merges. REM35 owns integrated1.0 acceptance.
