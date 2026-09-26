@@ -39,3 +39,31 @@ Modeled tool footprints SHALL NOT establish native safety.
 #### Scenario: Conditional trigger dismissal
 - **WHEN** a modeled hold qualifies
 - **THEN** a declared closed overlay emits no tap, a qualified known-open panel receives one outside-panel tap, and unknown or failed dismissal stops before Q&A mutations; actual native overlay behavior remains a separate acceptance gate.
+
+## REMOVED Requirements
+
+### Requirement: Observable indicator lifecycle
+**Reason**: Source feedback and normal style leases are retired.
+**Migration**: Source feedback retirement regressions replace normal lifecycle tests with zero-mutation checks. Historical diagnostic tests remain distinctly labeled and do not satisfy product acceptance.
+
+### Requirement: Status style lifecycle and rollback model
+**Reason**: Source feedback and normal style leases are retired.
+**Migration**: Source feedback retirement regressions replace normal lifecycle tests with zero-mutation checks. Historical diagnostic tests remain distinctly labeled and do not satisfy product acceptance.
+
+
+## MODIFIED Requirements
+
+### Requirement: Coordinate-tagged answer coverage
+The simulator SHALL exercise production center parsing, normalization and Q&A formatting through scripted circle/highlight replies and explicit invalid-center cases. Tagged blocks SHALL use shared history unchanged; simulated location is declared model output rather than visual proof. Source: src/workflow/orchestrator.rs; src/workflow/mod.rs; src/analysis/mod.rs; tests/simulator.rs; tests/history_simulator.rs.
+
+#### Scenario: Selected region differs from question
+- **WHEN** a scripted question box and selected-content center occupy different places
+- **THEN** the Q&A tag identifies the normalized selected-content center and not the question box.
+
+#### Scenario: Invalid center
+- **WHEN** a reply has a missing, malformed or out-of-bounds center
+- **THEN** no successor navigation or answer occurs, and non-ink decline diagnostics preserve the source page.
+
+#### Scenario: Tagged history
+- **WHEN** a tagged Q&A is undone and redone
+- **THEN** its tag and full text toggle together, preserving the header and earlier untagged answers with no extra model calls.

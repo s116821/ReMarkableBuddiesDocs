@@ -4,6 +4,7 @@ work is superseded, never passed. This list governs the current retirement deliv
 
 - [x] 1. Read current REM9 description/comments and revised roadmap; preserve da8838d and migrate exact active-change provenance.
 - [x] 2. Triage reusable work, platform defects and retired indicator gates in design before code.
+- [x] 2a. Audit all canonical indicator/status/failure references and add explicit retirement deltas for reader-progress, reader-answer-pages, reader-analysis and local-simulator; preserve historical archives.
 - [ ] 3. Obtain independent rescope-plan review and coordinate central Docs/Rust revisions.
 - [ ] 4. Remove normal Workflow indicator state/input/cadence and hard-disable normal backend status machinery; preserve read-only unresolved-record refusal.
 - [ ] 5. Repair only bounded trigger observation recovery with composed policy tests and retained input/owner/native/outer-deadline guards.

@@ -20,6 +20,9 @@ not evidence that those old acceptance gates passed.
 ### New Capabilities
 - `reader-responsiveness`: measurement boundaries, budgets and reliable progress/readiness.
 ### Modified Capabilities
+- `reader-progress`: remove retired staged-ink/style lifecycle requirements.
+- `reader-answer-pages`: non-ink failure diagnostics and retained navigation/error semantics.
+- `reader-analysis`: retain independent verification/input failure propagation without ink cleanup.
 - `tablet-io`: equivalent direct pixel normalization and image-only observation path.
 - `local-simulator`: modeled operation timing and state convergence regressions.
 - `development-testing`: completion/state-driven sequencing guidance for future features.
