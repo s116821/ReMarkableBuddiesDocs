@@ -1,3 +1,128 @@
+## Current authority: September26 retirement and salvage
+
+This section supersedes earlier status-optimization and marker-matrix design below.
+Keep those sections as historical provenance, not instructions to run more pen tests.
+Rust source starts from preserved da8838d in a separate retirement worktree; old
+branch and diagnostic evidence remain intact. Docs migration dd9d5e1 records the
+exact imported source blobs. All further OpenSpec edits occur in this Docs repo.
+
+### Triage before implementation
+
+| Work | Disposition |
+| --- | --- |
+| Exact fused screenshot conversion, measurement spans | Retain and verify pixel equivalence and phase boundaries |
+| Native ordered-neighbor navigation, input ownership and deadlines | Retain; failure is never successful movement |
+| Single known-overlay outside tap and owned-touch delivery | Retain; repair only typed post-tap capture recovery gap |
+| Native exact-text persistence and opaque scene ownership | Retain conservative guards; ~9.805s persistence and counter semantics go to REM38/43/35 |
+| Indicator geometry, stage cadence, tool leases and normal recovery writes | Retire from normal workflow; no new ink, erase, menu or journal operations |
+| Legacy marker width/error matrix and historical timing targets | Superseded, not passed; preserve findings and source revision |
+| Buddy-page status/error turns and responsive cancellation UX | REM40; this change does not invent a placeholder UI or claim that feature complete |
+
+### Retirement boundary
+
+Remove Workflow staged geometry/state, pen lease acquisition/restoration, tick loops
+and cleanup. Provider progress callbacks may retain non-mutating cancellation checks,
+but must never draw, erase, sleep for status cadence, or manipulate recovery records.
+Retain typed failure reasons as log/simulator diagnostics without writing them on a
+source page. All normal success, invalid selection, disagreement, provider failure,
+occupied successor, navigation and partial-output paths must emit zero status/pen
+operations. Core exact answer and conservative decline behavior remain intact.
+
+Hard-disable normal RealDevice status entrypoints as defense in depth. Historical
+native diagnostic mechanics may remain only behind an explicitly named diagnostic
+constructor used by bounded examples; they must not be reachable from normal Reader
+construction, simulator execution or service configuration. No diagnostic marker run
+is needed for retirement. Reusing old tests must not pretend legacy drawing is still
+a product requirement. Preserve the old branch as the source of the original tests.
+
+Keep the startup unresolved recovery-record check read-only and fail closed, including
+unreadable/malformed records. Do not delete, overwrite, auto-migrate, auto-erase or
+attempt tool restoration from a stale record. A future deliberate recovery requires
+owner/content/tool verification; retirement itself authorizes no such mutation.
+
+Generic public drawing/erasure helpers are outside normal feedback and do not inherit
+safety from this retirement. No new callers; audit them explicitly and preserve the
+no-menu contract. Retain trigger cancellation as a workflow input-failure latch with
+neutral naming after removing indicator-specific failure state.
+
+### Trigger capture gap
+
+Retirement must not remove the input/page protection incidentally supplied by the
+old pen lease during provider waits. Capture on verified RM2 SHALL establish a
+read-only request guard before pixels are acquired, bracket capture with fresh
+owner/session checks and retain its InputObserver. Provider callbacks check this
+same guard without pen actions. A later capture must verify the existing guard
+before replacing pixels. Before owned navigation/keyboard handoff, check the
+guard and explicitly transfer control to the existing operation/history guards;
+never clear a detected loss. Capture/input/owner failure latches further workflow
+input. Do not silently re-pin a changed source after inference. Unsupported layouts
+retain explicit unverified fallback limits; a failed supported observer is not
+optional feedback suppression. Test page/session change and completed external
+input during inference before any navigation/output. This is request safety, not
+a retained indicator dependency or new source feedback feature.
+
+Apply the reviewed f1255db plan only to NativeTriggerDismiss observation. Compose the
+real capture_recovery policy with the dismissal policy, retaining the same input
+observer, pinned initial identity and bounded Option<native bytes>. Every retry start
+and completion must respect the encompassing5s deadline as well as the stricter500ms
+observation budget. Maximum2 complete fresh capture attempts; only the typed proven
+unmapped allocation-header EIO qualifies. No repeated tap, observer reset, stale scan,
+baseline refresh or cancellation reset. Preserve first error chain on failed recovery.
+Test actual shared-policy composition for successful recovery after one tap and
+owner/native-byte/None-Some/input changes, untyped errors, persistent failure and late
+completion. Native platform replay is distinct from host/emulator policy evidence.
+
+### Sequencing and validation
+
+Audit remaining waits and remove redundant post-navigation waits only where existing
+verified completion supplies the same postcondition. Unsupported-layout fallback,
+physical gesture timings and header/text persistence must retain honest bounds and
+limitations; do not replace native save semantics with a guessed short sleep.
+Update simulator scenarios/reports around zero ink and non-mutating failure codes.
+Obsolete injected indicator faults are rejected or explicitly diagnostic-only, never
+silently unused in passing product scenarios. Preserve capture/navigation negatives.
+
+Checks: format, strict clippy, host tests, Linux/ARM policy tests, ARM/AArch64 builds,
+independent exact-plan/source review, and one serialized native retirement batch with
+verified source preservation and restoration. Native batch requires reachable idle
+authorized RM2; no firmware/account changes. Record original tool/document/runtime,
+bound test processes, preserve failed runs, inspect actual screenshots and restore.
+No claimed native gate if hardware is unavailable. Prompts/model behavior are unchanged;
+representative live Q&A may validate the integrated path under existing authorization.
+Final linked Docs/Rust PR set includes required CI/bug-bot review and evidence comments.
+Merge the as-built Docs sync in the coordinated implementation delivery, never archive
+unfinished migration or claim REM35/1.0 completion.
+
+### Current implementation wait audit and handoff
+
+| Remaining timing | Classification and current disposition |
+| --- | --- |
+| Navigation caller 800ms forward/return plus 500ms classification | Removed after Settled/NoMovement results; retained only for explicitly Legacy navigation. Fresh page comparisons remain mandatory. Simulator compares identical outputs with 1300ms forward and 2100ms forward/return differences; this is modeled time, not native latency proof. |
+| Header capture 500ms | Retained bounded legacy rendering fallback before header-template observation. It is not a native save/completion signal; REM38/35 must replace or revalidate it with the unified renderer. |
+| Trigger contact 100ms | Physical single-tap qualification, not completion. Release and positive owned-touch observation remain mandatory. |
+| Trigger retry observation 500ms and outer dismissal 5s | Monotonic rejection deadlines; never permission to repeat input. One typed fresh capture recovery only, with initial owner/native pin and same input observer. |
+| Navigation fresh-state polling 50ms / 5s deadline | Paced composite identity/pixel/chrome readiness, not a native render acknowledgement; unsupported layouts remain explicitly unverified. |
+| Provider callback polling | Read-only retained request ownership checks; no cadence drawing or status wait. |
+| Native Q&A persistence polling/deadline | Retained exact text/owner/opaque-content checks; unknown counter semantics and slow persistence remain downstream findings, not normalized away. |
+
+Independent review identified a request-to-navigation handoff gap in the first
+uncommitted candidate. The corrected design overlaps the incoming retained request
+with the navigation observer and initial source capture, checks both, and releases
+the request only immediately before the explicitly unobserved physical swipe.
+Keyboard header/body/answer operations retain the same request instead of dropping
+it; only the exact owned keyboard sysfs identity is excluded, using the existing
+NativeHistory mechanism. Pre/post checks still reject external input and changed
+page/visit/session. No owner baseline is refreshed after a failed check.
+Navigation success also transfers its existing observer and exact verified
+successor owner back into the retained request before returning. The next capture
+must check that transferred pin instead of opening a fresh baseline. Handoff loss
+or deadline failure latches the device. Simulator capture pins before work (also
+for stale/corrupt image outcomes), checks afterward, preserves pins across owned
+keyboard operations, and models explicit owner-change/external-input boundary
+faults separately from wrong-image faults.
+
+## Historical design retained for provenance
+
 ## Context and chronology
 The original REM9 inventory suggested shortening 800/500/200ms waits and at least1s improvement. The September22 user clarification supersedes one-second-only acceptance: profile the whole interaction, reduce dominant status acquisition/restoration and other avoidable stalls, preserve UI-authoritative settings and safety, measure ordinary and primary/secondary Highlighter, errors and history. Full current description and all available comments were read. Comment b620fbfb (September22 16:55:56 UTC) adds repeated REM34 guarded availability failures; later planning comment9de722df records plan-only status. The REM9 description update at17:27:10.751UTC explicitly makes event/completion-driven sequencing the preferred architecture, superseding delay-reduction-first approaches. REM35 update at17:27:12.183UTC requires later Reader/Writer features to preserve it. Both updated descriptions and all available comments were reread (REM9 two comments; REM35 none). REM19 remains manual-dispatch-only and is excluded.
 

@@ -14,14 +14,15 @@ Screenshot normalization SHALL preserve exact decoded pixels, dimensions, orient
 Automatic drawing SHALL preserve the user's selected pen, slot, color and width.
 It SHALL NOT simulate menu presses to select or inspect drawing tools. A future
 selection mechanism requires evidence of a robust supported direct interface.
-Optional status and failure marks SHALL be suppressed before input when fresh
+Normal status and failure ink SHALL be retired entirely. Legacy diagnostic-only
+marks SHALL be suppressed before input when fresh
 non-mutating observations cannot establish a visible, bounded, safely erasable
 current tool. Saved preferences alone SHALL NOT establish actual tool state.
 Normal Q&A SHALL remain available when optional feedback is suppressed.
 
 #### Scenario: Supported current pen
 - **WHEN** the current pen is positively recognized and its full supported width range fits the verified blank footprint and cleanup envelope
-- **THEN** marks use that pen and slot with zero tool-selection presses; ownership, journal, neighbor-ink and cleanup checks remain enforced.
+- **THEN** normal Reader emits no feedback ink; explicitly invoked historical diagnostic marks, if retained, use that pen and slot with zero tool-selection presses and all ownership/journal/neighbor-ink checks enforced.
 
 #### Scenario: Unknown or unsuitable current tool
 - **WHEN** the toolbar is unknown, the tool is destructive, or visibility/maximum footprint/cleanup coverage is unproven
@@ -50,3 +51,20 @@ Normal Q&A SHALL remain available when optional feedback is suppressed.
 #### Scenario: Discovery candidate vanishes during trigger observation
 - **WHEN** a trigger observation fails with the typed verified-unmapped discovery-header EIO
 - **THEN** at most one complete fresh read-only retry is allowed within500ms and the overall5s dismissal deadline, with the same retained input observer and unchanged pinned owner/session/native bytes; all other errors or guard changes refuse, and no tap is repeated.
+
+## MODIFIED Requirements
+
+### Requirement: Corner hold trigger
+The shared history-capable input path SHALL recognize one stationary contact in the configured 68-pixel corner region of the virtual 768 by 1024 screen after a continuous two-second hold and full release. The legacy fallback SHALL retain its slot-zero two-second trigger. Both paths SHALL evaluate complete input frames and support stationary holds without new position events. Reader admission SHALL use guarded conditional overlay dismissal instead of an unconditional tap. Source: src/device/interaction.rs; src/device/native_history.rs; src/device/touch.rs; src/device/trigger_dismiss.rs.
+
+#### Scenario: Stationary hold
+- **WHEN** a valid single contact stays in the selected corner for two seconds and releases
+- **THEN** the shared path recognizes Reader once without requiring movement; a positively absent overlay receives no tap, a qualified known panel receives one guarded outside-panel tap, and unknown or failed dismissal stops admission.
+
+#### Scenario: Contact ends or exits
+- **WHEN** contact ends before two seconds or its complete frame leaves the trigger region
+- **THEN** the hold is canceled and a later valid hold starts fresh.
+
+#### Scenario: Legacy fallback
+- **WHEN** the shared native history observer is unavailable
+- **THEN** the existing slot-zero polling trigger remains available at its two-second threshold, without native history ownership; this does not bypass conditional dismissal checks.
