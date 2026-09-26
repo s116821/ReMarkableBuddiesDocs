@@ -19,6 +19,14 @@ Drive sync SHALL be off by default and optional for all local operations. Subjec
 - **WHEN** the previously excluded namespace is subsequently enabled
 - **THEN** its eligible revisions synchronize with unchanged logical IDs through a separate projection, without duplicates or a retrospective claim of all-domain atomic restoration
 
+#### Scenario: Receiver disables a published domain or media
+- **WHEN** a remote manifest contains a namespace or media outside this device's selected policy
+- **THEN** the receiver defers those objects without fetching their payloads, validates fetched envelopes against declared namespace metadata, imports only its selected projection, and durably replays deferred observations after enablement without erasing existing local copies on disable
+
+#### Scenario: Mislabeled namespace metadata
+- **WHEN** a fetched envelope belongs to a different namespace than its manifest reference declares
+- **THEN** import fails integrity validation without publishing the mislabeled record or recursively fetching associations
+
 ### Requirement: Immutable causal synchronization
 The Drive adapter SHALL publish immutable logical objects and transaction manifests with stable collection/domain/record/revision identity, content digests and explicit parents. It SHALL confirm all required objects before publishing a complete manifest, retain concurrent revisions, and SHALL NOT depend on an unverified conditional media-update/CAS guarantee or mutable common-head file. Source: REM-36 concurrency/partial upload; design sections 6 and 7.
 
@@ -89,6 +97,10 @@ A new/unbound/empty local device SHALL discover complete remote collections befo
 #### Scenario: Out-of-order or unsupported content
 - **WHEN** a manifest arrives before parents/objects, or a remote schema/lineage is unsupported or invalid
 - **THEN** it remains pending/quarantined without false complete status, without overwriting local heads and without republishing unknown content
+
+#### Scenario: Deferred work exceeds a batch
+- **WHEN** more unresolved child manifests than the batch limit precede their available parents
+- **THEN** durable fair scheduling eventually processes those parents and permits the children to converge across restarts
 
 ### Requirement: Durable pagination and transport-removal safety
 Sync SHALL process complete Drive pages and persist cursors only after validated local observations/commits are durable. Replays SHALL be idempotent. Drive removed entries, 404s or lost access SHALL NOT create domain tombstones; only validated explicit logical tombstone revisions may delete a domain value. Source: official changes-list/manage-changes references; design section 7.
