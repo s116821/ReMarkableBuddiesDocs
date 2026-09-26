@@ -14,3 +14,7 @@ Source inspection only: no REM-25 candidate has been executed on hardware. No im
 | [Qt QMetaObject](https://doc.qt.io/qt-6/qmetaobject.html) | Runtime method/property inspection and queued calls; same-thread blocking queued calls can deadlock. | Use bounded asynchronous owner-thread dispatch. Match actual tablet Qt ABI; current docs do not prove on-device overload availability. |
 
 Retain required notices/source when reusing code. Inspect per-module, submodule and Qt linkage licensing before distribution; listed root licenses are not a completed distribution audit. No cloud tokens, pairing, API/model or hardware calls occurred.
+
+## Subsequent coordinator inventory and private host inspection
+
+See [host-inspection.md](host-inspection.md) for the fingerprinted static method signatures and remaining runtime questions. The coordinator completed passive inventory/export; this worker performed local inspection only. No native creation candidate has been executed or qualified.

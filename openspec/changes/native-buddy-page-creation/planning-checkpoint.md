@@ -22,3 +22,7 @@ npx --yes @fission-ai/openspec@1.2.0 validate --all --strict --no-interactive
 ```
 
 Only the last command requires Node/npm; file-based proposal/design/tasks/deltas are the supported manual equivalent when the optional CLI is unavailable. Public contributors can inspect source and run offline tests; required native evidence must still be supplied by an authorized maintainer before acceptance.
+
+## Subsequent host-inspection checkpoint
+
+Both coordinator and independent reviewer accepted the REM-9 reconciliation at f4358c53afc31ba073f8a74edfb490782ebf81af. Coordinator-owned passive inventory and executable export have since occurred; the earlier unexecuted-discovery statement is historical. Host-inspection.md records worker-local static evidence only. Native operation qualification and final REM-36/REM-37 contracts remain open.
