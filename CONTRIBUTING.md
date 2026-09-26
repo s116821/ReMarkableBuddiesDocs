@@ -55,4 +55,6 @@ Read full task/comment chronology, then [propose in Docs](openspec/README.md) be
 
 Linked Docs and code PRs form one reviewed delivery, not a separately completed planning prerequisite. Verify implementation, sync canonical contracts, then archive only completed changes. Rebase dependent work and repeat affected integration checks. Migration order: additive Docs first, Rust removal second, Manager pointers after central paths exist. REM-35 alone authorizes the integrated 1.0 gate.
 
+The initial Docs migration PR must use a merge commit to retain its exact imported history; see [provenance merge requirement](docs/migration/README.md). Do not squash/rebase that import PR. This does not change component semantic squash policies or repository settings.
+
 Documentation changes need working examples/checks, not paid model or native runs. Use the shared [simulator checklist](.agents/skills/reader-simulator-testing/SKILL.md) and, only for authorized idle hardware, [tablet checklist](.agents/skills/reader-buddy-testing/SKILL.md) for relevant implementation changes. Label offline, live-model and native evidence separately; unavailable native checks remain maintainer gates. Preserve source documents and secrets. See [licensing](docs/licensing.md).

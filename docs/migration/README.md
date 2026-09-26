@@ -7,4 +7,6 @@ Import commit `dd9d5e189dc0b901e54396e1cd8bc7ea9393ceac` preserves 126 exact Git
 
 Source history/branches were not rewritten. Clone full Rust history and run `git log SOURCE_SHA -- SOURCE_PATH` or `git show SOURCE_SHA:SOURCE_PATH` for prior authorship and revisions. Docs `git show dd9d5e189dc0b901e54396e1cd8bc7ea9393ceac:DESTINATION` retrieves original bytes. `python scripts/check_docs.py` validates source blob identity against that import commit, not perpetually frozen working files. CI needs full history (`fetch-depth: 0`).
 
+**Initial migration merge requirement:** Docs PR #1 must use a history-preserving merge commit (`gh pr merge 1 --merge` after authorized review/CI), not squash or rebase, so the import commit remains reachable from main and fresh clones. This one-time provenance requirement is explicitly coordinated; repository merge settings are unchanged. Rust and later component PRs retain their normal semantic squash/release behavior. A later change to import-history retention must update and test the verifier first.
+
 Historical archive wording is evidence, not current workflow authority. Follow [central workflow](../../openspec/README.md) and [roadmap](../roadmap.md). This migration syncs/archives only its completed central workflow scope; other active changes retain their owners and acceptance gates.
