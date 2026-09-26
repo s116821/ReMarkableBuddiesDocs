@@ -93,6 +93,27 @@ Final linked Docs/Rust PR set includes required CI/bug-bot review and evidence c
 Merge the as-built Docs sync in the coordinated implementation delivery, never archive
 unfinished migration or claim REM35/1.0 completion.
 
+### Current implementation wait audit and handoff
+
+| Remaining timing | Classification and current disposition |
+| --- | --- |
+| Navigation caller 800ms forward/return plus 500ms classification | Removed after Settled/NoMovement results; retained only for explicitly Legacy navigation. Fresh page comparisons remain mandatory. Simulator compares identical outputs with 1300ms forward and 2100ms forward/return differences; this is modeled time, not native latency proof. |
+| Header capture 500ms | Retained bounded legacy rendering fallback before header-template observation. It is not a native save/completion signal; REM38/35 must replace or revalidate it with the unified renderer. |
+| Trigger contact 100ms | Physical single-tap qualification, not completion. Release and positive owned-touch observation remain mandatory. |
+| Trigger retry observation 500ms and outer dismissal 5s | Monotonic rejection deadlines; never permission to repeat input. One typed fresh capture recovery only, with initial owner/native pin and same input observer. |
+| Navigation fresh-state polling 50ms / 5s deadline | Paced composite identity/pixel/chrome readiness, not a native render acknowledgement; unsupported layouts remain explicitly unverified. |
+| Provider callback polling | Read-only retained request ownership checks; no cadence drawing or status wait. |
+| Native Q&A persistence polling/deadline | Retained exact text/owner/opaque-content checks; unknown counter semantics and slow persistence remain downstream findings, not normalized away. |
+
+Independent review identified a request-to-navigation handoff gap in the first
+uncommitted candidate. The corrected design overlaps the incoming retained request
+with the navigation observer and initial source capture, checks both, and releases
+the request only immediately before the explicitly unobserved physical swipe.
+Keyboard header/body/answer operations retain the same request instead of dropping
+it; only the exact owned keyboard sysfs identity is excluded, using the existing
+NativeHistory mechanism. Pre/post checks still reject external input and changed
+page/visit/session. No owner baseline is refreshed after a failed check.
+
 ## Historical design retained for provenance
 
 ## Context and chronology
