@@ -1,6 +1,6 @@
 ## 0. Planning and dependency gates
 - [x] 0.1 Read full REM-36 and timestamped comments, revised roadmap, central guidance and source baseline; record public source research and scoped ownership.
-- [ ] 0.2 Obtain independent review of full proposal/design/tasks/deltas; resolve storage, migration, transport and failure-boundary findings before code.
+- [x] 0.2 Obtain independent review of full proposal/design/tasks/deltas; resolve storage, migration, transport and failure-boundary findings before code. Independent review accepted revision `889355c2a0eeb96aac9f1e7cc78f14329e45e4b2`; implementation remains gated by 0.3.
 - [ ] 0.3 Coordinator confirms REM-21 Manager acceptance; rebase isolated Docs/Rust lanes to accepted public mains and reconcile REM-9 integration points.
 
 ## 1. Local store and owned layout
@@ -31,7 +31,7 @@
 - [ ] 4.6 Verify transport removals/lost access never synthesize tombstones; explicit deletion/reconciliation retains concurrent local edits; appData removal/revocation preserves local data and requires deliberate rebinding.
 - [ ] 4.7 Wire the enabled production worker with startup discovery, durable-outbox/local-commit wake, periodic remote polling, short store-lock sections and bounded cancellation/shutdown; test remote-only arrivals, lost wakes, slow requests with foreground writes, restart replay and disabled/simulator zero-network behavior.
 - [ ] 4.8 Implement policy-neutral media descriptors, exhaustive manifest coverage and supplemental availability commits; test history-only restore, size deferral, later arrival, policy toggles, unchanged revision/head identity, missing required objects and honest export completeness.
-- [ ] 4.9 Implement distinct selected-record transport projections for mixed-namespace local commits; verify disabled objects/identifiers never appear on the wire, parent closure stays within selected records, later enablement is idempotent and recovery never claims original cross-domain transaction completeness.
+- [ ] 4.9 Implement distinct selected-record transport projections for mixed-namespace local commits; verify excluded records and their identifiers are absent from projection metadata, selected opaque payload associations are neither scrubbed nor recursively synchronized, parent closure stays within selected records, later enablement is idempotent and recovery never claims original cross-domain transaction completeness.
 
 ## 5. Acceptance and linked delivery
 - [ ] 5.1 Run hermetic two-device matrix: local-only, offline edits in both orders, conflicts/resolution, delete/edit, new/empty restore, retries/409, partial uploads, cursor replay and interrupted migrations; keep fixtures public and synthetic.

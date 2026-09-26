@@ -13,7 +13,7 @@ Drive sync SHALL be off by default and optional for all local operations. Subjec
 
 #### Scenario: Mixed-namespace local atomic transaction
 - **WHEN** one atomic local transaction includes enabled memory and disabled handwriting records
-- **THEN** a distinct selected-records transport projection contains only enabled records, their permitted media and same-record ancestors, exposes no disabled identifiers or objects, and claims atomic recovery only for its listed selected set rather than the entire original transaction
+- **THEN** a distinct selected-records transport projection contains only enabled records, their permitted media and same-record ancestors, excludes disabled records and their identifiers from projection metadata without semantically scrubbing selected opaque payload associations or recursively syncing their targets, and claims atomic recovery only for its listed selected set rather than the entire original transaction
 
 #### Scenario: Later namespace enablement
 - **WHEN** the previously excluded namespace is subsequently enabled
