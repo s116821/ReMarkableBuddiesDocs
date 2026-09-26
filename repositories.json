@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "repositories": {
+    "docs": {
+      "directory": "RemarkableBuddiesDocs",
+      "url": "https://github.com/s116821/RemarkableBuddiesDocs.git",
+      "role": "Public ecosystem hub and sole OpenSpec/workflow authority",
+      "issues": "https://github.com/s116821/RemarkableBuddiesDocs/issues",
+      "pullRequests": "https://github.com/s116821/RemarkableBuddiesDocs/pulls",
+      "releases": null,
+      "setup": "Python 3.11+ and Git; no packages required",
+      "checks": ["python -m unittest discover -s tests -v", "python scripts/check_docs.py"]
+    },
+    "rust": {
+      "directory": "ReMarkableBuddies",
+      "url": "https://github.com/s116821/ReMarkableBuddies.git",
+      "role": "One tablet application with Reader and Writer modules",
+      "issues": "https://github.com/s116821/ReMarkableBuddies/issues",
+      "pullRequests": "https://github.com/s116821/ReMarkableBuddies/pulls",
+      "releases": "https://github.com/s116821/ReMarkableBuddies/releases",
+      "setup": "Read component AGENTS.md and docs/local-development.md; install Rust stable",
+      "checks": ["cargo fmt --all -- --check", "cargo test --locked --all-features", "cargo clippy --locked --all-targets --all-features -- -D warnings"]
+    },
+    "manager": {
+      "directory": "RemarkableBuddiesManager",
+      "url": "https://github.com/s116821/RemarkableBuddiesManager.git",
+      "role": "Shared Angular browser and Electron companion; host transport outside Buddy",
+      "issues": "https://github.com/s116821/RemarkableBuddiesManager/issues",
+      "pullRequests": "https://github.com/s116821/RemarkableBuddiesManager/pulls",
+      "releases": "https://github.com/s116821/RemarkableBuddiesManager/releases",
+      "setup": "Read component AGENTS.md and README.md; Node 24.21.x, npm ci, npx playwright install --with-deps chromium; Linux desktop checks require xvfb-run",
+      "checks": ["npm run check", "npm run package", "npm run test:package"]
+    }
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 2,
+  "sourceRepository": "https://github.com/s116821/ReMarkableBuddies",
+  "files": [
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".agents/skills/reader-buddy-testing/SKILL.md",
+      "blob": "ae9caef5f44d98e8bd11acf25d45afa09a459c91",
+      "destination": ".agents/skills/reader-buddy-testing/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".agents/skills/reader-simulator-testing/SKILL.md",
+      "blob": "753329bace3066d15b834018b1a0d8f085930f2b",
+      "destination": ".agents/skills/reader-simulator-testing/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-apply-change/SKILL.md",
+      "blob": "7c7e83ffac7929d27c98dddc19bdde4f60cd73cb",
+      "destination": ".codex/skills/openspec-apply-change/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-archive-change/SKILL.md",
+      "blob": "976f7f8c9268a4a30d4ad07cb0c58866e08dd7ea",
+      "destination": ".codex/skills/openspec-archive-change/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-explore/SKILL.md",
+      "blob": "094abfa9b5891f71f3cf79123050d8d557765df5",
+      "destination": ".codex/skills/openspec-explore/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-propose/SKILL.md",
+      "blob": "25fdc0baeb0a319ac751e22798742f86cab595e9",
+      "destination": ".codex/skills/openspec-propose/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-sync-specs/SKILL.md",
+      "blob": "7fcdf2c37dd00eaf08dffbfa941bbdc2ff7c6afa",
+      "destination": ".codex/skills/openspec-sync-specs/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": ".codex/skills/openspec-verify-change/SKILL.md",
+      "blob": "ecb7717163eb2bc18d8d8b9a9fc7348fb274cf81",
+      "destination": ".codex/skills/openspec-verify-change/SKILL.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/README.md",
+      "blob": "c734826866254c0b14c4c914fe18a377cc3de529",
+      "destination": "openspec/README.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/design.md",
+      "blob": "d164a53ccae892e6db66835c466b95fc4b2765ee",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/proposal.md",
+      "blob": "88d853aadcbcead384f45907136290f27a36e77f",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/platform-runtime/spec.md",
+      "blob": "c965b5f188a06a72159a02eade7f5f320f1cb340",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/reader-analysis/spec.md",
+      "blob": "d5bc2244f68b1ee3b3d1b2f5921e00e1c042c93f",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/reader-answer-pages/spec.md",
+      "blob": "02faa72839da2f7c0bf62a770ddb6ea80092833e",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/tablet-io/spec.md",
+      "blob": "29c4253f1e34057846c46a5121154e6ed391419e",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/tasks.md",
+      "blob": "3a1ad77e7a641d3fde24e7fe369006b0b3ce2d53",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/verification.md",
+      "blob": "923960f81dec7f5bb0d88a07f3e01a2d9368dd1f",
+      "destination": "openspec/changes/archive/2026-09-16-baseline-current-reader-buddy/verification.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/design.md",
+      "blob": "4e4ef96bbc6e64cb54897849b985a67b7f205312",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/proposal.md",
+      "blob": "cde270dea582b036f5203bd8d7d723cef7c06959",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/platform-runtime/spec.md",
+      "blob": "cac0944b29f39ed6ed3df53c85792907bfb2549f",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/reader-analysis/spec.md",
+      "blob": "bf18eada4b1b28f54102264af6132b00231f55a8",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/reader-answer-pages/spec.md",
+      "blob": "f96d495631dde0a9d279579bd4b37ef79851109b",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/tablet-io/spec.md",
+      "blob": "66e7641ccfcddb7d3f7d7cce3da1cc7eec4b7a45",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/tasks.md",
+      "blob": "0a6ebb98210ac2b951395b7e3bb2f7a2fc89d436",
+      "destination": "openspec/changes/archive/2026-09-16-consolidate-reader-foundation/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/design.md",
+      "blob": "0da4d8670a9a9ef31153206876ad316deaaa6c4f",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/proposal.md",
+      "blob": "b20ebd7ce5f757e31a370e2377ae2e6d2163673f",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/specs/reader-analysis/spec.md",
+      "blob": "787e28050ea2d93bca6c0591b1aa2adde1989921",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/specs/tablet-io/spec.md",
+      "blob": "349fe5cfd367ae5104e02200e944e786dabada53",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-highlighted-reader-content/tasks.md",
+      "blob": "6608e0b06c5bfecbac8e200e48268a0297a32e23",
+      "destination": "openspec/changes/archive/2026-09-16-highlighted-reader-content/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/design.md",
+      "blob": "1f5cd7cc6202947a2f4ae7bd66188d9c51029f49",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/proposal.md",
+      "blob": "abb02c31db020901694da487b0abb4275f8d35ae",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/specs/local-model-configuration/spec.md",
+      "blob": "496e3bbf788d27ed18800ec7347bbd6c80bf8d6f",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/specs/local-model-configuration/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/specs/local-simulator/spec.md",
+      "blob": "0f2036161ed179de896107a4bba88b10e54ac2dd",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/specs/platform-runtime/spec.md",
+      "blob": "c419b5ecd7f82ec7707f455ff6534889cbe7c9c6",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-live-model/tasks.md",
+      "blob": "ff3b610ffcf646a9e0837dd7d686761e9fa55a3c",
+      "destination": "openspec/changes/archive/2026-09-16-local-live-model/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/design.md",
+      "blob": "b5c8aae70d7141b86cf0ce35a09c5e85594d6125",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/proposal.md",
+      "blob": "2d624183304cfaa03f3edb9d9bc0387080040790",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/local-simulator/spec.md",
+      "blob": "7e95e8e36c1607b486760e7795a629df3e803f78",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/platform-runtime/spec.md",
+      "blob": "09316bc20965f91f148c7ef5d4054f97b1735eb1",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/tablet-io/spec.md",
+      "blob": "9631e6c0281a633752a43a44a6376be2e7d42963",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-local-simulator-harness/tasks.md",
+      "blob": "03fa9a50d9e18eed5577495b26c54940b20aa3f3",
+      "destination": "openspec/changes/archive/2026-09-16-local-simulator-harness/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/design.md",
+      "blob": "90c15edc7116b06497ff270c158bfe8d3253aee7",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/proposal.md",
+      "blob": "0a7eafe9c6cb1989ecd5cb90660b5755363acb95",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/local-simulator/spec.md",
+      "blob": "c35558573d6937247066f1c3c31b7bed5c9d57a3",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-analysis/spec.md",
+      "blob": "9a643fb5f8c94aec594ef064f769e865d1379034",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-answer-pages/spec.md",
+      "blob": "99577a9c1eb7ecbd009b97d9237d5e1ab441fd10",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-progress/spec.md",
+      "blob": "cf02699070d31ad22212a18f897d3d7d84788eff",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/specs/reader-progress/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-progress-indicator/tasks.md",
+      "blob": "31b41e701cb3a420a1bce1c170a4404bf60e35a4",
+      "destination": "openspec/changes/archive/2026-09-16-reader-progress-indicator/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/design.md",
+      "blob": "a4ee9dbed3454098cfa6e3a7e77b848bf30f0cf4",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/proposal.md",
+      "blob": "582cc62ee006308ad71dc01a6a7dac136ef5da81",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/local-simulator/spec.md",
+      "blob": "e299da48f04e4510c0754ecb240817bb3e774a8b",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/reader-answer-pages/spec.md",
+      "blob": "c14a997d3f10c587f067dae544eba22525afbfd3",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/reader-qa-history/spec.md",
+      "blob": "9cbe25646da7e2bb8425273848e6c708458c4d01",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/reader-qa-history/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/tablet-io/spec.md",
+      "blob": "41372c8ff1125ba9f77164266465f53ef3eba6b5",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/tasks.md",
+      "blob": "ad83d89bf16afd68985ffc969269b2d6f60fb2da",
+      "destination": "openspec/changes/archive/2026-09-16-reader-qa-undo-redo/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/.openspec.yaml",
+      "blob": "f08077847720b008bf6223ca03c1e5b2d458b474",
+      "destination": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/design.md",
+      "blob": "d898d1db029379d0e10df6bfa14bca98a44b01a7",
+      "destination": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/proposal.md",
+      "blob": "3391f90fe977ab24ffdd8b6b42a83a3aae08f364",
+      "destination": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/specs/reader-answer-pages/spec.md",
+      "blob": "0d3527b21aa0db72f8ee9efaa26000cc9b8e4f95",
+      "destination": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/tasks.md",
+      "blob": "beab649f3ff5e8328b8c0de66d3fffed9219221a",
+      "destination": "openspec/changes/archive/2026-09-16-stop-repeat-return-swipes/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-lean-cli-logging/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-lean-cli-logging/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-lean-cli-logging/design.md",
+      "blob": "3604418e116c183fbf9b296139ec8213e848a8c3",
+      "destination": "openspec/changes/archive/2026-09-22-lean-cli-logging/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-lean-cli-logging/proposal.md",
+      "blob": "c17027ec1ca40c18e55ee2fdaa491d276e605c83",
+      "destination": "openspec/changes/archive/2026-09-22-lean-cli-logging/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-lean-cli-logging/specs/platform-runtime/spec.md",
+      "blob": "fcf35d6aacd7ff68f8977bca59acae9535921194",
+      "destination": "openspec/changes/archive/2026-09-22-lean-cli-logging/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-lean-cli-logging/tasks.md",
+      "blob": "5a825a9a164b4d5b253dae123a906504a8b26a6e",
+      "destination": "openspec/changes/archive/2026-09-22-lean-cli-logging/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/design.md",
+      "blob": "a40f2524ec95a35c71e2ee749a65e82bf74c0425",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/proposal.md",
+      "blob": "d32ead5323058e552e73a09ee4becbf692e9fce1",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/specs/development-testing/spec.md",
+      "blob": "4835a1ab96e2b4713873d2c64637eff72a325a73",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/specs/development-testing/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/specs/local-simulator/spec.md",
+      "blob": "c6664a960a408a7dce3d2c55d392523b516e03a3",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-local-testing-workflow/tasks.md",
+      "blob": "c2f41f696f2c5ebf4d1061ee331dcbc09d40f721",
+      "destination": "openspec/changes/archive/2026-09-22-local-testing-workflow/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/design.md",
+      "blob": "3da0fbe52e971b72e488f8bf0826507e97c267ac",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/proposal.md",
+      "blob": "3ced77015ac8751681059177ed8219dc712d5876",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/specs/reader-answer-pages/spec.md",
+      "blob": "84c2ea22fc88791c48dc84e1bc12b5b271a26b9a",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/specs/reader-qa-history/spec.md",
+      "blob": "d7de3ac8b13e3cb3c351889c0250f99f338fd373",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/specs/reader-qa-history/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-qa-block-delimiters/tasks.md",
+      "blob": "97da4153aefb8252a3a6f6b37e72e89c2f975e4a",
+      "destination": "openspec/changes/archive/2026-09-22-qa-block-delimiters/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/design.md",
+      "blob": "e8f19ed8e750d95576d4ac504497fe1b4313d9fd",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/proposal.md",
+      "blob": "2d43f1d983f77bf50b50f86346c4442cf0319012",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/local-simulator/spec.md",
+      "blob": "69c6474dc76a8a181746839f18b90ad07bbdad98",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/reader-analysis/spec.md",
+      "blob": "b73c5faaffa5887c51f5bf229b752b5f39c26ad0",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/reader-answer-pages/spec.md",
+      "blob": "e56efe6f088a47b99a199416002b38a0f99abdc3",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/tasks.md",
+      "blob": "5e7cc6b88d168c2226a8a873a3a367b2c9530c2c",
+      "destination": "openspec/changes/archive/2026-09-22-reader-coordinate-tags/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/design.md",
+      "blob": "803c3e0c4a2a51e081c5e166895343f1ebb93df5",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/proposal.md",
+      "blob": "e1c183f90250426408362261c129d4757ebf42af",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/local-simulator/spec.md",
+      "blob": "4dc645cbc75b1fb7458252cd5b116bd15f5efaeb",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-analysis/spec.md",
+      "blob": "31f0d4a009679fb257eff3c702d625e516e6773a",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-answer-pages/spec.md",
+      "blob": "815893c97a3437f777ce5c17a5f9cbefd13bcae5",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-progress/spec.md",
+      "blob": "4332c3fce42e3adbd997453318afe37c41ea7d29",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/specs/reader-progress/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-staged-status-indicators/tasks.md",
+      "blob": "f49c385039db5bfbe0c2f8d5a5f1905e7152eabe",
+      "destination": "openspec/changes/archive/2026-09-22-staged-status-indicators/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/design.md",
+      "blob": "6fa90ce17fad81a6dd02b6459197760fd703c7b3",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/design.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/proposal.md",
+      "blob": "88e980d79b790eb4f4d0e65810720c1f728b2aba",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/proposal.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/specs/platform-runtime/spec.md",
+      "blob": "18f52b8ae88758e49f47802c581d035f2842f54c",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/specs/release-versioning/spec.md",
+      "blob": "6fea9fb961abb7d4acf90aab1a43f6dd6e47e2b2",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/specs/release-versioning/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/changes/archive/2026-09-22-tag-derived-releases/tasks.md",
+      "blob": "6fb6393f63f61ac64cd32a4029d465856b8dcb55",
+      "destination": "openspec/changes/archive/2026-09-22-tag-derived-releases/tasks.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/config.yaml",
+      "blob": "dcc2a87f1875f4643971866aa534929bc7411081",
+      "destination": "openspec/config.yaml"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/development-testing/spec.md",
+      "blob": "4e18386b2bc880732e02a6c5ed57de475df50786",
+      "destination": "openspec/specs/development-testing/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/local-model-configuration/spec.md",
+      "blob": "6c8aeeabef76af3d55f746588db93acd65b495c7",
+      "destination": "openspec/specs/local-model-configuration/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/local-simulator/spec.md",
+      "blob": "b48a6e2dea7e00dd02064b0d263417b2f84ec819",
+      "destination": "openspec/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/platform-runtime/spec.md",
+      "blob": "8688492eac18c299874f4df267e13b0f32d8d287",
+      "destination": "openspec/specs/platform-runtime/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/reader-analysis/spec.md",
+      "blob": "542a67d5dc15e693e289caaaefbe9ad4ca69c399",
+      "destination": "openspec/specs/reader-analysis/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/reader-answer-pages/spec.md",
+      "blob": "9e0f049970472f73085fe61510f82e980029a24b",
+      "destination": "openspec/specs/reader-answer-pages/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/reader-progress/spec.md",
+      "blob": "3f80789af16f7c58dafa10bec9e99a5006dd60ec",
+      "destination": "openspec/specs/reader-progress/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/reader-qa-history/spec.md",
+      "blob": "8fd3ce1ad8dfccf9b5653348343ab3e3279abfc6",
+      "destination": "openspec/specs/reader-qa-history/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/release-versioning/spec.md",
+      "blob": "cdca0ba2abe7fc0b6a3ff3ad58b69e23298788d1",
+      "destination": "openspec/specs/release-versioning/spec.md"
+    },
+    {
+      "sourceCommit": "33db26add721cea6c0121ad769a54d06ae600b4e",
+      "sourcePath": "openspec/specs/tablet-io/spec.md",
+      "blob": "fba4fd29df9167fba57bca73538b539c48815f2d",
+      "destination": "openspec/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/.openspec.yaml",
+      "blob": "1b9acb7fd025f5d689048cc3e2970e078d25bed3",
+      "destination": "openspec/changes/responsive-reader/.openspec.yaml"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/baseline.md",
+      "blob": "6d9d084d0fefc26e893b6f9f387cd2de270abed2",
+      "destination": "openspec/changes/responsive-reader/baseline.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/design.md",
+      "blob": "1af4865a2af3a5bbfce07fc01e1d9f3b5a1f7e8f",
+      "destination": "openspec/changes/responsive-reader/design.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/proposal.md",
+      "blob": "cfefaad0680289c58f78c9df279bddb13c2b5710",
+      "destination": "openspec/changes/responsive-reader/proposal.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/specs/development-testing/spec.md",
+      "blob": "2e6c16a188ab6912b9e05fb0633e5c5ae0a3a224",
+      "destination": "openspec/changes/responsive-reader/specs/development-testing/spec.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/specs/local-simulator/spec.md",
+      "blob": "88542b1c798a6905f2bbb19c70a55d13dbc87d64",
+      "destination": "openspec/changes/responsive-reader/specs/local-simulator/spec.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/specs/reader-responsiveness/spec.md",
+      "blob": "8ef3e30847748f880883d5a60ece282baecd79e4",
+      "destination": "openspec/changes/responsive-reader/specs/reader-responsiveness/spec.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/specs/tablet-io/spec.md",
+      "blob": "6099704d246056e044e72b0c6d2e27c3d927dfcb",
+      "destination": "openspec/changes/responsive-reader/specs/tablet-io/spec.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/tasks.md",
+      "blob": "0579f46254bcf6d4df930dee39876dd918c29853",
+      "destination": "openspec/changes/responsive-reader/tasks.md"
+    },
+    {
+      "sourceCommit": "da8838db9863d504b12b5e8b44a3015af9ded0cd",
+      "sourcePath": "openspec/changes/responsive-reader/wait-inventory.md",
+      "blob": "545110c06306d30115b0405c65f1b28423dbbdf9",
+      "destination": "openspec/changes/responsive-reader/wait-inventory.md"
+    }
+  ],
+  "storage": {
+    "format": "zip-git-blob-v1",
+    "path": "docs/migration/imported-blobs.zip",
+    "sha256": "a4d2c653d520f8d3efb31c64d775cd63daa596c61a7e9ac5b9370c04853c6055"
+  }
+}
