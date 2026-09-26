@@ -113,6 +113,13 @@ Keyboard header/body/answer operations retain the same request instead of droppi
 it; only the exact owned keyboard sysfs identity is excluded, using the existing
 NativeHistory mechanism. Pre/post checks still reject external input and changed
 page/visit/session. No owner baseline is refreshed after a failed check.
+Navigation success also transfers its existing observer and exact verified
+successor owner back into the retained request before returning. The next capture
+must check that transferred pin instead of opening a fresh baseline. Handoff loss
+or deadline failure latches the device. Simulator capture pins before work (also
+for stale/corrupt image outcomes), checks afterward, preserves pins across owned
+keyboard operations, and models explicit owner-change/external-input boundary
+faults separately from wrong-image faults.
 
 ## Historical design retained for provenance
 
