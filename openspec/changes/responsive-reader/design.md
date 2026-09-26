@@ -47,6 +47,20 @@ neutral naming after removing indicator-specific failure state.
 
 ### Trigger capture gap
 
+Retirement must not remove the input/page protection incidentally supplied by the
+old pen lease during provider waits. Capture on verified RM2 SHALL establish a
+read-only request guard before pixels are acquired, bracket capture with fresh
+owner/session checks and retain its InputObserver. Provider callbacks check this
+same guard without pen actions. A later capture must verify the existing guard
+before replacing pixels. Before owned navigation/keyboard handoff, check the
+guard and explicitly transfer control to the existing operation/history guards;
+never clear a detected loss. Capture/input/owner failure latches further workflow
+input. Do not silently re-pin a changed source after inference. Unsupported layouts
+retain explicit unverified fallback limits; a failed supported observer is not
+optional feedback suppression. Test page/session change and completed external
+input during inference before any navigation/output. This is request safety, not
+a retained indicator dependency or new source feedback feature.
+
 Apply the reviewed f1255db plan only to NativeTriggerDismiss observation. Compose the
 real capture_recovery policy with the dismissal policy, retaining the same input
 observer, pinned initial identity and bounded Option<native bytes>. Every retry start

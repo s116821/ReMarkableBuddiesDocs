@@ -32,6 +32,10 @@ Existing recovery records SHALL be preserved and cause read-only startup refusal
 - **WHEN** historical diagnostic helpers remain in the source tree
 - **THEN** normal construction and service/simulator paths cannot enable them; their old tests and timings do not claim current product feedback.
 
+#### Scenario: Input or owner changes during inference
+- **WHEN** completed external input or a different page/session appears after source capture while a provider is pending
+- **THEN** the retained read-only request guard rejects the request before navigation/output and latches failure without drawing or acquiring a style lease; subsequent capture cannot silently establish a new source baseline for that request.
+
 ### Requirement: Deterministic completion sequencing
 Reader operations SHALL prefer supported completion events and verified postconditions over assuming success after a fixed delay. When usable events are unavailable, operations SHALL use paced fresh-state polling with monotonic deadlines and cancellation. Observations SHALL be correlated to the active operation, page and session; device mutations SHALL remain serialized with existing ownership, restoration and recovery guarantees. Fixed waits SHALL be documented protocol, measured physical or observability exceptions, with scope and validation. Legitimate gesture timing, cadence, polling intervals, backoff and timeouts SHALL remain distinct from completion assumptions. Source: REM9 architecture steering September22.
 
