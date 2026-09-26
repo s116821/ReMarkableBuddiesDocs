@@ -63,7 +63,7 @@ Export association SHALL use a stable correlation UUID in supported metadata or 
 - **THEN** one exact match can be associated, multiple matches produce conflict, and no match remains uncertain without blindly duplicating the note.
 
 ### Requirement: Inspectable deletion and legacy coexistence
-The domain SHALL support exact inspection/export and explicit full-head logical deletion. Media retained by live/conflicted records or retained revisions SHALL remain intact; current logical deletion SHALL disclose retained bytes rather than claim physical erasure. Legacy documents and external notes SHALL remain untouched. Source: REM-37 inspection/delete/legacy acceptance and REM-42 retention dependency.
+The domain SHALL support exact inspection/export and explicit full-head logical deletion by atomically tombstoning the root and current binding. Ordinary lookup/context/append SHALL enforce root liveness; retained descendants SHALL remain available only through explicit retained-history inspection and SHALL NOT revive a deleted conversation. Media retained by live/conflicted records or retained revisions SHALL remain intact; current logical deletion SHALL disclose retained bytes rather than claim physical erasure. Oversized/conflicting atomic operations SHALL fail without partial deletion. Legacy documents and external notes SHALL remain untouched. Source: REM-37 inspection/delete/legacy acceptance and REM-42 retention dependency.
 
 #### Scenario: Shared evidence and deletion
 - **WHEN** one conversation is deleted while another or a retained revision references its image
