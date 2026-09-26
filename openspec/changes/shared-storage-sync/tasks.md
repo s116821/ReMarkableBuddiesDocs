@@ -29,6 +29,9 @@
 - [ ] 4.4 Implement resumable-media session checkpoint/status/expiry handling, backoff/jitter/Retry-After/cancellation and batch bounds; test partial/resumed/expired uploads and quota/auth pauses.
 - [ ] 4.5 Implement full collection discovery, initial start-token race handling, pagination/checkpoints, staged imports and empty-device restore; test interrupted pages, duplicate replay, out-of-order dependencies and unknown/cyclic schemas.
 - [ ] 4.6 Verify transport removals/lost access never synthesize tombstones; explicit deletion/reconciliation retains concurrent local edits; appData removal/revocation preserves local data and requires deliberate rebinding.
+- [ ] 4.7 Wire the enabled production worker with startup discovery, durable-outbox/local-commit wake, periodic remote polling, short store-lock sections and bounded cancellation/shutdown; test remote-only arrivals, lost wakes, slow requests with foreground writes, restart replay and disabled/simulator zero-network behavior.
+- [ ] 4.8 Implement policy-neutral media descriptors, exhaustive manifest coverage and supplemental availability commits; test history-only restore, size deferral, later arrival, policy toggles, unchanged revision/head identity, missing required objects and honest export completeness.
+- [ ] 4.9 Implement distinct selected-record transport projections for mixed-namespace local commits; verify disabled objects/identifiers never appear on the wire, parent closure stays within selected records, later enablement is idempotent and recovery never claims original cross-domain transaction completeness.
 
 ## 5. Acceptance and linked delivery
 - [ ] 5.1 Run hermetic two-device matrix: local-only, offline edits in both orders, conflicts/resolution, delete/edit, new/empty restore, retries/409, partial uploads, cursor replay and interrupted migrations; keep fixtures public and synthetic.

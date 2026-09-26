@@ -31,7 +31,7 @@ The engine SHALL store versioned envelopes with namespace, domain schema version
 - **THEN** its bytes are retained for recovery and a bounded unsupported-schema result prevents interpretation, overwrite or sync publication
 
 ### Requirement: Atomic durable publication and recovery
-The engine SHALL stage and sync immutable record/media objects before atomically publishing a commit manifest. Only complete validated committed manifests SHALL make objects visible. It SHALL validate digests, sizes, bounds and reference availability, preserve the last committed state on failure, and rebuild derived indexes from committed content. Source: REM-36 atomic writes/interruption recovery; design section 2.
+The engine SHALL stage and sync required immutable record/media objects before atomically publishing a commit manifest. Only complete validated committed manifests SHALL make objects visible. It SHALL validate digests, sizes, bounds and required-object availability, preserve the last committed state on failure, and rebuild derived indexes from committed content. Policy-neutral media descriptors SHALL be distinct from required objects; metadata-only imported transactions SHALL preserve explicit omitted coverage and expose unavailable-media results without claiming full-media recovery. Newly captured local source transactions SHALL require their captured bytes. Source: REM-36 atomic writes/interruption recovery; design sections 2 and 6.
 
 #### Scenario: Interrupted transaction
 - **WHEN** a process fails before the commit manifest is durably published

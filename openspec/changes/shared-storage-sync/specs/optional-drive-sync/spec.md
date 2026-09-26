@@ -11,6 +11,14 @@ Drive sync SHALL be off by default and optional for all local operations. Subjec
 - **WHEN** conversation sync is enabled but source media is off or exceeds configured limits
 - **THEN** synchronized metadata identifies local-only/deferred references and recovery does not claim missing source images are restored
 
+#### Scenario: Mixed-namespace local atomic transaction
+- **WHEN** one atomic local transaction includes enabled memory and disabled handwriting records
+- **THEN** a distinct selected-records transport projection contains only enabled records, their permitted media and same-record ancestors, exposes no disabled identifiers or objects, and claims atomic recovery only for its listed selected set rather than the entire original transaction
+
+#### Scenario: Later namespace enablement
+- **WHEN** the previously excluded namespace is subsequently enabled
+- **THEN** its eligible revisions synchronize with unchanged logical IDs through a separate projection, without duplicates or a retrospective claim of all-domain atomic restoration
+
 ### Requirement: Immutable causal synchronization
 The Drive adapter SHALL publish immutable logical objects and transaction manifests with stable collection/domain/record/revision identity, content digests and explicit parents. It SHALL confirm all required objects before publishing a complete manifest, retain concurrent revisions, and SHALL NOT depend on an unverified conditional media-update/CAS guarantee or mutable common-head file. Source: REM-36 concurrency/partial upload; design sections 6 and 7.
 
@@ -21,6 +29,32 @@ The Drive adapter SHALL publish immutable logical objects and transaction manife
 #### Scenario: Partial object upload
 - **WHEN** one referenced media/record upload has not completed or fails integrity verification
 - **THEN** a complete remote transaction manifest is not published and neither device exposes a falsely complete transaction
+
+### Requirement: Production background sync lifecycle
+Enabled production startup SHALL own a background worker that discovers remote state before publication, wakes nonblockingly after durable local commits and periodically polls remote changes even without local edits. The worker SHALL use bounded batches, cancellation and durable replay state, SHALL NOT hold the store mutex across network waits, and SHALL NOT delay local startup/input on cloud work. Policy changes SHALL use the existing file-maintenance/restart contract without a new CLI or Buddy admin API. Source: design section 6.
+
+#### Scenario: Remote-only edit and lost local wake
+- **WHEN** another device publishes while this device has no local edits, or a local wake signal is lost after a durable commit
+- **THEN** a subsequent poll/startup discovers remote changes and pending local work from durable state without requiring a foreground trigger
+
+#### Scenario: Slow network and service shutdown
+- **WHEN** a request stalls while local input continues or shutdown starts
+- **THEN** local store operations remain available, cancellation has bounded shutdown grace, and a restart safely resumes persisted work
+
+### Requirement: Explicit media coverage without logical revision mutation
+Logical envelopes SHALL carry policy-neutral media descriptors distinct from manifest required objects. Every descriptor SHALL have explicit included or omitted coverage with a reason; required objects SHALL always be verified before transaction visibility. History-only recovery SHALL expose unavailable media explicitly and SHALL NOT claim full-media completeness. Later verified supplemental coverage SHALL add availability without changing record revisions or conflict heads. Policy disablement SHALL NOT delete previously synchronized or locally retained media. Source: design section 6.
+
+#### Scenario: History-only restore and later media arrival
+- **WHEN** a metadata transaction with policy-disabled media is restored and that media is later enabled and uploaded
+- **THEN** history is initially readable with unavailable-media results, then verified supplemental coverage makes media available without a new domain edit or changed revision identity
+
+#### Scenario: Size deferral and policy reversal
+- **WHEN** a media object exceeds its limit, later fits an increased limit, and media sync is subsequently disabled
+- **THEN** coverage first reports size-deferred, then verified availability after upload, and disabling does not retract or erase the existing bytes
+
+#### Scenario: Missing required content is not omission
+- **WHEN** a manifest declares included media whose bytes are missing or corrupt, or leaves a descriptor without coverage
+- **THEN** import remains pending or fails validation and cannot silently recategorize the object as policy-omitted
 
 ### Requirement: Idempotent bounded Drive uploads
 Before create/upload, the adapter SHALL durably bind a Drive-generated appData file ID to exact operation/content identity and reuse it across retries. Ambiguous completion or 409 SHALL be verified by reading existing metadata/content before success is recorded. Resumable media SHALL use server-confirmed offsets, restricted session state and bounded retries/cancellation. Source: official upload/generateIds references in research.md; design section 6.
