@@ -96,6 +96,16 @@ Filters in different upstream configuration syntaxes must agree. Hermetic tests
 exercise their actual distributions against the same path and history cases,
 including renamed/deleted executable fixtures and a change followed by its revert.
 API truncation or incomplete history must fail rather than silently classify docs.
+The pinned paths-filter paginates but does not detect GitHub's 3,000-file REST
+ceiling. A declarative job admission assertion therefore requires the merged PR's
+reported `changed_files` to be present, greater than zero and less than 3,000 before
+classification. Missing/zero/at-cap/over-cap counts fail visibly before tagging or
+compiling; split oversized PRs rather than treating incomplete observations as docs.
+Use this same conservative bound for required PR classification. Do not override
+the event context or pretend the Action enforces this check. Fixtures exercise the
+actual pinned Action's multipage/rename behavior and the workflow boundary at
+2,999/3,000/3,001/missing counts. This is a small input-completeness assertion, not
+a custom path classifier or API pagination implementation.
 
 ### 4. Recoverable publication without a coordinator
 
