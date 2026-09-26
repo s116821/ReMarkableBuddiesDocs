@@ -1,12 +1,15 @@
 schema: spec-driven
 
 context: |
-  ReMarkableBuddies is a Rust monorepo. The implemented product is Reader Buddy,
+  RemarkableBuddiesDocs is the sole OpenSpec authority for three repositories.
+  ReMarkableBuddies is the unified Rust tablet application; RemarkableBuddiesManager
+  is the Angular browser and Electron companion. The implemented product is Reader Buddy,
   a Linux tablet service using framebuffer capture, evdev/uinput and OpenAI.
   Preserve runtime behavior unless current available issue/task requirements schedule a change.
   Current implementation outranks historical plans and README approximations.
   Use full proposal, design, delta specs and tasks before implementation; verify,
-  sync canonical specs and archive in the same PR. Keep actual evidence in PR
+  sync canonical specs and archive completed work in linked central Docs and component PRs with exact
+  revisions, shared acceptance evidence and coordinated merge order. Keep actual evidence in PR
   comments, not the concise Summary-only PR body. Never commit credentials.
 
 rules:

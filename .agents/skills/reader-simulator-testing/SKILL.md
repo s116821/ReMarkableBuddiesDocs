@@ -3,9 +3,13 @@ name: reader-simulator-testing
 description: Develop or debug Reader Buddy locally using deterministic simulator fixtures and authorized live-model checks. Use for scenario selection, regression coverage and interpretation of local test evidence; native device operations use the separate unattended tablet skill.
 ---
 
+
+This shared workflow is maintained only in Docs. Run Cargo, scripts and device
+commands from the selected Rust checkout; resolve component paths there.
+
 # Reader simulator development testing
 
-Use this as an agent skill or manual checklist from the repository root. Offline
+Use this as an agent skill or manual checklist from the Rust component checkout root. Offline
 work requires Rust and repository files, not SSH, API keys, Codex or a private
 board. Follow the public task/PR discussion and canonical specs; maintainers also
 read complete timestamped private comments when already accessible and publish
@@ -33,7 +37,7 @@ paid model run or native mutation solely to restate existing evidence.
 
 ## Select and exercise fixtures
 
-Read the [scenario guide](../../../docs/simulator.md) for the schema and fidelity
+Read the [scenario guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/simulator.md) for the schema and fidelity
 limits, then choose maintained scenarios matching the changed behavior. For example:
 
 ```sh
@@ -62,7 +66,7 @@ Virtual milliseconds are requested/modelled time, not measured user latency.
 
 ## Live checks and findings
 
-Use [local live-model setup](../../../docs/local-development.md) for ignored `.env`
+Use [local live-model setup](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/local-development.md) for ignored `.env`
 or process environment configuration and explicit live scenarios. Never print keys
 or put them in commands, scenarios, screenshots or commits. Check ignore/access
 permissions and credential presence without reading values into evidence. Missing
@@ -71,7 +75,7 @@ retain independent offline results and identify the remaining maintainer gate.
 Do not silently substitute scripted replies for an unperformed live test.
 
 For model-facing changes, select representative actual inputs from the
-[fixture guide](../../../docs/validation/README.md): connected cursive/shorthand,
+[fixture guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md): connected cursive/shorthand,
 varying spacing/slant, and applicable absent/ambiguous questions. Inspect the
 annotated input, independent reading, selected region and resulting explanation.
 Check paper-specific values, units and operators; agreement alone is not proof of
@@ -89,4 +93,4 @@ faults, fixtures or assertions in the same implementation PR where feasible. Sta
 unmodeled UI/persistence/physical limits explicitly and retain required native gates.
 Record source revision, actual expected/observed result and evidence category in
 PR comments; distinguish current checks from older proof. Follow the
-[OpenSpec workflow](../../../openspec/README.md) to sync and archive in the same PR.
+[OpenSpec workflow](../../../openspec/README.md) to sync and archive completed work in a linked central Docs PR with exact code/spec revisions.

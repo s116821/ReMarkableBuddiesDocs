@@ -3,6 +3,10 @@ name: reader-buddy-testing
 description: Test Reader Buddy compatibility and end-to-end Q&A only with full unattended SSH to an authorized development tablet the user is not actively using. This unattended workflow does not apply to personal or actively used tablets, unavailable full SSH, or unrelated edits.
 ---
 
+
+This shared workflow is maintained only in Docs. Run Cargo, scripts and device
+commands from the selected Rust checkout; resolve component paths there.
+
 # Reader Buddy tablet testing
 
 This document is also a manual checklist for contributors using ordinary Git,
@@ -31,7 +35,7 @@ for each hardware test batch; distinguish earlier results from the current build
   Use the explicitly built `reader_once` example for an immediate bounded iteration
   (environment credentials, default model/LL, no dump), or bound the normal loop
   externally and verify startup before injecting the trigger. Production no-trigger/once
-  switches are removed; see [build/invocation steps](../../../README.md#testing).
+  switches are removed; see [build/invocation steps](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#testing).
   Finish or stop a test process before replacing its binary or manipulating its page.
 - Check storage before installation. Stage on a suitable writable partition, retain
   a verified rollback, set executable permissions, then replace atomically. Reload
@@ -89,8 +93,8 @@ repairs without relabeling old evidence as a pass on a newer build. Run code che
 appropriate to changed behavior, and verify the final installed build on hardware.
 Do not equate an architecture build with hardware validation on that device.
 
-Use [the hardware probe](../../../examples/hardware_probe.rs) for bounded offline
-input actions and [the fixture guide](../../../docs/validation/README.md)
+Use [the hardware probe](https://github.com/s116821/ReMarkableBuddies/blob/main/examples/hardware_probe.rs) for bounded offline
+input actions and [the fixture guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md)
 for reusable fixture setup and links to PR evidence. Adapt coordinates to observed UI
 state; do not fossilize another machine's paths, addresses or credentials.
 
@@ -103,7 +107,7 @@ remain outside a compatibility test unless separately authorized.
 ## Bounded service diagnostics
 
 For local simulation use the separate [simulator testing skill](../reader-simulator-testing/SKILL.md).
-For an already authorized native run, see [journal and RUST_LOG guidance](../../../README.md#viewing-logs-with-journalctl).
+For an already authorized native run, see [journal and RUST_LOG guidance](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#viewing-logs-with-journalctl).
 Prefer a bounded relevant capture such as:
 
 ```sh

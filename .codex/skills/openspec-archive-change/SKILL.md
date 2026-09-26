@@ -11,6 +11,12 @@ metadata:
 
 ## Repository portability
 
+Run OpenSpec commands from the Docs checkout, the sole specification authority.
+Implementation commands run from the selected component checkout. Link Docs and
+implementation PRs with exact revisions; sync/archive only completed changes in
+that coordinated delivery. These instructions supersede upstream same-repository
+assumptions. Never generate or copy OpenSpec trees into component repositories.
+
 This workflow also supports the [manual file/CLI equivalent](../../../openspec/README.md#manual-equivalent).
 Named agent tools are optional integration examples: use ordinary conversation for
 necessary questions, a checklist for tracking, and direct work for task delegation

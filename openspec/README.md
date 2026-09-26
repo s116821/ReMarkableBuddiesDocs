@@ -1,10 +1,17 @@
 # OpenSpec workflow
 
+Run all OpenSpec commands from RemarkableBuddiesDocs. No component may keep
+OpenSpec copies or workflow skills. Link implementation PRs and exact revisions,
+verify code and specs together, and record merge order. Never sync/archive an
+unfinished change. All paths below are central Docs paths. The September 26
+explicit centralization decision supersedes historical component-local wording.
+
+
 Canonical contracts live in `specs/`; completed changes live in `changes/archive/`.
 The REM-27 baseline describes v0.1.4 source behavior, including known defects.
 It is not a promise that every code path has been tested on every device.
 
-Use the optional Codex skills in `.codex/skills/` in this order, or perform the
+Use the optional Codex skills in `../.codex/skills/` in this order, or perform the
 equivalent file/CLI workflow below. Neither Codex nor private Linear access is
 required to contribute. Read the public issue/PR discussion and task requirements;
 maintainers copy relevant private decisions into public acceptance criteria.
@@ -19,13 +26,13 @@ maintainers copy relevant private decisions into public acceptance criteria.
    and tests. Resolve findings; report hardware/model limitations honestly.
 4. `openspec-sync-specs`: apply the named delta to `specs/`, preserving unrelated
    requirements. Verify canonical specs match the final implementation: replace modified blocks in place, preserve unaffected requirements, and check for unique requirement headings and no delta-only markers.
-5. `openspec-archive-change`: archive that completed, synced change in the same
-   implementation PR. The CLI equivalent after explicit sync is
+5. `openspec-archive-change`: archive that completed, synced change in the linked
+   Docs and implementation delivery. The CLI equivalent after explicit sync is
    `openspec archive <name> --skip-specs --yes`; never use this to skip required sync.
 
 Validate with `openspec validate --all --strict --no-interactive`. Archived
 artifacts remain part of the PR alongside canonical specs and implementation.
-Use one feature PR, not a planning-only prerequisite PR. REM-27 is intentionally
+Use linked Docs and component PRs as one delivery, not a planning-only prerequisite PR. REM-27 is intentionally
 documentation-only because establishing the baseline is its actual deliverable.
 Do a fresh final review and required CI/issue acceptance checks before merging.
 Follow AGENTS.md: concise Summary-only PR body; results/screenshots in comments.
@@ -40,7 +47,7 @@ and `tasks.md` (acceptance checklist) before implementation. Read all accessible
 issue comments chronologically and map each applicable request to acceptance.
 Implement, run public local tests and compare every requirement to evidence.
 Update canonical `specs/` with the final requirements, then move the completed
-change to `changes/archive/YYYY-MM-DD-<name>/` in the same PR. The optional
+change to `changes/archive/YYYY-MM-DD-<name>/` in the coordinated Docs and implementation delivery. The optional
 OpenSpec CLI validates the artifacts; unavailable integrations are not a reason
 to block ordinary contributions. Clearly mark hardware or live-model cases that
 could not be run and have a maintainer complete required gates before merge.
