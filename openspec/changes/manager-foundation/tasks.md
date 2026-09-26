@@ -1,11 +1,11 @@
 # Tasks
 
 - [x] Read current roadmap/issues/comments, coordinate Docs paths, inspect actual Rust releases and current official framework requirements.
-- [ ] Commit complete proposal/design/tasks/deltas in Docs before code.
-- [ ] Implement shared Angular browser and sandboxed Electron foundation with honest unavailable transport.
+- [x] Commit complete proposal/design/tasks/deltas in Docs before code.
+- [x] Implement shared Angular browser and sandboxed Electron foundation with honest unavailable transport.
 - [ ] Add pinned public setup, lint, built-browser and actual Electron checks, portable package checks.
-- [ ] Adapt semantic PR/policy/post-tag release workflow, tag-derived metadata and immutable recovery/provenance.
-- [ ] Verify deterministic release cases including initial tags and the pre-1.0 publication guard.
+- [x] Adapt semantic PR/policy/post-tag release workflow, tag-derived metadata and immutable recovery/provenance.
+- [x] Verify deterministic release cases including initial tags and the pre-1.0 publication guard.
 - [ ] Verify Windows and CI browser/desktop behavior; inspect rendered screen and package launch.
 - [ ] Publish linked PRs with concise Summary-only bodies and detailed grouped evidence comments.
 - [ ] Re-read current comments and bug-bot review; obtain parent independent review at exact revisions and required CI.
