@@ -12,4 +12,4 @@ work is superseded, never passed. This list governs the current retirement deliv
 - [x] 7. Write Rust root docs legacy findings with exact source/timing/evidence limits and downstream REM38/40/43/35 handoff.
 - [x] 8. Pass format, strict lint, host/Linux policy tests and both target builds on exact source; independent source review.
 - [x] 9. Validate representative native trigger/capture/navigation/text and source preservation, inspect screenshots and restore authorized idle tablet; preserve unavailable/failed gates honestly.
-- [ ] 10. Re-read comments, publish linked PR/evidence set, pass required CI and final review, sync as-built canonical Docs specs and archive only completed change; coordinate merges.
+- [x] 10. Re-read comments, publish linked PR/evidence set, pass required CI and final review, sync as-built canonical Docs specs and archive only completed change; coordinate merges.
