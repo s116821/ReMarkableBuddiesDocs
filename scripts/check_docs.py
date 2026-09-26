@@ -2,11 +2,10 @@
 import json
 from pathlib import Path
 import re
-import subprocess
 import sys
+from provenance import verify
 
 ROOT = Path(__file__).resolve().parents[1]
-IMPORT = "dd9d5e189dc0b901e54396e1cd8bc7ea9393ceac"
 
 
 def check():
@@ -31,21 +30,7 @@ def check():
                 continue
             if not (file.parent / target).exists():
                 errors.append(f"Broken local link in {file.relative_to(ROOT)}: {target}")
-    provenance = json.loads((ROOT / "docs/migration/source-provenance.json").read_text(encoding="utf-8"))
-    # One tree read verifies immutable imported blobs even after live changes evolve.
-    tree = subprocess.run(["git", "ls-tree", "-r", IMPORT], cwd=ROOT, capture_output=True, text=True)
-    if tree.returncode:
-        errors.append("Import history unavailable: fetch full Docs history; migration must preserve import commit")
-    else:
-        blobs = {line.split("\t", 1)[1]: line.split("\t", 1)[0].split()[2] for line in tree.stdout.splitlines()}
-        seen = set()
-        for entry in provenance["files"]:
-            destination = entry["destination"]
-            if destination in seen or blobs.get(destination) != entry["blob"]:
-                errors.append(f"Invalid preserved blob: {destination}")
-            seen.add(destination)
-        if len(seen) != 126:
-            errors.append("Migration inventory must preserve all 126 imported files")
+    errors.extend(verify(ROOT))
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1

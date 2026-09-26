@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceRepository": "https://github.com/s116821/ReMarkableBuddies",
   "files": [
     {
@@ -758,5 +758,10 @@
       "blob": "545110c06306d30115b0405c65f1b28423dbbdf9",
       "destination": "openspec/changes/responsive-reader/wait-inventory.md"
     }
-  ]
+  ],
+  "storage": {
+    "format": "zip-git-blob-v1",
+    "path": "docs/migration/imported-blobs.zip",
+    "sha256": "a4d2c653d520f8d3efb31c64d775cd63daa596c61a7e9ac5b9370c04853c6055"
+  }
 }
