@@ -7,15 +7,23 @@ Describe the implemented platform runtime contracts, initially baselined from v0
 ## Requirements
 
 ### Requirement: Runtime startup and configuration
-The executable SHALL load an optional .env before argument parsing, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence. Normal configuration SHALL be validated before device initialization; absent or blank selected credentials SHALL fail without printing their values. Source: REM6/REM28/REM34; src/main.rs.
+The executable SHALL load an optional .env before argument parsing, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Source: REM6/REM28/REM34/REM36; src/main.rs, src/config.rs and shared-storage contract.
 
 #### Scenario: Normal initialization
 - **WHEN** usable normal configuration and device access are available
-- **THEN** the runtime initializes cache/capture/input, waits 1000 ms for devices, then waits for triggers in its continuous loop.
+- **THEN** the runtime initializes validated local storage and cache/capture/input, preserves the existing 1000 ms device-startup wait, then waits for triggers in its continuous loop
 
 #### Scenario: Missing or blank credentials
 - **WHEN** no usable selected credential is supplied
-- **THEN** startup fails before device initialization with a value-free error.
+- **THEN** startup fails before device initialization with a value-free error
+
+#### Scenario: File configuration and explicit overrides
+- **WHEN** the file provides model/corner or another supported setting and an explicit CLI or existing environment override is also present
+- **THEN** explicit CLI wins first, relevant environment next, and otherwise the validated file setting applies before the unchanged default
+
+#### Scenario: Offline scripted simulation
+- **WHEN** a scripted --simulate scenario is selected
+- **THEN** production credentials/storage configuration and cloud sync are not initialized, preserving its offline fixture-only behavior
 
 ### Requirement: Existing diagnostic flags
 The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate plus help/version. Other production flags SHALL be rejected. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34.
@@ -48,12 +56,15 @@ The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL 
 - **THEN** logs may include question/answer and parsed model text but explicit request diagnostics exclude authorization headers and entire image-bearing request bodies; page images are saved only with dump opt-in.
 
 ### Requirement: Implemented product boundary
-The application SHALL process independent Reader Buddy iterations on real devices or the maintained simulator. It SHALL NOT yet implement Writer Buddy, follow-up conversation history, document retrieval, external search tools, persistent subject memory, handwriting personalization, cloud sync or native answer-page creation. Source: src/main.rs; src/workflow/orchestrator.rs; src/llm/openai.rs; src/simulator.
+The application SHALL process independent Reader Buddy iterations on real devices or the maintained simulator and provide generic local storage/configuration and opt-in Drive record-sync infrastructure. It SHALL NOT yet claim Writer Buddy, follow-up conversation history, document retrieval, external search tools, domain-level persistent subject memory or handwriting learning, or native answer-page creation merely because their storage adapters exist. Source: REM36 infrastructure scope and owning follow-up issues; src/main.rs, src/workflow/orchestrator.rs and src/storage/.
 
 #### Scenario: New question after previous answer
-- **WHEN** another iteration starts
-- **THEN** model content is rebuilt from the current page rather than a retained conversation or document corpus.
+- **WHEN** another Reader iteration starts before the conversation feature is implemented
+- **THEN** model content is still rebuilt from the current page rather than claiming a retained conversation or document corpus
 
+#### Scenario: Generic persistence is not a domain feature
+- **WHEN** a synthetic memory or handwriting envelope passes storage/sync tests
+- **THEN** evidence describes the infrastructure only and does not claim REM-24 or REM-26 behavior is implemented
 ### Requirement: Git-derived application version
 The CLI application version SHALL derive from Git metadata through vergen-gitcl, never from an independently maintained Cargo package version. An official build SHALL require full clean history, the exact expected semantic tag and SHA, and SHALL report that tag's version. Development or unavailable metadata SHALL be identified explicitly. Source: REM-30; build.rs and src/main.rs version configuration.
 

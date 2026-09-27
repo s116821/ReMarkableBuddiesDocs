@@ -2,7 +2,13 @@
 
 Paired delivery: [Rust PR 28](https://github.com/s116821/ReMarkableBuddies/pull/28) and [Docs PR 4](https://github.com/s116821/RemarkableBuddiesDocs/pull/4). Exact revision pairs, commands/results and final acceptance are recorded in their evidence comments. The coordinator alone squash-merges the linked delivery.
 
-Production source independently accepted at `ad39a7d414ee2e2e0475e09d97d156bce9491bbd`; final test-only additions and build/CI evidence remain to be recorded before archive. Accepted integration bases: Rust REM-9 `3df3b1e6df68e922ffaba2f064d010ed4d65b938`, Docs `e7fbdc44cc7fb9dc6365cab858489013e85d86c9`.
+Final Rust candidate: `39b1aefad43352276702021901086838fae9a3b1`. Production source was independently accepted at `ad39a7d414ee2e2e0475e09d97d156bce9491bbd`; the final delta only expands tests and was separately reviewed by the coordinator. Accepted integration bases: Rust REM-9 `3df3b1e6df68e922ffaba2f064d010ed4d65b938`, Docs `e7fbdc44cc7fb9dc6365cab858489013e85d86c9`.
+
+[Final Rust CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/36281220562) passed formatting, strict all-target/all-feature lint, both ARM release builds and 248 Linux Rust tests (152 library, 3 executable, 2 CLI, 11 sync, 12 history, 7 localhost-provider, 43 simulator, 15 storage and 3 configuration). A complete Windows run passed 244 tests at the accepted production revision; the final test-only delta passed its affected suites and strict lint. Three ARMv7-emulated configuration/permission/symlink tests also passed. Local final-commit binary/example builds and version metadata are recorded in PR evidence comments. Central Docs passed 12 portable tests, integrity checks and strict OpenSpec validation, with final post-archive CI checked before merge.
+
+Verification covers 20 changed requirements and 54 scenarios. All 31 tasks are complete; implementation, correctness and design coherence have no unresolved source finding. Canonical synchronization added the two capabilities and replaced only Runtime startup and configuration and Implemented product boundary, preserving every unrelated runtime block. The central CLI archived the completed change on its UTC date, 2026-09-27. The external/native limitations below are explicit scope boundaries, not claims of performed tests. Final Docs CI/review remains a coordinator merge precondition.
+
+Both final local release binaries and diagnostic examples built from a clean full clone at `39b1aef`. Emulated version checks on ARMv7 and AArch64 each returned `remarkable-reader-buddy dev.v0.1.17-5-g39b1aef`. Clone-local Git line-ending configuration was corrected before regeneration; earlier `-dirty` development artifacts are not the final evidence. No tracked source or release workflow was changed for metadata regeneration.
 
 ## Requirement-to-evidence map
 

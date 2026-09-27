@@ -36,7 +36,7 @@
 
 ## 5. Acceptance and linked delivery
 - [x] 5.1 Run hermetic two-device matrix: local-only, offline edits in both orders, conflicts/resolution, delete/edit, new/empty restore, retries/409, partial uploads, cursor replay and interrupted migrations; keep fixtures public and synthetic.
-- [ ] 5.2 Run config/CLI regressions, meaningful store/sync tests, strict clippy, existing offline simulator suite and both ARM target builds; record source SHA and host/simulated evidence limits.
+- [x] 5.2 Run config/CLI regressions, meaningful store/sync tests, strict clippy, existing offline simulator suite and both ARM target builds; record source SHA and host/simulated evidence limits.
 - [x] 5.3 Independent review checks issue coverage, unsupported-survival/CAS claims, ownership, credential redaction, no Buddy API, real adapter versus mock-only behavior, and remaining native/live-account gates.
-- [ ] 5.4 Rebase against accepted ecosystem heads, run affected integration checks and open linked Docs/Rust PRs with Summary-only bodies, exact revision pairs and detailed evidence comments; inspect CI and bug-bot feedback or independent review.
-- [ ] 5.5 Sync only verified shared-storage/optional-drive-sync and the two scoped platform-runtime blocks; archive this completed change in the paired delivery. Parent alone squash-merges; keep REM-37/24/26/41/42 and 1.0 claims separate.
+- [x] 5.4 Rebase against accepted ecosystem heads, run affected integration checks and open linked Docs/Rust PRs with Summary-only bodies, exact revision pairs and detailed evidence comments; inspect CI and bug-bot feedback or independent review.
+- [x] 5.5 Sync only verified shared-storage/optional-drive-sync and the two scoped platform-runtime blocks; archive this completed change in the paired delivery. Parent alone squash-merges; keep REM-37/24/26/41/42 and 1.0 claims separate.
