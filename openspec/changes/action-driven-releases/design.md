@@ -26,7 +26,8 @@ Candidate composition, pinned to inspected immutable revisions before delivery:
 | Semantic PR title | Existing amannn/action-semantic-pull-request, with application titles excluding docs and public scopes allowed |
 | Version selection | GitTools/actions v4.7.0 (`7417b1089e2c7de93510f1901d656ddf60bb024f`), GitVersion 6.8.2, TaggedCommit/Mainline strategies and conventional-message configuration |
 | Immutable tag creation | Pinned upstream tag-only Action on Linux, with force disabled and exact commit supplied; candidate rickstaa/action-create-tag v1.7.2 (`a1c7777fcb2fee4f19b0f283ba888afa11678b72`) |
-| Draft/assets/publication | ncipollo/release-action v1.21.0 (`339a81892b84b4eeb0f6e744e4574d79d0d9b8dd`) |
+| Published-release observation | octokit/request-action v3.0.0 (`b91aabaa861c777dcdb14e2387e30eddf04619ae`), one fixed GET route and declarative status guards |
+| Draft/assets/publication | softprops/action-gh-release v2.5.1 (`71d29a04ae7c63895f38299d7a5e05d238f7f445`), deliberately retained complete draft pagination |
 | Handoff between build jobs | actions/upload-artifact and download-artifact with exact run-local artifact names and missing-artifact failures |
 | Scheduling | Native Actions dependencies, bounded timeouts and concurrency `queue: max`, without canceling active releases |
 
@@ -116,17 +117,29 @@ version calculation, immutable identity checks and separate artifact namespaces,
 not assumed FIFO. Queue limits/cancellation remain visible failed or cancelled runs
 which can be rerun; do not label them released or silently substitute a later SHA.
 
-After successful tag creation, an upstream release step creates/reuses a draft and
-skips an already published release. Build jobs run only for an unfinished draft,
+After successful tag creation, the official Octokit request Action observes the
+release-by-tag endpoint. Only 200 and 404 are accepted: missing status, network,
+authentication and other API failures stop the run. A published 200 response skips
+all draft/build/publication steps; a draft response or 404 allows draft discovery.
+The route and status checks are declarative Action inputs/expressions, not an API
+client, custom query loop or release engine. Build jobs run only for an unfinished draft,
 checkout the exact remote tag, and produce the two Rust packages or the existing
 browser/Windows/Linux Manager packages with matching embedded version and provenance.
 
 Upload all validated artifacts while the release remains draft. Only a final
-upstream action step changes `draft` to false after all uploads succeed. In
-ncipollo's inspected implementation, updating draft=false happens before upload;
-therefore do not combine uploading and undrafting in that update call. A failed
+upstream action step changes `draft` to false after all uploads succeed. A failed
 build/upload leaves a recoverable draft; completed published assets are untouched.
 Use upstream semantic/latest-release behavior rather than a custom latest pointer.
+
+The initial ncipollo candidate was rejected after implementation research found
+that its draft search reads only the first releases page. Current softprops v3.0.3
+also bounds draft discovery to two pages, so it only shifts that recovery failure.
+Pin softprops v2.5.1, the latest inspected version with complete async pagination;
+v2.5.2 introduced the limit. Its declared Node20 runtime is run with GitHub's
+Node24 compatibility override and the actual distribution is tested on Node24.
+Before any future Action upgrade, retain the fixture with an existing draft on
+page three and verify that it is reused without another release creation. This
+deliberate compatible pin avoids shipping a private pagination implementation.
 
 Recovery is an Actions rerun of the original merge or manual dispatch naming an
 existing stable tag. Manual recovery does not invent a version, move a tag or tag
@@ -168,6 +181,7 @@ Primary references: [GitVersion configuration](https://gitversion.net/docs/refer
 [GitTools Actions](https://github.com/GitTools/actions/tree/v4.7.0),
 [paths-filter](https://github.com/dorny/paths-filter/tree/v4.0.3),
 [tag Action](https://github.com/rickstaa/action-create-tag/tree/v1.7.2),
-[release Action](https://github.com/ncipollo/release-action/tree/v1.21.0),
+[release Action](https://github.com/softprops/action-gh-release/tree/v2.5.1),
+[request Action](https://github.com/octokit/request-action/tree/v3.0.0),
 [merged PR events](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#running-your-pull_request_target-workflow-when-a-pull-request-merges),
 [GitHub concurrency](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency).
