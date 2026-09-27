@@ -20,6 +20,7 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 - `reader-analysis`: persist exact used source evidence before provider dispatch and terminal outcomes without changing recognition prompts.
 - `reader-qa-history`: clarify that existing process-local restrictions govern native undo/redo eligibility, not the new durable ledger; keep all native mutation guards until REM-43.
 - `local-simulator`: real storage-backed restart/history/media and operation failure regressions without pretending unimplemented Writer/UI behavior exists.
+- `platform-runtime`: distinguish optional diagnostic image dumps from mandatory durable source evidence, and update the implemented boundary after accepted REM-36 without claiming future Writer UI/routing.
 
 ## Impact
 
