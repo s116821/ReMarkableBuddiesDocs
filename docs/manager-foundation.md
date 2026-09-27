@@ -25,9 +25,10 @@ launches the packaged desktop executable. Windows x64 and Linux x64 are the
 foundation's portable desktop targets. macOS, signing/notarization and desktop
 automatic updates remain later delivery; do not infer their support.
 
-Release fixtures additionally require Python 3.12 and git-cliff 2.14.2 on PATH.
-Run `npm ci --prefix release`, then `npm run test:release`. These fixtures use real
-local Git repositories, git-cliff and release-it; GitHub publication is simulated.
+Release fixtures additionally require Python 3.12, GitVersion 6.8.2 and pinned
+upstream Action distributions; follow Manager's public `release/README.md`.
+They use real local Git history, actual Actions against localhost API fixtures,
+and GitHub's expression evaluator for workflow admission guards.
 No experimental production tags or tablet operations are required.
 
 ## Architecture and scope
@@ -57,30 +58,30 @@ The package manifest version 0.0.0 is a non-authoritative tooling placeholder.
 Development builds display `0.0.0-dev-<commit>[-dirty]`. Official builds contain
 the exact semantic tag version and commit in both UI and package metadata.
 
-The release policy is adapted from actual Rust revision
-`33db26add721cea6c0121ad769a54d06ae600b4e`: git-cliff 2.14.2 computes versions;
-release-it 19.0.6 creates immutable annotated tags on application squash commits.
-There are no generated version-bump commits. For a new repository, the initial
-calculation excludes its verified docs-only history prefix so a non-semantic
-GitHub README initialization cannot block the first application release. An initially untagged Manager starts
-at v0.1.0; feat increments minor, fix/maintenance increments patch, and breaking
-changes calculate major. A publication guard blocks major 1+ until a reviewed
-REM-35 change enables the completed ecosystem's release.
+Pinned upstream Actions own filtering, semantic calculation, tagging and
+publication. GitVersion 6.8.2 derives each application squash version from tagged
+ancestry; no custom coordinator or generated version-bump commits remain.
+The existing first `v0.1.0` tag is preserved. Feat increments minor,
+fix/maintenance increments patch, and breaking changes calculate major. A
+publication guard blocks major 1+ until a reviewed REM-35 change enables it.
 
 Explicit documentation-only paths skip tags and all main application builds.
 Unknown paths, dependencies, tests and workflow changes are application relevant;
 mixed code/docs changes release normally. Application changes cannot use a docs
 PR title. Required PR checks still finish for docs-only changes.
 
-One lock covers refresh, recovery, tagging, building and draft publication.
+One native publication queue covers tagging, building and draft publication;
+per-PR identity and ancestry analysis keep queued source versions independent of order.
 After verifying the remote tag, the release job clones the exact source and builds
 `manager-browser.zip`, `manager-win32-x64.zip`, `manager-linux-x64.zip` plus
 `provenance.json`. Archives contain tag/SHA metadata and verified SHA-256 digests.
 Cross-packaged Linux archives preserve executable permissions. Windows and Linux
 PR CI exercise their native packaged host; the official Windows release runner
 executes the Windows package and cross-packages Linux. These portable archives are
-not tablet installers. Pending tags recover before newer application commits;
-verified published assets are immutable and partial drafts remain retryable.
+not tablet installers. Retry the original failed run or dispatch an existing tag
+on main; docs merges do not replay failures. Published assets remain untouched and
+partial drafts remain retryable. Build tooling uses the reviewed workflow revision
+while the app source remains pinned to its release tag.
 
 ## Central specifications and coordinated delivery
 
