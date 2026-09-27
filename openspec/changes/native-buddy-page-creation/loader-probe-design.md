@@ -41,3 +41,7 @@ The queued callback checks a monotonic expiry before scanning, and each loop che
 Before device consideration, a synthetic Qt harness must exercise normal startup, delayed/no event loop, pre-expired work, object deletion, wrong thread, limit overflow, oversized metadata, output backpressure and fingerprint mismatch. Inspect the built extension for zero overrides, no command exports, no native method invocation and the exact dependency manifest. These tests prove probe controls only, not tablet behavior.
 
 Independent review should decide whether this restricted existing-object metadata pass has sufficient value despite likely incomplete QObject reachability; whether startup/transport implementation is safe; and whether the exact coordinator activation/rollback procedure and ABI evidence are sufficient. Unresolved transport, provider ABI or bootstrap behavior blocks device dispatch. An import-based singleton resolver would be a different experiment with potential constructor side effects, not an automatic fallback. Page creation, durable receipts, PDF mapping and the final product loader lifecycle remain unqualified.
+
+## Subsequent host controls evidence
+
+See [host-controls-checkpoint.md](host-controls-checkpoint.md) for the bounded host implementation and synthetic Qt lifecycle evidence. The deployable probe, target ABI and device dispatch remain unqualified.
