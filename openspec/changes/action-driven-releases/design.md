@@ -16,6 +16,14 @@ changes. App functionality and deployment to the tablet are outside this change.
 
 ## Decisions
 
+### Current qualification checkpoint: unfinished
+
+The filtering/versioning/tagging configuration and build-only helpers have passing
+local fixtures. Component worktrees contain an unmerged ncipollo-based publication
+candidate, but its old-draft recovery gate is unresolved. No candidate is approved
+for delivery, no production release was changed, and this change must not be
+synced or archived until a qualified upstream publication composition passes.
+
 ### 1. Use maintained Actions with explicit responsibilities
 
 Candidate composition, pinned to inspected immutable revisions before delivery:
@@ -27,7 +35,7 @@ Candidate composition, pinned to inspected immutable revisions before delivery:
 | Version selection | GitTools/actions v4.7.0 (`7417b1089e2c7de93510f1901d656ddf60bb024f`), GitVersion 6.8.2, TaggedCommit/Mainline strategies and conventional-message configuration |
 | Immutable tag creation | Pinned upstream tag-only Action on Linux, with force disabled and exact commit supplied; candidate rickstaa/action-create-tag v1.7.2 (`a1c7777fcb2fee4f19b0f283ba888afa11678b72`) |
 | Published-release observation | octokit/request-action v3.0.0 (`b91aabaa861c777dcdb14e2387e30eddf04619ae`), one fixed GET route and declarative status guards |
-| Draft/assets/publication | softprops/action-gh-release v2.5.1 (`71d29a04ae7c63895f38299d7a5e05d238f7f445`), deliberately retained complete draft pagination |
+| Draft/assets/publication | Selection remains open: the investigated ncipollo and softprops candidates do not yet satisfy complete old-draft recovery |
 | Handoff between build jobs | actions/upload-artifact and download-artifact with exact run-local artifact names and missing-artifact failures |
 | Scheduling | Native Actions dependencies, bounded timeouts and concurrency `queue: max`, without canceling active releases |
 
@@ -131,15 +139,21 @@ upstream action step changes `draft` to false after all uploads succeed. A faile
 build/upload leaves a recoverable draft; completed published assets are untouched.
 Use upstream semantic/latest-release behavior rather than a custom latest pointer.
 
-The initial ncipollo candidate was rejected after implementation research found
-that its draft search reads only the first releases page. Current softprops v3.0.3
-also bounds draft discovery to two pages, so it only shifts that recovery failure.
-Pin softprops v2.5.1, the latest inspected version with complete async pagination;
-v2.5.2 introduced the limit. Its declared Node20 runtime is run with GitHub's
-Node24 compatibility override and the actual distribution is tested on Node24.
-Before any future Action upgrade, retain the fixture with an existing draft on
-page three and verify that it is reused without another release creation. This
-deliberate compatible pin avoids shipping a private pagination implementation.
+The initial ncipollo v1.21.0 candidate reads only the first releases page for draft
+discovery. Current softprops v3.0.3 bounds discovery to two pages, so it only shifts
+that recovery failure. The proposed softprops v2.5.1 pin was rejected by independent
+review: its async iterator exists but is unused; the actual lookup returns no
+release on a direct 404. The earlier inference that absence of a scan bound implied
+complete pagination was incorrect. A strengthened actual-bundle fixture rejects a
+duplicate create for an existing page-three draft and fails on that pin, confirming
+the source review. A production-dependency audit additionally reports advisories;
+do not downgrade as a workaround without resolving compatibility/security findings.
+
+Resume by finding an upstream composition satisfying the existing requirement,
+with a fixture that checks the same draft ID, pagination beyond two pages and no
+duplicate POST. Use actual distributions and fail unexpected lookup errors. Keep
+the official fixed-route Octokit observation proposal, but do not misrepresent it
+as solving publication discovery. No private query loop or coordinator is allowed.
 
 Recovery is an Actions rerun of the original merge or manual dispatch naming an
 existing stable tag. Manual recovery does not invent a version, move a tag or tag
