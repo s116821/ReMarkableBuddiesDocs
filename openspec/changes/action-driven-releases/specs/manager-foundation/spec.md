@@ -7,6 +7,12 @@ version calculation, tag creation and publication; no custom coordinator or poli
 engine is permitted. Pure documentation merges SHALL create no tag or app build.
 Manager releases SHALL never trigger Rust builds. Source: REM-21/30/46.
 
+Manager release versions SHALL remain independent of the multiple target artifacts
+belonging to one Buddy release. The intended installation contract selects the
+compatible Buddy artifact built against its appropriate SDK target without a
+separately installed SDK runtime; actual installation remains REM-41-owned.
+Source: October 1 REM-46 release/consumption clarification.
+
 #### Scenario: Documentation-only merge
 - **WHEN** only explicit documentation paths change
 - **THEN** required PR checks finish and main skips application compilation, tags and publication.

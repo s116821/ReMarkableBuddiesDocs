@@ -51,6 +51,18 @@ embed its version and report matching source/checksum provenance. Custom helpers
 SHALL be limited to actual application build/packaging and directly necessary
 source/version/artifact checks. Source: REM-30/46.
 
+One Buddy tag SHALL identify all target artifacts from the same Buddy source SHA.
+Build verification SHALL report target architecture, selected toolchain/sysroot
+identity and runtime ABI qualification limits. SDK consumption SHALL be recorded
+against its actual target/revision when integrated; a legacy build or successful
+emulated version check SHALL NOT be presented as SDK or native qualification.
+SDK canonical contracts/releases remain outside this capability. Source: October 1
+REM-46/REM-35 platform and release clarifications.
+
+#### Scenario: Multiple Buddy target packages
+- **WHEN** RM2 ARMv7 and Paper Pro AArch64 packages belong to one Buddy release
+- **THEN** both report the same tag/source, target runtime requirements are checked against the selected supported baseline, and an unqualified target is identified without claiming native compatibility from compilation alone.
+
 #### Scenario: Main CI ordering
 - **WHEN** an application PR merges to main
 - **THEN** main-push CI performs non-compiling checks, and the explicit release DAG tags the admitted SHA before any official app build; PR CI may compile dev builds.
