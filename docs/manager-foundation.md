@@ -49,6 +49,15 @@ dependencies, service-state verification and preserve-data uninstall. REM-42 own
 configuration and owned-data management through both hosts. No capability here
 claims these outcomes or RM2/Paper Pro validation.
 
+October 1 adds an unselected supervised lazy XOVI candidate to REM-25/41. If qualified,
+the Buddy artifact contains both its independent Supervisor and normal runtime plus
+any vetted internal payload; Manager owns the single install/update/disable/uninstall
+and preservation/recovery lifecycle. It does not install a separate SDK runtime or
+require users to manage XOVI. Cold boot remains stock with injection inactive;
+activation belongs to the first supported Buddy gesture of the session, with bounded
+health checks, automatic stock rollback and UI-independent recovery. Foundation
+delivery does not claim this lifecycle is implemented or choose XOVI.
+
 ## Version and release contract
 
 Manager tags/releases are independent of the

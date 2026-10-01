@@ -9,12 +9,14 @@
 - [ ] 1.8 Confirm final local-only journal registration/API with REM-36 and binding interface with REM-37; qualify the actual native operation before production adapter/journal code.
 
 ## 2. Investigation and selection
+- [ ] 2.5 Compare stable native/direct mechanisms against the October 1 supervised lazy session-only XOVI candidate; coordinate exact SDK contract and select by safety/maintainability across target tablets, without treating the superseded blanket ban as a blocker.
 - [ ] 2.1 After coordinator dispatch, Q0 restorable notebook/PDF fixtures and native-produced page diffs, preserving unknown fields and PDF bytes.
 - [ ] 2.2 Execute A/B bounded native discovery/prototypes with exact ABI/Qt/firmware evidence and real notebook/open-PDF results, no menus.
 - [ ] 2.3 Execute C/D safe metadata/round-trip/cache alternatives and E credible additional routes; record corrections, barriers and unresolved leads.
 - [ ] 2.4 Independent candidate selection review; automatic required unless exhaustive real evidence justifies exercised fallback, not timeout/search miss alone.
 
 ## 3. Accepted implementation
+- [ ] 3.7 If XOVI is selected, implement the tiny independent Supervisor and runtime in one Buddy artifact/Manager installation; stock cold boot, first supported gesture activation, fresh post-restart source/cancellation validation, bounded readiness/heartbeat/crash-loop detection and automatic stock rollback.
 - [ ] 3.1 Rust capability/owner guards and create/reuse; minimal correlated bounded extension only if accepted, no generic evaluator/admin API.
 - [ ] 3.2 REM36 CAS/local-only journal and REM37 bindings with native/binding/reconcile phases, cancellation/crash/retry recovery. No synced native side effects or parallel registry.
 - [ ] 3.3 Safe full-native blankness/manual preparation, preserving unrelated/legacy/user edits and refusing unknown formats.
@@ -23,6 +25,7 @@
 - [ ] 3.6 Reader/Writer/blank-start contract tests and explicit downstream native gates; no fabricated question/empty model call.
 
 ## 4. Verification and delivery
+- [ ] 4.7 For a selected supervised candidate, verify cold-boot stock, first-gesture handoff, subsequent gestures, unknown compatibility refusal, stalled/missing heartbeat, crash-loop recovery, UI-independent disable, Manager update/uninstall and reboot stock baseline; preserve source/data and reject stale-handle replay.
 - [ ] 4.1 Required Rust format/lint/tests/ARM build and targeted simulator checks with public manual equivalents.
 - [ ] 4.2 Coordinator executes Q1-Q10 on final candidate; inspect screenshots and preservation hashes/semantics; separate evidence types.
 - [ ] 4.3 Failure/rollback and public manual instructions exercised; fallback outcome needs exhaustive independent review and real fallback tests.

@@ -12,7 +12,7 @@ No conversation renderer/history implementation, source-question erasure, marker
 
 ### Capability discovery before mutation
 
-Prefer a narrow adapter using native page-model insertion/save/navigation operations. Qt/XOVI is the first candidate, not a selected dependency. After dependency/review gates, observe exact active model, signatures, signals and serialization on the authorized RM2. Inspect legally available device resources locally; publish observed signatures/hashes, not proprietary firmware. Do not guess or invoke arbitrary methods during discovery.
+Prefer stable direct/native, IPC or maintainable coordinated service mechanisms using narrow SDK capabilities. Supervised lazy session-only XOVI is now an acceptable candidate for capabilities that cannot be reached robustly otherwise; it is not selected. The October 1 direction supersedes the earlier blanket production exclusion. Compare safety, maintainability and target-tablet compatibility rather than treating dependency avoidance as the goal. After dependency/review gates, observe exact active model, signatures, signals and serialization on the authorized RM2. Inspect legally available device resources locally; publish observed signatures/hashes, not proprietary firmware. Do not guess or invoke arbitrary methods during discovery.
 
 Initially match exact model, architecture, firmware, xochitl build fingerprint, Qt ABI, extension/protocol version, document schema and qualified document kinds. Missing/conflicting/changed capability returns Unsupported before mutation. Recheck xochitl process generation and object lifetime at dispatch; restart invalidates handles. No historical memory offsets, menu coordinates or blanket firmware ranges inferred from one run.
 
@@ -49,6 +49,30 @@ Temporary unavailable capability produces honest preparation guidance and model-
 Choosing manual preparation as REM-25's delivered outcome requires completed candidate investigation, actual viable-route notebook AND open annotated-PDF tests, documented barriers/corrections and independent exhaustive-outcome review plus exercised fallback. Time spent, search misses, missing access or one failed prototype are insufficient. Bound experiments and checkpoint unresolved hypotheses rather than looping indefinitely or falsely declaring impossibility. REM-35 must accept the selected outcome.
 
 ### Extension lifecycle
+
+If XOVI is selected, Buddy owns a tiny independent Supervisor process that can observe
+the required trigger input without xochitl/XOVI. Supervisor and normal runtime remain
+in the same Buddy repository, release artifact and one Manager installation; a vetted
+minimal payload is an internal managed implementation detail. SDK owns hardware-facing
+capabilities/adapter mechanics in its independent OpenSpec. No separate SDK installation
+or user-managed XOVI prerequisite follows.
+
+Cold boot runs stock xochitl with the Supervisor available and XOVI inactive. The first
+recognized Buddy gesture of any supported kind may activate the session payload after
+exact model/firmware/version/hash/capability checks. Allow at most a brief one-time
+activation restart/rebind; subsequent gestures use the ready session without
+per-conversation restart. Preserve the triggering intent where safe, but reacquire
+and validate its current source, cancellation and fresh handles after restart.
+No captured-source or pending-native-operation replay crosses the session boundary.
+
+Require bounded readiness/startup checks and heartbeat, rapid crash/restart-loop
+detection, automatic stock rollback on activation/health failure, UI-independent
+disable/recovery and Manager-owned update/uninstall. Unknown compatibility refuses
+activation. A cold reboot always restores the non-XOVI baseline; persistent xochitl or
+systemd changes must not reproduce an injection crash loop across boot. Preserve
+documents/data and unrelated user extensions. Restrict hooks to required semantic
+capabilities rather than replacing the tablet shell or broad UI. These are planned
+qualification requirements; no injection run or production selection is claimed.
 
 If selected, package only needed ARM32 loader/modules and narrow adapter with pinned source/tag/SHA/hash, license/source notices, dependency graph and compatibility manifest. Audit Qt linkage and per-component terms. Do not enable webserver-remote, qt-command-executor or unrelated modules. Check hook conflicts and preserve independent user extension installations.
 

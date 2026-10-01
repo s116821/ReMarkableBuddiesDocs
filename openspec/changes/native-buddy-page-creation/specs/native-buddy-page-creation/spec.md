@@ -1,5 +1,28 @@
 ## ADDED Requirements
 
+### Requirement: Conditional supervised session activation
+If XOVI is selected after comparison with robust native/direct alternatives, the Buddy product SHALL ship a tiny independent Supervisor and normal runtime as separate processes in the same repository, release artifact and Manager installation. It SHALL keep cold boot stock with no XOVI injection, manage the vetted payload internally, gate activation by exact compatibility, and restrict hooks to necessary semantic capabilities. The earlier categorical production exclusion SHALL NOT disqualify this candidate; selection still requires safety, maintainability and native evidence. SDK-owned adapter contracts remain in ReMarkableOpenSDK's OpenSpec.
+
+#### Scenario: Cold boot and first supported gesture
+- **WHEN** a tablet boots and receives its first recognized Buddy gesture of a supported kind
+- **THEN** it remains stock until compatibility-gated session activation is required; activation permits at most a brief one-time restart/rebind, and subsequent gestures use the ready runtime without per-conversation restart.
+
+#### Scenario: Triggering action crosses activation
+- **WHEN** activation replaces the native session before continuing the triggering intent
+- **THEN** the action reacquires and validates current source, cancellation and fresh handles; stale capture, lease or pending native operation is not replayed across restart.
+
+#### Scenario: Incompatible or unhealthy session
+- **WHEN** compatibility is unknown, readiness/heartbeat times out or rapid crash/restart loops occur
+- **THEN** activation refuses or bounded automatic rollback restores stock while the independent Supervisor remains available for UI-independent recovery and preserves documents/data.
+
+#### Scenario: Management and reboot recovery
+- **WHEN** Manager disables, updates or uninstalls the selected components, or the tablet cold reboots
+- **THEN** Manager owns the complete lifecycle without a user-managed XOVI or separate SDK prerequisite, recovery does not rely on modified UI, and reboot returns to the non-XOVI baseline without a persistent injection crash loop.
+
+#### Scenario: Narrow stock experience
+- **WHEN** extension capabilities become available
+- **THEN** Buddy uses narrow semantic hooks and does not replace the tablet shell or broadly customize stock UI merely because hooks permit it.
+
 ### Requirement: Qualified automatic native successor creation
 The system SHALL provide qualified automatic native writable Buddy-page creation immediately after the exact source, preserving native identity/content in supported notebooks and open annotated PDFs. Qt/XOVI MAY be selected through evidence; a library or notebook-only demonstration SHALL NOT establish PDF support. Source: REM25; qualification Q0-Q3.
 
