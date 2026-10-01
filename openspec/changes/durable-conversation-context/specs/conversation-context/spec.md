@@ -19,8 +19,16 @@ The domain SHALL persist every actual inference image and useful derived crop be
 - **THEN** both Buddy modes can retrieve each exact original image by its turn and hash with the corresponding target coordinates, and no old image is replaced by recapture.
 
 #### Scenario: Failed or missing media
-- **WHEN** required evidence cannot be committed or restored media is absent/corrupt
-- **THEN** provider dispatch that depends on it does not run, missing evidence is identified explicitly, and available text history remains inspectable.
+- **WHEN** required evidence cannot be committed or a selected-record restore explicitly declares media unavailable
+- **THEN** provider dispatch that depends on it does not run, missing evidence is identified explicitly, and committed available text/facts remain inspectable.
+
+#### Scenario: Unexpected required-media corruption during recovery
+- **WHEN** Store recovery skips a commit whose required media is absent or corrupt
+- **THEN** the domain reports typed IncompleteStore and refuses inspection and mutation rather than presenting an older root as complete; the refusal is conservatively store-wide because skipped commits cannot reliably be attributed to a conversation.
+
+#### Scenario: Restored derivative geometry is inconsistent
+- **WHEN** a restored derivative's individually valid affine or valid-source region differs from its declared parent/crop/output composition, or its derivation procedure is unsupported
+- **THEN** historical SDK evidence is refused using the SDK-owned geometry semantics, exact descriptor-bit comparison preserves signed zero, and neither source-plane roundoff nor valid image hashes waive the structural mismatch.
 
 #### Scenario: Historical capture facts cannot substitute for a live guard
 - **WHEN** capture evidence is exported by the SDK, persisted, imported or restored
