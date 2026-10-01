@@ -76,6 +76,12 @@ validates derivation pixels; restored DTO checks validate descriptors and lineag
 not a second pixel derivation proof or cryptographic authenticity of imported facts.
 Reader integration and native qualification remain open.
 
+At exact Rust b4bee21ad4c5a4e0b280298922158509cbf05c1b,
+`cargo test --all-features --locked` passes272 host tests and one compile-fail
+doctest on Windows. Formatting and strict all-target/all-feature Clippy also pass.
+This replaces the earlier full-suite checkpoint for this source tree; ARM/AArch64
+builds, actual Reader recording-provider integration and native smoke remain open.
+
 Source basis: current checked-in source/tests and observed local commands; accepted
 Docs amendment 0694cb53c761141d01be377218d2d862e82d36f8 over Docs8008389/Rustff8ad75;
 independent Sol amendment review; coordinated SDK design e63010e. SDK prototype
