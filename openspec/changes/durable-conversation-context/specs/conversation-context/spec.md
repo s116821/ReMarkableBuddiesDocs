@@ -22,6 +22,14 @@ The domain SHALL persist every actual inference image and useful derived crop be
 - **WHEN** required evidence cannot be committed or restored media is absent/corrupt
 - **THEN** provider dispatch that depends on it does not run, missing evidence is identified explicitly, and available text history remains inspectable.
 
+#### Scenario: Historical capture facts cannot substitute for a live guard
+- **WHEN** capture evidence is exported by the SDK, persisted, imported or restored
+- **THEN** the domain retains the original bounded versioned SDK historical facts and exact parent/derivative bytes, does not fabricate missing scope or render provenance, and requires a separate fresh qualified guard before native use.
+
+#### Scenario: Required capture facts are unavailable
+- **WHEN** the SDK cannot export a required capture fact or its representation cannot be stored without loss
+- **THEN** image-dependent provider dispatch is refused before calls or mutations, with the missing evidence reported explicitly rather than inferred from identifiers, timestamps or hashes.
+
 ### Requirement: Explicit outcomes without replay
 The ledger SHALL distinguish prepared interpretation, verified request, generated draft, completed visible response, failure, cancellation and uncertain output. Hidden presets and machine instructions SHALL remain outside visible history. Interrupted operations SHALL require reconciliation rather than automatically replay provider/native/export effects. Source: REM-37 interrupted-write acceptance and REM-9 ownership guards.
 
