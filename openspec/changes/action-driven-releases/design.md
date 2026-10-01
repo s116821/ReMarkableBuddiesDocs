@@ -1,10 +1,12 @@
 ## Context
 
-Authority: REM-46 and the September 26 user clarification, preserving REM-30's
-tag-centric requirements and REM-21's independent component releases. Full REM-30
-description and two timestamped comments were read; the historical pause was
-superseded by the explicit roadmap resume. Current public baseline is Docs e7fbdc44,
-Rust 3df3b1e6 and Manager 555421ce. REM-9 and other active lanes are preserved.
+Authority: current REM-46/REM-30 descriptions and their four/two returned comments,
+the September 26 release clarification and October 1 SDK/target/ownership updates.
+Preserve REM-30 tag identity and REM-21 independent component releases. The October 1
+resume supersedes historical pauses and usage stops. Current accepted bases are
+Docs 8008389f, Rust ff8ad75b and Manager 555421ce. September research began on
+Docs e7fbdc44 / Rust 3df3b1e6; saved checkpoint refs preserve that unmerged work.
+Owned REM-46 branches are now rebased on accepted main, preserving REM-9/36.
 
 ## Goals / Non-Goals
 
@@ -39,6 +41,13 @@ or release-list position; no list pagination or duplicate create request occurs.
 Only an absent release invokes official request-action's fixed draft-create route.
 Validate its ID/tag/draft result and carry that same ID through the DAG.
 
+Primary upstream support for draft visibility: GitHub CLI's
+[draft-release lookup](https://github.com/cli/cli/blob/fbda842467a0140d9e1f29b85b44db16493c7bd6/pkg/cmd/release/shared/fetch.go#L219)
+uses the same direct GraphQL tag query to obtain a draft database ID before its
+REST lookup by ID. The October 1 live schema/read-only published-release check
+confirms query fields; actual pinned Action fixtures additionally verify draft,
+absence and HTTP-200 error handling. No production draft was created for research.
+
 `AButler/upload-release-assets` v4.0.0
 (`34491005a5d7ec239a784e460807ce844fde7962`) accepts the explicit release ID and
 uploads build-verified packages. Its asset discovery only reads one page: this
@@ -68,11 +77,13 @@ changes. App functionality and deployment to the tablet are outside this change.
 
 ### Current qualification checkpoint: unfinished
 
-The filtering/versioning/tagging configuration and build-only helpers have passing
-local fixtures. Component worktrees contain an unmerged ncipollo-based publication
-candidate, but its old-draft recovery gate is unresolved. No candidate is approved
-for delivery, no production release was changed, and this change must not be
-synced or archived until a qualified upstream publication composition passes.
+The ncipollo checkpoint was rejected by actual old-draft recovery fixtures and
+preserved for history. The October 1 official GraphQL/request and explicit-ID
+upload composition now passes actual-distribution/workflow-expression fixtures in
+both components, including old draft reuse, partial uploads, published skips and
+malformed observations. Build-only ELF/sysroot verification is implemented; actual
+tagged package verification, hosted CI and final independent review remain gates.
+No production release was changed. Do not sync/archive this unfinished delivery.
 
 ### 1. Use maintained Actions with explicit responsibilities
 
