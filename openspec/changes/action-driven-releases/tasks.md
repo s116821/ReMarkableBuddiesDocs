@@ -1,4 +1,5 @@
 ## 1. Plan and ownership
+- [ ] 1.4 Independently accept October 1 amendment: direct upstream tag-to-draft lookup/ID upload/publication, fail-closed asset bound, SDK ownership and target/sysroot verification. Historical accepted plan is not acceptance of this publisher.
 - [x] 1.1 Read current requirements, full REM-30 comments and central release/Manager contracts; reserve release-only paths with the coordinator.
 - [x] 1.2 Inspect upstream implementations and run disposable ancestry/semantic version research without production tags.
 - [x] 1.3 Complete proposal/design/deltas, strict validation and independent plan acceptance before implementation. Coordinator independently accepted `d7ea8ed5371018eb9e452ac550b1be5427f6bdda`, including the explicit REST file-count guard.
@@ -11,6 +12,7 @@
 - [x] 2.5 Preserve required check names, docs-only completion/no compile, independent versions and REM-35 major guard.
 
 ## 3. Verification
+- [ ] 3.5 Strengthened actual-distribution fixtures reuse a draft beyond release-list page two with its same ID and zero duplicate POST; exercise GraphQL errors/malformed results, published pre-build skip, asset-count refusal, partial uploads and ID-based retry. Record supported target ABI evidence separately from older emulator failures.
 - [x] 3.1 Exercise actual upstream distributions in isolated fixtures: semantic types/body/footer, docs/mixed/unknown/renamed paths, reverted history and missing history. GitVersion6.8.2 history fixture, actual dorny distribution and real Rust build.rs metadata fixture passed locally.
 - [ ] 3.2 Verify tag-before-build, wrong-SHA conflict, main advancement, reverse queue order, existing tag/draft retry, published skip and partial upload using mocked/local boundaries.
 - [ ] 3.3 Validate workflow syntax/action inputs and run appropriate Rust/Manager build, package and metadata checks; no production test tags.

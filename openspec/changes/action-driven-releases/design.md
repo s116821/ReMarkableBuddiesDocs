@@ -8,6 +8,56 @@ Rust 3df3b1e6 and Manager 555421ce. REM-9 and other active lanes are preserved.
 
 ## Goals / Non-Goals
 
+### October 1 authority and qualification amendment
+
+Fresh REM-46 and REM-30 descriptions and all returned comments were audited
+(four and two respectively, no further pages or returned inline/reply anchors).
+October 1 user resume supersedes historical 90%-used stopping text; ordinary
+allowance may be exhausted, without reset redemption or overage credits.
+Non-SDK work and independent reviews use GPT-6.1 Sol. Accepted dependency bases
+are Docs `8008389fa676d395401e6f28e049b47baa7b10ef` and Rust
+`ff8ad75bec45fca403d55a7b6d93eb83ab732e3d`; preserve their storage delivery.
+
+Canonical repository names are ReMarkableBuddiesDocs, ReMarkableBuddiesManager,
+ReMarkableBuddies and ReMarkableOpenSDK. SDK API, native compatibility, canonical
+OpenSpec and SDK releases belong to its independent repository, outside REM-46.
+Buddy/Manager product integration and release workflow contracts remain here.
+One Buddy semantic tag may produce RM2 ARMv7 and Paper Pro AArch64 artifacts from
+one source tree, built against their appropriate SDK target. Manager retains its
+independent version/cadence and installs the compatible Buddy artifact without a
+separately installed SDK runtime. Building AArch64 does not prove Paper Pro native
+qualification; REM-29 remains its hardware validation gate.
+
+Proposed publisher amendment, pending independent plan acceptance and actual
+distribution qualification: official `octokit/graphql-action` v3.0.2
+(`ddde8ebb2493e79f390e6449c725c21663a67505`) performs a fixed declarative
+`repository.release(tagName)` lookup. Validate repository and returned release
+identity/state before build; null release alone means absent. Upstream GraphQL
+errors must fail even with HTTP 200. A published result skips all app build and
+release writes. An existing draft reuses its database ID regardless of its age
+or release-list position; no list pagination or duplicate create request occurs.
+Only an absent release invokes official request-action's fixed draft-create route.
+Validate its ID/tag/draft result and carry that same ID through the DAG.
+
+`AButler/upload-release-assets` v4.0.0
+(`34491005a5d7ec239a784e460807ce844fde7962`) accepts the explicit release ID and
+uploads build-verified packages. Its asset discovery only reads one page: this
+candidate must therefore qualify and enforce a bounded draft asset inventory
+before any upload, refusing unsupported counts rather than silently overlooking
+an existing asset. No custom pagination client is permitted. Revalidate draft
+identity/state before uploads and publication using fixed upstream API requests.
+Publish by fixed request-action PATCH to the same ID only after all uploads pass.
+Partial failures retain the draft; unexpected observations stop before app build
+or writes. Native concurrency serializes supported workflow attempts; this does
+not claim atomic protection against an external actor editing a release.
+
+Build-only verification must record selected SDK/sysroot identity and qualify ELF
+architecture/interpreter and required runtime symbol versions against the supported
+target baseline. Fresh coordinator read-only evidence reports supported RM2 firmware
+3.28.0.172 uses glibc 2.39; an older emulator's refusal is not device incompatibility
+evidence. Do not impose an inferred older ABI ceiling or modify historical assets.
+Cross/emulated checks and native qualification remain explicitly distinguished.
+
 Goals: upstream release logic; exact tag/source/binary agreement; no docs-only
 compile or tag; deterministic feature/fix/breaking versions; visible bounded failure
 and safe retries. No generated version commits, alternate app-version authority,
