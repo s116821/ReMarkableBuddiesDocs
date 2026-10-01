@@ -20,24 +20,30 @@ objects. Export marker discovery produces unique/conflict/uncertain decisions an
 never performs an external write. SDK/native receipt qualification and real export
 adapters remain separate gates.
 
-Seventeen host integration tests pass: Store reopen with Reader/Writer/Reader chronology;
+Nineteen host integration tests pass: Store reopen with Reader/Writer/Reader chronology;
 concurrent identical retry and lost commit acknowledgment; stale-head refusal;
 generated-to-verified completion; competing page/conversation claims and deletion
 retry without resurrection; shared media retention/missing objects; exact prepared
 batch reuse; failed storage/invalid dimensions before dispatch; and exact export
 marker discovery; replica multihead refusal; explicit ranges, corrections and typed
-budget refusals; unknown payload/legacy coexistence; four commit failure boundaries;
+budget refusals; duplicate/unallocated imported chronology refusal; retained media
+after a source tombstone; unknown payload/legacy coexistence; four commit failure boundaries;
 native-parent crop byte identity; competing different-page claims; malformed imported
 identity/geometry; and isolation from unrelated oversized conversation metadata.
 Strict all-target/all-feature Clippy passes. These are domain
 tests, not a real Reader recording-provider integration or tablet smoke test.
+The complete Windows all-target/all-feature suite passed 261 tests at Rustde355b2.
+Later chronology and retained-revision changes pass the focused 19-test domain suite
+and strict all-target/all-feature Clippy; that full-suite result is not attributed
+to a later tree without another full run.
 
 The generic Store snapshot selects matching logical records under one lock, including
 every head and tombstone when any head matches. It refuses more than 4096 selected
 heads or 8 MiB of selected serialized metadata before cloning instead of truncating.
 Conversation inspection applies these bounds to the requested conversation; unrelated
-foreign history does not consume its budget. Partial-restore and retained historical
-revision coverage still need expansion. Imported payload identity, geometry and media
+foreign history does not consume its budget. The retained-media report also inspects
+bounded historical source revisions, including references superseded by tombstones.
+Partial-restore coverage still needs expansion. Imported payload identity, geometry and media
 descriptors are checked; image retrieval verifies its encoded hash and dimensions.
 Reader still uses its existing orchestration; its Store handle, exact capture batch,
 terminal outcomes and qualified restart/revisit seam have not yet been integrated.
@@ -48,6 +54,7 @@ independent Sol amendment review; coordinated SDK design e63010e. SDK prototype
 review accepted only its explicitly synthetic unpublished slice at source6390526,
 with identical rebased tree at523d396. Identity amendment5818938 and accepted capture
 contract49171a0 preserve fail-closed unknown identities and native-parent sibling
-derivation. Sol capture implementationfff34f3 passes16 synthetic SDK tests and strict
-Clippy but awaits independent review; it supplies no qualified native capture or
+derivation. Sol capture implementatione0175f7 passes16 synthetic SDK tests, one
+compile-fail doctest and strict Clippy with full/minimal features. Independent Sol
+review accepts that exact synthetic scope; it supplies no qualified native capture or
 page-creation capability yet.
