@@ -82,6 +82,17 @@ doctest on Windows. Formatting and strict all-target/all-feature Clippy also pas
 This replaces the earlier full-suite checkpoint for this source tree; ARM/AArch64
 builds, actual Reader recording-provider integration and native smoke remain open.
 
+Independent review then found that individually valid restored derivative geometry
+could contradict its parent/crop. SDK helper72a896e received independent Sol review
+and was integrated unchanged at2d473f0954120889f8a04c6294151241576ff8c3. Buddy's
+follow-up pins that source, requires the known derivation procedure and compares
+the SDK-recomputed affine/valid region by exact stored bits. Proper child-envelope
+tampering of affine and valid region now refuses retrieval/inspection, alongside
+the dimension regression. The focused28-test suite, compile-fail doctest, formatting
+and strict all-target/all-feature Clippy pass for the follow-up. The full272-test
+result above remains attributed only to b4bee21. Independent consumer fix review
+is pending; no native or entire REM37 acceptance follows.
+
 Source basis: current checked-in source/tests and observed local commands; accepted
 Docs amendment 0694cb53c761141d01be377218d2d862e82d36f8 over Docs8008389/Rustff8ad75;
 independent Sol amendment review; coordinated SDK design e63010e. SDK prototype

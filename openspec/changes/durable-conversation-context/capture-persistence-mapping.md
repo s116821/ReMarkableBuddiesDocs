@@ -1,5 +1,15 @@
 # Historical SDK capture persistence mapping (proposed)
 
+Geometry follow-up: the consumer now targets SDK2d473f0954120889f8a04c6294151241576ff8c3,
+containing independently accepted helper72a896e unchanged. Historical derivatives
+must use image-0.25.10/crop-resize-8bit-v1 and match the SDK's recomputed affine and
+clipped/scaled valid region by exact IEEE-754 bits, including signed zero. Stored
+bits are preserved, not replaced. The explicit source-plane1e-10 roundoff allowance
+does not relax descriptor equality. This is structural validation, not pixel
+re-derivation, authenticity or live/native authority. This experimental container
+accepts only its exact pinned source; earlier unshipped source pins require explicit
+support rather than silent reinterpretation.
+
 This consumer mapping follows accepted Docs fbb2fd4 and SDK evidence-facts contract9b61d72, implemented and independently reviewed at644811c and integrated unchanged at SDK7e8ffd51f27cc63d79475754071b6444eab048fb. Buddy pins that exact SDK source revision at build time; this is experimental consumption, not a licensed/public SDK release or native qualification.
 
 Buddy will use a separate typed historical capture payload over the existing Store, linking its conversation/turn and capture operation without implementing a second native journal. It preserves the entire SDK-owned facts shape through read-only accessors: observation and ordered identities; receipt/capture roles where applicable; original intervals and synthetic clock/qualification/render labels; parent/derivative descriptors, scope, lineage, target and geometry. SDK owns field meaning and schema. Buddy's storage container uses canonical UUIDs and explicit named enums, u64 values and geometry bits encoded as canonical decimal strings, and Duration seconds/nanoseconds components. Unknown fields/versions/names and missing required facts refuse domain use; high integers never pass through floating-point JSON numbers. Captured bytes are stored as existing content-addressed media with exact hash/length/MIME. A parent is retained even when not submitted to a provider. Facts do not contain a live guard and cannot be converted into one.
