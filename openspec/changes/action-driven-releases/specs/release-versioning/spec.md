@@ -90,11 +90,15 @@ Source: REM-30's recovery requirements and REM-46 coordinator removal.
 
 #### Scenario: Old unfinished draft
 - **WHEN** the exact tag has an unfinished draft beyond the first two releases-list pages
-- **THEN** the upstream action follows pagination and reuses that draft rather than creating a duplicate or requiring a new tag.
+- **THEN** upstream direct tag lookup or complete pagination discovers and reuses that same draft ID, with no duplicate create request or new tag.
 
 #### Scenario: Failed release observation
-- **WHEN** the release lookup returns a network, authentication or unexpected API failure instead of an explicit 200 or 404
+- **WHEN** the release lookup returns a network, authentication, GraphQL or unexpected API failure, or a malformed identity/state observation
 - **THEN** the run fails before draft changes or application builds; the error is never interpreted as a missing release.
+
+#### Scenario: Unsupported draft asset inventory
+- **WHEN** an existing draft exceeds the upstream uploader's verified complete asset-discovery bound
+- **THEN** the run refuses before compilation or asset mutation and reports the unsupported inventory rather than overlooking an asset on another page.
 
 #### Scenario: Upload interruption
 - **WHEN** an artifact upload fails

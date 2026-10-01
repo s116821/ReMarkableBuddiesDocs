@@ -84,8 +84,8 @@ Candidate composition, pinned to inspected immutable revisions before delivery:
 | Semantic PR title | Existing amannn/action-semantic-pull-request, with application titles excluding docs and public scopes allowed |
 | Version selection | GitTools/actions v4.7.0 (`7417b1089e2c7de93510f1901d656ddf60bb024f`), GitVersion 6.8.2, TaggedCommit/Mainline strategies and conventional-message configuration |
 | Immutable tag creation | Pinned upstream tag-only Action on Linux, with force disabled and exact commit supplied; candidate rickstaa/action-create-tag v1.7.2 (`a1c7777fcb2fee4f19b0f283ba888afa11678b72`) |
-| Published-release observation | octokit/request-action v3.0.0 (`b91aabaa861c777dcdb14e2387e30eddf04619ae`), one fixed GET route and declarative status guards |
-| Draft/assets/publication | Selection remains open: the investigated ncipollo and softprops candidates do not yet satisfy complete old-draft recovery |
+| Exact release observation | Proposed official octokit/graphql-action v3.0.2 direct tag query, validated identity/state and fail-closed results |
+| Draft/assets/publication | Proposed official octokit/request-action v3.0.0 (`b91aabaa861c777dcdb14e2387e30eddf04619ae`) fixed create/PATCH routes and AButler explicit-ID upload, pending strengthened qualification |
 | Handoff between build jobs | actions/upload-artifact and download-artifact with exact run-local artifact names and missing-artifact failures |
 | Scheduling | Native Actions dependencies, bounded timeouts and concurrency `queue: max`, without canceling active releases |
 
@@ -175,12 +175,14 @@ version calculation, immutable identity checks and separate artifact namespaces,
 not assumed FIFO. Queue limits/cancellation remain visible failed or cancelled runs
 which can be rerun; do not label them released or silently substitute a later SHA.
 
-After successful tag creation, the official Octokit request Action observes the
-release-by-tag endpoint. Only 200 and 404 are accepted: missing status, network,
-authentication and other API failures stop the run. A published 200 response skips
-all draft/build/publication steps; a draft response or 404 allows draft discovery.
-The route and status checks are declarative Action inputs/expressions, not an API
-client, custom query loop or release engine. Build jobs run only for an unfinished draft,
+After successful tag creation, the proposed official Octokit GraphQL Action observes
+the exact release by tag, including its draft state, database ID and asset count.
+Network/authentication/GraphQL errors or malformed repository/release observations
+stop the run. A validated published result skips all draft/build/publication steps;
+a validated draft reuses its ID and only explicit null release permits creation.
+An REST release-by-tag 404 alone does not prove draft absence. The query/routes and
+checks are declarative Action inputs/expressions, not an embedded API client or
+custom query loop. Build jobs run only for an unfinished draft,
 checkout the exact remote tag, and produce the two Rust packages or the existing
 browser/Windows/Linux Manager packages with matching embedded version and provenance.
 
@@ -199,11 +201,11 @@ duplicate create for an existing page-three draft and fails on that pin, confirm
 the source review. A production-dependency audit additionally reports advisories;
 do not downgrade as a workaround without resolving compatibility/security findings.
 
-Resume by finding an upstream composition satisfying the existing requirement,
-with a fixture that checks the same draft ID, pagination beyond two pages and no
-duplicate POST. Use actual distributions and fail unexpected lookup errors. Keep
-the official fixed-route Octokit observation proposal, but do not misrepresent it
-as solving publication discovery. No private query loop or coordinator is allowed.
+Qualify the October 1 upstream composition with an actual-distribution fixture
+that checks the same draft ID despite release-list placement beyond page two and
+no duplicate POST. Direct upstream tag lookup may avoid listing entirely; the
+requirement is complete recovery, not a mandated pagination algorithm. Fail all
+unexpected observations. No private query loop or coordinator is allowed.
 
 Recovery is an Actions rerun of the original merge or manual dispatch naming an
 existing stable tag. Manual recovery does not invent a version, move a tag or tag
