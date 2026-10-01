@@ -2,8 +2,8 @@
 
 This additive plan implements tasks3.1–3.3 and4.4 in the active REM37 change.
 It does not qualify SDK acquisition, page binding or native completion. The current
-Rustb4bee21 persistence checkpoint has an independently reproduced derivative
-geometry validation defect; fix that before consuming its historical SDK DTO.
+Rust18e1a741 capture-persistence checkpoint fixes the independently reproduced
+derivative geometry defect and has bounded independent Sol acceptance.
 
 ## Acquisition states
 
@@ -22,12 +22,10 @@ submitted, preserving their original order. Retain an acquisition parent wheneve
 provided; if a legacy backend supplies none, record that absence explicitly. Do not
 claim sibling derivation or original acquisition pixels from overview alone.
 
-This proposes a coordinated change to SDK capture-contract.md's present restriction
-that identity-free diagnostic pixels cannot be associated with a conversation.
-That restriction remains authoritative until the SDK owner accepts an amendment
-distinguishing a Buddy-owned explicitly unbound legacy run from an SDK-qualified
-source association. No SDK SourceObservation, live guard or binding follows from
-such a run. Implementation of this proposed state waits for that exact agreement.
+SDK amendment [1072e12bcfff8fabf3c64ca7bb7b1c8396e8967b](https://github.com/s116821/ReMarkableOpenSDK/commit/1072e12bcfff8fabf3c64ca7bb7b1c8396e8967b)
+now permits this explicitly selected Buddy-only unbound legacy history. It preserves
+refusal for failed SDK capture, absent native qualification and all output guard and
+receipt requirements. Detailed consumer implementation remains subject to exact review.
 
 Proposed Buddy legacy payload: schema1, evidence ID, conversation/turn IDs,
 origin LegacyUnqualified, identity None, qualification None, acquisition-parent
@@ -88,6 +86,48 @@ preserving the interpreted user turn. Proven no-effect failures may record
 Failed/Canceled; ambiguous device errors retain uncertainty. Storage failure before
 rendering prevents rendering. Failure after possible input leaves the precommitted
 draft for explicit inspection and restart reconciliation, never automatic replay.
+
+## Concrete consumer choices for review
+
+Add a distinct `Record::LegacyCapture` in the Source namespace, linked from the
+Prepared user's sources. Keep `Record::Capture` exclusively SDK historical facts.
+Expose legacy evidence separately in context, inspection and retained-media APIs;
+never construct ImageUse/SourceObservation from it. Descriptor role/ordinal and
+encoded-byte digest determine provider ordering and retry fingerprints. Integrity
+checks fully decode PNG/JPEG under existing bounds without reencoding them.
+
+The backend explicitly selects acquisition kind before Workflow starts capture.
+The trait default is unsupported; RealDevice and simulator declare legacy selection
+explicitly, while SDK fixtures opt into the SDK branch. Workflow freezes overview
+and detail bytes once within the existing request guard before ledger preparation.
+Base64 details are decoded once to their exact original encoded bytes. Any error in
+SDK acquisition or in legacy capture/details refuses before provider dispatch.
+No branch attempts a second acquisition as error recovery.
+
+Until qualified source/binding lookup exists, each legacy iteration creates a new
+explicitly unbound conversation. It does not infer continuity from headers, OCR,
+image equality or process-local history. Stored unbound history can be inspected
+by its Buddy conversation ID after restart; automatic same-page resume remains an
+open qualification gate. This bounded integration is not complete REM37 acceptance.
+No historical turns are silently injected into a provider request; future resume
+must use the existing explicit context budget/selection contract.
+
+Add an explicit Reader output result: NoOutput(reason) or SubmittedUnverified.
+Commit the assistant Generated draft before entering render_answer. Navigation
+attempts are effects: record ReconcileRequired before entering rendering, then
+retain it after a submitted output or ambiguous error. NoOutput is restricted to confirmed unchanged source or a verified return without
+answer input; an unconfirmed return stays uncertain. A proven no-output result
+can be separately recorded as a reconciled Failed revision; it cannot masquerade
+as Completed. This requires an explicit fact-only reconciliation operation with
+root/turn CAS, retained history and idempotent fingerprint, rather than widening
+ordinary advance to replay effects. No runtime restart automatically reconciles
+or dispatches these attempts. The renderer preserves existing request/undo guards.
+
+If preparation or assistant-draft publication fails, propagate the storage error
+and make zero subsequent provider/output calls. If terminal recording itself fails,
+return a combined error and leave the previously durable Prepared/Generated or
+ReconcileRequired facts intact. The caller cannot invent an acknowledged terminal
+state; restart inspection reports the interrupted state for explicit reconciliation.
 
 ## Verification and remaining design work
 
