@@ -262,3 +262,24 @@ Primary references: [GitVersion configuration](https://gitversion.net/docs/refer
 [request Action](https://github.com/octokit/request-action/tree/v3.0.0),
 [merged PR events](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#running-your-pull_request_target-workflow-when-a-pull-request-merges),
 [GitHub concurrency](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency).
+
+
+### October 1 implementation blocker: equal commit timestamps
+
+The actual checksum-verified GitVersion 6.8.2 Windows and Linux distributions
+fail two deterministic cases in `release/test_versioning_equal_dates.py` in both
+component branches. Three linear commits at the same timestamp (baseline
+`v0.1.17`, `feat(REM-46)`, `fix(REM-46)`) yield `0.2.0` for the fix instead of
+`0.2.1`. Tagging the later fix `v0.2.1` and checking out the earlier feature yields
+`0.2.2` using the descendant tag instead of `0.2.0`. The reported source SHA still
+matches HEAD, so the existing SHA guard does not detect the wrong version.
+Hosted Linux fixtures surfaced the defect; ordinary slower local fixtures pass.
+Do not stagger dates or weaken assertions to claim this is qualified.
+
+Source inspection shows that [current-branch selection uses commit time](https://github.com/GitTools/GitVersion/blob/6.8.2/src/GitVersion.Core/GitVersionContext.cs#L23),
+and [its prior-commit filter skips by date](https://github.com/GitTools/GitVersion/blob/6.8.2/src/GitVersion.LibGit2Sharp/Git/CommitCollection.cs#L22).
+Those lines are relevant evidence, not proof that a private workaround is safe.
+No maintained-upstream configuration remedy has been qualified. The selected
+version action is therefore provisional; publication remains blocked and the
+change stays active. A replacement composition or changed upstream pin requires
+an explicit design delta and independent acceptance before implementation.

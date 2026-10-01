@@ -12,13 +12,13 @@
 - [x] 2.5 Preserve required check names, docs-only completion/no compile, independent versions and REM-35 major guard.
 
 ## 3. Verification
-- [x] 3.5 Strengthened actual-distribution fixtures reuse a draft beyond release-list page two with its same ID and zero duplicate POST; exercise GraphQL errors/malformed results, published pre-build skip, asset-count refusal, partial uploads and ID-based retry. Both four-test suites pass at Rust `bb49e4f` / Manager `da240b8`. Actual downloaded 0.2.0 ARM ELF symbol/version requirements match the selected vendor SDK; all four provider hashes match coordinator-collected native hashes. Actual new-package/native behavior and hosted CI remain separately gated.
-- [x] 3.1 Exercise actual upstream distributions in isolated fixtures: semantic types/body/footer, docs/mixed/unknown/renamed paths, reverted history and missing history. GitVersion6.8.2 history fixture, actual dorny distribution and real Rust build.rs metadata fixture passed locally.
+- [x] 3.5 Strengthened actual-distribution fixtures reuse a draft beyond release-list page two with its same ID and zero duplicate POST; exercise GraphQL errors/malformed results, published pre-build skip, asset-count refusal, partial uploads and ID-based retry. Both four-test publisher suites pass at Rust `bb49e4f` / Manager `da240b8`; they do not establish semantic-version correctness. Actual downloaded 0.2.0 ARM ELF symbol/version requirements match the selected vendor SDK; all four provider hashes match coordinator-collected native hashes. Actual new-package/native behavior and hosted CI remain separately gated.
+- [ ] 3.1 Exercise actual upstream distributions in isolated fixtures: semantic types/body/footer, docs/mixed/unknown/renamed paths, reverted history and missing history. Ordinary GitVersion6.8.2 history, actual dorny distribution and real Rust build.rs metadata fixtures passed locally, but the actual Windows and Linux GitVersion distributions fail the added same-second ancestry regression. Semantic-version qualification remains open.
 - [ ] 3.2 Verify tag-before-build, wrong-SHA conflict, main advancement, reverse queue order, existing tag/draft retry, published skip and partial upload using mocked/local boundaries.
 - [ ] 3.3 Validate workflow syntax/action inputs and run appropriate Rust/Manager build, package and metadata checks; no production test tags.
 - [ ] 3.4 Obtain independent exact-code/spec review and required CI; inspect bot comments, reporting unavailable bot coverage honestly.
 
 ## 4. Coordinated delivery
-- [ ] 4.1 Publish linked Docs/Rust/Manager PRs with Summary-only bodies and detailed evidence in comments.
+- [x] 4.1 Publish linked Docs/Rust/Manager draft PRs with Summary-only bodies and detailed evidence in comments: Docs #5, Rust #29, Manager #2. Same-second GitVersion blocker is disclosed in all three comments; delivery remains unfinished.
 - [ ] 4.2 Sync both canonical capabilities, archive only this completed change, validate and review the exact final revision set.
 - [ ] 4.3 Coordinator squash-merges in reviewed order, verifies actual release/tag/runtime versions and docs-only skips, and updates REM-46/REM-35 handoff.
