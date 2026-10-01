@@ -1,5 +1,7 @@
 # REM-37 authority and acceptance mapping
 
+October 1 refresh: all current REM-37 description/comments and related platform clarifications were read in the 47-issue/138-comment audit. Native capability ownership is now ReMarkableOpenSDK, with its own canonical OpenSpec. This change owns Buddy integration only. Accepted dependency bases are Rust ff8ad75bec45fca403d55a7b6d93eb83ab732e3d / Docs8008389fa676d395401e6f28e049b47baa7b10ef. Domain work may proceed after amendment review; tasks3/4.6 cannot claim native SDK qualification from host fixtures. User October1 resume supersedes all historical90% stops; ordinary allowance to exhaustion, no credits/reset redemption. NonSDK implementation/review uses GPT6.1Sol.
+
 Plan only. No checkbox or scenario is implemented by publishing this file. Authority read in full: REM-37 description updated September 26, 2026 at 21:28:14 UTC, its September 26 21:12:36 UTC export-correlation comment, and the resumed MVP roadmap. The correlation clarification replaces a heavyweight identity prerequisite with a portable lightweight marker. Current resume supersedes older planning-pause text. REM-46's later upstream-Action release constraint applies separately.
 
 | Requirement | Planned implementation and evidence | Tasks |

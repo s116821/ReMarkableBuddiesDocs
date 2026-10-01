@@ -29,3 +29,7 @@ The application SHALL process Reader Buddy iterations on real devices or the mai
 #### Scenario: Mixed-mode domain evidence
 - **WHEN** shared Reader/Writer ledger API fixtures pass
 - **THEN** evidence identifies domain persistence and does not claim native Writer UI, unified page routing or automatic acquisition is implemented.
+
+#### Scenario: SDK integration qualification
+- **WHEN** conversation persistence consumes device identity, capture provenance or a native output result
+- **THEN** the Buddy integration uses the reviewed ReMarkableOpenSDK capability boundary through the mockable device seam, records the exact SDK contract/revision and qualification limits, and refuses unsupported or unqualified native success rather than adding hardware-specific logic to the conversation domain; SDK canonical contracts remain in the SDK repository.

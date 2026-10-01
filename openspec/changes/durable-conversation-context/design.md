@@ -6,6 +6,14 @@ Authority is the complete REM-37 description and September 26 correlation clarif
 
 ## Goals / Non-Goals
 
+## October 1 authority and platform boundary
+
+The current REM-37 description and comments remain applicable; October 1 REM-25/35/38/39/40 clarifications establish ReMarkableOpenSDK as the independent owner of hardware-facing capabilities and its own OpenSpec. Buddy/Manager integration requirements remain here. No SDK canonical API, firmware adapter or native implementation is defined by this change. SDK capabilities supply qualified current document/page identity, normalized capture/viewport provenance and verified native output/creation receipts. Buddy records those observations without inferring native success from a callback, elapsed time or model output. Unsupported or unqualified capability results fail closed at the native integration boundary. The existing DeviceBackend/simulator seam remains mockable; do not introduce new raw xochitl/evdev/model/firmware branches in conversation code. Existing legacy mechanics may be used only through that seam during incremental migration; their limits remain explicit. XOVI cannot be a production dependency.
+
+The domain store, exact-image preparation, chronology/context, logical binding CAS and export association work can proceed on accepted REM-36 independently of native SDK qualification. Native Reader receipt/capture integration and hardware verification stay open until the required SDK contract is reviewed and qualified, with exact SDK revision/capability evidence recorded. No host fixture can close that gate. SDK operation journal and contract details are coordinated with its owner rather than duplicated into Buddy canonical specs.
+
+Accepted dependency bases: Rust `ff8ad75bec45fca403d55a7b6d93eb83ab732e3d`, Docs `8008389fa676d395401e6f28e049b47baa7b10ef`. Shared Store limits and existing API were accepted in REM-36; this change owns only the minimal bounded read-only namespace/head enumeration needed by the domain, preserving the one manifest authority.
+
 **Goals:** exact shared Reader/Writer history, stable conversation/turn/page identities, retrievable original source images, explicit interrupted-operation states, restart/revisit lookup, safe binding CAS, lightweight export correlation and storage-backed regression evidence.
 
 **Non-Goals:** implementing Writer UI, newest-first renderer, automatic page insertion, provider prompt redesign, restored native undo ownership, external export adapters, media garbage collection, release automation or 1.0 acceptance. These remain their named roadmap deliveries. Shared APIs are tested with both Buddy modes; simulated Writer calls are not native Writer evidence.
