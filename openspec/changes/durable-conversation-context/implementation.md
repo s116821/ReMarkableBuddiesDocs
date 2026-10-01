@@ -44,7 +44,7 @@ heads or 8 MiB of selected serialized metadata before cloning instead of truncat
 Conversation inspection applies these bounds to the requested conversation; unrelated
 foreign history does not consume its budget. The retained-media report also inspects
 bounded historical source revisions, including references superseded by tombstones.
-Partial-restore coverage still needs expansion. Imported payload identity, geometry and media
+Imported payload identity, geometry and media
 descriptors are checked; image retrieval verifies its encoded hash and dimensions
 and fully decodes PNG/JPEG without reencoding. Image decoding refuses either axis
 above8192, a four-byte-per-pixel preflight above32 MiB, or decoder allocations above
@@ -55,6 +55,26 @@ check and skipped-turn behavior insufficient despite the passing earlier suite;
 adversarial regression evidence drove these fixes.
 Reader still uses its existing orchestration; its Store handle, exact capture batch,
 terminal outcomes and qualified restart/revisit seam have not yet been integrated.
+
+The SDK consumer persistence checkpoint pins source7e8ffd51f27cc63d79475754071b6444eab048fb.
+Its separate historical DTO preserves original scopes, synthetic labels, intervals,
+u64 values and floating-point geometry bits without restoring a live SDK guard.
+Synthetic preparation atomically commits the prepared turn, complete facts and exact
+parent/provider media; retries retrieve the original ordered bytes. Eight additional
+real-Store tests cover reopen, strict decoding, distinct acquisition scopes, storage
+failure boundaries, tampered dimensions, nil operations and both recovery cases.
+Unexpected required-media corruption discovered during Store recovery causes a typed
+store-wide IncompleteStore refusal. This conservative refusal can affect unrelated
+conversations because skipped commits cannot reliably be attributed. Explicitly
+declared unavailable media in a selected-record restore instead preserves text/facts,
+reports absent evidence and refuses image retrieval. Deleted capture history remains
+in the retention report. No Store recovery protocol was changed.
+
+The fixture dispatch counter observes bytes retrieved by the persistence API; it is
+not a real Reader/LLMEngine recording-provider test. Initial SDK capture construction
+validates derivation pixels; restored DTO checks validate descriptors and lineage,
+not a second pixel derivation proof or cryptographic authenticity of imported facts.
+Reader integration and native qualification remain open.
 
 Source basis: current checked-in source/tests and observed local commands; accepted
 Docs amendment 0694cb53c761141d01be377218d2d862e82d36f8 over Docs8008389/Rustff8ad75;
