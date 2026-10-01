@@ -29,6 +29,24 @@ distinguishing a Buddy-owned explicitly unbound legacy run from an SDK-qualified
 source association. No SDK SourceObservation, live guard or binding follows from
 such a run. Implementation of this proposed state waits for that exact agreement.
 
+Proposed Buddy legacy payload: schema1, evidence ID, conversation/turn IDs,
+origin LegacyUnqualified, identity None, qualification None, acquisition-parent
+descriptor Option, and an ordered list of actual provider-image descriptors
+(Media, decoded dimensions, overview/detail role and provider ordinal). Require
+explicit null for absent fields and refuse unknown fields/versions. Do not add
+affine, crop or viewport provenance when the backend did not provide verified
+descriptors. A supplied parent is retained as acquisition pixels without claiming
+an SDK-qualified owner or derivation. Preserve the distinction from SDK Capture
+records in context and retained-history APIs. Conversation UUIDs identify Buddy
+records only and are never replacement document/page UUIDs.
+
+Preparation bounds:1–15 provider images plus at most one acquisition parent,
+32MiB encoded per image and64MiB encoded total, checked before staging; existing
+8192-axis/32MiB full-image decoding limits still apply. Fail rather than truncate.
+Apply ordinary root CAS, operation fingerprint/retry, integrity and retention rules.
+These are consumer persistence bounds, not native compatibility or aggregate
+process-memory guarantees.
+
 ## Preparation and provider use
 
 Orchestrator retains the shared Ledger created from startup's existing Arc<Store>.
@@ -60,6 +78,16 @@ undo ownership and request retirement guards remain intact.
 Historical unbound context remains useful for inspection without page-revisit or
 native-binding guarantees. SDK-dependent operations refuse unavailable or synthetic
 qualification. This plan does not retrofit legacy verification into SDK receipts.
+
+The current backend can report NoOutput for absent/invalid successors or
+SubmittedUnverified for a render that succeeds without a qualified SDK receipt.
+Neither state becomes Completed. Commit the generated assistant draft before
+navigation/output; once input may have occurred, missing verification leaves
+ReconcileRequired. Record a no-output refusal as Failed with an explicit reason,
+preserving the interpreted user turn. Proven no-effect failures may record
+Failed/Canceled; ambiguous device errors retain uncertainty. Storage failure before
+rendering prevents rendering. Failure after possible input leaves the precommitted
+draft for explicit inspection and restart reconciliation, never automatic replay.
 
 ## Verification and remaining design work
 
