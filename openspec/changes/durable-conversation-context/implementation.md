@@ -20,20 +20,21 @@ objects. Export marker discovery produces unique/conflict/uncertain decisions an
 never performs an external write. SDK/native receipt qualification and real export
 adapters remain separate gates.
 
-Nineteen host integration tests pass: Store reopen with Reader/Writer/Reader chronology;
+Twenty host integration tests pass: Store reopen with Reader/Writer/Reader chronology;
 concurrent identical retry and lost commit acknowledgment; stale-head refusal;
 generated-to-verified completion; competing page/conversation claims and deletion
 retry without resurrection; shared media retention/missing objects; exact prepared
 batch reuse; failed storage/invalid dimensions before dispatch; and exact export
 marker discovery; replica multihead refusal; explicit ranges, corrections and typed
 budget refusals; duplicate/unallocated imported chronology refusal; retained media
-after a source tombstone; unknown payload/legacy coexistence; four commit failure boundaries;
+after a source tombstone; truncated pixel data and missing allocated turn refusal;
+unknown payload/legacy coexistence; four commit failure boundaries;
 native-parent crop byte identity; competing different-page claims; malformed imported
 identity/geometry; and isolation from unrelated oversized conversation metadata.
 Strict all-target/all-feature Clippy passes. These are domain
 tests, not a real Reader recording-provider integration or tablet smoke test.
-The complete Windows all-target/all-feature suite passed 261 tests at Rustde355b2.
-Later chronology and retained-revision changes pass the focused 19-test domain suite
+The complete Windows all-target/all-feature suite passed 263 tests at Rust5772c25.
+Later independently reproduced malformed-image and chronology-gap fixes pass the focused 20-test domain suite
 and strict all-target/all-feature Clippy; that full-suite result is not attributed
 to a later tree without another full run.
 
@@ -44,7 +45,14 @@ Conversation inspection applies these bounds to the requested conversation; unre
 foreign history does not consume its budget. The retained-media report also inspects
 bounded historical source revisions, including references superseded by tombstones.
 Partial-restore coverage still needs expansion. Imported payload identity, geometry and media
-descriptors are checked; image retrieval verifies its encoded hash and dimensions.
+descriptors are checked; image retrieval verifies its encoded hash and dimensions
+and fully decodes PNG/JPEG without reencoding. Image decoding refuses either axis
+above8192, a four-byte-per-pixel preflight above32 MiB, or decoder allocations above
+32 MiB; this is an image-decoder limit, not aggregate process memory qualification.
+Live-root inspection requires unique allocated sequence coverage without allocating
+an attacker-controlled sequence range. Independent review found the previous header-only
+check and skipped-turn behavior insufficient despite the passing earlier suite;
+adversarial regression evidence drove these fixes.
 Reader still uses its existing orchestration; its Store handle, exact capture batch,
 terminal outcomes and qualified restart/revisit seam have not yet been integrated.
 
