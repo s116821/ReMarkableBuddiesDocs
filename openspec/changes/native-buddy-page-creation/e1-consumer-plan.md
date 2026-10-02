@@ -66,18 +66,27 @@ firmware, account, broad service or native-page change is part of this test.
 
 Before another native trial, [targeted Buddy correction9e856ba](https://github.com/s116821/ReMarkableBuddies/commit/9e856ba27c81b61efc0c181e2414c7454c3c9f2c)
 adds fixed failure-stage/exit diagnostics and bounded fresh stock observations
-after the one physical restoration. It is under independent review, not executed;
+after the one physical restoration. Its targeted operator logic passed independent review, but has not run on the tablet;
 neither a longer wait nor elapsed time alone proves readiness. The historical
 first exit1 remains unexplained. No new generic E0T framework is required here.
 
-The next [SDK lifetime proposal5c68b2e](https://github.com/s116821/ReMarkableOpenSDK/commit/5c68b2e2dfa91cd178bae3133a03f445d5ed29c7)
-is a typed existing-registration/container/weak-guard retention proof, without
-QObject dereference or factory/getter/page calls. Fixed first-match lookup cannot
-prove duplicate absence; explicitly leave uniqueness unproven and treat the
-retained guard as candidate evidence only. QPointer does not pin QObject lifetime
-and can remain noncleared during derived destruction. Future displayed-source and
-operation authority require separate evidence. Payload/source/fixture preparation
-is pending, and no further tablet run follows without exact review.
+The resumed October 2 direction makes public existing-QML-engine access the next
+experiment, adapting the pinned rm-librarian pattern recorded in
+[SDK reuse decision7a7677b](https://github.com/s116821/ReMarkableOpenSDK/commit/7a7677b6755d97075b78e149a8c7a8edf07dd289).
+Use window and component readiness events; a deadline can refuse an attempt but
+cannot establish readiness. A fixed helper checks DocumentController availability
+on one unique existing engine and the application thread. QML imports and singleton
+resolution can invoke registration code, change engine association or ownership,
+and evaluate bindings; this is not a pure read-only guard. No controller methods,
+page operations or navigation belong in this access experiment. Exact source,
+firmware-matched fixtures, payload and operator review remain pending.
+
+The private typed weak-guard proposal and prepared packet remain preserved and
+unexecuted. They are no longer the next probe. QPointer does not pin QObject
+lifetime and can remain noncleared during derived destruction. Public access
+likewise does not establish displayed-source identity or page-operation authority.
+Future RM1 work waits for identified, available hardware and coordinated ownership;
+it does not block RM2 or qualify either model. Paper Pro remains on the roadmap.
 
 Source basis: current project direction, exact repository revisions, ordinary
 independent review and actual private R2/Qt/recovery receipts. This is development research;
