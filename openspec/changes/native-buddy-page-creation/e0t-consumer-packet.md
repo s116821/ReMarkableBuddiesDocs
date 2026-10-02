@@ -100,3 +100,29 @@ mount/enable/configuration change or silent fallback is authorized. Astra/coordi
 must review any resource-contract revision before a runnable packet can freeze.
 Both read-only commands preserved original xochitl/rm-sync PID/start/state and all
 three observed active services. Physical UI responsiveness was not tested.
+
+## Revised dummy-only resource design for preparation
+
+The SDKbc5e87a9762ef192b8332d651d60a17fc226efda revision supersedes the mandatory
+cgroup recipe for design, while retaining refusal before execution until the exact
+replacement controls are demonstrated. No controller/kernel/global change follows.
+Kernel per-process address-space, stack, data, file, core and CPU limits must have
+frozen numbers, exact initial mapping/headroom evidence and successful set/get reports.
+They do not establish RSS or an aggregate descendant-memory guarantee. Concurrency
+remains source-bounded and observed (12roles/8processes/16tasks), not kernel pids-capped;
+root RLIMIT_NPROC cannot prove it. All creation sites, children, threads, failure and
+cleanup overlaps need an exact table and actual slot termination before reuse.
+
+An initial helper sizing proposal is AS8MiB, stack512KiB, data1MiB, file2048bytes,
+core0 and CPU2s. These values are preparatory candidates, not frozen device limits.
+The helper profile must report its initial mapped bytes and getrlimit results before
+case effects. Reject insufficient loader/stack/heap headroom and failed limit checks.
+A separate manager-command artifact needs its own measured mapping/headroom/limit
+row; do not assume the helper's limits fit systemctl or treat inherited settings as
+post-exec verification. Reduce concurrency before enlarging workload. Fixed buffers,
+checked allocation/output, aggregate evidence accounting and independently reserved
+cleanup budget supplement kernel per-process controls. Finite owned refusal fixtures
+must remain small; no fork/memory stress or unreviewed ninth device case is added.
+
+The exact numeric table, source/artifact proofs, complete operator and independent
+packet review remain missing. Preparation is authorized; no stage/start is authorized.
