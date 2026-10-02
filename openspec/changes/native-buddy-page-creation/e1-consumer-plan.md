@@ -78,8 +78,24 @@ cannot establish readiness. A fixed helper checks DocumentController availabilit
 on one unique existing engine and the application thread. QML imports and singleton
 resolution can invoke registration code, change engine association or ownership,
 and evaluate bindings; this is not a pure read-only guard. No controller methods,
-page operations or navigation belong in this access experiment. Exact source,
-firmware-matched fixtures, payload and operator review remain pending.
+page operations or navigation belong in this access experiment.
+
+The first public-access packet used [SDK sourcee017ccc](https://github.com/s116821/ReMarkableOpenSDK/commit/e017ccce2c6a6a0b408fe04eaca31a264d1919c8)
+and [Buddy operator6074e56](https://github.com/s116821/ReMarkableBuddies/commit/6074e56a6198850c39b5cdd5bcb76466d16f4f4f).
+Main independently reproduced twelve owned vendor-Qt ARM-emulated fixtures;
+ordinary Sol independently rebuilt the identical target artifact and reviewed the
+exact operator. One announced RM2 run emitted application_thread=true and
+engine_thread=true, then component-error with helper/controller availability=false.
+This demonstrates existing-engine acquisition for one episode; singleton access
+remains unproven. The original operator receipt records restored=true and
+cleanup_verified=true. Independent receipt/token review and another read-only
+stock observation confirmed original files/policy, all three active services,
+empty job, old attempt gone and exact staging/drop-in/transient units removed.
+No retry of this spent packet follows. The scoped journal contains no helper
+compilation explanation. A distinct community-aligned versionless-import probe
+with bounded categorical errors is next; the import difference is a hypothesis,
+not a verified cause. Physical UI responsiveness and production recovery remain
+unqualified, even though restoration succeeded in this episode.
 
 The private typed weak-guard proposal and prepared packet remain preserved and
 unexecuted. They are no longer the next probe. QPointer does not pin QObject
