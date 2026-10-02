@@ -208,7 +208,7 @@ preparation results do not close native creation or the broad OpenSpec tasks.
 
 ## Finite job-namespace scope decision
 
-Coordinator accepted SDK88b1bd7c9ab56936ea10c3f956fc2bde675cc321's narrow E0T
+Coordinator accepted SDKbce300e2170561f58579da40d6faeb49b15989f5's narrow E0T
 scope proposal: assume no external manager reexec/reset/switch-root/configuration
 mutation and no job ID reuse between observation and cancellation. These are
 explicit environmental scope assumptions, not properties proved by the observer.
