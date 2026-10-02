@@ -70,3 +70,38 @@ are open and no canonical sync/archive follows.
 Source basis: actual current private read-only receipts, coordinated SDK source
 investigation and current project direction. Candidate mechanisms and gates are
 engineering proposals; no activation or production qualification is claimed.
+
+## Exact upstream parser and actual coupling findings (October 2)
+
+Original Buddy tooling at22ff4e8fc782624dab4ea2e41c446183f43dd07f builds
+upstream systemd-stable255.21 commit70500d37992a01d3275b1c414c3ed161d6f91f9e.
+Independent Sol accepteda93fbe5193e84269388d94ac8c982f49befb5774 and reran all
+four offline assertions; it accepted the single-line default-parser follow-up22ff4e8.
+Empty OnFailure retains vendor and added handlers; a full runtime fragment retains
+vendor unit-specific drop-ins; separate names have no handler absent configuration;
+generic service.d handlers affect separate names. No unit/job executes in test mode.
+The rebuilt default-parser image7176a0bc5ab9432d73ed2e447f18c27e5b3a2f00e957c43faaddddfede47e209
+passed all four; ELF SHAf132ac4469673ce3aead14c70b286ebfab2d0e22f572d25d95040b7b7f54f4be,
+GCC13.3.0. Ubuntu base/packages are unpinned and vendor patch equivalence is unknown.
+Host system/user-manager attempts failed to allocate a manager under the isolated
+read-only cgroup v1 hierarchy. Owned containers were removed; host cgroups unchanged.
+Parser proof does not qualify live jobs, stop timing, notify or failure recovery.
+
+Further read-only actual tablet inventory, receipt
+SHA8f39ed85979abc4db2ea7eb465ee5f1ddbddee1872b82ebef378fa743c0497ac,
+found rm-sync BindsTo and PartOf stock xochitl, with After ordering. Xochitl Wants
+rm-sync and Reader Buddy Wants xochitl. A separately named service cannot assume
+sync persists, and starting unchanged sync can reactivate stock. Generic service.d
+directories were absent under /usr/lib,/etc,/run at that snapshot; dash-prefix lookup
+and later drift still need gating. Original PID/start/state and both services stayed
+unchanged. No introspection, account/document read, service change or activation ran.
+
+The [SDK E0T proposal at a2f68c9](https://github.com/s116821/ReMarkableOpenSDK/blob/a2f68c91e48c3eebf763cc15bfc214b44907fb49/openspec/changes/establish-native-platform-contract/e0t-dummy-unit-plan.md)
+proposes finite actual-manager tests using only unique owned dummy units. Preparation
+is authorized; staging/starting requires review and approval of exact helper, units,
+operator, manifest, limits, effective-property gates and independent cleanup. No real
+vendor dependency/handler, global setting, XOVI/native payload or boot change belongs
+in that packet. It tests dummy-manager behavior only and does not authorize E1.
+
+Source basis: exact original source/report, independent Sol review, actual private
+read-only service receipt and coordinated SDK proposal. The E0T cases are proposed.

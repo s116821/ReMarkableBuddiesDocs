@@ -36,3 +36,30 @@ no canonical spec sync or archive follows.
 
 Source basis: exact public source/specification revisions, observed author commands
 and visible independent Sol review. Native behavior is unverified.
+
+## Later bounded checkpoints (October 2)
+
+The preceding6fe9 record remains historical. Independent Sol accepted
+214680af2b3d0c0b0490ccba5415065ffd60fe60 (24tests29.511s plus direct
+pipe-loss reproducer), then71d216ecec681fdeb71600bcd1c0559ee569501e
+(25tests35.824s). The Supervisor now owns its injected Popen before configuration,
+restores independently after guard-pipe loss, and shares one serialized scoped
+restoration with guard requests. Real guard death at activation barriers and lost
+prepare/apply/restore replies are checked against stock OS identity and exact bytes
+before runner cleanup. Two queued same-stream requests reuse one stock identity and
+restore count; foreign nonce/process scopes and late apply/partial writers refuse.
+This is serialized request idempotence, not independent concurrent actor execution.
+
+New original checkpoint50c83715fc59efd2d60a422f575fdf97a17559ba passed29author
+tests35.711s; independent review is pending. Four extra real-process faults cover:
+Supervisor exit while the guard awaits restoration; EOF with a still-live writer;
+actual filesystem refusal to publish a receipt; and loss of the stock process named
+by cached completion. EOF is not proof of death. Takeover requires actual OS exit,
+with a bounded0.5s wait inside the rollback deadline; a live writer remains uncertain.
+Publication failure caches RecoveryFailed with ownership retained, and duplicate
+queries cannot spawn again. Cached success rechecks live stock identity and baseline
+bytes. Receipt files record historical observations, not perpetual health leases.
+
+All are host-only fake processes. Simultaneous loss, arbitrarily blocked filesystem
+calls, native/service-manager behavior and production recovery remain unqualified.
+Broad tasks remain open and no E1 permission, sync, archive or completion follows.
