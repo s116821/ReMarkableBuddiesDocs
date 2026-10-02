@@ -97,6 +97,19 @@ with bounded categorical errors is next; the import difference is a hypothesis,
 not a verified cause. Physical UI responsiveness and production recovery remain
 unqualified, even though restoration succeeded in this episode.
 
+The distinct [SDK0149b5d](https://github.com/s116821/ReMarkableOpenSDK/commit/0149b5d14cc83e6e905643cd1e952b621e58adc4)
+/ [Buddy5559ef5](https://github.com/s116821/ReMarkableBuddies/commit/5559ef5afa30e136e72a66e7ab3a4a7722224d53)
+versionless-import packet passed independent fifteen-case ARM-emulated checks,
+identical artifact rebuild and exact operator review, then ran once. Its actual
+receipt repeats positive application/engine-thread acquisition but refuses with
+module-missing and helper/controller=false. The missing import identity remains
+unknown. Original restoration/cleanup, independent saved receipt/token checks
+and another fresh stock observation passed. Both spent packets remain preserved.
+Known QtQml disk descriptors exist; absence of a native disk descriptor does not
+prove import absence because static/qrc registration is possible. A fixed known
+missing-module diagnostic is the next narrow step, without speculative import/link
+changes or private ABI fallback. No singleton/page/production qualification follows.
+
 The private typed weak-guard proposal and prepared packet remain preserved and
 unexecuted. They are no longer the next probe. QPointer does not pin QObject
 lifetime and can remain noncleared during derived destruction. Public access
