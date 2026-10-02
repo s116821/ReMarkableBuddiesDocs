@@ -110,6 +110,21 @@ prove import absence because static/qrc registration is possible. A fixed known
 missing-module diagnostic is the next narrow step, without speculative import/link
 changes or private ABI fallback. No singleton/page/production qualification follows.
 
+The combined [SDKd241243](https://github.com/s116821/ReMarkableOpenSDK/commit/d241243fa1f9db2de7df9f581d1ef7aaf3159ad9)
+/ [Buddyda5c2ff](https://github.com/s116821/ReMarkableBuddies/commit/da5c2ffe69251ef66a682823eaf77c355889d073)
+packet independently passed sixteen ARM-emulated cases and exact artifact/operator
+review, then ran once. A bounded private compiler snapshot identifies the native
+library import at fixed-helper line2; public receipt is missing-library. It has
+no truncation/redaction/overflow, and raw diagnostic text stays private. Original
+restoration, diagnostic collection and exact cleanup passed, independently checked
+against saved evidence and another fresh stock observation. Access remains refused.
+Static registration evidence matches the intended URI/version; the runtime R2
+observer did not read URI/version. Startup ordering remains unproven. The next
+small adaptation permits another availability test only after a new window event
+following exact missing-library refusal, on the same guarded engine within the
+original attempt/deadline bounds. Events do not prove readiness. This proposal is
+pending; no timer polling, new engine, spent-packet retry or qualified operation follows.
+
 The private typed weak-guard proposal and prepared packet remain preserved and
 unexecuted. They are no longer the next probe. QPointer does not pin QObject
 lifetime and can remain noncleared during derived destruction. Public access
