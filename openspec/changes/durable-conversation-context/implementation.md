@@ -128,3 +128,31 @@ confirmed recovery. This is host evidence; target builds, independent exact-chec
 review, representative authorized live-provider validation, qualified native binding,
 Writer integration and full REM-37 completion remain open. All broad tasks remain
 unchecked.
+
+## October 2 live-provider and target-build evidence
+
+Exact Rust6d3d23c0a3675521f4461b6d3dd39558cff24c8c Windows debug binary
+SHA4c40c74060241f1812166ca857079405bdb7a632a364087031cc8aa6ecb6bc47 ran
+the maintained live reader.json using the project's existing protected credential
+configuration privately through ordinary dotenv loading, without another credential
+copy. Two actual provider calls accepted the visible cursive question why flat plate?
+and selected the circled abstract at0.5,0.23. Answer text explains the flat plate's
+quadrupole/inertia ratio independence from mass distribution and finite-thickness
+corrections, consistent with the supplied page. Source unchanged, one navigation,
+two text operations/onebody, zero assertion failures/errors. Input and simulated
+answer PNG were visually inspected; bitmap typography is approximate.
+
+Maintained live highlight-illegible.json independently made one provider call and
+refused the scribbled question: zero navigation/text/body/status strokes, both pages
+unchanged, zero assertion failures/errors. This is representative current live-model
+integration evidence using simulated pages; it does not prove handwriting generally,
+qualified native output, tablet persistence or real page identity.
+
+The exact checkpoint's AArch64 release build passed, artifact SHA
+5a67acdc258ee0bbb16bfc51d61183e6e0b9474588ec86acd8de33016d8eb978. The first
+concurrent ARM build refused host build-script GLIBC imports from the shared newer
+AArch64 cache; that infrastructure failure is retained. An isolated ARM target-cache
+build is in progress. Neither compilation nor simulated model evidence completes
+native/revisit/Writer/fullREM37 gates. Local raw live reports/logs remain private
+working evidence; no credential/document log duplication into source.
+
