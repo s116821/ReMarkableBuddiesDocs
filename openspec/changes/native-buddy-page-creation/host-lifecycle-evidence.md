@@ -63,3 +63,10 @@ bytes. Receipt files record historical observations, not perpetual health leases
 All are host-only fake processes. Simultaneous loss, arbitrarily blocked filesystem
 calls, native/service-manager behavior and production recovery remain unqualified.
 Broad tasks remain open and no E1 permission, sync, archive or completion follows.
+
+## Accepted four-fault follow-up
+
+Independent Sol accepted50c83715fc59efd2d60a422f575fdf97a17559ba after a frozen
+29-test Windows run35.424s. No false completion was found in those four additional
+cases. Scope remains exactly the tested owned fake-process behavior; cached config/
+baseline unreadability is not covered and no broader filesystem-health claim follows.
