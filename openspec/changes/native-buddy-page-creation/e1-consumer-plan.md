@@ -2,7 +2,8 @@
 
 Status: production qualification remains planning only. The historical E1/E0T
 mechanism discussion below is superseded for the next minimal development test
-by the October 2 checkpoint here. No minimal callback tablet run has occurred yet.
+by the October 2 checkpoint here. One public Qt application-thread callback has
+now run on the tablet; controller/page and production recovery gates remain open.
 
 The user/coordinator prioritized native experiments and preserved the unfinished
 E0T framework for reassessment after integration needs are known, before a
@@ -17,10 +18,10 @@ were verified. [SDK evidence4f57fb4](https://github.com/s116821/ReMarkableOpenSD
 owns the detailed finding. It proves neither lifetime nor current-page binding
 nor permission to call page operations. Raw target addresses stay private.
 
-The next scoped experiment uses [SDK public Qt startup source2265](https://github.com/s116821/ReMarkableOpenSDK/commit/2265ebb2f993e8806a77d94a352a7fd0de2c3e42)
+The scoped experiment uses [SDK public Qt startup source2265](https://github.com/s116821/ReMarkableOpenSDK/commit/2265ebb2f993e8806a77d94a352a7fd0de2c3e42)
 for nonce/application-thread proof only. No XOVI, controller lookup, getter or
 page mutation is present. Source/matching ARM payload and host fixture have
-independent bounded acceptance; tablet delivery is unverified. Main remains sole
+independent bounded acceptance; actual delivery is recorded below. Main remains sole
 tablet operator, announces UI restart, and runs once only after exact ordinary
 operator review. The accepted [Buddy operator626f145](https://github.com/s116821/ReMarkableBuddies/commit/626f14556f11575c485451b0256ba0dda80a2922)
 actually staged but failed before override installation/preload/UI restart:
@@ -35,7 +36,22 @@ recovery supplement SHA80e25fba2befc51b69656da19a96bfb64d955d960f68643015f3bb608
 are private and preserved. This is operator incompatibility, not a payload result.
 
 A distinct [Buddy packetdd817c9](https://github.com/s116821/ReMarkableBuddies/commit/dd817c9d49611acddcf906c4e6e45411119cb835)
-uses a fresh nonce/artifact and is under ordinary exact review. It uses supported
+used a fresh nonce/artifact, received independent exact acceptance, and ran once.
+The real callback emitted expected nonce/application_thread=true,71bytes,
+SHA5ee301250a61e8d4fba6fb09de65a81152f1055410d74891c5d9454b7914ba20.
+[SDK evidence7244018](https://github.com/s116821/ReMarkableOpenSDK/commit/72440186e47878d6c6f5285ef20c9a0da97d37d9)
+owns the limited result. The original operator receipt SHA
+cd9533b02fdf577ec1f436cc1f4a25c80ddd923488dd19dae122f4302e225af4 retains
+callback=true/restored=false/cleanup=false: first restore exited1, exact predicate
+unknown because no shell trace was captured. The timer's later spent-claim
+invocation verified stock without another physical restart. Main separately
+freshly verified original command/files/policy, old attempt gone and no payload
+mapping, all three services active, then removed exact staging and transient units.
+Supplement SHA3fc6c0e869d820a15dec2e21990b441356d493795cf34f827c267cdfde4c730d
+preserves that later result without rewriting the original failure. Ordinary Sol
+independently checked callback, original receipt, scoped journal and all12linked
+supplement hashes; no reviewer hardware calls. Physical UI responsiveness is
+unverified. It uses supported
 nonblocking locking, a finite closure-first restoration lock loop and actual
 target lock-capability checks before original service changes. The old packet is
 not retried. Both reproduceable host timing failures were fixed before626's run:
@@ -48,8 +64,23 @@ does not guarantee completion within that time. Require fresh stock verification
 and exact owned cleanup, retaining evidence/staging on uncertainty. No boot,
 firmware, account, broad service or native-page change is part of this test.
 
+Before another native trial, [targeted Buddy correction9e856ba](https://github.com/s116821/ReMarkableBuddies/commit/9e856ba27c81b61efc0c181e2414c7454c3c9f2c)
+adds fixed failure-stage/exit diagnostics and bounded fresh stock observations
+after the one physical restoration. It is under independent review, not executed;
+neither a longer wait nor elapsed time alone proves readiness. The historical
+first exit1 remains unexplained. No new generic E0T framework is required here.
+
+The next [SDK lifetime proposal5c68b2e](https://github.com/s116821/ReMarkableOpenSDK/commit/5c68b2e2dfa91cd178bae3133a03f445d5ed29c7)
+is a typed existing-registration/container/weak-guard retention proof, without
+QObject dereference or factory/getter/page calls. Fixed first-match lookup cannot
+prove duplicate absence; explicitly leave uniqueness unproven and treat the
+retained guard as candidate evidence only. QPointer does not pin QObject lifetime
+and can remain noncleared during derived destruction. Future displayed-source and
+operation authority require separate evidence. Payload/source/fixture preparation
+is pending, and no further tablet run follows without exact review.
+
 Source basis: current project direction, exact repository revisions, ordinary
-independent review and actual private R2 receipts. This is development research;
+independent review and actual private R2/Qt/recovery receipts. This is development research;
 no production lifecycle, source continuity, page creation or MVP gate is complete.
 
 Historical E1 discussion: SDK owns the mechanism comparison and adapter contract at
