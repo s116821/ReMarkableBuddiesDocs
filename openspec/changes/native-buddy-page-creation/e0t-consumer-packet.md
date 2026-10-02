@@ -292,3 +292,43 @@ Source basis: current-project coordinator protocol and SDK assessment, plus
 original pure host models. This is an implementation design, not actual lease,
 cleanup/IPC/resource proof or permission to stage/start units. Exact source,
 artifact, operator, manifest and independent final packet review remain open.
+
+## Reviewed storage and read-only integration checkpoint
+
+Buddy738eef84f377f1e6733e1b8964a106888131fcd7 independently accepted the
+pure fixed argument encoder correction: option-looking baseline names refuse,
+and every target list uses an explicit -- boundary. Runtime readonly integration
+95d37d8bf210ca941602af47f1de3a5d22731923 independently accepted twelve host
+transport tests8.698s and exact29unit-query arguments/clean environment/zero
+publication for valid-prefix malformed-suffix or nonzero CLI results. The fixed
+unit observer requires all15 complete seven-property records; original3 remain
+typed separately. Writable verbs have no helper entry. Actual vendor absent-unit
+fields/status, CLI headroom and helper startup within2s remain unqualified.
+
+Pure request model60eb7dc52f35c50053766908328f11235cb60935 and storage-only
+pending publisher58e7568126326902ea7e9a3c8082e5413ec16c51 independently accepted
+canonical64byte nonce/generation/ID/op/owned-role frames, exact owned files and
+checked fsync. Identical pending files reconcile; conflicting/partial/unsafe/
+uncertain files remain unknown and retained. Actual owned child publication/exit
+was exercised on the host; no real CLI/service manager or device was involved.
+
+Publication fence003b96cde65e7b8433bd871e9447be4d4a2fcab5 independently accepted
+serialized pending-publication close, no-ID close and late start/advance refusal.
+Extra host probes populated96actual request files and exercised close sync
+uncertainty/re-sync and held-slot refusal. This fences publication, not actual
+queued effects, and is not an executable independent lease.
+
+Historical completionf7600548a519125e06cd8867bd02b00c27e45566 independently
+accepted one fixed append-only outcome within64bytes total, operation/outcome
+compatibility, duplicate historical-only re-sync, partial/conflicting refusal and
+actual owned child append/exit. Caller-supplied observed/closed outcomes do not
+prove manager result, phase, liveness or the actual dispatch fence. Completion
+fsync cannot repair unproved initial directory-entry persistence; valid intent
+publication must precede any future effect. These helpers remain unwired.
+
+The non-runnable manifest has264explicit owned paths, including96request files,
+one0byte publication slot and one32byte close record. This is an inventory, not
+complete evidence accounting or a frozen artifact. Author full50host fixtures
+passed15.378s. No durable server/lease/cleanup/operator integration or actual
+target resource/job/hand-off proof follows. Source basis: exact original public
+sources and independent visible Sol fixtures/reviews; host fidelity is explicit.
