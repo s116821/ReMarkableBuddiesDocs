@@ -7,6 +7,26 @@ this unfinished REM25 delivery. Parent approved preparation of the eight finite
 cases. Every source/artifact/unit/operator hash and property/cleanup expectation
 requires independent review and final coordinator packet approval before staging.
 
+Current priority: DEFERRED, UNFINISHED recovery/E0T work, preserved at the user's
+explicit request. Generic IPC/ledger/server/lease and the eight-case suite are
+not prerequisites for every reversible native development experiment. Initial
+native controller discovery and minimal controlled activation/feasibility tests
+take priority. Return after these establish actual integration requirements and
+before claiming production-ready unattended activation/recovery; reassess useful
+components rather than automatically completing all experimental infrastructure.
+No work is discarded or marked complete, and no broad task/sync/archive/merge
+gate is closed. SDK counterpartf09c034c0fd263f72d0b1d3e99daf9b0b0cf06c1 aligns
+this return point in its independently owned plan.
+
+Saved Buddy sourcef4425d3eed445a414a8425ffe2b35b9519dc8e70 includes the
+unverified/uncompiled/untested/unwired publication_lease.h draft. Earlier59b0e6f
+acceptance cooperation was review-held for normal NEW allocation behind an
+independent close; c02895e8f0df404a4802fb3a387ef0d98b714e89 fixes that policy
+inside the actual publication lock, but its independent rereview is deferred.
+Preserve the held finding and correction separately; neither is a completed
+server/lease or runtime-qualified recovery. The current draft inventory197paths
+and68577byte runtime-record subtotal remain incomplete full-evidence accounting.
+
 ## Fixed role and path budget
 
 Exactly twelve named roles: cleanup, controller, guard, stock, fail-a, fail-b,
