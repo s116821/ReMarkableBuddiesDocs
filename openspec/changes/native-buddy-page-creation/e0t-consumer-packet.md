@@ -64,11 +64,18 @@ Each command/helper artifact and all fork-before-exec overlaps need mapping,
 limit-readback and headroom evidence. Cleanup duration/CPU budget is still open;
 no lease extension or runtime resource growth is authorized.
 
-Before ownership transfer, confirm the prior writer/command identity actually
+Before unexpected writer-loss takeover, confirm the prior writer/command identity actually
 gone, its complete owned cgroup empty and pending manager requests/jobs reconciled.
 EOF, lock release, PID-only exit or missing reply cannot authorize another command
 or stock-child fork. Unknown state refuses further case starts and retains failed/
 unknown cleanup. No duplicate restore child compensates for unknown publication.
+
+Orderly finalization instead keeps cleanup alive but idle: it irrevocably
+relinquishes dispatch, fences queued requests, proves its CLI/descendants gone
+and resolves retained intents before external ownership. The operator then
+submits the exact cleanup-unit stop. Requiring that entire unit already empty
+before this orderly stop would be circular; loss takeover retains that stronger
+empty-cgroup requirement. Neither path permits concurrent authority.
 
 ## Gates and resource limits
 
@@ -247,6 +254,11 @@ Conflicting reuse or a lost/ambiguous result closes starts and advancement.
 Close must publish the actual irreversible fence before acknowledgement; queued
 or late starts cannot pass it. The pure Buddy request model is preparation only,
 not a durable ledger, server, lease or dispatcher.
+
+Reserve and derive request-ID/evidence capacity for close and cleanup before
+freeze. Exhausting96entries, malformed frames or a full IPC queue cannot suppress
+the independently triggered lease cleanup or its publication fence. The current
+pure model refuses new IDs when full and therefore does not implement this duty.
 
 Cleanup must be independently armed before any case starts. Its finite lease
 continues through operator/IPC loss; IPC cannot block the cleanup deadline.
