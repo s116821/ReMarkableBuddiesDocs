@@ -7,6 +7,10 @@ Offline fixtures SHALL use the real shared Store and actual Reader orchestration
 - **WHEN** an offline Reader fixture records each supplied image and the Store is reopened
 - **THEN** retrieved evidence matches every submitted byte sequence and a forced pre-dispatch storage failure yields zero provider calls and zero device mutations.
 
+#### Scenario: Frozen legacy capture and failure outcomes
+- **WHEN** the actual Orchestrator uses an explicitly legacy backend whose later details change or become unavailable
+- **THEN** proposal and verification still use one stored batch and regressions cover unsupported/failed SDK refusal, storage boundaries, provider failure, transcription disagreement, cancellation, missing/invalid successor and unverified/uncertain output without Completed or restart replay claims.
+
 #### Scenario: Domain modes and native limitations
 - **WHEN** mixed-mode, binding-receipt and export-marker fixtures pass
 - **THEN** reports identify simulated interfaces and leave REM-25 native acquisition, external exports and REM-38/39 UI gates open.

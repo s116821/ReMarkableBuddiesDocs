@@ -103,3 +103,28 @@ derivation. Sol capture implementatione0175f7 passes16 synthetic SDK tests, one
 compile-fail doctest and strict Clippy with full/minimal features. Independent Sol
 review accepts that exact synthetic scope; it supplies no qualified native capture or
 page-creation capability yet.
+
+## October 1 actual Reader persistence checkpoint
+
+The actual Orchestrator now receives the shared Store ledger and selects acquisition
+kind before capture. Explicit legacy runs persist strict, unbound evidence with
+absent native identity and qualification. Both provider passes retrieve original
+ordered encoded bytes from the ledger, with one acquisition and no repeated detail
+query. SDK failures refuse without legacy downgrade. Verified requests and generated
+assistant drafts precede effects; output entry first records ReconcileRequired.
+Only proven no-output cases become Failed. Submitted or ambiguous output remains
+ReconcileRequired; no qualified completion, restart binding or automatic effect replay
+is claimed. The accepted consumer geometry fix at Rust18e1a741 received independent
+Sol acceptance; its earlier full-suite attribution remains unchanged.
+
+The current Reader checkpoint passes 280 host tests across all targets and features,
+plus one compile-fail doctest. One additional live test is excluded by the existing
+live-run gate. Four actual Orchestrator recording-provider tests exercise exact stored
+bytes, storage faults before provider/output, cancellation and output uncertainty,
+and unsupported/failed-SDK refusal. Three legacy-ledger tests cover strict records,
+retention, write boundaries and fact-only outcome CAS/idempotency. The failed-return
+scenario now expects the deliberate unconfirmed-return error instead of claiming
+confirmed recovery. This is host evidence; target builds, independent exact-checkpoint
+review, representative authorized live-provider validation, qualified native binding,
+Writer integration and full REM-37 completion remain open. All broad tasks remain
+unchecked.

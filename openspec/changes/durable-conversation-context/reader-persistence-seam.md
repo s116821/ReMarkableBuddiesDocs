@@ -1,4 +1,4 @@
-# Reader persistence seam — proposed, awaiting exact review
+# Reader persistence seam — bounded design accepted; implementation verification open
 
 This additive plan implements tasks3.1–3.3 and4.4 in the active REM37 change.
 It does not qualify SDK acquisition, page binding or native completion. The current
@@ -138,7 +138,7 @@ with zero provider calls/navigation/typing. Verify original source state remains
 unchanged. Cover provider failure, transcription disagreement, no successor,
 invalid successor, cancellation, output uncertainty and restart without effect replay.
 
-Before implementation, exact review must settle the unbound evidence schema, bounded
+Independent Sol review accepted exact design c84265fcf38014df99a7fd3adfd128e4ea9b9d91 before implementation. The reviewed choices settle the unbound evidence schema, bounded
 legacy acquisition descriptors, conversation selection/resume seam, output-result
 type and responsibility for terminal recording when storage itself fails. SDK owns
 acquisition and native receipt meaning; Buddy owns ledger/container and orchestration.
@@ -146,4 +146,4 @@ Native smoke, release builds and canonical sync/archive remain separate open gat
 
 Source basis: current Reader/Workflow/DeviceBackend code, accepted REM37 tasks and
 SDK boundaries, independent review finding, and coordinator's current semantic
-direction. Proposed API shapes are inference until exact review accepts them.
+direction. The bounded design has exact independent acceptance; code, native qualification and complete issue delivery require their own evidence.

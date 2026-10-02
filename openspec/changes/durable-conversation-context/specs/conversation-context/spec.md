@@ -1,5 +1,20 @@
 ## ADDED Requirements
 
+### Requirement: Explicit unbound legacy evidence
+The domain SHALL keep identity-free legacy acquisition in a separate Buddy-owned LegacyCapture record, selected explicitly before acquisition, with native identity and qualification explicitly absent. It SHALL preserve every exact ordered provider image and any supplied acquisition parent without invented SDK source, affine, crop or viewport facts. Failed, unsupported or unknown SDK acquisition SHALL refuse without downgrade. Legacy schema1 SHALL require explicit absent fields, stable Buddy evidence/conversation/turn IDs, full image integrity and decoding, root CAS, fingerprint retry and reference-aware retention. Bounds SHALL be 1–15 provider images plus at most one parent, 32 MiB encoded per image, 64 MiB encoded total, and existing 8192-axis/32 MiB decoded-image limits.
+
+#### Scenario: Legacy acquisition and historical inspection
+- **WHEN** a backend explicitly selects legacy acquisition before capture
+- **THEN** exact bytes are committed before provider use in an explicitly unbound conversation, missing parent/identity/qualification stay absent, and inspection/context distinguish them from SDK Capture/SourceObservation without inferring same-page continuity.
+
+#### Scenario: Invalid or incomplete legacy evidence
+- **WHEN** schema/required fields, image decoding, role/order, bounds, integrity or committed links are invalid
+- **THEN** evidence retrieval/preparation refuses and no dependent provider call occurs; retry reuses acknowledged stored bytes rather than recapturing.
+
+#### Scenario: Legacy history after restart
+- **WHEN** a legacy conversation is reopened by its Buddy ID
+- **THEN** its facts/images remain inspectable under retention rules, while native source/binding qualification, page revisit and automatic effect replay remain unavailable.
+
 ### Requirement: Stable shared chronological conversation
 The shared domain SHALL retain versioned conversation and turn IDs, roles, Reader/Writer modes, operation IDs, revisions, states, timestamps and root-CAS-allocated chronological sequences. Corrections SHALL append with stable references. Conflicts SHALL expose all heads without LWW. Source: REM-37 durable history and mixed-Buddy acceptance.
 
