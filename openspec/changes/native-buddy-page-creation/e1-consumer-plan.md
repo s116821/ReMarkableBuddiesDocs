@@ -22,8 +22,25 @@ for nonce/application-thread proof only. No XOVI, controller lookup, getter or
 page mutation is present. Source/matching ARM payload and host fixture have
 independent bounded acceptance; tablet delivery is unverified. Main remains sole
 tablet operator, announces UI restart, and runs once only after exact ordinary
-operator review. [Buddy operatorb100493](https://github.com/s116821/ReMarkableBuddies/commit/b10049308856fa030907fbfed339f8979208bfe1)
-is under review after fixing a reproduced late-entry/rollback timing hole:
+operator review. The accepted [Buddy operator626f145](https://github.com/s116821/ReMarkableBuddies/commit/626f14556f11575c485451b0256ba0dda80a2922)
+actually staged but failed before override installation/preload/UI restart:
+tablet BusyBox1.36.1 `flock` lacks `-w`. Buddy had stopped; rollback published
+closure and also failed at that option. There was no attempt claim/identity or
+runtime override. Main observed failed writer gone/empty job, restored only
+original Buddy, freshly verified stock and all three active services, and removed
+exact staging and transient units. Stock PID/start and sync PID remained unchanged;
+Buddy has a new PID. Original failed receipt SHA
+349664253588a0c6e13eedd5733b6e610c74ccaf804fe9caf51d1aafb6005e2d and separate
+recovery supplement SHA80e25fba2befc51b69656da19a96bfb64d955d960f68643015f3bb608200ba70
+are private and preserved. This is operator incompatibility, not a payload result.
+
+A distinct [Buddy packetdd817c9](https://github.com/s116821/ReMarkableBuddies/commit/dd817c9d49611acddcf906c4e6e45411119cb835)
+uses a fresh nonce/artifact and is under ordinary exact review. It uses supported
+nonblocking locking, a finite closure-first restoration lock loop and actual
+target lock-capability checks before original service changes. The old packet is
+not retried. Both reproduceable host timing failures were fixed before626's run:
+rollback-before-delayed-entry and restoration-lock exhaustion during a slow stop
+now refuse delayed preload. The minimal recipe retains:
 runtime-only stock-name drop-in, consumed one-attempt preload, original restart
 policy retained, shared admission closure and prearmed existing-systemd timer
 to one singleton restoration service. Forty-five seconds requests rollback; it
