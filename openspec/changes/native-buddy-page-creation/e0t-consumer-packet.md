@@ -229,3 +229,54 @@ cases. Exact artifacts/operator, bounded command/resource proofs and final packe
 review remain outstanding; no device staging/start, E1 or production acceptance.
 Source basis: explicit coordinator decision in the current project and pinned
 SDK source investigation; assumptions are deliberately separated from observations.
+
+## Sole cleanup-unit writer and bounded request preparation
+
+During normal cases the cleanup-unit parent is the sole physical CLI writer;
+its single CLI child remains inside that unit's control group. The external
+operator submits fixed requests and case actors never execute CLI commands.
+Pre-arm staging/reload/profile verification and finalization are separate,
+exclusive external-operator phases. No overlapping writer is permitted.
+
+Requests bind the compiled nonce, case generation1..8 and monotonic ID1..96,
+with a fixed operation and owned-role index or batch marker. No request carries
+arbitrary argv, real-service names or caller-provided numeric job IDs. Durable
+owned intent must precede dispatch. Identical pending duplicates reconcile;
+completed duplicates are historical observations, never replay/current authority.
+Conflicting reuse or a lost/ambiguous result closes starts and advancement.
+Close must publish the actual irreversible fence before acknowledgement; queued
+or late starts cannot pass it. The pure Buddy request model is preparation only,
+not a durable ledger, server, lease or dispatcher.
+
+Cleanup must be independently armed before any case starts. Its finite lease
+continues through operator/IPC loss; IPC cannot block the cleanup deadline.
+Unexpected cleanup loss first fences new requests. External takeover requires
+the entire cleanup control group empty and every previous CLI/descendant gone,
+plus retained-intent reconciliation using read-only observations before mutation.
+EOF, MainPID loss, inactive state or released locks alone cannot authorize it.
+Manager jobs may survive CLI exit. Effective KillMode/control-group placement
+and no escaping descendants must be verified in the exact packet.
+
+Pre-arm, normal, takeover and finalization phases are mutually exclusive. An
+unknown pre-arm start is never replayed. Final cleanup-unit stop is submitted by
+the external operator only after cleanup duties finish; lost stop acknowledgement
+requires reconciliation. Simultaneous loss of the operator after cleanup is gone
+is excluded protection loss/failed-unknown, not a claimed recovery guarantee.
+
+SDK0b87672ca09183ad1b28504ede0ad8b179d297b2's finite cleanup candidate allows
+one intermediate verification group: initial jobs+states2calls, optional exact
+owned cancel1, stop11caseunits1, intermediate jobs+states2, external cleanup stop1,
+pre-removal jobs+states2, final reload1, post-reload jobs+states2: at most12calls.
+At2s inclusive per call this uses24s, plus2s old-writer exit,2s local removal/
+evidence and2s explicit margin, within the30s cleanup and210s final deadline.
+Spawn, exit, capture, parsing and bookkeeping must be included or separately
+charged; helper startup is not currently proved inside that per-call bound.
+No repeated query or timed retry is budgeted. Pending/live/ambiguous observations
+fail unknown. IPC, transfer and takeover accounting must fit this same finite
+budget or require packet revision before freeze. Fresh tuples immediately before
+cancel, held barrier and the accepted finite namespace assumptions still apply.
+
+Source basis: current-project coordinator protocol and SDK assessment, plus
+original pure host models. This is an implementation design, not actual lease,
+cleanup/IPC/resource proof or permission to stage/start units. Exact source,
+artifact, operator, manifest and independent final packet review remain open.
