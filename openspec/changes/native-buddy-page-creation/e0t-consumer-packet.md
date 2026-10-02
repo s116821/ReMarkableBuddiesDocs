@@ -175,7 +175,7 @@ SDK43b0e220389c62caef23c64c513545b4dc11e7cc fixes list-jobs query arguments:
 unit names, localeC/no colors. The independent pure decoder298d78a and integrated
 fca1b67 reject incomplete/foreign/duplicate/malformed rows before publication.
 An empty observation or disappearing job is not terminal/canceled proof or start
-attribution. T5 still needs fresh manager-instance/case/job tuple correlation,
+attribution. T5 still needs fresh scoped job-namespace/case/job tuple correlation,
 exact numeric cancel, observed unit/process/cgroup/marker outcomes and a no-late
 start check after barrier release. Bare/global cancel is never representable.
 
@@ -205,3 +205,27 @@ independent packet review remain open. No E0T staging/start or E1 is authorized.
 Source basis: exact public source/review checkpoints and operator-attributed
 private read-only receipts; raw configuration remains private. These bounded
 preparation results do not close native creation or the broad OpenSpec tasks.
+
+## Finite job-namespace scope decision
+
+Coordinator accepted SDK88b1bd7c9ab56936ea10c3f956fc2bde675cc321's narrow E0T
+scope proposal: assume no external manager reexec/reset/switch-root/configuration
+mutation and no job ID reuse between observation and cancellation. These are
+explicit environmental scope assumptions, not properties proved by the observer.
+Boot/PID1/start/executable markers remain drift checks, not a unique manager
+incarnation. Do not spend this finite experiment on unconditional incarnation/
+reuse detection or vendor reexec equivalence; neither is qualified for E1/production.
+
+Retain fresh exact owned unit/ID/type/state tuples, the held T5 barrier, sole
+writer/publication fencing and refusal on transport ambiguity, known scope
+violation, unexplained drift or changed tuples. Numeric IDs alone are never
+cancellation authority; baseline read-only jobs never enter the owned cancel
+codec. Upstream successful normal reexec serializes/restores counter and installed
+job ID/type/state, but that source fact is not a tested vendor guarantee and the
+uint32 namespace can wrap. No unconditional no-reuse assertion follows.
+
+This decision permits implementation preparation within the same eight dummy
+cases. Exact artifacts/operator, bounded command/resource proofs and final packet
+review remain outstanding; no device staging/start, E1 or production acceptance.
+Source basis: explicit coordinator decision in the current project and pinned
+SDK source investigation; assumptions are deliberately separated from observations.
