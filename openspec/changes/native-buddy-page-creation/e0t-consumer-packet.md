@@ -24,20 +24,51 @@ ownership and file/hash identity gate use/removal. Only an owned empty parent ca
 be removed; never recursively delete systemd directories. No dynamic paths or
 vendor dependency/action targets belong in the implementation.
 
-## Actor budget and fences to implement
+## Current authoritative preparation resource table
 
-Experiment cleanup is separate from the case controller/guard that T6/T7 terminate.
-Normal case operation reserves two slots for the external operator and its one
-command, two for experiment cleanup and its one bounded command, and four for
-case actors. T6/T7 case actors use controller+guard+stock and at most one command
-child shared by serialized ownership: total eight processes and sixteen tasks.
-Before ownership transfer, confirm the prior actor's complete owned cgroup/command
-child gone; a PID-only exit or lost reply cannot authorize a second writer/fork.
-Handler cases run without controller/guard/stock: operator2+cleanup2+norestart1+
-handlers2=7. Notify/claim/separate/barrier/queued cases use only their enumerated
-workers, remaining under eight. These are design allocations, not measured proof;
-freeze needs an exact table for every barrier/failure/cleanup overlap. If native
-command containment cannot meet it, revise before execution, never expand live.
+This table supersedes the earlier separate operator2/cleanup2 reservations and
+case command-child allocation. SDKc0753644631652c49462c6ce0e6cdf097d2bcc49 flagged
+those conflicting historical figures. There is ONE shared CLI slot across the
+external operator and independent cleanup actor; case actors never spawn CLI
+children. The table is preparation design, not a frozen or measured packet.
+
+| Barrier/case overlap | Helper processes including always-present cleanup + operator | Helper maximum | Shared CLI maximum | Program process maximum |
+| --- | --- | --- | --- | --- |
+| T1/T2 marker overlap | cleanup, operator, norestart, fail-a, fail-b | 5 | 1 | 6 |
+| T2 claim stand-in / T3 / T4 | cleanup, operator, one claim/separate/notify worker | 3 | 1 | 4 |
+| T5 including unexpected queued start | cleanup, operator, barrier, queued | 4 | 1 | 5 |
+| T6/T7/T8 including fixed stock child | cleanup, operator, controller, guard, one stock child | 5 | 1 | 6 |
+| Abort/cleanup while case workers exit | cleanup, operator, remaining case workers, bounded by the case row | 5 | 1 | 6 |
+
+Reserve at most TWO additional process slots for transport/wrapper overhead:
+program6 + transport2 must fit the overall8-process bound. Exact SSH session,
+wrapper and any CLI descendant/thread creation must be enumerated and measured
+before freeze. A command shell must exec the fixed operator rather than persist
+as an uncounted wrapper. These reservations are not proof of SSH process counts,
+source containment, or task enforcement. Overall16tasks remains a measured/source
+obligation; do not infer a two-task-per-helper kernel limit or CLI one-thread
+maximum from a prior sample. More overlap/threads/descendants requires redesign
+before execution, never live cap expansion. Do not modify the SSH service.
+
+| Process row | Candidate AS soft/hard | Other candidate per-process limits | Status |
+| --- | --- | --- | --- |
+| Ordinary worker/case actor/stock child | 8MiB / 8MiB | stack512KiB, data1MiB, file2048bytes, core0, CPU2s | Host source/set-get evidence; target artifact headroom open |
+| Operator or cleanup manager parent | 8MiB / 20MiB | same | Parent retains soft8; hard20 is not an enforced8 ceiling |
+| Sole fixed CLI child | 20MiB / 20MiB | same | Child raises only its own soft limit; target command peaks/headroom open |
+| SSH/transport/wrapper overhead | Unfrozen | Unfrozen | Enumerate/profile actual overhead; not inside the helper rlimit proof |
+
+At most five helper soft-AS8MiB rows plus one CLI20MiB row yield60MiB of
+program-specific summed AS candidates. This excludes unresolved transport rows
+and is neither aggregate kernel enforcement nor RSS/whole-tablet memory proof.
+Each command/helper artifact and all fork-before-exec overlaps need mapping,
+limit-readback and headroom evidence. Cleanup duration/CPU budget is still open;
+no lease extension or runtime resource growth is authorized.
+
+Before ownership transfer, confirm the prior writer/command identity actually
+gone, its complete owned cgroup empty and pending manager requests/jobs reconciled.
+EOF, lock release, PID-only exit or missing reply cannot authorize another command
+or stock-child fork. Unknown state refuses further case starts and retains failed/
+unknown cleanup. No duplicate restore child compensates for unknown publication.
 
 ## Gates and resource limits
 
