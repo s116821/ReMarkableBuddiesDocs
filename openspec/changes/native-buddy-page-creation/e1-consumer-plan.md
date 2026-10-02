@@ -212,6 +212,35 @@ Source basis: actual private receipts and further device verification, independe
 exact-code fixtures, and current-project human/coordinator direction. Terminal
 outcome and native registration timing remain unknown; raw diagnostics stay private.
 
+## Actual bounded runtime-summary trial (October 2)
+
+Accepted SDK9951546806379cc4c6a8c7509c385e275ff123cd and corrected
+Buddy6a145b4c87177a2b8448dc6a1e302f102ac71f67 ran once with fresh nonce
+b5e236df81cb4d3e96c981eeb41b8769. Independent Main/Sol vendor-Qt ARM fixtures
+and byte-identical artifact/packet review passed. A stale cross-file identity was
+caught before staging in the earlier local packet; it was corrected and independently
+reviewed in a separate packet. Neither rejected packet nor spent nonce is reused.
+
+The original live callback/generation/access flags remain false/null. Restoration
+and exact cleanup passed. Post-restoration collection preserved a final historical
+callback: deadline, application/engine thread true, helper/controller false. The
+private runtime summary reports attempts1, compile_attempts1,
+admitted_post_failure_events0, component_status absent, terminal_stage deadline,
+elapsed_ms11840 and last failed compile1. One full private native import error was
+retained without overflow/truncation. This demonstrates no admitted recheck during
+that episode, not global registration absence. The nominal five-second refusal timer
+did not hard-bound the observed interval. A post-restoration receipt cannot retrofit
+live generation/access qualification.
+
+Further stock verification found PID1792/start189680438/S, all three services active,
+empty jobs, NRestarts0, original executable/unit hashes and restart policy, old
+attempt1599 gone and exact staging/drop-in/transient units absent. Physical UI remains
+unverified. The spent private evidence is preserved; a concrete next reuse mechanism
+is under SDK investigation. Native source/page/PDF-ink/production/MVP gates stay open.
+
+Source basis: actual private receipts/fresh device verification and exact independent
+source/build/review outputs. Terminal history is observed; readiness cause is unknown.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
