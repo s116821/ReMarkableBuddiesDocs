@@ -78,8 +78,9 @@ Inspect generic and dash-prefix drop-in paths. Snapshot originals and outstandin
 jobs before explicit manager-wide daemon-reload, reject unknown configuration drift,
 then verify originals after reload and between cases. No enable/boot target/global
 setting, reboot handler, real service mutation, XOVI/preload, native/document/account
-operation or input belongs here. Stage at most16MiB; evidence at most256KiB; helpers
-at most8MiB/two tasks each. Case15s, first start to cleanup initiation180s plus30s
+operation or input belongs here. Stage at most16MiB; evidence at most256KiB.
+Use only the current authoritative preparation table above; overall8processes/
+16tasks remain unfrozen source/observation bounds, not per-helper kernel caps. Case15s, first start to cleanup initiation180s plus30s
 cleanup, independent finite lease and worker self-exit caps. Stop first unexpected
 result; no retry/lease extension. A timed-out operation is failed/unknown.
 
@@ -125,10 +126,11 @@ Further receipt7fcc0b0d2e58e0f9d7705b0fbf416d9af6f7220b9a038ec46f56512c13420768
 shows /proc/cgroups with only its header, an empty unified cgroup.controllers and
 subtree_control, and absent legacy memory/pids controller roots. The proposed
 MemoryMax/TasksMax cannot be claimed enforced merely because effective unit
-properties display them. The current contract requires refusal when required
-resource limits cannot be enforced; this is a pre-execution blocker. No controller
-mount/enable/configuration change or silent fallback is authorized. Astra/coordinator
-must review any resource-contract revision before a runnable packet can freeze.
+properties display them. The original mandatory cgroup recipe required refusal
+at that checkpoint. The revised design below supersedes that recipe; demonstrated
+replacement controls remain a current pre-execution requirement. No controller
+mount/enable/configuration change or silent fallback is authorized. The exact
+replacement packet still requires independent and final coordinator review.
 Both read-only commands preserved original xochitl/rm-sync PID/start/state and all
 three observed active services. Physical UI responsiveness was not tested.
 
