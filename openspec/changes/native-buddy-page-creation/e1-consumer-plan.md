@@ -241,6 +241,35 @@ is under SDK investigation. Native source/page/PDF-ink/production/MVP gates stay
 Source basis: actual private receipts/fresh device verification and exact independent
 source/build/review outputs. Terminal history is observed; readiness cause is unknown.
 
+## Accepted public root-witness preparation (October 2)
+
+[SDK e687617](https://github.com/s116821/ReMarkableOpenSDK/commit/e687617ac68541026666e5ea735bb46fa5e7e063)
+received independent Main code review and all40 vendor-Qt ARM/qemu fixture passes,
+plus SDK semantic acceptance. It gates the first helper on a successful public
+QQmlApplicationEngine root witness: subscribe before the bounded root snapshot,
+capture the exact weak root synchronously, then queue fresh engine/thread/uniqueness
+and membership checks. Root success permits a library check, not registration or
+source/page identity proof. No root properties, URLs, new engine or private ABI.
+Readiness20s from Probe birth and access5s from the first witness do not reset;
+Qt work remains unbounded, and native nested loops may reenter queued work.
+
+An initial independent b5848df run failed the root-loss stage assertion without
+printing its actual stage. Its cause remains unknown. The fixture-only e687617
+correction gives non-timing cases3s/3s, retains short readiness/access deadline
+cases and prints fixed stage/timestamps. The new independent40-case pass does not
+rewrite the original failure; production20s/5s and implementation are unchanged.
+
+Buddy14f9a969 adds a35s monotonic live-observation admission cutoff before arming,
+with callback/generation transports limited to3s or the remaining budget and
+before/after checks. Independent exact helper/outer-finally mocks and local process
+tests passed; mandatory restoration/final evidence duty remains separate. The
+remote45s restoration initiation and240s service recovery policies are unchanged,
+with no hard call/recovery guarantee. Fresh artifact/complete cross-file identity
+and operator review precede any new announced hardware run; the old nonce is spent.
+
+Source basis: exact pushed SDK source, independent synthetic/vendor fixtures and
+operator mocks, current-project semantic review. Root-gate hardware is untested.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
