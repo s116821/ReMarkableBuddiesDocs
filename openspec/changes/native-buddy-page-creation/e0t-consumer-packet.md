@@ -66,3 +66,19 @@ lifetime, loader/GUI/source semantics, actual stock recovery, cold boot or E1.
 
 Source basis: current coordinated preparation authorization and pinned SDK proposal;
 role allocation/concurrency fences are proposed implementation design.
+
+## T6-T8 concrete actor refinement
+
+SDKbb39af192db7ea3893e77c9e2742480907bd1475 accepts a fixed-self stock-child
+implementation for these cases. Controller/guard may manipulate only owned dummy
+files and spawn the same fixed helper as their stock stand-in; no manager transport
+command belongs in a case actor. External operator and experiment cleanup are the
+only manager writers. Prior actor start jobs must be terminal and further actor
+starts forbidden during handoff. Confirm old OS identity gone, entire old cgroup
+empty and any old child gone before surviving actor forks. Job/cgroup observations
+must fit the existing process cap. EOF/lock release/parent-death signal alone is
+insufficient. A spent restore claim without a published child identity is unknown;
+never create a second child to compensate. Restoration and closed-generation fences
+must serialize late file publication; repeated queries revalidate child liveness.
+T6/T7 prove owned-process/file recovery inside manager-launched units; T5 separately
+proves the bounded pending-manager-job case. No combined E1 job-recovery claim follows.
