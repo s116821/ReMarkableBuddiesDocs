@@ -96,3 +96,18 @@ The system SHALL preserve simulator regressions for native findings and qualify 
 #### Scenario: Integrated release
 - **WHEN** the selected outcome is proposed for1.0
 - **THEN** REM35 verifies downstream native integration and scope limits; unpaired offline RM2 tests do not establish cloud-sync/Paper Pro support.
+
+### Requirement: Host-owned lifecycle fault experiment
+Before a supervised candidate advances to device activation, Buddy SHALL exercise an original isolated host lifecycle harness with fake processes and owned temporary configuration. It SHALL demonstrate independently observed recovery after Supervisor failure, reject stale generation/nonce/process messages, preserve unrelated configuration, and report recovery failure honestly. It SHALL permit harmless Supervisor autostart only when boot remains stock and stale session activation cannot cross a boot. Host success SHALL NOT qualify tablet behavior or authorize activation.
+
+#### Scenario: Supervisor or protection fails
+- **WHEN** the Supervisor dies during activation or rollback, or the recovery guard dies after Ready
+- **THEN** independent recovery restores exact stock state or the harness reports failed/unprotected operation; deadlines alone cannot establish recovery, and no further activation is automatically attempted.
+
+#### Scenario: Stale messages or interrupted management
+- **WHEN** old readiness/heartbeat messages arrive or update/uninstall leaves partial transaction files
+- **THEN** old messages cannot establish readiness or renew protection, baseline and unrelated files are preserved, and only owned transaction artifacts are removed.
+
+#### Scenario: Simulated cold boot
+- **WHEN** both protection processes are lost and a new simulated boot reconstructs state
+- **THEN** it begins stock without injection regardless of leftover payload/session files and requires a new authorized trigger before activation.

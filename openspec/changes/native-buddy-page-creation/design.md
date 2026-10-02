@@ -87,3 +87,27 @@ Coordinator approved this change and replacement of four reader-answer-pages blo
 ## Gates and delivery
 
 Only Docs/OpenSpec checks now. No native/model result claimed. Implementation starts after REM-9 acceptance and exact plan acceptance by coordinator and independent reviewer. qualification.md and tasks.md remain open. Future linked Docs/Rust/required-Manager delivery identifies exact SHAs, passes code/spec checks, syncs/archives only completed behavior, uses Summary-only bodies and explained inline evidence, inspects CI/bot availability and is squash-merged by coordinator. REM-35 alone owns1.0.
+
+## E0 host-owned lifecycle experiment
+
+The coordinator authorized E0 only, coordinated with SDK contract
+[e2b3ebbb8c4c630e46041896bc266498518de437](https://github.com/s116821/ReMarkableOpenSDK/tree/e2b3ebbb8c4c630e46041896bc266498518de437/openspec/changes/establish-native-platform-contract).
+Original Buddy tooling models product activation policy with an injected monotonic
+clock, then exercises independent fake Supervisor, recovery guard and stock/injected
+child processes in unique owned temporary directories. It uses no network, tablet,
+real service manager or production payload. It is experimental tooling, not an SDK
+adapter or production Supervisor. Harmless Supervisor autostart is permitted only
+with stock boot and a fresh authorized trigger; persistent injection-enabling changes
+and cross-boot injection/crash-loop state remain forbidden.
+
+Acceptance covers mismatch with zero activation; one healthy activation and duplicate
+requests; nonce/generation/process-bound readiness and heartbeats; constructor failure,
+missing readiness, stale heartbeat and crash-loop cutoff; Supervisor death before and
+after arming, applying, awaiting readiness, Ready and rollback; guard-alone failure;
+simultaneous loss with honest unprotected status and clean cold boot; interrupted
+rollback without timeout-as-success; partial files and interrupted update/uninstall;
+exact stock hashes and process start identities; removal of transaction-owned files
+only. Deterministic events sequence tests. Host watchdog bounds are readiness5s,
+heartbeat1s/stale3s, rollback5s and outer30s per real case; they prove no tablet timing.
+No harness result authorizes E1 or qualifies any native semantic operation. Broad
+implementation, real device, licensing, source handoff and full delivery remain open.
