@@ -1,7 +1,41 @@
 # E1 consumer counterpart and read-only baseline
 
-Status: planning only. No injection, stock service change or executable packet is
-approved. SDK owns the mechanism comparison and adapter contract at
+Status: production qualification remains planning only. The historical E1/E0T
+mechanism discussion below is superseded for the next minimal development test
+by the October 2 checkpoint here. No minimal callback tablet run has occurred yet.
+
+The user/coordinator prioritized native experiments and preserved the unfinished
+E0T framework for reassessment after integration needs are known, before a
+production unattended-recovery claim. The generic eight-case suite and its
+server/ledger/lease implementation are not prerequisites for every reversible
+development experiment; this does not complete or discard those sources.
+
+One independently reviewed read-only R2-4096 run found a sampled existing
+DocumentController chain (types3096/matches1/requested74426bytes, non-atomic).
+Exact helper termination/removal and original process/three-service continuity
+were verified. [SDK evidence4f57fb4](https://github.com/s116821/ReMarkableOpenSDK/commit/4f57fb4953107790b51f95d9b823e8283a4dfcb1)
+owns the detailed finding. It proves neither lifetime nor current-page binding
+nor permission to call page operations. Raw target addresses stay private.
+
+The next scoped experiment uses [SDK public Qt startup source2265](https://github.com/s116821/ReMarkableOpenSDK/commit/2265ebb2f993e8806a77d94a352a7fd0de2c3e42)
+for nonce/application-thread proof only. No XOVI, controller lookup, getter or
+page mutation is present. Source/matching ARM payload and host fixture have
+independent bounded acceptance; tablet delivery is unverified. Main remains sole
+tablet operator, announces UI restart, and runs once only after exact ordinary
+operator review. [Buddy operatorb100493](https://github.com/s116821/ReMarkableBuddies/commit/b10049308856fa030907fbfed339f8979208bfe1)
+is under review after fixing a reproduced late-entry/rollback timing hole:
+runtime-only stock-name drop-in, consumed one-attempt preload, original restart
+policy retained, shared admission closure and prearmed existing-systemd timer
+to one singleton restoration service. Forty-five seconds requests rollback; it
+does not guarantee completion within that time. Require fresh stock verification
+and exact owned cleanup, retaining evidence/staging on uncertainty. No boot,
+firmware, account, broad service or native-page change is part of this test.
+
+Source basis: current project direction, exact repository revisions, ordinary
+independent review and actual private R2 receipts. This is development research;
+no production lifecycle, source continuity, page creation or MVP gate is complete.
+
+Historical E1 discussion: SDK owns the mechanism comparison and adapter contract at
 [390fe8b5fa0caed4597ffa2f4f093bbe56533f83](https://github.com/s116821/ReMarkableOpenSDK/tree/390fe8b5fa0caed4597ffa2f4f093bbe56533f83/openspec/changes/establish-native-platform-contract).
 Buddy owns retained intent, Supervisor lifecycle and its same-artifact Manager
 installation. Host lifecycle corrections remain under independent review; no host
