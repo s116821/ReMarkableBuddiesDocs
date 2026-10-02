@@ -82,3 +82,21 @@ never create a second child to compensate. Restoration and closed-generation fen
 must serialize late file publication; repeated queries revalidate child liveness.
 T6/T7 prove owned-process/file recovery inside manager-launched units; T5 separately
 proves the bounded pending-manager-job case. No combined E1 job-recovery claim follows.
+
+## Read-only resource profile: execution blocker
+
+Actual tablet receipt057181a226c15041e284f65f8dfc250d96b02ee0df307e586e5e0519d77e5af9
+shows the hybrid name=systemd hierarchy at /sys/fs/cgroup/systemd/system.slice,
+with original xochitl cgroup containing multiple process IDs. MainPID death alone
+cannot prove an empty unit. No cgroup was modified.
+
+Further receipt7fcc0b0d2e58e0f9d7705b0fbf416d9af6f7220b9a038ec46f56512c13420768
+shows /proc/cgroups with only its header, an empty unified cgroup.controllers and
+subtree_control, and absent legacy memory/pids controller roots. The proposed
+MemoryMax/TasksMax cannot be claimed enforced merely because effective unit
+properties display them. The current contract requires refusal when required
+resource limits cannot be enforced; this is a pre-execution blocker. No controller
+mount/enable/configuration change or silent fallback is authorized. Astra/coordinator
+must review any resource-contract revision before a runnable packet can freeze.
+Both read-only commands preserved original xochitl/rm-sync PID/start/state and all
+three observed active services. Physical UI responsiveness was not tested.
