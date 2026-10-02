@@ -126,3 +126,49 @@ must remain small; no fork/memory stress or unreviewed ninth device case is adde
 
 The exact numeric table, source/artifact proofs, complete operator and independent
 packet review remain missing. Preparation is authorized; no stage/start is authorized.
+
+## Reviewed read-only command preparation
+
+Buddy553d9cfdfb3a9591289160d7e0d341ce0253fd36 and follow-up
+fca1b670a0d3b950310db64b49f9825b906b7aab have bounded independent host acceptance
+for one shared fixed read-only CLI slot. Parent AS remains8MiB soft/20MiB hard;
+only its one child raises its own soft limit to20MiB. A retained intent/child
+publication refuses reuse after parent death or lock release. Actual child wait
+and output EOF must both occur within2s; capture is4096bytes. This does not prove
+arbitrary executable descendants or writable manager-job reconciliation.
+
+SDK43b0e220389c62caef23c64c513545b4dc11e7cc fixes list-jobs query arguments:
+--no-legend --plain --full --no-pager --no-ask-password plus twelve exact nonce
+unit names, localeC/no colors. The independent pure decoder298d78a and integrated
+fca1b67 reject incomplete/foreign/duplicate/malformed rows before publication.
+An empty observation or disappearing job is not terminal/canceled proof or start
+attribution. T5 still needs fresh manager-instance/case/job tuple correlation,
+exact numeric cancel, observed unit/process/cgroup/marker outcomes and a no-late
+start check after barrier release. Bare/global cancel is never representable.
+
+Barrierf10642d independently verifies one explicit R control message sendsREADY;
+startup is silent and repeated R refuses. This is worker readiness protocol only,
+not a manager queue/cancellation result. The local manifest is still non-runnable,
+166explicit owned paths, with unresolved cleanup/operator/resource/job gates.
+
+Actual inherited-child target limit receipt
+041bd7b1af19e36d0b7172b31d4f47257243a283eda301bdbcf550980d75f135 verifies kernel
+AS20MiB/stack512KiB/data1MiB/file2048/core0/CPU2 settings. It profiles a cat child,
+not systemctl headroom. Fixed capped-query receipt
+f8b9c79553da8e3a1fb1adfe9d6b7cedd4b1f580f5414805f297f45c9abfa788 stopped BEFORE
+systemctl because the tablet lacks timeout. No unbounded substitute or extra
+helper transfer follows. SDK a4868b75ba157d0815c83d887b1f07ec09a11881 independently
+read/hash-checked those receipts. A separate main-operator follow-up receipt
+903835f17cd9c121c93c90dc66d8594c283b07ca1732394054ffaa4df73a9754 confirmed original
+xochitl identity/state and all three services active with empty jobs. No physical
+UI, writable service command, unit staging or helper load was tested.
+
+ARM fca1b67 preparation build imports libc only/maxGLIBC2.38, synthetic nonce,
+SHA1c22e4dc870ed487197e6e62231d59fc158b22e5cfadbf830920c0e3b52f2db6. Build-only
+is not a frozen packet or runtime qualification. Exact cleanup/operator, command
+artifact peaks/headroom/termination, concurrency/evidence accounting and final
+independent packet review remain open. No E0T staging/start or E1 is authorized.
+
+Source basis: exact public source/review checkpoints and operator-attributed
+private read-only receipts; raw configuration remains private. These bounded
+preparation results do not close native creation or the broad OpenSpec tasks.
