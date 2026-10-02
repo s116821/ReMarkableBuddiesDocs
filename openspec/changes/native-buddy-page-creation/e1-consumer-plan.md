@@ -175,6 +175,43 @@ job receipt SHA0c83dfa107f00d878a2cc73fe4e4bd36fb76c5db13920f3b2fc932ec89b91752.
 Initial inventory stopped after a no-matching-watchdog-unit exit and was preserved;
 that absence never established no watchdog. Later reads completed successfully.
 
+## Resumed event-retry observation and callback collection (October 2)
+
+The independently reviewed SDK af9074071955867b6cbaa53e56758e5931b2b61a
+and Buddy 4fc03e63fd152a2a5afe5b741c7744926b96d9fb packet ran once on RM2.
+No callback was observed during the ten live polls. The original receipt retains
+callback/generation/access false and no candidate receipt; restoration and exact
+cleanup passed. Private diagnostics retained one native import failure with
+last-compile-failure context and failed_attempt1. That field describes the last
+failed compile, not total attempts or terminal outcome.
+
+The operator did not recheck callback publication after restoration before cleanup.
+A late callback versus publication failure cannot be distinguished retrospectively;
+do not claim a deadline or access-refusal result. The original receipt is immutable,
+and nonce63365c1db7dc4da9a49ceb813a0b8c35 is spent. Further stock verification
+found PID1168/start189338583, all three original services active with empty jobs,
+original executable/configuration/policy, old attempt gone and exact staging absent.
+Physical UI responsiveness remains unverified.
+
+Sol's operator-only correction 9e11d3feb5c32287c7f8e06199a2249e2337b3ac
+received independent Main acceptance with eight exact POSIX file-gate cases and
+four exact PowerShell collection-metadata cases. After verified restoration it
+collects any final callback into a separate file, preserving original live flags;
+collection failure retains staging. This is bounded collector evidence, not a new
+hardware packet approval or recovery qualification. A pending private runtime
+summary will distinguish admitted retries from retained failure context without
+changing engine acquisition, event triggers, deadline or document effects.
+
+Current execution host is BYORBSAX. Future RM1 host SCRAPPY-DOO is unavailable;
+no shared filesystem or cross-host setup/control is assumed. Linear Machine owner
+labels and latest comments govern claims, but labels are not atomic locks. The
+resumed human cutoff is 5% remaining / 95% used in any applicable allowance window.
+Native source/page/PDF-ink/UI/production/MVP gates remain open.
+
+Source basis: actual private receipts and further device verification, independent
+exact-code fixtures, and current-project human/coordinator direction. Terminal
+outcome and native registration timing remain unknown; raw diagnostics stay private.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
