@@ -151,8 +151,7 @@ qualified native output, tablet persistence or real page identity.
 The exact checkpoint's AArch64 release build passed, artifact SHA
 5a67acdc258ee0bbb16bfc51d61183e6e0b9474588ec86acd8de33016d8eb978. The first
 concurrent ARM build refused host build-script GLIBC imports from the shared newer
-AArch64 cache; that infrastructure failure is retained. An isolated ARM target-cache
-build is in progress. Neither compilation nor simulated model evidence completes
+AArch64 cache; that infrastructure failure is retained. The isolated ARM target-cache
+build passed, artifact SHA8939329e80b193f3bc5ca0511704ccbd51b738090e417cefe0bb50a524a5b944. Neither compilation nor simulated model evidence completes
 native/revisit/Writer/fullREM37 gates. Local raw live reports/logs remain private
 working evidence; no credential/document log duplication into source.
-
