@@ -321,6 +321,36 @@ Source basis: [canonical actual result](https://linear.app/magentumdragon/issue/
 exact source/build/independent reviews and private device receipts. Next native
 context/owner and creation seam work is proposed, with no getter/page operation selected.
 
+## Selected metadata observer experiment M1 (October 2)
+
+After the successful singleton episode, the next approved research experiment
+checks fixed view metadata and the known native creation signature. Implementation
+and synthetic review are pending; no new hardware packet is selected. The SDK owns
+the exact observer contract and code. Buddy retains the reviewed one-shot operator.
+
+M1 uses the same existing engine and access deadline, one queued GUI observation,
+public QtQuick topology accessors, weak guards and fixed inspection caps. It reads
+no native property values and invokes no native method. One read of the owned
+helper's controller-valued property permits metadata inspection of that already
+resolved controller. Output contains fixed counts and compatibility flags only;
+raw names, signatures, pointers and document values remain excluded.
+
+The fixed SceneView metadata lead is pageId:QString, document:QmlDocumentWrapper*
+and controller:SceneController*. DocumentView and SceneSelectionHandler metadata
+can expose candidate selection-join endpoints, but their presence cannot identify
+an active selection or current page. The saved ViewManager.activeView:View metadata
+has no established visual-host relation and is excluded. M1 always reports source
+authority false and owner relation unproven, including exactly one candidate.
+
+The six-argument addPageWithTemplateAndPageSize lead is checked for signature
+compatibility only. No page creation, current-source lease, lifetime guarantee,
+preservation proof or production readiness follows. Caps and deadline checks bound
+inspection/admission, not Qt allocation or synchronous native call duration.
+
+Source basis: SDK source assessment of existing private firmware metadata and
+[pinned Inkling view discovery](https://github.com/nathanmarlor/inkling/blob/089efb2c9f24ce64127c6fc4d7fd30f93ae5ad94/xovi-ext/inklingfb/main.c),
+plus Main's approved research scope. Current-owner qualification remains unresolved.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
