@@ -1,9 +1,46 @@
 # E1 consumer counterpart and read-only baseline
 
-Status: production qualification remains planning only. The historical E1/E0T
+Status: one explicit development-fixture native insertion, stock-restart
+persistence and visual development reopen are demonstrated. Production
+qualification and active-view authority remain open. The October 3 checkpoint
+below supersedes earlier pending/failure statements for this scoped milestone.
+The historical E1/E0T
 mechanism discussion below is superseded for the next minimal development test
 by the October 2 checkpoint here. One public Qt application-thread callback has
-now run on the tablet; controller/page and production recovery gates remain open.
+now run on the tablet; general controller/page and production recovery gates remain open.
+
+## October 3 scoped native milestone and next integration slice
+
+At SDK97726f3/Buddy01213c6, one independently reviewed development packet made
+one guarded native insertion call, returned true and received one callback.
+After restoration and stock restart, the fixture contained six unique pages,
+with one new blank page at index1. All five original page objects and their
+relative order were preserved; original PDF and ink bytes were unchanged.
+Independent saved-evidence review accepted preservation and framing; Main
+separately verified visual reopening and the six-page overview using existing
+development controls. This does not qualify a native SDK reopening API.
+
+The packet nonce is spent. Preserve the original full backup, successful
+six-page fixture, evidence and unfinished M3/E0T work. The former expected-five
+configuration is historical and must not be reused for another mutation.
+SDK task2.7 is achieved only at this explicit-fixture scope. Docs investigation
+and Q1-Q10 tasks, SDK active-view2.6, compare-and-act2.3, full native4.2 and
+production lifecycle gates remain open; no canonical sync/archive/merge follows.
+
+Main selected source-only preparation of a nonmutating PageKey-bound open/observe
+operation for the already-created page. It must prove the live visible document
+owner and SceneView relation, derive the target index from a fresh ID map, queue
+one source-supported openPage call and verify that same owner actually displays
+the target. Metadata lastOpenedPage and a historical creation callback grant no
+rendering authority. Missing, ambiguous, stale or inconsistent owner relations
+refuse; no new insertion, general observer framework or M3 stash resumption is
+authorized. Buddy's existing guarded navigation/capture/render seams remain
+unchanged until a qualified acquisition contract is available.
+
+Source basis: [actual native insertion and postrestart record](https://linear.app/magentumdragon/issue/REM-25#comment-7d695be1-1baa-4611-8648-26876db57a6e),
+[independent effect review and Main visual development reopen](https://linear.app/magentumdragon/issue/REM-25#comment-f498c923-e7a1-41c4-ad3b-396891c353c9),
+current SDK/Buddy interfaces and Main's selected integration scope. The next
+operation is a proposal, not a native qualification result.
 
 The user/coordinator prioritized native experiments and preserved the unfinished
 E0T framework for reassessment after integration needs are known, before a
