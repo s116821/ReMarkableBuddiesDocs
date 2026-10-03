@@ -18,8 +18,11 @@ Direct native openPageKey is deferred and is not an MVP/release prerequisite.
    in that committed order, request one SDK logical Next. Otherwise stop/reconcile.
 4. Verify intended target, same document/session, accepted order, fresh settled
    pixels/chrome, input and current ownership. Transfer the verified owner/input
-   observer and input epoch explicitly under the same session/visit; then perform
-   binding CAS and the separately guarded write.
+   observer and input epoch explicitly with runtime/session continuity and the
+   verified target visit; then perform binding CAS and the separately guarded write.
+   The source-to-target page transition may change the active visit only through
+   this qualified correlated transition. Source and target visits need not match;
+   unexpected visit changes remain sticky failures, never implicit repinning.
    Unknown blankness, binding conflict or lost ownership forbids writing.
 
 Current Reader code already performs one next-page gesture and verifies native
