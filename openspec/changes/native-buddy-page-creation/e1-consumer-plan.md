@@ -385,8 +385,12 @@ navigation signal declaration, but not its external navigator binding or receive
 The next approved experiment locates metadata candidates in the same bounded
 existing-engine Quick tree. It uses the exact two-QVariant signal signature,
 source-compatible FocusScope ancestry and the same object's windowNavigator
-property metadata. SDK owns the exact API, type and cap contract; Sol implementation
-and independent validation are pending. No new artifact or hardware run is selected.
+property metadata. SDK owns the exact API, type and cap contract. Frozen
+[SDK e86336e](https://github.com/s116821/ReMarkableOpenSDK/commit/e86336efbc3035b63dd7e92018a6091a10dcb63f)
+passed author and Main independent109 vendor ARM/qemu cases plus SDK semantic
+review. The earlier draft108 runner was invalidated after a live script edit;
+it is excluded from acceptance. The final109 source stayed unchanged during both
+accepted runs. A fresh exact artifact is being prepared; no M2 hardware run occurred.
 
 No native property value, signal emission or method invocation belongs in M2.
 Exactly one complete candidate is only a metadata location result. Zero,
