@@ -357,6 +357,29 @@ plus Main's approved research scope. Current-owner qualification remains unresol
 
 ## Remaining pre-entry gates
 
+### Actual M1 metadata episode (October 2)
+
+Accepted SDKeea96ee / Buddyecdc51b ran once with spent nonce1b345406 after
+independent77-case validation, semantic review, byte-identical rebuild and exact
+operator/packet review. Original live callback/generation/QML/restoration/cleanup
+flags all passed. The scan completed at3543ms after Ready3541ms,4compiles and3
+timer rechecks: one window, one Quick window,19items and zero candidates in all
+three fixed view buckets. The exact creation signature was present with bool
+return metadata. No native property values or methods were accessed. Source
+authority stayed false and owner relation unproven.
+
+Fresh independent stock observation found3653/start190358636/S, original
+executable/Quick/unit/override hashes, all three services active, empty job,
+NRestarts0 and exact stage/drop-in/transient units absent. A later retrieved,
+hash-verified screenshot was visually inspected and showed My files. That image
+establishes the restored screen only; it does not establish the screen during
+the earlier scan or explain zero candidates. A meaningful next experiment needs
+verified document context rather than an unchanged startup rescan. Current-page
+qualification, native creation and preservation/production gates remain open.
+
+Source basis: [actual M1 record](https://linear.app/magentumdragon/issue/REM-25#comment-50205c84-e1a8-4066-86f1-4f7e352e50b3),
+private actual receipts, separate stock output and visual screenshot inspection.
+
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
   transaction-owned idempotent restoration, late-writer rejection and honest failure
   under blocked restoration in the host harness, with independent exact review.
