@@ -20,8 +20,13 @@ binding to the old installed helper. No serializer change is justified here.
 
 Run the exact extracted example branch and screenshot tail in a host-owned mock
 harness. Verify tap-only emits start/wait/release without capture, existing tap and
-press keep capture, invalid coordinates act before input, and failed release cannot
+press keep capture, unparseable or missing coordinates fail before input, and failed release cannot
 claim success/capture. This is development CLI sequencing; production simulator
 behavior is unchanged. Owned tests cannot prove firmware acceptance or UI effects.
 
 No sync/archive until coordinated implementation review and remaining gates finish.
+
+Main and Astra accepted Buddy55c6834 with Docs5688e37 after independent8-case
+source sequencing checks, formatting/diff checks and strict validation. This is
+source acceptance only; artifact construction and any device effects remain
+separate selected gates with no hardware qualification claimed here.
