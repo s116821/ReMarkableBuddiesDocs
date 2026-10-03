@@ -10,6 +10,31 @@ No conversation renderer/history implementation, source-question erasure, marker
 
 ## Decisions
 
+### Logical gesture navigation; direct opening deferred
+
+The October 3 user decision selects permitted gestures exposed through SDK logical
+Next/Previous with per-tablet implementations. Logical page order is distinct from
+physical swipe direction and orientation. Direct native openPageKey is deferred,
+not an MVP or release prerequisite. Its optional development restart/Myfiles setup
+and guard experiments do not become prerequisites for the selected gesture route.
+See [logical navigation contract](logical-navigation-contract.md) for the smallest
+creation-to-write route and the exact boundary between existing behavior and work
+still requiring implementation and qualification.
+
+After a correlated insertion, freshly identify the active page. If it is the exact
+new target, verify it without a gesture. If it is the exact source and the committed
+order places the target immediately next, request one logical Next and verify the
+intended target before binding/rendering. Unknown ownership, another active page,
+nonadjacency, input, session replacement or unexplained order drift stops for
+reconciliation. Actual insertion auto-selection is unqualified; persistence and a
+later development reopen do not establish active-owner behavior before restoration.
+
+Retain the current Reader's single-gesture completion and source/destination/input
+guards. A legitimate insertion needs an explicit correlated structural handoff;
+never relax the old order guard or silently repin a lost captured source. Per-tablet
+gesture mappings, authoritative active-owner observation and runtime integration
+remain open qualification work. No direct-opening-only gate carries into this route.
+
 ### Capability discovery before mutation
 
 Prefer stable direct/native, IPC or maintainable coordinated service mechanisms using narrow SDK capabilities. Supervised lazy session-only XOVI is now an acceptable candidate for capabilities that cannot be reached robustly otherwise; it is not selected. The October 1 direction supersedes the earlier blanket production exclusion. Compare safety, maintainability and target-tablet compatibility rather than treating dependency avoidance as the goal. After dependency/review gates, observe exact active model, signatures, signals and serialization on the authorized RM2. Inspect legally available device resources locally; publish observed signatures/hashes, not proprietary firmware. Do not guess or invoke arbitrary methods during discovery.

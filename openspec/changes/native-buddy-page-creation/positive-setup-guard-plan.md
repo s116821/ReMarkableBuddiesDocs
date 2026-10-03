@@ -1,5 +1,28 @@
 # Positive development setup admission
 
+## Deferred checkpoint, October 3
+
+The user selected SDK logical gesture navigation and deferred direct openPageKey.
+Optional native-open guard expansion is stopped. Buddy9d5908777ba6d51448519c8d3da077de234f520f
+and this plan at Docsd1af67e249682aef91b1f03c0ab3779b02d5101a remain preserved,
+not accepted or archived. The shared positive checks and timing receipts passed
+focused tests; independent review found two blocking recovery defects: locked
+validation precedes the command timeout, and explicit flock unlock can release
+recovery exclusion while a TERM-ignoring descendant still performs effects.
+The proposed whole-scope supervisor is unimplemented; no weaker fault contract,
+new containment runtime, or live helper contract was selected. Deployed helper
+source bindings remain unresolved. These findings belong to optional tooling,
+which is not wired into the shipping Reader or the selected logical gesture route.
+Existing operator recovery and historical creation/OPEN source remain unchanged.
+
+Preserved checks: 72 owned Linux admission/consumer cases, nine local monotonic
+timing cases, 77 historical OPEN proof/recovery cases and 38 callback cases passed;
+the first 72 do not cover the subsequently reproduced two defects. Passing tests
+therefore do not qualify recovery. No further prototype code or device run followed.
+The original plan below is historical unfinished scope, not current release work.
+
+## Original unfinished plan
+
 The spent development OPEN run reached its setup deadline without accepting an
 arm token. Negative absence checks allowed later manual setup commands after the
 owned stage had been removed. This is an orchestration defect, not native owner

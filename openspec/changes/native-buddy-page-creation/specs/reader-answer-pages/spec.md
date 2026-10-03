@@ -15,6 +15,16 @@ New Buddy conversations SHALL acquire targets through native-buddy-page-creation
 - **WHEN** the accepted REM-9 swipe path is used
 - **THEN** its 15-step, 10 ms physical gesture after 50 ms initial contact and guarded completion semantics remain intact; no timed-out swipe is repeated or unsupported-layout wait promoted to proof.
 
+#### Scenario: Logical direction across tablets
+- **WHEN** acquisition requests SDK logical Next or Previous
+- **THEN** the qualified per-tablet implementation maps native page order and supported orientation to its physical gesture, performs at most one gesture, and verifies the exact intended destination with fresh source/destination and input guards.
+- **AND** direct native openPageKey is deferred and is not required for this selected route or MVP release.
+
+#### Scenario: Active page after insertion
+- **WHEN** a correlated insertion has committed its exact source-preserving target/order transition
+- **THEN** a fresh qualified active-page observation selects zero navigation when already on that exact target, or one logical Next only when the exact source is active and the intended target is its immediate successor.
+- **AND** unknown or unrelated active ownership, nonadjacency, stale session/input or unexplained order drift refuses binding/rendering and requires reconciliation rather than a guessed gesture or direct-open experiment.
+
 #### Scenario: Insertion changes native order
 - **WHEN** the correlated owned insertion commits a new page
 - **THEN** only the exact expected source-preserving order transition may establish the acquisition's new structural receipt; unrelated order changes, stale visits or external input cancel the operation without repinning the active source baseline.

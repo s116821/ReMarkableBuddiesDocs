@@ -37,6 +37,11 @@ The system SHALL provide qualified automatic native writable Buddy-page creation
 ### Requirement: Exact binding and non-destructive reuse
 Acquisition SHALL use stable conversation/document/page IDs and native session/revision guards, with REM37 as canonical binding/history owner. Source: REM25/37/38; Q4-Q7.
 
+#### Scenario: Selected adjacent gesture route
+- **WHEN** a newly committed target is already active or is the immediate successor of the verified active source
+- **THEN** acquisition uses fresh exact-target verification or one SDK logical Next gesture with per-tablet mapping and guarded destination verification before binding/write.
+- **AND** direct native openPageKey remains deferred; its optional development setup/recovery experiments are not prerequisites for this route.
+
 #### Scenario: Existing scrolled or edited page
 - **WHEN** the conversation has a verified target
 - **THEN** that page is reused without duplicate creation or clearing edits even with invisible header.

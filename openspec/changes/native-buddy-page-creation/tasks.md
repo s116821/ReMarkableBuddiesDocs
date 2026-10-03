@@ -7,6 +7,8 @@
 - [x] 1.7 Obtain coordinator plan acceptance at a0f4d9c plus discovery runbook at8294500; acceptance does not release the REM9/native gates.
 - [x] 1.6 Rebase onto accepted REM-9 Docs e7fbdc44/Rust 3df3b1e6 and reconcile the four answer-page delta blocks, preserving ordered/fresh completion, sticky ownership/cancellation, one-attempt recovery and non-ink diagnostics.
 - [ ] 1.8 Confirm final local-only journal registration/API with REM-36 and binding interface with REM-37; qualify the actual native operation before production adapter/journal code.
+- [x] 1.9 Record the October 3 logical Next/Previous gesture decision and deferred direct-open checkpoint; preserve unfinished optional source/evidence and its two blocking harness recovery findings.
+- [ ] 1.10 Independently accept the small logical-navigation contract with SDK and RM1/RM2 owners before implementing the consumer route; logical direction is not physical swipe direction or orientation.
 
 ## 2. Investigation and selection
 - [ ] 2.5 Compare stable native/direct mechanisms against the October 1 supervised lazy session-only XOVI candidate; coordinate exact SDK contract and select by safety/maintainability across target tablets, without treating the superseded blanket ban as a blocker.
@@ -23,6 +25,7 @@
 - [ ] 3.4 Exact extension compatibility/provenance/licenses/minimal packaging/activation/rollback/remove handoff to REM41; no incidental boot/firmware/account change.
 - [ ] 3.5 Learned fixtures/simulator faults for persistence, identity, uncertain outcome and mappings in same delivery; add local-simulator delta if canonical behavior changes.
 - [ ] 3.6 Reader/Writer/blank-start contract tests and explicit downstream native gates; no fabricated question/empty model call.
+- [ ] 3.8 Consume SDK logical Next/Previous using existing one-gesture completion: fresh active-target verification after insertion, zero gesture if already target, or one Next only for verified source/adjacent intended target. Preserve sticky guards and explicit correlated structural handoff; direct openPageKey remains deferred.
 
 ## 4. Verification and delivery
 - [ ] 4.7 For a selected supervised candidate, verify cold-boot stock, first-gesture handoff, subsequent gestures, unknown compatibility refusal, stalled/missing heartbeat, crash-loop recovery, UI-independent disable, Manager update/uninstall and reboot stock baseline; preserve source/data and reject stale-handle replay.
@@ -32,3 +35,4 @@
 - [ ] 4.4 Reread latest comments, verify exact spec/code revisions and task coverage, resolve CI/review; unavailable bot is not a clean review.
 - [ ] 4.5 Sync only implemented verified canonical requirements, preserve other lanes, validate strictly and archive only completed change.
 - [ ] 4.6 Linked Summary-only PRs with detailed evidence/explained embedded images in comments; coordinator-only squash merges. REM35 owns integrated1.0 acceptance.
+- [ ] 4.8 Qualify selected per-tablet logical gesture mappings, source/destination observation and creation-to-write handoff; test wrong neighbor, stale input/session/order, no movement and uncertain completion without retries. Direct-opening-only experiment gates are excluded.
