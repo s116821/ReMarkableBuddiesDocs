@@ -292,6 +292,35 @@ prerequisites against available target evidence; no new hardware packet is selec
 Source basis: exact source/build/operator reviews and actual private receipts/fresh
 device observations. Native registration ordering and later delay remain unknown.
 
+## Actual existing-engine singleton availability proof (October 2)
+
+[SDK e4d5102](https://github.com/s116821/ReMarkableOpenSDK/commit/e4d51023782f483160a770b0c5a12cab1b76d751)
+and Buddyb5a259961b5de27e9166b2376261f908fcf74496 ran once after independent48
+vendor-Qt ARM/qemu passes, byte-identical artifact rebuild and exact packet review.
+Nonce90461e35b0e84f04a8d2e7570118a082 is spent. Callback, attempted live generation,
+QML availability, restoration and exact cleanup all passed in the original receipt.
+The helper reported application/engine thread and helper/controller availability true.
+
+The bounded community retry refined readiness to cover both root and successful
+compilation; the first accepted queued Ready observation starts the create/access
+budget. Actual diagnostics record4 compiles and3 timer rechecks, no window retries,
+retained last failure3, root witness2674ms, first compile2693..2696ms, last
+compile3393..3402ms, accepted Ready3402ms and terminal resolved3404ms. Historical
+compiler failure is retained privately without overflow. No cache clearing, new
+engine or URI change occurred. This supports one successful guarded availability
+episode, not the exact registration cause or strong native lifetime.
+
+Independent Sol saved-evidence review verified all hashes/tokens/live generation
+and further-stock output without physical sampling. Further stock3027/start190076556/S,
+all three original services active, empty jobs, NRestarts0, original executable/unit
+hashes/policy, old2840 gone and exact stage/drop-in/units absent. Current-source/page
+qualification, native creation/in-place preservation, PDF/ink, physical UI,
+production recovery and complete REM-25/MVP remain open. No merge/archive follows.
+
+Source basis: [canonical actual result](https://linear.app/magentumdragon/issue/REM-25#comment-1605cdca-dfd6-49a5-b5f9-f2c26f04aa2f),
+exact source/build/independent reviews and private device receipts. Next native
+context/owner and creation seam work is proposed, with no getter/page operation selected.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
