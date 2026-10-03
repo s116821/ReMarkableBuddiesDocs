@@ -324,8 +324,12 @@ context/owner and creation seam work is proposed, with no getter/page operation 
 ## Selected metadata observer experiment M1 (October 2)
 
 After the successful singleton episode, the next approved research experiment
-checks fixed view metadata and the known native creation signature. Implementation
-and synthetic review are pending; no new hardware packet is selected. The SDK owns
+checks fixed view metadata and the known native creation signature. Frozen
+[SDK eea96ee](https://github.com/s116821/ReMarkableOpenSDK/commit/eea96ee94583614537aabe71569648cae943620c)
+passed author and Main independent77 vendor ARM/qemu cases (29 metadata and48
+regressions); SDK semantic review found no blocking issue. These are synthetic
+results. The fresh artifact and operator packet remain under preparation, with no
+new hardware execution. The SDK owns
 the exact observer contract and code. Buddy retains the reviewed one-shot operator.
 
 M1 uses the same existing engine and access deadline, one queued GUI observation,
