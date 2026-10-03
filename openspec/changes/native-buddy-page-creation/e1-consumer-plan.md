@@ -390,7 +390,7 @@ property metadata. SDK owns the exact API, type and cap contract. Frozen
 passed author and Main independent109 vendor ARM/qemu cases plus SDK semantic
 review. The earlier draft108 runner was invalidated after a live script edit;
 it is excluded from acceptance. The final109 source stayed unchanged during both
-accepted runs. A fresh exact artifact is being prepared; no M2 hardware run occurred.
+accepted runs. These checks preceded the actual M2 episode recorded below.
 
 No native property value, signal emission or method invocation belongs in M2.
 Exactly one complete candidate is only a metadata location result. Zero,
@@ -403,6 +403,32 @@ readiness/access clocks, one queued scan and restoration contract stay unchanged
 Source basis: [source assessment and selected direction](https://linear.app/magentumdragon/issue/REM-25#comment-d70e92da-b7b6-4a0a-9351-1b695ac5ac57),
 SDK bounded interoperability analysis and pinned Qt metadata/compiler sources.
 Signal metadata does not qualify opening or creating a page.
+
+## Actual M2 completed observation, candidate absent (October 2)
+
+Accepted SDKe86336ef / Buddy4b116776 ran once after exact artifact rebuild and
+operator/packet review. Noncec670c4e8 is spent. Original callback/generation/QML/
+restoration/cleanup flags all passed; public resolved means completed observation.
+The scan at3577ms after Ready3574ms inspected one Quick window and19items, with19
+exact signal lookups. Raw and complete navigation candidates were both zero,
+location absent and located false. All fixed windowNavigator counts were zero.
+Source authority stayed false and owner/receiver relations unproven. Native creation
+signature metadata remained present/bool; no getter, emission or navigation occurred.
+
+Independent Sol saved-evidence review accepted all hashes/tokens/live-generation
+proof and bounded diagnostics, with no reviewer physical sampling. Four compiles
+and three timer rechecks were observed. Fresh separate stock4349/start190863366/S,
+original executable/Quick/unit/override hashes, three active services, empty job,
+NRestarts0, Direct/onfailure and exact nonce stage/drop-in/transient units absent
+were verified. This is no matching candidate in one bounded early scan, not global
+absence, current document identity, UI state or cause proof.
+
+The next proposed metadata experiment observes genuine bounded topology changes
+within the existing access deadline; no clock extension or new packet is selected.
+All active-source/navigation/native-creation/preservation/production gates remain open.
+
+Source basis: [actual M2 record](https://linear.app/magentumdragon/issue/REM-25#comment-7d162b37-49b7-498d-b3ec-c5f61b66ee14),
+private original/final receipts, independent saved-evidence review and fresh stock output.
 
 ## Remaining pre-entry gates
 
