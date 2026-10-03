@@ -8,7 +8,7 @@
 - [x] 1.6 Rebase onto accepted REM-9 Docs e7fbdc44/Rust 3df3b1e6 and reconcile the four answer-page delta blocks, preserving ordered/fresh completion, sticky ownership/cancellation, one-attempt recovery and non-ink diagnostics.
 - [ ] 1.8 Confirm final local-only journal registration/API with REM-36 and binding interface with REM-37; qualify the actual native operation before production adapter/journal code.
 - [x] 1.9 Record the October 3 logical Next/Previous gesture decision and deferred direct-open checkpoint; preserve unfinished optional source/evidence and its two blocking harness recovery findings.
-- [ ] 1.10 Independently accept the small logical-navigation contract with SDK and RM1/RM2 owners before implementing the consumer route; logical direction is not physical swipe direction or orientation.
+- [x] 1.10 Independently accept the small logical-navigation contract with SDK before implementing the consumer route: Main/Astra accepted Docs2693680 with SDK663c704 API proposal, then SDKf6b7dc8 source/model slice. RM1/RM2 physical qualification remains separate and open; logical direction is not physical swipe direction or orientation.
 
 ## 2. Investigation and selection
 - [ ] 2.5 Compare stable native/direct mechanisms against the October 1 supervised lazy session-only XOVI candidate; coordinate exact SDK contract and select by safety/maintainability across target tablets, without treating the superseded blanket ban as a blocker.

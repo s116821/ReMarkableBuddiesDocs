@@ -80,3 +80,29 @@ Source basis: the current user decision relayed by Main; Buddy9d59087 baseline
 orchestrator/navigation_completion/request_guard source; canonical and active Docs
 contracts; independently reviewed saved insertion and spent OPEN evidence. The
 proposed creation handoff is design, not implemented behavior or native proof.
+
+## Source/model implementation checkpoint
+
+SDKf6b7dc8954ba9f5a284d56568765e05c38483924 implements the small immutable
+logical request, explicit synthetic outcomes, single-dispatch mock correlation
+and single-use creation handoff. Main and Astra independently accepted its source
+and ran all 36 Rust tests. Native defaults remain Unsupported; model correlation
+is in-memory and is not the durable product operation journal.
+
+Buddy's author implementation pins that exact SDK and adds a separate experimental
+acquisition seam, not installed Reader rendering. A retained in-memory attempt
+session prevents repeated creation/gesture calls after any previous operation,
+including lost replies. Zero/one logical gesture branches return SyntheticPrepared
+only; cancellation, unknown state and uncertain outcomes require reconciliation.
+No binding/write callback is accepted. Consumer frozen semantic review remains
+pending; runtime/native owner, pixels, correlated insertion, continuous input and
+write integration remain active follow-on work. Existing Reader navigation cadence,
+thresholds, observers and request guards are unchanged by this seam.
+
+Existing gesture completion deliberately replaces its observer around the physical
+gesture interval. That does not establish uninterrupted external-input exclusion
+for a new authoritative SDK handoff. Persisted last-opened identity is a candidate,
+not native UI authority. The next native slice should be separately reviewed
+read-only owner/identity/order observation, decoupled from direct-opening methods,
+before qualifying insertion transition and gesture/pixel/write authority. No such
+new native source, build or device action is implemented by this checkpoint.
