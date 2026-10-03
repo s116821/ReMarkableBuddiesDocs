@@ -270,6 +270,28 @@ and operator review precede any new announced hardware run; the old nonce is spe
 Source basis: exact pushed SDK source, independent synthetic/vendor fixtures and
 operator mocks, current-project semantic review. Root-gate hardware is untested.
 
+## Actual root-witness result (October 2)
+
+Accepted SDK e687617 / Buddyf89a2bc / ARMdd4fcd ran once with nonce
+f8538b8e51fb41239cdc24128c7800fd, now spent. The operator observed and verified
+the callback and attempted generation while live; native access remained false.
+Restoration and exact cleanup passed. Private diagnostics observed one preexisting
+root on the application engine at2708ms, first setData2719..2723ms and error
+handling2723ms. One compile failed, no post-failure recheck was admitted, and the
+deadline receipt was observed at11803ms. Root presence did not make the library
+available in this episode. The first call spanned4ms; later delay is unattributed.
+
+Further stock verification found2432/start189900591/S, original executable/unit
+hashes, all three services active, empty jobs, NRestarts0, original policy,
+attempt2224 gone and exact stage/drop-in/units absent. Independent Sol saved-evidence
+review matched all hashes/tokens/receipts and stock output, without physical sampling.
+Physical UI, native source/page/PDF-ink preservation and production/MVP gates remain
+open. The next mechanism is under a bounded comparison of pinned community working
+prerequisites against available target evidence; no new hardware packet is selected.
+
+Source basis: exact source/build/operator reviews and actual private receipts/fresh
+device observations. Native registration ordering and later delay remain unknown.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
