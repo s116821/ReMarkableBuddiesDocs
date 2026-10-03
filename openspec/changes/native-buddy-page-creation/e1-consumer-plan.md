@@ -378,6 +378,28 @@ qualification, native creation and preservation/production gates remain open.
 Source basis: [actual M1 record](https://linear.app/magentumdragon/issue/REM-25#comment-50205c84-e1a8-4066-86f1-4f7e352e50b3),
 private actual receipts, separate stock output and visual screenshot inspection.
 
+## Selected navigation-candidate metadata experiment M2 (October 2)
+
+Source-only assessment of three bounded private resource entries establishes a
+navigation signal declaration, but not its external navigator binding or receiver.
+The next approved experiment locates metadata candidates in the same bounded
+existing-engine Quick tree. It uses the exact two-QVariant signal signature,
+source-compatible FocusScope ancestry and the same object's windowNavigator
+property metadata. SDK owns the exact API, type and cap contract; Sol implementation
+and independent validation are pending. No new artifact or hardware run is selected.
+
+No native property value, signal emission or method invocation belongs in M2.
+Exactly one complete candidate is only a metadata location result. Zero,
+incompatible or multiple raw candidates report explicit diagnostic statuses; a
+completed observation still uses the existing resolved envelope. All statuses
+retain source authority false, owner relation unproven and receiver relation
+unproven. Context/lifetime/deadline refusal invalidates location. The existing
+readiness/access clocks, one queued scan and restoration contract stay unchanged.
+
+Source basis: [source assessment and selected direction](https://linear.app/magentumdragon/issue/REM-25#comment-d70e92da-b7b6-4a0a-9351-1b695ac5ac57),
+SDK bounded interoperability analysis and pinned Qt metadata/compiler sources.
+Signal metadata does not qualify opening or creating a page.
+
 ## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
