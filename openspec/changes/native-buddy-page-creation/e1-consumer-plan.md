@@ -355,9 +355,7 @@ Source basis: SDK source assessment of existing private firmware metadata and
 [pinned Inkling view discovery](https://github.com/nathanmarlor/inkling/blob/089efb2c9f24ce64127c6fc4d7fd30f93ae5ad94/xovi-ext/inklingfb/main.c),
 plus Main's approved research scope. Current-owner qualification remains unresolved.
 
-## Remaining pre-entry gates
-
-### Actual M1 metadata episode (October 2)
+## Actual M1 metadata episode (October 2)
 
 Accepted SDKeea96ee / Buddyecdc51b ran once with spent nonce1b345406 after
 independent77-case validation, semantic review, byte-identical rebuild and exact
@@ -379,6 +377,8 @@ qualification, native creation and preservation/production gates remain open.
 
 Source basis: [actual M1 record](https://linear.app/magentumdragon/issue/REM-25#comment-50205c84-e1a8-4066-86f1-4f7e352e50b3),
 private actual receipts, separate stock output and visual screenshot inspection.
+
+## Remaining pre-entry gates
 
 - Demonstrate actual surviving-Supervisor recovery at every activation handoff,
   transaction-owned idempotent restoration, late-writer rejection and honest failure
