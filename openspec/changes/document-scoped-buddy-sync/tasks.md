@@ -8,6 +8,8 @@
 - [ ] Obtain Main's owner review of integration-seams.md, refresh the REM-37 source mapping, and agree shared journal/store/backend seam ownership before editing those paths.
 - [x] Obtain Main's efb8fd73 review accepting the coordinated proposal for an isolated selected-store/projector fixture slice; add history/bitmap admission coverage and propose the precise token/commit/activation/journal interfaces for owner agreement.
 - [ ] Review the precise interfaces/journal extension with Main before shared domain/workflow edits; verify and independently review the disconnected real-store projection fixtures without claiming activation/admission implementation.
+- [x] Read Main's exact0830a9af owner agreement (2026-10-07T13:09:56Z): SCRAPPY's selected storage implementation is unblocked; Main retains domain journal/projector/admission ownership.
+- [ ] Complete and review the selected snapshot read-path increment, then implement guarded commit and one durable winner-plus-retained activation with original-selection replay and fault recovery. Interface agreement is no longer a blocker for this storage work.
 - [ ] Implement and verify the accepted generic adapter slice without enabling shared-mode publication.
 - [ ] Qualify or reject the candidate provider primitive using an explicitly authorized disposable app-data namespace; preserve reproducible evidence without secrets.
 - [ ] Implement accepted generic scope/selection and conditional transport seam, reusing REM-36 domain-opaque storage and bounds.
