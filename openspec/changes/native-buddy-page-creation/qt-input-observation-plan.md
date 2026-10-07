@@ -2145,7 +2145,8 @@ No implementation, new input or debugger work is selected. Candidate: initialize
 both native axes through a deterministic distinct in-range primer, then final
 requested values before the SAME original press SYN_REPORT. Keep one contact,
 one press frame and one release frame; no extra tap/SYN/sleep/conversion/ABI change.
-For zero-fuzz qualified axis bounds[min,max], choose P=min unless F=min, then P=max;
+For zero-fuzz qualified integer axis bounds[min,max], choose P=F+1 unless F=max,
+then P=F-1; this supersedes the distant min/max candidate after parent review.
 require min<max and in-range F. Thus P!=F independently of the retained seed.
 Suggested exact writer order: slot0,Xp,Yp,tracking1,Xf,Yf,existing pressure/major/
 minor/orientation,SYN_REPORT. Release remains unchanged. Primer coordinates are
@@ -2231,3 +2232,46 @@ repair the gap with an extra tap/frame, broader whitelist or an unreviewed fallb
 Source basis: Astra's exact9911796 independent review and reported target-consumer
 static findings, with upstream kernel buffering semantics already cited above.
 No source implementation, target experiment or additional hazard claim is made.
+
+#### Bounded source safety finding and continuation (2026-10-07)
+
+The exact-point adapter remains unselected. evdev0.13.2 `fd_write_all` consumes
+positive short writes, retries EINTR and returns a terminal error without an
+accepted-byte count; zero write returns Ok even with data remaining. The existing
+unprimed tracking-first press also lacks atomicity. The added primer concern is
+specifically an intermediate P or mixed P/F contact, including before tracking;
+this review is not a prerequisite to proving all possible physical-input failures
+before other SDK/product work can continue. Neighboring P reduces excursion only;
+it does not establish no action or authorize coordinate displacement.
+
+Main's read-only target report identifies5.4.70-v1.6.3-rm11x. Official vendor-family
+[evdev_write](https://github.com/reMarkable/linux/blob/d54fe67bf86e918468b936f97a2ec39f4f87a3d9/drivers/input/evdev.c)
+copies/injects events individually, can return EFAULT after an accepted prefix and
+allows scheduling between events. Its
+[input_handle_event](https://github.com/reMarkable/linux/blob/d54fe67bf86e918468b936f97a2ec39f4f87a3d9/drivers/input/input.c)
+can add an automatic SYN when pending values reach the threshold. This pinned
+vendor family is closer evidence than generic upstream5.4, but is not proven
+equivalent to the March2026 target kernel binary. Capacity estimation still does
+not prove available pending headroom.
+
+Static exact libepaper67857422 inspection shows axes create an id-1/state1 contact
+before tracking;15574/15584 and1557c/155a8 copy id/state into the TouchPoint. The
+previously hash-qualified exact QtGui93fe582c copies id/state into QEventPoint at
+185a68..185a74; aggregate state1 becomes TouchBegin194 at1859f8..185a10.
+processTouchEvent134968..134994 passes id to pointById and branches on Pressed;
+134b14..134b44 selects topLevelAt for its position. These bounded paths contain no
+negative-id rejection. They corroborate a possible dispatch path, not actual UI
+acceptance or a complete accepted-prefix/retained-consumer safety proof. No primer
+was exercised by spent50d289. Sol retained private exact process disassembly;
+no generic framework, implementation, new input or debugger work follows.
+
+Parent continuation separates the crossed setup/open-document engineering blocker
+from unfinished exact-point adapter and native qualification. Existing insertion
+and logical Next/Previous work may be assessed with independently verified setup
+and target-page postconditions; task4.11 and formal authority flags remain open.
+Do not promote raw echo, observed TouchBegin, paired PDF images or source reasoning
+into insertion correlation, active-page authority or integrated navigation success.
+
+Source basis: local crate source and exact vendor binary disassembly; Main's target
+kernel report and pinned official vendor-family review; parent continuation limits.
+Application acceptance and primer safety remain unproved. No target operation by Sol.
