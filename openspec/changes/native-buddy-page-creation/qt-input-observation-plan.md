@@ -2462,3 +2462,51 @@ nonce, target action or broader framework is selected by this proposal.
 Source basis: locally reviewed saved bf3 readiness/setup/raw/receipt/post-state and
 cleanup evidence; Main's bounded recovery/hardware report. Phase cause remains
 unknown and the proposed split is unqualified. Task4.11 remains unfinished.
+
+#### Setup-only transport allowance correction (2026-10-07)
+
+Parent steering selects the setup-allowance source direction and leaves the split
+call draft preserved but UNSELECTED. The manual5000ms setup SSH ceiling was local
+orchestration policy, distinct from the SDK5000ms getter deadline measured from
+acceptedAt. The earlier50d one-action SSH host duration6595ms supports considering
+more transport headroom; it is not an exact remote phase duration or proof of the
+bf3 timeout cause. A setup-only10000ms allowance is a bounded proposal, not a runtime
+guarantee. Keep the original120000ms setup,150000ms host observation, accepted getter
+5000ms,180s rollback and separate restoration clocks unchanged.
+
+The reviewed manual wrapper changes only its allowed maximum5000 to10000; default
+5000 remains. The already-existing host admission requires the ENTIRE selected
+allowance to fit strictly inside the ORIGINAL150000ms deadline before dispatch and
+checks the same deadline after return. Only the future setup invocation selects
+10000ms; readiness, capture, copy, final proof and publisher remain5000ms. The setup
+command retains all THREE full same_waiting proofs, exclusive claim, exact helper
+ownership/hash and raw size guards. Eleven fixed stdout phase records have bounded
+numeric monotonic uptime stamps and preserve a nonzero helper status. They are
+diagnostics only: an acquired prefix neither proves an absent phase did not run
+nor grants UI/input authority. Timeout/unknown/refusal remains terminal for setup;
+no input retry, capture or publication follows even if recovery later proves raw
+release. No separate post-setup transport is selected.
+
+Sol independently reran8 host allowance checks, including an actual six-second
+local Python process, default5000 preservation, overmaximum refusal before claim,
+strict original deadline boundaries and late-return refusal. Five Linux host-stub
+phase checks passed, including success/replay without repeated helper dispatch,
+pre-input refusal, helper status7 and post-input refusal. These are local models,
+not tablet execution or a fresh trial origin. Reviewed setup source SHA256:
+dc9fa9db89a757264f9747cba3e5f65801574f1a5d5130d54f69609f9a75abff.
+
+For the NEXT fresh packet, preselect logical110,280/native201,1360 before launch to
+open the same first MyFiles tile, using the earlier50d real Page1 evidence. A current
+seed164,1396 is an inference from bf3 delivery, not fresh verification. The existing
+fresh stable released seed and BOTH-axis difference gate remain mandatory before
+DOWN; refusal consumes the attempt with no alternate coordinate or adaptation.
+Future packet review must bind the setup coordinates, local raw decoder invocation
+and execution order consistently. The consumed-nonce source model still contains
+90,260 and is not an executable fresh packet. This preselection is distinct from
+the unfinished exact-point primer proposal and creates no regional input framework.
+
+Source basis: current parent/Astra steering, locally reviewed wrapper/setup/host
+admission and independent local model outputs; SDK qt_page_facts_entry.h acceptedAt
+and deadline source. Historical hardware findings remain Main-owned. No new nonce
+or target action was selected by Sol; Task4.11 and native/product qualification
+remain unfinished.
