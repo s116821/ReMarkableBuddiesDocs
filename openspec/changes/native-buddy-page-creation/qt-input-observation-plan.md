@@ -1001,3 +1001,44 @@ must check exact normalized form before any future candidate packet selection.
 Source basis: direct source audit, saved Main target synthetic script/output,
 Astra diagnosis and primary BusyBox source. The proposed reader/marker choices
 are engineering decisions awaiting review. Further device work remains held.
+
+### Selected three-site normalization source, awaiting exact review
+
+Main+Astra accepted exact proposalfb0d4de; Main selected minimum source-only
+implementation for the three active observation guards. Buddy
+`11afc6bcd0502ea1d9732a904f59de7a7101c631` implements the checked scoped-pipefail
+cat/LF-to-CR/NUL-to-LF assignment and quoted printf to LC_ALL=C default-newline awk.
+The positive guard compares untouched $0 with the fixed ASCII LD value; absence
+guards return0 only when prohibited keys are absent,90 when present. No trim,
+CR stripping, whitespace-field reconstruction or raw environment persistence.
+Required cat/tr/awk/pipefail execute before arming and refuse if unavailable.
+
+Fresh extracted-command fixtures passed81 cases on mawk1.3.4 20240123 in pinned
+vendor416c7a7 image and81 on BusyBox1.36.1 in official image digest
+`73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662`.
+The BusyBox image was acquired for host fixtures only; runs use network disabled
+and read-only root. Target BusyBox build equivalence is not claimed. Tests exercise
+all six prohibited keys first/middle/last with empty/0 values, exact LD first/later,
+wrong/confusable/missing values, forged LF-only LD, real LD plus forged OTHER,
+CR/LF values, empty input, actual missing/EIO reads, partial-output cat failure,
+each tr failure/missing tool, unavailable cat/awk and unsupported pipefail.
+A separate exact-command run under vendor dash refuses unsupported pipefail.
+Existing environment suite was updated to extract the real two-line guard and
+passed9 cases; journal86 and collector334 regression suites passed. Diff check
+passed. This is host source evidence, not qualification of the spent66f5 live guard.
+
+Explicit older-path scope: run-qt-page-facts-diagnostic-source.ps1:106 and
+run-qt-page-facts-one-shot.ps1:102 retain the historical NUL-RS reader defect and
+are outside this selected three-site repair. Diagnostic-source already throws;
+one-shot is a frozen historical spentb3e3 reference, not authorized for reuse or
+runtime. Both are held until a separate future fresh selection/review, never
+mistaken for corrected paths. Spent private8b/4254/66f5 operators and receipts are
+unchanged. Launch/recovery/default-off/source guard, all budgets, SDK6504/schema
+and generic transports remain unchanged. No new helper/framework/artifact/nonce
+or device retry. Main+Astra exact repaired Buddy/owning-doc review is required
+before any later preparation or native selection. Task4.11 remains open.
+
+Source basis: current Main implementation selection, exact source diff and fresh
+host provider/stream/mock-recovery outputs. Target safe-normalization synthetic
+evidence is separately reported by Main; exact spent failing predicate remains
+untraced. Main owns canonical evidence closeout and any later runtime selection.
