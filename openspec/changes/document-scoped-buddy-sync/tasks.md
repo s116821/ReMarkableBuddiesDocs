@@ -4,7 +4,8 @@
 - [x] Inspect provider documentation and maintained sync prior art; distinguish candidate mechanism from live-provider proof.
 - [x] Propose modes, conditional publication, source-document projection, local fencing, media/restore/status contracts before implementation.
 - [x] Obtain independent review at ebf8c72 accepting generic fixed-ID metadata create-or-read and transport fixtures only.
-- [ ] Obtain owner review of the admission/settlement/projector/application-matrix integration delta and coordinate REM-37 seam ownership.
+- [x] Obtain independent review accepting the admission/settlement/projector/application-matrix contract at 7e06d9; no implementation or live qualification follows from this acceptance.
+- [ ] Obtain Main's owner review of integration-seams.md, refresh the REM-37 source mapping, and agree shared journal/store/backend seam ownership before editing those paths.
 - [ ] Implement and verify the accepted generic adapter slice without enabling shared-mode publication.
 - [ ] Qualify or reject the candidate provider primitive using an explicitly authorized disposable app-data namespace; preserve reproducible evidence without secrets.
 - [ ] Implement accepted generic scope/selection and conditional transport seam, reusing REM-36 domain-opaque storage and bounds.

@@ -49,11 +49,18 @@ A group SHALL be selected by verified immutable root identity, not filename. Reg
 - THEN joining requires explicit root selection and cannot silently merge them or infer uniqueness from listing order.
 
 ### Requirement: Atomic selected view and operation invalidation
-Applying an aggregate SHALL verify and stage its complete selected view before one durable local activation boundary. Reader/Writer operations SHALL atomically revalidate generation/base with durable writes and serialize actual native handoff with selection activation through a domain-owned admission guard. Already-admitted uncertain effects SHALL retain reconciliation guards and prevent conflicting admissions until settled; replacement SHALL NOT retroactively cancel them or infer success. Stored historical branches SHALL NOT resurrect as active shared heads on recovery.
+Applying an aggregate SHALL verify and stage its complete selected view before one durable local activation boundary. Reader/Writer durable writes SHALL atomically revalidate generation/base with commit. Stored historical branches SHALL NOT resurrect as active shared heads on recovery.
 
 #### Scenario: Pull during an active operation
 - WHEN a winning upstream revision replaces a generation used by an in-flight operation
 - THEN stale completion cannot append active history, claim success or dispatch native effects; unrelated aggregates remain unchanged.
+
+#### Scenario: Crash around activation
+- WHEN a crash occurs before or after activation
+- THEN recovery exposes either the prior complete selection or the new complete selection, with no partial mixture or automatic loser re-enqueue.
+
+### Requirement: Serialized native admission and historical settlement
+Reader/Writer operations SHALL serialize actual native handoff with selection activation through a domain-owned admission guard. Already-admitted uncertain effects SHALL retain reconciliation guards and prevent conflicting admissions until settled; replacement SHALL NOT retroactively cancel them or infer success.
 
 #### Scenario: Selection races native admission
 - WHEN selection activation occurs between a preliminary generation check and attempted native dispatch
@@ -62,10 +69,6 @@ Applying an aggregate SHALL verify and stage its complete selected view before o
 #### Scenario: Already-admitted uncertain effect
 - WHEN selection changes while an admitted external effect lacks verified completion
 - THEN it remains reconciliation-required, conflicting admissions are blocked, and late completion cannot attach stale history to the new selection.
-
-#### Scenario: Crash around activation
-- WHEN a crash occurs before or after activation
-- THEN recovery exposes either the prior complete selection or the new complete selection, with no partial mixture or automatic loser re-enqueue.
 
 ### Requirement: Buddy data coverage and native authority separation
 Backup/sync SHALL include selected Buddy-owned history, bookkeeping, references, export correlation and portable domain records; screenshot/confirmed-sample media SHALL have explicit coverage. It SHALL exclude native documents/pages/ink/file metadata and device secrets/runtime state. Imported native references SHALL remain historical/unbound until separately verified against current native state.
