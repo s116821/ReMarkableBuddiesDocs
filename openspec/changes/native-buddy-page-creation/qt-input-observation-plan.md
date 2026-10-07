@@ -2628,3 +2628,41 @@ work remain unchanged. No next trial/source proposal is selected by this checkpo
 Source basis: saved46b transport/raw/images/visual refusal/cleanup/operator receipt
 and before/after-state files; Main owns hardware execution. Sol made no tablet
 changes. Task4.11 and native/product qualification remain unfinished.
+#### Focused READ-FACTS evdev logging source integration (2026-10-07)
+
+Parent authorizes one next focused observation with fixed110,280/native201,1360
+chosen before launch, fresh released/BOTH-axis gate or consumed refusal, retained
+raw and candidate-scoped Qt coordinate diagnostics plus full visual review. Main
+owns fresh nonce/build/packet/device selection; no additional approval is required
+beyond the existing source/artifact reviews. One planned publication remains
+conditional on timely normal transports and strict visual acceptance in that SAME
+lifecycle. This is diagnostic engineering, not native authority or completion.
+
+Sol prepared a consumed46b source-only operator variant: a DevelopmentEvdevLogging
+switch selects ONLY the existing launch.sh logging branch while freezing packet
+bytes. PrepareOnly and actual launch must select the same switch; packet bindings
+record the choice and retained collector hash, and the launcher must bind the new
+operator SHA. input-evdev-journal.ps1 is byte-identical to retained50d-r3 source,
+SHAe330756724b9ae978f41f3e375884175281fbc9305cdea8a203eff18e3b09a7c.
+No SDK/helper/parser changes follow; PowerShell syntax passed.
+
+Main integrates two existing default5000ms origin-admitted Remote endpoint reads:
+after full positive readiness before setup, and after normal capture before PNG
+copy. Retain their existing bounded endpoint stdout/receipts and original waiting
+tuple. The operator's finally block, only after restoration, reuses the retained
+PID/boot/time-window journal acquisition, bounded raw-byte preservation/readback
+before semantic conversion. Its acquisition caps, producer-status trailer, unknown/
+truncation behavior and no-completeness/formatter qualification stay unchanged.
+Missing/refused endpoints or acquisition failures remain diagnostic unknown, never
+facts/UI authority. No sleep, debugger, new framework, deadline reset or input retry
+is introduced. Source review and fresh packet binding remain separate gates.
+
+Source basis: current parent authorization, exact retained50d collector/operator
+and current46b READ-FACTS operator files. Sol prepared host source only; no tablet
+change. REM52 interface agreement and REM50 shipping-security/source ownership
+remain subsequent handoff work, outside the next live observation window.
+Main's integration review found endpoint files live in Mainroot while operator
+EvidenceDirectory is Mainroot/packet-r3. The narrow source correction reads the
+three fixed endpoint/waiting files from Split-Path -Parent EvidenceDirectory; no
+new parameter/parser follows. Corrected operator syntax passed; review remains
+against those current bytes before fresh clone/binding.
