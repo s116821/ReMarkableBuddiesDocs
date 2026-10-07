@@ -2382,8 +2382,12 @@ all recovery clocks. Distinguish an explicitly documented pending startup stage
 Never retry opaque existing check-waiting exit90. A complete proof freezes the
 same validated tuple; malformed/identity/hash/closure/request failure or unknown
 transport stops. Each observation needs its exclusive evidence claim and existing
-finite whole-allowance pre/post admission. Freeze a finite pass cap before source
-selection; no timer reset, sleep, input/capture/publication retry or new framework.
+finite whole-allowance pre/post admission. Parent's subsequent explicit steering
+selects the ORIGINAL monotonic deadline as the sole session cutoff, superseding
+the proposed pass cap: no arbitrary short polling cutoff and repeated whole-trial
+failure while readiness may still arrive within that deadline. Read-only pending
+observations may repeat; input/capture/publication remain single attempts. No timer
+reset, sleep or new framework follows.
 The narrow pending-versus-refusal wrapper and failure cases require review before
 any implementation/preparation selection. No next nonce or target action follows.
 
@@ -2391,3 +2395,15 @@ Source basis: Main's current result report and locally reviewed initial transpor
 later restoration/post-state, callback, receipt and staged-cleanup evidence. Initial
 failure cause remains unknown; the readiness explanation and next session are
 inference/proposal only. Task4.11 and all native/product qualification remain open.
+
+Main's consumed-nonce source-only readiness model distinguishes pending root or
+waiting-marker absence after boot/root type/mode/symlink/closure/request checks.
+Partial packet SCP before facts-waiting is pending, never positive authority.
+Once waiting exists, require the frozen checker hash and complete positive proof,
+then strict tuple parsing. Opaque inner failure records readiness-refused:positive-
+check and stops; no arbitrary90 retry. A pending phase before attempt identity
+does not establish ownership or require an additional inode-continuity contract;
+the positive tuple's dev/inode is then retained across all action gates. Sol ran
+the14 local host models, which passed without SSH/input/publication/trial origin.
+Strict pending-receipt typing and exact one-line positive output remain review
+notes; source/model passage does not select a fresh nonce or target execution.
