@@ -1303,3 +1303,23 @@ and timeout. Actual dedicated decoder checks are part of the runner. Sentinel
 acquisition may stop before natural limiter exit, so no limiter-success inference
 from exit=null. Main's preliminary no-newline producer7 remains status-byte proof
 only. Exact target qualification/review is pending, source remains unchanged.
+
+The r2 gate was held by Astra/Main for weak assertions, before any target run;
+runner/packet/local results retained. Narrow r3 keeps the same fourteen axes but
+requires exact limiter exits7/127 (not arbitrary transport failure), no acquisition
+errors, strict stderr transport/query/status/byte checks, unknown on caps/timeout,
+and one exact retained fixture record/point including multibyte content. Producer
+errors run under explicit outer set-e. Saved bounded Base64 is read back and
+roundtripped against acquired bytes with stderr<=1368 characters; no second read.
+Any failed case aggregates to nonzero runner exit, readback failure also refuses.
+All fourteen local BusyBox runner cases/readbacks pass using only transport AST
+substitution, no target; repeated preparation is byte-identical. Source unchanged.
+
+Exact r3 runner SHA256
+`2b46afc24908921da26411c5accd31546ffe8722a08c6c8a2ff962f95052349f`,
+commands SHA256
+`6db6854eea14212f8db2b99beb4806e996513b9a76ebb490986cbdd971c1cdb4`,
+packet SHA256
+`1805102b8f4755e4cf93654968952c204d8306f6c141d8ed5a13b6a5c8ef3246`
+await exact review and Main-only actual-target qualification. r2 host passes are
+historical and cannot close the tightened target gate. No new native trial.
