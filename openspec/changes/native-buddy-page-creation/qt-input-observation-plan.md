@@ -2407,3 +2407,16 @@ the positive tuple's dev/inode is then retained across all action gates. Sol ran
 the14 local host models, which passed without SSH/input/publication/trial origin.
 Strict pending-receipt typing and exact one-line positive output remain review
 notes; source/model passage does not select a fresh nonce or target execution.
+
+Those review notes are resolved in Main's source-only readiness revision: observer
+9abae697eda6dc975153ce71e253d99dbabfbba19f59ce0c84ba32b2fd021e08 captures
+the bounded regular mode0600 waiting record before the frozen checker runs once,
+compares the record afterward and prints the captured record. The host rejects any
+existing pass claim/output/receipt outside its pending-only catch, requires numeric
+Int64 allowance5000 and removes at most one LF before strict tuple validation.
+Sol independently reran17 host cases and8 Linux shell cases, all PASS. The shell
+fixture stubs the checker and substitutes host paths/boot/hash; it does not qualify
+target generation or payload. Local tests dispatch no tablet input/publication and
+create no real trial origin. Narrow readiness SOURCE review is accepted with the
+original deadline as sole cutoff; fresh artifact/packet/Main-only trial selection
+remains separate. Spentdf1 and its original operator remain unchanged.
