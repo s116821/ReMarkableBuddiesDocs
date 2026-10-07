@@ -19,6 +19,6 @@ complete contact reached evdev readers. The cause remains unresolved.
 
 ## Impact
 
-Proposal only. Buddy implementation awaits Main/Astra coordination. No SDK,
+Buddy25c27d8 implements the coordinated proposal, pending independent source review. No SDK,
 controller, touch protocol, transform, native OPEN or product-authority changes.
 No generic harness, automatic retries or device execution is selected here.

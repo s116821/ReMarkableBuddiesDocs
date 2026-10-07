@@ -1,8 +1,12 @@
 ## Source basis and status
 
 Source inspection at Buddy55c683499cdc7d9a177dfd531f73bf4788cd4894 and
-Main-attributed tap-only evidence motivate this proposal. No diagnostic code or
-target echo evidence exists yet. Main remains the sole tablet operator.
+Main-attributed tap-only evidence motivate this proposal. Main and Astra accepted
+Docs377e63c before Main selected implementation. Buddy25c27d8c860b29d1174dd5b6e7327ea8b54e736d
+implements the diagnostic; Main/Astra independently accepted the frozen source
+and reproduced34 diagnostic plus8 legacy command checks.106 Linux production
+device tests and feature-on/off Linux example checks passed. Target echo evidence
+remains pending. Main remains the sole tablet operator.
 
 ## Minimal entry and reuse
 
