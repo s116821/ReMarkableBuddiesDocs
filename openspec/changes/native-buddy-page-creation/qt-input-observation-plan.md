@@ -635,13 +635,14 @@ qSetMessagePattern/category override. No extra category or guessed provenance.
 
 No SDK timestamp hook. Proposed private operator takes two read-only target
 snapshots, each<=128 ASCII bytes: boot ID, UTC whole Unix seconds (`date -u +%s`),
-monotonic centiseconds from /proc/uptime. First is immediately before activation
+BOOTTIME centiseconds from /proc/uptime. First is immediately before activation
 after rollback arming; second immediately after first completion passes decoder
 and current-candidate guard, before image work. Bind nonce and later Ready PID/start.
-Require canonical fields, same boot, nondecreasing clocks, wall versus monotonic
+Require canonical fields, same boot, nondecreasing clocks, wall versus BOOTTIME
 delta within1010ms for second rounding. Missing/jumped clocks/deadline loss is
 unknown, no widening/reread. Live bookkeeping uses original150s host budget.
-Query enclosure [begin_s,end_s+1] must be<=150s, as must monotonic elapsed. It
+Query enclosure [begin_s,end_s] must be<=150s, as must BOOTTIME elapsed. Here
+window.end_s already equals the end endpoint UTC seconds+1; do not add again. It
 encloses activation through first guarded completion OBSERVATION including final
 whole second/observation lag, not exact wall publication inferred from Qt ms.
 @epoch syntax/emitted category format still need target confirmation before use.
@@ -674,7 +675,9 @@ claim existing Native is bounded or expand generic transport policy.
 
 JSON is one object/newline; systemd still emits cursor/clock/boot fields with
 selected output fields. Require scalar MESSAGE/_PID/_BOOT_ID and decimal clock
-strings, exact PID/boot/time enclosure for each record. Missing/null/array/binary
+strings, exact PID/boot/wall-time enclosure for each record. Journal MONOTONIC is
+syntax/range validated and retained, not compared with BOOTTIME endpoints.
+Missing/null/array/binary
 fields are unknown, never coerced. Retain only complete eligible JSON records,
 <=256 and<=65536 UTF-8 bytes INCLUDING metadata. Embedded MESSAGE LF/CR stays
 escaped in one JSON record. Drop unrelated candidate message bodies, retain counts;
@@ -736,12 +739,11 @@ caps, strict UTF-8/JSON decoding and a final nonce-bound producer-status line.
 Neither unknown acquisition nor diagnostic persistence failure changes original
 GUI/image/restoration/cleanup flags. Generic Native transport is unchanged.
 
-Every record must match boot/PID and both clock enclosures. UTC is begin_s through
-end_s+1; monotonic microseconds are begin_cs*10000 through
-(end_cs+1)*10000-1 inclusive, accounting for centisecond floor precision. Linux
-uptime counts suspend while journal monotonic time may use another origin: such
-a mismatch conservatively becomes unknown. This does not prove clock equivalence
-or exclude an excursion returning between endpoint samples. Raw caps precede
+The original aa4a3f3 source compared absolute uptime with journal monotonic;
+the following selected repair supersedes that gate. Every record matches boot/PID
+and wall-time enclosure only. BOOTTIME endpoints control elapsed/budget and
+wall-delta sanity checks; journal MONOTONIC is retained with syntax/range checks.
+Raw caps precede
 filtering. Exact qt.qpa.input/events prefixes require recognized evdevtouch,
 TouchPoint( or pressure content for retention; unrelated tagged bodies are dropped
 and counted. Hidden input tags remain unknown. No field-value or guessed closing
@@ -771,3 +773,36 @@ Source basis: current Main selection/provisional review, exact Buddy files and
 host fixtures, and the hash-verified Astra receipt. Implementation bounds and
 conservative unknown decisions are engineering choices; device behavior is not
 inferred from these host checks. Main owns canonical Mem/Drive/Linear closeout.
+
+### Selected clock-domain and environment-read correction
+
+Main selected repaired Buddy `15cd2b6928104d50a18046a7cea5fdb80d021df6`.
+The earlier aa4a3f3/e439b53 freezes remain historical; their79/334 checks do not
+qualify this repair. Fresh tests pass86 journal assertions,334 collector assertions
+and9 actual-shell environment cases. The new required awk command returns success
+only after a successful scan without debug/rules/pattern keys. Empty or0 values
+for each key refuse, as do missing files and unreadable input (actual EIO); no
+read failure is interpreted as absence. Shell tests use pinned416c7a7 Docker with
+network disabled/read-only filesystem and no tablet. SDK and old guards unchanged.
+
+Uptime fields are now boottime_cs with explicit receipt clock-domain labels.
+The prior-suspend regression uses a one-day BOOTTIME offset and valid in-window
+journal MONOTONIC; it retains the original timestamp without false rejection.
+Malformed MONOTONIC, wrong boot/PID/wall, endpoint elapsed/wall-delta and original
+budget refusals remain checked. There is no guessed suspend offset or new clock
+helper/SDK hook. window.end_s already includes exactly one extra wall second.
+
+Primary basis, independently read by Sol: [Linux v6.6 uptime implementation](https://raw.githubusercontent.com/torvalds/linux/v6.6/fs/proc/uptime.c)
+uses BOOTTIME and floors centiseconds; [kernel timekeeping documentation](https://www.kernel.org/doc/html/v4.19/core-api/timekeeping.html)
+distinguishes suspend-inclusive BOOTTIME from suspend-exclusive MONOTONIC;
+[systemd v255 journal timestamp contract](https://raw.githubusercontent.com/systemd/systemd/v255/man/sd_journal_get_realtime_usec.xml)
+defines journal monotonic as CLOCK_MONOTONIC plus boot identity. These establish
+the domain distinction, not target clock equivalence or runtime log visibility.
+
+Two endpoints cannot prove no suspend or exclude a wall-clock excursion returning
+between samples. Boot/PID plus wall enclosure cannot exclude every historical
+reused-PID match during such an excursion. Live guarded-generation evidence stays
+separate; these logs are hypothesis-narrowing diagnostics, never exact event/attempt
+identity, complete coverage or delivery proof. Unknown remains additive to original
+flags. Exact repaired source/owning-doc review by Main+Astra remains required;
+no artifact, fresh nonce or native run selected. Task4.11 remains open.
