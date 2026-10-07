@@ -46,4 +46,4 @@
 
 - [x] 4.16 Review fixed device-frames-v1 SDK/consumer proposal with Main/Astra before implementation; require exact signed device IDs and independent frame valid_mask semantics, preserve spent evidence and separate future artifact/packet/device gates.
 
-- [ ] 4.17 Independently review device-frames-v1 SDK/Buddy implementation and focused fixtures at exact frozen revisions before separate artifact/packet/device gates. Preserve all spent receipts.
+- [x] 4.17 Independently review device-frames-v1 SDK/Buddy implementation and focused fixtures at exact frozen revisions before separate artifact/packet/device gates. Preserve all spent receipts.
