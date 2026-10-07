@@ -1654,10 +1654,13 @@ trace API. Breakpoint and memory-read implementation must be reviewed for these 
 
 Proposed first qualification path is installed native Windows gdb-multiarch15.2,
 explicit GNU/Linux OSABI, direct existing Windows ssh.exe -T stdio, and reviewed
-ARM gdbserver14.2 --once --attach. This is a concrete candidate for focused tests,
+task-only modified ARM gdbserver14.2 --rem25-disposable --once --attach stdio PID.
+This is a concrete candidate for focused tests,
 not a qualified target path. Bind the exact installed client SHA256
 `7f581a2f21a2bde99930f394a5b6b0d9b547e8a9b690fad161eef3faa871f6a2` and
-server SHA06e575662e78e28142decba916b9a684f73ccf30c7ceaffb5873b4bdaf486670.
+the newly reviewed patched server hash. Original server SHA256
+`06e575662e78e28142decba916b9a684f73ccf30c7ceaffb5873b4bdaf486670` is held:
+its attach path omits mandatory EXITKILL and normal EOF cleanup detaches.
 The runtime consumer/tool entrypoint stays SOURCEONLY and default-unarmed; import
 or default invocation cannot attach. Main-only private preparation may arm the
 fixed reviewed development packet after exact source/utility/recovery gates, with
@@ -1681,9 +1684,53 @@ need actual qualification; Main's saved library strings/hashes are preliminary o
 Native Windows local ARMv7 ELF/Python/GNU-Linux OSABI and owned empty-pipe checks
 passed; no ARM/VFP memory/breakpoint/flags/thread/detach path is yet qualified.
 
+### Disposable-server consumer amendment (2026-10-07)
+
+Sol independently accepts the SDK lifecycle amendment at
+`9df73f1d0d9c44dee3ee64052ff6b331ee4e77d1`, including
+`openspec/changes/establish-native-platform-contract/disposable-debug-server.md`.
+This consumer amendment still requires exact Main/Astra acceptance and Main's
+source selection before GNU patching. The original signed source/build remains
+immutable; a local patch needs retained source/license/provenance and a new hash.
+No existing runtime artifact is qualified by this documentation.
+
+Before any debugger text write or ordinary resume, every live LWP must be stopped,
+accounted for and protected by checked mandatory EXITKILL, including clones and
+later option resets. Partial attachment permits no instrumentation. Live-server
+EOF/error/exception/unarmed detach must kill the selected disposable process;
+tracer death depends on qualified kernel protection. A delayed external kill alone
+cannot establish absence of unsafe resume. The independent exact-generation guard
+is reviewed and armed before the FIRST dummy attach. Dummy cleanup kills only its
+owned tracee/tracer and verifies stock/policies/fixtures unchanged, without restarting
+stock. Native failure cleanup kills the exact candidate and tracer, verifies both
+exits and only then performs the existing stock restoration. Recheck boot/PID/start
+before each signal; reused identities must never be killed.
+
+Two capture stops do not imply two instruction writes: ARM software step-over and
+implicit loader/event breakpoints can modify additional sites. A reviewed fixed
+profile bounds the complete original-byte ledger to at most16 sites of at most4
+bytes each, with exact provider/offset/encoding bindings. Unexpected sites or ledger
+overflow refuse before writing; no adaptive widening. Raw originals and restoration
+checks cover every recorded site, including removed/reinserted internal sites, and
+bypass breakpoint memory shadows. Explicit ledger reads count against the existing
+1024-byte requested cap; internal decoding/protocol reads remain separately declared
+bookkeeping. Exact Windows15.2 implicit behavior must be qualified independently;
+GNU14.2 source and auto-solib-add off do not prove its absence.
+
+Successful release first persists bounded completion evidence, removes every active
+breakpoint and verifies all original bytes. The proposed fixed zero-address one-use
+monitor rem25-allow-detach authorizes only an immediately following D for the exact
+protected process. Any intervening write/resume/thread/identity/error invalidates it;
+incidental shutdown D is failure. All checks precede the first detach. Partial detach
+requires exact-process kill; lost acknowledgement stays unknown without replay.
+Server/client/SSH death, failed protection, thread creation, internal breakpoint
+ledger failures and release races need exact source review and Main-only multithread
+owned-target qualification before native use. Five seconds, one claim/attach/input,
+two captures, memory/evidence/diagnostic caps and helper timers remain unchanged.
+
 Consumer progression is gated in this order:
 
-1. Independently accept exact SDK proposal and this consumer plan; Main selects the
+1. Independently accept exact SDK proposal/lifecycle amendment and this consumer plan; Main selects the
    concrete focused implementation/transport. No runtime artifact selection implied.
 2. Implement only the fixed SDK tool/original fixture and minimal Buddy integration;
    exercise identity/nonidentity doubles, raw persistence, strict counts and same-call
@@ -1709,7 +1756,7 @@ Consumer progression is gated in this order:
    replacement or persistent debugger service.
 5. After these gates, Main alone prepares a fresh exact candidate/baseline/one-use
    private claim and independently armed recovery. Advance notice explicitly names
-   software-breakpoint instruction writes and scheduling effects. Input occurs once
+   capture plus qualified internal software-breakpoint instruction writes and scheduling effects. Input occurs once
    only after exact armed/resumed readiness; no waiting for user interaction during
    stops and no relaxation of the existing100ms hold, one-second owned window and50ms drain limits to fit GDB.
    Any incompatible timing holds the trial and revises the proposal. One completion,
