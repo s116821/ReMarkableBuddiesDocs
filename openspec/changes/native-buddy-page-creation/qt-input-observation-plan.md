@@ -97,3 +97,82 @@ all spent attempts and held generic framework. No sync/archive or completed MVP
 claim. Later native page bindings still follow canonical current roadmap
 waiting/unbound and stale-authority invalidation requirements; this diagnostic
 does not implement or change them.
+
+## October 6 implementation and review checkpoint
+
+Accepted proposal pair: SDKff0b50cc2f6bf263a28af09eed71d2feaeb47750 and
+Docsfdfdf5cdd19fe0853a8c090c5697e23e7f8b7ef1. Main authorized source implementation
+only. Frozen implemented SDK16090985a040006608fe496cdfdf6727613b909d and
+Buddy4c7575984a88465142c42ddd50b933a89e6201b1 retain this source-only scope.
+No nonce, target artifact build, private packet or device action was selected.
+
+SDK adds a default-off observation branch, fixed64records/4points/saturating counts,
+retained focused visible active same-engine QQuickWindow, one end admission/seal and
+one queued grab. Completion publication runs at a separate queued boundary AFTER
+the capture callback returns, with renewed original accepted-end5000ms and scope
+checks; no successful marker is emitted inside the capture callback. Whole-record
+JSON pruning and capped PNG output preserve explicit overflow/unknown results.
+There is no PageFactsSession in this mode and no raised authority.
+
+Buddy adds a fixed end publisher and a specialized guarded collector. The publisher
+uses root/nonce/executableSHA/payloadSHA, canonical positive decimal identities
+bounded20digits and checked native conversion, elapsed0..119999 and256-byte tokens.
+The original facts publisher/operator/proofs/budget remain unchanged. The new
+operator retains an unconditional SOURCE ONLY exception and zero unselected
+payload/publisher hash placeholders; the old spent nonce/baseline literals are
+references requiring a separately reviewed future private packet. It reuses the
+existing budget values with the observation profile/accepted-end clock label.
+
+The collector preserves separate GUI completion, Qt image availability, observation
+generation and heap capture success fields. Existing facts callback/generation/
+facts flags remain false. After GUI completion, one old heap capture occurs BEFORE
+finally/restoration, guarded around collection by the original tuple plus pinned
+root/owner/closure/identity/executable/payload/maps/environment/service-job checks.
+Every live operation uses the original150000ms host clock, started before arming.
+The retained one-total initial status timeout allowance grants no capture retries.
+
+Exact selected prospective command remains
+`/home/root/rem9-validation/screenshot /tmp/rem25-facts-<selectedNonce>-input-observation.png`,
+without extra flags, SHA256df745d56a2ef1834ea644b8859646972210c5e0247a3e6e75e9e245f5fa919b8.
+Main inspected historical f38748da89fdbebfdedca17bc475e65b4305dd04:examples/screenshot.rs
+and the archived responsive-reader/baseline.md binding: single FILE argument,
+Screenshot/take_screenshot/save_image and no input initialization. This is historical
+documented provenance, not independently rebuilt equality with the installed helper
+or current Buddy source. Heap allocation evidence does not identify a Qt window or
+prove physical EPD ownership; meaningful stable content and aligned timings still
+require Main inspection. Pair availability never promotes coherence/UI authority.
+
+Capture transport uncertainty starts BEFORE invocation and clears only after a
+non-timeout exit0 and exact bounded hash line for the selected output path. Timeout,
+disconnect/exit255, malformed/partial output, exceptions and late returns remain
+unknown. Finally still restores stock but cannot report cleanup verified while the
+remote capture may continue; it preserves the exact external image path and records
+the unresolved duty. Local transport bounds are not hard remote cancellation.
+Historical artifacts collected after restoration never upgrade any live flags.
+
+Verification at frozen source:
+
+- SDK vendor image416c7a7be0038156797b0892f031f352b841d1921fae83f712d0a272e4724618,
+  network disabled/read-only source mount and existing SDK environment:
+  tools/qt_page_facts_entry_test.sh EXIT0;21 refusal checks,32 existing facts entry
+  cases and16 new observation cases PASS (synthetic events/clocks and public Qt/offscreen).
+- Buddy host image rem25-qt-host:review, network disabled/read-only source mount:
+  test-input-observation-publisher.sh EXIT0;18 owned cases PASS, including real host
+  proc/maps/environment/hash guards and numeric/token/filesystem refusal. Fixture
+  payload is deliberately non-executable mapped data; loader warnings are expected.
+- test-input-observation-collector.ps1:94 exact decoder/live-success/failure/status
+  allowance/original remaining clock/finally assertions PASS with transport mocks.
+  Existing test-diagnostic-operator.ps1:169 assertions PASS; existing
+  test-transport-lines.ps1:10 checks PASS. No SSH/device commands were executed.
+- SDK and Docs strict owning OpenSpec validation and source diff checks PASS.
+
+Astra reported no blocking source defect in exact SDK1609098; Main's independent
+SDK execution/review and both consumer reviews remain pending at this checkpoint.
+Do not treat16cases as full proposal coverage: duplicate fixture means repeated
+entry.start, not duplicate end admission; source inspection establishes single grab
+but no dynamic grab counter. Maximal-width/overflow identity parser tests belong to
+the consumer fixture; deterministic late/oversize/empty grab, nested-render failure,
+root/path/focus-window replacement and ambiguous-engine cases remain gaps. Target
+artifact compatibility, actual touch synthesis, window/image behavior and physical
+EPD/input acceptance remain separate unqualified gates. All native binding/ownership
+requirements and preserved spent-attempt flags remain unchanged.

@@ -28,6 +28,8 @@
 - [ ] 3.8 Consume SDK logical Next/Previous using existing one-gesture completion: fresh active-target verification after insertion, zero gesture if already target, or one Next only for verified source/adjacent intended target. Preserve sticky guards and explicit correlated structural handoff; direct openPageKey remains deferred.
 
 ## 4. Verification and delivery
+- [x] 4.12 Implement fixed source-only SDK input observation and Buddy publisher/collector, verify focused fixtures and freeze SDK1609098/Buddy4c75759; see qt-input-observation-plan.md for exact scope and remaining coverage gaps.
+- [ ] 4.13 Complete independent exact SDK/consumer source review; keep target artifact/private packet/Main-only device selection separate under4.11.
 - [ ] 4.11 Coordinate qt-input-observation-plan.md with exact SDK proposal before code; verify purpose-specific publisher/collector/recovery and unchanged action/budget/authority gates, independently review frozen source/artifact/packet, then separately select any Main-only device discriminator. No facts or panel qualification inferred.
 - [ ] 4.9 Coordinate the bounded callback-status continuation proposal before code; implement only the one-use read-only allowance, verify exact branch/outer-finally failure and original-clock cases, independently review frozen revisions, then separately select any future artifact/packet/device gate. Preserve spent2f90 flags and historical waiting limits.
 - [x] 4.10 Main/Astra accepted Docs4ddbef before Main selected Buddy59789d0 source implementation;169 exact live/collector/recovery assertions and10 existing transport checks passed. Independent implementation review and any future private packet/device gate remain open under4.9.
