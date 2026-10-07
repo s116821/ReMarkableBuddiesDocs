@@ -44,4 +44,6 @@
 - [ ] 4.6 Linked Summary-only PRs with detailed evidence/explained embedded images in comments; coordinator-only squash merges. REM35 owns integrated1.0 acceptance.
 - [ ] 4.8 Qualify selected per-tablet logical gesture mappings, source/destination observation and creation-to-write handoff; test wrong neighbor, stale input/session/order, no movement and uncertain completion without retries. Direct-opening-only experiment gates are excluded.
 
-- [ ] 4.16 Review fixed device-frames-v1 SDK/consumer proposal with Main/Astra before implementation; require exact signed device IDs and independent frame valid_mask semantics, preserve spent evidence and separate future artifact/packet/device gates.
+- [x] 4.16 Review fixed device-frames-v1 SDK/consumer proposal with Main/Astra before implementation; require exact signed device IDs and independent frame valid_mask semantics, preserve spent evidence and separate future artifact/packet/device gates.
+
+- [ ] 4.17 Independently review device-frames-v1 SDK/Buddy implementation and focused fixtures at exact frozen revisions before separate artifact/packet/device gates. Preserve all spent receipts.
