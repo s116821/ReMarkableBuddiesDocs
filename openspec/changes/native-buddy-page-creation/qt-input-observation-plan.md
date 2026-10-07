@@ -1615,3 +1615,104 @@ instrumentation, a device trial or permission to patch any of these paths.
 Source basis: current Main acceptance/selection limits, complete hash-verified Astra
 static trace receipt, and prior exact saved helper/provider/forensic evidence. Runtime
 cause remains unresolved; the discriminating outcomes are conditional interpretations.
+
+### Consumer plan for selected same-call investigation (2026-10-07)
+
+Parent selected progression through a narrow proposal, focused implementation,
+independent review, complete collection qualification and a small controlled trial;
+Main relayed that standing unattended authorization. Main alone operates the tablet.
+This selects the investigation path, not an arbitrary attach, immediate native trial
+or a coordinate/navigation correction. The end goal remains a demonstrated cause,
+the smallest justified fix and integrated logical-navigation workflow validation.
+
+Sol independently read the complete SDK proposal/design/tasks/spec delta at
+`7fb52ea200bcc3147d3119cb79055a899f0f4781`, including
+`openspec/changes/establish-native-platform-contract/input-normalization-discriminator.md`.
+SDK strict OpenSpec validation and diff check passed; exact HEAD was clean. Sol
+cross-checked frozen ELF PRE0x1563c word0x0a000001 and POST0x15664 word0xe59d006c,
+caller returns0x17e5c/0x17fd0 and frame/register setup against saved exact disassembly.
+No mismatch or implementation-blocking contract defect found. This consumer plan
+and the SDK proposal need exact independent Main/Astra review and selection before
+source tooling integration. Historical Buddy2791a25/SDK6504a03/Docs8a3133d and all
+spent packets remain intact; current SDK7fb52ea adds documentation only.
+
+SDK owns the exact fingerprint-bound adapter/tooling and original owned ARM fixture.
+Buddy/Docs owns candidate preparation, same-generation guards, one existing40f496
+input action, independent recovery/preservation and final integrated workflow. Use
+PRE after actual double division and POST at identity/map join; preserve little-endian
+raw scalar/double bits and correlate generation/thread/SP/H/C/saved LR. First armed
+hit must be current-contact caller/id1/state1; never select on expectedX/Y, skip
+unexpected hits or loop until convenient data. Limit two successful capture stops,
+one attach, fixed reviewed reads<=1024 total target bytes, private raw<=8192 bytes,
+stdout/stderr diagnostics<=65537/1024 and proposed5s attach-through-detach subdeadline
+within unchanged lifetime/total budgets. Persist bounded acquired bytes and readback
+hash/count after each stop before semantic classification; failure stays spent/unknown.
+Do not print/publish raw memory, logs, protocol transcripts or infer authority from
+nonfinite values or all-stop scheduling. No backtrace/address walk/search/inferior
+calls, side-effect expressions, automatic library loading/init/debuginfod or generic
+trace API. Breakpoint and memory-read implementation must be reviewed for these caps.
+
+Proposed first qualification path is installed native Windows gdb-multiarch15.2,
+explicit GNU/Linux OSABI, direct existing Windows ssh.exe -T stdio, and reviewed
+ARM gdbserver14.2 --once --attach. This is a concrete candidate for focused tests,
+not a qualified target path. No TCP listener, reconnect, --multi, arbitrary inferior
+launch, credential copy or implicit custom bridge. If it fails required owned-fixture
+operations, hold and amend/review ONE fallback rather than silently substituting it.
+Freeze exact commands, paths, hashes and dependency evidence for the selected path
+before the target dummy gate; Windows/native and vendor-container evidence cannot
+be substituted for one another.
+
+Task-private standard server artifact is429068 bytes SHA256
+`06e575662e78e28142decba916b9a684f73ccf30c7ceaffb5873b4bdaf486670`,
+with build receipt `b92617a31f71f8ecf7a1c15924cc48351759eacc45b10bfb2845618b8ddf8975`.
+Official GNU14.2 archive/signature/keyring verified GOODSIG/VALIDSIG fingerprint
+F40ADB902B24264AA42E50BF92EDB04BFF325CF3; source/license/build logs are retained.
+Pinned SDK416c compiler13.4.0 built only standard all-gdbserver, no new host GDB or
+repository instrumentation. ELF32 ARM hard-float/interpreter/needed libraries and
+QEMU version/help passed. Required GLIBC2.38/GLIBCXX3.4.29 and thread/debugger behavior
+need actual qualification; Main's saved library strings/hashes are preliminary only.
+Native Windows local ARMv7 ELF/Python/GNU-Linux OSABI and owned empty-pipe checks
+passed; no ARM/VFP memory/breakpoint/flags/thread/detach path is yet qualified.
+
+Consumer progression is gated in this order:
+
+1. Independently accept exact SDK proposal and this consumer plan; Main selects the
+   concrete focused implementation/transport. No runtime artifact selection implied.
+2. Implement only the fixed SDK tool/original fixture and minimal Buddy integration;
+   exercise identity/nonidentity doubles, raw persistence, strict counts and same-call
+   guards. Review exact SDK/Buddy/Docs source freezes before target use. Do not alter
+   SDK dependency pin, shared schema/authority, helper timers or current dd/env guards
+   incidentally. MESSAGE/envelope decoding is unnecessary and remains unselected.
+3. Main alone qualifies actual utility startup/dependencies and the COMPLETE executed
+   collection path on harmless owned target fixtures: ARM/VFP registers, memory,
+   CPSR flags/software breakpoints, thread/frame matching and detach; wrong provider/
+   word/generation/first hit, absent POST, timeout/EOF, host/debugger/server death and
+   partial/unwritable evidence. Verify bounded byte persistence/readback and no retry.
+   QEMU or version/help alone cannot close target ptrace/recovery gates.
+4. Independently verify the external recovery guard for exact tracer/candidate
+   generations before native activation. A stopped tracee may not handle SIGTERM;
+   cleanup must terminate exact tracer/candidate if required and verify both exits
+   before stock restoration. Never resume possibly patched code on uncertain teardown.
+   The guard cannot depend on GDB/gdbserver/candidate or the host SSH session. Preserve
+   original stock policies, fresh stock generation, fixture hashes and exact task-only
+   cleanup, including every actual qualification failure. No reboot/system-library
+   replacement or persistent debugger service.
+5. After these gates, Main alone prepares a fresh exact candidate/baseline/one-use
+   private claim and independently armed recovery. Advance notice explicitly names
+   software-breakpoint instruction writes and scheduling effects. Input occurs once
+   only after exact armed/resumed readiness; no waiting for user interaction during
+   stops and no relaxation of the existing100ms hold, one-second owned window and50ms drain limits to fit GDB.
+   Any incompatible timing holds the trial and revises the proposal. One completion,
+   current-generation evidence/captures and original stock/fixture preservation follow
+   the reviewed bounded operator path; no automatic second input/query/attach.
+6. Review same-call operands conservatively before proposing a fix. Wrong contact,
+   runtime bounds/matrix, arithmetic/binding or later storage are distinct conditional
+   outcomes. A source-supported cause permits only the smallest separately reviewed
+   correction, controlled verification and integrated navigation test. Keep Task4.11
+   and remaining native gates open; do not merge/sync/archive or promote spent unknowns.
+
+Source basis: current Main-relayed parent scope, exact SDK proposal and independent
+local validation/disassembly checks, signed standard server build receipt and earlier
+saved source/forensic evidence. Transport/timing/recovery support and trial outcomes
+remain explicitly unverified gates. This checkpoint does not execute or authorize
+workers to perform tablet actions.
