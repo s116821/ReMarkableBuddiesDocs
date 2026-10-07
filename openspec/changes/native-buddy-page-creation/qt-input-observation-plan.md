@@ -1474,3 +1474,92 @@ Source basis: current exact Main/Astra acceptance messages, saved private bytes
 independently checked offline, Sol structural receipt, and linked primary encoding
 documentation. Synthetic fixture expectations and MESSAGE contract are proposals;
 source and historical receipts remain unchanged. Private receipts have no public link.
+
+### Offline engineering diagnosis and separate envelope draft (2026-10-07)
+
+Diagnosis takes priority over production decoder correction. The saved forensic
+bytes can be inspected manually while all strict historical results remain unknown.
+Astra's independent setup/point analysis reports event2/pt_mt, protocol B,
+filtered=no, bounds X0..1403/Y0..1871, pressure bounds0..0 and one touch device.
+Two point bodies contain id1, normalized(0,1), area QRectF(-4,1867 8x8), center
+(0,1871), velocity(0,0), pressure1/state1 then pressure0/state8. These are decoded
+historical field observations, not a newly qualified production parser result or
+raw-axis/physical-contact evidence. No explicit transform matrix or runtime
+rotation/screen-geometry configuration was present in those setup messages.
+
+Sol verified five current source-file hashes exactly equal Main's build manifest
+`resume-20261006/hardware-probe-25c27d8-main-build.json`, binding source25c27d8 to
+helper40f496b0ef0c68047e4418265cbe5ffe3d7fd3bc4620efbdad2507b00cac0416:
+examples/hardware_probe.rs, src/device/touch.rs, input_observer.rs,
+owned_touch_window.rs and contact_frames.rs. The selected action script binds that
+helper and one tap-echo90,260. The CLI requires virtual interior1..767/1..1023.
+RM2 f32 mapping scales X by1404/768 and inverted Y by1872/1024, truncating to
+native(164,1396), interior to the saved handler bounds. Source emits slot0,
+tracking1, ABS_MT_POSITION_X53=164, Y54=1396, pressure100, major/minor17,
+orientation4, SYN_REPORT; after100ms it emits slot0/tracking-1/SYN_REPORT.
+No guessed input-unit change or ABI fix is supported by this evidence.
+
+The echo checks more than write success. It starts an independent InputObserver
+before writes, matches the reader/writer descriptor inode/device, and requires
+one released initial contact state. Its owned-touch completion accepts only the
+expected axis values, slot0/tracking1, a positive down followed by release, at
+least two complete frames, current source identity, released snapshot and no
+other input; original one-second window/50ms drain limits remain. Thus successful
+echo supports observation of interior injected values through that reader. It
+cannot prove that the particular epaper handler retained those same contact values
+or used an identity transform. Event timestamps/order are not equivalent to an
+exact journal-generation/event correlation claim.
+
+Exact local libepaper SHA678574220af960704c8f2b622f3e9208f5a0548dad2f636f3f13ead330c312ec
+matches the earlier saved provider receipt. Sol read two ARM disassembly ranges in
+the pinned vendor image with network disabled/read-only mounts: X clamps to bounds
+at handler+0x58/0x5c and stores handler+0x2c then contact+4; Y clamps using+0x60/0x64
+and stores handler+0x30 then contact+8. Normalization subtracts minima/divides by
+range before optional QTransform::map at0x15658. Saved disassembly SHA256
+`f940936c593d38d8831e84d80aba22423da819c9dc524d87e41bf3a940ac29d0`
+is a local static supplement, not runtime state. Astra owns the remaining exact
+slot/contact-copy/transform-initialization trace to avoid duplicate investigation.
+
+The previously reviewed point callsite0x181d8 is after normalization/transform and
+rectangle mapping, before unfiltered handleTouchEvent0x18210. With filtered=no,
+the endpoint normalized(0,1) already exists in the handler; downstream window
+local/global conversion alone cannot explain its first appearance. Identity
+normalization of injected164,1396 with the reported bounds predicts interior
+approximately(0.1169,0.7461). Missing discriminator is THIS handler's contactX/Y
+before normalization and its actual transform/pre-post-normalized values. Static
+trace may resolve this without a device action. If it cannot, the smallest future
+instrumentation would observe only that boundary; no instrumentation, native cycle,
+query, parameter/rotation/range/ABI patch or navigation fix is selected here.
+Pressure0..0 versus emitted1 is not by itself evidence of a coordinate error.
+
+Separate envelope DRAFT, also not implemented: the eleven saved input-category
+messages all have whole-message structure `HH:MM:SS.mmm SP ESC[02;32m CATEGORY
+PADDING BODY ESC[0m`. CATEGORY is exact qt.qpa.input or qt.qpa.input.events;
+PADDING is respectively13 or6 ASCII spaces. There is no colon. Private sanitized
+structural receipt `forensic-1a48-readonly/sol-offline-envelope-structure.json`
+SHA256 `3474970ad012354e4845a9c41b811f5ff99ae878cbda9261b32be9458a825da4`
+contains only categories, masked time shape, control parameters/padding and booleans,
+not raw bodies. This is a sample grammar observation; the actual formatter provider
+implementation and generality of its padding are not yet independently established.
+It does not justify replacing the current anchored category gate automatically.
+
+A future explicitly reviewed envelope branch could match that entire exact form,
+validate hour00..23/minute-second00..59/millisecond3digits, exact SGR opening/reset,
+category-specific exact padding, one nonempty control-free body, and end-of-message.
+It must use the captured category as the sole classification category, preserve
+original MESSAGE/JSON unchanged, and refuse embedded LF/CR/NUL/ESC/DEL/other control
+forgery. Reject timestamp-looking body substrings, extra prefix/suffix/reset, wrong
+category/padding, arbitrary CSI/OSC sequences, extra escapes, incomplete reset,
+duplicate envelope or second line. Never strip arbitrary ANSI or search an unanchored
+category. The current plain anchored branch, if retained, remains separate. Synthetic
+fixtures should cover each exact accepted category and each refusal above, Unicode
+body bytes, original JSON byte caps, MESSAGE byte-array/string equivalence and
+unchanged identity/status gates. Provider proof and exact proposal review are required
+before selecting even this narrow grammar. This draft grants no formatter, attempt,
+coverage, navigation or native authority.
+
+Source basis: exact locally verified helper source hashes/build provenance and action
+script, saved bounded forensic bytes, current Astra decoded setup/point observations,
+earlier exact-provider receipts plus Sol disassembly, and sanitized envelope structure.
+Runtime-cause conclusions are conditional inferences; future boundary instrumentation
+and envelope grammar are unselected proposals. No raw logs are published here.
