@@ -2420,3 +2420,45 @@ target generation or payload. Local tests dispatch no tablet input/publication a
 create no real trial origin. Narrow readiness SOURCE review is accepted with the
 original deadline as sole cutoff; fresh artifact/packet/Main-only trial selection
 remains separate. Spentdf1 and its original operator remain unchanged.
+
+#### Spent bf3 result and phase observation proposal (2026-10-07)
+
+Main's bf3e10ae50f74693ba73c6cb368581ce is SPENT/NO REPLAY. Sol independently
+verified16 explicit pending3 readiness receipts followed by full positive0 within
+the original admitted session. Its frozen tuple identifies candidate3441/start
+228718295/dev19/inode771698, waiting-facts at entry2819ms. One setup input was
+dispatched; its5000ms local SSH timeout records remote_exit_unknown=true. No capture
+or facts publication followed. The timeout's exact phase was not retained; do not
+infer it from later evidence or call the setup transport successful.
+
+During bounded recovery Main found no exact helper executable process and preserved
+all four raw files plus the strict successful echo. Sol independently decoded their
+hash-bound bytes: stable released32-slot seed201,1360; exact six ABI16 events at
+native164,1396; complete release;101664us hold. Raw UI acknowledgement/native flags
+remainfalse. Later complete raw evidence cannot qualify timely setup completion,
+navigation, active page ownership or development facts for this failed attempt.
+
+Saved operator receipta7c9ff49ff2f62d781cc311729c0d42930c1775b809cf7096fa95942af75c2e3
+verifies restored/Qt cleanuptrue and facts/candidate/callback verificationfalse.
+Saved post-state stock4814/start228724619, same boot, three active services/original
+policies/empty job and all14 hashes match. Sol reviewed the exact process-path
+absence/raw hash cleanup script and its success output; Main owns hardware checks.
+Cleanup and recovery do not amend the historical UNKNOWN transport outcome.
+
+Next source-only proposal: bounded fixed shell phase markers around positive proof,
+claim, helper dispatch/return, raw validation and final positive proof. Preserve
+only the acquired marker prefix, with a fixed task path/mode/cap and exact cleanup;
+absence is not proof a phase never ran. These markers observe orchestration, not
+input/UI authority or a demonstrated cause. Before another selected trial, consider
+moving the final SAME waiting-record validation into one separate read-only
+transport after a successfully completed setup transport and verified raw release,
+before capture/publication. The pre-input positive proof and retained same tuple
+remain mandatory; no intermediate gap grants action authority. Each transport
+keeps5000ms admission and the unchanged original120s setup/150s live clocks.
+Timeout/refusal still means no capture/publication retry, even if recovery later
+finds raw success. No helper change, repeated input, getter-clock widening, next
+nonce, target action or broader framework is selected by this proposal.
+
+Source basis: locally reviewed saved bf3 readiness/setup/raw/receipt/post-state and
+cleanup evidence; Main's bounded recovery/hardware report. Phase cause remains
+unknown and the proposed split is unqualified. Task4.11 remains unfinished.
