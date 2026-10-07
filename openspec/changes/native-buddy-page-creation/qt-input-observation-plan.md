@@ -1112,3 +1112,21 @@ local rebuild gate; original manifest/pending fields and initial preparation
 verification remain historical and immutable. Exact packet reviews are still
 separate; no runtime selection follows. Source basis: receipt/log/exit readback
 and direct local file comparisons.
+
+Astra accepted exact1a48 frozen manifestbb9e4319 after full packet/artifact review:
+78 recursive path/hash/size occurrences plus five supplemental fixture hashes
+verified; authoritative private generation rerun required exact Save equality and
+eight packet files unchanged. Actual arming/logging/helper/profiles/endpoints/query,
+ten mock transport checks, private81 mawk/81 BusyBox/unsupported-dash, private9 env,
+shell syntax and producer7/head0 fixtures passed. Astra independently read Main's
+exit0/log/receipt and compared all six rebuilt outputs byte for byte; it did not
+rebuild or contact the tablet. Sol read and hash-verified Astra receipt SHA256
+`e1a68197856d189cebea4724fe27c76a1114319ffbc0fa1659f05b6f797b8210`.
+No blocking packet finding reported. Counts include repeated bindings, not unique
+files. Original manifest/preparation pending states remain historical.
+
+Acceptance is preparation/artifact/packet only. Main's final decision, fresh live
+preflight/provider compatibility and runtime selection remain separate; nonce
+reserved/unspent at this checkpoint. No coverage/delivery/native/render/UI authority
+promotion, spent evidence unchanged. Source basis: current Astra exact review and
+hash-verified receipt, with separate Main rebuild evidence above.
