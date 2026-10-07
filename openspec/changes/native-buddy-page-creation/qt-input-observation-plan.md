@@ -98,7 +98,7 @@ claim. Later native page bindings still follow canonical current roadmap
 waiting/unbound and stale-authority invalidation requirements; this diagnostic
 does not implement or change them.
 
-## Fixed legacy heap overview binding (source correction selected; review pending)
+## Fixed legacy heap overview binding (source correction independently accepted)
 
 Spent8b3f actual receipt05c1ad8d6dc37e39871e86b9f5e5c491484ddc994a5a15bb04c7e8b0d72bac94
 retains GUI completion/observation generation/Qt image availability and saved-copy
@@ -312,9 +312,10 @@ from Buddy. PASS160 assertions, mock transport/no device: valid legacy fixture;
 native1404x1872/rotated1024x768/other shape refusal; wrong/case-mismatched profile;
 signature/truncation/trailer/size failure; hash mismatch without saved-copy
 promotion; literal packet/receipt binding and frozen proof hash; existing
-failure/deadline/preservation cases. Independent Astra/Main review remains pending.
-No fresh native artifact, packet or device attempt selected, no current teardown,
-no rewriting spent8b false fields. Task4.15 stays open through independent review.
+failure/deadline/preservation cases. Main and Astra independently accepted Buddy99dc6d49/Docs61e4607 and reran160 assertions.
+At that source freeze no fresh native artifact, packet, device attempt or current
+teardown was selected. Spent8b false fields remain unchanged. Task4.15 now records
+independent source acceptance only; future native packet task4.11 remains open.
 
 ## Proposed fixed device and coordinate frames profile (review before implementation)
 
@@ -387,3 +388,20 @@ proving a backend cause. Matching time/global across different device IDs suppor
 duplicate Qt device delivery only, never two physical contacts or UI acceptance.
 Source basis: current Main/Astra coordination and repository source contract;
 actual8b reviewed evidence is an observational lead, not a verified root cause.
+
+## Separate current preservation and teardown chronology
+
+Main reports later separate local full Pillow PNG decoding, exact hashes and fixed
+legacy shape verification, then fresh remote regular-file/size/hash proof and stock
+25872/226382128 restoration verification. Only after those proofs and advance
+notice Main performed exact teardown; all selected stage/units/external heap,
+helper and metadata paths were proven absent. Separate current cleanup proof PASS:
+three active stock checks, original policies, NRestarts0 and empty Job. No cleanup
+repeat is needed. This does not rewrite original receipt05c1ad8d6dc37e39871e86b9f5e5c491484ddc994a5a15bb04c7e8b0d72bac94
+or its false heap/pair/facts/cleanup fields.
+
+Main names actual8b/main-local-preservation-proof.json,
+main-remote-preservation-proof.txt and main-separate-cleanup-proof.txt as proof
+files, canonical Memv37 and REM25 commentffa02899 as persistence. Source basis:
+current Main coordinator report; these internal references are not links and this
+chronology does not claim Sol independently executed or re-read the teardown.
