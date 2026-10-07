@@ -960,31 +960,39 @@ provides mechanism evidence (zero separator/paragraph handling and NUL-terminate
 record copy), not an exact target-version/build claim.
 
 Propose changing only these three reads/predicates plus focused fixtures. Each
-guard first acquires normalized environment through a standalone checked command
-substitution, without a read pipeline whose downstream success masks read failure:
+guard first acquires normalized environment through checked command substitution
+with pipefail scoped to that substitution. Unsupported pipefail explicitly refuses:
 
 ```sh
-env_lines=$(LC_ALL=C tr '\000\012' '\012\001' < "/proc/$p/environ") || exit 90
-printf '%s\n' "$env_lines" | LC_ALL=C awk '... newline-record predicate ...'
+env_records=$(set -o pipefail || exit 90; cat "/proc/$p/environ" | LC_ALL=C tr '\n' '\r' | LC_ALL=C tr '\000' '\n') || exit 90
+printf '%s\n' "$env_records" | LC_ALL=C awk '... newline-record predicate ...'
 ```
 
-NUL becomes newline; an original embedded newline becomes SOH. Every predicate
-must reject SOH (including preexisting SOH, conservatively), preventing a multiline
-environment value from forging a key or exact LD_PRELOAD line. awk uses its default
+Original LF first becomes CR; only original NUL then becomes LF. This prevents
+a multiline environment value from forging a key or exact LD_PRELOAD record.
+The fixed expected ASCII payload path contains neither CR nor LF, so an original
+LF inside that value cannot falsely match exact LD equality. awk uses its default
 newline RS, no NUL RS. Presence scans require complete exact key/value equality;
 absence scans refuse prohibited anchored keys even empty/0. awk END succeeds only
-on the selected positive condition with no bad marker. Missing/unreadable/EIO/tr
+on the selected positive condition. Missing/unreadable/EIO/cat/tr
 failure remains nonzero regardless of partial stdout; no absence inferred from an
 error. Existing PID/start/maps/root/job guards remain; no wider identity promise.
 No generic framework, SDK hook/schema, remote file, source launch/restore change,
 new helper, budget alteration, device rerun or rewrite of spent evidence.
 
-Before implementation selection, Main+Astra review the exact proposal, including
-the deliberate multiline/SOH refusal. Later real Linux fixtures must exercise
+Main's further target synthetic identifies BusyBox tr as returning0 on direct
+EIO input even though cat returns1. Scoped pipefail cat|tr returns1 on EIO and
+missing input, and normalizes a late key successfully. Direct tr substitution
+from the initial080be17 proposal is superseded, preserved historically. No claim
+that command substitution alone preserves a producer's read error.
+
+Before implementation selection, Main+Astra review the exact revised proposal.
+Later real Linux fixtures must exercise
 both mawk and BusyBox providers: selected key first/middle/last after debug/rules,
 absence/present empty/0 for all six prohibited keys, exact/wrong/confusable LD,
-empty input, embedded newline/SOH injection, missing and unreadable/EIO input,
-producer partial-output failure and tr failure; verify no continuation under set-e.
+empty input, embedded LF/CR forged-LD/no-LD cases, missing and unreadable/EIO input,
+producer partial-output failure, each tr failure and unsupported pipefail; verify
+no continuation under set-e. No raw environment bodies are persisted.
 Provider identity is recorded. Existing collector/recovery and fixed logging
 stream tests remain regression gates. Host BusyBox fixtures alone do not establish
 target utility equivalence; Main's separately selected harmless target fixture
