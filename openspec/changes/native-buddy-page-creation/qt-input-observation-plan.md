@@ -1563,3 +1563,55 @@ script, saved bounded forensic bytes, current Astra decoded setup/point observat
 earlier exact-provider receipts plus Sol disassembly, and sanitized envelope structure.
 Runtime-cause conclusions are conditional inferences; future boundary instrumentation
 and envelope grammar are unselected proposals. No raw logs are published here.
+
+### Exact static trace refinement: runtime boundary remains unresolved (2026-10-07)
+
+Main accepted the7a67bd3 diagnosis with its stated limits. The envelope stays DRAFT,
+held for actual formatter provenance; MESSAGE-only proposal4da2b7 is jointly accepted
+as a proposal, but implementation is not selected while navigation diagnosis takes
+priority. Astra completed the exact offline trace; Sol read its complete redacted
+receipt and independently verified SHA256
+`93c27c98129e99bc02c36d24545312a1944a8236436cd02231ed439b06ebac45`
+for `forensic-1a48-readonly/astra-contact-normalization-trace-review.json`.
+This is Astra's static analysis of exact saved plugin678574 and vendor QtGui93fe,
+not a Sol independent disassembly of every traced range or runtime qualification.
+
+Trace follows active slot H+0x40 through contact lookup in H+0x20 to returned
+node+4 contact C. Axis clamps store C+4/X and C+8/Y using the same reported bounds.
+Protocol-B current-contact iteration passes that contact to normalization0x15528;
+previous-contact release handling uses the same normalization. Tracking changes
+id/state without a coordinate overwrite in the inspected branch. The normalization
+reads signed integer axes, subtracts minima, converts to DOUBLE and divides by
+max-minus-min. Identity matrix bypasses mapping; otherwise0x15658 calls the imported
+QTransform::map(QPointF const&) and0x15664 joins with double outputs. Point append/
+copy preserves the normalized16bytes without numeric conversion. Exact QtGui mapping
+and do_map also use doubles, including projective paths. These inspected bytes
+contradict the integer-overload or float-to-int rounding explanations for the corner.
+
+Constructor copies a nine-double identity matrix into H+0x90 and clears cached type
+bits at H+0xd8. rotate/invertx/inverty default zero; accepted90/180/270 rotations and
+x/y reflections compose around(0.5,0.5). Given contact164,1396 and logged bounds,
+pre-map fractions are approximately(0.1168923735,0.7461250668), whose distance from
+center is0.455355907. Corner(0,1) has distance0.707106781; these ordinary configured
+rotations/reflections cannot produce that endpoint from those premises. This is
+conditional mathematics, not proof of the actual runtime contact/matrix/options.
+
+No static bug or justified navigation/source patch was found. Static consistency
+does not prove actual runtime operands, symbol binding, event attribution, absence
+of corruption or later storage mutation. A generic additional journal query cannot
+supply the missing internal operands. Original strict unknown results, helper/source
+freeze and all no-retry/no-new-native limits remain unchanged.
+
+Smallest proposed discriminator observes ONE SAME normalization call at0x15528 and
+its post-map join0x15664: generation/handler identity and active slot; contact
+id/state/X/Y; all four bounds; full nine-double matrix plus type; pre-map fractions
+and post-map doubles. Correlate the same contact/id/state throughout. Wrong raw
+contact points to slot/contact/event-consumption; correct raw with wrong bounds or
+matrix points to runtime state/configuration; correct inputs but wrong post-map
+points to mapping/binding; interior post-map with endpoint log points to later
+storage/mutation. This is a precise future observation proposal, not selected
+instrumentation, a device trial or permission to patch any of these paths.
+
+Source basis: current Main acceptance/selection limits, complete hash-verified Astra
+static trace receipt, and prior exact saved helper/provider/forensic evidence. Runtime
+cause remains unresolved; the discriminating outcomes are conditional interpretations.
