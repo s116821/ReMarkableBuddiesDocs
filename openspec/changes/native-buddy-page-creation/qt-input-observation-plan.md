@@ -943,3 +943,53 @@ Source basis: actual saved receipt/scripts/outputs, exact typed decoder, local
 hashes/full decode/visual inspection and Main's target-operation reports. Sol made
 no device action; cleanup interpretation is based on saved proofs. Guard cause is
 a hypothesis pending Astra's host diagnosis; no original flags are promoted.
+
+### Proposed narrow environment-reader repair (not implementation selection)
+
+Audit of accepted Buddy15cd finds exactly three NUL-RS environment scans in the
+selected observation operator: logging-key absence at139, loader-key absence
+at160, candidate exact LD_PRELOAD presence at272. Selected launch/restore/Ready/end
+publisher scripts contain no /proc environ NUL scan; their other awk uses parse
+ordinary text. Launch variable reordering alone would leave absence guards unsafe.
+Historical source acceptance and host mawk fixtures did not qualify target BusyBox
+NUL semantics. Main's saved target synthetic output identifies /usr/bin/awk as
+/usr/bin/busybox.nosuid and shows LD-first status0 versus LD-last status1, one record
+only. It confirms a parser limitation; the empty failed live guard output still
+does not identify its exact failing predicate. [BusyBox1_36_stable awk source](https://raw.githubusercontent.com/mirror/busybox/1_36_stable/editors/awk.c)
+provides mechanism evidence (zero separator/paragraph handling and NUL-terminated
+record copy), not an exact target-version/build claim.
+
+Propose changing only these three reads/predicates plus focused fixtures. Each
+guard first acquires normalized environment through a standalone checked command
+substitution, without a read pipeline whose downstream success masks read failure:
+
+```sh
+env_lines=$(LC_ALL=C tr '\000\012' '\012\001' < "/proc/$p/environ") || exit 90
+printf '%s\n' "$env_lines" | LC_ALL=C awk '... newline-record predicate ...'
+```
+
+NUL becomes newline; an original embedded newline becomes SOH. Every predicate
+must reject SOH (including preexisting SOH, conservatively), preventing a multiline
+environment value from forging a key or exact LD_PRELOAD line. awk uses its default
+newline RS, no NUL RS. Presence scans require complete exact key/value equality;
+absence scans refuse prohibited anchored keys even empty/0. awk END succeeds only
+on the selected positive condition with no bad marker. Missing/unreadable/EIO/tr
+failure remains nonzero regardless of partial stdout; no absence inferred from an
+error. Existing PID/start/maps/root/job guards remain; no wider identity promise.
+No generic framework, SDK hook/schema, remote file, source launch/restore change,
+new helper, budget alteration, device rerun or rewrite of spent evidence.
+
+Before implementation selection, Main+Astra review the exact proposal, including
+the deliberate multiline/SOH refusal. Later real Linux fixtures must exercise
+both mawk and BusyBox providers: selected key first/middle/last after debug/rules,
+absence/present empty/0 for all six prohibited keys, exact/wrong/confusable LD,
+empty input, embedded newline/SOH injection, missing and unreadable/EIO input,
+producer partial-output failure and tr failure; verify no continuation under set-e.
+Provider identity is recorded. Existing collector/recovery and fixed logging
+stream tests remain regression gates. Host BusyBox fixtures alone do not establish
+target utility equivalence; Main's separately selected harmless target fixture
+must check exact normalized form before any future candidate packet selection.
+
+Source basis: direct source audit, saved Main target synthetic script/output,
+Astra diagnosis and primary BusyBox source. The proposed reader/marker choices
+are engineering decisions awaiting review. Further device work remains held.
