@@ -1388,3 +1388,89 @@ Source basis: current Main/Astra messages and explicit Main-relayed parent selec
 local source diff/tests and exact saved private qualification/postmortem receipts.
 Private evidence is local and has no public link. Interpretations and limits above
 are distinguished from saved transport results.
+
+### Joint minimum source acceptance and separate encoding proposal (2026-10-07)
+
+Main and Astra independently ACCEPT the exact minimum source freeze
+Buddy2791a25ad3de394cddcb759ecc5c9e84d099e371 / Docs939d45e16282182ac259e3b68093664b1338c82d.
+Both independently read the exact diff and passed86 journal/360 collector checks;
+Astra also independently passed strict OpenSpec validation. This closes only the
+minimum dd/private-stderr SOURCE review. No runtime packet/native trial is selected;
+Task4.11 remains open. SDK6504a035e2344870ff934124679cdf0921995424 is clean and
+unchanged; M3 stashdc5269ccf6a01d36e174049e6fbc2cb0ae26ece4 remains preserved.
+
+Main's ONE separately authorized forensic acquisition is spent. Private acquisition
+`forensic-1a48-readonly/private-acquisition.json` SHA256
+`f96f31ea8b2db9ba587d37a4637e18ee9550ea2685d394716d63909f57e67b69`
+retains30304 acquired stdout bytes, exit0/823ms/stderr0/no timeout or overflow,
+raw SHA256 `20e1865f74ce048c0a828a54e055b1ec6009d355156d5f408ffd448c43fb8063`.
+This differs from the discarded first-postmortem raw hash; no byte-equality claim.
+The original one-shot, first postmortem and forensic strict-decoder results remain
+unknown and immutable. No further tablet query is authorized by this checkpoint.
+
+Sol and Astra independently decoded saved Base64 OFFLINE, verified hash/length and
+final nonce producer0, all38 unique-key JSON objects, all four identity/time fields
+as strings, exact boot/PID, canonical Int64 timestamps and realtime enclosure.
+MESSAGE is a numeric-byte array in33 rows and a string in5; all33 arrays contain
+only integer bytes0..255 and decode under strict UTF8. Fourth row MESSAGE is85
+bytes. There are78 ESC27 characters and no other C0/DEL controls in this saved
+sample. Astra additionally verified all escapes are SGR and none remain outside
+that grammar. Sol private structural review SHA256
+`9cb832590c89e601aa3e0596d777970d6cf08c9b3f31c9606f19029b8c2d6667`
+contains counts and booleans only, no raw message text. Main owns canonical evidence.
+
+The saved sample has11 messages containing an input-category token, including TWO
+TouchPoint-bearing messages at rows36/37. Neither qualifies under the exact current
+anchored category rule; removing color sequences alone still does not establish it.
+Category token occurs at offset21 followed by spaces rather than the expected colon.
+Array decoding alone, with unchanged classification, yields zero eligible/qualified
+point records and11 category-unknown records. This describes the existing gate;
+it does not imply absent events, full coverage or input delivery.
+
+Primary encoding basis: [systemd v255 journalctl documentation](https://raw.githubusercontent.com/systemd/systemd/v255/man/journalctl.xml),
+JSON mode lines475-490, documents three separate exceptional encodings: oversized
+fields may be null without --all; repeated field values use multi-value arrays;
+nonprintable/nonUTF8 data uses unsigned numeric-byte arrays. These encodings must
+not be conflated. This source explains the representation; it does not prove the
+exact tablet systemd version or independently qualify its Qt logging envelope.
+
+PROPOSAL ONLY, not selected or implemented: accept MESSAGE as its current string
+form OR a nonempty flat array of lexical unsigned decimal integers0..255. Validate
+each raw numeric token against `0|[1-9][0-9]{0,2}` and its range before byte conversion;
+reject fraction/exponent/signed forms, coercions, bool/null/string/mixed/nested arrays,
+empty arrays and all other kinds. Bound the array length by the existing input-byte
+ceiling before allocation. Decode only with strict UTF8; no replacement fallback,
+ASCII assumptions, ANSI/control stripping, trimming, Unicode normalization or
+multi-value concatenation. Retain the original JSON line unchanged and use its
+original UTF8 bytes for retained caps. Decoded MESSAGE is only a classification
+view; identity/time fields stay string-only with existing exact origin/clocks,
+duplicate-key/missing-field rules. All transport/stderr/trailer/sentinel/deadline,
+category_unknown and authority behavior remain intact; no bad row is skipped.
+
+Adversarial fixture contract for later implementation review (synthetic only):
+
+| MESSAGE or record fixture | Required result |
+| --- | --- |
+| String and byte-array equivalents of an exact tagged TouchPoint fixture, including valid multibyte UTF8 | Same classification; preserve distinct original JSON and its byte count |
+| Flat byte array [0,255] | Byte shape valid; strict UTF8 refuses255, diagnostic unknown |
+| [65,0,66], [65,10,66], [27,91,51,49,109,65] | Preserve decoded controls exactly; do not strip or create an anchored category |
+| [] or null | Refuse ambiguous/absent MESSAGE |
+| [-1], [-0], [256], [1.0], [1e0], [true] | Refuse lexical/range/coercion violations |
+| ["65"], ["one","two"], [[65]], [65,null], [65,"66"] | Refuse string/multi-value/nested/mixed forms |
+| [255,254], [195], [192,175], [237,160,128] | Strict UTF8 refuses invalid/truncated/overlong/surrogate encodings |
+| Exact tagged byte-array message versus leading ESC, newline, NUL or unrelated prefix before category | Only exact unchanged anchored category can qualify; no substring promotion |
+| Valid array MESSAGE with array/null/wrong PID or boot, malformed/outside clocks, missing field or duplicate JSON key | Original whole-diagnostic refusal unchanged |
+| Original JSON byte expansion at retained ceiling, raw257 sentinel, stdout65537, stderr/error/timeout, malformed trailer | Existing limits/status refusal unchanged |
+| Saved38-row sample after MESSAGE-only decoding | Still unknown/category_unknown; zero qualified points; no original receipt mutation |
+
+A separate exact colored/category formatter grammar, if later needed, requires
+review of saved structural evidence and the actual provider. Generic ANSI removal,
+unanchored category search or guessed field skipping is not part of this proposal.
+General future private stdout retention is also a separate scope decision; this
+proposal does not add it to the accepted minimum source freeze. No SDK/schema,
+launch/recovery, authority budget or tablet action is proposed here.
+
+Source basis: current exact Main/Astra acceptance messages, saved private bytes
+independently checked offline, Sol structural receipt, and linked primary encoding
+documentation. Synthetic fixture expectations and MESSAGE contract are proposals;
+source and historical receipts remain unchanged. Private receipts have no public link.
