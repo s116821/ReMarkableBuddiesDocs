@@ -1683,13 +1683,16 @@ Consumer progression is gated in this order:
    guards. Review exact SDK/Buddy/Docs source freezes before target use. Do not alter
    SDK dependency pin, shared schema/authority, helper timers or current dd/env guards
    incidentally. MESSAGE/envelope decoding is unnecessary and remains unselected.
-3. Main alone qualifies actual utility startup/dependencies and the COMPLETE executed
+3. Before the FIRST owned-target attach, independently review and arm the bounded
+   external cleanup guard for the exact owned tracer/dummy generations; include its
+   stopped-tracee termination and exit-before-restoration behavior in this gate.
+   Main alone qualifies actual utility startup/dependencies and the COMPLETE executed
    collection path on harmless owned target fixtures: ARM/VFP registers, memory,
    CPSR flags/software breakpoints, thread/frame matching and detach; wrong provider/
    word/generation/first hit, absent POST, timeout/EOF, host/debugger/server death and
    partial/unwritable evidence. Verify bounded byte persistence/readback and no retry.
    QEMU or version/help alone cannot close target ptrace/recovery gates.
-4. Independently verify the external recovery guard for exact tracer/candidate
+4. Re-verify the frozen, dummy-qualified external recovery guard for exact tracer/candidate
    generations before native activation. A stopped tracee may not handle SIGTERM;
    cleanup must terminate exact tracer/candidate if required and verify both exits
    before stock restoration. Never resume possibly patched code on uncertain teardown.
