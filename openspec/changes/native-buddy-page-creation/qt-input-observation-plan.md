@@ -100,10 +100,40 @@ does not implement or change them.
 
 ## October 6 implementation and review checkpoint
 
+Evidence-preservation amendment from independent review: a generated image may
+be deleted only after a verified saved local copy/hash exists, or positive bounded
+absence proves no image was generated. Saved-copy verification is separate from
+live image/same-candidate qualification and remote capture completion certainty.
+On missed completion, copy failure, later guard loss or unknown remote capture,
+retain the exact affected path/stage and cleanup unverified whenever no verified
+copy exists. Prefer conditional preservation; do not add capture/input retries or
+extend the live clock. Historical inspection cannot promote live qualification.
+Buddy4c75759 is not accepted: Astra/Main found cleanup could destroy the only
+Qt or completed-heap image after a failed/missed live copy. The source correction
+and focused cases must be reviewed in a superseding checkpoint.
+
+Superseding consumer checkpoint: Buddy39c0c4c1cd1add6bb6ef3f70058611eec6bcfbca
+repairs that defect with conditional preservation only. Separate qt/heap saved-copy
+flags/hash are recorded immediately after local copy verification, BEFORE later live
+guards. The fixed post-restoration gate positively proves each generated image
+absent or verifies its bounded remote bytes/hash against a known saved local copy.
+There is no historical SCP or new image retry. Missing/unverified copies, failed
+post-restoration metadata checks or possibly-running heap capture retain the entire
+exact stage/external path and cleanup unverified. A saved file may survive a later
+live guard failure without granting Qt/live-pair qualification. Restoration remains
+owed independently. test-input-observation-collector.ps1 now140 assertions PASS,
+including missed completion, Qt copy timeout, post-copy generation loss, completed
+heap copy timeout, preservation transport failure, saved copies, positive absence
+and remote capture unknown. Original SDK1609098 and publisher18 cases are unchanged.
+Main independently reported SDK source review and21/32/16 vendor cases PASS; both
+reviewers' acceptance of the superseding consumer/Docs checkpoint remains pending.
+
 Accepted proposal pair: SDKff0b50cc2f6bf263a28af09eed71d2feaeb47750 and
 Docsfdfdf5cdd19fe0853a8c090c5697e23e7f8b7ef1. Main authorized source implementation
 only. Frozen implemented SDK16090985a040006608fe496cdfdf6727613b909d and
 Buddy4c7575984a88465142c42ddd50b933a89e6201b1 retain this source-only scope.
+Buddy4c75759 is the historical first implementation checkpoint, superseded for
+acceptance by39c0c4c after the preservation correction above.
 No nonce, target artifact build, private packet or device action was selected.
 
 SDK adds a default-off observation branch, fixed64records/4points/saturating counts,
