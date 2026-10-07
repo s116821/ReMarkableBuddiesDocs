@@ -2033,3 +2033,45 @@ Source basis: current Main steering and read-only Buddy/evdev0.13.2 source inspe
 The existing seeded deduplication test accepts an echo without raw X/Y events.
 Target ABI and proposed coordinate mapping remain build/review gates; no new tablet
 evidence or cause conclusion is claimed.
+
+#### Selected implementation and source review
+
+Main selected source implementation after Main/Astra accepted the exact081552f
+proposal. Buddy e8d05396 added the development variant;89fd9d23 removed its new
+temporary raw-event Vec. Main and Astra independently accepted that combined source
+freeze. The tee now records each complete event's safely encoded fields before
+producing its semantic tuple. Final-poll raw collection remains the original code.
+The preallocation contract covers added evidence storage; inherited RawDevice,
+semantic-output and final-poll allocations are unchanged. No new diagnostic raw
+collection allocates after down. This clarification does not change timing limits.
+
+Fresh seed is retained after existing poll/quiescence and descriptor checks, feeds
+the diagnostic decoder directly and is not replaced by a later stale clone. Both
+native axes must differ from fresh slot0 before down. The feature-disabled path
+retains its existing deduplication policy. Tests/build artifacts and their exact
+hashes remain required before a target helper can be selected; source acceptance
+alone does not qualify it. Main owns fresh packet preparation and all tablet work.
+
+Source basis: current Main/Astra exact-source review messages and local Buddy
+implementation. No new native input or Qt runtime evidence is claimed.
+
+Final source89fd9d23e13bb81493239d28e67e39afcebad754 passed13 affected Linux
+tests (5 raw evidence,4 owned touch,4 hold/mapping), including exact existing f32
+mapping110,280 to201,1360. The earlier pre-allocation-fix snapshot passed112 device
+tests; do not label that broader result as a final-source rerun. Exact original/raw
+helper orchestration checks passed34/11 cases with owned I/O substitutes.
+
+Pinned vendor image
+`sha256:416c7a7be0038156797b0892f031f352b841d1921fae83f712d0a272e4724618`
+produced both locked/offline ARMv7 release builds. Development helper9890392 bytes,
+SHA256 `44f70a63dcac11ce420950c177009ff2dc5f510cd8ad53bd9e5e9e7920a4bbee`;
+feature-disabled helper9878352 bytes,
+SHA256 `1b92b620694772627b5538fb075866d96882404e0ed544086975200b59032010`.
+ARM development compilation enforces the16-byte event layout with static field
+width/offset assertions. Host tests qualified the24-byte layout. Development ELF
+inspection confirmed32-bit little-endian ARM EABI5 hard-float. Build metadata used
+vergen defaults because the container lacked git; source identity is externally
+bound to the exact commit, not an official release assertion. Initial ARM link
+failure was a private wrapper SDK re-source guard; corrected wrapper inherits the
+already-established vendor compiler environment. Neither build ran on the tablet.
+Independent artifact review/selection and the fresh Main-owned trial remain open.
