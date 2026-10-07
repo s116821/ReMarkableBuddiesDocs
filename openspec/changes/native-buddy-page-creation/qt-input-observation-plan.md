@@ -1216,12 +1216,28 @@ collector/recovery/normalization regressions. Host generic BusyBox results canno
 substitute for Main's exact installed target dummy. No fresh nonce/artifact/input
 or native trial follows from this proposal; all spent receipts remain immutable.
 
-Astra also recommends retaining already-acquired bounded stderr for future
-diagnosis. This is a separate explicit scope decision for Main+Astra review:
-lossless Base64 of at most1024 bytes in the private additive diagnostic would
-avoid unbounded reads or invalid UTF-8 coercion, with byte count/overflow/status
-still authoritative and no authority promotion. No raw journal stdout persistence
-or retrospective error recovery. Do not implement that extension without selection.
+Astra recommends and Main supports retaining already-acquired bounded stderr for
+future diagnosis, now part of this exact revised proposal for joint review:
+lossless Base64 of at most1024 bytes (at most1368 characters) in the private additive
+diagnostic, alongside existing transport exit/timeout/acquisition/overflow status
+and byte count. Convert directly from bounded bytes, without a required UTF-8
+decode, second capture or reread. Nonempty stderr remains unknown under the same
+refusal rule; retention does not make producer errors valid. No generic Native,
+original GUI/image/recovery/authority flag or decoder schema change. No raw journal
+stdout persistence or retrospective error recovery. Missing endpoints/no capture
+have explicit no-acquisition status rather than invented error content.
+
+Main's exact target dummy proof reports short producer7 retained with limiter0,
+empty stderr,64 stdout bytes and354ms; a65538-byte dummy was capped to65537 and
+the host sentinel flagged overflow without timeout at1309ms. No journal/input/
+capture/services were used. This qualifies the installed limiter's tested dummy
+cases, not runtime journal coverage; keep the existing5s deadline unchanged.
+Later fixtures additionally verify below/exact/above sentinel including final
+trailer, fragmented/multibyte/binary output, producer7/limiter0, missing/failing dd,
+nonempty invalid-UTF8 stderr lossless Base64 roundtrip,1024-byte retention and
+overflow bounds, and unchanged unknown/additive behavior. Persist only bytes the
+existing dedicated capture already acquired. Exact implementation awaits joint
+proposal acceptance and Main's separate source selection; no fresh nonce selected.
 
 Source basis: saved Main target dummy and Astra host command fixture reports plus
 local script/receipt readback. dd replacement/test requirements and optional
