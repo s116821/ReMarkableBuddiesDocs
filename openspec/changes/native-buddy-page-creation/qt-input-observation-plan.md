@@ -98,13 +98,13 @@ claim. Later native page bindings still follow canonical current roadmap
 waiting/unbound and stale-authority invalidation requirements; this diagnostic
 does not implement or change them.
 
-## Proposed fixed legacy heap overview binding (no source correction selected)
+## Fixed legacy heap overview binding (source correction selected; review pending)
 
 Spent8b3f actual receipt05c1ad8d6dc37e39871e86b9f5e5c491484ddc994a5a15bb04c7e8b0d72bac94
 retains GUI completion/observation generation/Qt image availability and saved-copy
 success, while heap saved/capture/pair and all facts flags remain false. Main's one
 old df745 capture completed and downloaded valid PNG bytes with SHAa8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b,
-768x1024. The fixed collector validator instead requires1404x1872 and refused them.
+768x1024. The spent packet collector validator required1404x1872 and refused them.
 Main restored stock; the P2 preservation gate retained the entire stage/external
 image and cleanup unverified. Do not rewrite any spent flags or infer a live pair.
 
@@ -136,7 +136,7 @@ stay false. Current cleanup requires separate independent local PNG/hash/profile
 verification plus fresh Main-only read-only remote hash/size/regular-path/restoration
 proof before an explicitly selected teardown. Preserve all local evidence and the
 original cleanup-unverified receipt. No historical SCP, recapture, input or source
-change is selected by this proposal.
+change to the spent packet is selected by this proposal.
 
 Focused review/verification should cover exact legacy shape success, full native
 shape refusal, wrong orientation/other shapes, size/hash/format failure, same live
@@ -294,3 +294,24 @@ root/path/focus-window replacement and ambiguous-engine cases remain gaps. Targe
 artifact compatibility, actual touch synthesis, window/image behavior and physical
 EPD/input acceptance remain separate unqualified gates. All native binding/ownership
 requirements and preserved spent-attempt flags remain unchanged.
+
+## Fixed legacy overview source freeze for independent review
+
+Main selected the minimal source correction after proposal review. Buddy
+99dc6d49aad167b6cc78777036bef195d79d579b binds the literal
+`legacy-df745-overview-768x1024` in packet bindings and the receipt, and uses
+Test-InputObservationLegacyOverviewPng with that exact profile. The fixed guard
+requires768x1024, existing8MiB cap, PNG signature/IHDR header and terminal IEND;
+it is header/trailer sanity, not full PNG decoding. Existing hash checks remain
+mandatory. Actual spent images were separately fully decoded during review.
+The original helper SHA/no-flags command, deadlines, live identity checks,
+saved-copy ordering and preservation paths are unchanged. SDK remains16090985a040006608fe496cdfdf6727613b909d.
+
+Focused command: `pwsh -NoProfile -File tools/native_page_facts_probe/test-input-observation-collector.ps1`
+from Buddy. PASS160 assertions, mock transport/no device: valid legacy fixture;
+native1404x1872/rotated1024x768/other shape refusal; wrong/case-mismatched profile;
+signature/truncation/trailer/size failure; hash mismatch without saved-copy
+promotion; literal packet/receipt binding and frozen proof hash; existing
+failure/deadline/preservation cases. Independent Astra/Main review remains pending.
+No fresh native artifact, packet or device attempt selected, no current teardown,
+no rewriting spent8b false fields. Task4.15 stays open through independent review.
