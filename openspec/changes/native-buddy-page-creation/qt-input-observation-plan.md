@@ -454,3 +454,17 @@ new signed-ID wire field, retaining the exact inclusive Int64 range check. Buddy
 adds LF/CRLF/CR/leading or trailing space/tab refusals and updates frozen decoder
 SHA. This corrects the shared proposal and consumer only; SDK scalar capture and
 serialization are unchanged. Earlier318 assertions alone missed this case.
+
+### Consumer repair freeze: profile scalar type and absolute ID anchors
+
+Main independently reproduced empty and single-literal evidence_profile JSON arrays
+passing PowerShell's collection comparison. Buddy21e06d842f44f886061af6b25d0dd2decd23ff07
+now requires evidence_profile to be a string before exact device-frames-v1 matching,
+and includes JSON roundtrip refusals for empty/single/multiple arrays, bool, number
+and object. Combined with Astra's absolute signed-ID anchors and seven whitespace
+regressions, focused collector command PASS331 mock/no-device assertions. Frozen
+proof SHA is updated. SDK4f84be45993edbd80f5ea086c023ec947ca96541 contains only the
+proposal regex correction beyond SDK884f141 implementation; code bytes remain
+unchanged. Earlier Buddybc957/318 freeze is superseded for source acceptance only.
+Both defects remain recorded rather than upgrading earlier results. Independent
+Main/Astra repair review stays open; no target artifact, packet or device selection.
