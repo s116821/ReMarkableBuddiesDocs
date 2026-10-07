@@ -2557,3 +2557,44 @@ alternate point or adaptation. No next nonce or target is selected by this note.
 Source basis: locally reviewed saved840 transport/phase/raw/PNG/operator/post-state
 and exact cleanup evidence, plus Main's hardware/recovery report. Sol operated no
 tablet. Task4.11 and native/product qualification remain unfinished.
+#### Accepted capture diagnostics and remaining transport audit (2026-10-07)
+
+Sol accepts the consumed840 source-only capture revision33749aff9ea65c6ad53cbdf0035d62b3c00c93373de77714198c88d6a0caa60b:
+all THREE full same_waiting proofs, once-only capture claim, shared helper hash and
+2MiB image bound remain. Ten fixed stdout phase markers carry bounded numeric
+uptime stamps; explicit helper status preserves nonzero failure. Sol independently
+reran6 Linux host-stub checks covering success/replay without a second capture,
+pre/post proof refusal, helper status7 and oversized image refusal. They test
+orchestration only, not native bitmap correctness or target qualification.
+
+The remaining source audit selects10000ms for SETUP, CAPTURE and one FINAL
+SAME-TUPLE PROOF + PUBLISH composite. The composite source
+bac9fa5008b0d1242985d01e4c7a1063ced60e6b8949b35c6a3c28726412aaac
+keeps the full positive checker and held nonce/PID/start/dev/inode record, verifies
+the exact regular nonsymlink mode0600 publisher script/hash, then execs it once.
+That script retains the exact publisher binary/hash; its existing native code
+checks held descriptors, generation/environment, executable and payload digests,
+and exclusive admission lock/publication. Publisher exit0 proves token publication
+only; it does not prove getter completion or facts success. Repeated executable
+validation supports bounded transport headroom, with actual target duration still
+unqualified. No publisher binary or SDK source changes follow.
+
+Readiness observations, bounded raw metadata/copies and PNG copy remain5000ms.
+Existing background collector callbacks/live reads remain at their3000ms ceiling:
+small records or one executable digest with fewer service queries than the full
+waiting proof, plus the original post-return window check. This is source-based
+scope justification, not a runtime guarantee. There is no current evidence to
+widen that collector. Every selected manual allowance must fit wholly and strictly
+inside the ORIGINAL150000ms before-launch host deadline, with post-return admission;
+SDK setup120000ms/getter5000ms and separate rollback/restoration remain unchanged.
+
+Main may execute the already-frozen readiness/setup/raw/capture/copy/decode sequence
+as one visible batch within that original window, then pause for full visual review.
+Final composite remains once-only after timely normal setup/capture, preserved raw/
+PNG and Main visual acceptance. Timeout/refusal grants no retry or later upgrade.
+The next point remains preselected90,260/native164,1396 with fresh released seed and
+BOTH-axis difference required; no alternate within the attempt. Exact fresh packet
+binding/selection remains separate. No new nonce or target action by Sol.
+
+Source basis: current source-only capture/composite/audit, independent local Linux
+models and existing publisher/collector source. Task4.11 remains unfinished.
