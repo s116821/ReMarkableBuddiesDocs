@@ -100,6 +100,28 @@ does not implement or change them.
 
 ## October 6 implementation and review checkpoint
 
+October 7 coordinated independent source acceptance is COMPLETE for exact
+SDK16090985a040006608fe496cdfdf6727613b909d,
+Buddy39c0c4c1cd1add6bb6ef3f70058611eec6bcfbca and reviewed owning
+Docs19c5d9b9fcac5cb69834a46a881551422e8848cb. Main and Astra explicitly accepted
+this source-only triple with no remaining blocking source finding. Astra reviewed
+the SDK source and consumer/repair/owning deltas and independently ran140 collector
+assertions PASS. Main reviewed the full SDK/consumer/repair/owning source, confirmed
+clean heads and independently ran vendor21 refusal/32 existing/16 observation cases,
+consumer140 assertions and unchanged publisher18 owned host cases PASS; SDK/Docs
+strict validation and diff checks PASS. These are reviewer reports delivered through
+the current-project coordination chats, corroborated by this lane's recorded runs;
+they do not supply target-device or installed-artifact evidence.
+
+The evidence-preservation P2 is resolved at39c0c4c. Saved-copy durability remains
+separate from live qualification and remote capture certainty, with deletion
+suppressed whenever either image lacks a verified saved copy or positive absence.
+SDK1609098/Buddy39c0c4c remain frozen. This final owning record updates acceptance
+only; artifact builds, full private packet review, freshly selected Main-only device
+activation and all MVP/native/physical input/EPD qualification gates remain OPEN.
+Main's separate preparation of later gates does not follow from source acceptance
+alone. The synthetic coverage limitations below remain explicit.
+
 Evidence-preservation amendment from independent review: a generated image may
 be deleted only after a verified saved local copy/hash exists, or positive bounded
 absence proves no image was generated. Saved-copy verification is separate from
@@ -126,7 +148,8 @@ including missed completion, Qt copy timeout, post-copy generation loss, complet
 heap copy timeout, preservation transport failure, saved copies, positive absence
 and remote capture unknown. Original SDK1609098 and publisher18 cases are unchanged.
 Main independently reported SDK source review and21/32/16 vendor cases PASS; both
-reviewers' acceptance of the superseding consumer/Docs checkpoint remains pending.
+reviewers subsequently accepted the superseding consumer/Docs checkpoint as recorded
+above.
 
 Accepted proposal pair: SDKff0b50cc2f6bf263a28af09eed71d2feaeb47750 and
 Docsfdfdf5cdd19fe0853a8c090c5697e23e7f8b7ef1. Main authorized source implementation
@@ -196,8 +219,9 @@ Verification at frozen source:
   test-transport-lines.ps1:10 checks PASS. No SSH/device commands were executed.
 - SDK and Docs strict owning OpenSpec validation and source diff checks PASS.
 
-Astra reported no blocking source defect in exact SDK1609098; Main's independent
-SDK execution/review and both consumer reviews remain pending at this checkpoint.
+Astra reported no blocking source defect in exact SDK1609098. Main's independent
+SDK execution/review and both superseding consumer reviews are complete as recorded
+above.
 Do not treat16cases as full proposal coverage: duplicate fixture means repeated
 entry.start, not duplicate end admission; source inspection establishes single grab
 but no dynamic grab counter. Maximal-width/overflow identity parser tests belong to
