@@ -1130,3 +1130,50 @@ preflight/provider compatibility and runtime selection remain separate; nonce
 reserved/unspent at this checkpoint. No coverage/delivery/native/render/UI authority
 promotion, spent evidence unchanged. Source basis: current Astra exact review and
 hash-verified receipt, with separate Main rebuild evidence above.
+
+### Spent1a48 actual: live observation passes, journal transport unknown
+
+Main selected/ran the accepted packet after advance notice and fresh preflight.
+One40f496 tap90,260 and one end publication exited0 with positive Ready before/
+after for30542/227092434. Nonce1a48 is spent; no retry. Original receipt SHA256
+`5480fe2fa2e428781dfa0e6e28731e7537e6f54006ad7d06fe178437ce8afe57`
+is immutable: GUI/generation/Qt saved-copy/heap saved-copy/capture/pair/restored/
+cleanup=true, facts=false. Unlike66f5, the corrected live identity guard passed.
+Sol independently passed the exact typed completion decoder for root19:743640.
+Completion SHA256
+`95527b6d3468c4eb21d0a3015f140afa76f7c931df4213382c983bd6b6d1ccf9`
+has counts[1,0,1,0,0,0,0], TouchBegin/End, device-present/systemID string1/type2,
+pointID1/mask7 and all local/scene/global frames0,1871. Native/render/UI authority
+false; coordinates do not establish handler cause or physical input origin.
+
+Accepted/sealed14999ms, GUI grab15066ms, completed16197ms; host GUI completion
+observed22521ms, heap capture27778..29166ms, live32386ms. Both saved PNGs match
+prior cfaa6d3d (1404x1872 Qt) and a8f64e12 (768x1024 legacy heap) hashes. Sol fully
+Pillow verified/loaded and visually inspected both: My Files/Page1of6 thumbnail,
+not opened page. Original pair=true binds guarded candidate capture; identical
+historical images do not prove UI change, coherence, navigation or physical EPD.
+
+Valid endpoint begin1791357594/BOOTTIME227092388cs and end1791357615/227094513cs,
+same boot, yield22s wall query enclosure ending1791357616 (single+1). Exactly one
+post-restoration bounded journal transport was recorded: exit1,330ms, no timeout,
+stdout0, stderr99 bytes, no overflow/acquisition error. Diagnostic SHA256
+`2486ee73a54df2d117aaa97a5985415ebc8db47d6f496d8a5e36f9671c4d0944`
+is unknown; no query producer status/trailer or eligible records. Current design
+retains stderr byte count only, so the exact error is unavailable. Do not infer
+category absence, handler bounds, parser failure or coverage; no reread/retry.
+The additive unknown neither poisons successful original flags nor grants authority.
+
+All eight actual packet files match preparation bytes. First restoration refusal
+phase=stock-process-state exit1 is preserved; subsequent restoration/cleanup passed.
+Stock31265/original policies/three active services/NRestarts0/empty Job verified.
+Fresh separate post14 script/output matches all fourteen baseline hashes; copied
+content9f2bac7 and six-page order match. Separate helper cleanup exact-path/script/
+output confirms removal, without attributing fourteen checks to restore --verify.
+Sol separate actual review SHA256
+`447ea8d4c0f16250f5899e8c64a99fe4a963ac726c4513e63075e27f866a1ceb`
+binds these local checks; original receipt unchanged. Task4.11 remains open, no
+new trial/source change selected. Astra's transport diagnosis is separate.
+
+Source basis: actual saved scripts/outputs/receipt, exact typed decoder, local
+hashes/full decode/visual review and Main-only device-operation reports. Sol made
+no device actions; exact journal error and downstream input cause remain unknown.
