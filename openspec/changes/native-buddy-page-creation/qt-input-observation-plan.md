@@ -100,6 +100,54 @@ does not implement or change them.
 
 ## October 6 implementation and review checkpoint
 
+## Proposed fixed legacy heap overview binding (no source correction selected)
+
+Spent8b3f actual receipt05c1ad8d6dc37e39871e86b9f5e5c491484ddc994a5a15bb04c7e8b0d72bac94
+retains GUI completion/observation generation/Qt image availability and saved-copy
+success, while heap saved/capture/pair and all facts flags remain false. Main's one
+old df745 capture completed and downloaded valid PNG bytes with SHAa8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b,
+768x1024. The fixed collector validator instead requires1404x1872 and refused them.
+Main restored stock; the P2 preservation gate retained the entire stage/external
+image and cleanup unverified. Do not rewrite any spent flags or infer a live pair.
+
+The smallest proposed correction is one explicit, fixed profile for the existing
+df745 no-flag helper: `legacy-df745-overview-768x1024`. Name/bind this profile in the
+consumer packet/receipt and use a purpose-specific legacy-overview PNG validator
+requiring exactly768x1024, the existing8MiB cap and existing byte/hash checks.
+Do not introduce configurable dimensions, accept any shape, add an image mode,
+replace/rebuild the helper, add flags or change SDK Qt image capture. Keep the
+helper SHA/exact single output path, original deadlines, same-candidate guards,
+one capture and preservation logic unchanged. Only future separately reviewed
+source/private packets may consume this profile; there is no retry of spent8b3f.
+
+Historical f38748da89fdbebfdedca17bc475e65b4305dd04:examples/screenshot.rs invokes
+take_screenshot/save_image with one FILE. At that revision src/device/screenshot.rs
+defines768x1024 overview dimensions, normalizes with nearest resizing and saves
+self.data, matching the actual image shape and helper log. This is documented
+historical source/observed behavior, not independently rebuilt installed-source
+equality. The underlying1404x1872x4 heap allocation is a separate source quantity;
+the saved PNG is a normalized overview, not raw native-resolution or physical EPD
+ownership evidence. Qt1404x1872 and overview768x1024 may be inspected for meaningful
+stable content, never arbitrary pixel-noise agreement or native image-pair authority.
+
+Saved-copy byte/dimension verification remains distinct from native resolution,
+window/physical ownership and image coherence. A future qualified same-candidate
+capture may set its own guarded success fields only after all original live checks;
+the profile never grants coherence/UI/native authority. Existing8b3f false fields
+stay false. Current cleanup requires separate independent local PNG/hash/profile
+verification plus fresh Main-only read-only remote hash/size/regular-path/restoration
+proof before an explicitly selected teardown. Preserve all local evidence and the
+original cleanup-unverified receipt. No historical SCP, recapture, input or source
+change is selected by this proposal.
+
+Focused review/verification should cover exact legacy shape success, full native
+shape refusal, wrong orientation/other shapes, size/hash/format failure, same live
+failure fields/deadlines and preservation. Continue prioritizing the real-device
+coordinate lead without adding instrumentation/framework scope: actual TouchBegin/
+End reached the retained Qt window at its bottom-left, while the Main helper request
+was logical90,260. These observer/receiver-local coordinates and duplicate counts
+do not establish the mapping cause or handler acceptance.
+
 Packet-preparation correction: Main's independent binary rebuild matched both
 artifacts, both mocs and both ELF reports, but full private operator review blocked
 the first8b3f packet before transfer/activation: its arming command retained a literal
