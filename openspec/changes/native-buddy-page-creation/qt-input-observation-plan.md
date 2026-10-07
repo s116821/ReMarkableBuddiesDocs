@@ -876,3 +876,23 @@ still preserves its original pending-rebuild state. Main's receipt reports81
 recursive binding occurrences checked, not81 unique files. Exact packet reviews
 remain pending; this rebuild does not select device execution. Source basis:
 current receipt readback and direct local byte comparisons.
+
+Astra accepted exact frozen66f5 manifest38c212ba after complete private packet
+review and81 recursive binding occurrences checked. Sol read and hash-verified
+the initial packet receipt SHA256
+`9e406de262621cb4304d9267e108d61a29f44633818c9d60c5d9183a53132ec2`
+and separate later rebuild comparison SHA256
+`bae14ed21e2696361e09dfae6b1268e7269e4a44a086e7b59208f2c4f327bf2a`.
+The supplement closes the initial receipt's pending rebuild comparison while
+preserving both records. Astra independently regenerated the private source through
+exact-equality Save/PrepareOnly, retained eight unchanged packet files, reviewed
+full operator/helper/profile/budget/baseline/clock bindings, and passed arming,
+logging, mock transport, shell syntax and producer7/head0 fixtures. Astra read
+Main's build receipt/log/exit and compared all six outputs byte for byte; it did
+not rebuild or contact the tablet. No blocking packet finding reported.
+
+This acceptance covers preparation/artifact/packet only. Main's final packet
+decision, fresh live preflight, provider compatibility and runtime selection remain
+separate. Nonce remains reserved and unspent; runtime visibility/coverage/delivery
+and native/render/UI authority are unproved. Source basis: current Astra review
+report and hash-verified private receipts; no device qualification inferred.
