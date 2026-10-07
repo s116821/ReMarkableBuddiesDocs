@@ -2207,3 +2207,27 @@ Source basis: locally inspected raw/Qt/operator receipts and Buddy/SDK source;
 visual/post-fixture statements are Main/Astra review reports, not Sol device actions.
 Upstream sources support the proposed model only. Primer behavior and its safety
 premises remain inference and open gates; the successful trial did not exercise it.
+
+#### Qualification clarification after independent review
+
+Source selection remains held. Bound AVAILABLE kernel packet headroom, including
+preexisting dev->num_vals, any synthesized slot event and physical interleaving;
+11<=maximum capacity alone is insufficient. A raw grammar refusal after an early
+flush cannot undo a primer-visible event or UI action. Reader quiescence alone does
+not prove an empty unflushed kernel packet. The exact qualified contract must rule
+out such a flush before final axes, or this candidate cannot be selected.
+
+Test EVERY accepted-write prefix, including failure before tracking1 and after
+only one final axis, followed by the existing cleanup release/SYN. Model both fresh
+and retained exact Qt consumer state and prove that no primer or mixed P/F state
+becomes an actionable press. Release attempted plus ownership refusal establishes
+neither that property nor complete cleanup. Astra's static consumer review reports
+X/Y can allocate default-state contacts before tracking, and a tracking-1 write may
+deduplicate while the kernel remains released. This is a qualification concern,
+not evidence that an unintended action occurred. Exact target per-SYN/state behavior
+and partial-write cleanup safety must be resolved before source selection; do not
+repair the gap with an extra tap/frame, broader whitelist or an unreviewed fallback.
+
+Source basis: Astra's exact9911796 independent review and reported target-consumer
+static findings, with upstream kernel buffering semantics already cited above.
+No source implementation, target experiment or additional hazard claim is made.
