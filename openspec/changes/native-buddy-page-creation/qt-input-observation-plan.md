@@ -2510,3 +2510,50 @@ admission and independent local model outputs; SDK qt_page_facts_entry.h accepte
 and deadline source. Historical hardware findings remain Main-owned. No new nonce
 or target action was selected by Sol; Task4.11 and native/product qualification
 remain unfinished.
+#### Spent840 setup success, capture UNKNOWN and next allowance proposal (2026-10-07)
+
+Main's840e9708b7ec48a2b101cca986134d06 is SPENT/NO REPLAY. Saved setup transport
+exit0/non-timeout/post-admitted with10000ms allowance and all11 phase records proves
+normal completion of the selected setup command. This trial's observed first/last/
+post waiting proofs took approximately1.93/1.87/1.81s, helper0.30s and marker span
+6.50s. These observations do not identify the earlierbf3 timeout phase or cause.
+Sol independently verified strict four-field echo and decoded all four raw files:
+released seed164,1396; six ABI16 events at native201,1360; complete release with
+111818us hold. UI acknowledgement/native qualification flags remainfalse.
+
+The single capture's5000ms transport timed out with remote_exit_unknown=true;
+no facts request/publication or retry followed. Exact capture source retains THREE
+full same_waiting checks, correcting the prior two-check overhead description.
+Saved screenshot stderr reports approximately0.955s helper capture and PNG saved
+by pid7161; neither establishes normal SSH completion or the timeout's exact phase.
+During recovery Main preserved PNG149068B, SHA256
+c1320eee6c47d3df1080a729db09e3490bfdc376e9066abcd3ac28952a996ad4.
+Sol fully decoded768x1024 and visually inspected the PDF's printed page1; Main's
+full visual review matched fixture Page1of6. This is engineering navigation evidence,
+not successful capture transport, development facts or native/render authority.
+
+Operator receipt408316fb538715c3868bb283831e5433a045248a3d80db1da293c06ec3bbd137
+records restoration/Qt cleanup and facts/callback verificationfalse. Main reports
+the original operator had already restored/removed Qt root when the guarded restore
+precheck found it absent; no second restore was executed. Saved final stock8189/
+start228845593, same boot, three active services/original policies/empty job and
+all14 fixture hashes match baseline independently. Exact cleanup script proves
+CURRENT absence of owned helper/shared screenshot processes, checks all preserved
+raw/PNG hashes before their removal and returns its success marker. That current
+absence does not upgrade historical UNKNOWN capture completion.
+
+Next proportional SOURCE direction: select10000ms for capture as well as setup,
+retain all three capture proofs and bounded stdout phase diagnostics; all other
+manual transports retain default5000ms. The whole allowance must fit strictly in
+the ORIGINAL150000ms host deadline with post-return admission. SDK setup120000ms,
+accepted getter5000ms and rollback/restoration clocks stay unchanged. Timeout or
+refusal stops without capture retry/publication. No helper change, split proof or
+new timing framework follows; exact diagnostic source/packet review remains due.
+For a future fresh preparation, fix logical90,260/native164,1396 BEFORE launch.
+Current seed201,1360 is inference from840 delivery; the fresh released/BOTH-axis
+difference gate still decides admission, and refusal consumes the attempt without
+alternate point or adaptation. No next nonce or target is selected by this note.
+
+Source basis: locally reviewed saved840 transport/phase/raw/PNG/operator/post-state
+and exact cleanup evidence, plus Main's hardware/recovery report. Sol operated no
+tablet. Task4.11 and native/product qualification remain unfinished.
