@@ -1102,3 +1102,13 @@ Nonce remains reserved and unspent, Task4.11 open, older facts paths held and al
 spent evidence immutable. Source basis: current Main selection/supplied baseline,
 local hash/ELF checks and fresh host preparation/provider fixtures. Main owns any
 later runtime selection and canonical evidence closeout.
+
+Main's independent1a48 rebuild subsequently passed, exit0 under the same pinned
+image/read-only source/network-none/TMPDIR conditions. Sol read/hash-verified
+receipt SHA256 `a6ca54670bf4ef8f220bff50765a850756f78e669338e1605ed6ab217186293e`
+and directly compared all six outputs byte for byte: payload, publisher, two ELF
+reports and two moc files equal. A separate Sol comparison receipt closes this
+local rebuild gate; original manifest/pending fields and initial preparation
+verification remain historical and immutable. Exact packet reviews are still
+separate; no runtime selection follows. Source basis: receipt/log/exit readback
+and direct local file comparisons.
