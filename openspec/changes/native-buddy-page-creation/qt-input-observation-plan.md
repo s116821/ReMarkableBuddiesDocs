@@ -1242,3 +1242,41 @@ proposal acceptance and Main's separate source selection; no fresh nonce selecte
 Source basis: saved Main target dummy and Astra host command fixture reports plus
 local script/receipt readback. dd replacement/test requirements and optional
 bounded-error retention are engineering proposals awaiting exact joint review.
+
+### Scope steering: complete dummy gate and separate bounded postmortem
+
+Main relayed parent Work steering: no new native startup/input solely to retry
+logging. Main selected dd plus bounded private stderr Base64 for the proposal,
+with complete corrected-command qualification before any later trial. Main+Astra
+must review this exact owning scope before source implementation or postmortem
+extraction; no automatic next native cycle.
+
+Required target dummy gate uses the complete corrected collection command and
+original dedicated host acquisition/decoder against actual installed utilities,
+substituting harmless producers only. Cover normal/below cap/exact65537/cap+1,
+fragmented/multibyte output and final trailer, stderr0/1024/overflow/binary Base64,
+early and late producer errors, independent producer and limiter statuses,
+missing/failing limiter and timeout under the existing single5s deadline. The
+previous two dd dummy cases354/1309ms are preliminary, not this complete gate.
+No general harness expansion, journal query, startup/input/capture/service change
+is required by dummy qualification. Source and packet/runtime gates remain separate.
+
+Parent authorized an existing unattended read-only investigation through a
+separately recorded bounded postmortem, restricted to the EXACT original1a48 scope:
+candidate PID30542/start227092434, bootb16bbeaed50b4130a9412548f41145fb,
+since@1791357594 and until@1791357616. Main alone may execute after exact proposal
+review and corrected-command qualification. No time/boot/PID extension, broader
+unit dump, restart, input, new image capture or automatic retry. Bind these original
+scope values, original diagnostic/receipt hashes, corrected command/helper/source,
+bounded transport bytes/status/Base64 error, filter/records/hash and timestamps
+in a NEW private postmortem receipt. It must never replace/edit the original
+one-shot receipt5480fe2f or diagnostic2486ee73, whose logging result stays unknown.
+
+Any recovered records are historical boot/PID/wall-enclosure observations only.
+They cannot retrospectively prove live identity, exact attempt/event attribution,
+complete coverage, input delivery, navigation, physical EPD or authority; retain
+the returning-wall-clock/reused-PID caveats. Saved candidate start remains context,
+not a journal field/generation filter. No records/expired retention/error remains
+unknown, no scope widening. Preserve all1a48/66f5/4254/8b source/packets/receipts.
+Source basis: current Main-relayed parent steering and authorization; all proposed
+implementation/qualification/postmortem specifics await exact joint review.
