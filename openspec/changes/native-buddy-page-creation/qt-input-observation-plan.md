@@ -2356,3 +2356,38 @@ Source basis: current Main proposal selection and fresh stock/preservation repor
 local Buddy facts operator/positive waiting/publisher/proof/budget and SDK facts
 entry/session reads. The sequence and frozen-input requirements are proposed;
 no new artifact, packet, trial or target observation was performed by Sol.
+
+#### Spent READ-FACTS attempt and narrow readiness proposal (2026-10-07)
+
+Main's freshdf1f5ff8197a4944977fee290714fa8c is SPENT/NO REPLAY. One operator
+launch was followed by an initial positive waiting transport exit90, timeoutfalse,
+post-admittedtrue with empty output. No setup tap, capture or facts publisher was
+dispatched. Later read-only pre-restoration evidence shows candidate2045/start
+228600935 and a full waiting-facts record at entry2740ms. That establishes later
+readiness, not the specific earlier exit90 branch. Final callback
+facts-entry-request-context-refused does not retrospectively prove that branch.
+
+Sol independently matched saved operator receipt2329c69e568ac45ff82255d6024ede30de1564811b3aae6fb5825d0913a451bc:
+restored/Qt cleanuptrue; facts/candidate/callback verificationfalse. Saved post-state
+stock2811/start228604658, same boot, three services/original policies/empty job and
+all14 fixture hashes match the frozen baseline. Staged-only cleanup output and
+exact script support removal of the hash-qualified helper/baseline PNG with rawdir,
+facts PNG and Qtroot absent. Main owns the hardware observations; Sol reviewed saved
+bytes only. No development facts, input delivery or integrated result was achieved.
+
+Propose one source-bound finite READ-ONLY readiness observation session before the
+single setup action. Keep the original earlier host origin, entry120s/live150s and
+all recovery clocks. Distinguish an explicitly documented pending startup stage
+(code3) from a complete positive waiting proof(code0) and a refused/unknown stage.
+Never retry opaque existing check-waiting exit90. A complete proof freezes the
+same validated tuple; malformed/identity/hash/closure/request failure or unknown
+transport stops. Each observation needs its exclusive evidence claim and existing
+finite whole-allowance pre/post admission. Freeze a finite pass cap before source
+selection; no timer reset, sleep, input/capture/publication retry or new framework.
+The narrow pending-versus-refusal wrapper and failure cases require review before
+any implementation/preparation selection. No next nonce or target action follows.
+
+Source basis: Main's current result report and locally reviewed initial transport,
+later restoration/post-state, callback, receipt and staged-cleanup evidence. Initial
+failure cause remains unknown; the readiness explanation and next session are
+inference/proposal only. Task4.11 and all native/product qualification remain open.
