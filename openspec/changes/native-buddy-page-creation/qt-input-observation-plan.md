@@ -1323,3 +1323,68 @@ packet SHA256
 `1805102b8f4755e4cf93654968952c204d8306f6c141d8ed5a13b6a5c8ef3246`
 await exact review and Main-only actual-target qualification. r2 host passes are
 historical and cannot close the tightened target gate. No new native trial.
+
+### Qualified dd limiter and private stderr source freeze (2026-10-07)
+
+Main selected the minimum source implementation after the complete r3 actual-target
+DUMMY gate passed all fourteen cases and saved byte readbacks, runner exit0. Gate
+receipt `dd-complete-dummy-qualification-1a4816bb87f543bdbb14bba901aac25a-r3/main-target-complete-gate.json`
+SHA256 `02614df35cf2d2e0f41ac250317074f0fdeb753fc30f250e485a9e3fa7a9e93a`
+binds the previously frozen r3 runner/commands/packet and all fourteen result files.
+Astra independently accepted the complete target gate. Sol locally verified all
+fourteen result hashes, pass flags and Base64 byte counts, and rebuilt all fourteen
+commands from the implemented source builder: exact equality to the qualified
+frozen commands. Sol performed no device action and changed no qualification files.
+Belowcap65536 completed1790ms; sentinel65537 and cap+1 completed1271/1317ms;
+timeout5057ms remained unknown. Early/late producer7 under outer errexit, exact
+limiter7/127, fragmented/multibyte bytes and stderr1024/1025/FFFE all passed.
+
+Buddy source commit `2791a25ad3de394cddcb759ecc5c9e84d099e371` replaces only the
+fixed query tail with `dd bs=1 count=65537 2>/dev/null`, retaining producer status
+and the separate transport/limiter status. Only dd stderr is suppressed. Helper
+SHA256 is `e330756724b9ae978f41f3e375884175281fbc9305cdea8a203eff18e3b09a7c`;
+the operator's fixed helper guard is updated accordingly. The private additive
+diagnostic retains already acquired stderr losslessly as Base64, at most1024 bytes
+or1368 characters, beside byte counts/exit/overflow/timeout/acquisition-error/elapsed
+metadata. It requires no UTF8 decoding and performs no second read. Acquisition
+is explicitly attempted or not-attempted; missing endpoints invent no transport
+or error content. Nonempty stderr still forces unknown. Diagnostic persistence
+failure remains additive and grants no original GUI/pair/recovery/facts authority.
+
+Sol verification: 86 journal assertions, 360 collector assertions, 9 environment
+shell cases, 81 exact-provider mawk and81 BusyBox cases, unsupported dash pipefail
+refusal, and git diff check passed. New collector checks run the actual recovery
+block for empty/binary/cap/overflow/timeout/acquisition-error stderr, roundtrip the
+saved private JSON bytes, verify unchanged original flags, and cover missing
+endpoints plus diagnostic persistence failure. Existing dedicated stream tests
+continue to enforce caps and the single5s deadline. SDK/schema, generic Native
+collector, startup/input/recovery behavior, development default-off/SOURCEONLY
+arming and all authority flags remain unchanged. No raw journal stdout is retained
+by this minimum source change. No SDK repin, new nonce, runtime packet or native
+trial is selected. Source freeze awaits independent Main/Astra acceptance.
+
+The separate historical postmortem r2 is spent. Receipt SHA256
+`d66f5c85b510bb5b6743093f96fe4653ee339a6938bbc455bd90a52e0266e0df`
+reports exit0/823ms/30304 stdout bytes/stderr0, no overflow/acquisition error and
+producer0, but strict decoding remains unknown: Non-scalar journal field. Its38
+pre-parse rows are not38 validated records; three processed rows were dropped,
+and refusal occurred at the fourth record. The precise field/kind was not retained;
+raw hash cannot reconstruct discarded bytes. No point-event absence or array-kind
+claim follows. Original one-shot5480fe2f/diagnostic2486ee73 remain immutable unknown.
+
+Main relayed explicit parent authorization for ONE additional, distinct forensic
+read restricted to the same boot/PID/22s wall enclosure above, after exact narrow
+runner review. Only this private forensic receipt may retain the already acquired
+raw stdout, at most65537 bytes, as Base64 with count/hash/status before offline
+parsing; no raw logs are printed or published canonically. Preserve incomplete
+acquisition for offline analysis without repeating. This is not a general source
+stdout-retention change, decoder relaxation, fresh startup/input/service/capture,
+scope widening or retroactive promotion of either spent unknown receipt. Main
+alone may execute after exact review; Sol does not operate the tablet. Any later
+parser proposal must use the actual offline JSON shape rather than guessing or
+skipping refused identity fields. Task4.11 remains open.
+
+Source basis: current Main/Astra messages and explicit Main-relayed parent selection;
+local source diff/tests and exact saved private qualification/postmortem receipts.
+Private evidence is local and has no public link. Interpretations and limits above
+are distinguished from saved transport results.
