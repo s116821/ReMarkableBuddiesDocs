@@ -2598,3 +2598,33 @@ binding/selection remains separate. No new nonce or target action by Sol.
 
 Source basis: current source-only capture/composite/audit, independent local Linux
 models and existing publisher/collector source. Task4.11 remains unfinished.
+#### Spent46b normal setup/capture, visual refusal and verified recovery (2026-10-07)
+
+Main's46b972061f574e288adb8627e54d8177 is SPENT/NO REPLAY. Sol independently
+reviewed setup and capture receipts: both normal exit0, non-timeout, known remote
+exit, post-admitted under their selected10000ms allowances and same original origin.
+Independent raw decoding proves six ABI16 events from released seed201,1360 to
+native164,1396 with complete release101310us; UI/native flags remainfalse.
+
+The captured full image shows My Files. Its178958B SHA256
+a8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b
+is identical to the saved baseline image. Sol visually inspected the full image;
+first-tile Page1of6 is a thumbnail/library label, not an opened document page.
+Main correctly recorded VISUAL_REFUSAL and did not dispatch final publication.
+Normal input/capture transport and released raw events do not establish navigation,
+UI acknowledgement, development facts or native authority. Cause remains unknown;
+no replay, adaptive point or additional input follows from this result.
+
+Exact owned helper/raw/gui-image cleanup was performed only after normal helper
+returns and preserved local/remote hash checks; saved script and success outputs
+support that teardown, with baseline image removal separately recorded. Later
+operator receipte36ec8d9f9d47399489b20ce7f7ffc759639595c5cde80392bb4930fa1302c90
+verifies restoration/Qt cleanuptrue and facts/callback/candidate verificationfalse.
+Saved final stock11745/start229064084, same boot, three active services/original
+policies/empty job and all14 fixture hashes independently match the baseline.
+Automatic recovery is now verified; the visual gate and unfinished facts/product
+work remain unchanged. No next trial/source proposal is selected by this checkpoint.
+
+Source basis: saved46b transport/raw/images/visual refusal/cleanup/operator receipt
+and before/after-state files; Main owns hardware execution. Sol made no tablet
+changes. Task4.11 and native/product qualification remain unfinished.
