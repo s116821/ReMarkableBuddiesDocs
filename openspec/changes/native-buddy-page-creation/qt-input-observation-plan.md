@@ -1280,3 +1280,26 @@ not a journal field/generation filter. No records/expired retention/error remain
 unknown, no scope widening. Preserve all1a48/66f5/4254/8b source/packets/receipts.
 Source basis: current Main-relayed parent steering and authorization; all proposed
 implementation/qualification/postmortem specifics await exact joint review.
+
+Main-only complete dummy qualification packet is locally prepared, not executed
+on target by Sol. Runner SHA256
+`c9752705d0bcc23c28cd854e2c7f4390c9e42c49ed90c679a42647ab673a1178`,
+commands SHA256
+`9ebd808f310a5ae65f6062cda8d3f6c096b33a3fb440e550f48673a9f5c9088e`,
+packet SHA256
+`5eb8519d49b9436af5b7557b8648eed4f602f8a33132c9c4e75ae1e3271dff66`
+bind fourteen fixed harmless commands from the actual source builder with only
+producer/limiter substitutions. Preparation twice passed exact file equality;
+explicit ExecuteTarget is Main-only after review. r1 retained, deterministic
+ordered-JSON r2 authoritative. No actual journal function/remote file/service/input
+or new capture. One timeout producer sleeps6s and eventually exits, while host
+deadline stays5s; no guarantee of remote cancellation.
+
+Normal and late-error fixtures emit valid JSON plus a standalone final trailer;
+early producer7 emits a standalone trailer without records. Cap fixtures count
+complete stdout INCLUDING trailer at65536/65537/65538. Other cases exercise
+fragmented/multibyte records, stderr1024/1025/binaryFFFE, missing/failing limiter
+and timeout. Actual dedicated decoder checks are part of the runner. Sentinel
+acquisition may stop before natural limiter exit, so no limiter-success inference
+from exit=null. Main's preliminary no-newline producer7 remains status-byte proof
+only. Exact target qualification/review is pending, source remains unchanged.
