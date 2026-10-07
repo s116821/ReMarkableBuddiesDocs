@@ -2275,3 +2275,84 @@ into insertion correlation, active-page authority or integrated navigation succe
 Source basis: local crate source and exact vendor binary disassembly; Main's target
 kernel report and pinned official vendor-family review; parent continuation limits.
 Application acceptance and primer safety remain unproved. No target operation by Sol.
+
+### Proposed fresh READ-FACTS purpose trial (2026-10-07)
+
+Main selected proposal/review of one fresh READ-FACTS development trial, not its
+preparation, build, packet execution, mutation or integrated qualification. Reuse
+the independently reviewed FactsEntry/PageFactsSession, facts-request publisher,
+strict success/refusal validators and singleton recovery lifecycle. Keep setup
+120000ms from entry startup, accepted getters5000ms including queued delay, live
+150000ms from host observation before arming, rollback initiation180s from its
+prearmed independent timer and restoration TimeoutStartSec240s. These distinct
+clocks are unchanged; waiting marker elapsed text is not a fresh clock reading.
+
+Purpose: after one bounded deliberate open of the unchanged six-page fixture,
+collect a fresh development observation of its compatible active receiver/SceneView,
+document/current page/index and exact ordered identity/mapping. Main reports current
+stock1330/start228219744 is MyFiles after restoration, with all14 fixture files
+unchanged. Spent50d289's PDF opening establishes setup feasibility in that candidate,
+not current stock owner or a READ-FACTS result. Refresh the baseline at selection;
+do not replay b3e3,50d289 or any other spent nonce/configuration.
+
+The source amendment is limited to the purpose-specific setup/capture/publication
+sequence in the existing operator. SDK facts purpose remains unchanged and
+developmentInputObservation=false; do not publish an observation-end token or route
+facts through the input-observation branch. No generic supervisor, journal repair,
+primer implementation, extra getters, retry, direct-open method or mutation follows.
+
+1. Main alone verifies fresh positive `facts-waiting` using the fixed check-waiting
+   contract: nonce, PID/start, root dev/inode/modes, executable/payload hash/maps,
+   service MainPID/empty job and absence of closure/restore/callback/request files.
+   Freeze the existing lifecycle's finite transport/action limits and live-clock
+   admission; do not infer time remaining from the unchanged waiting marker.
+2. Invoke exactly once Buddy89fd9d's accepted compatible raw helperde0db9f6,
+   `tap-echo-raw X Y PRIVATE_DIRECTORY`. Freeze logical X/Y and their exact native
+   mapping within the freshly verified fixture tile interior before packet review.
+   Its internal fresh stable released-slot seed must differ on BOTH native axes;
+   seed equality/refusal consumes this attempt, never adapts the point or retries.
+   Keep existing contact/release,100ms/1s/50ms limits, ABI16 and bounded8192-byte raw
+   evidence. No primer or coordinate-conversion change is selected.
+3. Require complete owned raw echo and completed release, preserve its four private
+   outputs, then repeat the SAME positive waiting proof for the SAME candidate
+   PID/start/root. Failed/unknown helper, changed identity or failed positive proof
+   stops publication and retains recovery duties. Echo grants no UI authority.
+4. Capture one fresh GUI image under positive waiting/current-generation checks,
+   retrieve/hash and visually inspect it: the expected fixture must be OPEN at
+   Page1of6 before publication. Freeze capture helper/profile/hash, dimensions,
+   byte cap and finite timeout in the packet. Facts-only entry does not emit the
+   input-observation Qt grab; do not claim that image provenance by association.
+   Capture/transport/interpretation failure or another visible page stops. The
+   screenshot is a purpose prerequisite, never proof of native owner identity.
+5. After the final same-generation waiting check, invoke the fixed facts publisher
+   once. Its exit proves token publication only. One consumed request runs the
+   existing bounded facts session once. Apply exact success23/private callback4
+   proof or accepted refusal proof; additionally require this purpose's current
+   index0/current_page_id=expectedOrder[0]. A different page can satisfy generic
+   facts decoding but fails this trial's Page1 purpose. Do not repeat getters.
+6. Preserve live and historical results separately; independently verify stock
+   restoration, exact task cleanup and all14 unchanged fixture hashes. Restore even
+   after setup/capture/publication/refusal failure. Historical collection cannot
+   upgrade a failed live proof or amend a spent receipt.
+
+Before source selection Main/Astra review this amendment and the exact existing
+source triple. Frozen inputs still required: fresh unspent nonce and remote root;
+current six-page expected document/order/first-page identity and14-file baseline;
+stock generation; exact SDK facts source/config without observation mode; payload
+and publisher ABI/provider provenance; raw helper89fd/de0 binding; fixed logical/
+native interior point; capture profile/artifact and bounds; operator/proof/budget/
+launcher/restore/check-waiting/publisher hashes and explicit artifact closure/cleanup.
+Only then separately select preparation/build and independently review complete
+artifact and literal packet bindings before any Main-only target action. Source
+templates' immediate SOURCE ONLY throw and spent literals are not runnable inputs.
+
+Success remains `development-observed-facts` with atomic_snapshot/native_authority/
+render_authority=false; raw ui_acknowledged/native_navigation_qualified remainfalse.
+It does not implement production owner acquisition, insertion correlation, SDK
+native Next/Previous, continuous input handoff, binding/write or integrated success.
+Those follow the existing SDK2.6/2.9/4.10 and Docs3.8 gates; task4.11 remains open.
+
+Source basis: current Main proposal selection and fresh stock/preservation report;
+local Buddy facts operator/positive waiting/publisher/proof/budget and SDK facts
+entry/session reads. The sequence and frozen-input requirements are proposed;
+no new artifact, packet, trial or target observation was performed by Sol.
