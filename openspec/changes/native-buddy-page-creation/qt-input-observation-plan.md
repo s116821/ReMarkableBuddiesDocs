@@ -2084,3 +2084,36 @@ Libm is not the offending provider. Weak symbol bindings do not waive that versi
 requirement. Preserve both vendor artifacts as build evidence only; do not select,
 transfer or execute them. Rebuild unchanged89fd9d source using an inspected older
 cross sysroot, then check exact provider/version/symbol coverage before acceptance.
+
+Compatible rebuild of unchanged89fd9d source used existing pinned cross image
+`sha256:30e0b69c3728006c21ccbe1341ecef820d30afa9d48c6a5a745ba86155631911`
+with GCC9.4, without acquisition, installation or a source workaround. Locked/
+offline ARMv7 release development and feature-disabled builds passed, including
+the development16-byte ABI assertions. Development10124880 bytes,
+SHA256 `de0db9f6277170a12e40c51ff356046b11eaa738d1b0d36a5e148e9225d3a4e7`;
+feature-disabled10111212 bytes,
+SHA256 `1d5039eb4876d21998b775909008725c0cd1969cd51b0a22ad45e78b9e02bdf7`.
+Raw CLI/evidence markers occur only in the development artifact.
+
+Both artifacts' exact static audit passed20 provider/version requirements and133
+required symbols against Main's six freshly retrieved target DSOs, hash-bound in
+private receipts. Named provider version definitions and global loaded-provider
+symbol/version exports are separate checks: glibc's merged pthread/dl functions
+may resolve in libc while compatibility DSOs retain their version definitions.
+Seven optional unversioned weak imports are reported separately; no version
+requirement was waived. Needs: libc GLIBC2.30 maximum,libm2.29,pthread2.4/2.12,
+dl/loader2.4 and libgcc GCC3.0/3.5/4.3. Full ELF and per-symbol matrix receipts stay
+private; no target library copies are published. Earlier source tests remain
+applicable because source is unchanged; this is artifact compatibility evidence.
+
+Main's host QEMU invalid-argc preflight with all six actual target DSOs reached the
+expected tap-echo-raw argument error/exit1 before Touch construction or input.
+Initial host library-path setup failure is retained separately; corrected guest
+LD_LIBRARY_PATH required no source/artifact change. This checks loader startup
+only, not native kernel input, timing, echo, Qt delivery or navigation. Vendor
+artifacts remain held; compatible artifacts require independent final review and
+Main trial selection. No worker tablet operation occurred.
+
+Source basis: local build outputs and exact target-provider static matrix, plus
+Main's QEMU report and its locally inspected stdout/stderr receipts. Target provider
+retrieval generation guards are Main-reported. No new native behavior is inferred.
