@@ -806,3 +806,20 @@ separate; these logs are hypothesis-narrowing diagnostics, never exact event/att
 identity, complete coverage or delivery proof. Unknown remains additive to original
 flags. Exact repaired source/owning-doc review by Main+Astra remains required;
 no artifact, fresh nonce or native run selected. Task4.11 remains open.
+
+### Independent repaired-source acceptance
+
+Main and Astra independently accepted exact Buddy
+`15cd2b6928104d50a18046a7cea5fdb80d021df6` with owning Docs
+`a051b0761db06c0287cb05608df61bc0b1af3ffa` for the minimum source-only contract.
+Both reported fresh86 journal/334 collector/9 actual-shell environment checks
+passing, full repaired source/doc delta review and diff checks. Astra additionally
+confirmed strict OpenSpec validation. Clock-domain and fail-closed environment
+findings are resolved in this exact source; prior held freezes remain historical.
+SDK6504 is unchanged and was not rerun. Source basis: current Main/Astra exact
+review messages; acceptance is not inferred from host tests alone.
+
+This closes the source review only. No artifact, fresh nonce, private packet or
+native execution is selected by this acceptance. Runtime category visibility,
+complete coverage and input delivery remain unproved; Task4.11 stays open. Main
+owns any later selection and canonical Mem/Drive/Linear evidence closeout.
