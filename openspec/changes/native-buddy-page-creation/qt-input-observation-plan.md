@@ -823,3 +823,44 @@ This closes the source review only. No artifact, fresh nonce, private packet or
 native execution is selected by this acceptance. Runtime category visibility,
 complete coverage and input delivery remain unproved; Task4.11 stays open. Main
 owns any later selection and canonical Mem/Drive/Linear evidence closeout.
+
+### Reserved66f5 preparation only
+
+Main selected fresh reserved, unspent `66f5cdd71b9d431a8de88f44dd493408` for
+preparation only from accepted Buddy15cd/Docsa051, prose closeout048a and unchanged
+SDK6504. Private preparation manifest SHA256
+`38c212ba611b4cebd3ca0b55cfd02054c53369463b53aa9dd4ebfc853615ddb2`
+binds the final joint source-acceptance receipt422860c3, fresh stock baselinefc2280dd,
+and actual executed baseline command12d000f3. Stock PID/start27500/226634202,
+fourteen fixture hashes/six-page order/content9f2bac7 match the supplied baseline;
+Main viewed before image My Files/Page1of6 thumbnail, not an opened-page result.
+These private evidence relationships were locally hash-checked, not recollected
+by Sol from the tablet. Earlier baseline templates/receipts remain historical.
+
+Pinned vendor416c7a7 build passed with read-only source mounts/network disabled,
+private output mount and TMPDIR=/out. ARM payload SHA256
+`6ef4d9b0b8995deab8af250724cb5b34343562766f9bf1d27c404cb818f7661e`
+and publisher SHA256
+`0c35996c4e10df3deb32e368fc121b250b4ddb6ad7f97310aa0f1b183247a962`
+have checked ELF32 ARM hard-float metadata without Qt private symbol versions.
+The fixed private logging opt-in is true and frozen candidate launcher flag1;
+helper bytes match accepted source. Device-frames-v1, legacy768x1024 overview,
+single40f496 tap90,260, one end/Qt/df745 capture, original deadlines/policies and
+preservation remain bound. No separate clock helper or SDK schema change.
+
+Repeat PrepareOnly passed with eight byte-frozen packet files. Exact expanded
+arming binds the actual payload hash/path with no zero operational SHA. Logging
+checks bind opt-in/helper/profiles and actual pre-restart endpoint expansion;
+synthetic query expansion is clearly a host fixture, not acquired target clocks.
+Ten transport assertions use mocked Native, no SSH. Shell syntax passed for eight
+templates, build/expanded arming/activation/synthetic query and four packet scripts.
+Prefix-copy failures are retained as r1/r2 scripts; initial container temporary-file
+allocation failed before TMPDIR correction; a transport JSON mistakenly named.sh
+was preserved as owned-transport-lines.json and syntax sweep then passed.
+
+Main independent full-byte rebuild and Astra exact packet review are pending.
+No transfer, activation, input, end publication, service change or native observation
+was performed by this worker; runtime category visibility/coverage/delivery and
+all native/render/UI authority remain unproved. Task4.11 stays open. Source basis:
+Main's current preparation selection and supplied baseline, local hash/ELF checks,
+host build/packet fixtures. Main owns canonical evidence closeout and any execution.
