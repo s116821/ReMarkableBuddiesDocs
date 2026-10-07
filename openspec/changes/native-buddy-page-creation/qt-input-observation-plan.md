@@ -1882,3 +1882,67 @@ local GNU14.2 launch/wrapper/stdio/kill-path inspection, and accepted host-only 
 reviews. No historical startup timing is verified by the post-input capture values.
 Startup/protection/diagnostic/
 recovery behavior remains unqualified on the target.
+
+### Finite launch startup preparation addendum (2026-10-07)
+
+Sol independently reviewed and accepts SDK
+`57c03c809d0dacb2ed49a6f74deac46e70ed130b`, extending21737ca with the finite
+[startup sequence](https://github.com/s116821/ReMarkableOpenSDK/blob/57c03c809d0dacb2ed49a6f74deac46e70ed130b/openspec/changes/establish-native-platform-contract/launch-kill-discriminator.md).
+This is the current exact preparation contract; no launch/source implementation
+or device selection follows. The owning addendum still needs exact Main/Astra
+review. Retain all prior source, evidence and paused custom-server work.
+
+Use proposed MI asynchronous control with non-stop disabled and token-correlated
+command responses, one selected launched inferior and bounded outputs. Permit exactly
+THREE reported startup stops on a successful path, followed by TWO normalization
+capture stops. GDB-handled loader/software-step events are separate bookkeeping
+inside the30s/output caps; this does not claim only three kernel stops. Never skip
+or continue an unexpected reported breakpoint/signal/exit to find convenient data.
+
+1. At the initial program exec stop, verify launched identity/server provenance.
+   Install one temporary load catchpoint anchored to `(^|/)libepaper[.]so$` and
+   continue asynchronously once. No PRE/POST breakpoint is installed yet. Qualify
+   wrapper/shell exec events consumed internally by gdbserver separately.
+2. At the exact matching load catchpoint, verify its identifier/module and removal,
+   then bind actual executable mappings to ELF PT_LOAD offsets, file device/inode,
+   complete plugin/QtGui hashes and the launched generation. Missing/ambiguous
+   bindings or another reported stop refuse. Plugin load is not candidate Ready.
+   Continue once with NO normalization breakpoint while remaining Qt startup runs.
+3. After the independent existing Ready check passes for that running generation,
+   issue exactly one token-correlated MI interrupt. Accept only its qualified
+   expected all-stop outcome with SIGINT not passed on resume; an unrelated-stop
+   race refuses without another interrupt. While stopped, revalidate Ready,
+   generation, provider mappings/hashes, ARM state and both original words. Then
+   install PRE, beginning5s measurement, and resume once. The existing single input
+   requires this armed/resumed confirmation AND still-current candidate Ready.
+
+Reuse the bounded private input-observation-ready checker and its nonce/root/
+generation/setup-profile/expiry checks. Freeze the actual checker source/hash,
+MI command/token and expected interrupt-stop encoding before source selection;
+local Windows help output alone does not qualify remote behavior. At most300 Ready
+checks at a100ms minimum interval share the same30s startup ceiling. Per-read
+timeouts cannot extend it. Retain bounded source bytes for final accepted/refused
+Ready evidence and poll counts within the shared8192 cap, not every polling
+transcript. Ready appearing during the load stop still needs final stopped
+revalidation. No synthetic Ready, input while stopped or early-PRE fallback.
+
+The accepted original host fixture with checkpoints in its main executable does
+not exercise this sequence. Preparation needs an original bounded shared-library
+fixture using dlopen, a distinct fixed test-only module name/profile, independently
+emitted bounded Ready after initialization and multiple threads. Qualify delayed/
+missing/wrong-library load, Ready before/after load, missing/expired/wrong-generation
+Ready, interrupt races/unexpected stops and deadline exhaustion, followed by the
+same two captures and mandatory kill. No native libepaper bytes belong in that
+fixture, and its distinct library pattern must be frozen separately. Exact Windows
+client/standard server SSH qualification covers the complete path; existing
+vendor-GDB/QEMU main-executable tests cannot close these startup/protection gates.
+
+All launch/measurement/kill/helper-quiescence/stock-restoration, shared byte/diagnostic
+caps and engineering timing limits above still apply. Report failure spent/unknown,
+without another launch/input/interrupt, budget extension or custom attach fallback.
+Task4.11 and integrated navigation validation remain unfinished.
+
+Source basis: current SDK57c03c preparation proposal and local consumer/source
+inspection. Pinned Windows feature support is Astra-reported local tool evidence;
+Sol has not independently rerun those checks. Exact remote loader/interrupt/readiness
+behavior and startup timing remain unqualified.
