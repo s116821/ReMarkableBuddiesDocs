@@ -542,3 +542,55 @@ selection, fresh live preflight, current target providers/runtime and remote hel
 hash remain separate. No device action, physical/UI qualification, spent evidence
 promotion or task4.11 completion follows. Original8b/M3 remain preserved.
 Source basis: Astra report and locally read/hash-verified saved review receipt.
+## Spent4254 actual review checkpoint
+
+4254849c436844da8c765fe9fef92ec7 is spent, with no retry. Original receipt
+SHA36d714d78da4aed43b8888f5017c311aeecaa335605b4d086749842d6bb4d12a remains
+unchanged. Main's saved action shows one40f496 tap-echo90,260 with positive same
+Ready26823/start226631113 before/after, then one fixed end publication/exit0.
+Initial helper-stage wrong third service guard failed before mkdir; failed script
+and corrected rm-sync variant remain saved, with no input retry.91 transports,
+zero timeouts;43 exit0,44 exit3 waiting and four exit1 restoration readiness checks,
+including transient missing process maps. Retained verification.first-refusal is
+stock-cgroup-payload-absence exit1; later stock verification and exact cleanup pass.
+
+Completion SHA4e562319fbfdad4fdb1f36190b313f7cad7da71aeb404f8248e378ab79974a83
+passes the exact selected strict device-frames-v1 decoder for26823/226631113 and
+root19:730749; historical completion bytes equal original. accepted/sealed15138,
+grab15188, completed16290ms (1152ms accepted-end elapsed). Counts[1,0,1,0,0,0,0]:
+TouchBegin/End only, backend systemId string1/type2/present true, pointid1,
+relationship1, valid_mask7; local/scene/global all0,1871. No mouse, overflow or
+truncation. GUI generation/completion, Qt availability/saved copy, legacy heap
+saved/capture, same-candidate pair, restored and cleanup flags are true. Facts,
+old facts-callback/candidate-generation flags, native/render/UI authority and
+image_coherence remain false. Host heap capture27333..28698ms/live31822ms.
+
+Sol fully verified/loaded and visually inspected both PNGs: Qt1404x1872/450312B
+SHAcfaa6d3d9555f6509900a9d1a2771853c12f6871b3a258d5a16d6aab63caf74f;
+legacy768x1024/178958B SHAa8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b.
+Both remain My Files; first thumbnail Page1of6 is not opened-page qualification.
+Fixed legacy profile and hash checks pass; pair flags do not prove pixel coherence
+or physical EPD ownership. Original prepared packet bytes equal actual packet.
+
+Stock restoration and exact observer-stage cleanup succeeded; Main's separate
+helper teardown output also confirms exact helper-stage removal. Fresh separate
+Main post14-readonly script/output proves all fourteen exact hash/path pairs,
+regular nonsymlink guards and downloaded postcall.content hash9f2bac7e/exact six-page
+order. Sol read and checked those bytes against the selected baseline. Current
+stock27500/start226634202, three services active, original restart/kill policies,
+NRestarts0 and empty Job. Explicit correction: restore.sh --verify verifies stock
+service/process/unit/payload absence, not fourteen fixture hashes. Initial guards
+are not post-preservation proof; the separate post14 export supplies that proof.
+
+Saved actual-review-sol.json SHA7e4b5245c359cfddb4e74620dea6c2ac997cc25ec9eca0e8e1332ac78d95d418
+under input-observation-actual-4254849c436844da8c765fe9fef92ec7 binds original
+receipt, completion, decoder, images, action, cleanup and separate post14/content.
+Observed global corner as well as scene/local means local-only reporting discrepancy
+is insufficient. Duplicate/mouse delivery from8b is not necessary for this attempt's
+corner; this does not establish duplicates generally fixed, physical origin, live
+handler identity or which bounds/transform/filter caused the corner. No navigation
+fix, private ABI patch or native/UI qualification follows. Task4.11 remains open;
+source-only diagnostic success does not complete native delivery. Preserve8b/M3.
+Source basis: current Main action report, saved original actual files, selected
+PowerShell decoder, local full PNG decode/visual review and post14/content readback.
+No device operation or further attempt by Sol; no sync/archive/merge.
