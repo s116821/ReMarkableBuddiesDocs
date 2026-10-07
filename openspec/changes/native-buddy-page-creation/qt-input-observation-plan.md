@@ -864,3 +864,15 @@ was performed by this worker; runtime category visibility/coverage/delivery and
 all native/render/UI authority remain unproved. Task4.11 stays open. Source basis:
 Main's current preparation selection and supplied baseline, local hash/ELF checks,
 host build/packet fixtures. Main owns canonical evidence closeout and any execution.
+
+Main's separate66f5 rebuild completed with exit0 under the same pinned image,
+network-none/read-only source conditions and TMPDIR=/out. Sol read and hash-verified
+`main-66-independent-build/main-rebuild-review.json`, SHA256
+`4c6dcb8dd0aa649a0d2bbc6a51943d0227639b4bd293d211747c05bf425f3406`,
+then independently compared all six output files byte for byte (payload, publisher,
+two ELF reports and two generated moc files): all equal. A separate preparation
+verification binds this receipt and those comparisons; frozen manifest38c212ba
+still preserves its original pending-rebuild state. Main's receipt reports81
+recursive binding occurrences checked, not81 unique files. Exact packet reviews
+remain pending; this rebuild does not select device execution. Source basis:
+current receipt readback and direct local byte comparisons.
