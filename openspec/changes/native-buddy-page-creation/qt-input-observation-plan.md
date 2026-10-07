@@ -896,3 +896,50 @@ decision, fresh live preflight, provider compatibility and runtime selection rem
 separate. Nonce remains reserved and unspent; runtime visibility/coverage/delivery
 and native/render/UI authority are unproved. Source basis: current Astra review
 report and hash-verified private receipts; no device qualification inferred.
+
+### Spent66f5 actual: live guard refusal, no journal discriminator
+
+Main executed one40f496 tap90,260 and one end publication with positive Ready
+before/after for28361/226960370, then restored stock28907/original policies.
+Nonce66f5 is spent; no retry. Original receipt SHA256
+`ed9ddb2dd7434dce5eaaf2c34fd5bffb32c00b06a1f6da14c0fed59633b087ff`
+remains immutable. Transport69 (results[68], zero-based) exited1 at the live
+identity guard after completion transport68 exited0. Original GUI/generation,
+Qt saved-copy/heap/pair and cleanup flags remain false; restored=true, facts=false.
+The additive journal diagnostic is unknown/missing-endpoints: begin BOOTTIME/UTC
+was recorded but no guarded end endpoint, heap capture or journal query occurred.
+Logging enablement alone supplies no discriminator or runtime category evidence.
+
+Sol independently passed the typed historical completion decoder for exact
+28361/226960370/root19:736711. Completion SHA256
+`cca219744f301d9a10186a30310887d6517b5fc28cbce755cc1e8ea2e4b9836a`
+records counts[1,0,1,0,0,0,0], TouchBegin/End, device-present/systemID string1/type2,
+pointID1/mask7 and all local/scene/global frames0,1871. This is historical decoded
+evidence, not a successful live-generation gate. Native/render/UI authority false;
+physical origin/handler cause/navigation remain unknown. Task4.11 remains open.
+
+Main separately copied the already-existing Qt PNG; Sol independently verified
+its cfaa6d3d hash, full Pillow verify/load1404x1872 and visually viewed My Files
+with REM32 Page1of6 thumbnail. It is not an opened-page result or qualified paired
+capture; no heap image exists for this attempt. All eight actual packet files
+match preparation byte for byte. Fresh post14 script/output matches all fourteen
+baseline hash/path pairs, postcall.content hash9f2bac7/order six matches. Main's
+separate exact probe/helper cleanup scripts/output show exact paths removed,
+three services active, stock28907/Restart on-failure/Mode direct/Kill control-group,
+NRestarts0/empty Job. This separately closes cleanup evidence without rewriting
+original cleanup=false or attributing fourteen checks to restore.sh --verify.
+
+Sol separate actual review SHA256
+`7ce24d2391d4a392c5190b076300a4c6f84034c7616a35cc07e49eeca4c54082`
+binds local evidence/hashes/comparisons; later visual proof is separate. First
+host launch argument error never executed the script and remains preserved;
+corrected r2 was the actual launch. Main's additional read-only target synthetic
+test reports BusyBox awk NUL RS reads only the first environment record; reordered
+candidate LD after QT variables plausibly explains the guard refusal, but the
+exact failed predicate was not traced. Further device work is held. A narrow
+environment parsing proposal will be reviewed before any source implementation.
+
+Source basis: actual saved receipt/scripts/outputs, exact typed decoder, local
+hashes/full decode/visual inspection and Main's target-operation reports. Sol made
+no device action; cleanup interpretation is based on saved proofs. Guard cause is
+a hypothesis pending Astra's host diagnosis; no original flags are promoted.
