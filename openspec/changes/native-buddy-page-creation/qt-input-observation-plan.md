@@ -1655,7 +1655,14 @@ trace API. Breakpoint and memory-read implementation must be reviewed for these 
 Proposed first qualification path is installed native Windows gdb-multiarch15.2,
 explicit GNU/Linux OSABI, direct existing Windows ssh.exe -T stdio, and reviewed
 ARM gdbserver14.2 --once --attach. This is a concrete candidate for focused tests,
-not a qualified target path. No TCP listener, reconnect, --multi, arbitrary inferior
+not a qualified target path. Bind the exact installed client SHA256
+`7f581a2f21a2bde99930f394a5b6b0d9b547e8a9b690fad161eef3faa871f6a2` and
+server SHA06e575662e78e28142decba916b9a684f73ccf30c7ceaffb5873b4bdaf486670.
+The runtime consumer/tool entrypoint stays SOURCEONLY and default-unarmed; import
+or default invocation cannot attach. Main-only private preparation may arm the
+fixed reviewed development packet after exact source/utility/recovery gates, with
+client/server/provider/generation/mapping/opcode bindings and one-use claim intact.
+No TCP listener, reconnect, --multi, arbitrary inferior
 launch, credential copy or implicit custom bridge. If it fails required owned-fixture
 operations, hold and amend/review ONE fallback rather than silently substituting it.
 Freeze exact commands, paths, hashes and dependency evidence for the selected path
