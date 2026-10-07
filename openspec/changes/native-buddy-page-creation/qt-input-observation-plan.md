@@ -1965,3 +1965,71 @@ source change was made. This records the finding only and does not advance prepa
 
 Source basis: current parent hold relayed by Main, local checker bytes/hash and
 previously inspected GNU launch semantics. No target checker behavior was exercised.
+
+### Focused tap-axis diagnostic proposal (2026-10-07; source selection pending)
+
+Debugger work remains paused. Add only a development-input-diagnostics variant of
+the existing helper: `tap-echo-raw X Y PRIVATE_DIRECTORY`. Existing tap-echo and
+production input policy stay unchanged. Main owns any later freshly bound logging
+trial and tablet operation; this proposal authorizes neither implementation nor input.
+
+Use the existing independent RawDevice reader whose live descriptor inode/rdev
+matches the writer, without another reader, grab, extra tap or writer-event trace.
+Immediately before the existing owned window starts, reuse the existing seed ioctl
+routine on that reader and retain its ABS_MT_SLOT and tracking/X/Y result buffers.
+Require a released, stable seed; seed this diagnostic window's decoder from that
+same snapshot. Refuse before ANY down unless the intended native X AND native Y
+each differ from the freshly seeded slot0 values. Unknown coordinates, unstable
+tracking, identity change or cap failure refuse. Main's proposed virtual110,280
+must be independently mapped using the existing conversion, never a guessed native
+pair. Record all returned slots and distinguish slot0 from the selected slot.
+
+Tee each selected-reader fetch_events batch during the owned finish/drain and final
+other-input check into preallocated storage BEFORE mapping to semantic triples.
+Retain acquisition phase and event ordinal. Use InputEvent's AsRef<libc::input_event>
+fields directly, including original timeval seconds/microseconds; do not round-trip
+through SystemTime. On the qualified little-endian target, encode each field at its
+verified ABI width/offset, with an ABI descriptor (endianness, event size, field
+widths/offsets and target triple). Refuse unsupported/padded layouts before down.
+For a verified padding-free layout this reproduces each complete kernel event's
+bytes. It is not an original read-syscall transcript: evdev abstracts read boundaries
+and incomplete read bytes. Do not label 8-byte kind/code/value tuples raw evidence.
+RawDevice supplies no sync-stream reconstruction; emitter writes are not evidence.
+
+Fixed diagnostic caps: 128 complete events, 32 nonempty acquisition batches,
+8192 bytes total across seed.bin, events.bin, receipt.bin and summary.json.
+Preallocate all collection storage before down. Events are bounded by verified ABI
+size (maximum24 bytes, hence3072 bytes); seed.bin maximum1024 bytes, receipt.bin
+maximum2048 bytes, summary.json maximum2048 bytes. Their maxima total8192.
+Reserve existing output files with create_new before down; never overwrite a prior
+attempt. No per-event disk IO occurs inside the owned window. At the first cap
+excess, retain the captured prefix and an explicit incomplete/overflow receipt,
+refuse diagnostic success, and still attempt release and finish through the existing
+cleanup path. Never silently truncate a successful observation. Read/error/partial
+attempts also persist the captured evidence. Write and flush seed/events/receipt
+before generating or writing semantic summary; a persistence failure is a failed
+diagnostic. This ordering preserves collected evidence, not crash-proof collection.
+
+The summary reports virtual/native intended coordinates, fresh seed selected slot
+and slot0 values, source identity, capture completeness, original echo result and
+per-axis presence/count/ordered event ordinals with values. Include tracking and
+SYN_REPORT ordinals so order is reconstructible; final-check events carry a distinct
+phase. No raw axis requirement is added to the production ownership classifier.
+Axis absence can be legitimate kernel deduplication; this experiment distinguishes
+seed inheritance from newly observed axes and does not by itself explain the Qt
+corner or qualify UI acknowledgement/native navigation.
+
+Keep existing100ms hold,1s window,50ms drain, deadlines, other-input checks and
+release-on-failure behavior. Additional diagnostic work cannot extend a deadline.
+Build gates after source selection: focused Linux tests for full/split/deduplicated
+events, fresh both-axis inequality refusal before down, seed/identity failures,
+raw timeval/ABI byte equality, cap overflow/read failure with retained prefix,
+persistence-before-summary and cleanup on each failure; existing touch ownership
+tests unchanged; development-enabled vendor ARM build plus feature-disabled build;
+diff check and strict OpenSpec validation. Host tests provide no tablet permission.
+Freeze reviewed source/build hashes before Main considers a fresh nonce trial.
+
+Source basis: current Main steering and read-only Buddy/evdev0.13.2 source inspection.
+The existing seeded deduplication test accepts an echo without raw X/Y events.
+Target ABI and proposed coordinate mapping remain build/review gates; no new tablet
+evidence or cause conclusion is claimed.
