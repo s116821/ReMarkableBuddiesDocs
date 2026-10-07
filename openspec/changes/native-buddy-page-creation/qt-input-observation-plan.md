@@ -2705,3 +2705,18 @@ Source basis: savedda8 receipts/raw/full images/bounded journal bytes/diagnostic
 operator receipt and before/after files, with Main owning hardware execution.
 Offline numeric-byte interpretation is engineering inspection, separate from the
 unchanged formal UNKNOWN diagnostic contract. Sol made no tablet changes.
+Further inspection of the SAME retainedda8 journal bytes also establishes document
+opening activity, which must accompany the paired point observations above:
+EntityOpen::open names the exact fixturee7f661f1-db6f-4dfc-854a-b38aff7f75de
+at message13:00:42.191 (journal realtime1791378042193028us), followed by Opening
+document in unlocked mode at42.288. Worker messages report loading first page
+a7181850-3f03-4bb0-8b9e-01acfc20032e at46.066 and second page
+d1261cb9-a8c0-4e15-ab24-7a9172b2027b at46.269. The latter two are page-load
+records, not active-page ownership/order or rendered-state proof. Capture helper
+stderr spans13:00:46.203 through47.873, yet the preserved PNG is baseline-identical
+My Files. Thus the evidence includes document-open processing before capture; it
+does not justify describing this as absence of opening activity. The processing/
+bitmap mismatch remains unexplained, with no specific render or capture cause
+proved. Formal UNKNOWN, visual refusal, no publication/facts and allauthorityfalse
+remain unchanged. Source basis: exact saved23-row journal and capture stderr;
+Main/Astra independently identified these rows, and Sol re-read their actual bytes.
