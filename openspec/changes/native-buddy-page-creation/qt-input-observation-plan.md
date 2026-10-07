@@ -1946,3 +1946,22 @@ Source basis: current SDK57c03c preparation proposal and local consumer/source
 inspection. Pinned Windows feature support is Astra-reported local tool evidence;
 Sol has not independently rerun those checks. Exact remote loader/interrupt/readiness
 behavior and startup timing remain unqualified.
+
+### Preparation hold and existing Ready-checker finding (2026-10-07)
+
+Parent paused debugger preparation, implementation, qualification and tablet debugger
+experiments pending a focused prior-art comparison of the corner-coordinate failure.
+Preserve all proposals, host evidence and custom drafts; do not expand this lane.
+
+Read-only inspection found the existing Buddy check-input-observation-ready.sh
+requires service MainPID to equal the Ready/self PID twice. Its current Windows
+working-file SHA256 is
+`73a32bd3d92da6e20c8e2f6a63a592f52d1c3d8daa6abb318fec0e1dc7c43b2e`.
+It also contains a spent nonce and zero payload-hash placeholder. A debugger-launched
+child cannot be assumed to match the service MainPID; the launch relationship and
+checker contract remain an open requirement. Never silently omit or relax those
+checks or treat these historical bytes as a newly armed checker. No adaptation or
+source change was made. This records the finding only and does not advance preparation.
+
+Source basis: current parent hold relayed by Main, local checker bytes/hash and
+previously inspected GNU launch semantics. No target checker behavior was exercised.
