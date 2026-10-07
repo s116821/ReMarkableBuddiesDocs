@@ -111,6 +111,12 @@ Coordinator approved this change and replacement of four reader-answer-pages blo
 
 ## Gates and delivery
 
+The next source-only combined discriminator is proposed in
+[qt-input-observation-plan.md](qt-input-observation-plan.md), referencing SDK-owned
+bounded filter, specialized end and separate GUI capture semantics. Consumer
+publisher/collector evidence cannot create facts or native/render authority.
+Coordinate both owning proposals before implementation; no device selection follows.
+
 The prospective development collector correction is specified in
 [facts-observation-continuation-plan.md](facts-observation-continuation-plan.md).
 It permits only one fresh read-only callback-status observation after a returned

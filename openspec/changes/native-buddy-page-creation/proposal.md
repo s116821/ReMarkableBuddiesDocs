@@ -4,6 +4,10 @@ REM-25 requires a native writable Buddy page immediately after a source page, or
 
 ## What Changes
 
+- Propose one purpose-isolated development Qt input/window discriminator under
+  [qt-input-observation-plan.md](qt-input-observation-plan.md), coordinated with
+  SDK-owned entry/window semantics. Implementation and device selection are pending.
+
 - Propose a bounded development facts callback-status continuation after one
   transport timeout within the original host clock; see
   [the source-only collector plan](facts-observation-continuation-plan.md).

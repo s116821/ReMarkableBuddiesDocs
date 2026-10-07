@@ -1,5 +1,21 @@
 ## ADDED Requirements
 
+### Requirement: Explicit development input observation completion
+The consumer SHALL use one fixed purpose-specific observation-end publication
+and collect the SDK's distinct completion evidence under existing stage/generation
+and recovery guards. It SHALL keep zero-or-one separately selected Main input,
+unchanged original clocks and no automatic publication or input retry. Durable
+publication SHALL NOT imply GUI execution, facts success, native/render authority
+or physical-panel state.
+
+#### Scenario: Main ends bounded observation
+- **WHEN** exact live diagnostic readiness is verified and Main selects end after zero or one authorized action
+- **THEN** one fixed end token may be published and bounded GUI/event/image completion is collected separately from page-facts proof and heap/physical evidence.
+
+#### Scenario: Inconclusive or stale result
+- **WHEN** publication or completion is partial, absent, late, wrong-purpose or bound to a changed window/generation
+- **THEN** no new action or qualification follows, historical evidence cannot upgrade live flags, and existing restoration/preservation duties remain.
+
 ### Requirement: Bounded development facts callback-status continuation
 The development collector SHALL permit at most one returned transport timeout
 from its read-only callback-status poll to lead to a fresh poll within the original
