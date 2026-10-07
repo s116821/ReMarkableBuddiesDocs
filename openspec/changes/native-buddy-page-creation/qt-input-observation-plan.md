@@ -2666,3 +2666,42 @@ EvidenceDirectory is Mainroot/packet-r3. The narrow source correction reads the
 three fixed endpoint/waiting files from Split-Path -Parent EvidenceDirectory; no
 new parameter/parser follows. Corrected operator syntax passed; review remains
 against those current bytes before fresh clone/binding.
+
+#### Spentda8 paired raw/Qt evidence, visual refusal and recovery (2026-10-07)
+
+Main'sda8fa98754d143f9ae6bd8c57d3791e6 is SPENT/NO REPLAY. Candidate12356/
+start229135486/dev19/inode823417 retained the same waiting tuple. Sol independently
+verified timely known normal setup/capture10000ms and begin/end endpoint5000ms
+receipts under the same original origin. Raw decoding proves released seed164,1396,
+six ABI16 events at fixed201,1360 and complete release101335us; flags remainfalse.
+Full capture visually shows My Files and is byte-identical to baselinea8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b.
+The first tile's Page1of6 label is not an open page. Visual refusal blocked
+publication/facts; normal raw delivery and Qt diagnostics do not override that gate.
+
+Post-restoration retained journal acquisition completed normally in682ms, stderr0,
+no overflow, producer trailer0. Preserved22172B SHA256
+0cec7031c25fd29780c7dc7cef21ea8d480f5f2dbc98b860bf035ca27f690b93
+contains23 rows. Sol independently checked each row's candidatePID12356, exact boot,
+realtime endpoint enclosure and monotonic syntax/range only. All23 MESSAGE fields
+are numeric byte arrays; bounded offline engineering inspection decoded their
+actual0..255 UTF-8 bytes. It found two reporting TouchPoint records:
+QRectF(197,507 8x8), normalized(0.143264,0.273116), press1/state1 thenpress0/state8,
+at realtime1791378037298002 and1791378037399098 microseconds. Rectangle center is
+201,511. No Qt mouse record appeared in these bounded rows; completeness is
+unqualified. Existing formal decoder correctly remains UNKNOWN, reason Non-scalar
+journal field. No parser modification, category/formatter qualification, inferred
+UI acknowledgement or facts authority follows from manual byte inspection.
+
+Exact owned helper/raw/gui/baseline cleanup followed preserved hash-bound copies
+and normal helper returns. Operator receiptf30a536b5cd3f20acee23fed1c4864efbe291fe9eb39a28e76cb6ca49a1abd48
+verifies restored/Qt cleanuptrue and facts/callback/candidate verificationfalse.
+Saved final stock14891/start229147898, same boot, three active services/original
+policies/empty job and all14 baseline hashes independently match. The paired evidence
+narrows observation to a delivered raw contact and candidate-scoped logged points
+without successful visual opening; cause remains unknown. No further input/trial
+or replay is selected. Task4.11 and native/product qualification remain unfinished.
+
+Source basis: savedda8 receipts/raw/full images/bounded journal bytes/diagnostic/
+operator receipt and before/after files, with Main owning hardware execution.
+Offline numeric-byte interpretation is engineering inspection, separate from the
+unchanged formal UNKNOWN diagnostic contract. Sol made no tablet changes.
