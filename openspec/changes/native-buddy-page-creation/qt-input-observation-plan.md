@@ -100,6 +100,22 @@ does not implement or change them.
 
 ## October 6 implementation and review checkpoint
 
+Packet-preparation correction: Main's independent binary rebuild matched both
+artifacts, both mocs and both ELF reports, but full private operator review blocked
+the first8b3f packet before transfer/activation: its arming command retained a literal
+all-zero payload hash. This violates the existing selected-artifact binding duty.
+Replace only that source-template literal with the existing @PAYLOADHASH@ expansion
+and assert the exact expanded arming hash line against the selected payload. Preserve
+the first prepared packet/manifest/diffs as rejected preparation evidence, regenerate
+a distinct private packet revision and independently review it before any device
+selection. No binary/config/nonce/budget/authority behavior change or action retry.
+The source correction is frozen at Buddycb509025ac80dda94dd56f3592e0705deed6eea7:
+one arming-template line now uses the already-existing hash expansion. Existing
+collector tests plus two exact expanded arming checks PASS142 assertions; the latter
+require the selected nonzero payload hash at the expected path and no unresolved
+hash token/zero literal. SDK1609098 and both prepared binary/config bytes are
+unchanged. Corrected private packet and independent review remain pending.
+
 October 7 coordinated independent source acceptance is COMPLETE for exact
 SDK16090985a040006608fe496cdfdf6727613b909d,
 Buddy39c0c4c1cd1add6bb6ef3f70058611eec6bcfbca and reviewed owning
