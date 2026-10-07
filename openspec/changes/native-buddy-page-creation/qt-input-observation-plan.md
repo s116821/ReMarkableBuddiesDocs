@@ -2075,3 +2075,12 @@ bound to the exact commit, not an official release assertion. Initial ARM link
 failure was a private wrapper SDK re-source guard; corrected wrapper inherits the
 already-established vendor compiler environment. Neither build ran on the tablet.
 Independent artifact review/selection and the fresh Main-owned trial remain open.
+
+Runtime compatibility hold supersedes the earlier artifact review: Main found the
+vendor helper requiresGLIBC_2.39, above the Main-verified target maximum2.38.
+Independent full ELF inspection identifies WEAK undefined pidfd_spawnp and
+pidfd_getpid atGLIBC_2.39, with a non-weak libc.so.6 version requirement (Flags:none).
+Libm is not the offending provider. Weak symbol bindings do not waive that version
+requirement. Preserve both vendor artifacts as build evidence only; do not select,
+transfer or execute them. Rebuild unchanged89fd9d source using an inspected older
+cross sysroot, then check exact provider/version/symbol coverage before acceptance.
