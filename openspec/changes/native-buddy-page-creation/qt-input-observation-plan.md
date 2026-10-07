@@ -716,3 +716,58 @@ original GUI/image/restoration/cleanup flags. No remote journal file, new timer 
 schema. Two endpoint samples cannot exclude a wall-clock excursion that returns
 between them: the interval remains an observation enclosure, not exact publication
 or completeness proof. Source basis: current Main/Astra exact proposal review.
+
+### Selected minimum source implementation, awaiting independent review
+
+Main selected the accepted proposal for source implementation only. Buddy revision
+`aa4a3f3548c7267f81d90e0f973f84382d3bf9ef` adds a fixed, default-off candidate
+logging branch and one dedicated bounded journal reader. The source-only throw
+remains; no fresh nonce, artifact, packet or device run has been selected. SDK
+`6504a035e2344870ff934124679cdf0921995424` and its observation/schema are unchanged.
+Main and Astra must review this exact source and owning documentation before any
+artifact/runtime gate. Task4.11 remains open.
+
+Candidate exec alone receives the two logging variables; the stock function is
+byte-identical to the prior source. Existing debug/rules/pattern environment holds
+before modification. Fixed endpoint commands bracket restart and guarded decoded
+completion. The private additive diagnostic runs once after restoration, using
+concurrent raw stdout/stderr draining under one5s deadline,65537/1024 acquisition
+caps, strict UTF-8/JSON decoding and a final nonce-bound producer-status line.
+Neither unknown acquisition nor diagnostic persistence failure changes original
+GUI/image/restoration/cleanup flags. Generic Native transport is unchanged.
+
+Every record must match boot/PID and both clock enclosures. UTC is begin_s through
+end_s+1; monotonic microseconds are begin_cs*10000 through
+(end_cs+1)*10000-1 inclusive, accounting for centisecond floor precision. Linux
+uptime counts suspend while journal monotonic time may use another origin: such
+a mismatch conservatively becomes unknown. This does not prove clock equivalence
+or exclude an excursion returning between endpoint samples. Raw caps precede
+filtering. Exact qt.qpa.input/events prefixes require recognized evdevtouch,
+TouchPoint( or pressure content for retention; unrelated tagged bodies are dropped
+and counted. Hidden input tags remain unknown. No field-value or guessed closing
+delimiter parser is added, and captured means bounded tagged point evidence only.
+
+Host verification: focused journal suite79 assertions; existing collector334
+assertions including one timed-out journal call without retry and successful
+original recovery flags; stock function byte comparison; launch shell syntax;
+Linux producer-wrapper fixture under errexit retained producer exit7 despite
+head exit0. Owned local children exercised both full streams, finite overflows,
+invalid UTF-8 and the single deadline. Docker fixture used the existing pinned
+vendor image416c7a7 with network disabled/read-only filesystem and a fake journalctl
+function; no actual journal or tablet contact. Initial Windows-pipe fixture failed
+on transport-added CR, then passed with fixture CR removal. Git diff check passed.
+
+New formatter evidence is separately scoped: Sol read and hash-verified Astra's
+private `astra-exact-qtgui-touchpoint-formatter-review.json`, SHA256
+`1c09f58ae27e6590a9f4f2aea5c07c6e88f5c5322ead890098f97e3a785fff55`.
+Astra's exact vendor QtGui inspection verifies typed output order id, area,
+normalPosition, pressure, velocity, state and no appended closing-parenthesis
+literal. Main reports the matching target QtGui hash from accepted4254 preflight;
+Sol did not redisassemble or contact the target. Nested numeric rendering,
+runtime category visibility, completeness, raw axes and post-filter coordinates
+remain unproved. Earlier upstream-only uncertainty is preserved historically.
+
+Source basis: current Main selection/provisional review, exact Buddy files and
+host fixtures, and the hash-verified Astra receipt. Implementation bounds and
+conservative unknown decisions are engineering choices; device behavior is not
+inferred from these host checks. Main owns canonical Mem/Drive/Linear closeout.
