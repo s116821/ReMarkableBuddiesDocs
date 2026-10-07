@@ -2117,3 +2117,93 @@ Main trial selection. No worker tablet operation occurred.
 Source basis: local build outputs and exact target-provider static matrix, plus
 Main's QEMU report and its locally inspected stdout/stderr receipts. Target provider
 retrieval generation guards are Main-reported. No new native behavior is inferred.
+
+### Spent changed-axis trial and adapter proposal (2026-10-07)
+
+Main spent exactly one input in nonce50d2894e468f4161aa271478eb48e7de using the
+compatible development helperde0db9f6. Retained raw evidence shows released/stable
+slot0 seed164,1396 and exactly six16-byte kernel events: tracking1,X201,Y1360,
+SYN_REPORT,tracking-1,SYN_REPORT. Down-to-release timestamp difference102760us.
+Qt records show global201,approximately511, followed by synthesized mouse events.
+Main and Astra fully inspected both saved images: the PDF opened, native Qt image
+showing Page1of6. Formal facts/native/UI-acknowledgement flags remain false; this
+is positive engineering evidence, not integrated navigation or Task4.11 completion.
+
+Operator receipt SHA256
+`1a702c7636fc2fc5f64137436932119f2491c8167db882d879cf210dfdfef0a6`
+reports restoration and cleanup true. Astra's private review reports14 frozen
+fixture hashes unchanged and restored stock1330/start228219744. Main owns final
+cleanup confirmation. Preserve original1a48 and this spent attempt independently.
+First Qt event timing also changed:44688ms versus historical14931ms relative to
+their observer origins. This confound prevents treating the trial as controlled
+historical root-cause proof; old actual raw-axis occurrence was never captured.
+Do not infer old suppression, a universal readiness wait or fixed110,280 policy.
+
+#### Proposal only: qualified exact-point press initialization
+
+No implementation, new input or debugger work is selected. Candidate: initialize
+both native axes through a deterministic distinct in-range primer, then final
+requested values before the SAME original press SYN_REPORT. Keep one contact,
+one press frame and one release frame; no extra tap/SYN/sleep/conversion/ABI change.
+For zero-fuzz qualified axis bounds[min,max], choose P=min unless F=min, then P=max;
+require min<max and in-range F. Thus P!=F independently of the retained seed.
+Suggested exact writer order: slot0,Xp,Yp,tracking1,Xf,Yf,existing pressure/major/
+minor/orientation,SYN_REPORT. Release remains unchanged. Primer coordinates are
+intermediate native slot state, not a requested UI target or separate contact.
+
+The intended guarantee is conditional on qualified kernel/consumer behavior and
+uninterrupted successful ownership: final axes change after P even if P itself
+was deduplicated. A fresh consumer receives both final values before its first
+press-frame commit. It is not an unconditional guarantee against interleaving,
+loss, filters, partial writes or buffer-generated frames. Validate bounds/fuzz and
+released slots before writing; refuse an unsupported profile rather than silently
+falling back after selection. Existing release-on-partial-write and spent-attempt
+rules remain; no retry or separate priming write/frame is allowed.
+
+Current owned-touch policy rejects non-final axis values, so a writer-only change
+is invalid. Propose an explicit primed ownership profile carrying the exact native
+P/F intent. Its grammar permits each deduplicated primer axis at most once, in
+order before tracking1; requires each final axis once, in order after tracking1
+and before the sole press SYN; verifies that frame's single slot0/tracking1 is
+exactly F, followed by the existing single release. Reject primer after tracking,
+unknown coordinates, extra contacts/frames, missing final axes, SYN_DROPPED and
+external/delayed input. Feed all actual events through ContactFrames; never replace
+raw evidence with intended writes. Plain ownership keeps legitimate axis dedup.
+Fresh retained seed and the same exact reader/writer identity bind the new profile.
+Existing100ms/1s/50ms tap limits and diagnostic byte/event caps remain unchanged.
+
+Actual implementation scope from Buddy89fd9d: Workflow navigation routes through
+RealDevice/NativeNavigation::swipe, XochitlIntegration::horizontal and Touch's
+touch_start/goto_xy/touch_stop. Trigger dismissal calls the same touch_start inside
+begin/finish_owned_touch. Status leases refuse menu press; manual multi-hold is a
+separate development injector. A selected press initialization could cover tap
+and swipe START only; leave movement frames and pen/keyboard paths unchanged.
+SDK current and pinnedf6b7dc8 source has no native injector: Platform navigation is
+unsupported by default or synthetic in MockPlatform; Buddy sdk_acquisition is an
+experimental synthetic seam. Do not claim a Touch change repairs a native SDK
+adapter, repin the SDK or enable native SDK authority.
+
+Qualification before source selection: deterministic tests model every seed
+relation to P/F independently on each axis, kernel dedup and a fresh zero-state
+consumer; split reads/short writes/cleanup, hostile ordering/interleaving and both
+deadlines must refuse appropriately. Preserve semantic-region alternatives only
+for callers with an explicit verified target-region contract: a safe point may
+differ in both axes while staying within the region. Never silently displace an
+exact-point contract; such a region mitigation does not guarantee every requested
+coordinate. Main/Astra must review which profile is selected before implementation.
+
+Target kernel revision, zero fuzz, packet capacity and exact Qt per-SYN commit
+behavior require qualification. Upstream [Linux v5.4 input.c](https://github.com/torvalds/linux/blob/v5.4/drivers/input/input.c)
+shows axis defuzz/dedup and possible automatic SYN at buffer capacity; one write
+does not imply atomicity against physical input. [evdev.c](https://github.com/torvalds/linux/blob/v5.4/drivers/input/evdev.c)
+preserves accepted event order and exposes completed packets. These are source
+references, not identification of this target's kernel. Bound the small11-event
+press against the qualified device capacity and retain raw evidence to reject
+unexpected frames. A further reviewed Main-owned fresh trial would need repeated/
+unchanged coordinates with a fresh consumer and separate expected UI postcondition;
+simulation/source reasoning alone cannot qualify delivery, timing or navigation.
+
+Source basis: locally inspected raw/Qt/operator receipts and Buddy/SDK source;
+visual/post-fixture statements are Main/Astra review reports, not Sol device actions.
+Upstream sources support the proposed model only. Primer behavior and its safety
+premises remain inference and open gates; the successful trial did not exercise it.
