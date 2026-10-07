@@ -1616,7 +1616,12 @@ Source basis: current Main acceptance/selection limits, complete hash-verified A
 static trace receipt, and prior exact saved helper/provider/forensic evidence. Runtime
 cause remains unresolved; the discriminating outcomes are conditional interpretations.
 
-### Consumer plan for selected same-call investigation (2026-10-07)
+### Historical consumer plan for same-call investigation (2026-10-07)
+
+The attach/custom-server lifecycle in this section is superseded by the maintained
+launch-and-kill consumer amendment below. Preserve its unfinished source and evidence;
+it is not parallel authorization to attach, resume custom patching or detach an
+instrumented candidate. Shared scalar/first-hit/same-call requirements remain applicable.
 
 Parent selected progression through a narrow proposal, focused implementation,
 independent review, complete collection qualification and a small controlled trial;
@@ -1773,3 +1778,107 @@ local validation/disassembly checks, signed standard server build receipt and ea
 saved source/forensic evidence. Transport/timing/recovery support and trial outcomes
 remain explicitly unverified gates. This checkpoint does not execute or authorize
 workers to perform tablet actions.
+
+### Maintained launch-and-kill consumer amendment (2026-10-07)
+
+Current selection is narrow proposal/preparation only. Sol independently reviewed
+and accepts SDK `21737cac5a563b1e508824d06b687210ab26c8e6`, including the complete
+[launch-and-kill proposal](https://github.com/s116821/ReMarkableOpenSDK/blob/21737cac5a563b1e508824d06b687210ab26c8e6/openspec/changes/establish-native-platform-contract/launch-kill-discriminator.md),
+the original seven-file OpenSpec delta and its timing-basis correction. This owning amendment still requires exact
+Main/Astra review. Main alone operates the tablet; no source implementation,
+wrapper execution, upload, launch or native trial is selected by this checkpoint.
+
+Prefer the preserved unmodified GNU14.2 server06e575 and pinned Windows15.2
+client7f581a2 over direct Windows SSH stdio, --once, to LAUNCH one disposable
+inferior. The server remains held from attach. No successful detach, private D
+release command or custom restoration ledger belongs to the new candidate. Custom
+GNU drafts stay paused and preserved; do not reset, discard, archive or reactivate
+them. Accepted host collector/receipt freeze SDK4c0e7ec remains host evidence;
+its direct-detach adapter cannot be used for this lifecycle. Buddy2791a25 and its
+SDK dependency pin remain unchanged.
+
+Unmodified GNU requests EXITKILL for created processes, kills them on ordinary
+exit/EOF and provides a maintained kill path. Its option helper still masks
+unsupported options and ignores final SETOPTIONS returns. These are source facts,
+not checked-every-LWP enforcement or demonstrated kernel protection. Before a UI
+candidate, Main must qualify the exact server/client/kernel/profile across launch,
+multiple LWPs, thread creation, shared-address-space clone concerns, option resets,
+startup failures, server SIGKILL, client death/EOF, installed internal/client
+breakpoints and both captures. Ambiguous/lost protection, unexpected survivors or
+patched-code progress on tracer death refuses the path. A delayed guard kill cannot
+close that gap. If protection cannot be established, report the specific blocker;
+only a separately reviewed minimal launched-only support/check/fatal-cleanup change
+may be considered later. The full attach framework is not an automatic fallback.
+
+Preparation must freeze a finite startup checkpoint sequence and exact permitted
+stop counts, provider/plugin/QtGui mappings, command quoting, working directory,
+wrapper hash and environment. The first program exec stop precedes plugin loading
+and candidate readiness. No guessed loader offset, arbitrary address walk or
+open-ended continue loop is permitted. Missing mappings or unexpected stops consume
+the attempt and invoke bounded termination.
+
+Preload belongs only to the launched child through the reviewed wrapper, never
+the server/SSH environment. GNU14.2 assembles --wrapper through shell startup;
+--no-startup-with-shell must not be assumed to preserve it. Freeze and qualify the
+exact shell/wrapper behavior. Stdio redirects child stdin to /dev/null and stdout
+to stderr, so preparation must identify a bounded private child-diagnostic sink
+and explicit server/SSH/child allocations within existing stdout65537/stderr1024
+limits. No additional unbounded file or merged console dump is allowed. These
+commands and allocations are preparation gates, not completed implementation here.
+
+Propose30s maximum from launch dispatch through BOTH fresh same-generation candidate
+Ready and debugger armed/resumed readiness. This is a proposed engineering ceiling
+pending exact startup qualification. Main retracted the earlier roughly15s startup
+description: the saved14999/15066/16197ms values concern post-input end-publication
+acceptance/grab/completion, not Ready or startup. They cannot justify this ceiling.
+Qualify the exact owned full path under30s before use. Separately, measurement gets5s from installation
+of the FIRST measurement breakpoint through armed readiness, the single existing
+input, both snapshots and bounded termination dispatch. These clocks may overlap;
+neither restarts the other. Startup, confirmed exits, helper completion and stock
+restoration remain inside the existing150s overall enclosure. Preparation must freeze
+timer origins and recovery allocations before source selection. Incompatible timing
+requires a reviewed amendment, not an extension or automatic second attempt.
+
+One atomic claim precedes launch. Input occurs once only after both readiness gates;
+retain helper40f496's100ms down/release, one-second owned window and50ms drain.
+Keep two successful PRE/POST measurement captures, first-hit current-caller/id1/state1
+without selecting X/Y, exact ARM/layout and same generation/thread/frame/H/C guards,
+raw double/nonfinite bit preservation and partial/error bytes before interpretation.
+Explicit acquisition remains<=1024 requested bytes and all private raw evidence plus
+durable readback/count/hash receipts<=8192 aggregate bytes. Startup stops do not count
+as extra successful normalization captures or authorize an additional input.
+
+Persist the two snapshots and prepared measurement completion, then ALWAYS KILL the
+disposable inferior through the reviewed standard path, without detach or a success
+resume. Failure uses termination and the independent exact-generation guard too.
+Advance notice and owned qualification still cover software stepping and implicit
+loader breakpoints; two captures do not imply only two instruction writes. No arbitrary
+memory/register writes or generic tracing interface is selected. Measurement persistence,
+confirmed inferior/tracer exit and restoration are separate outcomes. Lost kill
+acknowledgement or exit evidence stays unknown; do not replay input or termination.
+
+Review and arm the independent guard BEFORE the first owned launch. It cannot depend
+on candidate/debugger/server, failure markers or host SSH. Recheck boot/PID/start
+before each signal; never kill a reused process. BEFORE stock restoration, confirm
+both inferior and tracer exits AND independently verify the helper's release and
+quiescence. An inferior killed during contact-down does not authorize starting stock
+on an unreleased contact. Preserve the existing independent input-release/recovery
+policy on helper failure without another tap. Dummy cleanup verifies stock/policies/
+fixtures unchanged and never restarts stock; native cleanup restores original service
+configuration, fresh stock generation and fixture preservation through Main's existing
+procedure. Freeze the whole recovery path, not just the collector command.
+
+After exact SDK/consumer acceptance and concrete preparation, Main may separately
+select focused source adaptation, followed by independent review and complete actual
+owned launch/protection/termination qualification. Only accepted gates permit a fresh
+UI candidate/input. This discriminator yields diagnostic operands, not navigation
+completion, native callback authority or an integrated workflow pass. A correction
+needs a demonstrated cause and separate review; Task4.11 and remaining native gates
+stay open, with no merge/sync/archive or promotion of spent unknown receipts.
+
+Source basis: current Main-relayed parent scope and explicit timing correction, exact
+SDK21737ca proposal, independent
+local GNU14.2 launch/wrapper/stdio/kill-path inspection, and accepted host-only source
+reviews. No historical startup timing is verified by the post-input capture values.
+Startup/protection/diagnostic/
+recovery behavior remains unqualified on the target.
