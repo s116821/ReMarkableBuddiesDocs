@@ -10,7 +10,7 @@ the existing FactsEntry source and recommended retained focused-window readiness
 non-consuming bounded filter records and one separately queued grabWindow.
 
 SDK owns the exact entry/filter/window/purpose/clocks/output contract in
-[SDK proposald323fc4aae71250c2f5151028ac782dce860332f](https://github.com/s116821/ReMarkableOpenSDK/blob/d323fc4aae71250c2f5151028ac782dce860332f/openspec/changes/establish-native-platform-contract/input-observation-proposal.md).
+[SDK proposalff0b50cc2f6bf263a28af09eed71d2feaeb47750](https://github.com/s116821/ReMarkableOpenSDK/blob/ff0b50cc2f6bf263a28af09eed71d2feaeb47750/openspec/changes/establish-native-platform-contract/input-observation-proposal.md).
 This consumer plan references that frozen revision; it does not duplicate SDK
 capability semantics. Central Docs owns the fixed publisher/operator, Main's
 external action/capture gates and preservation/recovery evidence. Proposal only;
@@ -21,11 +21,16 @@ no source implementation, nonce, artifact or device attempt is selected.
 Keep existing facts-request/read-facts and publisher behavior unchanged. Add one
 fixed purpose-specific observation-end publisher entry using the existing
 descriptor-safe routines, immutable waiting identity, locked ownership and
-exclusive temporary/final publication algorithm. It accepts only the existing
-fixed root/nonce/expected PID/start argument shape, never an arbitrary command,
+exclusive temporary/final publication algorithm. It retains the existing exact
+four arguments: root, nonce, expected executable SHA and expected payload SHA.
+PID/start derive from validated ready and attempt identities, not arguments.
+It never accepts an arbitrary command,
 stage, filename or payload argument. Its specialized entry binds exactly the SDK
 input-observation-ready/end filenames and stage/profile. No generic command router
-or generalized broker is introduced; a read-facts token cannot invoke this mode.
+is introduced. This mode consistently uses the SDK's256-byte token cap and
+numeric-width/whole-record admission, preserving existing facts token limits.
+Maximum-width and near-deadline token fixtures reject overflow without truncation.
+A read-facts token cannot invoke this mode; no generalized broker is introduced.
 
 Successful end publication proves only a durable token, not event delivery, GUI
 execution, image completion or page facts. Unknown publication retains evidence
@@ -73,6 +78,8 @@ observer delivery boundary, never unique physical contact counts or kernel cause
 Zero event count plus end/completion does not prove Qt input queues are drained;
 ordering across event and filesystem descriptors remains unknown. Arbitrary pixel
 differences are not proof without stable content/window and aligned timestamps.
+Even with those checks, use a meaningful stable-scene content difference rather
+than arbitrary pixel noise before treating a mismatch as coherence evidence.
 
 ## Verification and gates
 
