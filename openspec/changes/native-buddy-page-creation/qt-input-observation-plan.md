@@ -1064,3 +1064,41 @@ spent failing predicate is retrospectively established. Main reserved fresh
 worker artifact/private-packet preparation at this closeout. No generation or
 device execution follows from reservation. Task4.11 remains open. Source basis:
 current exact Main/Astra acceptance and hash-verified receipt/target fixture output.
+
+### Reserved1a48 preparation only from corrected guards
+
+Main selected fresh reserved, unspent1a4816bb87f543bdbb14bba901aac25a preparation
+from accepted Buddy11af/Docssource3a828/prose08c38 and unchangedSDK6504. Manifest
+SHA256 `bb9e4319e0c2f862106eb07d09bd2bba30764b77e92fce8681940657951e144c`
+binds joint source acceptance9cc1528d, fresh baseline9589d81c and actual saved/
+executed baseline command69b8f590 using normalized absence guards. Stock28907/
+226962585, all fourteen hash/path pairs, content9f2bac7 and six-page order match
+the supplied evidence; Main viewed before My Files/Page1of6 thumbnail. Sol locally
+verified these file relationships; no worker baseline acquisition/device contact.
+
+Authoritative corrected preparation commands were adapted to freshly read source
+11af, not copied from a spent private operator or rejected initial generator.
+All three private environment guards are corrected, no NUL RS remains. Fixed
+private logging=true/candidate launcher1, exact helper/profiles/deadlines/recovery
+and single40f496 tap90,260/one end/Qt/df745 capture remain bound. Pinned416c7a7
+network-none/read-only source/root build with TMPDIR=/out passed. Payload SHA256
+`5182d0fee5c3b632c0cea328dd97aba63dbb7f8655ed836f32c75977b4afb04c`
+and publisher0c35996c have ELF32 ARM hard-float reports/no Qt private versions.
+
+Repeat PrepareOnly generated eight byte-identical packet files. Actual expanded
+arming/hash/path/no-zero SHA, logging helper/bindings/pre-restart endpoint/synthetic
+query, ten mocked transport checks and complete shell syntax checks passed.
+Exact private-source extracted fixtures passed81 mawk/81 BusyBox cases and exact
+unsupported-dash refusal; the private two-line environment suite passed9. Separate
+preparation verification SHA256
+`b5c28fda97b12c7b7c306f1218fae882988b9005b6cc97a79bb1e1e42947dbc0`
+binds those fixtures/checks to the immutable manifest. Synthetic endpoint/query
+examples are host fixtures, not target timestamps or publication evidence.
+
+Main independent full-byte rebuild and Astra exact packet review are pending.
+No worker transfer/activation/input/end publication/service change/journal read;
+native/render/UI authority, runtime visibility/coverage/delivery remain unproved.
+Nonce remains reserved and unspent, Task4.11 open, older facts paths held and all
+spent evidence immutable. Source basis: current Main selection/supplied baseline,
+local hash/ELF checks and fresh host preparation/provider fixtures. Main owns any
+later runtime selection and canonical evidence closeout.
