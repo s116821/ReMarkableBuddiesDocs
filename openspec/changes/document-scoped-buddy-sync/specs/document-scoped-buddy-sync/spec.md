@@ -70,6 +70,10 @@ Reader/Writer operations SHALL serialize actual native handoff with selection ac
 - WHEN selection changes while an admitted external effect lacks verified completion
 - THEN it remains reconciliation-required, conflicting admissions are blocked, and late completion cannot attach stale history to the new selection.
 
+#### Scenario: Undo and drawing handoff invalidation
+- WHEN activation invalidates an operation before history mutation or bitmap drawing, or either already-admitted effect returns a late uncertain result
+- THEN stale dispatch is refused and uncertain original effects retain historical reconciliation without repeated undo/redo or fallback drawing; imported history/receipts cannot authorize these effects.
+
 ### Requirement: Buddy data coverage and native authority separation
 Backup/sync SHALL include selected Buddy-owned history, bookkeeping, references, export correlation and portable domain records; screenshot/confirmed-sample media SHALL have explicit coverage. It SHALL exclude native documents/pages/ink/file metadata and device secrets/runtime state. Imported native references SHALL remain historical/unbound until separately verified against current native state.
 

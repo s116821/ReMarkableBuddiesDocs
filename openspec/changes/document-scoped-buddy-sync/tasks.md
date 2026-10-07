@@ -6,6 +6,8 @@
 - [x] Obtain independent review at ebf8c72 accepting generic fixed-ID metadata create-or-read and transport fixtures only.
 - [x] Obtain independent review accepting the admission/settlement/projector/application-matrix contract at 7e06d9; no implementation or live qualification follows from this acceptance.
 - [ ] Obtain Main's owner review of integration-seams.md, refresh the REM-37 source mapping, and agree shared journal/store/backend seam ownership before editing those paths.
+- [x] Obtain Main's efb8fd73 review accepting the coordinated proposal for an isolated selected-store/projector fixture slice; add history/bitmap admission coverage and propose the precise token/commit/activation/journal interfaces for owner agreement.
+- [ ] Review the precise interfaces/journal extension with Main before shared domain/workflow edits; verify and independently review the disconnected real-store projection fixtures without claiming activation/admission implementation.
 - [ ] Implement and verify the accepted generic adapter slice without enabling shared-mode publication.
 - [ ] Qualify or reject the candidate provider primitive using an explicitly authorized disposable app-data namespace; preserve reproducible evidence without secrets.
 - [ ] Implement accepted generic scope/selection and conditional transport seam, reusing REM-36 domain-opaque storage and bounds.
