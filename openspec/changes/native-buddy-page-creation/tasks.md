@@ -29,6 +29,7 @@
 
 ## 4. Verification and delivery
 - [ ] 4.9 Coordinate the bounded callback-status continuation proposal before code; implement only the one-use read-only allowance, verify exact branch/outer-finally failure and original-clock cases, independently review frozen revisions, then separately select any future artifact/packet/device gate. Preserve spent2f90 flags and historical waiting limits.
+- [x] 4.10 Main/Astra accepted Docs4ddbef before Main selected Buddy59789d0 source implementation;169 exact live/collector/recovery assertions and10 existing transport checks passed. Independent implementation review and any future private packet/device gate remain open under4.9.
 - [ ] 4.7 For a selected supervised candidate, verify cold-boot stock, first-gesture handoff, subsequent gestures, unknown compatibility refusal, stalled/missing heartbeat, crash-loop recovery, UI-independent disable, Manager update/uninstall and reboot stock baseline; preserve source/data and reject stale-handle replay.
 - [ ] 4.1 Required Rust format/lint/tests/ARM build and targeted simulator checks with public manual equivalents.
 - [ ] 4.2 Coordinator executes Q1-Q10 on final candidate; inspect screenshots and preservation hashes/semantics; separate evidence types.

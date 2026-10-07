@@ -24,7 +24,11 @@ Keep this proposal under the existing active native-buddy-page-creation change,
 which owns the facts consumer experiment and collector/recovery evidence. This is
 a prospective source-only collector correction, not a new lifecycle framework,
 timeout extension, SDK change or selected device attempt. Implementation awaits
-Main/Astra coordination; no fresh nonce is selected by this proposal.
+Main/Astra coordination; no fresh nonce is selected by this proposal. Main and
+Astra accepted Docs4ddbef before Main selected the narrow source change.
+Buddy59789d0b4ae0f7c12d7ac890e0745b4bf62b3d43 implements it, pending independent
+implementation review.169 exact collector/live/recovery assertions and10 existing
+transport assertions passed with owned I/O; no device result is claimed.
 
 Permit at most one returned timeout result in the initial callback-status poll
 over the entire collector run to consume a single local allowance and continue
@@ -72,7 +76,9 @@ callback/proof; second timeout; timeout near deadline; late return; uncertain
 transport termination; non-timeout refused/unsafe stage; malformed callback; and
 subsequent identity/proof failure. Assert no partial stdout consumption, same
 clock/3000ms cap, no renewed allowance after intervening success, original false
-flags on failure and mandatory restoration. Tests cannot prove target stability.
+field semantics on failure and mandatory restoration. In particular,
+callback_verified can remain true after a later identity/proof failure; the
+allowance never changes a field. Tests cannot prove target stability.
 
 Freeze exact Docs/Buddy revisions and obtain independent review before any
 separately selected artifact/packet/device gate. Do not sync/archive this active
