@@ -594,3 +594,106 @@ source-only diagnostic success does not complete native delivery. Preserve8b/M3.
 Source basis: current Main action report, saved original actual files, selected
 PowerShell decoder, local full PNG decode/visual review and post14/content readback.
 No device operation or further attempt by Sol; no sync/archive/merge.
+
+## Proposed candidate-only evdev logging discriminator (review before implementation)
+
+Main selected proposal only after4254 corner persisted in all public frames. No
+implementation/artifact/nonce/device selected; preserve spent8b/4254 and M3. Main's
+read-only main-existing-debug-env-readonly.txt/main-journal-capability-readonly.txt/
+main-debug-env-clock-capability.txt report stock27500/226634202, boot
+b16bbeae-d50b-4130-a941-2548f41145fb, debug/rules/message-pattern keys absent,
+systemd255 with relevant journal flags and UTC epoch/uptime reads available.
+These are current capability observations, not a future attempt baseline.
+
+Only proposed launch delta: assignments on candidate exec
+`QT_QPA_EVDEV_DEBUG=1 QT_LOGGING_RULES='qt.qpa.input.events.debug=true'`.
+Main first checks exact existing environment/service/launch rules; unexpected
+rules/pattern/enabled debug means hold, never guessed overwrite/merge. Presence
+of debug key even empty/0 enables it. Stock fallback remains unchanged, with no
+export/global service env. No touchscreen parameters/rotation/filter/KMS, hooks,
+schema or framework. Default off; same120/5/150 pre-arming/180/240 budgets, guards,
+one40f49690,260 tap, one end, one Qt/df745 capture and restoration/preservation.
+Logging may affect timing; never repeat input/capture to obtain a log.
+
+Astra inspected exact libepaper678574:1b140 presence check enables getter12778
+qt.qpa.input via1b158; separate getter12828 is qt.qpa.input.events. Point logger
+181d8 is AFTER normalization/QTransform15658 and rectangle mapping18028..1807c,
+BEFORE filter decision17d4c..17d5c/unfiltered handleTouchEvent18210. Filtered final
+18d80 has no later point logger. Startup protocol/filter/prediction/minmax/name/
+mapping is code-backed; no numeric transform dump found. This is mapped/normalized
+pre-filter data, not raw/pre-clamp axes. Exact imported vendor QtGui formatter is
+unverified; [official Qt6.10.3 formatter](https://github.com/qt/qtbase/blob/v6.10.3/src/gui/kernel/qwindowsysteminterface.cpp)
+is context, not actual-provider proof.
+
+Category provenance requires exact MESSAGE prefix `qt.qpa.input:` or
+`qt.qpa.input.events:`; keep exact original prefix/message and classify startup/
+evdevtouch/TouchPoint/pressure only inside those categories. Untagged TouchPoint
+text is category-unknown. Environment absence does not exclude internal
+qSetMessagePattern/category override. No extra category or guessed provenance.
+
+### Concrete clock, query and bounds
+
+No SDK timestamp hook. Proposed private operator takes two read-only target
+snapshots, each<=128 ASCII bytes: boot ID, UTC whole Unix seconds (`date -u +%s`),
+monotonic centiseconds from /proc/uptime. First is immediately before activation
+after rollback arming; second immediately after first completion passes decoder
+and current-candidate guard, before image work. Bind nonce and later Ready PID/start.
+Require canonical fields, same boot, nondecreasing clocks, wall versus monotonic
+delta within1010ms for second rounding. Missing/jumped clocks/deadline loss is
+unknown, no widening/reread. Live bookkeeping uses original150s host budget.
+Query enclosure [begin_s,end_s+1] must be<=150s, as must monotonic elapsed. It
+encloses activation through first guarded completion OBSERVATION including final
+whole second/observation lag, not exact wall publication inferred from Qt ms.
+@epoch syntax/emitted category format still need target confirmation before use.
+
+After verified restoration exactly ONE nonfollowing query:
+
+```
+LC_ALL=C TZ=UTC journalctl --quiet --no-pager --all --utc --output=json \
+  --output-fields=MESSAGE,_PID,_BOOT_ID,__REALTIME_TIMESTAMP,__MONOTONIC_TIMESTAMP \
+  --lines=257 --since=@BEGIN_S --until=@END_PLUS_ONE_S \
+  _BOOT_ID=BOOT32 _PID=CANDIDATE_PID
+```
+
+Validated substitutions only; BOOT32 is32 lowercase hex without hyphens. PID/boot/
+time conjunction excludes stock/other processes/boots. PID-start remains bound by
+live guards; _PID alone is not a generation token.257 selects recent records, so
+257 means potentially omitted older data: truncated/unknown, not startup-complete.
+No generic boot/unit dump, follow, reread/retry or hard remote cancellation claim.
+
+Proposed wrapper runs that single journalctl, captures producer exit and appends
+nonce-bound `QUERY_EXIT_<nonce> <status>`; stream then passes `head -c 65537`.
+Head success alone is not query success. Bound total stdout storage INCLUDING
+trailer to65537 bytes, separate stderr<=1024 and one transport<=5000ms. Missing/
+partial trailer, nonzero producer status, timeout, malformed encoding/JSON,
+65537 bytes or257 JSON records means unknown. Closed pipe may stop a producer,
+without guaranteed remote cancellation. --all avoids silent4096-byte field nulls
+but journalctl internal allocation is not bounded by stdout cap. General Native
+reads to end: later implementation must genuinely bound this one capture, not
+claim existing Native is bounded or expand generic transport policy.
+
+JSON is one object/newline; systemd still emits cursor/clock/boot fields with
+selected output fields. Require scalar MESSAGE/_PID/_BOOT_ID and decimal clock
+strings, exact PID/boot/time enclosure for each record. Missing/null/array/binary
+fields are unknown, never coerced. Retain only complete eligible JSON records,
+<=256 and<=65536 UTF-8 bytes INCLUDING metadata. Embedded MESSAGE LF/CR stays
+escaped in one JSON record. Drop unrelated candidate message bodies, retain counts;
+keep input-device metadata private. Raw caps apply BEFORE category filtering.
+Partial eligible prefix may remain historical with truncated=true/status=unknown,
+never coverage proof. No eligible points/hidden tags/flush loss/Qt override means
+inconclusive. An additive private receipt binds endpoints/tuple/query/filter/status/
+counts/bytes/hashes/truncation/unknown; it changes no authority or spent flags.
+
+Astra/Main exact proposal review precedes implementation selection. Later focused
+fixtures cover unchanged stock/candidate-only env/existing-rule hold, boot/PID/
+clock refusal,257/65537 sentinels, long/multibyte/embedded-LF JSON, malformed/array
+fields, complete record retention, producer status despite head, missing trailer,
+timeout/no retry and unchanged recovery. Interior pre-filter point versus global
+corner narrows downstream; already-corner with normal handler bounds narrows
+earlier normalization/transform/contact paths, not raw-parser proof. Startup only
+is inconclusive. No navigation/calibration/ABI fix or physical comparison selected.
+
+Source basis: Main selection/capability reports, Astra exact-plugin report (not
+Sol redisassembly), [upstream journalctl documentation](https://raw.githubusercontent.com/systemd/systemd/main/man/journalctl.xml)
+for JSON/limit semantics. Endpoint/wrapper/cap/refusal choices are proposed
+engineering decisions awaiting exact review and target compatibility confirmation.

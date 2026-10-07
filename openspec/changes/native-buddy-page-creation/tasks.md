@@ -47,3 +47,5 @@
 - [x] 4.16 Review fixed device-frames-v1 SDK/consumer proposal with Main/Astra before implementation; require exact signed device IDs and independent frame valid_mask semantics, preserve spent evidence and separate future artifact/packet/device gates.
 
 - [x] 4.17 Independently review device-frames-v1 SDK/Buddy implementation and focused fixtures at exact frozen revisions before separate artifact/packet/device gates. Preserve all spent receipts.
+
+- [ ] 4.18 Independently review candidate-only evdev logging proposal, concrete clock/journal/category/cap refusals and unchanged recovery before separate implementation/artifact/device selection. Preserve spent8b/4254.
