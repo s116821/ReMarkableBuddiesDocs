@@ -3,7 +3,9 @@
 - [x] Read REM-52 and prerequisite/domain/Manager issue chronology; inspect REM-36 source and central contracts and active REM-37 record types.
 - [x] Inspect provider documentation and maintained sync prior art; distinguish candidate mechanism from live-provider proof.
 - [x] Propose modes, conditional publication, source-document projection, local fencing, media/restore/status contracts before implementation.
-- [ ] Obtain independent exact-revision contract review and resolve aggregate projection/fencing ownership with REM-37.
+- [x] Obtain independent review at ebf8c72 accepting generic fixed-ID metadata create-or-read and transport fixtures only.
+- [ ] Obtain owner review of the admission/settlement/projector/application-matrix integration delta and coordinate REM-37 seam ownership.
+- [ ] Implement and verify the accepted generic adapter slice without enabling shared-mode publication.
 - [ ] Qualify or reject the candidate provider primitive using an explicitly authorized disposable app-data namespace; preserve reproducible evidence without secrets.
 - [ ] Implement accepted generic scope/selection and conditional transport seam, reusing REM-36 domain-opaque storage and bounds.
 - [ ] Implement mode/binding isolation, bootstrap/catalog registration, outbox replay and first-winner replacement without stale auto-rebase.

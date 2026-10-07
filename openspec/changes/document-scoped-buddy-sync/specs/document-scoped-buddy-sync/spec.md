@@ -49,11 +49,19 @@ A group SHALL be selected by verified immutable root identity, not filename. Reg
 - THEN joining requires explicit root selection and cannot silently merge them or infer uniqueness from listing order.
 
 ### Requirement: Atomic selected view and operation invalidation
-Applying an aggregate SHALL verify and stage its complete selected view before one durable local activation boundary. Reader/Writer operations SHALL pin and recheck generation/base at durable-write and native-admission boundaries. Stored historical branches SHALL NOT resurrect as active shared heads on recovery.
+Applying an aggregate SHALL verify and stage its complete selected view before one durable local activation boundary. Reader/Writer operations SHALL atomically revalidate generation/base with durable writes and serialize actual native handoff with selection activation through a domain-owned admission guard. Already-admitted uncertain effects SHALL retain reconciliation guards and prevent conflicting admissions until settled; replacement SHALL NOT retroactively cancel them or infer success. Stored historical branches SHALL NOT resurrect as active shared heads on recovery.
 
 #### Scenario: Pull during an active operation
 - WHEN a winning upstream revision replaces a generation used by an in-flight operation
 - THEN stale completion cannot append active history, claim success or dispatch native effects; unrelated aggregates remain unchanged.
+
+#### Scenario: Selection races native admission
+- WHEN selection activation occurs between a preliminary generation check and attempted native dispatch
+- THEN the serialized admission guard refuses stale dispatch, or records admission before activation and requires guarded settlement; the OS process lease alone is insufficient.
+
+#### Scenario: Already-admitted uncertain effect
+- WHEN selection changes while an admitted external effect lacks verified completion
+- THEN it remains reconciliation-required, conflicting admissions are blocked, and late completion cannot attach stale history to the new selection.
 
 #### Scenario: Crash around activation
 - WHEN a crash occurs before or after activation
@@ -80,3 +88,10 @@ Versioned file/OS contracts SHALL expose mode/identities, committed/applied revi
 #### Scenario: Provider unavailable during offline edits
 - WHEN internet/auth is unavailable
 - THEN local interaction continues with visible pending work pinned to its accepted base; later contention adopts the committed winner rather than auto-rebasing stale edits.
+
+### Requirement: Qualified application visibility
+Shared mode SHALL require an explicitly qualified browser/Electron/tablet OAuth application-binding matrix; account equality alone SHALL NOT establish app-data/private-property visibility.
+
+#### Scenario: Unsupported client registration
+- WHEN a selected account is used through an unqualified or incompatible OAuth application binding
+- THEN shared mode remains disabled or refuses activation, without widening scopes or exposing credentials.
