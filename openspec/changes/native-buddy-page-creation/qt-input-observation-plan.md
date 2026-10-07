@@ -1042,3 +1042,25 @@ Source basis: current Main implementation selection, exact source diff and fresh
 host provider/stream/mock-recovery outputs. Target safe-normalization synthetic
 evidence is separately reported by Main; exact spent failing predicate remains
 untraced. Main owns canonical evidence closeout and any later runtime selection.
+
+### Independent three-site source acceptance
+
+Main and Astra accepted exact Buddy
+`11afc6bcd0502ea1d9732a904f59de7a7101c631` with owning Docs
+`3a82892cf5decd72fa11c119d7a8885199b73b2d` for source only. Both independently
+read the complete implementation/test/doc deltas and passed81 mawk/81 BusyBox,
+unsupported-dash refusal, updated9 environment,86 journal and334 collector checks.
+Diff checks and strict OpenSpec validation passed. Sol read and hash-verified
+Main's joint acceptance receipt SHA256
+`9cc1528dc2a143f218addef033bf9495ca920c80bdfeb91da2a970690b0fcfa2`.
+Main additionally ran the exact extracted three-guard81-case synthetic fixture
+on target /bin/sh/tr/awk, exit0, with saved script/output. This is provider/predicate
+compatibility evidence, not candidate-runtime or input-delivery qualification.
+
+The source review closes only the selected three-site repair. Older facts-only
+paths remain held; SDK6504 and spent8b/4254/66f5 evidence are unchanged. No exact
+spent failing predicate is retrospectively established. Main reserved fresh
+1a4816bb87f543bdbb14bba901aac25a but has not delivered its baseline or selected
+worker artifact/private-packet preparation at this closeout. No generation or
+device execution follows from reservation. Task4.11 remains open. Source basis:
+current exact Main/Astra acceptance and hash-verified receipt/target fixture output.
