@@ -1177,3 +1177,52 @@ new trial/source change selected. Astra's transport diagnosis is separate.
 Source basis: actual saved scripts/outputs/receipt, exact typed decoder, local
 hashes/full decode/visual review and Main-only device-operation reports. Sol made
 no device actions; exact journal error and downstream input cause remain unknown.
+
+### Proposed fixed byte-limiter repair (no implementation selected)
+
+Main's separately saved dummy wrapper substitutes a harmless producer for
+journalctl, using the same host capture and target path. It returned exit1 with
+the concrete error `head: invalid option -- 'c'`; target BusyBox1.36.1 head build
+lacks that feature. Sol read the saved script/JSON. The dummy's error has the same
+99-byte stderr shape as the spent attempt, making it a plausible explanation;
+actual stderr was discarded, so this does not establish exact retrospective error
+identity. No actual journal reread/query retry. Astra's host BusyBox image accepts
+head-c and passed the same command with producer7, showing version label alone
+does not qualify target build features.
+
+Propose changing only fixed Get-InputEvdevJournalCommand byte-limiter tail from
+head-c65537 to installed-tool baseline form:
+
+```sh
+) | dd bs=1 count=65537 2>/dev/null
+```
+
+Single-byte blocks make count the exact byte sentinel without iflag/status or
+other optional extensions. Suppress dd transfer-statistic noise only; producer
+stderr still enters the existing bounded1024-byte channel. One query, explicit
+producer status/final nonce trailer, all flags/fields/origin/clocks/caps/strict
+decoder/retention rules, concurrent host acquisition and one5s deadline remain
+unchanged. Pipeline success alone never establishes producer success; malformed/
+missing trailer, nonzero transport/producer,65537 sentinel and overflow stay unknown.
+65k one-byte reads/writes may cost time: measure exact boundary/performance through
+Main's harmless target dummy before acceptance. No hard remote cancellation claim,
+new remote file/helper/clock/SDK/schema/framework/budget/launch/recovery change.
+
+Focused later fixtures must extract the actual builder command and substitute
+only dummy producer: short success, producer7 under errexit, split/short writes,
+65536 versus65537 versus larger stdout, complete final trailer, binary/multibyte
+bytes, missing/failing dd, target-build feature/performance and original decoder/
+collector/recovery/normalization regressions. Host generic BusyBox results cannot
+substitute for Main's exact installed target dummy. No fresh nonce/artifact/input
+or native trial follows from this proposal; all spent receipts remain immutable.
+
+Astra also recommends retaining already-acquired bounded stderr for future
+diagnosis. This is a separate explicit scope decision for Main+Astra review:
+lossless Base64 of at most1024 bytes in the private additive diagnostic would
+avoid unbounded reads or invalid UTF-8 coercion, with byte count/overflow/status
+still authoritative and no authority promotion. No raw journal stdout persistence
+or retrospective error recovery. Do not implement that extension without selection.
+
+Source basis: saved Main target dummy and Astra host command fixture reports plus
+local script/receipt readback. dd replacement/test requirements and optional
+bounded-error retention are engineering proposals awaiting exact joint review.
