@@ -1,5 +1,21 @@
 ## ADDED Requirements
 
+### Requirement: Bounded development facts callback-status continuation
+The development collector SHALL permit at most one returned transport timeout
+from its read-only callback-status poll to lead to a fresh poll within the original
+150000ms host clock. It SHALL preserve the timeout evidence, unchanged transport
+bounds, complete live facts/generation proof and mandatory restoration. It SHALL
+NOT renew the allowance, consume timed-out stdout, retry an action or upgrade
+historical flags. No other transport operation receives this allowance.
+
+#### Scenario: One transient status timeout
+- **WHEN** local transport termination is confirmed, one status timeout has occurred, and the original live window remains open
+- **THEN** one fresh read-only status observation is allowed without any readiness or action authority inferred from the timeout or absent callback.
+
+#### Scenario: Repeated or unsafe observation
+- **WHEN** another status timeout occurs, the original deadline expires, termination is uncertain, or the poll/proof refuses
+- **THEN** the collector retains the failed evidence and follows existing restoration duties without renewing observation or accepting partial/historical success.
+
 ### Requirement: Conditional supervised session activation
 If XOVI is selected after comparison with robust native/direct alternatives, the Buddy product SHALL ship a tiny independent Supervisor and normal runtime as separate processes in the same repository, release artifact and Manager installation. It SHALL keep cold boot stock with no XOVI injection, manage the vetted payload internally, gate activation by exact compatibility, and restrict hooks to necessary semantic capabilities. The earlier categorical production exclusion SHALL NOT disqualify this candidate; selection still requires safety, maintainability and native evidence. SDK-owned adapter contracts remain in ReMarkableOpenSDK's OpenSpec.
 

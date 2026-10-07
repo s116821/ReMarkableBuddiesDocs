@@ -4,6 +4,11 @@ REM-25 requires a native writable Buddy page immediately after a source page, or
 
 ## What Changes
 
+- Propose a bounded development facts callback-status continuation after one
+  transport timeout within the original host clock; see
+  [the source-only collector plan](facts-observation-continuation-plan.md).
+  Implementation and new device selection remain pending coordination.
+
 - Qualify Qt/XOVI native operations and credible alternatives against open annotated PDFs and notebooks, then implement the accepted route in Rust with any minimal internal extension needed.
 - Add capability checks, exact document/page/session guards, idempotent creation/recovery and safe reuse for Reader, Writer refinement and blank start.
 - Require exhaustive real investigation before selecting manual blank-successor fallback; retain safe manual handling when automatic capability is unavailable.

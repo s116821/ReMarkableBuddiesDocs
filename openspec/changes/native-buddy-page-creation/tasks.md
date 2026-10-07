@@ -28,6 +28,7 @@
 - [ ] 3.8 Consume SDK logical Next/Previous using existing one-gesture completion: fresh active-target verification after insertion, zero gesture if already target, or one Next only for verified source/adjacent intended target. Preserve sticky guards and explicit correlated structural handoff; direct openPageKey remains deferred.
 
 ## 4. Verification and delivery
+- [ ] 4.9 Coordinate the bounded callback-status continuation proposal before code; implement only the one-use read-only allowance, verify exact branch/outer-finally failure and original-clock cases, independently review frozen revisions, then separately select any future artifact/packet/device gate. Preserve spent2f90 flags and historical waiting limits.
 - [ ] 4.7 For a selected supervised candidate, verify cold-boot stock, first-gesture handoff, subsequent gestures, unknown compatibility refusal, stalled/missing heartbeat, crash-loop recovery, UI-independent disable, Manager update/uninstall and reboot stock baseline; preserve source/data and reject stale-handle replay.
 - [ ] 4.1 Required Rust format/lint/tests/ARM build and targeted simulator checks with public manual equivalents.
 - [ ] 4.2 Coordinator executes Q1-Q10 on final candidate; inspect screenshots and preservation hashes/semantics; separate evidence types.

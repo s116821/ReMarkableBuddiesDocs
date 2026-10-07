@@ -111,6 +111,13 @@ Coordinator approved this change and replacement of four reader-answer-pages blo
 
 ## Gates and delivery
 
+The prospective development collector correction is specified in
+[facts-observation-continuation-plan.md](facts-observation-continuation-plan.md).
+It permits only one fresh read-only callback-status observation after a returned
+transport timeout within the unchanged original150s host clock, retaining full
+live proof and restoration duties. No implementation or new device run is selected
+by this plan; spent results and the held generic framework remain preserved.
+
 Only Docs/OpenSpec checks now. No native/model result claimed. Implementation starts after REM-9 acceptance and exact plan acceptance by coordinator and independent reviewer. qualification.md and tasks.md remain open. Future linked Docs/Rust/required-Manager delivery identifies exact SHAs, passes code/spec checks, syncs/archives only completed behavior, uses Summary-only bodies and explained inline evidence, inspects CI/bot availability and is squash-merged by coordinator. REM-35 alone owns1.0.
 
 ## E0 host-owned lifecycle experiment
