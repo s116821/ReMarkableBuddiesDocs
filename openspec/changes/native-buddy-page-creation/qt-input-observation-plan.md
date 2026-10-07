@@ -10,7 +10,7 @@ the existing FactsEntry source and recommended retained focused-window readiness
 non-consuming bounded filter records and one separately queued grabWindow.
 
 SDK owns the exact entry/filter/window/purpose/clocks/output contract in
-[SDK proposal5a60a450c842130bd115d0dc1aaaa4fb266411b6](https://github.com/s116821/ReMarkableOpenSDK/blob/5a60a450c842130bd115d0dc1aaaa4fb266411b6/openspec/changes/establish-native-platform-contract/input-observation-proposal.md).
+[SDK proposald323fc4aae71250c2f5151028ac782dce860332f](https://github.com/s116821/ReMarkableOpenSDK/blob/d323fc4aae71250c2f5151028ac782dce860332f/openspec/changes/establish-native-platform-contract/input-observation-proposal.md).
 This consumer plan references that frozen revision; it does not duplicate SDK
 capability semantics. Central Docs owns the fixed publisher/operator, Main's
 external action/capture gates and preservation/recovery evidence. Proposal only;
@@ -58,12 +58,21 @@ timeout allowance may apply only to this specialization's initial completion
 status poll after explicit source review, with identical exception/deadline rules;
 it grants no extra image/end-publication/generation-operation retries.
 
-Main obtains separate existing heap capture and, if separately selected, physical
-evidence. A Qt image may render/read back and is not passive or hard cancellable.
+After actual GUI completion, the selected collector successful-completion branch
+performs one separate existing Main heap-capture command BEFORE finally/restoration,
+while the SAME candidate remains alive, with live tuple/stage checks around it and
+capture timestamps within the original host deadline. Freeze that existing command
+in the future private packet; no second phase framework, extra GUI grab, input or
+capture retry. Main retrieves/inspects both images. Physical evidence remains a
+separately selected Main observation. A Qt image may render/read back pending state
+and is not passive or hard cancellable.
 Keep capture order/timestamps and window stability explicit: an image difference
 is attribution/coherence evidence only with adequate temporal alignment, not proof
 of physical EPD behavior or a handler's acceptance. Event records describe an
 observer delivery boundary, never unique physical contact counts or kernel cause.
+Zero event count plus end/completion does not prove Qt input queues are drained;
+ordering across event and filesystem descriptors remains unknown. Arbitrary pixel
+differences are not proof without stable content/window and aligned timestamps.
 
 ## Verification and gates
 
