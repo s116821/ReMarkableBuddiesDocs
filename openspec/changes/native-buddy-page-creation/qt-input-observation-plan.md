@@ -98,8 +98,6 @@ claim. Later native page bindings still follow canonical current roadmap
 waiting/unbound and stale-authority invalidation requirements; this diagnostic
 does not implement or change them.
 
-## October 6 implementation and review checkpoint
-
 ## Proposed fixed legacy heap overview binding (no source correction selected)
 
 Spent8b3f actual receipt05c1ad8d6dc37e39871e86b9f5e5c491484ddc994a5a15bb04c7e8b0d72bac94
@@ -147,6 +145,8 @@ coordinate lead without adding instrumentation/framework scope: actual TouchBegi
 End reached the retained Qt window at its bottom-left, while the Main helper request
 was logical90,260. These observer/receiver-local coordinates and duplicate counts
 do not establish the mapping cause or handler acceptance.
+
+## October 6 implementation and review checkpoint
 
 Packet-preparation correction: Main's independent binary rebuild matched both
 artifacts, both mocs and both ELF reports, but full private operator review blocked
