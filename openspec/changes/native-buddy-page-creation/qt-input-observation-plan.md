@@ -694,6 +694,25 @@ earlier normalization/transform/contact paths, not raw-parser proof. Startup onl
 is inconclusive. No navigation/calibration/ABI fix or physical comparison selected.
 
 Source basis: Main selection/capability reports, Astra exact-plugin report (not
-Sol redisassembly), [upstream journalctl documentation](https://raw.githubusercontent.com/systemd/systemd/main/man/journalctl.xml)
+Sol redisassembly), [upstream journalctl documentation](https://raw.githubusercontent.com/systemd/systemd/v255/man/journalctl.xml)
 for JSON/limit semantics. Endpoint/wrapper/cap/refusal choices are proposed
 engineering decisions awaiting exact review and target compatibility confirmation.
+
+
+### Independent logging proposal acceptance (implementation not selected)
+
+Main and Astra accepted exact owning proposal5d21db583c6c93c5f48ffa7683f26987e41103e3
+with no blocking finding. Astra checked both diffs and systemd v255 documentation;
+reference is now pinned to v255. Main's target zero-record parser check is capability
+evidence only, not emitted-category or nonempty-coverage proof. Close task4.18 for
+proposal review only; no implementation/artifact/nonce/device follows automatically.
+
+Later implementation must bound BOTH stdout and stderr during acquisition before
+any generic Native persistence/ReadToEnd, drain concurrently without deadlock under
+one deadline, and capture journal producer status despite shell errexit. Require
+the nonce status trailer as the FINAL complete line; head status is not producer
+status. Logging unknown/failure stays additive and neither poisons nor promotes
+original GUI/image/restoration/cleanup flags. No remote journal file, new timer or
+schema. Two endpoint samples cannot exclude a wall-clock excursion that returns
+between them: the interval remains an observation enclosure, not exact publication
+or completeness proof. Source basis: current Main/Astra exact proposal review.
