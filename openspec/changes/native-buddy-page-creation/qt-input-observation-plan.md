@@ -487,3 +487,44 @@ artifact/private packet/device/physical-input qualification remain open. Fresh
 baseline and any later preparation require Main's separate selection. No worker
 device contact, nonce reuse, retry, facts promotion, merge, sync or archive.
 Original spent8b receipts/false flags and separate cleanup chronology are retained.
+
+## Reserved4254 preparation checkpoint (no execution selected)
+
+Main selected preparation only for fresh reserved/unspent4254849c436844da8c765fe9fef92ec7
+after fresh stock25872/226382128 baseline, exact six-page order and fourteen hashes.
+Selected stock baseline SHA8d27dd5151db43691e122a820346951257992cecd0c7d32b069cd99c83103e87;
+content9f2bac7ed000d7e7c4af57977d6047883c5e2077658a0577827b49c19a92ad05;
+fixture linesad713b8f0bcb930c6c4bd243a4d4949c70895b7872db8cdea22fccbcf7fa90ac;
+beforePNGa8f64e12a2e5d7a8e8169cb7ec4d1b9763761dffaba6af97a8f52f698af1216b,
+visually My Files (thumbnail Page1of6 is not opened-page qualification).
+
+Private prefix device-frames-probe-4254849c436844da8c765fe9fef92ec7 contains
+manifest build.json SHA6ef252f44dd810bc597b16f7fbdcee36046ba3dfe33c50e10fed851783a1bb7f,
+69 direct file bindings. Accepted implementation4f84/21e/156138 and prose closeout
+checkout6504/21e/fe889 are disclosed; SDK tools diff against4f84 is empty. Bind
+Main's separate final source acceptance JSON SHA2173ee5f8cb9084652c66a590688bbdf691d906b880ac6f3e84359b2d944d6ee;
+historical main-review5939 remains pending-docs history, not final triple acceptance.
+
+Payload178644B SHAca267ddcdec40822568afaf87d56e6be446bce860786222d3bfc8e1c45a4aa92;
+publisher41780B SHA0c35996c4e10df3deb32e368fc121b250b4ddb6ad7f97310aa0f1b183247a962;
+private operator SHAe1e083e27cc0260520a612af0f1ed25bfa715d0d604624546a831756e16f4a00.
+Vendor416c/networknone/read-only source build EXIT0; explicit device-frames-v1 and
+legacy-df745-overview-768x1024 bindings, original policy/deadline/restore/preservation,
+helper SHA/no flags and no authority changes. PrepareOnly repeated byte-frozen;
+actual expanded arming hash/path PASS, no zero operational SHA; build/four scripts/
+seven templates/expanded arming shell syntax PASS;10 mocked transport checks plus
+three harmless captured Linux commands PASS. First harmless harness output
+expectation mistakenly included literal backslash-n; retained original test script,
+corrected r2 expectation, no operational changes. No SSH or device execution.
+
+Main independently rebuilt and matched all six outputs byte-for-byte (payload,
+publisher, two mocs and two ELF reports). Sol then compared those local output
+bytes and bound a separate preparation-verification receipt to manifest and Main
+build exit/log/review/output hashes. Original frozen manifest's pending rebuild
+status remains historical. Main/Astra exact artifact/private packet/operator review
+is pending. Main alone may later select one unchanged40f496 tap-echo90,260 followed
+by one fixed endpublisher after positive current readiness; preparation is not
+execution selection. Preserve spent8b and M3; native task4.11 remains open.
+Source basis: current Main selection, locally verified baseline/build/packet bytes,
+Main independent outputs read back locally; internal private references have no
+public links. No sync/archive/merge or tablet actions by this worker.
