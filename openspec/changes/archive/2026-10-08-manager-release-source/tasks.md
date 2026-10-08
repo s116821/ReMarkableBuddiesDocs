@@ -6,8 +6,8 @@
 - [x] Verify refresh/promotion, malformed/incomplete metadata, rate-limit/fault and persistence locally.
 - [x] Verify browser and Electron shared rendering, keyboard/mobile layout and sandbox; inspect screenshots.
 - [x] Run appropriate lint/build/host checks and central Docs validation.
-- [ ] Independent exact-source review and paired PR/CI evidence.
-- [ ] Sync canonical spec and archive this bounded completed change in coordinated delivery.
+- [x] Independent exact-source review and paired PR/CI evidence.
+- [x] Sync canonical spec and archive this bounded completed change in coordinated delivery.
 
 ## Remaining Issue Gates (not delivered by this preview)
 - [ ] REM-41 signed APK/provenance/compatibility, wired transport, Vellum lifecycle and source equivalence.
