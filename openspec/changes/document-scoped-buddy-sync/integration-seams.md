@@ -1,6 +1,6 @@
 # REM-37 integration proposal for REM-52
 
-Status: proposed shared-path changes, not implemented. SCRAPPY-DOO owns REM-52 storage/transport work; Main owns the unfinished REM-37 domain and Reader workflow. This proposal follows acceptance of the integration contract at Docs `7e06d9f96f7fb037698b4b44a71ed2518e44ff06`. It requests owner review of the following concrete seams before either lane edits shared paths. Generic transport remains at Buddy `8d1f1512e39575e3ea162b062d5b4389df9daea5`; it does not activate these seams.
+Status: owner responsibilities accepted at review5442770097. Selected storage primitives are implemented as a review candidate; domain/projector/admission and selected worker integration remain unfinished. The original seam analysis below records the accepted proposal, not current-domain implementation. SCRAPPY-DOO owns REM-52 storage/transport work; Main owns the unfinished REM-37 domain and Reader workflow. This proposal follows acceptance of the integration contract at Docs `7e06d9f96f7fb037698b4b44a71ed2518e44ff06`. Main subsequently accepted the storage responsibilities and retains the domain paths; see the implementation sections below. Generic transport and selected storage checkpoint `cca7ea9d6a1942ccdfed70d76aab615fd2dca5d4` remain candidate code with no worker/native effect activation.
 
 ## Inspected source and gap
 
@@ -15,7 +15,7 @@ The inspected REM-37 source is `673c5781cd5d89a89d712b9d8253433c920dc37c`. Chang
 
 ## Proposed division of changes
 
-Main owns domain decoding, projector reference closure, attempt pinning, operation admission and historical settlement semantics. SCRAPPY-DOO owns a domain-opaque selected storage view, guarded commit/activation primitives and sync coordination. Interface names below describe responsibilities; they are proposals, not existing APIs or permission to implement a second operation framework.
+Main owns domain decoding, projector reference closure, attempt pinning, operation admission and historical settlement semantics. SCRAPPY-DOO owns a domain-opaque selected storage view, guarded commit/activation primitives and sync coordination. The original interfaces below describe the accepted responsibilities. Concrete candidate storage APIs and their limits are recorded in the implementation sections; they do not create another domain operation framework.
 
 1. Add an opaque selected-view token and bounded snapshot primitive in `src/storage/mod.rs`. Under one store lock, capture selection identity, accepted base and generation together with opaque envelope references and media coverage. Preserve the existing all-history index for recovery; explicitly distinguish selected reads from retained evidence reads. The ordinary local-only/isolated-backup path retains its current behavior. Do not globally change the meaning of all-history import to mean shared winner activation.
 2. Add a guarded selected commit and atomic winner activation under that same store lock. A commit checks the caller's captured base/generation at the actual durable publication boundary, in addition to current record-parent checks. Stage and validate before activation; atomically switch durable selection metadata only after the complete closure is available. Recovery must rebuild the selected view from that metadata, not every retained branch. A lost acknowledgement replays the same operation identity without bypassing the generation check or duplicating an active append.
@@ -24,9 +24,9 @@ Main owns domain decoding, projector reference closure, attempt pinning, operati
 5. Main places admission at the actual workflow-to-device handoff. Admission and activation use the same domain guard, with lock order domain guard then store lock. Persist the existing operation intent/evidence and its pins before external handoff, recheck under the guard, and hold the guard through the actual backend submission. Do not hold the store mutex across network I/O or completion observation. For a synchronous backend with no separable submission/completion API, hold admission through the backend call rather than releasing it before effects; Main must review the resulting activation latency and any required backend split. A multi-step navigation/render sequence must revalidate at each subsequent handoff and stop after invalidation.
 6. Activation preserves unresolved admitted intent, original request identity and required evidence/media in retained reconciliation storage outside the replaced active view. Main supplies a settlement path that addresses that original intent rather than calling advance_fact against new active heads. Late verified or uncertain results remain historical facts; unresolved settlement blocks conflicting admission for that aggregate. Imported receipts, wall-clock expiry or a sync success cannot clear that latch. Restart reconstructs the latch before admitting effects; no resume path automatically repeats native output.
 
-## Owner decisions required before shared-path edits
+## Accepted owner responsibilities and remaining domain decisions
 
-The following API responsibilities are the precise next owner decision, not existing methods or accepted durable schemas:
+The following responsibilities were accepted in owner review5442770097. Concrete storage primitives are now candidate implementations; the domain journal and native integration remain Main-owned unfinished work:
 
 - `selected_snapshot(scope, bound) -> (SelectionToken, opaque snapshot)`: store-minted, non-forgeable token pins the store generation, selected aggregate generation, accepted descriptor digest and selected scope/binding identity. The opaque snapshot contains exact envelope/object references plus media coverage; it is captured at one lock boundary. The aggregate generation is separate from the existing whole-store generation. No implicit current-head lookup replaces those references during later projection.
 - `commit_selected(token, existing envelopes, media) -> commit receipt`: revalidate all token pins and causal parents at publication under the store lock. A stale token refuses even when record parents still match. Existing operation replay must remain scoped to its original selection, not become authorization to append to a replacement. Main holds the domain admission guard first where the commit participates in admission.
@@ -34,7 +34,7 @@ The following API responsibilities are the precise next owner decision, not exis
 - Main extends the existing OutputPending `OutcomeFact`/operation receipt path to associate the operation with those pins, original external request identity/payload fingerprint, qualified source/evidence references and settlement state. Proposed extension belongs in the existing domain journal, not a parallel storage operation schema. Main decides the compatible encoding/migration and exact request type; current OutcomeFact/Receipt fields do not already contain these facts. Imported facts cannot manufacture a locally admitted intent or native authority.
 - `settle_retained(original intent references, original-request evidence)`: Main's historical settlement route targets the retained intent, not `advance_fact` resolving new active heads. Storage persists those new opaque historical facts without adding them to active selected membership or enqueueing them as a new shared document edit. Its exact receipt/index transaction and reconstruction of the unresolved admission latch require Main's journal decision before implementation.
 
-The disconnected fixture slice may exercise explicit references, immutable media handles, all-history/selected separation and refusal boundaries in the real Store. It must not present a caller-supplied fixture token or reference list as implemented selected activation, domain closure, durable journal pins or native admission. SCRAPPY-DOO owns that isolated storage evidence; Main owns the domain extension and actual handoffs. No shared domain/workflow edit follows from this API proposal until owner agreement.
+The disconnected fixture slice may exercise explicit references, immutable media handles, all-history/selected separation and refusal boundaries in the real Store. It must not present a caller-supplied fixture token or reference list as implemented selected activation, domain closure, durable journal pins or native admission. SCRAPPY-DOO owns that isolated storage evidence; Main owns the domain extension and actual handoffs. The accepted owner agreement unblocks storage; Main retains all shared domain/workflow edits.
 
 - Agree the selected-view/guarded-commit interface and which lane lands each shared file, with exact refreshed source heads. Domain guard ownership must work across every Ledger/workflow handle used by activation and admission; a fresh unrelated mutex per handle is insufficient.
 - Main identifies the existing operation intent record and exact durable location for its aggregate pins and historical settlement. The inspected OutputPending/OutcomeFact path lacks these pins; this proposal does not assert that its current fields already provide them or mint a parallel journal schema.
@@ -50,7 +50,7 @@ The disconnected fixture slice may exercise explicit references, immutable media
 - Project two conversations with one document from one consistent snapshot; replace selection during media reads and prove immutable reference pinning. Exercise receipts, bindings, exports, tombstones, source/capture closure and sequence validation. A record with conflicting owners, unknown variant or absent stable document is not silently assigned or dropped.
 - Retain the existing local-only, isolated backup, REM-37 fact/reconciliation and generic adapter tests. Host interleavings do not qualify live Drive exclusivity, actual OAuth application visibility, native source identity or SDK/native output.
 
-The first implementation slice after owner agreement should be bounded selected storage/projector fixtures with no worker or native activation. Actual admission/settlement integration follows only after Main's journal and backend seam decisions. Docs and code remain one unfinished delivery; no canonical as-built change or archival follows from accepting this proposal alone.
+The initial disconnected fixtures and then bounded selected storage primitives follow the accepted owner agreement, with no worker or native activation. Actual admission/settlement integration follows only after Main's journal and backend seam decisions. Docs and code remain one unfinished delivery; no canonical as-built change or archival follows from accepting this proposal alone.
 
 
 ## Accepted storage implementation detail (owner agreement 5442770097)
@@ -119,3 +119,36 @@ mutex during provider I/O. Existing active handles must stop/drop (or disable an
 step) before initialization; an enabled legacy handle cannot be opened/re-enabled
 on a selected store. This prevents the old all-history sync path from accidentally
 publishing retained branches. A selected-aware coordinator remains unfinished.
+
+## Retained-only settlement storage increment
+
+The next domain-opaque API is `commit_retained(current_token, RetainedCommit,
+objects)`, where RetainedCommit carries a stable settlement operation, original
+accepted publication operation, exact immutable intent ObjectRef, and full retained
+manifests. Under the publication lock it proves the intent belongs to that original
+accepted publication and current retained closure, not current active membership.
+It verifies the current token, preserves every prior retained record/required-media
+reference, stages/validates new facts, and atomically republishes the unchanged
+winner references plus extended retained evidence. New retained revisions cannot
+mutate current active record keys. Main validates OutcomeFact/original-request
+semantics and derives the durable unresolved latch from these facts under its guard.
+Storage does not infer verified completion or clear a latch. Mutation metadata
+explicitly distinguishes retained-only publication so a future coordinator cannot
+mistake it for a new shared document edit; no wake/enqueue follows from this API.
+Replay returns the original historical publication; it cannot append to a later
+replacement. Pruning settled evidence is a separate unimplemented maintenance policy.
+
+## Selected-store old-reader refusal
+
+Selected metadata cannot remain silently invisible to a legacy all-history reader.
+Before the first authoritative selected publication, storage prepares a generation
+feature marker tied to the store actor/generation, then a selected-capable generation
+format2 header. New readers accept format2 only with that exact supported marker;
+legacy readers' existing format1-only open check refuses it. These are preparatory
+capability writes, not separate winner or intent activation writes. A crash during
+preparation can leave an unchanged selection with old readers safely refused; the
+single selected transaction still decides old-or-complete-new membership. Missing,
+foreign or unknown feature markers refuse. Immutable envelope/object history is not
+rewritten, and generic unrelated format2 migration without the marker is unsupported.
+This data-format version is independent of Git-tag release versions. Portable
+selected backups remain unimplemented/refused; no effect enablement follows.

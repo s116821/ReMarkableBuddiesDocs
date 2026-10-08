@@ -25,3 +25,6 @@
 
 - [ ] Independently review the guarded commit/atomic activation increment: bounded hash-linked accepted history, original-selection replay, shared ancestor context, abrupt process-exit recovery, stale token/causal conflicts, media refusal and unrelated scopes.
 - [ ] Implement portable selected backup/restore/migration policy before enabling these maintenance paths for selected stores; current explicit refusal prevents silent metadata loss.
+
+- [x] Implement the bounded selected snapshot/guarded commit/activation/replay candidate; checkpoint cca7ea9d passed hosted CI, with domain/native/provider integration still disabled.
+- [ ] Independently review retained-only settlement linkage and generation-feature old-reader refusal with exact linked source/Docs revisions; qualify source against the unchanged older reader.

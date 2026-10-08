@@ -123,3 +123,18 @@ publication instead of discarding replay evidence.
 #### Scenario: Incompatible maintenance cannot discard selection metadata
 - WHEN backup, restore or generation migration lacks an implemented selected-metadata portability policy
 - THEN it refuses without publishing a complete backup or changing the active generation.
+
+### Requirement: Retained-only opaque settlement publication
+Historical settlement storage SHALL link to an accepted original publication and
+an exact intent reference in retained membership. It SHALL atomically extend
+retained facts/evidence without changing winner references or adding an active
+append. Required prior evidence SHALL remain reachable. Storage SHALL NOT infer
+backend verification or enqueue a new shared document edit from that publication.
+
+#### Scenario: Late settlement after replacement
+- WHEN a domain-validated late fact is published for an exact retained intent
+- THEN the current winner references are unchanged, original evidence and new historical facts reopen together, and stale/foreign/orphan intent requests refuse.
+
+#### Scenario: Retained settlement replay
+- WHEN acknowledgement is lost and the same settlement is retried after another replacement
+- THEN the original settlement publication is returned without changing the replacement or admitting an effect.
