@@ -241,3 +241,12 @@ native getter calls or relaxing acceptance; fresh integration remains open.
 Source basis: current pinned source and decoded final callback, preserved PNG and
 raw receipt, independent cleanup and final-baseline outputs. Deadline exclusion
 uses the existing monotonic clock; the ownership failure cause remains unknown.
+
+Independent consumer review of Buddyb085 reproduced a P2 at the Workflow boundary:
+the development constructor retained an effectful selected facade, and dispatch_reader
+could navigate using an already-published matching context. The historical
+Orchestrator tests' zero-effect observations do not establish refusal for that entry
+point. A narrow immutable-mode dispatch repair and the reviewer's failing regression
+plus ordinary selected-mode control are required before asserting the development
+Workflow always refuses effects. The isolated native capture lane may continue.
+Source basis: [independent review and reproducer](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5457231891).
