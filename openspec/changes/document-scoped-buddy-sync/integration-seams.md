@@ -51,3 +51,71 @@ The disconnected fixture slice may exercise explicit references, immutable media
 - Retain the existing local-only, isolated backup, REM-37 fact/reconciliation and generic adapter tests. Host interleavings do not qualify live Drive exclusivity, actual OAuth application visibility, native source identity or SDK/native output.
 
 The first implementation slice after owner agreement should be bounded selected storage/projector fixtures with no worker or native activation. Actual admission/settlement integration follows only after Main's journal and backend seam decisions. Docs and code remain one unfinished delivery; no canonical as-built change or archival follows from accepting this proposal alone.
+
+
+## Accepted storage implementation detail (owner agreement 5442770097)
+
+The next bounded implementation keeps one authoritative per-scope selection JSON
+transaction. It references the complete selected winner, retained opaque closure,
+original request digest, prior selection digest and bounded history depth. Before
+publishing its successor, the current transaction is durably archived by digest.
+Only history reachable from the authoritative transaction counts as accepted;
+unreferenced staging cannot authorize replay. Recovery validates that chain and
+rebuilds all-history evidence separately from selected membership. Guarded writes
+compare the private token and selected causal heads under the store lock at the
+atomic metadata publication boundary. A repeat returns its original receipt and
+original token only after matching the original parent/request; it does not append
+or issue authority for the current replacement. A fresh selected snapshot is needed
+for further mutations. Bootstrap is an explicit initialize operation requiring a
+nonempty validated closure; snapshot absence supplies no implicit authority.
+
+History count and combined metadata are bounded; saturation refuses further writes
+rather than dropping replay evidence. Compaction is not implemented in this slice.
+Required object corruption or incomplete lineage refuses reads/activation; explicit
+media omission remains represented by coverage. Complete reference closures may
+include ancestors, but their selected head set must be unambiguous. Storage remains
+domain opaque and does not infer which retained facts settle an admitted intent.
+Main must validate retained-intent preservation before invoking activation. Existing
+backup/restore/migration paths refuse selected metadata until their portable policy
+is implemented, preventing silent loss. No worker/native/provider activation follows.
+
+
+Retained closures may share immutable ancestor/context references with the winner,
+but each must contain historical evidence outside selected membership; retaining
+only the active closure is refused. Separate selected/retained lists do not cause
+the retained losing head to become active. Domain validation decides which opaque
+references are unresolved intents and whether an activation preserves all of them.
+
+The storage API is `initialize_selected(scope, SelectionChange, objects)`,
+`activate_selected(token, SelectionChange, objects)` and
+`commit_selected(token, operation, envelopes, media)`. `SelectionChange` carries
+operation, accepted-base digest, selected manifest and retained manifests. Each
+returns `SelectionPublication { transaction, token, replayed }`; replay returns the
+original transaction/token, whose token is stale after replacement. Full closure
+reads include ancestor envelopes; they require exactly one causal head per selected
+record. The domain projector must use those pinned envelopes rather than resolve
+all-history heads. No portable live token can be deserialized.
+
+
+Main's coordinated storage boundary additionally admits domain schema2 only for
+Namespace::Conversation; schema1 continues for every existing namespace. Unknown
+versions and schema2 outside Conversation refuse commit/import/activation/recovery.
+Storage payloads remain opaque: Main owns strict Receipt/OutcomeFact variant and
+field validation, legacy migration and old-reader refusal evidence. This explicit
+namespace gate is not generic future-version acceptance or native authority.
+
+
+A read-only `selected_receipt(scope, operation)` recovers the original accepted
+transaction after process restart without deserializing or minting a live token.
+The domain owner compares original intent/request evidence; missing receipt is not
+permission to publish or repeat a native effect. Existing mutation replay compares
+the original live token/request when that caller still exists. After restart a
+fresh snapshot can authorize a pending mutation only if Main independently verifies
+its persisted intent pins still match; replacement cannot be bypassed by history.
+
+A lifetime registration held by every enabled legacy SyncEngine serializes its
+eligibility with selected publication under the store lock, without holding that
+mutex during provider I/O. Existing active handles must stop/drop (or disable and
+step) before initialization; an enabled legacy handle cannot be opened/re-enabled
+on a selected store. This prevents the old all-history sync path from accidentally
+publishing retained branches. A selected-aware coordinator remains unfinished.

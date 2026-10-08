@@ -5,7 +5,7 @@
 - [x] Propose modes, conditional publication, source-document projection, local fencing, media/restore/status contracts before implementation.
 - [x] Obtain independent review at ebf8c72 accepting generic fixed-ID metadata create-or-read and transport fixtures only.
 - [x] Obtain independent review accepting the admission/settlement/projector/application-matrix contract at 7e06d9; no implementation or live qualification follows from this acceptance.
-- [ ] Obtain Main's owner review of integration-seams.md, refresh the REM-37 source mapping, and agree shared journal/store/backend seam ownership before editing those paths.
+- [x] Obtain Main's exact0830a9af owner review5442770097 and refreshed673c mapping; SCRAPPY owns storage, Main owns domain/journal/backend paths. Schema2 acceptance remains coordinated separately.
 - [x] Obtain Main's efb8fd73 review accepting the coordinated proposal for an isolated selected-store/projector fixture slice; add history/bitmap admission coverage and propose the precise token/commit/activation/journal interfaces for owner agreement.
 - [ ] Review the precise interfaces/journal extension with Main before shared domain/workflow edits; verify and independently review the disconnected real-store projection fixtures without claiming activation/admission implementation.
 - [x] Read Main's exact0830a9af owner agreement (2026-10-07T13:09:56Z): SCRAPPY's selected storage implementation is unblocked; Main retains domain journal/projector/admission ownership.
@@ -22,3 +22,6 @@
 - [ ] Run relevant Rust checks/simulator coverage and central Docs checks; distinguish host/provider/native evidence and remaining gates.
 - [ ] Publish exact linked Docs/Rust revisions, inspect CI/bot feedback, obtain final independent review and coordinate merge order.
 - [ ] Sync final as-built canonical contracts and archive completed scope only; retain unperformed provider/native qualification as explicit unresolved work rather than checking it off.
+
+- [ ] Independently review the guarded commit/atomic activation increment: bounded hash-linked accepted history, original-selection replay, shared ancestor context, abrupt process-exit recovery, stale token/causal conflicts, media refusal and unrelated scopes.
+- [ ] Implement portable selected backup/restore/migration policy before enabling these maintenance paths for selected stores; current explicit refusal prevents silent metadata loss.

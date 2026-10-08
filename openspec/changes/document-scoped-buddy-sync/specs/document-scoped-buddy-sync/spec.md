@@ -102,3 +102,24 @@ Shared mode SHALL require an explicitly qualified browser/Electron/tablet OAuth 
 #### Scenario: Unsupported client registration
 - WHEN a selected account is used through an unqualified or incompatible OAuth application binding
 - THEN shared mode remains disabled or refuses activation, without widening scopes or exposing credentials.
+
+
+### Requirement: Original selection publication replay
+The storage layer SHALL preserve bounded durable publication evidence tied to the
+original scope, parent selection and request. Only evidence reachable from the
+accepted current selection SHALL authorize replay. Replay SHALL return the original
+publication identity and SHALL NOT append to a replacement winner or silently
+refresh the caller's authority. Exhausted history bounds SHALL refuse further
+publication instead of discarding replay evidence.
+
+#### Scenario: Lost acknowledgement followed by replacement
+- WHEN a guarded commit is accepted, its acknowledgement is lost, and a replacement is activated before retry
+- THEN retry with the original identity returns the original receipt, the replacement is unchanged, and the old token cannot authorize another mutation.
+
+#### Scenario: Unaccepted staging remains orphaned
+- WHEN a process dies after staging objects or prior metadata but before selection publication
+- THEN reopening retains the prior complete selection and does not treat staged objects or unreachable history as accepted publication evidence.
+
+#### Scenario: Incompatible maintenance cannot discard selection metadata
+- WHEN backup, restore or generation migration lacks an implemented selected-metadata portability policy
+- THEN it refuses without publishing a complete backup or changing the active generation.
