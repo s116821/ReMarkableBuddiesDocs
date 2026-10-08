@@ -1,7 +1,7 @@
 # Development focus ancestry consumer amendment
 
 Status: source-only proposal awaiting Main review, before implementation. SDK
-authority is `2313a3e2d93278f311d8f0f960da8103bc63cfa4`, specifically
+authority is `a4e8c8d0bef9ff884085262e5362b868d0bcbbf2`, specifically
 `openspec/changes/establish-native-platform-contract/focus-ancestry-discovery.md`.
 The SDK owns discovery, event guards and the internal retained-owner ticket; this
 document owns Buddy decoding, refusal admission and preservation. Main and Sol
@@ -129,7 +129,10 @@ epoch/final-output checks remain SDK obligations.
 Admit `facts-retained-owner-refused` only as an additional selected ancestry
 reader_stage in the existing exact27-field version1 refusal.json. The SDK reader
 allowlist must preserve that name instead of mapping it to unlisted-reader-stage;
-reader_result_had_facts must be false. Entry stage and callback remain the existing
+reader_result_had_facts must be false and refusal_path must be reader-result.
+Selected-mode gating must hold in both SDK reader-stage sanitization and refusal
+serialization, and in the consumer's source/config/packet-bound decoder; no wire
+selection field is added. Entry stage and callback remain the existing
 facts-entry-read-refused or facts-entry-delivery-refused, as appropriate. Keep the
 callback exactly nonce, stage, application_thread, engine_thread with unchanged
 identity/type/thread checks. Do not add SDK internal observed/outputPublished
@@ -161,7 +164,7 @@ and no edge25, and same-owner facts without rediscovery. Host fixture success
 does not establish native profile qualification. No artifact/packet/next trial,
 canonical sync/archive or task4.11/native completion follows from this proposal.
 
-Source basis: current SDK2313a3e contract, current strict Buddy decoder source,
+Source basis: current SDKa4e8c8d contract, current strict Buddy decoder source,
 and Main/Sol proposal acceptance messages. Private run evidence has no public
 link and is not repeated as a new experiment here. Count-label refinements above
-are proposed consumer requirements awaiting producer/consumer independent review.
+match the owning SDK clarification; Main consumer review remains pending.

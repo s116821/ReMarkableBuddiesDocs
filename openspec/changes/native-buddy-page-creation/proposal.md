@@ -26,7 +26,7 @@ REM-25 requires a native writable Buddy page immediately after a source page, or
 ## Capabilities
 
 The source-only [focus ancestry consumer amendment](focus-ancestry-consumer-plan.md)
-coordinates SDK2313a3e's altered development discovery scope, strict version3
+coordinates SDKa4e8c8d's altered development discovery scope, strict version3
 diagnostics and internal retained-owner refusal. Consumer contract acceptance is
 pending; no implementation, artifact or native profile is selected.
 
