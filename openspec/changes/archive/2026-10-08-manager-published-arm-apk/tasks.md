@@ -11,7 +11,7 @@
 - [x] All13actualcases pass for both unchanged ARMassets; roots unchanged and script sentinel absent.
 - [x] Originalsourcebuild actual13regression and meaningful adapter guards pass (13 Linux guards with no skips; Windows guards retain only symlink-privilege skip).
 - [x] Syntax/docs/strictOpenSpec/diff checks pass; freeze exact sources/receipts for Main review.
-- [ ] Main review, independent exact-source review and required CI pass.
+- [x] Main review, independent exact-source review and required CI pass.
 
 ## 4. Closeout
-- [ ] Sync/archive completed bounded capability and coordinated delivery; keep hardware/installer/trust gates open.
+- [x] Sync/archive completed bounded capability and coordinated delivery; keep hardware/installer/trust gates open.
