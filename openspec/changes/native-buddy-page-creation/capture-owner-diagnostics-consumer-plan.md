@@ -212,8 +212,9 @@ Main independently accepted the coordinated consumer amendment at exact Docs
 `0e78e2a629ae9704e9e645cdf33e2005ca7b2875` and Buddy consumer
 `4faa97e8fb104528818afed5843964468e0c0e51` now implement this slice. Astra
 independently reviewed the full four-file SDK delta and reproduced all46 cases,
-with unchanged source hashes, accepting exact0e78e2a. Main's exact consumer source
-review remains pending. Vendor Qt6.10.3 ARM/QEMU
+with unchanged source hashes, accepting exact0e78e2a. Main independently reviewed
+both consumer files and reproduced307/292/28/113 checks, accepting exact4faa97e.
+Vendor Qt6.10.3 ARM/QEMU
 capture46 passed (original42 plus four topology cases), with actual depth25,
 cumulative queue-cap at visited2 and queue4096, success boundaries depth24 and
 queue4096, matching sink/no-sink progress/getter counts, and a synthetic visited
