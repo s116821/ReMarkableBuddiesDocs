@@ -128,3 +128,46 @@ capability, native qualification or full task2.10 acceptance follows from mocks.
 Source basis: current Rust472de17 pending/admission/settlement, actual Attempt,
 Workflow and DeviceBackend; accepted Docs1ded7bc inventory. This document proposes
 API behavior and does not report implemented behavior.
+
+## Resolution of bounded route review
+
+[The exact API review](https://github.com/s116821/ReMarkableBuddiesDocs/pull/6#pullrequestreview-5452426894)
+identified post-navigation branching and smart erase lower-call admission. These
+concrete decisions supersede any broader route implication above.
+
+Selected `Orchestrator::render_answer` is Unsupported in this increment because
+its post-navigation observations select header, Q&A, return or no-movement paths.
+A linear plan cannot skip ordinals, edit its frozen arguments, republish for a
+branch or borrow another operation's steps. Refuse before the first navigation or
+other effect. Test all Blank, ExistingQA, Invalid and no-movement cases with zero
+selected backend entries. This is an explicit open full-task2.10 gate; it does not
+remove the required future branch-bound qualified observation design. Separately
+planned exact text/body/header/navigation primitives remain mechanically testable;
+no production selected render_answer is enabled by those primitive tests.
+
+Selected smart erase retains its exact frozen rectangle and screenshot bytes and
+computes a deterministic ordered substep list before Pending publication, using
+the same pure ink/row/margin algorithm as the actual Workflow. Validate dimensions,
+coordinate arithmetic and image bounds before deriving coordinates. Include
+repeated overlapping rows as distinct ordered substeps; never deduplicate them or
+accept coordinates supplied separately by a caller. Total derived lower-call
+count is at most MAX_ITEMS and all serialized original/derived arguments together
+fit MAX_RECORD; exceeding either bound refuses before publication or I/O.
+
+The outer SmartErase step is consumed once before entering the composite. Hold
+the domain gate for the entire composite, but before every actual facade/backend
+erase call use the private under-gate read path to revalidate the exact current
+publication token, original closure/uncertainty and sealed live native source.
+Compare the next lower ordinal and exact derived coordinates, then mark that
+lower substep Entered before I/O. Lower validation does not reacquire admission or
+hold a Store mutex during backend calls. A lower-call error, panic, changed
+argument, duplicate ordinal or native/source loss stops all remaining substeps
+and later planned effects. Successful lower returns never re-enable an entered
+ordinal or settle Pending. The permit is restricted to this immutable substep
+sequence, rather than a reusable authorization for arbitrary erase coordinates.
+
+Actual Workflow tests must include native validity lost after the first lower
+call with zero second backend entry, duplicate and changed-coordinate attempts,
+and the exact legacy coordinate sequence as a control. Model only admission and
+recorded effects; no fixture supplies production native qualification. Selected
+history/setup/status and branch-dependent render_answer remain Unsupported/open.
