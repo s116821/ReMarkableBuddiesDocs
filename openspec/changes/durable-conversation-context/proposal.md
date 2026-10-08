@@ -4,6 +4,11 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
+- Propose the REM-52-coordinated existing Receipt/OutcomeFact schema-2 migration,
+  selected-only projector and shared effect admission described in
+  [selected-intent-migration.md](selected-intent-migration.md); preserve historical
+  schema-1 inspection and keep unsupported native/shared effects refused.
+
 - Add typed conversation/turn/source/export-association records on accepted REM-36 storage, with stable IDs, chronological order, explicit states and full-head conflicts.
 - Persist every source image actually supplied to inference with exact bytes, hash, dimensions, parent/crop transform and source document/page/viewport identity before use; retain explicit missing-media recovery states.
 - Integrate evidence and terminal turn recording into actual Reader orchestration while preserving REM-9 capture/input guards and current prompts/rendering; expose shared APIs for future Writer/routing consumers.

@@ -1,5 +1,20 @@
 ## ADDED Requirements
 
+### Requirement: Versioned selected intent and retained settlement
+The domain SHALL extend existing Receipt and OutcomeFact records under explicit Conversation schema 2, validate original immutable selection/request/revision/evidence pins, and preserve schema-1 history without granting it selected-effect admission. Current projection SHALL use only the pinned selected membership. Historical settlement and uncertainty-latch changes SHALL commit atomically against the original retained intent; they SHALL NOT advance replacement heads or replay effects. All actual backend handoffs SHALL share admission with activation and revalidate current qualified ownership.
+
+#### Scenario: Legacy and unsupported schema
+- **WHEN** historical schema-1 input, a schema-2 extension or an unsupported version is decoded
+- **THEN** legacy inspection remains available without selected authority, schema 2 requires its exact supported variant and complete pins, and unsupported or malformed input refuses without rewriting history.
+
+#### Scenario: Lost acknowledgment and replacement
+- **WHEN** intent publication loses acknowledgment or selected membership is replaced before output or settlement
+- **THEN** retry returns only the original historical receipt, stale output is refused, and any late settlement records the original immutable intent without advancing replacement current heads.
+
+#### Scenario: Crash and shared admission
+- **WHEN** activation or a crash races an external handoff or historical settlement
+- **THEN** shared admission serializes actual submission against activation, recovery reconstructs old or complete new settlement/latch state, and unresolved uncertainty blocks effects until explicit verified settlement.
+
 ### Requirement: Explicit unbound legacy evidence
 The domain SHALL keep identity-free legacy acquisition in a separate Buddy-owned LegacyCapture record, selected explicitly before acquisition, with native identity and qualification explicitly absent. It SHALL preserve every exact ordered provider image and any supplied acquisition parent without invented SDK source, affine, crop or viewport facts. Failed, unsupported or unknown SDK acquisition SHALL refuse without downgrade. Legacy schema1 SHALL require explicit absent fields, stable Buddy evidence/conversation/turn IDs, full image integrity and decoding, root CAS, fingerprint retry and reference-aware retention. Bounds SHALL be 1–15 provider images plus at most one parent, 32 MiB encoded per image, 64 MiB encoded total, and existing 8192-axis/32 MiB decoded-image limits.
 

@@ -7,6 +7,10 @@
 
 ## 2. Shared domain and evidence
 
+- [ ] 2.8 Independently review selected-intent-migration.md and coordinate the Conversation schema-2 storage validator with SCRAPPY; implement strict existing Receipt/OutcomeFact extensions, legacy reads/old-reader refusal and exact pin/evidence validation.
+- [ ] 2.9 Implement selected-only domain projection, guarded intent publication, retained historical settlement and durable latch reconstruction against exact accepted selected storage revisions; test stale/lost-ack/replacement/crash/multiple-handle cases without enabling unqualified effects.
+- [ ] 2.10 Integrate the shared admission guard through actual Attempt and every navigation/mode/text/history/undo/redo/bitmap backend handoff; preserve domain-before-Store lock order, hold admission through synchronous submission and independently verify full scenario coverage.
+
 - [ ] 2.1 Implement versioned conversation, turn, source-use and binding schemas over existing Store namespaces with stable IDs and explicit outcomes.
 - [ ] 2.2 Implement atomic chronological sequence allocation, full-head conflicts and fingerprint-checked operation idempotency, including concurrent duplicate tests.
 - [ ] 2.3 Implement streaming exact-image preparation/retrieval, parent/crop/viewport provenance and media-bound failure before provider dispatch.

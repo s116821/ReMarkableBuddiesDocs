@@ -20,6 +20,13 @@ Accepted dependency bases: Rust `ff8ad75bec45fca403d55a7b6d93eb83ab732e3d`, Docs
 
 ## Decisions
 
+The proposed [selected-intent migration](selected-intent-migration.md) extends the
+existing Receipt and OutcomeFact under an explicit envelope schema-2 boundary,
+with immutable publication pins, selected-only projection and historical
+settlement. It coordinates REM-52 storage ownership without enabling effects or
+rewriting schema-1 history. Implementation and qualified native admission remain
+open.
+
 ### 1. Typed records on the one shared Store
 
 Use `src/conversation/` domain types over REM-36 envelopes and media objects. Do not add a database, second storage root or service. Conversation, turn and binding records use the Conversation namespace; source-use records use Source; export associations use ExportAssociation. Each payload carries a domain schema version and kind. Unknown versions permit inspection of the generic envelope but refuse domain mutation. Generic envelope revision and parent heads remain the conflict authority.
