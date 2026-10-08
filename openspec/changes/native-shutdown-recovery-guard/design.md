@@ -25,13 +25,21 @@ Recovery runs in a separate shell retaining the singleton lock descriptor; dupli
 recovery claims refuse further mutations. Original unit/vendor/executable hashes
 are pinned separately from the 24 protected baseline hashes.
 
-Eleven current local fixtures pass, including actual actor entry/recovery shells
+Thirteen current local fixtures pass, including actual actor entry/recovery shells
 on host-request expiry before and after guard installation, exclusive claim/lock
 refusal, synthetic packet preparation and refusal when only xochitl is active.
 Final readiness checks each service separately; multi-unit is-active exit status
 cannot establish all three services are active. These fixtures do not prove native
 candidate recovery after host loss or every prearm ordering boundary; independent
 source review and Main's selected native verification remain open.
+
+Critical review found that a primary failure marker could be claimed again during
+candidate crash recording and abort recovery. The dedicated preserve_failure
+helper is idempotent only for an existing private root-owned single-link 0600
+diagnostic.failed file with exact nonce plus one LF (33 bytes). Invalid evidence
+refuses; all physical actor/restore/start claims remain exclusive. A regression
+exercises actual finish and its separate recovery shell with the existing marker,
+candidate signal result, owned cleanup and stock start exactly once.
 
 SDK trace wire confirmed with Astra: `v1 sequence event monotonic_ns tid pid start quit_seen dropped frames\n`, single ASCIIspaces, atmost96records/192bytes each/18432bytes total; eventenum startup/window/before-render/after-render/about-to-quit/window-destroyed/application-destroyed/late-before-render/late-after-render. Validate canonical decimalfields, complete lines, strict sequence/time and exactattemptPID/start. Droppednonzero refuses stopadmission evidence. Firstvalidbefore-render requiresframes>=1 and canauthorize only oneSTOP, never a displaycompletion fence. Missingterminalmarkers remain unknown even if currentstock recovery verifies.
 
