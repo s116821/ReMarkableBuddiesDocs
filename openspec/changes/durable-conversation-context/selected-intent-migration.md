@@ -6,7 +6,7 @@ its selected publication/activation primitives. Accepted interface decisions are
 [the REM-52 owner review](https://github.com/s116821/ReMarkableBuddiesDocs/pull/7#pullrequestreview-5442770097)
 and [the version decision](https://github.com/s116821/ReMarkableBuddiesDocs/pull/7#issuecomment-6038732257).
 Source basis: Buddy REM-37 `673c5781cd5d89a89d712b9d8253433c920dc37c`,
-REM-52 read-only selection implementation `7d1403cacc5fafe3a7ddc9a441a8b9200224e7ac`,
+REM-52 selected publication implementation `cca7ea9d6a1942ccdfed70d76aab615fd2dca5d4`,
 and the current REM-52 requirements. Plans are not implemented behavior.
 
 ## Version boundary
@@ -47,11 +47,13 @@ Selection evidence retains the accepted storage scope fields (`group`,
 accepted-base digest and selection digest. These are original publication pins,
 not a serialized SelectionToken. Only Store can mint a live token. A transaction
 may change the selection digest; post-commit effect admission must therefore use
-the current store-minted token and verify that its selected closure contains the
+the current store-minted token, require equality with the accepted intent publication token/generation, and verify that its selected closure contains the
 exact admitted intent and causal revisions, rather than reuse precommit pins as
-a live capability. A foreign, replaced, conflicted, missing or incomplete closure
+a live capability. Presence of the same intent in a later replacement is insufficient. Every guarded append changes aggregate generation and selection digest; historical replay returns its original possibly stale token, while selected_receipt is restart evidence only. A foreign, replaced, conflicted, missing or incomplete closure
 refuses admission. Restart reconstructs facts and uncertainty, never an effect
 queue or automatic replay.
+
+Before allocating prepared envelope/revision UUIDs or computing a retry fingerprint, look up the stable operation in the accepted selected publication and Receipt. Validate the supplied logical request and original pins against that evidence and recover the exact original serialized envelope/revision references. Never reconstruct a committed batch with fresh UUIDs after a lost acknowledgment. Historical lookup neither refreshes current admission nor repeats an effect.
 
 The existing immutable request fingerprint covers every intent field and its
 original pins. An identical retry returns the original historical receipt before
@@ -71,7 +73,7 @@ authority or infer native completion from a callback.
 
 The domain projector reads only immutable `SelectedSnapshot.selected_records`
 for current state. It validates unique root/turn/source/binding membership and
-reference closure; all-history heads are not current selected heads. Explicit
+reference closure. The selected snapshot contains full ancestor closure, including earlier Root/Turn revisions. Derive causal heads for each (namespace, record_id) only inside those pinned envelopes, require exactly one head for current projection, and retain exact revision/digest ancestor lookup for intent and evidence. Multiple revisions in a chain are valid; a true fork refuses. All-history heads are not current selected heads. Explicit
 retained records support historical settlement/inspection and unresolved intent
 closure, without entering current context or ordinary append membership.
 
@@ -95,8 +97,8 @@ history/undo/redo and bitmap handoff validates current admission again. An
 earlier successful check is not permission for a later handoff.
 
 Historical settlement and durable uncertainty-latch transition commit in one
-selected metadata transaction referencing both winner and retained unresolved
-closure. Crash recovery sees old or complete new state. Uncertainty keeps the
+retained-only selected metadata transaction referencing both winner and retained unresolved
+closure. Do not reuse commit_selected for late settlement: it extends active membership. The retained-only primitive preserves winner references and original accepted publication/intent linkage. Crash recovery sees old or complete new state. Uncertainty keeps the
 latch; only explicit verified settlement can change it. Sync success, elapsed
 time, imported receipts or provider upload cannot clear it. Domain validation
 checks the original intent closure before reconstructing the latch. Unrelated
@@ -111,7 +113,7 @@ SCRAPPY; do not copy storage selection structures or relax opaque token ownershi
 
 Focused regressions cover old/new decoding and old-reader refusal, wrong
 namespace/variant, missing/foreign pins and evidence, selected versus all-history
-membership, stale publication despite matching parents, lost acknowledgment,
+membership, multi-revision causal chains and true forks, stale publication despite matching parents or retained intent membership, lost acknowledgment with exact recovered prepared identities,
 replacement during handoff, late verified/uncertain settlement against retained
 revisions, crash/latch reconstruction and multiple handles. Exercise navigation,
 mode, text, history/undo/redo and bitmap through the real guarded path. Synthetic
