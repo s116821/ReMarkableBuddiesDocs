@@ -250,3 +250,25 @@ point. A narrow immutable-mode dispatch repair and the reviewer's failing regres
 plus ordinary selected-mode control are required before asserting the development
 Workflow always refuses effects. The isolated native capture lane may continue.
 Source basis: [independent review and reproducer](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5457231891).
+
+The narrow repair is pushed at Buddy f6999d5c85bdf6479eae41c493213d72e98e5b29.
+A private persistent development-mode flag refuses dispatch before reaching the
+selected facade or context. Main independently verified the two source inputs and
+ran the original regression, ordinary selected navigation control, and two existing
+development persistence tests: four passed, with the collected-byte harness ignored.
+[Independent repair-only recheck](https://github.com/s116821/ReMarkableBuddies/pull/30#discussion_r4220056084)
+closed the P2 with the same original reproducer and control. Fresh capture-to-Reader,
+strict lint, native qualification and the remaining lifecycle gates remain open.
+
+The spent 6418c955ca6047d2aefbcb13f2a7f40c capture attempt used SDK
+463c5f1fce7def67b3c8c419182be037946afcf0 and capture consumer
+279e5bfc608a21bebf61b7eb15be69b4a6c4b7f4. Its versioned failure diagnostic
+reports invalidated-before with no active-owner subreason: the sticky invalidation
+flag was set before the final queued ownership check, after the prior PNG check
+had passed. Failure was at 25,800 ms, before the 26,373 ms deadline. The invalidating
+signal remains unknown. No completion record was published; the Reader harness was
+not run. Main preserved and visually inspected the PNG and exact metadata, completed
+owned cleanup, then independently verified stock PID 13579/start 238225937,
+unchanged fixture/provider hashes, service policies and absence of all spent stages.
+Source basis: exact saved callback and source ordering, preserved bytes and visual
+inspection, independent cleanup/final baseline, and the linked repair-only recheck.
