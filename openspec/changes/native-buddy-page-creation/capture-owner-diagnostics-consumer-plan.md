@@ -155,7 +155,7 @@ Task4.11 and SDK native owner/render qualification remain open.
 
 ## Independently accepted source checkpoints
 
-### Proposed Windows historical transport repair
+### Accepted Windows historical transport repair
 
 Main independently accepted this amendment at Docs
 `fba78ece944369f0e1792f7e965d3b1b2b6dcaeb` before implementation. Buddy
@@ -195,8 +195,8 @@ copy; and actual operator-block regressions for request failure, owner failure,
 both failures and success. The other collector must run once, successful evidence
 must remain known, and any error must prevent cleanup and admission. Existing
 request-history, owner, capture collector and source-integration regressions must
-remain passing. This is a proposed source-only amendment awaiting independent
-review at the checkpoint above; native gates and task4.11 remain open.
+remain passing. Independent source review is complete at the checkpoint above;
+native gates and task4.11 remain open.
 
 ### Proposed coordinated topology diagnostic version2 decoding
 
