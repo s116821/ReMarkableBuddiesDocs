@@ -28,3 +28,4 @@
 
 - [x] Implement the bounded selected snapshot/guarded commit/activation/replay candidate; checkpoint cca7ea9d passed hosted CI, with domain/native/provider integration still disabled.
 - [ ] Independently review retained-only settlement linkage and generation-feature old-reader refusal with exact linked source/Docs revisions; qualify source against the unchanged older reader.
+- [x] Qualify retained-only publication with actual abrupt child-process exit before/after activation, original receipt/media reopen, unrelated-scope preservation and competing activation using one captured token; these are host storage fixtures, not domain/native/provider qualification.
