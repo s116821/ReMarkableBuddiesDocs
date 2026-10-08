@@ -34,6 +34,13 @@ Reader effect capabilities. Only test modules may supply recording capabilities.
 Every verification binds the same original source/operation and exact handoff
 arguments; storage token or stored identity strings alone cannot satisfy it.
 
+Input preparation and output preparation are separate. The actual Attempt first
+persists exact acquired evidence before provider dispatch. After interpretation
+and provider work, it persists the Generated assistant draft. Only then can the
+immutable output plan be finalized and the controlled Pending/context publication
+occur, before any output handoff. A failed evidence/draft/pending write stops later
+provider or effect work as appropriate. No output plan is edited after publication.
+
 ## Plan and dispatch ownership
 
 Use typed handoff variants for navigation direction, body mode, text bytes,
