@@ -210,13 +210,17 @@ the separate checkpoint above, not permission to alter diagnostic meaning.
 Main independently accepted the coordinated consumer amendment at exact Docs
 `fc3102f755ebee2e2d9f756b221aedd7bed4bd64` before implementation. SDK source
 `0e78e2a629ae9704e9e645cdf33e2005ca7b2875` and Buddy consumer
-`4faa97e8fb104528818afed5843964468e0c0e51` now implement this slice, pending
-Astra/Main independent source review respectively. Vendor Qt6.10.3 ARM/QEMU
+`4faa97e8fb104528818afed5843964468e0c0e51` now implement this slice. Astra
+independently reviewed the full four-file SDK delta and reproduced all46 cases,
+with unchanged source hashes, accepting exact0e78e2a. Main's exact consumer source
+review remains pending. Vendor Qt6.10.3 ARM/QEMU
 capture46 passed (original42 plus four topology cases), with actual depth25,
 cumulative queue-cap at visited2 and queue4096, success boundaries depth24 and
 queue4096, matching sink/no-sink progress/getter counts, and a synthetic visited
 scalar seam only. Consumer307 checks include three optional exact historical
 readback checks; existing owner292, source-integration28 and transport113 pass.
+Sol also completed the broader vendor entry32/refusal-format21/input17/original
+capture25 suite normally; Astra did not independently rerun that broader suite.
 These results establish local source regressions, not native behavior.
 
 Preserve version1 as exactly the existing29 case-sensitive field names and its
