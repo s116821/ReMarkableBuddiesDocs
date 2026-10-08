@@ -155,6 +155,42 @@ Task4.11 and SDK native owner/render qualification remain open.
 
 ## Independently accepted source checkpoints
 
+### Proposed Windows historical transport repair
+
+The e997 operator's original receipt records a normal metadata read followed by
+SCP exit1, without timeout, when opening a 271-character local destination.
+The exclusive UUID directory exists but contains no returned file. Windows
+long-path handling is the leading explanation, not a proven transport diagnosis.
+The sequential request-collector exception also prevented diagnostic collection.
+Main reports separate guarded historical collection preserved both files; this
+does not rewrite or promote the original receipt.
+
+Before future packet selection, use a shared local-only transport-path allocator
+for request, temporary request and owner diagnostic collectors. Allocate a unique
+directory under the host temporary directory, require a non-link directory and
+an absolute returned-file path of at most 240 characters before dispatch, and
+record its path before copying. Retain returned bytes there on failure or success.
+Continue the existing bounded transport, byte/hash checks, exclusive canonical
+save, raw decoding and before/after original-root/restoration checks unchanged.
+No temporary path may supply capture/facts admission or borrow another file's
+preservation flags. Refuse unsuitable temporary roots before invoking transport.
+
+Run both restored historical collectors even if either throws. Record each
+collector's error independently, preserve its existing flags and complete copies,
+then refuse before cleanup whenever any collector failed. Do not catch stock
+restoration failures or weaken the final preservation checks. No retry, new live
+clock, SDK/publisher change, native execution or spent-packet modification follows.
+
+Acceptance requires actual collector tests with a deeply nested canonical packet
+and a mock rejecting transport paths over 240 characters; distinct request/tmp
+and owner transport paths; invalid/long/reparse temporary-root refusal before
+copy; and actual operator-block regressions for request failure, owner failure,
+both failures and success. The other collector must run once, successful evidence
+must remain known, and any error must prevent cleanup and admission. Existing
+request-history, owner, capture collector and source-integration regressions must
+remain passing. This is a proposed source-only amendment awaiting independent
+review; native gates and task4.11 remain open.
+
 ### Accepted integrated historical request closeout
 
 Main's prepared-packet review found that the accepted live capture collector
