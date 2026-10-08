@@ -137,6 +137,43 @@ Shell `sh -n` on both templates and Python AST parsing of both Python files pass
 after the portable LF correction. Central `scripts/check_docs.py`,
 `openspec validate native-shutdown-recovery-guard --strict` and diff checks passed.
 
+## Actual portable-LF harness smoke, 9477
+
+Main selected nonce `94774266c10f41e2aa8d410012fee601` and matching payload
+SHA-256 `82ebbee5843077f042219123539767748e04b32573fc08e714a3560b4c4f6020`
+(26032 bytes). Exact selected source bindings were SDK
+`a31f495eb0e2ae8294e78609495c24063bc3f8fc`, Buddy
+`cdf4f55a94f166c7cec26963f3914b9b65209566`, Docs
+`caec4d7ebf13c3b0ba867957bf0ccd53b12c80e4`. This lane read the private final
+selection, matching-build verification, postattempt verification and archive
+receipt; Main alone operated the tablet. No public artifact link exists here yet.
+
+The actual diagnostic recorded primary exit 0 and stop.admitted with the exact
+nonce. Candidate PID9384/start2913441 had a three-record admission snapshot
+(startup, window, first before-render); final trace had six records/two render
+pairs. Candidate STOP recorded Result=success, ExecMainCode=2/ExecMainStatus=15,
+MainPID0 and empty Job. No SIGSEGV was reproduced. The actor recorded restored
+stock PID9992/start2915381. Main's independent postattempt receipt confirms same
+boot, all24 protected and three source/executable hashes unchanged, original
+policy, empty job/NRestarts0, all three services individually active, all unit
+payload mappings absent, and owned runtime unit/drop-ins gone. The saved readback
+supports those statuses; no fresh remote verification was performed by this lane.
+
+This lane independently verified the local archive against its receipt:
+115712 bytes, SHA-256
+`7c12f0c5f53823e21e5a14b4dd2284195da46d48e7a788eb7dea39f30dd02a9c`,
+60 recorded files, and exact hashes for outcome/admission/snapshot/final trace/
+candidate STOP/stock restoration. Private evidence directory:
+`main-shutdown-lifecycle-94774266c10f41e2aa8d410012fee601` under Main's existing
+device-private workspace. Cleanup/archive lifecycle remains Main-owned.
+
+This qualifies the actual portable admission and restoration harness path only.
+STOP by SIGTERM does not prove Qt quit/destructor behavior, the original 0404
+fault is not fixed by this result, and native FactsEntry/Reader contracts were
+not exercised. A before-render record remains a STOP trigger, not a rendering
+completion fence. Nonce9477 is spent; no blind repeat is authorized. Broader
+candidate-hostloss/ordering coverage and linked delivery remain unfinished.
+
 ## Frozen executable source hashes
 
 | File under Buddy tools/native_shutdown_probe | SHA-256 |

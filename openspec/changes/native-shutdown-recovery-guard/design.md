@@ -29,7 +29,8 @@ next guard design must use an exact-owned xochitl-only runtime full-unit shadow
 and, if the dependency originates there, an exact same-basename vendor drop-in
 shadow. Exact stock/vendor contents and hashes are prerequisites to deriving it.
 Main supplied private original bytes and source derivation now verifies them;
-the source design is implemented but awaits effective native proof;
+the source design is implemented and 9477 proved native guard/admission/restoration
+for one controlled harness smoke; broader coverage and Qt shutdown remain open;
 it authorizes no shared remarkable-fail masking, watchdog change or unguarded STOP.
 
 The preparer will require original unit/vendor file inputs whose exact bytes match

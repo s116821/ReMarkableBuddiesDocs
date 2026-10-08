@@ -11,16 +11,19 @@
 - [x] Preserve separate crash/failure evidence and honest finalstockverification; no retry/facts/input/renderauthority.
 
 ## 3. Verification
-- [ ] Focused actual-owned fixtures verify ordering/deadline/crash/hostloss/singleton boundaries.
-- [ ] Syntax/docs/strictOpenSpec/diff checks; freeze exactsource/packet forMain review before commit/push/device selection.
-- [ ] Main/independent exactsource/artifact/operator review and separately selected Main-only diagnostic; retain hardware uncertainty and historicalfailure.
+- [x] Current eighteen owned source-local fixtures verify modeled ordering/deadline/crash/preactivation-hostloss/singleton boundaries; retain unmodeled limits.
+- [x] Syntax/docs/strictOpenSpec/diff checks; freeze exactsource/packet for Main review before commit/push/device selection.
+- [x] Main/independent exactsource/artifact/operator review and separately selected Main-only harness smoke; retain hardware uncertainty and historical failure.
+- [x] Actual 9477 portable-LF first-before-render admission, candidate STOP and original-stock restoration smoke; verify selected source/build bindings and independent postattempt proof.
+- [ ] Resolve remaining complete prearm ordering and native candidate-hostloss coverage before claiming broader recovery qualification.
 
 Eighteen focused source-local cases and final syntax/docs/strict checks passed;
-Main's earlier independent runs predate the full-unit shadow correction.
-See verification.md for exact scope, source
-commit, image and command. Remaining unchecked verification includes complete
-prearm ordering coverage, native candidate host-loss behavior, combined critical
-review and a separately selected artifact/packet. No native completion is claimed.
+The separately reviewed 9477 native harness smoke succeeded at exact selected
+SDK a31/Buddy cdf4f55/Docs caec4d7 bindings; archived evidence and independent
+postattempt verification were read locally. See verification.md for exact scope,
+hashes and source basis. Remaining coverage is explicit above. Qt shutdown/original
+0404 fault, native FactsEntry and Reader gates remain unfinished in their owning
+lanes; this smoke does not close them. Do not replay spent nonces.
 
 ## 4. Closeout
 - [ ] Only after completed acceptance coordinate linkeddelivery/canonicalsync/archive; no other lane or nativeMVP completion implied.
