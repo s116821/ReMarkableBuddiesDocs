@@ -272,3 +272,41 @@ owned cleanup, then independently verified stock PID 13579/start 238225937,
 unchanged fixture/provider hashes, service policies and absence of all spent stages.
 Source basis: exact saved callback and source ordering, preserved bytes and visual
 inspection, independent cleanup/final baseline, and the linked repair-only recheck.
+
+The next spent attempt, 301a86a1a18d48d885c5ddcec0af549c, successfully published
+the unchanged 37-field v2/v11 completion through native SDK
+3996a6555b6a37f7ede4a6e09c227f1515a01587 and capture consumer
+6dd93c85169ca9e100a6dd70759fe0b743ca5424. One released contact and one capture
+publication completed in 4,229 ms, with 771 ms remaining in the original five-second
+budget. Main retrieved, hash-checked and visually inspected the 1404x1872 PNG.
+Its SHA-256 is 7c9d84d2187491755549cbc8960dfaa087e1e9f3c80203411b58cf90c1f43b86;
+the exact completion hash is
+e96b9169205ecf6c5976c5f2b7975205a74fbe3e2b1a7211045d12725d647289.
+The failure-only first-invalidation diagnostic did not fire. The prior sticky
+invalidation cause remains unknown; this successful retry does not establish a fix.
+
+Before helper cleanup, Main ran the repaired Reader f699 actual Orchestrator with
+a fresh retained Store against these exact collected bytes and independently
+selected attempt/root/fixture bindings. The harness passed: the original completion
+and PNG plus four derived prompt images persisted before both recording-provider
+passes, matched provider bytes exactly, and reopened unchanged. An independent
+pixel oracle checked the overview and all three crops. Generated ended with
+NativeOutputUnavailable, with zero backend entries, no Pending publication and
+no settlement. This closes the fresh collected-byte-to-Reader persistence check.
+It remains a historical import through SDK d01b4bdf, not a live model result or
+an acquisition qualification claim. Native/render/UI/atomic/order authority all
+remain false; no facts request or positive visual decision was published.
+
+Stock restoration and owned cleanup completed. Main independently verified stock
+PID 15947/start 238343560, all 14 fixture hashes, all 10 provider hashes, service
+policies and absence of every spent stage. Six helper evidence files were preserved
+with matching hashes before exact helper cleanup. Reader strict lint still reports
+24 unused production items; production bootstrap, qualified acquisition, effects,
+settlement, native render and the remaining task2.10 lifecycle gates remain open.
+
+Source basis: Main's exact capture/collector records, retained f699 integration
+receipt and pixel assertions, visual inspection, independent final baseline and
+[exact f699 CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/37790700992).
+The [saved PNG](https://drive.google.com/file/d/1j9jn_FmKczOtMwQ-F_OwJ6XWrU4DS9_l/view)
+is a presentation copy; local source bytes are hash-verified. Drive upload and
+metadata are verified separately, without asserting a remote byte checksum.
