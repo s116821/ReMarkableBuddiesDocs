@@ -7,6 +7,14 @@ The development operator SHALL prearm an independent singleton recoveryactor and
 - **WHEN** Main selects fresh reviewed packet/baseline and the actor verifies originalpolicy plus effective ownedguard
 - **THEN** exactly one diagnostic activation is permitted, with no facts/getters/input/renderforcing or candidate retry
 
+#### Scenario: Vendor failure dependencies cannot be cleared by an empty drop-in
+- **WHEN** original unit and vendor drop-in contain OnFailure dependencies
+- **THEN** only exact-owned runtime full-unit and same-basename vendor shadows derived from pinned originals may remove the scoped dependency, and effective FragmentPath/DropInPaths/ExecStart plus empty OnFailure and guarded policy must be proved before STOP
+
+#### Scenario: Partial guard installation or failed readback
+- **WHEN** host loss interrupts installation or guard readback fails before STOP
+- **THEN** scoped intent/creation claims and exact hashes authorize cleanup only of owned pieces, foreign/missing protection after admission refuses cleanup/start, and guard policy evidence remains separate from later stock proof
+
 #### Scenario: Host loss or candidate failure
 - **WHEN** the host disconnects, the candidate crashes, trace is uncertain or observation expires
 - **THEN** the independent actor enters bounded restoration and preserves failure as distinct from healthy currentstock

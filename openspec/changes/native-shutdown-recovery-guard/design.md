@@ -8,6 +8,47 @@ One fresh lifecycle-only diagnostic can recover under an independent actor even 
 
 ## Decisions
 
+Actual a22 guard admission failed before STOP/payload and recovered original stock,
+per Main's current report. A single policy.observed file allowed later stock proof
+to overwrite the failed guard readback. Policy checks will retain separate exact
+stock.policy.observed and guard.policy.observed snapshots before comparisons.
+
+Primary systemd-stable v255.21 parser evidence shows OnFailure is a dependency:
+config_parse_unit_deps returns on an empty value without removing prior dependencies.
+Its unit documentation says removing dependencies requires a full unit override.
+Thus the current empty OnFailure drop-in cannot establish the required guard. The
+next guard design must use an exact-owned xochitl-only runtime full-unit shadow
+and, if the dependency originates there, an exact same-basename vendor drop-in
+shadow. Exact stock/vendor contents and hashes are prerequisites to deriving it.
+Main supplied private original bytes and source derivation now verifies them;
+the source design is implemented but awaits effective native proof;
+it authorizes no shared remarkable-fail masking, watchdog change or unguarded STOP.
+
+The preparer will require original unit/vendor file inputs whose exact bytes match
+the pinned stock hashes. It will remove exactly one Unit OnFailure assignment to
+remarkable-fail.service from each file, preserving every other byte, and retain
+both originals and derived hashes in the packet. Runtime destinations are
+/run/systemd/system/xochitl.service and the exact vendor basename under
+/run/systemd/system/xochitl.service.d. Per-file exclusive install-intent claims
+precede each owned creation. All initially absent paths, directory ownership and
+derived file hashes are checked. Partial installation before STOP removes only
+present, exact-hash owned files with matching intent; unknown/foreign content
+refuses cleanup. Once guard.ready or stock-stop admission is persisted, missing
+guard pieces refuse further cleanup/start. Activation removal precedes all guard
+shadow removals, then one reload and original fragment/drop-in/policy proof.
+
+Guard readback will include FragmentPath, DropInPaths and ExecStart in the same
+bounded query as policy, avoiding extra query latency. It must prove the exact
+runtime fragment and full runtime drop-in set, original execution before admission,
+and exact launch execution after activation. Stock proof requires original vendor
+fragment/drop-in provenance. Every original watchdog, timeout, kill, start-limit,
+dependency and execution directive remains preserved except scoped OnFailure
+removal and the existing explicit Restart=no/failure-action guard.
+
+Primary sources:
+- https://github.com/systemd/systemd-stable/blob/v255.21/src/core/load-fragment.c
+- https://github.com/systemd/systemd-stable/blob/v255.21/man/systemd.unit.xml
+
 1. Separate bounded source branch from clean Buddy0093baseline; central change precedes code. Never modify frozen Manager PRs or SDK-owned files.
 2. Main selects fresh32hexnonce, exactpayloadhash and fresh baseline. Packet root `/run/rmb-qt-shutdown-<nonce>` is rootowned0700; owner0600 contains nonce without newline. Launcher writes exclusive0600 `attempt.identity` canonical `pid start\n` before exec. SDK trace is bounded fixed lifecycle scalar records with matched process identity; absence/drop/truncation/malformed trace is diagnostic uncertainty, not healthy completion.
 3. Save the absolute deadline before arming; prearm one independently started transient actor service before ANY policy/activation change, with no failure dependency/actions/restart. It owns physical service mutations after preparation, holds an exclusive singleton lock and persists one-use claims before activation/stockstart. A host request authorizes one activation only after actorprearm and effectiveguard proof. Actor survives host disconnect and uses monotonic absolute deadline with reserved recovery time. No global watchdog/service setting changes.
@@ -25,7 +66,7 @@ Recovery runs in a separate shell retaining the singleton lock descriptor; dupli
 recovery claims refuse further mutations. Original unit/vendor/executable hashes
 are pinned separately from the 24 protected baseline hashes.
 
-Thirteen current local fixtures pass, including actual actor entry/recovery shells
+Seventeen current local fixtures pass, including actual actor entry/recovery shells
 on host-request expiry before and after guard installation, exclusive claim/lock
 refusal, synthetic packet preparation and refusal when only xochitl is active.
 Final readiness checks each service separately; multi-unit is-active exit status
