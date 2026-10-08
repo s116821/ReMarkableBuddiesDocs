@@ -41,6 +41,11 @@ SDK must preserve ordinary observer signal/window connection ordering before the
 entry helper and record the actual frame counter without resetting or fabricating
 zero. If concurrent rendering advances it before installation, the parser refuses
 that attempt and recovery follows; eligibility need not always succeed.
+Any earlier normal before-render or after-render event makes a subsequent zero-frame
+installation semantically inconsistent with the nonreset counter and invalid,
+including when another qualifying render follows. Observer-only incomplete traces
+without installation remain incomplete. The preparer and private host selection
+must also refuse the spent and cleaned 94774266c10f41e2aa8d410012fee601 nonce.
 
 Main's actual 94f attempt verified the full guard and recorded render lifecycle,
 but observation timed out because tablet BusyBox od rejected -A. The subsequent

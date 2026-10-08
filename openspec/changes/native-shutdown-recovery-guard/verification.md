@@ -213,7 +213,22 @@ both repository diff checks pass. Actor SHA a4cdb6a35d6e848852ed3c75cca05e8231f8
 launcher SHA 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95
 and legacy parser SHA e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6
 remain unchanged. The new parser source SHA is
-271f93e6d12a42d9996b2226cafe8f08d0f6056c781b76dbd593a6dcd3821f83.
+5f4f362f570df648923cdc410a3a615b8a7763ab2a55f98d3ba8d9fd088a438b.
+
+Main critical review added prior-render consistency: any normal before/after-render
+before a zero-frame installation invalidates the snapshot, even with a later
+qualifying render. Missing installation alone remains incomplete. Both changed
+Buddy fixture methods passed in 0.179 seconds, including spent-9477 preparer
+refusal before output creation. Python AST passes. Earlier 95fdcce source remains
+preserved in Git; this correction supersedes its marker-order interpretation.
+
+Private host R5 copies preserved R4 and adds only spent-9477 rejection plus its
+fixture/documentation; arming remains byte-identical SHA 904919e226490a1edb043d48bf286f16373a3c808cf001208d6d7bdaa9962a4c.
+Its changed packet/pin method passed in 0.023 seconds, with Python AST and generated
+shell syntax passing. Coordinator SHA ed445c8b00a7e51f58cb4ef30a6c82362ec7d65df6c0e7297443759fe108b52a.
+No host mode logic changes: Main independently verifies future selected cohort
+mode, parser manifest and matching SDK build. Synthetic fixture receipts stay
+private, never native evidence or authorization.
 SDK owns actual successful-installation emission, unchanged ordinary observer
 connection ordering, actual frame counter and hard no-owner/getter/reader fence.
 Concurrent render may make installation ineligible; shared-root actor evidence

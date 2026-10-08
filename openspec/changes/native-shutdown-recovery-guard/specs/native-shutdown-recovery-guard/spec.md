@@ -34,6 +34,10 @@ SHALL be bound in the existing packet manifest and identified in the receipt.
 - **WHEN** installation is missing, render occurs only before installation, or installation is duplicated or has invalid scalar fields or TID
 - **THEN** no STOP admission follows; missing evidence remains incomplete and invalid evidence is refused, without relaxing legacy wire limits or extending observation
 
+#### Scenario: Installation contradicts prior rendering
+- **WHEN** a normal before-render or after-render precedes entry-installed with frames=0, even if another qualifying render follows
+- **THEN** the snapshot is invalid because installation cannot reset the actual frame counter, and STOP is not admitted
+
 #### Scenario: Shared root stimulates the watcher
 - **WHEN** actor evidence creation in the existing shutdown root queues FactsEntry request callbacks
 - **THEN** the SDK diagnostic fence must still prevent request admission and results are interpreted as a coarse setup/timing cohort rather than proof of an individual cause
