@@ -1,6 +1,7 @@
 # Actual Reader admission integration — source inventory and next increment
 
-Status: source-only proposal, not implemented or independently accepted. This
+Status: source-only inventory independently reviewed; concrete decisions below
+await repair review before implementation. This
 inventory is against Buddy2aae1142635c814d8e23e9ec54ba17ac983c01a5 and the accepted
 [selected intent contract](selected-intent-migration.md). Main owns task2.10.
 Existing bounded admission/retained-settlement reviews do not verify these routes.
@@ -83,6 +84,52 @@ Exact Rust ownership/API choices and the separation of selected trigger/setup,
 status restoration and idle history need independent source-contract review before
 implementation. Do not wire a synthetic implementer into production to unblock
 tests. This proposal selects no new native action and does not close task2.10.
+
+## Concrete decisions after independent inventory review
+
+[The c033400 review](https://github.com/s116821/ReMarkableBuddiesDocs/pull/6#issuecomment-6053311264)
+accepts the source inventory and requires these implementation decisions. This
+section resolves them for bounded review; it is not implemented behavior.
+
+Fresh own Pending is admitted only by an in-process context created from the exact
+new Published pending result, its original refs/current publication token, and
+sealed qualified live source. Historical recovery/retry/inspection cannot create
+that context. Its own newly published Pending is expected before first submission;
+any earlier relevant unresolved operation blocks. The context owns one shared
+operation dispatch state, not independent copies of eligibility. Bind each intended
+handoff to its kind, ordinal and exact arguments; mark Entered under admission
+before backend entry. Neither Ok, Err nor unknown acknowledgment makes that handoff
+eligible again. An error/uncertain result stops later effects; a distinct planned
+next handoff requires a new current/live check. A successful synchronous return
+does not by itself provide qualified completion or clear durable uncertainty.
+
+Use a private under-gate read/validation function for original closure and relevant
+uncertainty. Never call recover_original_intent or retained_intent_uncertainty from
+inside with_current: both acquire that gate themselves. Admit once at the actual
+context-bearing outer handoff, release Store mutex before backend I/O and hold the
+domain gate through the whole synchronous composite. Lower native helpers retain
+their existing checks but do not recursively acquire domain admission. Direct
+selected Workflow/backend entry without the matching operation context refuses;
+an Orchestrator-only check is insufficient.
+
+Selected idle undo/redo is explicitly Unsupported in this increment. It cannot
+reuse a consumed answer handoff or historical Receipt. A later separately reviewed
+history operation would need current selected/native-history binding, durable
+pre-input uncertainty and its own once-only dispatch state. Current unbound history
+behavior remains. Selected pre-Attempt trigger dismissal and any capture/history
+setup that can issue input are also Unsupported until their separate ownership
+boundary is reviewed; observation labels do not exempt their real side effects.
+Selected status acquisition/ink/clear and ordinary progress typing remain refused
+unless explicitly represented by an admitted planned handoff; this increment adds
+no selected source-status lease. Existing retired-status restrictions stay intact.
+
+Existing lease-owned restoration keeps its own native ownership/journal checks.
+No stale answer token or generic cleanup exemption permits restoration input.
+No selected acquisition route may start an unsupported lease and then rely on
+cleanup to make it admissible. These Unsupported paths remain visible open gates:
+the bounded implementation cannot claim every task2.10/native route complete.
+Production source capability stays unavailable; synthetic contexts exist only in
+test code and cannot be promoted by supplying IDs or a selected storage token.
 
 ## Required bounded evidence
 
