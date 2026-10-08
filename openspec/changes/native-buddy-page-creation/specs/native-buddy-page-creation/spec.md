@@ -191,3 +191,23 @@ SHALL remain undecodable preserved evidence, never a new owner decision.
 #### Scenario: Later stock restoration or contradictory state
 - **WHEN** recovery succeeds or later observations differ from the first original failing check
 - **THEN** original failure evidence remains immutable, separate recovery results do not upgrade capture or facts, and no diagnostic causes a retry
+
+### Requirement: Selected focus ancestry consumer compatibility
+The development consumer SHALL follow focus-ancestry-consumer-plan.md only after
+independent producer/consumer contract acceptance. Version3 SHALL have exactly37
+fields with a fixed scope, null BFS topology fields and the finite chain matrix.
+Historical version1/2 bytes and strict decoding SHALL remain unchanged. A retained
+ticket refusal SHALL be admitted only as a selected reader_stage in the unchanged
+27-field refusal format; outer callback4/capture36/facts23 SHALL remain unchanged.
+
+#### Scenario: Incomplete or inconsistent ancestry diagnostic
+- **WHEN** a version3 chain/branch/count/type tuple is inconsistent or the scope is not selected
+- **THEN** decoding refuses without discarding complete bounded raw evidence or granting capture, facts, cleanup or retry authority
+
+#### Scenario: Retained owner cannot continue into facts
+- **WHEN** the original selected entry-bound ticket is missing, revoked, mismatched or reentrant
+- **THEN** the session refuses with facts-retained-owner-refused as its reader stage, preserves the original entry callback/refusal clocks and performs no second discovery
+
+#### Scenario: Native observation profile is unknown
+- **WHEN** exact runtime evidence does not establish ordinary-window focus delivery and pre-receiver event observation
+- **THEN** the ancestry mode stays unsupported for native selection despite source acceptance or successful owned fixtures

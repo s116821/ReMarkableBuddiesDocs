@@ -159,6 +159,12 @@ No harness result authorizes E1 or qualifies any native semantic operation. Broa
 implementation, real device, licensing, source handoff and full delivery remain open.
 ## Development capture observation integration
 
+The pending [focus ancestry consumer amendment](focus-ancestry-consumer-plan.md)
+adds a separately selected exact37-field diagnostic matrix and one reader refusal
+stage in the unchanged27-field historical refusal format. SDK owns the guarded
+chain/ticket; callback4/capture36/facts23 and all historical v1/v2 bytes remain
+unchanged. Explicit native-profile qualification precedes selection.
+
 The selected consumer integration follows
 [capture-observation-consumer-plan.md](capture-observation-consumer-plan.md).
 One distinct purpose-bound owner/image observation precedes the original facts

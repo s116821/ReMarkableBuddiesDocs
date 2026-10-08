@@ -1,5 +1,10 @@
 # Development capture owner refusal consumer amendment
 
+The separately proposed version3 focus-ancestry scope and retained-owner refusal
+admission are defined in [the owning consumer amendment](focus-ancestry-consumer-plan.md).
+That amendment awaits independent acceptance and does not change historical v1/v2
+source acceptance or select any implementation, artifact or native trial.
+
 Status: Main accepted the consumer contract at `0aef35c`; source implemented and
 tested at the checkpoints below. SDK source is independently accepted; Main independently accepted consumer source0860464; acceptance is source-only.
 SDK authority is docs-only `fb32d57c1b623ef1ea233a3f2da9a49c6d78f368`
