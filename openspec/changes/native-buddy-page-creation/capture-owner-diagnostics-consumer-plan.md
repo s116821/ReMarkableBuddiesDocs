@@ -155,13 +155,12 @@ Task4.11 and SDK native owner/render qualification remain open.
 
 ## Independently accepted source checkpoints
 
-### Proposed integrated historical request closeout
+### Accepted integrated historical request closeout
 
 Main's prepared-packet review found that the accepted live capture collector
 copies the request only after completion. Owner refusal with no PNG/completion
 therefore correctly retains the stage because the request has no saved copy.
-This does not reverse diagnostic source acceptance. The current prepared packet
-is held from execution until the following narrow extension is reviewed.
+This does not reverse diagnostic source acceptance. Main accepted the narrow extension proposal at5843ad8 and source at605e0cee48836afc104277c1712766ab989b60e4 after full review and independent requesthistory86/sourceintegration28/collector40/owner292. The prior 51-file prepared packet remains held; refresh affected sources/bindings in a new child, preserving the original snapshot and unchanged binaries/config/provider reports.
 
 After mandatory stock restoration, preserve exactly
 `capture-observation-request` and `capture-observation-request.tmp`
@@ -188,8 +187,7 @@ admission, callback, deadlines, recovery clocks or original receipts. Regression
 must execute the actual restored collection/cleanup path with mocked transports,
 cover refusal without completion, both names, differing temporary bytes, absent,
 copy/metadata uncertainty, partial/malformed data, replacement, noisy output and
-foreign local paths. Independent source review and a newly frozen private packet
-remain required before Main-only execution selection.
+foreign local paths. Independent extension source review is complete. A newly frozen private packet still requires exact review before Main-only execution selection. Complete raw-copy knowledge and current binding/cleanup eligibility are separate; later binding failure retains known copies and keeps cleanup false.
 
 SDK `1d221d73c8e2a2a19bfb2d1b37c09bca41d554ed` implements the additive latch;
 `117fd0e8ccc4954545b33d91900a6ff0d4eabf20` adds stronger fixtures without
