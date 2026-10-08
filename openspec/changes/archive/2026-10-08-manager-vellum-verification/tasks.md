@@ -12,12 +12,12 @@
 ## 3. Verification
 - [x] Valid signed APKv3 package/index success, missing/wrong key, signed package/index control and package payload tamper classified refusal (13 actual host-tool observations).
 - [x] Actual full pkgrel comparison and seeded installed metadata/script types/broken-script status/ownership readback; script sentinel never executes.
-- [x] Root inventory/content/mode/link immutability on success/refusal; bounded errors/timeouts; six Linux safety guard tests including escaped links and cleanup.
+- [x] Root inventory/content/mode/link immutability on success/refusal; bounded errors/timeouts; eight Linux safety guard tests including escaped links and cleanup.
 - [x] Public docs describe exact commands, licensing boundary, evidence class and production dependencies.
 - [x] Focused checks and strict central OpenSpec/docs validation pass.
-- [ ] Main-owned independent exact-revision review and relevant required CI pass.
-- [ ] Close independent Linux fixture ownership finding with effective UID/GID binding, focused guards and actual non-root native Linux qualification; preserve Windows Docker Desktop regression.
+- [x] Main-owned independent exact-revision review and relevant required CI pass.
+- [x] Close independent Linux fixture ownership finding with effective UID/GID binding, focused guards and actual non-root native Linux qualification; preserve Windows Docker Desktop regression.
 
 ## 4. Closeout
-- [ ] Synchronize completed bounded capability into canonical specs.
-- [ ] Archive completed named change in linked delivery; retain REM-41/42/35/46 installation/release/hardware gates as open.
+- [x] Synchronize completed bounded capability into canonical specs.
+- [x] Archive completed named change in linked delivery; retain REM-41/42/35/46 installation/release/hardware gates as open.
