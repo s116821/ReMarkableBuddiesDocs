@@ -13,6 +13,7 @@ From the Rust checkout, run:
 ```sh
 cargo test --locked --all-features retained -- --nocapture
 cargo test --locked --all-features process_death_at_activation_boundary
+cargo test --locked --all-features selected_snapshot_preserves_exact_noncanonical
 cargo fmt --all -- --check
 cargo clippy --locked --all-targets --all-features -- -D warnings
 ```
@@ -25,6 +26,14 @@ The barrier race admits exactly one retained publication or replacement from one
 captured token. It does not model Main's domain guard or native completion semantics.
 Each accepted publication has a new manifest transaction identity; compare winner
 references/namespace/media coverage rather than requiring the old manifest identity.
+
+The snapshot regression stores noncanonical JSON bytes and reverses causal order.
+After reopen, `selected_records` remains in the order of
+`transaction.selected.records`; each corresponding ObjectRef reads the original
+bytes. Pair these Store-validated references with parsed envelopes for exact domain
+ancestor lookup. Reserializing an envelope may change hash/length and cannot recover
+the original selected object identity. This storage guarantee does not validate
+Main's domain projector; its own real-Store regressions are still required.
 
 ## Unchanged older reader
 
