@@ -7,6 +7,7 @@ no canonical spec sync, archive, native qualification or merge is implied.
 
 - Rust implementation checkpoint: `b005b1beb9aec6dbeee89889561c4d4447eaf53c`.
 - Rust repair checkpoint: `53b505803a1d4a8802d70198a8a9ab68e185b4fd`.
+- Rust lint cleanup: `b8e176431d2824a5d7a1002e6ae56c9bfa0839fc`.
 - Accepted API: [reader-admission-api.md](reader-admission-api.md).
 - [Implementation evidence](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6057359865).
 - [Repair evidence](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6057688438).
@@ -49,8 +50,17 @@ backends; they confer no production native authority.
 
 A complete all-features serial regression passed before the final direct Attempt
 test and P2 repair. Relevant SDK/legacy and persistence checks passed after the
-direct Attempt addition. These earlier results are not a complete regression or
-strict-lint result for the final repair revision. Final required checks remain open.
+direct Attempt addition. The subsequent [CI test job at the exact repair revision](https://github.com/s116821/ReMarkableBuddies/actions/runs/37762373501/job/113261712894)
+passed in 7m37s. Its strict-lint job failed on 21 unused production-path errors,
+large preparation variants and test-module placement.
+
+The lint cleanup boxes both preparation variants and moves the unchanged test
+module after the implementation. Main verified the moved module byte-for-byte
+and reran all ten context tests successfully. Actual strict Clippy at this cleanup
+revision reports only the 21 unused production-path errors; no lint allowance was
+added. These paths remain unused until qualified production bootstrap exists.
+Complete regression, strict lint and target builds at the final implementation
+revision remain required gates.
 
 ## Remaining gates
 
