@@ -217,3 +217,27 @@ Source basis: exact pinned source review, Main's retained historical integration
 receipt, current 41ce operator/publication receipts and preserved bytes, independent
 restoration/cleanup/final-baseline outputs, and
 [Buddy CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/37783000265).
+
+The next spent attempt, df2494e3ec5c4d9b9416435fe99f30f1, used native SDK
+a4cfd898c0954881f80284e0f65a135a7d73a916 and capture consumer
+36d7b65c844b668bea3735a7aff331b6520c0582 with a default-off completion
+diagnostic selected. The first existing ownership check refused: accepted21009,
+baseline24303, postRead24360, failure25450, effectiveDeadline26009 milliseconds.
+Because the monotonic failure time is sampled after that check, its559ms remaining
+budget rules out the accepted+5000 deadline for this attempt. It does not identify
+the older41ce cause. The failed ownership subpredicate was not reported; sticky
+invalidation or an ownership endpoint change remain hypotheses.
+
+The PNG was again written, but no completion record was published and the fresh
+Reader harness was not run. Main preserved20 stage files and7 helper evidence
+files with matching hashes, visually inspected the PNG, and removed only the exact
+owned stage/helper after verified restoration. Final independent baseline passed
+at stock PID11221/start238122636 with fixture14/provider10 hashes unchanged,
+service policies restored and all spent stages absent. The successful v11 wire,
+SDK parser, original five-second budget and Readerb085 remain unchanged. A narrow
+versioned refusal diagnostic can report cached predicate/subreason without adding
+native getter calls or relaxing acceptance; fresh integration remains open.
+
+Source basis: current pinned source and decoded final callback, preserved PNG and
+raw receipt, independent cleanup and final-baseline outputs. Deadline exclusion
+uses the existing monotonic clock; the ownership failure cause remains unknown.
