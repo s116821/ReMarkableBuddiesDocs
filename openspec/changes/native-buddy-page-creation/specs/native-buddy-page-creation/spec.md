@@ -148,3 +148,17 @@ Before a supervised candidate advances to device activation, Buddy SHALL exercis
 #### Scenario: Simulated cold boot
 - **WHEN** both protection processes are lost and a new simulated boot reconstructs state
 - **THEN** it begins stock without injection regardless of leftover payload/session files and requires a new authorized trigger before activation.
+### Requirement: Development capture observation preserves facts admission
+The development consumer SHALL bind one purpose-specific capture completion to the
+exact candidate, retained request and retrieved PNG, preserve original setup and
+recovery clocks, and require explicit positive full-image review before publishing
+the original facts request. It SHALL reject unknown, changed, late or malformed
+evidence without another capture or input and SHALL grant no native/render authority.
+
+#### Scenario: Capture completion does not authorize facts
+- **WHEN** the development capture completes but full-image review is missing or negative
+- **THEN** the consumer does not publish facts and preserves evidence for restoration
+
+#### Scenario: Retained bindings or original clock are lost
+- **WHEN** a token, image, completion, owner witness or candidate changes, or an original deadline expires
+- **THEN** continuation refuses without refreshing the witness, retrying input or extending setup

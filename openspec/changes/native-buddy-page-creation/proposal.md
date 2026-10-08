@@ -21,6 +21,11 @@ REM-25 requires a native writable Buddy page immediately after a source page, or
 
 ## Capabilities
 
+The selected development capture-observation refinement is described in
+[the consumer integration plan](capture-observation-consumer-plan.md), coordinated
+with SDK `aca0523ae31b967958e8730b7c7b3dc277a8090c` and its subsequent native
+owned-copy clarification. It adds no qualified native capture or production effect.
+
 ### New Capabilities
 - `native-buddy-page-creation`: qualification, insertion/reuse, operation recovery, fallback and extension lifecycle.
 

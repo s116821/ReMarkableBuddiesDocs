@@ -2720,3 +2720,22 @@ bitmap mismatch remains unexplained, with no specific render or capture cause
 proved. Formal UNKNOWN, visual refusal, no publication/facts and allauthorityfalse
 remain unchanged. Source basis: exact saved23-row journal and capture stderr;
 Main/Astra independently identified these rows, and Sol re-read their actual bytes.
+## October 7 owner/window capture consumer source checkpoint
+
+The next selected development source route is described in
+[capture-observation-consumer-plan.md](capture-observation-consumer-plan.md).
+Exact SDK source `f0e6ff4ccb37b887f7f278b0b820a7d047de1559` and Buddy consumer
+`0d70596837da54cfc7ef5c73b72fdc75b1f7b086` add one purpose-specific owner/image
+capture before the original facts request, with unchanged original clocks and
+explicitly false native/render authority. Main's complete-image visual decision
+is independently hash-bound; final facts publication cannot infer it from remote
+bytes or mere completion presence. Unknown outputs retain their owned stage after
+stock restoration unless exact local copies or positive absence are established.
+
+SDK25 focused cases plus actual entry/publisher interleaving1 passed vendor
+Qt6.10.3/QEMU and Astra independently reproduced/reviewed SDKf0. Consumer proof156,
+collector34, source integration15, publisher26 host/vendor-QEMU cases and wrapper
+local-hash/replacement checks passed. Consumer independent review, Main's selected
+artifact/packet and native gates remain open. No fresh nonce or target attempt is
+selected; preserve every prior spent record and the M3 stash. Task4.11 and native
+capture qualification remain open; no archive or production capture claim.

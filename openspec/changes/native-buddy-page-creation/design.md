@@ -149,3 +149,13 @@ only. Deterministic events sequence tests. Host watchdog bounds are readiness5s,
 heartbeat1s/stale3s, rollback5s and outer30s per real case; they prove no tablet timing.
 No harness result authorizes E1 or qualifies any native semantic operation. Broad
 implementation, real device, licensing, source handoff and full delivery remain open.
+## Development capture observation integration
+
+The selected consumer integration follows
+[capture-observation-consumer-plan.md](capture-observation-consumer-plan.md).
+One distinct purpose-bound owner/image observation precedes the original facts
+request. Exact copied PNG/completion/token bindings and Main's positive full-image
+visual decision govern consumer admission. Sticky SDK owner invalidation remains
+active through facts delivery. Capture success never resets original setup time or
+grants native/render authority. The vendor grab may return held framebuffer pixels;
+bounded owned copying protects byte ownership without establishing render freshness.
