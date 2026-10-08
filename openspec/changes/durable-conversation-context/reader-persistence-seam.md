@@ -147,3 +147,38 @@ Native smoke, release builds and canonical sync/archive remain separate open gat
 Source basis: current Reader/Workflow/DeviceBackend code, accepted REM37 tasks and
 SDK boundaries, independent review finding, and coordinator's current semantic
 direction. The bounded design has exact independent acceptance; code, native qualification and complete issue delivery require their own evidence.
+
+## Selected development-capture increment (2026-10-08)
+
+Main selected a separate SDK-owned development acquisition after the actual
+[v11 capture](https://github.com/s116821/ReMarkableOpenSDK/pull/1#issuecomment-6060257011)
+produced a visually inspected first-page PNG. This receipt lacks the session,
+visit, revision, input, render and affine facts required by CapturedBatch. Its
+observed_order is false. Do not fabricate those facts, relabel the acquisition
+Synthetic, or route it through Legacy (whose current branch permits legacy output).
+
+The selected opt-in SDK DevelopmentCapture owns the exact PNG and original strict
+v2/v11 completion bytes, with expected attempt/fixture inputs distinct from reported
+identity. Its parser checks bounded byte/receipt correspondence, not freshness or
+live ownership. Main's existing collector retains the live candidate/root/payload
+checks. The type grants no SourceObservation, CapturedBatch, CaptureFacts, live
+guard, effect capability or Reader preparation.
+
+Buddy adds an explicit DevelopmentUnqualified acquisition and separate historical
+evidence container. Freeze and atomically persist the original receipt, acquisition
+PNG and actual ordered provider images with the Prepared turn before provider
+dispatch. Reopen/readback retains exact bytes and development provenance; expected
+fixture order never becomes observed page order. Proposal and verification retrieve
+the same durable provider bytes. Missing/corrupt evidence refuses dispatch.
+
+This branch is always non-output. A persisted Generated answer records
+NativeOutputUnavailable without navigation, typing, selected preparation or effect
+settlement. Trigger/setup/status/history and branch-dependent selected render_answer
+remain unavailable. Existing SDK synthetic and explicit legacy paths retain their
+semantics. Focused actual-Orchestrator persistence/provider-byte/zero-output checks
+and a fresh controlled RM2 capture-to-persistence run verify this increment;
+production bootstrap, qualification, settlement and full task2.10 remain open.
+
+Source basis: the linked actual capture receipt and visual inspection; current SDK
+and Buddy API inspection; Main's selected narrow integration. This section records
+the selected increment, not completed implementation or qualification.
