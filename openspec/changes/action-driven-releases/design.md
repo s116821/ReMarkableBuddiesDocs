@@ -310,3 +310,15 @@ expected versions, exact SHA and unchanged refs. No private upstream patch,
 production pin change, tag mutation or acceptance weakening follows from this
 finding. A usable maintained distribution and independent qualification remain
 required before selecting a replacement composition.
+
+The bounded supporting source check subsequently completed on SCRAPPY-DOO:
+unmodified `17cc645b` built with .NET SDK 10.0.401/runtime 10.0.12, without warnings
+or errors. The unchanged `test_versioning_equal_dates.py` from Buddy `864bc5b`
+still fails the same-second feature-then-fix case: expected `0.2.1`, actual
+`0.2.0`. The earlier detached feature with a descendant `v0.2.1` tag now passes
+at `0.2.0`. Both output SHAs and all before/after refs match. Only documented
+`GIT_BRANCH=main` context and temporary upstream v6 argument/config selectors
+were supplied; timestamps, topology, config and assertions were unchanged.
+This improves one case but does not qualify the candidate or select a production
+pin. Do not repeat the failed regression, patch upstream locally or weaken the
+same-second acceptance to advance this delivery. The release gate remains open.
