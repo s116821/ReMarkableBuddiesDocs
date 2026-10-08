@@ -342,3 +342,15 @@ source qualification and production Reader dispatch remain open.
 Source basis: retained host/operator/readiness records, previous-boot journal,
 and independent post-reboot hash/service checks. The crash and reboot are
 observed facts; a specific code defect causing them has not been established.
+
+The initiating host-readiness defect was then independently reproduced: the
+private hook's unused script-scoped transport-log append resolved in the separate
+operator script, where its record did not exist. It threw after transport return
+and before durable readiness receipt creation. A separate repaired hook removes
+that unused append; Main verified the original cross-script failure and the
+repaired real local-Python transport result. Consumer
+38a0de7c3148aae1a5582b6ec6cac75dac7196b6 preserves the initiating ErrorRecord
+before restoration and records restoration errors separately. Four independent
+local error-path checks passed; failures remain failures. The spent 0404 packet
+is unchanged. This repairs host diagnostics, not the native shutdown SIGSEGV.
+The native retry hold persists across usage resets until its cause is resolved.
