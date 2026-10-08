@@ -237,3 +237,22 @@ negative decoder cases. Verification is synthetic, not native qualification.
 Independent source review is pending. Selected Attempt, actual backend handoffs and
 the remaining feature acceptance gates are still unfinished; no task checkbox or
 merge/native acceptance is inferred from this increment.
+
+The independent f87859f review reproduced a valid original closure split across
+retained manifests with an ExportAssociation. Settlement unnecessarily recopied
+that record into the receipt manifest as Conversation and refused with a namespace
+mismatch. Repair [2aae114](https://github.com/s116821/ReMarkableBuddies/commit/2aae1142635c814d8e23e9ec54ba17ac983c01a5)
+removes that redundant copy: the validated closure remains in its original retained
+manifests, preserving namespaces, media and completeness metadata, while only the
+new outcome fact is appended. No storage implementation change was needed.
+
+Main's exact repair passed four retained Store tests, all24 conversation library
+tests and all-target/all-feature Clippy with warnings denied; no current-repair
+full-suite result is claimed. [Repair receipt](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6052986365).
+The independent reviewer reran four supplied tests and all four original appended
+adversarial fixtures: the unchanged split-history reproduction and unsplit control,
+shared immutable winner ancestry, six crash/restart boundaries with historical
+retry, and nine changed-request mutations all passed. [Original P2 closure](https://github.com/s116821/ReMarkableBuddies/pull/30#discussion_r4215152772)
+supersedes the preceding pending source-review status for this bounded increment.
+Production verification, selected Attempt/every actual backend handoff, imported
+restore and native/full-feature acceptance remain open.
