@@ -194,3 +194,14 @@ Source basis: current repository source and observed local test/Clippy output;
 GitHub PR30 review comments4214001560,4214001565,4214048815 and withdrawal4214081221;
 parent-routed review coordination. Private synthetic fixtures provide no device
 qualification.
+
+Follow-up Rust256a4059e4864ad132839ecd0cfaf45fdbdca830 cleanly merges
+published storagebc25322 without hand edits. Its read-only selected_predecessor
+returns validated original historic evidence without a token. Domain recovery now
+compares the stored pre-publication aggregate UUID with that actual predecessor
+and checks predecessor scope/store generation/base agreement. The seven foreign-pin
+restart cases, all20 conversation tests, three predecessor storage tests and strict
+library Clippy pass. The foreign-pin P2 awaits an independent rerun before closure;
+the other two original settlement/chronology reproductions independently passed at
+52bf1a. Portable archive code arrives unchanged through the storage merge and
+retains the storage owner's separate review and check attribution.
