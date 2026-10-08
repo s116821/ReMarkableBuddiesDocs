@@ -2739,3 +2739,14 @@ local-hash/replacement checks passed. Consumer independent review, Main's select
 artifact/packet and native gates remain open. No fresh nonce or target attempt is
 selected; preserve every prior spent record and the M3 stash. Task4.11 and native
 capture qualification remain open; no archive or production capture claim.
+
+
+#### Consumer raw completion review correction
+
+Buddy `42e4b02f81a5433ce3d6b9503036761ae82a16a3` supersedes the
+`0d70596837da54cfc7ef5c73b72fdc75b1f7b086` source checkpoint for collection.
+Main's duplicate JSON key finding is closed at source: raw bounded completion
+object names must be ordinal-unique before PowerShell decoding, including escaped
+aliases. Collector40 and source integration15 passed. SDK remains
+`f0e6ff4ccb37b887f7f278b0b820a7d047de1559`; no schema, clock, device action or
+native authority changed. Independent final acceptance and task4.16 stay open.

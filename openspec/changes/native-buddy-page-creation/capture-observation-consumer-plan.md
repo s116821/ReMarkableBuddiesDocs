@@ -6,7 +6,7 @@ SDK plan/source authority is `f0e6ff4ccb37b887f7f278b0b820a7d047de1559`,
 `openspec/changes/establish-native-platform-contract/capture-observation-plan.md`.
 Consumer starting revisions are Buddy `89fd9d23e13bb81493239d28e67e39afcebad754`
 and Docs `33a294618b37789a6827df0ea40a25e89e71b714`.
-Implemented consumer checkpoint: Buddy `0d70596837da54cfc7ef5c73b72fdc75b1f7b086`.
+Implemented consumer checkpoint: Buddy `42e4b02f81a5433ce3d6b9503036761ae82a16a3` (supersedes `0d70596837da54cfc7ef5c73b72fdc75b1f7b086`).
 Main operates the tablet; Astra owns SDK source investigation; Sol owns consumer
 implementation and review. Shared storage/domain work is outside this integration.
 
@@ -100,7 +100,7 @@ da8's document-open logs plus My Files capture do not qualify render freshness.
 SDK tasks2.9 and consumer task4.11 remain open pending real native evidence and
 the complete OpenSpec lifecycle. No canonical sync/archive or shipping claim.
 
-Executed consumer checks: proof156, mocked transport collector34, actual source
+Executed consumer checks: proof156, mocked transport collector40, actual source
 integration15, publisher26 host and vendor/QEMU cases and a real wrapper local-hash/replacement
 fixture. SDK focused25 plus actual entry/publisher interleaving1 passed vendor
 Qt6.10.3/QEMU offscreen; Main and Astra independently reviewed SDKf0 and Astra
@@ -111,3 +111,19 @@ Source basis: current repository source and SDK plan pinned above; retained50d
 local images inspected directly; da8 evidence summarized in the owning
 `qt-input-observation-plan.md`. Consumer source is implemented and tested as stated,
 with no hardware verification or qualified capture claim at this checkpoint.
+
+### Independent review correction: raw duplicate keys
+
+Main identified that PowerShell ConvertFrom-Json can collapse duplicate names
+before the exact field validator sees them. The collector now bounds the raw
+completion to 8192 UTF-8 bytes and enumerates System.Text.Json object property
+names with ordinal uniqueness before decoding. JSON escapes are decoded during
+this check, so escaped aliases of the same name also refuse. Neither duplicate
+case receives capture_verified or saved-copy knowledge; remote unknown outputs
+remain retained under the existing preservation rule. No schema changes.
+
+Actual mocked raw completion regressions cover identical and escaped duplicate
+version names. Collector40 and source integration15 passed after this correction;
+Main separately reported independent proof156, prior collector34/source15,
+vendor ARM/QEMU publisher26 and actual wrapper replacement refusal. These are
+source/fixture checks only; device qualification and task4.16 remain open.
