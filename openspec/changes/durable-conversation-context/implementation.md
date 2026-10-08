@@ -155,3 +155,42 @@ AArch64 cache; that infrastructure failure is retained. The isolated ARM target-
 build passed, artifact SHA8939329e80b193f3bc5ca0511704ccbd51b738090e417cefe0bb50a524a5b944. Neither compilation nor simulated model evidence completes
 native/revisit/Writer/fullREM37 gates. Local raw live reports/logs remain private
 working evidence; no credential/document log duplication into source.
+
+## October 7 selected-domain implementation checkpoint
+
+Rust89d619527da40a62866e7f3de090ae0da49c758e includes the schema2
+Receipt/OutcomeFact extensions, selected ancestor projection with actual stored
+ObjectRefs, historical document ownership, shared Store/aggregate admission gate,
+original intent recovery and atomic four-record pending publication. The gate is
+mechanical admission, not native qualification. Production SourceAdmission has no
+implementer while native qualification remains open. Historical retries recover
+original prepared UUIDs, object bytes and logical fingerprint before new IDs;
+they never mint a current token or replay an effect. First publication returns the
+actual Store token, which must remain exact at every later synchronous handoff.
+
+Independent review found settlement references could name a different admitted
+Turn and correction chronology could use an old target ancestor. Repair52bf1a
+requires equality to the actual referenced Receipt.admitted_intent, rejects
+schema1 receipts, and checks the correction target's typed current head. Nineteen
+conversation unit tests and strict library Clippy passed at52bf1a, including an
+actual Store pending intent followed by fingerprint, selection, original Root/Turn
+reference and legacy-receipt substitutions. Bounded independent reruns are pending.
+
+Historical recovery's foreign selection-pin finding remains OPEN. Partial repair
+89d6195 compares group/key/binding/store generation/base/predecessor digest against
+the actual original publication. Four focused admission tests and strict library
+Clippy passed, including individual foreign pins committed before a lost ack and
+Store reopen. Actual predecessor aggregate UUID validation awaits the storage-owned
+read-only predecessor lookup; the existing tests do not cover that missing check.
+The separate Root-only historical SourceObservation grouping concern was withdrawn
+by the reviewer; historical grouping does not require a native source capability.
+
+Retained settlement, durable uncertainty-latch reconstruction, selected Attempt and
+every actual backend handoff remain unfinished. Existing legacy Reader behavior and
+prior checks retain their original attribution. No full task completion, canonical
+sync/archive, merge readiness or native qualification follows from these slices.
+
+Source basis: current repository source and observed local test/Clippy output;
+GitHub PR30 review comments4214001560,4214001565,4214048815 and withdrawal4214081221;
+parent-routed review coordination. Private synthetic fixtures provide no device
+qualification.
