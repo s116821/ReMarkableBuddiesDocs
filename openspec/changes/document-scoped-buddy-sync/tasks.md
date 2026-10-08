@@ -27,6 +27,8 @@
 - [ ] Implement portable selected backup/restore/migration policy before enabling these maintenance paths for selected stores; current explicit refusal prevents silent metadata loss.
 - [x] Implement and locally verify the [portable selected archive/inspection candidate](portable-selected-maintenance.md), preserving original transaction/history/retained/media and unrelated data without minting portable live tokens; retain explicit restore/migration refusal until activation policy is implemented.
 - [ ] Independently review the linked portable archive/inspection candidate and verify its exact published source/Docs revisions and CI before integration.
+- [x] Add and locally qualify read-only original-publication predecessor lookup for Main's historical selection-pin validation, without minting live tokens or changing current membership.
+- [ ] Independently review the linked predecessor lookup and its exact published qualification before domain integration.
 
 - [x] Implement the bounded selected snapshot/guarded commit/activation/replay candidate; checkpoint cca7ea9d passed hosted CI, with domain/native/provider integration still disabled.
 - [ ] Independently review retained-only settlement linkage and generation-feature old-reader refusal with exact linked source/Docs revisions; qualify source against the unchanged older reader.

@@ -153,3 +153,17 @@ excluded until a portable allowlist exists.
 #### Scenario: Incompatible or interrupted selected export
 - WHEN required history/objects are corrupt, unsupported, missing or cannot be staged
 - THEN no complete marker is published and current source selection and unrelated data remain unchanged.
+
+### Requirement: Original predecessor evidence without live authority
+Historical selection lookup SHALL resolve the immediate hash-linked predecessor of
+an exact accepted original operation and validate original and parent closures.
+It SHALL return historical transaction evidence only, without minting a live token
+or changing current membership. Corrupt, missing or foreign history SHALL refuse.
+
+#### Scenario: Original parent after replacement
+- WHEN the accepted original operation is queried after later selection replacement or process restart
+- THEN its original immediate predecessor is returned without substituting the current head or refreshing admission.
+
+#### Scenario: Invalid original predecessor closure
+- WHEN an original or parent link, scope, generation, identity or required object cannot be verified
+- THEN lookup refuses without changing current selection or unrelated data.

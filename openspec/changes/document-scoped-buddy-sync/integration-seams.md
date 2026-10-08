@@ -150,5 +150,27 @@ preparation can leave an unchanged selection with old readers safely refused; th
 single selected transaction still decides old-or-complete-new membership. Missing,
 foreign or unknown feature markers refuse. Immutable envelope/object history is not
 rewritten, and generic unrelated format2 migration without the marker is unsupported.
-This data-format version is independent of Git-tag release versions. Portable
-selected backups remain unimplemented/refused; no effect enablement follows.
+This data-format version is independent of Git-tag release versions. Legacy
+export/restore/migration continue refusing selected stores. Explicit
+[selected archive export and offline inspection](portable-selected-maintenance.md)
+preserve history as non-authoritative evidence; no effect enablement follows.
+
+## Original publication predecessor evidence
+
+Main's historical intent validation needs the actual accepted predecessor aggregate
+generation, not today's token. No existing public historical API exposes that
+transaction. Add `Store::selected_predecessor(scope, original_operation)` returning
+`Result<Option<SelectionTransaction>>` from one locked, validated accepted history.
+An absent scope/operation returns `None`; a known first publication with no predecessor
+refuses explicitly. Invalid operation/scope, missing/corrupt hash link, foreign
+scope/generation, invalid history depth/identity or missing required original/parent
+closure refuses. Return the immediate predecessor of that exact accepted original
+operation, even after later publications or replacement; do not return the current
+head or an arbitrary transaction matching a request's claimed pins.
+
+This read-only lookup validates both original and predecessor manifests/objects.
+It cannot mint a SelectionToken, mutate membership, emit a wake, refresh admission,
+or authorize external effects. Main compares persisted original selection evidence
+to this historical predecessor under its existing domain guard. Group/key/binding,
+Store/aggregate generation, accepted base and selection digest remain domain-owned
+comparisons; storage continues treating envelopes as opaque.
