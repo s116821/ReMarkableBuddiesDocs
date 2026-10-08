@@ -132,12 +132,19 @@ allowlist must preserve that name instead of mapping it to unlisted-reader-stage
 reader_result_had_facts must be false and refusal_path must be reader-result.
 Selected-mode gating must hold in both SDK reader-stage sanitization and refusal
 serialization, and in the consumer's source/config/packet-bound decoder; no wire
-selection field is added. Entry stage and callback remain the existing
-facts-entry-read-refused or facts-entry-delivery-refused, as appropriate. Keep the
+selection field is added. For this new reader stage, entry stage and callback
+must be facts-entry-read-refused, reader_result_had_facts=false and
+refusal_path=reader-result. Reject facts-retained-owner-refused paired with
+facts-entry-delivery-refused: the existing delivery refusal requires had-facts
+true and entry-completion-boundary, which cannot describe this ticket failure.
+Keep the
 callback exactly nonce, stage, application_thread, engine_thread with unchanged
 identity/type/thread checks. Do not add SDK internal observed/outputPublished
-fields to callback JSON. The internal result remains unsuccessful and the
-consumer's facts/capture flags remain false. Unselected sessions refuse the new
+fields to callback JSON. The internal facts result remains unsuccessful and
+facts success remains false. This stage grants no capture or facts promotion;
+previously independently admitted capture evidence retains its original status
+and provenance. Do not reset that earlier evidence or infer successful capture
+from a diagnostic. Unselected sessions refuse the new
 reader stage; no outer callback enum is added. All27 refusal fields, original
 clock/sample/entry relationships and literal false authority flags remain strict.
 It establishes neither successful facts nor cleanup eligibility.
