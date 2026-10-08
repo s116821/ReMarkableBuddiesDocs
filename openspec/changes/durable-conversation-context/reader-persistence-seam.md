@@ -182,3 +182,38 @@ production bootstrap, qualification, settlement and full task2.10 remain open.
 Source basis: the linked actual capture receipt and visual inspection; current SDK
 and Buddy API inspection; Main's selected narrow integration. This section records
 the selected increment, not completed implementation or qualification.
+
+## Partial verification (2026-10-08)
+
+SDK development-capture revision d01b4bdfbc4dc11673f84ff82bbc62c8dc77bbb1
+and Buddy revision b085d4d78b56646cb2ee8bb73b81845bafeeb53f implement the
+selected read-only transport and persistence branch. Main independently ran the
+actual Orchestrator with a real retained Store and a recording provider against
+the previously collected de375 v11 completion and PNG. The original receipt and
+RGB8 PNG, 768x1024 overview and three overlapping detail images persisted before
+both provider passes and reopened byte-for-byte. The one-shot transport refused
+reuse; Generated ended with NativeOutputUnavailable and zero device effects.
+This is a historical-byte integration check, not fresh native ownership or a
+live provider/model result. The original PNG stays unchanged; RGB-to-RGBA working
+conversion applies only to the derived prompt images.
+
+The fresh 41ce4495aa674325bea22466c2eae0ba attempt used the same SDK native
+producer and Buddy capture consumer e41c978d30d736853f9a0cb7b58070d6dffe5b1e.
+One released contact and one capture publication reached PNG creation, then
+refused in the queued completion callback. No completion file was published,
+so the fresh capture-to-Reader harness was not run. Main preserved and visually
+inspected the PNG and refusal metadata, restored stock, removed only the exact
+owned stage/helper, and independently verified all fixture/provider hashes,
+service policies and absence of spent stages. The failing predicate remains
+unknown; a five-second deadline crossing is an inference, not a measured cause.
+The attempt is spent and must not be replayed.
+
+Buddy's exact revision passed CI Test; strict Build & Lint still fails on unused
+production admission/selected-backend scaffolding. Independent review and fresh
+capture-to-persistence verification remain open, as do production qualification,
+bootstrap, effects, settlement and the remaining task2.10 lifecycle gates.
+
+Source basis: exact pinned source review, Main's retained historical integration
+receipt, current 41ce operator/publication receipts and preserved bytes, independent
+restoration/cleanup/final-baseline outputs, and
+[Buddy CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/37783000265).
