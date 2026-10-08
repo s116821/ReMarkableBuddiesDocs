@@ -16,6 +16,12 @@ export continues refusing selected stores. A complete `backup.json` marker is wr
 last, only after required bytes and metadata have been staged and validated. A
 destination must be new and cannot overlap data/cache/credential roots.
 
+After an interrupted or lost-acknowledgement export, inspect the same destination.
+A verified complete marker means publication succeeded even if the call returned
+an error afterward. Without that marker, staging is incomplete and cannot be used
+as a backup. A retry requires a new destination; never silently reuse partial data
+or overwrite an existing archive.
+
 The descriptor records original actor/generation, the supported actor/generation
 feature marker, and original current selection transaction ObjectRefs. Archive
 objects include exact original transaction/history bytes reachable from each current
