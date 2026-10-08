@@ -127,3 +127,16 @@ version names. Collector40 and source integration15 passed after this correction
 Main separately reported independent proof156, prior collector34/source15,
 vendor ARM/QEMU publisher26 and actual wrapper replacement refusal. These are
 source/fixture checks only; device qualification and task4.16 remain open.
+
+
+### Main source acceptance
+
+Main independently accepted Buddy `42e4b02f81a5433ce3d6b9503036761ae82a16a3`,
+Docs `52ba3784a35e28bd3aa6c24fc88cb6c6615dce1d` and SDK
+`f0e6ff4ccb37b887f7f278b0b820a7d047de1559` as development SOURCE ONLY.
+Main read the final source and Docs deltas and independently reproduced
+collector40 and source integration15; earlier proof156, vendor publisher26 and
+wrapper replacement refusal remain applicable because their code did not change.
+Task4.16 source implementation/review is complete. Artifact/private packet review,
+Main-only target execution, native qualification and task4.11 remain open.
+Source basis: Main's current coordination message and executed repository checks.
