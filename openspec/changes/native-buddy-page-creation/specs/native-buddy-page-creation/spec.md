@@ -171,6 +171,19 @@ bytes or retain unknown output. It SHALL keep original refusal and admission fla
 clocks and recovery duties unchanged and require preservation or positive absence
 before exact-name cleanup. Historical evidence SHALL NOT authorize another action.
 
+The consumer SHALL follow capture-owner-diagnostics-consumer-plan.md for strict
+exact29-field version1 and exact33-field version2 topology diagnostics, preserving
+historical bytes and original bounds/clocks/admission. Unknown or mixed versions
+SHALL remain undecodable preserved evidence, never a new owner decision.
+
+#### Scenario: Version1 topology record is retained
+- **WHEN** a valid historical version1 diagnostic reports open-topology-bound
+- **THEN** its bytes and hash stay unchanged, its exact return site stays unknown, and the consumer does not synthesize version2 fields or infer owner absence.
+
+#### Scenario: Version2 topology tuple is invalid
+- **WHEN** a version2 record has incomplete, incorrectly typed or inconsistent finite topology fields
+- **THEN** strict decoding refuses while bounded immutable raw preservation and the original refusal/recovery duties remain unchanged.
+
 #### Scenario: Diagnostic is absent or malformed
 - **WHEN** owner refusal has no diagnostic or its diagnostic is undecodable
 - **THEN** original refusal remains, complete matching bytes can be preserved as historical evidence, and unknown output prevents cleanup

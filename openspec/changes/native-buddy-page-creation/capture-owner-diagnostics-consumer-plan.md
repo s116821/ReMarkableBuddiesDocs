@@ -157,6 +157,13 @@ Task4.11 and SDK native owner/render qualification remain open.
 
 ### Proposed Windows historical transport repair
 
+Main independently accepted this amendment at Docs
+`fba78ece944369f0e1792f7e965d3b1b2b6dcaeb` before implementation. Buddy
+`f53e3f08429f9101881b9ef6d8015ff3e758367e` implements it with local mocked
+transport/isolation113, request-history86, owner292, source-integration28 and
+capture-collector40 passing. Main independently read all eight changed files and
+accepted exactf53e3f0 after reproducing all five suites in isolated processes.
+
 The e997 operator's original receipt records a normal metadata read followed by
 SCP exit1, without timeout, when opening a 271-character local destination.
 The exclusive UUID directory exists but contains no returned file. Windows
@@ -189,7 +196,59 @@ both failures and success. The other collector must run once, successful evidenc
 must remain known, and any error must prevent cleanup and admission. Existing
 request-history, owner, capture collector and source-integration regressions must
 remain passing. This is a proposed source-only amendment awaiting independent
-review; native gates and task4.11 remain open.
+review at the checkpoint above; native gates and task4.11 remain open.
+
+### Proposed coordinated topology diagnostic version2 decoding
+
+This source-only amendment follows all six proposal files at exact SDK
+`40977365250e60b0ce609f3cbcc3119977a7dee0`, especially
+`capture-topology-diagnostics.md`. Main accepted that SDK proposal; Sol agrees
+with its compatibility and finite matrix. Consumer amendment review must precede
+ordinary SDK or consumer implementation. Windows transport/error isolation is
+the separate checkpoint above, not permission to alter diagnostic meaning.
+
+Preserve version1 as exactly the existing29 case-sensitive field names and its
+existing complete type/nullability/branch matrix. In particular the retained e997
+753-byte SHA256
+`480e593b403993d7ec56d6f8b3f4ec123dac35337f19c0029cda4a5606a7a64c`
+continues to mean owner-discovery/open-topology-bound at visited_items3657,
+with its return site unknown. Never infer depth or owner absence from that count,
+add fields to saved bytes, or relabel historical records as version2.
+
+Accept version2 only as exactly those29 fields with integer version=2 plus exactly
+`topology_limit`, `topology_depth`, `topology_queue_size`, `topology_child_count`
+(33 total). Keep all previous branch/type/nullability checks, raw duplicate-key
+rejection including escaped names, strict UTF-8, 8192-byte bound, matching original
+identity and immutable exclusive preservation. Unknown/mixed versions, extra or
+missing fields, invalid scalars and malformed JSON stay undecodable bounded raw
+evidence; decoding is separate from byte-preservation/cleanup knowledge.
+
+The four new fields are all null for every other branch/result. Only
+owner-discovery/open-topology-bound requires one of these complete tuples:
+
+| topology_limit | visited_items | topology_depth | topology_queue_size | topology_child_count |
+| --- | --- | --- | --- | --- |
+| visited | 4097 | null | null | null |
+| depth | 1..4096 | 25 | null | null |
+| queue-cap | 1..4096 and <=queue_size | 0..24 | 1..4096 | >4096-queue_size, <=signed64 maximum |
+
+Each non-null scalar must be a nonnegative signed64 JSON integer, never a boolean,
+float or numeric string; limit is a case-sensitive finite string. All topology
+tuples retain null predicate/deadline_check_ms/matched_pairs/pair/active-owner/
+observer detail and the existing partial candidate-count bounds. Queue size is
+cumulative including visited entries. The defensive visited tuple is tested at
+the scalar seam without weakening the enqueue guard or claiming native reachability.
+
+Acceptance covers unchanged version1 readback and exact e997 raw hash; all valid
+version2 tuples and nulls for other original branches; missing/extra/duplicate or
+mixed fields; incorrect enums/types/bounds/relations; and immutable complete-copy
+preservation of unknown versions, malformed/partial/foreign data and later binding
+loss. Execute real decoder/collector/operator source with mocked transports and
+independently review exact source checkpoints. Preserve callback four-field schema,
+capture completion version1, facts/request tokens, all clocks/limits and authority
+flags. Select no version2 artifact with a version1-only consumer. SDK source,
+consumer source, artifacts/private packet and Main-only native selection remain
+separate gates; task4.11 and native owner/render/navigation qualification stay open.
 
 ### Accepted integrated historical request closeout
 

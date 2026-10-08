@@ -10,6 +10,14 @@ No conversation renderer/history implementation, source-question erasure, marker
 
 ## Decisions
 
+### Versioned historical topology evidence
+
+Follow [the owning consumer plan](capture-owner-diagnostics-consumer-plan.md):
+exact29-field version1 remains unchanged, exact33-field version2 adds only finite
+original topology return-site scalars. Unknown/mixed formats preserve raw evidence
+without decoding or admission. SDK4097736 and the consumer amendment require
+coordinated review before code; artifact/packet/native qualification stays separate.
+
 ### Logical gesture navigation; direct opening deferred
 
 The October 3 user decision selects permitted gestures exposed through SDK logical

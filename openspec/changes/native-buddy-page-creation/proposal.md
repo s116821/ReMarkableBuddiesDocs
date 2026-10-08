@@ -4,6 +4,10 @@ REM-25 requires a native writable Buddy page immediately after a source page, or
 
 ## What Changes
 
+- Propose strict compatible version1/version2 historical topology decoding under
+  [the owning consumer plan](capture-owner-diagnostics-consumer-plan.md), aligned
+  with SDK4097736. Preserve original bytes, bounds, clocks and authority gates.
+
 - Propose one purpose-isolated development Qt input/window discriminator under
   [qt-input-observation-plan.md](qt-input-observation-plan.md), coordinated with
   SDK-owned entry/window semantics. Implementation and device selection are pending.
