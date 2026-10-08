@@ -155,6 +155,42 @@ Task4.11 and SDK native owner/render qualification remain open.
 
 ## Independently accepted source checkpoints
 
+### Proposed integrated historical request closeout
+
+Main's prepared-packet review found that the accepted live capture collector
+copies the request only after completion. Owner refusal with no PNG/completion
+therefore correctly retains the stage because the request has no saved copy.
+This does not reverse diagnostic source acceptance. The current prepared packet
+is held from execution until the following narrow extension is reviewed.
+
+After mandatory stock restoration, preserve exactly
+`capture-observation-request` and `capture-observation-request.tmp`
+independently of capture completion. Each read uses the retained pre-arm root
+device/inode, owner nonce, original attempted PID/start and quiet restoration
+guards before/after metadata. Require regular non-link mode600 files capped at
+256 bytes; bind size, digest and file device/inode before/copy/after. Save each
+returned file to a separate exclusive local path. An existing successful request
+copy may be reused only when its original verified flag, digest and exact bytes
+match; never overwrite a local or remote file.
+
+Cleanup knowledge requires exact UTF-8 canonical tuple bytes:
+`nonce PID start dev ino capture-observation 120000 main-dev-facts-120s` plus one
+newline. Length is computed from that exact original tuple, not fixed to the
+historical ten-a byte count. Malformed/partial complete copies are retained as
+historical evidence but refuse closeout. Transport uncertainty, metadata
+replacement or later binding loss also retain the stage; a known complete copy
+is not discarded by later refusal. Positive absence is distinct from unknown.
+The temporary request uses its own path/flag/digest, so different bytes cannot
+borrow preservation knowledge from the consumed request.
+
+This source-only extension does not alter SDK/publisher binaries, capture/facts
+admission, callback, deadlines, recovery clocks or original receipts. Regressions
+must execute the actual restored collection/cleanup path with mocked transports,
+cover refusal without completion, both names, differing temporary bytes, absent,
+copy/metadata uncertainty, partial/malformed data, replacement, noisy output and
+foreign local paths. Independent source review and a newly frozen private packet
+remain required before Main-only execution selection.
+
 SDK `1d221d73c8e2a2a19bfb2d1b37c09bca41d554ed` implements the additive latch;
 `117fd0e8ccc4954545b33d91900a6ff0d4eabf20` adds stronger fixtures without
 changing the SDK headers. Vendor Qt 6.10.3 ARM/QEMU capture42 passed, including
