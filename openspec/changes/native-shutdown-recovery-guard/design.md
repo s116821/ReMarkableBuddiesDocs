@@ -4,9 +4,43 @@ Main's fresh RM2 observation: firmware3.28.0.172, stock PID291/start561, protect
 
 ## Goals / Non-Goals
 
-One fresh lifecycle-only diagnostic can recover under an independent actor even after host loss. Before first stockstop prove an owned runtime guard setting Unit OnFailure empty, FailureAction/StartLimitAction none and Service Restartno. Retain guard while stopping candidate and proving exact process/cgroup absence. No facts entry, pagegetter, input, forcedrender, native semantic operation, blanket restart, retry, oldnonce reuse or production eligibility.
+One fresh diagnostic can recover under an independent actor even after host loss. Before first stockstop prove an owned runtime guard setting Unit OnFailure empty, FailureAction/StartLimitAction none and Service Restartno. Retain guard while stopping candidate and proving exact process/cgroup absence. Observer-only mode has no FactsEntry; explicitly selected pretoken mode installs its fenced setup cohort only. No pagegetter, reader/request admission, input, forcedrender, native semantic operation, blanket restart, retry, oldnonce reuse or production eligibility.
 
 ## Decisions
+
+Main selects a source-only pretoken FactsEntry setup cohort as the next controlled
+variable after the observer-only 9477 smoke. It uses the existing nonce-owned
+shutdown root and unchanged launcher, actor, guard, claims and 360-second budget.
+SDK owns the diagnostic hard request-admission fence, including unexpected tokens,
+and successful installation proof; no owner discovery, getters or reader admission
+is permitted. The shared directory means actor evidence creation can stimulate
+the FactsEntry watcher and queue additional request callbacks. Results therefore
+describe a coarse setup/timing cohort, not an isolated watcher or individual cause.
+
+Preserve the legacy trace-stop-proof.awk byte contract. A separate canonical
+trace-stop-pretoken-proof.awk is selected only by diagnostic_kind equal to
+pretoken-facts-entry-v1. Explicit lifecycle-only-v1 selects the legacy parser;
+historical selections missing this field retain legacy behavior only. Any present
+unknown or malformed mode refuses packet preparation before output creation.
+The preparation receipt identifies the effective mode and canonical parser source;
+the selected parser is copied to the existing packet trace-stop-proof.awk name
+and bound by its manifest hash. Missing mode never selects the pretoken parser.
+Payload compile provenance and correspondence to the selected mode remain Main's
+separate exact source/build review gates; preparation cannot inspect that property.
+
+The pretoken parser retains v1, ten scalar fields, exact identity, sequence/time,
+96-record, 192-byte-record and 18432-byte snapshot limits. It permits exactly one
+entry-installed event after startup, with startup/GUI TID and quit_seen=0,
+dropped=0, frames=0, followed by a qualifying before-render with frames>=1.
+Window may occur on either side of installation. Missing installation or no later
+qualifying render returns no admission; duplicate or invalid installation refuses
+the snapshot. Earlier before-render alone cannot admit STOP. Installation is proof
+of installed runtime state only; the hard no-reader fence requires SDK source and
+targeted fixtures. Neither event proves display drain or healthy Qt shutdown.
+SDK must preserve ordinary observer signal/window connection ordering before the
+entry helper and record the actual frame counter without resetting or fabricating
+zero. If concurrent rendering advances it before installation, the parser refuses
+that attempt and recovery follows; eligibility need not always succeed.
 
 Main's actual 94f attempt verified the full guard and recorded render lifecycle,
 but observation timed out because tablet BusyBox od rejected -A. The subsequent

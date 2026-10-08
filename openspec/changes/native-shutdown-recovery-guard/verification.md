@@ -190,3 +190,34 @@ Launcher/parser/full-shadow protection remain unchanged by this narrow correctio
 The linked Docs commit freezes this receipt and central proposal/design/tasks/delta.
 No production eligibility, full native candidate host-loss recovery, complete
 lifecycle trace, canonical spec synchronization or archive completion is implied.
+## Pretoken cohort source-only extension
+
+Main selected the existing single shutdown root and a separate strict parser for
+diagnostic_kind=pretoken-facts-entry-v1. The legacy parser, actor and launcher are
+unchanged. Preparation records the effective mode/canonical parser and manifests
+the selected bytes under the existing runtime parser name. Missing mode retains
+legacy selection; present unsupported/malformed modes refuse before output exists.
+
+Nineteen local Linux fixture methods passed in 4.053 seconds in the already pinned
+offline image. The new matrix checks installation/window order, missing and
+duplicate installation, startup TID, quit/drop/frame fields, actual nonzero frame
+counter refusal, identity/sequence/time/canonical scalar violations and record cap;
+legacy parser still admits observer-only records and rejects the new event.
+Packet fixtures verify explicit/missing legacy equivalence, manifest binding of
+the pretoken parser, all other initial packet hashes unchanged, invalid-mode
+refusal and identical LF output under simulated Windows CRLF defaults.
+
+These are source-local injected fixtures, not SDK fence or native qualification.
+Python AST, unchanged actor/launcher shell syntax, Docs check, strict OpenSpec and
+both repository diff checks pass. Actor SHA a4cdb6a35d6e848852ed3c75cca05e8231f81ed904ef2fd2847668b7f1ad5a4b,
+launcher SHA 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95
+and legacy parser SHA e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6
+remain unchanged. The new parser source SHA is
+271f93e6d12a42d9996b2226cafe8f08d0f6056c781b76dbd593a6dcd3821f83.
+SDK owns actual successful-installation emission, unchanged ordinary observer
+connection ordering, actual frame counter and hard no-owner/getter/reader fence.
+Concurrent render may make installation ineligible; shared-root actor evidence
+may stimulate request callbacks. Paired SDK/Buddy critical review remains open
+before any new native selection. No nonce, payload build, staging or device action
+was performed by this lane. Source basis: current Main selection, repository
+source and exact local fixture output; cohort causal interpretation is inference.

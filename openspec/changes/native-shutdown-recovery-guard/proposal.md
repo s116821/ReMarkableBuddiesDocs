@@ -4,9 +4,14 @@ A fresh lifecycle-only Qt shutdown diagnostic needs a recovery boundary independ
 
 ## What Changes
 
-Add source-only Buddy operator packet preparation, an owned transient failure guard, and an independent singleton actor for one diagnostic activation and one candidate stop/restoration. Coordinate the SDK scalar trace contract without invoking facts, getters, input or forced rendering. Preserve old packets and spent nonces.
+Add source-only Buddy operator packet preparation, an owned transient failure guard, and an independent singleton actor for one diagnostic activation and one candidate stop/restoration. Coordinate the SDK scalar trace contract without facts/request admission, getters, input or forced rendering; explicitly selected pretoken mode adds fenced setup only. Preserve old packets and spent nonces.
 
 ## Capabilities
+
+Extend source-only preparation with an explicitly selected pretoken FactsEntry
+proof parser. Require successful installation before qualifying render; preserve
+the observer-only parser and all guard/recovery boundaries. SDK separately owns
+the hard admission fence. Shared-root watcher stimulus limits causal interpretation.
 
 ### New Capabilities
 - `native-shutdown-recovery-guard`: Bounded one-attempt development recovery choreography.

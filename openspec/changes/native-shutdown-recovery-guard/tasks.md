@@ -4,6 +4,9 @@
 - [x] Freeze exact trace wire, actor numeric budget and packet policy with Main/Astra before implementation dependent on them.
 
 ## 2. Implementation
+- [x] Add distinct pretoken proof parser and strict mode selection without changing legacy parser, actor, launcher, guard or budget.
+- [x] Verify installation-before-render, scalar/identity refusals, mode refusals and legacy packet compatibility in targeted fixtures.
+- [ ] Freeze paired SDK installation/fence and Buddy parser/preparer source for Main critical review before any native selection.
 - [x] Replace ineffective empty-dependency drop-in with exact-owned full-unit and same-basename vendor shadow; verify runtime provenance before STOP and restore original provenance after exact-owned cleanup in source-local fixtures.
 - [x] Preserve separate guard/stock policy snapshots and verify partial installation/host-loss cleanup under scoped intent claims.
 - [x] Add bounded packet preparation and owned runtimeguard with effectiveproperty checks beforefirststop.
