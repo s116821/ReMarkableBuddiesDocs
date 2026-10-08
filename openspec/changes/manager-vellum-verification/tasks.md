@@ -16,6 +16,7 @@
 - [x] Public docs describe exact commands, licensing boundary, evidence class and production dependencies.
 - [x] Focused checks and strict central OpenSpec/docs validation pass.
 - [ ] Main-owned independent exact-revision review and relevant required CI pass.
+- [ ] Close independent Linux fixture ownership finding with effective UID/GID binding, focused guards and actual non-root native Linux qualification; preserve Windows Docker Desktop regression.
 
 ## 4. Closeout
 - [ ] Synchronize completed bounded capability into canonical specs.

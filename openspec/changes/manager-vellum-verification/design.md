@@ -21,6 +21,8 @@ Non-goals: product eligibility, official APK signing/build pipeline, production 
 
 ## Required cases
 
+Independent review identified native Linux ownership as part of the fixture boundary: a private mode-0700 host directory cannot be read by container UID 0 after all capabilities are dropped. On Linux, derive the effective UID/GID from the running host process and pass that numeric identity to both containers. No caller override, permission widening or restored capability is permitted. Windows Docker Desktop retains its existing mount ownership behavior. Validate command construction and rerun the actual public procedure as a non-root native Linux user, preserving directory privacy and all isolation flags.
+
 Valid signed package and signed index verify with explicit vetted fixture key; missing/wrong key refusal; changed signed control and changed payload refusal; full `1.2.3-r2` versus `1.2.3-r1` comparison; exact installed version/arch/commit/dependency/script/status query and owned/unowned file lookup; unchanged roots after each read operation. Test-only versions do not mint project versions. Default Manager remains unable to install.
 
 ## Risks / Tradeoffs
