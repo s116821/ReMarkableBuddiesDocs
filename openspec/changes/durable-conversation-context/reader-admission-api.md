@@ -17,10 +17,11 @@ Existing public publication/recovery APIs retain their current behavior and
 cannot construct the Reader context.
 
 The method takes the accepted token, exact pending request, an owned sealed live
-Reader source capability and a bounded immutable handoff plan. It validates plan
-bounds and source binding before mutation, then checks relevant uncertainty under
-the canonical domain gate before publishing. A historical retry is acknowledged
-only as Historical and cannot be converted into Fresh. The fresh context retains
+Reader source capability and a bounded immutable handoff plan. Recover and validate the original logical request first under the canonical
+domain gate. A historical retry returns only Historical before current-source,
+plan or uncertainty checks and cannot be converted into Fresh. Only the new branch
+validates the plan (at most MAX_ITEMS steps and MAX_RECORD total serialized
+argument bytes), source binding and relevant uncertainty before publishing. The fresh context retains
 the actual publication token, original request, exact receipt/reference, original
 closure references, admission handle, live capability and one shared dispatch
 state. The plan is in-process authority, not a new persisted completion claim;
