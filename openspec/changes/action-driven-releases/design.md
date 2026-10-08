@@ -283,3 +283,30 @@ No maintained-upstream configuration remedy has been qualified. The selected
 version action is therefore provisional; publication remains blocked and the
 change stays active. A replacement composition or changed upstream pin requires
 an explicit design delta and independent acceptance before implementation.
+
+### October 8 downstream package contract and targeted upstream follow-up
+
+The later REM-41/42/35 descriptions supersede the earlier two-installer proposal:
+Vellum/apk owns one tablet-side Buddy package from the first Manager release.
+Official signed local APKs originate from verified Git-tagged GitHub assets;
+public catalog acceptance is not a release prerequisite. REM-41 owns packaging,
+installation and source handoff. REM-55 owns delayed post-1.0 public listing.
+This is a downstream artifact contract, not a replacement release engine or a
+reason to bypass the unfinished REM-46 gates. Package `pkgver` derives from the
+exact Buddy tag, and `pkgrel` is packaging-only metadata. Official and eventual
+community sources must preserve the same package identity/ownership database.
+Equal version strings alone do not establish signed package equivalence.
+
+Fresh upstream inspection found GitVersion commit
+[`17cc645b`](https://github.com/GitTools/GitVersion/commit/17cc645b19c60dbad8a2fa3cc080cc51ba52dc7f)
+introducing branch-environment overrides as checkout context. Its contextual
+branch uses history reachable from the checked-out tip without moving a physical
+branch ref; `GitVersionContext` bypasses the timestamp filter for that context.
+This is a concrete candidate for the held detached/equal-date regression, not a
+verified fix. On October 8 the latest published upstream release remains 6.8.2.
+The next bounded investigation is the unchanged equal-date regression against
+an exact upstream source build with its documented branch context, checking both
+expected versions, exact SHA and unchanged refs. No private upstream patch,
+production pin change, tag mutation or acceptance weakening follows from this
+finding. A usable maintained distribution and independent qualification remain
+required before selecting a replacement composition.
