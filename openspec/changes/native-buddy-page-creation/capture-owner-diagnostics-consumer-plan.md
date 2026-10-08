@@ -1,7 +1,7 @@
 # Development capture owner refusal consumer amendment
 
 Status: Main accepted the consumer contract at `0aef35c`; source implemented and
-tested at the checkpoints below, with independent final source review pending.
+tested at the checkpoints below. SDK source is independently accepted; final consumer source review is pending.
 SDK authority is docs-only `fb32d57c1b623ef1ea233a3f2da9a49c6d78f368`
 (with `4a374ceb272542d45f2452e062ed2c079e6d09d6`), specifically
 `openspec/changes/establish-native-platform-contract/capture-owner-diagnostics.md`.
@@ -161,13 +161,12 @@ changing the SDK headers. Vendor Qt 6.10.3 ARM/QEMU capture42 passed, including
 17 diagnostic modes with full29-field/null expectations, discovery progress
 versus final active-owner loss, queued/no-event reentrancy, candidate/topology
 bounds and ambiguity. Entry32, refusal-format21, input17 and originalcapture25
-also passed. Astra independently passed the earlier capture35; final test-delta
-acceptance remains pending.
+also passed. Astra independently reproduced capture42 and accepted exact117fd0e after header-hash and full-delta review. Queued reentrant traversal is deliberately fixture-induced by direct execution while the acceptance queue remains pending; it is not evidence of two ordinary production traversals.
 
 Buddy `99066932571ccaf6ab49b6b0689b5fadce7b0a33` implements independent
 restored historical preservation, raw strict decoding and exact-name cleanup;
 `28bc8ba3eaad8a8b4096fe39763bfd08285bd507` strengthens finite registry and
-reached-counter tests/validation. Owner proof/collector279, captureproof156,
+reached-counter tests/validation. Repair `08604646d686057686f6438dd7729e04ef56394c` rejects impossible post-traversal overflow and context-phase combinations found by Main independent review. Owner proof/collector292, captureproof156,
 collector40 and actualsourceintegration18 passed with host/mocked transports.
 Complete malformed/empty bytes remain preservation knowledge; unknown copies or
 later binding loss refuse cleanup. No capture/facts flags are upgraded.
