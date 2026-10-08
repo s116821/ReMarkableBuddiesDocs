@@ -15,7 +15,7 @@
 - [ ] Syntax/docs/strictOpenSpec/diff checks; freeze exactsource/packet forMain review before commit/push/device selection.
 - [ ] Main/independent exactsource/artifact/operator review and separately selected Main-only diagnostic; retain hardware uncertainty and historicalfailure.
 
-Seventeen focused source-local cases and final syntax/docs/strict checks passed;
+Eighteen focused source-local cases and final syntax/docs/strict checks passed;
 Main's earlier independent runs predate the full-unit shadow correction.
 See verification.md for exact scope, source
 commit, image and command. Remaining unchecked verification includes complete

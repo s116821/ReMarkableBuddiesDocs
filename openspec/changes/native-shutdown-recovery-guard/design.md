@@ -8,6 +8,14 @@ One fresh lifecycle-only diagnostic can recover under an independent actor even 
 
 ## Decisions
 
+Main's actual 94f attempt verified the full guard and recorded render lifecycle,
+but observation timed out because tablet BusyBox od rejected -A. The subsequent
+tr pipeline returned success with empty output, preventing parser admission.
+Main's read-only diagnostic confirmed the actual snapshot passes native AWK.
+Both final-LF checks will use a checked tail-c1 read to a private one-byte file
+and numeric wc-l=1, avoiding od/tr flags and masked read failures. Failure-marker
+length/nonce/ownership checks remain strict; the attempt remains spent and failed.
+
 Actual a22 guard admission failed before STOP/payload and recovered original stock,
 per Main's current report. A single policy.observed file allowed later stock proof
 to overwrite the failed guard readback. Policy checks will retain separate exact
@@ -66,7 +74,7 @@ Recovery runs in a separate shell retaining the singleton lock descriptor; dupli
 recovery claims refuse further mutations. Original unit/vendor/executable hashes
 are pinned separately from the 24 protected baseline hashes.
 
-Seventeen current local fixtures pass, including actual actor entry/recovery shells
+Eighteen current local fixtures pass, including actual actor entry/recovery shells
 on host-request expiry before and after guard installation, exclusive claim/lock
 refusal, synthetic packet preparation and refusal when only xochitl is active.
 Final readiness checks each service separately; multi-unit is-active exit status

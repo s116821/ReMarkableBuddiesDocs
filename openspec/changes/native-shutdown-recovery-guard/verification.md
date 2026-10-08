@@ -31,7 +31,7 @@ From the Buddy checkout, substitute its absolute path for `BUDDY_CHECKOUT`:
 docker run --rm --network none --cap-drop ALL --read-only --tmpfs /tmp:rw,exec,nosuid,nodev -v "BUDDY_CHECKOUT/tools/native_shutdown_probe:/probe:ro" sha256:8d79948df2c7c568a043683f786e7ce4ad2e25e469673b72b8da8d2dbb2fa9ac python3 -B /probe/test_actor.py -v
 ```
 
-Temporary executable permission allows only the owned query stub. Seventeen unittest
+Temporary executable permission allows only the owned query stub. Eighteen unittest
 methods passed (some contain multiple subcases):
 
 1. `test_one_active_two_failed_cannot_verify_stock`
@@ -51,6 +51,7 @@ methods passed (some contain multiple subcases):
 15. `test_partial_shadow_installation_cleanup_and_foreign_refusal`
 16. `test_guard_policy_requires_exact_fragment_dropins_and_owned_files`
 17. `test_shadow_derivation_removes_only_exact_scoped_dependency`
+18. `test_minimal_busybox_od_failure_and_portable_actual_admission_boundary`
 
 The updated thirteen-case run passed in 3.448 seconds. Case 12 runs actual finish
 and its separate recovery shell with inherited singleton lock, primary exit 93,
@@ -111,23 +112,44 @@ reads per-policy snapshots and refuses spent a22/4459 nonces. Its nine source-lo
 methods passed in 0.449 seconds, with final syntax. r1/r2 are preserved. No actual
 r3 transient unit, SSH, native guard readback or payload qualification is claimed.
 
+Main's subsequent actual 94f attempt proved the full guard, admitted candidate
+6758/start2850967 and recorded startup/window/render events, then timed out in
+observation with primary exit 1. Recovery stopped the candidate successfully and
+Main verified stock 7883/start2855788, same boot and original policy/hashes/services.
+The attempt remains failed and spent. This lane read the saved postattempt and
+read-only native parser diagnostic JSON: native BusyBox 1.36.1 od rejects -A,
+masked by final tr success, while the same 2101-byte snapshot passes native AWK.
+Local replay also passed unchanged parser with the same identity: 36 records,
+SHA-256 9b8c02191380cf344659f3c31204a97d328e560830c583b04bf0643f11656527.
+
+The narrow correction replaces both LF checks with checked tail-c1 to a private
+final-byte file, checked wc-l read and numeric 1. The 33-byte/private/exact nonce
+failure-marker checks remain. Case 18 reproduces unsupported od plus masked old
+output, then proves portable LF/parser/one-STOP admission and marker preservation;
+empty/CR/noLF and failed tail or wc emitting plausible output refuse. All eighteen
+methods passed in 3.859 seconds with final syntax. Main's current narrow review
+accepted this approach; independent selected-case rerun remains separately reported.
+Private r4 preserves r3 and changes only spent-94f rejection and capped read-only
+final-byte retrieval; its arming template/timing remain byte-identical. No native
+payload replay or new nonce selection occurred in this lane.
+
 Shell `sh -n` on both templates and Python AST parsing of both Python files passed
-after the full-unit shadow correction. Central `scripts/check_docs.py`,
+after the portable LF correction. Central `scripts/check_docs.py`,
 `openspec validate native-shutdown-recovery-guard --strict` and diff checks passed.
 
 ## Frozen executable source hashes
 
 | File under Buddy tools/native_shutdown_probe | SHA-256 |
 | --- | --- |
-| actor.sh.in | 25d2644ac258d587bd4a94108a1d4be3444b37cab875f5e37d201c07daba0c21 |
+| actor.sh.in | a4cdb6a35d6e848852ed3c75cca05e8231f81ed904ef2fd2847668b7f1ad5a4b |
 | launch.sh.in | 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95 |
-| prepare_packet.py | 3fe09d459ae1c0cc54e35e91b4432b1490729aa5b42c10415a7caebd77b49b9f |
-| test_actor.py | c7b98991a4ab699155ef3341432042f5a5a6dc9ceb64e5d3807476022f8f31c1 |
+| prepare_packet.py | 732dbdd453f4aadea6e5e1d71941ef655547a5cbd9d13154018eff4ecac257fd |
+| test_actor.py | 7733ac3e592bd0928f9309ddaa57120ea630e8184f735f3430f7612eab46912a |
 | trace-stop-proof.awk | e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6 |
 
-Current Buddy commit `6f5492eb406940a67c3e97fa4021765ca5ce4f46` includes the
-full-shadow correction atop Windows LF, provider-path and failure-marker fixes.
-Launcher/parser remain unchanged; private r3 compatibility is separately reviewed.
+Current Buddy commit `cdf4f55a94f166c7cec26963f3914b9b65209566` includes the
+portable LF correction atop full-shadow, Windows LF, provider-path and marker fixes.
+Launcher/parser/full-shadow protection remain unchanged by this narrow correction.
 The linked Docs commit freezes this receipt and central proposal/design/tasks/delta.
 No production eligibility, full native candidate host-loss recovery, complete
 lifecycle trace, canonical spec synchronization or archive completion is implied.
