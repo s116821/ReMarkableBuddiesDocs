@@ -162,3 +162,19 @@ evidence without another capture or input and SHALL grant no native/render autho
 #### Scenario: Retained bindings or original clock are lost
 - **WHEN** a token, image, completion, owner witness or candidate changes, or an original deadline expires
 - **THEN** continuation refuses without refreshing the witness, retrying input or extending setup
+
+
+### Requirement: Bounded development owner refusal evidence
+The selected development capture consumer SHALL strictly decode the additive fixed
+owner refusal diagnostic, reject raw duplicate keys and preserve complete immutable
+bytes or retain unknown output. It SHALL keep original refusal and admission flags,
+clocks and recovery duties unchanged and require preservation or positive absence
+before exact-name cleanup. Historical evidence SHALL NOT authorize another action.
+
+#### Scenario: Diagnostic is absent or malformed
+- **WHEN** owner refusal has no diagnostic or its diagnostic is undecodable
+- **THEN** original refusal remains, complete matching bytes can be preserved as historical evidence, and unknown output prevents cleanup
+
+#### Scenario: Later stock restoration or contradictory state
+- **WHEN** recovery succeeds or later observations differ from the first original failing check
+- **THEN** original failure evidence remains immutable, separate recovery results do not upgrade capture or facts, and no diagnostic causes a retry

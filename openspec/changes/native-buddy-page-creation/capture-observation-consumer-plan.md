@@ -140,3 +140,12 @@ wrapper replacement refusal remain applicable because their code did not change.
 Task4.16 source implementation/review is complete. Artifact/private packet review,
 Main-only target execution, native qualification and task4.11 remain open.
 Source basis: Main's current coordination message and executed repository checks.
+
+
+### Proposed bounded owner refusal diagnostic extension
+
+See [capture-owner-diagnostics-consumer-plan.md](capture-owner-diagnostics-consumer-plan.md)
+for the proposed exact29-field historical failure decoder, preservation and cleanup
+amendment against SDK docs-only fb32d57c. Main review precedes implementation.
+Existing source acceptance and spent receipts remain pinned; this selects no new
+artifact, request, input or native capability.
