@@ -75,6 +75,17 @@ reference closure; all-history heads are not current selected heads. Explicit
 retained records support historical settlement/inspection and unresolved intent
 closure, without entering current context or ordinary append membership.
 
+Project every supported Record variant through its existing conversation/source/
+binding references to one unambiguous `SourceObservation.document` aggregate.
+Root IDs, titles and page positions never supply a missing document identity.
+Nil, absent, ambiguous or multiple document owners remain visibly deferred from
+shared document publication while preserving their isolated backups. Unknown
+schemas/variants and broken chronology or reference closure refuse projection;
+no unsupported record is silently dropped. Preserve unrelated document and global
+record scopes. A restored native binding remains historical/waiting until current
+exact document/page verification; missing vendor files do not imply deletion or
+authorize recreation, output, export or undo replay.
+
 All Ledger/workflow/activation handles share one canonical Store-and-aggregate
 admission guard. Lock order is domain admission then Store; the Store mutex is
 not held over external I/O. Activation uses the same guard. Keep admission from
