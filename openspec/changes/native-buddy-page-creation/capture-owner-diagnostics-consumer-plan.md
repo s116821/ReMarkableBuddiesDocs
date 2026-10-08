@@ -1,10 +1,11 @@
 # Development capture owner refusal consumer amendment
 
-Status: proposed consumer contract; Main review precedes implementation.
+Status: Main accepted the consumer contract at `0aef35c`; source implemented and
+tested at the checkpoints below, with independent final source review pending.
 SDK authority is docs-only `fb32d57c1b623ef1ea233a3f2da9a49c6d78f368`
 (with `4a374ceb272542d45f2452e062ed2c079e6d09d6`), specifically
 `openspec/changes/establish-native-platform-contract/capture-owner-diagnostics.md`.
-Implementation baseline remains SDK `f0e6ff4ccb37b887f7f278b0b820a7d047de1559`
+Previous implementation baseline is SDK `f0e6ff4ccb37b887f7f278b0b820a7d047de1559`
 and Buddy `42e4b02f81a5433ce3d6b9503036761ae82a16a3`.
 Main owns target operations and canonical persistence, Sol owns ordinary source
 implementation, and Astra owns specification and independent source/native review.
@@ -152,7 +153,30 @@ Independent exact SDK/consumer source review, artifact build/provider review,
 private packet review and Main-only actual native selection remain separate.
 Task4.11 and SDK native owner/render qualification remain open.
 
+## Implementation checkpoints pending independent acceptance
+
+SDK `1d221d73c8e2a2a19bfb2d1b37c09bca41d554ed` implements the additive latch;
+`117fd0e8ccc4954545b33d91900a6ff0d4eabf20` adds stronger fixtures without
+changing the SDK headers. Vendor Qt 6.10.3 ARM/QEMU capture42 passed, including
+17 diagnostic modes with full29-field/null expectations, discovery progress
+versus final active-owner loss, queued/no-event reentrancy, candidate/topology
+bounds and ambiguity. Entry32, refusal-format21, input17 and originalcapture25
+also passed. Astra independently passed the earlier capture35; final test-delta
+acceptance remains pending.
+
+Buddy `99066932571ccaf6ab49b6b0689b5fadce7b0a33` implements independent
+restored historical preservation, raw strict decoding and exact-name cleanup;
+`28bc8ba3eaad8a8b4096fe39763bfd08285bd507` strengthens finite registry and
+reached-counter tests/validation. Owner proof/collector279, captureproof156,
+collector40 and actualsourceintegration18 passed with host/mocked transports.
+Complete malformed/empty bytes remain preservation knowledge; unknown copies or
+later binding loss refuse cleanup. No capture/facts flags are upgraded.
+
+These are source-only checkpoints. Task4.17 remains unchecked until independent
+source reviews finish. Artifact/provider/private-packet/native selection remains
+separate, and task4.11 remains open.
+
 Source basis: current SDK proposal/source read directly; current Main accepted
 contract messages; independently read private10a actual raw/callback/operator and
-historical recovery receipts, with no public links. The new consumer behavior
-above is proposed, not implemented or tested yet.
+historical recovery receipts, with no public links; current repository checkpoints
+and local/QEMU test outputs. Independent final acceptance is still pending.
