@@ -1,7 +1,7 @@
 # Development capture owner refusal consumer amendment
 
 Status: Main accepted the consumer contract at `0aef35c`; source implemented and
-tested at the checkpoints below. SDK source is independently accepted; final consumer source review is pending.
+tested at the checkpoints below. SDK source is independently accepted; Main independently accepted consumer source0860464; acceptance is source-only.
 SDK authority is docs-only `fb32d57c1b623ef1ea233a3f2da9a49c6d78f368`
 (with `4a374ceb272542d45f2452e062ed2c079e6d09d6`), specifically
 `openspec/changes/establish-native-platform-contract/capture-owner-diagnostics.md`.
@@ -153,7 +153,7 @@ Independent exact SDK/consumer source review, artifact build/provider review,
 private packet review and Main-only actual native selection remain separate.
 Task4.11 and SDK native owner/render qualification remain open.
 
-## Implementation checkpoints pending independent acceptance
+## Independently accepted source checkpoints
 
 SDK `1d221d73c8e2a2a19bfb2d1b37c09bca41d554ed` implements the additive latch;
 `117fd0e8ccc4954545b33d91900a6ff0d4eabf20` adds stronger fixtures without
@@ -171,11 +171,10 @@ collector40 and actualsourceintegration18 passed with host/mocked transports.
 Complete malformed/empty bytes remain preservation knowledge; unknown copies or
 later binding loss refuse cleanup. No capture/facts flags are upgraded.
 
-These are source-only checkpoints. Task4.17 remains unchecked until independent
-source reviews finish. Artifact/provider/private-packet/native selection remains
+Main independently accepted exact Buddy0860464 after full source/matrix review and independent owner292/sourceintegration18, with prior proof156/collector40 unchanged. These are source-only checkpoints. Task4.17 is checked for completed source implementation and independent review. Artifact/provider/private-packet/native selection remains
 separate, and task4.11 remains open.
 
 Source basis: current SDK proposal/source read directly; current Main accepted
 contract messages; independently read private10a actual raw/callback/operator and
 historical recovery receipts, with no public links; current repository checkpoints
-and local/QEMU test outputs. Independent final acceptance is still pending.
+and local/QEMU test outputs. Current Main and Astra independent source acceptance messages; native qualification is still pending.
