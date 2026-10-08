@@ -216,3 +216,24 @@ borrowed ReceiptA settlement rejection; focused conversation tests/Clippy pass.
 A full working-tree352 host tests plus1 compilefail doctest passed, but compilation
 overlapped that tests-only edit; it is not attributed as exact cleanb51 fullbinary
 provenance. Retained settlement/latch/Attempt/backend integration remains open.
+
+Retained source increment [f87859f](https://github.com/s116821/ReMarkableBuddies/commit/f87859ffa925daaa54c1d7e23ac302694f7c7188)
+implements the bounded [retained settlement contract](retained-settlement-increment.md).
+It appends the original pending fact's causal successor through Store.commit_retained,
+preserving active winner content and all previous retained references. New transitions
+require a current token; exact historical retries return no live token and append
+nothing. Unknown retains uncertainty. Verified terminal states require sealed proof
+checked twice and a current Store actor when reconstructed; no production proof
+implementer exists. Completed outcome facts are accepted only for explicit schema2
+verified-submitted settlement. No storage implementation was edited.
+
+Main's 356 host tests plus1 compilefail doctest passed before an enum-layout-only
+boxing change. Final-source all-target/all-feature Clippy with warnings denied and
+three focused retained Store tests passed afterward. Those fixtures cover restart/
+lost-ack replay, changed requests, winner content preservation, foreign references,
+stale tokens, missing/revoked verification and foreign actor refusal, including
+negative decoder cases. Verification is synthetic, not native qualification.
+[Source and test receipt](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6052587667).
+Independent source review is pending. Selected Attempt, actual backend handoffs and
+the remaining feature acceptance gates are still unfinished; no task checkbox or
+merge/native acceptance is inferred from this increment.
