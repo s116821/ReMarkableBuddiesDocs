@@ -55,8 +55,17 @@ stock start once, original primary failure retained. Case 13 rejects foreign
 nonce, missing/doubled LF, NUL-ending and linked failure markers. These are injected
 service/proc fixtures, not native crash or service-manager proof.
 
+Selected-baseline preparation subsequently exposed a literal path-character
+omission: `/usr/lib/libstdc++.so.6` was refused. The narrowly corrected preparer
+allows literal `+` in its rooted allowlist; traversal, duplicate paths, inventory
+size and hash checks remain unchanged. Existing case 3 now verifies this actual
+provider path and rejects semicolon, command substitution, backticks, glob,
+parent traversal, space and newline paths before output creation. All thirteen
+methods passed again in 3.874 seconds; final shell/Python syntax passed. Main's
+earlier independent run predates this path correction.
+
 Shell `sh -n` on both templates and Python AST parsing of both Python files passed
-after the critical failure-marker correction. Central `scripts/check_docs.py`,
+after both the failure-marker and provider-path corrections. Central `scripts/check_docs.py`,
 `openspec validate native-shutdown-recovery-guard --strict` and diff checks passed.
 
 ## Frozen executable source hashes
@@ -65,12 +74,14 @@ after the critical failure-marker correction. Central `scripts/check_docs.py`,
 | --- | --- |
 | actor.sh.in | ca1a903301f7a616e2a09f8c9f88b022af7366c068e707a4ea3c3b3874ec3671 |
 | launch.sh.in | 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95 |
-| prepare_packet.py | 5bf7d1e05b98b9624a378601a88076004ec9d3ae13367d4709603fa1badb176e |
-| test_actor.py | e8a4e287f7fee8d368d238cdae17f9f19d5b4451745ee7f1f7c8d7ef0b1b0517 |
+| prepare_packet.py | add7aa1a1369aa1416ba0ea6dd295123576802b8891dda6a9bd2058f33c76524 |
+| test_actor.py | 9c5b80cdafc749fb8ff14c8d6671fca0ba59a2d543634e9c8e19ecc2547116f2 |
 | trace-stop-proof.awk | e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6 |
 
-Corrective Buddy commit `8f1dd1d2f22c9ed30376f1c34d98d85670c9e5c2` supersedes the earlier frozen
-`8d03c00d89d7c69318efab51c4067e4fb6289c0b` and includes the thirteen-check guide.
+Current Buddy commit `293c1c8fc23e4ae75a7c012c9e9a91b40db74f3f` includes the
+provider-path correction atop failure-marker commit
+`8f1dd1d2f22c9ed30376f1c34d98d85670c9e5c2`. Actor/launcher/parser and reviewed
+private host coordinator source remain unchanged by the provider-path correction.
 The linked Docs commit freezes this receipt and central proposal/design/tasks/delta.
 No production eligibility, full native candidate host-loss recovery, complete
 lifecycle trace, canonical spec synchronization or archive completion is implied.
