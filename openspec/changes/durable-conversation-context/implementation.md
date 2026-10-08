@@ -256,3 +256,18 @@ retry, and nine changed-request mutations all passed. [Original P2 closure](http
 supersedes the preceding pending source-review status for this bounded increment.
 Production verification, selected Attempt/every actual backend handoff, imported
 restore and native/full-feature acceptance remain open.
+
+Tests-only [472de17](https://github.com/s116821/ReMarkableBuddies/commit/472de17a2baf460f5975aa88d30e3ff5e387a2ee)
+corrects the retained fixture to select its Conversation Root explicitly. The
+previous first-record selection could instead clone an ExportAssociation and fail
+preparation with a namespace mismatch. This does not reopen the independently
+closed runtime P2 or change production code.
+
+At exact clean 472de17, four focused retained tests, formatting, diff checks and
+all-target/all-feature Clippy with warnings denied passed. The full serial command
+`cargo test --all-features -- --test-threads=1` passed 356 host tests and one
+compile-fail doctest with exit0. The storage subprocess is counted only within its
+parent suite. The prior fixture failure and subsequent parallel invocation's two
+Drive fixture deadline failures remain preserved; both Drive tests passed serially
+without deadline or storage changes. This is a serial full-suite pass, not a claim
+that the failed parallel invocation passed. [Exact source and validation receipt](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6053649015).
