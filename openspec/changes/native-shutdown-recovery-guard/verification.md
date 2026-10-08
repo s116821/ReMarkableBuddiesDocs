@@ -64,8 +64,20 @@ parent traversal, space and newline paths before output creation. All thirteen
 methods passed again in 3.874 seconds; final shell/Python syntax passed. Main's
 earlier independent run predates this path correction.
 
+Actual selected Windows preparation then exposed default CRLF writes rejected
+by the coordinator's canonical LF manifest check. Every generated text output now
+uses explicit LF, including policy, baseline, service, guard, activation, manifest
+and receipt. AWK source is read with universal newline normalization and emitted
+as LF text; payload copying remains byte-preserving. Existing case 3 asserts no CR
+in every generated text file, unchanged payload containing CRLF bytes, and identical
+packet bytes under a controlled default-CRLF write simulation with CRLF source
+templates. All thirteen methods passed in 3.874 seconds and final syntax passed.
+The failed Windows packet is preserved; Main will prepare a new packet-r2 and
+verify actual Windows bytes and the strict coordinator before staging. No relaxed
+manifest comparison or native qualification follows from this correction.
+
 Shell `sh -n` on both templates and Python AST parsing of both Python files passed
-after both the failure-marker and provider-path corrections. Central `scripts/check_docs.py`,
+after failure-marker, provider-path and Windows LF corrections. Central `scripts/check_docs.py`,
 `openspec validate native-shutdown-recovery-guard --strict` and diff checks passed.
 
 ## Frozen executable source hashes
@@ -74,14 +86,15 @@ after both the failure-marker and provider-path corrections. Central `scripts/ch
 | --- | --- |
 | actor.sh.in | ca1a903301f7a616e2a09f8c9f88b022af7366c068e707a4ea3c3b3874ec3671 |
 | launch.sh.in | 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95 |
-| prepare_packet.py | add7aa1a1369aa1416ba0ea6dd295123576802b8891dda6a9bd2058f33c76524 |
-| test_actor.py | 9c5b80cdafc749fb8ff14c8d6671fca0ba59a2d543634e9c8e19ecc2547116f2 |
+| prepare_packet.py | 3b5ba34576ba72c5739a56da5b9fb1599c57535d12c545da05c56f98943622c3 |
+| test_actor.py | 9e4920c642567178df6337893266c20c6426d4f470402010af41d2ad85177a7b |
 | trace-stop-proof.awk | e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6 |
 
-Current Buddy commit `293c1c8fc23e4ae75a7c012c9e9a91b40db74f3f` includes the
-provider-path correction atop failure-marker commit
+Current Buddy commit `fbb8ea8749befc9722fe147d807f7f3818a08720` includes the
+Windows LF correction atop provider-path commit
+`293c1c8fc23e4ae75a7c012c9e9a91b40db74f3f` and failure-marker commit
 `8f1dd1d2f22c9ed30376f1c34d98d85670c9e5c2`. Actor/launcher/parser and reviewed
-private host coordinator source remain unchanged by the provider-path correction.
+private host coordinator source remain unchanged by these preparation corrections.
 The linked Docs commit freezes this receipt and central proposal/design/tasks/delta.
 No production eligibility, full native candidate host-loss recovery, complete
 lifecycle trace, canonical spec synchronization or archive completion is implied.
