@@ -205,3 +205,14 @@ library Clippy pass. The foreign-pin P2 awaits an independent rerun before closu
 the other two original settlement/chronology reproductions independently passed at
 52bf1a. Portable archive code arrives unchanged through the storage merge and
 retains the storage owner's separate review and check attribution.
+
+Independent final256a4059 foreign-pin rerun now closed the remaining reported P2:
+[exact review comment](https://github.com/s116821/ReMarkableBuddies/pull/30#discussion_r4214231772).
+The reviewer reproduced original foreign group and added foreign aggregate refusal,
+valid original recovery, missing/corrupt byte refusal, and seven-pin lost-ack/restart/
+replacement cases. This supersedes the preceding pending rerun status, without
+claiming full REM37/native acceptance. Tests-onlyb51dd7 adds a distinct validTurnB
+borrowed ReceiptA settlement rejection; focused conversation tests/Clippy pass.
+A full working-tree352 host tests plus1 compilefail doctest passed, but compilation
+overlapped that tests-only edit; it is not attributed as exact cleanb51 fullbinary
+provenance. Retained settlement/latch/Attempt/backend integration remains open.
