@@ -310,3 +310,35 @@ receipt and pixel assertions, visual inspection, independent final baseline and
 The [saved PNG](https://drive.google.com/file/d/1j9jn_FmKczOtMwQ-F_OwJ6XWrU4DS9_l/view)
 is a presentation copy; local source bytes are hash-verified. Drive upload and
 metadata are verified separately, without asserting a remote byte checksum.
+
+The subsequent source-facts attempt 0404ebf9b5794196a85bfba7ee6859ba used SDK
+71d9dbfa33ba828540fa0a9f22ec4db8aca862d6 and consumer
+3e51532061c42cfed8640e894a97f08c6a2da90a. This separate read-only mode was
+intended to observe native six-page forward/reverse mappings, without pixels,
+facts admission or Reader effects. Both source reviews and the exact packet
+build/prepare-only/preflight passed. Main rebound a historical inline payload
+checksum to the reviewed artifact before arming; acceptance predicates stayed
+unchanged. The helper staged successfully before launch.
+
+The attempt failed at the readiness phase, with no verified released-contact,
+publication or source-facts result. Host collection recorded armed=true,
+restored=false and cleanup_verified=false; the host exited without its timeout.
+The previous-boot journal records restoration starting at 15:26:34 UTC, followed
+by the instrumented application's shutdown and SIGSEGV at 15:26:37. Its existing
+OnFailure dependencies were triggered. The reboot interrupted the restoration
+service, and the transient stage/evidence disappeared. The crash cause and the
+original host-readiness exception remain unresolved. No retry is authorized by
+this failed result; the nonce is spent.
+
+Main independently verified the post-reboot state: boot
+02b2347b-03aa-4a85-8dd7-d731aabf6f3e, stock PID 291/start 561, unchanged RM2
+firmware 3.28.0.172, all 14 fixture hashes and all 10 provider hashes, active
+stock services, original policies and absence of spent/current stages and helper
+roots. This establishes the current safe stock state. It does not turn the failed
+operator restoration or missing source-facts evidence into success. The prior
+301a Reader persistence result remains valid within its stated limits; native
+source qualification and production Reader dispatch remain open.
+
+Source basis: retained host/operator/readiness records, previous-boot journal,
+and independent post-reboot hash/service checks. The crash and reboot are
+observed facts; a specific code defect causing them has not been established.
