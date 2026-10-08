@@ -138,3 +138,18 @@ backend verification or enqueue a new shared document edit from that publication
 #### Scenario: Retained settlement replay
 - WHEN acknowledgement is lost and the same settlement is retried after another replacement
 - THEN the original settlement publication is returned without changing the replacement or admitting an effect.
+
+### Requirement: Verified portable selection archive custody
+Selected export SHALL preserve original reachable selection transaction/history,
+winner and retained evidence/media plus unrelated owned committed scopes in a bounded
+versioned archive. Offline inspection SHALL validate exact bytes and closure without
+minting a live token or activating imported membership. Configuration SHALL remain
+excluded until a portable allowlist exists.
+
+#### Scenario: Historical selected archive inspection
+- WHEN a compatible complete selected archive is inspected offline
+- THEN original references/history/retained media remain verifiable and counts/media completeness are reported without native/group/admission authority.
+
+#### Scenario: Incompatible or interrupted selected export
+- WHEN required history/objects are corrupt, unsupported, missing or cannot be staged
+- THEN no complete marker is published and current source selection and unrelated data remain unchanged.
