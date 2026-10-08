@@ -13,3 +13,13 @@ PR bodies are exactly `# Summary` plus concise bullets; detailed evidence, revis
 Squash merge every PR under the current user instruction, including the initial Docs migration. Do not change repository settings; the immutable migration archive preserves source evidence independently of topic history.
 
 OpenSpec skills are in `.codex/skills/`; equivalent manual steps remain supported. Shared testing checklists are in `.agents/skills/`; run component commands from that component checkout. No tablet permission follows from setup or simulator success. Never incidentally pair/sync personal accounts or upgrade firmware. Keep secrets out of tracked files, logs and evidence; protected ignored local/environment configuration remains allowed.
+
+## Documentation layout
+
+Put documentation under `docs/`, including reusable technical findings, research,
+reference and tool guides. Genuine OpenSpec change-specific artifacts stay in the
+standard `openspec/` structure in the repository that owns that workflow. Root
+README/CONTRIBUTING/AGENTS, license/security files and conventional tool-discovery
+files (GitHub templates, skills) are exceptions. Test data remains fixtures, not
+documentation by default. Preserve evidence/provenance and link canonical bodies;
+do not sweep unrelated historical archives or private task outputs.
