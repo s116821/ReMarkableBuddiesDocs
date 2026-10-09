@@ -16,5 +16,7 @@
 - [x] Integrate accepted shared Tailwind mains, retain startup/DPR checks and verify keyboard/observed-state layout through both hosts.
 
 ## Closeout
-- [ ] Resolve independent findings, sync/archive only accepted bounded scope, review lifecycle delta and coordinate Docs-first/Manager-second squash.
-- [ ] Preserve full REM-41 installer and Windows-native/REM-35 gates; no premature issue closure.
+- [x] Resolve independent implementation/integration findings and sync/archive only the accepted bounded observation scope.
+- [ ] Obtain final exact-pair lifecycle review of canonical/archive and public-pointer changes.
+- [ ] Coordinate Docs-first/Manager-second squash after required current CI and lifecycle acceptance.
+- [x] Preserve full REM-41 installer and Windows-native/REM-35 gates; no premature issue closure.

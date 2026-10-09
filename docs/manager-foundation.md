@@ -35,14 +35,14 @@ No experimental production tags or tablet operations are required.
 
 Angular 22.2.0 and TypeScript 6.0.3 compile shared components. Electron 44.4.5
 loads the same static output with a sandboxed, context-isolated renderer and no
-Node integration. The preload exposes host identity only; no command IPC is
-available. The main process denies unapproved navigation, popups and permissions.
+Node integration. The preload exposes host identity and the separately specified bounded
+[wired observation/cancel capability](manager-wired-observation.md); arbitrary
+command IPC remains unavailable. The main process denies unapproved navigation, popups and permissions.
 The sole external link opens the public Docs hub in the system browser.
 
 Browser output is `dist/manager/browser`, deployable under a static server's root
-or subdirectory. No site hosting is provisioned. Future browser tablet transport
-may use an authenticated companion helper; Electron may use controlled SSH/OS
-integration. Neither permits a queryable Rust Buddy service/API.
+or subdirectory. No site hosting is provisioned. The bounded Linux wired observation path uses an explicit authenticated
+loopback companion helper for browsers and controlled SSH/OS integration for Electron. Neither permits a queryable Rust Buddy service/API.
 
 REM-41 still owns host transport, identity/authentication, separate Manager/Rust
 release discovery, compatibility checks, install/update/rollback, page-extension

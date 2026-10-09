@@ -10,3 +10,10 @@ REM-41 is marked Done in Linear but current Manager main still exposes not-confi
 
 # Scope
 Owning issue REM-41; no Vellum/bootstrap/install/service/firmware/account/config/data mutation, no Buddy HTTP/RPC/admin API, no SDK build/debug retry. One Vellum owner remains authoritative for later installation; public catalog delayed post1.0. Frozen REM-52/54 pairs remain untouched. Deliver paired Docs/Manager implementation PRs; archive only accepted completed capability.
+
+# Canonical coherence at accepted lifecycle completion
+The completed observation capability adds a narrowly specified preload contract.
+Its lifecycle delta clarifies only manager-foundation's restricted desktop boundary
+to permit separately specified narrow capabilities alongside identity, retaining
+sandbox, no arbitrary command IPC and no Buddy API. The original pre-implementation
+plan above and source evidence remain preserved; no further runtime capability is added.

@@ -43,7 +43,8 @@ Observation neither installs/bootstrap Vellum nor changes services, accounts,
 firmware or data. Existing completed release-preview and offline/published-ARM
 qualification contracts remain independent.
 
-The active central change is
-[manager-wired-observation](../openspec/changes/manager-wired-observation/proposal.md).
-Independent exact-revision review, CI, later spec synchronization/archive and
-coordinated delivery remain required before accepting this bounded capability.
+The canonical capability is
+[manager-wired-observation](../openspec/specs/manager-wired-observation/spec.md), with
+[completed planning and attributed evidence](../openspec/changes/archive/2026-10-08-manager-wired-observation/verification.md).
+Implementation and integration reviews accept this bounded source. Final exact-pair
+lifecycle review, current CI and coordinated delivery precede merge.

@@ -99,3 +99,34 @@ fixture paths pass after the correction; no product styling or assertion value
 was weakened. The c6d5ae1 wired test failure is retained as harness chronology,
 not reported as an all-pass head. Development/DPR/normal host/package checks at
 c6d5ae1 remain valid separately attributed evidence for unchanged product source.
+
+## Accepted implementation and final lifecycle delta
+
+[Original independent source review](https://github.com/s116821/ReMarkableBuddiesManager/pull/7#pullrequestreview-5465199191)
+accepts55612a4/fd8cc90 with14 supplied tests/two independent counterexamples and
+fixture Windows browser/Electron/package proof; real LinuxRM1 remains author-attributed.
+[Independent successor acceptance](https://github.com/s116821/ReMarkableBuddiesManager/pull/7#pullrequestreview-5465246126)
+accepts110cf05/8d01a6c, affected Windows development/production DPR1/1.25,
+keyboard/startup/error/isolation/native package and extra pending/conflicting
+firmware/cable-refusal shared UI probes. All current Manager and Docs checks pass.
+The unchanged observer hash isaa82b814bd60b66243527f6f5a05808e20ef897cd067847a59df151c1c8fbd33.
+No additional author hardware run is inferred from that independent Windows review.
+
+Synchronize the three accepted wired requirements exactly and archive this completed
+bounded plan/delta/evidence. The foundation restricted-desktop wording is clarified
+only to allow separately specified narrow capabilities rather than claiming identity
+is its sole capability forever; sandbox, arbitrary-command refusal, scenario and
+no Buddy API remain intact. Other foundation requirements are preserved verbatim.
+Public guides and Manager pointers describe the accepted capability. Runtime,
+dependencies and tests remain unchanged from110cf05; no unchanged matrix is repeated.
+
+REM54's two historical delivery tasks are now checked with its accepted final
+[final lifecycle and post-merge receipt](https://github.com/s116821/ReMarkableBuddiesManager/pull/6#issuecomment-6073336858)
+and verified Docs d5c068d / Manager351532c squash receipts. Its publishedv0.3.0
+main/release/provenance verification remains in the public post-merge receipt;
+no styling scope is reopened or re-qualified here.
+
+Final exact-pair lifecycle review, current required CI and coordinated merge remain
+explicit pending delivery gates. Existing REM41 issue status is preserved. Full
+native Windows/physical unplug/RM2/PaperPro/Vellum installer/source ownership,
+REM42/35 acceptance remains outside this completed observation archive.
