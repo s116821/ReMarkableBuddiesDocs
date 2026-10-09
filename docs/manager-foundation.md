@@ -3,8 +3,9 @@
 The [Manager repository](https://github.com/s116821/RemarkableBuddiesManager)
 contains one Angular application delivered as a static browser app and an
 Electron desktop app. This is a **foundation preview**, not a completed tablet
-installer or updater. Both hosts show an unconfigured connection and unknown
-tablet version. They perform no tablet or Buddy-service calls.
+installer or updater. The base foundation has an unconfigured connection and
+unknown tablet version. The additive [wired observation slice](manager-wired-observation.md)
+adds explicit Linux read-only transport while preserving the installer gates.
 
 ## Public setup and checks
 

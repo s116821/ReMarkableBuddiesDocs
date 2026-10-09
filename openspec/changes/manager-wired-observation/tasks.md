@@ -1,0 +1,19 @@
+## Define
+- [x] Refresh current issue/all comments, canonical contracts, Main transport handoff, maintained-library/prior-art sources; coordinate SCRAPPY Linux scope without reopening REM-41.
+- [x] Write proposal/design/tasks/deltas before implementation in existing owned checkouts.
+
+## Implement
+- [x] Implement versioned bounded Linux observer with USB/route/socket/pinned-key proof and protected user configuration.
+- [x] Implement narrow Electron adapter and same-UI loopback browser helper with explicit ownership/setup boundary.
+- [x] Connect shared Angular state controller and truthful observation/failure UI; preserve disabled installation and independent release preview.
+- [x] Document public prerequisites, unknown provenance and host/device limitations.
+
+## Verify
+- [x] Targeted route/key/read/deadline/cancellation/identity and host-boundary fixtures pass.
+- [x] Shared browser/helper and Electron actual use-path checks, lint/unit/build/package checks pass.
+- [x] Announced read-only Linux RM1 qualification after fresh ownership/access checks; record sanitized observations and source identity.
+- [ ] Docs preservation and strict OpenSpec pass; freeze exact paired implementation revisions for independent review/CI and later Windows qualification.
+
+## Closeout
+- [ ] Resolve independent findings, sync/archive only accepted bounded scope, review lifecycle delta and coordinate Docs-first/Manager-second squash.
+- [ ] Preserve full REM-41 installer and Windows-native/REM-35 gates; no premature issue closure.
