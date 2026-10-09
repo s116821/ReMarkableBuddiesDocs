@@ -273,7 +273,7 @@ without deadline or storage changes. This is a serial full-suite pass, not a cla
 that the failed parallel invocation passed. [Exact source and validation receipt](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6053649015).
 
 
-## Selected context-read source increment — independent review pending
+## Selected context-read source increment — bounded independent review complete
 
 Above Buddy f6999d5 / Docs 01ca4d3, the bounded read-only implementation adds
 SelectedDomainProjection::inspect and SelectedAdmission::context_range, reusing
@@ -300,3 +300,26 @@ mutation/settlement/native output and full delivery acceptance remain unfinished
 The independent storage read-lineage P2 at bc25322 remains a dependency for the
 selected read primitive; this domain change does not duplicate its owned repair.
 Only this read slice is offered for review; no canonical sync/archive/merge follows.
+
+
+Sol independently reviewed exact Buddy f3f5187 / Docs 949d291 and found no new
+actionable issue in the bounded read slice. The three supplied real-Store tests
+and two independent adversarial tests passed, covering invalid selected chronology/
+source refusal before caller counting, callback error/panic leaving admission usable,
+and token/text-budget boundaries. This is five scoped independent checks, not a
+repeat of the author's 69-test matrix or broader feature/native acceptance.
+[Independent review](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5464678516).
+
+The upstream live accepted-history P2 was independently closed at storage Buddy
+423cb0b / Docs c9f3ce7. Main incorporated only its reviewed storage code and tests
+as Buddy fa6182b; REM52 central change files remain in their owning Docs branch.
+The three affected selected-context real-Store tests pass again on this integrated
+source. [Storage repair receipt](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6072364455)
+records five distinct repair checks, exact restored fixture source, strict16 and
+successful exact-pair hosted checks. This supersedes the preceding outstanding
+read-lineage dependency, without accepting whole REM52 or reclassifying the
+original f3f review as an independent review of this successor.
+
+The same 24 existing Reader scaffold lint diagnostics and all unfinished production/
+backend/native/full-delivery gates remain open. No canonical sync or archive follows
+from the read slice or this dependency integration.
