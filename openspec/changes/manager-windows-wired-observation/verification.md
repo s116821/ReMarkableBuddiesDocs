@@ -1,6 +1,6 @@
 # Verification checkpoint
 
-Windows implementation is pending hosted native API checks and Main hardware qualification. Linux locally: 9 original observer cases plus 4 Windows boundary fixtures pass; 3 actual Windows API tests skip explicitly. All14 Node checks and lint pass after updating obsolete Windows-unsupported expectation to actual unconfigured refusal. Build/package pass; unchanged UI/IPC/helper authority retained. This is not current-head Windows evidence.
+Initial implementation66a34c5 checkpoint (superseded by the current repairs below): Linux locally: 9 original observer cases plus 4 Windows boundary fixtures pass; 3 actual Windows API tests skip explicitly. All14 Node checks and lint pass after updating obsolete Windows-unsupported expectation to actual unconfigured refusal. Build/package pass; unchanged UI/IPC/helper authority retained. This is not current-head Windows evidence.
 
 Native hosted checks cover real Winsock interface readback/source bind (no connect), GetBestRoute2 ABI via loopback route, present-device refusal, OS notification registration/unregistration and owner-only vs broad NTFS ACL reads. Shared helper/browser observes fixtures; Windows Electron launches actual external Python and refuses a nonexistent config. Successful Windows USB SSH through both distributions, physical unplug/replug and competing routes remain Main gates. No tablet contacted or mutated.
 
@@ -20,3 +20,11 @@ After successful exact-head Windows CI and independent review, and only when Mai
 4. Exercise protected-config broad-grant/identity/changed-USB refusals using owned temporary host fixtures, preserving the real key/config and restoring only owned host changes. Distinguish actual API, fixture and physical evidence. Stop on trust ambiguity, unexpected service/files or device-owner conflict.
 
 Physical qualification remains unperformed and this proposal grants no new tablet mutations. Hardware findings extend the same central change/fixtures before lifecycle closeout.
+
+## Current repaired source and native CI — October 8 Chicago
+
+Manager3770515b4cdfecfb67332dc8d4e10fc4f6a2fef4 preserves original66a34c5 and all successor fixes. Actual [initial independent review](https://github.com/s116821/ReMarkableBuddiesManager/pull/8#pullrequestreview-5465523507) and three findings were read in full; acceptance at that source remains changes-required. Product69c08b8 fixes the maintained win32file reparse-flag namespace and bounds the UTF16 device ID including its terminator before native copy/API registration. The earlier3ebbc02 single-generation binding correction remains.9 original Linux +6 Windows boundary cases pass locally;3 native Windows cases skip here.
+
+Failed Windows controls are retained in PR receipts: nonexistent selected devnode refusal, missing test mask namespaces, canonical-path guard, and a later fixture owner-takeover AccessDenied. Final fixtures create their own local child directory/file with current-user ownership in SECURITY_ATTRIBUTES, then protect only their own DACL; no elevation/takeover, product path/ACL relaxation or skipped positive test. Nonexistent-device refusal verifies three distinct actual network cancellation calls, with successful registration/cleanup separately on a present root devnode. This is an OS control, not a connected tablet.
+
+At3770515, Windows [CI37882009019](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/37882009019) native API/adapter step is SUCCESS; Linux Foundation and policy/title are SUCCESS. Full Windows browser/package checks remain pending at this checkpoint. Native tests now run immediately after setup-python to detect boundary failures before packaging. Exact successor independent recheck, shared Windows UI checks and Main physical qualification remain delivery gates. Source/package refresh at69c08b8 produced developer0.0.0-dev-69c08b88b71a and matched host-source bytes; later successor changes are test/CI only. No tablet contact.
