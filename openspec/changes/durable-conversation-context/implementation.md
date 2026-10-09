@@ -351,3 +351,40 @@ This completes only the capture read prerequisite. Actual selected Attempt
 bootstrap/ordinary mutations/qualified provider/native backend integration and
 full REM37/52 lifecycle gates remain unfinished. Independent review is pending;
 no broad task checkbox, canonical sync/archive or merge follows.
+
+
+The selected capture-read increment at Buddy13a9c0c / Docs2c8b327 received bounded
+independent acceptance with no new finding. Sol's10 distinct focused checks passed
+(four supplied,three added real-Store counterexamples,three ordinary retrieval
+controls), without duplicating the author's62-test count.
+[Independent capture review](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5464847955).
+Actual exact-head hosted Test/title/policy passed and strict lint failed with24
+scaffold errors; Main also retrieved that actual failed job log. Docs all3 checks
+passed. Broader delivery/native/lint gates remain open.
+
+## Pending selected media admission repair — independent recheck pending
+
+Docs-first3e96682 records a separate pre-existing pending-publication defect outside
+the preceding capture-read delta. At exact13a9c0c, a private valid-PNG fixture with
+selected PolicyDisabled omission and identical included retained bytes published a
+new pending receipt after two live-source checks and promoted media to Included.
+An initial stronger assertion incorrectly expected omission to remain unchanged;
+actual inclusion promotion was then asserted explicitly and the reproduction
+passed. Source was restored exactly; no provider/native effect is claimed.
+
+The narrow repair shares existing media validation between public publish_pending
+and prepare_reader and first requires exact selected-manifest inclusion. Controlled
+Reader preparation runs this check before live plan verification; public publication
+runs it before live-source checks. Exact historical retry stays first-priority and
+cannot mint new current authority. Store omission/commit semantics are unchanged.
+
+Current repaired-source Windows Rust1.98.1 all18 pending/Reader-admission tests PASS,
+including one new real-Store omitted/included control that covers both entry paths,
+zero plan/source checks, unchanged selected token and absent new receipt on refusal.
+Earlier filtered runs are included, not added again. Existing lost-ack historical
+retry, replacement, lower-handoff, native-error/panic and development fences pass
+within that scoped run. Initial Reader fixture fork conservatively refused before
+media validation; the retained fixture was corrected to distinct historical source
+membership so the intended media boundary is actually reached. No production
+validation was relaxed. Formatting/diff PASS; strict lint still reports the same24
+Reader scaffold failures. No repeated62/full/native suite or gate waiver.

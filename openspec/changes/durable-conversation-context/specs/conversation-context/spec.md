@@ -146,3 +146,8 @@ qualification or effect authority.
 #### Scenario: Exact historical variants and stale selection
 - **WHEN** existing selected legacy, SDK historical or development capture bytes are retrieved
 - **THEN** acquisition parents, completion correspondence and provider image order remain exact under the existing variant validators; stale tokens and inconsistent image facts refuse without recapture, publication, provider calls or native authority.
+
+
+#### Scenario: Pending publication cannot promote omitted winner media
+- **WHEN** a fresh pending intent requests media omitted from the selected winner while identical retained bytes remain available
+- **THEN** public pending publication and controlled Reader preparation refuse before their live source or plan verification, leave the selection and receipt state unchanged, and cannot promote retained bytes into selected inclusion; exact historical retry remains evidence only.
