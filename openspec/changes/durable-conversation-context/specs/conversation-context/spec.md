@@ -114,3 +114,18 @@ The domain SHALL support exact inspection/export and explicit full-head logical 
 #### Scenario: Shared evidence and deletion
 - **WHEN** one conversation is deleted while another or a retained revision references its image
 - **THEN** the deleted conversation is tombstoned, the shared image remains retrievable for its surviving reference and no native document is changed.
+
+
+### Requirement: Pinned selected conversation context
+Selected conversation context SHALL derive current turns and source records only
+from one validated selected causal snapshot, excluding retained and all-history
+losing branches. It SHALL retain existing complete chronology and explicit budget
+refusals and SHALL NOT grant restored/native effect authority.
+
+#### Scenario: Replacement during context assembly
+- WHEN a caller captures selected context and a replacement occurs during token counting
+- THEN the context preserves the captured winner's exact records and media coverage without resolving the new head, holding admission across the callback or granting current effect authority.
+
+#### Scenario: Incomplete or over-budget selected history
+- WHEN selected allocated chronology is incomplete or explicit context limits are exceeded
+- THEN context refuses instead of dropping, summarizing, rewriting or substituting retained turns.

@@ -271,3 +271,32 @@ parent suite. The prior fixture failure and subsequent parallel invocation's two
 Drive fixture deadline failures remain preserved; both Drive tests passed serially
 without deadline or storage changes. This is a serial full-suite pass, not a claim
 that the failed parallel invocation passed. [Exact source and validation receipt](https://github.com/s116821/ReMarkableBuddies/pull/30#issuecomment-6053649015).
+
+
+## Selected context-read source increment — independent review pending
+
+Above Buddy f6999d5 / Docs 01ca4d3, the bounded read-only implementation adds
+SelectedDomainProjection::inspect and SelectedAdmission::context_range, reusing
+Ledger's existing context assembly. Snapshot capture validates selected current
+heads and complete allocated chronology under admission; caller token counting
+runs after the gate is released. Retained/all-history losers cannot enter current
+context. Media availability is taken from the selected manifest alone, even when
+retained bytes remain. ContextView.missing_media includes unavailable selected
+media; deliberate omission reasons remain in the pinned selection transaction.
+This does not implement the future mode/status completeness UI.
+
+Current Windows Rust1.98.1 source checks: all46 conversation library tests
+(including three new real-Store selected-context tests), all20 conversation
+integration tests and three legacy-capture integration tests PASS. The earlier
+four-case selected_context filter and eight projector tests are included/reused;
+no additive unique-test inflation. Formatting/diff checks PASS. Docs12 unit tests,
+manifest/guidance checker and documented OpenSpec1.2 strict all16 PASS. No live
+provider, device or new full-suite/target-build evidence is claimed.
+
+Strict all-target/all-feature Clippy still FAILS with the same24 unused existing
+Reader production scaffold diagnostics as f699. No warning suppression, dummy
+uses or gate waiver was added. Actual production acquisition/bootstrap/selected
+mutation/settlement/native output and full delivery acceptance remain unfinished.
+The independent storage read-lineage P2 at bc25322 remains a dependency for the
+selected read primitive; this domain change does not duplicate its owned repair.
+Only this read slice is offered for review; no canonical sync/archive/merge follows.

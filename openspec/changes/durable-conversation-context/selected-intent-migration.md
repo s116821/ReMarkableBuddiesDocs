@@ -121,3 +121,37 @@ fixtures test domain mechanics only. Live provider and qualified native gates
 remain their owning deliveries; no shared worker or production effect is enabled
 by schema acceptance. Keep the complete OpenSpec delivery unarchived until its
 implementation and all applicable verification gates pass.
+
+
+## Selected conversation context read increment
+
+Implementation base Buddy f6999d5 / Docs 01ca4d3, after the existing selected
+projection and admission reviews. Add a read-only `SelectedAdmission::context_range`
+that captures the caller's exact Store-minted current token under the shared domain
+admission gate and uses only the snapshot's selected causal heads. Retained losing
+branches and ordinary all-history heads cannot enter current context. Validate the
+existing domain/reference closure, live Root, unique complete allocated chronology,
+and source links before returning any view. Unknown/deferred historical document
+ownership does not grant identity or effects; inspection cannot establish a native
+binding. Missing/conflicted/deleted records refuse rather than silently shorten history.
+
+Reuse the existing Ledger context assembly and ContextBudget/TurnRange refusals;
+visible Interpreted/Completed turns retain exact text/order/corrections, and explicit
+range selection never rewrites stored history. Missing deliberately omitted media
+is reported from the pinned selected inventory, not a later all-history lookup.
+Required promised media corruption remains a Store read refusal. No source image
+is recaptured, provider called, native effect admitted or pending operation settled.
+
+Capture records and verified selected media references while holding domain-before-
+Store ordering, then release admission before invoking the caller's token-count
+function. That callback may take time or another handle may replace the selection;
+the returned view remains evidence of the input token's captured snapshot, never
+new authority for today's replacement. Do not use provider callbacks while holding
+the admission gate or resolve CURRENT again during assembly.
+
+Real disposable Store tests must distinguish selected winner from retained and
+ordinary losing heads, stale-token refusal after replacement, replacement inside
+context token counting without deadlock/mixed records, complete chronology refusal,
+explicit range/budget refusal without silent truncation, and unchanged ordinary
+context assembly. This read API does not complete selected mutation/bootstrap,
+provider/native qualification, task2.10 or the full unfinished REM37/52 lifecycle.
