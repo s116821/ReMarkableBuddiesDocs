@@ -182,3 +182,24 @@ exact included PNG bytes and parent/provider order, refuse mismatched image fact
 and retain ordinary SDK/development/legacy retrieval behavior. This increment is
 an exact-evidence prerequisite, not completion of actual Attempt selection/bootstrap,
 selected domain mutation, qualified provider or native backend delivery.
+
+
+## Pending-intent selected media inclusion repair
+
+The capture-read review at Buddy13a9c0c / Docs2c8b327 completed without a new
+finding in that increment. Separate actual pending-intent exploration reproduced
+an existing omission boundary: combined snapshot handles include retained media,
+so a selected descriptor marked OmittedPolicyDisabled could be accepted by pending
+publication if retained bytes existed. This is a publication/metadata defect;
+no qualified provider or native effect is claimed from the host reproduction.
+
+Before any fresh pending intent verifies its live source or publishes, require each
+requested media descriptor to match an included ObjectRef in the selected manifest,
+then validate its pinned handle and immutable descriptor provenance as before.
+Retained handles and physical file presence cannot repair explicit winner omission.
+Exact historical receipt replay retains its existing first-priority behavior; it
+returns historical evidence without minting current authority or new publication.
+Test the same valid-PNG omitted-winner/retained-copy fixture now refuses before
+source checks, with selection/receipt state unchanged; an included-media control
+must still publish, and existing pending/replay/settlement/guard cases remain intact.
+Do not change storage omission semantics, native verification or capture-read APIs.
