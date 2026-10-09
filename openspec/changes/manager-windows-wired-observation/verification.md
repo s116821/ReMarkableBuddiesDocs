@@ -1,0 +1,7 @@
+# Verification checkpoint
+
+Windows implementation is pending hosted native API checks and Main hardware qualification. Linux locally: 9 original observer cases plus 4 Windows boundary fixtures pass; 3 actual Windows API tests skip explicitly. All14 Node checks and lint pass after updating obsolete Windows-unsupported expectation to actual unconfigured refusal. Build/package pass; unchanged UI/IPC/helper authority retained. This is not current-head Windows evidence.
+
+Native hosted checks cover real Winsock interface readback/source bind (no connect), GetBestRoute2 ABI via loopback route, present-device refusal, OS notification registration/unregistration and owner-only vs broad NTFS ACL reads. Shared helper/browser observes fixtures; Windows Electron launches actual external Python and refuses a nonexistent config. Successful Windows USB SSH through both distributions, physical unplug/replug and competing routes remain Main gates. No tablet contacted or mutated.
+
+Sources: official Microsoft IPPROTO_IP options (input network order, readback host order), GetBestRoute2 and MIB_IPFORWARD_ROW2, cfgmgr32 parent/device APIs and notification filter; maintained Paramiko5.0.0 and Windows-only pywin32312 pins. No project version source added. Linux deadline implementation changed from alarm to a portable process deadline; Node cancellation/output/deadline tests and original watcher/SSH fixtures pass.

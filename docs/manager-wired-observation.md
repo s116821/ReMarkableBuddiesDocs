@@ -48,3 +48,5 @@ The canonical capability is
 [completed planning and attributed evidence](../openspec/changes/archive/2026-10-08-manager-wired-observation/verification.md).
 Implementation and integration reviews accept this bounded source. Final exact-pair
 lifecycle review, current CI and coordinated delivery precede merge.
+
+Native Windows continuation is tracked in the active [manager-windows-wired-observation](../openspec/changes/manager-windows-wired-observation/) change. It is under development, with Windows API CI and actual USB qualification explicitly pending; the accepted Linux contract is unchanged.
