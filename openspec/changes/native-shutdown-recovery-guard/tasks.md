@@ -6,7 +6,7 @@
 ## 2. Implementation
 - [x] Add distinct pretoken proof parser and strict mode selection without changing legacy parser, actor, launcher, guard or budget.
 - [x] Verify installation-before-render, scalar/identity refusals, mode refusals and legacy packet compatibility in targeted fixtures.
-- [ ] Freeze paired SDK installation/fence and Buddy parser/preparer source for Main critical review before any native selection.
+- [x] Freeze paired SDK installation/fence and Buddy parser/preparer source for Main critical review before any native selection; exact 2b34 final selection records Root review closed.
 - [x] Replace ineffective empty-dependency drop-in with exact-owned full-unit and same-basename vendor shadow; verify runtime provenance before STOP and restore original provenance after exact-owned cleanup in source-local fixtures.
 - [x] Preserve separate guard/stock policy snapshots and verify partial installation/host-loss cleanup under scoped intent claims.
 - [x] Add bounded packet preparation and owned runtimeguard with effectiveproperty checks beforefirststop.
@@ -18,6 +18,7 @@
 - [x] Syntax/docs/strictOpenSpec/diff checks; freeze exactsource/packet for Main review before commit/push/device selection.
 - [x] Main/independent exactsource/artifact/operator review and separately selected Main-only harness smoke; retain hardware uncertainty and historical failure.
 - [x] Actual 9477 portable-LF first-before-render admission, candidate STOP and original-stock restoration smoke; verify selected source/build bindings and independent postattempt proof.
+- [x] Actual 2b34 pretoken installation-before-pre-quit-render admission and guarded restoration smoke at SDK aa3b7a5/Buddy 8d4de239/selected Docs bb14f834/R5; locally verify retained receipts/archive and preserve qualification limits.
 - [ ] Resolve remaining complete prearm ordering and native candidate-hostloss coverage before claiming broader recovery qualification.
 
 Eighteen focused source-local cases and final syntax/docs/strict checks passed;

@@ -174,7 +174,7 @@ not exercised. A before-render record remains a STOP trigger, not a rendering
 completion fence. Nonce9477 is spent; no blind repeat is authorized. Broader
 candidate-hostloss/ordering coverage and linked delivery remain unfinished.
 
-## Frozen executable source hashes
+## Frozen portable-LF executable source hashes, selected for 9477
 
 | File under Buddy tools/native_shutdown_probe | SHA-256 |
 | --- | --- |
@@ -184,7 +184,7 @@ candidate-hostloss/ordering coverage and linked delivery remain unfinished.
 | test_actor.py | 7733ac3e592bd0928f9309ddaa57120ea630e8184f735f3430f7612eab46912a |
 | trace-stop-proof.awk | e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6 |
 
-Current Buddy commit `cdf4f55a94f166c7cec26963f3914b9b65209566` includes the
+Selected 9477 Buddy commit `cdf4f55a94f166c7cec26963f3914b9b65209566` includes the
 portable LF correction atop full-shadow, Windows LF, provider-path and marker fixes.
 Launcher/parser/full-shadow protection remain unchanged by this narrow correction.
 The linked Docs commit freezes this receipt and central proposal/design/tasks/delta.
@@ -220,7 +220,8 @@ admitting STOP. The narrow repair requires quit_seen=0 on the qualifying render.
 Its exact startup/install/about-to-quit/ordinary-before/late-before sequence now
 returns incomplete exit 1; the normal pre-quit control still returns 0. The changed
 parser fixture method passes in 0.079 seconds. No broader matrix, SDK rebuild,
-legacy parser or actor/recovery change was made. Root review closure is pending.
+legacy parser or actor/recovery change was made. Root review closure was pending
+at this source checkpoint; Main's subsequent final 2b34 selection records closure.
 
 Main critical review added prior-render consistency: any normal before/after-render
 before a zero-frame installation invalidates the snapshot, even with a later
@@ -239,7 +240,63 @@ private, never native evidence or authorization.
 SDK owns actual successful-installation emission, unchanged ordinary observer
 connection ordering, actual frame counter and hard no-owner/getter/reader fence.
 Concurrent render may make installation ineligible; shared-root actor evidence
-may stimulate request callbacks. Paired SDK/Buddy critical review remains open
-before any new native selection. No nonce, payload build, staging or device action
-was performed by this lane. Source basis: current Main selection, repository
-source and exact local fixture output; cohort causal interpretation is inference.
+may stimulate request callbacks. Paired SDK/Buddy critical review was open at this
+source checkpoint; the final selection below records closure for its exact freeze.
+No nonce, payload build, staging or device action was performed by this lane.
+Source basis: current Main selection, repository source and exact local fixture
+output; cohort causal interpretation is inference.
+
+## Actual pretoken admission/recovery smoke, 2b34
+
+Main alone operated nonce `2b34ff126957497285b66f77311df07e` after the exact
+combined source review. The private final selection records Root review closed
+with SDK `aa3b7a5827f549ec6fc7fb507c523ab1a8070208`, Buddy
+`8d4de23911af12bdeec8389f75baf69e7c45c386`, selected Docs
+`bb14f834b6ac92a622f027732a0efba4e1709508` and R5 coordinator
+`ed445c8b00a7e51f58cb4ef30a6c82362ec7d65df6c0e7297443759fe108b52a`.
+This later evidence update does not relabel the selected Docs revision.
+Consumer mode was `pretoken-facts-entry-v1`, build mode
+`pretoken-factsentry-cohort-v1`, parser `trace-stop-pretoken-proof.awk` with
+SHA `b06803122b6059adca5f7cf1f257d6483c9f2f2bdf6e52049c4b9e1eac08b759`.
+Main's matching-build verification records 30 artifacts and 13 source inputs;
+the selected payload was 172388 bytes, SHA
+`55f297e129bb281c18e055edba612fd644043c9321aad5e141db7cde24daace9`,
+build receipt SHA
+`357b558d87edeaff93e32641129b48dd735dd4a7682dd7fdbb8d66e7dc23b69a`.
+
+The retained admission snapshot has four records: startup, entry-installed,
+window, before-render. Installation records actual frames=0, startup/GUI TID,
+quit=0 and dropped=0 before the qualifying pre-quit render with frames=1.
+Exact attempt identity was PID12223/start3181208; stop.admitted contains the exact
+nonce and diagnostic.outcome records primary_exit=0. The seven-record final
+trace contains two render pairs, all quit=0/drop=0, with no quit/destruction
+markers. Candidate STOP records inactive/dead, MainPID0, empty Job,
+Result=success and ExecMainCode=2/ExecMainStatus=15 (SIGTERM). No matching SIGSEGV
+was reproduced; this does not establish Qt lifecycle completion.
+
+The actor records restored stock PID12830/start3183152. Main's independently
+saved postattempt proof/readback confirm unchanged boot
+`02b2347b-03aa-4a85-8dd7-d731aabf6f3e`, all24 protected hashes and three
+unit/vendor/executable hashes unchanged, original policy/fragment/vendor-only
+drop-ins, empty Job/NRestarts0, all three services individually active, no payload
+maps throughout the unit and no owned runtime shadows. This lane read those
+receipts locally; it did not perform a fresh remote device verification.
+
+This lane independently verified archive size/hash and all61 retained file
+hashes without extracting private inputs: 263680 bytes, SHA
+`a3c75ba845699616af9b730e51431fed99491192f5a679096d0ae55530ab7b8d`.
+Private evidence directory is
+`main-shutdown-lifecycle-2b34ff126957497285b66f77311df07e` under Main's
+device-private workspace. The cleanup receipt records all61 hash/mode validation,
+collected actor unit absence proof (LoadState=not-found/MainPID0/Job empty),
+exit0/no timeout and exact residue removal with archive preserved and no stock
+STOP/start. No public artifact link exists in this receipt; canonical persistence
+and the next discriminator remain Main/Astra-owned. Nonce2b34 is spent and cleaned.
+
+This is narrow actual pretoken proof admission and guarded restoration evidence.
+The shared-root watcher stimulus and coarse setup/timing cohort remain causal
+limits. It neither fixes the original 0404 SDK fault nor qualifies native MVP,
+FactsEntry/Reader production, candidate host-loss recovery or complete prearm
+ordering. The unfinished change is not synced or archived. Source basis: current
+Main handoff, locally read final selection/build/postattempt/cleanup receipts and
+independently hashed archive members; causal interpretation remains inference.
