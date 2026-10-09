@@ -56,3 +56,21 @@ The actor SHALL stop candidate under remainingguard, verify exact attempt PID/st
 #### Scenario: Recovery proof fails
 - **WHEN** deadline, process/cgroupidentity or ownedfile validation fails
 - **THEN** no policyremoval or additionalstockstart is authorized and evidence remains preserved for Main recovery
+### Requirement: Source-ordered engine readiness before diagnostic admission
+The explicit pretoken-engine-ready-v1 consumer SHALL require one valid installation,
+then one source-ordered entry-engine-ready, then a pre-quit before-render with a
+strictly greater actual frame count, under unchanged wire/caps/process identity,
+actor ownership, guard and observation/recovery budgets. Prior consumer modes and
+parsers SHALL remain unchanged; mode selection and parser SHALL be receipt-bound.
+
+#### Scenario: Engine readiness precedes a later render
+- **WHEN** one installation frame0 is followed by entry-engine-ready after original successful facts-waiting write and original engine-destroyed connection on startup/GUI TID with quit0/drop0 and actual frames, then before-render with quit0/drop0 and strictly greater frames
+- **THEN** the new parser may admit one STOP while preserving hard SDK fences and exact existing guarded recovery
+
+#### Scenario: Readiness or later sample is missing
+- **WHEN** readiness is absent or only earlier renders or later equal-frame/post-quit samples exist
+- **THEN** proof remains incomplete exit1 within the unchanged observation cutoff; original facts-waiting is corroboration rather than an actor admission phase
+
+#### Scenario: Readiness order or scalars contradict the producer
+- **WHEN** readiness precedes installation, repeats, has invalid TID/quit/drop/scalars, or recorded frames regress across readiness
+- **THEN** the snapshot is invalid90 and no STOP is admitted; uint64 frame comparisons preserve exact ordering

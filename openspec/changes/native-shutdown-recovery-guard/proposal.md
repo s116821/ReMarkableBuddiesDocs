@@ -12,6 +12,9 @@ Extend source-only preparation with an explicitly selected pretoken FactsEntry
 proof parser. Require successful installation before qualifying render; preserve
 the observer-only parser and all guard/recovery boundaries. SDK separately owns
 the hard admission fence. Shared-root watcher stimulus limits causal interpretation.
+After the 2b34 bootstrap-refusal evidence, a distinct engine-ready mode additionally
+requires source-ordered engine readiness and a later pre-quit render with greater
+actual frames; previous parsers and actor observation behavior remain unchanged.
 
 ### New Capabilities
 - `native-shutdown-recovery-guard`: Bounded one-attempt development recovery choreography.

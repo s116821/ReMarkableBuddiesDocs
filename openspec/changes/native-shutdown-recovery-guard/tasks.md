@@ -4,6 +4,9 @@
 - [x] Freeze exact trace wire, actor numeric budget and packet policy with Main/Astra before implementation dependent on them.
 
 ## 2. Implementation
+- [x] Add explicit engine-ready consumer and distinct parser preserving old parsers, rendered actors and existing guard/budget semantics.
+- [x] Exercise source-ordered readiness, greater-frame/pre-quit predicates, marker/identity refusals and old-mode packet compatibility in focused fixtures.
+- [ ] Freeze engine-ready parser/preparer and central contract for Main/Root hazard review before a new native selection.
 - [x] Add distinct pretoken proof parser and strict mode selection without changing legacy parser, actor, launcher, guard or budget.
 - [x] Verify installation-before-render, scalar/identity refusals, mode refusals and legacy packet compatibility in targeted fixtures.
 - [x] Freeze paired SDK installation/fence and Buddy parser/preparer source for Main critical review before any native selection; exact 2b34 final selection records Root review closed.

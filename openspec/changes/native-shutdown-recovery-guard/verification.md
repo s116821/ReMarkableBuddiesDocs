@@ -294,9 +294,43 @@ STOP/start. No public artifact link exists in this receipt; canonical persistenc
 and the next discriminator remain Main/Astra-owned. Nonce2b34 is spent and cleaned.
 
 This is narrow actual pretoken proof admission and guarded restoration evidence.
+Material bootstrap limit: this lane read archived callback.json, whose stage is
+facts-entry-bootstrap-refused, source_facts_reader_stage is empty and
+engine_thread=false. No facts-waiting exists in the complete 61-file archive.
+Main and Astra independently confirmed that installation did not establish
+successful engine bootstrap. The absence alone is not proof of never-ready,
+because SDK finish unlinks facts-waiting; the callback provides the refusal evidence.
 The shared-root watcher stimulus and coarse setup/timing cohort remain causal
 limits. It neither fixes the original 0404 SDK fault nor qualifies native MVP,
 FactsEntry/Reader production, candidate host-loss recovery or complete prearm
 ordering. The unfinished change is not synced or archived. Source basis: current
 Main handoff, locally read final selection/build/postattempt/cleanup receipts and
 independently hashed archive members; causal interpretation remains inference.
+## Engine-ready consumer source freeze
+
+The settled explicit mode pretoken-engine-ready-v1 selects
+trace-stop-engine-ready-proof.awk. The original-file observation draft was
+superseded before verification and preserved privately as unverified source only;
+it produced no packet, SDK build, nonce or device action. The settled implementation
+adds no actor observation phase or SDK edits in this lane.
+
+Three focused fixture methods passed in 0.296 seconds in the pinned offline image:
+engine-ready ordering/counter/refusal matrix, current pretoken matrix, and packet
+preparation/selection compatibility. Cases cover installation→ready→later pre-quit
+render, earlier/equal/post-quit renders not qualifying, absent readiness, duplicate
+or out-of-order readiness, startup TID/quit/drop/canonical fields, exact process,
+sequence/time/record cap, frame regression and adjacent uint64 counters above
+double precision including the maximum. Both old parsers reject the new event.
+Preparation checks exact explicit mode/proof source and manifest parser binding,
+all other initial packet hashes unchanged, no added packet files, malformed-mode
+refusal and identical output under simulated Windows CRLF defaults.
+
+New parser source SHA
+a5649c731eefff956ba334b213057f2449751985d9f143533d7307635edaefc7.
+Actor, launcher, legacy and installation-only parser hashes remain unchanged.
+SDK emission after original readiness write/destroyed connection and hard request
+fences require paired Main/Root review of Astra's exact source. No native eligibility,
+engine readiness result, fault fix or broader recovery qualification follows from
+these fixtures. Source basis: current Main settled interface, repository source,
+locally read 2b34 callback/archive and focused test output; timing rationale is
+explicit design inference. New paired source-hazard review remains open.

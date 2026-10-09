@@ -8,6 +8,35 @@ One fresh diagnostic can recover under an independent actor even after host loss
 
 ## Decisions
 
+The 2b34 installation smoke records bootstrap refusal; installation is not
+successful engine bootstrap. Main superseded the original-file observation draft
+because readiness elapsed time is outside recorder chronology and could accept
+an earlier render. The settled source-only mode is pretoken-engine-ready-v1 with
+a separate trace-stop-engine-ready-proof.awk; actor/launcher/root/guard/claims and
+observation/recovery budgets remain unchanged. Legacy and installation-only
+parsers and their selected packet behavior remain byte-identical.
+
+SDK owns one diagnostic-only entry-engine-ready event emitted synchronously after
+the ORIGINAL successful facts-waiting write and verified original engine-destroyed
+connection, before existing queueRequest. Its scalar frame count is actual, never
+reset; SDK fences remain hard and no request publisher/getter/contact or forced
+Qt quit/manual cancel is added. Original facts-waiting is corroborating evidence;
+finish may remove it, so absence in the final archive does not prove never-ready.
+
+The new parser retains v1 fields/caps/process binding and requires one valid
+installation after startup with startup/GUI TID, quit0/drop0/frame0. Exactly one
+entry-engine-ready must follow installation on startup/GUI TID, quit0/drop0 and
+canonical actual frames. Readiness frames cannot be less than earlier observed
+frames; later frame regression is invalid. Only a subsequent before-render with
+quit0/drop0 and a frame count strictly greater than readiness qualifies. Earlier
+renders never qualify. Missing readiness or later qualifying sample is incomplete
+exit1; malformed, duplicate, misordered or contradictory markers are invalid90.
+Compare uint64 frame counters exactly without floating-point loss. No cap expansion,
+event forcing, frame reset or deadline renewal. Exact explicit diagnostic_kind
+pretoken-engine-ready-v1 selects this canonical parser and receipt proof_source;
+unknown/null/nonstring modes still refuse before packet creation. Main verifies
+paired SDK source/build provenance before any future native selection.
+
 Main selects a source-only pretoken FactsEntry setup cohort as the next controlled
 variable after the observer-only 9477 smoke. It uses the existing nonce-owned
 shutdown root and unchanged launcher, actor, guard, claims and 360-second budget.
