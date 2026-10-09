@@ -12,7 +12,8 @@
 - [x] Targeted route/key/read/deadline/cancellation/identity and host-boundary fixtures pass.
 - [x] Shared browser/helper and Electron actual use-path checks, lint/unit/build/package checks pass.
 - [x] Announced read-only Linux RM1 qualification after fresh ownership/access checks; record sanitized observations and source identity.
-- [ ] Docs preservation and strict OpenSpec pass; freeze exact paired implementation revisions for independent review/CI and later Windows qualification.
+- [x] Docs preservation and strict OpenSpec pass; freeze exact paired implementation revisions for independent review/CI and later Windows qualification.
+- [x] Integrate accepted shared Tailwind mains, retain startup/DPR checks and verify keyboard/observed-state layout through both hosts.
 
 ## Closeout
 - [ ] Resolve independent findings, sync/archive only accepted bounded scope, review lifecycle delta and coordinate Docs-first/Manager-second squash.

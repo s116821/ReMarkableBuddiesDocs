@@ -101,3 +101,13 @@ foundation; full REM-41/42 acceptance stays outstanding.
 - [Electron stable releases](https://releases.electronjs.org/release?channel=stable)
 - [Electron process model](https://www.electronjs.org/docs/latest/tutorial/process-model)
 - [Electron security](https://www.electronjs.org/docs/latest/tutorial/security)
+
+## Shared styling conventions
+
+The completed [shared Tailwind capability](../openspec/specs/manager-shared-tailwind/spec.md)
+uses one theme and reusable accessible components across browser and Electron.
+Follow the Manager [styling guide](https://github.com/s116821/RemarkableBuddiesManager/blob/main/docs/styling.md)
+for literal utilities, semantic tokens and development/production host checks.
+Native Linux and independent Windows evidence are separately attributed in the
+[bounded verification archive](../openspec/changes/archive/2026-10-08-manager-shared-tailwind/verification.md).
+Tablet transport and installer gates remain separate.

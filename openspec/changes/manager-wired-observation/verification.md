@@ -63,3 +63,39 @@ checkpoint. Windows CI exercises browser/helper fixtures and the desktop's expli
 unsupported native adapter. Windows wired socket implementation/qualification,
 RM2/Paper Pro hardware,Vellum single-owner installer/update/recovery,compatibility,
 REM-42 configuration/data and full REM-35 acceptance remain outside this slice.
+
+## Latest-main integration successor (October8 Chicago)
+
+Manager successor `c6d5ae1a757b2f3fa7f1c9800fbe086cacafa53b` merges the original
+review head55612a4 with accepted main351532c, preserving both parents. The original
+source/evidence remains reachable; no force/rebase or reset of another lane.
+Central Docs also merges originalfd8cc90 with accepted maind5c068d.
+
+Retain canonical shared Tailwind tokens/components and full startup/deny/DPR checks,
+development builds and CI. New Read tablet state/Disconnect controls use shared
+button/error/status conventions. Keyboard traversal now exercises their visible
+focus before the existing refresh/source controls. Observed/refused state fixtures
+also check390/1280px no-overflow and computed shared primary-control color.
+
+Transport/authentication/socket/read/controller/adapter/Electron source is byte
+identical to the original55612a4 review head. The earlier real RM1 observations
+remain attributed to that original source, not re-counted as new hardware runs.
+Local merged-source lint,14Node/9Python checks,development/production/browser/
+Electron/native package and both wired fixture paths pass. Clean successor metadata
+build/host/package refresh is recorded in PR comments; hosted CI and independent
+successor review remain pending. Release fixtures at the original head remain
+attributed there; no release-engine code changed in this integration.
+
+REM54 styling is merged/canonical, while this wired change remains active pending
+its own review and bounded lifecycle. Full installer and native Windows/RM2/Paper
+Pro qualification remain separate. No further tablet read/mutation was performed
+for the integration.
+
+Final integration review head is110cf05fc8c46f21c574ef15e9e3cc89a578a2ed, a
+one-line fixture successor to c6d5ae1. At clean c6d5ae1, the new base-color check
+correctly encountered the shared ink hover style after clicking Read; the harness
+now moves the pointer away before checking forest base color. Both wired host
+fixture paths pass after the correction; no product styling or assertion value
+was weakened. The c6d5ae1 wired test failure is retained as harness chronology,
+not reported as an all-pass head. Development/DPR/normal host/package checks at
+c6d5ae1 remain valid separately attributed evidence for unchanged product source.

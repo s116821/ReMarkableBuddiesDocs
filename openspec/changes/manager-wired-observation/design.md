@@ -25,3 +25,6 @@ Hermetic target fixtures exercise route/USB/key refusal before authentication, b
 - https://docs.paramiko.org/en/stable/api/transport.html
 - https://docs.paramiko.org/en/stable/api/sftp.html
 - Current REM-41 full description/all10 comments and Main current handoff; private context is not a public contributor prerequisite.
+
+## Shared styling integration
+The wired observation controls/statuses consume the accepted canonical manager-shared-tailwind theme and components. Preserve its development/production/packaged startup, external-deny and DPR focus checks; add actual keyboard traversal for the two new read/disconnect controls and observed-state narrow/wide fixtures. Latest-main integration preserves the original transport source and review evidence.
