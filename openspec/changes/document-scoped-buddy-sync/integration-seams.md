@@ -71,7 +71,10 @@ nonempty validated closure; snapshot absence supplies no implicit authority.
 
 History count and combined metadata are bounded; saturation refuses further writes
 rather than dropping replay evidence. Compaction is not implemented in this slice.
-Required object corruption or incomplete lineage refuses reads/activation; explicit
+Complete selected snapshots validate the pinned reachable accepted history and every
+required historical closure before returning a snapshot/live token, including
+corruption introduced after Store open. Required object corruption or incomplete
+lineage refuses reads/activation; explicit
 media omission remains represented by coverage. Complete reference closures may
 include ancestors, but their selected head set must be unambiguous. Storage remains
 domain opaque and does not infer which retained facts settle an admitted intent.

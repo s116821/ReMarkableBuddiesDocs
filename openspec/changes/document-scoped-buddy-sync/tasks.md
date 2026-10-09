@@ -35,3 +35,6 @@
 - [x] Qualify retained-only publication with actual abrupt child-process exit before/after activation, original receipt/media reopen, unrelated-scope preservation and competing activation using one captured token; these are host storage fixtures, not domain/native/provider qualification.
 - [x] Publish a reproducible [host qualification procedure](qualification.md) using the unchanged older test binary, an ordinary-open positive control, selected-format refusal and current-reader reopen; retain the separate domain/native/provider limits.
 - [x] Verify exact noncanonical object/reference preservation and snapshot reference order for Main's immutable ancestor lookup; domain projection must not recompute object identity from parsed JSON. This is storage evidence only; Main's domain fix/review remains separate.
+
+- [ ] Repair and independently review post-open complete selected snapshot lineage refusal, including missing/corrupt parent metadata and parent-only required record/media; preserve exact-source prior review evidence.
+- [x] Locally reproduce the post-open lineage read failure on the prior source, repair it with existing history/closure validators, and pass four corruption/restoration cases plus the affected selected-storage suite; this is host evidence, not independent successor approval.

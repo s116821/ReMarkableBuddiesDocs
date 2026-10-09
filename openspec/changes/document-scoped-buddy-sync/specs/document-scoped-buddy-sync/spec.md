@@ -110,7 +110,9 @@ original scope, parent selection and request. Only evidence reachable from the
 accepted current selection SHALL authorize replay. Replay SHALL return the original
 publication identity and SHALL NOT append to a replacement winner or silently
 refresh the caller's authority. Exhausted history bounds SHALL refuse further
-publication instead of discarding replay evidence.
+publication instead of discarding replay evidence. Complete selected snapshot reads
+SHALL validate reachable accepted history and required historical closures before
+returning a snapshot/live token, including corruption introduced after Store open.
 
 #### Scenario: Lost acknowledgement followed by replacement
 - WHEN a guarded commit is accepted, its acknowledgement is lost, and a replacement is activated before retry
@@ -123,6 +125,11 @@ publication instead of discarding replay evidence.
 #### Scenario: Incompatible maintenance cannot discard selection metadata
 - WHEN backup, restore or generation migration lacks an implemented selected-metadata portability policy
 - THEN it refuses without publishing a complete backup or changing the active generation.
+
+
+#### Scenario: Required lineage becomes unavailable after open
+- WHEN accepted parent metadata or a required historical record/media object is removed or corrupted while the Store remains open
+- THEN a complete selected snapshot refuses without returning a live token or changing CURRENT/membership; reopen also refuses, while restoring the exact required bytes permits the same selection again.
 
 ### Requirement: Retained-only opaque settlement publication
 Historical settlement storage SHALL link to an accepted original publication and
