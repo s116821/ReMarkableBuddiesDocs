@@ -31,7 +31,9 @@ separate exact source/build review gates; preparation cannot inspect that proper
 The pretoken parser retains v1, ten scalar fields, exact identity, sequence/time,
 96-record, 192-byte-record and 18432-byte snapshot limits. It permits exactly one
 entry-installed event after startup, with startup/GUI TID and quit_seen=0,
-dropped=0, frames=0, followed by a qualifying before-render with frames>=1.
+dropped=0, frames=0, followed by a qualifying before-render with frames>=1 and
+quit_seen=0. A normal before-render recorded after quit begins cannot qualify,
+even if a late-before-render follows; such otherwise valid incomplete proof returns 1.
 Window may occur on either side of installation. Missing installation or no later
 qualifying render returns no admission; duplicate or invalid installation refuses
 the snapshot. Earlier before-render alone cannot admit STOP. Installation is proof

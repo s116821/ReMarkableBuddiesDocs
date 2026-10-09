@@ -27,7 +27,7 @@ present modes SHALL refuse preparation before output creation. The selected pars
 SHALL be bound in the existing packet manifest and identified in the receipt.
 
 #### Scenario: Installation precedes qualifying render
-- **WHEN** the selected pretoken snapshot contains exactly one entry-installed event after startup with startup TID, quit_seen=0, dropped=0 and frames=0, then a qualifying before-render for the same attempt PID/start
+- **WHEN** the selected pretoken snapshot contains exactly one entry-installed event after startup with startup TID, quit_seen=0, dropped=0 and frames=0, then a qualifying before-render with frames>=1 and quit_seen=0 for the same attempt PID/start
 - **THEN** one STOP may be admitted under all existing bounded wire and recovery checks, while SDK source and fixtures separately prove the hard no-owner/getter/reader request fence
 
 #### Scenario: Missing or invalid cohort proof
@@ -37,6 +37,10 @@ SHALL be bound in the existing packet manifest and identified in the receipt.
 #### Scenario: Installation contradicts prior rendering
 - **WHEN** a normal before-render or after-render precedes entry-installed with frames=0, even if another qualifying render follows
 - **THEN** the snapshot is invalid because installation cannot reset the actual frame counter, and STOP is not admitted
+
+#### Scenario: Rendering begins after quit
+- **WHEN** valid installation is followed only by normal before-render with quit_seen=1 and any late-before-render
+- **THEN** the snapshot remains incomplete for the required pre-quit render and cannot admit STOP
 
 #### Scenario: Shared root stimulates the watcher
 - **WHEN** actor evidence creation in the existing shutdown root queues FactsEntry request callbacks

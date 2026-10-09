@@ -213,7 +213,14 @@ both repository diff checks pass. Actor SHA a4cdb6a35d6e848852ed3c75cca05e8231f8
 launcher SHA 00747bd76a6a7d556e77cca41afb04e978256a23975770ed29e8af1a186ada95
 and legacy parser SHA e7ad5e8b213b07230181fd608cf4bd706c65f78c6a0b43cf55d773755bb868c6
 remain unchanged. The new parser source SHA is
-5f4f362f570df648923cdc410a3a615b8a7763ab2a55f98d3ba8d9fd088a438b.
+b06803122b6059adca5f7cf1f257d6483c9f2f2bdf6e52049c4b9e1eac08b759.
+
+Root's paired review reproduced a post-quit ordinary before-render incorrectly
+admitting STOP. The narrow repair requires quit_seen=0 on the qualifying render.
+Its exact startup/install/about-to-quit/ordinary-before/late-before sequence now
+returns incomplete exit 1; the normal pre-quit control still returns 0. The changed
+parser fixture method passes in 0.079 seconds. No broader matrix, SDK rebuild,
+legacy parser or actor/recovery change was made. Root review closure is pending.
 
 Main critical review added prior-render consistency: any normal before/after-render
 before a zero-frame installation invalidates the snapshot, even with a later
