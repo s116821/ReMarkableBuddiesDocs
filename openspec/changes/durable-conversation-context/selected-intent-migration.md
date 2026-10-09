@@ -203,3 +203,35 @@ Test the same valid-PNG omitted-winner/retained-copy fixture now refuses before
 source checks, with selection/receipt state unchanged; an included-media control
 must still publish, and existing pending/replay/settlement/guard cases remain intact.
 Do not change storage omission semantics, native verification or capture-read APIs.
+
+## Selected interpreted-request recording increment
+
+Implementation base is independently accepted Buddy 3fb580c / Docs e3cb306.
+Implement the existing requirement to record an interpreted user request for a
+selected Prepared user turn. This is a fact-only Prepared-to-Interpreted transition,
+not selected output settlement or completion. A bounded request carries its stable
+operation, original selection evidence, exact original Root/Turn references and
+the interpreted Turn. Only text, outcome and updated time may change; identity,
+sequence, role/mode, source links, correction, creation time and completion remain
+unchanged. Require complete selected chronology and resolved document ownership.
+
+Under the shared domain gate, check exact historical operation first. A retry
+must match the entire logical request fingerprint and original selection pins;
+recover the original persisted Receipt and updated Root/Turn without allocating
+new revision IDs or reading ordinary all-history heads. Return historical
+acknowledgment without a live token. Conflicting retries refuse even after winner
+replacement. Fresh recording requires the exact live token, original causal
+Root/Turn pins and current selected source closure. Commit updated Root, Turn and
+schema-1 Receipt atomically through commit_selected. Preserve media omission and
+retained membership. Historical receipts carry no admitted intent and cannot mint
+ReaderContext or effect authority. No source-admission or provider callback is
+needed to persist text supplied by the caller; this does not claim that text was
+independently verified against native input.
+
+Focused tests cover selected winner versus an ordinary losing head, complete
+chronology/source closure, stale token, original pin mismatch, immutable field
+change, one-shot atomic publication, changed-payload retry, replacement/reopen
+historical retry, concurrent duplicate and injected lost acknowledgment. Existing
+ordinary interpretation remains supported. Selected bootstrap/new-turn creation,
+actual Attempt integration, settlement, qualified native/provider behavior and
+full lifecycle remain open.
