@@ -323,3 +323,31 @@ original f3f review as an independent review of this successor.
 The same 24 existing Reader scaffold lint diagnostics and all unfinished production/
 backend/native/full-delivery gates remain open. No canonical sync or archive follows
 from the read slice or this dependency integration.
+
+
+## Selected exact capture-read increment — independent review pending
+
+Above Buddy fa6182b / Docs4e7980d, SelectedAdmission::capture_images reads current
+selected source/turn/root heads and complete chronology, refuses stale tokens and
+selected omitted media even if retained handles exist, and loads exact bytes from
+pinned snapshot handles with explicit size/digest verification. Existing SDK,
+legacy and development typed assembly/validators are shared with ordinary reads.
+Returned variants preserve historical classification, acquisition parents,
+provider ordinal order and development completion correspondence. No live SDK
+observation/guard, ReaderContext or effect token is reconstructed.
+
+Final working-source Windows Rust1.98.1 checks PASS:48 conversation library tests,
+9 SDK capture integration tests,3 legacy capture integration tests and2 development
+library checks (selected exact correspondence and ordinary real orchestrator).
+These are62 distinct scoped tests, including4 new selected-capture cases; earlier
+filtered invocations are not added again. Formatting/diff checks PASS. Strict
+all-target/all-feature Clippy still FAILS with the same24 existing Reader production
+scaffold diagnostics, with no suppressions, dummy usage or waiver. No new full
+suite/ARM/native/provider result. Initial fixture setup failures were corrected to
+respect Store parent CAS and distinct retained historical membership; no production
+semantics were changed for those fixture mistakes.
+
+This completes only the capture read prerequisite. Actual selected Attempt
+bootstrap/ordinary mutations/qualified provider/native backend integration and
+full REM37/52 lifecycle gates remain unfinished. Independent review is pending;
+no broad task checkbox, canonical sync/archive or merge follows.

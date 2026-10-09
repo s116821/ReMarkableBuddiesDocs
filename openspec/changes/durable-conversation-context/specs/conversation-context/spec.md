@@ -129,3 +129,20 @@ refusals and SHALL NOT grant restored/native effect authority.
 #### Scenario: Incomplete or over-budget selected history
 - WHEN selected allocated chronology is incomplete or explicit context limits are exceeded
 - THEN context refuses instead of dropping, summarizing, rewriting or substituting retained turns.
+
+
+### Requirement: Pinned selected capture bytes
+Selected capture retrieval SHALL preserve existing SDK historical, legacy and
+development evidence classification and exact acquisition-parent/provider bytes
+from one validated current selected causal snapshot. It SHALL require complete
+live conversation chronology and current source links, use only selected included
+media and existing image/receipt validation, and SHALL NOT reconstruct native
+qualification or effect authority.
+
+#### Scenario: Losing capture or retained omitted bytes
+- **WHEN** an all-history losing capture shares the selected capture ID, or selected media is deliberately omitted while retained bytes still exist
+- **THEN** retrieval uses only the selected current capture and its included media, and refuses omitted required capture bytes rather than substituting the losing or retained copy.
+
+#### Scenario: Exact historical variants and stale selection
+- **WHEN** existing selected legacy, SDK historical or development capture bytes are retrieved
+- **THEN** acquisition parents, completion correspondence and provider image order remain exact under the existing variant validators; stale tokens and inconsistent image facts refuse without recapture, publication, provider calls or native authority.
