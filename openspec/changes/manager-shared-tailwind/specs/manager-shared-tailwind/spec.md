@@ -12,7 +12,7 @@ The shell and current release-preview components SHALL use shared theme/layout/c
 
 #### Scenario: Narrow viewport and keyboard use
 - **WHEN** browser or packaged Electron renders the shared UI at a narrow or wide viewport and a user navigates controls by keyboard
-- **THEN** content remains readable without horizontal overflow, focus is visible, and unavailable controls remain disabled
+- **THEN** content remains readable without horizontal overflow, focus is visible with display-DPR quantization accounted for, and unavailable controls remain disabled
 
 #### Scenario: Release check or failure
 - **WHEN** the existing release controller is checking or encounters a release/preference error
@@ -23,4 +23,4 @@ The Manager SHALL document its upstream integration, tokens, reusable convention
 
 #### Scenario: Contribution and delivery
 - **WHEN** a contributor adds a shared screen or reviews the linked delivery
-- **THEN** public docs describe literal utility usage and accessibility checks, and evidence identifies tested host/platforms without claiming unobserved Windows, native tablet or installation support
+- **THEN** public docs describe literal utility usage and accessibility checks, and checks intercept the initial release request before UI startup and reject unexpected external requests, and evidence identifies tested host/platforms without claiming unobserved Windows, native tablet or installation support
