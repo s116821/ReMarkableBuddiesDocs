@@ -155,3 +155,30 @@ context token counting without deadlock/mixed records, complete chronology refus
 explicit range/budget refusal without silent truncation, and unchanged ordinary
 context assembly. This read API does not complete selected mutation/bootstrap,
 provider/native qualification, task2.10 or the full unfinished REM37/52 lifecycle.
+
+
+## Selected capture-byte retrieval increment
+
+After the reviewed context read and accepted lineage repair (Buddy fa6182b /
+Docs ec20d58), add a read-only SelectedAdmission capture retrieval API for existing
+SDK historical, legacy and development evidence. Capture the current token and
+selected causal source/turn/root heads under domain admission. Require the live
+complete conversation chronology and exact current source link. Preserve existing
+SDK Prepared/Interpreted user-request restrictions and each existing evidence
+variant's image/receipt validation; historical SDK facts never reconstruct a guard.
+
+Only selected-manifest included media may supply bytes. A retained handle or a
+physically present omitted blob cannot satisfy a selected image. Read the pinned
+handles from that same snapshot, verify exact sizes/hashes and image dimensions,
+and preserve original provider ordinal order plus acquisition parent/completion
+provenance. Reuse existing typed capture assembly for ordinary and selected reads;
+do not create another image transformation or deserialize authority from history.
+Return owned historical evidence only, without a live token/effect context. No
+CURRENT/all-history relookup, recapture, provider submission or selected publication.
+
+Tests must distinguish selected and losing captures with the same record ID,
+refuse stale selection and omitted media even when retained bytes exist, preserve
+exact included PNG bytes and parent/provider order, refuse mismatched image facts,
+and retain ordinary SDK/development/legacy retrieval behavior. This increment is
+an exact-evidence prerequisite, not completion of actual Attempt selection/bootstrap,
+selected domain mutation, qualified provider or native backend delivery.
