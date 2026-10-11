@@ -43,4 +43,4 @@
 - [x] Implement, exercise and independently review the minimal explicit v2 coordinate-complete guardian/transport source and rebuilt artifact before fresh selection.
 - [x] Preserve and close out fresh5d59 publication-wrapper argument refusal with no publisher execution, exact recovery/archive/cleanup and spent identity.
 - [x] Specify the independently assessed exact v2 wrapper seam and sealed preselected two-point contract in wrapper-boundary-contract.md before implementation.
-- [ ] Implement and independently review the exact v2 alarm-wrapper argument seam and preselected two-point harness bindings with real rendered wrapper-exec controls before another fresh qualification.
+- [x] Implement and independently review the exact v2 alarm-wrapper argument seam and preselected two-point harness bindings with real rendered wrapper-exec controls before another fresh qualification.
