@@ -84,3 +84,16 @@ The initial live content/metadata hashes, copies and copied-byte hashes SHALL pr
 #### Scenario: Snapshot preparation completes
 - **WHEN** every same-pin prelude batch and initial/copied/closing sidecar equality passes within the unchanged stage deadline
 - **THEN** only the complete capture may proceed to existing identity, idle and exact visual admission; preparation does not itself prove Library readiness
+
+### Requirement: Visual timing diagnostic has no insertion authority
+A selected `open-document-readiness-observation-v1` purpose SHALL use the unchanged original SDK configuration and reviewed capture path through a distinct diagnostic entry point. Opening, GO and creation-arm publication SHALL refuse this purpose before any state change or transport. A diagnostic image SHALL NOT satisfy production ready20 or fall through to insertion. At most three distinct attempted full-idle observations SHALL use fresh diagnostic prefixes and remain within existing read/memory/storage caps.
+
+The fixed diagnostic cutoff SHALL be the minimum of candidate-start plus40 seconds, original waiting expiry, original actor observation end and original absolute deadline minus185 seconds, floored for integer shell gates. All fresh complete response/admission and original capture phase margins SHALL fit strictly before that cutoff. Both diagnostics.json and callback.json SHALL be absent before each frame and at closing; original closing/restoration/stop markers and all capture provenance checks SHALL remain mandatory. Any failed or uncertain operation SHALL be terminal. Exact Library pixels, count/cutoff exhaustion or fault SHALL cause immediate guarded stop with unchanged independent recovery.
+
+#### Scenario: Diagnostic observes Library
+- **WHEN** a complete provenance-valid diagnostic image exactly matches the approved Library pixels within its original fixed diagnostic interval
+- **THEN** the host reports the actual observation and candidate-relative recorded phase/completion times, requests stop and grants no opening or creation permission
+
+#### Scenario: Diagnostic cannot complete safely
+- **WHEN** identity, original expiry, terminal markers, full idle, hash/map/frame/receipt, phase bounds, complete transport or diagnostic cutoff fails
+- **THEN** no further capture or mutation is admitted, failed output is preserved without replay, and independent recovery remains available

@@ -23,4 +23,7 @@
 - [x] Review and implement bounded visual readiness observations, exact hash batching and remaining-stage response bounds without deadline renewal or failed-capture retries.
 - [x] Verify focused loading-to-Library, cap/fault/expiry/no-input controls and independently review the changed consumer path before a fresh attempt.
 
-- [ ] Implement and independently review same-pin snapshot prelude batching and bracketed sidecar identity with focused executed-path controls before a fresh bounded attempt.
+- [x] Implement and independently review same-pin snapshot prelude batching and bracketed sidecar identity with focused executed-path controls before a fresh bounded attempt.
+
+- [ ] Implement and independently review the distinct observation-only visual timing purpose, no-mutation guards, fixed SDK-bounded interval and bounded phase records before selecting a fresh diagnostic.
+- [ ] Execute and preserve one fresh reviewed observation-only diagnostic, establish actual visual timing or bounded failure and verify independent recovery and no creation/input.
