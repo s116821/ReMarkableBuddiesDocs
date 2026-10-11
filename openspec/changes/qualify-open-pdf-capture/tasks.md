@@ -37,3 +37,5 @@
 - [x] Preserve and close out the fresh aa9 first-post-tap Library/context refusal, independent recovery and exact archive/cleanup without opening or creation-success inference.
 - [x] Specify the reviewed v2-only pre-footer pending-Library classification with exact canonical raw LastOpen and accepted-Library sidecar baseline before implementation.
 - [x] Implement and independently review the minimal pending-Library/raw-byte exposure delta and focused single-fault/count/time/no-replay controls before another fresh selection.
+- [x] Execute and close out fresh4c20 pending-Library count-exhaustion refusal, independent recovery and exact evidence archive/cleanup without creation or replay.
+- [ ] Establish an evidence-backed ordinary opening-route correction before another insertion qualification; unchanged Library after a complete guardian tap is not proof of delivery to the application.
