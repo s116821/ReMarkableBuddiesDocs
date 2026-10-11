@@ -52,7 +52,7 @@
 - [ ] Resolve required same-running display/navigation contract and any writing/persistence gate without retroqualifying9005 or rolling back its inserted page.
 
 - [x] Assess and specify the narrow development-only owned relative gesture, retaining the fixed SDK swipe and conditional same-running seeded-Y evidence before edits.
-- [ ] Implement/review focused ownership/context/termination controls and exact artifacts, then establish the path against the preserved current eight-page fixture.
+- [x] Implement/review focused ownership/context/termination controls and exact artifacts, then establish the path against the preserved current eight-page fixture through independently verified fresh Previous0fdc and Nexta469 under the explicit terminal-release policy.
 - [ ] Assess and execute fresh eight-page insertion-plus-navigation with a new target/identity, preserving9005 and all saved ink.
 
 - [x] Assess and specify the explicit preserved-eight SDK/config/profile inventory and exact26-path launcher seam before implementation.
@@ -60,7 +60,7 @@
 
 - [x] Preserve actual4018 known-pair field-skew refusal, independent blank destination/contact/archive review and exact cleanup without retroactive gesture qualification.
 - [x] Assess and specify the explicit stop-at-declared-neighbor-v1 terminal-release policy before source changes; retain unknown-context/input failure and original bounds.
-- [ ] Implement and independently review typed expected-terminal outcomes, positive prefix/death/release evidence and mandatory policy/consumer bindings; qualify a fresh actual tablet movement before insertion integration.
+- [x] Implement and independently review typed expected-terminal outcomes, positive prefix/death/release evidence and mandatory policy/consumer bindings; qualify separately selected actual Previous0fdc and Nexta469 with exact archive/cleanup before insertion integration.
 
 - [x] Record human-required current/adjacent Buddy recognition/reuse, existing REM-37 binding dependency and ORIGINAL-source placement after neighbor inspection; distinguish current legacy code and raw SDK capability from product acceptance.
 - [ ] Integrate and verify product acquisition/reuse/adoption before insertion, including unknown/stale associations and preservation of a confirmed non-Buddy neighbor; do not infer non-Buddy ownership from missing binding or uncertain recognition.
