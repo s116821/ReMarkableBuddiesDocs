@@ -44,3 +44,6 @@
 - [x] Preserve and close out fresh5d59 publication-wrapper argument refusal with no publisher execution, exact recovery/archive/cleanup and spent identity.
 - [x] Specify the independently assessed exact v2 wrapper seam and sealed preselected two-point contract in wrapper-boundary-contract.md before implementation.
 - [x] Implement and independently review the exact v2 alarm-wrapper argument seam and preselected two-point harness bindings with real rendered wrapper-exec controls before another fresh qualification.
+
+- [x] Execute and reconcile fresh9005 persisted blank insertion, exact order, protected files, recovery, archive and exact cleanup.
+- [ ] Verify preserved target with fresh current-state observation and approved relative navigation; distinguish post-recovery display/writing persistence from9005 same-running pixels.
