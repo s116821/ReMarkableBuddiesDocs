@@ -85,6 +85,19 @@ The initial live content/metadata hashes, copies and copied-byte hashes SHALL pr
 - **WHEN** every same-pin prelude batch and initial/copied/closing sidecar equality passes within the unchanged stage deadline
 - **THEN** only the complete capture may proceed to existing identity, idle and exact visual admission; preparation does not itself prove Library readiness
 
+### Requirement: Explicit production timing variant preserves fixed authority
+A separately selected production v2 SHALL bind candidate-relative ready45/open75/trigger90/result115/stop125/candidate130, start reserve315, absolute360 and recovery185. Original SDK setup95 SHALL anchor once to constructor BOOTTIME; acceptance before original expiry SHALL grant exactly one independent five-second access interval. Legacy40 and observation-only configurations SHALL retain their existing semantics. Purpose/profile/source/artifact mismatches SHALL refuse.
+
+Publication SHALL require full12 seconds remaining in both trigger and original SDK setup intervals at RPC entry after all query/staging costs, and final commit SHALL independently require candidate remaining40, absolute remaining225 and the complete remaining candidate interval plus185. Action caps SHALL remain ready3/GO3/publication12; original setup/contact leases SHALL never renew. Complete query/transport/decode/retention costs SHALL consume fixed stage bounds. Result115 SHALL cover all asynchronous acceptance/access/poll/capture costs together; stop125 SHALL retain independent actor130 recovery. Partial, late or uncertain actions SHALL never replay. Selected production negative closure predicates SHALL refuse regular files, directories and dangling symlinks explicitly.
+
+#### Scenario: Narrow volatile Library bar differs
+- **WHEN** an otherwise exact approved768x1024 Library differs only within half-open battery charge-bar rectangle(735,30,737,36) under explicitly selected v2
+- **THEN** the comparison reports masked_match separately from whole_image_exact, retains raw pixels/full differences and grants no exemption to any other pixel or source/footer/result predicate
+
+#### Scenario: Late publication or result work
+- **WHEN** fresh admission lacks the full publication reservation, original expiry/reserves fail, or any response/decode/retention crosses its fixed bound
+- **THEN** the operation refuses without lease renewal or action replay and independent recovery remains available
+
 ### Requirement: Visual timing diagnostic has no insertion authority
 A selected `open-document-readiness-observation-v1` purpose SHALL use the unchanged original SDK configuration and reviewed capture path through a distinct diagnostic entry point. Opening, GO and creation-arm publication SHALL refuse this purpose before any state change or transport. A diagnostic image SHALL NOT satisfy production ready20 or fall through to insertion. At most three distinct attempted full-idle observations SHALL use fresh diagnostic prefixes and remain within existing read/memory/storage caps.
 

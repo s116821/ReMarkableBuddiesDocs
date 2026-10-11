@@ -29,3 +29,6 @@
 - [x] Execute and preserve one fresh reviewed observation-only diagnostic, establish actual visual timing or bounded failure and verify independent recovery and no creation/input.
 
 - [ ] Correct and independently review inherited production closure-marker AND-list refusal before any future insertion qualification; diagnostic uses separate standalone checks.
+- [x] Specify independently reviewed fixed production timing variant, original SDK95 setup/accepted5 semantics and exact twelve-pixel Library battery exclusion before implementation.
+- [ ] Implement explicit v2 purpose/profile/actor/publisher/SDK bindings, fresh action/result/stop admission and focused boundary/fault controls; independently review final sources and artifacts.
+- [ ] Select one fresh v2 backup/packet and execute bounded insertion only after source and preservation gates; verify actual native result, independent recovery and exact evidence preservation/cleanup.
