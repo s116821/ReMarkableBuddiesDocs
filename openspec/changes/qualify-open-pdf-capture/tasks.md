@@ -4,8 +4,8 @@
 - [ ] Validate exact-build native owner/backing relationship with separately scoped bounded evidence.
 
 ## 2. Implementation and review
-- [ ] Add explicit process identity path and bounded map/header discovery evidence without arbitrary selection.
-- [ ] Verify identity/maps/header changes, ambiguity and cap exhaustion refuse without publishing pixels.
+- [x] Add explicit process identity path and bounded map/header discovery evidence without arbitrary selection.
+- [x] Verify identity/maps/header changes, ambiguity and cap exhaustion refuse without publishing pixels.
 - [ ] Freeze and independently review source/artifact/transport bindings.
 
 ## 3. Native and delivery

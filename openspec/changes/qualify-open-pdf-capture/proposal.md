@@ -1,6 +1,6 @@
 ## Why
 
-The selected REM-25 open-PDF insertion trial refused screenshot capture before input or creation because two anonymous allocations matched the size/header heuristic. Retained evidence lacks candidate addresses, maps and selected-process identity. Capture provenance and native allocation attribution are prerequisites to a fresh attempt; insertion remains unfinished.
+The selected REM-25 open-PDF insertion trial refused screenshot capture before input or creation because two anonymous allocations matched the size/header heuristic. Retained evidence lacks candidate addresses, maps and the process identity actually selected by the capture helper; the candidate attempt identity exists separately. Capture provenance and native allocation attribution are prerequisites to a fresh attempt; insertion remains unfinished.
 
 ## What Changes
 

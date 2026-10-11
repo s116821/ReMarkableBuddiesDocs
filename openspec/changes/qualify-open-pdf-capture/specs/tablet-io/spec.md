@@ -8,7 +8,7 @@ The experimental RM2 capture path SHALL bind an explicit boot ID, PID and proces
 - **THEN** capture refuses and publishes no image or cached output
 
 ### Requirement: Ambiguous allocation discovery preserves bounded evidence
-RM2 allocation discovery SHALL retain bounded selected-identity, map and matched raw-header evidence. Zero or multiple heuristic matches, malformed evidence or scan-cap exhaustion SHALL refuse capture; no ordering, cached address or image resemblance SHALL select a match.
+RM2 allocation discovery SHALL retain bounded selected-identity, map and matched raw-header evidence. Without separately qualified native backing attribution, zero or multiple heuristic matches SHALL refuse capture. Malformed evidence or scan-cap exhaustion SHALL always refuse capture; no ordering, cached address or image resemblance SHALL select a match.
 
 #### Scenario: Two allocations have the expected header
 - **WHEN** two matching allocation headers are discovered
