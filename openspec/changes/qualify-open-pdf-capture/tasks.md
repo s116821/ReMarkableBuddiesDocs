@@ -15,4 +15,7 @@
 - [x] Record failures and qualification limits; insertion remains incomplete until acceptance passes.
 - [x] Label existing private reader map comparisons and retain bounded already-read failing buffers without additional reads or changed acceptance; independently review focused error paths.
 - [x] Observe a fresh reviewed candidate to identify the failed comparison and changed VMA intersections; preserve recovery and interpret refusal before changing predicates.
+- [ ] Specify and independently review scoped dependency/provider closure with explicit monotonic containing-heap growth and unchanged sampled limits.
+- [ ] Implement private scoped closure and focused changed-range/disjoint-growth refusal controls; bind the public consumer without a whole-process wrapper equality gate.
+- [ ] Freeze reviewed scoped source/artifacts and perform a genuinely fresh bounded tablet attempt with preservation and independent recovery.
 - [ ] Verify code/spec agreement, linked delivery and required checks; sync and archive only completed work.
