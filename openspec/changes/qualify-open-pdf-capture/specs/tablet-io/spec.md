@@ -71,3 +71,16 @@ The host SHALL bound response completion by both a maximum of 20 seconds and con
 #### Scenario: Batched hash output is incomplete or wrong
 - **WHEN** a batch has nonzero status, missing/duplicate/reordered/changed path or digest, malformed bytes or exceeded output/time bound
 - **THEN** capture refuses before navigation or creation even if pixels match
+
+### Requirement: Snapshot preparation preserves pins and brackets sidecar identity
+The experimental snapshot consumer MAY batch the existing exact three encoder/provider and six helper path hashes through the independently bootstrapped existing three-second launcher. All original file identity checks SHALL remain and the complete exact ordered nine-line output SHALL match the expected paths and digests with zero exit and empty stderr. Each distinct snapshot SHALL own exclusive private stdout/stderr records bounded to 2048 bytes each. The two native/provider hash checkpoints SHALL remain unchanged. Non-snapshot action preludes SHALL retain their current checks. Additional evidence SHALL remain within the existing ten-snapshot storage allowance.
+
+The initial live content/metadata hashes, copies and copied-byte hashes SHALL precede the complete released-input observation and plane read. Fresh live content/metadata closing hashes SHALL follow the plane and equal both the initial and copied digests. Immutable-file closing checks and final identity/window/expiry admission SHALL remain after capture. Every prefix SHALL use fresh sidecar evidence. This interval SHALL NOT establish atomicity, render readiness or native lifetime authority.
+
+#### Scenario: Prelude batch or bracketed sidecar changes
+- **WHEN** bootstrap, exclusive output, exact ordered hash output, exit/stderr/cap, copied sidecar identity or fresh live closing sidecar identity fails
+- **THEN** the observation refuses terminally without navigation, creation, cached evidence or replay
+
+#### Scenario: Snapshot preparation completes
+- **WHEN** every same-pin prelude batch and initial/copied/closing sidecar equality passes within the unchanged stage deadline
+- **THEN** only the complete capture may proceed to existing identity, idle and exact visual admission; preparation does not itself prove Library readiness

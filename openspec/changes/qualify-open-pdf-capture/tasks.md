@@ -22,3 +22,5 @@
 
 - [x] Review and implement bounded visual readiness observations, exact hash batching and remaining-stage response bounds without deadline renewal or failed-capture retries.
 - [x] Verify focused loading-to-Library, cap/fault/expiry/no-input controls and independently review the changed consumer path before a fresh attempt.
+
+- [ ] Implement and independently review same-pin snapshot prelude batching and bracketed sidecar identity with focused executed-path controls before a fresh bounded attempt.
