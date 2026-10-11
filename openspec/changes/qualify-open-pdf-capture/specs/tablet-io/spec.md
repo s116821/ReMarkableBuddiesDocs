@@ -52,3 +52,22 @@ The host SHALL select the reviewed scoped closure version through exact source/a
 #### Scenario: Producer refuses scoped closure
 - **WHEN** the selected producer returns a failure, partial output or diagnostic stderr
 - **THEN** conversion, navigation and creation remain unadmitted, and the attempt remains spent even if provisional tuples match
+
+
+### Requirement: Visual readiness observations remain bounded and failure-terminal
+The experimental host MAY perform at most three distinct successful ready captures within the original fixed ready deadline, each with an exclusive claim and complete identity, waiting/window/expiry, released-input and hash evidence. The first complete ready observation SHALL freeze nonce, boot, PID/start, root inode, original window and waiting expiry even if its pixels do not match; later observations SHALL retain that binding. Every observation SHALL be recorded and pass host admission/idle checks before a further request. Exact approved Library pixels SHALL remain required before the single ordinary opening gesture. Ready attempt prefixes SHALL be limited to host-ready-000..002 and opening attempts to host-open-000..004, with counts including failed attempts. A complete nonmatching image, without an inferred loading/modal classifier, SHALL remain unready evidence; any acquisition, conversion, mapping, identity, input, hash, transport or partial-response failure SHALL terminate rather than retry. At most five opening captures plus trigger/result SHALL preserve ten captures total. No output reuse, fixed-delay readiness assumption or deadline renewal is permitted.
+
+#### Scenario: Loading becomes the Library under the fixed deadline
+- **WHEN** one complete bounded ready image is loading and a later distinct complete observation matches the Library with all unchanged admission gates
+- **THEN** only the matching fresh observation may admit the single ordinary opening gesture
+
+#### Scenario: Fault or readiness cap is reached
+- **WHEN** any observation fails a required gate or the fixed time/count allowance ends without the approved Library
+- **THEN** the host admits no opening or creation and preserves spent evidence for independent recovery
+
+### Requirement: Capture response and hash verification preserve existing bounds
+The host SHALL bound response completion by both a maximum of 20 seconds and conservatively computed remaining fixed stage time using fresh remote uptime and a host monotonic anchor established before the query. Unknown or exhausted time SHALL refuse. Complete remote closing identity/expiry and host admission checks SHALL remain mandatory; partial transport output SHALL never be accepted or replayed. Exact before/after native/provider hash checks MAY be batched only through the independently bootstrapped reviewed bounded launcher and verified hash tool, with complete bounded ordered expected path/digest comparison and no omitted checkpoint or input bytes.
+
+#### Scenario: Batched hash output is incomplete or wrong
+- **WHEN** a batch has nonzero status, missing/duplicate/reordered/changed path or digest, malformed bytes or exceeded output/time bound
+- **THEN** capture refuses before navigation or creation even if pixels match

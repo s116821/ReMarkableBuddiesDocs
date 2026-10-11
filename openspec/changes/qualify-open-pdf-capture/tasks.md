@@ -19,3 +19,6 @@
 - [x] Implement private scoped closure and focused changed-range/disjoint-growth refusal controls; bind the public consumer without a whole-process wrapper equality gate.
 - [ ] Freeze reviewed scoped source/artifacts and perform a genuinely fresh bounded tablet attempt with preservation and independent recovery.
 - [ ] Verify code/spec agreement, linked delivery and required checks; sync and archive only completed work.
+
+- [ ] Review and implement bounded visual readiness observations, exact hash batching and remaining-stage response bounds without deadline renewal or failed-capture retries.
+- [ ] Verify focused loading-to-Library, cap/fault/expiry/no-input controls and independently review the changed consumer path before a fresh attempt.
