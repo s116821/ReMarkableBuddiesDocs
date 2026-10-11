@@ -98,6 +98,10 @@ Publication SHALL require full12 seconds remaining in both trigger and original 
 - **WHEN** fresh admission lacks the full publication reservation, original expiry/reserves fail, or any response/decode/retention crosses its fixed bound
 - **THEN** the operation refuses without lease renewal or action replay and independent recovery remains available
 
+### Requirement: V2 ordinary opening tap requires coordinate-complete evidence
+
+The explicit v2 library tap SHALL use only the fixed selected native164,1396 point and SHALL require stable fully released fresh setup/post-GO/post-intent seed observations with both slot0 axes different from that point before the sole DOWN write. The first DOWN SYN frame SHALL include exact tracking ID and both selected axes to earn successful tap evidence. Missing axes SHALL preserve conditional exact-owned release/recovery but SHALL NOT grant success or permit replay. Legacy and close routes SHALL retain their existing contracts. Exact source/artifact bindings and all fixed input, timing, recovery and visual/source gates SHALL remain mandatory. The owning tap-coordinate-contract.md specifies the pre-code scope and fault controls; kernel echo does not acknowledge application delivery or opening.
+
 ### Requirement: Known pending Library never grants source authority
 Explicit production v2 MAY classify a complete pre-footer opening observation as UNREADY only when every pixel matches the approved Library without an exclusion, exact seven-page/current-source0 metadata and both raw sidecar hashes match the accepted pre-tap Library baseline, and both observations contain exact canonical-empty raw LastOpen bytes. NormalizedNone SHALL NOT substitute for raw-byte equality. Existing capture/provenance/identity/original SDK-unarmed/expiry/fixed OPEN75/count/decode/retention gates SHALL remain mandatory. The baseline SHALL bind at accepted Library, not loading.
 
