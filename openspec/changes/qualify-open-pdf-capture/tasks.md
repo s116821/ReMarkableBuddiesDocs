@@ -34,3 +34,6 @@
 - [ ] Select one fresh v2 backup/packet and execute bounded insertion only after source and preservation gates; verify actual native result, independent recovery and exact evidence preservation/cleanup.
 - [x] Preserve and close out the fresh620d v2 footer-gate refusal without creation/replay; independently inspect the actual page-label/reference-pose mismatch and retain exact recovery/archive/cleanup evidence.
 - [x] Specify the independently reviewed actual000 full footer reference for a future fresh selection, preserving the original entire exact ROI and required later distinct body observation.
+- [x] Preserve and close out the fresh aa9 first-post-tap Library/context refusal, independent recovery and exact archive/cleanup without opening or creation-success inference.
+- [x] Specify the reviewed v2-only pre-footer pending-Library classification with exact canonical raw LastOpen and accepted-Library sidecar baseline before implementation.
+- [ ] Implement and independently review the minimal pending-Library/raw-byte exposure delta and focused single-fault/count/time/no-replay controls before another fresh selection.

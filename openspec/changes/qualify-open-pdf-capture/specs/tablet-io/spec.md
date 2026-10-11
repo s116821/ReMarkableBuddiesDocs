@@ -98,6 +98,17 @@ Publication SHALL require full12 seconds remaining in both trigger and original 
 - **WHEN** fresh admission lacks the full publication reservation, original expiry/reserves fail, or any response/decode/retention crosses its fixed bound
 - **THEN** the operation refuses without lease renewal or action replay and independent recovery remains available
 
+### Requirement: Known pending Library never grants source authority
+Explicit production v2 MAY classify a complete pre-footer opening observation as UNREADY only when every pixel matches the approved Library without an exclusion, exact seven-page/current-source0 metadata and both raw sidecar hashes match the accepted pre-tap Library baseline, and both observations contain exact canonical-empty raw LastOpen bytes. NormalizedNone SHALL NOT substitute for raw-byte equality. Existing capture/provenance/identity/original SDK-unarmed/expiry/fixed OPEN75/count/decode/retention gates SHALL remain mandatory. The baseline SHALL bind at accepted Library, not loading.
+
+#### Scenario: Ordinary opening is still at Library
+- **WHEN** a complete v2 observation before any footer satisfies every narrowly defined pending-Library condition
+- **THEN** it is retained as UNREADY and consumes one existing MAX5 opening attempt, allowing only another fresh bounded read-only observation without tap/GO replay, count/time renewal, footer/body acceptance or creation permission
+
+#### Scenario: Pending Library cannot be admitted
+- **WHEN** any condition is unknown, malformed or mismatching, the original count/deadline is exhausted, or Library returns after a footer
+- **THEN** the attempt refuses terminally and preserves recovery; strict selected-document/footer context and a later distinct loaded-body frame remain required before any creation publication
+
 ### Requirement: Visual timing diagnostic has no insertion authority
 A selected `open-document-readiness-observation-v1` purpose SHALL use the unchanged original SDK configuration and reviewed capture path through a distinct diagnostic entry point. Opening, GO and creation-arm publication SHALL refuse this purpose before any state change or transport. A diagnostic image SHALL NOT satisfy production ready20 or fall through to insertion. At most three distinct attempted full-idle observations SHALL use fresh diagnostic prefixes and remain within existing read/memory/storage caps.
 
