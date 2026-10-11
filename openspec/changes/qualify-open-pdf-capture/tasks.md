@@ -32,3 +32,5 @@
 - [x] Specify independently reviewed fixed production timing variant, original SDK95 setup/accepted5 semantics and exact twelve-pixel Library battery exclusion before implementation.
 - [x] Implement explicit v2 purpose/profile/actor/publisher/SDK bindings, fresh action/result/stop admission and focused boundary/fault controls; independently review final sources and artifacts.
 - [ ] Select one fresh v2 backup/packet and execute bounded insertion only after source and preservation gates; verify actual native result, independent recovery and exact evidence preservation/cleanup.
+- [x] Preserve and close out the fresh620d v2 footer-gate refusal without creation/replay; independently inspect the actual page-label/reference-pose mismatch and retain exact recovery/archive/cleanup evidence.
+- [x] Specify the independently reviewed actual000 full footer reference for a future fresh selection, preserving the original entire exact ROI and required later distinct body observation.
