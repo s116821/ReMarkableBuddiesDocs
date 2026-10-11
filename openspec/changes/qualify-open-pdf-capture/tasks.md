@@ -66,5 +66,5 @@
 - [ ] Integrate and verify product acquisition/reuse/adoption before insertion, including unknown/stale associations and preservation of a confirmed non-Buddy neighbor; do not infer non-Buddy ownership from missing binding or uncertain recognition.
 
 - [x] Assess the existing eight-page ordinary source5/neighbor6 candidate and unchanged eight-only gesture artifact; specify separate bounded preparation selections without authorizing insertion or source0 duplication.
-- [ ] Adapt and independently review the private purpose/tuple whitelist, then freshly qualify ordinary source5/neighbor6 pixels/identity with preserved fixture and exact per-selection cleanup.
+- [x] Adapt and independently review the private purpose/tuple whitelist, then freshly qualify ordinary source5/neighbor6 pixels/identity with preserved fixture and exact per-selection cleanup; six separate movements and return to source5 independently reviewed in ordinary-pair-preparation-result.md.
 - [ ] Assess and implement the explicit fixed source5/template5/insertion6 native/profile variant and separately bounded same-candidate nine-page gesture/capture integration before a new target/packet is selected.
