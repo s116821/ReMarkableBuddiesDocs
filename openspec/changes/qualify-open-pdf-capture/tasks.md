@@ -61,3 +61,6 @@
 - [x] Preserve actual4018 known-pair field-skew refusal, independent blank destination/contact/archive review and exact cleanup without retroactive gesture qualification.
 - [x] Assess and specify the explicit stop-at-declared-neighbor-v1 terminal-release policy before source changes; retain unknown-context/input failure and original bounds.
 - [ ] Implement and independently review typed expected-terminal outcomes, positive prefix/death/release evidence and mandatory policy/consumer bindings; qualify a fresh actual tablet movement before insertion integration.
+
+- [x] Record human-required current/adjacent Buddy recognition/reuse, existing REM-37 binding dependency and ORIGINAL-source placement after neighbor inspection; distinguish current legacy code and raw SDK capability from product acceptance.
+- [ ] Integrate and verify product acquisition/reuse/adoption before insertion, including unknown/stale associations and preservation of a confirmed non-Buddy neighbor; do not infer non-Buddy ownership from missing binding or uncertain recognition.

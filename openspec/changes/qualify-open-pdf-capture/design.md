@@ -217,3 +217,7 @@ Independent recovery restored stock PID4662/start26049726 on unchanged boot, ori
 # Terminal neighbor observation
 
 The explicit development policy stop-at-declared-neighbor-v1 in [relative-gesture-contract.md](relative-gesture-contract.md) ends normal motion when either page field observes the exact intended neighbor after positive owned DOWN and both existing samples remain valid. It reuses exact-child fencing and positively owned conditional release, then requires independent destination pixels and identity. It grants no further MOVE during field skew, no unknown-context tolerance and no renewed time. Actual4018 remains failed under its original freeze; typed forward outcomes and fresh qualification are separate work.
+
+## Product recognition and original-source placement
+
+[buddy-page-reuse-contract.md](buddy-page-reuse-contract.md) retains the human-required current/adjacent Buddy reuse precondition. Reconcile the existing planned REM-37 Store binding with verified current identities/order, fall back to recognition for unknown/stale claims, and never equate absent binding with non-Buddy ownership. Inspection may navigate to a neighbor, but insertion remains anchored after the ORIGINAL source and before that preserved non-Buddy neighbor. Current production code is the legacy successor classifier; new duplicate-prevention/acquisition integration remains an explicit unfinished gate, separate from the ongoing terminal-gesture capability fix.

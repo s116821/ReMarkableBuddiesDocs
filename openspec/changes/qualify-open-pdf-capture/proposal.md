@@ -10,11 +10,13 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 - Add a versioned scoped native dependency/provider mapping closure, explicitly admitting only validated monotonic containing-heap high growth while preserving exact required ranges and sampled limits.
 - Retain wrapper maps as contextual evidence under that selected closure; keep all other host admission gates.
 - Permit a fresh reviewed attempt only after source, artifact and native attribution evidence agree; preserve independent recovery and spent identities.
+- Retain product Buddy-page recognition/reuse as a precondition to automatic insertion, using the existing REM-37 binding design and explicit current/adjacent reuse and original-source placement gates; lower-level native capability tests do not complete duplicate prevention.
 
 ## Capabilities
 
 ### Modified Capabilities
 - `tablet-io`: exact process provenance and bounded ambiguous-discovery evidence for experimental RM2 capture.
+- `reader-answer-pages`: planned recognition/reuse precondition before automatic insertion, distinct from the as-built legacy successor classifier.
 
 ## Impact
 
