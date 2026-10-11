@@ -153,6 +153,18 @@ A separately selected development-only relative gesture SHALL reuse the existing
 - **WHEN** fresh current-page evidence and rendered pixels disagree after a movement
 - **THEN** the attempt ends without automatic corrective movement, restart qualification or direct native page opening
 
+For an explicitly sealed development navigation_policy=stop-at-declared-neighbor-v1, after positively observed owned DOWN the exact intended neighbor in either field of either fully valid existing context sample SHALL terminally stop normal emission. Parent or typed worker terminal detection SHALL grant no further MOVE or normal UP. Only confirmed exact-child death and existing positively owned bounded conditional release may yield released-after-target-observation-ui-unverified with trajectory_complete=false. Both context samples, inventory/session/input and retained prefix SHALL remain validated; unknown overrides target evidence and forbids release. Source-only raw drift SHALL not become an expected transition. Independent exact destination/order/pixels remain required; completed trajectory or synchronous in-motion content/metadata updates SHALL not be required for this selected outcome. Missing/conflicting policy, lost terminal evidence or expired release SHALL not qualify. Prior freezes and failed trials SHALL retain their original semantics.
+
+The helper's original GO+1500/2500/5000 limits SHALL bound normal input, recovery and helper response/evidence. The development operator's separate one-shot post observation SHALL retain its existing20-second transport bound starting at post invocation; it SHALL NOT be described as a GO+5000 destination deadline or new motion authority. No additional GO-anchored post-admission gate currently exists. Future same-candidate insertion SHALL retain its original stricter candidate-relative admission/capture limits through separately assessed integration.
+
+#### Scenario: Owned navigation begins before both page files agree
+- **WHEN** both existing samples remain fully valid within the sealed source/neighbor pair and a neighbor field is observed after positive owned DOWN
+- **THEN** normal emission terminates, the exact writer is fenced, only positively owned conditional release is admitted, and destination remains independently unverified
+
+#### Scenario: Target evidence is accompanied by unknown ownership
+- **WHEN** either sample or a subsequent release guard identifies an unknown page, changed document/order/session or uncertain/foreign input
+- **THEN** target evidence does not override the sticky failure, no uncertain UP or expected-release qualification is granted, and the selection is not replayed
+
 ### Requirement: Fresh eight-page trials preserve the successful inserted page
 The explicit preserved-eight-after-9005 selector SHALL bind the exact approved eight-page order, matching SDK configuration/profile/receipt and28 protected paths under preserved-eight-fixture-contract.md. Existing Legacy behavior SHALL remain unchanged. Only the two document sidecars SHALL be mutable; the26 immutable records SHALL include the preserved inserted page. Hash launcher r5 SHALL accept at most26 exact absolute paths under its unchanged own alarm3, and reject27 before execution. Fresh nine-page result and actual UI SHALL be reconciled independently; callback alone SHALL NOT acknowledge rendering.
 

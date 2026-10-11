@@ -57,3 +57,7 @@
 
 - [x] Assess and specify the explicit preserved-eight SDK/config/profile inventory and exact26-path launcher seam before implementation.
 - [x] Implement and independently review the minimal eight-inventory/config/hash seam with focused compatibility/refusal controls; retain original fixtures and exact source/artifact pins.
+
+- [x] Preserve actual4018 known-pair field-skew refusal, independent blank destination/contact/archive review and exact cleanup without retroactive gesture qualification.
+- [x] Assess and specify the explicit stop-at-declared-neighbor-v1 terminal-release policy before source changes; retain unknown-context/input failure and original bounds.
+- [ ] Implement and independently review typed expected-terminal outcomes, positive prefix/death/release evidence and mandatory policy/consumer bindings; qualify a fresh actual tablet movement before insertion integration.
