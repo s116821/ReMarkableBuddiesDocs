@@ -137,3 +137,18 @@ The fixed diagnostic cutoff SHALL be the minimum of candidate-start plus40 secon
 #### Scenario: Diagnostic cannot complete safely
 - **WHEN** identity, original expiry, terminal markers, full idle, hash/map/frame/receipt, phase bounds, complete transport or diagnostic cutoff fails
 - **THEN** no further capture or mutation is admitted, failed output is preserved without replay, and independent recovery remains available
+
+### Requirement: Exploratory relative movement preserves fixed path and conditional ownership
+A separately selected development-only relative gesture SHALL reuse the existing fixed-height SDK swipe and one tagged direct writer child under the ownership/context/deadline contract in relative-gesture-contract.md. Every event batch including final UP SHALL check scoped ownership. The original strict Library tap lane SHALL remain unchanged. Initial unchanged Y SHALL be admitted only from an exact freshly revalidated seed equal to transformed y512 and reported as seed-carried evidence; initial tag/X SHALL still require first-SYN echo. Raw progression and per-step durable intent SHALL bound conditional recovery. Normal writes SHALL expire at original GO+1500ms, recovery at GO+2500ms and all response work at GO+5000ms; no renewal is permitted. Recovery SHALL inject UP only after proven writer death and positive exact-contact evidence. UI destination SHALL be verified independently before any further movement.
+
+#### Scenario: Start is refused or writer cannot be fenced
+- **WHEN** start context fails or the direct writer cannot be confirmed dead within the original recovery cutoff
+- **THEN** no unauthorized UP or replay occurs and unresolved ownership is retained
+
+#### Scenario: Fixed-height Y is suppressed
+- **WHEN** first DOWN has exact fresh tag/X and Y is absent but the bound stable released seed already equals the exact transformed y512
+- **THEN** evidence reports seed-carried Y without claiming GUI delivery, and only independent fresh page/pixel observation can qualify navigation
+
+#### Scenario: Saved selection and pixels disagree
+- **WHEN** fresh current-page evidence and rendered pixels disagree after a movement
+- **THEN** the attempt ends without automatic corrective movement, restart qualification or direct native page opening

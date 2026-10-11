@@ -50,3 +50,7 @@
 
 - [x] Independently verify preserved target blank display after recovery through fresh Library state and one guarded ordinary reopen; archive/clean exact owned roots and preserve original immutable files.
 - [ ] Resolve required same-running display/navigation contract and any writing/persistence gate without retroqualifying9005 or rolling back its inserted page.
+
+- [x] Assess and specify the narrow development-only owned relative gesture, retaining the fixed SDK swipe and conditional same-running seeded-Y evidence before edits.
+- [ ] Implement/review focused ownership/context/termination controls and exact artifacts, then establish the path against the preserved current eight-page fixture.
+- [ ] Assess and execute fresh eight-page insertion-plus-navigation with a new target/identity, preserving9005 and all saved ink.
