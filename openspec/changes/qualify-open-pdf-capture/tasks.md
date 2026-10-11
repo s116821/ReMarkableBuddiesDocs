@@ -13,6 +13,6 @@
 ## 3. Native and delivery
 - [ ] Perform fresh reviewed selected open-PDF attempt only when evidence permits; verify independent recovery and source preservation.
 - [ ] Record failures and qualification limits; insertion remains incomplete until acceptance passes.
-- [ ] Label existing private reader map comparisons and retain bounded already-read failing buffers without additional reads or changed acceptance; independently review focused error paths.
+- [x] Label existing private reader map comparisons and retain bounded already-read failing buffers without additional reads or changed acceptance; independently review focused error paths.
 - [ ] Observe a fresh reviewed candidate to identify the failed comparison and changed VMA intersections; preserve recovery and interpret refusal before changing predicates.
 - [ ] Verify code/spec agreement, linked delivery and required checks; sync and archive only completed work.
