@@ -25,7 +25,7 @@
 
 - [x] Implement and independently review same-pin snapshot prelude batching and bracketed sidecar identity with focused executed-path controls before a fresh bounded attempt.
 
-- [ ] Implement and independently review the distinct observation-only visual timing purpose, no-mutation guards, fixed SDK-bounded interval and bounded phase records before selecting a fresh diagnostic.
+- [x] Implement and independently review the distinct observation-only visual timing purpose, no-mutation guards, fixed SDK-bounded interval and bounded phase records before selecting a fresh diagnostic.
 - [ ] Execute and preserve one fresh reviewed observation-only diagnostic, establish actual visual timing or bounded failure and verify independent recovery and no creation/input.
 
 - [ ] Correct and independently review inherited production closure-marker AND-list refusal before any future insertion qualification; diagnostic uses separate standalone checks.
