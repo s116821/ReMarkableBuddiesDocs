@@ -40,4 +40,4 @@
 - [x] Execute and close out fresh4c20 pending-Library count-exhaustion refusal, independent recovery and exact evidence archive/cleanup without creation or replay.
 - [ ] Establish an evidence-backed ordinary opening-route correction before another insertion qualification; unchanged Library after a complete guardian tap is not proof of delivery to the application.
 - [x] Specify the independently assessed fixed v2 tap-coordinate contract in tap-coordinate-contract.md before implementation, distinguishing actual event omission from the restarted-reader hypothesis.
-- [ ] Implement, exercise and independently review the minimal explicit v2 coordinate-complete guardian/transport source and rebuilt artifact before fresh selection.
+- [x] Implement, exercise and independently review the minimal explicit v2 coordinate-complete guardian/transport source and rebuilt artifact before fresh selection.
