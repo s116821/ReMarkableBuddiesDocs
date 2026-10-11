@@ -38,6 +38,8 @@
 - [x] Specify the reviewed v2-only pre-footer pending-Library classification with exact canonical raw LastOpen and accepted-Library sidecar baseline before implementation.
 - [x] Implement and independently review the minimal pending-Library/raw-byte exposure delta and focused single-fault/count/time/no-replay controls before another fresh selection.
 - [x] Execute and close out fresh4c20 pending-Library count-exhaustion refusal, independent recovery and exact evidence archive/cleanup without creation or replay.
-- [ ] Establish an evidence-backed ordinary opening-route correction before another insertion qualification; unchanged Library after a complete guardian tap is not proof of delivery to the application.
+- [x] Establish and verify the coordinate-complete ordinary opening route on fresh5d59: exact footer then distinct later loaded body; no native insertion qualification follows from this alone.
 - [x] Specify the independently assessed fixed v2 tap-coordinate contract in tap-coordinate-contract.md before implementation, distinguishing actual event omission from the restarted-reader hypothesis.
 - [x] Implement, exercise and independently review the minimal explicit v2 coordinate-complete guardian/transport source and rebuilt artifact before fresh selection.
+- [x] Preserve and close out fresh5d59 publication-wrapper argument refusal with no publisher execution, exact recovery/archive/cleanup and spent identity.
+- [ ] Specify, implement and independently review the exact v2 alarm-wrapper argument seam and preselected two-point harness bindings with real rendered wrapper-exec controls before another fresh qualification.
