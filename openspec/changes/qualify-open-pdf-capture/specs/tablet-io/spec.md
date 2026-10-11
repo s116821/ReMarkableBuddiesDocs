@@ -152,3 +152,14 @@ A separately selected development-only relative gesture SHALL reuse the existing
 #### Scenario: Saved selection and pixels disagree
 - **WHEN** fresh current-page evidence and rendered pixels disagree after a movement
 - **THEN** the attempt ends without automatic corrective movement, restart qualification or direct native page opening
+
+### Requirement: Fresh eight-page trials preserve the successful inserted page
+The explicit preserved-eight-after-9005 selector SHALL bind the exact approved eight-page order, matching SDK configuration/profile/receipt and28 protected paths under preserved-eight-fixture-contract.md. Existing Legacy behavior SHALL remain unchanged. Only the two document sidecars SHALL be mutable; the26 immutable records SHALL include the preserved inserted page. Hash launcher r5 SHALL accept at most26 exact absolute paths under its unchanged own alarm3, and reject27 before execution. Fresh nine-page result and actual UI SHALL be reconciled independently; callback alone SHALL NOT acknowledge rendering.
+
+#### Scenario: Preserved page or selector binding changes
+- **WHEN** the existing inserted page, exact order/path set, inventory selector or SDK/header/profile/receipt binding differs
+- **THEN** the fresh trial refuses before input/publication without rolling back or deleting the successful page
+
+#### Scenario: Hash count exceeds the reviewed seam
+- **WHEN** a hash invocation supplies27 paths or an invalid absolute path
+- **THEN** the selected launcher refuses before child execution and does not renew the action budget

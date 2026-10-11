@@ -54,3 +54,6 @@
 - [x] Assess and specify the narrow development-only owned relative gesture, retaining the fixed SDK swipe and conditional same-running seeded-Y evidence before edits.
 - [ ] Implement/review focused ownership/context/termination controls and exact artifacts, then establish the path against the preserved current eight-page fixture.
 - [ ] Assess and execute fresh eight-page insertion-plus-navigation with a new target/identity, preserving9005 and all saved ink.
+
+- [x] Assess and specify the explicit preserved-eight SDK/config/profile inventory and exact26-path launcher seam before implementation.
+- [ ] Implement and independently review the minimal eight-inventory/config/hash seam with focused compatibility/refusal controls; retain original fixtures and exact source/artifact pins.
