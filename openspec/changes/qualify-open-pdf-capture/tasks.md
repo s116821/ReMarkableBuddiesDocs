@@ -47,3 +47,6 @@
 
 - [x] Execute and reconcile fresh9005 persisted blank insertion, exact order, protected files, recovery, archive and exact cleanup.
 - [ ] Verify preserved target with fresh current-state observation and approved relative navigation; distinguish post-recovery display/writing persistence from9005 same-running pixels.
+
+- [x] Independently verify preserved target blank display after recovery through fresh Library state and one guarded ordinary reopen; archive/clean exact owned roots and preserve original immutable files.
+- [ ] Resolve required same-running display/navigation contract and any writing/persistence gate without retroqualifying9005 or rolling back its inserted page.
