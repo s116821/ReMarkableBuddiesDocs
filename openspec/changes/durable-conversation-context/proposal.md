@@ -4,6 +4,11 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
+- Continue the actual executable integration through explicit selected startup
+  and historical request handling in [startup-history-runtime.md](startup-history-runtime.md).
+  Keep unconfigured SDK acquisition unsupported and fresh native Reader authority
+  unavailable; use existing runtime/admission components rather than fake lint use.
+
 - Propose the REM-52-coordinated existing Receipt/OutcomeFact schema-2 migration,
   selected-only projector and shared effect admission described in
   [selected-intent-migration.md](selected-intent-migration.md); preserve historical

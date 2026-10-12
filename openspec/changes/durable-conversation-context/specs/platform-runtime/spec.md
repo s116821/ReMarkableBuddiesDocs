@@ -1,5 +1,16 @@
 ## MODIFIED Requirements
 
+### Requirement: Explicit selected Reader startup and historical handling
+An explicitly configured selected Reader runtime SHALL use the existing shared Store/admission and selected refusing Workflow, and SHALL resolve unsupported committed SDK acquisition before model credentials, provider, sync or native device startup. It SHALL NOT downgrade to ordinary legacy acquisition or initialize an absent selected scope. One-shot historical inspection/recovery SHALL retain immutable provenance and grant no live context or effect authority.
+
+#### Scenario: SDK native acquisition remains unsupported
+- **WHEN** explicit selected startup uses the committed unqualified SDK platform
+- **THEN** it SHALL report the typed unsupported capability without constructing ordinary RealDevice, invoking a model, publishing a pending intent or touching the tablet.
+
+#### Scenario: Exact historical request recovery
+- **WHEN** an explicitly supplied original PendingIntentRequest matches a validated historical publication
+- **THEN** recovery SHALL return only its original historical acknowledgment/provenance, even if current SDK acquisition is unsupported, and SHALL NOT allocate new IDs, mint ReaderContext or replay an effect.
+
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Optional diagnostic image dumps SHALL remain separate from the durable source-evidence retention contract. Source: REM14/REM34/REM37; src/main.rs; deploy/reader-buddy.service; conversation-context.
 
