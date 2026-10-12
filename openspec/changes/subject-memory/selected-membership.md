@@ -165,12 +165,18 @@ validation and current-token revalidation all consume the same budget. Context
 ranking/output caps remain separate. Exceeding any cap yields unavailable before
 the excess read/hash; no truncated catalog or partial authoritative ownership.
 
-Current `selected_snapshot(limit)` validates complete accepted history and hashes
-media before returning; a caller's post-return counter cannot enforce this cap.
-The generic owner is assessing a narrow cumulative pre-I/O budget seam. Until
-that seam is reviewed and present, this candidate cannot claim bounded selected
-runtime reading. Do not duplicate private storage validation in memory code or
+The published generic candidate `31116b03b6030bd0cde95ea5a5b84354f18f8441`
+adds `selected_snapshot_with_budget` and its already validated raw accepted-lineage
+view. Its independent review remains pending; the old `selected_snapshot(limit)`
+alone cannot enforce a caller's cumulative cap after returning. Do not duplicate
+private storage validation in memory code or
 describe this media-verifying path as metadata-only inspection.
+
+This cumulative cap covers receiving snapshot validation and token revalidation.
+For mutations/setup, domain receiving validation uses that same allowance, while
+the subsequent generic initialize/commit publication performs its own independently
+bounded write validation. It is not one combined receiving-plus-publication I/O
+cap. No combined mutation/setup latency or disk-work qualification is claimed.
 
 ## Actual Provider, Reader and commands
 
@@ -226,6 +232,34 @@ Selected-mode native rendering remains refused at its existing boundary. Failure
 or stale pins after interpretation records the existing explicit failure/cancel
 outcome with original question intact and creates no generated assistant draft.
 Default LocalMemory behavior requires no selected pin and remains unchanged.
+
+Pins also bind the exact returned status, diagnostics and context payload. Public
+DTO fields are convenient data, not permission to alter facts while reusing a
+valid pin. Changed payload refuses before the consuming callback; unchanged
+clones share one consuming admission. Inspection has its own sealed envelope
+payload and private admission anchor rather than exposing an unbound query pin.
+
+The actual maintenance writer retains its Provider, pins and Store lease after
+processing and guards the synchronous stdout write itself, including complete-
+empty queries and inspection. Formatting bytes alone is not current handoff.
+Changed/stale/exhausted admission emits fixed unavailable with no data before
+any write attempt. A failed partial I/O write is not followed by a second report.
+The original root ObjectRef must exist in every accepted catalog predecessor,
+including Initialize; a later root cannot repair a rootless accepted genesis.
+
+Exact memory retry compares media and complete coverage by unique hash-keyed
+identity, including byte lengths and omission reasons. A normal Store append may
+sort valid prior vectors; that order change does not change immutable media
+identity or justify an operation collision. Historical raw references remain
+unchanged and no reserialization invents an old reference or token.
+
+Immutable Fact key/claim continuity requires accepted historical selected-envelope
+custody, including facts first created after aggregate Initialize. A winning
+closure cannot evade it by moving the original chain into retained history or
+re-rooting the same record UUID. Use already parsed, charged accepted-history
+envelopes, paired with their exact original references. Historical values provide
+only identity/claim custody checks; current query heads still come exclusively
+from the winning closure. Unaccepted retained losers are never creation authority.
 
 Commands retain pre-runtime routing, explicit config, input/output caps, busy and
 privacy behavior. Selected inspect/query/mutation are allowed only through the

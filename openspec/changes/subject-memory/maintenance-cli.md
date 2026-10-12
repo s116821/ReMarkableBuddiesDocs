@@ -119,8 +119,11 @@ initializers may create an absent/actually empty Store; register and ordinary
 selected operations require owned existing state. Nonempty partial state is
 never repaired by input validation. Pure input checks precede startup; catalog,
 genesis and ownership checks honestly follow normal Store open/recovery. All
-setup uses the same cumulative caps, exact configured group/profile/binding,
+setup receiving validation uses the same cumulative caps, exact configured group/profile/binding,
 canonical recipes, nonnil operations and lowercase 64-hex accepted-base digest.
+Subsequent generic publication retains its separate existing Store validation
+limits; receiving and publication do not share one combined I/O cap. Report this
+boundary honestly rather than treating a prior bounded snapshot as a bounded write.
 
 An existing aggregate refuses a different initializer; an exact initializer retry
 returns its original receipt without replacing today's winner. Document setup
