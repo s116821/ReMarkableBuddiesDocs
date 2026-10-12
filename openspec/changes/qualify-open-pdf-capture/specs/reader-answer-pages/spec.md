@@ -53,6 +53,21 @@ The local placement model SHALL retain either uninspected end or the actual vali
 - **WHEN** Store-like association or recognition changes while supplied SDK continuity remains equal
 - **THEN** a continuity result does not validate those claims or authorize an insertion, and future effectful use still requires separate current logical and SDK guards
 
+### Requirement: Legacy classification is not positive non-Buddy or relevant ownership evidence
+The pure synthetic consumer bridge SHALL exhaustively map ExistingQA to LegacyBuddy, Blank to Blank and Invalid to Unknown under buddy-legacy-recognition-bridge-contract.md, with explicit Synthetic observation/full context/conversation binding and valid order. It SHALL NOT produce RelevantBuddy, OrdinarySource or ConfirmedNonBuddy, claim the supplied enum's capture provenance or grant reuse/insertion/adoption/binding/render permission. The classifier and installed Reader SHALL remain unchanged.
+
+#### Scenario: Unbound legacy header match
+- **WHEN** ExistingQA is supplied with a matching synthetic observation and missing association
+- **THEN** the current or successor model requires separately qualified adoption and creates no insertion plan
+
+#### Scenario: Blank or invalid page classification
+- **WHEN** Blank or Invalid is supplied with missing association evidence
+- **THEN** the model remains unresolved rather than infer Buddy absence or duplicate creation eligibility
+
+#### Scenario: Supplied classification belongs to another context
+- **WHEN** opaque observation, logical page or desired conversation witness differs from the decision's expected context
+- **THEN** existing witness guards refuse, and matching fields alone still do not establish actual capture/current-device provenance
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

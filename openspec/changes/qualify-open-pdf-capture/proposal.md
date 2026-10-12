@@ -14,6 +14,7 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 - Add an explicitly selected Source5 stable BODY plus full-idle witness under source5-stable-source-witness-contract.md. Require two distinct exact source observations, unchanged full Library/source sidecars and original clocks/quotas. Retain the older footer variant explicitly and report host display inference separately from SDK document/map/template authority; no atomic native current-page claim or retrospective credit.
 - Add the local non-effectful SDK consumer decision seam in buddy-acquisition-decision-contract.md: current-first reuse candidates, conservative binding/recognition fallback and original-source placement plans. Consume read-only existing domain projections without a second registry or native/binding/render permissions. Held native experiments and installed Reader integration remain separate.
 - Add pure synthetic return-to-source matching under buddy-source-continuity-contract.md. Retain the actual completed successor observation, validate the supported Previous receipt and supplied source observation, and keep logical association/recognition freshness and all effect authority explicitly outside the result.
+- Add the conservative pure legacy classification bridge: ExistingQA is only LegacyBuddy, Blank remains Blank and Invalid is Unknown. Never promote these outcomes to relevant ownership or positive non-Buddy evidence; preserve the classifier and installed Reader unchanged.
 
 ## Capabilities
 
