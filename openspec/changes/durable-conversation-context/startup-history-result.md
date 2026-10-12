@@ -114,8 +114,14 @@ build qualification is not established because the earlier lint step fails.
 Hosted Docs checks at `28acd25` pass on Ubuntu/Windows and strict OpenSpec. Local
 pending result checks pass all 12 Docs tests, 19 guidance files/126 preserved
 source blobs and all 17 strict OpenSpec items. The final result revision's hosted
-checks and final evidence review still need completion; no whole-feature or
-required-lint acceptance follows.
+checks at `397b0ca` also pass on Ubuntu/Windows and strict OpenSpec. Sol's final
+bounded evidence review independently read completed local/hosted logs, parsed all
+23 diagnostic warnings, and verified hosted Test success, lint failure, skipped
+tablet builds and exact draft PR pointers. No new source/result finding remained.
+Archive hash/blob verification and full-suite execution remain owner evidence;
+the reviewer did not reproduce them. No whole-feature, merge or required-lint
+acceptance follows. This final result/task amendment remains subject to its own
+hosted Docs checks.
 
 Prior candidate `6a140fd` full-suite
 attempts failed build setup: a relative target path caused Windows LNK1104, then
