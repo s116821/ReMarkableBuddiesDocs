@@ -23,6 +23,21 @@ The automatic product workflow SHALL identify and reuse the relevant current Bud
 - **WHEN** recognition identifies a Buddy candidate but its relevance or existing conversation association is conflicting or unresolved
 - **THEN** acquisition resolves/reuses/adopts that candidate or safely refuses; being unbound or not yet established as relevant SHALL NOT cause insertion beside it
 
+### Requirement: Local SDK acquisition planning preserves reuse and original placement without effect authority
+The experimental local consumer SHALL assess a relevant current Buddy candidate before successor inspection, consume supplied read-only association projections and observation-bound recognition, and retain missing/stale/imported/conflicting ownership as unresolved evidence rather than permission to duplicate a page. It SHALL preserve the ORIGINAL source and exact order through an SDK-created successor navigation receipt, with complete opaque current/receipt observation equality. Only positive ordinary source and confirmed non-Buddy successor, or exact synthetic end, SHALL yield an explicitly synthetic placement plan after the original source. This seam SHALL allocate no target, dispatch no SDK creation/navigation, mutate no Store/binding, construct no NativeCommitted or renderer permission, and leave installed Reader behavior unchanged under buddy-acquisition-decision-contract.md.
+
+#### Scenario: Relevant current association is supplied
+- **WHEN** the complete fresh synthetic current observation and exact page/conversation association agree
+- **THEN** the model returns a reuse candidate with only current lookup and no successor inspection or creation
+
+#### Scenario: Association or recognition remains uncertain
+- **WHEN** binding is missing/historical/conflicted or recognition is blank, unavailable, unknown or mismatched
+- **THEN** no insertion plan is produced from that uncertainty, and an unbound Buddy candidate requires separately qualified adoption
+
+#### Scenario: Confirmed ordinary successor is displayed after inspection
+- **WHEN** SDK successor evidence matches the original source, exact immediate neighbor/order and fresh completed observation, and positive non-Buddy recognition has no contradictory claim
+- **THEN** the model retains an after-original/before-neighbor plan without retargeting creation to the inspected successor or dispatching the stale original source guard
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

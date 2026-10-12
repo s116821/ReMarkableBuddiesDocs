@@ -12,6 +12,7 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 - Permit a fresh reviewed attempt only after source, artifact and native attribution evidence agree; preserve independent recovery and spent identities.
 - Retain product Buddy-page recognition/reuse as a precondition to automatic insertion, using the existing REM-37 binding design and explicit current/adjacent reuse and original-source placement gates; lower-level native capability tests do not complete duplicate prevention.
 - Add an explicitly selected Source5 stable BODY plus full-idle witness under source5-stable-source-witness-contract.md. Require two distinct exact source observations, unchanged full Library/source sidecars and original clocks/quotas. Retain the older footer variant explicitly and report host display inference separately from SDK document/map/template authority; no atomic native current-page claim or retrospective credit.
+- Add the local non-effectful SDK consumer decision seam in buddy-acquisition-decision-contract.md: current-first reuse candidates, conservative binding/recognition fallback and original-source placement plans. Consume read-only existing domain projections without a second registry or native/binding/render permissions. Held native experiments and installed Reader integration remain separate.
 
 ## Capabilities
 
