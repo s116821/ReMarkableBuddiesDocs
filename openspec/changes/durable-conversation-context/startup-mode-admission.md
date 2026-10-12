@@ -71,6 +71,22 @@ bounded; missing selected state is never bootstrapped.
 - Corrupt/unsupported/foreign mode history: unavailable, preserving original bytes;
   never reinterpret it as mode absence or rewrite it to defaults.
 
+Freeze fixed report mapping: LocalOnly plus an explicit reader selector is
+Unsupported for startup/inspect/context, never an ordinary fallback. LocalOnly
+without that selector proceeds locally only with sync disabled; contradictory
+sync enabled is Unsupported. IsolatedBackup current startup/inspect/context is
+Unsupported. SharedGroup missing/mismatched reader group/binding is Unsupported.
+Malformed/foreign mode metadata is Unavailable; actual Store/mode contention is
+Busy. Responses preserve existing fixed/private schema and echo no mode IDs,
+provider root or credential data.
+
+Absent or safe completely empty default roots may defer ordinary creation.
+Partial, non-owned, symlinked or nonempty unsupported state must refuse before
+credentials/device; do not equate it with absence. The admitted ordinary ArcStore
+survives credential resolution into the actual Ledger/memory/Worker once, with
+config/effective-source snapshots still after credential validation. No local
+mode lifetime fencing is inferred from this startup reuse.
+
 ## Selected current and historical commands
 
 Current inspect/context receiving in configured SharedGroup retains the existing
@@ -78,6 +94,12 @@ matched mode lease alongside domain admission/Store lease and cumulative selecte
 budget through actual report consumption. Recheck group/binding/current epoch
 within actual writer admission. The lease alone grants no catalog/provider/native
 permission; current token/raw custody and strict domain validation remain required.
+
+Both inspect and context retain the same private current report admission through
+actual consumption. Context's no-data ChoiceNeeded response must also carry the
+private token/raw-custody/budget/matched-shared-lease pins; an early unguarded
+return cannot satisfy this promise. Public context data remains absent and no
+model-ready or native authority is asserted.
 
 Unconfigured selected compatibility remains explicitly non-shared. Explicit local
 or isolated mode cannot silently authorize shared receiving: surface unsupported
@@ -89,6 +111,13 @@ binding/root choices. It allocates nothing, publishes no operation, takes no liv
 shared-mode handoff permission and performs no provider/native/model work. Keep
 its independently bounded original-request/custody validation and changed/missing
 semantics. Mode choice must not erase the stored historical receipt.
+
+Historical recovery bypasses current mode/epoch admission even if current mode
+metadata is corrupt, provided the original Store/custody validation is otherwise
+valid. Configuration scope and complete original request validation still apply;
+this bypass grants no mode permission. All CLI pure input validation precedes
+Store/mode admission: malformed or foreign input returns InvalidInput even when
+the Store is held; only valid requests can report Busy.
 
 No mode setter, account onboarding, root bootstrap, sender/apply integration,
 new IPC service or live mode switching is enabled by this increment.
