@@ -60,3 +60,9 @@ a document aggregate. Preserve unrelated document/global scopes and retained
 evidence; do not create a second sync engine or change generic Store semantics
 as a shortcut. Source: current domain-owner handoff and accepted storage/design;
 this paragraph records coordination, not a new implemented wire schema.
+
+## Archived selection domain-validation seam
+
+- [x] Implement token-free historical selected-backup inspection with exact head/reference order and included media handles; reuse full archive validation and retain restore/migration refusal.
+- [x] Verify real Store export/inspection, mixed namespaces, noncanonical references, retained media, absent/invalid scope, bounds, corruption of another scope and unchanged source/destination state.
+- [ ] Publish exact linked successor revisions and independent review; do not claim domain restore/provider/native qualification.

@@ -57,6 +57,25 @@ document/page/ink tree, cache, diagnostics, binaries, locks, status, account tok
 or source credentials are copied. Domain ownership/strict payload semantics remain
 the domain owner's separate validation boundary.
 
+## Domain inspection of an archived selection
+
+The next bounded generic seam is `Store::inspect_selected_backup(source, scope,
+limit)`. It validates the complete format2 archive before returning an optional
+historical snapshot of the requested scope. An absent scope returns `None` only
+within a valid format2 archive; incompatible formats and corrupt unrelated scopes
+refuse. The result includes original actor/generation, exact head ObjectRef,
+original transaction, selected and retained envelopes in manifest reference order,
+pinned included media handles and whole-archive media completeness. It carries no
+live SelectionToken and does not open or mutate a destination Store.
+
+Domain adapters can validate their own payloads and ownership against these exact
+historical references before defining restore intake. They must preserve opaque
+other-namespace membership in a mixed aggregate. This generic read never declares
+domain validity, imports membership, rewrites receipts, registers a group or grants
+native authority. Complete archive validation retains existing capacity/inventory,
+history, causal, media and integrity refusals. Scope and requested closure bounds
+are checked even for absent scope. Restore/migration refusals remain in force.
+
 ## Remaining activation policy
 
 Format2 inspection cannot activate a Store selection or mint a `SelectionToken`.
@@ -103,3 +122,10 @@ offline snapshots, compatibility state and recovery-oriented safeguards inform t
 maintenance boundary. RCU's device-wide snapshots/firmware/native-document features
 are outside this Buddy-owned archive. Existing Store filesystem/lease/content-hash
 primitives are reused; no RCU code or account access is imported.
+
+The archived-selection inspector additionally qualifies exact noncanonical head and
+envelope references, reverse causal reference order, mixed conversation/memory
+membership, retained media and source identity; absent scope versus invalid
+scope/bounds, incompatible legacy format and corruption of another scope are
+separate refusal cases. Deliberate media omission remains explicit. These reads
+do not mutate source CURRENT/head bytes, and selected restore remains refused.

@@ -157,6 +157,14 @@ excluded until a portable allowlist exists.
 - WHEN a compatible complete selected archive is inspected offline
 - THEN original references/history/retained media remain verifiable and counts/media completeness are reported without native/group/admission authority.
 
+#### Scenario: Domain validation of archived winning membership
+- WHEN a domain adapter requests one historical scope from a valid format2 archive
+- THEN it receives the exact original head and ordered winner/retained references with pinned included media, without a live token or destination Store mutation.
+
+#### Scenario: Invalid archive or absent scope during domain inspection
+- WHEN the requested scope or bound is invalid, the archive format is incompatible, or any required archive history/object is corrupt
+- THEN inspection refuses even if the requested winner alone is readable; only an absent scope in a completely valid format2 archive returns absence.
+
 #### Scenario: Incompatible or interrupted selected export
 - WHEN required history/objects are corrupt, unsupported, missing or cannot be staged
 - THEN no complete marker is published and current source selection and unrelated data remain unchanged.
