@@ -18,6 +18,12 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## Capabilities
 
+The bounded [selected Buddy binding integration](selected-buddy-binding-contract.md)
+adds a real Store projection and read-only consumer through the existing Reader
+Workflow facade. Current root/binding heads and the accepted selection token are
+required; omitted records remain unresolved. Native reuse and installed bootstrap
+remain separate open gates.
+
 ### New Capabilities
 - `conversation-context`: durable domain schemas, bindings, source evidence, chronological/exact context, recovery and lightweight export association.
 

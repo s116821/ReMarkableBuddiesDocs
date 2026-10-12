@@ -81,6 +81,16 @@ No automatic OCR import or destructive rewrite of existing pages. Persisted cont
 
 ## Risks / Trade-offs
 
+### Selected Buddy binding inspection
+
+Follow [selected-buddy-binding-contract.md](selected-buddy-binding-contract.md):
+use the existing admission gate and deterministic binding key, require exact
+current linked Root/Binding heads, preserve immutable receipt/revision/token
+provenance, and consume public opaque SDK observations through the actual
+Workflow selected facade. A selected closure lacks record-key absence coverage;
+missing heads must not become non-Buddy/insertion decisions. This read-only
+integration supplies historical evidence and no device or effect authority.
+
 - Additional capture persistence latency and disk pressure -> streaming/content addressing, preflight bounds, measured native run and fail-before-side-effect behavior.
 - Concurrent imported heads or duplicate page claims -> full-head CAS on root and deterministic binding record, explicit conflicts and no LWW.
 - Crash after native output but before ledger acknowledgment -> ReconcileRequired with draft/evidence retained; no automatic repeated typing.
