@@ -7,9 +7,9 @@
 
 ## 2. Verification and paired delivery
 
-- [ ] 2.1 Verify real temporary Store and actual CLI nonmutation, busy/missing/unsupported/partial/limit/path/ownership cases and source/credential sentinels; check both legacy and selected/schema2 inputs and shared-generation accounting.
-- [ ] 2.2 Run scoped formatting, focused tests, ordinary nonmock build and required checks on exact committed inputs; preserve and disclose existing unrelated lint/native failures.
-- [ ] 2.3 Independently review source/test/spec agreement, run central Docs checks, and publish paired drafts with exact revisions, parent dependencies and evidence.
+- [x] 2.1 Verify real temporary Store and actual CLI nonmutation, busy/missing/unsupported/partial/limit/path/ownership cases and source/credential sentinels; check both legacy and selected/schema2 inputs and shared-generation accounting.
+- [x] 2.2 Run scoped formatting, focused tests, ordinary nonmock build and required checks on exact committed inputs; preserve and disclose existing unrelated lint/native failures.
+- [x] 2.3 Independently review source/test/spec agreement, run central Docs checks, and publish paired drafts with exact revisions, parent dependencies and evidence.
 - [ ] 2.4 Verify the full named capability against actual implementation before canonical sync/archive; do not close broader REM-42, Manager UI/transport or native/release gates.
 
 ## 3. Broader REM-42 dependencies (not completed by this increment)

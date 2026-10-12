@@ -46,12 +46,18 @@ The paired drafts are [Rust PR 32](https://github.com/s116821/ReMarkableBuddies/
 and [Docs PR 14](https://github.com/s116821/ReMarkableBuddiesDocs/pull/14).
 Hosted Docs Ubuntu, Windows and OpenSpec checks passed. Rust hosted build/lint
 failed; the completed job log confirms the same 24 existing dead-code errors.
-The hosted Rust test job and actual Unix FIFO execution are still pending.
+The hosted Rust test job also passed on Ubuntu in
+[run 38282563168](https://github.com/s116821/ReMarkableBuddies/actions/runs/38282563168).
+Its completed log explicitly records
+`fifo_at_existing_lock_is_refused_before_blocking_open ... ok`, with 16 filesystem
+inspection and three actual inspection CLI tests passing on Linux. The Linux
+filesystem set includes the Unix FIFO regression; the Windows set instead includes
+the Windows case-alias regression.
 
 Independent review accepted the contract and final source/test/spec agreement.
-The reviewer did not rerun the broad suite. The Unix FIFO lock regression remains
-unexecuted on Windows and requires an actual Unix run. No hardware operation or
-native authority was exercised by these results.
+The reviewer did not rerun the broad suite. The Unix FIFO lock regression was
+executed by the hosted Ubuntu job, not by the Windows local run. No hardware
+operation or native authority was exercised by these results.
 
 ## Practical limits
 
@@ -62,6 +68,6 @@ not read or hash-verified. Windows handle/path identity checking is weaker than
 Unix device/inode checking; neither protects against an external writer that
 ignores the Store lease. Read access can change access timestamps.
 
-Broad lifecycle tasks remain open. Required strict lint remains failed. Hosted
-Rust test checks and Unix regression execution must retain their actual results
-before any stronger acceptance claim. Paired publication does not close those gates.
+Broad lifecycle tasks remain open. Required strict lint remains failed despite
+passing local and hosted tests. Paired publication does not close that gate or
+the broader Manager, native, release and lifecycle requirements.
