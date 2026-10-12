@@ -79,3 +79,60 @@ ordinary default/simulation paths and no model/device/sync invocation. Preserve
 prior exact-source evidence as its own revision; verify the new committed source
 and paired Docs revisions independently. Full Writer/Manager/REM-52/native and
 unwaived required-check/lifecycle gates remain open.
+
+
+## Selected receiving setup extension (before implementation)
+
+Selected mode is explicit configuration containing catalog group/profile/binding
+identity; it never follows from turning on the legacy sync switch. Ordinary
+put/forget/inspect/query use the actual selected Provider after complete catalog
+and aggregate validation. They never initialize an absent selected scope.
+
+Add three bounded file-input values to the existing memory-operation option:
+
+- `initialize-aggregate`: operation UUID, accepted-base digest and one complete
+  Fact. Explicitly initialize a new independent global or memory-only document
+  aggregate. Refuse an existing scope rather than replacing its mixed records.
+- `initialize-selection`: operation UUID, accepted-base digest and complete
+  registration set. Validate every already-initialized aggregate/immutable genesis
+  before publishing the catalog root plus registrations. A root-only catalog is
+  the explicit complete empty case. No automatic ordinary-head import.
+- `register-selection`: operation UUID and registration. Validate the current
+  catalog plus registered aggregate. Append absent membership preserving all
+  accepted registrations; identical existing membership yields a distinct current
+  adoption acknowledgment. Changed owner/genesis refuses, and adoption never
+  republishes a losing fact payload.
+
+All strict input/profile/identity/budget checks apply before Store startup where
+possible. These setup operations require explicit selected configuration; default
+local operation refuses them. The same regular-file, pre-runtime, privacy, lease
+and output limits apply. Actual aggregate/catalog publication uses existing
+selected Store primitives and common domain admission. It grants no cloud,
+account/provider, selected restore, device or native permission.
+
+This extension requires focused review before CLI implementation. Its current
+catalog projection is not permission to bypass the pending generic cumulative
+pre-I/O/validated-lineage seam.
+
+Focused Sol setup review accepted the following freeze. Only explicit setup
+initializers may create an absent/actually empty Store; register and ordinary
+selected operations require owned existing state. Nonempty partial state is
+never repaired by input validation. Pure input checks precede startup; catalog,
+genesis and ownership checks honestly follow normal Store open/recovery. All
+setup uses the same cumulative caps, exact configured group/profile/binding,
+canonical recipes, nonnil operations and lowercase 64-hex accepted-base digest.
+
+An existing aggregate refuses a different initializer; an exact initializer retry
+returns its original receipt without replacing today's winner. Document setup
+never imports/converts ordinary legacy document records. If their ownership
+cannot be ruled out safely, initialization refuses; a new memory-only document
+scope does not establish native document existence. Existing mixed documents
+can only be registered after validating their full existing closure.
+
+Setup manifests and envelope operation/revision identities are deterministic from
+the explicit operation and input, allowing exact original bootstrap replay.
+Registration retry returns an original historical acknowledgment; identical
+membership adopted under another operation is explicitly `adopted`, distinct from
+`replayed` and `published`. Collision or unavailable lineage never falls back to
+a fresh write. A published but unregistered aggregate is an orphan with no query
+membership; no automatic recovery/retry advertises it.
