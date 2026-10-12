@@ -175,3 +175,18 @@ The explicit preserved-eight-after-9005 selector SHALL bind the exact approved e
 #### Scenario: Hash count exceeds the reviewed seam
 - **WHEN** a hash invocation supplies27 paths or an invalid absolute path
 - **THEN** the selected launcher refuses before child execution and does not renew the action budget
+
+### Requirement: Explicit Source5 stable source observation remains bounded operator evidence
+New SOURCE5 selections SHALL explicitly bind source_witness_variant through selection, receipt, profile, coordinator bindings and report. The only accepted values SHALL be source5-stable-body-idle-v1 and source5-footer-then-body-v1 under source5-stable-source-witness-contract.md. Missing, unknown, conflicting or drifting SOURCE5 values and selector-on-legacy inventory SHALL refuse before transport/input; legacy fieldless behavior SHALL remain unchanged. The stable variant SHALL require one exact source BODY open observation and a distinct later full2000ms released-idle trigger BODY observation, same candidate/waiting/window, exact source context, and full raw Library-to-source1-to-source2 sidecar equality. It SHALL retain actual capture identifiers, PNG hashes, completed times and footer-match booleans, with source_authority=operator-conjunction and native_current_page_authority=false. No failed-footer fallback, renewed deadline, quota refund or spent-trial credit SHALL occur.
+
+#### Scenario: Stable source and idle witness agree within original bounds
+- **WHEN** two distinct source captures satisfy all selected BODY, identity, raw-context, preservation and full-idle checks within unchanged deadlines and quotas
+- **THEN** the original once-only creation publication may proceed while the report distinguishes host display inference from SDK document/map/template guards and atomic native current-page authority
+
+#### Scenario: Exact sidecars or second witness disagree
+- **WHEN** either source differs from the approved Library baseline raw sidecars, later BODY/context changes, completed time does not advance, or the second full-idle observation is missing
+- **THEN** no creation permission is published and the original guarded stop/recovery remains required
+
+#### Scenario: Minimum source captures cannot fit before opening
+- **WHEN** the sticky shared ledger cannot fit both remaining source witnesses and all3 protected postcreation captures
+- **THEN** the stable selection refuses before ordinary open input without increasing or refunding any quota

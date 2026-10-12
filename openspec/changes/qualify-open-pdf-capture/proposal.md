@@ -11,6 +11,7 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 - Retain wrapper maps as contextual evidence under that selected closure; keep all other host admission gates.
 - Permit a fresh reviewed attempt only after source, artifact and native attribution evidence agree; preserve independent recovery and spent identities.
 - Retain product Buddy-page recognition/reuse as a precondition to automatic insertion, using the existing REM-37 binding design and explicit current/adjacent reuse and original-source placement gates; lower-level native capability tests do not complete duplicate prevention.
+- Add an explicitly selected Source5 stable BODY plus full-idle witness under source5-stable-source-witness-contract.md. Require two distinct exact source observations, unchanged full Library/source sidecars and original clocks/quotas. Retain the older footer variant explicitly and report host display inference separately from SDK document/map/template authority; no atomic native current-page claim or retrospective credit.
 
 ## Capabilities
 
