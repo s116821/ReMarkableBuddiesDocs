@@ -32,3 +32,18 @@ Memory SHALL reuse existing generic sync/export/restore and coordinate stable lo
 #### Scenario: Local proof before cross-device qualification
 - **WHEN** local/protocol memory checks pass but shared/isolated selected membership or clean-device recovery has not been verified
 - **THEN** the result SHALL describe only the observed local/protocol capability and SHALL NOT declare the whole memory feature complete.
+
+### Requirement: Selected memory membership and consumption
+An explicitly selected memory Provider SHALL discover current facts only through a validated typed append-only catalog and complete Store-created selected closures. Document facts SHALL share the stable source-document aggregate; global Fact chains SHALL remain independent. Registrations SHALL preserve exact immutable owner/genesis identity. Unknown or ambiguous mixed-domain ownership SHALL refuse rather than become empty or usable partial memory. One cumulative budget SHALL bound all historical metadata/media validation before excess I/O. Ordinary heads and retained records SHALL NOT supply current membership.
+
+#### Scenario: Losing registration adoption
+- **WHEN** another registration wins for the same aggregate key
+- **THEN** adoption SHALL validate the accepted identical owner/genesis and acknowledge current membership separately from original replay, without republishing a losing fact payload.
+
+#### Scenario: Replacement before answer publication
+- **WHEN** a catalog or queried aggregate changes after retrieval or model response and before the consuming Ledger write
+- **THEN** shared admission SHALL revalidate all participating Store-issued tokens at that actual write boundary and refuse the stale answer without a generated assistant draft or native authority.
+
+#### Scenario: Cumulative read exhaustion
+- **WHEN** catalog, aggregate, retained/history or media verification would exceed the shared read budget
+- **THEN** reading SHALL refuse before the excess read/hash and report unavailable rather than a truncated authoritative view.
