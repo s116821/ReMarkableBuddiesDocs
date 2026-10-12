@@ -1,9 +1,9 @@
 ## 1. Contract and implementation
 
-- [ ] 1.1 Independently review this exact contract and freeze owned file/API scope; preserve parent dependency and protected WIP hashes.
-- [ ] 1.2 Implement the nonmutating existing-owner/format/lock inventory using current Store validators and bounded known paths, without Store::open/recovery/creation/cleanup.
-- [ ] 1.3 Implement additive apparent file-byte and nonadditive namespace/shared/missing/omitted-reference accounting with explicit incomplete states; keep secrets/native documents excluded.
-- [ ] 1.4 Wire actual versioned JSON CLI inspection before normal runtime/provider initialization and document manual use.
+- [x] 1.1 Independently review this exact contract and freeze owned file/API scope; preserve parent dependency and protected WIP hashes.
+- [x] 1.2 Implement the nonmutating existing-owner/format/lock inventory using current Store validators and bounded known paths, without Store::open/recovery/creation/cleanup.
+- [x] 1.3 Implement additive apparent file-byte and nonadditive namespace/shared/missing/omitted-reference accounting with explicit incomplete states; keep secrets/native documents excluded.
+- [x] 1.4 Wire actual versioned JSON CLI inspection before normal runtime/provider initialization and document manual use.
 
 ## 2. Verification and paired delivery
 
