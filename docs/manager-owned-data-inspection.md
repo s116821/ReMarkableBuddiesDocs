@@ -1,0 +1,29 @@
+# Manager owned-data inspection integration
+
+The bounded REM-42 Manager increment consumes Main's reviewed Rust report_version1
+at source6b1b9fd539c33ced6ab56541ef332ba05e4ed693 /Docs4b425c9559fed5446a730d56bc9e68b6b8e80bb4.
+Those parent PRs remain unmerged; this does not claim the command is deployed.
+Main retains Rust/CLI ownership. The active [Manager change](../openspec/changes/manager-owned-data-inspection)
+owns only shared Angular UI, report parsing and existing host adapter integration.
+
+See the [Manager public guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/feat/rem-42-owned-data-inspection/docs/owned-data-inspection.md)
+for fixed CLI/configuration, manual setup, interpretations and checks. Browser and
+Electron use the same UI and schema parser. Host commands are parameterless and
+wired; no Buddy service API, native document read, credential environment sourcing,
+cleanup/restore or provider interaction follows. Linux is the existing native
+adapter's supported host; Windows/macOS refuse honestly until separately qualified.
+
+Absent, missing, omitted and uninspected category/reference evidence remains
+visible. Apparent bytes are per path, domain reference totals are nonadditive,
+complete totals require complete inventory and no reclaimable/current-native claim
+is made. Actual command/schema support, not equal application SemVer or a fabricated
+minimum release, establishes report compatibility. Git tags remain version authority.
+
+The user-facing category consequences describe why records/cache/history are
+separate. Unknown account/native/install compatibility stays unknown. Disconnect,
+re-read and changed connection/boot invalidate results; inspection pauses automatic
+observations until explicit re-read. Busy reports never stop a service.
+
+This does not close whole REM-42 or its REM-37/41/52/53 dependencies. Full linked
+review, hosted checks, canonical synchronization and archival remain open. Fixture
+browser/Electron/SSH evidence must be distinguished from live tablet/provider proof.
