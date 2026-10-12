@@ -36,6 +36,16 @@ it cannot fall back to legacy acquisition. Missing/invalid configuration or
 selected metadata is distinct from unsupported native capability. No absent scope
 is initialized by startup. Selection or stored page UUIDs supply no live identity.
 
+Startup validates the snapshot under the existing shared admission and allowance,
+refuses unavailable commits, and applies the strict selected domain projection and
+conversation chronology before reporting SDK capability status. Storage-valid but
+domain-invalid records are unavailable, not evidence of an unsupported adapter.
+Before an active request exists, startup reads the Workflow's typed transport
+availability directly; it does not invoke acquisition and reinterpret a request-
+guard error as unsupported capture. Actual acquisition retains its original
+request/source guards. This clarification repairs the two independent startup
+review findings without granting acquisition or effect authority.
+
 The selected runtime object retains the shared Store/admission and existing
 Workflow for metadata handling, but cannot enter the ordinary trigger/capture/model
 loop when its SDK acquisition is unsupported. Default startup remains operational.
