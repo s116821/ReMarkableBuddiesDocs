@@ -144,7 +144,7 @@ envelopes check immutable key/claim custody, including later-created facts and
 re-rooted replacements, but never supply current values, parents or permissions.
 Unknown/ambiguous mixed ownership and absent/corrupt/stale membership refuse.
 
-One receiving request shares 64 snapshot attempts, 4096 transaction/reference
+One selected-snapshot receiving request shares 64 snapshot attempts, 4096 transaction/reference
 work items, 8 MiB metadata reads and 32 MiB media verification. Catalog reads,
 historical/retained verification and final rechecks consume the same allowance.
 Attempts include absent scopes and repeated reads: an answer can exhaust this

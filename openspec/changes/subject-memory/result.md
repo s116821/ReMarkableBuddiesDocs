@@ -1,4 +1,4 @@
-# Subject memory: bounded local increment
+# Subject memory: local and selected receiving increments
 
 ## Exact source and contract
 
@@ -114,6 +114,86 @@ never trigger service stop or unleased fallback. Exact total compact response
 bytes include the newline; output limit never emits a partial conflict refresh or
 retries a published mutation. See [maintenance contract](maintenance-cli.md).
 
+## Selected receiving successor
+
+Exact Rust source `ad6a70f29809972f23cd4370fdb0ab8f1f5a6bd5` implements the
+selected Provider, typed append-only catalog, stable document/global aggregate
+keys, original raw genesis and accepted key/claim custody. It connects actual
+Reader processing and one-shot commands while keeping LocalMemory as the default.
+Precode domain contract `04dc96c` and explicit setup contract `4cc3f3b` were
+reviewed before their implementation; receiving/publication limits and final
+handoff/custody clarifications are at Docs `abbb2e7`. Manual `b8ec9b3` was reviewed
+against the repaired source. Full remote/native capability is not inferred.
+
+The actual base already contained accepted REM-52 selected primitives byte-for-
+byte despite non-ancestor Git history. Only the concrete generic budget delta
+`31116b03` and custody delta `4884a256` were applied; protected Cargo/config/device
+work was not imported or overwritten, and the separate historical archive API
+was not introduced into live receiving. The generic increments were independently
+accepted in [budget review](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5495556299)
+and [custody review](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5495938187).
+Custody spec content `94329b0` was fetched and reviewed; at this result preparation
+the generic Docs PR 7 pointer still reported `c93adc7`. That owned publication
+discrepancy remains separate from immutable content acceptance.
+
+Queries read complete winning closures; retained/historical values never enter
+ranking or supply missing facts. Accepted historical envelopes check only
+immutable key/claim custody, including facts created after Initialize. Current
+unknown/ambiguous mixed ownership, missing/corrupt/stale membership and exhausted
+receiving budgets refuse. Mixed document edits preserve exact other-profile and
+conversation/source references, media and complete coverage identities.
+
+One receiving snapshot allowance covers catalog, all queried aggregates, history/
+retained validation and final rechecks: 64 attempts, 4096 work items, 8 MiB
+metadata and 32 MiB media verification. Repeated/absent attempts count. This does
+not promise 64 usable registrations, total process memory or elapsed time.
+Publication keeps separate Store validation limits, not a combined I/O cap.
+
+The actual Reader holds shared ordered admission through its Generated/local
+journal write. Returned payloads are sealed along with normalized tokens and raw
+custody heads; changed payloads and reused consumed clones refuse. Selected-mode
+native output remains explicitly refused. Maintenance retains Provider/pins/Store
+lease through the actual stdout writer, including complete-empty queries and
+sealed inspection. Stale/changed/exhausted admission emits fixed unavailable with
+no data; a partial I/O failure never attempts a second report. Ordinary put cannot
+mint absent selected membership. Three explicit setup operations support complete
+initialization, orphan custody and distinct published/replayed/adopted receipts.
+
+Independent Sol source review found consuming-output, mutable-result, root-lineage,
+media-order retry and claim-continuity defects in the preserved intermediate
+`7e10c59` candidate. The repaired exact `ad6a70f` source/assertions and central
+manual were accepted after those controls were added. That reviewer did not
+rerun the full exact archive suite; generic custody acceptance is separately
+attributed above. No acceptance transfers to the intermediate candidate.
+
+The normal LF archive has SHA-256
+`7dd498d2b0d301821d8f5b87cfb90e702ef1416a3008ea14e3e16404655b7de6`.
+Twenty-one Cargo/source/test blobs matched raw Git identities, including committed
+SDK `d01b4bdfbc4dc11673f84ff82bbc62c8dc77bbb1`. Locked/offline full all-feature
+testing passed: 283 library checks/one existing ignored, all binary/integration
+and compile-fail documentation tests. Included are eight real selected domain
+controls, thirteen actual Windows maintenance CLI controls, the actual Reader
+replacement test with three cases, and actual writer handoff test with five cases.
+They are included in the suite, not additional unique counts. Earlier working-pin
+checks remain separate from this exact committed proof.
+
+Controls cover stale model/boundary replacement, payload forgery/clone reuse,
+rootless genesis, accepted registration removal, normalized-token/raw-genesis
+drift, original retry after tombstone, reversed media/coverage order, exact
+noncanonical references and other-profile preservation, receiving budget
+exhaustion, orphan registration/adoption and later-created claim custody with or
+without retained copies. A legitimate same-claim winning fork remains usable.
+The fail-once writer allows later writes and asserts exactly two calls plus only
+the seven-byte prefix, so fallback append attempts are observable.
+
+Whole-tree formatting and ordinary nonmock library/binary checking passed.
+Required strict all-target/all-feature Clippy FAILED with the same 24 existing
+unfinished-runtime dead-code errors (exit 101), unsuppressed and unwaived. Exact
+diagnostic lint completed with those 24 and no additional warnings; it is not a
+replacement for the failed strict gate. All nine protected input hashes remained
+unchanged. The exact source is published in the existing draft PR 33; new-head
+hosted CI, this result update's checks and final evidence review remain pending.
+
 ## Remaining capability boundaries
 
 The actual Reader currently retrieves global memory only without a qualified
@@ -125,12 +205,11 @@ Normal Store initialization/recovery is distinct from nonmutating inspection.
 
 The local adapter holds the existing legacy-mode lease and conservatively refuses
 any selected Store. Sync flag changes cannot admit historical/retained losers.
-The REM-52 handoff is read and documented: local key compatibility is a reasoned
-assessment; shared wire-schema/membership acceptance remains open. Document
-facts share a source-document conflict aggregate while independent global records
-have independent chains. Exact shared membership/catalog policy, accepted current
-projector and restore activation remain unimplemented here. PR 31/7 successor
-primitives are not silently assumed present in the REM-37 base.
+An explicit selected configuration now uses the implemented local accepted-
+membership adapter described above. Remote shared/isolated worker, root/catalog
+onboarding, account/app visibility, live contention, restore/migration activation
+and clean/replacement-device recovery remain unqualified. Document facts share
+the source-document conflict aggregate; global records keep independent chains.
 
 Writer, Manager, selected shared/isolated Drive policy, migration/clean-device
 recovery, representative live/native effectiveness and release/lifecycle gates
