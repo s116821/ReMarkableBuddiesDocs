@@ -53,8 +53,8 @@ owned storage. Reads, forgetting and updates cannot initialize missing state or
 repair a partly owned nonempty root. Existing Store opening can still perform its
 normal known metadata/recovery/staging cleanup under the lease; these are not the
 nonmutating inventory commands. A busy Store returns a fixed busy report instead
-of stopping/retrying a service or reading without a lease. Self-parent and other
-invalid requests fail before startup writes.
+of stopping/retrying a service or reading without a lease. Pure input-validation
+failures, including self-parent requests, fail before startup writes.
 
 The single compact JSON response has `report_version: 1`, operation, status,
 incomplete indication and bounded data. Exit zero means a report was emitted;
