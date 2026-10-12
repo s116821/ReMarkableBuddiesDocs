@@ -5,14 +5,14 @@
 - [x] 1.3 Implement offline Store-backed explicit memory store/update/inspect/forget with provenance/confidence and CAS/tombstone safety.
 - [x] 1.4 Implement bounded relevant scope retrieval, stale/conflict/current-fact handling and replaceable receiving-buddy context.
 - [x] 1.5 Integrate the actual Reader after independent transcription verification with disabled/empty behavior preserved.
-- [ ] 1.6 Expose bounded one-shot file-input operations in the existing Reader binary with pre-runtime routing, safe initialization/refusal, machine-readable results and no service/listener behavior.
+- [x] 1.6 Expose bounded one-shot file-input operations in the existing Reader binary with pre-runtime routing, safe initialization/refusal, machine-readable results and no service/listener behavior.
 
 ## 2. Verification and delivery
 
 - [x] 2.1 Verify real Store restart, concurrent heads, retries, tombstones, unsupported schema, budgets and profile/document isolation.
 - [x] 2.2 Verify actual Reader/provider request assembly, source/transcript preservation and enrichment failure behavior; distinguish protocol from live-model/native evidence.
 - [ ] 2.3 Run required exact-source checks and independent final review, inspect CI/bot findings, publish paired implementation/Docs drafts and disclose failures.
-- [ ] 2.4 Verify actual maintenance CLI offline operations, preflight privacy/state/lease failures, bounded response and preserved ordinary routes on exact committed inputs; execute Unix FIFO control on Unix.
+- [x] 2.4 Verify actual maintenance CLI offline operations, preflight privacy/state/lease failures, bounded response and preserved ordinary routes on exact committed inputs; execute Unix FIFO control on Unix.
 
 ## 3. Full capability gates
 

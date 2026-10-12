@@ -68,6 +68,52 @@ Central Docs 12 tests, guidance/provenance checker (19 files) and strict OpenSpe
 validation (17 items) passed before this result append. This append and paired
 drafts require their own current checks; no hosted result is claimed yet.
 
+## One-shot maintenance successor
+
+Source `3f6258b898102d9e8bc91a276110ec90eb3997d3` adds explicit bounded file-input
+inspect/query/put/forget routes in the same Reader binary and draft PR. The focused
+maintenance contract `5dda1872c093a870b4a6f572a727d95f0913f646` was reviewed and
+committed before implementation. The existing domain/API operations are reused;
+no app, listener, provider/runtime, service operation, dependency or sync engine
+was introduced.
+
+Working-input checks passed nine actual CLI controls plus the added self-parent
+put/forget staging-preservation control, the real Store busy-classifier control,
+two existing CLI controls and three binary argument/default/logging controls.
+Independent source/test/manual review accepted the bounded maintenance increment.
+Those earlier working results remain separate from the exact-source proof below.
+
+The successor's normal LF Git archive SHA-256 is
+`a30c4f7a2dc00d9d6165525e358f24b949ddc808881d9c8f44f3dea659e3aa0c`;
+sixteen Cargo/source/test raw blobs matched the exact commit and committed SDK
+remains `d01b4bdfbc4dc11673f84ff82bbc62c8dc77bbb1`. Whole-tree formatting and ordinary
+nonmock library/binary checks passed. Locked all-feature tests completed
+successfully: 276 library checks, one existing ignored, all binary/integration and
+compile-fail documentation tests, including ten actual Windows maintenance CLI
+controls. Required strict Clippy FAILED on the same 24 existing dead-code errors
+(exit 101), unsuppressed/unwaived. Earlier revision `916dbbd` proof remains valid
+for that revision and is not promoted to this successor.
+
+Hosted Ubuntu Test also passed in
+[run 38296411740](https://github.com/s116821/ReMarkableBuddies/actions/runs/38296411740),
+with 280 library checks/one existing ignored and eleven maintenance CLI checks.
+The completed log explicitly records
+`fifo_lock_is_refused_before_a_blocking_open_in_actual_cli ... ok`.
+This is normal PR merge integration `25b52ca` of source `3f6258b` into base
+`ff8ad75`; local archive checks above are the separate exact-head proof. Hosted
+build/lint failed on the same 24 errors; tablet cross-build is not established by
+these test results. Current published Docs `f1d0bab` Ubuntu/Windows/OpenSpec checks
+passed; this final result append requires its own current Docs checks.
+
+Maintenance intentionally prints bounded saved values for requested inspection/
+query. Pure input failures, including self-parent identities, fail before startup;
+well-formed stale/conflicting mutations can follow normal Store recovery writes.
+Missing/partly owned state is not initialization permission; only creation put with
+empty parents may initialize absent/empty storage. Busy and selected/refused states
+never trigger service stop or unleased fallback. Exact total compact response
+bytes include the newline; output limit never emits a partial conflict refresh or
+retries a published mutation. See [maintenance contract](maintenance-cli.md).
+
 ## Remaining capability boundaries
 
 The actual Reader currently retrieves global memory only without a qualified
