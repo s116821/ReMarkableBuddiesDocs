@@ -247,3 +247,17 @@ or native authority. Old queued intent SHALL not rebind across mode epochs.
 #### Scenario: Mode metadata is not bootstrap proof
 - WHEN a caller chooses a group/root ID or opens a mode lease
 - THEN no cloud slot/native operation occurs and verified bootstrap, supported account/app binding and actual domain admission remain separately required.
+
+### Requirement: Read-only original slot observation
+Uncertain or stale prepared-slot reconciliation SHALL support exact-ID read-only
+observation with prepared account/application and group/scope integrity checks.
+It SHALL not create, allocate, update, delete or choose a successor, and provider
+evidence SHALL not become domain/native authority.
+
+#### Scenario: Observe occupied original slot without another create
+- WHEN a caller observes its prepared original slot after uncertain acknowledgement
+- THEN strict same/different immutable pointer evidence is returned using read operations only, without republishing its candidate.
+
+#### Scenario: Missing or incompatible original slot
+- WHEN the slot or referenced descriptor is absent, removed, malformed, corrupt or outside the prepared binding
+- THEN observation refuses and never infers freedom or authorizes a successor/rebase.

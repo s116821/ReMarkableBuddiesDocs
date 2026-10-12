@@ -330,3 +330,24 @@ explicit local mode does not disable LocalMemory's separate data lease. The
 controller's publisher-only counter prevents mode changes while the old engine
 is active, and the unchanged legacy-data counter still fences selected storage
 activation. Source scopes/claims and actual domain admission remain Main-owned.
+
+## Read-only observation of an original prepared slot
+
+Add `GoogleDrive::observe_prepared_slot(&PreparedSlot)` for worker uncertainty
+recovery. It rechecks the prepared application/account, authorizes that original
+group, reads ONLY the fixed slot ID and verifies strict private pointer properties
+plus the referenced immutable descriptor hash. Return existing same/different
+candidate observation. No slot create/upload/allocate/update/delete, successor
+choice or current domain/native authority. Missing/trashed/malformed/wrong-scope
+slot or corrupt descriptor remains refusal, never proof of a free slot. Changed
+prepared account/app refuses before transport work. The caller cannot use this
+observation as permission to rebase or apply a winner; Main validates domain/base
+and actual admission. Reuse the existing adapter's post-create observation helper
+so create-or-read keeps its proven behavior without a second framework.
+
+Read-only here refers to Drive object operations: normal same-binding OAuth token
+refresh may still use its authorization endpoint. Host fixtures with a current
+fixture token prove all slot/descriptor requests are GET-only and no provider
+slot write/allocation occurs. They are not live Drive or mode/domain admission
+qualification. Restart still needs the original prepared binding; this API does
+not invent bootstrap proof or recover a missing candidate descriptor silently.

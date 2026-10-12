@@ -105,3 +105,9 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 - [x] Implement private mode actor/device/backup identities, current tokens, original-operation replay and mode leases with legacy worker exclusion.
 - [x] Bind selected outbox to shared mode epoch and verify transition/restart/replay/lease/binding/leave-rejoin/refusal/unrelated data preservation through real Store fixtures.
 - [ ] Publish exact paired mode successor and independent review; keep actual worker/bootstrap/provider/domain/native qualification open.
+
+## Read-only prepared-slot observation
+
+- [x] Reuse exact provider metadata/descriptor validators for prepared GET-only observation and post-create observation.
+- [x] Verify same/different pointer, account/app mismatch, absent/invalid/corrupt slot and no create/allocate/update/delete through host HTTP fixtures.
+- [ ] Publish exact paired successor and independent review; live provider/bootstrap/domain/native authority remains unqualified.
