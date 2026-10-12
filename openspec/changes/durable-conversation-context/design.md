@@ -104,6 +104,13 @@ After REM-36 acceptance and exact-plan review, implement domain schemas/APIs and
 
 ## Open Questions and Dependency Gates
 
+The next mode-aware application admission increment follows
+[startup-mode-admission.md](startup-mode-admission.md). Accepted publisher mode
+leases are not local read-mode lifetime guards. Validate actual persisted choices
+before model/device startup and retain a matched configured shared lease through
+current receiving, while historical recovery remains token-free and ordinary live
+mode switching remains explicitly unfinished.
+
 The next bounded executable integration follows
 [startup-history-runtime.md](startup-history-runtime.md). Exact SDK d01 supplies
 no native Reader capability; selected startup, metadata inspection and token-free
