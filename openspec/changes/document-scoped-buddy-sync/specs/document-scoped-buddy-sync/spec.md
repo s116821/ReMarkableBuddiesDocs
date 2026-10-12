@@ -261,3 +261,14 @@ evidence SHALL not become domain/native authority.
 #### Scenario: Missing or incompatible original slot
 - WHEN the slot or referenced descriptor is absent, removed, malformed, corrupt or outside the prepared binding
 - THEN observation refuses and never infers freedom or authorizes a successor/rebase.
+
+### Requirement: Persisted isolated backup identity continuity
+The system SHALL refuse persisted mode history that changes backup identity during consecutive same-binding isolated choices or reuses a historical identity after leaving isolated mode or changing binding.
+
+#### Scenario: Re-entry identity is corrupted on disk
+- **WHEN** saved history substitutes an old backup UUID for a later re-entry
+- **THEN** snapshot, publisher lease and original-operation replay refuse before current admission
+
+#### Scenario: Contiguous same-binding identity is corrupted on disk
+- **WHEN** saved consecutive isolated choices for the same binding contain different backup UUIDs
+- **THEN** mode history load refuses while valid identity-preserving histories still reopen

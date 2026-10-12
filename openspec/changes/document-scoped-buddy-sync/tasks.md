@@ -111,3 +111,9 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 - [x] Reuse exact provider metadata/descriptor validators for prepared GET-only observation and post-create observation.
 - [x] Verify same/different pointer, account/app mismatch, absent/invalid/corrupt slot and no create/allocate/update/delete through host HTTP fixtures.
 - [ ] Publish exact paired successor and independent review; live provider/bootstrap/domain/native authority remains unqualified.
+
+## Persisted mode identity repair
+
+- [x] Reproduce persisted reused backup identity and same-binding identity discontinuity through actual Store reopening.
+- [x] Enforce load-time continuity and first-use identity; verify snapshot/lease/replay refusal, valid restart/replay and root-only replacement outbox control.
+- [ ] Publish exact linked repair and independent recheck without claiming whole mode/worker acceptance.

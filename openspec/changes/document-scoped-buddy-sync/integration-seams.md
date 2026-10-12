@@ -351,3 +351,13 @@ fixture token prove all slot/descriptor requests are GET-only and no provider
 slot write/allocation occurs. They are not live Drive or mode/domain admission
 qualification. Restart still needs the original prepared binding; this API does
 not invent bootstrap proof or recover a missing candidate descriptor silently.
+
+## Persisted isolated-backup history validation repair
+
+Loading private mode history must enforce the setter's identity continuity:
+consecutive isolated choices with the same binding retain the same backup UUID;
+leaving/re-entering or changing binding allocates an identity never used earlier.
+A structurally valid receipt with a recomputed choice fingerprint cannot override
+this rule. Corrupt persisted history refuses snapshot, lease and original replay
+before current admission. This repairs the mode increment only; the accepted
+staging recovery and read-only slot observation remain separate review slices.
