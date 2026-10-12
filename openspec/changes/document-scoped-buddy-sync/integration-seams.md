@@ -237,3 +237,38 @@ work before I/O and are conservative after failed verification; validation error
 never refund previously charged work. Later consumer reads of a returned media
 handle are outside this snapshot-validation budget. No wall-clock deadline or
 bound on subsequent consumer work follows from the byte counters.
+
+## Durable selected outbox custody and recovery
+
+The next generic slice queues an explicitly validated current selection with a
+fixed pre-agreed provider slot and staged immutable descriptor. It extends the
+existing selection/sync foundation, not a second engine or domain catalogue.
+`prepare_selected_attempt(token, request)` validates current pins and complete
+accepted history/objects before atomically publishing a local intent journal.
+The request supplies operation UUID, slot ID, descriptor provider ID and immutable
+local descriptor ObjectRef (1..64 KiB); provider IDs reuse fixed-slot validation.
+The intent preserves original local actor, complete selection transaction, exact
+opaque selected/retained refs, accepted base and Store/aggregate/binding identity.
+
+Same-operation/same-request replay returns the ORIGINAL pending or withdrawn
+intent, even after later selection replacement; it cannot mint a fresh token or
+re-enqueue withdrawn work. Changed payload refuses. `inspect_selected_attempt`
+returns historical journal data only. `current_selected_attempt(token, operation)`
+revalidates captured pins/history/objects/descriptor before returning that same
+intent, never rebinds or rebases it. `withdraw_selected_attempt` records explicit
+local withdrawal without claiming remote acceptance/replacement or deleting data.
+Missing/corrupt/foreign journals and required objects refuse. Inventory and total
+journal metadata retain 4096-item/8 MiB bounds. Journal files live outside portable
+manifests and exclude credentials/config/native state; source restore never resumes
+another actor's publication intent. Existing selected maintenance refuses remain.
+
+The caller stages descriptor bytes with existing owned blob custody. Preparation
+is separate local publication validation, outside the receiving-read allowance.
+No API creates/allocates/updates a provider slot, supplies native permission,
+validates descriptor/domain meaning or activates a sync mode. A future worker
+must bind current mode/account/app/root and acquire domain admission for actual
+handoff. It must observe uncertain old slots rather than publish at a successor;
+retained old intents never become automatic current work. Full remote bootstrap,
+mode transition, sender/outbox adjudication and live-provider qualification remain
+unfinished. Main's accepted local memory catalogue is compatible and supplies
+opaque scope identities; it is not remote group-root authority.

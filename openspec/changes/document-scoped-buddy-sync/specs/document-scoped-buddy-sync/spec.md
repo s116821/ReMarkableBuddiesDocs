@@ -205,3 +205,22 @@ and poison the request budget. The existing selected-read API SHALL remain usabl
 #### Scenario: Immutable domain identity from already charged historical custody
 - WHEN a new selected winner re-roots an existing record UUID and drops the original claim chain from its current closure
 - THEN each accepted transaction exposes its already verified selected envelopes paired in original ObjectRef order without extra I/O, allowing domain-owned immutable identity validation without treating historical or retained records as current authority.
+
+### Requirement: Durable pinned selected publication intent
+A prepared local selected outbox intent SHALL pin the original actor, scope,
+Store/aggregate generation, accepted base, complete opaque selection and fixed
+provider slot/immutable descriptor. Preparation and current checks SHALL refuse
+stale or incompatible pins and corrupt required objects. Replay SHALL recover
+only the original intent without rebase, slot allocation or live authority.
+
+#### Scenario: Restart and original-operation replay
+- WHEN a prepared intent is retried after restart, withdrawal or selection replacement
+- THEN identical operation/request recovers its original custody state, while changed payload refuses and current readiness never substitutes a newer selection.
+
+#### Scenario: Binding and selection isolation
+- WHEN token, actor, generation or group/account/application binding differs from the prepared intent
+- THEN current preparation refuses without changing unrelated scopes, media or pending intent; no slot or native operation is attempted.
+
+#### Scenario: Withdrawal without remote inference
+- WHEN the local owner explicitly withdraws a prepared attempt
+- THEN its original intent remains inspectable but withdrawn, with no remote acceptance, deletion, publication permission or automatic retry claimed.

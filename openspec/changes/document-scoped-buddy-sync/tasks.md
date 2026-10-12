@@ -65,16 +65,31 @@ this paragraph records coordination, not a new implemented wire schema.
 
 - [x] Implement token-free historical selected-backup inspection with exact head/reference order and included media handles; reuse full archive validation and retain restore/migration refusal.
 - [x] Verify real Store export/inspection, mixed namespaces, noncanonical references, retained media, absent/invalid scope, bounds, corruption of another scope and unchanged source/destination state.
-- [ ] Publish exact linked successor revisions and independent review; do not claim domain restore/provider/native qualification.
+- [x] Publish exact linked archive successor and obtain bounded independent review at2ed/540; no domain restore/provider/native qualification.
 
 ## Cumulative selected receiving read budget
 
 - [x] Implement caller-owned budgeted selected snapshots with pre-I/O charging across heads/history/record verification/parsing/media and sticky exhaustion; retain full lineage and existing API semantics.
 - [x] Verify real Store cumulative multi-scope exhaustion, historical/media/metadata limits before I/O, exact-bound positives, absence and unchanged tokens/source state.
-- [ ] Publish exact successor evidence and coordinate Main's runtime receiving caps and independent review; no metadata-only or live-provider claim.
+- [x] Publish exact budget successor311/c93 and coordinate Main receiving caps with bounded independent review; no metadata-only or live-provider claim.
 
 ## Historical selected-envelope custody
 
 - [x] Return already parsed historical selected envelopes in original reference order within the budgeted accepted lineage, without additional validation I/O or live tokens.
 - [x] Verify actual Store re-rooted identity with and without retained old chains, facts introduced after Initialize, exact noncanonical reference order, unchanged budget usage and current-view separation.
-- [ ] Publish exact linked successor and obtain bounded independent review before domain qualification; preserve prior accepted revisions.
+- [x] Obtain bounded independent custody review of immutable488/943 content and Source488 CI; preserve prior accepted revisions.
+- [ ] Reconcile advertised DocsPR7 pointer and exact successor Docs CI before linked delivery closure.
+
+## Durable selected outbox preparation
+
+- [x] Implement original-operation journal/replay, explicit local withdrawal and current-token/binding/object validation using existing Store/file/slot primitives.
+- [x] Verify real Store restart/fault/replay/stale/binding/generation/media and unrelated-scope controls without network/native effects.
+- [ ] Publish exact paired revisions and independent review; preserve unfinished mode/bootstrap/adjudication/worker/provider/domain/restore/lifecycle gates.
+
+## Accepted immutable increments
+
+Independent archive read acceptance is review5495568634 at423->2ed/7d->540;
+budget/lineage is5495556299 at2ed->311/540->c93; custody is5495938187 at311->488/c93->943.
+These close their bounded independent-review portions only. The advertised DocsPR7
+pointer remainsc93 despite correct owned943 branch, so current linked-PR/CI
+reconciliation and whole-delivery lifecycle remain unchecked.
