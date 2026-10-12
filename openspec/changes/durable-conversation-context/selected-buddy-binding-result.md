@@ -11,6 +11,12 @@ REM-37 and the MVP remain unfinished. Native transfer/activation stays held.
   independently reviewed before source changes. The additional existing-domain
   MAX_ITEMS order bound was documented before its implementation and separately
   reviewed.
+- Existing previously unpublished Docs plans `4c38bf1` (selected interpreted
+  request recording) and `1049375` (SDK gesture integration) remain planning
+  context in this topic. Root reconciled their complete diffs and original local
+  transcript: both predate the separately blocked gesture evidence/spec save and
+  contain none of that rejected increment. They are preserved as unfinished plans;
+  this delivery does not replay that save or commit their protected Rust WIP.
 - Exact committed source uses SDK
   `d01b4bdfbc4dc11673f84ff82bbc62c8dc77bbb1` and its committed Cargo.lock.
   A normal Git archive build input verified those Cargo files and all six changed
@@ -101,5 +107,7 @@ sync, archive, merge, release or Done claim follows.
 
 Source basis: current repository/source, actual committed-input local tool outputs,
 fresh REM-37 description and all 37 accessible timestamped comments (no newer
-requirement since October 9), and independent read-only review. Historical device
+requirement since October 9), independent read-only review, and Root's original
+transcript/diff provenance reconciliation (internal project evidence without a
+public transcript link). Historical device
 reports are not reused as proof for this code.
