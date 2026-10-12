@@ -38,6 +38,21 @@ The experimental local consumer SHALL assess a relevant current Buddy candidate 
 - **WHEN** SDK successor evidence matches the original source, exact immediate neighbor/order and fresh completed observation, and positive non-Buddy recognition has no contradictory claim
 - **THEN** the model retains an after-original/before-neighbor plan without retargeting creation to the inspected successor or dispatching the stale original source guard
 
+### Requirement: Synthetic return matching does not refresh logical claims or effect authority
+The local placement model SHALL retain either uninspected end or the actual validated successor completion. Its pure continuity matcher SHALL require explicit Synthetic origins, exact original order/adjacency and SDK-created Previous receipt source matching that retained completion, target matching original source and supplied source matching returned completion. End plans SHALL require no receipt and unchanged full original observation still at end. Results SHALL remain point-in-time SyntheticSourceContinuity under buddy-source-continuity-contract.md, not proof of collection freshness, logical association/recognition refresh, native qualification or creation/render/binding permission. No effects, allocation, SDK private-field reconstruction or CreationRequest conversion SHALL be added.
+
+#### Scenario: Supported synthetic return preserves the original anchor
+- **WHEN** the Previous receipt closes from the retained inspected successor to the exact original page/order and the supplied completed observation agrees
+- **THEN** the matcher returns source continuity while retaining historical original placement and conveying no effect permission
+
+#### Scenario: Return or end evidence is wrong or stale
+- **WHEN** receipt is missing/unexpected/foreign, direction or target differs, order/adjacency changes, or opaque completion/current evidence disagrees
+- **THEN** matching refuses without navigation, creation, target allocation or fallback to a stale original source
+
+#### Scenario: Logical claims change independently of SDK state
+- **WHEN** Store-like association or recognition changes while supplied SDK continuity remains equal
+- **THEN** a continuity result does not validate those claims or authorize an insertion, and future effectful use still requires separate current logical and SDK guards
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic
