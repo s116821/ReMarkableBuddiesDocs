@@ -182,3 +182,22 @@ or changing current membership. Corrupt, missing or foreign history SHALL refuse
 #### Scenario: Invalid original predecessor closure
 - WHEN an original or parent link, scope, generation, identity or required object cannot be verified
 - THEN lookup refuses without changing current selection or unrelated data.
+
+### Requirement: Cumulative selected receiving read budget
+A budgeted selected read SHALL charge caller-owned cumulative aggregate,
+transaction/reference, metadata-read and media-verification limits before content
+I/O across all requested snapshots and accepted history. Exhaustion SHALL refuse
+without a partial authoritative snapshot, preserve complete lineage validation
+and poison the request budget. The existing selected-read API SHALL remain usable.
+
+#### Scenario: Catalogue and aggregate reads share a budget
+- WHEN several individually valid selected snapshots together exceed a receiving request's budget
+- THEN the first unaffordable read refuses before its content I/O and the domain caller discards the incomplete receiving result.
+
+#### Scenario: Historical or media work exhausts the budget
+- WHEN old accepted closures, repeated reads, oversized files or included-media verification exhaust a shared limit
+- THEN validation cannot return a complete snapshot or skip history/media to fit the limit; source selection remains unchanged.
+
+#### Scenario: Catalogue ancestry without unbudgeted receipt reads
+- WHEN a domain validates append-only selected membership and exact Initialize/genesis identity from a budgeted snapshot
+- THEN already verified accepted metadata and original raw-byte digests are available without additional file reads, historical live tokens or promoting retained registrations.

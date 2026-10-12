@@ -66,3 +66,9 @@ this paragraph records coordination, not a new implemented wire schema.
 - [x] Implement token-free historical selected-backup inspection with exact head/reference order and included media handles; reuse full archive validation and retain restore/migration refusal.
 - [x] Verify real Store export/inspection, mixed namespaces, noncanonical references, retained media, absent/invalid scope, bounds, corruption of another scope and unchanged source/destination state.
 - [ ] Publish exact linked successor revisions and independent review; do not claim domain restore/provider/native qualification.
+
+## Cumulative selected receiving read budget
+
+- [x] Implement caller-owned budgeted selected snapshots with pre-I/O charging across heads/history/record verification/parsing/media and sticky exhaustion; retain full lineage and existing API semantics.
+- [x] Verify real Store cumulative multi-scope exhaustion, historical/media/metadata limits before I/O, exact-bound positives, absence and unchanged tokens/source state.
+- [ ] Publish exact successor evidence and coordinate Main's runtime receiving caps and independent review; no metadata-only or live-provider claim.

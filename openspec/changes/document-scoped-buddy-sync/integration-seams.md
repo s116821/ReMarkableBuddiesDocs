@@ -177,3 +177,54 @@ or authorize external effects. Main compares persisted original selection eviden
 to this historical predecessor under its existing domain guard. Group/key/binding,
 Store/aggregate generation, accepted base and selection digest remain domain-owned
 comparisons; storage continues treating envelopes as opaque.
+
+## Caller-owned cumulative selected-read budget
+
+Main's memory receiving path can inspect a catalogue and many aggregate snapshots.
+Per-snapshot closure limits alone do not bound the full historical/media I/O of
+that request. Add `selected_snapshot_with_budget(scope, limit, &mut budget)` beside
+the compatible existing `selected_snapshot`. One caller-owned budget is shared
+across every catalogue and aggregate read. Caller-selected caps cover aggregate
+attempts, transaction/reference work items, metadata bytes read (including record
+verification and parsing), and included-media bytes verified. Proposed memory
+query policy is 64 aggregates, 4096 work items, 8 MiB metadata and 32 MiB media;
+Main owns enabling that runtime policy, not generic Store defaults.
+
+Charge before each corresponding content read/hash, including every accepted
+historical closure and repeated verification. Historical nodes and current heads
+are transaction work; each verified object-reference occurrence is reference
+work. Opening the returned included-media handle is another verified read and is
+charged too. Missing scope consumes an aggregate attempt but no transaction read.
+Use the already opened regular file's size to precharge metadata and cap the read
+at that size; refuse growth/shrink/integrity mismatch without reading beyond the
+charged length. Included-media verification is similarly bounded to its declared
+size, checked against the opened file. Exhaustion poisons that budget and returns
+an error; there is no partial authoritative snapshot or budget reset/retry within
+a request. Counters include already attempted work and never roll back on refusal.
+
+Keep full reachable lineage/closure validation, original token semantics and
+immutable reference order. No unique-reference cache may skip required validation.
+The domain caller discards the entire receiving result if any shared-budget read
+fails; already returned snapshots are not a complete multi-aggregate view. This
+is an I/O bound, not permission to omit media/history, native qualification or an
+elapsed-time guarantee. The unbudgeted API retains existing validation/capacity.
+
+The new budgeted method returns `SelectedReadSnapshot { snapshot,
+accepted_history }`. `snapshot` is the unchanged existing `SelectedSnapshot`;
+`accepted_history` is already verified metadata ordered current head back to
+Initialize. Each `AcceptedSelectionTransaction` includes its original raw-byte
+SHA-256 and transaction, not a reserialization digest or a historical live token.
+The domain can validate append-only registration reference subsets and exact
+Initialize/genesis identity from that charged lineage without extra unbudgeted
+receipt calls. Historical envelope/media validation is still performed before
+return, but historical envelope copies are not added to this metadata view.
+
+Public names: `storage::selection::{SelectedReadBudget, SelectedReadUsage,
+SelectedReadSnapshot, AcceptedSelectionTransaction}`. Budget constructor arguments
+are `aggregates`, `work_items`, `metadata_bytes`, `media_bytes` (all u64), and
+`usage()` returns the same public counters; `exhausted()` reports sticky exhaustion.
+Aggregate attempts include catalogue scopes and absent scopes. Counters reserve
+work before I/O and are conservative after failed verification; validation errors
+never refund previously charged work. Later consumer reads of a returned media
+handle are outside this snapshot-validation budget. No wall-clock deadline or
+bound on subsequent consumer work follows from the byte counters.
