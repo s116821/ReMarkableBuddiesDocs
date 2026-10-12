@@ -21,8 +21,8 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.7 Review explicit selected executable startup/historical handling against committed SDK d01; name unavailable native/tokenizer seams without promising all24 lint failures disappear.
-- [ ] 3.8 Implement the actual configured selected startup, one-shot strict history inspection and original-request recovery using existing runtime/admission components; no implicit legacy fallback, model/native effect or new registry.
+- [x] 3.7 Review explicit selected executable startup/historical handling against committed SDK d01; name unavailable native/tokenizer seams without promising all24 lint failures disappear. Bounded contract/source review: startup-history-result.md.
+- [x] 3.8 Implement the actual configured selected startup, one-shot strict history inspection and original-request recovery using existing runtime/admission components; no implicit legacy fallback, model/native effect or new registry. Reviewed source4d539b8; final qualification/publication task3.9 remains open.
 - [ ] 3.9 Verify actual executable refusal before credential/provider/device work, retained/current isolation, historical exact recovery, changed/missing inputs, lease/private/bounded output; publish exact scoped evidence and independent review.
 
 - [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
