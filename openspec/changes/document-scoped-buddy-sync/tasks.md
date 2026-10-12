@@ -99,3 +99,9 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 - [x] Reproduce7e4 interruption residue before new intent and beside committed pending/withdrawn journal; reuse exact safe owned staging cleanup.
 - [x] Verify preparation/withdrawal residue recovery, replay/current-token/descriptor/media preservation and unsupported foreign-entry refusal; deterministic residues are not actual process-kill evidence.
 - [ ] Publish exact paired successor and same-reviewer P2 recheck before claiming outbox incremental acceptance; mode/binding proposal stays separate.
+
+## Explicit mode/binding control
+
+- [x] Implement private mode actor/device/backup identities, current tokens, original-operation replay and mode leases with legacy worker exclusion.
+- [x] Bind selected outbox to shared mode epoch and verify transition/restart/replay/lease/binding/leave-rejoin/refusal/unrelated data preservation through real Store fixtures.
+- [ ] Publish exact paired mode successor and independent review; keep actual worker/bootstrap/provider/domain/native qualification open.

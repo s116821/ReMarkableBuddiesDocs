@@ -287,3 +287,46 @@ intent, preserving current selection, descriptor/media and unrelated scopes.
 This is a narrow recovery repair, not an acceptance of the mode proposal or a
 process-kill/native/provider qualification. Preserve the original reproduced
 failure and independently re-review the successor before closing this P2.
+
+## Explicit local mode and binding epochs
+
+Before an actual sender, add an explicit private `sync/mode.json` controller.
+Absent mode metadata retains existing legacy configuration compatibility; it is
+reported as unconfigured, not as a selected shared group. Explicit choices are
+LocalOnly, IsolatedBackup(binding digest), and SharedGroup(group, binding digest,
+provider root ID). This choice records intent, never verified group bootstrap or
+account/application visibility. No caller boolean enables qualified cloud/native
+operations. Explicit modes must use their matching worker; legacy all-history
+worker creation/refreshed activation refuses them.
+
+A Store-owned current mode token pins actor and metadata identity. Explicit
+transition checks captured token under the Store lock and refuses active legacy
+publisher/mode leases before atomic publication. Same operation/request replay
+recovers the original transition as custody, not a fresh token; changed request
+refuses. A separately generated local device UUID persists across transitions;
+actor, device, group and isolated backup UUIDs remain distinct. Isolated entry
+creates a fresh backup namespace except an unchanged current isolated binding;
+returning after leave or changing binding never adopts an old backup. History is
+bounded4096/8MiB and preserves old namespaces without remote deletion/import.
+
+A scoped mode lease freezes current explicit non-local mode for future worker
+lifetime/handoff; switching must stop/drop old leases first. It does not validate
+provider/root/domain meaning or mint native permission. The worker still requires
+verified bootstrap/account/app and Main's ordered domain admission around actual
+handoff, with no Store mutex over network I/O. Main's registry remains its owner;
+no generic replacement guard or duplicated domain schema is introduced.
+
+New selected outbox intents capture the current shared-mode epoch and match its
+group/binding. Unconfigured earlier journal remains inspectable, but once an
+explicit mode exists an old/unbound epoch cannot become current work. LocalOnly
+and isolated modes refuse selected shared preparation/current checks; transitions
+never rewrite/delete old journals, selections or media. Identical old operation
+replay is original custody even after mode changes; it cannot bind to the new
+epoch or start a sender. Private mode/device/backup settings remain outside
+portable archive; source restore cannot resume another installation's worker.
+
+Legacy publisher lifetime accounting composes the existing legacy data lease;
+explicit local mode does not disable LocalMemory's separate data lease. The
+controller's publisher-only counter prevents mode changes while the old engine
+is active, and the unchanged legacy-data counter still fences selected storage
+activation. Source scopes/claims and actual domain admission remain Main-owned.

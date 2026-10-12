@@ -228,3 +228,22 @@ only the original intent without rebase, slot allocation or live authority.
 #### Scenario: Incomplete outbox atomic-write staging after interruption
 - WHEN an exact UUID regular staging residue remains before preparation or alongside pending/withdrawn intent
 - THEN lease-held reopen cleanup removes that uncommitted residue, preserves the original journal and current data, and continues refusing unsupported foreign entries without broadening deletion rules.
+
+### Requirement: Explicit mode binding and publisher lifetime isolation
+Local mode transitions SHALL pin current actor/epoch and refuse active publisher
+leases. Explicit local-only, isolated-backup and shared-group choices SHALL keep
+device/actor/group/backup identities distinct and preserve prior namespaces without
+automatic join, import or deletion. Mode metadata SHALL not grant verified provider
+or native authority. Old queued intent SHALL not rebind across mode epochs.
+
+#### Scenario: Stop publisher before a mode change
+- WHEN an old legacy publisher or explicit mode lease is still alive
+- THEN mode transition refuses, and after that owner stops the current-token transition may atomically select the new mode without changing selections or media.
+
+#### Scenario: Leave and return or change provider binding
+- WHEN the installation re-enters isolated backup or shared mode after leaving or changing its binding/root
+- THEN isolated identity is fresh and old shared intents remain original custody but are not current work under the new epoch.
+
+#### Scenario: Mode metadata is not bootstrap proof
+- WHEN a caller chooses a group/root ID or opens a mode lease
+- THEN no cloud slot/native operation occurs and verified bootstrap, supported account/app binding and actual domain admission remain separately required.
