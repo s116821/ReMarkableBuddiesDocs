@@ -1,7 +1,8 @@
 # Pure synthetic return-to-source continuity: assessed precode contract
 
 Main and the existing independent Sol reviewer accepted this five-file contract
-delta on2026-10-12. Implementation and local verification remain the next steps;
+delta on2026-10-12. Implementatione3b1d8c is locally verified and independently
+reviewed in [buddy-source-continuity-result.md](buddy-source-continuity-result.md);
 native and logical-claim refresh gates remain unfinished.
 
 This local extension follows the decision modeld1b9f1d and public Rust SDK pin
