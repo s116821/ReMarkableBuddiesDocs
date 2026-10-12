@@ -64,11 +64,13 @@ unknown variants/fields. Catalog records never enter fact ranking. This uses the
 owner-reviewed existing schema allowance rather than broadening generic schema
 acceptance merely to carry a new payload variant.
 
-The genesis selection digest is the original Store-issued selection digest for
-that scope's Initialize transaction. Validate it against complete accepted
+The genesis selection digest is the original raw-byte identity supplied by the
+Store's validated accepted-lineage view for that scope's Initialize transaction.
+Validate it against complete accepted
 lineage, including after replacement; the genesis operation's transaction must
-be Initialize for that exact scope and its canonical transaction
-digest must match. A current token or supplied arbitrary hash
+be Initialize for that exact scope and its original validated raw digest must
+match, including noncanonical JSON bytes. Never reserialize transaction metadata
+to invent this identity. A current token or supplied arbitrary hash
 cannot substitute. Duplicate logical registration identity with different owner,
 genesis or payload refuses. Identical membership can be acknowledged from the
 current validated catalog, but that acknowledgment is distinct from an original
