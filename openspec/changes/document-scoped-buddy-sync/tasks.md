@@ -72,3 +72,9 @@ this paragraph records coordination, not a new implemented wire schema.
 - [x] Implement caller-owned budgeted selected snapshots with pre-I/O charging across heads/history/record verification/parsing/media and sticky exhaustion; retain full lineage and existing API semantics.
 - [x] Verify real Store cumulative multi-scope exhaustion, historical/media/metadata limits before I/O, exact-bound positives, absence and unchanged tokens/source state.
 - [ ] Publish exact successor evidence and coordinate Main's runtime receiving caps and independent review; no metadata-only or live-provider claim.
+
+## Historical selected-envelope custody
+
+- [x] Return already parsed historical selected envelopes in original reference order within the budgeted accepted lineage, without additional validation I/O or live tokens.
+- [x] Verify actual Store re-rooted identity with and without retained old chains, facts introduced after Initialize, exact noncanonical reference order, unchanged budget usage and current-view separation.
+- [ ] Publish exact linked successor and obtain bounded independent review before domain qualification; preserve prior accepted revisions.

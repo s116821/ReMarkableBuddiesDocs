@@ -216,8 +216,17 @@ Initialize. Each `AcceptedSelectionTransaction` includes its original raw-byte
 SHA-256 and transaction, not a reserialization digest or a historical live token.
 The domain can validate append-only registration reference subsets and exact
 Initialize/genesis identity from that charged lineage without extra unbudgeted
-receipt calls. Historical envelope/media validation is still performed before
-return, but historical envelope copies are not added to this metadata view.
+receipt calls. Historical envelope/media validation is still performed before return. The
+next custody increment adds `AcceptedSelectionTransaction.selected_records`, the
+already parsed selected envelopes ordered exactly to that transaction's original
+`selected.records` ObjectRefs. Populate them from the existing charged closure
+validation result; perform no additional reads/hashes and mint no historical live
+tokens. This lets the domain check immutable creation key/claim continuity even
+when generic activation re-roots a record or drops its original selected chain,
+including facts created after aggregate Initialize. Historical selected records
+are custody evidence only: never use them or retained losers as current facts,
+authority, ranking inputs or a substitute for the current selected projection.
+The existing unbudgeted snapshot return type remains unchanged.
 
 Public names: `storage::selection::{SelectedReadBudget, SelectedReadUsage,
 SelectedReadSnapshot, AcceptedSelectionTransaction}`. Budget constructor arguments

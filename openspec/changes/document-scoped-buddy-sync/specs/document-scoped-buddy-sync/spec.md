@@ -201,3 +201,7 @@ and poison the request budget. The existing selected-read API SHALL remain usabl
 #### Scenario: Catalogue ancestry without unbudgeted receipt reads
 - WHEN a domain validates append-only selected membership and exact Initialize/genesis identity from a budgeted snapshot
 - THEN already verified accepted metadata and original raw-byte digests are available without additional file reads, historical live tokens or promoting retained registrations.
+
+#### Scenario: Immutable domain identity from already charged historical custody
+- WHEN a new selected winner re-roots an existing record UUID and drops the original claim chain from its current closure
+- THEN each accepted transaction exposes its already verified selected envelopes paired in original ObjectRef order without extra I/O, allowing domain-owned immutable identity validation without treating historical or retained records as current authority.
