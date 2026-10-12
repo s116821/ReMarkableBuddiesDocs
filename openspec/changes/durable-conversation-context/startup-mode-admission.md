@@ -87,6 +87,15 @@ survives credential resolution into the actual Ledger/memory/Worker once, with
 config/effective-source snapshots still after credential validation. No local
 mode lifetime fencing is inferred from this startup reuse.
 
+Fresh ordinary admission specifically requires cache and credential roots to be
+absent or safe completely empty directories too. A regular auxiliary file,
+nonempty foreign directory or stale owner marker refuses before credentials and
+before creating data/identity/lock. Repeat that startup-only check at deferred
+creation if auxiliary state changed. This does not change legacy maintenance
+initialization's independent ownership policy. Focused controls must preserve
+foreign auxiliary bytes with both absent and empty data, plus a safe-empty
+positive and changed-after-admission negative.
+
 ## Selected current and historical commands
 
 Current inspect/context receiving in configured SharedGroup retains the existing
