@@ -21,6 +21,10 @@
 
 ## 3. Real Reader integration
 
+- [ ] 3.7 Review explicit selected executable startup/historical handling against committed SDK d01; name unavailable native/tokenizer seams without promising all24 lint failures disappear.
+- [ ] 3.8 Implement the actual configured selected startup, one-shot strict history inspection and original-request recovery using existing runtime/admission components; no implicit legacy fallback, model/native effect or new registry.
+- [ ] 3.9 Verify actual executable refusal before credential/provider/device work, retained/current isolation, historical exact recovery, changed/missing inputs, lease/private/bounded output; publish exact scoped evidence and independent review.
+
 - [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
 - [x] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review. Fourteen controls pass in the exact committed source; strict lint and broad native/lifecycle gates remain open.
 
