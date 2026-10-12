@@ -19,6 +19,14 @@ An explicitly configured selected Reader runtime SHALL use the existing shared S
 - **WHEN** startup needs to report the selected refusing transport's availability before a Reader request exists
 - **THEN** it SHALL inspect typed availability without invoking acquisition or interpreting a request-guard failure as unsupported capture, and actual request acquisition SHALL retain its guards.
 
+#### Scenario: Persisted mode before runtime construction
+- **WHEN** an existing Store has an explicit nonlocal or contradictory publisher mode
+- **THEN** startup SHALL validate the actual mode before credentials/model/device construction and refuse an unsupported or mismatched runtime without ordinary all-history fallback; unconfigured compatibility and local-only data access SHALL remain distinct from shared authority.
+
+#### Scenario: Configured shared receiving lifetime
+- **WHEN** a current selected history report consumes data in configured shared mode
+- **THEN** it SHALL retain the matched existing shared-mode lease alongside actual domain/Store admission through consumption, without granting provider/root/native permission or treating local data leases as mode guards.
+
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Optional diagnostic image dumps SHALL remain separate from the durable source-evidence retention contract. Source: REM14/REM34/REM37; src/main.rs; deploy/reader-buddy.service; conversation-context.
 
