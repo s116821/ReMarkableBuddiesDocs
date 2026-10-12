@@ -11,6 +11,14 @@ An explicitly configured selected Reader runtime SHALL use the existing shared S
 - **WHEN** an explicitly supplied original PendingIntentRequest matches a validated historical publication
 - **THEN** recovery SHALL return only its original historical acknowledgment/provenance, even if current SDK acquisition is unsupported, and SHALL NOT allocate new IDs, mint ReaderContext or replay an effect.
 
+#### Scenario: Invalid selected startup metadata
+- **WHEN** generic storage accepts a selected snapshot but strict conversation schema or chronology validation fails, or the opened Store contains unavailable commits
+- **THEN** startup SHALL report unavailable without adapter-capability data, under the existing shared admission and cumulative read allowance.
+
+#### Scenario: Availability before an active request
+- **WHEN** startup needs to report the selected refusing transport's availability before a Reader request exists
+- **THEN** it SHALL inspect typed availability without invoking acquisition or interpreting a request-guard failure as unsupported capture, and actual request acquisition SHALL retain its guards.
+
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Optional diagnostic image dumps SHALL remain separate from the durable source-evidence retention contract. Source: REM14/REM34/REM37; src/main.rs; deploy/reader-buddy.service; conversation-context.
 
