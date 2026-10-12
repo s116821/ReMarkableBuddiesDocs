@@ -36,5 +36,27 @@
 - [x] Publish a reproducible [host qualification procedure](qualification.md) using the unchanged older test binary, an ordinary-open positive control, selected-format refusal and current-reader reopen; retain the separate domain/native/provider limits.
 - [x] Verify exact noncanonical object/reference preservation and snapshot reference order for Main's immutable ancestor lookup; domain projection must not recompute object identity from parsed JSON. This is storage evidence only; Main's domain fix/review remains separate.
 
-- [ ] Repair and independently review post-open complete selected snapshot lineage refusal, including missing/corrupt parent metadata and parent-only required record/media; preserve exact-source prior review evidence.
+- [x] Repair and independently review post-open complete selected snapshot lineage refusal, including missing/corrupt parent metadata and parent-only required record/media; preserve exact-source prior review evidence.
 - [x] Locally reproduce the post-open lineage read failure on the prior source, repair it with existing history/closure validators, and pass four corruption/restoration cases plus the affected selected-storage suite; this is host evidence, not independent successor approval.
+
+## October 12 evidence reconciliation
+
+The accepted repair checkbox above refers only to Buddy423cb0b / Docsc9f3ce7
+and [independent five-case Windows receipt](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6072364455).
+It does not close generic modes/worker/provider/domain/native/maintenance or
+whole REM52 acceptance. Earlier predecessor/archive acceptance retains its
+original scope. No new Rust, provider/device operation or test matrix follows
+from this Docs-only correction.
+
+Main owns REM24 local memory domain/provider/context on its existing REM37
+parents. The current generic contract is Namespace::SubjectMemory/schema1 with
+record UUID identity, parent CAS and tombstones. The proposed portable memory
+identity is profile UUID + Global|Document(stable UUID) + independent fact UUID
+with a domain-frozen canonical UUIDv5 recipe. Main's local-only adapter refuses
+selected stores; shared aggregate/catalog key, exact selected reference closure
+and domain restoration/admission remain explicitly unimplemented. Per-record
+CAS does not automatically establish a remote fact slot when membership shares
+a document aggregate. Preserve unrelated document/global scopes and retained
+evidence; do not create a second sync engine or change generic Store semantics
+as a shortcut. Source: current domain-owner handoff and accepted storage/design;
+this paragraph records coordination, not a new implemented wire schema.
