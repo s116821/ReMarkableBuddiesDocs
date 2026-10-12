@@ -37,6 +37,17 @@ and no additional inspection warnings. Diagnostic Clippy is not the required
 strict lint gate. Required strict Clippy failed with those same 24 existing errors
 (exit 101); existing warnings are neither suppressed nor waived.
 
+The full committed-source all-feature test command subsequently completed
+successfully on Windows, including library, binary, integration and compile-fail
+documentation tests. Whole-tree formatting also passed. The existing ignored
+library test remains ignored; these checks do not qualify native behavior.
+
+The paired drafts are [Rust PR 32](https://github.com/s116821/ReMarkableBuddies/pull/32)
+and [Docs PR 14](https://github.com/s116821/ReMarkableBuddiesDocs/pull/14).
+Hosted Docs Ubuntu, Windows and OpenSpec checks passed. Rust hosted build/lint
+failed; the completed job log confirms the same 24 existing dead-code errors.
+The hosted Rust test job and actual Unix FIFO execution are still pending.
+
 Independent review accepted the contract and final source/test/spec agreement.
 The reviewer did not rerun the broad suite. The Unix FIFO lock regression remains
 unexecuted on Windows and requires an actual Unix run. No hardware operation or
@@ -52,5 +63,5 @@ Unix device/inode checking; neither protects against an external writer that
 ignores the Store lease. Read access can change access timestamps.
 
 Broad lifecycle tasks remain open. Required strict lint remains failed. Hosted
-checks, Unix regression execution and paired draft publication must retain their
-actual results before any stronger acceptance claim.
+Rust test checks and Unix regression execution must retain their actual results
+before any stronger acceptance claim. Paired publication does not close those gates.
