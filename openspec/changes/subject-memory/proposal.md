@@ -25,3 +25,9 @@ logical keys and reuse its primitives. Manager inspect/forget UI, full Writer
 integration, selected cross-device policy and device/release acceptance remain
 part of the owning full scope, not claims from local tests. No native packet,
 device query/write, firmware, account or service operation follows from this work.
+
+The continuing selected receiving increment adopts the already-present reviewed
+REM-52 primitives, adds strict catalog/aggregate membership and connects actual
+Reader/maintenance consumption. See [selected membership](selected-membership.md)
+for the frozen domain contract and explicit cumulative-reading dependency. It
+does not replace the default local adapter or qualify live shared/native work.

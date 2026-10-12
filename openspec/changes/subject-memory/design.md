@@ -1,5 +1,10 @@
 # Local subject-memory design
 
+The next selected receiving phase is specified in
+[selected membership](selected-membership.md). Its exact identity, cumulative
+read-budget and consuming-admission candidates require focused review before
+implementation; the completed local phase below remains the default.
+
 ## Records, identity and persistence
 
 Use Namespace::SubjectMemory with domain schema 1, existing immutable envelopes,

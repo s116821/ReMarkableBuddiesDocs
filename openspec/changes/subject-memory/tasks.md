@@ -20,3 +20,11 @@
 - [ ] 3.2 Verify REM-52 selected membership, shared/isolated policy, independent keys, deletion, migrations and clean/replacement-device recovery through existing infrastructure.
 - [ ] 3.3 Verify representative live-provider relevance/precedence and native/local-survival claims where required; preserve qualified evidence limits.
 - [ ] 3.4 Complete coordinated acceptance, required checks, canonical sync and archive only after the full named capability is implemented and verified; REM-35 owns 1.0.
+
+## 4. Selected receiving increment (in progress, before code)
+
+- [x] 4.1 Freeze canonical aggregate/catalog identity, immutable genesis registration, initialization/adoption and exclusive mixed-document ownership with independent seam review.
+- [ ] 4.2 Adopt reviewed cumulative pre-I/O selected reading bounds without duplicating generic validation; preserve complete lineage and token semantics.
+- [ ] 4.3 Implement selected Provider/catalog projection and actual Reader/maintenance selection, retaining default LocalMemory behavior.
+- [ ] 4.4 Guard catalog/all queried aggregates through the actual consuming Ledger write; verify replacement races, losing registrations versus losing fact edits and exact reference preservation using real Store consumers.
+- [ ] 4.5 Publish exact source/Docs evidence and independent review while keeping cloud, Writer, Manager, native and restore gates open.
