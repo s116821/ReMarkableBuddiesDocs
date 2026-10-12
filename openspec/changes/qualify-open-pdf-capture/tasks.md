@@ -1,3 +1,11 @@
+## Current delivery boundary — October 12, 2026
+
+Continue the existing source5 integration without restarting historical diagnostics. The next concrete gate is one fresh reviewed ordinary-source5/new-target6 experiment proving native creation/current identity, ordinary relative navigation when needed, actual same-running blank display, preservation and independent recovery. Required write/persistence qualification follows as a subsequently selected existing delivery gate; it is not added to this packet or its RESULT115 budget. Complete production SDK consumption, appropriate supported-profile checks and linked OpenSpec/PR delivery; sync/archive only implemented qualified work. No new polish or broad simulation matrix gates that proof. Direct native opening remains REM-51 after1.0.
+
+Completed SDK source5 export review is recorded at SDK `605b1f66e309ab2883b14d0e73d5819464cbdd8b` and its tasks12.4; consumer/helper integration and final artifact/native gates remain open below. Historical failed experiments stay spent, including0404 with its unresolved shutdown fault. Earlier source0/eight-page integration selections below are superseded by the final explicit source5 task, not additional insertions or repeats. The preserved9005 target and all original ink remain protected.
+
+Buddy acquisition/reuse/adoption/binding and Manager work are separate downstream lanes whose existing dependencies/acceptance remain open; preserve the current/adjacent Buddy reuse rule and do not infer non-Buddy from missing binding. The current technical capability proof does not complete those product requirements. Linear reauthentication prevents fresh comment review; no new comments are claimed read.
+
 ## 1. Evidence and design
 - [x] Inspect spent trial evidence, current capture code and targeted community prior art.
 - [x] Record missing attribution evidence and minimal central contract before edits.
@@ -46,14 +54,14 @@
 - [x] Implement and independently review the exact v2 alarm-wrapper argument seam and preselected two-point harness bindings with real rendered wrapper-exec controls before another fresh qualification.
 
 - [x] Execute and reconcile fresh9005 persisted blank insertion, exact order, protected files, recovery, archive and exact cleanup.
-- [ ] Verify preserved target with fresh current-state observation and approved relative navigation; distinguish post-recovery display/writing persistence from9005 same-running pixels.
+- [x] Verify preserved target's post-recovery blank display and approved relative navigation through independently reviewed fresh Library reopen and Previous0fdc/Nexta469; exact archives/cleanup and original preservation passed. This does not verify9005 same-running pixels or writing/persistence of a new answer; those remain in the required gate below.
 
 - [x] Independently verify preserved target blank display after recovery through fresh Library state and one guarded ordinary reopen; archive/clean exact owned roots and preserve original immutable files.
 - [ ] Resolve required same-running display/navigation contract and any writing/persistence gate without retroqualifying9005 or rolling back its inserted page.
 
 - [x] Assess and specify the narrow development-only owned relative gesture, retaining the fixed SDK swipe and conditional same-running seeded-Y evidence before edits.
 - [x] Implement/review focused ownership/context/termination controls and exact artifacts, then establish the path against the preserved current eight-page fixture through independently verified fresh Previous0fdc and Nexta469 under the explicit terminal-release policy.
-- [ ] Assess and execute fresh eight-page insertion-plus-navigation with a new target/identity, preserving9005 and all saved ink.
+Historical superseded selection: fresh eight-page insertion-plus-navigation now follows the explicit source5 task below; no separate source0 insertion or repeat is required. This is not an experiment pass. Preserve9005 and all saved ink.
 
 - [x] Assess and specify the explicit preserved-eight SDK/config/profile inventory and exact26-path launcher seam before implementation.
 - [x] Implement and independently review the minimal eight-inventory/config/hash seam with focused compatibility/refusal controls; retain original fixtures and exact source/artifact pins.
@@ -67,4 +75,5 @@
 
 - [x] Assess the existing eight-page ordinary source5/neighbor6 candidate and unchanged eight-only gesture artifact; specify separate bounded preparation selections without authorizing insertion or source0 duplication.
 - [x] Adapt and independently review the private purpose/tuple whitelist, then freshly qualify ordinary source5/neighbor6 pixels/identity with preserved fixture and exact per-selection cleanup; six separate movements and return to source5 independently reviewed in ordinary-pair-preparation-result.md.
-- [ ] Assess and implement the explicit fixed source5/template5/insertion6 native/profile variant and separately bounded same-candidate nine-page gesture/capture integration before a new target/packet is selected.
+- [x] Assess and implement the SDK-only fixed source5/template5/insertion6 selector at `605b1f66`, preserving old variants and95+5; independently accept its nine-source export and25 QML/config/deadline checks. This is source review, not native execution.
+- [ ] Finish the existing consumer/helper nine-page gesture/capture/control integration, exact source/artifact review and necessary failure/recovery checks; then refresh actual Library8/source-opening Page6of8 references and choose one fresh backup/target/config/packet. Prove same-candidate native/current identity/navigation/blank display with preservation/recovery and exact archives/cleanup. Keep required write/persistence as the subsequent appropriately selected existing delivery gate; complete linked delivery without duplicating superseded diagnostic branches.
