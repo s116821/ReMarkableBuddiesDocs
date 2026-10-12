@@ -1,8 +1,9 @@
 # Non-effectful Buddy acquisition decision seam: assessed precode contract
 
 Main and the existing independent Sol reviewer accepted this five-file contract
-delta on2026-10-12. Local implementation remains the next step; native and
-installed Reader qualification remain unfinished.
+delta on2026-10-12. Local implementationd1b9f1d is independently reviewed in
+[buddy-acquisition-decision-result.md](buddy-acquisition-decision-result.md);
+native and installed Reader qualification remain unfinished.
 
 This REM-25 increment implements a local decision model under
 [buddy-page-reuse-contract.md](buddy-page-reuse-contract.md). It does not operate

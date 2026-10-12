@@ -1,8 +1,9 @@
 # Source5 stable source witness: assessed precode contract
 
 Main and the existing independent Sol reviewer accepted this separately selected
-host observation variant on2026-10-12. It is not yet implemented or
-native-qualified, and it does not retroactively qualify57ee. The previous footer
+host observation variant on2026-10-12. Source implementation1a43465 and its local
+checks are independently accepted; native qualification remains unfinished,
+and it does not retroactively qualify57ee. The previous footer
 variant remains available explicitly; no failed experiment acquires a fallback.
 
 ## Problem and evidence
