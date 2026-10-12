@@ -9,6 +9,24 @@ an independent stable logical key; global user/subject scope and stable native
 document UUID scope are explicit. A document conflict cannot erase other facts.
 Keys and selected membership must agree with REM-52 before cross-device writes.
 
+REM-52 owner handoff was read in full (REM-24 comments
+`4bb49e47-f92e-489a-8d40-0ea128934e79` and
+`b6c934b0-4cc6-47f8-af5a-37e3a22830c8`). Its accepted generic baseline is
+Buddy `423cb0b227856d3aa1fcc3e1e0b66865622e4fb7` / Docs
+`c9f3ce718ec638913567f4fb16ece118bc1d5288`, paired PRs 31/7. Those successors
+are not assumed to be present in this change's REM-37 parent base. Local key
+compatibility is a reasoned assessment, not shared wire-schema acceptance.
+
+Before shared publication, the domain must freeze aggregate/catalog membership:
+document-associated facts participate in the source-document conflict aggregate;
+independent global logical facts have independent chains. Local per-fact CAS does
+not imply separate remote fact slots within one document aggregate. Use exact
+original references and selected/retained closures, exclusive aggregate ownership,
+accepted base and live Store-created selection tokens; applying one winner must
+preserve unrelated scopes. A fixed-ID Drive slot does not establish membership or
+native authority. Catalog/OAuth, shared runtime and selected restore activation
+remain open. This local delivery publishes no shared memory wire state.
+
 The immutable logical identity is `(profile UUID, Global | Document(document UUID),
 fact UUID)`. Its record UUID is UUIDv5 over canonical serialized identity using a
 versioned application namespace. The caller supplies the stable fact UUID;
@@ -17,6 +35,14 @@ also immutable on update. Canonical claim keys trim/collapse ASCII whitespace an
 fold ASCII case; Unicode bytes otherwise remain unchanged. Subject/tags/value may
 change only through explicit CAS updates. Moving a fact requires explicit forget
 and independent creation, never changing identity through update.
+
+Exact local recipe: serialize `Key` as compact UTF-8 JSON in the field order
+`profile`, `scope`, `fact`. UUIDs use canonical lowercase hyphenated strings;
+scope is `{"kind":"global"}` or `{"kind":"document","document":"UUID"}`.
+Prefix those bytes with `urn:remarkable-buddies:subject-memory:v1:` and apply
+UUIDv5 under `Uuid::NAMESPACE_URL`. Revision identity uses UUIDv5 under the
+operation UUID with `remarkable-buddies:subject-memory:revision:v1` bytes.
+The recipe does not use titles, provider IDs, actor/device identity or timestamps.
 
 Typed payloads contain a bounded claim key, value, subject/tags, scope, provenance,
 observed timestamp, optional expiry and confidence in integer basis points with
@@ -58,6 +84,14 @@ their accepted membership and fail explicitly on absent/stale selection rather
 than falling back to ordinary all-history heads. Local-only mode is explicitly
 separate. Disabled memory returns no data and performs no memory read/write or
 network call.
+
+The local adapter holds the existing Store legacy-mode lease: construction refuses
+any already-selected storage, and the lease blocks selected publication while
+the adapter lives. Turning a sync flag off does not convert selected/retained
+history into a local current-head view. An unavailable recovered transaction makes
+query unavailable and inspection/mutation refuse; never resurrect an earlier
+value after a damaged correction or tombstone. Reuse existing Store diagnostics
+and admission rather than creating another recovery engine.
 
 Query is profile/scope restricted with bounded UTF-8 input, count and encoded
 context-byte budgets. Rebuild lexical ranking from current records; no additional

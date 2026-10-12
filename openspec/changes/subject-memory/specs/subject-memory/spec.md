@@ -22,6 +22,10 @@ Retrieval SHALL use bounded current membership, profile/scope restrictions, rele
 - **WHEN** an enabled Reader has independently verified a question and retrieved relevant memory
 - **THEN** the receiving answer layer SHALL receive bounded labeled associative context separately from the unchanged question and source images, while transcription verification remains free of memory.
 
+#### Scenario: Failure after verified interpretation
+- **WHEN** optional enrichment fails after the exact verified user question was persisted as Interpreted
+- **THEN** the ledger SHALL permit only an explicit failure/cancellation fact with unchanged interpreted text and appropriate reason, SHALL preserve the verified question, and SHALL NOT create a generated or completed assistant answer.
+
 ### Requirement: Honest shared-domain delivery
 Memory SHALL reuse existing generic sync/export/restore and coordinate stable logical scopes with REM-52. A document conflict SHALL NOT discard unrelated global or document facts. Writer use SHALL be optional. Simulated/protocol, live-provider and real-device evidence SHALL be distinguished, and incomplete Manager, Writer, cross-device or native gates SHALL remain open.
 
