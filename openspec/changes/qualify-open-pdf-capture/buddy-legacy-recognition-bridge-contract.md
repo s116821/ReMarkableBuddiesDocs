@@ -1,7 +1,9 @@
 # Conservative legacy classification bridge: assessed precode contract
 
 Main and the existing independent Sol reviewer accepted this five-file contract
-delta on2026-10-12. Local implementation/verification is next; capture provenance,
+delta on2026-10-12. Local implementationdbf8627 is independently reviewed in
+[buddy-legacy-recognition-bridge-result.md](buddy-legacy-recognition-bridge-result.md);
+capture provenance,
 qualified recognition, adoption and native/installed Reader gates remain open.
 
 This small local integration connects the existing three-value AnswerPageType
