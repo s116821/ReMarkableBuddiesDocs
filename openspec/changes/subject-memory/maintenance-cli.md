@@ -10,6 +10,8 @@ resolution, logging, sync, Workflow/device initialization or the normal loop.
 Read the ordinary selected nonsecret configuration and its explicit portable memory
 profile. Maintenance is an explicit operation, independent of the response-enrichment
 enabled flag. It does not implicitly turn that flag on or edit configuration.
+Require the existing config selected explicitly by `REMARKABLE_BUDDIES_CONFIG`;
+missing selector is unavailable, not a default-root initialization or `.env` lookup.
 Inspect input is a `Key`; query input is `Query`; put input is `Mutation`; forget
 input is `Forget`. Use strict known JSON fields, bounded regular-file input up to
 1 MiB, existing domain validators and matching configured profile before opening
@@ -31,6 +33,8 @@ safe regular markers/lock, all StorePaths and configured profile before opening.
 Put/forget operation UUIDs and expected parent identities/counts, full Fact/Key
 validation, and nonempty forget parents are pure input preflight, not post-startup
 checks. This is not an atomic guarantee against external filesystem replacement.
+Fresh initialization also requires an explicit creation put with empty expected
+parents; an update expecting existing revisions cannot initialize a missing Store.
 
 For an existing lock, validate a safe regular file before any open, then perform
 a nonblocking read-only preflight lock check. WouldBlock yields busy; unsupported
@@ -58,7 +62,8 @@ report was emitted, not that status is healthy; argument syntax errors remain
 Clap errors with no operation/provider execution.
 
 Use compact JSON and bound the exact total serialized response to 8 MiB + 64 KiB,
-including wrapper/status/data/escaping. Current conflict revisions are at most
+including wrapper/status/data/escaping and the final newline. Current conflict
+revisions are at most
 4096 UUIDs, and their encoded result must fit the total cap. If all heads/data
 cannot be represented, return unavailable with explicit incomplete indication and
 no partial head refresh set. Do not silently truncate a successful result or retry

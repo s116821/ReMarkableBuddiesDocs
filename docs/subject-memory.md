@@ -30,6 +30,46 @@ Keep the chosen profile stable across the intended user scope. Configuration is
 read at application startup; no live reload is claimed by this increment. Disable
 memory without deleting stored records by setting `enabled` to false.
 
+## One-shot offline maintenance
+
+The existing Reader binary also supports explicit file-input operations:
+
+```text
+reader-buddy --memory-operation inspect --memory-input /absolute/path/key.json
+reader-buddy --memory-operation query --memory-input /absolute/path/query.json
+reader-buddy --memory-operation put --memory-input /absolute/path/mutation.json
+reader-buddy --memory-operation forget --memory-input /absolute/path/forget.json
+```
+
+Select an existing configuration explicitly with `REMARKABLE_BUDDIES_CONFIG`.
+It must contain the portable profile; the response-enrichment enabled flag may
+remain false. Each JSON input uses the corresponding typed API structure described
+below. The command reads at most 1 MiB from a safe regular input file, rejects
+unknown/invalid fields and mismatched profiles, and routes before `.env`, provider,
+logging, sync or device initialization. Provider/runtime flags conflict with it.
+
+Only a valid creation put with empty expected parents may initialize absent/empty
+owned storage. Reads, forgetting and updates cannot initialize missing state or
+repair a partly owned nonempty root. Existing Store opening can still perform its
+normal known metadata/recovery/staging cleanup under the lease; these are not the
+nonmutating inventory commands. A busy Store returns a fixed busy report instead
+of stopping/retrying a service or reading without a lease. Self-parent and other
+invalid requests fail before startup writes.
+
+The single compact JSON response has `report_version: 1`, operation, status,
+incomplete indication and bounded data. Exit zero means a report was emitted;
+check its status. `ok`, `partial`, `busy`, `unavailable`, `unsupported`, `conflict`
+and `invalid-input` remain distinct. Conflicts return the complete bounded current
+revision set for an explicit refresh; there is no automatic rebase. Total response
+bytes, including the final newline, are capped at 8 MiB + 64 KiB. An over-limit
+result returns unavailable/incomplete without partial refresh data.
+
+Inspect/query deliberately print saved values on stdout to the requesting caller.
+Failure reports do not echo request values, private parser data or filenames, and
+routine logs do not receive those values. See the detailed
+[maintenance contract](../openspec/changes/subject-memory/maintenance-cli.md)
+for exact input/output limits and verified scope.
+
 The local adapter conservatively refuses any Store with selected storage, even
 if sync is now switched off. It holds the existing legacy-mode lease, preventing
 selected publication while it lives. Active SubjectMemory sync plus enabled
