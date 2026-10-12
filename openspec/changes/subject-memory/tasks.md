@@ -27,4 +27,4 @@
 - [x] 4.2 Adopt reviewed cumulative pre-I/O selected reading bounds without duplicating generic validation; preserve complete lineage and token semantics.
 - [x] 4.3 Implement selected Provider/catalog projection and actual Reader/maintenance selection, retaining default LocalMemory behavior.
 - [x] 4.4 Guard catalog/all queried aggregates through the actual consuming Ledger write; verify replacement races, losing registrations versus losing fact edits and exact reference preservation using real Store consumers.
-- [ ] 4.5 Publish exact source/Docs evidence and independent review while keeping cloud, Writer, Manager, native and restore gates open.
+- [x] 4.5 Publish exact source/Docs evidence and independent review while keeping cloud, Writer, Manager, native and restore gates open.

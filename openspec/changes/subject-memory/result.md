@@ -191,8 +191,27 @@ Required strict all-target/all-feature Clippy FAILED with the same 24 existing
 unfinished-runtime dead-code errors (exit 101), unsuppressed and unwaived. Exact
 diagnostic lint completed with those 24 and no additional warnings; it is not a
 replacement for the failed strict gate. All nine protected input hashes remained
-unchanged. The exact source is published in the existing draft PR 33; new-head
-hosted CI, this result update's checks and final evidence review remain pending.
+unchanged. The exact source is published in the existing draft PR 33.
+
+Hosted Ubuntu Test also passed in
+[run 38309720932](https://github.com/s116821/ReMarkableBuddies/actions/runs/38309720932),
+job `115012265258`: 287 library/one existing ignored, fourteen maintenance CLI
+controls including explicit Unix FIFO success, selected eight and all remaining
+binary/integration/compile-fail documentation checks. Completed logs explicitly
+include the actual writer guard, Reader replacement and immutable claim-custody
+controls. This is normal PR merge `4592dd7` of source `ad6a70f` into `ff8ad75`,
+separate from the exact archive above. The workflow remains failed on lint:
+completed job `115012265257` confirms the same 24 errors. Release-policy/title
+checks passed; native cross-build qualification is not established here.
+
+Current published Docs `e5bc049` passed Ubuntu, Windows and OpenSpec hosted
+checks in run `38310039234`. Sol independently read exact local log summaries,
+current source/manual/result/tasks, live PR snapshots and completed hosted lint;
+accepted the bounded evidence without recreating the archive or rerunning the
+full suite. Canonical source evidence
+[comment 6132851521](https://github.com/s116821/ReMarkableBuddies/pull/33#issuecomment-6132851521)
+and paired Docs comment were freshly read back in full. This hosted result append
+requires its own current Docs checks and final log/evidence review.
 
 ## Remaining capability boundaries
 
