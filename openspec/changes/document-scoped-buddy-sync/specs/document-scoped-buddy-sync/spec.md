@@ -224,3 +224,7 @@ only the original intent without rebase, slot allocation or live authority.
 #### Scenario: Withdrawal without remote inference
 - WHEN the local owner explicitly withdraws a prepared attempt
 - THEN its original intent remains inspectable but withdrawn, with no remote acceptance, deletion, publication permission or automatic retry claimed.
+
+#### Scenario: Incomplete outbox atomic-write staging after interruption
+- WHEN an exact UUID regular staging residue remains before preparation or alongside pending/withdrawn intent
+- THEN lease-held reopen cleanup removes that uncommitted residue, preserves the original journal and current data, and continues refusing unsupported foreign entries without broadening deletion rules.

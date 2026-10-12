@@ -93,3 +93,9 @@ budget/lineage is5495556299 at2ed->311/540->c93; custody is5495938187 at311->488
 These close their bounded independent-review portions only. The advertised DocsPR7
 pointer remainsc93 despite correct owned943 branch, so current linked-PR/CI
 reconciliation and whole-delivery lifecycle remain unchecked.
+
+## Outbox staging-residue recovery repair
+
+- [x] Reproduce7e4 interruption residue before new intent and beside committed pending/withdrawn journal; reuse exact safe owned staging cleanup.
+- [x] Verify preparation/withdrawal residue recovery, replay/current-token/descriptor/media preservation and unsupported foreign-entry refusal; deterministic residues are not actual process-kill evidence.
+- [ ] Publish exact paired successor and same-reviewer P2 recheck before claiming outbox incremental acceptance; mode/binding proposal stays separate.

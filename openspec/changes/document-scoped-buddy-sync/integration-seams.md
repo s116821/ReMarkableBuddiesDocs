@@ -272,3 +272,18 @@ retained old intents never become automatic current work. Full remote bootstrap,
 mode transition, sender/outbox adjudication and live-provider qualification remain
 unfinished. Main's accepted local memory catalogue is compatible and supplies
 opaque scope identities; it is not remote group-root authority.
+
+## Outbox atomic-publication interruption repair
+
+The exact7e4 outbox candidate omitted `sync/selected-outbox` from lease-held
+startup staging cleanup. A regular `.stage-UUID` left by interruption was parsed
+as an accepted journal and blocked inspection/replay after reopen. Reuse existing
+safe cleanup for that owned directory before journal use. Delete only exact UUID
+regular staging files under the Store lease; preserve committed journals,
+non-stage/foreign entries, directories and symlinks according to existing rules.
+Unsupported foreign entries still refuse rather than being silently skipped.
+Preparation and withdrawal residues recover absent or original pending/withdrawn
+intent, preserving current selection, descriptor/media and unrelated scopes.
+This is a narrow recovery repair, not an acceptance of the mode proposal or a
+process-kill/native/provider qualification. Preserve the original reproduced
+failure and independently re-review the successor before closing this P2.
