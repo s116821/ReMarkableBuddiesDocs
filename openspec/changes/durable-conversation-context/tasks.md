@@ -21,8 +21,8 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished.
-- [ ] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review.
+- [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
+- [x] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review. Fourteen controls pass in the exact committed source; strict lint and broad native/lifecycle gates remain open.
 
 - [ ] 3.1 Retain the accepted shared Store handle in actual Reader orchestration and prepare/commit exact overview/detail evidence before first provider use.
 - [ ] 3.2 Reuse stored evidence bytes for proposal/verification, preserve prompts and REM-9 guards, and record verified user requests separately from drafts/machine instructions.

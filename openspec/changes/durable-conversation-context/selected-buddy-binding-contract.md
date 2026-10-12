@@ -1,7 +1,7 @@
 # Selected Buddy binding and Reader inspection
 
-Status: bounded local integration contract, pending independent review and code
-verification. Native transfer/activation, qualified reuse, insertion, adoption,
+Status: bounded local integration verified in
+[selected-buddy-binding-result.md](selected-buddy-binding-result.md). Native transfer/activation, qualified reuse, insertion, adoption,
 installed Reader bootstrap and the full REM-37 lifecycle remain unfinished.
 
 ## Existing authority and ownership
@@ -58,7 +58,9 @@ Add read-only inspection through the existing Workflow selected facade. It
 explicitly requires Synthetic origin on both original and supplied fresh SDK
 PageObservations, refusing any future unsupported origin. It compares them fully, including
 opaque SDK scope/visit/input/order facts through public equality, and validates
-current-page membership and unique nonempty order. Convert public SDK UUID bytes
+current-page membership and unique nonempty order. Bound both supplied order
+lengths by the existing domain MAX_ITEMS before equality/set allocation; exceeding
+that local inspection limit refuses rather than truncating. Convert public SDK UUID bytes
 losslessly to the existing domain UUID type. Query the facade's existing
 SelectedAdmission, binding the historical candidate to that exact observation.
 An unbound Workflow or failed request refuses; it cannot reach legacy fallback.
