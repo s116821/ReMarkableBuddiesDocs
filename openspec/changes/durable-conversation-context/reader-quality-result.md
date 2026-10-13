@@ -22,10 +22,16 @@ Earlier selected-publication evidence remains attributed to its own revisions.
 
 Required strict Clippy still fails with twenty native dead_code errors, exit 101,
 without waiver or suppression. The two fixture-only diagnostics are removed.
-Diagnostic full-target warning collection is not a strict gate pass.
+Diagnostic full-target collection has exactly twenty dead_code warnings and zero
+development transport/factory mentions; it is not a strict gate pass.
 Hosted run `38344693637` Test `115123279074` passes; lint `115123279129` fails on the
 same twenty errors. Policy/title pass; tablet cross-builds remain skipped and
-unqualified. Final log review and result revision checks are pending.
+unqualified. Independent final `fac5428`/`f7a59c7` log/result review accepted:
+reviewer read completed local/hosted logs, independently parsed twenty diagnostics,
+recomputed the ZIP checksum and checked fresh Actions status. Raw blobs, SDK pin
+and protected hashes remain owner-verified; no broad rerun/native qualification
+occurred. Hosted Docs `f7a59c7` Ubuntu/Windows/OpenSpec checks pass in run
+`38345504024`; this final review-receipt amendment requires its own checks.
 
 The remaining dependency is concrete:
 
