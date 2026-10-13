@@ -27,8 +27,14 @@ No complete navigation matrix or native device operation was rerun.
 
 Sol independently inspected the committed eight-file source and assertions,
 accepted both the precode scope and source agreement, and did not rerun these
-tests. Copy/hash preservation is Main owner evidence. Hosted platform checks
-are pending at this result checkpoint and are not inferred from Windows lint.
+tests. Copy/hash preservation is Main owner evidence. Required
+[hosted source checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/38434469227)
+passed release policy, Linux build/lint and tests, including both tablet-target
+crossbuilds. The title check passed. Hosted PR checks use the normal merge
+checkout; these are associated with source67c73e9, not a claim of bare-head
+execution or hardware qualification. Paired Docs checks passed Linux, Windows
+and OpenSpec validation at d16a68f. Bounded task3.23 is complete; the full Reader
+change remains active and unarchived.
 
 The SDK produces a pure trajectory; Reader remains the event emitter. Persisted
 portrait configuration is not active-page authority. One ordinary-error release
