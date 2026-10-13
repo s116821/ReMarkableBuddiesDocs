@@ -1,0 +1,9 @@
+# Local software integration result
+
+Windows adapter/tests are imported from accepted3770515; its only product delta is the inspection callback argument forwarded to the accepted shared admission/SSH transport. Shared portable deadline preserves timeout inspection envelope; Node dispatch preserves SystemRoot and supports Linux/Windows. Parser, Angular profile/controller/template and helper/IPC product files remain unchanged from acceptedf433. Parent PR8/9, Docs13/17 and Rust inspector6b remain explicit unmerged dependencies.
+
+Local Linux Node24.21.0:19 Node tests/lint, required development+production Manager check, wired browser/helper/Electron checks, owned browser/Electron checks, native Linux package and packaged owned inspection matrix PASS. Python22 tests:19PASS/3 Windows-native skips. Three new integration controls cover a real local SSH/SFTP peer with synthetic notice/route/key custody, actual Windows-main dispatch/timeout-envelope fixture, and inspection callback forwarding through the repaired Windows observer. The Node host subprocess report control covers both Linux/win32 dispatch selections with actual Node fixture child. No physical USB or Windows-native pass is claimed locally.
+
+Windows CI will run maintained pinned pywin32 native route/socket/NTFS/notification controls and actual pinned Python/config refusal. Test-only main-process IPC substitution for Windows report UI is explicitly labeled and does not claim native inspection. Existing Linux checks remain. New exact hosted/independent acceptance pending; no duplicate review of stable accepted parents is requested.
+
+No tablet/account/provider/native-document/installer/service/cleanup writes, protected Main edit, version mint, worker/worktree, merge/Done/archive or broader qualification. Main owns actual Windows/RM2/hardware and Reader/domain/backend. FullREM41/42/35 and lifecycle remain open.
