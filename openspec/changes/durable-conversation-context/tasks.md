@@ -21,6 +21,10 @@
 
 ## 3. Real Reader integration
 
+- [ ] 3.18 Review composed-memory-admission.md against actual Provider pins, Reader writes and shared gate order before code.
+- [ ] 3.19 Implement real compatible selected Provider/Attempt publication under one ordered set, preserving unsupported providers and native refusal.
+- [ ] 3.20 Verify actual same/distinct-key concurrency, ownership, replacement, seal/budget/retry and Orchestrator controls with scoped independent evidence.
+
 - [x] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code. Precode4c9a3fe accepted; sourcefac5428 independently accepted without hiding needed native interfaces.
 - [x] 3.17 Scope only test development transport, verify normal refusal/affected fixtures/exact remaining lint and independent evidence. Sourcefac5428/resultf7a59c7 accepted; strict20 native diagnostics, qualified SDK interfaces and full2.10 remain open.
 

@@ -1,5 +1,10 @@
 ## Context
 
+[Composed memory admission](composed-memory-admission.md) joins the Reader and
+existing memory pin gates before actual draft publication; it cannot call a
+locking writer from an already-held memory callback. The path is data-only and
+keeps native source/dispatch qualification separate.
+
 The bounded [Reader quality disposition](reader-quality-gate.md) scopes fixture-only
 development transport without changing normal refusal or hiding required native
 admission/dispatch work. Strict native integration remains an open gate.

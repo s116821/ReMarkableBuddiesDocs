@@ -4,6 +4,10 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
+- Integrate real composed subject-memory/selected Reader publication through
+  [composed-memory-admission.md](composed-memory-admission.md), using one ordered
+  admission set and the existing writer while preserving native refusal.
+
 - Scope development-only transport to its actual test/harness ownership through
   [reader-quality-gate.md](reader-quality-gate.md); preserve needed native SDK
   interfaces and the honest remaining strict-lint gate.
