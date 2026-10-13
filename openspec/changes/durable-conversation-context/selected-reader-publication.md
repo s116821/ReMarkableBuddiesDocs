@@ -109,6 +109,11 @@ Recording fixtures prove storage/admission only. Run exact source checks and
 required strict lint without suppression; publish paired evidence and independent
 review while keeping SDK/native/full lifecycle gates open.
 
+Optional subject memory and selected Attempt require a reviewed combined ordered
+admission set. The prepared-data entry refuses a configured memory provider before
+state/model/publication rather than nesting independent gates. A zero-provider/
+zero-mutation control preserves this explicit unsupported composed-path boundary.
+
 Source basis: exact Rust62a5376, accepted reader-admission-api and selected Store
 semantics. This is precode design, not completed application/native integration.
 
