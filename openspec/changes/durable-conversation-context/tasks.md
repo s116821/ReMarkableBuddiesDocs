@@ -21,7 +21,7 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code.
+- [x] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code. Precode4c9a3fe accepted; sourcefac5428 independently accepted without hiding needed native interfaces.
 - [ ] 3.17 Scope only test development transport, verify normal refusal/affected fixtures/exact remaining lint and independent evidence; preserve needed SDK interfaces/full2.10.
 
 - [x] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes. Exact1cc5a2a accepted; 43b937d is editorial cleanup. User-owned capture/empty assistant sources and non-Pending recovery are frozen.
