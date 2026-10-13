@@ -8,7 +8,7 @@ The inspector patch is exactly equivalent to original6b1b9fd by Git range-diff;
 no inspector source/test behavior changed. The four original inspector Docs
 commits were rebased unchanged onto parent Docs
 `5382bb79984ca200a34c3358e8ae03cdb673d34f`. The
-[parent compilation result](../durable-conversation-context/runtime-compilation-result.md)
+[parent compilation result](../../durable-conversation-context/runtime-compilation-result.md)
 records the explicit test-only boundary for unqualified private execution,
 preserved runtime/public contracts and missing production bootstrap.
 
@@ -19,9 +19,23 @@ The Windows case-alias case runs here; Unix FIFO success below belongs to the
 earlier hosted revision and is not claimed rerun locally. No broad library/native
 or fixture suite was repeated. The existing reviewer accepted exact successor
 ancestry, preserved inspector patch and paired result without rerunning builds or
-tests; internal review has no public transcript link. Hosted required checks and
-final delivery remain pending; this does not complete broader REM42 or parent
-native/bootstrap/lifecycle gates. Prior failed-lint evidence remains historical.
+tests; internal review has no public transcript link. Required hosted CI associated
+with source0d440902 passes in run38419851583 (and its earlier same-head run38419849331).
+The actual hosted source is the normal PR merge
+`067192c53ff3e346f5c55a58b41ed835903a979c`, not a bare0d checkout. Its Test,
+Check Build & Lint and Release policy jobs pass; Linux inspection16+CLI3 includes
+the FIFO lock case. ARM/AArch64 cross-builds pass, which is source-build evidence,
+not tablet/native ABI qualification. These hosted checks are separate from the
+bare-head Windows results and are not added together as distinct coverage.
+
+Independent named-capability review accepted the functional scenarios and the
+precise platform-runtime flag/startup correction at Docs9ca1de7. Canonical sync
+preserves unrelated requirements; only inspect-owned-data is archived in this
+paired delivery. The original broader REM-42 obligations remain unchecked in
+[external follow-ups](external-followups.md). Final coordinated parent/child
+review and merge readiness remain separate; this does not complete broader REM42
+or parent native/bootstrap/lifecycle gates. Prior failed-lint evidence remains
+historical.
 
 ## Original exact inputs and scope
 
@@ -92,6 +106,6 @@ Unix device/inode checking; neither protects against an external writer that
 ignores the Store lease. Read access can change access timestamps.
 
 Broad lifecycle tasks remain open. Strict lint failed at the original revision;
-the October13 parent reconciliation above passes locally, with hosted successor
-checks still pending. Paired publication does not close broader Manager, native,
+the October13 parent reconciliation above passes locally and in associated hosted
+CI. Paired publication does not close broader Manager, native,
 release or lifecycle requirements.

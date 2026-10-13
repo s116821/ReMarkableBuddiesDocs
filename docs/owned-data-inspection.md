@@ -6,7 +6,7 @@ repair a Store, clean temporary files, read provider credentials or native
 documents, contact a provider, or change a service.
 
 The backend is available in the source increment paired with the active
-[inspect-owned-data change](../openspec/changes/inspect-owned-data). Browser and
+[verified inspection change](../openspec/changes/archive/2026-10-13-inspect-owned-data). Browser and
 Electron integration remain future REM-42 work; this does not provide a Buddy
 admin listener or establish working tablet transport.
 
