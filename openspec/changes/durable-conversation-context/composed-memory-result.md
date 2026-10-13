@@ -7,7 +7,9 @@ composed-memory increment over quality base `fac54284013faf1d4baa4bc908ebc06c590
 Precode `9dfe0f7890f837536ef7c704efe829e2dcd722ab` and the mixed-document
 prerequisite `ece586ce103a99d113fb921d8ea86b5890b79b4b` were independently accepted.
 Source `2ebe8e1` and the test-only opposing-document successor `2f6f738` were
-independently accepted with no findings. Completed evidence review is pending. This result does not complete
+independently accepted with no findings. Completed local evidence review was accepted. Hosted outcome review accepted
+with the executed-checkout and grouped-diagnostic corrections recorded below;
+final result-successor review remains pending. This result does not complete
 REM-24, REM-37, native output, or the full OpenSpec lifecycle.
 
 The actual selected Provider passes its original catalog and aggregate admission
@@ -88,14 +90,37 @@ Exact Windows Rust 1.98.1 evidence is intentionally separated by revision:
   source/test and Cargo blob is byte-identical to `2ebe8e1`; no full library rerun
   is attributed to this successor. Exact SDK suite passes all 14 tests, including
   both bounded controls. Formatting and normal nonmock library/binaries pass.
-- Required final strict Clippy fails with 20 existing native dead-code errors,
+- Required final strict Clippy fails with 20 dead-code error diagnostics,
   exit 101. The separate command-local warning collector reaches all targets
   and reports exactly 20 warnings, all dead_code, with no new memory/conversation
-  or SDK-test warning. The collector is not a strict pass or a waiver.
+  or SDK-test warning. Equal count is not identical method inventory: the grouped
+  ReaderAttempt warning now includes the unused generated wrapper because actual
+  publication uses generated_with_memory, alongside its native methods. The collector is not a strict pass or a waiver.
 - Final compile-fail documentation check passes (one actual API misuse control).
   Docs unit tests pass
   12; manifest/guidance checks verify 19 current files and 126 preserved blobs;
-  strict OpenSpec passes all 17 items. Hosted checks are pending publication.
+  strict OpenSpec passes all 17 items.
+
+Hosted source CI `38352958014` is completed: Test `115149323752` passes
+298 Linux library tests, one existing ignored, and the remaining suites including
+SDK14 and both bounded controls. Release policy/title pass; lint `115149323733`
+fails 20 with exit101 and tablet build steps are skipped. Overall CI fails.
+
+Both completed test/lint logs directly identify executed checkout
+`e58a673f5e80e30816ac84394fdaeca24f8f4290`, merging final source2f6 into
+quality basefac5428. Its GitHub commit parents are exactly fac5428 and2f6;
+reviewer independently fetched it and verified tree
+`654fe104b755838f1df28687bb9dbad4e5d069a9`, equal to exact2f6. The current
+PR API instead advertises main-base merge
+`d5b62dbd80b099168fef78543538185f4be20447` (ff8 +2f6), with the same tree.
+That current pointer was not the executed checkout for this run. Cause is not
+inferred and the hosted result is not described as a tested main merge.
+
+Docs967 hosted `38352641565` passes Ubuntu `115148288881`, Windows
+`115148289049` and OpenSpec `115148289125`. Sol independently read completed
+local logs/result, both hosted source logs/Actions states and the executed merge
+identity; no independent matrix rerun, raw-blob/pin/protected-hash recreation,
+current main-base run or native qualification is claimed.
 
 ## Open gates
 
@@ -111,5 +136,6 @@ provider/account/service action, held/spent replay, merge or lifecycle closure
 occurred in this increment.
 
 Source basis: accepted central precode, exact repository source and execution
-logs, owner raw archive/hash verification and attributed independent source
-reviews. No independent test rerun or completed hosted/result review is claimed.
+logs, owner raw archive/hash verification and attributed independent source,
+local-result and corrected hosted-outcome reviews. No independent test rerun or
+final result-successor acceptance is claimed yet.
