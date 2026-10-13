@@ -21,6 +21,9 @@
 
 ## 3. Real Reader integration
 
+- [ ] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code.
+- [ ] 3.17 Scope only test development transport, verify normal refusal/affected fixtures/exact remaining lint and independent evidence; preserve needed SDK interfaces/full2.10.
+
 - [x] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes. Exact1cc5a2a accepted; 43b937d is editorial cleanup. User-owned capture/empty assistant sources and non-Pending recovery are frozen.
 - [x] 3.14 Implement selected acknowledged interpretation/draft publication and actual Attempt routing without ordinary fallback or invented native capability. Bounded source74ba26c independently accepted; qualified acquisition/Pending/settlement/composed memory remain unsupported/open.
 - [x] 3.15 Verify actual mutation/retry/replacement/media/refusal controls and paired independent evidence. Final74/fbb bounded log/result review accepted; final targeted Windows and full hosted Linux evidence are distinct from preserved2b full Windows proof. Strict22, SDK capture/live source/full dispatch/composed memory/lifecycle gates remain open.
