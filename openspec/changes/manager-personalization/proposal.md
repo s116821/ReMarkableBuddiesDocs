@@ -8,7 +8,7 @@ Integrate inspect/edit/save/disable/clear in both Angular browser/helper and Ele
 ## New Capabilities
 - `manager-personalization`: shared personalization editing through the actual bounded configuration command.
 ## Modified Capabilities
-None until the published seam establishes a required cross-capability change.
+- `manager-wired-observation`: scope observation/cancel exclusivity to the observation interface while preserving security and separately specified maintenance/auth actions.
 
 # Impact
 Shared UI, narrow authenticated host actions, fixed CLI stdin/readback transport and focused actual protocol/shared browser/Electron fixtures. Central Docs pairs with the future concrete Manager implementation; no planning-only delivery or source version minted. Main/Root's Sol lane owns the Rust/config/CLI contract and broader request-context application.
