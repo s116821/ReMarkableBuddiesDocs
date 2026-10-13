@@ -50,3 +50,6 @@ Docs lifecycle; no merge, sync, archive or Done follows from this slice alone.
 Source basis: current parent/child PR comments and retained exact committed-source
 Clippy diagnostic log, current source and accepted Reader admission API. No new
 native test or runtime qualification is asserted.
+
+Bounded source verification is tracked in [the result](runtime-compilation-result.md);
+remaining production and delivery gates are not replaced by a lint result.
