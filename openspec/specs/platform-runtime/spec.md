@@ -7,7 +7,7 @@ Describe the implemented platform runtime contracts, initially baselined from v0
 ## Requirements
 
 ### Requirement: Runtime startup and configuration
-The executable SHALL load an optional .env before argument parsing, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Source: REM6/REM28/REM34/REM36; src/main.rs, src/config.rs and shared-storage contract.
+The executable SHALL parse arguments first. Ordinary startup SHALL then load an optional .env before resolving normal configuration and credentials, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Inspection-only startup SHALL return before .env loading, credentials, Store/runtime/provider/sync/device initialization; its configured nonsecret path SHALL use the existing REMARKABLE_BUDDIES_CONFIG environment selection. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Source: REM6/REM28/REM34/REM36/REM42; src/main.rs, src/config.rs and shared-storage contract.
 
 #### Scenario: Normal initialization
 - **WHEN** usable normal configuration and device access are available
@@ -26,7 +26,7 @@ The executable SHALL load an optional .env before argument parsing, default to m
 - **THEN** production credentials/storage configuration and cloud sync are not initialized, preserving its offline fixture-only behavior
 
 ### Requirement: Existing diagnostic flags
-The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate plus help/version. Other production flags SHALL be rejected. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34.
+The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump, --simulate and --inspect-owned-data plus help/version. Other production flags SHALL be rejected. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Inspection SHALL reject simulation and explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34/REM42.
 
 #### Scenario: Image dump configuration
 - **WHEN** --debug-dump is present
@@ -79,3 +79,12 @@ The CLI application version SHALL derive from Git metadata through vergen-gitcl,
 #### Scenario: Development build
 - **WHEN** a local or PR build is not a clean exact release source or Git metadata is unavailable
 - **THEN** --version clearly identifies a development state, including a commit-derived identifier when available.
+### Requirement: Read-only storage CLI route
+Runtime SHALL provide `--inspect-owned-data` as an inspection-only route that
+returns a versioned report before Store/runtime/provider/sync/device initialization.
+It SHALL preserve normal Reader argument behavior, reject conflicting execution
+overrides and never perform service or native-document operations for inspection.
+
+#### Scenario: Inspection is distinct from Reader startup
+- **WHEN** the real application is invoked for data inspection with missing provider credentials or an unavailable Store
+- **THEN** it reports the inspection state without starting the Reader, creating data or resolving credentials, and preserves the existing normal startup behavior on later ordinary invocation.
