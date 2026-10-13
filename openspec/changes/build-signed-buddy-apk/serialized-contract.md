@@ -4,6 +4,33 @@ This is proposed exact serialization pending consumer/independent recheck.
 All metadata comes from the actual source-build admission in design.md. Valid
 fixture signatures authenticate these package bytes/claims, not compiler truth.
 
+## Existing project license attribution
+
+Source license admission is not restricted to a Cargo `license` field. The
+initial source retains the project's tracked GPL version 3 license and its
+[project-specific declaration](https://github.com/s116821/RemarkableBuddiesDocs/blob/d34c14d5d25eee671f7441a69f4feef7bd2c5d69/docs/licensing.md),
+which preserves the original licensing and does not relicense inherited material.
+GitHub's current public repository-license API detects `GPL-3.0` for the same
+`LICENSE` Git blob `f288702d2fa16d3cdf0035b15a9fcbc552cd88e7`.
+[SPDX identifies this legacy identifier](https://spdx.org/licenses/GPL-3.0.html)
+as deprecated and explicitly version 3 only. It is not neutral between only and
+or-later, and GitHub detection is not an independent copyright-owner grant.
+
+For this exact existing project declaration and committed license blob only,
+the initial producer may retain the observed legacy `GPL-3.0` identifier when
+Cargo has no license declaration. It must check both committed blob identity and
+actual file bytes: LF SHA256
+`3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986`,
+or its existing CRLF checkout SHA256
+`230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809`.
+An explicit matching `GPL-3.0` or `GPL-3.0-only` declaration may be preserved;
+contradictory declarations, altered/unknown license bytes or blobs refuse this
+initial mapping. Other license policy changes require their own source review.
+Do not infer a grant from the license's application appendix, translate to
+or-later, change protected Cargo files, or create a new licensing choice merely
+to build an offline fixture. This is recorded source attribution with known
+legacy metadata, not legal advice or production qualification.
+
 ## Standard fields and fixed inventory
 
 - name and origin: remarkable-buddies, permanent identity.
