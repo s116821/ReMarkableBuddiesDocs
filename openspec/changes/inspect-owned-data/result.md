@@ -1,6 +1,27 @@
 # Owned-data inspection: bounded source increment
 
-## Exact inputs and scope
+## October 13 parent reconciliation
+
+Current inspector source is `0d4409025875ba876be1f8f7764ad81486f8b39b`,
+rebased onto owning PR30 repair `b085b3684edfe5e2bb3f8738fd28030772730279`.
+The inspector patch is exactly equivalent to original6b1b9fd by Git range-diff;
+no inspector source/test behavior changed. The four original inspector Docs
+commits were rebased unchanged onto parent Docs
+`5382bb79984ca200a34c3358e8ae03cdb673d34f`. The
+[parent compilation result](../durable-conversation-context/runtime-compilation-result.md)
+records the explicit test-only boundary for unqualified private execution,
+preserved runtime/public contracts and missing production bootstrap.
+
+Required child all-target/all-feature strict Clippy now passes on Windows
+Rust1.98.1 (11.22s), along with whole-tree formatting. Actual affected child
+integration checks pass:16 filesystem inspection tests and3 CLI subprocess tests.
+The Windows case-alias case runs here; Unix FIFO success below belongs to the
+earlier hosted revision and is not claimed rerun locally. No broad library/native
+or fixture suite was repeated. Exact successor/paired evidence review and hosted
+required checks remain pending; this does not complete broader REM42 or parent
+native/bootstrap/lifecycle gates. Prior failed-lint evidence remains historical.
+
+## Original exact inputs and scope
 
 Rust source revision: `6b1b9fd539c33ced6ab56541ef332ba05e4ed693`.
 Preimplementation Docs contract: `19b5b515f7a3bc786208e4ad6d524251d6686319`.
@@ -14,7 +35,7 @@ It does not complete REM-42, Manager browser/Electron integration, cleanup,
 backup/restore, tablet transport, native qualification or release acceptance.
 The protected preexisting Rust changes and untracked pen-path tool were preserved.
 
-## Observed verification
+## Observed verification at original6b1b9fd
 
 On Windows, a normal Git archive with command-local `core.autocrlf=false`
 produced byte-exact committed Cargo/source/test inputs. Seven input blobs were
@@ -68,6 +89,7 @@ not read or hash-verified. Windows handle/path identity checking is weaker than
 Unix device/inode checking; neither protects against an external writer that
 ignores the Store lease. Read access can change access timestamps.
 
-Broad lifecycle tasks remain open. Required strict lint remains failed despite
-passing local and hosted tests. Paired publication does not close that gate or
-the broader Manager, native, release and lifecycle requirements.
+Broad lifecycle tasks remain open. Strict lint failed at the original revision;
+the October13 parent reconciliation above passes locally, with hosted successor
+checks still pending. Paired publication does not close broader Manager, native,
+release or lifecycle requirements.
