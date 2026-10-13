@@ -4,7 +4,7 @@
 Both Manager distributions SHALL explicitly inspect the existing known Buddy binary's self-reported version through a fixed bounded host-owned command after the configured wired peer/connection/boot and safe executable metadata are checked. No arbitrary path/command, Vellum initialization, Buddy service API or tablet configuration mutation SHALL be introduced.
 
 #### Scenario: Read known binary version
-- **WHEN** the current verified connection and safe known binary return one supported bounded CLI version line with stable metadata/observation brackets
+- **WHEN** the current verified connection and safe known binary return one supported bounded CLI release or Git-derived development identity line with stable metadata/observation brackets
 - **THEN** the host returns sanitized self-reported identity to the shared UI without exposing credentials or invoking runtime/provider startup.
 
 #### Scenario: Missing, unsafe or malformed identity
