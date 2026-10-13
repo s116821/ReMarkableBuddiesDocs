@@ -1,5 +1,5 @@
 # Contract
-Source parent is public Rust PR37 3e87abc862b40c98a8a7c9dd4586ab377e268d37; initial Docs parent cc9efaaa9f4a2a3bc26a5aadf6a06b106f6e45be. Isolated task checkout only; Main's active files remain untouched. REM-53's complete description and sole October13 comment4a73ca2b, REM-36 description/comments and current REM-42 guidance ground this increment.
+Source parent is public Rust PR37 3e87abc862b40c98a8a7c9dd4586ab377e268d37; paired Docs PR22 parent a64b068f8563e6d1524caa919be96478f227bbbf. Isolated task checkout only; Main's active files remain untouched. REM-53's complete description and sole October13 comment4a73ca2b, REM-36 description/comments and current REM-42 guidance ground this increment. Root corrected the initial unrelated Docs checkout before publication; the precode artifacts remain committed before implementation.
 
 Config.personalization defaults to {schema_version:1,enabled:false,text:""}. Version1 accepts UTF-8 text at most16384 bytes, including CRLF, Unicode and leading/trailing whitespace; NUL refuses. Disabled text is retained, clear resets text and enabled, and empty text has no effective preference. Debug output redacts text. Preference does not encode authority, source content, history, learning or operation grants.
 
