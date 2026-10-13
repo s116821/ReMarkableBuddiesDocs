@@ -4,6 +4,10 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
+- Scope development-only transport to its actual test/harness ownership through
+  [reader-quality-gate.md](reader-quality-gate.md); preserve needed native SDK
+  interfaces and the honest remaining strict-lint gate.
+
 - Continue selected Reader request/draft publication and actual Attempt routing
   through [selected-reader-publication.md](selected-reader-publication.md), using
   acknowledged selected evidence without inventing native source authority.

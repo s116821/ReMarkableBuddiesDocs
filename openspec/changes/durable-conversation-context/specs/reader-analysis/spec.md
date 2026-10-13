@@ -1,5 +1,15 @@
 ## ADDED Requirements
 
+### Requirement: Development transport ownership
+The source-only development capture transport SHALL exist only for explicit tests
+and the opt-in retained-store harness. Normal selected backend operation SHALL
+continue to refuse acquisition/request/effects without a qualified producer, and
+needed native admission/dispatch interfaces SHALL remain intact and unqualified.
+
+#### Scenario: Normal executable has no development transport
+- **WHEN** the normal non-test selected backend is initialized
+- **THEN** it refuses as before, without compiling a fixture producer or claiming an installed development/native acquisition path.
+
 ### Requirement: Selected request and draft publication
 Actual selected Reader interpretation and Generated drafts SHALL publish through
 canonical selected admission and Store.commit_selected, using exact acknowledged
