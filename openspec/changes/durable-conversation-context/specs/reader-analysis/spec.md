@@ -1,5 +1,15 @@
 ## ADDED Requirements
 
+### Requirement: Composed selected memory publication
+Compatible selected subject memory and selected Reader draft publication SHALL use
+one canonical ordered admission set, preserving original payload/token/raw-head
+and budget seals. The writer SHALL NOT reacquire an already-held participating
+gate. Unsupported or foreign providers SHALL refuse before model/publication.
+
+#### Scenario: Memory and Reader share a document key
+- **WHEN** the same selected document scope participates in both the memory view and Reader draft
+- **THEN** its gate is held once with the complete ordered set, both inputs are revalidated, and the guarded draft publishes without duplicate gate acquisition or new native authority.
+
 ### Requirement: Development transport ownership
 The source-only development capture transport SHALL exist only for explicit tests
 and the opt-in retained-store harness. Normal selected backend operation SHALL
