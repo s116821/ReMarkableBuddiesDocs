@@ -90,14 +90,13 @@ synthetic/development correspondence cannot satisfy them. After Generated
 acknowledgment, orchestration can finalize plan, use existing controlled
 prepare_reader, install its result and dispatch through guarded facade.
 Historical result never dispatches. Production SourceAdmission and settlement,
+branch-dependent render_answer, trigger/history/status remain unsupported until
+separately qualified; full task2.10 stays open.
 
 Future Pending additionally needs its existing exact Source/Binding observation
 evidence and sealed live source; a Capture DTO and Generated acknowledgment alone
 cannot satisfy that existing contract or dispatch. Preserve this dependency
 without inventing a new assistant-to-capture relation or native binding.
-
-branch-dependent render_answer, trigger/history/status remain unsupported until
-separately qualified; full task2.10 stays open.
 
 ## Verification and delivery
 
