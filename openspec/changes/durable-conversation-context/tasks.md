@@ -4,6 +4,7 @@
 - [ ] 1.2 Obtain REM-25 review of receipt fields, deterministic binding uniqueness, complete-head CAS and sole native journal ownership; resolve findings.
 - [ ] 1.3 Record public requirement/comment acceptance mapping and exact Docs/Rust implementation bases without changing another lane's deltas.
 - [ ] 1.4 Review October 1 SDK capability-boundary amendment before domain code; coordinate exact SDK capture/identity/native-result contract without duplicating SDK canonical specs. Keep native integration/qualification gates open until verified.
+- [ ] 3.23 Publish the separately reviewed SDK gesture consumer from the reconciled parent, preserving protected working bytes and excluding pen changes; verify exact committed source and focused/platform checks before recording bounded completion. Native qualification and full Reader lifecycle remain open.
 
 ## 2. Shared domain and evidence
 
