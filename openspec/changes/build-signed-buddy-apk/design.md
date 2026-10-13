@@ -83,7 +83,8 @@ existing receipt/package or silently rebase inputs.
 Producer inputs are fixed regular files, no symlink/device/special file or
 caller-controlled archive extraction. Bound package/input size (128MiB per target),
 metadata (64KiB), file inventory (fixed <=8), subprocess time (120s per actual
-package/tool phase) and output diagnostics (16KiB sanitized per phase). Streams
+package/tool phase;900s for the separately bounded fresh source compilation only)
+and output diagnostics (16KiB sanitized combined per phase). Streams
 hash/copy with pre/post identity and complete byte counts; changed/truncated
 input, unexpected inventory, signature/metadata mismatch or timeout discards
 incomplete staging and preserves earlier outputs. Container network is disabled,
@@ -150,3 +151,14 @@ fallback or unsigned receipt substitution.
 Production source/compiler authentication, source-version placeholder remediation
 and the maintained REM-46 pipeline remain open. The first source build can use
 an isolated already-stamped fixture tag; it must not create/change a live tag.
+
+The first actual fresh ARM build at public v0.2.0 hit the original120s phase
+watchdog while creating hundreds of dependency/object files, before an executable
+was available. That incomplete output and owned cleanup are preserved. A900s
+compilation-only bound accommodates normal clean compilation; completion still
+requires actual process exit and every original input/runtime/descriptor check.
+Metadata, runtime version, signing/verification and observation retain120s bounds.
+Retain already collected bounded compiler stdout/stderr privately on both success
+and refusal, with fixed public classifications; never enlarge the16KiB combined
+diagnostic allowance, admit partial/cached executable output, or retry unchanged
+settings as a substitute for actual build evidence.
