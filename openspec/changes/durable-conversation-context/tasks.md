@@ -22,7 +22,7 @@
 ## 3. Real Reader integration
 
 - [x] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes. Exact1cc5a2a accepted; 43b937d is editorial cleanup. User-owned capture/empty assistant sources and non-Pending recovery are frozen.
-- [ ] 3.14 Implement selected acknowledged interpretation/draft publication and actual Attempt routing without ordinary fallback or invented native capability.
+- [x] 3.14 Implement selected acknowledged interpretation/draft publication and actual Attempt routing without ordinary fallback or invented native capability. Bounded source74ba26c independently accepted; qualified acquisition/Pending/settlement/composed memory remain unsupported/open.
 - [ ] 3.15 Verify actual mutation/retry/replacement/media/refusal controls and paired independent evidence; keep SDK capture/live source/full dispatch/lifecycle gates open.
 
 - [x] 3.10 Review startup-mode-admission.md against accepted repaired mode APIs; preserve unconfigured/local data compatibility and name absent local read-mode lifetime fencing. Frozen a5da6b3/f51a5c8 accepted in scoped independent review.
