@@ -12,10 +12,10 @@ schema posing as a package. Production pipeline integration remains unchecked.
 Reuse the producer's existing exact-tag build/version verification and ELF/ABI
 checks where applicable. A clean exact tag and peeled source SHA must match;
 modified/shallow/missing/wrong-tag input refuses. Never accept caller text as
-proof that an arbitrary binary was built from that source. Package build input
-comes from a recorded actual build or a verified immutable official artifact
-whose provenance/inventory and bytes match. The packager records which basis it
-used. SDK identity must come from actual resolved Cargo metadata/lock/build
+proof that an arbitrary binary was built from that source. Initial input is ONLY the actual reviewed source-build path below. External
+official-artifact input remains unsupported until separately qualified
+quarantine/provenance/trust admission exists. Matching caller JSON and hashes
+are never an alternative source-build admission. SDK identity must come from actual resolved Cargo metadata/lock/build
 input, never from the current working override or a guessed version.
 
 Initial package identity: name and origin `remarkable-buddies`. Initial stable
@@ -47,7 +47,8 @@ from Cargo's tooling version. A legacy source that demonstrably consumes no SDK
 is explicitly absent. Neither can satisfy the required production SDK-version
 contract. Unqualified or unknown profile/firmware/lifecycle stays installation
 ineligible, regardless of valid signature. No compatibility field grants native
-capability. Exact field serialization is reviewed with the consumer before code.
+capability. The exact field serialization is in serialized-contract.md and is reviewed
+with the consumer before code.
 
 Upstream mkpkg/mkndx generate APKv3 package/index bytes; verify then bounded
 adbdump/query inspect those actual fields in isolated roots. Standard signed
@@ -114,3 +115,38 @@ release-pipeline rollout follows. Those remain REM-41/35/46/55 responsibilities.
 
 Exact serialization/build-input qualification and fixed fixture payload paths are
 proposed decisions pending independent precode and consumer review.
+
+## Initial actual build-input admission
+
+The helper executes the existing tag-before-build subset: verify clean complete
+Git source/tag/peeled SHA; use the reviewed Cross target configuration and run
+cross run --locked --release --target TARGET --target-dir OWNED --bin reader-buddy
+-- --version with expected tag/SHA build-script variables. Runtime version must
+match the actual tag. Reuse the preserved REM-46 build.py/abi.py checks as
+reference, not its unsigned provenance as authentication or a new coordinator.
+No prebuilt executable path or external receipt is admitted in the initial CLI.
+
+Immediately before and after each actual build, collect cargo metadata --locked
+--format-version 1 --filter-platform TARGET, Cargo.lock SHA, source Git status/
+HEAD/tag, the SDK package's actual git source fragment/resolved checkout HEAD,
+SDK manifest hash/status, compiler/cross/image identity and exact argv/features.
+Require stable matching inputs, fixed canonical SDK repository when present,
+exact one resolved SDK package, actual clean resolved SDK source and lock agreement.
+Record absent SDK only if actual metadata has none. A supplied stable SDK tag
+must resolve to that actual SDK SHA; without verified tag record commit-pinned,
+not a version inferred from Cargo. This remains developer source-build evidence,
+not authenticated compiler/SLSA proof or production trust.
+
+The executable from that owned build output is fstat/hash/ELF-verified, checked
+by actual --version under the declared target runner, then copied with complete
+byte counts and rehashed before/after package generation. The helper produces
+its internal build.json itself from these observations. It does not accept caller
+build identity, compiler fields, profile, executable digest or eligibility as
+admission. Current unqualified-development/legacy-no-sdk vocabulary is fixed;
+no approved native profile can be invented by a command option. Failure of build,
+identity recheck or actual target execution ends that build; no cached binary
+fallback or unsigned receipt substitution.
+
+Production source/compiler authentication, source-version placeholder remediation
+and the maintained REM-46 pipeline remain open. The first source build can use
+an isolated already-stamped fixture tag; it must not create/change a live tag.
