@@ -21,7 +21,7 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes.
+- [x] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes. Exact1cc5a2a accepted; 43b937d is editorial cleanup. User-owned capture/empty assistant sources and non-Pending recovery are frozen.
 - [ ] 3.14 Implement selected acknowledged interpretation/draft publication and actual Attempt routing without ordinary fallback or invented native capability.
 - [ ] 3.15 Verify actual mutation/retry/replacement/media/refusal controls and paired independent evidence; keep SDK capture/live source/full dispatch/lifecycle gates open.
 
