@@ -124,10 +124,26 @@ current main-base run or native qualification is claimed.
 
 ## Open gates
 
-Runtime panic behavior remains source-reviewed mutex poisoning only, explicitly
-unqualified by execution. Result-failure controls do not prove a panic witness;
-verification tasks 3.20 and subject-memory 4.7 remain open for runtime panic
-execution qualification, despite completed bounded evidence review. Required strict lint has no waiver; the quality base retains 20 native dependency
+The focused actual Provider joined-publisher panic witness now executes at Rust
+3e87abc862b40c98a8a7c9dd4586ab377e268d37, following accepted test-only precode
+bb3132e and repaired source assertions. The cfg(test)-only one-shot thread-local
+hook runs immediately after valid receiving-view consumption while its pins and
+combined canonical admission gates remain held. One exact bounded child witnesses
+the intended panic, same-view pins refusal and specific still-live domain-gate
+refusal with a second prequeried view/new Reader handle, no new assistant/receipt,
+unchanged Store manifests and exact original media. Parent verifies its exclusive
+nonce acknowledgment written only after all assertions. This is Provider/gate
+execution evidence, not actual Orchestrator Attempt-currentness or an exception
+matrix; tasks3.20 and subject-memory4.7 remain open for their larger scope.
+
+Owner immutable-source final execution passed one child and one parent test in
+1.10s/1.15s under the20s child deadline, exit0. Final log SHA256
+2230980f7b197031e359cd9122c13635c421d35266d2e8e1be7dd732d8f43625.
+Predecessor babcb5b also passed4.75s/4.79s, with two new copied-fixture warnings;
+final3e87 removed only unused imports/helper and those warnings are absent. This
+is not a strict-lint pass. Exact committed SDKd01 and all protected nine bytes were
+preserved; the existing standalone execution checkout was restored clean to39b1.
+Independent final result inspection is pending; no independent rerun is claimed. Required strict lint has no waiver; the quality base retains 20 native dependency
 diagnostics. Qualified Source/Binding, Pending, dispatch/uncertainty, native geometry,
 render-to-source linkage, lifetime/recovery, installed acquisition, actual settlement,
 representative live-model effectiveness, Writer/Manager integration, release,
