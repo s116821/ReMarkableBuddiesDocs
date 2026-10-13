@@ -1,0 +1,11 @@
+# Design
+
+Consume immutable Rust6b1b9fd539c33ced6ab56541ef332ba05e4ed693 and Docs4b425c9559fed5446a730d56bc9e68b6b8e80bb4 contract; these parents remain unmerged. No source release version or guessed SemVer minimum: actual command/report support is capability evidence.
+
+The Linux USB observer reuses physical route/source/interface binding, pinned SSH host key, private key, bounded subprocess deadline, boot/config readback and cable watcher. The fixed installed path is /opt/bin/reader-buddy from the current service contract. Run only --inspect-owned-data with HOME and explicit normal nonsecret config path; do not source service environment or read credentials. No caller chooses paths/commands. Missing binary or unknown flag is unsupported; unknown output is unavailable. No fallback Store opening or shell inspection of arbitrary directories.
+
+Browser loopback and Electron IPC add the same parameterless host action. Host compares inspector boot/connection to its last successful observation; renderer pauses automatic observations during the explicit inspection and fences late replies after disconnect/re-read. Central device-profile resolution gates inspector on current known model/architecture/nonconflicting firmware observation without inventing installation/native compatibility. Changing device or boot discards results.
+
+Strict report parser bounds bytes, checks schema/keys/types/allowed sanitized issue codes and integer safety, refuses unknown privileged claims, and preserves absent map entries. Observed bytes are file lengths, not allocated/reclaimable space. Complete total is null unless complete. Domains share media: show nonadditivity and missing/uninspected/omitted/size mismatches. Diagnostics/cache may remain uninspected; absence is never displayed as empty. Secrets/native documents excluded. No deletion/export/restore controls are enabled.
+
+One Angular template uses existing Tailwind components, semantic headings/table labels, accessible live status and narrow layout. Fixture reports and real host action tests verify both editions, late replies, malformed/unsupported/unavailable/busy/partial/complete, cancellation, existing helper/IPC gates and sandbox isolation. RCU/reManager current reference patterns support explicit local ownership/compatibility and preview; no framework/native utilities copied.
