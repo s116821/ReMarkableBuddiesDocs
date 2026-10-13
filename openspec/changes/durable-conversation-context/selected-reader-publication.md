@@ -68,6 +68,14 @@ winners. Revalidate current lifecycle at actual provider/acknowledgment boundari
 replacement refuses without installing state from historical receipt. Recording
 fixture installation supplies no qualified input production.
 
+Reuse current startup-mode policy: an explicit SharedGroup state owns its matched
+SyncModeLease throughout selected Attempt and provider/publication handoffs,
+rechecking scope at each boundary. LocalOnly/IsolatedBackup/foreign/corrupt modes
+refuse selected application work. Unconfigured selected compatibility remains
+historical/data-only with no invented lifetime mode lease; it does not enable
+production native dispatch. Do not drop a real shared lease between input,
+provider, Generated acknowledgment and future controlled Pending dispatch.
+
 Evidence must be durably selected before input-state installation/first provider
 call. Qualified SDK capture production and live source binding remain missing;
 synthetic/development correspondence cannot satisfy them. After Generated
