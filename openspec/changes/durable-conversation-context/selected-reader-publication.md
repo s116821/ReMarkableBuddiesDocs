@@ -41,6 +41,14 @@ conversation/user. Omission, tombstone, malformed/foreign input, unavailable med
 or ambiguity refuses. This is historical input integrity, not native authority.
 Preserve sources, exchange and original created time. Interpretation advances the
 user; generation creates assistant at root.next_sequence and increments once.
+
+Source ownership is unchanged on the user. Generated assistant has sources empty
+and shares the user's original exchange; it does not copy user.sources as the
+ordinary Attempt does. Private selected Attempt retains exact acknowledged user/
+evidence pins for image retrieval and future preparation. Do not clone or reassign
+capture ownership, or weaken strict source.turn ownership. Require a nonempty
+user-Capture regression verifying strict postcommit inspection, capture_images
+and original provider image order.
 Updated time cannot precede acknowledged chronology; reject empty/oversized text,
 nil/colliding IDs and sequence overflow before publication.
 
@@ -82,6 +90,12 @@ synthetic/development correspondence cannot satisfy them. After Generated
 acknowledgment, orchestration can finalize plan, use existing controlled
 prepare_reader, install its result and dispatch through guarded facade.
 Historical result never dispatches. Production SourceAdmission and settlement,
+
+Future Pending additionally needs its existing exact Source/Binding observation
+evidence and sealed live source; a Capture DTO and Generated acknowledgment alone
+cannot satisfy that existing contract or dispatch. Preserve this dependency
+without inventing a new assistant-to-capture relation or native binding.
+
 branch-dependent render_answer, trigger/history/status remain unsupported until
 separately qualified; full task2.10 stays open.
 
