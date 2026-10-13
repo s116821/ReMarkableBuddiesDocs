@@ -21,8 +21,8 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.10 Review startup-mode-admission.md against accepted repaired mode APIs; preserve unconfigured/local data compatibility and name absent local read-mode lifetime fencing.
-- [ ] 3.11 Integrate actual startup and selected-current writer mode admission using relevant exact generic deltas, existing shared lease/domain gates and historical recovery; no implicit nonlocal fallback or new SDK facade.
+- [x] 3.10 Review startup-mode-admission.md against accepted repaired mode APIs; preserve unconfigured/local data compatibility and name absent local read-mode lifetime fencing. Frozen a5da6b3/f51a5c8 accepted in scoped independent review.
+- [x] 3.11 Integrate actual startup and selected-current writer mode admission using relevant exact generic deltas, existing shared lease/domain gates and historical recovery; no implicit nonlocal fallback or new SDK facade. Reviewed source62a5376; final proof/publication task3.12 remains open.
 - [ ] 3.12 Verify actual mode/config/refusal/lease/recovery behavior, exact committed-source proof and paired independent delivery; keep live mode switching/provider/native/full lifecycle gates open.
 
 - [x] 3.7 Review explicit selected executable startup/historical handling against committed SDK d01; name unavailable native/tokenizer seams without promising all24 lint failures disappear. Bounded contract/source review: startup-history-result.md.
