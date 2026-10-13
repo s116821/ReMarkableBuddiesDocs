@@ -5,8 +5,8 @@ October13,2026 (America/Chicago). Main used exact Manager
 and a generated developer build identity. This extends the source/native API
 milestones; it does not complete the physical cable/competing-route gate.
 
-The existing Windows host had the selected USB network adapter up with source
-10.11.99.5/27. An owner-only task configuration used the existing authorized key
+The existing Windows host had the selected USB network adapter up with the
+established source address. An owner-only task configuration used the existing authorized key
 and enrolled host pin; the original key/config/trust were unchanged. Existing
 Paramiko5.0.0 and pywin32312 libraries were reused through a task-local Python3.12.14
 launcher, not globally installed. Native USB ancestry and ordinary/constrained
