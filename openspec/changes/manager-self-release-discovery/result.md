@@ -1,0 +1,7 @@
+# Local read-only release result
+
+One existing controller now supports fixed Buddy/Manager streams with per-repository tag/download-URL identity. Buddy keeps its saved source preference; Manager has no preference/does not touch that key. Separate requests/backoff/state support current build/latest stable panel. Expected Manager asset metadata requires the four established files, without checksum/signature/update/compatibility inference. No source-version field or dependency/release engine change.
+
+Local Linux Node24.21.0:21 Node tests PASS (two new repository/asset and separate preference/refresh/backoff controls), lint, development styling, production/browserDPR1+1.25/actual Electron check and native Linux package/full packaged host checks PASS. Shared host fixtures intercept both fixed APIs before startup and deny unknown traffic; first-load counts, Manager stable candidate change without reload and independent Manager failure/stale state are verified. Wired and owned browser/Electron regression paths PASS; no transport/source/backend/API change. No Python/native rerun required for metadata/UI-only changes.
+
+Docs20guidance/126preserved/OpenSpec1.2 strict23 PASS. Exact hosted/independent review pending. Final source-capture evidence belongs in PR comments; old inspector/Windows screenshots retain their original provenance. Existing accepted parents remain frozen. No tablet/account/provider/updater/download/install/source-version/tag/merge/Done/archive action; Main native/backend/release-policy scope unchanged. FullREM41/35 and lifecycle remain open.
