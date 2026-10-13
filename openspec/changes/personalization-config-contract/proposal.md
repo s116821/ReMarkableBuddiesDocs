@@ -8,7 +8,7 @@ Add optional defaulted versioned personalization settings; preserve exact UTF-8 
 ## New Capabilities
 - `personalization-config-contract`: portable setting and guarded local configuration maintenance.
 ## Modified Capabilities
-None.
+- `platform-runtime`: align the existing startup and exclusive CLI requirements with fixed offline personalization maintenance while preserving normal startup and diagnostic behavior.
 
 # Impact
 Rust config/CLI and central public documentation only. Root owns coordinated review/delivery; Manager owns the editor and Main retains receiving-buddy/provider/domain/SDK work. No native or account operation, second backend writer, Buddy API or sync engine.
