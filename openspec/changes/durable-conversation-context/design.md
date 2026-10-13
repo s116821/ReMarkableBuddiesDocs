@@ -1,5 +1,11 @@
 ## Context
 
+The next application increment is specified in
+[selected-reader-publication.md](selected-reader-publication.md): selected
+interpretation/Generated publication and actual Attempt routing under canonical
+admission, while SDK acquisition/live source and branch-dependent effects remain
+separate dependencies.
+
 REM-37 supplies durable conversation context on accepted REM-36 storage. Current Reader orchestration captures an overview and derives detail images for proposal and independent verification; native undo ownership is process-local. REM-9 already guards capture, provider waits, navigation and keyboard output. REM-25 owns native page acquisition and its device-local recovery journal. Its static firmware inspection identifies a possible explicit page UUID argument but proves no runtime insertion or persistence semantics.
 
 Authority is the complete REM-37 description and September 26 correlation clarification, plus the resumed roadmap. The public acceptance mapping accompanies this plan. The inspected REM-36 checkpoint is an interface candidate, not permission to begin implementation before independent review and dependency acceptance.

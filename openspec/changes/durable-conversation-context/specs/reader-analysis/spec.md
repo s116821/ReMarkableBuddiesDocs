@@ -1,5 +1,16 @@
 ## ADDED Requirements
 
+### Requirement: Selected request and draft publication
+Actual selected Reader interpretation and Generated drafts SHALL publish through
+canonical selected admission and Store.commit_selected, using exact acknowledged
+root/user references and preserved source evidence. Historical retries SHALL
+recover original acknowledgment without minting live authority; failed selected
+publication SHALL NOT fall through to ordinary Ledger writes or later effects.
+
+#### Scenario: Draft acknowledgment lost before retry
+- **WHEN** the same stable operation and original input are retried after an acknowledged selected draft publication
+- **THEN** original receipt/pins recover before stale current-head checks, one chronological draft exists, and no native context or effect is reconstructed.
+
 ### Requirement: Durable actual inference evidence
 Reader SHALL persist a guarded evidence batch containing the exact overview/details submitted to proposal and independent verification before provider dispatch. It SHALL reuse the prepared bytes, retain REM-9 ownership checks across storage work, and record verified request and actual terminal outcome without changing recognition prompts or mistaking a draft for visible output. Source: REM-37 source-image retention and actual Reader integration.
 

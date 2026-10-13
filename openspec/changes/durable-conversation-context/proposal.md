@@ -4,6 +4,10 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
+- Continue selected Reader request/draft publication and actual Attempt routing
+  through [selected-reader-publication.md](selected-reader-publication.md), using
+  acknowledged selected evidence without inventing native source authority.
+
 - Continue actual startup/current-history mode admission through
   [startup-mode-admission.md](startup-mode-admission.md), reusing accepted mode
   interfaces and preserving local data compatibility without claiming a missing
