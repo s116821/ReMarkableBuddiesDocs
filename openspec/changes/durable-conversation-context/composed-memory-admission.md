@@ -18,6 +18,25 @@ ordered publication path. Do not add a transport, registry or SDK DTO/facade.
 
 ## Controlled combined publication
 
+The first actual shared-key control exposed an existing asymmetric projection:
+Reader rejects SubjectMemory records in the document closure before publication,
+while memory already validates and partitions conversation records. Preserve the
+failing witness and add an explicit reciprocal document-memory partition. Only
+SubjectMemory schema1, media-free, owned document facts and causal tombstones are
+supported. Reuse the existing memory fact identity/claim/ownership and causal-head
+validators; do not silently filter arbitrary namespaces or duplicate the schema.
+All raw references and cumulative metadata bounds include the partitioned records.
+Reader conversation roots must have exclusive known ownership of the same document
+and the shared document-key recipe must match the selection scope. Foreign/global
+memory, malformed facts, missing ancestors, forked/cyclic tombstones, unsupported
+schemas/namespaces and unresolved ownership refuse. Required accepted-history
+custody checks remain with the existing memory provider; Reader partitioning is
+not memory-query permission or a source/native qualifier. Preserve other profile
+records for the same document byte-for-byte. Keep the existing domain-only pinned
+projector strict; use the reviewed mixed-closure path only at actual selected
+Reader snapshot/recovery consumers that need it. Negative partition controls are
+required alongside the shared-key success case before broadening the old refusal.
+
 Add an actual Provider capability for selected Reader compatibility and selected
 text publication using existing QueryResult, SelectedAdmission, SelectionToken
 and SelectedReaderWrite/Publication. Default providers refuse; SelectedMemory
