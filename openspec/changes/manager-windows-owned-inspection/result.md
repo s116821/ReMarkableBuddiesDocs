@@ -1,0 +1,15 @@
+# Local software integration result
+
+Windows adapter/tests are imported from accepted3770515; its only product delta is the inspection callback argument forwarded to the accepted shared admission/SSH transport. Shared portable deadline preserves timeout inspection envelope; Node dispatch preserves SystemRoot and supports Linux/Windows. Parser, Angular profile/controller/template and helper/IPC product files remain unchanged from acceptedf433. Parent PR8/9, Docs13/17 and Rust inspector6b remain explicit unmerged dependencies.
+
+Local Linux Node24.21.0:19 Node tests/lint, required development+production Manager check, wired browser/helper/Electron checks, owned browser/Electron checks, native Linux package and packaged owned inspection matrix PASS. Python22 tests:19PASS/3 Windows-native skips. Three new integration controls cover a real local SSH/SFTP peer with synthetic notice/route/key custody, actual Windows-main dispatch/timeout-envelope fixture, and inspection callback forwarding through the repaired Windows observer. The Node host subprocess report control covers both Linux/win32 dispatch selections with actual Node fixture child. No physical USB or Windows-native pass is claimed locally.
+
+Windows CI will run maintained pinned pywin32 native route/socket/NTFS/notification controls and actual pinned Python/config refusal. Test-only main-process IPC substitution for Windows report UI is explicitly labeled and does not claim native inspection. Existing Linux checks remain. That publication checkpoint was pending; bounded source review and hosted checks are now accepted as recorded below; no duplicate review of stable accepted parents is requested.
+
+No tablet/account/provider/native-document/installer/service/cleanup writes, protected Main edit, version mint, worker/worktree, merge/Done/archive or broader qualification. Main owns actual Windows/RM2/hardware and Reader/domain/backend. FullREM41/42/35 and lifecycle remain open.
+
+## Canonical bounded acceptance
+
+The exact pair Manager 3aea2e3e3fe5ddace831ea3666be9f8c1d626802 / Docs bcb413ef002dc27469775b82ef8782dde90792b7 is independently accepted without actionable findings in [the canonical attributed review](https://github.com/s116821/ReMarkableBuddiesManager/pull/10#pullrequestreview-5498527730). Hosted Python: Windows 16 passes and 6 Linux-only skips; Linux 19 passes and 3 Windows-native skips. Both hosted platforms passed 19 Node tests and applicable UI/package checks. Windows IPC renderer fixtures remain distinct from actual interpreter/config refusal and physical USB. One dual-platform reviewer child control used Node 24.11 and is supplemental; no local Python rerun was claimed.
+
+This result-only amendment preserves the accepted implementation and requirement/proposal/design bodies. It does not transfer acceptance to deployment, updater/download/integrity/compatibility, physical Windows qualification, unmerged parent delivery, the full issues, canonical sync/archive or merge. The remaining lifecycle checkbox stays open. No unchanged implementation review or native matrix is repeated.
