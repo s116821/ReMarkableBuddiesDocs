@@ -140,3 +140,19 @@ different valid signed package having the same name/version/arch but different
 metadata or payload, altered index tags, wrong entry hash, truncation and duplicate
 entries. Correct tool integrity rejection versus predicate rejection remains
 separate. These tests confirm binding and do not grant installation eligibility.
+
+### Concrete initial metadata-hash readback
+
+For the first implementation, generate a fresh comparison index with pinned
+mkndx --hash sha256 from exactly the independently verified immutable APK files,
+using the same explicitly supplied fixture signer. Do not use an existing index
+or update/reuse entries. Verify the regenerated index, then bounded adbdump
+--format json both signed indexes and compare their two package entries' hashes
+and complete standard/tag metadata. This invokes the tool's actual package
+metadata identity generator; it does not hash whole APK bytes as that identity.
+mkndx's source calls apk_extract_generate_identity with its configured algorithm
+and stores that digest in the index hashes field; full-file file-size is separate.
+Actual byte tests must confirm command/encoding and refusal when a different valid
+signed same-name/version/arch package is used to regenerate the comparison.
+APK full-file SHA256/size and payload hashes remain separate checks. No index
+hash is accepted solely from caller text or matching name/version.
