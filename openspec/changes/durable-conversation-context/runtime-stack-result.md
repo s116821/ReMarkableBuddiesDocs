@@ -40,8 +40,15 @@ boundary without overwriting startup3.7–3.9. Protected active nine files and p
 remain outside the replacements. Committed SDK staysd01b4bdf; protected gesture
 WIP/SDK5c0bc303 is not silently adopted or described as committed.
 
-Exact paired Docs reconciliation/final checks, public branch readback, required
-hosted checks and Root final readiness are separate. Production qualified
+Fresh public readback confirmed source1f4b291 and paired Docsbea05aba. Required
+[Rust hosted checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/38432509444)
+passed build/lint, tests and release policy; the title check also passed.
+[Docs hosted checks](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/38432533547)
+passed Linux, Windows and OpenSpec validation. Local Docs12 tests, source/guidance
+checking and strict17 validation passed. Independent paired-result review
+accepted the source/evidence attribution without rerunning these checks.
+Task3.22 records this bounded reconciliation only; Root final merge readiness
+remains separate. Production qualified
 bootstrap/source/page/orientation/lifetime/native/Writer/recovery, full task2.10
 and whole lifecycle remain open. No sync/archive/merge/Done for this unfinished
 Reader change. REM53's separate owner rebases onto the final published PR37/22

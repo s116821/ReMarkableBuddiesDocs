@@ -4,7 +4,6 @@
 - [ ] 1.2 Obtain REM-25 review of receipt fields, deterministic binding uniqueness, complete-head CAS and sole native journal ownership; resolve findings.
 - [ ] 1.3 Record public requirement/comment acceptance mapping and exact Docs/Rust implementation bases without changing another lane's deltas.
 - [ ] 1.4 Review October 1 SDK capability-boundary amendment before domain code; coordinate exact SDK capture/identity/native-result contract without duplicating SDK canonical specs. Keep native integration/qualification gates open until verified.
-- [ ] 3.23 Publish the separately reviewed SDK gesture consumer from the reconciled parent, preserving protected working bytes and excluding pen changes; verify exact committed source and focused/platform checks before recording bounded completion. Native qualification and full Reader lifecycle remain open.
 
 ## 2. Shared domain and evidence
 
@@ -23,7 +22,8 @@
 ## 3. Real Reader integration
 
 - [x] 3.21 Review and implement the bounded [runtime compilation boundary](runtime-compilation-boundary.md) at owning PR30, retain recording guards/tests and public read-only/storage behavior, run affected checks and strict lint, then reconcile dependent PR32 without enabling unqualified runtime effects. Bounded source/Docs and required checks are verified; production integration and whole lifecycle remain open. Descendant reconciliation is tracked separately below.
-- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see runtime-stack-reconciliation.md.
+- [x] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; reviewed exact public heads and required hosted checks passed; see runtime-stack-reconciliation.md.
+- [ ] 3.23 Publish the separately reviewed SDK gesture consumer from the reconciled parent, preserving protected working bytes and excluding pen changes; verify exact committed source and focused/platform checks before recording bounded completion. Native qualification and full Reader lifecycle remain open.
 - [x] 3.18 Review composed-memory-admission.md against actual Provider pins, Reader writes and shared gate order before code. Plan9dfe0f7 and reciprocal document partition ece586 independently accepted.
 - [x] 3.19 Implement real compatible selected Provider/Attempt publication under one ordered set, preserving unsupported providers and native refusal. Source2ebe8e1 and test-only2f6f738 independently accepted; exact result review/panic and native qualification remain open.
 - [ ] 3.20 Verify actual same/distinct-key concurrency, ownership, replacement, seal/budget/retry and Orchestrator controls with scoped independent evidence.
