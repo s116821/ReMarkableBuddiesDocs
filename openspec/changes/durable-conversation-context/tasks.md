@@ -21,6 +21,10 @@
 
 ## 3. Real Reader integration
 
+- [ ] 3.13 Independently review selected-reader-publication.md against selected Store/domain semantics and actual Attempt/Orchestrator routes.
+- [ ] 3.14 Implement selected acknowledged interpretation/draft publication and actual Attempt routing without ordinary fallback or invented native capability.
+- [ ] 3.15 Verify actual mutation/retry/replacement/media/refusal controls and paired independent evidence; keep SDK capture/live source/full dispatch/lifecycle gates open.
+
 - [x] 3.10 Review startup-mode-admission.md against accepted repaired mode APIs; preserve unconfigured/local data compatibility and name absent local read-mode lifetime fencing. Frozen a5da6b3/f51a5c8 accepted in scoped independent review.
 - [x] 3.11 Integrate actual startup and selected-current writer mode admission using relevant exact generic deltas, existing shared lease/domain gates and historical recovery; no implicit nonlocal fallback or new SDK facade. Reviewed source62a5376; final proof/publication task3.12 remains open.
 - [x] 3.12 Verify actual mode/config/refusal/lease/recovery behavior, exact committed-source proof and paired independent delivery; keep live mode switching/provider/native/full lifecycle gates open. Bounded final evidence review accepted source62a5376/result928407c; strict lint remains failing with 23 inherited errors.
