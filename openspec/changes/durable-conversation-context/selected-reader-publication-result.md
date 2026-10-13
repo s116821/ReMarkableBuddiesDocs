@@ -43,7 +43,8 @@ Final exact formatting and ordinary nonmock lib/bins checks pass. Required stric
 Clippy fails with22 inherited dead_code errors, exit101, unsuppressed/unwaived.
 The prior23-error baseline loses one diagnostic because the existing development
 origin field now has legitimate actual Attempt use; other native wiring remains
-unfinished. Full-target warning collection is diagnostic only, not a strict pass.
+unfinished. Full-target collection has22 warnings, all dead_code, zero new selected
+writer/state spans. It is diagnostic only, not a strict pass or waiver.
 
 Predecessor2b full exact Windows suite passes294 library/one existing ignored and
 all19 result groups, including CLI14, SDK12 and compile-fail docs. Its LF ZIP
@@ -63,11 +64,16 @@ that earlier checkout as the main merge.
 
 Independent bounded source review accepted62a→2b and narrow2b→74/f74. Reviewer
 inspected actual code/assertions and owned source scope, not an independent full
-matrix execution. Final result/log review and paired publication remain pending.
+matrix execution. Independent final74/fbb result/log review accepted: reviewer
+read completed owner logs, independently parsed22 diagnostics and verified hosted
+jobs/draft pointers. No broad rerun/archive hash recreation/native qualification
+is claimed. Source comment6137797764 and paired Docs6137798064 full-body readbacks
+are verified. Final reviewer receipt publication remains the owner closeout step.
 
 Local Docs12 tests/checker19 guidance+126 preserved blobs and strict active-change
 validation pass. Hosted Docs c02 and f74 Ubuntu/Windows/OpenSpec checks pass.
-Final result revision checks remain pending.
+Final resultfbb hosted Ubuntu/Windows/OpenSpec all pass38343345812. This final
+review-receipt amendment requires its own hosted checks before owner closeout.
 
 SDK canonical source successor is independent:
 [capture-order correspondence result](https://github.com/s116821/ReMarkableOpenSDK/blob/211dddd33817c5b27d0083293f313c13e0fede1e/openspec/changes/establish-native-platform-contract/capture-order-correspondence.md).
