@@ -183,3 +183,13 @@ Actual byte tests must confirm command/encoding and refusal when a different val
 signed same-name/version/arch package is used to regenerate the comparison.
 APK full-file SHA256/size and payload hashes remain separate checks. No index
 hash is accepted solely from caller text or matching name/version.
+
+Both index generations use the standard upstream `--pkgname-spec` value
+`${name}-${version}.${arch}.apk`, matching the two actual artifact filenames.
+The authenticated JSON readback must contain that exact `pkgname-spec` beside
+`packages`; compare it as well as both entries. This is a standard signed index
+field, not a custom filename hash or payload tag. Refuse an absent/different
+pattern, duplicate keys or package entries, or any other unexpected initial
+index root member. Filename/whole-file-size observations remain separate from
+the upstream metadata hash. Confirm this actual pinned-tool readback before
+calling the complete producer byte binding qualified.
