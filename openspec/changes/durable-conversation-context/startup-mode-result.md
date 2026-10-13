@@ -106,8 +106,13 @@ inherited errors; overall CI is unsuccessful, policy/title pass and tablet build
 are not qualified after the failed earlier step.
 
 Docs local 12 tests/checker 19 guidance+126 preserved blobs/strict 17 items and
-hosted `f51a5c8` Ubuntu/Windows/OpenSpec checks pass. Final result revision checks,
-completed evidence review and paired publication are still pending.
+hosted `f51a5c8` and result revision `928407c` Ubuntu/Windows/OpenSpec checks pass.
+The independent reviewer accepted the bounded final source/result evidence after
+reading the completed local and hosted logs, independently parsing all 23 warning
+diagnostics and verifying hosted jobs and draft PR pointers. This was an evidence
+review, not an independent full rerun or recreation of the archive hashes.
+Scoped task 3.12 is complete; this final documentation amendment still requires
+its own hosted checks and paired publication readback.
 
 ## Remaining authority and source basis
 
