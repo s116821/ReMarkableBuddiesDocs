@@ -51,11 +51,19 @@ notification admission before socket creation; the control intercepts socket
 creation only to assert it does not occur. Main's first expectation incorrectly
 required disconnected; the actual earlier refusal status is preserved. These are
 host controls, not physical USB removal or a changed real device. The actual key
-and configured target were not changed. Independent review of these two new
-controls remains pending separately from the accepted connected UI evidence.
+and configured target were not changed. The existing reviewer inspected both
+receipts and the narrow control driver without rerunning them; these remain
+Main-executed host controls, distinct from physical-device evidence.
 
-No existing competing10.11.99.1 host route was present. Creating a competing route
-requires separately authorized reversible host setup; none was created. Physical
+No existing competing tablet-address host route was present. Main concretized one
+short-lived ActiveStore host route on the existing LAN interface, with baseline
+export and removal/restoration in finally. Windows denied creation with Access
+is denied; an exact route query found no fixture and the complete active baseline
+was unchanged. A nonterminating CIM error initially caused the driver to mark
+creation incorrectly and run an ordinary USB read; that bookkeeping failure and
+read are not competing-route evidence. The control now terminates on create error;
+no repeated elevation attempt was made. An elevated host route operation is the
+concrete missing prerequisite, not a new permission inferred from plan wording. Physical
 unplug/reinsert and rapid reattachment during an owned read requires the human at
 the cable. Software adapter toggling is not physical evidence. Task6 remains
 unchecked; complete Windows qualification, canonical lifecycle and merge remain
