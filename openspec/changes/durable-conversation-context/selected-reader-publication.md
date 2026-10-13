@@ -25,6 +25,14 @@ logical input including original token and references. Changed payload/pins
 refuse. Historical retry returns original acknowledgment/pins only, never a live
 context. Do not substitute retained/ordinary winners or allocate new IDs on retry.
 
+Recovery is a distinct interpretation/draft helper using Store.selected_receipt,
+original transaction and strict pinned projection of referenced records, existing
+schema-1 Receipt and exact fingerprint. Validate predecessor and original token/
+input references plus root/turn linkage. Existing recover_original_intent and
+recover_original require admitted Pending receipts and MUST NOT be reused for
+non-admitted receipts. Its result is historical-only; saved tokens cannot install
+fresh Attempt or reconstruct effect context.
+
 New publication requires current token, strict complete selected projection and
 exact current root/user heads. Interpretation requires Reader/Prepared user;
 generation requires Reader/Interpreted user with text. Existing source links and
@@ -51,6 +59,14 @@ ordinary writes. Install input state only from strict current acknowledged
 preparation, not historical receipt/arbitrary strings. Ordinary/development paths
 retain existing behavior. Failed selected writes stop later provider/effect work
 at actual Orchestrator boundaries. Backend Ok never becomes Completed.
+
+Freeze Attempt mutation operation IDs, timestamp, text and original pins once
+before first submission; retry those values, not ordinary methods' fresh UUID/
+clock calls. Selected provider images use existing capture_images on acknowledged
+selected evidence in original order and exact owned bytes, not ordinary Ledger
+winners. Revalidate current lifecycle at actual provider/acknowledgment boundaries;
+replacement refuses without installing state from historical receipt. Recording
+fixture installation supplies no qualified input production.
 
 Evidence must be durably selected before input-state installation/first provider
 call. Qualified SDK capture production and live source binding remain missing;
