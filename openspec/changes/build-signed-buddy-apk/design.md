@@ -162,3 +162,18 @@ Retain already collected bounded compiler stdout/stderr privately on both succes
 and refusal, with fixed public classifications; never enlarge the16KiB combined
 diagnostic allowance, admit partial/cached executable output, or retry unchanged
 settings as a substitute for actual build evidence.
+
+
+The actual Windows-to-Linux build diagnostic found the same tracked source bytes
+clean in host Git (core.autocrlf=true) but changed in the pinned Linux image's
+default Git view; command-local core.autocrlf=true restored equality without
+changing source/index/config files. This is a concrete conversion-view mismatch,
+not proof of the complete historical build-script failure reason. Record the
+host's effective core.autocrlf (false/true/input) and core.eol (lf/crlf/native),
+resolve native eol to the host platform, and supply only those verified semantics
+in the existing temporary Linux Git config alongside its exact safe.directory.
+Recheck these effective inputs after build/runtime and retain the comparison
+privately. Both host and container still must admit exact clean tagged source;
+never suppress Git status, alter source/index, disable cleanliness, or treat
+line-ending configuration as compiler/source authentication. Unknown semantics
+refuse. Metadata, compilation and artifact caps/eligibility remain unchanged.
