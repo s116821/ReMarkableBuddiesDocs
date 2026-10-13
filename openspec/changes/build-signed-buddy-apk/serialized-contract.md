@@ -71,3 +71,72 @@ and actual build.json/executable hashes from signed payload inventory. No instal
 script invocation, key enrollment or Vellum wrapper. Public key fingerprint is
 SHA256 of DER SubjectPublicKeyInfo, independently supplied, not trusted from its
 adjacency to the APK. Production trust/enrollment remains unsupported.
+
+## Exact build.json v1 schema and bytes
+
+Top-level keys are exactly schema, evidence, eligibility, source, target, sdk,
+cargo, toolchain, build and binary. Unknown/duplicate keys at every object level
+refuse. schema is integer1; evidence is developer-source-build; eligibility is
+not-qualified. No floating-point values, NaN, infinity or booleans as integers.
+
+| Object | Exact fields and types |
+| --- | --- |
+| source | repository fixed Buddy HTTPS URL; tag stable tag string; sha40 lowercase hex; epoch integer0..2^63-1 |
+| target | rust_target fixed target enum; apk_arch matching armv7/aarch64; abi matching gnu-arm-eabihf/gnu-aarch64; elf_class integer32/64; elf_machine ARM/AArch64; elf_endian little; interpreter absolute bounded ASCII path observed from ELF |
+| sdk | null iff actual no SDK; otherwise ref_kind tagged-git/commit-pinned, repository fixed SDK HTTPS URL, sha40 lowercase hex, tag stable string iff tagged-git otherwise null, manifest_sha256 64 lowercase hex |
+| cargo | lock_sha256 64 lowercase hex; metadata_identity_sha256 64 lowercase hex of canonical normalized resolved source/SDK/feature identity; features sorted unique ASCII array <=64 items, each<=128 bytes |
+| toolchain | rustc_release ASCII<=128; rustc_commit40 hex or null; rustc_host ASCII<=128; cross_version ASCII<=128; cross_binary_sha256 64 hex; image_digest sha256:64 hex; build_configuration_sha256 64 hex |
+| build | argv ASCII token array<=64, each<=256; environment object with exact keys RUSTFLAGS,CFLAGS,CXXFLAGS,CPPFLAGS,LDFLAGS, each ASCII<=1024; profile fixed unqualified-development or legacy-no-sdk; source_build_helper_sha256 64 hex |
+| binary | path fixed usr/bin/reader-buddy; sha256 64 hex; bytes integer1..134217728; mode integer493 (0755) |
+
+All strings are ASCII with no control characters. Stable tags<=64 bytes,
+interpreter<=256. SDK null/tag requiredness exactly matches the signed tags;
+profile legacy-no-sdk iff sdk is null. Environment is the actual explicit build
+environment, not a current-shell dump; unrecorded compiler/linker override refuses.
+argv/environment temporary source/target/SDK/tool roots are replaced ONLY by
+verified complete path-prefix boundaries with fixed tokens SOURCE_ROOT,
+TARGET_ROOT,SDK_ROOT,TOOL_ROOT. Other values remain exact. Raw actual paths,
+commands and metadata stay in private build evidence; normalization is not a
+claim that different flags/inputs are identical. Normalize before computing
+metadata_identity_sha256 and reproducible package bytes.
+
+Bytes are UTF8 without BOM, ASCII-only JSON via sorted object keys, compact comma/
+colon separators, standard JSON escaping, then exactly one LF; no indentation,
+CR or trailing spaces. Arrays retain defined order (features sorted; argv exact).
+Duplicate-key-aware parse, schema/type validation and canonical re-encoding must
+produce exactly the original bytes. Whole file<=65536 bytes. All file/SDK/lock/
+binary digests and matching signed tags are verified against actual source-build
+observations; a signed build.json is not compiler attestation.
+
+## Verified index-to-package binding
+
+The APK index hashes field is the upstream package METADATA hash. It is never
+named or compared as SHA256 of the complete APK file. Record these separately:
+index_metadata_hash (algorithm/encoding and value exactly as pinned tool exposes),
+apk_file_sha256, apk_file_bytes, and each signed payload file digest/size.
+
+Use actual pinned mkpkg to create signed APKs, then pinned mkndx over exactly
+those verified APK paths to generate the signed local index. Independently verify
+both package and index with the externally supplied fixture key. Inspect each
+actual APK's bounded authenticated metadata using the pinned adbdump/readback
+path after verification. Inspect the signed index using explicit all-matches,
+all required fields including hashes,tags,commit,arch,version, and select BOTH
+expected architecture entries, not a single best-match result.
+
+The binding predicate is the pinned tool's package metadata-hash identity from
+verified APK metadata versus the verified index entry, plus exact equality of
+name/version/arch/origin/commit/tags and the index's recorded artifact filename/
+size where applicable. Whole-file hash/size is computed directly from immutable
+produced bytes independently; it is not derived from hashes. Payload digests are
+verified by actual apk verify and separately compared with generated build.json/
+executable/license inventory. The tool's precise hash algorithm/encoding and
+available readback command must be confirmed using the actual tool BEFORE this
+predicate is accepted as executed. If the pinned readback cannot expose a valid
+binding, refuse completion and seek a narrow upstream-supported readback; do not
+invent a hash recipe or fall back to matching only caller fields.
+
+Qualify using real two-architecture packages/index with one entry replaced by a
+different valid signed package having the same name/version/arch but different
+metadata or payload, altered index tags, wrong entry hash, truncation and duplicate
+entries. Correct tool integrity rejection versus predicate rejection remains
+separate. These tests confirm binding and do not grant installation eligibility.
