@@ -74,3 +74,13 @@ review while keeping SDK/native/full lifecycle gates open.
 
 Source basis: exact Rust62a5376, accepted reader-admission-api and selected Store
 semantics. This is precode design, not completed application/native integration.
+
+Exact SDK d01 source assessment confirms CapturedBatch.export_facts already
+provides immutable source/parent/ordered derivative provenance. Existing Buddy
+HistoricalCapture.from_batch maps it; parent and image bytes remain separately
+owned. Current SDK origin/qualification/clock/render binding are synthetic only,
+and UnqualifiedPlatform.capture is Unsupported. No qualified live producer exists.
+Reuse existing historical mapping without relabeling its SDK_SOURCE2d473f09
+provenance or updating protected pins. Native origin/profile/clock/render/ownership
+semantics require the separately reviewed SDK amendment and qualified producer.
+The source assessment is not new capture or effect qualification.
