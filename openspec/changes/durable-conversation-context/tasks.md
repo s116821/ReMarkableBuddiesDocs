@@ -21,8 +21,8 @@
 
 ## 3. Real Reader integration
 
-- [ ] 3.18 Review composed-memory-admission.md against actual Provider pins, Reader writes and shared gate order before code.
-- [ ] 3.19 Implement real compatible selected Provider/Attempt publication under one ordered set, preserving unsupported providers and native refusal.
+- [x] 3.18 Review composed-memory-admission.md against actual Provider pins, Reader writes and shared gate order before code. Plan9dfe0f7 and reciprocal document partition ece586 independently accepted.
+- [x] 3.19 Implement real compatible selected Provider/Attempt publication under one ordered set, preserving unsupported providers and native refusal. Source2ebe8e1 and test-only2f6f738 independently accepted; exact result review/panic and native qualification remain open.
 - [ ] 3.20 Verify actual same/distinct-key concurrency, ownership, replacement, seal/budget/retry and Orchestrator controls with scoped independent evidence.
 
 - [x] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code. Precode4c9a3fe accepted; sourcefac5428 independently accepted without hiding needed native interfaces.
