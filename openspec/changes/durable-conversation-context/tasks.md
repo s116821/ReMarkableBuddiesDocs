@@ -23,6 +23,10 @@
 
 - [x] 3.21 Review and implement the bounded [runtime compilation boundary](runtime-compilation-boundary.md) at owning PR30, retain recording guards/tests and public read-only/storage behavior, run affected checks and strict lint, then reconcile dependent PR32 without enabling unqualified runtime effects. Bounded source/Docs and required checks are verified; production integration and whole lifecycle remain open. Descendant reconciliation is tracked separately below.
 - [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see runtime-stack-reconciliation.md.
+- [ ] 3.18 Review composed-memory-admission.md against actual Provider pins, Reader writes and shared gate order before code.
+- [ ] 3.19 Implement real compatible selected Provider/Attempt publication under one ordered set, preserving unsupported providers and native refusal.
+- [ ] 3.20 Verify actual same/distinct-key concurrency, ownership, replacement, seal/budget/retry and Orchestrator controls with scoped independent evidence.
+
 - [x] 3.16 Review fixture-only development transport ownership and exact22 diagnostic disposition before code. Precode4c9a3fe accepted; sourcefac5428 independently accepted without hiding needed native interfaces.
 - [x] 3.17 Scope only test development transport, verify normal refusal/affected fixtures/exact remaining lint and independent evidence. Sourcefac5428/resultf7a59c7 accepted; strict20 native diagnostics, qualified SDK interfaces and full2.10 remain open.
 
