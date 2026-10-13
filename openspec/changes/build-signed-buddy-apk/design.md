@@ -177,3 +177,28 @@ privately. Both host and container still must admit exact clean tagged source;
 never suppress Git status, alter source/index, disable cleanliness, or treat
 line-ending configuration as compiler/source authentication. Unknown semantics
 refuse. Metadata, compilation and artifact caps/eligibility remain unchanged.
+
+
+The corrected fourth actual ARM build completed fresh compilation in 4m54s, but
+Cross run began another compilation and hit the unchanged120s runtime-phase
+bound. That attempt remains compilation-only and produced no admitted package.
+A separate read-only host diagnostic of its retained file returned the expected
+version under the existing image's QEMU; it is not a package-admission shortcut.
+For subsequent fresh builds, replace Cross run with direct execution of the
+newly built descriptor-checked file in the same immutable target image. Keep
+runtime120s and combined diagnostics16KiB; no compiler invocation, writable
+source/target mount, network, new runner, cached input or library installation.
+Mount only the actual newly built file read-only, retain original descriptor and
+path identity/hash checks before/after runtime and freeze exactly those bytes.
+
+ARM uses existing /usr/bin/qemu-arm-static with -L/usr/arm-linux-gnueabihf;
+AArch64 uses /usr/bin/qemu-aarch64-static with -L/usr/aarch64-linux-gnu. Observe
+actual image identity and fixed runner/dynamic-loader file size/hash before and
+after; require the observed reviewed identities and paired equality. The image
+hash binds the remaining sysroot contents; this does not qualify tablet/native
+ABI or complete dynamic-dependency/source/compiler authentication. Capture exact
+actual runtime argv, runtime output and runner observations privately, preserving
+fixed public failures and bounded buffers even on refusal. The selected file
+must come from this invocation's successful fresh source compilation, not any
+prior failed target directory or diagnostic receipt. Version mismatch, runtime
+failure/timeout, changed file/image/runner/loader or missing identity refuses.
