@@ -24,3 +24,11 @@ The consumer SHALL use fixed public API/asset inputs, bound redirects/network/fi
 #### Scenario: Invalid remote or local input
 - **WHEN** input selects an unsupported tag, foreign endpoint, untrusted redirect or unsafe destination
 - **THEN** the consumer refuses without arbitrary command, path overwrite, secret lookup or key enrollment
+
+#### Scenario: Cancellation or deadline during final directory validation
+- **WHEN** cancellation or the operation deadline is observed after the final awaited directory validation and before the atomic completion link is issued
+- **THEN** no successful receipt is published
+
+#### Scenario: Cancellation after atomic completion issuance
+- **WHEN** cancellation arrives after the atomic link request has been issued
+- **THEN** a successful link remains committed success and a failed link refuses, without claiming that the in-flight filesystem request can be preempted
