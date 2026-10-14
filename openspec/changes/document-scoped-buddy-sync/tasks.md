@@ -120,6 +120,6 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 
 ## Read-only outbox inventory
 - [x] Identify missing recovery enumeration and document bounded custody-only contract before code.
-- [ ] Implement existing strict inventory reuse without journal mutation or current permission.
-- [ ] Verify restart/multiple scopes/stale/withdrawn/mode departure and corrupt/foreign whole-read refusal with exact-byte preservation.
+- [x] Implement existing strict inventory reuse without journal mutation or current permission.
+- [x] Verify restart/multiple scopes/stale/withdrawn/mode departure and corrupt/foreign whole-read refusal with exact-byte preservation.
 - [ ] Publish paired source/Docs, inspect hosted checks and obtain bounded independent review; preserve broader unfinished gates.
