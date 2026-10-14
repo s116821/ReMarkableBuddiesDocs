@@ -6,4 +6,12 @@ Four actual Rust1.98.1 locked/offline/all-feature integration tests pass0.00s; a
 
 The catalog consumes already domain-validated historical OutcomeFact; it does not validate full settlement/domain schema, mutate/store a fact, persist prepage feedback, fetch provider state, process model responses, draw/type/clear or authorize current/native presentation. It does not fix the September26 scoped blocking HTTP join delay, implement cancel gesture/readiness, reconcile a live export or suppress actual late callbacks. Deterministic descriptions are only the error text prerequisite for later REM38/39/40 rendering and current admission. Native feedback/status/persistence/cancel/late response/correction/undo/wholeREM40 remain open.
 
-Hosted CI and exact bounded independent source/spec review pending. Source basis full REM40 and both dated clarifications, actual immutable Main types, authored source and current focused tests/lint; no live provider/device/model execution.
+Hosted CI and exact bounded independent source/spec review completed below. Source basis full REM40 and both dated clarifications, actual immutable Main types, authored source and current focused tests/lint; no live provider/device/model execution.
+
+## Hosted qualification and independent acceptance
+
+Exact Buddy2468b043ab76c217fdc5d409ac0df809f9b77ecc accepted by https://github.com/s116821/ReMarkableBuddies/pull/42#pullrequestreview-5511911837; exactDocs06085239e9ba125a74be8ec153aea8743237e993 accepted by https://github.com/s116821/ReMarkableBuddiesDocs/pull/34#pullrequestreview-5511911913 . Full current bodies read. Reviewer inspected exact source/spec/current issue comments and actual hosted logs without repeating tests or touching a tablet. Three authored source/five own change files accepted; cumulative parents remain separate.
+
+Source CI38493597366 completedSUCCESS at hosted merge711a161a7d932d6849af28f3f3a90441f199c031, Rust1.99.0/four new feedback controls pass. Docs38493581124 completedSUCCESS at mergefe73323f60efff21bd6c97cd6c05bbd938b9c222,12tests perplatform/19guidance126preserved/strictOpenSpec23. Hosted evidence differs from localRust1.98.1/fourtests/18strict18guidance. No current native/cancellation/parent acceptance inferred.
+
+Canonical sync/archive closes only typed historical feedback descriptions (two requirements/three scenarios). Measured30-second scoped blocking HTTP join defect and unmeasured possible90-second production bound remain; no responsive cancellation/native/status/pending persistence/late-response/export/wholeREM40 claim. Documentation lifecycle changes no source/runtime/LLM/ledger/config/Cargo/version or device bytes.
