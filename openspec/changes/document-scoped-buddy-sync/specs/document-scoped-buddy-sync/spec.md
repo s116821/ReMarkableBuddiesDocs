@@ -272,3 +272,14 @@ The system SHALL refuse persisted mode history that changes backup identity duri
 #### Scenario: Contiguous same-binding identity is corrupted on disk
 - **WHEN** saved consecutive isolated choices for the same binding contain different backup UUIDs
 - **THEN** mode history load refuses while valid identity-preserving histories still reopen
+
+### Requirement: Bounded historical outbox enumeration
+Recovery callers SHALL be able to enumerate the complete bounded local selected-intent journal under one Store lock using original operation identity and strict actor/fingerprint/filename validation. Enumeration SHALL return historical custody only, not current selection, provider acknowledgement or permission to send/apply.
+
+#### Scenario: Restart with stale or withdrawn intents
+- **WHEN** stored intents span scopes, withdrawals or departed mode/selection epochs
+- **THEN** enumeration returns original entries in deterministic operation UUID order without rewriting state or silently granting current authority.
+
+#### Scenario: Corrupt or foreign journal entry
+- **WHEN** any entry violates the existing journal validation or capacity limits
+- **THEN** the entire enumeration refuses without returning a partial inventory or altering source bytes.

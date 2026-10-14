@@ -21,3 +21,6 @@ Native reMarkable documents, rendered Buddy pages, ink and native file metadata 
 Rust base: `s116821/ReMarkableBuddies` main `ff8ad75bec45fca403d55a7b6d93eb83ab732e3d`. Docs base: main `8008389fa676d395401e6f28e049b47baa7b10ef`. REM-37 schema inspection: `673c5781cd5d89a89d712b9d8253433c920dc37c`, especially `src/conversation/types.rs`. This reference is an integration input, not permission to copy or modify its unfinished lane. Agree aggregate projection and operation fencing with that owner before domain integration; generic transport and storage work need not acquire native capability.
 
 Review the proposal/design/scenarios together, implement the accepted contract in the owned Rust branch, verify the exact Docs/code pair, sync canonical contracts and archive only completed scope. Neither this draft nor host fixtures closes REM-52 or the ecosystem 1.0 gate.
+
+## Read-only outbox recovery enumeration
+Add bounded original-intent enumeration so recovery callers need not parse private journal files or already know operation UUIDs. This is custody only; provider/current/domain/native authority remains separately checked.

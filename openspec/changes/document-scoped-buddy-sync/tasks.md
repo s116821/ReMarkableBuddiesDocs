@@ -117,3 +117,9 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 - [x] Reproduce persisted reused backup identity and same-binding identity discontinuity through actual Store reopening.
 - [x] Enforce load-time continuity and first-use identity; verify snapshot/lease/replay refusal, valid restart/replay and root-only replacement outbox control.
 - [ ] Publish exact linked repair and independent recheck without claiming whole mode/worker acceptance.
+
+## Read-only outbox inventory
+- [x] Identify missing recovery enumeration and document bounded custody-only contract before code.
+- [ ] Implement existing strict inventory reuse without journal mutation or current permission.
+- [ ] Verify restart/multiple scopes/stale/withdrawn/mode departure and corrupt/foreign whole-read refusal with exact-byte preservation.
+- [ ] Publish paired source/Docs, inspect hosted checks and obtain bounded independent review; preserve broader unfinished gates.
