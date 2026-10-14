@@ -127,3 +127,8 @@ reconciliation and whole-delivery lifecycle remain unchecked.
 ## Accepted outbox inventory receipt
 
 Buddy8fc5d6cc/Docsdfdf4317 accepted only additive inventory in independent reviews [5511621272](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5511621272) and [5511622231](https://github.com/s116821/ReMarkableBuddiesDocs/pull/7#pullrequestreview-5511622231), fully read. Exact aggregate hosted source38488792072 and Docs38488778757 completed SUCCESS. Reviewer inspected source/logs without execution. Hosted Rust1.99.0 full tests/formatting/strictClippy/ARMv7+AArch64 compilation differ from owner localRust1.98.1 ten affected tests. HostedDocs21strictitems/12Windows tests/19guidance+126preserved differ from local16/18counts. No transfer to liveDrive/native/worker/domain/restore/status or wholeparent lifecycle; existing change stays active.
+
+## Disposable provider qualification resource contract
+- [x] Prepare concrete account/application/operator/namespace/budget/evidence/cleanup decisions and primary API basis without live resources.
+- [ ] Obtain coordinator review and explicitly owned disposable binding before executing the live-provider gate.
+- [ ] Execute bounded actual adapter contention/acknowledgement/client visibility checks and retain failures; do not infer native/domain/production acceptance.

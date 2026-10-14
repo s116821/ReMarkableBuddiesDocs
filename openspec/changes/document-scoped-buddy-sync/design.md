@@ -60,3 +60,5 @@ Main reviewed exact `ebf8c72cc286de988d0307c98bf34d48dce8f4da` and accepted gene
 
 ## Bounded outbox inventory seam
 Store::selected_attempt_inventory() returns the complete strict local journal as original SelectedAttempt values in deterministic UUID order under one Store lock. Reuse existing actor/fingerprint/filename/item/metadata limits, with whole-read refusal on any corrupt or foreign entry. Do not verify current selection/object availability, fetch provider state, mint live tokens or modify journals; stale and withdrawn intents remain discoverable historical custody. Callers must perform current checks and mode/domain admission separately before any future send/apply.
+
+The remaining live-provider resource and execution boundary is proposed in [provider qualification contract](provider-qualification-contract.md); no live resource or worker activation follows from that proposal.
