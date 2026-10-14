@@ -4,4 +4,4 @@
 - [x] Publish baseline/proposed repair ownership boundary publicly and resolve protected/active file overlap before runtime edits.
 - [x] Implement maintained cancellable transport under accepted boundary and make original control pass in normal CI.
 - [x] Qualify controlled withheld response, same-engine next-request payload/readiness, initial refusal, Tokio caller and callback-panic cleanup locally; preserve separate live TLS/DNS/native/remote billing limitations.
-- [ ] Obtain hosted/independent review and full scoped lifecycle only after actual repair; retain native/fullREM40 gates.
+- [x] Obtain hosted/independent review and full scoped lifecycle only after actual repair; retain native/fullREM40 gates.

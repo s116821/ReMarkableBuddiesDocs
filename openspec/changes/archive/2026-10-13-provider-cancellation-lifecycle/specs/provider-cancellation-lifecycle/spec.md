@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: Provider-independent local cancellation readiness
-After a confirmed local cancellation request, client return/readiness SHALL be independent of a withheld provider response, with retained original request identity, no duplicate request and no late-response mutation. Qualification SHALL use actual transport and invocation-specific request/cancel witnesses; cleanup SHALL release and join all owned fixture threads before reporting failure.
+After a confirmed local cancellation request, client return/readiness SHALL be independent of a withheld provider response, with retained original request identity, no duplicate request and no late-response mutation. Qualification SHALL use actual transport and invocation-specific request/cancel witnesses; cleanup SHALL release and join all owned fixture threads before reporting failure. This is cooperative async response-wait cancellation, not hard preemption of synchronous setup/JSON parsing or qualification of production DNS/TLS/proxy/native latency.
 
 #### Scenario: Request accepted and response withheld
 - **WHEN** a controlled provider has received the original request and a witnessed progress callback cancels it while response is withheld
