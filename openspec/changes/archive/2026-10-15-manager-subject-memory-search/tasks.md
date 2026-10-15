@@ -9,10 +9,10 @@
 - [x] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
 - [x] Implement shared global search/controller/UI preserving status, scope, provenance and stale/cancel behavior.
 - [x] Verify actual Main CLI-to-parser compatibility, affected host controls and both UI distributions locally with honest evidence attribution; final supported-host CI is tracked separately.
-- [ ] Complete required lint/build/host checks and actual exact-source hosted CI.
-- [ ] Obtain independent paired source/spec review and inspect bot feedback.
+- [x] Complete required lint/build/host checks and actual exact-source hosted CI.
+- [x] Obtain independent paired source/spec review and inspect bot feedback.
 
 ## Delivery
-- [ ] Publish linked exact Manager/Docs and backend dependency revisions, evidence and manual usage.
-- [ ] Sync only implemented consumer requirements and archive this completed change.
-- [ ] Preserve foundation/domain/live-provider/native/service-control/full issue gates.
+- [x] Publish linked exact Manager/Docs and backend dependency revisions, evidence and manual usage.
+- [x] Sync only implemented consumer requirements and archive this completed change.
+- [x] Preserve foundation/domain/live-provider/native/service-control/full issue gates.
