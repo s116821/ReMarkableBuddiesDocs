@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: Qualified bounded stdin memory query
-The memory maintenance CLI SHALL accept the exact input marker `-` for query-only UTF8 JSON, bounded by MAX_RECORD1048576 bytes, through the existing Query validator/configured profile/admission/current handoff/report writer. Regular-file input SHALL retain its existing checks. This input transport SHALL NOT initialize a provider/model/device/service or change the memory domain schema. Source traceability: REM24 Manager consumer clarifications e4a68788/951b1fec and existing maintenance/Query source.
+The memory maintenance CLI SHALL accept the exact input marker `-` for query-only UTF8 JSON, bounded by MAX_RECORD1048576 bytes, through the existing Query validator/configured profile/admission/current handoff/report writer. Regular-file input SHALL retain its existing checks. This input transport SHALL reuse the existing local memory provider and SHALL NOT initialize an external model/provider, device or service or change the memory domain schema. Source traceability: REM24 Manager consumer clarifications e4a68788/951b1fec and existing maintenance/Query source.
 
 #### Scenario: Equivalent file and stdin query
 - **WHEN** the same valid Query is supplied by a supported absolute regular file and by stdin followed by EOF against the same configured Store
