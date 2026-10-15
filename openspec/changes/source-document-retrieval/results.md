@@ -1,9 +1,0 @@
-# Normalized retrieval: initial local evidence
-
-Final strict all-target/all-feature locked/offline Clippy passed in18.46s; formatting/diff checks passed. Central strict validation passed23 items; guidance verified19 current files and126 preserved blobs. Exact hosted CI and independent own-scope review remain pending publication.
-
-Precode ba29112029e765b81052ee1b4a539af7126eb87a was published before source edits. The initial implementation adds only the public retrieval module/export and its usage/limits guide. No Cargo, SDK, storage schema, native, prompt, API-provider, configuration or Manager changes.
-
-Windows Rust1.98.1, locked/offline/all-features/library/jobs1: six actual index/cache/query tests passed in0.11s after41.62s compilation. They cover source/extractor/normalized replacement and old-key refusal, failed replacement preserving valid cache, new queries reaching another page, Unicode/source-range reconstruction, same-unit neighbors/deduplication, escaped complete-JSON byte budgets, omission flags/unrepresentable match refusal, malformed identity/location/control input without source echo, oversized unit/total source text and cache capacity. The earlier five-test run passed before adding explicit source-format provenance and long-input/capacity controls; it is retained separately, not counted as extra final tests.
-
-This is deterministic local retrieval/library evidence. It does not establish extraction fidelity, semantic relevance, automatic installed Reader retrieval, live-provider effectiveness, native source identity, on-disk cache ownership or completed REM-4. No model/prompt integration changed, so no new live model test is inferred or required for this local index-only increment. The existing missing-key gate for personalization remains separate. Broader tasks remain unchecked and the active change must not be canonicalized/archived as a completed Reader capability.

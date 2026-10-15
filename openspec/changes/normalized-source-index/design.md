@@ -1,4 +1,6 @@
-# Design
+# Normalized index design and wider Reader boundary
+
+This capability is the independently complete local library described in the initial precode. The original full Reader plan remains preserved at ba291120 and in REM-4. The explicit incremental-delivery direction separates its acceptance from broader Reader integration; paragraphs below describing that future integration are constraints on later work, not implemented-library claims or a blanket merge gate.
 
 ## Requirements and current source
 
@@ -14,7 +16,7 @@ Buddy feeaf475 has no retrieval or research module. Selected Attempt::memory_doc
 - Cache identity includes document, source digest, extractor revision and normalized-content digest. Installation/replacement rebuilds from immutable normalized material; no wall-clock freshness inference or cached result reuse after a different query/content identity. This increment does not add an on-disk cache before its ownership/atomic-read integration is specified.
 - Public API is a narrow library boundary, with focused real input/index/query tests. No CLI endpoint, service or installed automatic extraction is claimed. Do not change prompts until receiving integration and its evidence recording are implemented.
 
-## Required remaining integration
+## Later REM-4 integration outside this capability
 
 The Reader must use turn-linked source association and original evidence, preserve exact recognized request/history, assemble local page then retrieved passages then optional memory and independently governed external research, and recheck currentness before consuming results. Missing source/blank-start cannot acquire a fabricated document. Configured extraction failure, incomplete index and no matches are distinct. The actual answer context must retain useful document/page/section/hash provenance with its turn. No source text in routine diagnostics.
 
