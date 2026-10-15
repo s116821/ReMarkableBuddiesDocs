@@ -10,4 +10,3 @@ After a confirmed local cancellation request, client return/readiness SHALL be i
 #### Scenario: Late or uncertain external completion
 - **WHEN** provider or already-sent external work completes after local cancellation
 - **THEN** original operation identity remains distinct, further page/export mutations stay guarded and no remote billing/rollback guarantee is inferred.
-
