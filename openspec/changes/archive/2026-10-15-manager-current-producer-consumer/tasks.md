@@ -9,9 +9,9 @@
 - [x] Update exact packaged resource inventory and current-producer test fixture.
 - [x] Run meaningful affected actual ZIP/process/module-refusal and packaged host checks on supported runtimes.
 - [x] Mechanically reconcile current-main CI and retain the existing feature host controls in the existing artifact integration jobs.
-- [ ] Verify required exact-source hosted CI and independent paired review.
+- [x] Verify required exact-source hosted CI and independent paired review.
 
 ## Delivery
 - [x] Publish exact linked Manager/Docs revisions, provenance and evidence limits.
-- [ ] Sync accepted requirements and archive only this completed consumer change.
+- [x] Sync accepted requirements and archive only this completed consumer change.
 - [x] Preserve all unrelated active changes/accepted heads and foundation/physical/provider/native/updater/full issue gates.
