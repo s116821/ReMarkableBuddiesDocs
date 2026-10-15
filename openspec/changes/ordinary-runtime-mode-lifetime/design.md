@@ -23,8 +23,10 @@ or LocalOnly. Check the exact current token and mode under the existing Store
 mutex, then account the lease in the existing mode exclusion mechanism. Drop
 releases that exclusion. No Store mutex is held across model, device or worker
 work. No second state file, schema, selection token, worker or mode setter is
-introduced. The storage owner may refine names before implementation; preserve
-these semantics.
+introduced. The agreed public names are OrdinaryModeLease and
+Store::ordinary_mode_lease. The guard is non-Clone and must_use. Exact original
+operation replay may return its existing receipt without changing mode; a new
+transition remains refused while a guard exists.
 
 Do not broaden SyncModeLease into implicit publisher permission or reinterpret
 LegacySyncLease. The ordinary guard provides no selected catalog, cloud,
@@ -43,10 +45,11 @@ configuration, malformed metadata or stale admission refuse; do not silently
 retry into another mode. Existing selected receiving and historical recovery
 paths retain their distinct contracts.
 
-Changing the ordinary_store return to include an opaque RAII guard is one
-possible integration; choose the smallest actual called interface. A borrowed
-guard must remain alive through every ordinary consumer, including early-return
-and failure cleanup. Copying the Arc alone is not a claim of mode admission.
+ordinary_store returns (Arc<Store>, OrdinaryModeLease). main retains the named
+_ordinary_mode_lease through its real dependent consumers and run_loop; they
+drop before that guard on return or error. The final policy check and lease use
+the same captured token; a race refuses instead of refreshing it. Copying the
+Arc alone is not a claim of mode admission.
 
 ## Verification and Limits
 
