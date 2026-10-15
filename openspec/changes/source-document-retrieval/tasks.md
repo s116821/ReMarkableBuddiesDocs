@@ -1,8 +1,8 @@
 ## Normalized source retrieval
 
 - [x] Read current requirements/comments, exact existing source ownership/context and pinned required prior art before code.
-- [ ] Implement bounded immutable normalized-source validation, provenance-preserving chunks and deterministic budgeted lexical query with same-unit neighbors.
-- [ ] Verify changed-source replacement, new follow-up queries, source mismatch, UTF8/source ranges, duplicate selection and full serialized budgets with real index/query inputs.
+- [x] Implement bounded immutable normalized-source validation, provenance-preserving chunks and deterministic budgeted lexical query with same-unit neighbors.
+- [x] Verify changed-source replacement, new follow-up queries, source mismatch, UTF8/source ranges, duplicate selection and full serialized budgets with real index/query inputs.
 - [ ] Publish exact source/spec pair and resolve own review/current CI without implying installed retrieval.
 
 ## Reader and complete REM-4 acceptance
