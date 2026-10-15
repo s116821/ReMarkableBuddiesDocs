@@ -7,5 +7,5 @@
 ## Verification and delivery
 
 - [x] Run affected new controls and required strict lint/format checks; preserve failures and distinguish host evidence.
-- [ ] Publish paired exact revisions and frozen consumer contract; resolve independent review, current CI and feedback.
-- [ ] Synchronize this completed requirement and archive only this own change.
+- [x] Publish paired exact revisions and frozen consumer contract; resolve independent review, current CI and feedback.
+- [x] Synchronize this completed requirement and archive only this own change.
