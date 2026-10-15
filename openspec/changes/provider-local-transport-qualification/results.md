@@ -1,0 +1,18 @@
+# Linux local transport evidence
+
+Source `5dccfeec6446dad42eb57f31966568f69118f859` ([Buddy PR44](https://github.com/s116821/ReMarkableBuddies/pull/44)), immutable parent `2a510e825822d3683176fe5607efa6cf6f804e69`. Exactly two new fixture paths; production source, Cargo files, accepted cancellation tests and all parent blobs are preserved. Central precode was committed locally as `d1f01cc6c2b955e50146ab599b12038d799f73ba` before implementation, and published with the same tree as `873589f71b52f173a175a014876be0c80cc5b739` before the source branch. Linked delivery; no planning-only completion.
+
+On SCRAPPY-DOO Linux with Rust1.98.1, pinned reqwest0.13.4/rustls0.23.45/platform-verifier0.7.1, Python3 and OpenSSL3.0.13, the six focused actual-client cases passed. The harness reports seven tests because the child-entry helper returns without configuration in the parent harness; qualification instead requires six invocation-specific nonce files and complete provider/proxy counters. Final focused run: seven passed, zero ignored, 1.85 seconds. Strict locked/offline all-target/all-feature Clippy passed0.70 seconds; formatting/diff checks passed. No failure occurred in the new six controls; initial passes preceded cleanup hardening, and final results include explicit temporary-directory deletion assertions. The accepted cancellation/live-simulator matrix was not rerun locally. An initial documentation-write command used a duplicated relative path and failed before writing; it was corrected, with checks rerun on the actual files. This was a wrapper error, not a transport failure.
+
+| Control | TLS accepted/rejected | Application/valid requests | CONNECT/valid proxy auth |
+| -- | -- | -- | -- |
+| Trusted direct | 1/0 | 1/1 | 0/0 |
+| Unrelated root direct | 0/1 | 0/0 | 0/0 |
+| Trusted root, wrong IP name | 0/1 | 0/0 | 0/0 |
+| Trusted CONNECT | 1/0 | 1/1 | 1/1 |
+| Matching NO_PROXY | 1/0 | 1/1 | 0/0 |
+| Unrelated root via CONNECT | 0/1 | 0/0 | 1/1 |
+
+Every case had zero fixture failures, no Proxy-Authorization at the TLS origin and no plaintext origin Authorization at CONNECT. Correct-answer and handshake/application/proxy witnesses distinguish successful operation from connection failure. Isolated child environment is cleared entirely before explicit root/proxy inputs. The default production certificate verifier stays enabled. Loopback origin verifies synthetic model/body/Bearer values; proxy accepts only exact owned origin ports. Keys/certificates are freshly generated in a private0700 marked directory, never tracked/logged, and removed after owned child/server reaping. OpenSSL child polling honors stop/deadline and always kills/waits when needed. Server startup, client, worker drain, process cleanup, body/header size, lifetime and connection count are bounded. Missing prerequisites fail instead of skipping. No parent/global environment mutation, trust installation, system proxy/DNS change, personal credential/model/provider call or tablet action.
+
+The supported root mechanism was verified in pinned rustls-platform-verifier verification/others.rs and rustls-native-certs environment handling: SSL_CERT_FILE/SSL_CERT_DIR replace Linux native root lookup for this child. Proxy environment matching was verified in pinned reqwest/hyper-util. These are actual client integration controls using supported library inputs, without an insecure verifier or replacement HTTP engine. They do not qualify the OS native store, Windows/macOS/tablet behavior, external DNS, production provider roots/proxies, cancellation latency on hardware, remote billing/export, cumulative parents or whole REM40. Required hosted CI and independent source/spec review remain pending; sync/archive only this qualification after scoped acceptance.
