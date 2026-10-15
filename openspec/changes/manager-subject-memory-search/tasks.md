@@ -3,7 +3,7 @@
 - [x] Publish exact Manager ownership and the smaller actual stdin-only consumer dependency.
 - [x] Record central consumer proposal/design/delta before runtime edits.
 - [x] Map proposed existing-schema stdin seam to exact Manager ownership, compatibility states and verification boundaries.
-- [ ] Confirm Main's published supported bounded stdin query contract, central backend precode, exact source, exit semantics and actual report/refusal evidence.
+- [x] Confirm Main's published supported bounded stdin query contract, central backend precode, exact source, exit semantics and attributed actual report/refusal evidence at626c2f8/2d0ecad; consumer independently verifies compatibility during implementation.
 
 ## Implementation and Verification
 - [ ] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
