@@ -1,0 +1,17 @@
+# Design
+
+## Boundaries and provenance
+Base Buddy f949ac6b0bc3edbae70eec3a38cfecebb09aba44 and Docs 04ff48f1fadcaa060c25a2053c20193f1e6a069e. Import the three conversation source files and two existing regression suites from accepted 18e1a741e9857eed94f74dca3a52e3f0a65afaff. Inspect their exact Git blobs and adapt only where actual main compatibility requires it. Export the library; do not wire it into Reader, CLI, provider dispatch or a native adapter. Preserve every unrelated main entry, particularly the Store Drop unlock and subprocess lease regression. Do not cherry-pick broader Reader integration 6d3d23c or copy its cumulative parents.
+
+## Persistence and inspection
+Use existing versioned envelopes, immutable objects, commit manifests, lineage and exclusive Store ownership. Add snapshot_heads_matching and snapshot_revisions_matching with explicit record and metadata-byte bounds, plus media_references inspection; none deletes objects. Root compare-and-swap and operation fingerprints prevent duplicate or partial domain publication. Retain source originals and parent/crop geometry; validate full image decoding and normalized geometry before publication. Treat incomplete committed storage as incomplete, while explicitly omitted imported media remains identifiable as unavailable.
+
+Chronology includes allocated tombstoned positions and refuses gaps, duplicate/unallocated sequences, conflicts and unsupported relevant payloads. Context is an exact eligible historical view with explicit range and byte/turn/token limits, never implicit summarization. Token counts are caller supplied; unknown provider limits refuse assembly. There is no provider tokenizer or real model integration in this increment. Historical binding/completion/export records express recorded facts and consistency only, not current device observation, physical output or effect permission.
+
+## SDK boundary
+Pin remarkable-open-sdk to accepted main 32b86e4fef04844cbf2ec31129bf029cc1d9899a with default-features=false, plus the same revision as a dev dependency with mock. Its capture/evidence blobs are byte-identical to historical 2d473; the existing mapper already records and validates synthetic timing/equality/geometry labels. Preserve SDK_SOURCE=2d473 as serialized historical provenance. Do not enable development-capture. Verify the ordinary non-test feature graph independently because tests unify mock features. Inspect the lock delta rather than importing an old lock or broadly upgrading dependencies.
+
+## Verification and remaining work
+Exercise all 20 historical ledger controls and eight synthetic SDK/real Store controls, existing Store regressions, full required host checks, and ordinary non-mock target compilation/feature inspection. SDK mock images prove declared synthetic relationships and persisted bytes only. Independent source/spec review and required hosted CI precede own canonical sync/archive. Verify actual merged release artifacts separately from PR candidates.
+
+Broader REM-37 requirements remain tracked in the original active change: actual Reader persistence and exact provider routing; shared selected causal histories and mode leases; pending handoffs and settlement; live native authority; full Writer/export adapters and document-scoped sync integration. This ordinary schema-one API must not be advertised as selected-view-safe or passed to selected callers. No native or paid-model test is invented for a data-only library; later model-facing/native integrations retain their own gates.
