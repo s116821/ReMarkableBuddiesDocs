@@ -9,10 +9,10 @@
 The release system SHALL use maintained upstream tooling for semantic selection,
 tagging and publication, with no private release coordinator or maintained source
 version. Scoped feat SHALL bump minor, fix and recognized maintenance types SHALL
-bump patch, and explicit breaking syntax/footer SHALL bump major even at0.x.
+bump patch, and explicit breaking syntax/footer SHALL bump major even at 0.x.
 Existing tags SHALL remain unchanged. A read-only candidate MAY be calculated
 before build; only the final eligible release job SHALL create its official tag.
-Source: October15 REM-56 superseding REM-30/46 ordering.
+Source: October 15 REM-56 superseding REM-30/46 ordering.
 
 #### Scenario: Feature followed by a fix
 - **WHEN** successful eligible main merges contain a feature and then a fix
@@ -20,11 +20,35 @@ Source: October15 REM-56 superseding REM-30/46 ordering.
 
 #### Scenario: Breaking change
 - **WHEN** application history contains conventional breaking syntax or footer
-- **THEN** maintained tooling selects a major bump including0.x, and the separate REM-35 gate refuses premature1.0 publication.
+- **THEN** maintained tooling selects a major bump including 0.x, and the separate REM-35 gate refuses premature 1.0 publication.
 
 #### Scenario: Misclassified application change
-- **WHEN** an application path changes under docs or an unsupported/nonconventional title
-- **THEN** checks fail visibly before build or tag rather than silently excluding code.
+- **WHEN** an application path changes under docs or an unsupported/nonconventional PR title or actual admitted main commit message
+- **THEN** checks fail visibly before build or tag rather than silently excluding code or borrowing a candidate bump from earlier untagged history.
+
+### Requirement: Documentation merge exclusion
+The workflows SHALL share conservative path classification with semantic release
+analysis. Pure documentation pushes SHALL create no tag and execute no application
+compilation. Unknown non-documentation paths, build/dependency changes and mixed
+changes SHALL remain application-relevant. Required PR checks SHALL finish for
+documentation-only changes. Canonical main pushes SHALL contain exactly one
+first-parent commit in the known before/source range; ambiguous batches, initial
+zero/unknown history and non-forward updates SHALL refuse visibly before build or
+tag. Structural merge admission SHALL remain distinct from actual-source semantic
+eligibility and final exact merged-PR proof.
+Source: REM-56 superseding the earlier private touched-history/backfill classifier.
+
+#### Scenario: Documentation-only merge
+- **WHEN** one admitted docs commit modifies only excluded documentation paths
+- **THEN** the push performs only non-compiling checks and never enters the application publication queue.
+
+#### Scenario: Mixed and reverted changes
+- **WHEN** a push contains multiple first-parent commits, including an application edit later reverted to a net-zero diff
+- **THEN** admission refuses before build/tag rather than classifying the ambiguous batch as documentation-only.
+
+#### Scenario: Executable fixtures within documentation directories
+- **WHEN** simulator JSON or validation scripts under docs change
+- **THEN** those paths remain application-relevant and receive tests/release handling rather than documentation-only exclusion.
 
 ### Requirement: Verified artifacts before official tagging
 The earlier tag-before-build ordering is superseded. Official tags SHALL identify
@@ -33,7 +57,7 @@ tested by the ordered workflow. Tag/release creation SHALL occur only in its fin
 dedicated release job after checks, build and required artifact integration pass.
 Failures, cancellation or skipped required predecessors SHALL prevent new tags
 and releases. Exact built bytes SHALL be published without a release-job rebuild.
-Source: October15 REM-56 human instruction.
+Source: October 15 REM-56 human instruction.
 
 #### Scenario: Main CI ordering
 - **WHEN** an application commit reaches main
@@ -82,3 +106,7 @@ required predecessors SHALL enter the one dedicated release job.
 #### Scenario: Documentation validation ordering
 - **WHEN** the Docs repository runs validation
 - **THEN** portable prerequisite checks gate strict specification validation with read-only permissions and no application release.
+
+#### Scenario: Existing development configuration coverage
+- **WHEN** Manager's existing development browser configuration is built alongside production artifacts
+- **THEN** its separate CI-only retained output is exercised on both supported hosts without an integration rebuild or inclusion in production release assets.

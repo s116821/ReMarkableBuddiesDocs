@@ -2,7 +2,7 @@
 
 ## Authority and ownership
 
-REM-56 and the October 15 Things to Fix version111 instruction supersede the
+REM-56 and the October 15 Things to Fix version 111 instruction supersede the
 older tag-before-build ordering. This change owns Buddy/Manager and central Docs.
 SDK tooling source and its own contracts remain SCRAPPY-owned. Implementation
 starts from Buddy ff8ad75, Manager 7ff5167 and Docs 7686a67, avoiding a cumulative
@@ -28,12 +28,12 @@ checks may remain required PR checks; there is no separate policy release path.
 ## Maintained version and publication tools
 
 Use maintained upstream path filters and semantic parsing, not a new release
-coordinator in Python, JavaScript or shell. Python Semantic Release10.7.0 is an
+coordinator in Python, JavaScript or shell. Python Semantic Release 10.7.0 is an
 already qualified SDK candidate: its read-only version --print-tag supplies a
 candidate, with empty source-version declarations and no changelog/version commit.
 Buddy/Manager retain their own tested policy, including feat/minor, maintenance/
-patch and explicit breaking/major behavior at0.x. A computed1.0 candidate remains
-blocked pending REM-35. The known GitVersion6.8.2 equal-timestamp defect and failed
+patch and explicit breaking/major behavior at 0.x. A computed 1.0 candidate remains
+blocked pending REM-35. The known GitVersion 6.8.2 equal-timestamp defect and failed
 upstream-source candidate remain recorded; changing test timestamps is forbidden.
 
 Final tagging uses maintained tag-only capabilities after gates, without running
@@ -104,10 +104,10 @@ squash merges; a direct push cannot publish. The reusable caller permission
 ceiling permits the final job's contents:write, while every actual preceding job
 remains contents:read; final metadata proof also has pull-requests:read.
 
-The selected uploader is unmodified Svenstaro2.11.5 source29e53e9, source-built
-with the full audited minimal build/runtime lock40d12ef7. The source's empty Jest
+The selected uploader is unmodified Svenstaro 2.11.5 source 29e53e9, source-built
+with the full audited minimal build/runtime lock 40d12ef7. The source's empty Jest
 placeholder and unused ts-jest/lint graph are omitted transparently. Original
-full/range/Jest30 scans remain41/34/20 advisories; selected closure is0 at the
+full/range/Jest30 scans remain 41/34/20 advisories; selected closure is 0 at the
 recorded scan, not a proof of security or a waiver of SDK's original gates.
 Exact lookup/request Actions supply an ID; only verified missing names are sent
 with overwrite:false/check_duplicates:true/draft:true/promote:false. ID404 may
@@ -122,3 +122,18 @@ and verified complete release it is an unpublished CI candidate, not trusted
 publication, installation or provenance by itself. Parent reconciliation of
 unmerged Manager consumers that hash-import old release/coordinator.py is
 explicitly required; this main-based change does not silently claim compatibility.
+
+The actual admitted main commit's full message must pass the same pinned PSR
+parser's supported scoped syntax before build and again before final tagging.
+Read-only semantic history can otherwise produce a bump from an earlier failed
+commit even when the current squash subject is docs/unsupported/unscoped. The
+eligibility adapter calls the maintained parser with the same configured options;
+it does not calculate a version, classify history or invent semantic mappings.
+Synthetic PR merge commits continue to use the existing PR-title Action check.
+A structurally admitted ordinary merge with a default nonconventional message
+still refuses semantic eligibility; one-first-parent admission is not that proof.
+
+Manager preserves its existing development/Tailwind coverage by compiling that
+configuration in build under the same frozen profile and retaining a separate
+CI-only artifact. Both host integrations download and exercise it without a
+rebuild. It is absent from the unchanged three-production-ZIP release inventory.

@@ -7,61 +7,105 @@ Define semantic Git-tag versioning and recoverable exact-source application publ
 ## Requirements
 
 ### Requirement: Semantic application releases
-The release system SHALL use maintained git-cliff to calculate semantic versions and release-it to create tags. It SHALL process all relevant unreleased conventional squash commits in order, giving each application merge its own tag. Scoped feat SHALL bump minor, fix and recognized application maintenance types SHALL bump patch, and ! or BREAKING CHANGE footers SHALL bump major even at 0.x. Existing tags SHALL remain unchanged. Source: REM-30 and original user requirements; release configuration and coordinator.
+The release system SHALL use maintained upstream tooling for semantic selection,
+tagging and publication, with no private release coordinator or maintained source
+version. Scoped feat SHALL bump minor, fix and recognized maintenance types SHALL
+bump patch, and explicit breaking syntax/footer SHALL bump major even at 0.x.
+Existing tags SHALL remain unchanged. A read-only candidate MAY be calculated
+before build; only the final eligible release job SHALL create its official tag.
+Source: October 15 REM-56 superseding REM-30/46 ordering.
 
 #### Scenario: Feature followed by a fix
-- **WHEN** unreleased application history contains feat(REM-9) and fix(REM-9) commits
-- **THEN** the feature receives a minor tag on its squash SHA, followed by a patch tag on the fix's squash SHA.
+- **WHEN** successful eligible main merges contain a feature and then a fix
+- **THEN** maintained semantic history selects the minor then patch versions on their exact source SHAs without version-bump commits.
 
 #### Scenario: Breaking change
-- **WHEN** a relevant commit has conventional breaking syntax or footer
-- **THEN** git-cliff advances major, including from 0.x to 1.0.0.
+- **WHEN** application history contains conventional breaking syntax or footer
+- **THEN** maintained tooling selects a major bump including 0.x, and the separate REM-35 gate refuses premature 1.0 publication.
 
 #### Scenario: Misclassified application change
-- **WHEN** an application path changes under docs or an unsupported/nonconventional commit type
-- **THEN** validation fails visibly before tag creation rather than silently skipping a release.
+- **WHEN** an application path changes under docs or an unsupported/nonconventional PR title or actual admitted main commit message
+- **THEN** checks fail visibly before build or tag rather than silently excluding code or borrowing a candidate bump from earlier untagged history.
 
 ### Requirement: Documentation merge exclusion
-The workflows SHALL share conservative path classification with semantic release analysis. Pure documentation pushes SHALL create no tag and execute no application compilation in either CI or release workflows. Unknown non-documentation paths, build/dependency changes and mixed changes SHALL be application-relevant. Required PR checks SHALL finish even for documentation-only changes. Source: REM-30; CI/release workflow gates and path policy.
+The workflows SHALL share conservative path classification with semantic release
+analysis. Pure documentation pushes SHALL create no tag and execute no application
+compilation. Unknown non-documentation paths, build/dependency changes and mixed
+changes SHALL remain application-relevant. Required PR checks SHALL finish for
+documentation-only changes. Canonical main pushes SHALL contain exactly one
+first-parent commit in the known before/source range; ambiguous batches, initial
+zero/unknown history and non-forward updates SHALL refuse visibly before build or
+tag. Structural merge admission SHALL remain distinct from actual-source semantic
+eligibility and final exact merged-PR proof.
+Source: REM-56 superseding the earlier private touched-history/backfill classifier.
 
 #### Scenario: Documentation-only merge
-- **WHEN** a docs commit modifies only README, OpenSpec or documentation paths
-- **THEN** the push performs only non-compiling checks and never enters the release publication queue.
+- **WHEN** one admitted docs commit modifies only excluded documentation paths
+- **THEN** the push performs only non-compiling checks and never enters the application publication queue.
 
 #### Scenario: Mixed and reverted changes
-- **WHEN** a push includes application and documentation changes, including application changes reverted by a later commit in the same push
-- **THEN** classification considers the complete touched-path history and does not discard the application commits because of the net diff.
+- **WHEN** a push contains multiple first-parent commits, including an application edit later reverted to a net-zero diff
+- **THEN** admission refuses before build/tag rather than classifying the ambiguous batch as documentation-only.
 
 #### Scenario: Executable fixtures within documentation directories
 - **WHEN** simulator JSON or validation scripts under docs change
-- **THEN** those paths remain application-relevant and receive tests/release handling rather than being mistaken for documentation-only edits.
+- **THEN** those paths remain application-relevant and receive tests/release handling rather than documentation-only exclusion.
 
-### Requirement: Immutable tag before exact-source build
-Release tags SHALL identify actual merged main application commits without generated version commits. Successful remote tag creation/identity verification SHALL precede every official application build. Both distributed targets SHALL build that exact tagged SHA, report its version and include matching source/checksum provenance. Source: REM-30; release coordinator and build metadata.
+### Requirement: Verified artifacts before official tagging
+The earlier tag-before-build ordering is superseded. Official tags SHALL identify
+the same main source SHA and candidate version as artifacts already built and
+tested by the ordered workflow. Tag/release creation SHALL occur only in its final
+dedicated release job after checks, build and required artifact integration pass.
+Failures, cancellation or skipped required predecessors SHALL prevent new tags
+and releases. Exact built bytes SHALL be published without a release-job rebuild.
+Source: October 15 REM-56 human instruction.
 
 #### Scenario: Main CI ordering
 - **WHEN** an application commit reaches main
-- **THEN** ordinary CI performs policy checks only and all application compilation is owned by the ordered release path after tag creation; PR checks can compile development builds.
+- **THEN** simple checks gate build, built-artifact integration gates the one release job, and no official tag/release exists before those gates pass.
 
 #### Scenario: Main advances to documentation
-- **WHEN** newer docs commits exist after the selected application merge
-- **THEN** the release tag and both artifacts still identify the selected application SHA.
+- **WHEN** newer main commits exist after the admitted application source
+- **THEN** the frozen candidate, build, integration, tag and release still refer to that exact admitted source and verified bytes.
 
 #### Scenario: Tag push fails or conflicts
-- **WHEN** the immutable tag cannot be pushed or has a different remote target
-- **THEN** publication fails and no application release compilation begins.
+- **WHEN** final tag creation fails or the existing remote tag targets a different source
+- **THEN** publication refuses without replacing the tag, changing the candidate or rebuilding substitute assets.
 
 ### Requirement: Recoverable serialized publication
-Application release jobs SHALL serialize tag creation through publication, refresh main state after queueing, and recover incomplete managed tags without duplicate versions or wrong-source assets. Published complete releases SHALL be skipped on retry. A manual dispatch SHALL recover a failed tagged release without requiring another application merge. Source: REM-30; release coordinator and workflow concurrency.
+Main release runs SHALL use maintained workflow serialization and bind exact
+source/candidate/artifact identity. A failed earlier run SHALL remain untagged
+unless its own preceding gates later pass; no bespoke history backfill may publish
+it merely because a later run succeeds. Final-stage recovery SHALL retain the same
+remote tag/draft identity and verified assets without overwrite or duplicate tags.
+Source: REM-56 replacing superseded coordinator recovery ordering.
 
 #### Scenario: Queued jobs are replaced
-- **WHEN** newer application events replace a pending job or an older event starts after main advances
-- **THEN** the admitted job processes every relevant unreleased squash in order, creating one tag per application merge rather than skipping earlier merges.
+- **WHEN** main advances, a pending run is canceled or an older run resumes
+- **THEN** no run substitutes current main for its admitted SHA or claims a canceled/failed predecessor passed; retry remains explicit and identity-bound.
 
 #### Scenario: Partial release retry
-- **WHEN** a previous run failed after tagging or while building/uploading
-- **THEN** a retry uses the existing immutable tag/SHA and publishes only after both target packages and provenance verify.
+- **WHEN** final publication fails after tagging or during upload
+- **THEN** retry verifies the same built artifacts and retained assets, uploads only missing matching bytes and finalizes only after complete verification.
 
 #### Scenario: Documentation after failure
-- **WHEN** only a documentation push follows a failed application release
-- **THEN** that push remains build-free and recovery is available by explicit dispatch or the next application event.
+- **WHEN** only documentation follows a failed application run
+- **THEN** documentation remains build/tag/release free and does not silently publish the failed run.
+
+### Requirement: Build-consuming integration gates publication
+Required integration jobs SHALL consume the outputs produced by the gated build,
+verify exact inventory/source/version/digests and execute supported artifact
+checks without rebuilding substitutes. Only a canonical main run with successful
+required predecessors SHALL enter the one dedicated release job.
+
+#### Scenario: Failed or substituted artifact
+- **WHEN** a required gate fails/skips/cancels, or downloaded bytes/source/version differ from the build receipt
+- **THEN** no tag/release is created and no replacement build is silently substituted.
+
+#### Scenario: Documentation validation ordering
+- **WHEN** the Docs repository runs validation
+- **THEN** portable prerequisite checks gate strict specification validation with read-only permissions and no application release.
+
+#### Scenario: Existing development configuration coverage
+- **WHEN** Manager's existing development browser configuration is built alongside production artifacts
+- **THEN** its separate CI-only retained output is exercised on both supported hosts without an integration rebuild or inclusion in production release assets.
