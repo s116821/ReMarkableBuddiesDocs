@@ -7,5 +7,5 @@
 ## Verification and delivery
 
 - [x] Run the new regression, affected parser check and required strict lint/format checks; retain original failure separately.
-- [ ] Publish exact paired source/spec revisions and actual evidence; resolve independent review, hosted checks and current feedback.
-- [ ] Synchronize only these completed requirements into canonical specs and archive this own change.
+- [x] Publish exact paired source/spec revisions and actual evidence; resolve independent review, hosted checks and current feedback.
+- [x] Synchronize only these completed requirements into canonical specs and archive this own change.
