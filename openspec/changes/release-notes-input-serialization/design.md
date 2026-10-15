@@ -12,7 +12,8 @@ body string. Assert the production workflow uses the same expression. Preserve
 the observed failure and distinguish owned fixture evidence from production.
 
 The existing main attempt is immutable. Its matching uploaded draft is not called
-published, and no rerun is claimed to load this successor workflow. Root owns any
-explicit recovery decision with original source/artifact/draft identity intact.
-New source repair PRs start at Buddy1d1b480d, Manager959205e7 and Docs9fe07b46;
+published, and no rerun is claimed to load this successor workflow. Root's explicit
+decision is normal new-main publication after the repair: the old Manager draft
+remains failed evidence, with no manual finalization or retroactive substitution.
+New source repair PRs start at Buddy 1d1b480d, Manager 959205e7 and Docs 9fe07b46;
 old source branches and all original run evidence remain untouched.
