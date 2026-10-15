@@ -6,9 +6,9 @@
 - [x] Confirm Main's published supported bounded stdin query contract, central backend precode, exact source, exit semantics and attributed actual report/refusal evidence at626c2f8/2d0ecad; consumer independently verifies compatibility during implementation.
 
 ## Implementation and Verification
-- [ ] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
-- [ ] Implement shared global search/controller/UI preserving status, scope, provenance and stale/cancel behavior.
-- [ ] Verify actual Main CLI-to-parser compatibility, affected host controls and both UI distributions with honest evidence attribution.
+- [x] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
+- [x] Implement shared global search/controller/UI preserving status, scope, provenance and stale/cancel behavior.
+- [x] Verify actual Main CLI-to-parser compatibility, affected host controls and both UI distributions locally with honest evidence attribution; final supported-host CI is tracked separately.
 - [ ] Complete required lint/build/host checks and actual exact-source hosted CI.
 - [ ] Obtain independent paired source/spec review and inspect bot feedback.
 
