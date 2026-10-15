@@ -1,0 +1,17 @@
+## Preparation
+- [x] Read current REM-42 chronology and exact Main query/input/current-handoff source.
+- [x] Publish exact Manager ownership and the smaller actual stdin-only consumer dependency.
+- [x] Record central consumer proposal/design/delta before runtime edits.
+- [ ] Confirm Main's published supported bounded stdin query contract and exact source.
+
+## Implementation and Verification
+- [ ] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
+- [ ] Implement shared global search/controller/UI preserving status, scope, provenance and stale/cancel behavior.
+- [ ] Verify actual Main CLI-to-parser compatibility, affected host controls and both UI distributions with honest evidence attribution.
+- [ ] Complete required lint/build/host checks and actual exact-source hosted CI.
+- [ ] Obtain independent paired source/spec review and inspect bot feedback.
+
+## Delivery
+- [ ] Publish linked exact Manager/Docs and backend dependency revisions, evidence and manual usage.
+- [ ] Sync only implemented consumer requirements and archive this completed change.
+- [ ] Preserve foundation/domain/live-provider/native/service-control/full issue gates.

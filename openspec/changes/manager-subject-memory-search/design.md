@@ -1,0 +1,27 @@
+# Manager global subject-memory search
+
+## Authority and exact inputs
+Current REM-42 and all27 timestamped comments were read, including the prior file-input/profile-discovery request. Current Main a3b1c75b4f4048a2d65d58357094d702578183ea memory::Query has no profile input; maintenance::run selects config.memory.profile. Query.document=None admits global facts only. It returns query_status/diagnostics/context and original fact keys/revisions/provenance. Scope this slice to global search, not exhaustive browsing, fact detail/history, put/forget or profile selection.
+
+Main currently reads only a regular bounded input file. Neither /dev/stdin nor --memory-input - is presently accepted. Main must publish central backend precode and exact supported stdin contract before Manager runtime implementation is selected. Consumer code must never pretend an unimplemented flag works or silently write a remote request file. Existing domain decoder/preflight/current selected handoff/write_to remain backend-owned; this consumer does not add a Store or projector.
+
+Docs base879f5ec0c459ca28bc6053ee8484c6f3e5f33d81; proposed Manager base99bde579c7ca458cd9670cc83682e0ed93c58c48. Existing accepted inspector/auth/personalization/download topics stay preserved. Only named new consumer files and necessary host/UI wiring are owned here; release/toolchain/workflow/native files remain with their owners. New work uses existing clean checkouts/topics, not new workers/worktrees.
+
+## Fixed query and bounds
+Proposed command is the existing fixed reader-buddy executable/config environment with --memory-operation query --memory-input -, contingent on Main's actual contract. No renderer-supplied executable/config/path/endpoint/shell fragment. Request contains validated current connection_id/boot_id and query text; host constructs Query with document=null, current_claims=[], max_matches=8, max_context_bytes=8192 and an integer now_ms used only for existing memory expiry, never sync ownership. Text is nonblank, no NUL, at most2048 UTF-8 bytes. No profile/account identity is invented.
+
+Reuse existing protected wired host settings, USB identity/route/key checks, latched disconnect and pre/post same-device/boot observation on Linux and Windows. Send JSON only through the accepted stdin channel, close write, collect bounded stdout without echoing diagnostics/private content and close on deadline/cancellation. Proposed host response cap128KiB covers this intentionally small query; refuse overflow/invalid encoding/unknown shapes rather than truncate into success. Final values/bounds align to Main's actual supported command before code. No request file is staged remotely.
+
+## Domain semantics and UI
+Show a shared Tailwind search field, explicit query action and status in browser and Electron. Label results as the configured profile's global subject memory and author-asserted context, not current-page truth or a complete inventory. Show returned claim/value/subject/provenance/confidence and diagnostics under strict bounds; do not manufacture facts or fetch provider/native data.
+
+Busy means the current Store cannot be acquired; keep the service running and offer an honest retry/manual workflow. Disabled, complete-empty, complete, partial, unavailable/unsupported/conflict/invalid outcomes stay distinct. A partial result cannot look complete; unknown future report versions are unsupported. Clear old results on disconnect, tablet/boot/session change, new query or cancellation; stale async completion must not repopulate them. Explicitly scoped query failure does not alter preferences or trigger model calls.
+
+This is a query-only domain operation, not a promise of filesystem immutability: valid Main maintenance commands may perform their documented normal Store admission/recovery writes. Malformed/oversized input must refuse before Store effects under the backend contract. Preserve selected domain currentness through stdout consumption; received facts are historical data, never permission for a later native/selected effect. No service stop/restart, credential transfer, cloud query/sync/restore, mutation or automatic document search.
+
+## Verification and ownership
+Before code: exact published Main stdin contract, consumer request/report agreement and central precode. Then use meaningful request/report controller tests, the actual bounded fixed-command SSH peer over existing wired adapters, browser-helper/Electron exact action checks, and browser/Electron/packaged UI matrices with explicitly synthetic reports. Obtain actual unchanged Main CLI query output through the published stdin endpoint for parser compatibility; fixture setup may use owned temporary files/stores and must be labeled setup.
+
+Cover UTF-8/blank/oversize/malformed reports, disabled/empty/partial/busy/unavailable/unsupported, secret/diagnostic suppression, no arbitrary command/path, stale query/cancel/disconnect/reconnect and retained context limits. Keep real CLI/host protocol, synthetic renderer, native Windows host API, live tablet and provider evidence separate. No live account/tablet needed for software checks; physical qualification remains open.
+
+Supported lint/unit/build and existing both-host/packaging checks precede independent source/spec review. Sync/archive only this complete consumer change; do not archive Main's unfinished domain/foundation or other Manager changes. No source application version; Git tags remain authority. Root retains live release fixes and broader issue coordination.
