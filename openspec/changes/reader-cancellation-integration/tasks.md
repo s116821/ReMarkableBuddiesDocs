@@ -6,6 +6,6 @@
 
 ## Verification and delivery
 
-- [ ] Run the new focused workflow/transport integration controls and necessary strict compile/lint checks; preserve original failures if any.
+- [x] Run the new focused workflow/transport integration controls and necessary strict compile/lint checks; preserve original failures if any.
 - [ ] Publish exact source/spec pairing and separately attributed evidence; complete independent review, required CI and bot/comment checks.
 - [ ] Synchronize only the completed integration requirements into canonical specs and archive this own change.
