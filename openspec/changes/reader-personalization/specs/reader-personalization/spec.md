@@ -4,8 +4,12 @@
 The Reader SHALL apply a validated enabled nonempty configuration preference once in its receiving answer context after independent question verification, separately from recognition, visible transcript and subject memory. The current explicit request and fixed operation, source and output contracts SHALL outrank the preference. Source traceability: REM-53 receiving context and precedence requirements; accepted configuration Rust PR39.
 
 #### Scenario: Preference without subject memory
-- **WHEN** a prepared Reader request passes independent question verification and has an enabled nonempty preference but no usable subject memory
+- **WHEN** a prepared Reader request passes independent question verification and has an enabled nonempty preference with memory absent or disabled, or after a successful complete-empty memory retrieval
 - **THEN** one subsequent answer request includes the preference as separate configuration context and preserves the exact verified question and existing operation guards
+
+#### Scenario: Configured memory retrieval refusal
+- **WHEN** configured subject memory reports unavailable, fails retrieval or returns partial results without usable facts
+- **THEN** the existing refusal remains in force and personalization does not bypass it or publish the preliminary answer
 
 #### Scenario: Preference with subject memory
 - **WHEN** a verified Reader request has both an enabled preference and usable subject memory
