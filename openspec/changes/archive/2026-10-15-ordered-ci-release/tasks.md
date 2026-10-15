@@ -7,8 +7,8 @@
 - [x] Replace Manager pipeline and necessary candidate/package/artifact-consumer helpers, preserving unrelated UI/host behavior.
 - [x] Order ordinary Docs checks and reconcile active/canonical wording without editing SDK-owned specs.
 - [x] Run meaningful local checks and real built-artifact integration; preserve failures and distinguish local/hosted/synthetic/native evidence.
-- [ ] Publish linked PRs, inspect actual required hosted logs and obtain independent review; resolve findings.
-- [ ] Verify and sync only completed owned requirements, archive this change and hand exact final evidence to Root for coordinated squash readiness.
+- [x] Publish linked PRs, inspect actual required hosted logs and obtain independent review; resolve findings.
+- [x] Verify and sync only completed owned requirements, archive this change and hand exact final evidence to Root for coordinated squash readiness.
 
 ## Separate ecosystem follow-ups
 

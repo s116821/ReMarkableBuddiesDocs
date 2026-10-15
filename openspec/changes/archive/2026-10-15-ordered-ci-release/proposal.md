@@ -1,6 +1,6 @@
 ## Why
 
-REM-56 records the October 15 human instruction in Things to Fix version111:
+REM-56 records the October 15 human instruction in Things to Fix version 111:
 checks must gate builds, builds must gate integration tests using their artifacts,
 and one final release job may tag/publish only after every predecessor succeeds.
 Current main release workflows independently race CI. The unfinished REM-46
