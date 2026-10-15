@@ -1,8 +1,9 @@
 ## Preparation
-- [x] Read current REM-42 chronology and exact Main query/input/current-handoff source.
+- [x] Read current REM-42 (31 comments), REM-24 (38 comments), exact published Main query/input/current-handoff and current Manager caller paths.
 - [x] Publish exact Manager ownership and the smaller actual stdin-only consumer dependency.
 - [x] Record central consumer proposal/design/delta before runtime edits.
-- [ ] Confirm Main's published supported bounded stdin query contract and exact source.
+- [x] Map proposed existing-schema stdin seam to exact Manager ownership, compatibility states and verification boundaries.
+- [ ] Confirm Main's published supported bounded stdin query contract, central backend precode, exact source, exit semantics and actual report/refusal evidence.
 
 ## Implementation and Verification
 - [ ] Implement fixed bounded query/report host transport using existing wired adapters and both exact browser/Electron actions.
