@@ -8,6 +8,7 @@
 - [ ] Adapt existing bounded verifier to unchanged qualified current identity helper.
 - [ ] Update exact packaged resource inventory and current-producer test fixture.
 - [ ] Run meaningful affected actual ZIP/process/module-refusal and packaged host checks on supported runtimes.
+- [ ] Mechanically reconcile current-main CI and retain the existing feature host controls in the existing artifact integration jobs.
 - [ ] Verify required exact-source hosted CI and independent paired review.
 
 ## Delivery
