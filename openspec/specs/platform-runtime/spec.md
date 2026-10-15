@@ -66,16 +66,28 @@ The application SHALL process independent Reader Buddy iterations on real device
 - **WHEN** a synthetic memory or handwriting envelope passes storage/sync tests
 - **THEN** evidence describes the infrastructure only and does not claim REM-24 or REM-26 behavior is implemented
 ### Requirement: Git-derived application version
-The CLI application version SHALL derive from Git metadata through vergen-gitcl, never from an independently maintained Cargo package version. An official build SHALL require full clean history, the exact expected semantic tag and SHA, and SHALL report that tag's version. Development or unavailable metadata SHALL be identified explicitly. Source: REM-30; build.rs and src/main.rs version configuration.
+The CLI version SHALL derive from Git history through maintained semantic tooling
+and vergen-gitcl, never an independently maintained Cargo package version.
+A controlled candidate build SHALL require full clean history and exact frozen
+candidate tag/version and source SHA; it MAY precede remote tag creation.
+Its embedded value alone SHALL NOT grant official publication or native trust.
+An existing published-tag build SHALL additionally verify the actual tag/SHA.
+Only the final release job after all build/artifact integration gates SHALL create
+the official tag and publish those exact already-tested bytes. Development or
+unavailable metadata SHALL be explicit. Source: REM-56 superseding REM-30 order.
 
 #### Scenario: Official tagged build
-- **WHEN** an official build checks out its verified release tag on either distributed target
-- **THEN** --version reports the tag's semantic version and packaging provenance records the same tag and SHA.
+- **WHEN** an existing published-tag build checks out its verified release tag
+- **THEN** --version and package provenance report that tag's semantic version and exact source SHA.
+
+#### Scenario: Verified candidate before publication
+- **WHEN** controlled CI builds a frozen clean candidate before the remote tag exists
+- **THEN** both target artifacts report the frozen candidate version and integration consumes those bytes; only later successful final tag/release proof establishes publication eligibility.
 
 #### Scenario: Missing or conflicting official metadata
-- **WHEN** an official build has shallow/missing history, dirty source, conflicting overrides or the wrong tag/SHA
-- **THEN** the build fails rather than substituting the manifest version or a misleading release version.
+- **WHEN** candidate/published metadata has shallow or missing history, dirty source, conflicting profiles/overrides or wrong source/tag identity
+- **THEN** the build refuses instead of substituting a manifest version or misleading release identity.
 
 #### Scenario: Development build
-- **WHEN** a local or PR build is not a clean exact release source or Git metadata is unavailable
-- **THEN** --version clearly identifies a development state, including a commit-derived identifier when available.
+- **WHEN** a build has neither valid controlled candidate nor verified published-tag metadata
+- **THEN** --version identifies development or unavailable Git state explicitly.
