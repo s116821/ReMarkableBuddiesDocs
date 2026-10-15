@@ -78,7 +78,9 @@ source/candidate/artifact identity. A failed earlier run SHALL remain untagged
 unless its own preceding gates later pass; no bespoke history backfill may publish
 it merely because a later run succeeds. Final-stage recovery SHALL retain the same
 remote tag/draft identity and verified assets without overwrite or duplicate tags.
-Source: REM-56 replacing superseded coordinator recovery ordering.
+String metadata passed through maintained Actions SHALL preserve its exact text
+under those Actions' declared input parsing rather than being interpreted as YAML
+structure. Source: REM-56 and the observed final-input failure.
 
 #### Scenario: Queued jobs are replaced
 - **WHEN** main advances, a pending run is canceled or an older run resumes
@@ -91,6 +93,10 @@ Source: REM-56 replacing superseded coordinator recovery ordering.
 #### Scenario: Documentation after failure
 - **WHEN** only documentation follows a failed application run
 - **THEN** documentation remains build/tag/release free and does not silently publish the failed run.
+
+#### Scenario: Multiline completion metadata
+- **WHEN** final verified release notes contain newlines, colons, quotes or Unicode
+- **THEN** maintained input serialization preserves the exact notes string in the final request body, without bypassing same-ID or complete-byte verification.
 
 ### Requirement: Build-consuming integration gates publication
 Required integration jobs SHALL consume the outputs produced by the gated build,
