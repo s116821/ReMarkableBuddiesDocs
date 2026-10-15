@@ -91,3 +91,34 @@ behavior, remote platform immutability, SDK first release and REM-35 readiness.
 Source basis: current human note/REM-56, REM-46/50 chronology and preserved source,
 current main/candidate workflows, SDK maintained-tool qualifications, and upstream
 Python Semantic Release command documentation. This document precedes code.
+
+## Resolved integration details
+
+Canonical events are push:main, with PR events for premerge checks; no new
+pull_request_target dependency is introduced. The metadata job requires one
+first-parent main commit in push.before..github.sha; zero/unknown, non-forward or
+ambiguous batch history refuses before compilation/tagging. This keeps dorny's
+supported base/ref filtering without a private touched-history classifier.
+The final associatedPullRequests proof accepts the exact merged SHA, including
+squash merges; a direct push cannot publish. The reusable caller permission
+ceiling permits the final job's contents:write, while every actual preceding job
+remains contents:read; final metadata proof also has pull-requests:read.
+
+The selected uploader is unmodified Svenstaro2.11.5 source29e53e9, source-built
+with the full audited minimal build/runtime lock40d12ef7. The source's empty Jest
+placeholder and unused ts-jest/lint graph are omitted transparently. Original
+full/range/Jest30 scans remain41/34/20 advisories; selected closure is0 at the
+recorded scan, not a proof of security or a waiver of SDK's original gates.
+Exact lookup/request Actions supply an ID; only verified missing names are sent
+with overwrite:false/check_duplicates:true/draft:true/promote:false. ID404 may
+create a replacement draft upstream, and outside publication may be reverted to
+draft upstream; final same-ID/complete-byte proof prevents our finalization of a
+replacement. There is no atomic external-writer claim. This avoids both the old
+uploader's same-name DELETE and softprops' two-page draft scan without a fork.
+
+The existing Manager build-info four-field wire format remains unchanged.
+Its official:true denotes the controlled release-build recipe; absent remote tag
+and verified complete release it is an unpublished CI candidate, not trusted
+publication, installation or provenance by itself. Parent reconciliation of
+unmerged Manager consumers that hash-import old release/coordinator.py is
+explicitly required; this main-based change does not silently claim compatibility.
