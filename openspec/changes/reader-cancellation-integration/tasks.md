@@ -1,8 +1,8 @@
 ## Implementation
 
-- [ ] Import accepted PR43 four-file source delta with exact provenance and preserve unrelated source/SDK pins/protected checkout.
-- [ ] Exercise actual Reader recognition and contextual-answer cancellation with owned witnessed HTTP and existing platform guard.
-- [ ] Preserve durable cancellation/evidence and suppress all later page/request mutations; fix actual integration findings only.
+- [x] Import accepted PR43 four-file source delta with exact provenance and preserve unrelated source/SDK pins/protected checkout.
+- [x] Exercise actual Reader recognition and contextual-answer cancellation with owned witnessed HTTP and existing platform guard.
+- [x] Preserve durable cancellation/evidence and suppress all later page/request mutations; fix actual integration findings only.
 
 ## Verification and delivery
 

@@ -1,0 +1,19 @@
+# Actual Reader cancellation integration
+
+## Scope and provenance
+
+Precode f7e0e5d was published before implementation. Accepted PR43 backend2a510e825822d3683176fe5607efa6cf6f804e69 is reused by cherry-pick5cbb5b7 over reviewed Readerbe95c29. Only the four authored backend/dependency files were imported; unrelated layout/catalog ancestry was not imported. OpenAI blob73c2e7ac94ee8c68cb0fa65e3d1c8fd9192db653 and original backend test blobac06af428904f09a99e464534888cffa5e989ae8 match the accepted source exactly. Cargo.toml/lock differ from that author's snapshot only to retain Main's existing SDK revision5c0bc303 rather than the olderd01b4bdf; registry dependency identities are otherwise identical. All nine protected original rust-rem37 files were freshly rehashed unchanged.
+
+## Original failures and focused result
+
+- First offline attempt refused before compilation because reqwest was not cached. The accepted locked graph was then fetched without version resolution or lock changes. `reader-cancellation-integration-r1.log` and `reader-cancellation-fetch-r1.log` preserve this distinction.
+- First Windows dependency/source compile succeeded in8m09. The new control failed15.47s at a fixture assumption: it searched only the Conversation namespace for an image record that correctly lives in Source. Earlier stage-one cancellation/guard/no-output assertions passed, but the full control failed and stage three was not reached. Original `reader-cancellation-integration-r2.log` remains unchanged.
+- Only the fixture lookup was corrected to include Source. Final focused Windows Rust1.98.1 locked/offline/all-feature control passed: one test, two actual Reader cases, zero ignored,8.36s; rebuild12.27s. `reader-cancellation-integration-r3.log` records provider return1ms at recognition and0ms at contextual generation at integer-millisecond precision, after actual progress rejection. These are not zero-latency or native input-to-acknowledgement claims.
+
+Both cases use actual HTTP and the actual Orchestrator/Ledger with dummy auth and a unique request model nonce. The server reads the entire expected request before a channel authorizes modeled ownership loss. Provider cancellation/join and Reader return occur while the server still withholds the reply; release and server join happen before assertions. The existing sticky guard refuses another iteration, no extra queued provider connection exists, the user turn and outcome fact are Canceled, no assistant turn/navigation/text exists and source pixels and durable original provider image bytes are unchanged. The stage-three case retains the exact independently verified question. The1/0ms interval measures progress-rejection to provider return, not image preparation, ownership-change detection or durable outcome commit time.
+
+No production integration defect was found; the accepted backend implementation was not rewritten. The five backend cancellation, six TLS and three response-bound matrices were not repeated locally. Strict all-target/all-feature lint, exact hosted checks, independent review and current bot/comment assessment remain pending at this snapshot. Central local validation verified19 guidance files/126 preserved blobs and all20 strict items.
+
+## Limits
+
+This is host workflow/protocol evidence with modeled page/session interference, not a physical cancel gesture, native feedback/page mutation, current document identity, real provider semantics, external TLS/DNS/proxy qualification, remote billing or export rollback guarantee. Reviewed REM53 PR49/Docs41 remain frozen drafts with a separate actual-provider gate; wider REM40 and cumulative parents remain open. Keep this own change active until its scoped gates pass; do not archive unrelated unfinished work.
