@@ -53,10 +53,11 @@ original log remains retained. A narrower --lib --jobs 1 retry passed without
 a source fix, cache deletion or system paging change. This does not establish
 a general compiler-defect diagnosis or turn the failed run into a pass.
 
-## Remaining delivery
+## Initial delivery snapshot (resolved for this increment below)
 
-Independent source/spec review, exact hosted CI, linked publication, canonical
-sync and this change's own archive remain required. There was no model call,
+At initial publication, independent source/spec review, exact hosted CI, linked
+publication, canonical sync and this change's own archive remained required.
+There was no model call,
 device operation, provider/account change or new runtime setter. These host
 tests prove the asserted local mode policy, not native Reader capability,
 provider synchronization, current-page authority, live mode switching or full
@@ -64,5 +65,52 @@ REM-24/52 completion. REM-35 retains the integrated release gate.
 
 Source basis: exact source commits/blobs, actual local retained Cargo output,
 the coordinated public contract and separately attributed generic owner results.
-Private local logs have no public transcript link until the linked PR evidence
-is posted; no historical chat summary is treated as an execution transcript.
+Private raw Windows/failure logs have no public transcript link. Linked PR
+evidence records the results, and actual hosted logs are cited below; no
+historical chat summary is treated as an execution transcript.
+
+## Scoped independent acceptance and hosted evidence
+
+Independent reviews [5531322987](https://github.com/s116821/ReMarkableBuddies/pull/48#pullrequestreview-5531322987)
+and [5531323186](https://github.com/s116821/ReMarkableBuddiesDocs/pull/40#pullrequestreview-5531323186)
+accepted exactly the three Rust files and five owned change files, with no
+actionable findings and no reviewer test reruns. Caller/drop ordering, exact
+same-token mutex admission, original non-mutating replay and publisher
+coexistence were inspected. No inline bot comments were present at final review.
+
+[Run38715398329](https://github.com/s116821/ReMarkableBuddies/actions/runs/38715398329)
+completed successfully at source a3b1c75b4f4048a2d65d58357094d702578183ea:
+checks, uploader qualification, read-only candidate freeze, build, retained
+target-artifact exercise and the aggregate result passed. The publication job
+correctly skipped on the PR. Actual completed logs were read. The tested tree is
+GitHub's temporary merge 0ff9a972b20c0a829b91af263cba79f837cb2c9d of a3b1c75
+into then-main 1d1b480db048bd7fab8e336c03822babf41d1221, using Linux Rust
+1.99.0. It is not a head-only build, current-main repair qualification or the
+local Windows 1.98.1 run.
+
+The hosted unit log includes all new controls, 308 library passes and one
+inherited ignored test; the reported binary/integration groups also pass. Child
+recovery invocations are not naively added as distinct suite tests. Build job
+116359366468 uploaded [artifact11962354912](https://github.com/s116821/ReMarkableBuddies/actions/runs/38715398329/artifacts/11962354912),
+14504231 ZIP bytes, SHA256
+2407eb5cda2a162b05e2f230e2ec190e02d13e8e439b9814c8a6e125a3389005.
+Integration job116362684885 downloaded that retained artifact and successfully
+exercised the target artifacts using the workflow's pinned cross images. This
+is host/emulated artifact evidence, not physical tablet operation or native
+Reader qualification. No official tag or release was created by this PR.
+
+[Docs run38715378122](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/38715378122)
+passed Ubuntu, Windows and strict OpenSpec for exact spec255bee3. A second
+automatic source run38715464790 was still in progress at this record; the
+completed source run above is the actual success evidence, not a claim that
+every duplicate aggregate status had settled. No manual matrix rerun or
+required-check cancellation was selected. Subsequent lifecycle-only CI/review
+is recorded in the linked PR conversation without rewriting these results.
+
+This sync preserves the accepted two requirements and three scenarios exactly
+in the canonical ordinary-runtime-mode specification, then archives only this
+completed host-policy increment. The broader durable-conversation-context,
+subject-memory and document-scoped sync changes remain unfinished. The PR stays
+a stacked delivery: foundation merge, current source-main deployment, supported
+provider/mode UI, native capability and full REM-24/52/35 gates remain separate.
+The canonical contract does not claim those missing outcomes are implemented.
