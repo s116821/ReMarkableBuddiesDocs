@@ -15,6 +15,7 @@
 ## Delivery and acceptance still pending
 - [x] Read current branch metadata and Buddy Main Rules: no required-status contexts/rule. Preserve existing protection without changing settings.
 - [ ] Obtain independent review and pass actual hosted/platform CI on the final candidate.
-- [ ] Publish linked Docs/component PRs; sync canonical specs and archive only after acceptance; squash merge normally.
+- [x] Publish linked Docs PR53, Buddy PR59 and Manager PR23 and mark ready for review.
+- [ ] Sync canonical specs and archive only after acceptance; squash merge normally.
 - [ ] Reconcile all current application PRs against the corrected main, preserve each feature's tests and source, and validate the effective merged workflows.
 - [ ] Recheck for newly opened or changed PRs and close the cleanup only after every retained PR satisfies the job budget.

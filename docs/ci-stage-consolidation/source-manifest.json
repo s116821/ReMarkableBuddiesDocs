@@ -5,7 +5,7 @@
     "ReMarkableBuddiesManager": "99bde579c7ca458cd9670cc83682e0ed93c58c48",
     "ReMarkableBuddiesDocs": "04ff48f1fadcaa060c25a2053c20193f1e6a069e"
   },
-  "scope": "Prepared linked CI candidate. Docs branch creation succeeded after access changed; code acceptance, hosted checks, merge and current-PR reconciliation remain pending. No settings or device changes are included.",
+  "scope": "Linked Docs PR53, Buddy PR59 and Manager PR23 are published and ready for review. Final hosted checks, independent review, merge and current-PR reconciliation remain pending. No settings or device changes are included.",
   "sourceBasis": [
     "Direct October 15 human clarification: simplify CI in both repositories; physical USB test may proceed concurrently.",
     "Things to Fix note version112 is now empty; its removed version111 request is retained in REM-56 and its archived central proposal.",

@@ -1,6 +1,6 @@
 # CI stage consolidation: review package
 
-Status: prepared for linked review; implementation and current-PR reconciliation are not yet accepted. None of the 37 inventoried application PR branches has been updated by this delivery. Tracking scope remains REM-46, with REM-56's shipped ordering and release behavior preserved.
+Status: linked PRs are published and ready for review; implementation and current-PR reconciliation are not yet accepted. None of the 37 inventoried application PR branches has been updated by this delivery. Tracking scope remains REM-46, with REM-56's shipped ordering and release behavior preserved.
 
 | Repository | Running PR jobs | Running main-merge jobs |
 |---|---:|---:|
@@ -19,7 +19,7 @@ PR Title performs semantic-title admission before Checks. Common lint/unit, rele
 - Actionlint 1.7.12 found only the two existing `concurrency.queue: max` compatibility warnings. No new lint findings. This is not a clean actionlint result.
 - The Windows Bash first-failure execution control was attempted but cannot run under this sandbox. It remains mandatory on a permitted runner.
 - The six existing real Action controls were attempted but could not complete: subprocess localhost connections returned EACCES, and temporary Git config writes were denied. They are not passing evidence. Uploader loopback controls were not repeated after that shared restriction was established.
-- Hosted CI and independent review remain pending. No application/hardware qualification is claimed from this YAML preparation.
+- Hosted PR Title passed before Checks in both component PRs. Manager Checks passed at `6ec87074846efd11ec793d75e6f43baa49a1f388`; subsequent jobs remain pending. Earlier drafts exposed a removed YAML helper still used by an existing Action control; it was restored, and ESLint passed for both changed fixture files. Final whole-run CI and independent review remain pending. No application/hardware qualification is claimed from this YAML preparation.
 
 ## Review files
 
@@ -29,9 +29,9 @@ At the review package root, `candidate/` holds both component candidates, `basel
 
 ## Remaining delivery
 
-Current GitHub branch metadata for all three repositories has empty required-status contexts, and Buddy's active Main Rules has no required-status-check rule. No settings have been changed. Complete independent review and hosted checks, publish linked Docs/component PRs, sync/archive only accepted work, then reconcile every retained open application PR with corrected main and recheck the inventory.
+Current GitHub branch metadata for all three repositories has empty required-status contexts, and Buddy's active Main Rules has no required-status-check rule. No settings have been changed. Complete independent review and hosted checks, sync/archive only accepted work, then reconcile every retained open application PR with corrected main and recheck the inventory.
 
-Initial publication was denied by this chat's approval policy. After the human changed access and requested a fresh check, the GitHub connector successfully created `codex/rem46-compact-ci-20261015` from the exact Docs main. This does not establish hosted CI, review, merge or reconciliation of the inventoried PRs; those remain explicit delivery gates.
+Linked delivery: [Docs PR53](https://github.com/s116821/ReMarkableBuddiesDocs/pull/53), [Buddy PR59](https://github.com/s116821/ReMarkableBuddies/pull/59) at `60535913e6ea587585ab1f3c7cd20705947ac215`, and [Manager PR23](https://github.com/s116821/ReMarkableBuddiesManager/pull/23) at `6ec87074846efd11ec793d75e6f43baa49a1f388`. Exact Docs/code revision sets and subsequent hosted evidence are recorded in the PR comments. Publication does not establish acceptance, merge or reconciliation of the inventoried PRs.
 
 Source basis: direct October 15 human instructions; current GitHub workflow sources, run job list and open-PR trees; current Linear/Mem chronology read before preparation; local checks described above. Prior tablet memory is not evidence for these CI claims.
 
