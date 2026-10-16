@@ -17,3 +17,12 @@ Existing review5542150138/5542150255 accepted the original stacked source/Docs s
 The controller and three added regression bodies are the same repair. Main's existing Windows-unsupported host expectation remains, rather than importing the Windows adapter or its unconfigured-Windows assertion. All host/transport/workflow/dependency/version files are exact current main; main already carries canonical ignore maintenance. Thus the UX repair does not wait for unfinished Windows qualification or introduce a second adapter implementation.
 
 Supported Node24.21 on this new main-based source: ten focused controls, affected ESLint and production Angular139.09kB build PASS again. This rerun verifies the changed parent; no broad platform/native matrix is repeated. Required final-head hosted CI and scoped current-main/paired final review remain pending before lifecycle completion. The previous parent qualification hold applies only to preserved PR25, not as an artificial dependency of PR26.
+
+
+## Accepted implementation and lifecycle
+
+Current-main source27e8f28 received independent review5542177103; paired Docsfd9ae997 received review5542177200, both no findings and read back. Exact source run38838676955 is aggregateSUCCESS: Title116773451965, Checks116773508988, Build116773785111, WindowsIntegration116774209519 and LinuxIntegration116774209688 allSUCCESS; PR Release correctlySKIPPED. Exact paired evidence Docs38838712884SUCCESS.
+
+A separate real built Angular/browser-helper check uses a controlled synthetic host, not a tablet: after the actual four-second scheduled read starts and remains deferred, the rendered connection card text and button state remain unchanged; a successful fresh firmware sample becomes visible, then Disconnect clears details. This is bounded rendered-UI fixture evidence; no physical capture, native transport or Electron hardware qualification is inferred. Original unit regression failure is retained.
+
+Only this accepted requirement is appended to canonical manager-wired-observation and these five own change files are archived dated October15 America/Chicago. Earlier canonical requirements and all unrelated active changes remain preserved. Final lifecycle review and final Docs CI precede Root-owned normal linked merges; actual-main release evidence remains a postmerge delivery obligation. Neither this archive nor sourceCI completes wider REM-41 or Windows qualification.
