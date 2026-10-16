@@ -4,10 +4,12 @@ The October 15 user clarified that the earlier Things to Fix request requires a 
 
 ## What Changes
 
-- Limit running application jobs to three or four on PRs and four or five on main merges, counting matrix legs. Buddy uses Checks, Build, Integration and Release. Manager uses one Checks job, one Build job, two platform Integration jobs and Release.
-- Fold path/title admission and workflow wiring checks into Checks, candidate calculation and uploader compilation into Build, and emitted uploader/metadata Action controls into Integration.
+- Use four Buddy jobs and five Manager jobs per application PR or main merge, counting matrix legs. The latest user direction adds a dedicated PR Title prerequisite; main merges replace Title with Release.
+- Give each common check one owner in Checks. Downstream jobs depend on it instead of repeating the suite. Retain separate platform runtime integration coverage.
+- Use the maintained semantic-title, path-filter, setup, artifact and release tools already selected. Keep custom logic bounded to project-specific policy and artifact identity.
+- Fold candidate calculation and uploader compilation into Build, and emitted uploader/metadata Action controls into Integration.
 - Keep one final publication job, exact retained artifact IDs and bytes, docs-only exclusions, and serialized application runs.
-- Remove duplicate title-only workflow runs after preserving their checks in Checks.
+- Run the main-target PR title policy only in its prerequisite job; retain the existing standalone policy for non-main targets.
 - Reconcile every existing application PR with the corrected workflow before merging it; add a job-count regression so later PRs cannot silently restore the fragmented graph.
 
 ## Scope and delivery

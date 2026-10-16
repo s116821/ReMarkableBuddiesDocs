@@ -12,7 +12,7 @@
     "Current exact GitHub workflow/test sources and actual Reader main run38797557480 job list."
   ],
   "knownGates": [
-    "Required protected-check context readback unavailable in this chat.",
+    "GitHub branch metadata and Buddy Main Rules read: no required-status contexts or required-status-check rule; no settings changed.",
     "Independent review and actual final hosted CI still required.",
     "Main remains sole RM2 operator."
   ]

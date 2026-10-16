@@ -50,7 +50,7 @@ All 37 current Buddy/Manager PRs target main. Thirty-four lack the current reusa
 
 PR #21 adds Python wired, Drive, personalization, runtime-identity and original signed-fixture controls; an explicit trusted Python interpreter for retained-package checks; and owned-data, Drive, personalization, runtime-identity and Manager-download host tests in both desktop/browser hosts on Linux and Windows.
 
-PR #22 retains those controls and adds the memory-query Python and dual-host checks. These must be carried into Checks (Windows), pre-compilation Build checks (Linux), and Integration respectively. Do not replace either workflow wholesale with the main-only candidate and lose those tests.
+PR #22 retains those controls and adds the memory-query Python and dual-host checks. Carry common source controls into Checks once, and platform/host runtime checks into the matching Integration execution. Do not repeat common suites in Build or replace either workflow wholesale with the main-only candidate and lose feature tests.
 
 ## Acceptance sequence
 

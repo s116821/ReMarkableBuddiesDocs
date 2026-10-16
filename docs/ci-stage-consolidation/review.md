@@ -4,17 +4,17 @@ Status: prepared for linked review; implementation and current-PR reconciliation
 
 | Repository | Running PR jobs | Running main-merge jobs |
 |---|---:|---:|
-| Buddy | 3 | 4 |
-| Manager | 4 | 5 |
+| Buddy | 4 | 4 |
+| Manager | 5 | 5 |
 
-Counts include matrix legs. PRs skip the final Release job. Documentation-only changes run metadata checks without entering the application release queue.
+Counts include matrix legs and exclude skipped jobs that allocate no runner. The latest human clarification adds a dedicated PR Title prerequisite, increasing the earlier PR count by one. Main merges skip PR Title; PRs skip Release. Documentation-only changes run metadata checks without entering the application release queue.
 
-Checks now includes path/title admission and source checks. Build contains read-only candidate calculation, pinned uploader compilation and the existing application build. Integration consumes exact retained artifacts; Manager keeps Linux and Windows integration. Release preserves the current publisher and never rebuilds. Manager's Linux source checks run at the beginning of Build before candidate calculation or compilation; Windows source checks remain in Checks.
+PR Title performs semantic-title admission before Checks. Common lint/unit, release-policy, workflow and Python/fixture dependency audits run once in Checks on Linux. Build contains read-only candidate calculation, pinned uploader compilation and the application build. The uploader recipe retains its single build-time dependency audit. Integration consumes exact retained artifacts; Manager keeps distinct Linux and Windows runtime checks without repeating the common source suite. Release preserves publication safeguards and never rebuilds. Downstream hash-locked tool installation does not repeat the dependency audit already owned by Checks.
 
 ## Evidence
 
-- Eight focused structural tests pass: exact job budgets, platform coverage, dependency/failure gates, docs-only behavior and retained-artifact publication.
-- The preparation script deep-compares the entire final publisher after reversing the mechanical output-owner renames; it also confirms unchanged original integration steps and concurrency.
+- Ten focused structural tests pass: job budgets, title prerequisite, platform coverage, one owner per common suite, dependency/failure gates, docs-only behavior and retained-artifact publication.
+- The preparation script compares the final publisher after reversing mechanical output-owner renames and the deliberate downstream-audit opt-out; existing original integration steps and concurrency are preserved.
 - Strict OpenSpec validation passed with exit 0. Its optional telemetry flush failed because network resolution is unavailable; that did not fail validation.
 - Actionlint 1.7.12 found only the two existing `concurrency.queue: max` compatibility warnings. No new lint findings. This is not a clean actionlint result.
 - The Windows Bash first-failure execution control was attempted but cannot run under this sandbox. It remains mandatory on a permitted runner.
@@ -29,7 +29,7 @@ At the review package root, `candidate/` holds both component candidates, `basel
 
 ## Remaining delivery
 
-Check required branch-protection contexts before removing/renaming a required job. The current settings could not be read here, and no settings have been changed. Complete independent review and hosted checks, publish linked Docs/component PRs, sync/archive only accepted work, then reconcile every retained open application PR with the corrected main and recheck the inventory.
+Current GitHub branch metadata for all three repositories has empty required-status contexts, and Buddy's active Main Rules has no required-status-check rule. No settings have been changed. Complete independent review and hosted checks, publish linked Docs/component PRs, sync/archive only accepted work, then reconcile every retained open application PR with corrected main and recheck the inventory.
 
 Initial publication was denied by this chat's approval policy. After the human changed access and requested a fresh check, the GitHub connector successfully created `codex/rem46-compact-ci-20261015` from the exact Docs main. This does not establish hosted CI, review, merge or reconciliation of the inventoried PRs; those remain explicit delivery gates.
 
