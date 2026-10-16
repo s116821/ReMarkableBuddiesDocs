@@ -1,0 +1,11 @@
+# Quiet automatic connection refresh evidence
+
+Central precode7904484295cd62f4d7d0bdfa321ae859394806e7 was published before source edits. [Manager25](https://github.com/s116821/ReMarkableBuddiesManager/pull/25) source3d4d61397ee547d2f8827e30903dd1fe30fdd374 adds exactly three files over current PR8 parentf3a3875d7f7b7c81bf69bb67de17870246e6e608: controller, observation controls and user guide. The only production logic change removes the private read's unconditional pending-state replacement; explicit connect still publishes checking. No host transport, timer interval, identity, trust, IPC, cancellation, release or dependency changes.
+
+Supported Node24.21.0 on Windows: ten focused observation controls PASS, affected ESLint PASS and production Angular build PASS (139.09kB total). New deferred controls verify no state/notification/timestamp replacement during an automatic read, successful sample replacement, explicit manual pending, and disconnect defeating the late automatic result. Existing identity-change, cable failure/no automatic reconnect, host boundary and owned-child cancellation controls pass. The original parent source fails the new retained-display regression with actual checking/null details/null timestamp; failure remains historical, followed by the repaired pass. Initial nine-control run on bundled Node24.19 was supplemental only; final supported ten-control run is the qualification evidence.
+
+Central guidance/provenance check passes21 current guidance files/126 preserved blobs, and strict OpenSpec passes28/0. No new native/physical cable, SSH or tablet operations were performed. This is shared-controller/adapter fixture execution and build evidence, not a fresh physical screenshot or native connection qualification. Completed October15 user-assisted observations are not repeated.
+
+The PR intentionally retains the unmerged Windows feature parent. Required hosted CI, exact paired independent review and parent integration remain open; no merge, canonical sync/archive, full Windows acceptance or REM-41 completion is claimed. Root owns concurrent CI rollout and merges; the quiet-poll topic changes none of its workflow paths.
+
+Source basis: current user request, actual controller/test/renderer source and local supported-runtime test/build outputs; project issue history supplies wider scope limits.
