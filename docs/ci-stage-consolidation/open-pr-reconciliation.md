@@ -64,3 +64,47 @@ Read-only Git merge previews against the accepted compact candidates show PR58 c
 4. Run the job-budget regression on the effective merged workflow and actual relevant CI for each refreshed PR. Fold new tests into existing stages; count matrix legs.
 5. Refresh this inventory and record exact delivered heads/results before claiming all current PRs are reconciled. Close superseded drafts only after their remaining work is accounted for.
 
+
+## Published propagation, October 16
+
+Core Docs53/Buddy59/Manager23 are merged. Actual main runs [Buddy38835334603](https://github.com/s116821/ReMarkableBuddies/actions/runs/38835334603) and [Manager38835336589](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/38835336589) passed the four/five running stages and published v0.3.3/v0.4.3. The earlier inventory above is the original snapshot; the rows below supersede its pending propagation status.
+
+| Repository PR | Published CI head | Status |
+| --- | --- | --- |
+| [ReMarkableBuddies#58](https://github.com/s116821/ReMarkableBuddies/pull/58) | `7dc17fb6e914404627b23602715b064e34054525` | Hosted feature verification pending |
+| [ReMarkableBuddies#52](https://github.com/s116821/ReMarkableBuddies/pull/52) | `e6bddd41ee28abc38bdbf7c734ba4496081c202d` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#51](https://github.com/s116821/ReMarkableBuddies/pull/51) | `77f22745535d99eccfe4518aa087989bc4916940` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#50](https://github.com/s116821/ReMarkableBuddies/pull/50) | `106f1bf725931c1e85feb03dad2afaa462d78706` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#49](https://github.com/s116821/ReMarkableBuddies/pull/49) | `caf4ee5ad90951992defba5417c237d159f1c277` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#48](https://github.com/s116821/ReMarkableBuddies/pull/48) | `c4aab985e70d1b95993078a43b4d08c2df0b9362` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#45](https://github.com/s116821/ReMarkableBuddies/pull/45) | `cfe083cffc92475fd64f428e2c9a8bb6e24e70f6` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#44](https://github.com/s116821/ReMarkableBuddies/pull/44) | `42580d094fffd662c3257bff582cddf2b6abbe7f` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#43](https://github.com/s116821/ReMarkableBuddies/pull/43) | `30b23e2cae7a533544aafaaf61ca6fa4985e3066` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#42](https://github.com/s116821/ReMarkableBuddies/pull/42) | `6e65076f5dbf63f713fc57f7f35466e292ccc6d8` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#41](https://github.com/s116821/ReMarkableBuddies/pull/41) | `5184d4ddec4747f36c55b851153a83bf9703a427` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#40](https://github.com/s116821/ReMarkableBuddies/pull/40) | `010aa6b892f464ee04911acbf81b8f38e2f299a6` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#39](https://github.com/s116821/ReMarkableBuddies/pull/39) | `214db0071ef45d9153afb34b77a7588b664b7213` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#38](https://github.com/s116821/ReMarkableBuddies/pull/38) | `d68d5a0a6b5618904bb069390148e38595e0cdba` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#37](https://github.com/s116821/ReMarkableBuddies/pull/37) | `f1bc51293443d7a8519e61556ea8b664253b8a7c` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#36](https://github.com/s116821/ReMarkableBuddies/pull/36) | `51387223135610f8ecf9a5c3ca6d2d8619cce6ed` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#35](https://github.com/s116821/ReMarkableBuddies/pull/35) | `cb31f471acc928546d04c82c79161ff1b30e3b45` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#34](https://github.com/s116821/ReMarkableBuddies/pull/34) | `91cf92f1c1bbddc2ab4189157048ce2c0a960045` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#33](https://github.com/s116821/ReMarkableBuddies/pull/33) | `bc930c1cffc990f83f1a1edb477aa52b4f6879d8` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#32](https://github.com/s116821/ReMarkableBuddies/pull/32) | `4e897efdec5b38e2d539c5699cc46013011e13f7` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#31](https://github.com/s116821/ReMarkableBuddies/pull/31) | `c8fe23cdf24faf52900d4a6507cda57aebb5fe91` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddies#30](https://github.com/s116821/ReMarkableBuddies/pull/30) | `45110b94fed63cedc7416dee40bcc3dff62fcfb2` | CI propagated; unrelated source conflicts remain, no hosted pass claimed |
+| [ReMarkableBuddiesManager#8](https://github.com/s116821/ReMarkableBuddiesManager/pull/8) | `f3a3875d7f7b7c81bf69bb67de17870246e6e608` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#9](https://github.com/s116821/ReMarkableBuddiesManager/pull/9) | `c04a21e1addc90b077234cf9a6db345b4614f0bb` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#10](https://github.com/s116821/ReMarkableBuddiesManager/pull/10) | `0804fa67855f50673f361de753696ddb02fc4726` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#11](https://github.com/s116821/ReMarkableBuddiesManager/pull/11) | `a6dfbf42114fc0eb19bbd19ba076d2decfa9d317` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#12](https://github.com/s116821/ReMarkableBuddiesManager/pull/12) | `283e4889a588bf687862cf1a373295b3cd16e19a` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#13](https://github.com/s116821/ReMarkableBuddiesManager/pull/13) | `ea950bc558010114799d0d68206a45487e6336f5` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#14](https://github.com/s116821/ReMarkableBuddiesManager/pull/14) | `f683b134540d0bcd39a1934c6c35e05ef869746d` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#15](https://github.com/s116821/ReMarkableBuddiesManager/pull/15) | `a1672d3badf6d98ba3e3fe89b5b36717900318e1` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#16](https://github.com/s116821/ReMarkableBuddiesManager/pull/16) | `e6406d89ff4484650ff1ddf7deec16f583478839` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#17](https://github.com/s116821/ReMarkableBuddiesManager/pull/17) | `e5c2332219cdb9bee74d56f3a64733b5000dbd67` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#18](https://github.com/s116821/ReMarkableBuddiesManager/pull/18) | `23a9461ff92a2a18438eacad47cd85319818776c` | Original compact run failed: obsolete producer import; bounded existing repair pending |
+| [ReMarkableBuddiesManager#21](https://github.com/s116821/ReMarkableBuddiesManager/pull/21) | `602d5ebf8a7a16364673909907a1c20d382d2ec7` | Hosted compact pipeline passed |
+| [ReMarkableBuddiesManager#22](https://github.com/s116821/ReMarkableBuddiesManager/pull/22) | `44515af640653f88c2634aaa12943fd6fa340c95` | Hosted compact pipeline passed |
+
+Buddy29 at864bc5bfbd6a70fac8589d0db5b59ca847388952 and Manager2 atf745642e24ba01daa18359e1bc1638cbdadbe42c remain preserved pending retirement accounting. Manager24 at532187655418fad3651a37ff60f847f30c72987c carries the useful generated-dependency ignore changes; normal review/CI/merge pending. Original equal-date GitVersion failures remain failures; current PSR controls qualify the replacement only. Manager2's old session-only XOVI guidance is historical, not a new authorization. No entire feature, native gate or REM-46 completion is asserted by this CI propagation.
