@@ -1,0 +1,19 @@
+{
+  "createdFrom": "2026-10-15 current GitHub source snapshots",
+  "revisions": {
+    "ReMarkableBuddies": "f949ac6b0bc3edbae70eec3a38cfecebb09aba44",
+    "ReMarkableBuddiesManager": "99bde579c7ca458cd9670cc83682e0ed93c58c48",
+    "ReMarkableBuddiesDocs": "04ff48f1fadcaa060c25a2053c20193f1e6a069e"
+  },
+  "scope": "Prepared linked CI candidate. Docs branch creation succeeded after access changed; code acceptance, hosted checks, merge and current-PR reconciliation remain pending. No settings or device changes are included.",
+  "sourceBasis": [
+    "Direct October 15 human clarification: simplify CI in both repositories; physical USB test may proceed concurrently.",
+    "Things to Fix note version112 is now empty; its removed version111 request is retained in REM-56 and its archived central proposal.",
+    "Current exact GitHub workflow/test sources and actual Reader main run38797557480 job list."
+  ],
+  "knownGates": [
+    "Required protected-check context readback unavailable in this chat.",
+    "Independent review and actual final hosted CI still required.",
+    "Main remains sole RM2 operator."
+  ]
+}
