@@ -1,7 +1,13 @@
-## ADDED Requirements
+# Historical conversation ledger
+
+## Purpose
+
+Provide ordinary schema-one historical conversation persistence over the shared Store without activating Reader/provider or selected/native behavior.
+
+## Requirements
 
 ### Requirement: Atomic historical identity and chronology
-The historical library SHALL persist stable conversation, turn, operation and correction identities with exact text and Reader/Writer mode facts using the existing Store. It SHALL publish atomic root/record/receipt transactions, compare complete observed head sets and return an identical historical acknowledgment for an identical retry without restoring deleted current state. Source: REM-37 durable identity, exact history and interruption requirements; accepted 18e1a741.
+The historical library SHALL persist stable conversation, turn, operation and correction identities with exact text and Reader/Writer mode facts using the existing Store. It SHALL publish atomic root/record/receipt transactions, compare complete observed head sets and return an identical historical acknowledgment for an identical retry without restoring deleted current state. Source: REM-37 durable identity, exact history and interruption requirements; historical 18e1a741.
 
 #### Scenario: Reopen and retry
 - **WHEN** mixed-mode turns are reopened or an operation is retried after a lost acknowledgment
