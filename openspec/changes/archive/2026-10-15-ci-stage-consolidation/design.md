@@ -17,3 +17,7 @@ Release retains its existing exact merged-main admission, semantic/tag checks, r
 Current GitHub branch metadata shows no required-status contexts for the three repositories; Buddy's active Main Rules has no required-status-check rule. Its pull-request, squash-only, non-fast-forward and deletion rules remain unchanged. Re-read protection before delivery if it changes. No repository settings are changed by this work.
 
 Preserve all historical GitVersion and failed publication evidence. Reconcile each current PR against the corrected main workflow, preserving unfinished feature changes and feature-specific tests as steps of the appropriate stage. Do not paste new YAML onto an old branch that lacks current release helpers. Record exact branch heads and identify stale superseded CI drafts instead of blindly merging them. Focused workflow/action controls, actionlint, independent review and actual hosted checks on the final PR remain required. Rechecking downloaded artifact bytes and final mutable publication state remains necessary; these are checks of new boundaries, not repeated lint/unit suites.
+
+## Ordered delivery
+
+The accepted compact pipeline must land before dependent feature branches can incorporate it. This archive closes only the verified main implementation. The existing-PR scenario, 37-branch inventory, native Windows preservation repair, and actual-main publication follow-through remain active in `ci-existing-pr-reconciliation`. No feature or broad cleanup completion follows from this archive.

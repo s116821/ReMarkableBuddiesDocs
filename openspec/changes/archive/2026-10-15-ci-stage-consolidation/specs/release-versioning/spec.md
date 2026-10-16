@@ -22,7 +22,3 @@ Application CI SHALL run four Buddy jobs and five Manager jobs per application P
 #### Scenario: Earlier stage fails
 - **WHEN** a required check, build or artifact integration fails or is canceled
 - **THEN** dependent application stages do not publish any tag or release.
-
-#### Scenario: Existing PR delivery
-- **WHEN** an existing or future PR is prepared for merge
-- **THEN** it preserves the corrected job-count limits and required test coverage, and its effective merged workflow cannot restore the old administrative jobs.

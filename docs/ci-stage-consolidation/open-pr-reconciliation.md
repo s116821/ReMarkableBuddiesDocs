@@ -2,7 +2,7 @@
 
 Pending delivery inventory. No branch in this inventory has been updated by this change.
 
-Snapshot: 2026-10-16T00:14:16.306Z. Re-read heads and newly opened PRs before delivery. GitHub's branch creation call was denied because approval is required but this chat has approval policy `never`.
+Snapshot: 2026-10-16T00:14:16.306Z. Re-read heads and newly opened PRs before delivery. The earlier branch-creation approval failure is historical; the linked core CI PRs are now published and verified. This inventory remains an unfinished rollout, tracked by the active `ci-existing-pr-reconciliation` change.
 
 All 37 current Buddy/Manager PRs target main. Thirty-four lack the current reusable application pipeline. Reader #58 already carries the current main pipeline. Manager #21 and #22 carry it with extra feature controls. Tree inventories are recorded in the local audit/open-pr-snapshot.json; this is not a completed review of every feature diff.
 
@@ -51,6 +51,10 @@ All 37 current Buddy/Manager PRs target main. Thirty-four lack the current reusa
 PR #21 adds Python wired, Drive, personalization, runtime-identity and original signed-fixture controls; an explicit trusted Python interpreter for retained-package checks; and owned-data, Drive, personalization, runtime-identity and Manager-download host tests in both desktop/browser hosts on Linux and Windows.
 
 PR #22 retains those controls and adds the memory-query Python and dual-host checks. Carry common source controls into Checks once, and platform/host runtime checks into the matching Integration execution. Do not repeat common suites in Build or replace either workflow wholesale with the main-only candidate and lose feature tests.
+
+Windows-specific Python controls must also survive: three `WindowsNative` tests in `tests/wired/test_windows.py` and `Custody.test_actual_broad_ntfs_grant_refuses` in `tests/drive/test_store.py` skip on Linux. The prepared PR21/22 previews place those selected commands in the existing Windows Integration leg and adapt the duplicate-suite guard to reject broad repeated discovery. They are not replaced by the Node host tests. Actual selected local Windows execution passed 3+1 tests on unchanged PR21 source; both previews retain the five-job budget.
+
+Read-only Git merge previews against the accepted compact candidates show PR58 clean; Manager PR21/22 conflict only in the pipeline, and Manager PR8�18 only in the CI entry. Most older Buddy branches also have existing Rust/lock/storage conflicts. These previews changed no refs or working trees. Preserve feature work when reconciling those conflicts; no local preview counts as a published update.
 
 ## Acceptance sequence
 

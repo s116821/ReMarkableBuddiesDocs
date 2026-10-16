@@ -15,3 +15,7 @@ The October 15 user clarified that the earlier Things to Fix request requires a 
 ## Scope and delivery
 
 Buddy and Manager workflow wiring plus affected fixtures and documentation. No new release engine, SDK source/API or device change. Publish and review as a linked Docs/component delivery. Existing interrupted feature work and old drafts remain preserved during reconciliation. Verify actual required check names before removing legacy contexts; do not change repository settings without authorization.
+
+## Completion boundary
+
+The main CI implementation has independent source/spec acceptance and successful final Buddy, Manager and Docs runs. Its dependent all-current-PR rollout remains open in `ci-existing-pr-reconciliation`; it is not completed by this archive. Both changes stay linked to REM-46 and the same coordinated delivery.
