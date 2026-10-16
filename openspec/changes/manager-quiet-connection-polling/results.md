@@ -9,3 +9,11 @@ Central guidance/provenance check passes21 current guidance files/126 preserved 
 The PR intentionally retains the unmerged Windows feature parent. Required hosted CI, exact paired independent review and parent integration remain open; no merge, canonical sync/archive, full Windows acceptance or REM-41 completion is claimed. Root owns concurrent CI rollout and merges; the quiet-poll topic changes none of its workflow paths.
 
 Source basis: current user request, actual controller/test/renderer source and local supported-runtime test/build outputs; project issue history supplies wider scope limits.
+
+## Independent current-main delivery
+
+Existing review5542150138/5542150255 accepted the original stacked source/Docs scope without findings. Following that review, precode design amendment2ff7144f0d4c81fc9963f96a438fe8ce1a83e8de was published before porting. The selected delivery is now [Manager26](https://github.com/s116821/ReMarkableBuddiesManager/pull/26) exact27e8f28a25606e864d9e9eab6e10ca962149a235, a single three-file commit over actual main6b2b4d5a0822e3078fbf7105b18519c2d079cdec. Original PR25 remains preserved at7601360863bc1cc031bd4ba45d058cb3a8c0e17a, including its maintenance successor; it is not overwritten or merged into main.
+
+The controller and three added regression bodies are the same repair. Main's existing Windows-unsupported host expectation remains, rather than importing the Windows adapter or its unconfigured-Windows assertion. All host/transport/workflow/dependency/version files are exact current main; main already carries canonical ignore maintenance. Thus the UX repair does not wait for unfinished Windows qualification or introduce a second adapter implementation.
+
+Supported Node24.21 on this new main-based source: ten focused controls, affected ESLint and production Angular139.09kB build PASS again. This rerun verifies the changed parent; no broad platform/native matrix is repeated. Required final-head hosted CI and scoped current-main/paired final review remain pending before lifecycle completion. The previous parent qualification hold applies only to preserved PR25, not as an artificial dependency of PR26.
