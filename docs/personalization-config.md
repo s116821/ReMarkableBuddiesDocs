@@ -3,8 +3,8 @@
 This bounded REM-53 contract supports a real Manager editor through the existing
 configuration writer. It does not yet apply text to Reader/Writer provider calls,
 alter transcripts, synchronize the setting or prove a running runtime reloaded.
-Owning change: `personalization-config-contract`; paired Rust/Docs delivery and
-parent readiness are required before deployment. Older binaries without this
+Owning changes: `personalization-config-contract` and its independent-main
+integration `personalization-main-integration`. Older binaries without this
 CLI/field reject unknown settings; do not write the field through an older binary.
 
 The optional `Config.personalization` field defaults to:
@@ -70,11 +70,16 @@ its raw stdout or input into routine logs, telemetry, screenshots or issue comme
 
 Use the existing stop-confirm-lease maintenance protocol. An existing owned Store
 is required for every mutation; missing/unrecognized storage is not initialized,
-and a held runtime lease reports busy. The command reuses REM-36
+and a held runtime lease reports busy. `Store::open_existing` validates ownership
+and the existing generation under one retained lease. It does not initialize or
+repair missing markers/directories, clean staging files or publish metadata. This
+entry point belongs to shared storage and does not need subject-memory or Reader
+runtime modules. The command reuses REM-36
 `Store::replace_config` with whole-file CAS and its safe-path/staged atomic writer.
 The config must remain outside data/cache/credentials categories. History and
-learning records are not cleared. Accepted Store reopening/recovery semantics
-still apply. External same-user hostile writes and power-loss behavior are not new
+learning records are not cleared. Existing records must pass normal recovery
+validation; unavailable commits refuse maintenance. External same-user hostile
+writes and power-loss behavior are not new
 guarantees of this command.
 
 The reloaded setting and complete published digest are checked after saving while
@@ -103,6 +108,9 @@ cargo fmt --check
 
 These use actual temporary configuration/store files and the actual host CLI,
 with no API credentials, provider call, tablet, routing or service operation.
+Missing owner/generation structure, unsupported markers, corrupt commits and
+busy ownership are refused without repairing storage or changing configuration.
+The refused attempt releases its lease before a later valid command runs.
 Windows host controls do not prove Linux/native durability. Reader/Writer paths,
 gesture/preset composition, unchanged transcript forwarding, actual provider
 precedence, runtime restart qualification, selected sync policy and Manager UI

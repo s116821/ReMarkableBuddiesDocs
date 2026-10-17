@@ -12,7 +12,8 @@ the same stable OS lease once, validates the existing identity, auxiliary owner
 markers and generation structure before maintenance writes, and refuses missing,
 unsupported or busy stores without creating a replacement. Keep the lease until
 the command's write and exact readback finish. Release it on every refusal as well
-as normal Store destruction. Reuse normal recovery and `Store::replace_config`;
+as normal Store destruction. Reuse normal read-only record recovery validation
+and `Store::replace_config`; leave staging and capability metadata untouched;
 do not add another writer or depend on subject-memory configuration.
 
 Personalization maps structured Store refusals to its existing version1 status
