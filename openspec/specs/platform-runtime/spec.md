@@ -7,7 +7,7 @@ Describe the implemented platform runtime contracts, initially baselined from v0
 ## Requirements
 
 ### Requirement: Runtime startup and configuration
-The executable SHALL parse arguments before normal .env/configuration resolution. Fixed one-shot memory, selected-history and personalization maintenance SHALL dispatch before dotenv, normal credential/model/device or sync startup; personalization SHALL require explicit existing REMARKABLE_BUDDIES_CONFIG and follow its bounded maintenance contract. Normal and simulator paths SHALL load optional .env after one-shot dispatch. Normal configuration SHALL default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Personalization disk readback SHALL NOT claim running-runtime reload or Reader/Writer application. Source: REM6/REM28/REM34/REM36/REM53; src/main.rs, src/config.rs, shared-storage and personalization-config-contract.
+The executable SHALL load an optional .env before argument parsing, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Source: REM6/REM28/REM34/REM36; src/main.rs, src/config.rs and shared-storage contract.
 
 #### Scenario: Normal initialization
 - **WHEN** usable normal configuration and device access are available
@@ -25,12 +25,8 @@ The executable SHALL parse arguments before normal .env/configuration resolution
 - **WHEN** a scripted --simulate scenario is selected
 - **THEN** production credentials/storage configuration and cloud sync are not initialized, preserving its offline fixture-only behavior
 
-#### Scenario: Personalization maintenance before normal startup
-- **WHEN** an explicit --personalization-operation is selected
-- **THEN** only bounded existing configuration maintenance runs, without normal credential/model/device/sync startup; successful mutation reports verified disk readback and restart-required, not running-runtime activation
-
 ### Requirement: Existing diagnostic flags
-The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate; fixed --memory-operation/--memory-input and --conversation-operation/--conversation-input maintenance; --personalization-operation inspect|set|disable|clear; and help/version. Other production flags SHALL be rejected. Personalization maintenance SHALL be exclusive with simulation, normal key/model/endpoint/corner/dump/logging overrides and other maintenance selectors/inputs, and SHALL receive mutation JSON only through bounded stdin. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34/REM37/REM53; src/main.rs and personalization-config-contract.
+The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate plus help/version. Other production flags SHALL be rejected. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34.
 
 #### Scenario: Image dump configuration
 - **WHEN** --debug-dump is present
@@ -43,10 +39,6 @@ The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigge
 #### Scenario: Bounded development tools
 - **WHEN** the screenshot example is invoked with its output path
 - **THEN** it captures without input initialization or credentials; the separate reader_once example runs one immediate production iteration using environment credentials and default model/corner.
-
-#### Scenario: Personalization selector isolation
-- **WHEN** personalization maintenance is combined with a normal runtime override or another maintenance selector/input
-- **THEN** argument parsing refuses rather than ignoring the extra operation or starting the runtime
 
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Source: REM14/REM34; src/main.rs; deploy/reader-buddy.service.
@@ -74,16 +66,28 @@ The application SHALL process independent Reader Buddy iterations on real device
 - **WHEN** a synthetic memory or handwriting envelope passes storage/sync tests
 - **THEN** evidence describes the infrastructure only and does not claim REM-24 or REM-26 behavior is implemented
 ### Requirement: Git-derived application version
-The CLI application version SHALL derive from Git metadata through vergen-gitcl, never from an independently maintained Cargo package version. An official build SHALL require full clean history, the exact expected semantic tag and SHA, and SHALL report that tag's version. Development or unavailable metadata SHALL be identified explicitly. Source: REM-30; build.rs and src/main.rs version configuration.
+The CLI version SHALL derive from Git history through maintained semantic tooling
+and vergen-gitcl, never an independently maintained Cargo package version.
+A controlled candidate build SHALL require full clean history and exact frozen
+candidate tag/version and source SHA; it MAY precede remote tag creation.
+Its embedded value alone SHALL NOT grant official publication or native trust.
+An existing published-tag build SHALL additionally verify the actual tag/SHA.
+Only the final release job after all build/artifact integration gates SHALL create
+the official tag and publish those exact already-tested bytes. Development or
+unavailable metadata SHALL be explicit. Source: REM-56 superseding REM-30 order.
 
 #### Scenario: Official tagged build
-- **WHEN** an official build checks out its verified release tag on either distributed target
-- **THEN** --version reports the tag's semantic version and packaging provenance records the same tag and SHA.
+- **WHEN** an existing published-tag build checks out its verified release tag
+- **THEN** --version and package provenance report that tag's semantic version and exact source SHA.
+
+#### Scenario: Verified candidate before publication
+- **WHEN** controlled CI builds a frozen clean candidate before the remote tag exists
+- **THEN** both target artifacts report the frozen candidate version and integration consumes those bytes; only later successful final tag/release proof establishes publication eligibility.
 
 #### Scenario: Missing or conflicting official metadata
-- **WHEN** an official build has shallow/missing history, dirty source, conflicting overrides or the wrong tag/SHA
-- **THEN** the build fails rather than substituting the manifest version or a misleading release version.
+- **WHEN** candidate/published metadata has shallow or missing history, dirty source, conflicting profiles/overrides or wrong source/tag identity
+- **THEN** the build refuses instead of substituting a manifest version or misleading release identity.
 
 #### Scenario: Development build
-- **WHEN** a local or PR build is not a clean exact release source or Git metadata is unavailable
-- **THEN** --version clearly identifies a development state, including a commit-derived identifier when available.
+- **WHEN** a build has neither valid controlled candidate nor verified published-tag metadata
+- **THEN** --version identifies development or unavailable Git state explicitly.
