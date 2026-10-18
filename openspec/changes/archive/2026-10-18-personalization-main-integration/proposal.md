@@ -1,8 +1,12 @@
 # Deliver personalization maintenance without the unfinished Reader stack
 
+## Why
+
 The accepted personalization configuration command currently calls an unmerged
 subject-memory preflight helper. Its inherited branch therefore cannot deliver
 this otherwise independent setting on current main.
+
+## What Changes
 
 Reuse the existing PRs and preserve their original commits. Integrate the current
 main tree, retaining only the owned configuration interface, tests and central

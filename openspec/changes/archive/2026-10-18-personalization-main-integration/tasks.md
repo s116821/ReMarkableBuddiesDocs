@@ -7,10 +7,10 @@
 - [x] Add existing-store-only admission under one retained lease.
 - [x] Integrate the unchanged personalization protocol and scoped CLI into main.
 - [x] Verify real filesystem/CLI refusals, retention and exact readback.
-- [ ] Verify formatter, strict lint, supported hosted checks and independent review.
-- [ ] Check every unrelated current-main file is preserved.
+- [x] Verify formatter, strict lint, supported hosted checks and independent review.
+- [x] Check every unrelated current-main file is preserved.
 
 ## Delivery
 - [x] Sync the exact storage and current runtime contracts.
-- [ ] Archive this completed integration with evidence and linked PR revisions.
-- [ ] Coordinate normal squash merge and verify actual-main release outcomes.
+- [x] Archive this completed integration with evidence and linked PR revisions.
+- [x] Record the coordinated squash-merge order and mandatory post-merge verification handoff.
