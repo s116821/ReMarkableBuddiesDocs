@@ -10,6 +10,7 @@ admit domain version 1 across existing namespaces and version 2 only for export
 associations, with the same restriction in the offline JSON contract. The Ledger
 SHALL validate the corresponding export payload shape. Unknown versions SHALL be
 preserved or refused without being silently overwritten or republished.
+Source: REM-36 outcome/coordination; design section 2; scoped prepared-note export admission.
 
 #### Scenario: Idempotent local mutation
 - **WHEN** a caller retries an operation with the same ID and content

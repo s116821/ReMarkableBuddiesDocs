@@ -170,6 +170,6 @@ repeat-export requirements; they are internal planning context, not a public
 transcript. Those requirements are reproduced above for public contributors.
 The delivered Ledger source establishes the current transition gap. Current
 official API facts and narrow prior art are linked in the reusable
-[export research note](../../../docs/research/prepared-note-export.md).
+[export research note](../../../../docs/research/prepared-note-export.md).
 The attempt/disposition and conservative reconciliation design are engineering
 choices; no live account write or native proof is claimed.

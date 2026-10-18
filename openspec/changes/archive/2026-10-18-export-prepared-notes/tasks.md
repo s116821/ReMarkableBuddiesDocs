@@ -9,8 +9,10 @@
 
 ## 3. Verification and coordinated delivery
 - [x] Verify focused actual HTTP/Store create/find/update, pagination, changed-source restart, same-body no-write result, alternate metadata capability and duplicate/uncertain/cancel/external-edit controls; record 12 focused cases, existing 20 Ledger/15 Store regressions and strict quality checks in results.md.
-- [ ] Independently review source and exact results; pass relevant required CI and inspect review feedback.
-- [ ] Link exact Docs/Rust PR revisions, sync only implemented canonical deltas and archive this completed increment in the paired delivery.
+- [x] Independently review source and exact results; close the stale binary interface assertion finding and verify the affected five binary tests.
+- [ ] Pass required hosted checks and inspect remaining review feedback for the final revisions.
+- [x] Link Buddy PR61 / Docs PR57 and exact revisions, sync only implemented canonical deltas and prepare this completed implementation increment's archive in the paired delivery.
+- [ ] Complete coordinated squash delivery after required checks and final Docs correspondence review.
 
 Writer extraction/generation, native page integration, gestures/refinement UI and
 whole issue acceptance remain open and are not archived by this increment.

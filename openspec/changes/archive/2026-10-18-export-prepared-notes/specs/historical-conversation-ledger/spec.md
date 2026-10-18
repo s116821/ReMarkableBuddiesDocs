@@ -13,6 +13,7 @@ Older records SHALL remain readable without being promoted
 into verified current remote-body or dispatch authority. Saved binding, capture,
 completion, retry and export facts SHALL NOT confer current native observation,
 effect permission or selected causal-view authority.
+Source: REM-37 lightweight export and historical-not-live requirements; current roadmap and later chronology; prepared-note export increment.
 
 #### Scenario: Ambiguous export discovery
 - **WHEN** exact marker discovery finds conflicting native notes or incomplete scope/revision evidence

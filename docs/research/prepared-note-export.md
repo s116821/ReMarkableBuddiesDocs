@@ -1,7 +1,7 @@
 # Prepared note export: Mem API and reuse boundaries
 
 October 17, 2026. This is source research for the
-[prepared export change](../../openspec/changes/export-prepared-notes/proposal.md),
+[prepared export change](../../openspec/changes/archive/2026-10-18-export-prepared-notes/proposal.md),
 not live destination qualification.
 
 Mem's current [create endpoint](https://docs.mem.ai/api-reference/notes/create-note)

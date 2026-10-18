@@ -77,10 +77,15 @@ the HTTP/native matrices were not repeated for that interface-only repair.
 
 ## Remaining delivery and product boundaries
 
-Design review accepted the bounded scope with no-send successor and live-owner
-corrections, which are implemented and exercised. Exact final source/evidence
-review, required hosted checks, coordinated spec sync/archival and linked PR
-delivery remain pending in this record. No live Mem account write, live model,
+Independent review accepted the bounded source at core `5a1e0f88` plus test-only
+`65481cda`, verified every frozen file against its hash/Git blob and inspected the
+actual result logs. The binary assertion finding is closed. The
+[public source review](https://github.com/s116821/ReMarkableBuddies/pull/61#pullrequestreview-5561571620)
+records that scoped acceptance; this is owner execution and reviewer inspection,
+not a reviewer test rerun. Required hosted checks, final Docs correspondence and
+coordinated squash delivery remain pending in this record. Canonical sync/archive
+preparation stays in the same open paired PR and is not a merged delivery claim.
+No live Mem account write, live model,
 installed Reader/Writer or tablet qualification is claimed. Extraction/OCR,
 generation, refinement UI, gestures/native pages and whole Writer acceptance
 remain unfinished outside this increment.
