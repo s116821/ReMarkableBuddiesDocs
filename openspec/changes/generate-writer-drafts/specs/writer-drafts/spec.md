@@ -36,6 +36,10 @@ PreparedNote without sending an external note or operating the tablet.
 - **WHEN** a caller names a unique current draft/source and valid correlation/effect identities
 - **THEN** preparation returns the exact selected content and provenance in PreparedNote with no Mem write, native capture or rendering.
 
+#### Scenario: Regeneration retains logical export scope
+- **WHEN** a new deliberate generation uses changed source content for the same document identity and explicit page/notebook selection
+- **THEN** prepared export retains the same logical source scope and advances its content/draft revision, allowing the existing correlation to update the same note rather than being rejected as a different source scope.
+
 ### Requirement: Provider attempts have fresh ownership and truthful cancellation
 Only this invocation's freshly committed preparation SHALL authorize provider
 dispatch. Receipt replay, concurrent winners and lost local acknowledgments SHALL

@@ -63,6 +63,11 @@ its existing native-verification requirement. Explicit prepare-export selects a
 current unambiguous draft/source, validates the supplied stable correlation and
 new effect UUID, and returns the existing PreparedNote without sending it. It
 cannot turn a historical draft into fresh native permission or automatic export.
+PreparedNote source scope is stable document identity plus the explicit page or
+supplied-notebook selection, independent of turn/source-content identity. New
+generation with changed source content retains that logical export scope while
+advancing the digest-bound source/draft revision, permitting deliberate same-note
+re-export through the existing stable correlation.
 
 ## Bounds and full-source coverage
 

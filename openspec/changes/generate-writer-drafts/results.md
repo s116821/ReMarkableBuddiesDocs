@@ -4,7 +4,9 @@ This increment implements a bounded ordinary source consumer, not full Writer.
 The baseline is delivered Buddy03d51ac and Docsfadbc5c, with an independently
 reviewed proposal/design before implementation. This active change remains
 unarchived while live-model quality and final code/hosted review are unfinished.
-Implementation is pinned at `4d1f226fe6057e5565efd69ceef69c9e090b66d4`.
+Initial implementation is pinned at `4d1f226fe6057e5565efd69ceef69c9e090b66d4`;
+the focused stable-export-scope correction is
+`82c0d640f65127141801027f974aa4b2395c120b`.
 
 ## Implemented behavior
 
@@ -54,12 +56,13 @@ and prepares export without a model credential or another provider request.
 | Added prepared-state dispatch guard case | 10 passed; retained separately |
 | Added actual positive one-shot command case | 11 passed; retained separately |
 | Final eleven cases after publication-time cleanup | 11 passed, 0 failed, 0 ignored; 1.97 seconds |
+| Stable-scope follow-up at 82c0d640 | 12 passed, 0 failed, 0 ignored; 12.19 seconds |
 | Existing Ledger regressions | 20 passed |
 | Existing Store regressions | 15 passed; nested child output is included, not an extra test count |
 | Prepared-export regressions | 12 passed; unsupported-namespace case now uses SubjectMemory because Source2 is intentionally supported |
 | Configuration regressions | 2 passed |
 | Binary interface unit tests | 5 passed, including new flag/default and conflict assertions |
-| Strict all-target/all-feature Clippy | Final source passed in 5.66 seconds without warning suppression |
+| Strict all-target/all-feature Clippy | Initial source passed in 5.66 seconds; scope follow-up passed in 6.59 seconds, without warning suppression |
 
 Cases cover exact source order and request preservation, page/all-supplied-unit
 selection, guidance/personalization, restart and same-conversation refinement,
@@ -71,6 +74,17 @@ refusal, missing credentials with no input echo/Store writes/startup, and the
 positive real command path. First compilation exposed a missing `self` on the
 existing correction-target validator; it was corrected before these passing
 executions. Initial compile diagnostics are not relabeled as a successful run.
+
+Self-review before final source acceptance found that the initial PreparedNote
+scope used a content/turn-bound Source ID. Regeneration of changed source for the
+same logical document selection would then conflict with the existing export
+association's stable scope. The follow-up uses document identity plus explicit
+page/supplied-notebook selection for scope, while retaining content/draft-bound
+revision. Its new actual-HTTP generation/PreparedNote case confirms the same
+correlation/scope across changed source/Markdown and a changed revision. All12
+Writer cases and strict Clippy passed on that follow-up. The broader20/15/12/2/5
+matrix above is the retained initial-source execution; no unchanged core matrix
+was relabeled or unnecessarily repeated for this Writer mapping correction.
 
 ## Unperformed and pending checks
 
