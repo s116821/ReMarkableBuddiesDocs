@@ -1,6 +1,7 @@
 # Prepared export verification record
 
-Implementation `5a1e0f88c0991d7d0dd0ad70098901b3c795597f` is based on delivered
+Implementation `65481cda93eb095bb1e43200539a54354ec8817e` retains core
+`5a1e0f88c0991d7d0dd0ad70098901b3c795597f` and is based on delivered
 Buddy main `cc317ff53e1dd6f612b2e82707e5a5e4b50e0265`. This coordinated Docs
 change starts at main `6f7f1d4cb33ff4ca9c0326b1bb248ddc8cfd139e`.
 
@@ -39,6 +40,7 @@ invented fixture content/credentials; Store cases use owned temporary roots.
 | Focused prepared export suite | 12 passed, 0 failed, 0 ignored; final run 0.79 seconds |
 | Existing historical Ledger regressions | 20 passed |
 | Existing shared Store regressions | 15 passed; an internal subprocess result is included, not an additional test count |
+| Affected binary command-interface unit tests | 5 passed after the independent review correction |
 | Ordinary binary/library checks | Passed |
 | Strict all-target/all-feature Clippy | Passed, no warning suppression |
 | Formatting and diff checks | Passed |
@@ -64,6 +66,14 @@ eight-, ten-, eleven- and final twelve-case runs are distinct records, not
 relabeled predecessors. Earlier footer-bearing evidence does not stand in for
 the final footer-free source. Private raw logs and source hashes are retained by
 the owner without public download links.
+
+Independent review caught the existing binary's exact-interface test still
+expecting the old flag list. The initial hosted run at the core revision also
+recorded that assertion failure (three passed/one failed). The test-only
+`65481cd` correction includes the new flag/default and mutually exclusive modes,
+with no credential echo. All five affected binary tests passed; the frozen
+initial source/results remain retained. No production export code changed and
+the HTTP/native matrices were not repeated for that interface-only repair.
 
 ## Remaining delivery and product boundaries
 
