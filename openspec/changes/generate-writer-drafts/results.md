@@ -7,6 +7,8 @@ unarchived while live-model quality and final code/hosted review are unfinished.
 Initial implementation is pinned at `4d1f226fe6057e5565efd69ceef69c9e090b66d4`;
 the focused stable-export-scope correction is
 `82c0d640f65127141801027f974aa4b2395c120b`.
+The subsequent input-snapshot repair is
+`e525b76683410137b6c47cf86e0c9ea85a930825`.
 
 ## Implemented behavior
 
@@ -57,12 +59,14 @@ and prepares export without a model credential or another provider request.
 | Added actual positive one-shot command case | 11 passed; retained separately |
 | Final eleven cases after publication-time cleanup | 11 passed, 0 failed, 0 ignored; 1.97 seconds |
 | Stable-scope follow-up at 82c0d640 | 12 passed, 0 failed, 0 ignored; 12.19 seconds |
+| Before-preparation selected-draft regression at e525b766 | 1 passed; 0.20 seconds |
+| Final input-snapshot repair suite at e525b766 | 13 passed, 0 failed, 0 ignored; 2.29 seconds |
 | Existing Ledger regressions | 20 passed |
 | Existing Store regressions | 15 passed; nested child output is included, not an extra test count |
 | Prepared-export regressions | 12 passed; unsupported-namespace case now uses SubjectMemory because Source2 is intentionally supported |
 | Configuration regressions | 2 passed |
 | Binary interface unit tests | 5 passed, including new flag/default and conflict assertions |
-| Strict all-target/all-feature Clippy | Initial source passed in 5.66 seconds; scope follow-up passed in 6.59 seconds, without warning suppression |
+| Strict all-target/all-feature Clippy | Initial source passed in 5.66 seconds; scope follow-up in 6.59 seconds; final input-snapshot repair in 6.81 seconds, without warning suppression |
 
 Cases cover exact source order and request preservation, page/all-supplied-unit
 selection, guidance/personalization, restart and same-conversation refinement,
@@ -85,6 +89,18 @@ correlation/scope across changed source/Markdown and a changed revision. All12
 Writer cases and strict Clippy passed on that follow-up. The broader20/15/12/2/5
 matrix above is the retained initial-source execution; no unchanged core matrix
 was relabeled or unnecessarily repeated for this Writer mapping correction.
+
+Independent review and owner self-review identified a further input-snapshot
+ordering gap: expected root was captured after reading history, and preparation
+could protect a newer selected draft than the cached text sent to the provider.
+The repair captures root before all related reads and compares the exact cached
+Turn before guarding its current version. Its focused actual-path test injects
+a valid changed Generated draft successor without changing root at the existing
+poll after assembly/before preparation; preparation refuses before a second
+provider request. That repaired-path test passed, followed by all13 Writer cases
+and strict Clippy. The original race was identified by source inspection, not
+claimed as an observed execution against the old source. Earlier snapshots/logs
+remain retained. Final independent review must confirm this repair.
 
 ## Unperformed and pending checks
 

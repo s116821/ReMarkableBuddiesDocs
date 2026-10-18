@@ -88,6 +88,12 @@ prepared operation with an exact fingerprint before dispatch. Only this
 invocation's positively fresh publication can invoke the provider; replay,
 concurrent winner or lost preparation acknowledgment returns historical/pending
 without another paid call. A deliberately repeated operation uses a new UUID.
+Capture the expected conversation root before reading selected draft/history,
+so a concurrent append cannot be implicitly accepted after assembling older
+input. Preparation compares the exact cached selected Turn with its current
+value before protecting that revision; guarding a newer draft while sending an
+older cached body is forbidden. Receipt intent remains stable across normal
+replays, while fresh preparation still requires current compare-and-swap heads.
 
 Once provider dispatch may have occurred, cancellation/failure does not claim
 the call was unbilled. Existing progress cancellation must stop waiting and

@@ -10,9 +10,9 @@
 - [x] Add bounded command and explicit selected-draft PreparedNote output, without automatic Mem/device operations.
 
 ## 3. Evidence and delivery
-- [x] Verify actual HTTP/Store/one-shot command flows and failure boundaries, preserving the nine-, ten-, eleven- and scope-follow-up twelve-case logs separately.
+- [x] Verify actual HTTP/Store/one-shot command flows and failure boundaries, preserving nine/ten/eleven/twelve cases and the input-snapshot thirteen-case follow-up separately.
 - [ ] Run representative authorized live-model quality checks with invented sources; distinguish fixture/native limits.
-- [x] Complete affected tests/strict quality checks: final 12 Writer/strict Clippy at82c0d640, with initial-source 20 Ledger, 15 Store, 12 export, 2 configuration and 5 binary cases retained at4d1f226; formatting/diff checks pass.
+- [x] Complete affected tests/strict quality checks: final 13 Writer/strict Clippy ate525b766, with initial-source 20 Ledger, 15 Store, 12 export, 2 configuration and 5 binary cases retained at4d1f226; formatting/diff checks pass.
 - [ ] Complete independent final code/spec review.
 - [ ] Publish linked implementation/Docs PRs, exact revision/evidence comments and inspect hosted/bot feedback.
 - [ ] Sync implemented canonical deltas, archive only this completed scope and coordinate squash delivery.

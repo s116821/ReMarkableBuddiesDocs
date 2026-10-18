@@ -56,3 +56,7 @@ retry or claim no remote cost. Errors SHALL use sanitized fixed outcomes.
 #### Scenario: Canceled or stale result
 - **WHEN** cancellation or relevant state change occurs while the model is pending
 - **THEN** a late result cannot become a current draft or a native/export permission, and the recorded outcome does not claim the remote call was unbilled.
+
+#### Scenario: Input changes before preparation
+- **WHEN** conversation history or the selected draft changes after input assembly begins and before preparation commits
+- **THEN** preparation must remain bound to the root captured before its reads and the exact selected draft content, refusing stale input instead of guarding new state while sending old text.
