@@ -82,3 +82,36 @@ Source basis: delivered public Store/Ledger/SDK revisions above, actual current
 source and private executed logs, and independent source/evidence review. The
 new query establishes historical correspondence only; it is not a native
 freshness, document/page absence or effect-authority oracle.
+
+## Hosted Linux follow-up
+
+The initial hosted Linux Rust/Clippy 1.99 check failed on four inherited
+Linux-only diagnostics that the Windows run did not compile. Commit
+`e3b875fa6e02ce710085796e3e7de33201ce97c9` names the existing fixture callback and
+gesture path types, groups the same four worker-evidence references, and uses
+the equivalent positive-count divisibility expression. Independent review found
+no runtime change or remaining source issue. No warning suppression was added.
+
+The affected Linux x86_64 gesture suite initially recorded 28 passes, one
+failure and three explicit fixture skips. The report-loss test started the
+production fence immediately after spawning its child, giving startup only the
+50 ms normal-exit grace. The unchanged case passed in isolation; that supports a
+timing sensitivity without proving the original failure's cause. The original
+assertion did not retain the exit status, and its container-local child log was
+not retained. These evidence limits remain explicit.
+
+Independently reviewed test-only commit
+`5a7381f65829a5c2e00d364255f09d0ed266dafb` observes actual child exit within the
+original fixture write deadline before calling the same production fence. A
+hung child is still killed/reaped under the original recovery bound and fails
+the normal-exit assertion. Production grace, native profiles and helper behavior
+are unchanged. Final affected Linux checks passed: 29 gesture tests with three
+intentional fixture skips, and five touch tests. The first failure, isolated
+pass and final run are retained separately; an unnecessary intermediate Cargo
+diagnostic rebuild was stopped, not counted as a test result.
+
+These local checks used Rust 1.98.1 in the existing host fixture container with
+networking disabled and source/toolchain mounted read-only. Missing container
+Git metadata produced explicit development-build warnings; this is not an
+official release build. The frozen ARM helper was neither rebuilt nor deployed.
+Final hosted checks for the successor commit remain a separate delivery gate.
