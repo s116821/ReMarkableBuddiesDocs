@@ -11,6 +11,10 @@ Completed SDK source5 export review is recorded at SDK `605b1f66e309ab2883b14d0e
 Buddy acquisition/reuse/adoption/binding and Manager work are separate downstream lanes whose existing dependencies/acceptance remain open; preserve the current/adjacent Buddy reuse rule and do not infer non-Buddy from missing binding. The current technical capability proof does not complete those product requirements. Linear reauthentication prevents fresh comment review; no new comments are claimed read.
 
 ## 1. Evidence and design
+- [x] Independently review historical-binding-projection-contract.md and its atomic Store/Ledger read plus conservative SDK lookup delta against the delivered historical library; preserve all protected selected-admission WIP.
+- [x] Implement the bounded atomic historical association query and Ledger-backed lookup with no new Store/binding writes, native effects or positive relevance/absence promotion.
+- [x] Verify actual Store fixtures, snapshot completeness/revision correspondence, conflict/tombstone/malformed refusals and actual current/neighbor model decisions; record the independently accepted scoped checks and final strict-quality result in historical-binding-projection-result.md.
+- [ ] Complete linked review/required hosted checks and coordinated delivery; preserve all unfinished native requirements and do not archive the whole change from this host increment.
 - [x] Inspect spent trial evidence, current capture code and targeted community prior art.
 - [x] Record missing attribution evidence and minimal central contract before edits.
 - [x] Validate exact-build native owner/backing relationship with separately scoped bounded stock metadata evidence; retain lifetime and exited-candidate limits.

@@ -1,5 +1,16 @@
 ## ADDED Requirements
 
+### Requirement: Stored association input remains historical in SDK acquisition decisions
+The existing SDK acquisition decision seam SHALL consume the real historical Ledger through a read-only lookup under historical-binding-projection-contract.md. A saved match SHALL map only to historical evidence, and missing/failed/conflicted/tombstoned stored data SHALL remain unresolved rather than the model's affirmative Missing or RelevantModelAssociation input. Existing complete Synthetic observation/receipt guards SHALL precede lookup. This increment SHALL leave installed Reader behavior unchanged and grant no reuse, insertion, adoption, binding or rendering permission.
+
+#### Scenario: Matching saved association is supplied to current-first assessment
+- **WHEN** the guarded SDK decision consults a matching historical Ledger association
+- **THEN** it remains unresolved as a current-effect decision, without unnecessary successor inspection, Store writes or SDK effects
+
+#### Scenario: Positive recognition accompanies uncertain stored data
+- **WHEN** positive ordinary or non-Buddy model recognition accompanies missing, failed, conflicted or tombstoned stored inspection
+- **THEN** it cannot erase that uncertainty to produce a reuse candidate or insertion plan through this lookup
+
 ### Requirement: Buddy-page recognition and reuse precede automatic insertion
 The automatic product workflow SHALL identify and reuse the relevant current Buddy page or its relevant immediate successor before creating another page, under buddy-page-reuse-contract.md. It SHALL reuse the existing REM-37 document/page-to-conversation Store binding with current native identity/order and device qualification, not invent a separate registry. Unknown or stale associations SHALL fall back to recognition; missing binding or uncertain recognition SHALL NOT imply a non-Buddy page or authorize duplicate creation. Legacy header-only candidates SHALL require qualified acquisition/adoption rather than a silently trusted claim. Lower-level SDK insertion tests SHALL NOT establish this product requirement.
 

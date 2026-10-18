@@ -1,5 +1,16 @@
 ## Context
 
+## Historical association consumer increment
+
+The [atomic historical association contract](historical-binding-projection-contract.md)
+consumes the delivered Store/Ledger through one bounded snapshot and a conservative
+implementation of the existing SDK decision lookup. Saved matches remain historical;
+missing/conflicting/tombstoned data remain unresolved. No current effect authority,
+new registry or protected selected-admission implementation is introduced. The
+existing native/source5 and installed Reader delivery gates below remain open.
+
+## Original capture context
+
 Spent trial 3f851eb632a34886bd659e078efaf4f2 at consumer bd992d43da8a8997cdecb3472909c2cf0b738575/SDK 485ac1a46367bfdf203abe140a8b764728cdf54d stopped before tap/creation-arm. Recovery, fixture preservation and owned cleanup passed. Count two means heuristic matches, not two display framebuffers or SDK causation.
 
 ## Decisions
@@ -11,6 +22,12 @@ Spent trial 3f851eb632a34886bd659e078efaf4f2 at consumer bd992d43da8a8997cdecb34
 5. Distinct bounded stock metadata observations may test a concrete hypothesis under fresh identity and scoped review. Any candidate observation/attempt has a fresh nonce and independent actor recovery; no spent trial replay or rejected module. Keep original fixture hashes/current-page checks and usage reserve.
 
 ## Simulator impact
+
+The historical-association increment uses real temporary Store/Ledger fixtures
+with the public SDK MockPlatform for current and successor decisions, plus one
+actual Store writer-contention case. It leaves installed Reader simulation and
+native capture/recognition authority unchanged; these checks establish the
+read/projection/refusal seam, not hardware freshness, rendering or timing.
 
 Model identity replacement, stale maps/headers, discovery caps and ambiguous matches through source-local injected boundaries. These tests establish refusal choreography, not native object layout, pixel ownership or tablet performance. Do not gate exploratory native observations on unrelated simulator expansion.
 

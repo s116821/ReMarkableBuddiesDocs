@@ -15,13 +15,15 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 - Add the local non-effectful SDK consumer decision seam in buddy-acquisition-decision-contract.md: current-first reuse candidates, conservative binding/recognition fallback and original-source placement plans. Consume read-only existing domain projections without a second registry or native/binding/render permissions. Held native experiments and installed Reader integration remain separate.
 - Add pure synthetic return-to-source matching under buddy-source-continuity-contract.md. Retain the actual completed successor observation, validate the supported Previous receipt and supplied source observation, and keep logical association/recognition freshness and all effect authority explicitly outside the result.
 - Add the conservative pure legacy classification bridge: ExistingQA is only LegacyBuddy, Blank remains Blank and Invalid is Unknown. Never promote these outcomes to relevant ownership or positive non-Buddy evidence; preserve the classifier and installed Reader unchanged.
+- Consume the delivered historical Ledger through one atomic read-only association snapshot and the existing SDK decision lookup under historical-binding-projection-contract.md. Preserve saved matches and missing/conflicting/tombstoned inputs as historical or unresolved, never current reuse/insertion authority; do not copy the protected selected-admission WIP.
 
 ## Capabilities
 
 ### Modified Capabilities
 - `tablet-io`: exact process provenance and bounded ambiguous-discovery evidence for experimental RM2 capture.
 - `reader-answer-pages`: planned recognition/reuse precondition before automatic insertion, distinct from the as-built legacy successor classifier.
+- `historical-conversation-ledger`: bounded atomic historical association inspection consumed conservatively by the existing SDK decision seam.
 
 ## Impact
 
-Existing Buddy capture code and development screenshot helper; central Docs contract only. No firmware/account/sync change, new dependency installation, direct native document opening, rejected diagnostic resurrection or feature-completion claim. Ordinary unique-allocation behavior is preserved pending attribution qualification.
+Existing Buddy capture code and development screenshot helper, plus read-only historical Ledger input to the existing SDK decision seam; contracts remain central in Docs. No firmware/account/sync change, new dependency installation, direct native document opening, rejected diagnostic resurrection or full feature-completion claim. Ordinary unique-allocation behavior is preserved pending attribution qualification; historical association inspection grants no native effect authority.
