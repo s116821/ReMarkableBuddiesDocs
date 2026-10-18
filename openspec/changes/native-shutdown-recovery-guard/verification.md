@@ -306,6 +306,35 @@ FactsEntry/Reader production, candidate host-loss recovery or complete prearm
 ordering. The unfinished change is not synced or archived. Source basis: current
 Main handoff, locally read final selection/build/postattempt/cleanup receipts and
 independently hashed archive members; causal interpretation remains inference.
+## Full actor simulated-host loss control
+
+The complete rendered actor now has an owned host-only regression that starts
+at main admission, consumes guard/start requests from a separate simulated host
+session, reaches candidate activation, survives termination of that host session,
+and lets its observation deadline expire before its actual EXIT/recovery child.
+It requires exit1, preserved diagnostic failure, guarded candidate stop before
+candidate/process/cgroup absence, removal of owned shadows and exactly one stock
+restart plus final verification. Both process sessions are killed/reaped in the
+test's finally path on failure. Services, process identities, health and clock
+remain injected; no actual systemd or tablet candidate is exercised.
+
+The initial run failed an assertion because stock and candidate both used fake
+PID42/start561; the first matching disappearance event belonged to stock. The
+fixture now uses candidate43/start562. This was a fixture identity/assertion
+repair, not a runtime recovery defect. The targeted successor passed0.253s;
+after requiring exact exit1 and candidate-before-cgroup ordering, the final
+affected suite passed all21 tests in4.479s. Runs used the existing offline image
+sha256:fd04716b488bc88f96b1ba1390783986fd75133992f3fe613182f98b2f52a86f,
+network disabled and source mounted read-only. Original actor/launcher/parser
+bytes are unchanged. Raw successor logs are retained privately without a public
+transcript link; the original failing assertion remains in the tool record.
+
+This strengthens modeled full-path coverage, not native candidate-hostloss,
+complete prearm ordering, Reader readiness, write/persistence or REM25 closure.
+Independent successor review and normal paired delivery remain pending. No
+artifact build, transfer, nonce, activation or tablet operation was selected.
+Source basis: existing actor/fixture code and the directly observed owned runs.
+
 ## Engine-ready consumer source freeze
 
 The settled explicit mode pretoken-engine-ready-v1 selects

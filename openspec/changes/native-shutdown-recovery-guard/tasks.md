@@ -17,6 +17,7 @@
 - [x] Preserve separate crash/failure evidence and honest finalstockverification; no retry/facts/input/renderauthority.
 
 ## 3. Verification
+- [x] Exercise complete actor activation through observation expiry and recovery after terminating a separate simulated host session; retain the distinction from native candidate-hostloss coverage. Independent successor review remains pending.
 - [x] Current eighteen owned source-local fixtures verify modeled ordering/deadline/crash/preactivation-hostloss/singleton boundaries; retain unmodeled limits.
 - [x] Syntax/docs/strictOpenSpec/diff checks; freeze exactsource/packet for Main review before commit/push/device selection.
 - [x] Main/independent exactsource/artifact/operator review and separately selected Main-only harness smoke; retain hardware uncertainty and historical failure.

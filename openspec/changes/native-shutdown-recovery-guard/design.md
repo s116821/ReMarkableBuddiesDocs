@@ -1,5 +1,18 @@
 ## Context
 
+### Full actor host-loss fixture follow-up
+
+Exercise the existing complete main/EXIT/recovery path after injected candidate
+activation, rather than beginning with manually seeded recovery flags. Run the
+actor and simulated host in separate owned process sessions. The simulated host
+supplies the existing guard/start requests; terminate its entire session after
+candidate admission, then allow the actor's original observation deadline to
+expire. Require guarded candidate stop, process/cgroup absence before cleanup,
+one stock start, preserved failure and final stock verification. Service/proc,
+clock and health reads remain injected; packet actor/runtime bytes do not change.
+This control establishes owned-process choreography only, not actual systemd,
+tablet candidate-hostloss or complete native prearm qualification.
+
 Main's fresh RM2 observation: firmware3.28.0.172, stock PID291/start561, protected14document+10baseline hashes unchanged. Stock effective OnFailure=remarkable-fail.service, OnFailureJobMode=replace, FailureAction/StartLimitAction=none, Restart=on-failure, RestartMode=direct, TimeoutStopSec90s, WatchdogSec60s, KillMode=control-group, SIGTERM then SIGKILL. These values require fresh exact validation at selected execution; source notes are not a current baseline. Original native crash outcome remains separately preserved.
 
 ## Goals / Non-Goals
