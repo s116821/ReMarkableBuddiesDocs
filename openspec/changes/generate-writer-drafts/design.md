@@ -20,8 +20,10 @@ prior-art ingestion/OCR survey is not repeated for mechanics not implemented her
 Add one immutable normalized-text source variant in the existing Source namespace,
 linked to conversation/turn. Preserve document identity, format, adapter-asserted
 original digest, extractor revision and exact ordered units; store a digest-bound
-serialized object using existing required-object publication if needed. Validate
-the object before model dispatch and after reopen. Do not pretend normalized text
+serialized object using existing required-object publication if needed. The small
+consumer uses the existing immutable envelope payload directly: encoded document/
+guidance is at most 40 KiB and its record at most 48 KiB, so no extra object is
+needed. Validate content before model dispatch and after reopen. Do not pretend normalized text
 is retained original bytes, a screenshot or a native observation. No synthetic
 capture facts or extra identity registry.
 
@@ -35,8 +37,9 @@ source facts without promoting Generated drafts into completed visible turns.
 
 One bounded command consumes JSON from stdin, with separate generate, refine and
 prepare-export operations. Credentials remain environment/protected references;
-no token argument or routine content logs. Validate input, configured module/Store
-ownership, source/history limits and expected heads before any provider call.
+no token argument or routine content logs. Validate input, Store ownership,
+source/history limits and expected heads before any provider call. Installed
+Reader/Writer mode admission remains a separate existing integration lane.
 The command does not start device input, native rendering, sync or Reader.
 
 Generation preserves the exact supplied request in an Interpreted Writer user
