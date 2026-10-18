@@ -22,19 +22,32 @@ The storage layer SHALL publish versioned locations and ownership for durable lo
 - **THEN** committed logical records and every retained source blob remain intact and indexes can rebuild
 
 ### Requirement: Independent domain envelopes and stable identity
-The engine SHALL store versioned envelopes with namespace, domain schema version, stable record/revision/operation/actor IDs, explicit parents, payload kind and content-hash references. Domain adapters SHALL remain separate for conversation, source, export association, subject memory and handwriting; subject memory SHALL NOT be required to enable Writer or another domain. Unknown versions SHALL be preserved or refused without being silently overwritten or republished. Source: REM-36 outcome/coordination; design section 2.
+The engine SHALL store versioned envelopes with namespace, domain schema version,
+stable record/revision/operation/actor IDs, explicit parents, payload kind and
+content-hash references. Domain adapters SHALL remain separate for conversation,
+source, export association, subject memory and handwriting; subject memory SHALL
+NOT be required to enable Writer or another domain. Format-one envelopes SHALL
+admit domain version 1 across existing namespaces and version 2 only for export
+associations, with the same restriction in the offline JSON contract. The Ledger
+SHALL validate the corresponding export payload shape. Unknown versions SHALL be
+preserved or refused without being silently overwritten or republished.
+Source: REM-36 outcome/coordination; design section 2; scoped prepared-note export admission.
 
 #### Scenario: Idempotent local mutation
 - **WHEN** a caller retries an operation with the same ID and content
-- **THEN** the store returns the existing committed result, while reusing that ID for different content fails without altering either record
+- **THEN** the store returns the existing committed result, while reusing that ID for different content fails without altering either record.
 
 #### Scenario: Independent memory and handwriting
 - **WHEN** a fixture writes one domain while another domain is disabled
-- **THEN** persistence remains available to the selected domain and does not mix their payload schemas or enable the other domain
+- **THEN** persistence remains available to the selected domain and does not mix their payload schemas or enable the other domain.
 
 #### Scenario: Unsupported future envelope
 - **WHEN** a stored or imported envelope requires an unsupported version
-- **THEN** its bytes are retained for recovery and a bounded unsupported-schema result prevents interpretation, overwrite or sync publication
+- **THEN** its bytes are retained for recovery and a bounded unsupported-schema result prevents interpretation, overwrite or sync publication.
+
+#### Scenario: Scoped export domain upgrade
+- **WHEN** an export attempt uses domain version 2, another namespace uses version 2, or an export payload uses the wrong domain shape
+- **THEN** only the supported export envelope is admitted, the domain adapter refuses mismatched payloads, and envelope/store format remains 1.
 
 ### Requirement: Atomic durable publication and recovery
 The engine SHALL stage and sync required immutable record/media objects before atomically publishing a commit manifest. Only complete validated committed manifests SHALL make objects visible. It SHALL validate digests, sizes, bounds and required-object availability, preserve the last committed state on failure, and rebuild derived indexes from committed content. Policy-neutral media descriptors SHALL be distinct from required objects; metadata-only imported transactions SHALL preserve explicit omitted coverage and expose unavailable-media results without claiming full-media recovery. Newly captured local source transactions SHALL require their captured bytes. Source: REM-36 atomic writes/interruption recovery; design sections 2 and 6.
