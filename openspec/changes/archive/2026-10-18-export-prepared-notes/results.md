@@ -4,6 +4,9 @@ Implementation `65481cda93eb095bb1e43200539a54354ec8817e` retains core
 `5a1e0f88c0991d7d0dd0ad70098901b3c795597f` and is based on delivered
 Buddy main `cc317ff53e1dd6f612b2e82707e5a5e4b50e0265`. This coordinated Docs
 change starts at main `6f7f1d4cb33ff4ca9c0326b1bb248ddc8cfd139e`.
+Final Buddy `0b935880b88198a7c514bc827830f3148e9d5519` changes only the
+reference link to this permanent canonical contract; production and tests remain
+at the accepted revisions above.
 
 ## Implemented scope
 
@@ -82,9 +85,22 @@ Independent review accepted the bounded source at core `5a1e0f88` plus test-only
 actual result logs. The binary assertion finding is closed. The
 [public source review](https://github.com/s116821/ReMarkableBuddies/pull/61#pullrequestreview-5561571620)
 records that scoped acceptance; this is owner execution and reviewer inspection,
-not a reviewer test rerun. Required hosted checks, final Docs correspondence and
-coordinated squash delivery remain pending in this record. Canonical sync/archive
-preparation stays in the same open paired PR and is not a merged delivery claim.
+not a reviewer test rerun. The coordinator subsequently inspected final Docs
+`14f56007e7e854c6363d7afbf2aa9630c2ffa17b` canonical/archive correspondence and
+the Buddy link-only change without another finding. Buddy
+[run39101748006](https://github.com/s116821/ReMarkableBuddies/actions/runs/39101748006)
+at `0b935880` passed Title, Checks, application Build and Integration; Release
+was skipped. Docs
+[run39101751778](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/39101751778)
+at `14f5600` passed Ubuntu, Windows and all31 strict OpenSpec items. Raw hosted
+logs were retained and inspected, not inferred from a prior source revision.
+No unresolved PR review-comment finding surfaced at final inspection. This last
+results/tasks-only update requires its own Docs checks before normal coordinated
+squash. The paired PRs are
+[Buddy61](https://github.com/s116821/ReMarkableBuddies/pull/61) and
+[Docs57](https://github.com/s116821/ReMarkableBuddiesDocs/pull/57).
+Coordinated squash delivery remains pending in this record; the canonical
+sync/archive is in the same paired PR and is not itself a merged delivery claim.
 No live Mem account write, live model,
 installed Reader/Writer or tablet qualification is claimed. Extraction/OCR,
 generation, refinement UI, gestures/native pages and whole Writer acceptance
