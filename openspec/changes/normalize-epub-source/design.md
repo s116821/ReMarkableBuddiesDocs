@@ -24,12 +24,14 @@ metadata read budget2MiB and32768 I/O calls; total subsequent compressed reads64
 with the same total call cap. This bounds parser input/work admissions, not a hard
 process RAM/CPU deadline. Reject more than4096 entries, duplicate/noncanonical or
 symlink names, prefixed/overlapping archives, encrypted entries and encryption.xml.
-Never extract files or resolve network/filesystem references.
+Validate all local/central headers with the upstream consistency check before
+iterating the deduplicated ZIP name index; otherwise duplicate central names
+can disappear. Never extract files or resolve network/filesystem references.
 
 Require exact mimetype and one declared container rootfiles sequence; use its first
 application/oebps-package+xml rendition. Read container/package XML at most64KiB
 each and each spine XHTML at most1MiB, with8MiB cumulative decoded XML. XML must be
-well-formed UTF8 with bounded nesting64/events100000 per resource; reject DTD,
+well-formed XML1.0 UTF8 with bounded nesting64/events100000 per resource; reject DTD,
 custom entities, invalid encodings and ambiguous structure. Manifest IDs and
 spine idrefs must be unique, bounded and resolvable; at most512 spine units.
 Only local application/xhtml+xml spine entries are supported. Unsupported SVG or
