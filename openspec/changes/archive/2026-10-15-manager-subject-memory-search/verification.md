@@ -46,3 +46,31 @@ Docs f8ae66c CI38734450662 passed. Independent bounded [source review5534708221]
 ## Own canonical/archive delivery
 
 Canonical target `openspec/specs/manager-subject-memory-search/spec.md` preserves the exact reviewed two requirement/three scenario bodies with required Purpose/Requirements headings. Archive `openspec/changes/archive/2026-10-15-manager-subject-memory-search/` contains all8 own files, including both evidence PNGs. Proposal/design/integration-seam/delta and PNG blobs move unchanged; only own tasks/verification completion text changes. The saved pre-archive manifest binds exactf8ae66c and226 unrelated mode/type/blob entries, all checked unchanged against the final tree. No active files for this change remain and no other change is archived. This is accepted candidate behavior, not permission to merge its held foundations. Coordinated source/backend/foundation delivery precedes paired Docs merge; both drafts remain held. Final Docs successor requires its own checks and bounded lifecycle review, with no source/matrix repetition.
+
+
+## Current host-only consumer preparation
+
+This preparation inherits reviewed download UI source4a83f66 / Docs010e533 and
+delivered Manager main1a1ffa0 / Docs baseline e73f0c2. Only three inherited
+quiet-refresh doc/runtime/test paths change from previous sourcea1bd93e; all
+20 original memory-query runtime, transport, fixture and guide paths remain
+exact to acceptedbd018ed. Both CI conflicts keep the preceding compact workflow
+bodies, with the existing common Python and ordinary/packaged memory-host
+commands unchanged. Original source review5534708221, CI review5578978594 and
+Docs lifecycle5534901077 retain their original evidence attribution.
+
+The original eight-file own archive, both PNGs, proposal/design/integration seam,
+tasks/delta and two-requirement/three-scenario canonical specification remain
+unchanged. Only this verification receipt changes beyond mechanical Docs parent
+integration. No original Reader executable, query fixture, SSH/protocol/UI,
+package or provider matrix is repeated. Actual backend stdin PR52 is still open
+at this check; its qualified delivery remains a concrete consumer merge gate,
+separate from the intervening Manager parent delivery and final checks/review.
+No backend implementation is changed or re-created by this consumer lane.
+
+Reported scope/provenance/status and cancellation semantics remain bounded; no
+physical tablet, provider behavior, native compatibility, running activation or
+full REM-24/42/35 acceptance follows. No tablet contact, credential/account or
+settings operation, key/package generation or new branch/worktree/worker occurs.
+Source basis: current exact original reviews, Git tree comparisons, public PR52
+state and normal repository checks.
