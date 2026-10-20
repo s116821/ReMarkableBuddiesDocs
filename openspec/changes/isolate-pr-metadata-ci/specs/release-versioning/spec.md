@@ -11,6 +11,12 @@ have explicitly distinct names and SHALL NOT mask an earlier failed/canceled
 application result. No branch-setting change, successful placeholder or extra
 normal PR job SHALL be required.
 
+GitHub may retain the literal job-name expression for an omitted job rather
+than render its friendly label. Qualification SHALL record that actual context
+name, prove it differs from normal application contexts, and preserve the
+original failed check identity/conclusion; it SHALL NOT claim a rendered label
+or infer application success from a successful metadata-only workflow.
+
 #### Scenario: Body edit after failed source check
 
 - **WHEN** a PR body changes on unchanged source with a recorded failed application check

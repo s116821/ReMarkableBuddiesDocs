@@ -20,10 +20,10 @@ All four controls use unchanged witness source1eba27dbf227930ed23a2ecade72354345
 That separate commit adds only a temporary early exit19 Checks step before
 expensive suites; it is deliberately failing evidence, not a product defect.
 
-- Initial invalid-title run39375424148 fails the maintained title Action and starts no Checks runner.
-- Body edit while title remains invalid39375529335 preserves title failure and omits application work.
-- Correcting only the title starts39375575046: PR Title118472833884 passes and real normal Checks118472872609 fails only at the owned exit19 witness. No source push was needed for recovery.
-- Body-only edit39375669892 passes PR Title118473129461, creates no normal Checks or reusable application child contexts, and leaves real failed Checks118472872609 unchanged. Before/after native check APIs preserve its ID, head, failure conclusion and completed_at exactly. PR checks still reports that failure although the metadata-only workflow itself succeeds.
+- [Initial invalid-title run39375424148](https://github.com/s116821/ReMarkableBuddies/actions/runs/39375424148) fails the maintained title Action and starts no Checks runner.
+- [Body edit while title remains invalid39375529335](https://github.com/s116821/ReMarkableBuddies/actions/runs/39375529335) preserves title failure and omits application work.
+- [Correcting only the title39375575046](https://github.com/s116821/ReMarkableBuddies/actions/runs/39375575046): PR Title118472833884 passes and real normal Checks118472872609 fails only at the owned exit19 witness. No source push was needed for recovery.
+- [Body-only edit39375669892](https://github.com/s116821/ReMarkableBuddies/actions/runs/39375669892) passes PR Title118473129461, creates no normal Checks or reusable application child contexts, and leaves real failed Checks118472872609 unchanged. Before/after native check APIs preserve its ID, head, failure conclusion and completed_at exactly. PR checks still reports that failure although the metadata-only workflow itself succeeds.
 
 GitHub's skipped Checks API name is the literal conditional name expression,
 not the evaluated metadata label predicted by expression-only controls. It is
