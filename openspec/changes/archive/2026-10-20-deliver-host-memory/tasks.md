@@ -6,5 +6,5 @@
 ## Verification and delivery
 - [x] 5. Verify local/selected CLI lifecycle, six actual Manager-compatible reports and file/stdin parity.
 - [x] 6. Verify mode lifetime/release, foreign/stale selected state, input preflight, report sealing and prefix-write failure.
-- [ ] 7. Run relevant focused/no-default/lint and ordinary hosted CI; obtain independent review.
-- [ ] 8. Sync canonical host-memory spec, archive this completed change and deliver Docs before source with exact receipts.
+- [x] 7. Run relevant focused/no-default/lint and ordinary hosted CI; obtain independent implementation review.
+- [x] 8. Sync canonical host-memory spec and archive the qualified change for reviewed Docs-before-source delivery with exact receipts.

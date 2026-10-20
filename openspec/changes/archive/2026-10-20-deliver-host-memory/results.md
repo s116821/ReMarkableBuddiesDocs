@@ -23,3 +23,15 @@ tree a67e5647b339010630d7902d866a7a37f11cee17: the same15 host paths retain thei
 accepted bodies and355 other main entries, including the new CI implementation,
 remain exact. This is prospective composition, not an already completed merge.
 No source commit or unchanged matrix is replayed for this parent-only check.
+
+## Final qualification and lifecycle
+
+Ordinary source [39378497680](https://github.com/s116821/ReMarkableBuddies/actions/runs/39378497680)
+is now fully successful at exact e6a6bc2: Title, Checks, Build and Integration
+pass, with PR Release intentionally skipped. Docs5df8900 also passes all three
+jobs. The qualified host change is mechanically archived with its three canonical
+requirements/three scenarios unchanged; implementation acceptance5581389349 and
+contract acceptance5581389436 remain applicable. Current-parent composition and
+final lifecycle review/current archived Docs checks gate normal delivery. Actual
+merge, main and official release results remain separate observations; no hosted
+or local evidence here waives the preserved Reader live-model or native gates.
