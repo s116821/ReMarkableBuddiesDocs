@@ -1,6 +1,6 @@
 # Document-scoped Buddy backup and shared sync
 
-Status: proposed contract, not implemented or provider-qualified. Owner: SCRAPPY-DOO; REM-52. This change and its linked Rust implementation are one delivery. Independent contract review precedes implementation; canonical specs remain as-built until verification and coordinated closeout.
+Status: active, partially implemented; not provider-qualified. Main owns this delivery reconciliation; the existing generic implementation and reviews retain their original SCRAPPY-DOO provenance. Ten completed API requirements are synchronized to the canonical specification; the nine unfinished end-to-end requirements remain in this active change. See [bounded delivery status](implementation-status.md). This linked delivery does not close the parent change or REM-52.
 
 ## Why
 

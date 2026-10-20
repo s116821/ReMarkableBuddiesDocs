@@ -15,3 +15,35 @@ Exact Buddy2468b043ab76c217fdc5d409ac0df809f9b77ecc accepted by https://github.c
 Source CI38493597366 completedSUCCESS at hosted merge711a161a7d932d6849af28f3f3a90441f199c031, Rust1.99.0/four new feedback controls pass. Docs38493581124 completedSUCCESS at mergefe73323f60efff21bd6c97cd6c05bbd938b9c222,12tests perplatform/19guidance126preserved/strictOpenSpec23. Hosted evidence differs from localRust1.98.1/fourtests/18strict18guidance. No current native/cancellation/parent acceptance inferred.
 
 Canonical sync/archive closes only typed historical feedback descriptions (two requirements/three scenarios). Measured30-second scoped blocking HTTP join defect and unmeasured possible90-second production bound remain; no responsive cancellation/native/status/pending persistence/late-response/export/wholeREM40 claim. Documentation lifecycle changes no source/runtime/LLM/ledger/config/Cargo/version or device bytes.
+
+## Delivered-parent reconciliation
+
+Source `c92eebb86519eb94d1c666ad7d2989ecd57ef371` normally integrates
+retained6e65076 with delivered main42b5108. Exactly three effective paths remain:
+original catalog module/four-test bodies byte-identical to accepted2468b043,
+and one public module registration in current lib.rs. Every other delivered
+source entry is exact, including ledger, provider cancellation, Cargo/SDK and
+release tooling. Its OutcomeFact/AttemptReason/Outcome/UUID APIs are delivered;
+layout and pending Reader work are not dependencies of this static catalog.
+
+Docs uses delivered main1ca5d722, preserving every unrelated main entry and
+unfinished sync work. Original canonical two requirements/three scenarios and
+archived proposal/design/delta/tasks remain exact; only this result is appended.
+Original inherited layout/provider work stays on its preserved refs rather than
+being canonically promoted as a catalog prerequisite.
+
+Current Windows four focused catalog controls pass, zero ignored; strict
+all-target/all-feature denied-warning Clippy, locked no-default library, format
+and diff checks pass. Docs12 tests/25guidance126original blobs and strictOpenSpec45
+pass. Current hosted checks and independent reconciliation review remain pending.
+Original source/spec/lifecycle reviews5511911837/5511911913/5511950983 and all
+historical measurements retain their exact revisions and scope.
+
+The old blocking-provider defect described above is historical: the separately
+delivered cancellation and Linux transport work on current main remains intact.
+This catalog does not requalify it or imply native/status/pending persistence,
+gesture cancellation, late callbacks/export or whole REM40 completion. No model,
+tablet, reverse-engineering, signer or old provider fixture replay occurred.
+
+Source basis: exact current Git/API dependency comparisons, original accepted
+artifacts, canonical delivery receipts and current focused source/Docs checks.
