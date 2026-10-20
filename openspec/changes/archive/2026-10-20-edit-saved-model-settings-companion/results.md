@@ -192,8 +192,9 @@ Source29paths (13existing/16new) preserve196other entries from actual8df base.
 Basic/general/forget protocol/coordinator/transport files, original old corpora,
 dependency lockfile and tag-only release/version machinery are unchanged. Optional
 new model API adds no service, file fallback, provider/prerequisite or SDK behavior.
-Docs normally composes delivered actual013d13a0304f787600ee23eae9186da8748276a2,
-preserving all577actual-main entries including its seven ordinary-export artifacts.
+Docs normally composes delivered actual9fe02eb2458ede5289c747b61cbe076cb01fabb6,
+preserving all584actual-main entries including ordinary-export and the seven
+newly delivered saved-memory artifacts.
 Only this own11file active consumer is added; no speculative producer branch merged.
 
 Current42c9b04 both-OS hosted development/source/retained-package checks PASS.
@@ -218,7 +219,7 @@ credential/provider/runtime/native, ordinary data and whole REM42 remain open.
 Current source run39476665269 passes Title, Checks, Build and both ordinary integrations. Linux118815734431: 91018bytes SHA25628e1546df54d1860b0666ed4b03694cb1ca35643b7624e2013ab3061a68dc881; Windows118815734617: 67481bytes SHA2564b369cc13c1a5a117f6ea9b214190b9540cfc8534f17016fc7597d09cd40aaca. Each full raw log contains all four development/source/retained-browser/packaged-Electron model UI success markers and both before/after package-verification calls. Checks118814337922 is121519bytes SHA256a884ff8b22b2c2f82dbceae9304bf8005ee0cb5d4238791e1aa3e35cdf641f8e, with226Node and ten graph controls passing. Original1aa integration failures remain preserved separately. No local package rebuild/execution or tablet/provider contact.
 
 Canonical requirements match all four archived requirement blocks and eleven scenarios
-exactly. All577actual013d entries remain unchanged; only this own archive and new
+exactly. All584actual9fe02 entries remain unchanged; only this own archive and new
 canonical capability are added. The producer-contract proposal link is mechanically
 adjusted for the archive location. The four inspected image blobs remain unchanged.
 No prior failed run is relabelled, no producer binary replayed, no native tablet
