@@ -1,6 +1,6 @@
 # Consumer implementation evidence
 
-Source basis: actual Manager fixture-corrected candidate `f7174ef` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+Source basis: actual Manager fixture-corrected candidate `7e35e4f` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
 
 ## Implementation and preservation
 
@@ -52,7 +52,7 @@ The global pending resolver could describe an earlier invocation rather than the
 
 The retainedd186 development browser artifact (773796bytes, merge54255216) also passed locally before the correction using the same Chromium153.0.8010.12 as CI, so that was truthful nonreproduction rather than qualification. Earlierbcfc/d186 failures and the diagnostic failure stay retained. Remaining obsolete d186 Windows work was cancelled only after its run's Linux failure was preserved, to free the existing serial slot. The diagnostic run completed naturally before its cancellation request, which was rejected and not retried. No failed result was counted as passing, no rerun or workflow/settings change occurred.
 
-Independent narrow review and ordinary exact-head Linux/Windows package checks for the correction remain open. Own canonical synchronization/archive, final composition/delivery and observed main/publication remain later gates.
+Narrow review of f7174ef accepted the ticket/start correction but identified consecutive unsupported labels as insufficient UI-completion evidence. Successor7e35e4f moves the distinct raw/response-refused case between unsupported and future, preserving all five cases and making every consecutive negative outcome distinguishable. Lint/full actual local browser/source Electron fixture pass again. The obsolete f717 validation run was cancelled as superseded; it is not qualification. Independent narrow review and ordinary exact-head Linux/Windows package checks for the final correction remain open. Own canonical synchronization/archive, final composition/delivery and observed main/publication remain later gates.
 
 ## Still open
 
