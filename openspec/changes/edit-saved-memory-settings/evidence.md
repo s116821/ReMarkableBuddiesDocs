@@ -24,3 +24,9 @@ These are host file/Store tests. They do not establish Linux durability, provide
 | Explicit read-only reconciliation | Status uses only original file/intent; no patch, root/Store/profile access; actual status while owner Busy and before/after verified saves |
 
 Local Docs verification:12 tests, manifest/25guidance/126preserved blobs and strict66 items passed. Current evidence revision's hosted Docs run39476325246 passed all three required jobs. Source current-head hosted run39476269387 remains pending; superseded own093 run39476008429 metadata is retained and cancelled as duplicate unfinished checks, not counted as success.
+
+## Current Linux checks and canonical sync
+
+Current source `00b26e7736b5e39fb37c4a10e475791826ea7973` run39476269387 completed Checks job118813009732 successfully: formatting, strict Clippy,389 library tests passed with one pre-existing ignored test, all CLI suites including the four actual memory-settings groups, release tests and workflow gates. Retained raw completed-job log is258041bytes, SHA256 `9095e5e16fa85332092459fb1afdbbbf161167eb13af0bb0d4a942521853a912`. Application Build/Integration remain separately pending. Docs `f2a4712285c4f715128cfe8a2eabe60b3661a967` run39476627076 passed all three required jobs.
+
+The three implemented requirements/six scenarios are synced into the new canonical saved-memory-settings spec, with no unrelated canonical edits. The active change stays open pending independent implementation/corpus acceptance, remaining current checks and final coordinated delivery.
