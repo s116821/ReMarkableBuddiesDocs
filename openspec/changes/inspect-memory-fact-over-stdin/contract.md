@@ -91,8 +91,8 @@ Current deletion does not erase historical data or authorize native deletion.
 For supported value heads, media_descriptors is empty and payload is the existing
 Fact: key, claim, value, subject, tags, provenance, confidence_basis_points,
 observed_ms and optional/null expires_ms. Claim is canonical nonblank ASCII-lowered
-whitespace-normalized text <=128 UTF8 bytes without control characters. Value is nonblank <=4096 bytes,
-subject <=128 bytes, up to16 nonblank tags <=64 bytes each; text has no NUL.
+ASCII-whitespace-normalized text <=128 UTF8 bytes without control characters. Value is nonblank <=4096 bytes,
+subject is nonblank <=128 bytes, up to16 nonblank tags <=64 bytes each; text has no NUL.
 Provenance has basis:user-confirmed|source-assertion|inferred, nonblank description
 <=512 bytes, and nullable conversation/turn/source UUIDs; nonnull IDs are nonnil
 and a turn requires conversation. Confidence is an integer0..10000; timestamps
