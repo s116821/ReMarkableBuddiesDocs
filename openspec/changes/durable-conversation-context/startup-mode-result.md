@@ -126,3 +126,39 @@ Source basis: exact code/blobs and actual owner local/hosted outputs, independen
 attributed source/assertion review and separately accepted generic primitives.
 Private logs/review chat have no public transcript link. No stored or synthetic
 data is promoted to native/current-provider permission.
+
+## Current-parent integration
+
+Current source171185a6bba962f4e599568e7954a0f629605626 normally integrates
+original mode branchcb31f47 with startup/history parent8909dad. The effective
+child is five paths: main admission/Store reuse, shared preflight readiness,
+mode-aware runtime/report consumption, actual CLI controls and an extension of
+the original historical-recovery test. Runtime implementation and CLI fixtures
+are byte-identical tocb31f47. Cargo/SDK32b86e4, the entire repaired orchestrator,
+Store implementation and generic mode module are exact current parent bodies.
+
+Two generic-storage conflicts were resolved to that delivered implementation,
+preserving the OrdinaryModeLease API and current RAII/drop accounting. The
+historical precode statement that no ordinary mode guard existed applies to its
+original inputs only. The guard API is now delivered; it is not a missing
+interface or a user setup dependency. This bounded step still checks ordinary
+mode at startup and Store handoff, rather than retaining that guard through the
+actual ordinary Reader loop. Existing later PR48 owns that real caller/lifetime
+integration; it remains required. A startup snapshot or ordinary data lease is
+not described as a mode lifetime fence.
+
+Current Windows33 distinct focused checks pass: fourteen actual startup/mode CLI,
+thirteen memory CLI through the changed shared preflight, five runtime library
+controls and one extended historical-recovery control. These verify admitted
+Store reuse, safe deferred creation/auxiliary-root races, configured shared report
+mode-lease lifetime, current read seals and original recovery through departed or
+malformed current mode. Strict all-target/all-feature Clippy with denied warnings,
+locked no-default library, formatting and diff checks pass. No unchanged full
+matrix or completed device/provider observation was repeated.
+
+The draft preserves current one-shot selector isolation, privacy and history
+contracts. Source/Docs exact-head hosted checks, independent full integration
+review, parent delivery/live evidence and the wider active lifecycle remain
+open. No native acquisition, provider/bootstrap, real sender, live mode switching
+or whole conversation/MVP qualification follows. No tablet, model, account,
+service or remote-provider operation occurred.

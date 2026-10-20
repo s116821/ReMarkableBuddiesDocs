@@ -42,3 +42,34 @@ attempt is preserved, but process-crash release is unqualified. Unsupported
 orientation/device profiles and the old unverified fallback refuse. Native
 navigation/creation/bootstrap, landscape support, full Reader lifecycle, and
 REM53 personalization remain outside this bounded delivery.
+
+## Current-parent integration
+
+Current source ff2bac2c1ce2ae9c630f154b1ef40417fe5afa7c normally integrates
+original gesture branch 010aa6b and composed-memory parent 3ee307d. Its effective
+child is the six original consumer/example source files, all byte-identical to
+010aa6b. Cargo.toml and Cargo.lock remain exact current-parent bodies, retaining
+SDK 32b86e4 rather than downgrading to the historical 5c0bc303 pin.
+
+The cached current SDK gesture implementation was compared directly with the
+original pinned version. Removing only three added provenance/license comment
+lines makes the complete gesture.rs body identical. Types, supported profiles,
+trajectory, timing and refusal behavior are unchanged. This is pure API/source
+compatibility evidence, not a new SDK-native qualification or pin change.
+
+Current Windows six focused controls pass: three fake-sink emitter controls,
+unsupported source configuration/chrome refusal, post-dispatch orientation drift
+refusal without replay, and fixture-only ordered-page/configuration parsing.
+Strict all-target/all-feature Clippy with denied warnings, locked no-default
+library, formatting and diff checks pass. Docs validation passes 39 items and
+preserves 25 guidance files and 126 original source blobs. Original source/review
+and hosted evidence remain separately attributed; no broad navigation matrix or
+hardware diagnostic was executed.
+
+Current exact-head hosted checks and independent integration review remain open.
+Parent live-model/delivery, native completion, process-crash release, active-page
+authority, other profiles and the full active Reader/MVP lifecycle remain open.
+The tablet is owned by a separate human-directed effort and must not be contacted
+until the human explicitly returns ownership. This preparation performs no SSH,
+connection probe, device inspection, transfer, navigation, execution, service
+change or cleanup. No permission follows from pure plans or fake-sink tests.

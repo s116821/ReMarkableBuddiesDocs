@@ -86,3 +86,43 @@ No tablet/provider/account/service action, held/spent experiment replay, merge,
 canonical sync, archival or full task2.10/lifecycle/MVP completion occurred.
 Source basis: exact current code/archive, actual owner outputs and attributed
 precode review; private logs/review chat have no public transcript link.
+
+## Current-parent integration
+
+Source9f0b5023cc4eee2413e6f886e131dbbf0515f1a2 normally combines existing
+selected-application branch5138722 and current mode parent171185a. The effective
+child is eleven source paths. Original selected-reader-write, private selected
+Attempt, refusing transport and actual-Orchestrator fixture bodies are byte-
+identical to5138722. Cargo/SDK32b86e4, Store/mode implementation and every current
+production CLI/startup route remain exact parent bodies.
+
+One source conflict has two hunks. Current sanitized analysis/transcription
+progress logs are retained together with the new Attempt selected-currentness
+checks after responses. No full question, answer or model-text log is restored.
+Recognition prompt literals remain unchanged; provider/progress/publication
+boundaries gain the selected checks. The actual selected prepared entry refuses
+unreviewed composed-memory admission, and Generated acknowledgment never grants
+qualified Pending or native output. Fixture transport remains test-only; needed
+native interfaces and their refusals remain intact.
+
+Current Windows27 distinct focused controls pass: three selected publication
+controls; fourteen actual startup/mode CLI controls; five development/context
+controls; one actual selected-Orchestrator control containing seven cases; three
+ordinary/selected memory controls through the changed callbacks; and the existing
+actual-CLI content-canary. One opt-in saved-byte harness remains ignored and was
+not executed. Cases within a control are not extra unique tests. These are local
+scripted/loopback controls, not live model or native effectiveness.
+
+Strict all-target/all-feature Clippy with denied warnings, locked no-default
+library, formatting and diff checks pass. The earlier20-error lint result in the
+separate quality record stays attributed to its original source; it is not the
+current gate. No suppression, dummy producer, public native permission, SDK pin
+change or unchanged full local matrix was introduced. Docs strict validation
+passes39 items and preserves25 guidance files and126 original source blobs.
+
+Exact-head hosted checks and independent full integration review remain pending.
+Parent33's representative live-model evidence/delivery and all later native,
+composed-memory, tokenization, selected effects, settlement and whole conversation
+lifecycle gates remain open. The change stays active/unarchived with no canonical
+promotion of unfinished behavior. No tablet, provider, account or service action
+occurred, and no held/spent or saved-byte experiment was replayed.

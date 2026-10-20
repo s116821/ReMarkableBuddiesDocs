@@ -166,3 +166,39 @@ Docs de2e0a5 CI38354336804 passes. This later receipt-only amendment changes no
 source, requirement, checked task or qualification boundary. Panic, native,
 strict-lint, issue completion and full lifecycle remain open; no unchanged
 source/test matrix is repeated.
+
+## Current-parent integration
+
+Current source 3ee307d203386af1e4957912d5e74b79c6ae7a39 normally integrates
+existing composed-memory branch f1bc512 and selected-application parent 9f0b502.
+The effective child has twelve source paths. Eleven original child bodies remain
+byte-identical to f1bc512, including composed admission, mixed-domain projection,
+publication, panic witness and actual Reader fixtures. The orchestrator retains
+current parent content-free logs while adding the original combined publication
+and historical document-scope behavior. Recognition/answer prompt literals remain
+unchanged. Six critical parent bodies, including Cargo/SDK32b86e4, Store/mode,
+main routes and refusing backend, remain exact. No source conflict or new domain
+implementation was required during this normal integration.
+
+Current Windows21 distinct focused controls pass: two composed publication/
+opposing-document controls, fourteen actual startup/mode CLI controls, one
+bounded post-consumption panic witness, one actual selected-Orchestrator control
+containing fourteen cases, and three memory callback controls. Child-process
+invocations and cases are not additional unique tests. The panic witness reports
+the exact expected marker after caught post-consumption unwind, poisoned retry
+refusal, zero publication and preserved media; its parent verifies completion
+within the existing bound. No saved-byte harness or device observation ran.
+
+Strict all-target/all-feature Clippy with denied warnings, locked no-default
+library, formatting and diff checks pass. Docs strict validation passes39 items,
+with25 guidance files and126 original source blobs preserved. Original source/
+range-equivalence/panic acceptance and historical failures remain attributed to
+their original revisions; no unchanged full matrix was repeated or original
+domain review replaced. This current evidence covers software integration only.
+
+Current hosted checks and independent full integration review remain pending.
+The active wider conversation and subject-memory tasks, representative live
+model evidence, parent delivery, native/fresh source, Pending/context/settlement,
+ordinary lifetime caller and whole MVP gates remain open. No unfinished change
+is canonically promoted or archived. No provider, tablet, account or service
+operation, held/spent replay or saved-byte replay occurred.
