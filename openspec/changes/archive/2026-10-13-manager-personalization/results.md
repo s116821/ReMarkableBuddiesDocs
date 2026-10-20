@@ -70,3 +70,32 @@ No original provider/protocol/UI matrix, original signature/artifact execution,
 key/package generation, credential operation or tablet contact is repeated here.
 Source basis: actual REM-53 delivery receipt, accepted original review, current
 Git object preservation and normal repository checks.
+
+
+## Final actual-parent reconciliation
+
+Auth parent #15 delivered normally as Manager main
+a88bceffce8ddbad0e56af9bbe7d15e57d158d44 and Docs main
+6a2d065ff1dd6f4574b93afde72515bad2bce820 after final reviews
+5580999376/5581000011 and all current source/Docs checks passed.
+The actual source parent is now included. Eleven source ancestry conflicts
+retain the accepted editor bodies exactly, preserving complete preparation
+treefe960574948539fbe35358548c65ff8b2f69954c. No runtime, transport, UI,
+workflow, manifest, dependency or test bytes change from accepted8bcb9e1.
+No release-trigger semantics are edited.
+
+Docs incorporates actual main6a2d065. Three conflicting completed-parent
+archive receipt/task files retain authoritative main bytes. Only25 stale active
+copies of five completed parent changes are removed, with their actual main
+canonical/archive records preserved. The original six-file own archive and
+canonical three requirements/six scenarios remain exact except this receipt.
+The accepted full shared host-boundary requirement stays intact alongside
+main's quiet-refresh requirement. Current-head checks and independent final
+review remain required before normal delivery.
+
+Preparation5580991644/5580992329 and original5507518806/5507519021 evidence
+scopes remain distinct. No original protocol/UI/provider matrix, credential
+operation, key/package generation or tablet contact is repeated. Saved disk
+configuration remains distinct from running Reader/Writer adoption, verified
+reload, live-provider behavior, sync or physical persistence qualification.
+Source basis: actual normal merge/check APIs and complete Git preservation.

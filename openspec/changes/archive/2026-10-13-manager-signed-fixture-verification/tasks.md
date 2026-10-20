@@ -8,4 +8,7 @@
 - [x] Record independent acceptance and coordinate exact parent delivery prerequisites with Main/Root.
 - [x] Synchronize and archive only this completed bounded host slice alongside Manager PR14.
 
-Full parent integration/merge, physical Windows qualification and Main backend/runtime/native delivery remain explicit external gates, not completed tasks of this host-only capability.
+Actual source-parent integration/delivery, current-head checks and final review
+remain external delivery gates. Physical Windows, production trust and native
+qualification remain separate and unwaived; they are not completed by this bounded
+offline host capability or a blanket block on its qualified software delivery.

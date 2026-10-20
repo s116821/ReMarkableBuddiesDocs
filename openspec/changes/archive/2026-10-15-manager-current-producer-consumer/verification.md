@@ -63,3 +63,10 @@ remain delivery gates. No original package/ZIP/Python/UI matrix, payload executi
 key/package generation, provider/credential/account/settings or tablet operation
 is repeated. Broader physical/native/trust/updater/full-issue limits remain.
 Source basis: complete immutable source comparisons and original review bodies.
+
+
+## Actual delivery and final lifecycle
+
+Manager18 delivered normally at `783a91b56aa7201ec26b6ec788a29ac56e2ca3dd`. All nine functional repair files from the accepted `9735850` delta over `4a9ef9b` match reviewed `6b60468` byte-for-byte on that actual main. The complete delivered source tree also matches final download candidate `e30a018`. Source PR21 remains retained at `8ea5012`; it is redundant for this repair and may close by coordinated supersession without a duplicate source merge or release.
+
+This final Docs composition includes actual parent `6a8e1f7`, keeps its authoritative parent archive receipts (including later feedback), and removes only 25 stale active copies of five already-completed parent changes. The own original proposal/design/tasks/delta, canonical two requirements/three scenarios and existing evidence remain unchanged; this verification append is the only authored update. Fresh focused Docs checks and independent final review remain required. Original runtime/package/ZIP observations retain their separate historical attribution and were not replayed. No physical/provider/native/trust/updater acceptance follows.
