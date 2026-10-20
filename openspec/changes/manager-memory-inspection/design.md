@@ -87,7 +87,9 @@ and unsupported values, safe-number limits and late responses. Use an actual own
 SSH peer with public test keys and synthetic route/report fixtures, preserving the
 real transport/channel/EOF checks. Consume attributed actual local/selected producer
 stdin specimens when Main supplies them: local and selected values/tombstones/empty,
-local competing/opaque heads and selected whole-view conflict/domain refusals;
+local competing/opaque heads and a constructible selected domain-invalid
+registered-state refusal. A selected-conflict installation rejected before
+publication is a separate negative constructor control, not an actual CLI refusal;
 do not relabel illustrated JSON or synthetic UI reports as producer evidence.
 Exercise actual browser/Electron IPC guards and development plus retained production
 packages in existing Linux/Windows integration. No local repackaging or replay of

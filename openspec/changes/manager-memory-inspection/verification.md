@@ -45,7 +45,11 @@ headless display is the existing offscreen Xvfb wrapper, stopped on completion.
 ## Remaining gates
 
 Obtain attributed actual producer stdin reports and verify real parser compatibility,
-including local raw unsupported/conflicting heads versus selected whole-view refusal.
+including local raw unsupported/conflicting heads versus a constructible selected
+domain-invalid registered-state whole-view refusal. Main reports that public storage
+APIs reject selected conflict installation before publication: retain that negative
+constructor result separately and never label it an actual inspect CLI unavailable
+report. No selected conflict fixture or domain widening is requested.
 Inspect ordinary Linux/Windows hosted development/retained-package results at the
 current source head, obtain independent implementation review, sync own canonical
 requirements and archive only the completed increment, then final review/current
