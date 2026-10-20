@@ -1,10 +1,10 @@
 # Current implementation checkpoint
 
 This is an active consumer change, not completed lifecycle or release acceptance.
-Source: Manager29 `104741099768ff3c16fb52ac81c840d51bbe2b0b` over actual main
+Initial source: Manager29 `104741099768ff3c16fb52ac81c840d51bbe2b0b` over actual main
 d4574f7872b65f71b7ef0bf1c2f9199e7604207e. Accepted precode review5582813325
-covers a509cf8 and exact producer contract86bb4c0. Main owns producer code and its
-actual local/selected stdin corpus; these remain compatibility/delivery gates.
+covers a509cf8 and exact producer contract86bb4c0. Main owns producer code and qualified delivery remains pending. Actual producer
+corpus from candidate4e2f8dec is now received and verified below.
 
 ## Verified locally
 
@@ -44,15 +44,33 @@ headless display is the existing offscreen Xvfb wrapper, stopped on completion.
 
 ## Remaining gates
 
-Obtain attributed actual producer stdin reports and verify real parser compatibility,
-including local raw unsupported/conflicting heads versus a constructible selected
-domain-invalid registered-state whole-view refusal. Main reports that public storage
-APIs reject selected conflict installation before publication: retain that negative
-constructor result separately and never label it an actual inspect CLI unavailable
-report. No selected conflict fixture or domain widening is requested.
 Inspect ordinary Linux/Windows hosted development/retained-package results at the
 current source head, obtain independent implementation review, sync own canonical
 requirements and archive only the completed increment, then final review/current
 CI and coordinated normal delivery after qualified producer delivery. Observe actual
 main and publication separately. Whole memory/Manager issues stay open; no tablet,
 provider, model, service control, restore, native or physical qualification is claimed.
+
+## Actual producer compatibility addition
+
+Received13 exact stdout/request strings from producer-owner candidate
+4e2f8dec4d5bcb5032bca2ea6953747e61394989, binary SHA256
+e6354379733fb7e0954ff458c28ec380232c0360e10965df3f4b76f660eede0b.
+All26 original manifest hashes match direct UTF8 strings, including original LF
+and Unicode; no parsed report was reserialized to manufacture expected bytes.
+The first Windows cp1252 transfer failed and is not corpus evidence; the ASCII-
+escaped resend restored original strings with hashes, no case rerun or mutation.
+
+Nine focused Node controls (including new actual-corpus control) and lint pass.
+The unchanged real parser/public reducer/controller consume11 supported cases.
+The invalid-input specimen's exact malformed key is rejected locally before
+dispatch, preserving its original producer invalid-input report for attribution.
+Local opaque preserves3 raw producer heads and refuses the whole consumer view;
+local conflict preserves both heads. All valid value/tombstone record identities
+match each exact requested Key; selected/local empty and refusal flags remain
+distinct. Selected-after-refused-conflict is exactly the healthy unchanged
+tombstone report; unrelated-domain-refusal is the actual unavailable/true CLI
+report. No successful selected conflict array is fabricated. Production code is
+unchanged from1047410; only corpus/control/public evidence guidance is added.
+Qualified producer delivery, current hosted consumer package gates, independent
+reviews and own full lifecycle still remain.
