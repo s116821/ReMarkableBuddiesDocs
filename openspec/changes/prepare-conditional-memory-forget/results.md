@@ -125,3 +125,14 @@ The delta now explicitly modifies the pre-existing query/inspect-only whitelist
 while preserving all four old scenarios byte-for-byte, alongside the added five
 prepared-forget scenarios. Both unrelated canonical requirements remain untouched;
 canonical sync/archive still waits for complete qualification.
+
+## Current focused qualification at60940ac5
+
+Fresh selected handoff interleaving1, recorded-corpus integrity1 and affected
+actual selected CLI1 pass. Current strict all-target/all-feature Clippy passes;
+independent no-default memory11 and conditional storage4 pass, including the new
+fresh-lineage proof. Existing corrected six-case capture remains pinned to77e92306,
+not relabeled as a new run. No CLI cases were replayed merely to publish artifacts.
+Current sourceCI39410088631 targets60940ac5. Superseded77e run39408551182 is confirmed
+CANCELLED, separate from earlier bfa cancellation and never counted as passing.
+Current full hosted checks, receiver compatibility and final lifecycle remain gates.
