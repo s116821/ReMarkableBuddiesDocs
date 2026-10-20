@@ -1,4 +1,4 @@
-# Concrete shared editor design — implementation pending
+# Concrete shared editor design - implementation pending
 
 The existing general inspector discards its private digest and cannot authorize
 editing. A new explicit Begin pauses polling first, then privately inspects the
