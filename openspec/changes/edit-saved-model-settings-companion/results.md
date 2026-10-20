@@ -1,8 +1,8 @@
 # Shared model consumer implementation evidence
 
-Source basis: Manager33 1aa4980ea03fa784ee79f74ebba8db2a7156e8e9,
+Source basis: Manager33 42c9b040f4c82d26b27fd9e88232acd97c7b96be,
 including explicit declared-null UI coverage, owned HTTP decode-buffer clearing and
-the raw-newline review correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
+the raw-newline review correction and synchronous DOM-lifetime correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
 15e34308f77e3c4591d257ea34917b12a2631b6b/review5589113102 and actual
 Docscc4cadf03deb285fcbbae43298a7057098f75478. This is an implemented active
 candidate, not final review/archive/merge or broad/native qualification. The basic
@@ -68,7 +68,7 @@ no-op crosses normal explicit replacement gestures without dirty-state injection
 
 ## Executed controls and visual inspection
 
-- All225Node tests pass:203baseline plus22model controls. They cover all32 original
+- All226Node tests pass:203baseline plus23model controls. They cover all32 original
   streams, exact finite/private shapes, wrong patch/hash/phase/current/identity,
   Unicode/scalar/byte/whitespace caps, original patch mutation, hash-only status,
   deadlines/ready expiry/late completion, capacity, all3lane ownership and stale Stop.
@@ -126,12 +126,45 @@ new regression fixture had incorrectly counted that pair as two breaks.
 Actual guarded browser and source Electron keyboard controls also verify exact raw
 submissions after Delete/Backspace for mixed/reverse/loneCR/non-BMP cases.225Node,
 lint and both builds pass after this correction; nine Python and ten workflow graph
-controls remain unchanged/passing. The source review thread is replied to but stays
-open pending independent successor acceptance; remaining full review is not asserted
-complete. Extra HTTP decode-buffer cleanup clears the owned concatenated byte copy
+controls remain unchanged/passing. Independent source review5589608081 accepted through immutable1aa4980; its original
+newline thread is resolved. The later DOM-lifetime successor below requires a fresh
+focused review before final delivery. Extra HTTP decode-buffer cleanup clears the owned concatenated byte copy
 as well as incoming chunks, without claiming immutable-string erasure or changing
 existing guards/caps. The two added public rows also verify explicit declared-null
 removal with untouched model omitted through both real guarded hosts.
+
+## Synchronous DOM lifetime successor
+
+After accepted source review5589608081, a new same-event-stack persisted pagehide
+assertion reproduced a real lifetime gap on1aa: raw draft/signal clearing preceded
+Angular rerender, leaving the old textarea value synchronously observable. The
+42c9b04 successor adds an optional synchronous input-clear callback to the shared
+controller and empties actual model textareas before publishing/resetting, including
+before Save dispatch. Per-field action changes clear only their own field. Existing
+central reset paths cover expiry, refresh, disconnect, maintenance, Stop and destroy;
+generation guards prevent delayed old completion from clearing a newer editor.
+
+All226Node tests, lint and development/production builds pass. New controller controls
+prove clearing occurs before adapter dispatch/first await, per-field isolation and
+stale retained completion safety. Actual guarded browser/source Electron checks pass
+same-stack persisted pagehide and Read-button clearing; the browser additionally
+checks empty values at Save fetch entry. The controller-order control applies to both
+adapters; no native IPC interception claim is made. Probe state is reinstalled after
+reload; an initial test-probe failure from missing post-reload flags is retained.
+Presentation is unchanged and the previously inspected four images remain applicable.
+
+The prior1aa hosted run39473280259 passed Title/Checks/Build but FAILED both Linux
+Integration118804133524 and Windows Integration118804133374 at the same immediate
+DOM-node-count assertion after Read. The helper wait checked already-visible tablet
+state, so it did not establish completion of Angular node removal. The successor
+checks actual input emptiness synchronously and uses condition-based toHaveCount(0)
+for asynchronous node removal; no sleep, timeout increase or weakened privacy guard.
+Full failed logs are retained: Linux76225bytes SHA256
+0f971b7ab8288ce8d89d222bd1052096ce22d5bbe24d51128dae2e5b3c5e7a28;
+Windows60142bytes SHA256
+d592de936d714e1a1050eb9dfeedc761f216b6e2a4fbf6706646f4c8c5751c.
+These failures are not qualified or blindly rerun. Fresh normal42c9b04 hosted CI and
+focused immutable successor review remain required; no archive or merge is claimed.
 
 ## Preserved failures and limitations
 
