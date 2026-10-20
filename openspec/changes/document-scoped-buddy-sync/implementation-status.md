@@ -72,6 +72,15 @@ guidance files and 126 original source blobs. Independent resolution/lifecycle
 review, exact-head hosted CI, paired squash delivery and actual-main verification
 remain pending. Historical green builds are not relabeled as those pending results.
 
+The first Linux hosted run39356451772 at the integration head failed during
+Clippy compilation: the Unix-only inherited-descriptor fixture still accessed the
+old File field directly. The one-line test-only successor
+`13d9f7cdb07de85648fb82abdd9660ecff155bed` uses the inner File through main's
+existing Lease wrapper, matching the existing owner-lease fixture. Production
+code and assertions are unchanged. The failed log remains retained; Windows
+checks do not qualify this Unix-only path. Current successor hosted execution
+remains required before delivery.
+
 ## Unfinished end-to-end obligations
 
 The active delta retains explicit modes/join behavior; domain aggregate/global
