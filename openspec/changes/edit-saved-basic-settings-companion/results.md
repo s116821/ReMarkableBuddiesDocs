@@ -1,6 +1,6 @@
 # Shared basic-settings consumer evidence
 
-Source basis: actual Manager32 `084b3aa127f69dedf5b0a70edae04aace04ae930` (product bytes identical to initial68c467a; the successor adds only six helper late-read assertions), original
+Source basis: corrected Manager32 `8b54ce9d65eb40ed7a247fc5e830b0e711f9aed6`, successor to reviewed68c467a/084b3aa, original
 actual base `f43627ba9fef4054ae2548823698f27f630bfad6`, accepted own precode
 `4cac5c3e721ab97270fcd3d706f3b900b4803f8d`/review5587743737, accepted producer82717f
 and original captured corpus. This is an active implemented candidate, not merged,
@@ -48,11 +48,11 @@ controller with exact original intent linkage and no private fields in public st
 
 ## Executed local controls
 
-- All196Node tests pass (176base plus20new), including all report compatibility,
+- All203Node tests pass (176base plus27new), including all report compatibility,
   field/origin/patch rejection, private/public phase consistency, actual bounded
   child stdin/identity/cap/nonzero/timeout, original packet retention, deadline,
   capacity, no-repeat, remote-status ownership and cross-coordinator cancellation.
-- Seven Python controls pass. Actual local SSH channels exercise all four exact fixed
+- Eight Python controls pass. Actual local SSH channels exercise all four exact fixed
   selectors with original stdin or no stdin and exit0/2/127; identity samples/route/
   notifications are fixtures. Duplicate/UTF8/framing/input/output/stderr bounds,
   before/after identity change, timeout/close and one-output custody controls pass.
@@ -70,6 +70,41 @@ controller with exact original intent linkage and no private fields in public st
 - Actual HTTP controls independently reject wrong origin/session/query/request shape,
   cap/UTF8/duplicate/private input, document/resource/iframe lifetime and final bridge
   after-await generation. Source helper/main always check final public ready state.
+
+## Focused implementation-review corrections
+
+[Review5588386132](https://github.com/s116821/ReMarkableBuddiesManager/pull/32#pullrequestreview-5588386132)
+confirmed two races in68c/084. Before-fix regression logs reproduce both. The
+corrected coordinator rechecks original ready expiry after prepare and before
+possible apply; ready-at0/Save-at119999/prepare-at120001 returns not-dispatched with
+zero apply calls. A resolved apply reply at13001 from Save-at0 returns unknown,
+retaining its original packet even before the timer callback runs. Late inspect and
+status cannot grant ready or retire uncertainty. A4000ms prepare leaves9000ms for
+apply, rather than resetting lower timers. Private budget_ms is validated and
+clamped in the actual child supervisor; a hanging synthetic child is killed by its
+inherited500ms budget despite a13000ms supervisor default. Python fixtures verify
+remaining channel timeouts and identity delay refusal before command dispatch.
+
+The shared controller guards every post-await stop mutation by captured generation,
+reference and original context. A deferred old cancel returning not-dispatched
+cannot clear newer pending Save uncertainty/retained evidence. A separate regression
+ensures stopping a host-only retained read never cancels remote work. Both pass
+through actual coordinator/controller code with synthetic deferred adapters.
+
+Exact084 CI Linux Integration118756420331 failed in the preload inventory assertion
+at tests/wired-hosts.mjs:73, not pip/dependency download. The original64989-byte raw
+log SHA256 b8b8c5f5d83c3d3652072dc38548932e7a87da46d4230cad2d008af8025faccf is
+retained in the shared workspace. The exact inventory now includes basicSettings,
+with additional invalid private-path/arity refusal assertions. The same common
+inventory serves source/packaged and both OS paths. Corrected local production
+browser/source Electron wired fixture passes; hosted retained checks remain required.
+
+Current correction checks:203Node,8Python,10workflow graph,lint,development and
+production builds pass. Guarded basic development browser/source Electron and wired
+production browser/source Electron fixtures pass again. Inherited MANAGER variables
+were removed for these fixture launches; transport/config are explicit synthetic
+fixtures. No local retained package was rebuilt. The four images below remain the
+previous reviewedf63 captures of the same presentation, not new native qualification.
 
 ## Corrections retained with honest attribution
 

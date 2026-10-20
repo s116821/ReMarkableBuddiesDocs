@@ -6,7 +6,7 @@ requirements/four scenarios. Producer wire remains the immutable accepted
 Actual producer c50eb6b3 is published as v0.20.0; its completed execution/publication
 is not replayed here. Managerf43627ba/Docs5f2e7175 delivered saved-configuration
 inspection and are this consumer's actual baselines. Independent review5587743737 accepted exact4cac before implementation. Manager32
-68c467a implements this contract; results.md separates its local/fixture evidence
+implements this contract; results.md pins its current revision and separates local/fixture evidence
 from pending retained-package, delivery and physical/runtime gates.
 
 ## Public boundary
@@ -110,12 +110,27 @@ A ready reference expires at120000ms from successful inspection using monotonic
 host time; validate before claim and before public release. A status read never
 extends that lifetime or upgrades an old/spent reference. Cancellation while Begin
 has no published reference uses the existing global queued cancel/invalidation;
-a late inspection cannot recreate ready authority.
+a late inspection cannot recreate ready authority. Controller stop captures its
+generation, reference and original context before awaiting cancellation; every
+post-await mutation must still own all three. An old not-dispatched cancel reply
+cannot erase a newer pending Save's original uncertainty. Stopping a retained
+host-memory read is local and never calls global remote cancellation.
 
 One Save has one global existing13s coordinator budget for prepare+apply, preserving
 existing2/8/12/13/14s hierarchy; not13s twice. Pass remaining bounded budget to each
-lower phase. No apply begins after budget expiry; after possible dispatch expiry is
-unknown. Prepare alone remains no-write and cannot be represented as a saved result.
+lower phase. The private child envelope adds only budget_ms, an integer1..12000
+calculated as min(12000, floor(remaining coordinator time)); prepare is additionally
+capped by the original ready grant's remaining time. This is private host scheduling
+metadata, not a public request field or producer stdin change. The supervisor clamps
+its timer to this value. Python starts a single inherited monotonic deadline before
+configuration/authentication; identity reads and command/readback check it, channel
+open/socket timeouts are min(2s, remaining), and command time is min(8s, remaining).
+No lower phase obtains a fresh full budget. The coordinator checks monotonic time
+after awaited raw replies, after strict report parsing and before final settlement,
+even when its timer callback has not executed. Recheck the original120s ready expiry
+before possible apply as well as before claim. No apply begins after either relevant
+expiry; after possible dispatch total-budget expiry is unknown with original packet
+retained. Prepare alone remains no-write and cannot be represented as a saved result.
 
 At most one active editor/preparing/apply slot; at most8 unresolved originals across
 targets. Reserve capacity before a new potentially mutating Save. Do not evict an
