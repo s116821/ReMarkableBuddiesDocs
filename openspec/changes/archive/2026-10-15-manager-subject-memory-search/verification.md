@@ -74,3 +74,12 @@ full REM-24/42/35 acceptance follows. No tablet contact, credential/account or
 settings operation, key/package generation or new branch/worktree/worker occurs.
 Source basis: current exact original reviews, Git tree comparisons, public PR52
 state and normal repository checks.
+
+
+## Delivered-parent integration preparation
+
+Manager candidate `76980d00d15b71154bf5d1ae4d52beb6aed2e2f4` incorporates actual main `0820bd7ab883be06edff126a979247c20483de13`. All24 accepted feature/guide/pipeline/lint bodies remain exact to `ed0016d`; the newly delivered metadata graph fixture remains exact to main. Main ci.yml is retained with only the existing memory-query Python invocation added. All other delivered blobs remain exact; lint and ten focused graph controls pass. Current hosted application CI is separately pending.
+
+This Docs candidate incorporates actual main `a52a4a2`, retains all449 delivered blobs including metadata admission and producer-consumer contracts, selects six authoritative parent archive receipts, and removes25 stale active copies of five already completed parents. Own original archive/canonical two requirements/three scenarios remain unchanged except this receipt. No original app/package/SSH/UI matrix is replayed.
+
+Main independently owns the narrow host-memory backend in Buddy66 and Docs62. Its reported six actual Windows CLI reports are accepted by the exact original Manager parser blob `5118e321082c2f9d330381cbfb3e411014fce7c0`, independently checked by Root. Those are Main's actual observations, not newly executed consumer-owner evidence. Backend final CI/lifecycle and actual delivery remain required before this consumer can deliver; full model-facing33/52 is not the exclusive backend path. Current source/Docs checks and final paired review remain gates. Physical/provider/native/full-issue limits remain open.
