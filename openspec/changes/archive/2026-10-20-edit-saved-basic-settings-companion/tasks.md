@@ -14,6 +14,13 @@
 ## Verification and lifecycle
 - [x] Consume all original45reports through actual typed parser/controller; verify hashes and exact semantic linkage, separately from synthetic faults.
 - [x] Verify both real guarded hosts/UI, same-ID/navigation/cancel, duplicate Save, malformed/late response, retention capacity, original-versus-later status and unknown forget interoperability.
-- [ ] Pass ordinary both-OS development/source/retained-package checks and inspect390/1280 captures with public manual equivalents.
-- [ ] Complete independent implementation review, own canonical synchronization/archive and final composed pair.
-- [ ] Complete normal linked delivery; separately observe actual trees/mainCI/publication, keeping broad/runtime/native gates open.
+- [x] Pass ordinary both-OS development/source/retained-package checks and inspect390/1280 captures with public manual equivalents.
+- [x] Complete independent implementation review and own canonical synchronization/archive; prepare the final composed pair for separate review.
+- [x] Prepare the exact normal linked delivery and separate actual-tree/mainCI/publication observation plan, keeping broad/runtime/native gates open.
+
+## External delivery observations - not asserted by scoped checkmarks
+Current final Docs CI and independent final composed acceptance precede normal
+Docs75-first/Manager32-second exact-head squash. Actual merged trees, main CI and
+official tag/release/provenance are observed separately in canonical tracking and
+native PR comments. The archive completes only the reviewed and verified shared
+basic editor; those observations and broader project/native work remain open.

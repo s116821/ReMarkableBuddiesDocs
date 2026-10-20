@@ -3,9 +3,11 @@
 Source basis: corrected Manager32 `8b54ce9d65eb40ed7a247fc5e830b0e711f9aed6`, successor to reviewed68c467a/084b3aa, original
 actual base `f43627ba9fef4054ae2548823698f27f630bfad6`, accepted own precode
 `4cac5c3e721ab97270fcd3d706f3b900b4803f8d`/review5587743737, accepted producer82717f
-and original captured corpus. This is an active implemented candidate, not merged,
-archived or broad REM42/runtime qualification. No tablet/provider/credential/trust
-or package execution occurred; local UI uses the installed source Electron runtime.
+and original captured corpus. This verified scoped implementation is synchronized
+and archived in the linked candidate; final composed review and normal delivery
+remain external gates. No broad REM42/runtime qualification is claimed. No tablet,
+provider, credential or trust work occurred. Local UI uses source Electron; hosted
+CI additionally executes the downloaded retained packages without rebuilding.
 
 ## Implementation and ownership
 
@@ -99,7 +101,7 @@ with additional invalid private-path/arity refusal assertions. The same common
 inventory serves source/packaged and both OS paths. Corrected local production
 browser/source Electron wired fixture passes; hosted retained checks remain required.
 
-Current correction checks:203Node,8Python,10workflow graph,lint,development and
+Current local correction checks:203Node,8Python,10workflow graph,lint,development and
 production builds pass. Guarded basic development browser/source Electron and wired
 production browser/source Electron fixtures pass again. Inherited MANAGER variables
 were removed for these fixture launches; transport/config are explicit synthetic
@@ -143,9 +145,52 @@ all source release-version machinery remain unchanged. Docs expands only the
 preserved companion's owned artifacts; original2requirements/4scenarios remain in
 its5requirements/14scenarios. No producer or prior inspection ownership is altered.
 
-Current exact-head ordinary Linux/Windows development and retained browser/Electron
-package checks, independent implementation review, own canonical sync/archive and
-final composed delivery remain open. Actual merged trees/mainCI/tag/provenance will
-be observed separately afterward. No local package rebuild, new worker/chat/worktree
-or tablet contact was used. The previous inspection publication watch is complete
-and is not replayed for this increment.
+## Final verification and own lifecycle
+
+Independent implementation reviews5588744362/5588744502 accepted source8b54 and
+Docs5e42 with no remaining findings; both original inline threads are resolved.
+Docs1c then corrected only the final source inventory count. Ordinary exact source
+run39462610206 is fully successful: Title, Checks, Build and both Integration jobs;
+Release is correctly skipped for the PR. Its synthetic merge
+ee8961a570f798922813ed698fd326d2b4a4e359 has exactly reviewed source tree
+3783eb043fad924d7376a52fa46abec0e12620a6, with actualf436 and8b54 parents.
+Downloaded artifacts are verified before staging and after integration, without
+rebuild. Each OS log contains development/source and retained browser/packaged
+Electron basic-editor markers plus source/packaged exact wired-host inventory checks.
+Windows native API/NTFS controls and Linux upstream Action controls also pass.
+
+| Retained full job log | Bytes | SHA256 |
+| -- | -- | -- |
+| Checks118765757482 | 115288 | 550d57ea13e8f8fdd13289842841dfc13b84c2860fc167ed36dbccfcf518663f |
+| Linux118766856985 | 89864 | fb9937b3285b1d389973de083d646fc921fe85af8e3b9c29de0a88142774fcc3 |
+| Windows118766856946 | 66177 | 48a7f1a20aff6e91315c99d311e83563fd525ba151d0719dd83e24140fa85206 |
+
+| Verified requirement | Implementation and evidence |
+| -- | -- |
+| Private intent/read-only reconciliation (2scenarios) | BasicSettingsHost original packet/integrity map, lost-apply/status/refusal and fresh-edit/capacity controls |
+| Shared explicit editor/session lifetime (4scenarios) | shared controller and both real guarded hosts; navigation/refresh, runtime disclosure, old status/forget cancellation races and stale-stop regression |
+| Strict fixed protected contracts (3scenarios) | exact public/private parsers, helper/IPC shape/frame checks, original45corpus linkage, child/Python cap/identity/deadline controls |
+| Deliberate bounded three-field save (3scenarios) | finite dirty set/clear/null UI, one-shot coordinator, original-ready/total-budget controls and8record/cross-owner cancellation |
+| Attributed paired verification/own lifecycle (2scenarios) | original45bytes/hashes preserved, both ordinary OS retained jobs, four reviewed presentation images and own exact canonical/archive comparison |
+
+All5requirements/14scenarios are implemented and covered; original2requirements/
+4scenarios remain included. The new canonical body exactly equals this own delta,
+without delta-only headings. Only these11own artifacts move to
+2026-10-20-edit-saved-basic-settings-companion; preserve all558other entries from
+actual Docs99fa304, including delivered model/restore and other unfinished drafts.
+Normal merge of actual99fa introduces no overlap with this consumer's own paths.
+The final composed candidate runs public docs/unit/strict checks before publication;
+current hosted Docs checks and independent final composed review remain required.
+
+## External delivery and publication observations
+
+Prepare normal exact-head Docs75-first/Manager32-second squash after final pair
+review and current checks, preserving topic branches. Compare actual merged trees
+to reviewed trees and observe separate main CI and official tag/source/provenance.
+Download only the small provenance manifest; compare published package API digests
+and completion marker without executing packages or contacting a tablet. No release
+or actual-main success is asserted by this archive. The prior inspection publication
+watch is complete and is not replayed. Broader configuration/owned-data management,
+model consumer, selected activation, provider/runtime/native and whole REM42 remain
+open. The four captures are earlier reviewed presentation evidence as attributed
+above; original producer corpus bytes and provenance remain untouched.
