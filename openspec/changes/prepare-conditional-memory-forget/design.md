@@ -12,6 +12,16 @@ Delivered inspection Buddy69 source4fad1681 and Docs66 source1c736fab are indepe
 ## Config and lifetime precision
 The invocation loads one explicit config and uses that frozen authority; its original nonsecret binding must match preparation. An external config-file edit after that load cannot retarget the admitted operation, but this is not a claim to atomically observe arbitrary external file edits. The host invalidates intent on known config/target/boot/session changes. Store process ownership, original-token mode lease and selected gates remain held through operation/output. No precondition is a capability to choose arbitrary paths or recreate private SelectionToken.
 
+## Local preview sealing
+Existing ordinary Inspection has no selected Pins seal. New preparation must not
+reuse that absence as currentness proof: add a narrow Store-owned local conditional
+heads/generation guard, compare the original complete envelope/content set under
+the Store mutex, then consume the fully sealed preparation report while retaining
+that guard and original mode/process lifetime. Do not relock the same mutex inside
+the writer or change existing inspect/file output behavior. Selected preparation
+reuses its freshly admitted whole-view pins and byte-integrity seal. Meaningful
+controls must cover local as well as selected stale/forged/prefix output.
+
 ## Risks and verification
 Own successful mutation changes target selected pins; blindly checking old pins before receipt lookup breaks legitimate unknown-outcome reconciliation. Conversely, fresh substitution would permit a second mutation after later values. Exact original envelope/predecessor matching must precede any new mutation path; receipt-only never falls through. Original mode/config/store changes refuse reconciliation rather than quietly moving it. A cloned actor/mode tree is not sufficient host target identity.
 

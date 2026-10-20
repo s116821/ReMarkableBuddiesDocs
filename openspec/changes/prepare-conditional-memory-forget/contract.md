@@ -14,7 +14,7 @@ The privileged host generates one intent UUID before preparation. Preparation ne
 
 Preparation report operation is prepare-forget. Success status ok/incompletefalse, data:
 `{"schema_version":1,"preview":ENVELOPE,"intent":PREPARED_INTENT}`.
-The exact envelope and evidence originate from one admitted view; the consuming writer validates that view and full report bytes. Stale/forged/oversized data refuses before output; a prefix I/O failure never appends replacement JSON. The host validates preview and exact Key before presenting explicit confirmation.
+The exact envelope and evidence originate from one admitted view; the consuming writer validates that view and full report bytes. Ordinary/local preparation requires a NEW Store-owned conditional heads/generation guard under its mutex through the consuming writer; existing unsealed ordinary Inspection alone is insufficient. Selected preparation reuses whole-view pins. Stale/forged/prefix controls must cover both modes. Stale/forged/oversized data refuses before output; a prefix I/O failure never appends replacement JSON. The host validates preview and exact Key before presenting explicit confirmation.
 
 ## Prepared intent
 Top-level ordered fields: prepared_version, operation, key, expected, binding.
