@@ -9,7 +9,7 @@ Only query and inspect SHALL accept exact-dash stdin, bounded to inclusive1MiB a
 
 #### Scenario: Explicit single-fact inspection
 - **WHEN** the caller deliberately inspects one valid configured-profile Key using stdin
-- **THEN** the existing report preserves every current value/tombstone/conflicting raw head and distinguishes no current heads for that key from refusal, without implying a complete inventory or ongoing write authority.
+- **THEN** the existing report preserves every admitted current value/tombstone head and all local competing raw heads, retains selected whole-view conflict/domain refusal, and distinguishes no current heads for that key from refusal without implying a complete inventory or ongoing write authority.
 
 #### Scenario: Strict new scope wire and legacy compatibility
 - **WHEN** inspect stdin has duplicate/unknown top or nested fields, invalid/nil identities or a foreign profile

@@ -39,10 +39,12 @@ reference. Consumer code remains separately owned and must validate all heads an
 derived requested record identity, including null-payload tombstones.
 
 ## Meaningful verification
-Actual file/stdin parity for one local and selected key: value, complete-empty,
-tombstone and competing current heads, preserving IDs/provenance and all heads.
-Verify absent key is not a store/refusal/global-empty substitute. Preserve raw
-unsupported heads rather than silently filtering them; consumers reject unsupported
+Actual file/stdin parity for one local and selected key: value, complete-empty
+and tombstone. Preserve all local competing current heads; preserve the selected
+projector's existing whole-view refusal for conflicts/unsupported payloads rather
+than manufacturing a successful selected conflict array.
+Verify absent key is not a store/refusal/global-empty substitute. Local inspection
+preserves raw unsupported heads rather than silently filtering them; consumers reject unsupported
 envelope/domain payloads independently. Exercise inclusive bound, EOF/truncation,
 read failure, duplicate top/nested keys, extra nested global/document fields,
 unknown scopes, nil/foreign profile/fact/document and no Store creation on refusal.

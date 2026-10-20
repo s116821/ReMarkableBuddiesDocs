@@ -51,7 +51,11 @@ key under the admitted view. [] means no current heads for that key in that view
 it is not a complete global inventory, proof the fact never existed, or evidence
 of no orphan/historical records. Search is incomplete discovery and may suppress
 conflicts, tombstones or expired facts. Inspect returns heads without search
-ranking, expiry filtering or collapsing concurrent values/tombstones.
+ranking or expiry filtering. Local inspection preserves all concurrent
+values/tombstones. Selected inspection retains stricter existing whole-view domain
+projection: a conflicted selected head or unsupported/foreign fact/custody refuses
+the view, even if another requested fact is individually readable. It does not
+return a partial/conflict array, choose a winner or fall back to local memory.
 
 Generic statuses remain ok/partial/busy/unavailable/unsupported/conflict/
 invalid-input/failed. Do not reinterpret generic non-ok statuses or alternate data
@@ -95,8 +99,10 @@ and a turn requires conversation. Confidence is an integer0..10000; timestamps
 are unsigned64-bit integers and a present expiry is strictly after observed_ms.
 Provenance is author asserted, not source/native verification.
 
-The generic inspector preserves raw heads, including opaque unsupported payloads;
-an ok report is not proof every Value passed Fact decoding. A consumer must reject
+Local inspection preserves raw heads, including opaque unsupported payloads;
+an ok local report is not proof every Value passed Fact decoding. Selected
+projection validates domain facts/ownership/lineage and can refuse the entire
+inspection, including for unrelated invalid registered state. A consumer must reject
 unsupported envelope/domain/payload shapes as an unsupported view, rather than
 silently filter them and collapse a conflict or manufacture an empty result.
 Consumers with narrower numeric/string bounds must refuse unsupported data rather
@@ -133,7 +139,8 @@ Reader/model activation follows.
 
 Source basis: delivered029354f [Key/Inspection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/mod.rs),
 [CLI/report](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/maintenance.rs),
-[selected inspection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/selected.rs)
+[selected inspection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/selected.rs),
+[strict selected projection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/aggregate.rs)
 and storage Envelope/budget source; current project coordination and an existing-
 file decoder probe (internal observations, unlinked). New strict stdin decoding
 is proposed behavior. No tablet/provider observation is used.
