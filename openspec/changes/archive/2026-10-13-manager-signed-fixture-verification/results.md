@@ -52,3 +52,59 @@ The later ManagerPR9 f433/DocsPR17 487 needs Main's [RustPR32](https://github.co
 Requested Main/BYORBSAX physical receipt or exact blocker and Rust30→32/Windows8→Manager9→10→11→12→13→14 plan in REM41 commentd18c8c7c-032c-4deb-aad1-93b869da8f48. PR10 explicitly imports the377 Windows dependency despite its linear f433 Git parent; ancestry alone does not prove delivery. Integration requires owner-coordinated source reconciliation/rebases and affected checks, never a blind squash of cumulative dependent diffs. No merge/tag/release/device/key permission follows from this archive.
 
 Source basis: current immutable review and public exact PR/main reads; actual existing original report/checks; Main's current PR32 test/lint receipts. Full parent delivery remains open.
+
+## Current source preparation and delivery-gate correction
+
+The historical unmet-parent/lint sequence above records the earlier checkpoint.
+Buddy #30 / #32 and their paired Docs have subsequently delivered normally, as
+have shared Manager #9, Windows software #10 and metadata #11. The separate
+physical Windows gate remains unwaived; no physical #8 acceptance or #8 Git
+ancestry is inferred from the qualified source import. This does not grant tablet
+contact or native qualification. The immediate bundle-verification source parent
+#13, current-head checks and final coordinated review/delivery remain required.
+
+Current preparation inherits bundle candidate `834a5e8` and actual main
+`90f3437`. Relative to previous source `6e36aa8`, only the three inherited
+quiet-refresh doc/runtime/test paths change. The observer, its focused guards
+and public guide remain exact to accepted `10263fb8`. The sole CI conflict keeps
+the existing common `test_real_fixture.py` guard command; the file remains exact
+to the preceding candidate. These guards explicitly do not rerun original APK
+cryptographic observations. Inherited bundle producer compatibility is the
+explicit six-file successor documented in #13, not falsely attributed to the
+original #14 source review. No new observer capability or producer change occurs.
+
+Docs incorporates actual main `3eb4174`, retaining the sole conflicting shared
+guide exactly. Only this result and the overbroad task footer are corrected;
+the original proposal/design/delta, canonical signed-fixture requirements and
+actual verification.json report remain unchanged. The completed own archive is
+retained rather than recreated. Original review 5504317404 and its separately
+attributed owner observations/metadata controls remain the evidence basis.
+
+No original-signature rerun, key or package generation, artifact acquisition,
+live release-consumer test or tablet contact is performed by this preparation.
+Signing/index-binding, embedded build/compiler truth, SDK/native compatibility
+and installer/update eligibility remain separate and unqualified. Only normal
+repository/CI/Docs delivery proceeds while the tablet remains with its owner.
+
+
+## Actual delivered-parent reconciliation
+
+Manager #13 delivered as main `1a1ffa028c1dc69a62f1068158939e03e5d648ce`
+and Docs #24 as `e73f0c2b3967595bec5cb3fdd7b13998a35dd670`.
+Manager #14 now merges that actual source parent, preserving the complete accepted
+preparation tree `f346ec56f67072bc5c1704bca3f7370ea57c49a8`.
+The only source conflict was the README observer pointer, retained exactly from
+the accepted candidate. No observer, guard, CI, compatibility or runtime bytes
+changed. Both actual parent main pipelines completed successfully.
+
+This Docs successor incorporates actual main e73f0c2 and removes only 25 stale
+active copies of five completed parent changes; their authoritative main archives
+and canonical specs are preserved. The existing signed-fixture archive, original
+proposal/design/delta, three-requirement/three-scenario canonical specification
+and original verification.json remain unchanged. Only this receipt records the
+new delivery state. Current-head CI and independent final review remain required.
+No original artifact/signature execution, package/key generation, provider call,
+native test or tablet contact was performed.
+
+Source basis: actual GitHub merge and completed main-pipeline metadata, complete
+local Git tree comparison and scoped archive/canonical preservation checks.

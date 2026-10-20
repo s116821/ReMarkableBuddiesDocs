@@ -54,3 +54,31 @@ exact preservation/compatibility review, current checks and final reconciliation
 remain required; this local preparation does not merge either PR. Download is
 not Manager update installation or tablet package qualification. No tablet contact,
 provider/credential operation, original matrix or key/package generation occurred.
+
+
+## Final actual-parent reconciliation
+
+Binary identity #17 delivered normally as Manager main
+272f0c1fe5bf9a270f8ed36564b8e61d3ec85e86 and Docs main
+eb11e03f9ad280552b5c4e68bf957dcc017470ea after final reviews
+5581137325/5581137409 and all current checks passed. Source now includes that
+actual parent. Ten reviewed ancestry conflicts retain accepted preparation
+bodies; complete tree8b246b85f29d062da3f5107bbc100ab7b95e5bdb remains unchanged
+from4a83f66. Original UI/cancellation and nine-file current-producer compatibility
+acceptances remain separately attributed; no implementation or matrix rerun.
+
+Docs incorporates actual maineb11e03. Five completed-parent archive conflicts
+retain authoritative main bytes; the shared-host conflict retains the entire
+accepted download requirement while preserving main's surrounding quiet-refresh
+text. Only25 obsolete active copies of completed parents are removed; their
+authoritative main archives/specifications remain intact. Own six-file archive,
+proposal/design/tasks/two deltas and canonical two requirements/four scenarios
+are exact except this result receipt. Actual fresh current-head CI and final
+independent review remain required; a pushed branch alone is not CI evidence.
+
+No original consumer, protocol, UI, package or cryptographic matrix, key/package
+generation, provider/credential/account/settings or tablet action is repeated.
+Downloaded completion is distinct from self-update installation, authenticated
+package/SDK/native trust and physical qualification. Metadata-admission work
+stays in a separate owned topic; no event-trigger semantics change here.
+Source basis: actual merge/check/review APIs and complete Git preservation.

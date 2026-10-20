@@ -1,5 +1,0 @@
-# Proposal
-
-REM-41 requires independent Manager release downloads with actual tag/source/artifact integrity, not just discovery metadata. The accepted Buddy quarantine can stage real tarball bytes but does not verify Manager's browser/Windows/Linux ZIPs. The current Manager publisher already emits those three ZIPs, provenance.json, manager-complete and embedded build-info.json. Consume that real contract without changing the owned release engine or claiming automatic update eligibility.
-
-Add an explicit manual source-checkout command and a closed Manager profile of the existing bounded fixed-API download engine. Validate actual downloaded bytes and bounded ZIP metadata, reusing the unchanged qualified producer identity validator alongside bounded standard ZIP observation. No extraction to disk, payload execution, UI/IPC, tablet/service/provider/key mutation, version minting, SDK or signed Buddy producer edits. Existing accepted heads/history are preserved. Automatic updater/installation and parent delivery remain separate gates.
