@@ -90,3 +90,30 @@ reconciliation remain required before coordinated source/Docs delivery.
 Production client provisioning, backup namespace/domain/restore and physical
 qualification stay unperformed and separate. No tablet, settings, new resource
 or reverse-engineering action occurs.
+
+
+## Final actual-parent reconciliation
+
+The offline observer parent delivered normally as Manager main
+7c3589e77ba02d665134f96ac096de59fd766f2e and Docs main
+1ca5d722d7353578452e4606be0fc3d48defbf86 after final accepted reviews
+5580938132/5580938630 and all current source/Docs checks passed. Actual-main
+pipelines are observed separately; no new release is inferred from that test
+merge. Auth source now includes the actual parent, with its complete accepted
+preparation tree56794fc1854b01f3021f422ad19f2e23f196e2aa unchanged. The sole CI
+conflict preserves the accepted existing common Drive test command.
+
+Docs incorporates actual main1ca5d72, keeping both conflicting signed-observer
+archive receipt/tasks files exact to authoritative main. Only25 stale active
+parent copies are removed; their completed main archives and canonical specs
+remain exact. The own five-file auth archive and canonical three requirements/
+six scenarios stay unchanged except this result receipt. Final current-head
+CI and independent review remain delivery gates.
+
+Preparation reviews5580913339/5580913969 and original auth reviews retain their
+scopes. No local OAuth/provider/credential operation or original synthetic
+protocol/UI matrix was repeated. Live Google consent/client provisioning,
+backup namespace/domain operations, restore and physical qualification remain
+unperformed. No tablet contact, production account or settings change occurred.
+Source basis: actual GitHub merge/check/review metadata and complete Git tree
+and own archive/canonical preservation checks.
