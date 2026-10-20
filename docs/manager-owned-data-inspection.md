@@ -2,7 +2,9 @@
 
 The bounded REM-42 Manager increment consumes Main's reviewed Rust report_version1
 at source6b1b9fd539c33ced6ab56541ef332ba05e4ed693 /Docs4b425c9559fed5446a730d56bc9e68b6b8e80bb4.
-Those parent PRs remain unmerged; this does not claim the command is deployed.
+The backend is now source-delivered by [Buddy #32](https://github.com/s116821/ReMarkableBuddies/pull/32)
+at `42b5108653563f2437ab793921c298e50bc268dd` and [Docs #14](https://github.com/s116821/ReMarkableBuddiesDocs/pull/14)
+at `24066fba710534fc797b0e6e142bb7cb43f940b2`. This does not claim tablet deployment.
 Main retains Rust/CLI ownership. The archived [Manager change](../openspec/changes/archive/2026-10-19-manager-owned-data-inspection)
 owns only shared Angular UI, report parsing and existing host adapter integration.
 

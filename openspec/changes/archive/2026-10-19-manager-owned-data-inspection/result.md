@@ -61,3 +61,22 @@ integration/lifecycle review, deliver [Manager #9](https://github.com/s116821/Re
 and this [Docs #17](https://github.com/s116821/ReMarkableBuddiesDocs/pull/17)
 as one coordinated delivery. Archive preparation is not a claim that these PRs
 have merged, that the CLI is installed, or that whole REM-42 is complete.
+
+## Backend source delivery and final reconciliation
+
+The backend dependency subsequently merged normally: Buddy #32 at
+`42b5108653563f2437ab793921c298e50bc268dd` and Docs #14 at
+`24066fba710534fc797b0e6e142bb7cb43f940b2`. Earlier unmerged-parent statements
+above describe the historical preparation; the CLI is now source-delivered,
+without any claim that it is installed or executed on a tablet.
+
+This Docs branch incorporates actual main24066fba without conflict, preserving
+Main's inspector, conversation contracts and unfinished work. Only this receipt
+and the public guide's stale backend status change after the accepted closeout.
+The three canonical requirements, six scenarios, original proposal/design/delta,
+and own task/archive scope remain unchanged. Manager stays at reviewed3164623;
+its exact current hosted39359973557 passes all five applicable jobs and skips
+publication. Prior final reviews5580254857/5580255048 remain attributed to their
+exact source/Docs heads. Final Docs current-head checks and review of this small
+receipt are required before the normal coordinated Manager9/Docs17 delivery.
+No tablet, provider, settings or reverse-engineering action is included.
