@@ -72,14 +72,47 @@ These captures are renderer/interaction evidence with explicit synthetic
 connection and semantic reports, not fresh device observations. They do not
 replace actual producer-parser compatibility or retained-package validation.
 
-## Remaining delivery gates
+## Requirement and scenario mapping
 
-The active change is intentionally not canonicalized or archived yet. Ordinary
-exact-head hosted CI must consume and verify retained development/browser/desktop
-artifacts on Linux and Windows, including the packaged helper bytes and actual
-IPC guards. Independent implementation/current-parent review, only this
-capability's canonical sync/archive, final paired review/current checks and normal
-delivery remain required. Actual merged trees and main publication are observed
-separately. Whole REM42, initialization/choice UI, sync/restore/provider/live-model,
-physical USB/native behavior and updater eligibility remain open. No tablet or
-provider was contacted by this consumer work.
+| Requirement | Implementation and qualification |
+| --- | --- |
+| Shared explicit inspection | Fixed Python command and identity-only request; owned SSH-peer and both real host bridge/UI controls. |
+| Bounded reduced authority | saved-mode.mjs private reducer/public validator; actual seven-report corpus, malformed/boundary tests and private-field canaries on both bridges. |
+| Saved intent versus readiness | Typed four-state view, null-mode handling and status/metadata labels; actual producer cases and both renderer fixtures. |
+| Session-bound results | Controller generation plus host identity brackets and explicit connection-refresh invalidation; replacement/cancel/same-ID refresh/disconnect controls. |
+
+All four requirements and seven scenarios are covered. The original source,
+transport, semantic fixture and rendered evidence scopes remain distinct.
+
+## Hosted source qualification and scoped lifecycle
+
+Ordinary exact source run [39389753065](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/39389753065)
+at36040de passes Title, Checks, Build and both Integration jobs; PR Release is
+correctly skipped. Checks includes137 Node tests and the seven new Python controls.
+The completed [Linux job118519223907](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/39389753065/job/118519223907)
+and [Windows job118519223860](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/39389753065/job/118519223860)
+logs were fetched directly through the native job-log API and read. Each contains
+passing development-browser/source-Electron and retained-production-browser/packaged-
+Electron markers, including actual IPC arity/reduced-view refusal and packaged
+helper/module byte checks. Both final integration upload-byte verifications pass.
+No package was rebuilt during Integration or locally for this evidence.
+
+Full independent implementation/active-contract reviews
+[5582319090](https://github.com/s116821/ReMarkableBuddiesManager/pull/28#pullrequestreview-5582319090)
+and [5582320837](https://github.com/s116821/ReMarkableBuddiesDocs/pull/64#pullrequestreview-5582320837)
+were read in full and accept36040de/d4cb80f without blocking findings. The reviewer
+independently matched all seven specimens to the original producer files/manifest
+and inspected both captures. Current active-contract Docs39389944357 passed all
+three checks. These source and review observations qualify this bounded software
+capability; no physical/provider/native inference follows.
+
+Only this capability is synchronized into the new canonical manager-saved-mode-
+inspection specification and moved to its dated archive. All four normative
+requirements and seven scenarios are copied exactly; the historical planned-
+source note remains only with the original delta. Original proposal/design/delta,
+metadata and images remain unchanged. All other delivered Docs entries survive.
+The task checklist separates the qualified implementation/candidate from external
+final lifecycle review, current archived-head checks, normal delivery and actual
+main/publication observations, which remain required. This archive candidate does
+not assert those future events. Whole REM42, mode-changing UI, provider/sync/restore,
+live-model, physical USB/native and updater qualifications remain open.
