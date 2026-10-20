@@ -1,0 +1,11 @@
+# Design
+
+Use memory/{mod,catalog,aggregate,selected,maintenance} from frozen d9aa2f3, omitting context module registration. Add its exact ordered SelectedAdmission::with_gates helper. Adapt the accepted query stdin seam from feeaf475 without later Reader publication/composed dependencies. Other source changes are limited to memory configuration validation, lib registration and early mutually exclusive CLI routing before model/device/worker initialization. No new dependency or storage engine is intended.
+
+Acquire a delivered OrdinaryModeLease for absent/LocalOnly mode or a SyncModeLease for the exact selected SharedGroup group/binding before domain authority. IsolatedBackup and foreign modes refuse. Retain the guard through actual stdout completion and failure cleanup, including reports without pending selected data. Preserve the independent legacy-data lease; reject incompatible legacy-sync configuration. Do not grant mode selection, publisher, network or worker authority. Store::open can perform normal recovery writes and is not filesystem-immutable inspection.
+
+Preserve UUIDv5 identity, immutable claims, author-asserted provenance, revisions/CAS/tombstones and selected catalog/aggregate/raw-head custody. Receiving limits remain cumulative 64 aggregates/4096 work/8MiB metadata/32MiB media; Store publication limits are separate. Preserve sealed Report::write_to currentness and no retry or second report after partial output.
+
+Exact dash is query-only, accepts at most inclusive1MiB through EOF, and leaves deadlines/cancellation to the caller. Nonquery dash refuses before input/config/Store. Backend report cap remains8,454,144 bytes; Manager may reject at its smaller cap but cannot truncate into success. Query returns distinct complete-empty, partial, Busy, unavailable, unsupported and invalid input outcomes. No profile discovery or arbitrary remote-path service is introduced.
+
+Validation uses actual CLI local/selected lifecycle, exact file/stdin parity and the six Manager parser cases, mode lifetime and release, stale selected state, budget/preflight and prefix-writer failures. Offline tests do not qualify the retained Reader live gate or native behavior.
