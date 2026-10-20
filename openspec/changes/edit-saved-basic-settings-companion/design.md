@@ -1,11 +1,42 @@
-# Companion design constraints — implementation pending
+# Concrete shared editor design — implementation pending
 
-## Why internal preview exists
-The existing general view intentionally strips/discards its private hash and grants no edit authority. New explicit editor inspection creates its own host-owned revision context. Save first asks the producer to prepare an exact target digest from the ORIGINAL context and patch; it never silently refreshes the base. The host privately retains that immutable packet before its single apply dispatch. This enables read-only exact desired-file reconciliation after a lost reply without exposing full private Config or adding persistent receipt machinery. It is internal work under one Save, not another user confirmation.
+The existing general inspector discards its private digest and cannot authorize
+editing. A new explicit Begin pauses polling first, then privately inspects the
+original file through the new fixed producer selector. It creates a120s ready grant.
+One Save internally prepares and applies at most once under one13s overall budget;
+it never pauses again, refreshes conditions or asks a second confirmation. Producer
+owns exact full-file serialization; the host verifies original private hash/intent/
+projection linkage, not a reconstruction of Config from three fields.
 
-Reconciliation can establish that the complete desired file is currently observed. It cannot prove which process published it, historical operation identity, runtime activation or that a failed write rolled back. Nonmatching/current-base bytes leave the original attempt unknown. A fresh explicitly requested edit is a distinct intent with a fresh observed revision, never automatic replay of the old patch.
+Three finite controls keep a dirty-field set; origins remain visible. No saved
+override maps to clear only after an explicit gesture; an explicit remove control
+handles declared-null even when the selector already appears unset. Untouched keys
+remain absent from the patch. A no-change producer result preserves original bytes.
+Saved readback is separate from restart/runtime; no service/provider buttons follow.
 
-## Shared host lifetime and UX
-Use narrow identity-only editor inspection, opaque edit reference plus exact three-key patch for Save, and opaque reference for explicit status. Private base/path/target hashes and intent never enter HTTP/IPC/public state. Preserve current saved-configuration inspection unchanged. Reuse existing host/private-custody and queued-cancel patterns, with before-I/O forget invalidation and after-await generation checks. Do not replace the observer receiver or make internal run cancellation a second external event.
+Private original prepare bytes and apply packet are integrity-protected in memory
+before possible dispatch. One active slot and at most8unresolved records are bounded;
+reserve before dispatch, never evict an unresolved original for a fresh Save. A new
+Begin is distinct, not replay or implicit resolution. Read-only status uses the old
+exact packet and original target, reports only desired-file observation, and later
+invocation refusal cannot settle it. No host-restart recovery guarantee/persistence.
 
-Ready edits invalidate on refresh/navigation/other maintenance/identity change. Possibly dispatched apply retains original packet and unknown status; later status-command failures cannot settle it. No persistence or automatic reapply after host restart. Consumer precode must concretize bounded retention and original-versus-later invocation results before API/code. UI has current saved values/origins, no-saved-override choices, one Save, neutral pending text, Cancel, and explicit status only when needed. No automatic checking loop, provider test, service button or technical hash/packet display.
+A host-memory-only retained action lists original opaque references/safe target IDs
+for reload recovery without another inspection or automatic remote status. Local
+snapshots cannot renew a ready grant. A cancel of an old reference cannot kill newer
+work. Explicit status/remote work still requires verified current original identity.
+
+Both before-I/O directions matter: wrapped public maintenance invalidates ready
+editor/forget references, and direct forget prepare/confirm/receipt/cancel paths call
+the shared hook too. Raw observer receiver stays original so internal run cancellation
+does not invalidate the same Save. Unknown originals remain private/retained. Every
+await and final public bridge checks host generation/target; navigation/refresh even
+with unchanged IDs invalidates ready views. Existing queued cancel ordering remains.
+
+contract.md is the exact proposed API/reduction/phase/cap/lifetime authority for this
+consumer. Original accepted producer wire is immutable. Source implementation waits
+for independent precode review. Verification consumes original45reports without a
+producer rerun, separates synthetic faults from captured bytes, exercises real HTTP/
+main-frame IPC and normal dev/retained browser/Electron across both OSes, then own
+canonical sync/archive in the linked delivery. Source basis is actual delivered
+f43627ba/5f2e7175 plus accepted82717f; all new design choices are proposals.
