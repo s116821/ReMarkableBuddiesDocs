@@ -132,3 +132,21 @@ Buddy8fc5d6cc/Docsdfdf4317 accepted only additive inventory in independent revie
 - [x] Prepare concrete account/application/operator/namespace/budget/evidence/cleanup decisions and primary API basis without live resources.
 - [ ] Obtain coordinator review and explicitly owned disposable binding before executing the live-provider gate.
 - [ ] Execute bounded actual adapter contention/acknowledgement/client visibility checks and retain failures; do not infer native/domain/production acceptance.
+
+## October 19 bounded delivery reconciliation
+
+This parent change remains **active and unfinished**. The ten implemented API
+requirements were synchronized verbatim into the canonical specification. The
+nine end-to-end requirements remain in the active delta; no archive is manufactured
+and no worker/provider/domain/status/restore or native task is waived. Historical
+unchecked mixed-scope tasks above remain open wherever their broader integration
+is unfinished. The exact accepted slices and pending candidate gates are recorded
+in [bounded delivery status](implementation-status.md).
+
+- [x] Reconcile existing source, repair, mode and fixture reviews without rerunning unchanged qualification.
+- [x] Prepare actual-main integration preserving Conversation/schema2 and ExportAssociation/schema2 in both runtime validation and the offline contract.
+- [x] Synchronize only the ten implemented and previously accepted API requirements; retain all nine unfinished end-to-end requirements as active.
+- [x] Complete changed-candidate compatibility checks and exact-head hosted checks.
+- [x] Obtain independent review of only the schema/contract resolution, main preservation and bounded lifecycle delta.
+- [ ] Coordinate normal paired squash delivery and verify actual-main CI/publication.
+- [ ] Finish the remaining end-to-end requirements before final parent sync/archive.

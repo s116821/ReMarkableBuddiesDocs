@@ -15,3 +15,32 @@ Exact Buddy23a9e2afd4fecaab759359c6b8248dd1a70c86b1 accepted by review https://g
 SourceCI38491670025 completedSUCCESS at hostedmerge10efcde2151c7ac773c91f33d7980d90b82833ca/Rust1.99.0, all six layout tests/format/strictClippy/ARMv7+AArch64 compilation pass. DocsCI38491657114 completedSUCCESS at mergeffb0b4b2831eb8aecb0a1ae60ec54806833bfa23,12tests perplatform/19guidance126preserved/strictOpenSpec22. Hosted evidence/counts differ from owner localRust1.98.1 six tests/Docs17strict18guidance. No native or cumulative parent acceptance inferred from hosted compilation.
 
 Canonical sync/archive closes only pure conversation layout projection (two requirements/four scenarios). About/status/native prepend/overflow/input/cancel/undo/current admission/REM25/37/wholeREM38 remain unfinished. Source/render/workflow/ledger/version/SDK bytes unchanged during documentation lifecycle.
+
+## Delivered-parent reconciliation
+
+Current source `69faff5de0115294cfe1bce1dc8af6e21e637a2d` normally integrates
+retained5184d4d with delivered main42b5108. Its effective child is exactly three
+paths: the layout module and six-test file are byte-identical to accepted23a9e2af;
+current lib.rs adds only their public module registration. Every other delivered
+source entry, including Cargo/SDK, ledger, Reader and release tooling, is exact.
+ContextView/Turn/Role and storage UUID/bounds are already delivered APIs; pending
+memory/gesture/Reader-runtime work is not a dependency or part of this increment.
+
+The paired Docs integration uses delivered maine73f0c2. Its canonical two
+requirements/four scenarios and original archived proposal/design/delta/tasks
+remain unchanged; only this result receives a current receipt. Every unrelated
+main entry is preserved, including unfinished sync work. Historical inherited
+provider proposal remains preserved on its original branch history rather than
+being promoted as a dependency of this pure layout change.
+
+Current Windows six focused layout controls pass with zero ignored tests; strict
+all-target/all-feature denied-warning Clippy, locked no-default library, format
+and diff checks pass. Docs12 tests,25 guidance files/126 preserved source blobs
+and strict OpenSpec44 items pass. Original reviews5511820811/5511820909 and
+historical local/hosted results remain attributed to their original revisions.
+Current exact-head hosted checks and independent reconciliation review are
+pending. No model, native rendering, tablet contact or reverse engineering ran.
+All whole-renderer/native/current-admission and wider issue limits above remain.
+
+Source basis: complete immutable/index comparisons against delivered parents,
+actual API inspection and current focused source/Docs check output.
