@@ -47,3 +47,13 @@ tablet, reverse-engineering, signer or old provider fixture replay occurred.
 
 Source basis: exact current Git/API dependency comparisons, original accepted
 artifacts, canonical delivery receipts and current focused source/Docs checks.
+
+## Actual layout-parent delivery
+
+The delivered layout source5e9defdf and Docs47eed0c are now normally integrated
+as actual main parents. The only source conflict was the public module list;
+both delivered layout and the catalog registrations are retained. Catalog module
+and tests remain exact accepted bodies, with the same three effective child
+paths over current main. All other source and Docs parent entries remain exact.
+No unchanged local test matrix was repeated for this mechanical reconciliation;
+new normal source/Docs CI and bounded parent-preservation review remain required.
