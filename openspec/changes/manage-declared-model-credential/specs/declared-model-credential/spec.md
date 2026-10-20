@@ -18,7 +18,7 @@ Secret text and secret-derived fingerprints SHALL remain confidential host trans
 - **WHEN** pasted values contain controls/Unicode or output fails after a prefix
 - **THEN** exact accepted bytes remain unchanged, reports contain no secret text, no second report/replay occurs and custody is retained until consumption ends.
 
-#### Scenario: Busy, non-Unix or unsafe filesystem
+#### Scenario: Busy, non-Linux or unsafe filesystem
 - **WHEN** current ownership, platform privacy/durability prerequisites or original admission cannot be established
 - **THEN** bounded truthful refusal occurs without fallback, initialization, credential discovery or provider execution.
 
