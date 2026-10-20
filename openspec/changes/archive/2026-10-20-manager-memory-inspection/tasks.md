@@ -8,6 +8,6 @@
 ## Verification and delivery
 - [x] Verify identity/shape/bounds/status/tombstone/conflict/empty/numeric and stale-response controls; prove unchanged unrelated source entries.
 - [x] Obtain attributed actual producer stdin specimens for local competing/opaque heads, local/selected values/tombstones/empty and constructible selected domain-invalid whole-view refusal; distinguish a rejected conflict constructor from actual CLI output; test compatibility; keep synthetic peer/UI evidence separate.
-- [ ] Verify focused transport plus browser/Electron development and retained-package controls in existing ordinary Linux/Windows CI; inspect UI captures.
-- [ ] Update public guide/manual equivalents and verification, obtain source/contract review, sync own canonical capability and archive own completed change.
-- [ ] Complete final exact-head review/CI and coordinated normal delivery after producer qualification; observe actual main/publication without native/provider claims.
+- [x] Verify focused transport plus browser/Electron development and retained-package controls in existing ordinary Linux/Windows CI; inspect UI captures.
+- [x] Update public guide/manual equivalents and verification, obtain source/contract review, sync own canonical capability and archive own completed change.
+- [x] Prepare the exact-head final paired delivery packet with current source CI/review evidence and explicit external gates for qualified producer delivery, composed final review, normal merge and actual-main/publication observation; do not claim native/provider qualification.

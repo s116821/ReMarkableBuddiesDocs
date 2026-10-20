@@ -21,5 +21,6 @@ remote staging, service action, provider operation or tablet qualification follo
 Implementation checkpoint: accepted by precode review5582813325 and implemented
 in paired Manager29. Full implementation reviews5583174872/5583175955 accepted
 eeb8de5/a454aea. Captured producer corpus and local compatibility are verified;
-current hosted package gates, qualified producer delivery and final own lifecycle
-remain pending. This proposal is retained as historical motivation/scope.
+current source hosted package gates pass and own canonical sync/archive is complete.
+Qualified producer delivery, final composed review, normal merge and actual-main/
+publication observations remain external delivery gates. This proposal is retained as historical motivation/scope.

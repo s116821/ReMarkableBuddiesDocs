@@ -1,4 +1,10 @@
-## ADDED Requirements
+# Manager single-fact memory inspection
+
+## Purpose
+Inspect current revisions of a fact selected from global search in both companions,
+preserving all admitted heads, whole-view refusal and request-bound freshness.
+
+## Requirements
 
 ### Requirement: Deliberate single-fact inspection in both hosts
 The Manager SHALL offer the same explicit read-only current-head inspection for a
@@ -64,9 +70,3 @@ reports, synthetic transports/UI and physical/provider/native qualification.
 #### Scenario: Host fixture qualification
 - **WHEN** the paired increment is verified for delivery
 - **THEN** actual attributed producer reports feed the consumer parser, both host distributions exercise real guards and retained packages, and synthetic success does not become tablet/provider/native qualification.
-
-Source traceability: producer Docs66 contract at86bb4c0a594666b98135d6552fd3504a488af4a7;
-current public memory search/host-maintenance guidance and selected-fact coordination.
-Implementation is present in paired Manager29; current hosted package gates,
-qualified producer delivery and final own lifecycle remain pending. This traceability
-checkpoint is retained with the change, not copied into the canonical requirement body.

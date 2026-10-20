@@ -1,6 +1,7 @@
 # Current implementation checkpoint
 
-This is an active consumer change, not completed lifecycle or release acceptance.
+This record preserves the implementation checkpoints and completed own lifecycle.
+Final composed review/merge/publication remain explicitly separate external gates.
 Initial source: Manager29 `104741099768ff3c16fb52ac81c840d51bbe2b0b` over actual main
 d4574f7872b65f71b7ef0bf1c2f9199e7604207e. Accepted precode review5582813325
 covers a509cf8 and exact producer contract86bb4c0. Main owns producer code and qualified delivery remains pending. Actual producer
@@ -25,7 +26,8 @@ corpus from candidate4e2f8dec is now received and verified below.
   Busy/unsupported, raw-private response refusal, cancel/new-search/same-ID refresh/
   disconnect. Real helper Host/origin/session and Electron main IPC arity/validation
   stay installed. Only transport methods/reports are substituted. Production/browser
-  package and native-host CI remain pending; local checks are not their substitute.
+  package and native-host CI were pending at this initial local checkpoint; their
+  current completed evidence is recorded below, separately from local checks.
 
 ## UI evidence and test repair
 
@@ -44,10 +46,8 @@ headless display is the existing offscreen Xvfb wrapper, stopped on completion.
 
 ## Remaining gates
 
-Inspect ordinary Linux/Windows hosted development/retained-package results at the
-current source head, sync own canonical
-requirements and archive only the completed increment, then final review/current
-CI and coordinated normal delivery after qualified producer delivery. Observe actual
+Qualified producer actual delivery and composition on its actual Docs base, final
+composed-tree review/current Docs CI and coordinated normal delivery remain. Observe actual
 main and publication separately. Whole memory/Manager issues stay open; no tablet,
 provider, model, service control, restore, native or physical qualification is claimed.
 
@@ -72,8 +72,9 @@ distinct. Selected-after-refused-conflict is exactly the healthy unchanged
 tombstone report; unrelated-domain-refusal is the actual unavailable/true CLI
 report. No successful selected conflict array is fabricated. Production code is
 unchanged from1047410; only corpus/control/public evidence guidance is added.
-Qualified producer delivery, current hosted consumer package gates, independent
-reviews and own full lifecycle still remain.
+At this corpus checkpoint, qualified producer delivery, hosted package gates,
+independent reviews and own lifecycle still remained; later completed steps are
+recorded below.
 
 ## Independent implementation review
 
@@ -84,5 +85,27 @@ the current parser against the retained corpus, read all25 source paths/eight
 Docs artifacts and inspected both images.142 source/485 Docs unrelated entries
 remain exact. This accepts implementation and active contract, not future hosted
 package/native completion. Superseded104 CI39397530296 is confirmed canceled;
-initialcc14 full-success run39397454158 remains historical only. Current consumer
-run39399900062 at eeb8de5 is still running; no replacement for its required gates.
+initialcc14 full-success run39397454158 remains historical only. At the implementation review checkpoint consumer run39399900062 at eeb8de5 was
+still running; its completed native evidence is recorded below.
+
+## Completed implementation and prepared lifecycle
+
+Current source run39399900062 at eeb8de5 is fully SUCCESS: Title/Checks/Build and
+both ordinary Integration jobs pass; PR Release is correctly skipped. Direct native
+job logs118553304898 (Linux) and118553304819 (Windows) each show all four feature
+markers: development browser, source Electron, retained production browser and
+retained packaged Electron. Each final upload-byte preservation step passes. Real
+helper/IPC validation and packaged module/helper-byte assertions remain installed.
+Current Checks118551794668 includes146 passing Node controls and7newPython tests.
+No local package generation or completed matrix replay was used.
+
+Four requirements/ten scenarios are synchronized verbatim to the new own canonical
+capability, without historical traceability/proposed-checkpoint prose. Only this
+completed eight-file change is archived. The ten checked tasks describe completed
+implementation/verification/lifecycle preparation, including a prepared final packet;
+they do not claim the future externally observed review/merge/publication happened.
+Original UI images and metadata remain exact. Producer69/Docs66 final source/
+lifecycle reviews and actual delivery must be checked, then compose this Docs
+branch with that actual main, inspect current final checks/full reviews, perform
+normal exact-head delivery and observe actual-main/publication separately. Whole
+REM24/42 and native/device/provider gates remain open.
