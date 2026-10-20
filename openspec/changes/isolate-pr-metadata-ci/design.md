@@ -39,5 +39,15 @@ check-run IDs/names/conclusions to prove the failure remains authoritative. Also
 prove invalid title then correction on unchanged source starts real Checks after
 title passes. Preserve expected failures; do not relabel reruns or waive gates.
 
+The hosted negative may use one explicitly temporary failing shell step at the
+start of this owned candidate's Checks job, before costly suites. An invalid
+title must first block it; correcting only the title must run it and produce a
+real failed Checks result. A subsequent body-only edit must leave that exact
+failed check ID/conclusion intact. Remove only this owned control step in a new
+source commit, then require the ordinary final source pipeline to pass. Preserve
+the intermediate commits and actual failures, and prove the final diff contains
+no control step or application-source edits. Do not manufacture check results,
+edit a feature candidate or replay completed broad suites for this experiment.
+
 Existing Buddy layout/catalog deliveries continue independently. No source,
 provider, native, signing or artifact-generation test is repeated for this plan.
