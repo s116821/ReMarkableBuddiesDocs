@@ -87,7 +87,7 @@ Current deletion does not erase historical data or authorize native deletion.
 For supported value heads, media_descriptors is empty and payload is the existing
 Fact: key, claim, value, subject, tags, provenance, confidence_basis_points,
 observed_ms and optional/null expires_ms. Claim is canonical nonblank ASCII-lowered
-whitespace-normalized text <=128 UTF8 bytes. Value is nonblank <=4096 bytes,
+whitespace-normalized text <=128 UTF8 bytes without control characters. Value is nonblank <=4096 bytes,
 subject <=128 bytes, up to16 nonblank tags <=64 bytes each; text has no NUL.
 Provenance has basis:user-confirmed|source-assertion|inferred, nonblank description
 <=512 bytes, and nullable conversation/turn/source UUIDs; nonnull IDs are nonnil
@@ -115,8 +115,8 @@ match that exact profile/scope/fact. actor_id is writer metadata, not the profil
 
 Local inspection refuses more than4096 matching heads or more than8388608 encoded
 record bytes; each envelope has its existing1048576-byte bound. Selected reads
-retain their shared charged budget (64 sources,4096 records,8MiB record and32MiB
-metadata budgets) and whole-view validation. Output's separate8454144-byte cap
+retain their shared charged budget (64 aggregates,4096 work items,8MiB metadata
+and32MiB media) and whole-view validation. Output's separate8454144-byte cap
 also applies. Bound/refusal must not return a truncated set as complete heads.
 
 ## Currentness and authority
@@ -131,7 +131,9 @@ connection/boot/request generation changes, and never use search or detail as an
 unconditional future write permission. No restore/provider/native authority or
 Reader/model activation follows.
 
-Source basis: delivered029354f memory/mod.rs, memory/maintenance.rs,
-memory/selected.rs and storage/types.rs/mod.rs; current Manager request/coordination
-and its explicit compatibility questions; the separately recorded existing-file
-decoder probe. No saved memory or tablet/provider observation is used.
+Source basis: delivered029354f [Key/Inspection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/mod.rs),
+[CLI/report](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/maintenance.rs),
+[selected inspection](https://github.com/s116821/ReMarkableBuddies/blob/029354f335457cc08e3823c972109f839d20aec0/src/memory/selected.rs)
+and storage Envelope/budget source; current project coordination and an existing-
+file decoder probe (internal observations, unlinked). New strict stdin decoding
+is proposed behavior. No tablet/provider observation is used.
