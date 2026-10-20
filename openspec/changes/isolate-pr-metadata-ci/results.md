@@ -39,12 +39,40 @@ Final sourcec3946d7a77279905e9b246dfc4963684a9ed7ca6 removes only the owned
 witness in a new commit. Its entire tree7bb857c2d8cb850fea972a0cea667d1a6754654c
 equals product6842037 exactly; no application-source/control fixture remains.
 Original negative commits and failed runs remain preserved. Final ordinary
-source CI, independent implementation review and postmerge stage proof remain
-required; the metadata-only success is not passing application validation.
+[source CI39375790559](https://github.com/s116821/ReMarkableBuddies/actions/runs/39375790559)
+passes Title, Checks, Build and Integration, with PR Release skipped. Independent
+source/active-contract reviews5581166797/5581167003 accept this exact candidate.
+Postmerge stage proof and coordinated lifecycle remain required; metadata-only
+success was not substituted for passing application validation.
 
-Manager and SDK are still with their existing owner and require their own
-implementation/specification/evidence. SDK's flat graph must isolate every
-omitted core context, including Release. No permissions, branch settings,
+## Qualified owner implementations
+
+Manager27 eda507ec535ee1ca556eaba5ed03bf9e26e6eb15 is independently accepted
+by review5581318529. It preserves all135 other delivered download-UI main783a91b
+entries including pipeline.yml, adds only the existing-title classifier and
+distinct omitted Checks/caller names, and preserves explicit failure/main guards.
+Its unchanged witness1d6c1dbc has actual invalid-title39377303958, corrected-title
+39377414358 and body-only39377542326 runs. The corrected title executes normal
+Checks118478604130 and fails at early exit19; body-only leaves that exact failed
+normal check authoritative with no application children. Final ordinary
+run39378103739 has passed Title/Checks/Build; Linux/Windows Integration is running.
+
+SDK29 7ce5910bd525304704c743db868e7cb9ae9a0219 is independently accepted
+by review5581318413. Its four-file precode11265ffd precedes implementation.
+Only ci.yml, reusable pr-title.yml and the existing fixture implement admission;
+all203 other delivered entries remain exact. Classification crosses both reusable
+output levels and direct title edges; all five omitted flat core contexts are
+distinct. Unchanged witness82a6f5bd has invalid-title39377147522, corrected-title
+39377298105 and body-only39377412636. Normal Checks(Linux)118478239212 fails at
+exit19 after correction; body-only retains that exact failure and omits all five
+core contexts under observed literal names. Final ordinary39378129041 passes
+nested Title, Linux Checks, Windows staging, Build and Integration; PR Release
+is skipped. The SDK owner retains its own canonical specification/lifecycle.
+
+Both final sources remove exactly their owned four-line witness. Original failures
+remain preserved; neither owner's evidence is inferred from Buddy. Current final
+validation, lifecycle and postmerge receipts remain separate delivery gates.
+No permissions, branch settings,
 source concurrency, artifact bytes, publisher or version policy changes follow.
 No provider, tablet, reverse-engineering or signing operation was performed.
 
