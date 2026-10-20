@@ -71,3 +71,30 @@ No original parser/SSH/UI/executable, cryptographic or provider matrix, key/pack
 generation, account/credential operation or tablet contact is repeated here.
 Source basis: current exact-source reviews, Git tree comparisons and normal
 repository checks; original independent executable evidence remains attributed.
+
+
+## Final actual-parent reconciliation
+
+Personalization #16 delivered normally as Manager main
+10bb5fb55c496db1c7e4ed5b3226ed8a31c96589 and Docs main
+f14a95f675e8bf0177f9263ed6c56423c4a8eb14 after final reviews
+5581094101/5581094211 and all current source/Docs checks passed.
+This source now includes that actual parent. Thirteen reviewed ancestry
+conflicts retain accepted preparation bodies, with complete source tree
+bbd8713d4a0be5f646e1fd31fa28f8e2576ce145 unchanged from d63bcfe.
+No runtime, parser, workflow, dependency or test bytes are changed.
+
+Docs incorporates actual mainf14a95f, retaining four conflicting completed-parent
+archive receipts/tasks exactly from authoritative main. Only25 stale active
+copies of five completed parent changes are removed; their main canonical and
+archive bodies remain intact. All actual-main entries, the own five-file archive
+and canonical three requirements/five scenarios are preserved; only this result
+receipt changes. Current-head CI and final independent review remain required.
+
+Original P2 finding5508163460, repaired executable evidence/acceptance5508357763
+and preparation5581017510/5581018224 retain their scopes. Binary version remains
+a self-report, not running-process, authenticated package/compiler/SDK provenance,
+compatibility or installation eligibility. No original executable/parser/SSH/UI
+or provider matrix, key/package generation, credential/account/settings or tablet
+operation is repeated. Broader physical/native/runtime/updater obligations remain.
+Source basis: actual normal merge/check/review APIs and complete Git preservation.
