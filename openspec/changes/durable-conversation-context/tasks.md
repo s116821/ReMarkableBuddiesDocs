@@ -21,6 +21,9 @@
 
 ## 3. Real Reader integration
 
+- [x] 3.21 Review and implement the bounded [runtime compilation boundary](runtime-compilation-boundary.md) at owning PR30, retain recording guards/tests and public read-only/storage behavior, run affected checks and strict lint, then reconcile dependent PR32 without enabling unqualified runtime effects. Bounded source/Docs and required checks are verified; production integration and whole lifecycle remain open. Descendant reconciliation is tracked separately below.
+- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see runtime-stack-reconciliation.md.
+
 - [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
 - [x] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review. Fourteen controls pass in the exact committed source; strict lint and broad native/lifecycle gates remain open.
 
@@ -45,3 +48,21 @@
 - [ ] 5.2 Sync only this change's verified canonical requirements, preserving unrelated capability blocks; archive only after completed verification.
 - [ ] 5.3 Prepare linked Docs/Rust Summary-only PRs, exact revision pair and evidence comments; inspect required CI and bot feedback, obtain independent final review and squash merge in coordinated order.
 - [ ] 5.4 Verify applicable application release provenance without adding custom release logic; report downstream REM-25/38/39/42/43 and REM-35 gates accurately.
+
+## October 19 existing-stack delivery reconciliation
+
+This parent change remains active and unarchived. Only the three completed
+selected context/capture/binding inspection requirements are synchronized verbatim
+to canonical conversation-context. The other nine conversation requirements and
+all Reader/native/platform/simulator deltas and unfinished tasks remain active.
+The source candidate includes the existing unbound Orchestrator/Ledger composition,
+historical evidence and fact-only outcomes; it is not described as a three-API
+source patch. See [complete delivery scope](delivery-reconciliation.md).
+
+- [x] Prepare normal integration of the qualified storage candidate and preserve current main SDK/release/export contracts without changing historical provenance constants.
+- [x] Synchronize the three completed API requirements only; retain unfinished source/runtime/qualification obligations.
+- [x] Reconcile the delivered storage actual-main revision before final source qualification or merge.
+- [x] Obtain independent review of the complete production behavior delta, original coverage, conflict resolutions and bounded lifecycle.
+- [x] Complete current exact-head hosted checks and final bot/status review.
+- [ ] Coordinate paired normal squash and verify actual-main CI/publication.
+- [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
