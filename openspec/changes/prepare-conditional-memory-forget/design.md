@@ -22,6 +22,26 @@ the writer or change existing inspect/file output behavior. Selected preparation
 reuses its freshly admitted whole-view pins and byte-integrity seal. Meaningful
 controls must cover local as well as selected stale/forged/prefix output.
 
+## Atomic local first publication
+The original ordinary mode lease does not prevent Store::restore from replacing
+inner.generation. First confirmation therefore needs a NEW narrow Store conditional
+publication entry point holding ONE mutex guard continuously through original
+Store generation, exact parent Envelope content/head-set validation and actual
+publication. A precheck followed by LocalMemory::forget/Store::commit is unsafe
+and is prohibited. Factor a private already-locked publish helper if necessary;
+never reacquire the mutex recursively or change the older file entry point's
+behavior. A replacement-generation/same-head test must exercise this exact gap.
+
+## Historical proof boundary
+The logical original operation is actor/Key/operation/parents/tombstone, plus
+content-hash comparison against every original parent Envelope. Selected direct
+predecessor matching adds original accepted target context. Current config/mode,
+catalog and other-aggregate checks are conservative present admission, not proof
+those fields were checked when the historical operation originally committed.
+No persisted full prepared-packet fingerprint exists, and no receipt may claim
+that it does. A matching manual/file-origin transaction can acknowledge that same
+logical deletion without claiming it used this new preparation protocol.
+
 ## Risks and verification
 Own successful mutation changes target selected pins; blindly checking old pins before receipt lookup breaks legitimate unknown-outcome reconciliation. Conversely, fresh substitution would permit a second mutation after later values. Exact original envelope/predecessor matching must precede any new mutation path; receipt-only never falls through. Original mode/config/store changes refuse reconciliation rather than quietly moving it. A cloned actor/mode tree is not sufficient host target identity.
 
