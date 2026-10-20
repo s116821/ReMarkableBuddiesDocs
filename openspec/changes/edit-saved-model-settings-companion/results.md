@@ -2,7 +2,7 @@
 
 Source basis: Manager33 1aa4980ea03fa784ee79f74ebba8db2a7156e8e9,
 including explicit declared-null UI coverage, owned HTTP decode-buffer clearing and
-the reviewed raw-newline correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
+the raw-newline review correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
 15e34308f77e3c4591d257ea34917b12a2631b6b/review5589113102 and actual
 Docscc4cadf03deb285fcbbae43298a7057098f75478. This is an implemented active
 candidate, not final review/archive/merge or broad/native qualification. The basic
@@ -157,9 +157,9 @@ Source29paths (13existing/16new) preserve196other entries from actual8df base.
 Basic/general/forget protocol/coordinator/transport files, original old corpora,
 dependency lockfile and tag-only release/version machinery are unchanged. Optional
 new model API adds no service, file fallback, provider/prerequisite or SDK behavior.
-Docs preserves all570actualcc4 entries and expands only its own active consumer.
-The completed ordinary-export actual Docs013d13 must be composed normally before
-final delivery, preserving all its seven artifacts; no speculative branch merge.
+Docs normally composes delivered actual013d13a0304f787600ee23eae9186da8748276a2,
+preserving all577actual-main entries including its seven ordinary-export artifacts.
+Only this own11file active consumer is added; no speculative producer branch merged.
 
 Current both-OS hosted development/source/retained-package checks and independent
 implementation review remain open. Only after those pass: own4requirements/11scenarios
