@@ -192,3 +192,55 @@ data/false readback/unverified activation and exact phase outcome must satisfy t
 accepted producer table. A refusal from a later status call is invocation evidence
 only: original possible publication remains unknown/unresolved. An explicit desired
 file match may retire that diagnostic, without claiming historic publisher/runtime.
+
+## Shared I/O ownership and old diagnostic status
+The active editor grant and active remote-I/O slot are separate concepts. One
+host-private synchronous ownership record identifies the current remote invocation
+with a unique token, coordinator lane, original reference and operation. Begin,
+whole Save (prepare through apply), editor status, and direct forget prepare/
+confirm/receipt participate in this same single I/O slot. Acquisition before any
+await either installs that unique token or returns a sanitized busy invocation
+without remote I/O, cancellation or changes to the owner/original evidence. No
+implicit queue/retry, condition refresh or second slot is introduced. Release in
+finally is conditional on the SAME token still owning the slot; an old completion
+cannot release a newer owner's work. Existing explicit global refresh/cancel paths
+revoke/invalidate owner generations under the current cancellation contract; they
+are distinct from cancelling a retained reference that no longer owns I/O.
+
+Editor action=status is remote I/O, unlike editor retained and MemoryForgetHost
+status (host-memory snapshots). For an older diagnostic it first validates original
+reference/current identity, then acquires the shared I/O slot. If newer Save/Begin/
+forget/status owns it, return busy for this invocation, preserving that newer work
+and the older unknown record; do not call observer.run/cancel or the cross-operation
+invalidation hook. If acquisition succeeds while another editor grant is merely
+ready, invalidate that ready grant BEFORE status dispatch, preserving old uncertain
+packets. Status uses the original diagnostic packet, never the ready editor's base.
+Its response cannot recreate the invalidated grant or replace a newer context.
+
+## Ownership-aware targeted cancellation across both coordinators
+Extend MemoryForgetHost.request(cancel), including the existing unconditional raw
+observer.cancel path, as well as the new editor cancel. A retained-reference cancel
+may call raw observer.cancel only when its coordinator lane AND exact reference
+AND active invocation token own the current shared I/O slot. Then invalidate only
+that owned operation with correct pre/post-possible-dispatch meaning and retain any
+original unknown packet. A cancel for an old/nonowning forget OR basic reference
+returns only that record's local invalidated/unknown state; it must neither call
+raw observer.cancel nor run the external-I/O invalidation hook against newer work.
+Ready cancellation with no owned I/O simply retires that ready grant locally.
+Unknown original evidence is not settled or evicted by a nonowning cancel. Merely
+adding a shared before-I/O invalidation hook does not satisfy this ownership rule.
+
+Required actual guarded race controls run in BOTH browser HTTP and Electron main-
+frame IPC fixtures. First retain an unknown forget, then start a distinct basic Save
+and hold its apply transport pending. Send cancel for the OLD forget reference;
+assert no observer cancel or newer generation change, release the one new apply and
+require its verified result. Unknown forget stays retained; its later explicit
+receipt uses byte-identical original input, not the settings packet. This proves
+cross-coordinator stale cancellation cannot kill the new owner. Keep actual guards;
+only the lower synthetic transport/report is controlled, no tablet execution.
+
+Also exercise old editor status against a newer in-flight Save (busy, no cancel/
+replacement, original unknown unchanged), and against an idle ready editor grant
+(status acquires the single slot and invalidates ready before I/O, so that old
+ready reference cannot Save). Both hosts must preserve original diagnostics,
+conditional token release and final generation checks through these races.

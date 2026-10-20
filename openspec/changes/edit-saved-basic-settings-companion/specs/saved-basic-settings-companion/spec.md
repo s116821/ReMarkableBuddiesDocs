@@ -62,3 +62,11 @@ Consumer acceptance SHALL use original producer bytes/capture identity separatel
 #### Scenario: Final shared delivery
 - **WHEN** the editor is proposed for normal merge
 - **THEN** current both-OS checks, responsive UI inspection and independent review pass, own canonical/archive match implemented scope, and actual-main/publication remain separately observed.
+
+#### Scenario: Older status versus active or ready editor
+- **WHEN** explicit status checks an old diagnostic while a newer Save owns I/O or a distinct editor grant is only ready
+- **THEN** it respectively refuses busy without cancelling newer work, or acquires the single slot and invalidates ready before remote I/O, preserving original uncertainty and conditional owner release.
+
+#### Scenario: Older forget cancel versus newer settings save
+- **WHEN** a retained old forget reference is cancelled while a distinct basic Save owns the observer
+- **THEN** targeted lane/reference/token ownership prevents raw cancellation or cross-invalidation of the new Save, which may complete once, while old forget evidence and original receipt bytes remain unchanged through both guarded hosts.

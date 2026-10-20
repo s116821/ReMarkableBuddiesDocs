@@ -40,3 +40,20 @@ producer rerun, separates synthetic faults from captured bytes, exercises real H
 main-frame IPC and normal dev/retained browser/Electron across both OSes, then own
 canonical sync/archive in the linked delivery. Source basis is actual delivered
 f43627ba/5f2e7175 plus accepted82717f; all new design choices are proposals.
+
+## Cross-operation ownership clarification
+A host-private single-I/O ownership token spans each Begin, whole Save, editor
+status or direct forget prepare/confirm/receipt. Busy acquisition does not cancel
+an existing owner. Editor status is remote I/O: when it acquires the idle slot it
+invalidates any ready editor before dispatch; while a newer Save owns the slot it
+returns invocation-busy without changing that Save or the older unknown evidence.
+Host-memory retained and forget status do not acquire remote I/O or invalidate ready.
+
+Targeted cancellation checks lane/reference/token ownership in BOTH coordinators.
+The old forget request(cancel) unconditional observer.cancel must be replaced in
+this implementation: a nonowner returns only local old-state information, without
+observer cancel or the cross-I/O hook. A token-conditional finally cannot release a
+new owner. Existing deliberate global cancellation remains a separate operation.
+Required real HTTP/main-frame IPC race controls cover old-forget cancel versus new
+basic apply, old-basic status versus active new Save, and status invalidating a
+merely ready grant; preserve original bytes and all installed public guards.
