@@ -136,7 +136,8 @@ nor a retained-package/physical qualification claim.
 
 ## Scope and remaining gates
 
-Source29paths (13existing/16new) preserve180unrelated entries from actualf436 base.
+Source30paths (14existing/16new) preserve179unrelated entries from actualf436 base;
+the reviewed initial29path scope gained the existing wired-hosts inventory correction.
 Dependency lockfile, original producer corpus bytes, current other capabilities and
 all source release-version machinery remain unchanged. Docs expands only the
 preserved companion's owned artifacts; original2requirements/4scenarios remain in
