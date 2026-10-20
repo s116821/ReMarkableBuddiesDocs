@@ -1,4 +1,6 @@
-# Saved configuration inspection wire v1 (proposed, unimplemented)
+# Saved configuration inspection wire v1 (accepted; candidate implementation)
+
+Producer implementation is a reviewed-precode candidate, not a delivered release. The shared consumer and final verification/lifecycle remain pending. The accepted wire below is unchanged.
 
 ## Invocation and bounds
 Fixed command: `reader-buddy --configuration-operation inspect`. Existing REMARKABLE_BUDDIES_CONFIG must name an explicit absolute config file. Host uses its fixed trusted config path in the existing clean child-process environment, never renderer-supplied paths or commands. No --configuration-input or --config selector is added. Inspect must not read stdin or wait for EOF. Reject mixing it with ANY runtime/simulator/other maintenance/input flags before I/O. CLI usage errors are nonzero with no valid report; host maps them to unsupported/invalid response, never ok.
