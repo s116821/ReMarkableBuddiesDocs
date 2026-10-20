@@ -26,3 +26,32 @@ No task completion, canonical sync or archive follows from these host controls.
 
 Source basis: complete Git index comparisons against both merge parents,
 unchanged existing source/spec artifacts and current retained host-check logs.
+
+## Cargo-managed SDK metadata admission
+
+Source successor `636a2f66e2f1d34381537cc0c5f4e113b184bd24` changes only
+the SDK checkout cleanliness check and adds actual local-Git refusal controls.
+The preceding accepted source integration remains attributed to `61bcd76` and
+reviews5580813749/5580813819; this is a separate functional repair.
+
+Observed Cargo is `1.98.1 (797e8a9bc 2026-08-05)`. Current Buddy tag v0.11.0
+resolves42b5108 and consumes SDK32b86e4. Its actual Cargo checkout under
+`.cargo/git/checkouts/remarkableopensdk-717fbf1704bfa168/32b86e4` has only
+an untracked, empty regular root `.cargo-ok` file. The existing offline
+metadata-only admission refused `clean actual SDK checkout`; the narrow repair
+now admits the same SDK as commit-pinned, with no invented SDK tag. This was
+metadata resolution from the integration checkout, not an exact-tag build.
+Neither the marker nor shared cache/configuration/ignore files were modified.
+
+Nine focused actual local-Git tests ran: eight pass and the Windows symlink
+creation control is explicitly skipped for missing host privilege. Hardlink,
+directory, nonempty/tracked marker, wrong HEAD/root, other dirty tracked and
+untracked files, nested/lookalike marker and changed-during-inspection controls
+pass. Existing20 source-helper controls pass. Linux symlink execution, current
+hosted checks and independent repair review remain pending, so task1.3a stays
+open. No compilation, runtime, signed package or production qualification follows.
+
+Source basis: current Cargo version, immutable Buddy tag/manifest, actual SDK
+checkout status/file metadata, before/after offline helper output and focused
+host test logs. Cargo's linked GitCheckout documentation explains the marker;
+its presence is not treated as independent source authenticity.
