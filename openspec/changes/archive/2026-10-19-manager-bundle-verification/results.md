@@ -48,3 +48,38 @@ ZIP/process and supported hosted observations remain attributed; no broad matrix
 live official-release consumer or native check is repeated. Signing, compiler,
 installation/update and physical qualifications remain separate and unwaived.
 No tablet, provider, settings, new resource or reverse-engineering action occurs.
+
+
+## Delivered quarantine parent and bounded lifecycle
+
+Quarantine Manager #12 / Docs #23 merged normally at
+`cea5c7f872cf2f10c6887938bbf08bf435c93f87` /
+`b00871238fea08680db2ce89168902ff6f304260`. Bundle preparation `834a5e85` /
+`fa98d223` received bounded reviews
+[5580732230](https://github.com/s116821/ReMarkableBuddiesManager/pull/13#pullrequestreview-5580732230)
+and [5580732673](https://github.com/s116821/ReMarkableBuddiesDocs/pull/24#pullrequestreview-5580732673)
+without findings. Original review 5503230164 and producer review 5532213836 stay
+separately attributed; the existing functional compatibility successor is not
+hidden as CI-only inheritance or attributed to the older source review.
+
+The source reconciles actual main `cea5c7f`. Two squash-ancestry conflicts in
+README and the extended quarantine engine retain exact accepted `834a5e85`
+bodies. The entire tree remains `6f4f917f0c060b367f2f069e6101673ad152d62f`;
+there is no new product, verifier, pipeline or test change. No unchanged local
+application matrix is repeated. The preceding exact preparation CI passed all
+five applicable source jobs and all three Docs checks.
+
+Docs incorporates actual main `b008712` and preserves every main entry. Twenty
+stale active copies of four completed inspection/metadata/quarantine parents
+inherited by this child are removed; their exact authoritative archives remain
+untouched. This does not archive another lane's unfinished work. Only the five
+own bundle artifacts are archived and exactly two accepted requirements/four
+scenarios are synchronized. Proposal, reviewed current-producer design and delta
+remain exact; results/tasks record source-parent delivery and own lifecycle.
+
+Final current-head CI and ancestry/preservation/receipt review remain required
+before coordinated squash delivery. Bounded byte/embedded-identity checks do not
+prove payload/compiler truth, signatures, Windows stable identity, atomicity against malicious writers,
+SDK/native compatibility or installation/update eligibility.
+No live released-archive consumption, original signature run, provider, tablet,
+settings, new resource or reverse-engineering action occurred in this closeout.
