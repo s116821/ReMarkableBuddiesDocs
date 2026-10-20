@@ -1,4 +1,4 @@
-# Saved model-settings producer contract v1 — unimplemented precode
+# Saved model-settings producer contract v1
 
 ## Fixed entry and bounds
 Use --model-settings-operation inspect|prepare|apply|status. Inspect has no input selector/stdin access; the other operations require exact --model-settings-input - and EOF-delimited strict UTF8 JSON, never a file fallback. Refuse any runtime/other-maintenance combination before dotenv/runtime/provider initialization. REMARKABLE_BUDDIES_CONFIG selects one explicit absolute existing file; no --config/default-file fallback.
