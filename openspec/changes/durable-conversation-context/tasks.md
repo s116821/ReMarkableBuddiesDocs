@@ -55,3 +55,21 @@
 - [ ] 5.2 Sync only this change's verified canonical requirements, preserving unrelated capability blocks; archive only after completed verification.
 - [ ] 5.3 Prepare linked Docs/Rust Summary-only PRs, exact revision pair and evidence comments; inspect required CI and bot feedback, obtain independent final review and squash merge in coordinated order.
 - [ ] 5.4 Verify applicable application release provenance without adding custom release logic; report downstream REM-25/38/39/42/43 and REM-35 gates accurately.
+
+## October 19 existing-stack delivery reconciliation
+
+This parent change remains active and unarchived. Only the three completed
+selected context/capture/binding inspection requirements are synchronized verbatim
+to canonical conversation-context. The other nine conversation requirements and
+all Reader/native/platform/simulator deltas and unfinished tasks remain active.
+The source candidate includes the existing unbound Orchestrator/Ledger composition,
+historical evidence and fact-only outcomes; it is not described as a three-API
+source patch. See [complete delivery scope](delivery-reconciliation.md).
+
+- [x] Prepare normal integration of the qualified storage candidate and preserve current main SDK/release/export contracts without changing historical provenance constants.
+- [x] Synchronize the three completed API requirements only; retain unfinished source/runtime/qualification obligations.
+- [x] Reconcile the delivered storage actual-main revision before final source qualification or merge.
+- [x] Obtain independent review of the complete production behavior delta, original coverage, conflict resolutions and bounded lifecycle.
+- [x] Complete current exact-head hosted checks and final bot/status review.
+- [ ] Coordinate paired normal squash and verify actual-main CI/publication.
+- [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
