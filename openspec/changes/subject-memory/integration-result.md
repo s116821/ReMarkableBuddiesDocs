@@ -67,3 +67,13 @@ replaces the historical permission for full model text with the delivered
 value-free diagnostics contract. Current source/check revisions and final
 acceptance remain separately attributable; the earlier0cddb candidate is not
 accepted as-is.
+
+The privacy successor is source d9aa2f309d2849e577097791c4101936d7d78c90:
+9d5acb02 removes only the five content-log lines, and the normal merge of delivered
+inspector main42b5108 preserves that complete source tree exactly. The existing
+actual-CLI default content-canary passes on the repaired source: questions,
+answers and arbitrary provider metadata stay out of diagnostics while intended
+output and numeric usage remain. This is one affected check, separately counted
+from the earlier34 integration controls. Docs actual-main reconciliation imports
+only the exact accepted33-line inspector receipt. Privacy-delta strict validation
+passes39 items. No live provider or tablet operation was performed.
