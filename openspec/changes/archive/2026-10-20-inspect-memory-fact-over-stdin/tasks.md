@@ -8,4 +8,5 @@
 ## Verification and delivery
 - [x] Verify local/selected file/stdin parity for values/tombstones/empty, local competing/opaque heads, selected membership-publication refusal and unrelated invalid whole-view refusal; supply attributed actual producer specimens.
 - [x] Verify bounds/EOF/read errors, raw duplicate/nested-unknown/global/document identities and no Store initialization; preserve file compatibility and mutation MustNotRead.
-- [ ] Run affected/no-default/lint and ordinary hosted CI, obtain independent review, sync/archive only this scope and complete reviewed paired delivery with separate main/publication checks.
+- [x] Run affected/no-default/lint and ordinary hosted CI; obtain independent implementation and actual consumer review; sync/archive only this qualified scope.
+- Final composition review and paired Docs-first delivery remain merge gates; observe actual main/publication separately after merge, without treating this archive as that evidence.

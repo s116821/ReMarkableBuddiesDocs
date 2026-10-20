@@ -50,8 +50,49 @@ captures remain separate. Binary SHA256 is
 e6354379733fb7e0954ff458c28ec380232c0360e10965df3f4b76f660eede0b;
 tested workingtree source bodies were promoted unchanged to4e2f8dec.
 
-This change remains active. Current full source CI, independent implementation
-and actual consumer compatibility review, own canonical sync/archive and final
-paired lifecycle/delivery remain required. Previous archive publicationv0.16.0
+Implementation and consumer compatibility are qualified below. Own canonical
+sync/archive is included in this final composition; final paired review, merge
+and separate actual-main/publication observations remain delivery gates. Previous archive publicationv0.16.0
 is observed separately. No tablet/provider/service/remote-staging action or
 memory editor/mutation/setup authority was added.
+
+## Independent implementation and actual consumer evidence
+
+Full independent [source5583148862](https://github.com/s116821/ReMarkableBuddies/pull/69#pullrequestreview-5583148862)
+and [Docs5583149844](https://github.com/s116821/ReMarkableBuddiesDocs/pull/66#pullrequestreview-5583149844)
+reviews accept4e2f8dec/8b1d441a without blocking findings. Reviewer read all five
+source paths, surrounding dispatch/admission/writer paths and six own Docs
+artifacts; all375 source and485 Docs unrelated base entries remain exact.
+
+The first corpus handoff failed with Windows cp1252 UnicodeEncodeError, not a test
+failure or a successful consumer delivery. Original raw bytes/hashes and failure
+output were retained; ASCII-escaped JSON resent the exact13 request/stdout pairs
+after verifying every hash, exit0 and complete JSON. No CLI run was repeated for
+the resend. Independent review verifies all26 hashes and feeds the exact report
+values to immutable Manager1047410 with an explicitly synthetic connection
+wrapper: eleven supported pairs retain status/incomplete/head counts, the opaque
+local array refuses its whole view, and the actual invalid request refuses before
+consumer dispatch. This is actual producer-to-parser compatibility, not actual
+SSH/device transport or renderer acceptance.
+
+Current source39398700933 Checks118547803639 passes formatting, strict Clippy,
+full all-feature tests and release/tooling controls. The completed Linux log
+confirms strict wire/read-error controls and all three new actual inspection CLI
+cases pass; prior Windows attribution remains separate. The complete exact-head
+run now passes Checks118547803639, Build118551918131 and
+application/Integration118556237810. PR Title passes; application/Release is
+correctly skipped for a pull request. Current implementation Docs39399049158 passes
+all three checks, local Docs12/checker126/strict57 also pass.
+
+One modified canonical requirement is synchronized with the accepted delta;
+both unrelated host-memory requirements and the original query-consumer scenario
+are preserved. Only this own change can be archived after full qualification.
+
+## Final canonical composition
+
+The own delta is synchronized and this six-artifact change is archived as
+2026-10-20-inspect-memory-fact-over-stdin. Canonical host-memory-cli has three
+requirements and six scenarios; both unrelated requirements and the original
+query-consumer scenario remain unchanged. Source4e2f8dec stays frozen. Final
+independent composition review and Docs-first/source-second delivery remain
+required; archive completion does not claim actual main or official publication.
