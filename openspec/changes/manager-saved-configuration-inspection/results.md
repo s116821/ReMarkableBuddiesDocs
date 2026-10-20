@@ -1,6 +1,6 @@
 # Consumer implementation evidence
 
-Source basis: actual Manager diagnostic candidate `2458423` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+Source basis: actual Manager fixture-corrected candidate `f7174ef` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
 
 ## Implementation and preservation
 
@@ -43,6 +43,16 @@ The initialbcfc53 ordinary pipeline39422404915 failed both OS feature fixtures a
 Local actual browser/source Electron runs with a deliberately delayed five-second frame and with CI=true pass. The diagnostic-only successor2458423 preserves every product byte and adds a failure-message trace of synthetic request Fetch Metadata and original-cancel call stacks/timestamps to the existing assertion. It neither fixes nor proves the unexplained CI mismatch. The deliberate local delay was removed before publication; no guard/assertion/deadline changed. Exact-head ordinary CI must supply the next evidence.
 
 This Docs branch now includes actual producer delivery7b30033b9e304c117ef6ac24dd5ce6f1414cc442 via normal merge5bb8e5e. Its canonical capability and six-artifact archive are preserved byte-exact. Producer main/publication remains separately owned and is not inferred from its merge.
+
+## Named cancellation and fixture correction
+
+Completed diagnostic Linux job118639973335 in run39424575078 retains91,270bytes SHA256 `b9a1be9c6e96508cf66337d94a82837c97afbd3f074ff708bb3fc72097e7a1c6`. Its original53-event array shows generation21 at the previous fixture run, then a14.274s gap. The next POST /manager-host triggers the real queued pause cancel; iframe GET arrives as iframe without cancellation; the next POST /manager-saved-configuration triggers its own run cancel; the empty-resource GET causes no cancellation. The failed equality is23vs21. Root independently read the same native bytes/events and corroborated this sequence. Windows job118639973480 independently shows the same ordered source calls and correct iframe/empty metadata; its full native log SHA256 is `3ed70f9268eb77d98719681e3e45b8fb4522599cdb6e3c885e2d760e2ea20807`. This is not evidence of polling or incorrect resource/navigation invalidation.
+
+The global pending resolver could describe an earlier invocation rather than the read being asserted; mutable fixture mode plus repeated negative labels also allowed state selection to race request startup. The fixture-corrected successor uses queued per-invocation mode tickets, waits for that exact invocation's transport start/pending resolver and releases original callbacks by ticket. The unchanged generation equality now starts after the intended pause/run. Added coverage keeps an older cancelled callback pending while a new invocation runs both same-path resource/subframe checks and the same equality. Lint and the full actual dev-browser/source-Electron feature fixture pass. Every product byte, public guard, timeout and original producer specimen remains unchanged from accepted d186779. An initial local helper-rewrite recursion error was corrected; its failed log is retained separately from the passing corrected run.
+
+The retainedd186 development browser artifact (773796bytes, merge54255216) also passed locally before the correction using the same Chromium153.0.8010.12 as CI, so that was truthful nonreproduction rather than qualification. Earlierbcfc/d186 failures and the diagnostic failure stay retained. Remaining obsolete d186 Windows work was cancelled only after its run's Linux failure was preserved, to free the existing serial slot. The diagnostic run completed naturally before its cancellation request, which was rejected and not retried. No failed result was counted as passing, no rerun or workflow/settings change occurred.
+
+Independent narrow review and ordinary exact-head Linux/Windows package checks for the correction remain open. Own canonical synchronization/archive, final composition/delivery and observed main/publication remain later gates.
 
 ## Still open
 
