@@ -67,4 +67,6 @@ reports, synthetic transports/UI and physical/provider/native qualification.
 
 Source traceability: producer Docs66 contract at86bb4c0a594666b98135d6552fd3504a488af4a7;
 current public memory search/host-maintenance guidance and selected-fact coordination.
-These are proposed requirements, not an implemented consumer claim.
+Implementation is present in paired Manager29; current hosted package gates,
+qualified producer delivery and final own lifecycle remain pending. This traceability
+checkpoint is retained with the change, not copied into the canonical requirement body.

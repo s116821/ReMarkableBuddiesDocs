@@ -1,14 +1,16 @@
 # Selected-fact inspection consumer
 
 ## Evidence and ownership
-Precode refers to producer Docs66 at86bb4c0a594666b98135d6552fd3504a488af4a7,
+Accepted precode referred to producer Docs66 at86bb4c0a594666b98135d6552fd3504a488af4a7,
 openspec/changes/inspect-memory-fact-over-stdin/contract.md. All five producer
 precode artifacts and the exact successor correction were read. Independent source
 inspection at029354f confirms LocalMemory::inspect preserves all matching heads,
 while selected Aggregate::project requires one head per record and validates domain
-Fact, ownership and historical custody before exposing the whole selected view. The new stdin implementation and actual corpus are
-pending, so examples are illustrative. Current source Manager main isd4574f7;
-Docs main is8c0ae5d. Public source/manual requirements and current project
+Fact, ownership and historical custody before exposing the whole selected view.
+The stdin implementation and actual13-case corpus now exist at candidate4e2f8dec;
+all26 original byte hashes and real consumer compatibility checks pass. Precode
+examples remain illustrative, separately attributed from those captured reports.
+Starting Manager/Docs actual main revisions wered4574f7/8c0ae5d. Public source/manual requirements and current project
 coordination authorize a read-only consumer; existing search is not an inventory.
 
 Main owns all Rust memory/Store/configuration work. This lane owns new consumer
@@ -86,7 +88,7 @@ cases, exact all-head/tombstone/empty/refusal meanings, foreign IDs, malformed r
 and unsupported values, safe-number limits and late responses. Use an actual owned
 SSH peer with public test keys and synthetic route/report fixtures, preserving the
 real transport/channel/EOF checks. Consume attributed actual local/selected producer
-stdin specimens when Main supplies them: local and selected values/tombstones/empty,
+stdin specimens from candidate4e2f8dec: local and selected values/tombstones/empty,
 local competing/opaque heads and a constructible selected domain-invalid
 registered-state refusal. A selected-conflict installation rejected before
 publication is a separate negative constructor control, not an actual CLI refusal;

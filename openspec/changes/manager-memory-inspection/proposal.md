@@ -17,3 +17,9 @@ This is a paired central Docs/Manager increment. Main separately owns producer
 change inspect-memory-fact-over-stdin. Its implementation, actual report evidence
 and qualified delivery remain dependencies. No mutation, inventory, arbitrary
 remote staging, service action, provider operation or tablet qualification follows.
+
+Implementation checkpoint: accepted by precode review5582813325 and implemented
+in paired Manager29. Full implementation reviews5583174872/5583175955 accepted
+eeb8de5/a454aea. Captured producer corpus and local compatibility are verified;
+current hosted package gates, qualified producer delivery and final own lifecycle
+remain pending. This proposal is retained as historical motivation/scope.
