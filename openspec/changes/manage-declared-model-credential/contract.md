@@ -41,6 +41,18 @@ Status request is exactly `{intent:INTENT}` with no CHANGE/raw secret. Validate 
 ## Reports and uncertainty
 Exact report fields: `{report_version:1,operation:OP,status:STATUS,outcome:OUTCOME,disk_readback_verified:BOOLEAN,runtime_activation:"unverified",data:DATA_OR_NULL}`. STATUS is ok,invalid-input,unavailable,unsupported,busy,conflict,failed. Outcomes are read-only,prepared,no-change,verified,desired-file-observed,unresolved,not-dispatched,unknown. Inspect success uses read-only; prepare changed/no-op uses prepared/no-change; apply success uses verified/true DATA `{present:BOOLEAN}`; status desired uses desired-file-observed/false; unresolved uses null/false. All refusals use null/false and read-only for inspect/status, not-dispatched for prepare/apply unless publication may have been attempted. Possible publication uses failed/unknown/null/false. Every report keeps runtime unverified.
 
+| Admission/result | STATUS |
+| -- | -- |
+| Malformed/duplicate/unknown/type/shape/cap/invalid hash or UUID/incoherent intent or change | invalid-input |
+| Unknown version; non-Linux; absent reference; unsupported private mode/owner/link/alias/capability or current mode | unsupported |
+| Missing Config/root, bounded-read/metadata/open failure, or existing Store unavailable | unavailable |
+| Existing Store owned by another process | busy |
+| Reobserved admitted original binding differs; install on present or replace on absent | conflict |
+| Private target different from separately supplied change | invalid-input |
+| Any failure from destination syscall attempt through sync/readback | failed (unknown outcome) |
+
+Unsafe/uninspectable state refuses with unsupported/unavailable rather than manufacturing a changed-binding observation. This remains a current refusal, never settlement of a prior unknown operation. An absent selected credential file is an explicit inspectable STATE, not an unavailable root; an absent Config/root is unavailable. A no-op never acquires a Store or emits apply authority.
+
 Saving/removing a file does not change CLI/environment precedence, revoke an environment/provider credential, reload a running process or verify authentication. Missing/truncated/cancelled output stays unknown; explicit status is a present-state observation, never historical settlement, permission to replay or proof the previous save did not happen. Encoding/bounds precede one consuming write. No error includes raw paths, references, secret text, fingerprints or backend error strings.
 
 ## Required evidence
