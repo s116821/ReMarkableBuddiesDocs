@@ -133,7 +133,8 @@ its retained unknown state without invoking observer.cancel for unrelated work.
 Construct editor and existing MemoryForgetHost around the SAME original observer.
 Public maintenance wrapper invalidates ready editor + ready forget before external
 I/O, preserving both possible-dispatch originals. Extend direct forget prepare,
-confirm/receipt/cancel entrypoints too; merely adding editor methods to forget's
+confirm/receipt and OWNED cancel entrypoints too; nonowning retained-reference
+cancel is host-local and bypasses the external-I/O hook. merely adding editor methods to forget's
 external-method set is insufficient in the reverse direction. Host-only status/
 retained snapshots do not perform external maintenance or invalidate a new editor.
 

@@ -22,6 +22,14 @@ Both browser and Electron SHALL offer the same three-field saved editor using pr
 - **WHEN** a disk save or desired-file observation succeeds
 - **THEN** both hosts show its exact limited saved-state result without service/provider checks, automatic restart or effective environment claims.
 
+#### Scenario: Older status versus active or ready editor
+- **WHEN** explicit status checks an old diagnostic while a newer Save owns I/O or a distinct editor grant is only ready
+- **THEN** it respectively refuses busy without cancelling newer work, or acquires the single slot and invalidates ready before remote I/O, preserving original uncertainty and conditional owner release.
+
+#### Scenario: Older forget cancel versus newer settings save
+- **WHEN** a retained old forget reference is cancelled while a distinct basic Save owns the observer
+- **THEN** targeted lane/reference/token ownership prevents raw cancellation or cross-invalidation of the new Save, which may complete once, while old forget evidence and original receipt bytes remain unchanged through both guarded hosts.
+
 ### Requirement: Strict fixed protected consumer contracts
 Both hosts SHALL validate exact bounded public requests/reduced results and complete private producer phase reports, retaining original private target linkage without exposing Config, hashes or intent. Fixed wired operations SHALL preserve current authorization, before/after identity and deadline hierarchy. No arbitrary operation/file/service fallback is allowed.
 
@@ -62,11 +70,3 @@ Consumer acceptance SHALL use original producer bytes/capture identity separatel
 #### Scenario: Final shared delivery
 - **WHEN** the editor is proposed for normal merge
 - **THEN** current both-OS checks, responsive UI inspection and independent review pass, own canonical/archive match implemented scope, and actual-main/publication remain separately observed.
-
-#### Scenario: Older status versus active or ready editor
-- **WHEN** explicit status checks an old diagnostic while a newer Save owns I/O or a distinct editor grant is only ready
-- **THEN** it respectively refuses busy without cancelling newer work, or acquires the single slot and invalidates ready before remote I/O, preserving original uncertainty and conditional owner release.
-
-#### Scenario: Older forget cancel versus newer settings save
-- **WHEN** a retained old forget reference is cancelled while a distinct basic Save owns the observer
-- **THEN** targeted lane/reference/token ownership prevents raw cancellation or cross-invalidation of the new Save, which may complete once, while old forget evidence and original receipt bytes remain unchanged through both guarded hosts.
