@@ -1,6 +1,6 @@
 # Consumer implementation evidence
 
-Source basis: actual Manager candidate `d186779` (initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+Source basis: actual Manager diagnostic candidate `2458423` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
 
 ## Implementation and preservation
 
@@ -35,6 +35,14 @@ Initial Node strip-only loading rejected a TypeScript parameter property; an exp
 ![Development browser at390px viewport](images/browser-configuration-390.png)
 
 ![Source Electron at390px viewport](images/electron-configuration-390.png)
+
+## Hosted failure and diagnostic checkpoint
+
+The initialbcfc53 ordinary pipeline39422404915 failed both OS feature fixtures at the resource/subframe unchanged-generation assertion before executing the new retained feature path (Linux23vs22, Windows22vs21). Complete native logs are retained. Earlier controls passed, but neither feature package path is qualified by that run. These failures are not relabeled as passing or presumed to be polling.
+
+Local actual browser/source Electron runs with a deliberately delayed five-second frame and with CI=true pass. The diagnostic-only successor2458423 preserves every product byte and adds a failure-message trace of synthetic request Fetch Metadata and original-cancel call stacks/timestamps to the existing assertion. It neither fixes nor proves the unexplained CI mismatch. The deliberate local delay was removed before publication; no guard/assertion/deadline changed. Exact-head ordinary CI must supply the next evidence.
+
+This Docs branch now includes actual producer delivery7b30033b9e304c117ef6ac24dd5ce6f1414cc442 via normal merge5bb8e5e. Its canonical capability and six-artifact archive are preserved byte-exact. Producer main/publication remains separately owned and is not inferred from its merge.
 
 ## Still open
 
