@@ -1,4 +1,4 @@
-# Implementation status (not yet Linux-qualified)
+# Implementation and original Linux host evidence
 
 Concrete precode `63b1e9e68e679e2b82214ce9043d7111337e554d` was independently accepted in [review5590274269](https://github.com/s116821/ReMarkableBuddiesDocs/pull/80#pullrequestreview-5590274269) before source edits. The reviewer independently recalculated all five synthetic reference vectors and verified all596 actual0399 base entries.
 
@@ -19,3 +19,15 @@ Exact21a source run39484360332 passed Linux formatting/strict all-target/all-fea
 The cause was strictness, not an incorrect assertion: internally tagged Serde unit variant `Remove` accepted an extra `value` despite enum-level deny_unknown_fields. A separate Windows diagnostic using the existing compiled Serde artifacts isolated all five original cases: only case2 (remove with extra value) was accepted by the original decoder; the strict empty-record variant rejected all five. This diagnostic reproduces the DTO behavior, not Linux producer execution.
 
 Source successor `dd3d8446a1ab152982952f12011acf9917999fa8` replaces the empty Remove/Absent unit variants with empty record variants, preserving their serialized wire while rejecting unknown fields. Added original regression/case-index diagnostics plus extra nested absent-state/absent-target regressions. The assertion was not weakened. Corrected exact Linux checks and first actual CLI capture remain pending; no earlier result is relabeled as corrected-build success.
+
+## Corrected host acceptance and preserved original capture
+
+Independent [review5590853740](https://github.com/s116821/ReMarkableBuddies/pull/78#pullrequestreview-5590853740) accepts exact dd3d844 without blocking findings. Current Linux Checks118845258035/run39485631425 passes400 library tests (one existing ignored), all11 focused credential groups, actual CLI and existing suites, formatting/strict Clippy and other checks. The first actual Linux corpus contains82 reports/144 original raw hashes, independently verified without replay. Original JSONL is126465bytes/SHA256 `853b1bd087f8a81c04bfe6d616c1e99c1c5f3f0943ab497451bc61c7272bdce5`; the public wrapper fixture is135556bytes/SHA256 `4bf504889812883b96b0b54e4c9935543fe4b582560bb709e1478ca88602a7b6`. The wrapper adds provenance/scope/framing without changing any request/report. Original raw log is392537bytes/SHA256 `ca6fe6851b04991befe0e1a22a6a24b94f11304cc94face32e833259f8d9051f`.
+
+Clean CI checkout8fc9ea1eba4433daf0dd17bebe1a6c94cc865234 has treeb439c23385b6563f57c0d3ef400343f5ccdee3df, identical to reviewed dd3d844. START/END executable SHA256 `285b73e2e46e1067c2ae5f68368d44e3d3d8cace962c4d080c1d241faa1f0d83` agrees. Outcomes are20read-only/20prepared/9not-dispatched/11unresolved/11verified/11desired-file-observed. Inspect exits with stdin held open; inspect/prepare/status succeed while the real Store owner is Busy; uninitialized apply refuses without creating data/cache. No provider/runtime/tablet, reply-loss or power-loss qualification is inferred. Earlier failed21a remains failed; its CLI never ran.
+
+## Newly published build-tool advisory and remaining gates
+
+A separate current advisory [GHSA-6q48-6c7w-9gw2](https://github.com/advisories/GHSA-6q48-6c7w-9gw2), published2026-10-20T19:35:05Z, covers certifi>=2019.03.09,<2026.10.19. Actual Buddy release/python-tools.lock pinned2026.7.22. Source successor49c03cd70e4b550076e94c377697d6c17251f45f changes only the original corpus fixture and certifi stanza:2026.10.19 with official [PyPI metadata](https://pypi.org/pypi/certifi/2026.10.19/json) hashes035c1e85572b141bf1c3a3eff0e33a8eb74917522f2559075ff8d2fea780a1ae and42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b. Downloaded wheel/sdist bytes were independently hashed; neither was installed/executed locally. No audit exception or unrelated dependency update was made. Earlier passing checks remain historical results; the new lock's exact audit/build/integration must pass separately.
+
+Verified three requirements/six scenarios are synced to canonical declared-model-credential. The active change remains open, with current exact checks, own archive, final composed review and normal linked delivery pending. No premature archive/merge/publication or broad project completion is claimed.
