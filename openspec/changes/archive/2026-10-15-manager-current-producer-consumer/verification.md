@@ -38,3 +38,28 @@ Downloaded actual candidate [artifact11968291526](https://github.com/s116821/ReM
 Hosted Node counts are Ubuntu117pass/0fail and Windows116pass/1skip/0fail (117total). OS-specific Python skips remain explicit in the hosted logs. Current Docs evidence head62ff4a5 checks run38725601913 passed; final archive revision still needs its own checks/review.
 
 Canonical validation initially caught missing Purpose/Requirements headings in the new canonical document. Added the required headings without changing either requirement or its scenarios; subsequent strict validation passed21/21.
+
+
+## Current delivery composition and pending supersession
+
+The nine accepted functional consumer-repair bodies are already present exactly
+in prepared download UI source4a83f66, each matching reviewed6b60468. The current
+retained repair head8ea5012 differs from that complete source tree only in the
+three inherited quiet-refresh paths. No new repair implementation or release
+workflow change is needed. Original source5532213836 and specification/lifecycle
+5532217611/5532476995 retain their respective evidence scopes.
+
+This Docs preparation incorporates download parent010e533 in the existing owned
+consumer branch, preserving the original five-file own archive and canonical
+two requirements/three scenarios. Only this verification receipt changes beyond
+mechanical parent integration. Actual download-parent delivery and proof that
+its main tree contains all nine qualified repair bodies remain required. After
+that proof, coordinate a source-PR supersession receipt rather than inventing
+a duplicate functional patch. Neither source PR21 nor Docs43 is closed or merged
+by this preparation; the retained source branch/head remains unchanged.
+
+Current-parent receipt/cleanup, ordinary Docs checks and final independent review
+remain delivery gates. No original package/ZIP/Python/UI matrix, payload execution,
+key/package generation, provider/credential/account/settings or tablet operation
+is repeated. Broader physical/native/trust/updater/full-issue limits remain.
+Source basis: complete immutable source comparisons and original review bodies.

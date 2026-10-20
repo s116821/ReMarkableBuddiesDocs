@@ -7,7 +7,7 @@ Describe the implemented platform runtime contracts, initially baselined from v0
 ## Requirements
 
 ### Requirement: Runtime startup and configuration
-The executable SHALL load an optional .env before argument parsing, default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Source: REM6/REM28/REM34/REM36; src/main.rs, src/config.rs and shared-storage contract.
+The executable SHALL parse arguments before normal .env/configuration resolution. Fixed one-shot prepared export and personalization maintenance SHALL dispatch before dotenv, normal credential/model/device or sync startup; personalization SHALL require explicit existing REMARKABLE_BUDDIES_CONFIG and follow its bounded maintenance contract. Normal and simulator paths SHALL load optional .env after one-shot dispatch. Normal configuration SHALL default to model gpt-5.6-terra and corner LL, and support --api-key with OPENAI_API_KEY fallback and --base-url with OPENAI_BASE_URL fallback. Explicit CLI values SHALL take precedence, followed by existing relevant environment overrides, validated nonsecret versioned file configuration, then existing defaults. Model/corner parser defaults SHALL NOT mask an intended file setting when no explicit CLI value was supplied. Selected secrets SHALL remain separate from ordinary configuration. Normal configuration, owned storage and credential validation SHALL complete before device initialization; absent/blank selected credentials or invalid configuration SHALL fail without printing values. Inspection-only startup SHALL return before .env loading, credentials, Store/runtime/provider/sync/device initialization; its configured nonsecret path SHALL use the existing REMARKABLE_BUDDIES_CONFIG environment selection. Scripted simulation SHALL retain its isolated path before normal storage/credential/sync initialization. Personalization disk readback SHALL NOT claim running-runtime reload or Reader/Writer application. Source: REM6/REM28/REM34/REM36/REM42/REM53; src/main.rs, src/config.rs, shared-storage and personalization-config-contract.
 
 #### Scenario: Normal initialization
 - **WHEN** usable normal configuration and device access are available
@@ -25,8 +25,12 @@ The executable SHALL load an optional .env before argument parsing, default to m
 - **WHEN** a scripted --simulate scenario is selected
 - **THEN** production credentials/storage configuration and cloud sync are not initialized, preserving its offline fixture-only behavior
 
+#### Scenario: Personalization maintenance before normal startup
+- **WHEN** an explicit --personalization-operation is selected
+- **THEN** only bounded existing configuration maintenance runs, without normal credential/model/device/sync startup; successful mutation reports verified disk readback and restart-required, not running-runtime activation
+
 ### Requirement: Existing diagnostic flags
-The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate plus help/version. Other production flags SHALL be rejected. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34.
+The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigger-corner, --log-level, --debug-dump and --simulate; --inspect-owned-data; --export-note; --personalization-operation inspect|set|disable|clear; and help/version. Other production flags SHALL be rejected. Personalization maintenance SHALL be exclusive with simulation, normal key/model/endpoint/corner/dump/logging overrides, and SHALL receive mutation JSON only through bounded stdin. Personalization, prepared export and owned-data inspection SHALL be mutually exclusive. Inspection SHALL reject simulation and explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Simulation SHALL reject explicit normal key/model/endpoint/corner/dump overrides, while allowing logging control. Screenshot-only and one immediate native iteration SHALL remain available as explicitly built diagnostic examples using production components, outside the production CLI and distributed archives. Source: REM6/REM22/REM34/REM42/REM53; src/main.rs and personalization-config-contract.
 
 #### Scenario: Image dump configuration
 - **WHEN** --debug-dump is present
@@ -39,6 +43,10 @@ The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigge
 #### Scenario: Bounded development tools
 - **WHEN** the screenshot example is invoked with its output path
 - **THEN** it captures without input initialization or credentials; the separate reader_once example runs one immediate production iteration using environment credentials and default model/corner.
+
+#### Scenario: Personalization selector isolation
+- **WHEN** personalization maintenance is combined with a normal runtime override
+- **THEN** argument parsing refuses rather than ignoring the extra operation or starting the runtime
 
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Source: REM14/REM34; src/main.rs; deploy/reader-buddy.service.
@@ -91,3 +99,13 @@ unavailable metadata SHALL be explicit. Source: REM-56 superseding REM-30 order.
 #### Scenario: Development build
 - **WHEN** a build has neither valid controlled candidate nor verified published-tag metadata
 - **THEN** --version identifies development or unavailable Git state explicitly.
+
+### Requirement: Read-only storage CLI route
+Runtime SHALL provide `--inspect-owned-data` as an inspection-only route that
+returns a versioned report before Store/runtime/provider/sync/device initialization.
+It SHALL preserve normal Reader argument behavior, reject conflicting execution
+overrides and never perform service or native-document operations for inspection.
+
+#### Scenario: Inspection is distinct from Reader startup
+- **WHEN** the real application is invoked for data inspection with missing provider credentials or an unavailable Store
+- **THEN** it reports the inspection state without starting the Reader, creating data or resolving credentials, and preserves the existing normal startup behavior on later ordinary invocation.
