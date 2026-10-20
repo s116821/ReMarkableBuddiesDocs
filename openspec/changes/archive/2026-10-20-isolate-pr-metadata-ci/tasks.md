@@ -9,4 +9,4 @@
 - [x] Coordinate qualified Manager/SDK implementation and their applicable specification/evidence without implying parity from Buddy.
 - [x] Complete applicable ordinary source checks and independent implementation review for all three candidates.
 - [x] Sync the qualified central application contract; leave SDK canonical ownership with its owner.
-- [ ] Complete final Docs checks/lifecycle review and archive the qualified change for coordinated normal delivery; record actual main/release outcomes separately.
+- [x] Complete final Docs checks/lifecycle review and archive the qualified change for coordinated normal delivery; record actual main/release outcomes separately.
