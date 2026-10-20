@@ -146,7 +146,7 @@ in [bounded delivery status](implementation-status.md).
 - [x] Reconcile existing source, repair, mode and fixture reviews without rerunning unchanged qualification.
 - [x] Prepare actual-main integration preserving Conversation/schema2 and ExportAssociation/schema2 in both runtime validation and the offline contract.
 - [x] Synchronize only the ten implemented and previously accepted API requirements; retain all nine unfinished end-to-end requirements as active.
-- [ ] Complete changed-candidate compatibility checks and exact-head hosted checks.
-- [ ] Obtain independent review of only the schema/contract resolution, main preservation and bounded lifecycle delta.
+- [x] Complete changed-candidate compatibility checks and exact-head hosted checks.
+- [x] Obtain independent review of only the schema/contract resolution, main preservation and bounded lifecycle delta.
 - [ ] Coordinate normal paired squash delivery and verify actual-main CI/publication.
 - [ ] Finish the remaining end-to-end requirements before final parent sync/archive.
