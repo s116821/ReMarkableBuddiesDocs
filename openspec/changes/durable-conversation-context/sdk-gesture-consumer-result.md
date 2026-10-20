@@ -71,3 +71,18 @@ Parent live-model/delivery, native completion, process-crash release, active-pag
 authority, other profiles and the full active Reader/MVP lifecycle remain open.
 Current preparation performed no hardware diagnostic, real event emission or
 tablet contact. Fake-sink tests establish no native qualification.
+
+## Completed integration checks
+
+Exact source `ff2bac2c1ce2ae9c630f154b1ef40417fe5afa7c` completed
+[run39368637610](https://github.com/s116821/ReMarkableBuddies/actions/runs/39368637610)
+successfully through Title, Checks, Build and Integration; PR Release was skipped.
+Run identity and complete hosted logs were retained. Independent
+[source review5580764046](https://github.com/s116821/ReMarkableBuddies/pull/40#pullrequestreview-5580764046)
+and [Docs review5580764132](https://github.com/s116821/ReMarkableBuddiesDocs/pull/29#pullrequestreview-5580764132)
+accepted the integration at Docs8bb2f1f, whose three checks passed.
+
+This receipt repeats no tests and changes no source, specification, task or
+lifecycle behavior. The historical SDK comparison and six host controls retain
+their original scopes; native completion, crash release, parent live-model and
+delivery evidence and the wider Reader lifecycle remain open.
