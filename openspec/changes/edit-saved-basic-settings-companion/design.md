@@ -1,4 +1,4 @@
-# Concrete shared editor design - implementation pending
+# Concrete shared editor design
 
 The existing general inspector discards its private digest and cannot authorize
 editing. A new explicit Begin pauses polling first, then privately inspects the
@@ -34,8 +34,8 @@ await and final public bridge checks host generation/target; navigation/refresh 
 with unchanged IDs invalidates ready views. Existing queued cancel ordering remains.
 
 contract.md is the exact proposed API/reduction/phase/cap/lifetime authority for this
-consumer. Original accepted producer wire is immutable. Source implementation waits
-for independent precode review. Verification consumes original45reports without a
+consumer. Original accepted producer wire is immutable. Independent precode5587743737 accepted exact4cac before source implementation.
+The implemented68c467a candidate and current evidence are recorded in results.md. Verification consumes original45reports without a
 producer rerun, separates synthetic faults from captured bytes, exercises real HTTP/
 main-frame IPC and normal dev/retained browser/Electron across both OSes, then own
 canonical sync/archive in the linked delivery. Source basis is actual delivered

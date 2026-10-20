@@ -25,9 +25,10 @@ v0.20.0 and captured87bc/616corpus are complete inputs, not producer work to rep
 Complete `saved-basic-settings-companion` in this existing change. No duplicate
 producer capability or parallel spec record is introduced. Same browser/Electron UI
 and current protected bridge/transport patterns; no source-maintained own release
-version or dependency/CI graph changes. Publish this active precode for independent
-review before implementing the API. Later retain actual compatibility/native package
-checks, own sync/archive and linked normal delivery; broadREM42/runtime gates stay open.
+version or dependency/CI graph changes. Independent precode5587743737 accepted exact4cac before implementation. Source
+Manager32 at68c467a now implements the reviewed design; results.md records current
+local/host evidence. Retained-package CI, own sync/archive and linked normal delivery
+remain separate gates; broadREM42/runtime gates stay open.
 
 Source basis: current actual Managerf43627ba host/controller files, actual Docs5f2e7175
 producer canonical/archive and active draft; received native corpus metadata/hashes.

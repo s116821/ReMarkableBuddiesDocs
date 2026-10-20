@@ -1,12 +1,13 @@
-# Shared basic-settings consumer contract (proposed; implementation pending)
+# Shared basic-settings consumer contract (implemented candidate)
 
 This completes the existing active companion design, preserving its original two
 requirements/four scenarios. Producer wire remains the immutable accepted
 [contract82717f](https://github.com/s116821/ReMarkableBuddiesDocs/blob/82717f481005bfd403ec35c149dfbbf28805d156/openspec/changes/edit-saved-basic-settings/contract.md).
 Actual producer c50eb6b3 is published as v0.20.0; its completed execution/publication
 is not replayed here. Managerf43627ba/Docs5f2e7175 delivered saved-configuration
-inspection and are this consumer's actual baselines. This is concrete precode,
-not an implemented API or successful mutation claim.
+inspection and are this consumer's actual baselines. Independent review5587743737 accepted exact4cac before implementation. Manager32
+68c467a implements this contract; results.md separates its local/fixture evidence
+from pending retained-package, delivery and physical/runtime gates.
 
 ## Public boundary
 One optional ManagerHost.basicSettings(request), authenticated same-origin POST
