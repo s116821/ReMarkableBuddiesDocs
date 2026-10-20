@@ -1,9 +1,12 @@
 # Selected-fact inspection consumer
 
 ## Evidence and ownership
-Precode refers to producer Docs66 at8636fc4f02e0d0090cf919d4bf8d690a229c2cdd,
+Precode refers to producer Docs66 at86bb4c0a594666b98135d6552fd3504a488af4a7,
 openspec/changes/inspect-memory-fact-over-stdin/contract.md. All five producer
-precode artifacts were read. The new stdin implementation and actual corpus are
+precode artifacts and the exact successor correction were read. Independent source
+inspection at029354f confirms LocalMemory::inspect preserves all matching heads,
+while selected Aggregate::project requires one head per record and validates domain
+Fact, ownership and historical custody before exposing the whole selected view. The new stdin implementation and actual corpus are
 pending, so examples are illustrative. Current source Manager main isd4574f7;
 Docs main is8c0ae5d. Public source/manual requirements and current project
 coordination authorize a read-only consumer; existing search is not an inventory.
@@ -56,7 +59,12 @@ The fresh public view preserves all supported heads' revision/parent/operation/
 actor identities, kind and exact supported Fact or null tombstone. These are domain
 metadata, not private selected pins or write tokens. Renderer displays head count,
 conflict when more than one, each value/provenance and each tombstone, with identity
-details expandable. No ordering, timestamp or confidence selects a winner. Empty
+details expandable. Local multi-head output can be displayed as conflict; selected projection instead
+refuses conflicted/unsupported whole views as unavailable, including unrelated bad
+registered state. Preserve that refusal and actual incomplete flag without a
+partial successful array, selected-to-local fallback or domain widening. The same
+consumer parser supports every valid admitted array without inferring the mode
+from returned data. No ordering, timestamp or confidence selects a winner. Empty
 means no current heads for THIS key in the admitted view; it does not prove no
 history, no orphan records or a globally empty store. Author-asserted provenance
 never becomes verified source/native evidence.
@@ -78,7 +86,8 @@ cases, exact all-head/tombstone/empty/refusal meanings, foreign IDs, malformed r
 and unsupported values, safe-number limits and late responses. Use an actual owned
 SSH peer with public test keys and synthetic route/report fixtures, preserving the
 real transport/channel/EOF checks. Consume attributed actual local/selected producer
-stdin specimens when Main supplies them, including competing heads and tombstones;
+stdin specimens when Main supplies them: local and selected values/tombstones/empty,
+local competing/opaque heads and selected whole-view conflict/domain refusals;
 do not relabel illustrated JSON or synthetic UI reports as producer evidence.
 Exercise actual browser/Electron IPC guards and development plus retained production
 packages in existing Linux/Windows integration. No local repackaging or replay of

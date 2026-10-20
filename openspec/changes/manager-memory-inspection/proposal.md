@@ -8,8 +8,9 @@ search key before broader memory management can be considered.
 ## What changes
 - Add the same read-only single-fact action to browser/helper and Electron.
 - Consume the published bounded inspect-stdin Key/raw-envelope contract.
-- Preserve every current head, including tombstones and concurrent heads, or
-  refuse the entire unsupported view; never infer a winner or a complete catalog.
+- Preserve every admitted current head, including local concurrent heads and
+  tombstones; retain selected whole-view refusal and reject unsupported raw views.
+  Never infer a winner or a complete catalog.
 
 ## Scope
 This is a paired central Docs/Manager increment. Main separately owns producer

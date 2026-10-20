@@ -17,12 +17,17 @@ wired host adapters and SHALL NOT infer a complete inventory or write authority.
 ### Requirement: Complete supported heads and requested identity
 The host SHALL validate every head against the requested derived record UUID and
 supported envelope/Fact schema before exposing a fresh reduced public view. It
-SHALL retain all supported concurrent heads and tombstones; unsupported data SHALL
+SHALL retain all supported admitted heads and tombstones, including all local
+concurrent heads, and preserve selected whole-view refusal. Unsupported data SHALL
 refuse the entire view rather than silently filter, round or truncate it.
 
 #### Scenario: Multiple heads or tombstone
-- **WHEN** a complete valid report contains concurrent value/tombstone heads
+- **WHEN** a complete valid local report contains concurrent value/tombstone heads
 - **THEN** every distinct current revision is preserved, multiple heads are identified as conflict and no array order, time or confidence selects a winner.
+
+#### Scenario: Selected whole-view refusal
+- **WHEN** selected projection refuses a conflict or invalid domain/ownership/custody state, including unrelated registered state
+- **THEN** the UI preserves the actual unavailable/refusal status and incomplete flag without manufacturing a successful conflicting array, choosing a winner or falling back to local memory.
 
 #### Scenario: Foreign or unsupported head
 - **WHEN** any head has a foreign derived record ID, mismatching payload key, unsupported shape or unsafe numeric value
@@ -60,6 +65,6 @@ reports, synthetic transports/UI and physical/provider/native qualification.
 - **WHEN** the paired increment is verified for delivery
 - **THEN** actual attributed producer reports feed the consumer parser, both host distributions exercise real guards and retained packages, and synthetic success does not become tablet/provider/native qualification.
 
-Source traceability: producer Docs66 contract at8636fc4f02e0d0090cf919d4bf8d690a229c2cdd;
+Source traceability: producer Docs66 contract at86bb4c0a594666b98135d6552fd3504a488af4a7;
 current public memory search/host-maintenance guidance and selected-fact coordination.
 These are proposed requirements, not an implemented consumer claim.
