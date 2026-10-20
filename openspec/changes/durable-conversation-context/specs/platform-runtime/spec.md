@@ -1,24 +1,5 @@
 ## MODIFIED Requirements
 
-### Requirement: Explicit selected Reader startup and historical handling
-An explicitly configured selected Reader runtime SHALL use the existing shared Store/admission and selected refusing Workflow, and SHALL resolve unsupported committed SDK acquisition before model credentials, provider, sync or native device startup. It SHALL NOT downgrade to ordinary legacy acquisition or initialize an absent selected scope. One-shot historical inspection/recovery SHALL retain immutable provenance and grant no live context or effect authority.
-
-#### Scenario: SDK native acquisition remains unsupported
-- **WHEN** explicit selected startup uses the committed unqualified SDK platform
-- **THEN** it SHALL report the typed unsupported capability without constructing ordinary RealDevice, invoking a model, publishing a pending intent or touching the tablet.
-
-#### Scenario: Exact historical request recovery
-- **WHEN** an explicitly supplied original PendingIntentRequest matches a validated historical publication
-- **THEN** recovery SHALL return only its original historical acknowledgment/provenance, even if current SDK acquisition is unsupported, and SHALL NOT allocate new IDs, mint ReaderContext or replay an effect.
-
-#### Scenario: Invalid selected startup metadata
-- **WHEN** generic storage accepts a selected snapshot but strict conversation schema or chronology validation fails, or the opened Store contains unavailable commits
-- **THEN** startup SHALL report unavailable without adapter-capability data, under the existing shared admission and cumulative read allowance.
-
-#### Scenario: Availability before an active request
-- **WHEN** startup needs to report the selected refusing transport's availability before a Reader request exists
-- **THEN** it SHALL inspect typed availability without invoking acquisition or interpreting a request-guard failure as unsupported capture, and actual request acquisition SHALL retain its guards.
-
 ### Requirement: Logging and service lifecycle
 The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Optional diagnostic image dumps SHALL remain separate from the durable source-evidence retention contract. Source: REM14/REM34/REM37; src/main.rs; deploy/reader-buddy.service; conversation-context.
 
@@ -54,6 +35,25 @@ The application SHALL process Reader Buddy iterations on real devices or the mai
 - **THEN** the Buddy integration uses the reviewed ReMarkableOpenSDK capability boundary through the mockable device seam, records the exact SDK contract/revision and qualification limits, and refuses unsupported or unqualified native success rather than adding hardware-specific logic to the conversation domain; SDK canonical contracts remain in the SDK repository.
 
 ## ADDED Requirements
+
+### Requirement: Explicit selected Reader startup and historical handling
+An explicitly configured selected Reader runtime SHALL use the existing shared Store/admission and selected refusing Workflow, and SHALL resolve unsupported committed SDK acquisition before model credentials, provider, sync or native device startup. It SHALL NOT downgrade to ordinary legacy acquisition or initialize an absent selected scope. One-shot historical inspection/recovery SHALL retain immutable provenance and grant no live context or effect authority.
+
+#### Scenario: SDK native acquisition remains unsupported
+- **WHEN** explicit selected startup uses the committed unqualified SDK platform
+- **THEN** it SHALL report the typed unsupported capability without constructing ordinary RealDevice, invoking a model, publishing a pending intent or touching the tablet.
+
+#### Scenario: Exact historical request recovery
+- **WHEN** an explicitly supplied original PendingIntentRequest matches a validated historical publication
+- **THEN** recovery SHALL return only its original historical acknowledgment/provenance, even if current SDK acquisition is unsupported, and SHALL NOT allocate new IDs, mint ReaderContext or replay an effect.
+
+#### Scenario: Invalid selected startup metadata
+- **WHEN** generic storage accepts a selected snapshot but strict conversation schema or chronology validation fails, or the opened Store contains unavailable commits
+- **THEN** startup SHALL report unavailable without adapter-capability data, under the existing shared admission and cumulative read allowance.
+
+#### Scenario: Availability before an active request
+- **WHEN** startup needs to report the selected refusing transport's availability before a Reader request exists
+- **THEN** it SHALL inspect typed availability without invoking acquisition or interpreting a request-guard failure as unsupported capture, and actual request acquisition SHALL retain its guards.
 
 ### Requirement: Selected history command routing
 The executable SHALL support --conversation-operation inspect|context|recover-pending with required --conversation-input FILE. Selected history maintenance SHALL dispatch before dotenv and ordinary credential, model, sync or device initialization. It SHALL be mutually exclusive with memory maintenance, owned-data inspection, prepared export and personalization maintenance, and SHALL reject simulation and normal provider/runtime/logging overrides. Current inspection SHALL retain its existing sealed, budgeted and leased output contract; historical recovery SHALL return only original custody and grant no new effect authority.
