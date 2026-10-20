@@ -17,3 +17,69 @@ Accepted exact pair: Manager46ccaaac54239e18f34d06a74348f58380cbdd95 / Docs3f8d3
 Sol independently executed11 focused actual-byte controls on Windows Python3.12.14, all passed, preserving original bytes and sanitized outputs; two valid ZIP forms accepted and malformed/duplicate JSON, invalid UTF8, non-boolean official, extra field, metadata size/path/count/root-CRC/hardlink cases refused. The reviewer separately read supported Node24.21/Python3.12 Linux115246701317/Windows115246701348 logs83/83/0fail, including positive ZIP/stat-domain controls and dev/prod/browser/Electron/package checks. Required ManagerCI38382662256/title38382662262 and Docs38382667479 succeeded. Docs strict25/25 and12/12 portable checks on each OS passed. Hosted execution uses normal merge d3d2a49 containing exact46cc; distinguish this from focused exact-source execution. No broad accepted matrix, live release or device check was rerun.
 
 Original Windows failure/diagnostic/repair history is preserved. App-payload semantics/CRC, compiler truth, signatures, native safety, installation/update eligibility, Windows stable file identity and malicious-writer atomicity remain unqualified. Parent-first delivery/canonical sync/archive/merge and full lifecycle/actual signed-producer gates remain open. Main is running its fresh producer build after the accepted direct-runtime repair; actual signed input/control-channel pins remain pending. No extra implementation, producer/device/key/release change or automatic eligibility follows.
+
+## Existing producer compatibility and current preparation
+
+The post-review source has 48 successor paths, including six producer-compatibility
+files; it is not only a CI update. Existing commit `89130ba` qualifies the current
+pure artifacts helper instead of removed coordinator/policy modules, uses the
+current producer fixture, and preserves the tampered-module refusal plus an actual
+current-only runtime control. The verifier, qualified helper, producer fixture,
+fixture generator and public guide are exact bodies from accepted source
+`6b60468`, reviewed in [5532213836](https://github.com/s116821/ReMarkableBuddiesManager/pull/21#pullrequestreview-5532213836).
+The bundle-test file is an exact prefix of that accepted file; only the later
+shared-UI download test is absent in this source-checkout scope. Original source
+review 5503230164 remains attributed to `46ccaaac`, not relabeled as review of
+this compatibility successor. The bounded ZIP reader and refusal/authority limits
+remain; no producer, payload execution or update eligibility is introduced.
+
+Current preparation inherits accepted quarantine/quiet-refresh parents and actual
+main `9fe55af`. Relative to existing head `815f8ec`, only three quiet-refresh
+doc/runtime/test paths change; the existing compatibility bodies remain exact.
+The five net CI/package/lint/fixture files equal the accepted parent. Docs merges
+actual main `ccaa8c3`, retaining the sole conflicting guide exactly. Own updates
+are this result and the stale producer-path design statement; proposal, tasks and
+requirement/scenario bodies remain unchanged. All delivered-main entries and
+Main's unfinished work are preserved.
+
+The own change remains active pending quarantine parent delivery, current-head
+checks, bounded successor review and canonical/archive lifecycle. Old synthetic
+ZIP/process and supported hosted observations remain attributed; no broad matrix,
+live official-release consumer or native check is repeated. Signing, compiler,
+installation/update and physical qualifications remain separate and unwaived.
+No tablet, provider, settings, new resource or reverse-engineering action occurs.
+
+
+## Delivered quarantine parent and bounded lifecycle
+
+Quarantine Manager #12 / Docs #23 merged normally at
+`cea5c7f872cf2f10c6887938bbf08bf435c93f87` /
+`b00871238fea08680db2ce89168902ff6f304260`. Bundle preparation `834a5e85` /
+`fa98d223` received bounded reviews
+[5580732230](https://github.com/s116821/ReMarkableBuddiesManager/pull/13#pullrequestreview-5580732230)
+and [5580732673](https://github.com/s116821/ReMarkableBuddiesDocs/pull/24#pullrequestreview-5580732673)
+without findings. Original review 5503230164 and producer review 5532213836 stay
+separately attributed; the existing functional compatibility successor is not
+hidden as CI-only inheritance or attributed to the older source review.
+
+The source reconciles actual main `cea5c7f`. Two squash-ancestry conflicts in
+README and the extended quarantine engine retain exact accepted `834a5e85`
+bodies. The entire tree remains `6f4f917f0c060b367f2f069e6101673ad152d62f`;
+there is no new product, verifier, pipeline or test change. No unchanged local
+application matrix is repeated. The preceding exact preparation CI passed all
+five applicable source jobs and all three Docs checks.
+
+Docs incorporates actual main `b008712` and preserves every main entry. Twenty
+stale active copies of four completed inspection/metadata/quarantine parents
+inherited by this child are removed; their exact authoritative archives remain
+untouched. This does not archive another lane's unfinished work. Only the five
+own bundle artifacts are archived and exactly two accepted requirements/four
+scenarios are synchronized. Proposal, reviewed current-producer design and delta
+remain exact; results/tasks record source-parent delivery and own lifecycle.
+
+Final current-head CI and ancestry/preservation/receipt review remain required
+before coordinated squash delivery. Bounded byte/embedded-identity checks do not
+prove payload/compiler truth, signatures, Windows stable identity, atomicity against malicious writers,
+SDK/native compatibility or installation/update eligibility.
+No live released-archive consumption, original signature run, provider, tablet,
+settings, new resource or reverse-engineering action occurred in this closeout.

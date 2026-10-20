@@ -85,3 +85,26 @@ live release-consumer test or tablet contact is performed by this preparation.
 Signing/index-binding, embedded build/compiler truth, SDK/native compatibility
 and installer/update eligibility remain separate and unqualified. Only normal
 repository/CI/Docs delivery proceeds while the tablet remains with its owner.
+
+
+## Actual delivered-parent reconciliation
+
+Manager #13 delivered as main `1a1ffa028c1dc69a62f1068158939e03e5d648ce`
+and Docs #24 as `e73f0c2b3967595bec5cb3fdd7b13998a35dd670`.
+Manager #14 now merges that actual source parent, preserving the complete accepted
+preparation tree `f346ec56f67072bc5c1704bca3f7370ea57c49a8`.
+The only source conflict was the README observer pointer, retained exactly from
+the accepted candidate. No observer, guard, CI, compatibility or runtime bytes
+changed. Both actual parent main pipelines completed successfully.
+
+This Docs successor incorporates actual main e73f0c2 and removes only 25 stale
+active copies of five completed parent changes; their authoritative main archives
+and canonical specs are preserved. The existing signed-fixture archive, original
+proposal/design/delta, three-requirement/three-scenario canonical specification
+and original verification.json remain unchanged. Only this receipt records the
+new delivery state. Current-head CI and independent final review remain required.
+No original artifact/signature execution, package/key generation, provider call,
+native test or tablet contact was performed.
+
+Source basis: actual GitHub merge and completed main-pipeline metadata, complete
+local Git tree comparison and scoped archive/canonical preservation checks.
