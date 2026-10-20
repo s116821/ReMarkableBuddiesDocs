@@ -1,6 +1,6 @@
 # Consumer implementation evidence
 
-Source basis: actual Manager fixture-corrected candidate `7e35e4f` (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+Source basis: actual Manager rooted-observation fixture candidate `787aef7` (diagnostic `2671889`) (accepted configuration fixture `7e35e4f`) (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
 
 ## Implementation and preservation
 
@@ -8,7 +8,7 @@ The fixed no-remote-stdin transport, strict private report/reduced public view, 
 
 Main-document navigation invalidates the wrapped observer generation; same-path resources/subframes and same-document Electron navigation do not. The modern installed Electron navigation-event shape is used. Before-I/O external forget invalidation retains the raw observer receiver and original unknown-intent bytes. Each host rechecks generation after awaits and before public output. Controller cancellation uses the existing ConnectionController queue.
 
-All166 unrelated entries from actual Manager `3c789a00373873b4813c6105c7ee79c2a2fab386` are byte-identical;16 existing paths changed and11 paths were added. Dependency/lockfile, SDK and release/version machinery are unchanged; package.json has no own maintained version. Workflow changes add commands inside existing jobs only; all10 unchanged workflow graph controls pass. All517 unrelated entries from actual Docs `54085ec1062cd15927cc3db3288a2c23342ba936` remain preserved.
+Initial scope preserved166 unrelated entries from actual Manager `3c789a00373873b4813c6105c7ee79c2a2fab386` are byte-identical;16 existing paths changed and11 paths were added initially. The later inherited memory-query diagnostic adds one existing fixture path; current28-path scope leaves165 unrelated base entries exact. Dependency/lockfile, SDK and release/version machinery are unchanged; package.json has no own maintained version. Workflow changes add commands inside existing jobs only; all10 unchanged workflow graph controls pass. All517 unrelated entries from actual Docs `54085ec1062cd15927cc3db3288a2c23342ba936` remain preserved.
 
 ## Original producer compatibility
 
@@ -53,6 +53,26 @@ The global pending resolver could describe an earlier invocation rather than the
 The retainedd186 development browser artifact (773796bytes, merge54255216) also passed locally before the correction using the same Chromium153.0.8010.12 as CI, so that was truthful nonreproduction rather than qualification. Earlierbcfc/d186 failures and the diagnostic failure stay retained. Remaining obsolete d186 Windows work was cancelled only after its run's Linux failure was preserved, to free the existing serial slot. The diagnostic run completed naturally before its cancellation request, which was rejected and not retried. No failed result was counted as passing, no rerun or workflow/settings change occurred.
 
 Narrow review of f7174ef accepted the ticket/start correction but identified consecutive unsupported labels as insufficient UI-completion evidence. Successor7e35e4f moves the distinct raw/response-refused case between unsupported and future, preserving all five cases and making every consecutive negative outcome distinguishable. Lint/full actual local browser/source Electron fixture pass again. The obsolete f717 validation run was cancelled as superseded; it is not qualification. Independent narrow review and ordinary exact-head Linux/Windows package checks for the final correction remain open. Own canonical synchronization/archive, final composition/delivery and observed main/publication remain later gates.
+
+## Current Windows enablement diagnosis
+
+Run39428731671 at accepted7e35 passed Linux job118649221218, with all four configuration feature markers and final upload-byte verification. The actual tested merge3b39593daae9ad4b05682ed346bf5f4398fea3b6 has the exact reviewed source tree9c789e987c19c14c4cd47ebf82368b82be36915c. Linux native log86,548bytes SHA256 `9b61f1ed9b291c5efd6922dc52d1a145989a13d38bff3a39e77e188641ccb693` is retained. This is Linux evidence, not completed cross-OS qualification.
+
+Windows job118649220869 failed earlier, in the inherited packaged Electron memory-query fixture at its negative-result loop: Search global memory stayed disabled for the original30s click timeout. New configuration Windows controls were not reached. The full55,005-byte native log SHA256 `f1e7fd1c18df77304164a8062df98292403759a3cbd9db8fe357a2a367ecee6b` is retained/read and independently corroborated by Root. Do not conflate this with the corrected configuration-generation test.
+
+Cause remains unverified. The desktop preload uses direct observe IPC, and this existing fixture replaces the real observe handler with a forever-pending promise after the first sample, so the browser14s deadline alone does not explain the desktop failure. Search enablement derives from observation/profile, method availability and input validity, not query busy. Diagnostic2671889 changes only that inherited fixture: passive input-event/length/UTF8-validity, current mode, connection/model presence and observation-count samples around capture and clicks are emitted only on failure. Synthetic query content is not logged. Original assertions/guards/timeouts remain unchanged; lint and actual local browser/source Electron memory-query fixture pass. No blind retry or product change is claimed as a fix.
+
+Current exact-head CI and its native enablement evidence remain required before further repair or own completion.
+
+## Controlled observation/GC reproduction and fixture repair
+
+An actual local Electron control waits for the existing scheduled observation, then forces three main-process GC cycles. With the original unrooted never-promise handler, a parallel direct observe rejects with `reply was never sent`; connection changes to Tablet state unavailable and the same partial-case Search click fails. Failure telemetry shows valid synthetic input (14characters/22UTF8bytes), one unchanged input event, three observation calls, no model and disabled Search. The complete temporary control variant and failed native log are retained. This demonstrates the named failure mechanism locally; the original Windows CI GC timing was not directly recorded.
+
+The installed runtime reports dependency metadata44.4.5. Exact upstream [ReplyChannel header](https://github.com/electron/electron/blob/694f45852a0f1726cd23bfd379854de489cccb65/shell/common/gin_helper/reply_channel.h) registers its GC pre-finalizer, [implementation](https://github.com/electron/electron/blob/694f45852a0f1726cd23bfd379854de489cccb65/shell/common/gin_helper/reply_channel.cc) sends the observed fallback for a collected unreplied channel, and [IPC dispatch](https://github.com/electron/electron/blob/694f45852a0f1726cd23bfd379854de489cccb65/lib/browser/ipc-dispatch.ts) awaits the handler. This is primary-source reasoning, not an inference from a renderer timeout.
+
+Matched control retains the synthetic observation resolvers across the SAME GC sequence: direct observe remains pending, connection remains Wired tablet observed, Search is enabled and the complete semantic fixture passes. The corrected fixture owns those resolvers until cleanup, then resolves/clears them explicitly. Its normal source/retained Electron path now waits for the pending scheduled read, forces the GC regression, asserts the one rooted completion and live connection/Search, then continues native capture and every original semantic/cancellation assertion. Passive failure telemetry remains; no query content is logged.
+
+Lint and actual local browser/source Electron with the permanent GC regression pass. Every product file, real safety predicate, original polling interval and deadline is unchanged; only the existing inherited fixture changed. Current Windows diagnostic evidence and ordinary exact-head787aef7 package qualification remain open, so this repair is not relabeled as a completed package result.
 
 ## Still open
 
