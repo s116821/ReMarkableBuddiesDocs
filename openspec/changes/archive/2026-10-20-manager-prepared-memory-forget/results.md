@@ -112,14 +112,56 @@ Product refresh invalidation and separate polling controls are unchanged; no pub
 IPC/private/cancel guard or assertion was relaxed. That initial run is not package
 acceptance. The corrected source successor requires fresh ordinary CI and review.
 
-## Remaining gates
+## Completed implementation and composed lifecycle
 
-Ordinary Linux/Windows retained production package integration, independent paired
-implementation review, own canonical sync/archive, final exact-head composition
-with qualified producer delivery, final review/current checks, normal merge and
-actual main/publication observation remain required. No local package regeneration,
-physical USB, tablet contact, provider/account/service or native qualification
-follows from these local checks. Whole management/memory/MVP scope stays open.
+Corrected Manager source is3084f19b9bd2768ad34298863e031aeb93037ca3. Full
+implementation review5584118617 was read, its single P2 repaired, and full
+corrected reviews[5584197328](https://github.com/s116821/ReMarkableBuddiesManager/pull/30#pullrequestreview-5584197328)
+and[5584198062](https://github.com/s116821/ReMarkableBuddiesDocs/pull/69#pullrequestreview-5584198062)
+were read and accepted without blocking findings. Root independently repeated only
+the narrow real controller/host recovery proof; this lane did not replay its tests.
+
+Ordinary source39411924112 is SUCCESS at that exact source. Title, Checks, Build,
+Linux118592693097 and Windows118592692966 Integration pass; PR Release is correctly
+skipped. Direct native logs for BOTH OS jobs contain all four new feature markers:
+development browser, source Electron, retained production browser and retained
+packaged Electron. Both final upload-byte preservation steps pass. Hosted Checks
+118591590832 independently confirms167Node including the original-status regression,
+actual39-pair compatibility and bounded child. No local packages were regenerated.
+These are software fixture/package checks, not physical/native USB qualification.
+
+Producer full final reviews5584224007/5584224680 were read. Actual Buddy70 merge
+b34e6d5cb772b13a833c2830e6770a8b98cf5330 has the exact reviewed60940ac tree15a779bb;
+actual Docs68 mergefc8c2fa3b35c38cbb3c0bf4df072970580947c04 has the exact reviewed
+0d96ab6 treed3c7cf42. Both independently checked with native GitHub commit metadata.
+This candidate composes that delivered Docs base and preserves all507 entries,
+including its host-memory-cli canonical requirement and seven-artifact producer
+archive. Producer actual-main CI/publication is observed by its owner separately;
+PR/tree acceptance never substitutes for official publication.
+
+Only this consumer's six requirements/thirteen scenarios are synced to the new
+manager-prepared-memory-forget canonical capability. Its nine artifacts, including
+metadata, exact original delta/golden attribution and inspected captures, move to
+2026-10-20-manager-prepared-memory-forget; no active copy or unrelated canonical
+rewrite remains. Accepted proposal/design/delta/metadata/capture bodies stay exact.
+The canonical requirement/scenario bodies match the delta; its source note identifies
+this verified implementation rather than calling canonical behavior proposed.
+
+## External final delivery checklist
+
+Implementation/compatibility/package review and own lifecycle preparation are
+complete. These external delivery observations remain pending for the final pair:
+
+- Independent final exact-head composition/lifecycle review.
+- Required current archive-head Docs checks and unchanged-source check freshness.
+- Normal exact-head Docs-first/source-second squash delivery with history retained.
+- Actual merged-tree verification and actual-main CI/publication/provenance receipt.
+
+The archive does not assert those future events occurred. Receipts belong in the
+paired PR discussion and canonical task; no post-merge implementation change or
+publication is manufactured to make this candidate say delivered. Broad management,
+installation, provider/account/service, native/physical and whole-MVP gates remain
+open. No tablet contact occurred.
 
 Source basis: current native source/spec files, original attributed producer
 artifact and local test/tool outputs. Coordination selects ownership and sequence;
