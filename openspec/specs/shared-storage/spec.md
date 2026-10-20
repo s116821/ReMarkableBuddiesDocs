@@ -27,9 +27,10 @@ stable record/revision/operation/actor IDs, explicit parents, payload kind and
 content-hash references. Domain adapters SHALL remain separate for conversation,
 source, export association, subject memory and handwriting; subject memory SHALL
 NOT be required to enable Writer or another domain. Format-one envelopes SHALL
-admit domain version 1 across existing namespaces and version 2 only for export
-associations, with the same restriction in the offline JSON contract. The Ledger
-SHALL validate the corresponding export payload shape. Unknown versions SHALL be
+admit domain version 1 across existing namespaces and version 2 only for
+conversation and export-association records, with the same restriction in the
+offline JSON contract. Domain adapters SHALL validate their corresponding payload
+shapes. Unknown versions SHALL be
 preserved or refused without being silently overwritten or republished.
 Source: REM-36 outcome/coordination; design section 2; scoped prepared-note export admission.
 
