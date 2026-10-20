@@ -22,24 +22,13 @@ Apply SHALL reuse the existing exclusive Store/mutex/CAS atomic writer with curr
 - **WHEN** exact target readback succeeds or a failure occurs after publication might have happened
 - **THEN** the result is respectively verified disk/restart-required or unknown, never invented rollback or automatic retry.
 
-### Requirement: Private intent and read-only desired-file reconciliation
-The host SHALL retain original base/path/target evidence privately before one apply dispatch and SHALL expose only a reduced safe view/opaque reference. Status SHALL only observe exact original target bytes and SHALL NOT prove historical publisher identity, refresh conditions, mutate or settle uncertainty from later command refusals.
+### Requirement: Bounded private intent and read-only desired-file observation
+The producer SHALL prepare a private intent bound to the original base/path and exact deterministic target bytes. It SHALL expose only the contract's bounded three-field declarations and private intent data, never arbitrary configuration values. Status SHALL read only the original selected file and compare the complete original target; it SHALL NOT mutate, refresh conditions, prove historical publisher identity or infer runtime activation. A later refusal SHALL NOT settle an earlier possibly dispatched apply.
 
-#### Scenario: Lost apply report
-- **WHEN** apply may have run but its complete verified report is unavailable
-- **THEN** original evidence remains unknown and explicit status can report desired-file-observed only for exact prepared target bytes without replaying apply.
+#### Scenario: Exact desired file after an uncertain apply
+- **WHEN** the original intent is checked after its complete apply report is unavailable
+- **THEN** status reports desired-file-observed only for exact complete target bytes, otherwise unresolved, without replaying apply or claiming who published those bytes.
 
-#### Scenario: Fresh deliberate edit after an unknown outcome
-- **WHEN** the user explicitly begins a distinct edit from fresh current state
-- **THEN** it has new conditions/reference and preserves the prior diagnostic without claiming rollback or evicting unresolved evidence at capacity.
-
-### Requirement: Shared explicit editor with preserved session lifetime
-Both browser and Electron SHALL offer the same three-field saved editor using protected fixed host adapters, no-saved-override choices, truthful origins and neutral pending/readback status. Before-I/O external invalidation, original receiver, serialized cancel and after-await generation checks SHALL preserve ready/unknown references and unrelated memory-forget uncertainty.
-
-#### Scenario: Refresh or navigation races a save
-- **WHEN** cancellation, same-ID refresh, real document navigation or target change occurs
-- **THEN** ready references and late views are invalidated while possibly dispatched original apply remains unknown with no repeat.
-
-#### Scenario: Saved preference versus running behavior
-- **WHEN** a disk save or desired-file observation succeeds
-- **THEN** both hosts show its exact limited saved-state result without service/provider checks, automatic restart or effective environment claims.
+#### Scenario: Refused reconciliation
+- **WHEN** a status request, file read or original intent fails admission
+- **THEN** its bounded refusal does not acknowledge, roll back or settle an earlier apply.
