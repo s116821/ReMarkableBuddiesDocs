@@ -19,3 +19,28 @@ Accepted review pair: Manager bf13a9015c294b591c94de15490cf9e291a9c20e / Docs0de
 Required hosted ManagerCI38371430437/title38371430436 and Docs38371439594 succeeded. Direct Linux115209160630/Windows115209160500 logs show supported Node24.21,52tests/52pass/0fail including all three regressions, development/production browser/Electron and packaged checks; existing wired/owned fixture limits remain. Executed normal PR merge709fef2efdb1272d9272be4801e766d47d40803b incorporatesbf13 into7ff5167b0dd1dee89e0be448963940e2450feb49; distinguish this from exact local source probes. Public final CI evidence: https://github.com/s116821/ReMarkableBuddiesManager/pull/12#issuecomment-6141978698.
 
 Parent-first delivery/rebase/recheck, canonical sync/archive/merge, signed producer/trust/SDK/compatibility/physical/full REM-41/46/lifecycle remain open. Tarballs stay APK-install-ineligible and later use requires revalidation. Other inherited PowerShell blocks remain separately owned CI audit work. No device/SSH/key/config/producer/release/tag/merge or new worker/checkout follows from acceptance.
+
+## Current integration preparation
+
+The existing source branch incorporates release-discovery preparation `a0fc64b`
+and its accepted inspection/quiet-refresh parents. Relative to previous head
+`20f6b33`, only the three inherited quiet-refresh doc/runtime/test paths change.
+The quarantine implementation, repaired finalization boundary and deterministic
+regressions remain exact to accepted `bf13a901`; no old defect or false-green
+Windows result is relabeled as success. The five net CI/package/lint/fixture
+files equal the already accepted inspection parent. No release engine, dependency,
+source version or quarantine authority changes.
+
+Docs incorporates actual main `ccaa8c3`. The sole guide conflict retains exact
+delivered-main contents, and every main entry remains exact. Only this own result
+and the overbroad lifecycle task are corrected; proposal, design and accepted
+requirement/scenario bodies remain unchanged. Original finding 5500950561,
+repair acceptance 5501244332 and supported 52-test hosted evidence stay attributed
+to their original source revisions. No original protocol or failure history is
+discarded and no broad matrix is repeated.
+
+This remains preparation, not completed delivery. Release-discovery parent
+delivery, current-head checks, bounded review and own canonical/archive remain
+required. Signed APK production/trust, SDK compatibility, physical tablet and
+installation capability are separate; quarantining bytes does not qualify them.
+No tablet, provider, settings or reverse-engineering operation is included.
