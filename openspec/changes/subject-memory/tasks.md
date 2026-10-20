@@ -23,6 +23,9 @@
 
 ## 4. Selected receiving increment
 
+- [x] 4.6 Integrate optional selected Reader draft publication under a combined ordered catalog/aggregate/Reader admission set; do not nest independent locking callbacks. Bounded source2ebe8e1 and test-only2f6f738 independently accepted; verification task4.7 and full native/Writer/lifecycle gates remain open.
+- [ ] 4.7 Verify actual composed-path deadlock/refusal/replacement/budget/ownership controls and retain native/Writer/provider/lifecycle gates.
+
 - [x] 4.1 Freeze canonical aggregate/catalog identity, immutable genesis registration, initialization/adoption and exclusive mixed-document ownership with independent seam review.
 - [x] 4.2 Adopt reviewed cumulative pre-I/O selected reading bounds without duplicating generic validation; preserve complete lineage and token semantics.
 - [x] 4.3 Implement selected Provider/catalog projection and actual Reader/maintenance selection, retaining default LocalMemory behavior.
