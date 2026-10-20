@@ -7,5 +7,6 @@
 - [x] Implement atomic Store-locked local generation/content/head conditional publication, gated selected confirmation and pure bounded exact historical receipt reconciliation with original parent-content checks; never mutation on receipt absence.
 ## Verification and delivery
 - [x] Verify actual local/selected DTO, admission/re-entry/base/generation/atomic restore/publication interleaving, CAS/replay/unique-manifest ambiguity/changed-parent/tampered-hash/collision/bounds/no-init and commit/output uncertainty controls; preserve exact corpus for independent consumer compatibility.
-- [ ] Pass appropriate no-default/lint/current hosted checks and independent implementation review; reconcile findings.
-- [ ] Sync only accepted canonical requirements, archive only completed own scope, obtain final review and complete Docs-first paired delivery with separate actual main/publication observations.
+- [x] Pass appropriate no-default/lint/current hosted checks and independent implementation review; reconcile findings.
+- [x] Sync only accepted canonical requirements, archive only completed own scope and prepare the final composed review packet.
+- External delivery gates remain: final independent composition review, normal Docs-first/source-second squash and separate actual merged-tree/main/publication observations. This archive does not claim those future results.

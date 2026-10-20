@@ -136,3 +136,29 @@ not relabeled as a new run. No CLI cases were replayed merely to publish artifac
 Current sourceCI39410088631 targets60940ac5. Superseded77e run39408551182 is confirmed
 CANCELLED, separate from earlier bfa cancellation and never counted as passing.
 Current full hosted checks, receiver compatibility and final lifecycle remain gates.
+
+## Qualified final composition
+
+Full independent implementation reviews5584022999/5584023213 were read and accepted
+source60940ac5/Docs5808f4d without remaining blockers. Current source39410088631 now
+passes Title, Checks, Build and Integration; PR Release is correctly skipped. The
+completed Linux Checks log confirms all six actual prepared CLI cases, the native
+corpus verifier and all27 memory CLI cases pass. Its raw log is retained separately
+from the earlier pending-log-export response; no test was rerun to obtain it.
+Current implementation Docs39410491644 passes Windows/Ubuntu/OpenSpec.
+
+The receiver [implementation packet](https://github.com/s116821/ReMarkableBuddiesManager/pull/30#issuecomment-6289185017)
+independently verifies all39 pairs/all78 hashes/nine Greek previews and canonical
+preview/public reduction checks, plus actual coordinator/controller flows using
+synthetic lost confirmation replies and exact original absent/later receipt calls.
+This is protocol compatibility evidence; whole consumer implementation, retained
+package/physical qualification and its own lifecycle remain separately owned.
+
+Canonical host-memory-cli now has four requirements/eleven scenarios: the old
+whitelist sentence is narrowly reconciled, both unrelated requirements and all
+six old scenarios remain exact, and the five accepted prepared scenarios are added.
+Only this own seven-artifact change is archived as
+2026-10-20-prepare-conditional-memory-forget. All eight scoped tasks are complete;
+final composed review, paired merge and actual main/publication observations remain
+external delivery gates. Source60940ac5 stays frozen. Broad REM24/42/Reader/native
+scope remains open and no tablet/provider/service action occurred.
