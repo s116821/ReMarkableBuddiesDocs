@@ -1,10 +1,13 @@
 # Proposed narrow public host contract
 
-This is precode. No current browser/Electron method supports this workflow.
+This contract was published and independently accepted before code. The paired
+implementation candidate now supplies this workflow; final CI/review/delivery
+remain gates, recorded in results.md.
 Producer protocol is pinned to Docs68 at64ff69baf2e066f203eadd587cb2d3864173b1a6,
 including its exact matrix and envelope-golden.json. Root review5583470985 found
 atomic-local-publication and historical-content gaps in the preceding packet;
-the corrected producer remains subject to independent review and implementation.
+corrected producer acceptance is recorded in review5583523433, and consumer
+precode acceptance in review5583665573. Actual producer delivery remains a gate.
 
 ## Public entry and exact requests
 One optional ManagerHost.memoryForget(request), one authenticated loopback POST
@@ -109,6 +112,10 @@ are unavailable. A surviving controller with previous possible-dispatch state ke
 an unresolved/unavailable notice when new host status is none; none means no retained
 record, NOT no historical dispatch. A completely restarted UI cannot reconstruct
 unknown history and always explains this limit. No durable recovery is implied.
+An already retained historical acknowledgement can be returned for the same exact
+receipt reference without another CLI dispatch; a cancel race never erases it.
+A new pending preparation hides any older terminal public reference, so stopping
+it invalidates that current reservation rather than targeting an old record.
 Initial uncertain live-host slots permit receipt-only; they are not silently evicted
 to make room. If custody is lost, a later deliberate fresh inspection and new user
 preparation/confirmation is a NEW intent, not replay of uncertain work. No restart
