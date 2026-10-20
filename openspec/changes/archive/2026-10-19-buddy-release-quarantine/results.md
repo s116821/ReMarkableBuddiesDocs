@@ -44,3 +44,37 @@ delivery, current-head checks, bounded review and own canonical/archive remain
 required. Signed APK production/trust, SDK compatibility, physical tablet and
 installation capability are separate; quarantining bytes does not qualify them.
 No tablet, provider, settings or reverse-engineering operation is included.
+
+
+## Delivered parent and bounded lifecycle
+
+Release-discovery Manager #11 / Docs #21 merged normally at
+`90f343718fc068ff99a3cb09abf94a76804dfaac` /
+`3eb41742356debb2fa2ae7a768c57fdd72d02add`. Quarantine preparation `a05f2922` /
+`6ef09a87` received bounded acceptance in reviews
+[5580644440](https://github.com/s116821/ReMarkableBuddiesManager/pull/12#pullrequestreview-5580644440)
+and [5580644606](https://github.com/s116821/ReMarkableBuddiesDocs/pull/23#pullrequestreview-5580644606).
+Original finding 5500950561, repair review 5501244332 and earlier failed Windows
+results remain intact and attributed; no historical failure becomes a pass.
+
+The source branch reconciles actual main `90f3437` with no content change. Its
+entire tree remains `9e4cba210ab00845ce03789c9404f6842e6a1ca3`, identical to
+accepted `a05f2922`, including the repaired monotonic/cancellation commit boundary.
+No product, pipeline or test body changes; no unchanged application matrix is
+rerun manually. The preceding exact preparation source/Docs hosted checks passed.
+
+Docs incorporates actual main `3eb4174` and retains every main entry. Fifteen
+stale active copies of the three completed inspection/metadata parents inherited
+by this child are removed because their authoritative canonical/archive bodies
+are already delivered in main. Those exact archives remain untouched. This does
+not archive another lane's unfinished work. Only the five own quarantine
+artifacts are archived, and exactly three accepted requirements/six scenarios are
+synchronized. Original proposal/design/delta bodies remain unchanged; own
+results/tasks record completed source-parent delivery and bounded lifecycle.
+
+Current-head CI and final ancestry/preservation/receipt review are still needed
+before coordinated source/Docs squash delivery. Raw verified legacy tarballs do
+not become signed APKs or installation eligible. SDK compatibility, signing,
+installer/updater and physical/native qualification remain separate and unwaived.
+No live artifact consumption, provider, tablet, settings, new resource or reverse
+engineering action is included.
