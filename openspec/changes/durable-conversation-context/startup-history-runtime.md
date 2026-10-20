@@ -149,3 +149,16 @@ use, but does not promise all 24 are eliminated. Fresh qualified admission,
 development collection bootstrap, selected effect dispatch/settlement, trigger/
 status/history setup, branch-bound render observations, native validation and full
 task2.10 remain separate unfinished work. No held packet/device action follows.
+
+## Current backend integration
+
+The current integration uses repaired subject-memory d9aa2f3 and its delivered
+inspector/storage/conversation parents. Historical d01 evidence remains attributed
+to its original candidate; current Cargo/SDK32b86e4 and release infrastructure
+are preserved. History maintenance also conflicts with inspection, prepared
+export and personalization, in addition to memory/runtime overrides, before any
+dispatch. The original startup/history core and ten actual CLI fixtures remain
+unchanged. No production native constructor is enabled for lint or startup.
+Current privacy behavior remains value-free diagnostics; no old full Reader text
+logging is restored. Parent subject-memory live evidence and delivery remain
+separate gates; this child is prepared as a draft without bypassing them.

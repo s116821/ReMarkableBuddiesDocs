@@ -32,7 +32,7 @@ The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL 
 
 #### Scenario: Debug data exposure
 - **WHEN** default debug diagnostics are emitted
-- **THEN** logs may include question/answer and parsed model text but explicit request diagnostics exclude authorization headers and entire image-bearing request bodies; diagnostic page-image copies require dump opt-in, while every actual source image used for a turn is retained privately under the durable evidence contract regardless of dump settings.
+- **THEN** logs SHALL omit question/answer text, parsed model content, arbitrary provider metadata, memory context, authorization headers and entire image-bearing request bodies; fixed progress and numeric usage remain available. Diagnostic page-image copies require dump opt-in, while every actual source image used for a turn is retained privately under the durable evidence contract regardless of dump settings.
 
 ### Requirement: Implemented product boundary
 The application SHALL process Reader Buddy iterations on real devices or the maintained simulator, provide generic local storage/configuration and opt-in Drive record-sync infrastructure, and persist conversation/source evidence through shared domain APIs and actual Reader orchestration. It SHALL NOT claim Writer UI, unified follow-up routing/rendering, document retrieval, external search tools, domain-level persistent subject memory or handwriting learning, or native answer-page creation merely because shared ledger/storage APIs exist. Source: REM36/REM37 infrastructure/domain scope and owning follow-up issues; src/main.rs, src/workflow/orchestrator.rs, src/storage/ and src/conversation/.
@@ -52,3 +52,16 @@ The application SHALL process Reader Buddy iterations on real devices or the mai
 #### Scenario: SDK integration qualification
 - **WHEN** conversation persistence consumes device identity, capture provenance or a native output result
 - **THEN** the Buddy integration uses the reviewed ReMarkableOpenSDK capability boundary through the mockable device seam, records the exact SDK contract/revision and qualification limits, and refuses unsupported or unqualified native success rather than adding hardware-specific logic to the conversation domain; SDK canonical contracts remain in the SDK repository.
+
+## ADDED Requirements
+
+### Requirement: Selected history command routing
+The executable SHALL support --conversation-operation inspect|context|recover-pending with required --conversation-input FILE. Selected history maintenance SHALL dispatch before dotenv and ordinary credential, model, sync or device initialization. It SHALL be mutually exclusive with memory maintenance, owned-data inspection, prepared export and personalization maintenance, and SHALL reject simulation and normal provider/runtime/logging overrides. Current inspection SHALL retain its existing sealed, budgeted and leased output contract; historical recovery SHALL return only original custody and grant no new effect authority.
+
+#### Scenario: Competing history selectors
+- **WHEN** history maintenance is combined with another one-shot selector in either argument order
+- **THEN** argument parsing SHALL refuse before dispatch with no JSON report or owned-file mutation.
+
+#### Scenario: Context without a tokenizer
+- **WHEN** the history context command has no qualified provider tokenizer
+- **THEN** it SHALL report choice-needed without inventing token counts or emitting model-ready context.

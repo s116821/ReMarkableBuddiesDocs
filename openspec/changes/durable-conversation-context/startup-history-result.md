@@ -149,3 +149,47 @@ technical scope, sole-operator coordination, advance notice and recovery.
 Source basis: exact repository blobs and actual owner test/build outputs; separately
 attributed independent source/assertion review. Private local logs are not public
 transcripts. No synthetic or historical evidence is promoted to native authority.
+
+## Current-parent integration
+
+Source8909dade30db044a1c69edd565b09144eefbf5a6 normally integrates existing
+startup branch91cf92f with repaired memory parentd9aa2f3. The original accepted
+startup/history source and result above remain historical evidence; they are
+not relabeled current qualification. Subject-memory remains draft/live-gated,
+and actual inspector release qualification is separately observed.
+
+The effective child is12 source paths. The startup/history implementation,
+ten actual CLI fixtures and refusing-backend implementation remain byte-identical
+to91cf92f. Current Cargo.toml/lock, storage selection and the complete repaired
+orchestrator remain byte-identical tod9aa2f3. Current SDK32b86e4 and release,
+export, personalization, inspection and memory contracts are preserved. Only
+the existing memory preflight and trusted Store-open classifier become crate-
+visible for their real startup caller; no new admission/recovery engine appears.
+
+Six conflicts compose configuration reader fields/defaults/validation, library
+exports, all early one-shot routes, the shared preflight helpers, current outbox
+and the repaired value-free Reader logs. History maintenance now also rejects
+inspection, export and personalization, in addition to memory and runtime
+selectors. The existing actual-process selector control adds eight orderings:
+history against each other one-shot route in either order, no JSON dispatch and
+unchanged fixture bytes. The source tree retains production refusing transport;
+selected startup reports unsupported rather than falling through to RealDevice.
+
+Current Windows23 distinct top-level checks pass: ten actual startup/history CLI,
+four inspector CLI, five parser/logging, three runtime library and one exact
+historical-recovery library control. The latter preserves original custody after
+replacement and refuses changed/missing input. Strict all-target/all-feature
+Clippy with denied warnings, locked no-default library, formatting and diff checks
+pass. Earlier unresolved-merge parse output from a local text-encoding error is
+retained; source was restored from authoritative Git blobs with explicit UTF-8
+before these successful checks. No original full matrix was repeated.
+
+The active platform delta preserves source-retention/service behavior while
+correcting its old full-model-text logging permission and specifying the history
+command pair and selector isolation. Strict Docs validation passes39 items;
+manifest validation preserves25 guidance files and126 original source blobs.
+No canonical requirement is synchronized or whole change archived here: current
+hosted CI, independent full integration review, parent memory live evidence and
+coordinated delivery remain required. Native/fresh ReaderContext, tokenizer,
+selected effects, wider conversation requirements and full MVP gates stay open.
+No model, tablet, service, account or remote-provider operation occurred.
