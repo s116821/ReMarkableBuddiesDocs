@@ -45,3 +45,18 @@ The production CLI SHALL expose only --api-key, --model/-m, --base-url, --trigge
 #### Scenario: Competing memory maintenance selectors
 - **WHEN** memory maintenance and inspection, prepared export or personalization maintenance are both selected in either order
 - **THEN** argument parsing SHALL refuse before any one-shot dispatch, with no JSON report or owned-file mutation
+
+### Requirement: Logging and service lifecycle
+The runtime SHALL use env_logger with millisecond timestamps. --log-level SHALL validate off/error/warn/info/debug/trace and override RUST_LOG; absent explicit control SHALL use RUST_LOG, otherwise info globally and debug for Reader Buddy application targets. No dedicated debug enable toggle SHALL be required. The supplied service SHALL retain /opt/bin/reader-buddy from /home/root, its protected environment file, journal output and five-second restart-on-failure policy. Source: REM14/REM34; src/main.rs; deploy/reader-buddy.service.
+
+#### Scenario: Useful diagnostics by default
+- **WHEN** no explicit logging override is set
+- **THEN** Reader Buddy debug messages are enabled while dependency debug messages are disabled, and image dumps remain independently opt-in.
+
+#### Scenario: Service configuration
+- **WHEN** the supplied unit is used
+- **THEN** it reads /home/root/.config/reader-buddy/environment and orders after home.mount, xochitl.service and network-online.target.
+
+#### Scenario: Debug data exposure
+- **WHEN** default debug diagnostics are emitted
+- **THEN** logs SHALL omit question/answer text, parsed model content, arbitrary provider metadata, memory context, authorization headers and entire image-bearing request bodies; safe fixed progress and numeric usage diagnostics remain available, and page images are saved only with dump opt-in.

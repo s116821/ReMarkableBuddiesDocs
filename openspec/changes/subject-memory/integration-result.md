@@ -55,3 +55,15 @@ is shared with Writer; no duplicate question, credential search or unconfigured
 call occurred. No live or native effectiveness, Writer/Manager, remote worker,
 restore/migration or whole subject-memory completion is claimed. All unfinished
 requirements/tasks stay active and unarchived. No tablet contact occurred.
+
+## Privacy review successor
+
+Independent integration review found that the memory-disabled branch restored an
+old full question/answer progress log, regressing delivered PR54 privacy behavior.
+The successor removes that branch; the existing fixed verified-Q&A progress
+message remains. The existing actual-CLI content-canary control is the affected
+regression check, with no new broad matrix. The platform logging delta also
+replaces the historical permission for full model text with the delivered
+value-free diagnostics contract. Current source/check revisions and final
+acceptance remain separately attributable; the earlier0cddb candidate is not
+accepted as-is.
