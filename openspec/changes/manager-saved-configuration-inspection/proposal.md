@@ -27,4 +27,4 @@ Manager host/parser/transport, optional bridge, shared controller/panel, public 
 and feature checks; central own consumer change. No provider/model-credential access,
 settings writes, effective configuration resolution, path admission, service/native
 work, new persistence/dependency or source-maintained release version. Main owns
-all producer implementation. This is precode, not an implemented capability.
+all producer implementation. Implementation is published for independent review; current retained-package CI, full specification lifecycle and delivery remain open.

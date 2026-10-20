@@ -10,8 +10,7 @@ Source basis: current native files in Manager3c789a0, Docs54085ec canonical
 requirements and source-backed producer review5584589306. The25-field vector is
 synthetic design evidence. Main has since published an actual35-report corpus at
 Buddy0e0eec73 (captured4bc7eb0, retained executable digest); complete artifact
-receipt is verified, but dependent consumer parser/transport acceptance remains
-pending after this precode review. No corpus case is replayed to create this design.
+receipt is verified, and dependent consumer parser/controller tests now verify all original bytes and semantics. No corpus case is replayed to create this design.
 
 ## Goals / Non-Goals
 Goals: strict bounded scalar/presence projection, honest saved/origin/runtime labels,
@@ -21,7 +20,7 @@ and current protected package evidence. The exact API and caps are in contract.m
 No general Config serialization/editor, effective environment/model/provider check,
 raw digest authority, credentials management, path admission/Store open, new daemon,
 persistence, dependency, global timeout expansion, service/native or tablet work.
-Main owns producer code and corpus; this lane owns the future consumer only.
+Main owns producer code and corpus; this lane owns the consumer only.
 
 ## Decisions
 1. Reuse optional host-method/controller/helper/IPC patterns with the exact names
@@ -74,5 +73,4 @@ inspect responsive captures, then independent review, own canonical sync/archive
 actual producer composition and final paired delivery/main-publication observation.
 
 ## Open Questions
-None blocking in the agreed producer wire. This concrete consumer proposal still
-requires its own independent precode review before any API/source implementation.
+None blocking in the agreed producer wire. Independent precode review5584741044 accepted exact5def25f before implementation. Independent implementation review and current retained-package CI remain delivery gates.
