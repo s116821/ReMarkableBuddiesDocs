@@ -1,9 +1,8 @@
 # Shared model consumer implementation evidence
 
-Source basis: Manager33 45b13ead5bfe25590d155402edcabea78a1bbeb9
-(product bytes identical to initialffaecd2f0c0b79f920cd056b3f138a9e14413c2a;
-only one host-test line adds explicit declared-null removal/untouched-key coverage),
-actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
+Source basis: Manager33 1aa4980ea03fa784ee79f74ebba8db2a7156e8e9,
+including explicit declared-null UI coverage, owned HTTP decode-buffer clearing and
+the reviewed raw-newline correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
 15e34308f77e3c4591d257ea34917b12a2631b6b/review5589113102 and actual
 Docscc4cadf03deb285fcbbae43298a7057098f75478. This is an implemented active
 candidate, not final review/archive/merge or broad/native qualification. The basic
@@ -69,7 +68,7 @@ no-op crosses normal explicit replacement gestures without dirty-state injection
 
 ## Executed controls and visual inspection
 
-- All223Node tests pass:203baseline plus20model controls. They cover all32 original
+- All225Node tests pass:203baseline plus22model controls. They cover all32 original
   streams, exact finite/private shapes, wrong patch/hash/phase/current/identity,
   Unicode/scalar/byte/whitespace caps, original patch mutation, hash-only status,
   deadlines/ready expiry/late completion, capacity, all3lane ownership and stale Stop.
@@ -111,6 +110,28 @@ page overflow/private text. They are presentation evidence, not device qualifica
 ![Native Electron](images/electron.png)
 
 ![Native Electron390](images/electron-390.png)
+
+## Implementation-review newline correction
+
+Review5589498565 at initialffaecd2 confirmed that collapsed deletion beside equal
+displayed newlines could choose the wrong raw CRLF/LF span. Before-fix regressions
+reproduce both Root cases. Current1aa4980 anchors backward/forward deletion to the
+recorded UTF16 caret and actual removed display span. Unanchored fallback accepts
+only identical raw results across all minimal splices, refuses ambiguous/lossy
+internal newline reconstruction, and leaves Save disabled on refusal.68independent
+mixed CRLF/LF/loneCR/emoji caret cases and ambiguity controls pass. Adjacent loneCR+LF
+is correctly treated as one CRLF display break and separately tested; the first
+new regression fixture had incorrectly counted that pair as two breaks.
+
+Actual guarded browser and source Electron keyboard controls also verify exact raw
+submissions after Delete/Backspace for mixed/reverse/loneCR/non-BMP cases.225Node,
+lint and both builds pass after this correction; nine Python and ten workflow graph
+controls remain unchanged/passing. The source review thread is replied to but stays
+open pending independent successor acceptance; remaining full review is not asserted
+complete. Extra HTTP decode-buffer cleanup clears the owned concatenated byte copy
+as well as incoming chunks, without claiming immutable-string erasure or changing
+existing guards/caps. The two added public rows also verify explicit declared-null
+removal with untouched model omitted through both real guarded hosts.
 
 ## Preserved failures and limitations
 
