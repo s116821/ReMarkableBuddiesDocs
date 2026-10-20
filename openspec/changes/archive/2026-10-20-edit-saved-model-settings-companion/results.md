@@ -4,8 +4,9 @@ Source basis: Manager33 42c9b040f4c82d26b27fd9e88232acd97c7b96be,
 including explicit declared-null UI coverage, owned HTTP decode-buffer clearing and
 the raw-newline review correction and synchronous DOM-lifetime correction after initialffaecd2; actual base8dfaf8550f64fbf84e474bce9a70ac895306e516; accepted precode
 15e34308f77e3c4591d257ea34917b12a2631b6b/review5589113102 and actual
-Docscc4cadf03deb285fcbbae43298a7057098f75478. This is an implemented active
-candidate, not final review/archive/merge or broad/native qualification. The basic
+Docscc4cadf03deb285fcbbae43298a7057098f75478. This is an implemented, reviewed and verified consumer archived with its exact
+canonical requirements. Final composed review/merge and broad/native qualification
+remain separate. The basic
 consumer delivery/publication is closed at Manager v0.19.0 and is not replayed.
 Model producer actual8c90edab/v0.22.0 is likewise a closed input. No tablet,
 provider/credential/trust action or local retained-package rebuild occurred.
@@ -95,8 +96,8 @@ no-op crosses normal explicit replacement gestures without dirty-state injection
 
 The native UI harness imports the test checkout's synthetic lower-report fixture;
 actual packaged/source coordinators, HTTP/IPC and public guards remain installed.
-Ordinary hosted retained jobs must still execute the frozen browser/Electron artifacts
-without rebuilding. Their fixture additionally checks packaged resources byte-for-byte
+Ordinary hosted retained jobs execute the frozen browser/Electron artifacts
+without rebuilding; both current OS jobs passed as recorded below. Their fixture additionally checks packaged resources byte-for-byte
 and the actual packaged Python refusal entry. No local package was rebuilt.
 
 All four below are actual current source-host390/1280 captures inspected for origin
@@ -162,9 +163,10 @@ for asynchronous node removal; no sleep, timeout increase or weakened privacy gu
 Full failed logs are retained: Linux76225bytes SHA256
 0f971b7ab8288ce8d89d222bd1052096ce22d5bbe24d51128dae2e5b3c5e7a28;
 Windows60142bytes SHA256
-d592de936d714e1a1050eb9dfeedc761f216b6e2a4fbf6706646f4c8c5751c.
-These failures are not qualified or blindly rerun. Fresh normal42c9b04 hosted CI and
-focused immutable successor review remain required; no archive or merge is claimed.
+d592de936d714e1a1050eb9dfeedc761f216b6e2a4fbf6706646f4a4c8c5751c.
+These failures are not qualified or blindly rerun. At that checkpoint fresh normal42c9b04 hosted CI and focused immutable review
+were still required. Both have since passed as recorded in the final receipt;
+actual merge/publication are not asserted by this archive.
 
 ## Preserved failures and limitations
 
@@ -194,8 +196,30 @@ Docs normally composes delivered actual013d13a0304f787600ee23eae9186da8748276a2,
 preserving all577actual-main entries including its seven ordinary-export artifacts.
 Only this own11file active consumer is added; no speculative producer branch merged.
 
-Current both-OS hosted development/source/retained-package checks and independent
-implementation review remain open. Only after those pass: own4requirements/11scenarios
-canonical synchronization/archive, final composed review and normal Docs-first linked
-squash, then separate actual-tree/mainCI/tag/provenance observations. Broader backend,
+Current42c9b04 both-OS hosted development/source/retained-package checks PASS.
+Independent full source review5589608081 and focused successor review5589943370
+accepted the implementation. Own4requirements/11scenarios synchronize exactly into
+new canonical saved-model-settings-companion; only this completed change is archived.
+Final composed review and current final Docs CI precede normal Docs-first linked
+squash; actual-tree/mainCI/tag/provenance observations remain separate. Broader backend,
 credential/provider/runtime/native, ordinary data and whole REM42 remain open.
+
+## Requirement and scenario verification map
+
+| Canonical requirement | Scenarios | Evidence |
+| --- | --- | --- |
+| Explicit origin-only saved model/endpoint editor | Untouched/replacement/null removal; saved versus effective | Protocol original corpus, coordinator and both guarded host UI controls |
+| Bounded private text with hash-only reconciliation | Paste/edit/submission lifetime; lost apply/hash-only status; no response echo | Raw newline vectors, synchronous clear-hook/pagehide/Read/dispatch controls, original status packet and child/helper refusal tests |
+| One-shot original authority and shared maintenance ownership | Expired/late reply; old cancel/status versus another coordinator; capacity | Coordinator fake clock/deferred gates, controller generation guards, actual both-host three-lane tests |
+| Attributed protected-host verification and own lifecycle | Original corpus versus synthetic faults; protected boundary/exact delivery | Original32reports/all60hashes, HTTP/main-frame IPC guards, current hosted checks and separately reviewed canonical archive/delivery receipts |
+
+## Final hosted and lifecycle receipt
+
+Current source run39476665269 passes Title, Checks, Build and both ordinary integrations. Linux118815734431: 91018bytes SHA25628e1546df54d1860b0666ed4b03694cb1ca35643b7624e2013ab3061a68dc881; Windows118815734617: 67481bytes SHA2564b369cc13c1a5a117f6ea9b214190b9540cfc8534f17016fc7597d09cd40aaca. Each full raw log contains all four development/source/retained-browser/packaged-Electron model UI success markers and both before/after package-verification calls. Checks118814337922 is121519bytes SHA256a884ff8b22b2c2f82dbceae9304bf8005ee0cb5d4238791e1aa3e35cdf641f8e, with226Node and ten graph controls passing. Original1aa integration failures remain preserved separately. No local package rebuild/execution or tablet/provider contact.
+
+Canonical requirements match all four archived requirement blocks and eleven scenarios
+exactly. All577actual013d entries remain unchanged; only this own archive and new
+canonical capability are added. The producer-contract proposal link is mechanically
+adjusted for the archive location. The four inspected image blobs remain unchanged.
+No prior failed run is relabelled, no producer binary replayed, no native tablet
+qualification or whole REM42 completion claimed.

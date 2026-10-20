@@ -21,7 +21,7 @@ and protected live-provider prerequisites retain separate ownership.
 ## Inputs and delivery
 Actual Manager8dfaf8550f64fbf84e474bce9a70ac895306e516 / Docscc4cadf03deb285fcbbae43298a7057098f75478
 are the baselines. Producer actual8c90edab and published v0.22.0 are closed inputs;
-[producer contract](../archive/2026-10-20-edit-saved-model-settings/contract.md)
+[producer contract](../2026-10-20-edit-saved-model-settings/contract.md)
 and canonical saved-model-settings remain authoritative. Reuse original32report
 corpus90529bytes/SHA2561445676ff01ad2cfebbd94ed6a33845fccf63b5630848419f4fd15584408fcfe,
 all60raw hashes, capturec785afe/executable2a624cfd, without producer replay.
