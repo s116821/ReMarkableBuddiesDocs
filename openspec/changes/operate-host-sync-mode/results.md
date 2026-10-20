@@ -53,3 +53,15 @@ Current exact source hosted full CI, independent implementation review and final
 canonical sync/archive/delivery remain pending. No provider, device, live-model,
 service, account, restore or reverse-engineering action was performed. Existing
 end-to-end sync and frozen Reader/native/model requirements remain unfinished.
+
+## Final assertion-only successor
+
+Source b1fa8a60c547141ccd5e716611863f04f1efdb48 changes only the existing
+actual-binary replay test above1a06873. It adds an older LocalOnly retry after a
+later distinct LocalOnly operation, proving an equal mode value is insufficient:
+the old receipt remains historical because the epoch differs. The affected
+one-test run passes. All implementation/guide/other tests are unchanged. Prior
+unit/CLI/lint/no-default/regression results retain attribution to1a06873;
+ordinary final-head hosted checks remain required. Superseded source run39385065062
+was canceled after publishing this successor, preserving its actual result rather
+than repeating two redundant full matrices.
