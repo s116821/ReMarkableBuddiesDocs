@@ -15,3 +15,11 @@ Early local failures are retained in private logs: the compiler exposed the sing
 Independent source/active-contract reviews5581389349/5581389436 accept e6a6bc2/76a7556 after full code/contract/log review. The reviewer independently matches the used Manager parser to blob5118e321082c2f9d330381cbfb3e411014fce7c0. The current Docs candidate normally merges actual main b9a859d without changing its unrelated content.
 
 Final source run39378497680 has passed Title and Checks. Actual completed Linux Checks job118481959252 logs confirm strict lint, the full ordinary suite, five maintenance controls,15 core/17 actual CLI/eight selected tests; the extra Unix CLI test refuses a FIFO lock before blocking open. Build/Integration remain in progress/pending, so no full-pipeline success is claimed. Canonical host contract is prepared; archive and normal delivery await final hosted/lifecycle gates. No tablet, provider/model execution, APK, reverse engineering or prior completed runtime matrix was run. Whole memory/Manager/Reader/native/1.0 qualification remains open.
+
+After metadata delivery the Docs topic normally incorporates actual central main
+a52a4a2, retaining that canonical/archive addition without changing host scope.
+Read-only prospective source composition on actual Buddy main a11be6b yields
+tree a67e5647b339010630d7902d866a7a37f11cee17: the same15 host paths retain their
+accepted bodies and355 other main entries, including the new CI implementation,
+remain exact. This is prospective composition, not an already completed merge.
+No source commit or unchanged matrix is replayed for this parent-only check.
