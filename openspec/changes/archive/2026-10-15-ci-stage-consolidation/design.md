@@ -1,0 +1,23 @@
+## Decisions
+
+Keep the current maintained upstream tools, package builders, inventories and publisher. The latest human clarification adds a separate PR Title prerequisite and prohibits repeating common suites across stages. Buddy runs four jobs on PRs and four on main. Manager runs five on PRs and five on main, counting Linux/Windows Integration separately. This explicitly supersedes the earlier four-job PR cap for Manager. PRs run Title, Checks, Build and Integration; main merges run Checks, Build, Integration and Release. Skipped event-inapplicable jobs do not allocate runners.
+
+PR Title uses the pinned amannn semantic-title Action, with dorny path classification for the existing application-title policy. An invalid title prevents Checks from starting. Common lint, unit, release-policy, workflow and locked Python/fixture dependency checks run once in the Linux Checks job. Main pushes classify their paths in Checks instead. Later jobs depend on Checks rather than rerunning those suites. Release-tool installation remains hash-locked in downstream jobs but the already-owned Python dependency audit does not repeat. The standalone title workflow remains only for non-main target branches.
+
+Checks and the reusable application entry both use explicit cancellation-aware success conditions. This admits main pushes when the PR-only Title job is intentionally skipped, while still blocking failed or canceled Checks. The application entry additionally requires the application path classifier. This follows GitHub's documented [dependency skip propagation](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idneeds); the workflow controls assert these exact admission conditions.
+
+Build calculates the read-only semantic candidate and compiles the existing application packages once. It builds the same pinned uploader recipe, including that recipe's single existing dependency audit. It returns the frozen tag/SHA, uploader artifact ID/bundle digest, and application artifact IDs. It does not rerun the application or release-policy unit suites.
+
+Integration downloads the exact Build artifact IDs and runs artifact/runtime checks. Manager's Linux and Windows executions validate distinct supported host platforms rather than duplicating the common source suite. Linux additionally verifies and executes the built uploader and pinned metadata Action controls against loopback only. Fixture dependency auditing belongs to Checks and does not repeat here. No production credentials are passed to these tests.
+
+Release retains its existing exact merged-main admission, semantic/tag checks, remote identity checks, same-ID retry, missing-only upload and exact notes serialization. It depends on all Build/Integration success and never rebuilds. PRs skip publication. Docs-only changes skip the reusable workflow entirely.
+
+## Compatibility and acceptance
+
+Current GitHub branch metadata shows no required-status contexts for the three repositories; Buddy's active Main Rules has no required-status-check rule. Its pull-request, squash-only, non-fast-forward and deletion rules remain unchanged. Re-read protection before delivery if it changes. No repository settings are changed by this work.
+
+Preserve all historical GitVersion and failed publication evidence. Reconcile each current PR against the corrected main workflow, preserving unfinished feature changes and feature-specific tests as steps of the appropriate stage. Do not paste new YAML onto an old branch that lacks current release helpers. Record exact branch heads and identify stale superseded CI drafts instead of blindly merging them. Focused workflow/action controls, actionlint, independent review and actual hosted checks on the final PR remain required. Rechecking downloaded artifact bytes and final mutable publication state remains necessary; these are checks of new boundaries, not repeated lint/unit suites.
+
+## Ordered delivery
+
+The accepted compact pipeline must land before dependent feature branches can incorporate it. This archive closes only the verified main implementation. The existing-PR scenario, 37-branch inventory, native Windows preservation repair, and actual-main publication follow-through remain active in `ci-existing-pr-reconciliation`. No feature or broad cleanup completion follows from this archive.

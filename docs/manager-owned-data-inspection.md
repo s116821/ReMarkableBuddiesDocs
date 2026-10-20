@@ -3,7 +3,7 @@
 The bounded REM-42 Manager increment consumes Main's reviewed Rust report_version1
 at source6b1b9fd539c33ced6ab56541ef332ba05e4ed693 /Docs4b425c9559fed5446a730d56bc9e68b6b8e80bb4.
 Those parent PRs remain unmerged; this does not claim the command is deployed.
-Main retains Rust/CLI ownership. The active [Manager change](../openspec/changes/manager-owned-data-inspection)
+Main retains Rust/CLI ownership. The archived [Manager change](../openspec/changes/archive/2026-10-19-manager-owned-data-inspection)
 owns only shared Angular UI, report parsing and existing host adapter integration.
 
 See the [Manager public guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/feat/rem-42-owned-data-inspection/docs/owned-data-inspection.md)
@@ -24,6 +24,8 @@ separate. Unknown account/native/install compatibility stays unknown. Disconnect
 re-read and changed connection/boot invalidate results; inspection pauses automatic
 observations until explicit re-read. Busy reports never stop a service.
 
-This does not close whole REM-42 or its REM-37/41/52/53 dependencies. Full linked
-review, hosted checks, canonical synchronization and archival remain open. Fixture
-browser/Electron/SSH evidence must be distinguished from live tablet/provider proof.
+This does not close whole REM-42 or its REM-37/41/52/53 dependencies. The bounded
+product/spec and CI-successor reviews passed; the three accepted
+requirements and six scenarios are [canonical](../openspec/specs/manager-owned-data-inspection/spec.md).
+Current-main checks/final review and coordinated backend/Manager/Docs delivery remain
+merge gates. Fixture browser/Electron/SSH evidence is distinct from live tablet/provider proof.
