@@ -47,3 +47,46 @@ Manager9/backend delivery and the explicit imported Windows-parent source remain
 visible. Main's physical competing-route/USB qualification stays unwaived and
 separate; it is not a blanket block on the qualified software integration. No
 production/native/whole-issue support or device execution follows from this work.
+
+
+## Actual-parent reconciliation and bounded lifecycle
+
+The backend inspector merged in Buddy32 at42b5108653563f2437ab793921c298e50bc268dd
+and Docs14 at24066fba710534fc797b0e6e142bb7cb43f940b2. Shared Manager9 then
+merged normally at769b5f5ac402610aa668c8b470bdd176438c41b8 and Docs17 at
+98867d695aa0813bbd028e94eb37001a9101ea94. Earlier unmerged-parent statements
+are the original preparation history, not current delivery status.
+
+Windows integration preparation0ea99eb/a883bc0 received bounded reviews
+[5580407497](https://github.com/s116821/ReMarkableBuddiesManager/pull/10#pullrequestreview-5580407497)
+and [5580408329](https://github.com/s116821/ReMarkableBuddiesDocs/pull/19#pullrequestreview-5580408329)
+with no findings. Its current source39363402106 passed all five applicable jobs,
+Release skipped, and Docs39363399030 passed all three. Actual completed Windows
+logs distinguish Python/config refusal, labeled IPC renderer/package fixtures
+and three WindowsNative API/private-ACL controls from physical USB execution.
+Linux browser/Electron/packaged inspection matrices pass. These observations
+remain attributed to their exact candidate; no duplicate matrix was run.
+
+Source02e238962c3ff096225bc901cbcfdab325eb6f40 reconciles actual main769b5f5.
+Squash ancestry produced seven textual conflicts in previously accepted shared
+files. All resolutions preserve exact accepted0ea99eb contents, and the entire
+resulting tree is identical: a7db5bcd8e849e2a0067fd64bcf3cc3df567cd4b. No product,
+pipeline or ordinary test body changed. Docs integrates actual main98867d6;
+its two conflicting shared receipt/guide files take exact delivered-main bodies.
+Main's other contracts and unfinished changes remain preserved.
+
+This closeout synchronizes exactly two requirements/four scenarios and archives
+only the five own Windows software artifacts. Proposal, reviewed design and delta
+bodies remain unchanged; result/tasks record completion. The existing public
+guide points to this separately qualified development-software scope. No other
+lane's change is archived. Final current-head CI and bounded preservation/receipt
+review remain required before coordinated Manager10/Docs19 squash delivery.
+
+The Windows adapter remains an explicit source import from the accepted3770515
+parent rather than a Git-ancestry claim. This delivery qualifies the imported
+software and fixed inspection integration; it does not close Manager8's separate
+physical qualification or its Docs13 lifecycle. Physical USB/competing-route,
+installer and production support remain unwaived. The accepted unmerged-parent
+scenario does not turn source review alone into delivery: shared/backend parents
+have now landed, and this pair still needs its own final gates. No tablet
+execution, provider call, settings change or reverse engineering occurred.

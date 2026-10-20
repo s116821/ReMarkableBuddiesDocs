@@ -12,8 +12,10 @@ See the [Manager public guide](https://github.com/s116821/ReMarkableBuddiesManag
 for fixed CLI/configuration, manual setup, interpretations and checks. Browser and
 Electron use the same UI and schema parser. Host commands are parameterless and
 wired; no Buddy service API, native document read, credential environment sourcing,
-cleanup/restore or provider interaction follows. Linux is the existing native
-adapter's supported host; Windows/macOS refuse honestly until separately qualified.
+cleanup/restore or provider interaction follows. Linux is the original supported
+native host. The separate [Windows development software integration](../openspec/specs/manager-windows-owned-inspection/spec.md)
+reuses the fixed inspector; its host/API/IPC fixtures do not qualify physical USB
+or production tablet operation. macOS remains unsupported.
 
 Absent, missing, omitted and uninspected category/reference evidence remains
 visible. Apparent bytes are per path, domain reference totals are nonadditive,
