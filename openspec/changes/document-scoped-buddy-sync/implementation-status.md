@@ -78,8 +78,7 @@ old File field directly. The one-line test-only successor
 `13d9f7cdb07de85648fb82abdd9660ecff155bed` uses the inner File through main's
 existing Lease wrapper, matching the existing owner-lease fixture. Production
 code and assertions are unchanged. The failed log remains retained; Windows
-checks do not qualify this Unix-only path. Current successor hosted execution
-remains required before delivery.
+checks do not qualify this Unix-only path. The next successor's actual hosted execution is recorded below.
 
 ## Unfinished end-to-end obligations
 
@@ -96,3 +95,32 @@ exclusive-create behavior, shared root identity, provider visibility or safe
 native operation. Host HTTP and process-exit fixtures are not live-provider or
 tablet qualification. The resource contract is still a proposal; no provider
 test or resource operation follows from this closeout.
+
+## Final source candidate receipt
+
+Source438590d6f27762de698311fdc681713300cf2340 passed all applicable PR gates
+in [run39357273689](https://github.com/s116821/ReMarkableBuddies/actions/runs/39357273689):
+Title, Checks, Build and Integration succeeded; PR Release correctly skipped.
+The completed Linux Checks log contains actual passing inherited-descriptor and
+namespace/version import/selected/reopen regressions. The preceding run39356751934
+had passed the Unix lease repair but failed an older test expectation that
+incorrectly rejected main's accepted ExportAssociation/schema2. The final
+test-only expected-set correction preserves all twenty cases and negative-state
+assertions. Both failed hosted runs remain retained separately; no failure was
+waived or attributed as a pass.
+
+[Independent integration/lifecycle review5579946867](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5579946867)
+and [paired Docs review5579946973](https://github.com/s116821/ReMarkableBuddiesDocs/pull/7#pullrequestreview-5579946973)
+accept source13d9f7c / Docsd94624f. [Follow-up review5579972809](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5579972809)
+accepts the exact final438590d fixture-only successor. Earlier Windows integration
+controls remain attributed to99395a5; the selected-schema compatibility control
+was separately executed at438590d. The final hosted result supplies current
+Linux/all-suite evidence without relabeling those earlier local results.
+
+The prior portable-stream finding is fixed and independently accepted; its
+current source is preserved and its inline thread is resolved with a linked
+receipt. The original history/bitmap admission-inventory comment was addressed
+in0830a9af and its accepted contract; resolving that thread does not complete
+actual native/domain handoffs. Final paired squash and actual-main verification
+remain pending. This parent remains active with all nine unfinished end-to-end
+requirements; none is archived or declared complete by this receipt.
