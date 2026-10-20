@@ -11,3 +11,27 @@ Docs20guidance/126preserved/OpenSpec1.2 strict23 PASS. That publication checkpoi
 The exact pair Manager ea0c75328cea68ca0797ea1ee7043ad4428dd55e / Docs ad427625c010014cc2b7f98d9d21bc8a38a36e3a is independently accepted without actionable findings in [the canonical attributed review](https://github.com/s116821/ReMarkableBuddiesManager/pull/11#pullrequestreview-5498844665). Both hosted platforms passed 21 Node tests under supported Node 24.21, including both new controls and actual browser/Electron/package checks. Eight reviewer release-controller controls used Node 24.11 and are supplemental only. Exact ea0 screenshots contain synthetic metadata and are distinct from hosted merge ff9476c8ce3b.
 
 This result-only amendment preserves the accepted implementation and requirement/proposal/design bodies. It does not transfer acceptance to deployment, updater/download/integrity/compatibility, physical Windows qualification, unmerged parent delivery, the full issues, canonical sync/archive or merge. The remaining lifecycle checkbox stays open. No unchanged implementation review or native matrix is repeated.
+
+## Current integration preparation
+
+The existing source branch incorporates the accepted inspection integration at
+`02e238962c3ff096225bc901cbcfdab325eb6f40`, preserving all release-discovery
+product bodies from the accepted increment. Relative to previous head `ff7ab4b`,
+only the three inherited quiet-refresh doc/runtime/test files change. The compact
+pipeline remains exact to the accepted Windows inspection parent; no release
+engine, source version, package dependency or metadata authority is changed.
+
+Docs incorporates the accepted Windows evidence records at `a883bc0` and actual
+main `98867d6`. Conflicting older parent receipts are superseded by the already
+accepted authoritative parent records; their distinct protocol and review evidence
+remains represented there. The delivered main shared guide and archived inspection
+receipt are retained exactly. Main's other contracts and unfinished work are
+preserved. Only this own result and the overbroad lifecycle task are corrected;
+proposal, design and the accepted two requirements/four scenarios stay exact.
+
+Original product/spec review 5498844665 remains separately attributed. This is
+parent/integration preparation, not a new qualification claim or completed
+delivery. Current-head checks, bounded review, Windows integration source delivery,
+actual-main reconciliation and own canonical/archive lifecycle remain required.
+Download/updater, live provider, physical USB and production/native support remain
+outside this bounded metadata scope. No tablet or provider call is needed.
