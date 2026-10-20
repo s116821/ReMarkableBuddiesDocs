@@ -1,7 +1,7 @@
 # Saved memory declaration producer
 
 ## Purpose
-Deliberately edit only the supported saved memory.enabled/profile declarations while preserving existing selection, explicit maintenance and runtime boundaries. The detailed [contract](../../changes/edit-saved-memory-settings/contract.md) fixes exact wire shapes, limits and fingerprint recipes. Profile setup, consumer UI, membership and automatic Reader/runtime/native qualification remain separate.
+Deliberately edit only the supported saved memory.enabled/profile declarations while preserving existing selection, explicit maintenance and runtime boundaries. The detailed [contract](../../changes/archive/2026-10-20-edit-saved-memory-settings/contract.md) fixes exact wire shapes, limits and fingerprint recipes. Profile setup, consumer UI, membership and automatic Reader/runtime/native qualification remain separate.
 
 ## Requirements
 
