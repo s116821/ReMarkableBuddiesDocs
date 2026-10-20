@@ -8,7 +8,7 @@ journal or private SelectionToken API is added by the producer.
 
 Source work is on the existing checkout's published feature/rem-24-prepared-forget,
 based on actual4fad1681. Current source candidate is
-bfa8a131dc1836aa8fcd5c3513cc1bb0a8b104e3 in
+77e92306091d3d0bf10cd8443d9327198a8105b4 in
 [Buddy70](https://github.com/s116821/ReMarkableBuddies/pull/70); all372 unrelated
 actual4fad entries remain exact. This is implementation, not final acceptance. It adds strict conditional evidence,
 separate prepare/confirm/receipt paths, guarded local/selected preview and output,
@@ -19,7 +19,7 @@ its admission/order/duplicate-wake behavior are preserved.
 
 Initial actual three CLI cases passed: local/selected original acknowledgement
 after later values without re-deletion, exact replay, tampered original content/
-pins, original mode re-entry/config drift and bounds/no initialization. Final five-case
+pins, original mode re-entry/config drift and bounds/no initialization. The initial candidate five-case
 actual CLI capture passes all five, adding actual valid selected/catalog acceptance
 replacement with identical heads plus non-confirmable/Busy cases. The replacement
 fixtures establish the new states still admit ordinary domain inspection before
@@ -36,7 +36,7 @@ production Envelope types. The first library compile also needed the Context
 import and a serde skip for private pending state. Those failures are not passing
 evidence.
 
-Final published-source strict all-target/all-feature Clippy passes. Default memory10
+Initial bfa candidate strict all-target/all-feature Clippy passes. Default memory10
 and storage88 pass, covering the factored legacy publish body and existing selected
 history/media/fault/mode controls. Independent no-default memory10 and conditional
 storage3 also pass. New strict-wire fixture compilation initially hit a test-only
