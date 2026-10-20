@@ -6,7 +6,15 @@ PR event. Opened/synchronize/reopened events and edited events with a real title
 change run the normal code pipeline after valid title; this preserves recovery
 when an initially invalid title prevented downstream checks.
 
-For edited without changes.title, the Checks predicate additionally refuses
+Only a positively identified body-only edited event may omit application work:
+changes must contain exactly body, with exactly its string-valued from field;
+title, base and unknown keys must be absent. The official
+[edited-event schema](https://github.com/octokit/webhooks/blob/main/payload-schemas/api.github.com/pull_request/edited.schema.json)
+defines body/title/base separately. Base retargeting changes the tested merge
+context even when head stays unchanged, so base edits, body+base/title mixed
+edits, missing/empty changes and malformed/unknown details run normal validation.
+Actual workflow expressions must positively prove the exact body-only shape,
+not merely absence of title. For that sole case the Checks predicate refuses
 application execution. Its omitted job receives an explicit metadata-only name,
 not `Checks`. The skipped reusable application caller likewise receives an
 explicit metadata-only name rather than its normal caller name. A false caller
@@ -31,8 +39,10 @@ instantiated. This corroborates caller isolation but is not final candidate proo
 The pinned title Action48f25628 fetches the current PR through REST, explicitly
 avoiding stale event titles on reruns. No custom semantic parser is introduced.
 
-Focused controls evaluate the real YAML expressions for source, body-only edits,
-title corrections, prior code failures, cancellation and main. Verify unchanged
+Focused controls evaluate the real YAML expressions for source, exact body-only
+edits (including empty previous body), title corrections, base retargets,
+body+title/body+base mixed edits, unknown top-level/nested changes, missing/empty
+changes, malformed body details, prior code failures, cancellation and main. Verify unchanged
 normal names/job budgets and dependency gates. On the owned draft candidate,
 retain a witnessed failed application check, change body only, and inspect native
 check-run IDs/names/conclusions to prove the failure remains authoritative. Also
