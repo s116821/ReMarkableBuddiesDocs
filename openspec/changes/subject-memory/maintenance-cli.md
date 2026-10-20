@@ -4,7 +4,8 @@ Extend the existing `reader-buddy` binary in this same delivery; do not add an a
 listener, admin service, dependency or storage/sync engine. The new route is
 `--memory-operation inspect|query|put|forget --memory-input FILE`. Both options
 require each other and conflict with simulation/provider/model/trigger/debug and
-logging overrides. Parse arguments and route maintenance before `.env`, credential
+logging overrides, owned-data inspection, prepared export and personalization maintenance.
+Competing one-shot selectors refuse in either argument order before dispatch. Parse arguments and route maintenance before `.env`, credential
 resolution, logging, sync, Workflow/device initialization or the normal loop.
 
 Read the ordinary selected nonsecret configuration and its explicit portable memory
