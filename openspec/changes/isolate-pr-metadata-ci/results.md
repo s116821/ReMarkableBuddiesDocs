@@ -55,7 +55,8 @@ Its unchanged witness1d6c1dbc has actual invalid-title39377303958, corrected-tit
 39377414358 and body-only39377542326 runs. The corrected title executes normal
 Checks118478604130 and fails at early exit19; body-only leaves that exact failed
 normal check authoritative with no application children. Final ordinary
-run39378103739 has passed Title/Checks/Build; Linux/Windows Integration is running.
+run39378103739 passes Title, Checks, Build and both Linux/Windows Integration;
+PR Release is skipped. This completes its ordinary current-source PR validation.
 
 SDK29 7ce5910bd525304704c743db868e7cb9ae9a0219 is independently accepted
 by review5581318413. Its four-file precode11265ffd precedes implementation.
@@ -70,8 +71,16 @@ nested Title, Linux Checks, Windows staging, Build and Integration; PR Release
 is skipped. The SDK owner retains its own canonical specification/lifecycle.
 
 Both final sources remove exactly their owned four-line witness. Original failures
-remain preserved; neither owner's evidence is inferred from Buddy. Current final
-validation, lifecycle and postmerge receipts remain separate delivery gates.
+remain preserved; neither owner's evidence is inferred from Buddy. All three
+ordinary final source pipelines pass. Central canonical sync/archive follows
+those qualified results; final Docs checks/lifecycle review and normal coordinated
+delivery remain merge gates. Postmerge receipts are separate from PR qualification.
+
+The central Docs topic normally merges actual delivered main b9a859d before its
+own canonical addition; all unrelated delivered work is preserved. The one added
+requirement has four scenarios and retains observed literal skipped names. The
+source owners retain their accepted exact heads; this lifecycle does not request
+repeating their completed ordinary matrices or changing artifact/release policy.
 No permissions, branch settings,
 source concurrency, artifact bytes, publisher or version policy changes follow.
 No provider, tablet, reverse-engineering or signing operation was performed.
