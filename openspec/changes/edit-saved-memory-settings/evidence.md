@@ -11,3 +11,16 @@ Initial generated-source compile failures, one test syntax error and a test-only
 After a clean committed build, executable SHA256 `db7e3bbbfdc8dfc62de6386099bb001ec0fb21f409c11718846f377da1300485` was persisted before any corpus invocation and verified unchanged at completion. Ninety actual CLI reports retain exact synthetic stdin/stdout, exit0 and empty stderr in the public fixture: 173578 bytes, SHA256 `727c8031adc41d3f8f93b435706c5ade7324ad8055c980b2ce76f9b0d3d2552b`. All160 retained raw input/output hashes were checked against the original files. Each report is bounded, LF-terminated and keeps runtime activation unverified without profile text. The corpus compares18 independently supplied parent/leaf/null/UUID expectations against observed saved files and refusals, then exercises forged hashes, live owner Busy, pure status while Busy, strict patch types/shapes/caps, spent base and uninitialized apply refusal.
 
 These are host file/Store tests. They do not establish Linux durability, provider execution, running memory, profile membership, automatic Reader wiring, native behavior or a lost-transport experiment. Post-verified status is named accordingly. Hosted exact-head CI, independent implementation acceptance, canonical sync/archive, final composed review and normal linked delivery remain separate gates until recorded.
+
+## Requirement-to-evidence verification
+
+| Requirement/scenario | Implementation and observed checks |
+| -- | -- |
+| Supported nested edits; parent/leaf presence | Fixed Setting/Change and target raw-object edit; absent/existing-parent units,18 independent expectation comparisons and actual apply/status reports |
+| Inconsistent original or result | checked_document on original/target; enabled/profile/selection/legacy-sync unit and actual refusal reports; no repair |
+| Private original patch/same writer; changed conditions/Busy | digest-only Intent, ordered patch vector and apply_with using existing Store writer/Custody; forged hashes, real OS owner Busy, four-mode ordinary/selected CLI checks |
+| Unknown/prefix output | Actual injected atomic/readback faults and actual17-byte failing writer with OS StoreBusy observed until consuming write ends; no corpus transport-loss claim |
+| Saved declarations separate from authority; disable/profile change | Every report runtime unverified; separate explicit manual-query CLI test after disabled save, unchanged configured/query source and selection preservation |
+| Explicit read-only reconciliation | Status uses only original file/intent; no patch, root/Store/profile access; actual status while owner Busy and before/after verified saves |
+
+Local Docs verification:12 tests, manifest/25guidance/126preserved blobs and strict66 items passed. Current evidence revision's hosted Docs run39476325246 passed all three required jobs. Source current-head hosted run39476269387 remains pending; superseded own093 run39476008429 metadata is retained and cancelled as duplicate unfinished checks, not counted as success.
