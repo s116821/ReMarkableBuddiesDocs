@@ -8,7 +8,7 @@ journal or private SelectionToken API is added by the producer.
 
 Source work is on the existing checkout's published feature/rem-24-prepared-forget,
 based on actual4fad1681. Current source candidate is
-77e92306091d3d0bf10cd8443d9327198a8105b4 in
+60940ac577aa25eb11573619e6c8ea7e86d74885 in
 [Buddy70](https://github.com/s116821/ReMarkableBuddies/pull/70); all372 unrelated
 actual4fad entries remain exact. This is implementation, not final acceptance. It adds strict conditional evidence,
 separate prepare/confirm/receipt paths, guarded local/selected preview and output,
@@ -64,7 +64,7 @@ execution occurred.
 
 ## Corrected successor and separate UTF8 corpus
 
-Current source is77e92306091d3d0bf10cd8443d9327198a8105b4, superseding bfa8a131
+The corrected-UTF8 candidate was77e92306091d3d0bf10cd8443d9327198a8105b4, superseding bfa8a131
 for final implementation review. Review found the two original Greek literals in
 existing CLI fixtures had been unintentionally mojibaked by Windows default text
 decoding in edit helpers. An audit found one original en-dash guide line as well.
@@ -99,3 +99,29 @@ Current sourceCI39408551182 targets77e92306. Cancellation of superseded bfa run
 separately and never counted as current success. Current hosted checks,
 implementation review, consumer compatibility, canonical sync/archive and final
 paired delivery remain gates. This own change remains active.
+
+## Fresh handoff and accessible native corpus
+
+Source60940ac5 explicitly rechecks the exact original receipt/direct predecessor/
+parent-content proof against the fresh selected target and requires the same
+transaction before sealing stdout. The operation and fresh read have no retained
+selected gate between them. A focused real target-activation interleaving passes:
+the accepted base/generation changes while the exact historical operation remains
+provable through fresh validated lineage, without a current-deleted claim.
+
+The inline corrected-corpus transfer was truncated at the receiver; sender-side
+complete JSON/hash verification alone did not establish consumer receipt. Without
+replaying any cases, the exact corrected39 pairs and original manifest were added
+as a reusable native [fixture](https://github.com/s116821/ReMarkableBuddies/blob/60940ac577aa25eb11573619e6c8ea7e86d74885/tests/fixtures/prepared-forget-77e92306-corpus.json).
+It is88192 bytes, SHA256c80dabef103ab0e6844abf5a3228c6e702a52bcfb92654b338a0db524fdf016b;
+embedded original manifest SHA256da10879b89803761e5a1fc693bc21f2b4aa1d81145aa20fbe75a3fddfc40269e.
+All content is synthetic; private-path/secret-sentinel audit passed. Exact original
+request/stdout strings and all78 per-file hashes remain intact, as does the missing
+capture-time executable hash limitation. A native recorded-fixture verifier passes
+all hashes,39 pairs,nine original Greek previews and stable logical acknowledgement
+UUIDs without running any CLI cases. Receiver acceptance remains independent.
+
+The delta now explicitly modifies the pre-existing query/inspect-only whitelist
+while preserving all four old scenarios byte-for-byte, alongside the added five
+prepared-forget scenarios. Both unrelated canonical requirements remain untouched;
+canonical sync/archive still waits for complete qualification.

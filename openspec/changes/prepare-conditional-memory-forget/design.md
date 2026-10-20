@@ -47,3 +47,18 @@ Own successful mutation changes target selected pins; blindly checking old pins 
 
 ## Delivery
 Publish/review exact contract and coordinate consumer before implementation. Verify meaningful real CLI/domain faults and actual corpus separately from synthetic host cancellation; then canonical sync, own archive, final independent review and Docs-first/source-second squash, actual main/publication observations. Current inspection publication remains separately tracked; broad memory/Manager/native scope remains open.
+
+## Canonical whitelist reconciliation
+The delta also modifies the pre-existing bounded-input requirement's query/inspect-only
+whitelist to permit only the separately specified prepared selectors. Its four
+existing scenarios remain byte-identical, as do both unrelated requirements. This
+is reconciliation of the already accepted protocol, not broader write authority.
+Canonical sync remains withheld until implementation/CI/consumer qualification.
+
+## Fresh selected handoff proof
+No selected gate is retained across the original operation and post-operation
+read. The fresh admitted target must explicitly prove the identical logical
+receipt and original direct predecessor again before its pins seal stdout. A
+legitimate target activation may append validated lineage; historical acknowledgement
+is allowed only when that fresh lineage still proves the exact original request,
+never by silently substituting a different accepted context.

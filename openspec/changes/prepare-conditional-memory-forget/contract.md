@@ -1,6 +1,6 @@
 # Conditional one-fact forget protocol v1 - proposed
 
-This accepted contract is implemented by unmerged Buddy70 77e92306. Delivered v0.17.0 does not support these new operations; current candidate/CI/review and delivery remain separate. Existing inspect/query reports, regular-file Forget and all unrelated APIs remain unchanged.
+This accepted contract is implemented by unmerged Buddy70 60940ac5. Delivered v0.17.0 does not support these new operations; current candidate/CI/review and delivery remain separate. Existing inspect/query reports, regular-file Forget and all unrelated APIs remain unchanged.
 
 ## Fixed transport and bounds
 `reader-buddy --memory-operation prepare-forget|forget|forget-receipt --memory-input - --config ABSOLUTE_CONFIG` runs once, consumes EOF and emits at most one generic report-v1. Inclusive stdin cap1048576 bytes; encoded report cap8454144 including newline; caller deadlines/cancellation remain host-owned. No remote staging fallback or running Buddy API. New prepare/receipt selectors reject regular files; old forget files retain existing semantics. Put/all setup dash still refuse before config/input/Store. Earlier builds may reject the unknown selector/dash and are unsupported before mutation dispatch.
@@ -125,3 +125,13 @@ producer fixture replay occurred. Consumer private reference/retention details
 remain in its coordinated precode; producer implementation began only after full corrected review5583523433 and
 explicit exact consumer agreement6288406539. Consumer host/UI precode has its own
 independent review and bounded in-memory custody/restart scope.
+
+## Fresh selected receipt handoff
+After the original guarded receipt/CAS, a fresh selected target admission SHALL
+revalidate the identical original logical receipt, original direct predecessor
+and parent-content hashes and require the same transaction UUID before sealing
+that view. No original selected gate spans the two reads. A legitimate target
+activation can append validated lineage; historical acknowledgement is allowed
+only while that fresh lineage proves the original operation, not by substituting
+a different target context. A focused real activation interleaving verifies this
+boundary. No current-deleted promise or fresh mutation authority follows.
