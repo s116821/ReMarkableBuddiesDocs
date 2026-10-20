@@ -35,3 +35,35 @@ delivery. Current-head checks, bounded review, Windows integration source delive
 actual-main reconciliation and own canonical/archive lifecycle remain required.
 Download/updater, live provider, physical USB and production/native support remain
 outside this bounded metadata scope. No tablet or provider call is needed.
+
+
+## Delivered parents and bounded lifecycle
+
+Manager #10 / Docs #19 merged normally at
+`9fe55afaef9b3b6050288cef930b7ea952ecd350` /
+`ccaa8c3297bf93a681580edf6ef007f7a632430b`. The preparation above received
+bounded reviews [5580587954](https://github.com/s116821/ReMarkableBuddiesManager/pull/11#pullrequestreview-5580587954)
+and [5580588064](https://github.com/s116821/ReMarkableBuddiesDocs/pull/21#pullrequestreview-5580588064)
+at exact `a0fc64b` / `8cacc53b`, without findings. Original product/spec review
+5498844665 remains separately attributed to its original revisions and evidence.
+
+The source branch reconciles actual main `9fe55af` without any content change;
+its complete tree remains `696a5d35155e0dabd27084560d646183989e196a`, identical
+to accepted preparation `a0fc64b`. No product, pipeline, version or test body is
+changed and no unchanged application matrix is rerun manually.
+
+Docs reconciles actual main `ccaa8c3` and preserves every delivered-main entry.
+Five stale active Windows-inspection files inherited by this child are removed
+because that parent is already canonical and archived in actual main; its exact
+authoritative archive stays untouched. This is not archival of another lane's
+unfinished work. Only the five own metadata-discovery artifacts are archived;
+the original proposal/design/delta bodies remain exact, and exactly two accepted
+requirements/four scenarios are synchronized. Result/tasks record source-parent
+delivery and the bounded lifecycle. Broader download/updater, integrity,
+compatibility and physical/native capability remain open.
+
+Manager v0.5.0's published four asset names corroborate the existing metadata
+contract; this is metadata evidence, not a new consumer/download/install test.
+Final current-head CI and preservation/receipt review remain required before
+normal coordinated source/Docs delivery. No tablet, provider, settings, new
+resource or reverse-engineering action occurred.

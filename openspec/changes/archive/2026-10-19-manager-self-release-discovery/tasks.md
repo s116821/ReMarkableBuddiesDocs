@@ -5,7 +5,7 @@
 - [x] Render current/latest Manager identity and honest asset/stale/error/development states in shared UI.
 - [x] Verify controller identity/independence controls and both actual host/packaged UI paths with denied external traffic.
 - [x] Publish exact linked revisions, evidence, required CI and independent review.
-- [ ] Complete actual-parent delivery, current-head integration checks/final review, and own canonical sync/archive as one coordinated delivery.
+- [x] Reconcile delivered parents and accepted source/evidence, then sync exactly the two requirements/four scenarios and archive only this bounded metadata increment. Current-head checks and final receipt review remain coordinated merge gates.
 
 Download, updater, integrity/compatibility and physical tablet qualification remain
 separate broader capabilities. Their unfinished state does not negate acceptance
