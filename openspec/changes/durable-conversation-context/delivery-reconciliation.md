@@ -92,3 +92,39 @@ packet. Current hosted CI, independent complete integration review, actual-main
 reconciliation, final bot checks and coordinated squash/publication remain
 pending. No new reverse engineering, model/provider request or tablet action was
 performed for this preparation.
+
+## Completed current-candidate receipt
+
+Source52868838501f28b66d82bb0a296571d6713ceec2 normally integrates delivered
+storage main0a258056af6c170b3edd4761f97d0e9a973755af. Its complete source tree
+643175e196219735aef81f29a880e272308a4ddc equals the reviewed99d3d01 tree; no
+source code or local matrix was changed/repeated for that main reconciliation.
+Docsd5f0b0f56d60c81736778c2bfa8d7a8c799f8293 imports only the two accepted
+storage receipt files from delivered Docs main2f69e04, preserving this change's
+owned source/spec/lifecycle bodies.
+
+[Full production integration review5580105219](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5580105219)
+and [paired lifecycle review5580105350](https://github.com/s116821/ReMarkableBuddiesDocs/pull/6#pullrequestreview-5580105350)
+accept99d3d01 /87f70e7 with complete effective behavior, original acceptance
+coverage and current16 focused host controls. [Actual-main preservation review5580120307](https://github.com/s116821/ReMarkableBuddies/pull/30#pullrequestreview-5580120307)
+accepts5286883 /d5f0b0f. The original live-provider receipt remains at its original
+6d3d23c0a3675521f4461b6d3dd39558cff24c8c revision; it is not a new candidate/live/native result. No new model choice
+prerequisite is created for the unchanged prompts/transport.
+
+[Current source run39359461477](https://github.com/s116821/ReMarkableBuddies/actions/runs/39359461477)
+passes Title, Checks, Build and Integration; PR Release correctly skips. Linux
+Checks records310 library passes and one existing ignored collected-device
+fixture, with the remaining binary/integration/doc suites passing. The ignored
+fixture is not qualification. Actual Orchestrator persistence, split retained
+export and both inherited-descriptor controls pass in the retained hosted log.
+Docsd5f0b0f all three checks pass39359457117. Superseded same-tree99d run39358431187
+was canceled after the actual-main successor was published; cancellation remains
+cancellation, not pass or hidden failure.
+
+Fresh review found no source inline findings or changes-requested review. The
+two older Docs causal-head/replay-order findings were addressed in ba7facff and
+subsequent accepted source; their contract threads are resolved without claiming
+production native handoffs. Final coordinated squash and actual-main publication
+verification remain pending. Only three pure API requirements are canonical;
+the parent and all other nine conversation/Reader/native/platform obligations
+remain active and unarchived.

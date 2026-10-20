@@ -61,8 +61,8 @@ source patch. See [complete delivery scope](delivery-reconciliation.md).
 
 - [x] Prepare normal integration of the qualified storage candidate and preserve current main SDK/release/export contracts without changing historical provenance constants.
 - [x] Synchronize the three completed API requirements only; retain unfinished source/runtime/qualification obligations.
-- [ ] Reconcile the delivered storage actual-main revision before final source qualification or merge.
-- [ ] Obtain independent review of the complete production behavior delta, original coverage, conflict resolutions and bounded lifecycle.
-- [ ] Complete current exact-head hosted checks and final bot/status review.
+- [x] Reconcile the delivered storage actual-main revision before final source qualification or merge.
+- [x] Obtain independent review of the complete production behavior delta, original coverage, conflict resolutions and bounded lifecycle.
+- [x] Complete current exact-head hosted checks and final bot/status review.
 - [ ] Coordinate paired normal squash and verify actual-main CI/publication.
 - [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
