@@ -1,4 +1,4 @@
-# Ordinary owned-export producer v1 — unimplemented precode
+# Ordinary owned-export producer v1
 
 ## Entry and caps
 Use --ordinary-export-operation prepare|apply|status with exact --ordinary-export-input -. No file fallback, missing/default config, runtime/other maintenance flags, dotenv, provider or service initialization. REMARKABLE_BUDDIES_CONFIG names one explicit absolute existing config for prepare/apply only; status does not read it. EOF-delimited strict UTF8 JSON input and single-LF complete report each cap16384 bytes including whitespace/LF; active config and optional stored snapshot each cap1048576. Preserve existing host deadlines. Exact object shapes/recursive duplicate and unknown refusal; no record arrays/coercion/null except explicitly nullable snapshot digest.
