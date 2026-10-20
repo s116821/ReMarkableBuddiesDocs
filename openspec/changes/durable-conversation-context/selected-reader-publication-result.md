@@ -126,3 +126,20 @@ composed-memory, tokenization, selected effects, settlement and whole conversati
 lifecycle gates remain open. The change stays active/unarchived with no canonical
 promotion of unfinished behavior. No tablet, provider, account or service action
 occurred, and no held/spent or saved-byte experiment was replayed.
+
+## Completed current hosted and review gates
+
+Current source 9f0b5023cc4eee2413e6f886e131dbbf0515f1a2 passes run
+39367101785: PR Title, Checks, Build and Integration; PR Release is skipped.
+Source/Docs integration reviews 5580618840 and 5580618991 accept the bounded
+integration; their complete bodies were read. The original 27 owner-run focused
+controls and ignored saved-byte harness remain separately attributed. No source
+or application test changed for this receipt.
+
+The accepted startup receipt fc35e24a is normally reconciled through its owning
+parent. This preserves the earlier local receipt commit 1ab5c01 and its complete
+tree, without reset or rewrite. Current scope is only that exact parent receipt
+plus this selected-publication completion text. Parent33 representative model
+proof/delivery, composed-memory and ordinary caller lifetime, native/fresh context,
+Pending/effect/settlement and the wider lifecycle remain open. No canonical sync,
+archive, merge waiver, provider execution or tablet contact follows.
