@@ -29,3 +29,28 @@ Current exact Manager4a9ef9b029a53b8efec9c5427581aa7930cc5ff0 CI38453618144 full
 Olderfea/dd3/547 Windows packaged verifier failures remain original-head evidence: unpackaged UI passed, packaged trusted helper29 generic refusal stopped the next matrix. Current4a canonicalizes the temporary fixture root via actual realpath, matching existing successful consumer and production canonical-parent setup; Windows now completes actual copied verifier and packaged UI. No verifier/pin/predicate was weakened. The exact older short-alias cause remains an inference from generic logs; the successful successor is actual supported-host evidence.
 
 Paired prearchive Docsba37ae01ad2fa1611b3f83b765b695fa6d7b638c CI38453076176SUCCESS; final closeout successor requires ordinary Docs checks. Two new requirements/four scenarios plus one full modified shared-host requirement/original helper scenario synchronized; only six own files archived. Original proposal and both spec deltas preserved byte-for-byte; design refinement/results retain the P2 and source/platform/synthetic limits. Other active/archive/canonical scopes untouched. This linked delivery remains PR18/32 with unfinished cumulative ancestors, parent-first consolidation and squash-only readiness gates. No full issue completion, merge/tag/release/target/service/account action.
+
+
+## Host-only inherited refresh preparation
+
+This successor inherits binary-identity preparation d63bcfe / Docs1fa71ac and
+delivered Manager main1a1ffa0 / Docsmaine73f0c2. Only three inherited quiet-refresh
+doc/runtime/test paths change from previous public ac3b099; download controller,
+host protocol, caller guards and cancellation repair remain unchanged. The sole
+pipeline conflict retains ac3b099's exact existing ordinary/packaged download
+fixture commands. Original reviews5508655504/5509247032 and own lifecycle5509250420
+retain their original attribution.
+
+The pre-existing current-producer successor is explicitly functional, not only
+CI: nine consumer/packaging/guide/fixture paths use the qualified artifacts helper
+instead of removed policy/coordinator resources. Its provenance is accepted
+current-producer review5532213836 at6b60468, separate from original UI acceptance.
+No new runtime or packaging change is made by this refresh.
+
+The own six-file archive, canonical two requirements/four scenarios and complete
+shared-host boundary modification remain preserved. Only this result receipt
+changes from the mechanically integrated Docs base. Actual parent delivery,
+exact preservation/compatibility review, current checks and final reconciliation
+remain required; this local preparation does not merge either PR. Download is
+not Manager update installation or tablet package qualification. No tablet contact,
+provider/credential operation, original matrix or key/package generation occurred.

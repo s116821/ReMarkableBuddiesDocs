@@ -39,3 +39,34 @@ Only named manager-personalization is synchronized/archived: three new canonical
 
 ## Representative screenshot artifacts
 Owner Linux screenshots uploaded through Google Drive and metadata-readback verified under the user's existing Personal/ChatGPT folder, with existing private sharing unchanged: [browser](https://drive.google.com/file/d/1LV8pIPQkzCbRk-SFXbs-ns0nvO8hXMtv/view?usp=drivesdk), [Electron](https://drive.google.com/file/d/1uGAV0Tx6uoCmI5E24OURUO9KTwcTVpCW/view?usp=drivesdk), [packaged Electron](https://drive.google.com/file/d/1q4tSzm0Sb7orqmsZl3yXrFQWix5DvRLu/view?usp=drivesdk). Metadata confirms PNG types, expected names/parent and sizes371425/246216/260694 bytes matching the local captures. The connector does not expose a checksum in its normalized metadata; remote byte identity is not claimed from a missing checksum. Native viewport and browser full-page images show synthetic preference/explicit saved-not-active wording, not real personal text/physical writes. Original dirty precommitdfd5 identity is retained. These are owner captures, not CI artifacts; current workflow does not upload/retain screenshots. Public source/tests/manual scenarios remain available without private Drive access.
+
+
+## Current host-only source preparation
+
+The historical parent/deployment wording above records the original checkpoint.
+The standalone backend configuration contract subsequently delivered normally as
+Buddy cc317ff53e1dd6f612b2e82707e5a5e4b50e0265 / Docs
+6f7f1d4cb33ff4ca9c0326b1bb248ddc8cfd139e (see REM-53's owning delivery receipt);
+this closes the old unpublished/backend delivery dependency without claiming
+running Reader/Writer adoption, reload or a physical tablet installation.
+
+This preparation inherits accepted auth source d9051ba and actual Manager main
+1a1ffa0. Only three inherited quiet-refresh doc/runtime/test paths change from
+previous public e8a4c3b. The 23 original personalization runtime/transport/UI/test
+and guide paths remain exact to accepted 38136e5. The two workflow conflicts keep
+the previous candidate's exact common personalization controls and both ordinary
+and packaged browser/Electron fixture commands. Inherited bundle compatibility
+remains explicit and separate from the original personalization review.
+
+Docs incorporates accepted auth 84af4a5 and actual main e73f0c2, preserving the
+original three-requirement/six-scenario personalization contract, full shared
+host-boundary modification and own six-file archive. Only this factual result
+receipt changes; no original implementation, proposal, design, tasks or delta
+is rewritten. Actual auth-parent delivery, final reconciliation/current checks
+and independent review remain delivery gates. Physical Windows/USB, runtime
+activation, real-provider behavior, selected sync and full REM-53/42 remain open.
+
+No original provider/protocol/UI matrix, original signature/artifact execution,
+key/package generation, credential operation or tablet contact is repeated here.
+Source basis: actual REM-53 delivery receipt, accepted original review, current
+Git object preservation and normal repository checks.
