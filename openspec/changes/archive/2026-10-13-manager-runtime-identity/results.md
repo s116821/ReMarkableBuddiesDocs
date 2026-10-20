@@ -42,3 +42,32 @@ Corrected private Personal/ChatGPT representative captures: [browser](https://dr
 Manager f7c3a357037e0c8edc691fbd986704eab542ce24 CI38447259682 fully SUCCESS: policy115468768908, Linux115468835265, Windows115468835191; title38447259710 SUCCESS. Both completed supported-host logs inspected. Windows runtime line/metadata guard passes and POSIX owned SSH/private-key case explicitly skips; Linux owned SSH cases pass. Both hosts finish captured-output browser/unpackaged/packaged UI checks. No GitHub error, Node not-ok, Python FAILED, traceback/assertion/timeout error markers in the completed Windows log. This does not establish actual device/native, package provenance or running-process identity. Pre-archive Docs f78846fc487b7bcc20bee960e1432da436f772d1 CI38447460498 SUCCESS; the archive successor requires ordinary Docs checks.
 
 Independent focused repair acceptance and current required checks permit synchronization of only manager-runtime-identity: three requirements and five scenarios. Proposal/design/delta bytes preserved; tasks/results reflect completion, with this evidence retained. Other active changes, accepted capability contracts and stronger physical/admin/runtime/package/parent/full REM41/42/35 gates remain untouched. The linked delivery is Manager PR17 / Docs PR31, with already-reviewed parents consolidated in dependency order before squash merge. No tag/release/merge or device action was performed.
+
+
+## Current host-only parent preparation
+
+This successor inherits accepted personalization preparation 8bcb9e1 and delivered
+Manager main 1a1ffa0. Only the three inherited quiet-refresh doc/runtime/test paths
+change from previous public 9513fc3; 18 original binary-identity runtime, transport,
+UI, fixture and guide paths remain exact to repaired f7c3a35. The two workflow
+conflicts retain the previous candidate's exact common Python and both ordinary
+and packaged runtime-identity fixture commands. The source P2 finding5508163460
+and repair acceptance5508357763 retain their original scopes and execution
+attribution; no pinned executable or actual transport matrix is repeated.
+
+Docs incorporates personalization preparation e6beef8 and delivered main e73f0c2
+while retaining the own five-file archive and canonical three requirements/five
+scenarios. Original proposal, design, tasks and delta remain unchanged. Only this
+result receipt changes from the mechanically integrated base. Inherited Main
+work and the accepted shared host boundary remain preserved. Actual parent
+delivery, final reconciliation/current checks and independent review remain
+required before normal coordinated squash delivery.
+
+Reported binary version remains an untrusted self-report, with unknown running
+identity/package/provenance and installation eligibility false. Physical Windows
+and cable/route qualification, authenticated package/compiler/SDK compatibility,
+runtime activation, installer/update and whole REM-41/42/35 remain open.
+No original parser/SSH/UI/executable, cryptographic or provider matrix, key/package
+generation, account/credential operation or tablet contact is repeated here.
+Source basis: current exact-source reviews, Git tree comparisons and normal
+repository checks; original independent executable evidence remains attributed.
