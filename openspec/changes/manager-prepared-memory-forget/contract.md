@@ -57,7 +57,10 @@ or current-deleted label; current heads require separate deliberate inspection.
 report is null or {selector,status,incomplete,outcome}. selector is prepare-forget|
 forget|forget-receipt; status/incomplete/outcome preserve the exact producer matrix.
 outcome is null|acknowledged|not-dispatched|unknown|unresolved. Never infer flags from
-status alone. Prepare has null outcome; acknowledgement and failure shapes must
+status alone. A deliberate host status for the exact retained original reference
+may settle that original not-dispatched record after the renderer lost its reply.
+A later invocation/receipt refusal or null/foreign reference cannot settle it.
+Prepare has null outcome; acknowledgement and failure shapes must
 match their phase exactly. Unknown/unresolved retain original mutation uncertainty.
 Local stale/caller/transport failure has report:null, never a fabricated CLI report.
 

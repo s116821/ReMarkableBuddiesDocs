@@ -6,7 +6,7 @@ Accepted precode Docs96c73a9 was independently reviewed in
 [5583665573](https://github.com/s116821/ReMarkableBuddiesDocs/pull/69#pullrequestreview-5583665573)
 against corrected producer64ff69ba, accepted in5583523433. Implementation started
 only after acceptance. This active change remains paired with Manager PR30;
-source candidate and hosted/review gates are recorded in the public PR packet.
+source corrected candidate3084f19 and hosted/review gates are recorded in the public PR packet.
 Main owns all Rust/Store/selected publication and receipt proof. This lane has no
 producer source changes. Broad management/native/package/provider gates remain open.
 
@@ -33,14 +33,14 @@ before cancellation can use it.
 
 | Check | Result and attribution |
 | --- | --- |
-| Full Node suite | 166 pass, including20 new feature controls; unchanged prior controls retained |
+| Full Node suite | 167 pass, including21 new feature controls; unchanged prior controls retained |
 | Python fixed transport | Seven pass; actual local SSH peer uses deterministic public test identities and synthetic route/report data |
 | Workflow graph | All ten existing controls pass unchanged; four feature commands added inside existing Linux/Windows Integration stages, no jobs added |
 | Lint/development/production | Pass with Node24.21.0 and existing dependencies, no source release version |
 | Browser development | Actual helper session/origin/public/coordinator guards; prepare/confirm/ack-only, private refusal, unknown/reload/receipt, cancel before/after dispatch pass |
 | Source Electron | Actual IPC/main-frame/arity/coordinator guards and same UI states pass; lower transport/report methods synthetic |
 | Responsive/captures | 390/1280 viewport overflow checks pass; both captures below visually inspected |
-| Source preservation | All152 unrelated actual72a171a base entries exact;30 changed/new own paths, no SDK/dependency/release-tool changes |
+| Source preservation | All151 unrelated actual72a171a base entries exact;31 changed/new own paths, no SDK/dependency/release-tool changes |
 
 New controls cover every exact phase row, safe numeric/canonical hash refusal,
 malformed public/private fields, shared-session reservation/duplicate claim, ready
@@ -90,6 +90,27 @@ occur per case. Captured exact replay and later acknowledgement data are equal.
 No producer case was rerun to transfer or consume these reports. Atomic local/
 selected interleaving and before/after-commit faults remain separate producer tests,
 not claims inferred from the raw CLI corpus or synthetic UI/transport faults.
+
+## Review and hosted correction checkpoint
+
+Root found a confirmed controller P2: after the host recorded the exact original
+not-dispatched result but the renderer lost its reply, deliberate same-original
+status was wrongly treated as a later invocation refusal and left the UI uncertain
+forever. The corrected controller permits that exact retained original status to
+settle; later receipt rows, null/foreign references and genuinely unknown records
+retain protection. The real coordinator/controller regression proves one confirmation,
+no receipt dispatch and a subsequent fresh preparation. All167 local Node tests,
+lint/dev/prod builds and browser/source Electron forget UI pass after correction.
+
+Initial ordinary source39410433423 had Title/Checks/Build success, but Linux
+Integration118587645562 failed BEFORE new forget controls in the existing packaged
+memory-query cancellation fixture. Its deliberately pending query raced the actual
+four-second observation refresh between the enabled assertion and click. The fixture
+now holds subsequent observation replies pending, and explicitly waits for that
+scheduled observation before asserting cancellation. Browser/source Electron pass.
+Product refresh invalidation and separate polling controls are unchanged; no public
+IPC/private/cancel guard or assertion was relaxed. That initial run is not package
+acceptance. The corrected source successor requires fresh ordinary CI and review.
 
 ## Remaining gates
 
