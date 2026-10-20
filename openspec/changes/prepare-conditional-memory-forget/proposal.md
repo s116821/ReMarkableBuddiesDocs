@@ -7,4 +7,4 @@ Manager can inspect one deliberately selected fact but has no safe bounded remov
 - Publish exact producer/consumer protocol before source implementation and coordinate both Manager hosts separately.
 
 ## Impact
-Host memory maintenance and central host-memory-cli requirements. This active change is a proposal, not delivered behavior or device authority. It does not implement an editor, purge, generic write API, provider worker or native document deletion.
+Host memory maintenance and central host-memory-cli requirements. This active change is implemented in the unmerged source candidate; it is not yet delivered behavior or device authority. It does not implement an editor, purge, generic write API, provider worker or native document deletion.

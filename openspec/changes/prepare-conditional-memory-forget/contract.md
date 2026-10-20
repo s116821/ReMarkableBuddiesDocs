@@ -1,6 +1,6 @@
 # Conditional one-fact forget protocol v1 - proposed
 
-This contract is precode. Current delivered CLI does not support these new operations. Existing inspect/query reports, regular-file Forget and all unrelated APIs remain unchanged.
+This accepted contract is implemented by unmerged Buddy70 bfa8a131. Delivered v0.17.0 does not support these new operations; current candidate/CI/review and delivery remain separate. Existing inspect/query reports, regular-file Forget and all unrelated APIs remain unchanged.
 
 ## Fixed transport and bounds
 `reader-buddy --memory-operation prepare-forget|forget|forget-receipt --memory-input - --config ABSOLUTE_CONFIG` runs once, consumes EOF and emits at most one generic report-v1. Inclusive stdin cap1048576 bytes; encoded report cap8454144 including newline; caller deadlines/cancellation remain host-owned. No remote staging fallback or running Buddy API. New prepare/receipt selectors reject regular files; old forget files retain existing semantics. Put/all setup dash still refuse before config/input/Store. Earlier builds may reject the unknown selector/dash and are unsupported before mutation dispatch.
@@ -45,7 +45,7 @@ Clear stale detail after possible confirmation dispatch. No optimistic deletion,
 ## Required evidence before acceptance
 Meaningful real local/selected prepare/confirm/receipt outputs; mode switch and re-entry; config/path/profile/identity change; same-Key/head-ID catalog/base/aggregate generation replacement; preview/confirmation stale/content changes; exact receipt after later value without a new tombstone; changed-input collision; receipt absence without dispatch; Busy/missing/no-init; raw nested duplicates/unknowns and all bounds; before/after commit and consuming writer prefix faults. Capture exact request/stdout bytes and hashes for independent consumer parsing. Browser/Electron host/IPC/unknown-state controls use explicit synthetic transport where appropriate and are not tablet proof. No device contact follows from source acceptance.
 
-## Exact failure matrix (proposed)
+## Exact failure matrix
 
 | Selector/phase | status | incomplete | data |
 | -- | -- | -- | -- |
@@ -122,5 +122,6 @@ reconstruction matched all913bytes and hash. Initial helper compilation selected
 an incompatible serde_json build artifact and failed; matched64ba artifact fixed
 that helper only. No feature implementation, Store, tablet, new app build or broad
 producer fixture replay occurred. Consumer private reference/retention details
-remain in its coordinated precode; neither contract is accepted for code until
-independent corrected review and consumer agreement.
+remain in its coordinated precode; producer implementation began only after full corrected review5583523433 and
+explicit exact consumer agreement6288406539. Consumer host/UI precode has its own
+independent review and bounded in-memory custody/restart scope.
