@@ -77,3 +77,24 @@ output and numeric usage remain. This is one affected check, separately counted
 from the earlier34 integration controls. Docs actual-main reconciliation imports
 only the exact accepted33-line inspector receipt. Privacy-delta strict validation
 passes39 items. No live provider or tablet operation was performed.
+
+## Completed current source checks; live gate remains open
+
+Repaired source d9aa2f309d2849e577097791c4101936d7d78c90 now passes current
+hosted39364949485: PR Title, Checks, Build and Integration; PR Release is skipped.
+This includes the existing content-canary that failed on rejected0cddb in
+run39364285679. The failed predecessor and its log remain retained and attributed,
+not waived or substituted. Independent integration/privacy reviews5580469288
+and5580469396 were read in full; the original inline finding is resolved after
+repair/test reply4321208015. These complete the source-check/draft-review task,
+not the representative live-model gate or whole change lifecycle.
+
+The private representative check is built and --describe verified without
+reading configuration/credentials or calling a provider. Its positive invented
+memory preference adds equivalent base SI units kg*m/s^2 alongside newtons; that
+preference is absent from the current question. Manual acceptance requires6 N
+plus6 kg*m/s^2. The second call keeps stale99 N/instruction-override memory and
+requires current-source6 N without obeying the injected instruction. The two-call
+bound and typeset invented-page scope remain; this is no handwriting/native
+qualification. The existing pending provider/model/protected-configuration choice
+still gates execution. Task3.3 and remaining full capability gates stay open.

@@ -11,7 +11,7 @@
 
 - [x] 2.1 Verify real Store restart, concurrent heads, retries, tombstones, unsupported schema, budgets and profile/document isolation.
 - [x] 2.2 Verify actual Reader/provider request assembly, source/transcript preservation and enrichment failure behavior; distinguish protocol from live-model/native evidence.
-- [ ] 2.3 Run required exact-source checks and independent final review, inspect CI/bot findings, publish paired implementation/Docs drafts and disclose failures.
+- [x] 2.3 Run required exact-source checks and independent final review, inspect CI/bot findings, publish paired implementation/Docs drafts and disclose failures.
 - [x] 2.4 Verify actual maintenance CLI offline operations, preflight privacy/state/lease failures, bounded response and preserved ordinary routes on exact committed inputs; execute Unix FIFO control on Unix.
 
 ## 3. Full capability gates
