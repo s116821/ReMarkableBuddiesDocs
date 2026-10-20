@@ -4,7 +4,7 @@ This record preserves the implementation checkpoints and completed own lifecycle
 Final composed review/merge/publication remain explicitly separate external gates.
 Initial source: Manager29 `104741099768ff3c16fb52ac81c840d51bbe2b0b` over actual main
 d4574f7872b65f71b7ef0bf1c2f9199e7604207e. Accepted precode review5582813325
-covers a509cf8 and exact producer contract86bb4c0. Main owns producer code and qualified delivery remains pending. Actual producer
+covers a509cf8 and exact producer contract86bb4c0. Main owns producer code; qualified delivery is verified below. Actual producer
 corpus from candidate4e2f8dec is now received and verified below.
 
 ## Verified locally
@@ -46,8 +46,8 @@ headless display is the existing offscreen Xvfb wrapper, stopped on completion.
 
 ## Remaining gates
 
-Qualified producer actual delivery and composition on its actual Docs base, final
-composed-tree review/current Docs CI and coordinated normal delivery remain. Observe actual
+Final composed-tree review/current Docs CI and coordinated consumer normal delivery
+remain. Qualified producer actual delivery and composition are verified below. Observe actual
 main and publication separately. Whole memory/Manager issues stay open; no tablet,
 provider, model, service control, restore, native or physical qualification is claimed.
 
@@ -109,3 +109,20 @@ lifecycle reviews and actual delivery must be checked, then compose this Docs
 branch with that actual main, inspect current final checks/full reviews, perform
 normal exact-head delivery and observe actual-main/publication separately. Whole
 REM24/42 and native/device/provider gates remain open.
+
+## Actual producer delivery and final composition
+
+Read full producer final reviews5583320505/5583321287, accepting unchanged Buddy69
+4e2f8dec and archived Docs66 5cb04c1 after all applicable exact-head CI passed.
+Actual normal squashes are Buddy4fad1681e226017350c90f671feff01977c3fada and Docs
+1c736fab2e08e4b95a81325621daac6c1e63625a; independently fetched actual source/Docs
+merged trees exactly equal their accepted final candidates. This consumer Docs
+branch merges actual1c736fa without replacing any producer/other entry. The final
+source remains eeb8de5 with its completed ordinary source run39399900062.
+
+Final preservation checks cover every actual producer-base entry plus exact own
+four-requirement/ten-scenario canonical body and eight-file archive. The original
+metadata/images remain exact; tasks distinguish completed preparation from the
+remaining final paired review, current final Docs CI, normal consumer merge and
+actual-main/publication. Producer publication/main CI is a separate observation,
+not inferred from this source qualification. No tablet/provider/native action.
