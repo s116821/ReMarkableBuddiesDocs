@@ -1,4 +1,6 @@
-# Ordinary restore producer contract v1 — unimplemented precode
+# Ordinary restore producer contract v1
+
+Producer candidate Buddy74 e9afbcf8fca8ceba68ed77697a2c8218b8077ef0 implements the accepted wire with corrected c3b6a4b production code and retained native evidence. Current full CI, final lifecycle/delivery and future host/UI compatibility remain separate gates. This candidate header does not change the accepted protocol or grant device execution.
 
 ## Entry, limits and admission
 Fixed selectors are --restore-operation prepare|apply|status with exact --restore-input - and EOF-delimited UTF8 JSON. Every operation consumes its own bounded stdin; no input files, aliases or runtime/other-maintenance combinations. Select an explicit absolute configuration through REMARKABLE_BUDDIES_CONFIG; no --config/default fallback. Enter before dotenv/runtime/provider/logging/worker startup.
