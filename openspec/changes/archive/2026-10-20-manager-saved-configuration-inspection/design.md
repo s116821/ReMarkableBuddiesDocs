@@ -73,4 +73,4 @@ inspect responsive captures, then independent review, own canonical sync/archive
 actual producer composition and final paired delivery/main-publication observation.
 
 ## Open Questions
-None blocking in the agreed producer wire. Independent precode review5584741044 accepted exact5def25f before implementation. Independent implementation review and current retained-package CI remain delivery gates.
+None blocking in the agreed producer wire. Independent precode review5584741044 accepted exact5def25f before implementation. Implementation and narrow fixture corrections have independent accepted reviews through5586997048. Exact-head run39444594715 passes both OS package paths; final composed lifecycle review and normal delivery remain separate gates.

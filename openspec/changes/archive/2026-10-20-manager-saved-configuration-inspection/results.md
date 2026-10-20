@@ -1,6 +1,21 @@
 # Consumer implementation evidence
 
-Source basis: actual Manager bounded-preparation fixture candidate `25e7f5a` (accepted GC repair `787aef7`, diagnostic `2671889`) (accepted configuration fixture `7e35e4f`) (accepted presentation `d186779`, initial implementation `bcfc53b`) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+Source basis: current verified Manager `66199d1191a39d24b032fe59ecb8079ad17c1b12` (all product bytes remain accepted `d186779`; initial implementation `bcfc53b`, later fixture repairs recorded chronologically below) on `feature/rem-42-saved-config-inspection`, accepted consumer precode `5def25f` / independent review5584741044, accepted producer contract `2a320181`, and original native producer corpus. Local execution below uses synthetic transports and identities; no tablet or provider contact occurred.
+
+## Current qualification and lifecycle
+
+Exact source66199d1191a39d24b032fe59ecb8079ad17c1b12 passed ordinary run39444594715 on both OSes. Its tested merge550d4f59da74a479026e3c559574b2dac59bfca8 has the exact source tree9d568e00d034853a92c1052306f3643b74161bcf. Checks/Build pass; PR Release is correctly skipped. Both native job logs were retained/read, with all four development/source/retained saved-configuration markers, source/packaged query controls, both initial6s preparations and6s startup-status controls, plus successful final Confirm integration preserved upload bytes steps.
+
+| OS | Native job | Log bytes | Log SHA256 |
+| -- | -- | -- | -- |
+| Linux |118704785982|87430|773ea8dd091787e5074ca73d1aa7d493ed0064ee04d891ac3d2f987b4a1e2814|
+| Windows |118704785428|65495|7d0deb0c0c8701b20c0ebf18fc49442a100ca460e4d45a363d3b2c55314dcea9|
+
+Linux startup controls complete6078/6047ms; Windows6084/6071ms, zero page errors. Windows preparation6884/6097ms. These are fixture/host package results, not physical or runtime qualification. Independent source review5586997048 and paired evidence review5586997334 accept the final narrow correction; earlier product/visual reviews remain applicable because product bytes have not changed since d186779. The sole review thread is resolved; no current inline finding remains.
+
+All536 entries from actual producer Docs2d4975c8d4b2f13e5adceba4aa9cac6b30ce2061 remain byte-exact, including producer canonical/archive and the separate unimplemented edit-saved-basic-settings-companion draft. Only this consumer's11 artifacts move into its own dated archive; its five requirements/twelve scenarios synchronize into a new canonical capability. No producer/future companion completion is claimed.
+
+The investigation sections below are historical checkpoints. Their then-pending tests/reviews or required-before-repair statements are superseded only by the named successor evidence, not by rewriting failed predecessors as success. befc39442043565's failed Linux log was retained before its remaining obsolete Windows work was cancelled; queued a23839442748082 was cancelled as superseded by the actual661 fix. Neither cancelled run qualifies661. No rerun, settings/concurrency change or local package rebuild occurred.
 
 ## Implementation and preservation
 
@@ -52,7 +67,7 @@ The global pending resolver could describe an earlier invocation rather than the
 
 The retainedd186 development browser artifact (773796bytes, merge54255216) also passed locally before the correction using the same Chromium153.0.8010.12 as CI, so that was truthful nonreproduction rather than qualification. Earlierbcfc/d186 failures and the diagnostic failure stay retained. Remaining obsolete d186 Windows work was cancelled only after its run's Linux failure was preserved, to free the existing serial slot. The diagnostic run completed naturally before its cancellation request, which was rejected and not retried. No failed result was counted as passing, no rerun or workflow/settings change occurred.
 
-Narrow review of f7174ef accepted the ticket/start correction but identified consecutive unsupported labels as insufficient UI-completion evidence. Successor7e35e4f moves the distinct raw/response-refused case between unsupported and future, preserving all five cases and making every consecutive negative outcome distinguishable. Lint/full actual local browser/source Electron fixture pass again. The obsolete f717 validation run was cancelled as superseded; it is not qualification. Independent narrow review and ordinary exact-head Linux/Windows package checks for the final correction remain open. Own canonical synchronization/archive, final composition/delivery and observed main/publication remain later gates.
+At that historical checkpoint, narrow review of f7174ef accepted the ticket/start correction but identified consecutive unsupported labels as insufficient UI-completion evidence. Successor7e35e4f moves the distinct raw/response-refused case between unsupported and future, preserving all five cases and making every consecutive negative outcome distinguishable. Lint/full actual local browser/source Electron fixture pass again. The obsolete f717 validation run was cancelled as superseded; it is not qualification. At that checkpoint narrow review and current Linux/Windows package checks remained open. Those gates were later completed by the explicitly named review/current qualification above; final composed delivery/main-publication remain separate.
 
 ## Historical Windows enablement failure and passive diagnosis
 
@@ -102,6 +117,6 @@ The narrow successor registers both matching response and requestfinished waits 
 
 The matched controlled second-navigation variant now passes the full browser/source Electron fixture (response6190ms); normal full fixture (response6183ms) and lint separately pass. A separate temporary malformed-startup-body control returns HTTP200 with contract_version999 only at the public response seam: network completion passes, the actual strict renderer refuses it, and the unchanged5s unknown assertion correctly fails with Preparation unavailable or response refused despite a valid original host status/reference. This verifies semantic proof was retained; that temporary control is also restored before commit. The temporary extra navigation is not committed; the existing6s startup-response control remains. Before/after variants and native outputs are retained outside source. Independent narrow review and new exact-head ordinary both-OS qualification remain required; previous failures are not converted into qualification.
 
-## Still open
+## External delivery follow-up
 
-Ordinary exact-head Linux/Windows development and retained-package browser/Electron jobs, accepted implementation plus current narrow-review confirmation, own canonical synchronization/archive, final qualified producer composition, exact-head final review and normal delivery remain open. Actual merged trees, main CI and official publication will be observed separately. This is not a package/native/runtime qualification or broad REM42 completion. No local package rebuild, new worker/chat/worktree, tablet or account action was used.
+Implementation, current source/package checks and own lifecycle preparation are complete. Independent final composed review and current Docs checks precede normal Docs-first/source squash delivery. Actual merged trees, main CI and official tag/provenance publication will be observed separately afterward; none is claimed complete by this archive. Broad REM42/MVP, basic-settings companion and native/runtime gates remain open. No new worker/chat/worktree, tablet or account action was used.

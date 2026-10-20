@@ -11,6 +11,11 @@
 - [x] Verify all origin/default/null/presence/range/cross-field/privacy/bounds and transport/refusal/old-binary cases with targeted controls.
 - [x] Verify before-I/O ready-forget invalidation, unknown-intent preservation, same-ID/navigation/late completion and cancel/new-read ordering through real guards.
 - [x] Consume attributed original producer specimens and verify exact hashes/semantics, separately from synthetic faults and design vectors.
-- [ ] Pass ordinary development/source/retained browser/Electron checks in existing Linux/Windows jobs, inspect responsive captures, and update public guide/evidence.
-- [ ] Complete independent implementation review, own canonical synchronization/archive and final exact composed pair with qualified producer delivery.
-- [ ] Complete final current-check/review and normal Docs-first/source delivery; observe actual merged trees/main CI/publication separately, retaining broad roadmap/native gates.
+- [x] Pass ordinary development/source/retained browser/Electron checks in existing Linux/Windows jobs, inspect responsive captures, and update public guide/evidence.
+- [x] Complete independent implementation review, own canonical synchronization/archive and prepare the final composed pair preserving qualified producer delivery.
+- [x] Prepare the linked final review packet with current source checks and explicit normal Docs-first delivery/main-publication follow-up; retain broad roadmap/native gates.
+
+External follow-up after this archived implementation: independent final composed
+review, normal Docs-first/source merge, then separately observe actual merged trees,
+main CI and official publication. These external events are not claimed complete
+by artifact/task completion.

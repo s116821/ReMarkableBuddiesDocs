@@ -1,4 +1,10 @@
-## ADDED Requirements
+# Manager saved-configuration inspection
+
+## Purpose
+Provide a bounded saved-only configuration view in both companions while preserving
+private host authority, truthful origins and cancellable target/session lifetime.
+
+## Requirements
 
 ### Requirement: Explicit shared saved-only configuration view
 Both companions SHALL offer explicit bounded inspection through the exact producer
@@ -77,7 +83,3 @@ its own specification lifecycle in the linked delivery.
 #### Scenario: Final coordinated delivery
 - **WHEN** this capability is proposed for normal merge
 - **THEN** required reviews/current checks pass, own canonical requirements and archive match the implementation, actual producer composition is preserved, and later actual-main/tag/provenance observations remain distinct from PR evidence.
-
-Source basis: exact producer precode2a320181 and review5584589306; current
-Manager3c789a0 host/controller/privacy boundaries and central Docs54085ec. These
-are proposed consumer requirements, not implementation or physical evidence.

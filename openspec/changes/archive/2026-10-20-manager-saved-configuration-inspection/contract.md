@@ -1,11 +1,12 @@
-# Shared saved-configuration consumer contract (proposed)
+# Shared saved-configuration consumer contract (implemented)
 
 Producer wire is exactly Docs71 at2a320181739e0d598ed830d31329214e036df646,
 [inspect-saved-configuration/contract.md](https://github.com/s116821/ReMarkableBuddiesDocs/blob/2a320181739e0d598ed830d31329214e036df646/openspec/changes/inspect-saved-configuration/contract.md).
 Full independent review5584589306 and explicit consumer agreement6290198071 are
-read/accepted as design. This consumer contract is precode, not an available API.
-Main owns the producer and actual specimens. Existing Manager source3c789a0 is
-shipped; no source body changes precede this consumer's independent review.
+read/accepted before implementation. Manager66199d1 implements this consumer
+contract, independently reviewed and verified through both OS package paths.
+Main owns the producer and original actual specimens. Manager3c789a0 is the
+original shipped base; no source changes preceded consumer precode review.
 
 ## Exact public capability
 One optional `ManagerHost.inspectSavedConfiguration(request)`; one authenticated

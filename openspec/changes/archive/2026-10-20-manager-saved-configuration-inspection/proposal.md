@@ -27,4 +27,4 @@ Manager host/parser/transport, optional bridge, shared controller/panel, public 
 and feature checks; central own consumer change. No provider/model-credential access,
 settings writes, effective configuration resolution, path admission, service/native
 work, new persistence/dependency or source-maintained release version. Main owns
-all producer implementation. Implementation is published for independent review; current retained-package CI, full specification lifecycle and delivery remain open.
+all producer implementation. Implementation and both-OS retained-package verification are complete at Manager66199d1. This linked delivery synchronizes and archives only its own consumer requirements; final composed review, normal merge and later main/publication observations remain separate gates.
