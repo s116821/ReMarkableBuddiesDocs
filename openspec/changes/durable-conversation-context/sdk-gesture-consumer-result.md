@@ -69,7 +69,5 @@ hardware diagnostic was executed.
 Current exact-head hosted checks and independent integration review remain open.
 Parent live-model/delivery, native completion, process-crash release, active-page
 authority, other profiles and the full active Reader/MVP lifecycle remain open.
-The tablet is owned by a separate human-directed effort and must not be contacted
-until the human explicitly returns ownership. This preparation performs no SSH,
-connection probe, device inspection, transfer, navigation, execution, service
-change or cleanup. No permission follows from pure plans or fake-sink tests.
+Current preparation performed no hardware diagnostic, real event emission or
+tablet contact. Fake-sink tests establish no native qualification.
