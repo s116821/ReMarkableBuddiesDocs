@@ -1,4 +1,6 @@
-# Basic-settings maintenance wire v1 (proposed, unimplemented)
+# Basic-settings maintenance wire v1 (accepted; producer implementation candidate)
+
+Producer candidate Buddy73 is implemented at87bc8d4 with captured reports retained at61685ea. Shared consumer and full hosted/lifecycle/delivery evidence remain separate pending work. The accepted wire is unchanged; the authorized object-shape correction is scoped in the accompanying delta.
 
 ## Fixed operations and limits
 New fixed CLI `reader-buddy --basic-settings-operation inspect|prepare|apply|status`. Existing REMARKABLE_BUDDIES_CONFIG selects an explicit absolute config. There is no --config option. All runtime/other maintenance selectors are mutually exclusive, including existing configuration inspection. Inspect takes no input and MUST NOT read stdin; supplied basic input refuses before I/O. Prepare/apply/status require exact `--basic-settings-input -`, consume bounded UTF8 JSON plus EOF, and reject file-path input before reading it. Unknown/old CLI is unsupported before apply dispatch; never fallback to files, services or automatic retry.
