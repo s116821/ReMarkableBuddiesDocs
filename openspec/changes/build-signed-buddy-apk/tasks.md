@@ -5,6 +5,7 @@
 - [x] 1.1 Independently review exact producer scope, actual input proof, signed metadata/key/version/target contract against REM-41/46 and consumer requirements before code. Initial1d7b167 review found build-input admission and exact serialization gaps; subsequent accepted contract/source amendments rechecked and resolved them (Docs dddfc011 and [source review5503229901](https://github.com/s116821/ReMarkableBuddies/pull/38#pullrequestreview-5503229901)).
 - [x] 1.2 Freeze concrete serialization with Manager owner and implement actual external-tool build/sign/verify helper without a release engine or source version field.
 - [ ] 1.3 Derive exact Buddy/consumed-SDK/build identity from real build/artifact inputs, rejecting mismatches and preserving untagged/absent SDK as ineligible.
+- [ ] 1.3a Qualify metadata-only admission of Cargo's exact root completion marker while refusing all other SDK dirt and invalid marker identity/type/content; no source compilation or package qualification follows.
 - [ ] 1.4 Produce real reproducible test-key Buddy APK/index/public-key artifacts from an actual checked executable; never substitute text/fake metadata for payload proof.
 
 ## 2. Verification and delivery

@@ -133,6 +133,19 @@ HEAD/tag, the SDK package's actual git source fragment/resolved checkout HEAD,
 SDK manifest hash/status, compiler/cross/image identity and exact argv/features.
 Require stable matching inputs, fixed canonical SDK repository when present,
 exact one resolved SDK package, actual clean resolved SDK source and lock agreement.
+For Cargo-managed Git checkouts, cleanliness may exclude only the root untracked
+`.cargo-ok` completion marker. Cargo documents this marker in its
+[GitCheckout reset contract](https://doc.rust-lang.org/stable/nightly-rustc/cargo/sources/git/struct.GitCheckout.html#method.reset).
+The marker must be absent or an empty regular file with one link; a tracked
+marker, symlink/reparse point, directory, nonempty file or changed file identity
+during inspection refuses. Confirm the actual Git top-level is the resolved SDK
+root, exact HEAD matches the resolved source fragment, and all remaining tracked
+and untracked paths are clean using Git's complete untracked inventory. Do not
+delete the marker, alter ignore/configuration files, hide unrelated changes or
+accept marker presence as source authenticity. Existing pre/post-build source,
+SDK, lock, manifest and compiler comparisons remain required. Host-only actual
+Git controls must cover the valid marker, ordinary dirty tracked/untracked files,
+nested/renamed lookalikes, tracked markers and invalid marker types/content.
 Record absent SDK only if actual metadata has none. A supplied stable SDK tag
 must resolve to that actual SDK SHA; without verified tag record commit-pinned,
 not a version inferred from Cargo. This remains developer source-build evidence,

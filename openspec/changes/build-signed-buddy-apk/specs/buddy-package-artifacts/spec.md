@@ -21,6 +21,12 @@ runtime separately, or introduce custom release/version/publication logic.
 - **THEN** packaging verification refuses the conflict or reports the explicit ineligible state
 - **AND** it does not invent missing identity or overwrite an earlier artifact.
 
+#### Scenario: Cargo-managed SDK checkout marker
+
+- **WHEN** resolved SDK source has only Cargo's root untracked completion marker
+- **THEN** source admission may exclude that marker only after verifying the exact Git root/HEAD and an absent or empty regular single-link marker with stable inspected identity
+- **AND** tracked markers, links/reparse points, directories, nonempty or changed markers and every other tracked/untracked modification refuse without deleting files or changing ignore/configuration policy.
+
 #### Scenario: Signature and reproducibility
 
 - **WHEN** signed control/payload changes, the key is wrong/missing, or identical fixed inputs/key are rebuilt
