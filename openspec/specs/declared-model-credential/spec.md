@@ -1,7 +1,7 @@
 # Declared protected model credential
 
 ## Purpose
-Deliberately manage only the existing saved model-credential reference with confidential original conditions and truthful file observation. The detailed [contract](../../changes/manage-declared-model-credential/contract.md) fixes the exact protocol. Host UI, new reference binding, provider/runtime/native qualification and remaining delivery checks are separate.
+Deliberately manage only the existing saved model-credential reference with confidential original conditions and truthful file observation. The detailed [contract](../../changes/archive/2026-10-22-manage-declared-model-credential/contract.md) fixes the exact protocol. Host UI, new reference binding, provider/runtime/native qualification and remaining delivery checks are separate.
 
 ## Requirements
 

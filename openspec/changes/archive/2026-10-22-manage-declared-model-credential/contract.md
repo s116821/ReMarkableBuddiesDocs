@@ -1,4 +1,4 @@
-# Declared model credential protocol v1 (unimplemented)
+# Declared model credential protocol v1
 
 ## Entry and limits
 `--model-credential-operation inspect|prepare|apply|status` is independent of every runtime/maintenance operation. Inspect accepts no input selector and never reads stdin; all other operations require exact `--model-credential-input -`, strict EOF-delimited UTF8 JSON and no file fallback. Refuse other runtime/maintenance flags before dotenv, environment credential resolution, logging, provider, worker or service initialization. `REMARKABLE_BUDDIES_CONFIG` must name one explicit absolute existing regular config. No default, caller filename/root or reference override.
