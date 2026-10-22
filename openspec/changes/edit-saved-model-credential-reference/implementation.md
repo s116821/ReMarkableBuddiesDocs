@@ -1,0 +1,24 @@
+# Implementation evidence
+
+## Candidate and scope
+The first source candidate is `e425768e2e81179205558652331d39e9d46dfea8` in [Buddy80](https://github.com/s116821/ReMarkableBuddies/pull/80), paired with [Docs82](https://github.com/s116821/ReMarkableBuddiesDocs/pull/82). Concrete precode `074357e97bb71fe40d7389b515d69c4a96766f67` was independently accepted in review5621981926 before source edits. Actual source baseline is `88ca528f8d5614a2346fa662166c21ec1e318d55`.
+
+The candidate modifies only module routing and early CLI/argument inventory, and adds the fixed-leaf implementation, source guide and actual CLI tests. All420 other original source entries, including old editors, credential-file producer, resolver, shared writer and lockfiles, retain exact Git blobs. The new operation reuses the existing conditional writer and current selected-aware Store custody. Every receipt keeps runtime activation unverified.
+
+## Initial diagnostic failures
+The first dirty Windows library run passed six tests and failed one assertion that every malformed inner Change DTO refused. A labelled diagnostic failed again and isolated `["clear"]`: Serde accepts positional input for the inner enum, while the existing public request parser already rejects non-object change records. The clean candidate corrects the test to exercise complete requests and retains an explicit inner-accepts/public-refuses negative control. No production parser weakening or correction was needed for this observation. These two failed diagnostic runs remain failures and are not clean candidate qualification.
+
+## Clean Windows observations
+At exact sourcee425, formatting, strict all-target/all-feature Clippy, seven focused library tests, five bin/argument tests, seven new actual CLI tests, four retained memory-settings CLI tests and three retained model-settings CLI tests pass. Tests cover set/clear/null/missing/case and exact no-ops, preservation/privacy, strict records and caps, original hashes/change/target, Busy and current ordinary/selected modes, atomic/readback uncertainty, custody through partial output, held stdin/EOF, input fallback and other-lane conflicts.
+
+The Windows CLI capture contains101 new records and174 independently verified stdin/stdout hashes. The executable SHA256 is `de58758c3c3050127a876c140d4fcdfb9ca1f823c705a7fb88445f6bb76d3286`. Combined captured stdout is147722bytes/SHA256 `c9d034a966f7c59e74d65b9ee6debee1f3977be097b5a92a0881fff181aa3fdc`; normalized new records are142414bytes/SHA256 `6cdad5ca30ce358c478bda536f5eb8122e9a8ba6beb6b3f21e02d7951144206a`. Direct held-stdin/argument controls are additional asserted process tests, not extra records in that corpus. Windows evidence does not establish the Unix credential-root alias control or a Linux build.
+
+## Original Linux checks and capture
+Normal Linux CI39869946858 Checks120141649243 passed formatting, strict Clippy, the full suite (407 library passes and one existing ignored test), eight new actual CLI tests and retained integration suites, plus release-tool/fixture checks. Independent implementation review5622086439 accepted sourcee425 without blocking code findings, conditional on completing current CI and the linked lifecycle.
+
+The actual clean CI checkout was `a81ed1273b0303bd4ea409b6c5861429091b500e`, whose Git tree `2b5fa5b949cffbe65cc7fb8e3eb58cef9581100e` exactly matches reviewed sourcee425. Its executable SHA256 is `97f53a49a48a71473ada862928cf412ee5a03558974bbb23f3cb45a127b141af`. The [historical Linux capture](linux-cli-corpus.json) preserves105 actual records and181 verified input/output hashes, including the Unix credentials-root alias control. It is not a later-source or native observation. The original Checks log is548684bytes/SHA256 `dfd5e33a6436d15082a631f367084644c177e0ec62c0c029073bacafd97dcb4b`; normalized records are146612bytes/SHA256 `fc48cb200cb7726c43b4459601fe5a615cb64521eb6bc6dc7a418e36a589d1d3`. The public wrapper is154965bytes/SHA256 `7fc1b6c67ce1365f273d934e2ecbc90c965196357b70bd8e6a80cb284cb91a9c`. These calculated hashes were checked against the captured raw bytes without replaying the producer.
+
+## Remaining gates and limits
+The normal Linux package Build/Integration gates are still pending at this evidence revision. Preserve original checkout/executable/corpus attribution through subsequent review and delivery. Canonical sync, archival and final composed review must follow verified implementation; this active change is unfinished.
+
+All execution here uses task-owned synthetic Config/Store fixtures. There is no real credential discovery, provider request, tablet contact, service/runtime activation, transport-loss/power-loss qualification or two-file setup transaction. A stale separate credential-file binding cannot settle its prior unknown attempt. Companion private buffers, shared maintenance ownership and multi-step setup remain separate consumer work. Broader project readiness remains open.
