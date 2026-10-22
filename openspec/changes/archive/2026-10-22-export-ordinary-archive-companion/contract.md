@@ -1,6 +1,6 @@
 # Ordinary on-tablet archive export companion contract v1
 
-Unimplemented concrete precode, based actual Docs0399b2dbb57616a1c24e805a1afd23db62afbc9b / Managerda78a525351ed1a8578856a5e83359640de22749. Current model publication observations remain separate. Independent immutable precode review precedes all API/source edits.
+Implemented bounded contract, independently accepted as concrete precode before API/source edits (eeea00be/review5590342069). Historical preparation used Docs0399b2dbb57616a1c24e805a1afd23db62afbc9b / Managerda78a525351ed1a8578856a5e83359640de22749; current implementation, corrective baseline and passing gates are recorded in results.md. No broader hardware or publication claim follows from this contract.
 
 ## Verified inputs and source basis
 
