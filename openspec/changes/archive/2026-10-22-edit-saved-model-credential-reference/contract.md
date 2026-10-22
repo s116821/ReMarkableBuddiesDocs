@@ -1,4 +1,4 @@
-# Saved model credential reference protocol v1 (unimplemented)
+# Saved model credential reference protocol v1
 
 ## Fixed entry
 Use `--credential-reference-operation inspect|prepare|apply|status`. Inspect accepts no input selector and never reads stdin. Other operations require exact `--credential-reference-input -` and EOF-delimited strict UTF8 JSON, never a file fallback. Refuse runtime/other-maintenance combinations before dotenv/logging/provider/runtime initialization. `REMARKABLE_BUDDIES_CONFIG` selects one explicit absolute existing regular file; no default or caller file/reference-path fallback. Existing basic/model/memory/file-credential/general wires are unchanged.
