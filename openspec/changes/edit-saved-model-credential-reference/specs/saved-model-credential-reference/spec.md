@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
 ### Requirement: Deliberate supported saved credential reference edits
-The producer SHALL set/clear only saved model_credential under contract.md and existing name/full Config validation, preserving exact decoded spelling, unrelated declarations/origins and exact no-op bytes. It SHALL NOT discover/read/change credential files, retarget roots, resolve keys or change existing schema/precedence/wires.
+The producer SHALL set/clear only saved model_credential under contract.md and existing name/full Config validation, preserving exact decoded spelling, unrelated declarations/origins and exact no-op bytes. It SHALL NOT discover/read/change credential files, retarget roots, resolve keys or change existing schema/precedence/wires. Inspect/prepare/status SHALL avoid declared-root probes; apply SHALL retain existing Config/Store root-and-ancestor path-safety metadata checks, including the credentials root, without credential-file content access or credentials-root mutation.
 
 #### Scenario: Set, clear or retain declaration
 - **WHEN** a supported name is set or a missing/null/present reference is cleared
@@ -9,7 +9,7 @@ The producer SHALL set/clear only saved model_credential under contract.md and e
 
 #### Scenario: Invalid original or patch
 - **WHEN** whole original/target schema/value/shape/type/duplicate/cap or fixed change validation fails
-- **THEN** the invocation refuses without repair, normalization, fallback, file probe or disclosure of the original/new name.
+- **THEN** the invocation refuses without repair, normalization, fallback, credential-file probe or disclosure of the original/new name.
 
 ### Requirement: Private original change and same conditional configuration custody
 Fixed origin/presence reports SHALL disclose no reference text. Hash-only intent SHALL bind original file/path/private change/target, and apply SHALL separately verify the original change before the SAME existing writer/mutex/CAS/readback/current Store-mode custody through consuming output.
