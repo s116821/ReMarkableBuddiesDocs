@@ -12,6 +12,12 @@
 
 ## 3. Verification and coordinated delivery
 - [x] Run affected fixtures, ordinary library check independent of feature-unified tests, fmt and strict Clippy; preserve failures and current evidence.
-- [ ] Obtain independent source/spec review and pass current normal hosted checks/cross-target builds; resolve feedback.
-- [ ] Verify every requirement/scenario against implementation and evidence; sync only own canonical PDF spec and archive only this completed change.
-- [ ] Obtain final paired lifecycle/source review, deliver Docs first/source second by normal squash, then distinguish actual-main CI/release provenance from PR evidence.
+- [x] Obtain independent source/spec review and pass current normal hosted checks/cross-target builds; resolve feedback.
+- [x] Verify every requirement/scenario against implementation and evidence; sync only own canonical PDF spec and archive only this completed change.
+- [x] Prepare the final paired lifecycle/source review packet and normal Docs-first/source-second squash delivery.
+- [x] Retain final composed acceptance, current final Docs CI and actual merge/main/tag/small-provenance observations as subsequent gates.
+
+These checked implementation and preparation tasks do not claim the subsequent
+observed outcomes. Final composed review, current final Docs CI, normal squash,
+actual main pipelines and publication verification remain required in the paired
+delivery. No Reader/native qualification or broader retrieval completion follows.

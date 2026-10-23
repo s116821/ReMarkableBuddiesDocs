@@ -1,10 +1,12 @@
 # Offline PDF supported profile
 
 ## Status and ownership
-Proposed before implementation. Rust owns the adapter, authored fixtures and
-development example; this central change owns its requirements. Independent
-precode review precedes source changes. Source and Docs form one delivery, with
-Docs first after implementation, verification, own spec sync and archive.
+Implemented offline profile. Rust owns the adapter, authored fixtures and
+development example; this central change owns its requirements. Proposal/design
+and independent precode review preceded source changes. Source and Docs form one
+delivery, with Docs first after implementation, verification, own spec sync and
+archive. Final composed review and coordinated delivery remain subsequent gates;
+this profile establishes no Reader/native or broader retrieval completion.
 
 ## Parser choice and research basis
 Use lopdf =0.46.0, default features disabled: MIT, declared Rust1.88 (below the
@@ -145,8 +147,8 @@ actual-main CI/tag/small provenance separately. No app archive replay required.
 ## Precode review correction
 Independent review of38f0cb5 identified the private table constants and the
 post-decryption Encrypt removal. The public minimal-dictionary route above and
-dual encryption check resolve those design errors; source implementation still
-requires final adapter verification. Before source edits, a separate small
+dual encryption check resolve those design errors and are implemented and
+verified in the adapter. Before source edits, a separate small
 compile/behavior probe against pinned lopdf0.46.0 passed for all three literal
 encodings: ASCII A, a defined Unicode glyph (Standard fi ligature and WinAnsi/
 MacRoman e-acute) and absent mapping for byte0. The probe calls only the trusted
