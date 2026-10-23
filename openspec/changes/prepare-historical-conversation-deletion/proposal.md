@@ -11,7 +11,9 @@ authority. Selective owned-data management needs a deliberate, reference-safe pa
 Add a separate Linux-only conversation-maintenance CLI and closed version-one
 report for inspect/prepare/apply/status of one explicitly selected ordinary
 schema-one conversation. Require observed inactive fixed Buddy unit, existing
-Store custody, ordinary local mode, strict eligibility and exact original intent.
+Store custody, ordinary local mode, explicit settled-exchange eligibility and exact
+original intent. Reserve publication/reconciliation headroom and cumulative recovery
+work; recognize an exact historical receipt independently of later current history.
 Publish only root/optional binding tombstones and one historical receipt together.
 Expose no text, source images, native identifiers, arbitrary paths or remote action.
 

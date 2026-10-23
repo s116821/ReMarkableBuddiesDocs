@@ -5,7 +5,9 @@ The Linux producer SHALL expose a separate strict prepare/apply/status interface
 for logical deletion of one ordinary schema-one conversation, with an inspect
 preview that grants no authority. It SHALL bind exact Config/roots, actor,
 generation, ordinary mode, complete supported target history and root/binding
-heads in a closed version-one intent. Selected/schema-two, conflicted,
+heads in a closed version-one intent. Settled interpreted user requests SHALL be
+admitted through exact exchange/terminal-assistant evidence without rewriting the
+user turn. Selected/schema-two, conflicted,
 unsupported, unfinished or uncertain target state SHALL refuse without mutation.
 Source: selective cleanup and reference integrity requirements; current historical
 Ledger behavior and proposed contract.md.
@@ -22,7 +24,9 @@ Ledger behavior and proposed contract.md.
 The producer SHALL observe the fixed Buddy unit inactive through bounded read-only
 OS properties and retain its existing Store and ordinary mode leases through
 publication/readback/output. It SHALL impose conservative whole-generation limits
-before content recovery, refuse unknown/unsafe/selected state and never initialize,
+before content recovery, enforce cumulative repeated-reference/read-work bounds,
+reserve final and partial transaction/reconciliation headroom before dispatch,
+refuse unknown/unsafe/selected state and never initialize,
 repair, clean staging, change service state or consult credential payloads. Other
 platforms SHALL refuse before input/OS/storage access. Source: shared-storage Safe
 maintenance ownership and existing maintenance constraints; contract.md.
@@ -33,7 +37,8 @@ maintenance ownership and existing maintenance constraints; contract.md.
 
 ### Requirement: Historical acknowledgment and uncertain output remain separate
 The producer SHALL recognize only the exact original deterministic transaction and
-receipt as historical acknowledgment, reporting current target state separately.
+receipt as historical acknowledgment, reporting current target state separately without imposing fresh-live eligibility
+or later whole-history equality on an exact original receipt.
 Any unverified error after publication attempt SHALL be unknown, without automatic
 retry/rollback or re-preparation. Explicit original-intent status SHALL be read-only.
 Reports SHALL expose no content/path/secret/native identity and SHALL make no

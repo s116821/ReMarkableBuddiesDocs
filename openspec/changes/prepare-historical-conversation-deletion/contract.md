@@ -43,11 +43,59 @@ refuse. Count/check objects before content reads, reject foreign/unknown committ
 object classification and all unavailable commits. Read admitted manifests first under the aggregate8MiB manifest budget to classify
 record versus media references; before object contents, check all declared
 lengths against held regular-file metadata and aggregate budgets. Existing recovery validates
-record JSON/digests, manifest references and required media within those budgets;
+record JSON/digests, manifest references and required media within the cumulative budgets below;
 this is full owned-store validation, NOT metadata-only inspection. No original
 PDF/EPUB/notebook, native page, credential payload or remote object is accessed.
 Existing known credentials/owner.json may be read solely to validate Store custody;
 no credential filenames, resolver, secret values or provider is consulted.
+
+## Cumulative content and reference work
+Unique disk lengths are NOT a cumulative read-work bound. This NEW admission must
+use a shared per-operation recovery budget, leaving legacy callers unchanged.
+Cap all manifest/object content reads at512MiB cumulative and all reference visits
+at65536 cumulative. Charge BEFORE every read/hash/deserialize reread and before
+every manifest/object/parent edge visit, including preflight, repeated shared-media
+references, second record reads, retrying dependency passes and original-receipt
+verification. A read must be limited to its reserved byte allowance (including any
+EOF sentinel); growing files cannot consume unreserved bytes. Overflow or exhausted
+budget refuses before the next read/visit. No resetting the budget per manifest,
+object, pass or receipt branch. No fallback to unbudgeted recover/Source::open.
+Verified reuse is allowed only inside this admission for the same validated object
+identity/reference under retained custody; charge its verification once and every
+reuse reference visit. No reusable cache or changed legacy verification semantics.
+
+## Publication and reconciliation headroom
+The caps above remain absolute for shared safe admission, including original status.
+Before returning a prepared intent or attempting its first publication, compute the
+exact deterministic2or3 envelope bytes R and manifest bytes M. Reserve conservatively
+2 commit entries, N+1 object entries (N=2or3), 2*M manifest-directory bytes and2*R
+object-directory bytes, charging2*R also as record-directory bytes. Include the
+actual encoded
+N-envelope union in the4096-envelope/8MiB target-history cap, including JSON array
+separators when applicable. Existing stages count first; do not erase them to fit.
+The reservation covers final files AND a single interrupted atomic-write staging
+file at each publication phase, even though the normal writer is sequential.
+If any prospective final or partial-publication inventory exceeds a cap, refuse
+BEFORE preparing/dispatching. inspect does not reserve a nonce-specific transaction
+and grants no guarantee that a subsequent prepare will fit.
+
+Also budget the prospective bounded recovery/receipt-validation schedule with the
+new deterministic manifest/envelopes included. Use the same deterministic traversal
+and charging rules as actual admission, accounting for repeated dependency work;
+reserve its cumulative bytes/visits BEFORE publication, or refuse before dispatch.
+This must keep original-intent reconciliation admissible after this operation's
+own final/partial files, without increasing or bypassing any global cap. Later
+unrelated growth can still exceed a cap and yield unavailable, never false absence.
+
+For apply/status with an original valid intent, shared admission may recognize its
+exact deterministic object hashes/lengths as known uncommitted objects when the
+manifest is absent. Bound and verify those bytes within the SAME read/work budget;
+all other unclassified nonstage objects still refuse. Bounded .stage-* files remain
+unread/untouched and consume reserved inventory bytes/entries. Exact original
+partial objects without a complete receipt yield unresolved/possible_effect=true,
+current_state=live-original or changed as observed; apply MUST NOT publish again.
+No partial object/stage is cleaned, adopted as a receipt or used to relax a cap.
+This is a single original publication attempt, not unlimited retry headroom.
 
 ## Inactive fixed unit
 On Linux invoke ONLY /bin/systemctl with fixed argv:
@@ -66,7 +114,7 @@ The observation is not a durable service-state token. The Store lease supplies
 writer exclusion if a cooperating runtime starts after observation. No service
 mutation, D-Bus Buddy API, SSH or tablet operation is part of the producer.
 
-## Target eligibility
+## Fresh target eligibility (inspect/prepare and FIRST publication only)
 Exactly one supported schema1 value root with matching conversation ID; at most
 one live historical binding named by that root, also schema1 and belonging to the
 same conversation. Reject foreign/missing/conflicted binding and extra live
@@ -76,11 +124,34 @@ all relevant retained records across Conversation, Source and ExportAssociation:
 complete allocated chronology and no relevant current conflict. Reject ANY relevant
 schema2/admitted-intent/settlement/export-attempt record, including retained records;
 never promote historical source/binding facts to current native authority.
-Current Turn outcomes must be completed/failed/canceled; other outcomes refuse.
+For current turns, group by the exact persisted exchange UUID, without title/text
+matching. Require each exchange to have exactly one current User turn; that turn
+may be Interpreted only when exactly one later-sequence current Assistant turn in
+the SAME exchange is Completed with valid existing completion evidence, or Failed/
+Canceled with valid existing outcome facts. User Failed/Canceled is admitted only
+with zero assistant or one later terminal assistant. Assistant-only exchanges,
+multiple current users/assistants, invalid role/sequence, missing terminal proof,
+or any Prepared/Generated/ReconcileRequired turn refuse. A user's Interpreted
+outcome is preserved unchanged; it never has to become Completed.
+For Failed/Canceled terminal turns, require exactly one valid schema1 matching-
+terminal OutcomeFact in the SAME
+committed manifest as that current turn revision (same conversation/turn/outcome),
+with no contradictory co-transaction fact. That is the applicable terminal proof;
+facts have no sequence field and no timestamp is used to choose one. Older facts
+may coexist only when their manifests contain an ancestor revision of that same
+turn and validated ancestry/transition leads to the admitted current terminal
+state under existing transition rules. Missing/ambiguous manifest membership,
+contradictory terminal proofs or unassignable facts refuse. Require the terminal
+assistant's mode to match its sole user request. No clock selects a winner.
+Interpreted+Completed uses completion evidence on the assistant,
+not an invented completion fact on the user. Empty conversations are eligible.
 Current Export associations must be completed; legacy failed/canceled lacks reliable
 no-send qualification and refuses conservatively. Historical nonterminal revisions
-of now-settled current records do not independently block deletion. Unresolved
-current outcome facts refuse; source evidence remains retained and validated.
+of now-settled current records do not independently block deletion. Immutable old
+OutcomeFact records are historical; determine applicable current settlement by
+validated turn revision ancestry/transition, not merely that a fact remains a head.
+A contradictory, orphan or causally unassignable settlement fact refuses. No source
+evidence is deleted or promoted to live authority.
 The prepared summary counts current turns, current source records and current
 export associations. It never claims reclaimable bytes or complete native history.
 
@@ -103,8 +174,9 @@ Do not reinterpret public input as a live token; acquire the matching ordinary
 mode lease afresh. All derived operation/revision/transaction IDs must be distinct
 from existing unrelated identities; any collision refuses without publication.
 target_history_sha256 is SHA256 compact JSON array of ALL relevant retained
-Envelope values sorted by (namespace,record_id,revision_id), excluding only this
-operation's later deterministic receipt/tombstones during status reconciliation.
+Envelope values sorted by (namespace,record_id,revision_id) at fresh preparation.
+It is mandatory exact revalidation before FIRST publication, not a requirement
+that later history equal the old snapshot for historical receipt acknowledgment.
 Namespace comparison is serialized kebab-case spelling. Envelope canonicalization
 uses existing typed Envelope field order and sorted JSON object keys for payload;
 parent UUID arrays are sorted lexically; semantic arrays such as acknowledgment
@@ -133,8 +205,33 @@ revalidation, complete original-receipt absence and atomic publication. No gap m
 admit an in-process append, bind/export, restore or changed selected history.
 An existing exact original manifest/receipt is historical acknowledgment only,
 not fresh permission. Reject ambiguous/partial/changed-content operation reuse,
-foreign actor/generation/config/mode, stale or changed original target content.
+foreign actor/generation/config/mode. Stale or changed original target content
+refuses FIRST publication; the historical receipt branch below has separate rules.
 Preserve existing Ledger::delete and all legacy operation fingerprints unchanged.
+
+## Branch order and historical receipt recognition
+After strict input and SHARED safe service/Config/ownership/ordinary-mode/budget
+admission, apply/status FIRST look for the exact original deterministic transaction
+and receipt. This branch does NOT require a live root, settled current exchanges,
+fresh whole-target eligibility, or current history equality with the old digest.
+Verify exact manifest membership and bytes, derived identities, receipt payload/
+fingerprint, and retained original root/optional binding envelope digests/identities
+and expected parent relationships. The receipt fingerprint binds the complete
+original intent, including its original target-history digest. Do not reconstruct
+that old history by hashing arbitrary later retained revisions. Later target schema,
+heads or settlement changes do not invalidate an otherwise exact original receipt
+when shared storage is still safely readable within bounds.
+
+Assess current state separately using only current root/binding head identity:
+exact original live heads=live-original; exactly the derived original tombstones
+and matching original binding state=desired-tombstones; all other/absent/conflicted
+heads=changed. Historical acknowledgment may therefore accompany changed state;
+no write or resurrection follows. If no exact receipt exists, status is read-only
+and never invokes fresh-live Ledger inspection as a condition of returning an
+unresolved observation. First-publication apply alone must pass ALL fresh target
+eligibility, history/head equality and prospective headroom checks. Partial original
+objects, changed/absent/tombstoned current roots or malformed/ambiguous receipt
+state never authorize first publication or a second attempt.
 
 ## Reports and outcomes
 Closed report_version1 fields: report_version, operation, status,
@@ -149,17 +246,20 @@ refusals; exit1 is output/transport failure; do not append a second report after
 partial output. Hold Store/mode custody through all bytes and failure.
 
 Statuses: ready(inspect), prepared, acknowledged, unchanged(status without receipt
-and exact original live state), unresolved(status without exact receipt but changed
-or absent current state), invalid-input, unavailable, unsupported, busy, conflict,
+and exact original live state), unresolved(status without exact receipt but changed, absent or partial-publication state), invalid-input, unavailable, unsupported, busy, conflict,
 unknown. Refusals have no intent/receipt/summary; original input conversation may
 be included only after strict admission. possible_effect=false before dispatch;
-true after publication attempt or acknowledged original receipt. Status without
-receipt uses false but makes NO historical no-deletion claim. Current state is
+true after publication attempt, acknowledged original receipt or exact original
+partial-object evidence. Status without receipt OR original partial-object evidence
+uses false but makes NO historical no-deletion claim. Current state is
 separate from historical acknowledgment and can be changed after a valid receipt.
 
 Prepare/inspect never publish. Apply first recognizes ONLY the exact original
-manifest+receipt+deterministic envelopes, including retained originals matching
-intent. Otherwise it revalidates original state and publishes once. Success
+manifest+receipt+deterministic envelopes, including the retained original
+root/binding matching intent. Later history equality
+is NOT an acknowledgment precondition. Without receipt and without partial original
+objects, apply may first-publish only after complete fresh original-state and
+reserved-headroom validation. Success
 requires exact durable transaction/receipt readback; all errors after publication
 attempt return unknown/possible_effect=true, no automatic write retry or rollback.
 Explicit status of the SAME original intent observes exact receipt or unchanged/

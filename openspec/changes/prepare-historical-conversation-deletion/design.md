@@ -26,8 +26,11 @@ The new admission acquires existing store.lock once; under that lease validate
 known ownership/ordinary-generation headers and perform conservative metadata
 budget checks BEFORE existing recovery. Never construct an empty-index ordinary
 Store for preview. Reject selected-format/feature/history and unknown root entries;
-never activate or migrate a generation. Existing recovery can then validate only
-admitted committed objects within the conservative whole-store bounds. Temporary
+never activate or migrate a generation. The new recovery path must enforce one cumulative512MiB content/65536-reference
+budget across repeated hashing/record rereads/dependency passes and receipt work;
+unique inventory length alone is insufficient. Existing legacy recovery stays
+unchanged. New admission validates only admitted committed objects within both
+inventory and cumulative work bounds, with no unbudgeted fallback. Temporary
 stage files count toward inventory bounds but remain unread and untouched.
 No credential resolver or credential payload read follows; only existing known
 ownership marker validation required by Store admission is permitted.
@@ -51,7 +54,10 @@ publication. An ordinary mode lease pins absent/explicit LocalOnly and excludes
 workers. No source/media/export-association record is tombstoned or unlinked.
 
 The receipt fingerprint binds the COMPLETE original intent digest, not merely the
-conversation UUID. Exact original retry observes the same deterministic transaction;
+conversation UUID. Exact original retry recognizes that transaction BEFORE fresh-live eligibility;
+later target revisions never become a current-history-equality precondition for
+the old acknowledgment. Retained original root/binding bytes still must match.
+Exact original retry observes the same deterministic transaction;
 changed-content reuse refuses. Historical receipt acknowledgment and current root
 state remain distinct. A later conflict/revival does not erase the original receipt
 or authorize another write. After publication is attempted, any unverified outcome
@@ -64,6 +70,13 @@ not a guessed payload subset. Reject conflicts, unavailable commits, invalid
 domain records, schema2, selected/intent/settlement facts and pending or uncertain
 current turns/exports. Preserve all historical revisions and media, even after
 deletion. This does not implement physical garbage collection or sync deletion.
+Normal settled history includes Interpreted user requests paired by exact exchange
+with one later terminal assistant. The contract states required completion/outcome
+facts, ancestry and ambiguity refusals; existing user history is never rewritten.
+Immutable outcome facts are not automatically current uncertainty.
+Before prepare/first publication reserve final and partial transaction inventory,
+target history and prospective recovery-work headroom. Exact deterministic orphan
+objects after interruption permit bounded original status only, never a new apply.
 Whole-store conservative budget refusal may reject a small target in a large
 store; do not return a partial view or quietly increase limits.
 
