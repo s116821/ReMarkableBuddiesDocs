@@ -1,6 +1,6 @@
 # Shared saved-memory declaration companion contract
 
-Unimplemented concrete precode. Actual Manager0983fed62a547d4fb1f01ff209a8aa7423d60a8e / Docs1a177f2105f5b90b48a9463717b2aac40aeb023c are the preparation baselines. Independent immutable precode acceptance precedes any Manager API/source edit.
+Accepted concrete contract; source implementation/local verification are recorded in results.md. Actual Manager0983fed62a547d4fb1f01ff209a8aa7423d60a8e / Docs1a177f2105f5b90b48a9463717b2aac40aeb023c are the preparation baselines. Independent immutable precode acceptance precedes any Manager API/source edit.
 
 ## Inputs, ownership and exclusions
 Unchanged delivered Buddy7f07169faef2a2e5ec6761412034c012cc37d9f4 / v0.24.0 implements src/config/memory_settings.rs (blob1e16faa1da29fed47ed7ada17ba8ef0c6b564b21). Its [canonical producer](../../specs/saved-memory-settings/spec.md) and [exact contract](../archive/2026-10-20-edit-saved-memory-settings/contract.md) remain authoritative. This increment edits only memory.enabled/profile declarations. No selection/profile registry/catalog/group/membership/fact/Reader/Writer draft change, create/discover/migrate/delete, config repair, provider/credential/service/native/API/restore/transfer operation or producer/release change. Preserve old API/caps/wires and environment/config precedence.
