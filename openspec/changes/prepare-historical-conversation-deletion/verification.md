@@ -1,7 +1,8 @@
 # Planned evidence matrix — unimplemented
 
-No source test or new operation has run. The accepted inventory/cleanup corpora
-remain attributed to their original sources and are never credited to this change.
+The matrix below originated as planned precode. Executed draft observations and
+remaining gaps are recorded separately below. Accepted older inventory/cleanup
+corpora remain attributed to their original sources, never credited to this change.
 
 - Strict input/parser: all four operations; raw dash aliases; held stdin early
   conflicts/non-Linux; missing/unknown/duplicate/nested keys; unsupported versions;
@@ -54,3 +55,43 @@ After accepted implementation, record exact source/Docs commits, original raw lo
 actual executable identity, separately attributed corpus hashes and only executed
 case coverage. Canonical sync/archive/final paired review and actual main/publication
 remain separate. No device or real provider/credential/native execution is planned.
+
+
+## Initial draft implementation observation (not acceptance)
+Source a562e6f0420f08e7e080c49fd03603228b3e7217 / tree
+feef202a2a7a2817f2502696afb6bd5eee913bd5 implements the proposed producer in draft
+Buddy84, paired with accepted precode d89. Fourteen own paths preserve429 other
+baseline entries. No SDK/Cargo/lock/older protocol/vector changes occur.
+
+Clean-current Windows fmt/strict all-target Clippy/16 modeled groups/7 binary
+checks/3 actual CLI groups PASS. Two ignored synthetic child-helper entrypoints are
+explicitly driven by the timeout/overflow wrapper; they are not native tests.
+Model cases execute empty and interpreted+completed history, same-manifest terminal
+failure, retained source-image bytes and historical binding, lost acknowledgment/
+partial objects/original retry/status, later competing revision, commit-entry
+headroom, output lock/failure and the16MiB/1000-manifest cumulative-work refusal.
+This is Windows fixture logic, NOT Linux directory durability or inactive-unit
+qualification. Current original Linux CI39937963089 is pending.
+
+windows-initial-cli-corpus.json retains19 actual refusal records,38 independently
+verified stdout/stderr hashes and4 separately checked intended stdin digests.
+Executable e58ce16b054d6f522a0a8c0f93c8feb3cf3f45f207d0cd682e783532e06585a2.
+Original raw17008bytes/SHA2569d0cd70685475fc3247fd3b78d93a62af450eff3884a3c749e00bac6a1283927;
+normalized15348bytes/SHA256254b5913ec43689f57803dabea4bf6d210f3851320d67d6c90c8b053b1cfd037.
+The Linux-compatible actual executable controls intentionally stop at
+selector/parser/missing-Config boundaries BEFORE the real service observer; no
+actual unit query is run by this work. Positive OS state remains injected only.
+
+### Remaining verification work
+The planned matrix above remains a checklist, not a claim of full coverage.
+Additional focused controls are still needed for all inventory/byte/target-history
+boundary reservations, structural/selected/schema/adversarial ownership and target
+variants, full process property/error cases, changed bindings/generation/mode,
+receipt corruption and semantic-versus-exact byte matching. Independent static
+implementation review and complete source/contract coverage mapping remain open.
+Do not archive, synchronize canonical completion or mark delivery ready from these
+initial results. Native/provider/consumer/whole-project gates remain separate.
+
+Earlier uncommitted wire/model green runs do not qualify a562. Initial compile
+iterator diagnostics and initial strict-Clippy fixture lint failure remain preserved
+separately; current clean checks above are new executions after their corrections.

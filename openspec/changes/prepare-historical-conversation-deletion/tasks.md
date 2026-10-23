@@ -2,7 +2,7 @@
 - [x] Carry forward existing conversation-delete assessment and confirm exact ownership.
 - [x] Define eligibility, inactive-unit/custody, whole-store recovery budgets, strict intent/report and uncertain outcomes.
 - [x] Read full c016 review5626386728 and map four findings to settled exchanges, historical receipt branch order, publication headroom and cumulative recovery work.
-- [ ] Obtain independent successor concrete precode acceptance before source edits.
+- [x] Obtain independent successor concrete precode acceptance before source edits (d89/review5626498222 read in full).
 
 ## 2. Implementation and evidence
 - [ ] Add isolated Linux CLI/maintenance and bounded existing-only Store admission, preserving older APIs/wires.
