@@ -129,3 +129,76 @@ composed review/delivery remain pending. The old deletion CLI regression is run
 separately at this source head because custody setup is shared. Existing deletion
 Config matching/Plan construction still precede Store admission; no released
 wire/default is extended. Native/runtime/installed UI/consumer behavior is unverified.
+
+## Compiler compatibility successor
+
+Original source4d4 current Linux CI40009718330 failed strict Clippy before tests:
+the newer runner compiler deprecates the newly introduced atomic fetch_update
+method. Local Rust1.98.1 passed; the manifest MSRV is1.96. Original full Checks
+120606739524 log127329 bytes/SHA2568762f19018d4ef5640748963c6638480b88df7203f36d5eb25436ea39997b0a4
+is preserved unchanged. There is no Linux test/corpus/build qualification from
+that failed run, and it was not rerun at the failed head.
+
+Successor `c81403c5e45c45e0229c5537f15ab0288149f674`, tree
+`d139b62bfebdc26c00687b1e7160007b7ccf925b`, changes only engine.rs7+/1-;
+448 other predecessor entries remain exact. The counter uses load/checked_sub
+and one strong compare_exchange. Exhaustion/contention returns before file I/O,
+with no retry, zero wraparound or fallback. Five maximum reads and legacy None
+behavior remain unchanged. No compiler/manifest/lock/settings update is needed.
+Fresh successor qualification and normal CI40010340559 remain required. Earlier
+4d4 Windows corpus and all WIP results keep their original source attribution.
+
+## Independent output-classification finding and correction
+
+Independent review5633370821 found discovery work exhaustion was correctly
+classified unavailable internally, but the final generic custody check mapped
+the same sticky exhausted budget to conflict. The original discovery-only test
+did not exercise emitted output. This was a confirmed coverage gap, not a new
+requirement or an actual Store change. Original red end-to-end test emitted
+conflict instead of unavailable and is retained unchanged; the first byte case
+failed before its visit loop case ran.
+
+Frozen successor `7257defa50961d57e8737ec2e7ca0b68228a0089`, tree
+`ae4febb694706aaa1b6abcb3f87dd8d2b2548617`, changes four paths116+/4- overc814.
+Budget errors now carry a private typed WorkExhausted marker, keeping original
+messages and sticky limits. Existing deletion custody/error classification stays
+unchanged. Inventory-only initial/final custody maps this marker to unavailable;
+real Config/named-lock changes still map conflict. The meter is never reset,
+validation is never bypassed and custody stays held. A private admission helper
+has a production no-op and a test-only pre-discovery limit hook.
+
+Corrected WIP end-to-end byte/visit exhaustion test passes and checks held Store
+lease inside the actual writer. Current successor adds real Config changes after
+both exhausted-discovery cases and Unix named-lock replacement after both cases;
+these must remain conflict. Fresh frozen-source checks, normal CI and focused
+independent correction acceptance remain required; the prior green WIP does not
+qualify7257 or its additional controls.
+
+c814 separately passed clean Windows fmt/strictClippy/55 library/8bin/new3CLI and
+old4CLI groups. Its11 new inventory records/22 hashes are independently verified
+in `windows-c814-early-cli.json`, retaining executable2f340ff26d852b39a4c6b1ad852e8d2609265457c7cc55d3372b12d7fc957366.
+The combined original new/old CLI log46488 bytes/SHA25603a22ad0938566dbd7e425692c9f3fc32f9feea70db50b38fc5bd51341b230ae
+is distinct from4d4's log; normalized inventory bytes6953/b06b7091 remain equal.
+Those executions remain c814 evidence only. No tablet/real-unit/provider action.
+
+## Current7257 Windows qualification
+
+Clean frozen7257 now passes fmt/included-file formatting, strict all-target/
+all-feature Clippy,57 focused library groups/two driven ignored helpers,8 binary
+groups,3 new actual inventory CLI groups and4 old deletion CLI regression groups.
+Both byte/visit discovery-exhaustion cases emit unavailable through the actual
+writer with custody held; both real Config-change controls remain conflict.
+Unix replacement controls remain pending Linux execution. Original red1377bytes/
+SHA256e6475c151533b3a7fb6a9c1a931a4eb88d53e07822446863010be331053e6624
+and corrected WIP green621bytes/SHA25684bc66bfb9599d9818477cf0c36aa34591fd952dd7dd0e23a65181a52fc5128e
+remain separately retained; neither is relabeled as a frozen-current execution.
+
+`windows-7257-early-cli.json` contains11 records/22 independently verified output
+hashes, source/tree7257/ae4f as above, executable779180d4495f13d233e22f7e84fd4c7054696ea752d6a59aae0301e490bad65c.
+The original combined new/old CLI log46488bytes/SHA2567918091277fbb7d501c30220ff2bf6d1eecc453f6f8ea11e11db005aa7037730
+is retained; normalized inventory6953bytes/SHA256b06b7091e665dbdab6164163dabd720a082cb38c96b54f41692670c98f1f63c9.
+All source files remained clean. No actual Linux control invokes the real observer.
+Current normalCI40011265841 has passed newer-compiler Clippy and is executing its
+maintained full test suite; current Linux evidence and full CI remain pending.
+Focused independent implementation/coverage acceptance, own canonical sync/archive
+and final composed delivery remain subsequent gates. No native/runtime claim.
