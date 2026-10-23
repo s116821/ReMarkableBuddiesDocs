@@ -57,6 +57,13 @@ two final-output reads. Its initial typed decoding and later byte comparisons do
 not acquire a new per-root loop or retry. Document::load/check currently performs
 these reads outside Session::Budget, so do not claim the Store meter includes them
 or refactor the released producer to make that attribution appear true.
+Similarly, sync_mode_snapshot and ordinary_mode_lease each invoke the existing
+mode reader once outside Session::Budget: at most two8MiB-plus-EOF loads, each with
+at most4096 validated transitions. Retain that independent finite allowance and
+original validation/hash behavior, with no per-root/retry/final-output mode load.
+The Session meter covers its admitted ownership/CURRENT/format header facts,
+manifest/object work and every new typed Conversation reread; it is not a claim
+that all ancillary Config/mode processing is inside that one meter.
 Charge before each new record/head/reference visit and before each typed
 payload reread/deserialize, using already-admitted object length rather than an
 unmetered serialization to discover its size. Never reset work per root or use

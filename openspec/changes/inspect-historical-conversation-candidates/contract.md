@@ -31,8 +31,8 @@ retains its separate reconciliation rules. Selected generation/feature/history,
 unsafe/reparse/symlink/hardlinked structural/payload entries and unavailable commits
 refuse without candidate output or mutation.
 
-The same sticky per-operation512MiB owned-storage content-read/deserialize and
-65536-reference work budget covers Store headers, manifest/object admission, every
+The same sticky per-operation512MiB Session content-read/deserialize and
+65536-reference work budget covers its ownership/CURRENT/format header facts, manifest/object admission, every
 repeated record/head visit, root discovery and final Store custody checks. Charge
 before work; reserve held object length before typed Conversation payload decoding.
 No per-root reset, unmetered size serialization, reusable external cache or
@@ -42,7 +42,13 @@ at most1MiB plus its EOF sentinel per file read and at most five reads per inven
 invocation (one initial load, two during the initial custody bracket and two during
 the final output bracket). Config decoding occurs only on initial load; later
 checks compare exact bounded bytes. No loop/retry or extra Config reread is allowed.
-This independent finite Config allowance must not be credited to the Store meter.
+Released mode admission is independently bounded too: at most two mode-state
+content loads, one for the snapshot and one for its ordinary lease. Each uses the
+existing8MiB reader plus EOF sentinel and at most4096 validated transitions. The
+original bounded typed validation/canonical hashing stays unchanged. No per-root,
+retry or final-output mode reload is allowed. Absence can require no content read.
+These finite Config/mode allowances must not be credited to or reset the Session
+meter; all new typed Conversation payload work remains charged before decoding.
 This read-only operation does not reserve publication or reconciliation headroom,
 construct a transaction Plan or acquire mutation permission.
 

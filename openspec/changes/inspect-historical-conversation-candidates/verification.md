@@ -1,8 +1,10 @@
-# Planned evidence only - unimplemented
+# Planned matrix and initial unqualified WIP
 
-No source edit, candidate command, real unit/provider/credential or tablet action
-has been performed for this change. Source66d46ee/Docs0179557 establish the baseline;
-the completed v0.29.0 deletion delivery stays separately attributed and closed.
+This matrix originated as unimplemented precode. Source66d46ee/Docs0179557 establish
+the baseline; the completed v0.29.0 deletion delivery stays separately attributed
+and closed. Uncommitted source WIP began only after full483/1e423 precode acceptance.
+No actual public candidate CLI, real unit/provider/credential or tablet action has
+been executed for this change. Synthetic library/model executions are separate.
 
 - Independent report vectors: exact13-field encoding, constants, empty/two IDs and
   too-large/unsupported refusals; independently recompute UTF8/newline hashes.
@@ -27,7 +29,9 @@ the completed v0.29.0 deletion delivery stays separately attributed and closed.
   head visits and output validation; exhaust before typed decoding; no per-root
   reset or fallback. Check the independent Config maximum five-read straight-line
   schedule and existing1MiB per-read cap separately; never credit it to the Store
-  meter. Global publication headroom is not required. No new I/O stress
+  meter. Likewise check at most two original mode loads, each8MiB plus EOF and
+ 4096 transitions, independently of the Session meter; no per-root/retry/final
+  mode load. Global publication headroom is not required. No new I/O stress
   or native/power-loss qualification is implied by numerical models.
 - Output: closed shape/caps, no text/path/native/private sentinel, final custody
   failure clears arrays/counts; partial stdout failure emits no second report and
@@ -51,3 +55,22 @@ reads. The focused successor names the maximum five Config reads and leaves ever
 owned-storage/root-decoding limit, report field, vector and older wire unchanged.
 Independent focused confirmation on the current successor remains required before
 source edits; older483 validation/acceptance is not silently relabeled.
+
+## Initial source WIP and ancillary mode clarification
+Read full focused1e423 acceptance5630828999 before source edits. WIP implements a
+separate opaque report, new metered root classification, inventory-only five-read
+Config counter and a private custody setup helper preserving the old Doc/original
+Plan-before-Store order. The first frozen-report unit group passed. Initial binary
+run7PASS/1FAIL used an invalid generic log-level specimen and stopped at value
+validation rather than the intended conflict; corrected the fixture to valid info.
+Initial model run53PASS/1FAIL/2driven helper entrypoints failed because its Windows
+fixture tried to read the held lock file while taking a preservation snapshot;
+moved that comparison before/after the held interval. Both original failures are
+retained, not relabeled. Current second model/bin executions are not yet qualified.
+
+Further source audit identified the existing mode reader as another independently
+bounded admission component outside Session::Budget. The focused wording names its
+two fixed8MiB/4096-transition loads while preserving every Session/new-root work
+bound, old mode behavior and report/vector. This attribution needs current focused
+confirmation before implementation qualification. No new mode helper behavior,
+mode setting, provider, candidate CLI or device execution follows.
