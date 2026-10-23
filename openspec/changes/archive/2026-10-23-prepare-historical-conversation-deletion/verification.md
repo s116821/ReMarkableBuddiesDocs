@@ -232,3 +232,28 @@ These executed CLI paths stop before the real service observer. Linux fixture/
 source verification does not establish inactive-unit, device/native or provider
 qualification. Build/Integration remain under original sole watcher22124; final
 paired lifecycle is still open until their observed result and final review.
+
+
+## Completed implementation and own canonical sync/archive
+Normal exact8f865 run39968879386 completed Title, Checks, Build and Integration
+PASS, with PR Release intentionally skipped. Original sole watcher22124 is closed
+after its result is observed; no new test/corpus/package execution was added.
+Source remains reviewed8f865/tree0105c5. Source scope proof preserves429 baseline
+entries and both original vector encodings; only15 own paths differ from actual
+053c314 main. Current Linux/Windows source/fixture evidence is recorded above.
+
+Only this completed implementation is synchronized to the new canonical
+prepared-conversation-deletion capability: three requirements/four scenarios have
+exact accepted delta bodies. Fourteen own artifacts are retained in this dated
+archive. All654 actual Docs f3c7e7c baseline entries remain exact. Contract body
+from Route onward, delta, vectors and all six original/current CLI wrappers remain
+unchanged; only lifecycle/status text and the reviewed design evidence wording
+are updated. Canonical and detailed-contract links resolve in both directions.
+
+Independent final composed source/Docs review and current final Docs CI remain
+required. After acceptance, use normal Docs86-first/Buddy84-second squash without
+bypass. Actual merge trees, actual main pipelines and exact official tag/small
+provenance publication observation are separate future evidence. No package
+archive download/execution or extra release qualification is authorized here.
+Manager consumer, physical reclamation, synchronization, service/runtime/native
+and whole-project gates remain open; this archive closes only its own producer.

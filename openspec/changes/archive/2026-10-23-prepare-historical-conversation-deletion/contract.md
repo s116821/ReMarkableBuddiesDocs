@@ -1,6 +1,9 @@
-# Proposed historical conversation deletion version1
+# Historical conversation deletion version1
 
-UNIMPLEMENTED PRECODE. No source or native qualification follows from this packet.
+Implemented source/spec contract for the paired producer. Source/fixture evidence
+does not establish real-unit, tablet, provider or native/runtime qualification.
+See [canonical requirements](../../../specs/prepared-conversation-deletion/spec.md)
+and verification.md for exact source revisions, retained failures and limits.
 
 ## Route
 `reader-buddy --conversation-operation inspect|prepare|apply|status --conversation-input -`

@@ -23,6 +23,7 @@ space reclamation, remote deletion or current native authority. Selected storage
 schema-two domain records, unfinished/uncertain effects, service changes, Manager
 consumer code and protected Reader/Writer paths remain excluded. A bound ordinary
 schema-one historical binding may be tombstoned; its native page remains intact.
-Obtain independent concrete precode review before source edits. Verify exact
-current source with synthetic fixtures and actual CLI refusal controls; sync and
-archive only the completed implementation, then normal Docs-first delivery.
+Concrete precode and implementation/coverage reviews were completed before this
+own canonical sync/archive. Exact-current source/fixture/CLI and normal delivery CI
+passed. Final composed review and actual Docs-first delivery/main/publication
+remain separate observed gates; no native or integrated completion follows.
