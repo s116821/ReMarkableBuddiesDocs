@@ -84,9 +84,10 @@ store; do not return a partial view or quietly increase limits.
 Pure fixtures with an injected typed service observer prove eligibility,
 transaction/readback/refusal and failure behavior. The injected observer exists
 only in test/internal dependency seams and cannot be selected through public CLI,
-Config, environment or a request. Actual CLI tests on Linux without an inactive
-systemd unit prove service refusal, not successful native deletion. Windows tests
-prove unsupported and parser boundaries only. New modeled cases are storage/OS
+Config, environment or a request. Executed actual Linux CLI controls stop before
+the production observer, at selector/parser/missing-Config refusals. Controlled
+synthetic subprocesses separately exercise the observer runner; no actual systemd
+unit is queried. Windows tests prove unsupported and parser boundaries only. New modeled cases are storage/OS
 fixtures; there is no gesture/page simulator behavior to invent.
 
 Read-only OS interface reference: [systemctl official manual](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html#show%20%5BPATTERN%E2%80%A6%7CJOB%E2%80%A6%5D).

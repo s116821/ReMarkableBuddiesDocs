@@ -200,3 +200,35 @@ normalized36342bytes/SHA256a657ad02fd3d94ae9a320f7dc36e0e93df6b0e84e4aa24272892c
 All actual CLI cases stop before the real observer. These are new executions on
 8f865, not a relabeling of earlier results. Current Linux normal39968879386,
 independent implementation/coverage acceptance and paired lifecycle remain open.
+
+### Independent implementation and coverage acceptance
+Read the complete source review5629718798 and Docs review5629719139. The reviewers
+accepted exact8f865 production and the coverage map within its explicit fixture/
+source limits, independently checking439 unchanged entries, original vectors,
+the current25-record Windows corpus and retained41-group/7binary executions.
+They found no further production defect. The design verification sentence now
+matches the actual early CLI refusals: no real systemd unit was queried. This is
+an evidence clarification, not a new normative behavior or a waived runtime gate.
+Current Linux/build/integration, own sync/archive and final composed delivery
+acceptance remain separate, open gates.
+
+
+### Current8f865 Linux Checks
+Current normal run39968879386 Checks120465999840 passed472 library tests/3ignored
+(one preexisting and two wrapper-driven synthetic helper entrypoints),7binary,
+4new CLI groups and retained regressions/audits. The Unix final-observer named-lock
+replacement and symlink/hardlink preservation controls explicitly passed.
+Original raw683554bytes/SHA256
+5556c8c7ebf91c9a276df29f8c22cc0145e5c74f1ad806b5276937f470282cca
+is retained separately from a562/367. Fetched actual clean tested merge
+ d79562072fe44effbb8621713531b11468fda4e1; tree
+0105c5aab26e14779b23d4a6ae32cbe4b068fb06 exactly equals reviewed8f865.
+
+linux-final-cli-corpus.json preserves21records/42 verified output hashes and10
+separately checked intended-input hashes. Actual executable
+382d1ca8d75f9e46d317161746246112bcb2641e9bb7bbed4844acee38a5652e;
+normalized33632bytes/SHA256b98ef6ca5c74b34cc795e875251cb641e8378c26596dba493628655ed2ee8685.
+These executed CLI paths stop before the real service observer. Linux fixture/
+source verification does not establish inactive-unit, device/native or provider
+qualification. Build/Integration remain under original sole watcher22124; final
+paired lifecycle is still open until their observed result and final review.
