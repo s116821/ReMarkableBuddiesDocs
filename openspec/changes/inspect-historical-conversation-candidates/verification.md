@@ -25,7 +25,9 @@ the completed v0.29.0 deletion delivery stays separately attributed and closed.
   original deletion status retains its separate supported reconciliation.
 - Work: one sticky content/visit budget across admission, all retained record/root/
   head visits and output validation; exhaust before typed decoding; no per-root
-  reset or fallback. Global publication headroom is not required. No new I/O stress
+  reset or fallback. Check the independent Config maximum five-read straight-line
+  schedule and existing1MiB per-read cap separately; never credit it to the Store
+  meter. Global publication headroom is not required. No new I/O stress
   or native/power-loss qualification is implied by numerical models.
 - Output: closed shape/caps, no text/path/native/private sentinel, final custody
   failure clears arrays/counts; partial stdout failure emits no second report and
@@ -40,3 +42,12 @@ Docs identities, original failures and separately captured CLI corpora. Independ
 implementation review, canonical sync/archive, final paired review and actual
 merge/main/tag/provenance observation remain unchecked. All live-unit, tablet,
 provider/credentials, Manager consumer and native/runtime gates are separate.
+
+## Focused precode budget clarification
+Read full independent483 review5630742024. Its report/classification/custody design
+is accepted; implementation has not begun. A subsequent source audit distinguishes
+the released Store budget from Document::load/check's separately bounded Config
+reads. The focused successor names the maximum five Config reads and leaves every
+owned-storage/root-decoding limit, report field, vector and older wire unchanged.
+Independent focused confirmation on the current successor remains required before
+source edits; older483 validation/acceptance is not silently relabeled.

@@ -51,7 +51,13 @@ prepare decides whether that explicitly selected target is eligible.
 
 ## Cost and custody
 Keep the released whole-generation inventory and cumulative512MiB/65536-visit
-limits. Charge before each new record/head/reference visit and before each typed
+owned-storage limits. Config is independently bounded by its existing1MiB reader
+and a fixed maximum five-read schedule: initial load, two initial-custody reads and
+two final-output reads. Its initial typed decoding and later byte comparisons do
+not acquire a new per-root loop or retry. Document::load/check currently performs
+these reads outside Session::Budget, so do not claim the Store meter includes them
+or refactor the released producer to make that attribution appear true.
+Charge before each new record/head/reference visit and before each typed
 payload reread/deserialize, using already-admitted object length rather than an
 unmetered serialization to discover its size. Never reset work per root or use
 unbudgeted Ledger/Store recovery. Typed classification is bounded by the same
