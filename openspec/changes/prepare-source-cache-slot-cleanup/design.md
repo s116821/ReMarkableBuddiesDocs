@@ -5,18 +5,25 @@ Rust retrieval/disk.rs has a16-slot,32MiB-per-entry version1 owned namespace.
 DiskCache::open borrows Store, validates ownership, can create/chmod/clean staging
 and opens a namespace lease. forget unlinks exactly one UUID.json and syncs the
 directory; sync failure can follow deletion. Existing owned-data inspection is
-read-only and explicitly grants no cleanup permission. Store::open_existing is
-noninitializing but validates credential-root ownership markers as well as data
-and cache; it does not read credential contents. Current ordinary Store admission
-rejects selected-mode formats. These are source facts, not device qualification.
+read-only and explicitly grants no cleanup permission. Store::open_existing is noninitializing but calls recover, enumerating durable
+commits and validating object payloads. It also validates credential-root ownership
+markers. It cannot provide this bounded header-only admission. Existing sync_dir
+syncs only on Unix and returns success without syncing on Windows. Current ordinary
+Store admission rejects selected-mode formats. These are source facts, not device qualification.
 
 ## Decisions
-Use a separate existing-only cache admission, reusing path/owner/cap validation
-and the one-slot unlink+sync primitive rather than wrapping mutating open. Keep
-legacy APIs unchanged. Require existing store.lock and cache.lock; never create
+Use separate private existing-only header/lease custody with explicit known-file
+read limits, no Store construction/recover/index and no durable tree enumeration
+or payload reads. Reuse safe-path/owner/cap validation and the Linux one-slot
+unlink+directory-sync semantics rather than wrapping mutating cache open. Keep
+all legacy Store/cache APIs unchanged. Non-Linux returns unsupported before stdin
+or any Config/root/lock access; no Windows no-op can yield applied. Both browser
+and Electron future adapters may invoke the same Linux tablet producer; local
+Windows producer execution remains explicitly unsupported. Require existing store.lock and cache.lock; never create
 or chmod either. Acquire Store first, namespace second, nonblocking; hold both
-until report write succeeds or fails. Support remains conditional on actual OS
-locking behavior; fixtures must prove Windows and Linux admission/refusal.
+until report write succeeds or fails. Linux fixtures must prove actual custody/admission and mutation. Windows fixtures
+prove early unsupported without stdin/filesystem access, not local admission or
+deletion. Preserve all seven encoding vectors, including reserved Windows data.
 
 Scan only the fixed namespace, bounded by the existing slot/entry enumeration
 limits. Unknown entries, unsafe/reparse paths and any staging files refuse this
@@ -48,11 +55,14 @@ return a transport failure and perform no retry/compensation. status uses the
 original intent. runtime_unverified remains true for every report.
 
 ## Verification
-Fresh synthetic owned directories only, complete before/after byte+metadata
-snapshots outside the selected deleted file, NoWrite/no-create observations,
+Fresh synthetic owned directories only, complete before/after byte+preservation
+metadata snapshots (excluding OS-managed access times) outside the selected deleted file,
+explicit filesystem read/enumeration admission controls rejecting every durable
+payload/tree access, poison payload directories that cannot be traversed, missing
+and corrupt durable commits that do not affect valid header-only cache admission, NoWrite/no-create observations,
 held writer/namespace locks, lock replacement, symlink/reparse/unknown/staging
 refusals, selected entry bounds/schema, Config/actor/generation/owner/file changes,
 post-unlink sync/readback/output failure injection and recovery status. Exercise
-actual CLI stdin/early routing on both hosts, original executable provenance,
+actual Linux CLI stdin/early routing and Windows no-read unsupported routing, original executable provenance,
 all raw stdout/stderr hashes, and strict malformed/oversized/EOF controls. No
 source freshness, native, installed runtime or real-provider result is claimed.

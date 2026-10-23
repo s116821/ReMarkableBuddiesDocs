@@ -18,7 +18,10 @@ files. No real Config, key, provider, account, tablet or package execution.
 | output short write/failure | custody retained through failure; no success receipt/retry |
 | status original/absent/changed | unchanged/absent/conflict; no mutations |
 | other domains/durable/source sentinels | exact bytes and metadata retained throughout |
-| actual CLI both OS | executable SHA, source/tree, per-record raw hashes and bounded no-secret reports |
+| Linux actual CLI | executable SHA, source/tree, per-record raw hashes and bounded no-secret reports |
+| Windows actual CLI, held stdin and nonexistent/poison Config | unsupported before reads/path/locks; no applied/deletion/directory-sync claim |
+| dedicated admission with denied durable read/enumeration hooks | no generation enumeration/commit/object/quarantine/sync access; no Store construction/recover |
+| missing/corrupt/inaccessible durable payloads, valid bounded headers | same cache preview/apply admission; payload bytes and metadata preserved |
 
 digest-vectors.json freezes exact digest-domain/canonical encodings including a
 changed-one-field control. Source implementation must independently consume and

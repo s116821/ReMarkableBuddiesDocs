@@ -2,6 +2,18 @@
 
 This is precode review material, not implemented behavior.
 
+## Platform capability
+This new producer is Linux-only. On every non-Linux target, all four operations
+return unsupported with runtime_unverified:true and possible_effect:false before
+stdin reads, Config/root access, locks or mutation. Do not reuse the non-Unix
+sync_dir no-op as proof of durability. Existing cache APIs remain unchanged.
+Windows tests prove this early boundary, strict flag admission and encoding only;
+they do not claim local preview, applied deletion or directory durability. Future
+Manager browser/Electron consumers can both invoke the Linux tablet CLI through
+existing host adapters; neither consumer is implemented by this delivery.
+The frozen Windows identity vector is encoding-only reserved data, not a Windows
+filesystem implementation or promise of maintenance support.
+
 ## Route and input
 `reader-buddy --source-cache-operation inspect|prepare|apply|status --source-cache-input -`
 with the existing explicit Config selector. All four operations require the raw
@@ -26,7 +38,7 @@ config_path_sha256, config_bytes_sha256, roots_sha256, actor, generation,
 store_owner_sha256, cache_owner_sha256, namespace_owner_sha256,
 namespace_identity_sha256, entry_identity_sha256, entry_bytes and entry_sha256,
 plus intent_sha256. All hashes bind canonical bytes, not human path display.
-Identity encodings must be fixed and portable at the wire level, but host-local
+Identity encodings are fixed and portable at the wire level, but host-local
 file identity values are opaque hashes: an intent is usable only on its original
 filesystem and configuration, never transferred as cleanup authority to another
 host/store. entry_bytes is an integer1..33554432; version1 cache entry validation
@@ -40,12 +52,23 @@ slot returns absent without an intent. apply/status reject a malformed or change
 intent before deletion; a matching public digest alone supplies no authorization.
 
 ## Admission/custody
-Validate existing safe/disjoint owned roots, ordinary supported Store, actor,
-CURRENT, Store/cache ownership markers and existing nonblocking Store lease.
+Use a dedicated private header/lease custody type, never Store::open_existing,
+Store::open, recover, DiskCache::open or an ordinary Store with an empty index.
+Validate existing safe/disjoint configured roots, data/cache ownership headers,
+actor, CURRENT and current ordinary format1 through known bounded file reads;
+acquire the existing nonblocking Store lease.
 Validate and acquire existing namespace cache.lock next; verify named/held file
 identity. No initialize/recover/chmod/create/cleanup/publish call is permitted.
-Credential-root owner-marker metadata is the existing Store prerequisite; no
-credential filename discovery, credential file contents or resolver execution.
+Only these known Store/header files may be read: data/identity.json (1024 bytes),
+data/CURRENT (128), data/generations/<CURRENT>/format.json (64), cache/owner.json
+(1024), and normalized-sources-v1/owner.json (1024). All JSON formats are strict
+and supported; nil CURRENT/actor refuses. Config uses the existing bounded strict
+Config reader. Existing store.lock/cache.lock are opened solely for custody and
+identity checks. The selected entry is the sole cache payload read, capped32MiB.
+Never enumerate generation directories, commits, objects, quarantine or sync;
+never read durable payloads/indexes, recover history or publish capabilities.
+Credentials root participates only in Config-root binding/safe-disjoint path
+validation; no credential-root marker, filename discovery, contents or resolver.
 Refuse selected-mode Store formats rather than adding another mode capability.
 Check fixed namespace marker format1/actor/kind. Allow at most16 canonical UUID
 slots and fixed owner/lock files; any unknown entry/type/staging/reparse refuses.
@@ -101,12 +124,13 @@ cache/owner.json; namespace_owner_sha256 covers normalized-sources-v1/owner.json
 
 Filesystem identity = F("buddy-cache-file-identity-v1", [platform, volume,
 file-id]). Unix platform is unix; volume=st_dev unsigned decimal, file-id=st_ino
-unsigned decimal. Windows platform is windows; volume=GetFileInformationByHandle
+unsigned decimal. Reserved encoding vector platform is windows; volume=GetFileInformationByHandle
 volume serial DWORD unsigned decimal, file-id=high32<<32 | low32 unsigned decimal.
-Open existing handles only, compare held and named identity, refuse unavailable
+Only Linux filesystem identity is implemented in this delivery. Open existing
+handles only, compare held and named identity, refuse unavailable
 identity instead of substituting timestamps/length. Directory handles use the
 platform existing-directory flag; no creation. Namespace and selected entry
-identities are encoded the same way. Other platforms return unsupported.
+identities are encoded the same way. Other platforms return unsupported before filesystem admission.
 
 intent_sha256 = F("buddy-source-cache-cleanup-intent-v1", field values in this
 exact order: intent_version, operation, document, config_path_sha256,

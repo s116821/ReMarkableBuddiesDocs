@@ -3,7 +3,8 @@
 ### Requirement: Nonmutating bounded one-slot cleanup preview
 The source-cache maintenance CLI SHALL inspect and prepare exactly one canonical
 owned normalized-source slot using validated existing ordinary Store and cache
-namespace custody without creating, repairing, chmodding or cleaning files. It
+namespace header/lease custody without constructing/recovering Store, enumerating
+or reading durable payloads, creating, repairing, chmodding or cleaning files. It
 SHALL reject unknown/unsafe/staging entries and expose no source content or
 freshness authority. Credential contents, original documents and unrelated owned
 categories SHALL remain outside this operation.
@@ -22,6 +23,17 @@ and distinguish original, absent and changed state without claiming who deleted 
 #### Scenario: Apply exact intent or observe change and uncertainty
 - **WHEN** an original intent is applied or reconciled after a changed file, deletion, sync failure or lost output
 - **THEN** only an unchanged admitted original can be removed; changed inputs refuse, observed absence is not historical-success proof, and uncertain mutation/output never triggers automatic retry or deletion of a replacement.
+
+### Requirement: Explicit platform capability
+This producer SHALL support Linux only and SHALL return unsupported on non-Linux
+before stdin, Config, filesystem or lock admission. Existing legacy cache APIs
+SHALL remain unchanged. Windows fixture success SHALL NOT imply deletion or
+directory durability; future browser and Electron adapters may use the same Linux
+producer without requiring native local-host maintenance support.
+
+#### Scenario: Unsupported host platform
+- **WHEN** any new source-cache operation runs on Windows or another non-Linux target
+- **THEN** it returns unsupported without reading held stdin or touching Config/roots/locks, and never reports applied using a no-op synchronization primitive.
 
 ### Requirement: Strict independent one-shot public contract
 The additive version1 CLI SHALL require strict bounded whole-object stdin with

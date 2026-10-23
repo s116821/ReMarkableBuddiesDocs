@@ -7,7 +7,7 @@ may initialize files and clean staging, which cannot implement a pure preview.
 Selective cleanup must preserve original documents and all durable source history.
 
 ## What changes
-Add a version1 one-shot source-cache-maintenance CLI with inspect, prepare, apply
+Add a Linux-only version1 one-shot source-cache-maintenance CLI with inspect, prepare, apply
 and status. Admit an existing ordinary Store and existing normalized-sources-v1
 namespace without initialization, repair or staging cleanup. Bind one unchanged
 canonical document slot to an original private intent and retain both leases
@@ -22,6 +22,6 @@ Existing DiskCache open/install/load/forget callers keep their current behavior.
 
 ## Delivery
 One linked Docs/Rust delivery, concrete contract review before source edits,
-Windows and Linux synthetic qualification, canonical sync and completed archive,
+Linux synthetic operation qualification and Windows early-unsupported controls, canonical sync and completed archive,
 Docs-first normal squash, then actual-main/publication verification. No hardware
 or provider action is needed for this local storage contract.
