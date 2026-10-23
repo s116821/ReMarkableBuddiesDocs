@@ -1,0 +1,26 @@
+# Prepared logical deletion of one ordinary historical conversation
+
+## Why
+The historical Ledger already atomically tombstones a conversation root and its
+optional historical page binding, retaining source images, history and export
+associations. External maintenance has no original-bound prepare/apply/status
+interface. Aggregate owned-data inspection grants no logical-liveness or deletion
+authority. Selective owned-data management needs a deliberate, reference-safe path.
+
+## What changes
+Add a separate Linux-only conversation-maintenance CLI and closed version-one
+report for inspect/prepare/apply/status of one explicitly selected ordinary
+schema-one conversation. Require observed inactive fixed Buddy unit, existing
+Store custody, ordinary local mode, strict eligibility and exact original intent.
+Publish only root/optional binding tombstones and one historical receipt together.
+Expose no text, source images, native identifiers, arbitrary paths or remote action.
+
+## Scope and delivery
+One Buddy/central Docs pair. This is logical local deletion, not physical purge,
+space reclamation, remote deletion or current native authority. Selected storage,
+schema-two domain records, unfinished/uncertain effects, service changes, Manager
+consumer code and protected Reader/Writer paths remain excluded. A bound ordinary
+schema-one historical binding may be tombstoned; its native page remains intact.
+Obtain independent concrete precode review before source edits. Verify exact
+current source with synthetic fixtures and actual CLI refusal controls; sync and
+archive only the completed implementation, then normal Docs-first delivery.
