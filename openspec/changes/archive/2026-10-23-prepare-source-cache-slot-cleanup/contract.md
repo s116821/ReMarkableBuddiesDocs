@@ -1,6 +1,7 @@
 # Proposed source-cache maintenance version1
 
-This is precode review material, not implemented behavior.
+Version1 source producer contract. Executed evidence and separate delivery/runtime
+gates are recorded in verification.md.
 
 ## Platform capability
 This new producer is Linux-only. On every non-Linux target, all four operations

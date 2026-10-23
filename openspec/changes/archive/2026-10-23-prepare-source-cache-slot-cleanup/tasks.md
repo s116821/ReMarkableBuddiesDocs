@@ -15,10 +15,10 @@
 - [x] Run exact-head fmt, strict Clippy, full tests and hosted Checks; read independent review and bot findings (full delivery CI remains a separate gate).
 
 ## 4. Linked delivery preparation
-- [ ] Sync only this completed canonical capability; archive only completed own implementation artifacts.
-- [ ] Prepare final composed review packet with current Docs/source checks and exact revisions.
-- [ ] Record normal Docs-first squash order and separate actual-tree/main/publication verification gates.
-- [ ] Document narrow producer scope and remaining Manager/runtime/integrated gates.
+- [x] Sync only this completed canonical capability; archive only completed own implementation artifacts.
+- [x] Prepare final composed review packet with current Docs/source checks and exact revisions.
+- [x] Record normal Docs-first squash order and separate actual-tree/main/publication verification gates.
+- [x] Document narrow producer scope and remaining Manager/runtime/integrated gates.
 
 Final paired acceptance, normal merges and actual-main/publication receipts remain
 explicit post-review gates in PR comments and canonical task tracking. Checked
