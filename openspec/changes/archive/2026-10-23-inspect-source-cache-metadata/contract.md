@@ -1,6 +1,7 @@
 # Proposed source-cache inventory report_version1
 
-Precode review only; this is not implemented behavior.
+Version1 source observer contract. Executed evidence and separate delivery/runtime
+gates are recorded in verification.md.
 
 ## Command and platform
 `reader-buddy --inspect-source-cache` is a parameterless boolean route before

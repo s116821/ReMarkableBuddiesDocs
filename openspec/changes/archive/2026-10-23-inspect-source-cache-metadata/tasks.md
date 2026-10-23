@@ -9,7 +9,9 @@
 - [x] Execute scope vectors and all preserved cleanup compatibility controls on current source; retain actual CLI provenance and failures.
 
 ## 3. Verified paired lifecycle
-- [ ] Run exact-current source and Docs checks and independent implementation review.
-- [ ] Sync only completed canonical requirements and archive only this completed implementation.
-- [ ] Prepare final composed review packet and normal Docs-first delivery plan; actual merge/main/publication verification follows separately.
-- [ ] Retain Manager/physical/native/provider/runtime and integrated project gates explicitly.
+- [x] Run exact-current source verification/hosted Checks and independent implementation review; final Docs checks and full delivery CI remain separate gates.
+- [x] Sync only completed canonical requirements and archive only this completed implementation.
+- [x] Prepare final composed review packet and normal Docs-first delivery plan; actual merge/main/publication verification follows separately.
+- [x] Retain Manager/physical/native/provider/runtime and integrated project gates explicitly.
+
+Final paired acceptance, all current required delivery CI and actual merge/main/publication receipts remain explicit post-review gates. Checked implementation tasks do not claim those future observed outcomes.
