@@ -63,6 +63,22 @@ UTF8 bytes including newline. Exit0 means one complete bounded report, including
 refusal; exit1 means output/transport failure. CLI parse errors remain ordinary
 parser failures and never start another operation.
 
+### Parser diagnostic boundary
+Keep ordinary clap diagnostics and exit2 for invalid CLI syntax; do not introduce
+redaction or behavior changes for unrelated legacy invocations. Unexpected bare
+arguments, unknown options or values attached to this parameterless flag may be
+repeated verbatim in stderr. Such argv is not a confidential data channel and is
+outside the fixed JSON report. No private data is an accepted inventory argument;
+Config selection remains in the existing environment selector.
+
+The no-value-echo regression guarantee is specifically for recognized supported
+conflicts with --api-key VALUE, --model VALUE and --simulate PATH: argument-conflict
+failure before startup, stdout empty and no supplied synthetic sentinel in stderr.
+These controls use only synthetic values. Separately test an unexpected bare
+synthetic argument: ordinary exit2/no report/no startup, with its token allowed
+and expected in the normal diagnostic. Never claim that diagnostic is a sanitized
+report or extend the narrow conflict guarantee to arbitrary malformed arguments.
+
 ## Authority and compatibility
 This observer discovers candidate IDs/lengths only. It does not attest entry JSON,
 key/freshness/health/reclaimability or authorize deletion. A later cleanup always

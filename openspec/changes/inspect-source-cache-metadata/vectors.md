@@ -12,7 +12,8 @@
 |known-header read allowlist|slot contents, credentials and durable payload reads/enumerations denied|
 |output partial write/failure|both leases held through failure; no retry or filesystem mutation|
 |Windows and other non-Linux targets|unsupported before Config/fs/input; no local support inference|
-|extra value/conflicting mode/overrides|CLI parse refusal before protected startup; no sentinel echo|
+|recognized conflicts --api-key VALUE / --model VALUE / --simulate PATH|argument-conflict exit2 before startup, stdout empty, supplied synthetic sentinel absent from stderr|
+|unexpected bare synthetic token / value attached to boolean / unknown option|ordinary clap exit2/no report/no startup; tokens may appear verbatim in stderr, outside the narrow no-value-echo guarantee|
 |clean actual CLI|separate source/tree/executable and raw stdout/stderr hashes|
 |all existing cleanup controls/vectors|unchanged wire, intent digest, custody and uncertainty behavior|
 

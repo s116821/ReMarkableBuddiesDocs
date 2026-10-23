@@ -45,6 +45,16 @@ known-header allowlist. Include corrupt/empty/inaccessible slot payloads to show
 metadata-only admission, plus missing/poisoned durable payload directories.
 
 Exercise actual Linux CLI and non-Linux early unsupported/no-stdin/Config controls,
-strict bounded report validation, no protected sentinel echo, clean executable/tree
+strict bounded report validation, no value echo in the three documented supported
+conflicts or fixed reports, clean executable/tree
 provenance and raw stream hashes. Retain failures and each capture's own identity.
 Run all existing cleanup regression/vector controls to prove compatibility.
+
+## Deliberate parser-error policy
+Preserve standard clap syntax diagnostics. A parameterless flag has no accepted
+private argv input; ordinary unexpected tokens may be printed in exit2 stderr.
+This is distinct from bounded JSON reports and from the three recognized conflict
+controls (--api-key/--model/--simulate) whose values must not be echoed. Use an
+explicit synthetic unexpected-token control to prove exit2/no report/no startup,
+without falsely labeling its normal diagnostic confidential or sanitized. No
+unrelated legacy parsing behavior changes are part of this observer.
