@@ -10,12 +10,16 @@
 - [x] Document public manual equivalent and explicit unsupported integration/runtime domains.
 
 ## 3. Verification
-- [ ] Exercise Linux synthetic filesystem/CLI vectors and Windows early-unsupported no-read controls; retain failure and raw corpus provenance separately.
-- [ ] Verify complete before/after preservation, denied durable read/enumeration controls and uncertainty/output/locking cases.
-- [ ] Run exact-head fmt, strict Clippy, full tests and current hosted CI; read independent review and bot findings.
+- [x] Exercise Linux synthetic filesystem/CLI vectors and Windows early-unsupported no-read controls; retain failure and raw corpus provenance separately.
+- [x] Verify complete before/after preservation, denied durable read/enumeration controls and uncertainty/output/locking cases.
+- [x] Run exact-head fmt, strict Clippy, full tests and hosted Checks; read independent review and bot findings (full delivery CI remains a separate gate).
 
-## 4. Linked delivery
-- [ ] Sync only this completed canonical capability; archive only completed own artifacts.
-- [ ] Obtain paired final review and current Docs/source required checks.
-- [ ] Normal Docs-first squash, verify actual trees/main runs and source publication.
-- [ ] Close only this producer scope; keep Manager consumer and broad project gates explicit.
+## 4. Linked delivery preparation
+- [ ] Sync only this completed canonical capability; archive only completed own implementation artifacts.
+- [ ] Prepare final composed review packet with current Docs/source checks and exact revisions.
+- [ ] Record normal Docs-first squash order and separate actual-tree/main/publication verification gates.
+- [ ] Document narrow producer scope and remaining Manager/runtime/integrated gates.
+
+Final paired acceptance, normal merges and actual-main/publication receipts remain
+explicit post-review gates in PR comments and canonical task tracking. Checked
+implementation tasks never stand in for those later observed delivery results.
