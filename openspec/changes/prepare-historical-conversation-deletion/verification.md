@@ -71,7 +71,8 @@ failure, retained source-image bytes and historical binding, lost acknowledgment
 partial objects/original retry/status, later competing revision, commit-entry
 headroom, output lock/failure and the16MiB/1000-manifest cumulative-work refusal.
 This is Windows fixture logic, NOT Linux directory durability or inactive-unit
-qualification. Current original Linux CI39937963089 is pending.
+qualification. Original Linux Checks120362142320 on CI39937963089 now PASS; the remaining
+Build/Integration delivery jobs are still separate.
 
 windows-initial-cli-corpus.json retains19 actual refusal records,38 independently
 verified stdout/stderr hashes and4 separately checked intended stdin digests.
@@ -95,3 +96,21 @@ initial results. Native/provider/consumer/whole-project gates remain separate.
 Earlier uncommitted wire/model green runs do not qualify a562. Initial compile
 iterator diagnostics and initial strict-Clippy fixture lint failure remain preserved
 separately; current clean checks above are new executions after their corrections.
+
+
+### Original a562 Linux Checks
+Original job120362142320 passed445 library tests/3ignored (one preexisting plus two
+synthetic subprocess helper entrypoints),7 binary tests,3 new CLI groups and all
+maintained regressions/audits. Downloaded original raw job log is658122bytes/SHA256
+4a7908b657271595ee97d395e5e3be4875b274d2b2c07d7ffceaf73cd4ce2e97.
+Fetched actual clean tested8a6afabb67aa6b67e46afa292504cce47e29c828; its tree
+feef202a2a7a2817f2502696afb6bd5eee913bd5 equals sourcea562 exactly.
+
+linux-initial-cli-corpus.json preserves15 original records/30 independently checked
+stdout-stderr hashes plus4 separate intended stdin hashes. Actual executable
+c79e1981881a692eb81083ad133435000eba31a26ef9deeffa15715b4aa6ef9d;
+normalized12626bytes/SHA2565da9b7b20287df1d0238e010e1658159d41b0b101b251f130605b3e49bf4d745.
+Actual Linux CLI tests stop BEFORE the real service observer. Positive service/
+transaction cases remain injected fixtures; no inactive-unit/native/provider
+qualification follows. Initial source remains frozen for independent review;
+known/remaining source and coverage gaps above are not cleared by green CI.
