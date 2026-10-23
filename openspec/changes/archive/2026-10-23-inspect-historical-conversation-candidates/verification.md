@@ -233,3 +233,28 @@ Current7257 normal Build/Integration remain pending, so full CI and own canonica
 sync/archive are not yet complete. No new producer execution, package download,
 tablet/provider/credential action or runtime/native/Manager claim was added by
 these saved-byte/hash/tree verifications.
+
+
+## Completed implementation and own canonical sync/archive
+Normal current7257 sourceCI40011265841 completed Title, Checks, Build and
+Integration PASS; PR Release is intentionally skipped. Source remains reviewed
+7257/treeae4febb. Implementation and scoped coverage acceptance5633465661 was
+read in full. Only this completed implementation is synchronized: three canonical
+requirements/four scenarios exactly match the accepted delta. Eleven own artifacts
+retain all original/current Windows captures and current Linux evidence. All669
+actual Docs0179557 base entries stay exact. The contract body from Route onward,
+design, proposal, delta, vectors and captures are unchanged by this lifecycle step.
+
+Superseded c814 normalCI40010340559 was explicitly cancelled to release the
+same-PR serialized pipeline slot. Its Title/Checks/Build had passed; Integration/
+Release are cancelled and the overall run is cancelled. Original complete Checks
+and Build logs, pre-cancellation metadata and final metadata are preserved; original
+watcher60001 closed with cancellation. This is neither a failed build nor a full
+predecessor qualification. Current7257 uses its own independently observed run.
+
+Independent final composed source/Docs review and current final Docs CI remain
+required. After acceptance use Docs87-first/Buddy85-second normal squash without
+bypass. Actual merged trees, actual main pipelines and official tag/small-provenance
+publication observations are subsequent evidence, not claimed by this archive.
+No package download/execution or extra release qualification is added. Broader
+REM42/Manager/native/runtime and integrated MVP gates remain unfinished.

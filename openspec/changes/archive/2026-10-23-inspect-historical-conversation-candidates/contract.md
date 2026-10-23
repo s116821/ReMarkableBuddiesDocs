@@ -1,6 +1,9 @@
-# Proposed conversation-root candidate inventory version1
+# Ordinary conversation-root candidate inventory version1
 
-UNIMPLEMENTED PRECODE. This packet grants no source/runtime/native qualification.
+Implemented source/spec contract for the paired producer. Source/fixture/build
+evidence is separate from actual-unit, tablet, native/runtime and Manager behavior.
+See [canonical requirements](../../../specs/historical-conversation-inventory/spec.md)
+and verification.md for exact revisions, original failures and execution limits.
 
 ## Route and boundary
 `reader-buddy --inspect-conversations` is a new parameterless Linux-only route.
