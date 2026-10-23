@@ -114,3 +114,35 @@ Actual Linux CLI tests stop BEFORE the real service observer. Positive service/
 transaction cases remain injected fixtures; no inactive-unit/native/provider
 qualification follows. Initial source remains frozen for independent review;
 known/remaining source and coverage gaps above are not cleared by green CI.
+
+
+## Focused implementation successor367 (review still pending)
+Read production review5627043028 and all four findings. Source
+367eddeafd1cd4a9ffb68aa443237a89e2e5a38b/tree8a406ac7fddff6e966e759c43a75a4c66a3026a8
+changes six paths overa562;437 other entries and frozen vector bytes are exact.
+Original admitted header bytes now precede typed constructor reads and remain
+bound across recovery and later checks. Raw deterministic manifest digests bind
+historical receipt recognition. Every supported schema-one source variant has
+bidirectional identity/link validation and summary accounting, without changing
+original provenance. Config/storage checks bracket the observer; deadline timing
+begins before process spawn. No actual unit query or device operation occurs.
+
+Current CLEAN367 Windows fmt/strict all-target Clippy/22 modeled groups/7binary/
+3actualCLI groups PASS. These executions are new, not relabeled a562 runs.
+New models exercise five header classes during recovery and same-length/time-
+restored content changes, both original operations after raw manifest formatting
+rewrite, four source variants through existing synthetic producers and12 orphan/
+foreign/changed-turn refusals, and final-observer Config changes before and after
+publication. The Unix final-observer inode-replacement control remains for current
+Linux CI39942259765. A missingCursor test-helper compile failure is retained
+separately; it is not a passing result.
+
+windows-current-cli-corpus.json retains19 current records/38 output hashes and4
+intended stdin hashes. Clean executable
+e3a0ff9dee80e958404d4c6abfc10e3d7a4e87a9a7dfaca01b067cab40e96254;
+raw17008bytes/SHA256c3b2815a7e31206a51d5f88989e160cf3020a6d677e6b54709fbaf39dd937541;
+normalized15348bytes/SHA256254b5913ec43689f57803dabea4bf6d210f3851320d67d6c90c8b053b1cfd037.
+Equal normalized refusal records do not merge the two source/executable identities.
+Originala562 CI39937963089 completed Title/Checks/Build/Integration PASS with PR
+Release skipped; it does not qualify367. Broader boundary/coverage mapping,
+independent successor acceptance and paired lifecycle remain unfinished.
