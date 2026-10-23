@@ -12,7 +12,7 @@ application's1.96), pure Rust, without optional Rayon/clock/image/font embedding
 Installed package VCS is bbc5e4bfe2bdf53a1881ac357193b5160807dfcd.
 [Upstream source](https://github.com/J-F-Liu/lopdf/tree/bbc5e4bfe2bdf53a1881ac357193b5160807dfcd)
 provides strict loading, per-stream decode limits, maintained object/content
-parsing and public simple encoding tables. Content::decode_strict checks full
+parsing and a public route to its simple encoding tables. Content::decode_strict checks full
 consumption; ordinary decode and its operation iterator can stop at malformed
 trailing content. Do not use lenient extract_text/font fallback paths.
 
@@ -55,7 +55,7 @@ retain existing stale-key behavior.
 | Stage | Limit and enforcement |
 | --- | --- |
 | Acquisition |16MiB plus one sentinel byte, at most4096 Read calls, checked before parser entry; no deadline for a blocking caller-supplied Read |
-| Eager loader | strict mode, no supplied password;1MiB decoded output per object/xref stream through LoadOptions; reject any declared encryption after load, including empty-password encryption the library may decode internally |
+| Eager loader | strict mode, no supplied password;1MiB decoded output per object/xref stream through LoadOptions; reject retained Encrypt declaration OR was_encrypted(), including empty-password encryption the library may decode internally |
 | Parsed eligibility | at most16384 retained objects; this is checked after parsing and is not a parser allocation bound |
 | Page tree | at most256 pages,1024 nodes and32 levels; reserve visits before traversal; reject duplicate/cyclic/missing references, invalid parents or inconsistent Counts |
 | Content acquisition | at most64 content streams/page; decoded page bytes at most1MiB, aggregate8MiB; pass remaining allowance into each maintained strict stream decoder before decoding/concatenating |
@@ -85,10 +85,17 @@ bounded decoder (its invalid-filter fallback must not become success).
 Allow Type1 standard Latin BaseFonts: Courier/Helvetica/Times families and their
 standard bold/italic variants. Require explicit StandardEncoding, WinAnsiEncoding
 or MacRomanEncoding names; no font descriptor/program, ToUnicode or custom mapping.
-Inspect all admitted page font resources before text extraction; do not call
-get_font_encoding or extract_text. Map each shown byte through lopdf's selected
-public table, require a defined valid Unicode scalar, refuse disallowed controls,
-and reserve its UTF8 bytes before appending. This supports accented Unicode where
+Inspect all admitted page font resources before text extraction; never pass an
+input font dictionary to get_font_encoding and do not call extract_text. The
+table constants are in a private module. Construct a trusted minimal dictionary
+with exactly Type=Font and one selected literal Encoding name; call its maintained
+get_font_encoding against an empty Document and accept only OneByteEncoding.
+Inspect each shown byte's upstream glyph through that returned table, require a
+defined valid Unicode scalar, refuse disallowed controls, and reserve its UTF8
+bytes before appending. Qualify all three literal names with a compile/behavior
+probe before implementation; do not copy tables or admit input ToUnicode,
+Differences, arbitrary names or references into the trusted dictionary.
+This supports accented Unicode where
 the admitted encoding defines it, not arbitrary scripts. Missing Tf/font/glyph is
 an error, never a warning or silently discarded character.
 
@@ -134,3 +141,13 @@ normal maintained CI/cross-target build. No new CI structure/SDK pin or model,
 service, credential or tablet operation. Review implementation and final own
 canonical sync/archive independently, then normal coordinated squash and observe
 actual-main CI/tag/small provenance separately. No app archive replay required.
+
+## Precode review correction
+Independent review of38f0cb5 identified the private table constants and the
+post-decryption Encrypt removal. The public minimal-dictionary route above and
+dual encryption check resolve those design errors; source implementation still
+requires final adapter verification. Before source edits, a separate small
+compile/behavior probe against pinned lopdf0.46.0 passed for all three literal
+encodings: ASCII A, a defined Unicode glyph (Standard fi ligature and WinAnsi/
+MacRoman e-acute) and absent mapping for byte0. The probe calls only the trusted
+two-entry dictionary against an empty document and inspects OneByteEncoding.
