@@ -1,11 +1,11 @@
 ## 1. Concrete scope
 - [x] Confirm aggregate inspection lacks IDs while selected cleanup requires one; check current ownership and public requirements.
 - [x] Specify separate parameterless metadata-only report and strict nonmutation/authority limits.
-- [ ] Obtain focused concrete precode review before Rust edits, including the explicit ordinary-diagnostic versus supported-conflict boundary.
+- [x] Obtain focused concrete precode review before Rust edits, including the explicit ordinary-diagnostic versus supported-conflict boundary (accepted850; implementation review remains separate).
 
 ## 2. Producer and compatibility
-- [ ] Implement bounded Linux metadata observer through private existing header/lease custody, preserving all closed reports/APIs.
-- [ ] Add early unsupported/no-input route and public manual equivalent; no Manager or runtime activation.
+- [x] Implement bounded Linux metadata observer through private existing header/lease custody, preserving all closed reports/APIs.
+- [x] Add early unsupported/no-input route and public manual equivalent; no Manager or runtime activation.
 - [ ] Execute scope vectors and all preserved cleanup compatibility controls on current source; retain actual CLI provenance and failures.
 
 ## 3. Verified paired lifecycle
