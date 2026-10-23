@@ -32,7 +32,7 @@ Required narrow references informed failure/provenance choices, not architecture
 - [reMark indexer.py](https://github.com/BGGBTAC/reMark/blob/d5d76e0d1b4c10de7aa85f445e454c7b76802b2c/src/search/indexer.py)
   consumes already-structured text and embeds chunks. No parser reuse or license
   compatibility claim is needed; no code copied.
-- [Smart Remarkable manifest](https://github.com/yangg1224/smart_remarkable/blob/4d93645a6a3069cbf7c1f0ff15b56eff141c4959/pyproject.toml)
+- [Smart Remarkable manifest](https://github.com/yangg1224/smart_remarkable/blob/4d93645a6a3069cbf7c1f0ff15b56eff141c4959/Cargo.toml)
   and inspected module inventory did not identify a selected offline PDF adapter.
   Repository declares MIT; no image/LLM/native architecture or code is adopted.
 
@@ -55,7 +55,7 @@ retain existing stale-key behavior.
 | Stage | Limit and enforcement |
 | --- | --- |
 | Acquisition |16MiB plus one sentinel byte, at most4096 Read calls, checked before parser entry; no deadline for a blocking caller-supplied Read |
-| Eager loader | strict mode, no password/decryption attempt;1MiB decoded output per object/xref stream through LoadOptions; reject encryption after load |
+| Eager loader | strict mode, no supplied password;1MiB decoded output per object/xref stream through LoadOptions; reject any declared encryption after load, including empty-password encryption the library may decode internally |
 | Parsed eligibility | at most16384 retained objects; this is checked after parsing and is not a parser allocation bound |
 | Page tree | at most256 pages,1024 nodes and32 levels; reserve visits before traversal; reject duplicate/cyclic/missing references, invalid parents or inconsistent Counts |
 | Content acquisition | at most64 content streams/page; decoded page bytes at most1MiB, aggregate8MiB; pass remaining allowance into each maintained strict stream decoder before decoding/concatenating |
@@ -69,6 +69,8 @@ inside the library before postparse eligibility checks. Repeated eager streams
 can cumulatively allocate more than one stream allowance. The adapter provides
 the stated acquisition/decode/traversal/output controls, not a sandbox, hostile
 process containment or an interruptible parser. No hard RAM/CPU/time claim.
+The maintained loader may try an empty password internally for encrypted input;
+this adapter neither supplies/discovers credentials nor accepts that document.
 
 ## Structural and encoding admission
 Use maintained parsed objects; do not write a PDF tokenizer/parser. Validate the
