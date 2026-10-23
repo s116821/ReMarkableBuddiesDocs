@@ -6,7 +6,7 @@
 ## 2. Producer and compatibility
 - [x] Implement bounded Linux metadata observer through private existing header/lease custody, preserving all closed reports/APIs.
 - [x] Add early unsupported/no-input route and public manual equivalent; no Manager or runtime activation.
-- [ ] Execute scope vectors and all preserved cleanup compatibility controls on current source; retain actual CLI provenance and failures.
+- [x] Execute scope vectors and all preserved cleanup compatibility controls on current source; retain actual CLI provenance and failures.
 
 ## 3. Verified paired lifecycle
 - [ ] Run exact-current source and Docs checks and independent implementation review.
