@@ -202,3 +202,34 @@ Current normalCI40011265841 has passed newer-compiler Clippy and is executing it
 maintained full test suite; current Linux evidence and full CI remain pending.
 Focused independent implementation/coverage acceptance, own canonical sync/archive
 and final composed delivery remain subsequent gates. No native/runtime claim.
+
+## Current Linux checks and retained execution proof
+
+Source7257 CI40011265841 Checks120612016387 passed fmt, strict newer-compiler
+Clippy,489 library tests/three existing driven ignored helpers,8 binary tests,
+all maintained suites including3 new inventory CLI/4 old deletion CLI groups,
+and normal release-tool/fixture checks. Both Unix named-lock replacement controls
+passed, including replacement after byte/visit discovery exhaustion; the emitted
+unavailable and real Config-change controls passed too. This is controlled OS/
+Store fixture evidence, not a real service/tablet execution.
+
+Original full Checks log695222 bytes/SHA2560ec422b2235092adcf97a16f7f777783e8413f88cc9e8e1ae81850b20d0aa25f
+is retained unchanged. `linux-7257-early-cli.json` has11 records/22 independently
+verified output hashes, executablee6a5dfec005717270dad7551095ef6f7126474f5b59b814f9ca66ed6b95b9eac.
+The actual clean CI checkout is mergef942c51b506beded3a2decf0132c5277a8ccf3f1;
+its fetched commit treeae4febb694706aaa1b6abcb3f87dd8d2b2548617 exactly equals
+reviewed7257. Parents are actual66d46ee and reviewed7257. Normalized corpus6913
+bytes/SHA2566aea9617a5143c4ac0a59ec3f023efd82378fe0ed05567a4b04c2a6d16d672c0.
+The held-open-stdin early refusals never reach the production service observer.
+
+Independent implementation/scoped coverage acceptance5633465661 and paired Docs
+evidence acceptance5633488580 were read in full. The original finding was replied
+to and its thread resolved after correction acceptance. Earlier4d4/c814/WIP
+executions remain separately attributed. Historical c814 Checks passed486 library
+tests/three ignored; its original694995-byte log/SHA2560241de1bae50b3e496cd3665179383bde673faa09fee3934b31dc2baa201e66f
+and11-record/22-hash Linux capture remain separately private, not7257 evidence.
+
+Current7257 normal Build/Integration remain pending, so full CI and own canonical
+sync/archive are not yet complete. No new producer execution, package download,
+tablet/provider/credential action or runtime/native/Manager claim was added by
+these saved-byte/hash/tree verifications.
