@@ -1,6 +1,6 @@
-# Planned evidence matrix — unimplemented
+# Planned evidence matrix â€” unimplemented
 
-The matrix below originated as planned precode. Executed draft observations and
+The matrix below originated as planned precode. Historical observations are timestamped snapshots, not current acceptance. Executed observations and
 remaining gaps are recorded separately below. Accepted older inventory/cleanup
 corpora remain attributed to their original sources, never credited to this change.
 
@@ -146,3 +146,42 @@ Equal normalized refusal records do not merge the two source/executable identiti
 Originala562 CI39937963089 completed Title/Checks/Build/Integration PASS with PR
 Release skipped; it does not qualify367. Broader boundary/coverage mapping,
 independent successor acceptance and paired lifecycle remain unfinished.
+
+
+## Focused367 acceptance and coverage successor
+Independent source review5627336291 accepted the four production corrections at
+367; its full normal run39942259765 subsequently passed Title, Checks, Build and
+Integration (PR Release intentionally skipped). Original watcher79791 exited0.
+The original Linux raw658843bytes/SHA256
+f456930658879275e32ea09fd4edb36e1c65cce9fc183c9a5e6391df162e5b9b
+and linux-current-cli-corpus.json preserve15records/30output hashes/4stdin hashes.
+Tested42609ed093d6f260fba4998a0e48a8c6bb0bda64 has tree8a406ac equal367.
+This closes the earlier focused367 review/Linux gaps, not the whole feature.
+
+Successor8f865ff5ff19b527832edf6aed4089ffd9f7407e/tree
+0105c5aab26e14779b23d4a6ae32cbe4b068fb06 adds five paths of change over367,
+preserving439 other entries and both original vector bytes. Production changes
+are limited to acknowledging only the complete original manifest/receipt while
+allowing exact derived objects under another manifest to produce unresolved
+partial-state observation, and refusing an already-used operation receipt ID at
+preparation. The matching-tombstone/missing-original-receipt case was reproduced
+red on367 (Conflict instead of required Unresolved), then corrected. It can never
+acknowledge or dispatch another publication from partial state.
+
+coverage.md maps contract areas to named actual-source controls and explicitly
+distinguishes numeric capacity models from real-store/physical commit-boundary
+execution. Added synthetic process, wire, structural/mode/schema, exchange/fact,
+source/binding/export, receipt-corruption and publication/output controls preserve
+original logs. The third expanded WIP run35PASS/1FAIL had an overly narrow test
+expectation: corrupt original object refusal is Unsupported during safe admission.
+No production correction resulted. The fourth WIP39PASS/2driven helper entrypoints
+passed. The fifth WIP40PASS/1FAIL attempted a competing binding branch via ordinary
+local commit, which correctly rejects stale parents; corrected fixture uses the
+existing import path, and its focused test passed. Final WIP strict Clippy passed.
+These failures remain failures; none qualifies the committed successor.
+
+Clean-current8f865 fmt/strict all-target all-feature Clippy/model/bin/actualCLI
+qualification and normal39968879386 CI are in progress. Independent implementation
+and coverage acceptance, own canonical sync/archive and final paired delivery
+review remain open. No a562/367 result qualifies8f865. No actual unit query,
+tablet/provider/real credential or runtime/native qualification was performed.
