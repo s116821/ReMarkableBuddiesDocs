@@ -5,9 +5,9 @@
 - [x] Obtain independent successor concrete precode acceptance before source edits (d89/review5626498222 read in full).
 
 ## 2. Implementation and evidence
-- [ ] Add isolated Linux CLI/maintenance and bounded existing-only Store admission, preserving older APIs/wires.
-- [ ] Implement fixed read-only service observer and deterministic conditional logical transaction/status.
-- [ ] Execute mapped synthetic failure/preservation/race tests and actual supported CLI refusal controls; preserve original logs/corpora.
+- [x] Add isolated Linux CLI/maintenance and bounded existing-only Store admission, preserving older APIs/wires.
+- [x] Implement fixed read-only service observer and deterministic conditional logical transaction/status.
+- [x] Execute mapped synthetic failure/preservation/race tests and actual supported CLI refusal controls; preserve original logs/corpora.
 - [ ] Run exact-current normal source checks/CI and independent implementation review; distinguish modeled/native evidence.
 
 ## 3. Paired completion

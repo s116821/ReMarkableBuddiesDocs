@@ -1,4 +1,4 @@
-# Planned evidence matrix â€” unimplemented
+# Original planned evidence matrix
 
 The matrix below originated as planned precode. Historical observations are timestamped snapshots, not current acceptance. Executed observations and
 remaining gaps are recorded separately below. Accepted older inventory/cleanup
@@ -185,3 +185,18 @@ qualification and normal39968879386 CI are in progress. Independent implementati
 and coverage acceptance, own canonical sync/archive and final paired delivery
 review remain open. No a562/367 result qualifies8f865. No actual unit query,
 tablet/provider/real credential or runtime/native qualification was performed.
+
+
+### Clean8f865 Windows qualification
+The original clean chain92675 completed exit0 on frozen8f865: fmt, strict
+all-target/all-feature Clippy,41 modeled groups (two ignored child entrypoints
+actually exercised by their wrapper),7binary checks and4actual CLI groups PASS.
+The source remained clean before/after executable provenance capture.
+windows-final-cli-corpus.json preserves25records,50 independently checked output
+stream hashes and10 separately checked intended stdin hashes. Executable
+36e6b0db797fd9bcc10f4e3d61b94765c271c0dd401a5c345d0cc2285d7fd637;
+raw38298bytes/SHA256ae6d94aa7abe8225116c95b3dc21ee13030215b41172ae0dedd5f452eccab368;
+normalized36342bytes/SHA256a657ad02fd3d94ae9a320f7dc36e0e93df6b0e84e4aa24272892ce8da8b48a1d.
+All actual CLI cases stop before the real observer. These are new executions on
+8f865, not a relabeling of earlier results. Current Linux normal39968879386,
+independent implementation/coverage acceptance and paired lifecycle remain open.
