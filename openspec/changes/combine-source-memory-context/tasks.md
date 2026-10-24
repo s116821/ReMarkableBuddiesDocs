@@ -1,9 +1,9 @@
 ## 1. Contract and implementation
 
 - [x] 1.1 Read current requirements/chronology, actual source and held memory ownership; select data-only scope.
-- [ ] 1.2 Publish paired precode and obtain independent contract review before Rust implementation.
-- [ ] 1.3 Implement optional historical memory attachment with derived exact query/scope, validated results and complete bounds.
-- [ ] 1.4 Document API and preserve source/evidence/runtime/model/selected contracts.
+- [x] 1.2 Publish paired precode and obtain independent contract review before Rust implementation.
+- [x] 1.3 Implement optional historical memory attachment with derived exact query/scope, validated results and complete bounds.
+- [x] 1.4 Document API and preserve source/evidence/runtime/model/selected contracts.
 
 ## 2. Verification and lifecycle
 
