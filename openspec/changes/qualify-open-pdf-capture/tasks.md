@@ -1,4 +1,12 @@
-## Current delivery boundary — October 12, 2026
+## Current continuation — October 24, 2026
+
+Resume SDK/product integration from the completed reverse-engineering handoff
+under [resident-client-integration.md](resident-client-integration.md). Existing
+native trial records below remain historical and spent; none is replay authority.
+Consumer journal/connection integration does not close the current/adjacent reuse,
+fresh target selection, Supervisor, write/persistence or native acceptance gates.
+
+## Prior delivery boundary — October 12, 2026
 
 Continue the existing source5 integration without restarting historical diagnostics. The next concrete gate is one fresh reviewed ordinary-source5/new-target6 experiment proving native creation/current identity, ordinary relative navigation when needed, actual same-running blank display, preservation and independent recovery. Required write/persistence qualification follows as a subsequently selected existing delivery gate; it is not added to this packet or its RESULT115 budget. Complete production SDK consumption, appropriate supported-profile checks and linked OpenSpec/PR delivery; sync/archive only implemented qualified work. No new polish or broad simulation matrix gates that proof. Direct native opening remains REM-51 after1.0.
 
@@ -11,6 +19,7 @@ Completed SDK source5 export review is recorded at SDK `605b1f66e309ab2883b14d0e
 Buddy acquisition/reuse/adoption/binding and Manager work are separate downstream lanes whose existing dependencies/acceptance remain open; preserve the current/adjacent Buddy reuse rule and do not infer non-Buddy from missing binding. The current technical capability proof does not complete those product requirements. Linear reauthentication prevents fresh comment review; no new comments are claimed read.
 
 ## 1. Evidence and design
+- [ ] Integrate the authenticated resident SDK client and Store-owned durable insertion journal under resident-client-integration.md; verify duplicate/changed attempt refusal, restart/loss/reconciliation and owned socket interoperability without promoting historical facts to native binding or rendering authority.
 - [x] Independently review historical-binding-projection-contract.md and its atomic Store/Ledger read plus conservative SDK lookup delta against the delivered historical library; preserve all protected selected-admission WIP.
 - [x] Implement the bounded atomic historical association query and Ledger-backed lookup with no new Store/binding writes, native effects or positive relevance/absence promotion.
 - [x] Verify actual Store fixtures, snapshot completeness/revision correspondence, conflict/tombstone/malformed refusals and actual current/neighbor model decisions; record the independently accepted scoped checks and final strict-quality result in historical-binding-projection-result.md.

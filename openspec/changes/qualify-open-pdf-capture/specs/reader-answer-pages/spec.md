@@ -1,5 +1,20 @@
 ## ADDED Requirements
 
+### Requirement: Durable resident insertion attempt reservation
+The resident SDK consumer SHALL durably reserve the exact original insertion frame/digest and conversation before request bytes, using the existing Store ownership/serialization boundary. A reservation SHALL reject reused operations and replacement attempts for unresolved or observed conversations, survive restart and generation changes, and retain uncertain outcomes for read-only reconciliation of the original target. Only a durably recorded known-no-effect outcome SHALL permit a new caller-selected operation; no automatic retry is supplied. Historical replies SHALL NOT grant binding, rendering or native persistence authority. Malformed or incomplete journal state SHALL refuse without resetting it. Detailed consumer obligations are in resident-client-integration.md.
+
+#### Scenario: Response is lost after request admission
+- **WHEN** an insertion loses its authenticated connection after pending admission
+- **THEN** the original conversation/operation/source/target reservation remains, and neither reconnect nor a fresh operation/target can automatically authorize another insertion for that conversation
+
+#### Scenario: Journal cannot be made durable
+- **WHEN** reservation persistence or validation fails before request admission
+- **THEN** no insertion bytes are sent, existing evidence is preserved, and any uncertain publication remains conservatively reserved
+
+#### Scenario: Historical insertion response is stored
+- **WHEN** the SDK returns an attributed insertion observation and the consumer records it
+- **THEN** it remains historical correspondence without native persistence, current selection, qualified page binding or render authority
+
 ### Requirement: Stored association input remains historical in SDK acquisition decisions
 The existing SDK acquisition decision seam SHALL consume the real historical Ledger through a read-only lookup under historical-binding-projection-contract.md. A saved match SHALL map only to historical evidence, and missing/failed/conflicted/tombstoned stored data SHALL remain unresolved rather than the model's affirmative Missing or RelevantModelAssociation input. Existing complete Synthetic observation/receipt guards SHALL precede lookup. This increment SHALL leave installed Reader behavior unchanged and grant no reuse, insertion, adoption, binding or rendering permission.
 
