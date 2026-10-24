@@ -14,6 +14,6 @@
 ## 3. Verified paired lifecycle
 - [x] Pass affected fixtures, ordinary non-mock check, fmt and strict Clippy, preserving original failed evidence.
 - [x] Repair reviewed historical head admission and receipt/fact observation; verify forced concurrent absence, pre-clone conflict/byte bounds and genuine orphan refusal.
-- [ ] Obtain independent source/spec review and pass normal current hosted/cross-target gates.
-- [ ] Verify all requirements/scenarios, sync only this capability and archive only its completed artifacts.
-- [ ] Prepare final paired review and normal Docs-first/source-second delivery; retain actual-main/tag/publication as subsequent observed gates.
+- [x] Obtain independent source/spec review and pass normal current hosted/cross-target gates.
+- [x] Verify all requirements/scenarios, sync only this capability and archive only its completed artifacts.
+- [x] Prepare final paired review and normal Docs-first/source-second delivery; retain actual-main/tag/publication as subsequent observed gates.
