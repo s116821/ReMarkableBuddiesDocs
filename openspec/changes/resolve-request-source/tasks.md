@@ -2,18 +2,18 @@
 
 - [x] Reconcile current ordinary contracts and retained Reader/Writer ownership.
 - [x] Publish proposal, concrete design, tasks and delta before Source changes.
-- [ ] Obtain independent precode review and resolve findings.
+- [x] Obtain independent precode review and resolve findings.
 
 ## 2. Implementation and evidence
 
-- [ ] Add the ordinary read-only directive/resolver and sanitized typed refusals.
-- [ ] Preserve explicit change/no-document and require named prior operation.
-- [ ] Validate earlier same-conversation provenance and current source content.
-- [ ] Require independent keys without claiming resolver-level freshness.
+- [x] Add the ordinary read-only directive/resolver and sanitized typed refusals.
+- [x] Preserve explicit change/no-document and require named prior operation.
+- [x] Validate earlier same-conversation provenance and current source content.
+- [x] Require independent keys without claiming resolver-level freshness.
 - [ ] Add real Store/Index fixtures for success, ambiguous caller choice, invalid
   anchors/dependencies, key replacement/staleness, restart and no effects/writes.
 - [ ] Preserve receiving/evidence regressions and run appropriate quality checks.
-- [ ] Add a public guide stating historical scope and remaining integration gates.
+- [x] Add a public guide stating historical scope and remaining integration gates.
 
 ## 3. Coordinated delivery
 

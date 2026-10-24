@@ -67,6 +67,11 @@ or preparation spanning a later receiving call. Changes after resolution are
 rechecked by existing receiving and durable-preparation admission. Preserve their
 APIs/schema and never silently requery or publish here.
 
+Require the named evidence fact itself to remain present and equal in the current
+snapshot. A fact deleted/replaced between historical readback and current inspection
+refuses; test this exact boundary through a test-only hook after readback, outside
+Store locks. No production callback or extra effect admission is introduced.
+
 Reuse existing metadata/reference bounds and original-source encoding cap. Do not
 add unbounded enumeration of evidence operations. Error Display text contains no
 user request, source text, raw provider error, private path or record body.
