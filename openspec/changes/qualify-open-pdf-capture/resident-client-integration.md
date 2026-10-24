@@ -1,8 +1,8 @@
 # Resident SDK client and durable insertion journal
 
 This continues the existing automatic acquisition delivery using SDK
-`095f6c73777195b2bee56321a81857346a76ebde`. That revision provides the authenticated
-Linux Client and resident dispatcher source; native activation/qualification is
+`9880766f5bb0bdb91445716132703b02587d372e`. That revision provides historical
+v1/v2 inspection, authenticated v2 Linux Client and resident dispatcher source; native activation/qualification is
 still open. The SDK owns its adapter specifications. This document owns Buddy's
 consumer behavior and does not replace the current-first/adjacent reuse contract.
 
@@ -35,6 +35,26 @@ before native mutation (or a client-proven failure before request admission) may
 permit a new caller-selected operation for the conversation; the original operation
 stays consumed, and the wrapper never performs an automatic retry. Read-only reconciliation uses that
 same original source/target; target presence alone does not establish attribution.
+
+## Journal compatibility across SDK revisions
+
+Before upgrading to the SDK's v2 transport, load retained v1 and v2 frames through
+its separate HistoricalFrame API. Keep original canonical bytes, SHA256, operation,
+source/target and outcome fields unchanged. Expose historical request bytes and
+digest together; never validate old evidence using a newly encoded Frame.
+Request and response revisions must match, in addition to existing scope,
+sequence, operation, original digest and insertion-result checks.
+
+New reservations use current v2 encoding. Old unresolved/observed attempts still
+block replacement and reused operation IDs; appending an unrelated reservation
+cannot rewrite old frame/digest fields. Read-only reconciliation may use old
+source/target facts in a freshly correlated v2 read request. There is no replay,
+reset, migration rewrite or weakening of live protocol admission.
+
+Verify frozen v1 request/response fixtures, restart and generation restoration,
+unchanged old record fields after append, same-operation/replacement refusal,
+mixed-revision replies, bad original digest and v2-only tags labeled v1. Unknown
+or malformed history must preserve the original file and refuse before connect.
 
 ## Connection boundary
 

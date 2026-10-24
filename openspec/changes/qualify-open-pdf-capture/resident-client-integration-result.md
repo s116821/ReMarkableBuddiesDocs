@@ -1,5 +1,26 @@
 # Resident client integration checkpoint
 
+The latest compatibility candidate is Buddy
+`5fcfad9bd3a315dabde996f005038dda95956474`, which pins SDK
+`9880766f5bb0bdb91445716132703b02587d372e`. Historical requests now expose immutable
+original bytes/revision/digest together. Journal loading checks original-byte
+hashes and same-revision replies while preserving scope, sequence, operation and
+exact insertion-result validation. Old records are never re-encoded for storage
+or response correlation. Existing consumed operations and unresolved/observed
+reservations survive the upgrade.
+
+Independent source review accepted the consumer and its frozen original v1
+fixtures. Ten Windows journal tests passed before the final Linux-only fixture
+addition; final-source Windows strict all-target/all-feature Clippy passes after
+correcting a conditional import. The Linux additions check original-fact read-only
+reconciliation over strict v2 with an unchanged journal, replacement refusal and
+malformed history refusing before a socket connection. Linux execution and full
+current-source CI are pending; prior consumer results below remain historical.
+
+No installed Reader selection, journal reset, runtime activation or native
+qualification is included. Historical capture `SDK_SOURCE` remains
+`2d473f0954120889f8a04c6294151241576ff8c3`.
+
 October 24, 2026. Buddy source `b06db07c5ff4558d4c269510ad4308985c635949`
 pins SDK `095f6c73777195b2bee56321a81857346a76ebde`. This implements
 [the consumer contract](resident-client-integration.md), not installed Reader

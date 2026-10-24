@@ -15,6 +15,10 @@ The resident SDK consumer SHALL durably reserve the exact original insertion fra
 - **WHEN** the SDK returns an attributed insertion observation and the consumer records it
 - **THEN** it remains historical correspondence without native persistence, current selection, qualified page binding or render authority
 
+#### Scenario: SDK protocol upgrades with retained attempts
+- **WHEN** the consumer moves from v1 to v2 with prior insertion attempts
+- **THEN** original canonical frame/digest fields, consumed operations and unresolved reservations survive unchanged; responses require the original digest and matching revision, and live requests use v2 without replaying historical effects
+
 ### Requirement: Stored association input remains historical in SDK acquisition decisions
 The existing SDK acquisition decision seam SHALL consume the real historical Ledger through a read-only lookup under historical-binding-projection-contract.md. A saved match SHALL map only to historical evidence, and missing/failed/conflicted/tombstoned stored data SHALL remain unresolved rather than the model's affirmative Missing or RelevantModelAssociation input. Existing complete Synthetic observation/receipt guards SHALL precede lookup. This increment SHALL leave installed Reader behavior unchanged and grant no reuse, insertion, adoption, binding or rendering permission.
 
