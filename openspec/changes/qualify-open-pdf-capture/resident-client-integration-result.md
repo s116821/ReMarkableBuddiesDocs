@@ -86,3 +86,11 @@ The SDK's subsequent revision 2 selection protocol remains a separate unconsumed
 increment. The consumer pin is intentionally unchanged: an upgrade must preserve
 old canonical attempt bytes and original digests. No new native or power-loss
 qualification follows from any of these source, owned-socket or hosted results.
+
+
+The complete Buddy workflow 40140251341 subsequently finished successfully at
+`6d23c7d3ef362c99f9d1bce4877b38f2ca247fa2`: PR title, Linux Checks, application
+Build and Integration all passed; release was intentionally skipped for the PR.
+Docs `b6e1e878a28bca2181e86b48e3c707c61c5b9c5d` passed
+[40141239212](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40141239212).
+The coordinated PRs remain draft pending native/product gates.
