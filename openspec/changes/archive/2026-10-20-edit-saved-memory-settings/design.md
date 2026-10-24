@@ -1,0 +1,17 @@
+# Design
+
+## Narrow declaration reuse
+Reuse only narrow private existing strict document validation, recursively ordered raw serialization and guarded same config writer/current Store-mode custody. Do not add memory keys to public basic/model allowlists or change general/data-memory query wire. No domain/provider constructor, profile lookup, catalog registration, selected membership check that grants capability, worker or Reader activation follows.
+
+Keep patching inside an existing raw memory object. If the parent is absent, clear-only requests remain exact no-ops and do not create an empty object. Any set creates the missing object and only the explicitly set children; clear of an absent sibling stays absent. If the parent existed, clearing its final declared editable child retains the existing empty parent object; never remove/collapse it or unrelated selection:null/object. Original parent null/array or invalid whole documents refuse rather than being repaired. Preserve raw unrelated values/origins and accepted decoded UUID spelling. Existing default/absence semantics, not new global validation, determine effective typed values.
+
+## Exact supported semantics
+Enabled set accepts boolean only; clear removes the key and defaults false. Explicit enabled:null is invalid in the existing schema, not a supported clear. Profile set accepts a nonnil UUID string using the same current Config/UUID decoder; preserve its accepted decoded spelling rather than using to_string/trim. Clear removes the key; existing null is a distinct declared-null origin. Setting null is not supported. Enabled:true without profile, clearing a needed profile and changing a declared selection's profile inconsistently refuse under full original/result validation. Selection is never editable here, even as a repair.
+
+## Saved versus current authority
+Inspect/prepare/status are pure saved-file reads with no Store/root/credential/profile/domain/provider admission. They do not capture or grant a live mode token. Apply opens the existing ordinary-or-selected Store through the same selected-aware configuration custody, supporting current unconfigured/local/shared/isolated modes as existing basic/model editing does. Current mode custody is acquired at apply and remains through consuming output; preparation did not freeze a mode. Current domain/query/catalog guards and group/binding/selection behavior are unchanged. Structural saved validation is not current membership or a running configuration.
+
+A complete verified apply verifies only exact saved disk bytes. Runtime activation is always unverified, even after apply: current manual maintenance loads profile separately on each invocation and is not disabled by enabled:false; normal Reader automatic memory wiring remains separate. No automatic restart/query/profile migration follows. Future consumer private-reference/buffer lifetime and stale memory-view invalidation require separate concrete precode.
+
+## Original private patch and uncertainty
+Reports expose enabled as a fixed boolean and profile origin/presence only, never the old/new profile UUID or arbitrary text. Hash-only intent binds original file/path/patch/target; caller privately retains the original raw patch and separately supplies it unchanged at apply. Status needs no raw patch and proves only current desired full bytes, not original publisher/apply history or active memory. Preserve original uncertainty; no refresh/rebase/retry/rollback or second report after prefix failure.
