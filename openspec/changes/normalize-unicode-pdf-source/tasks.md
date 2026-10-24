@@ -1,9 +1,9 @@
 ## 1. Profile and implementation
 
 - [x] 1.1 Read current issue/chronology, existing canonical/archive/code/fixtures and pinned maintained parser behavior; preserve held ownership.
-- [ ] 1.2 Publish/review exact bounded Unicode profile before source implementation; resolve findings without another parser stack.
-- [ ] 1.3 Extend existing font/resource/text path with bounded typed CMap semantics and per-document reuse, preserving simple-font behavior and whole-call refusal.
-- [ ] 1.4 Record new extractor revision and update guide with exact supported profile/resource/evidence limits.
+- [x] 1.2 Publish/review exact bounded Unicode profile before source implementation; resolve findings without another parser stack.
+- [x] 1.3 Extend existing font/resource/text path with bounded typed CMap semantics and per-document reuse, preserving simple-font behavior and whole-call refusal.
+- [x] 1.4 Record new extractor revision and update guide with exact supported profile/resource/evidence limits.
 
 ## 2. Verification and delivery
 
