@@ -22,8 +22,10 @@ The receiver SHALL validate enabled ordinary memory results against explicit
 profile/scope/query bounds, identity, expiry, suppression, status and data labels;
 preserve valid empty/partial diagnostics; and refuse unavailable, malformed or
 selected results without empty fallback. It SHALL preflight minimum complete
-output before querying and cap/count complete final encoding including both
-layers, query identity and diagnostics. Failures SHALL be sanitized and SHALL NOT
+encoded-byte lower-bound output before querying and cap/count complete final
+encoding including both layers, query identity and diagnostics. Token admission
+SHALL count the actual complete encoding only, without assuming monotonicity,
+summing component counts or rejecting based on a placeholder count. Failures SHALL be sanitized and SHALL NOT
 return truncated data, repeat a query or invent verified provenance.
 
 #### Scenario: Conflicting, expired and unavailable memory
@@ -31,5 +33,5 @@ return truncated data, repeat a query or invent verified provenance.
 - **THEN** valid empty/partial observations retain diagnostics, while unusable data refuses with no partial successful frame.
 
 #### Scenario: Complete output budget
-- **WHEN** the minimum frame or complete combined JSON/token count exceeds explicit known limits or counting fails
+- **WHEN** the proven minimum encoded bytes or actual complete combined JSON/token count exceeds explicit known limits or final counting fails
 - **THEN** assembly refuses at that boundary without rewriting source/history, dropping facts to hide exhaustion or returning empty success.

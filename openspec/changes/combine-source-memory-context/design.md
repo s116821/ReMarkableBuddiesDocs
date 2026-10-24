@@ -72,11 +72,15 @@ integration with its live validation, not part of this operation.
 
 ## Complete bounds and historical qualification
 
-Validate all options before querying, and serialize/count a minimum wrapper before
-the query so an already-impossible output refuses without calling the provider.
+Validate all options and the positive token allowance before querying. Serialize
+a proven encoded-byte lower-bound wrapper (`memory:null`, strictly smaller than
+either real memory report) before the query so an impossible byte allowance
+refuses without calling the provider. Do not call the token counter on this
+placeholder: caller token counts need not be monotonic when content is added.
 Use the existing capped serializer for complete final JSON, including escaping,
 query identity, source metadata, diagnostic numbers and labels. Count the entire
-final wrapper using the supplied counter. Zero/failed counter or exhausted bounds
+final wrapper once using the supplied counter, with no placeholder token rejection,
+count reuse or sum assumption. Zero/failed counter or exhausted bounds
 refuse without partial output, truncation or empty fallback. An adapter may return
 caller-allocated objects; output bounds do not promise acquisition allocation,
 elapsed-time, process RAM or a model tokenizer/window guarantee.
@@ -94,6 +98,8 @@ exact Unicode request/history/source bytes, global/document/profile isolation,
 disabled zero-call, empty/partial/conflict/expiry/current-claim behavior, exact
 encoded/token boundaries and restart. Injected adapters cover malformed/error/
 selected results and callback changes, proving no source reread/query or writes by
-assembly. Existing source, evidence and memory suites remain controls. No prompt,
+assembly. A non-monotonic counter regression admits a valid completed encoding
+even when a hypothetical placeholder would receive a larger count. Existing
+source, evidence and memory suites remain controls. No prompt,
 model, SDK, dependency, settings or device changes; existing live/native gates stay
 open. Independent reviewer checks scope and exact final revisions before delivery.
