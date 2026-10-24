@@ -78,7 +78,10 @@ integer1..64 `dict begin`, `begincmap`, metadata definitions, mapping sections,
 `endcmap CMapName currentdict /CMap defineresource pop end end`. Validate exact
 operand types/counts and sequence; comments/whitespace handled by the maintained
 parser are allowed. Required metadata: CMapType integer2, nonempty CMapName name
-at most128 bytes, and CIDSystemInfo with the bounded fields above. Optional WMode
+at most128 bytes, and CIDSystemInfo with the bounded fields above. In the CMap
+body this must be a direct Dictionary with direct string/string/integer fields,
+not PDF Object references; ordinary PDF font/stream dictionary resolution is a
+separate resource rule. Optional WMode
 must be integer0; optional CMapVersion is finite numeric. Duplicate metadata definition operations,
 unknown operators, execution extensions, usecmap, malformed or trailing content
 refuse. No PostScript operation is executed.
