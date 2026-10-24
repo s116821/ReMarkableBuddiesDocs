@@ -16,6 +16,13 @@ Content::decode_strict for a bounded ToUnicode stream's typed Object/Operation A
 then validate this closed grammar and build only the bounded forward lookup. No
 PDF/PostScript lexer, interpreter or alternate parsing dependency is introduced.
 AST eligibility follows maintained parsing; it is not a preallocation claim.
+The authored parser-only probe preserves complete wrapper/metadata/mapping
+operations and hexadecimal versus literal StringFormat, but it also demonstrates
+normalization: odd hex digits are padded by the maintained parser (`<001>` and
+`<0010>` both yield bytes0010), and duplicate raw dictionary keys collapse to the
+last value. Source/target widths below refer to decoded bytes. This profile does
+not claim raw hex-spelling or dictionary-key uniqueness that the typed AST has
+lost; ordinary parsed dictionary semantics apply without a second raw lexer.
 
 ## Font/resource admission
 
@@ -72,7 +79,7 @@ integer1..64 `dict begin`, `begincmap`, metadata definitions, mapping sections,
 operand types/counts and sequence; comments/whitespace handled by the maintained
 parser are allowed. Required metadata: CMapType integer2, nonempty CMapName name
 at most128 bytes, and CIDSystemInfo with the bounded fields above. Optional WMode
-must be integer0; optional CMapVersion is finite numeric. Duplicate metadata,
+must be integer0; optional CMapVersion is finite numeric. Duplicate metadata definition operations,
 unknown operators, execution extensions, usecmap, malformed or trailing content
 refuse. No PostScript operation is executed.
 
