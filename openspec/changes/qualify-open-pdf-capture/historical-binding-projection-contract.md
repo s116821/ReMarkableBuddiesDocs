@@ -22,9 +22,16 @@ a binding owned by another conversation is not hidden by a conversation filter.
 Keep the existing item/metadata bounds and conflict-head inclusion; do not truncate.
 The existing general snapshot API keeps its previous behavior.
 
-Validate the cloned snapshot without further Store queries. Reuse the historical
+Validate the cloned snapshot without refreshing its heads. Reuse the historical
 `inspect` chronology/record checks through a pure snapshot helper, and share the
 existing `bind` receipt validation rather than inventing new evidence rules.
+The October 24 main integration also retains the delivered durable request-evidence
+checks. Select each evidence/receipt pair from this same snapshot, then validate
+its pinned immutable record references and original transaction under one shared
+bounded read budget. These immutable reads do not refresh root, binding or operation
+heads. Missing, replaced or inconsistent evidence refuses; the result still names
+only the original snapshot revisions. This narrows the earlier no-additional-reads
+rule to no additional current-head reads, preserving the new evidence validator.
 Unavailable commits, malformed records/receipts, invalid UUIDs or bounds refuse.
 Missing, conflicting or tombstoned root/binding heads, unbound/differently bound
 roots and another conversation's binding remain typed unresolved outcomes.

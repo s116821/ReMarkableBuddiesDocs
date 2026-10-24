@@ -28,6 +28,17 @@ A simultaneous broader Windows/Linux build exhausted host paging capacity
 and the Windows check restarted with one Cargo job. This is a resource failure,
 not a passing broader regression run.
 
+Buddy's hosted checks were unavailable because newer main changes conflicted with
+the preserved topic. The single-job pre-merge run was stopped before changing its
+inputs; a normal preserving merge brings in the newer Reader/Ledger/sync behavior.
+Independent review identified one required adaptation: historical binding lookup
+must retain main's durable request-evidence validation without rereading current
+heads. The merged implementation selects evidence/receipt pairs from its original
+snapshot and reads only pinned immutable records/original transactions afterward.
+The contract is amended accordingly; valid, orphan and replaced-receipt regressions
+are required. The first merged build was stopped before this repair; final merged
+verification remains pending.
+
 The fixtures model publication error boundaries; they do not establish actual
 power-loss behavior. Linux synchronization uses existing Store file/parent-directory
 primitives. Windows fixtures do not prove Linux durability. Container Git metadata
