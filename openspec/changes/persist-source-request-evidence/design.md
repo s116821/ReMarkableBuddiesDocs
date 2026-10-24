@@ -118,6 +118,12 @@ identity from accepted Store index/manifest references; do not hash a parsed,
 reserialized envelope and call it the original bytes. Pretty-printed imported
 envelopes must retain their actual reference identity.
 
+Snapshot actor/generation describe the Store at preparation. Referenced imported
+envelopes may retain earlier actors; ownership checks bind their conversation,
+request and source relationships, not equality with today's Store actor. Resolve
+historical refs through accepted current Store history by hash, never by an old
+absolute generation path or a new native authorization.
+
 Only selected-context sources and the explicit original source are referenced.
 The original user turn is already in the through-request turn prefix even when
 outside the selected range. Do not copy the whole normalized document, cache,
