@@ -1,9 +1,9 @@
 ## 1. Contract and implementation
 
 - [x] 1.1 Read current REM4/related router comments, accepted context/Memory/Index/cache APIs, config ownership and preserved/open work; identify the actual research-data gap.
-- [ ] 1.2 Publish and independently review exact policy/Provider/evidence/budget contract before code.
-- [ ] 1.3 Implement the transient stage through existing frozen source/memory context, preserving old APIs/schemas and held configuration/runtime work.
-- [ ] 1.4 Document exact default/no-internet precedence, provenance, untrusted acquisition/output limits and unfinished live research/runtime qualification.
+- [x] 1.2 Publish and independently review exact policy/Provider/evidence/budget contract before code.
+- [x] 1.3 Implement the transient stage through existing frozen source/memory context, preserving old APIs/schemas and held configuration/runtime work.
+- [x] 1.4 Document exact default/no-internet precedence, provenance, untrusted acquisition/output limits and unfinished live research/runtime qualification.
 
 ## 2. Verification and delivery
 
