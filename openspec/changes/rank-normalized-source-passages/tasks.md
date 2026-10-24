@@ -1,9 +1,9 @@
 ## 1. Design and implementation
 
 - [x] 1.1 Read current canonical issue/source/spec/fixtures, preserved retrieval stack and open ownership; identify the actual overlap-only ranking gap.
-- [ ] 1.2 Publish and independently review exact formula/bounds/cache and historical-evidence compatibility before code.
-- [ ] 1.3 Implement derived corpus statistics/scoring in existing Index path without changing tokenizer/API/identity/selection boundaries.
-- [ ] 1.4 Document exact behavior, authored quality limits and already-delivered historical integration boundaries.
+- [x] 1.2 Publish and independently review exact formula/bounds/cache and historical-evidence compatibility before code.
+- [x] 1.3 Implement derived corpus statistics/scoring in existing Index path without changing tokenizer/API/identity/selection boundaries.
+- [x] 1.4 Document exact behavior, authored quality limits and already-delivered historical integration boundaries.
 
 ## 2. Verification and delivery
 
