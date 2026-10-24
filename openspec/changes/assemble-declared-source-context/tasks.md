@@ -2,18 +2,18 @@
 
 - [x] Reconcile current receiving/preparation/resolution and ownership constraints.
 - [x] Publish concrete proposal/design/tasks/delta before Source implementation.
-- [ ] Obtain independent precode review and resolve findings.
+- [x] Obtain independent precode review and resolve findings.
 
 ## 2. Implementation and verification
 
-- [ ] Add opt-in declared receiving/preparation over one validated record snapshot.
-- [ ] Share private record resolution while preserving standalone equality checks.
-- [ ] Preserve old API errors, frame/evidence schemas, references and retry rules.
-- [ ] Retain independent key admission, exact history and complete existing bounds.
+- [x] Add opt-in declared receiving/preparation over one validated record snapshot.
+- [x] Share private record resolution while preserving standalone equality checks.
+- [x] Preserve old API errors, frame/evidence schemas, references and retry rules.
+- [x] Retain independent key admission, exact history and complete existing bounds.
 - [ ] Add real Store/Index fixtures for declared choices, callback mutations,
   current-anchor/source guards, refusal paths, omissions, ranges and retry/restart.
 - [ ] Run original regressions, relevant quality checks and current hosted CI.
-- [ ] Add a public guide explaining historical consistency and authority limits.
+- [x] Add a public guide explaining historical consistency and authority limits.
 
 ## 3. Coordinated lifecycle
 
