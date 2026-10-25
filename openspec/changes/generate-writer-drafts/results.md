@@ -149,3 +149,40 @@ text addition. The old global schema2 text/export condition must not be reused
 unchanged. The updated design/delta and launcher require independent review
 before repair or dispatch. New quality evidence and final lifecycle/delivery
 remain pending; full Writer/MVP is unfinished.
+
+## October 25 frozen current-main composition
+
+Updated precode at Docs739c82e was independently accepted before Source repair.
+Source2828bb2479d87cb8006273bb60e6c998e77b1e7d is an ordinary merge of the
+preserved e525b766 Writer branch and actual main49fbf8a. It preserves current
+Conversation2 intent/settlement and Export2 attempts while admitting normalized
+text only as Source2. Current CLI modes and input flags conflict with Writer
+before runtime/configuration effects.
+
+The first composed compile refused two unhandled normalized-text projection
+cases; that failure is retained. The repaired compile passed. Review then caught
+that later Writer turns reuse the immutable original source: the projection now
+checks its original same-conversation turn and source relationship while allowing
+later references. Supplied document metadata does not become native ownership.
+
+Intermediate execution passed 13 Writer and 10 CLI cases. The new projection
+suite initially passed nine of ten: its synthetic fixture incorrectly combined
+Prepared state with text and was correctly refused. The fixture was corrected to
+the production Interpreted state, preserving the failure; all ten cases then
+passed, including actual Store generation/refinement, missing/foreign source
+origin, schema-one text refusal and cross-namespace refusal. These local results
+precede final frozen-head qualification and are not final qualification evidence.
+
+Frozen-head strict checks, current Conversation2/legacy/export regressions and
+hosted checks remain required. First frozen-head strict checking at2828bb2
+failed because the current layout-test ContextView literal omitted the new
+normalized-text field; the failed log is retained. Successor
+e91a9a6a50c52f11169d3bce889e0fd2e81a43aa adds that empty fixture field only,
+with a separate current-head qualification run pending. Earlier2828bb2 checks
+and hosted run40237080271 cannot qualify this successor.
+The private launcher remains blocked by a
+pending source pin. A concrete one-attempt outer driver enforces 220 seconds;
+its final source/spec/executable pins and review remain pending before dispatch.
+No Writer live-model call, Mem send or tablet operation has occurred. Semantic
+quality, final review, canonical sync/archive and coordinated delivery remain
+open; full Writer/MVP acceptance is not claimed.
