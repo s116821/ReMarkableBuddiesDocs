@@ -8,6 +8,9 @@ Optional root research_policy is null, "required" or "disabled". Missing/null
 resolves to Required. Config default remains absent when serialized; supported
 explicit enum values serialize normally. Clear removes the key; set accepts only
 the two exact strings, never null. Existing raw null remains distinguishable.
+Config retains absent versus present null internally and serializes present null
+back to null, so an existing typed editor cannot erase that declaration. Only the
+absent representation is skipped. This does not alter the saved JSON/wire shapes.
 Config schema stays 1 with this additive supported declaration; older binaries
 can refuse it. Unknown/new schema or invalid whole-file declarations refuse.
 The pure typed snapshot validates values without Config::validate filesystem

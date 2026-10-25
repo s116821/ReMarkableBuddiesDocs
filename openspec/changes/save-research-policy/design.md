@@ -6,10 +6,13 @@ Store::replace_config_document publication/readback; that machinery remains owne
 Main owns the producer; SCRAPPY owns separately reviewed companion consumers.
 
 ## Decisions
-Add optional root `research_policy: Option<ResearchPolicy>` to Config, reusing the
-existing enum. Default None and skip serialization when None preserve existing
-default/absent Config encodings. Omitted or explicit null resolves to Required;
-explicit required/disabled preserves its declaration. Whole-file strict parsing
+Add a presence-aware optional root research_policy to Config, reusing the existing
+enum: outer None is absent, Some(None) is explicit null and Some(Some(policy)) is
+an explicit enum. A field deserializer retains present null; skip serialization
+only for the absent outer None. This preserves both old default encodings and
+explicit null through existing typed Config writers, including personalization.
+Omitted or explicit null resolves to Required; explicit required/disabled preserves
+its declaration. Whole-file strict parsing
 still rejects duplicates, unknown fields, invalid enum/type/schema and size.
 An old binary may refuse a new declared field; do not silently rewrite/migrate it.
 
