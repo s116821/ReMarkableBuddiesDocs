@@ -34,8 +34,11 @@ affected suite passed. No production type was changed to accommodate the test.
 
 Both affected OpenSpec changes pass strict validation. The documentation manifest
 check passes with 25 current guidance files and 126 preserved source blobs.
-Hosted validation for the new Buddy commit remains pending at this checkpoint;
-previous CI is not credited to it. Windows Store tests do not establish Linux
+The exact Buddy commit subsequently passed all hosted checks and application
+build in [CI 40232456504](https://github.com/s116821/ReMarkableBuddies/actions/runs/40232456504).
+The coordinated Docs commit `081763af9f3e551174cdc1b9da2f99a1435119c1`
+passed [CI 40232494688](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40232494688).
+These results apply to those revisions only. Store tests do not establish Linux
 power-loss behavior or native tablet qualification.
 
 This supplies historical representation for qualified adoption. The installed

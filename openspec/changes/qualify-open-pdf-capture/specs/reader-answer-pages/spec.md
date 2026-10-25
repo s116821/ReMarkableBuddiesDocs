@@ -124,6 +124,17 @@ The pure synthetic consumer bridge SHALL exhaustively map ExistingQA to LegacyBu
 - **WHEN** opaque observation, logical page or desired conversation witness differs from the decision's expected context
 - **THEN** existing witness guards refuse, and matching fields alone still do not establish actual capture/current-device provenance
 
+### Requirement: Owned resident runtime startup
+The Linux resident runtime owner SHALL verify supplied approved artifact bytes, publish one fresh synchronized SDK admission, retain its directly launched child and authenticated connection, and preserve diagnostics under resident-runtime-integration.md. It SHALL use one absolute startup deadline and at most one handshake, close and stop only its owned child on failure/shutdown, retain effect uncertainty, and make no native capability claim from protocol readiness. Stock-service handoff, lazy activation, health/recovery and installed Reader qualification SHALL remain required before production use.
+
+#### Scenario: Owned endpoint becomes ready
+- **WHEN** the exact launched child consumes the original admission and completes its single authenticated handshake within the startup deadline
+- **THEN** the owner retains that child, process incarnation, directory and connection together; readiness establishes only the protocol connection and grants no page-writing authority
+
+#### Scenario: Startup fails or runtime closes
+- **WHEN** artifacts/admission/process identity fail, the child exits, the deadline expires, or the caller shuts down the owner
+- **THEN** the connection closes, only the owned child is stopped within a bounded recovery attempt, original uncertainty and admission/diagnostic files remain, and no launch, handshake or native effect is automatically retried
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic
