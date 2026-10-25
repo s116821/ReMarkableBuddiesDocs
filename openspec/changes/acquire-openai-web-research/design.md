@@ -129,6 +129,26 @@ readiness, not hard preemption of bounded synchronous setup/JSON encoding/parsin
 production DNS/TLS/proxy latency or native UI responsiveness. No detached worker,
 shutdown_background, unowned blocking HTTP/DNS or timeout-as-success escape.
 
+## Opt-in transient exchange observation
+A new-adapter-only consuming exchange observation supports qualification of the
+same production POST. Retention is explicitly opt-in and default off. It holds
+only one successful response within the existing cap, exact sent-body SHA256,
+response bytes/SHA256 and ResearchIdentity; no request bytes, credentials/headers,
+error-body capture, payload Debug/logging, automatic persistence or durable Store.
+A consuming take removes the observation. Ordinary invocation admission first
+acquires the callback guard, then clears old success even if validation/cancellation
+fails. A rejected reentrant invocation must not clear the outer active attempt.
+Capture is populated only after parse, final callback and deadline checks pass;
+late failure, cancellation or panic cannot leave stale success.
+
+Adapter success occurs before with_research performs final complete encoded/token
+admission. This observation is NOT a composition-success receipt. The maintained
+live example persists it only after complete with_research success and discards
+it on composition failure. Raw response is untrusted potentially sensitive data;
+use the approved public-authored fixture and explicit private evidence destination.
+No HTTP interception or duplicate request. Cover default-off, identity/hash
+correlation, consuming take, reset/reuse, rejected reentry and late failure/cancel.
+
 ## Verification and delivery
 Use actual loopback HTTP with dummy credentials and real Store/Index/LocalMemory
 frozen contexts. Assert exact outbound decoded context/model/tool/request controls,
