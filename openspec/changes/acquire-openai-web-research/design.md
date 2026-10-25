@@ -30,12 +30,14 @@ OpenAIWebResearch implements the existing synchronous Provider without changing
 ResearchInput, ResearchResult, policy/directive or frozen-context wire shapes.
 Construction accepts explicit model, full Responses endpoint, owned credential,
 finite transport options and a borrowed mutable progress/admission callback.
-The callback is held in RefCell; try_borrow_mut refuses reentrant use rather than
+Finite callback phases are BeforeDispatch, Waiting, ResponseReceived after worker
+join, and BeforeReturn. The callback is held in RefCell; try_borrow_mut refuses reentrant use rather than
 panicking. This adapter is not Send/Sync and promises no concurrent invocation.
 There is no global singleton, implicit environment/config/credential lookup,
 provider discovery, answering-engine substitution or installed runtime wiring.
 
-Model is nonblank <=128 UTF8 bytes without controls. Endpoint is a full absolute
+Model is nonblank <=128 UTF8 bytes without controls. Endpoint is <=2048bytes,
+without whitespace/controls, and is a full absolute
 HTTPS URL with host and path ending /v1/responses, without user/password/query/
 fragment. Explicit HTTP is allowed only for numeric loopback fixture endpoints.
 Never append paths to an ambiguous configured base or silently retarget. Credential

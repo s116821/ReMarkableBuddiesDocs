@@ -1,8 +1,8 @@
 ## 1. Design and implementation
 - [x] 1.1 Assess actual acquisition gap, ownership and existing engine/model/tool capabilities against code and opened current official documentation.
-- [ ] 1.2 Obtain independent exact precode acceptance, including structured-output/citation projection and callback/transport lifetime.
-- [ ] 1.3 Implement the separate explicitly selected concrete Provider with finite I/O and owned cancellation using existing dependencies, preserving old APIs/held files.
-- [ ] 1.4 Implement actual loopback transport/adversarial and saved-context/policy composition controls plus maintained manual guidance/live development example.
+- [x] 1.2 Obtain independent exact precode acceptance, including structured-output/citation projection and callback/transport lifetime (review5643340443; opt-in observation clarification8d25803).
+- [x] 1.3 Implement the separate explicitly selected concrete Provider with finite I/O and owned cancellation using existing dependencies, preserving old APIs/held files.
+- [x] 1.4 Implement actual loopback transport/adversarial and saved-context/policy composition controls plus maintained manual guidance/live development example.
 
 ## 2. Qualification and delivery
 - [ ] 2.1 Qualify exact Source/Docs with affected integration/default library/bin, strict Clippy/default compile/fmt/diff and Docs checks/current CI, retaining failures separately.
