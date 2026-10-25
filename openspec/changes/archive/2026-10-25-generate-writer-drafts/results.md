@@ -203,3 +203,85 @@ unchanged. A separate full exact-head qualifier and hosted40237818486 are
 pending; the focused selection import/reopen matrix already passes at2788b93.
 The original e91 launcher executable and source/lock/build lineage are retained;
 its locked offline successor build targets2788b93. No Writer live call occurred.
+
+## Final supplied-text quality and scoped lifecycle evidence
+
+Source remains `2788b93c642890dd9403b34707bea059d2893333`. All eight local
+qualification commands pass: focused selection/import/reopen and Store/contract
+admission matrices; formatting/diff; strict Clippy across all targets/features;
+473 library tests plus 10 CLI tests; 81 affected parent integration tests; and
+default checking. Three existing library tests remain ignored. The nested Store
+child-process summary is not counted twice. The 81 comprise20 conversation,
+six layout, three legacy, nine SDK,12 export,16 Store,two configuration and13
+Writer tests. Actual Source [run40237818486](https://github.com/s116821/ReMarkableBuddies/actions/runs/40237818486)
+passed Title, Checks, application Build and Integration; PR Release correctly
+skipped. Its all-feature library run passed507 tests with three existing ignored,
+and the binary run passed10. Execution-time Docs9bc3411 passed all three jobs in
+[run40238029847](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/40238029847).
+
+Independent current-pair reviews are [Source5645614013](https://github.com/s116821/ReMarkableBuddies/pull/62#pullrequestreview-5645614013)
+and [Docs5645614727](https://github.com/s116821/ReMarkableBuddiesDocs/pull/58#pullrequestreview-5645614727).
+The reviewer independently verified all42 retained pre-live evidence hashes,
+fresh complete-success CI APIs, clean exact checkouts, original inputs and
+the final locked executable/driver before authorizing the already approved
+single quality attempt. The driver enforced at most two provider invocations,
+90 seconds per call, a220-second outer subprocess timeout and an exclusive
+one-attempt marker; it preserved process-environment precedence. No secret
+values, credential copies or new saved settings were recorded.
+
+The sole actual attempt completed successfully in8.047 seconds using configured
+OpenAI/gpt-5.6-terra: one generation, one refinement and local PreparedExport.
+Individual call durations were not separately measured. Both complete raw
+outputs were retained without editing or retry. Owner and independent manual
+assessment pass the original criteria:
+
+- Both retain mass2kg, acceleration3m/s², F=ma and6N, and initial velocity0m/s.
+- Facts cite supplied page1 and actions cite supplied page2; study facts and
+  action items remain distinct.
+- The refinement puts Dana's units check first, retains review-equations and
+  Lee's derivation check, and explicitly states no deadline was assigned.
+- Neither output includes scratch/unconfirmed x=9 or invents a date.
+- PreparedNote title and Markdown reconstruct the exact selected refined draft.
+
+The retained Store has20 immutable envelope objects and four current Writer
+turns, with exact original user requests and one unchanged Source2 payload.
+Mechanical verification independently reconstructs the source UUID identity,
+original input digest and PreparedNote source-revision digest. No binding or
+native Completed outcome was created. Both reviewers' initial ordinary Windows
+path reads hit the long-object-path handling limitation; extended-length paths
+read the same retained files in place. This was an inspection limitation,
+not a Source/test failure or a reason for another model call.
+
+Pre-live qualification digest:
+`a9273de099c01bb4f3cc220b859b02d44247cd6be47c2fdfb3277713f5fd2b38`.
+The53-file result wrapper digest is
+`bbeac1ad08b2afe81617d9bb4a083e85c1e03fde6eec17ea4023e5d937d455eb`.
+Private raw outputs/Store/verifiers remain retained locally; these digests are
+provenance pointers, not public download links. Independent semantic acceptance
+permits final canonical sync/archive preparation; final Docs-head checks/pair
+review, normal Docs-first squash delivery and actual-main publication observation
+remain external delivery gates and are not credited to older heads.
+
+This is one small invented supplied-text example. Equation preservation was
+assessed as returned Markdown/LaTeX text, not rendered output. No Mem send,
+tablet access, handwriting/OCR, large-notebook extraction, native rendering,
+gesture or full Writer/MVP qualification is claimed. Source basis: exact source,
+actual local/hosted logs, the unmodified actual model results and independent
+source/execution/semantic review; private review has no public transcript link.
+
+Canonical synchronization now changes only the intended shared-storage envelope
+requirement and historical source-evidence requirement, and adds writer-drafts
+with three requirements/eight scenarios. Eight unrelated storage requirements
+and four unrelated historical-ledger requirements remain identical. Existing
+full image decoding/geometry validation is explicitly retained in the source
+requirement; no image/native guarantee is weakened.
+
+After explicit verified sync, the archive CLI used `--skip-specs --yes` and moved
+only this change to `2026-10-25-generate-writer-drafts`. Its initial17/20 warning
+included the archive/coordination task itself and two external delivery
+observations. The successful archive completes that workflow task; only the two
+explicit final-review/merge/publication observations remain unchecked. These are
+not unimplemented supplied-text behavior and are not claimed to have occurred.
+No other active change/archive is modified. The final Docs commit still requires
+its own validation, hosted CI and independent paired delivery review; Source
+stays2788b93 and no further model call is part of this delivery.

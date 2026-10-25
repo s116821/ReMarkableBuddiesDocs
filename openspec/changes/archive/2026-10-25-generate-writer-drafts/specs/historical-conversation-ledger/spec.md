@@ -6,7 +6,8 @@ image with exact bytes, digest, dimensions, crop/transform and recorded observat
 provenance. It SHALL also retain explicitly supplied normalized text as its own
 immutable typed Source record with exact ordered text, locations, source and
 normalized digests, and extractor revision; these SHALL NOT imply original-byte,
-OCR or native qualification. It SHALL validate complete required content before
+OCR or native qualification. It SHALL retain full image decoding and geometry
+validation before publication, validate complete required content before
 publication/readback, distinguish unavailable required committed content from
 explicitly omitted imported media, and retain references after logical deletion.
 Existing Source1 image/capture serialization SHALL remain unchanged; new
