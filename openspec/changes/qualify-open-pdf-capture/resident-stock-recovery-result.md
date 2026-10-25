@@ -1,8 +1,9 @@
 # Fixed-profile stock-restoration helper
 
 Buddy `ce5b67c` implements the actual Linux restoration sequence in
-`workflow::resident_supervisor::recovery` module. It is not wired into the normal
-application or installed service yet. No qualified production manifest is shipped,
+`workflow::resident_supervisor::recovery` module. The subsequent CLI increment
+below adds command dispatch and ordinary startup refusal; installed service
+integration remains open. No qualified production manifest is shipped,
 and no real stock stop/start or native load occurred in this increment.
 
 The entrypoint has fixed service names, artifact paths and a 45-second monotonic
@@ -53,11 +54,45 @@ Merge `093c0c6fe68d2b58596a45cd6f3c749267aa5786` incorporates current Buddy main
 `1d1665f7860837f36403585dfd4482d5668a6e56`. It retains both existing-page Binding
 and incoming Writer NormalizedText schema branches in one decoder chain; splitting
 them into independent conditions would incorrectly reject schema-2 bindings.
-Independent source review accepted that resolution. The exact merged-source
-resident, intent, existing-binding, historical-association, conversation and Writer
-checks plus strict all-target/all-feature lint are running in
-`resident-stock-helper-merged-r1.log` at this checkpoint; preceding passes do not
-substitute for that result.
+Independent source review accepted that resolution. Merged-source local run
+`resident-stock-helper-merged-r1.log` finished with 73 resident, 3 intent,
+5 existing-binding, 8 historical-association and 20 conversation tests passing.
+Writer passed 3 and failed 10; the chained lint did not run. A direct loopback
+diagnostic identified client-construction failure because the test image contained
+no system CA certificates. No Writer/schema/TLS production change was made.
+
+The derivative test image `rem25-rust-qt-ca:review`, SHA256
+`cb9d35cf24d37c1b5d69b091d4bc7014aa57b3dd75979be948b9627a5f4ece95`, installs
+normal system CA certificates and Clippy. Running the same already compiled Writer
+binary there passed all 13 Writer cases and the one diagnostic in 3.09 seconds.
+The temporary diagnostic was removed from the repository test file and retained
+locally with its exact error chain. This identifies the local environment failure;
+it does not validate the later CLI source. Hosted merged-source run
+[40244649358](https://github.com/s116821/ReMarkableBuddies/actions/runs/40244649358)
+passed its Checks job, including full tests and strict lint; application build
+was still running at the CLI checkpoint.
+
+## Recovery CLI and ordinary startup latch
+
+Buddy `ae78fb38df9b846a901629ad2b5b2580dae0f167` dispatches exclusive `--resident-stock-recovery` immediately after
+argument validation, before Writer/configuration/Store/provider startup. A distinct
+`NoRecordedActivation` no-op requires exact final-file absence below an existing,
+unchanged protected boot directory. It does not claim stock readiness. Any occupied
+invalid, partial, stale, linked or replaced record remains an error. Ordinary Linux
+startup independently checks the same fixed latch before dotenv/configuration,
+Store or device/provider startup; explicit non-device Writer and maintenance modes
+remain separate. Native launch still requires future first-gesture admission and
+exclusive publication, not this initial empty check.
+
+Independent source review found no blocking defect. Initial run
+`resident-stock-entry-r1.log` passed 75 resident tests, including appeared-record,
+directory replacement, invalid-record and consumed-lease preservation cases. It
+passed 10 of 11 binary tests: the explicit option inventory needed the newly added
+flag; exclusivity itself passed. The final commit updates that inventory and checks
+the default is off. Current-source run `resident-stock-entry-r2.log` repeats resident,
+binary and Writer tests, runs the real CLI fixture, then strict all-target/all-feature
+lint. That run is still pending. The fixture poisons ordinary configuration and exercises bounded
+real subprocess calls; it never runs against PID1 or a tablet.
 
 A fresh read-only tablet query at 2026-10-25 23:15:47 UTC returned all 28 service
 properties, including the new `Type` and `NeedDaemonReload`. Both existing units
@@ -75,10 +110,9 @@ This establishes the property query, not execution of the Rust helper.
 ## Remaining integration
 
 The next integration must enforce the common fixed boot latch in every installed
-native-entry route, select an approved recovery/native profile, wire exclusive
-helper dispatch before ordinary configuration/Store startup, and install the
-ordered watchdog/recovery units. Define the no-activation/cold-boot dispatch case
-explicitly: the current helper safely refuses a missing lease while unwired.
+native-entry route, select an approved recovery/native profile, and install the
+ordered watchdog/recovery units after actual main-loop health is integrated.
+The explicit no-record command outcome above does not prove the installed lifecycle.
 Do not reinterpret a missing/corrupt consumed lease as permission to reactivate.
 
 Manager lifecycle must retain the helper/payload until verified recovery and use

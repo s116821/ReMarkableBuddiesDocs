@@ -144,6 +144,15 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 - **WHEN** a conflicting PID1 stop job arrives after the pre-start sample
 - **THEN** job-mode=fail refuses replacement, the helper retains the consumed lease and reports failure or uncertainty without a second command
 
+#### Scenario: Exclusive recovery command on a boot without a recorded activation
+- **WHEN** the exclusive recovery command observes only the final activation record absent beneath the unchanged existing protected fixed directory
+- **THEN** it returns NoRecordedActivation without configuration, Store, provider, device or service startup, without changing the directory or claiming stock readiness
+- **AND** missing parents, any occupied invalid record, symlinks or observation errors remain failures; no outcome resets the activation latch
+
+#### Scenario: Recovery command mixed with ordinary application options
+- **WHEN** recovery is requested with another application or maintenance option
+- **THEN** argument validation rejects the combination before either operation runs; recovery accepts no arbitrary unit or path override
+
 #### Scenario: Recovery is invoked again after an uncertain start
 - **WHEN** the original immutable lease remains valid and stock is already active or starting
 - **THEN** the helper verifies or observes stock without another start, and reports success only after the complete stable process/service checks

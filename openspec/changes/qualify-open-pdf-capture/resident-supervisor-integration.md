@@ -1,8 +1,8 @@
 # Resident stock-service ownership and recovery
 
 This is the integration design, not an installed capability. The runtime owner,
-lease/context support, service sampler and fixed-profile restoration helper exist;
-stock-service takeover, installed independent recovery and Reader wiring do not
+lease/context support, service sampler, fixed-profile restoration helper and
+isolated CLI dispatch exist; stock-service takeover, installed independent recovery and Reader wiring do not
 yet exist in the normal application. Keep those tasks open until verified.
 
 ## Refreshed platform evidence
@@ -35,6 +35,33 @@ That installation is not the new resident implementation. No files, services,
 input, UI state or account settings were changed by these reads.
 
 ## Intended product lifecycle
+
+The executable exposes one exclusive `--resident-stock-recovery` command. Dispatch
+it immediately after argument validation, before dotenv, configuration, Store,
+provider, sync or device startup. Reject combinations with ordinary/maintenance
+arguments. It accepts no path, unit, environment or deadline override. On other
+platforms it refuses without starting the ordinary application.
+
+Cold-boot recovery has a distinct `NoRecordedActivation` outcome. Only ENOENT for
+the exact final `activation.json` component below the existing protected fixed
+directory permits that outcome, with the directory identity and absence checked
+again before return. Missing/untrusted parents, symlinks, malformed/partial/stale
+records and read failures remain errors. This outcome makes no service/process
+call and claims neither stock readiness nor proof that activation never occurred.
+An existing record always enters full recovery admission. Neither path removes,
+repairs or recreates the latch. The installed common activation guard and package
+lifecycle must still enforce retention; this command alone does not establish them.
+
+Ordinary Linux startup checks the same fixed latch before dotenv/configuration,
+Store, provider, sync or device initialization, independently of any optional
+resident mode. Any occupied activation record refuses ordinary startup, including
+an unreadable or invalid record. Explicit non-device Writer and maintenance
+commands remain separate; Writer may use a provider but neither command class
+gains native activation permission. An absent boot directory permits the
+existing non-resident application path; it never authorizes native activation.
+The future first-gesture activation must require that protected directory and
+exclusive publication again immediately before stock takeover. An initial empty
+check is not a reservation or a replacement for that atomic publication.
 
 Keep the resident owner in the normal Buddy process for the session. Use PID1's
 service watchdog and a separate stock-recovery service as the UI-independent
