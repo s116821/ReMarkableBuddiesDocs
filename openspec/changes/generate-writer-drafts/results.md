@@ -180,9 +180,26 @@ normalized-text field; the failed log is retained. Successor
 e91a9a6a50c52f11169d3bce889e0fd2e81a43aa adds that empty fixture field only,
 with a separate current-head qualification run pending. Earlier2828bb2 checks
 and hosted run40237080271 cannot qualify this successor.
-The private launcher remains blocked by a
-pending source pin. A concrete one-attempt outer driver enforces 220 seconds;
+The private launcher was initially blocked by a pending source pin. Its source
+pin has since been updated for candidate builds; live dispatch remains blocked
+pending completed current-head evidence and final launcher/executable/driver
+review. A concrete one-attempt outer driver enforces 220 seconds;
 its final source/spec/executable pins and review remain pending before dispatch.
 No Writer live-model call, Mem send or tablet operation has occurred. Semantic
 quality, final review, canonical sync/archive and coordinated delivery remain
 open; full Writer/MVP acceptance is not claimed.
+
+The e91 library run completed with 472 passing, one failure and three existing
+ignored tests. The failure was the current generic storage selection matrix,
+which still expected Source2 to refuse. Successor f78c042 updates that opaque
+admission matrix to the accepted three namespaces. Independent review found the
+same obsolete expectation in the storage integration matrix before its run;
+that qualifier was deliberately stopped, not recorded as a test failure.
+Successor2788b93c642890dd9403b34707bea059d2893333 updates the integration
+matrix's namespace set, eight accepted records, JSON contract assertion and
+test name. These two successors change tests only; production files remain
+identical to independently reviewed e91. Current schema/shape refusal remains
+unchanged. A separate full exact-head qualifier and hosted40237818486 are
+pending; the focused selection import/reopen matrix already passes at2788b93.
+The original e91 launcher executable and source/lock/build lineage are retained;
+its locked offline successor build targets2788b93. No Writer live call occurred.
