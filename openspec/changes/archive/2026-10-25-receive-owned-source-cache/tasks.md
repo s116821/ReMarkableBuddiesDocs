@@ -7,7 +7,12 @@
 
 ## 2. Verification and delivery
 - [x] 2.1 Freeze exact source/spec revisions and complete affected offline tests, strict Clippy, default library checks, format and Docs validation.
-- [ ] 2.2 Obtain implementation review, retain failures separately and inspect complete CI/feedback.
-- [ ] 2.3 Sync only the owned canonical requirement and archive the completed change for final paired review.
+- [x] 2.2 Obtain implementation review, retain failures separately and inspect complete CI/feedback.
+- [x] 2.3 Sync only the owned canonical requirement and archive the completed change for final paired review.
 - [ ] 2.4 Perform normal guarded Docs-first merge after final acceptance.
 - [ ] 2.5 Observe actual-main CI and the new official publication separately, then obtain independent closeout.
+
+The implementation and own canonical sync/archive are complete. Tasks 2.4 and
+2.5 are external delivery observations, still pending in this frozen review
+artifact; subsequent PR/issue evidence records their actual outcome. This archive
+does not claim those events, runtime integration or native/model acceptance.
