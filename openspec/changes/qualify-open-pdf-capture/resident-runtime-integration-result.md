@@ -53,3 +53,27 @@ remain pending; predecessor CI does not validate it.
 Source basis: current implementation/spec files, independent source review and
 directly observed Linux process/socket tests and compiler output. Product and
 native acceptance remain separate.
+
+## Explicit launch arguments — October 25 continuation
+
+Buddy `20075650ee77f0af178a19e9f858f6aab24a1f9c` adds caller-supplied
+`argv[1..]` through `Command::args`, preserving empty arguments, Unicode, spaces
+and shell metacharacters literally. It rejects NUL, more than 16 arguments and
+more than 16 KiB of aggregate UTF-8 bytes before creating the run directory.
+The child fixture now passes all arguments through the public launch input;
+its private decorator only removes LD_PRELOAD. No native mode is selected by
+default. The supported stock unit's `--system` argument was independently
+confirmed by the subsequent read-only platform inventory.
+
+Independent design and implementation review accepted this increment. Its
+unchanged final source passed 35 Linux client/runtime tests (26 client, 9 runtime),
+strict Linux all-target/all-feature Clippy, formatting and diff checks. The
+preserved log is `resident-arguments-linux-r1.log`; lint finished successfully in
+7m23s. This verifies argument transport and rejection through real owned fixture
+processes, not xochitl resource lookup or native startup. Hosted checks for this
+new commit remain pending.
+
+Separately, full hosted CI `40235333973` passed for the original runtime commit
+`35e0f1d3a3cfc3a1295f4fe25fd64ce4ac07639c`. SDK CI `40235482390` passed for
+`ffd5e8163c24cb2bd1883e7d64186cbe3c8cafbc`. Neither is transferred to this new
+Buddy commit. The stock-service and native acceptance limits above remain open.

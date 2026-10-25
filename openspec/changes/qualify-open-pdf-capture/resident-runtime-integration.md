@@ -11,7 +11,7 @@ installed Reader acquisition or recovery to stock.
 
 An explicit caller supplies the independently approved profile, executable and
 adapter file paths and exact SHA-256 digests, an absolute fresh activation path,
-and one absolute startup deadline. Hashes are expectations, not caller-created
+an explicit argument vector and one absolute startup deadline. Hashes are expectations, not caller-created
 native qualification. The production caller must separately establish supported
 firmware, an idle device, stock-service ownership and independent recovery before
 launch. No ordinary Reader constructor or service unit invokes this component
@@ -45,6 +45,16 @@ never evidence of successful completion or a deadline renewal.
 Spawn the private verified executable copy directly with the private adapter copy in
 LD_PRELOAD, LD_BIND_NOW=1 and RSDK_ACTIVATION_DIRECTORY. No shell, detached helper,
 ambient preload chain, process-name lookup, systemd mutation or reboot is used.
+Forward the caller-approved arguments in their original order and exact string
+boundaries through Command::args, with no shell expansion, joining or tokenization.
+Before creating an activation directory, refuse NUL bytes, more than 16 arguments
+or more than 16 KiB of total argument bytes. Empty arguments remain distinct.
+The retained October 20 RM2 stock unit (SHA256
+`adb0a2654ce9ec884f67c0627c22d539d6475dd0af80816819ee80bf13c0e6d6`)
+starts `/usr/bin/xochitl --system`; a qualified caller must preserve this mode
+after refreshing the live supported profile. That historical unit is source
+evidence for the missing argument seam, not current device-state admission.
+Argument forwarding does not qualify relocation, argv[0] or resource lookup.
 The child starts in the explicit root working directory, not an inherited checkout.
 Clear the entire inherited environment. Accept only explicit approved HOME, USER,
 LOGNAME, PATH, LANG, LC_ALL, TZ, XDG_RUNTIME_DIR and QT_QPA_PLATFORM values;
@@ -102,6 +112,9 @@ from the production preload environment. No tablet or system service is touched.
 Use one absolute deadline throughout and preserve evidence after each fault.
 Exercise directory replacement after Ready: subsequent access refuses, the owned
 child is reaped, and cleanup evidence stays in the original directory inode.
+Exercise the actual argument path with the owned child, including spaces, empty
+values and shell metacharacters as literal data; reject invalid vectors before
+directory creation. Test-only launch customization only removes native preload.
 
 Native constructor ordering, actual preload behavior and copied-executable resource
 resolution, UI readiness, stock-service
