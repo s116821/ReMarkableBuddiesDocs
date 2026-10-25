@@ -6,7 +6,7 @@
 
 ## 2. Qualification and delivery
 - [x] 2.1 Qualify exact Source/Docs with affected integration/default library/bin, strict Clippy/default compile/fmt/diff and Docs checks/current CI, retaining failures separately (Source7fb3b14: 69 affected integrations, library471/3 existing ignored, bin9, seven example controls; CI40202092058; Docs085398e strict83/0, guidance25/126, CI40200933564).
-- [x] 2.2 Retain bounded actual hosted search/query/source-list/schema/composition evidence; disclose any real missing credential/endpoint/capability gate without fabricating live success (one gpt-5.6-terra call, two completed search calls/two queries, 18 consulted URLs, two selected provider-asserted sources; full composition succeeded; private evidence SHA256 5f20c1823095fa8b2ec152b0a21ad436a532ae2404bd57c1c46a862b898c295c).
-- [ ] 2.3 Obtain independent implementation acceptance, sync only owned canonical requirements and archive for final paired review.
+- [x] 2.2 Retain bounded actual hosted search/query/source-list/schema/composition evidence; disclose any real missing credential/endpoint/capability gate without fabricating live success (one gpt-5.6-terra call, two completed web-search tool calls (one search/one page open), two queries, 18 consulted URLs, two selected provider-asserted sources; full composition succeeded; private evidence SHA256 5f20c1823095fa8b2ec152b0a21ad436a532ae2404bd57c1c46a862b898c295c).
+- [x] 2.3 Obtain independent implementation acceptance, sync only owned canonical requirements and archive for final paired review (reviews5644257343/5644257462; three requirements/eight scenarios synced without modifying unrelated specs).
 - [ ] 2.4 Perform normal guarded Docs-first delivery after final acceptance.
 - [ ] 2.5 Observe actual-main CI/new official publication and obtain independent closeout.
