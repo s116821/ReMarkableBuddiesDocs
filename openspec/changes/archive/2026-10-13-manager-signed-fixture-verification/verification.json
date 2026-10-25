@@ -1,0 +1,211 @@
+{
+  "build_receipt_sha256": "57baa3885cc8f35a317c44224a5ac8d2ca3b6cc8febb23a22118233d8e7f1c0b",
+  "cases": [
+    {
+      "classification": "success",
+      "name": "independent-public-key-pin"
+    },
+    {
+      "classification": "pin-mismatch-refused",
+      "name": "wrong-independent-pin"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 31,
+      "exit_code": 0,
+      "name": "original-buddy-index.adb",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1b014e1629c9631a0003e99eca9365127ba600fb68fdb04712640550a11847af"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 2552,
+      "exit_code": 0,
+      "name": "metadata-buddy-index.adb",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cb457c878969ff754e462653c882294b1af6ea681a59dda93ad4a753efdc2d46"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 55,
+      "exit_code": 0,
+      "name": "original-remarkable-buddies-0.2.0-r0.aarch64.apk",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "35bd0a6f3a6efc1f58b18cc54125cd43852fb82f72171740295f76c0af4d0653"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 2652,
+      "exit_code": 0,
+      "name": "metadata-remarkable-buddies-0.2.0-r0.aarch64.apk",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9670089867215f3f689f8ba25b5feeced8580d8e6df049a4c67b94947c3fa9f5"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 53,
+      "exit_code": 0,
+      "name": "original-remarkable-buddies-0.2.0-r0.armv7.apk",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9490a5a662cf6b19106df649c14a58265031a254b475d1a67011f7c0506863c3"
+    },
+    {
+      "classification": "success",
+      "diagnostic_bytes": 2657,
+      "exit_code": 0,
+      "name": "metadata-remarkable-buddies-0.2.0-r0.armv7.apk",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "218b168b87b5ceaac8bfbddea1c1a1b2aae560e1da4707fa7cbd361d9ad0aa86"
+    },
+    {
+      "classification": "untrusted-signature",
+      "diagnostic_bytes": 70,
+      "exit_code": 1,
+      "name": "wrong-public-key",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3d949647192680bb22f9c22406330319eb03d1009b4da50005228a06e32f5382"
+    },
+    {
+      "classification": "untrusted-signature",
+      "diagnostic_bytes": 51,
+      "exit_code": 1,
+      "name": "changed-package-control",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e7560675358a146d3313b956b853b6161a7f36b70435e24de649b6e41dd1bb8c"
+    },
+    {
+      "classification": "untrusted-signature",
+      "diagnostic_bytes": 49,
+      "exit_code": 1,
+      "name": "changed-index-control",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7251fb1c3b5a884eeb1b7b3cf9d59b07306d171c200f298df59e3e7a9c182958"
+    },
+    {
+      "classification": "file-integrity",
+      "diagnostic_bytes": 52,
+      "exit_code": 1,
+      "name": "changed-package-payload",
+      "roots_unchanged": true,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e2ced31fa3591599a4aeb103a97483e4add00308d5397f7ff1f4cc79443dcf1b"
+    }
+  ],
+  "consumer_sha256": "8cd52768b8bfd636df971747652d84edda832b8dc497f309f6e242f2bc8240dd",
+  "eligibility": "not-qualified",
+  "evidence_class": "actual historical public-key-only host test fixture",
+  "expected_spki_sha256": "233571d3c096b188fcb10db17da80edf2f51b3b52c5aaef68a8721d028f5d39f",
+  "helper_commit": "4e79104cc5948ee77cca517fb71f333bae056bba",
+  "installation_eligible": false,
+  "limits": "No independent index regeneration, build.json content extraction, compiler/SDK/native/production trust/lifecycle qualification",
+  "manifest_sha256": "e8b3e47e0d42b64342bfe53eb3bb362abefa92c11a355fd754f4a5a238a37d40",
+  "original_files": {
+    "buddy-index.adb": {
+      "bytes": 1672,
+      "sha256": "e39abdca1cf9e210dfaa8073766f302b7311df4c5c392108b8a1510a294e970e"
+    },
+    "fixture.pub": {
+      "bytes": 451,
+      "sha256": "a05b62fc02fea9905c5ce0fc6fe55e186875cb525b9f9a6fec88ce407a515501"
+    },
+    "remarkable-buddies-0.2.0-r0.aarch64.apk": {
+      "bytes": 16033544,
+      "sha256": "cdf30cdf496c1ff7b84f4e4edc99488b2a50af1ed6b9811581c3ad492ea0400c"
+    },
+    "remarkable-buddies-0.2.0-r0.armv7.apk": {
+      "bytes": 15033936,
+      "sha256": "2e51a553671c28f3b0a5ce64318094c0037440879ca85bbfb216a08fb50cc7e9"
+    },
+    "test-key-build-receipt.json": {
+      "bytes": 6267,
+      "sha256": "96461649a30beaebfb71b550a0c6ab13c3eb081db5133f44cea377a8bbe574b1"
+    }
+  },
+  "packages": {
+    "aarch64": {
+      "apk_file_bytes": 16033544,
+      "apk_file_sha256": "cdf30cdf496c1ff7b84f4e4edc99488b2a50af1ed6b9811581c3ad492ea0400c",
+      "arch": "aarch64",
+      "full_version": "0.2.0-r0",
+      "index_hash_basis": "matches saved producer regeneration; not independently regenerated",
+      "index_metadata_hash": "8f4ea3e8d90deb1f3d9a1e5db5631991a12d9ff80915638082fff312e0eeb185",
+      "package_embedded_hash": "358aeb79d7122a90bffa825ecfef134401b8459c",
+      "package_embedded_hash_basis": "pinned mkpkg SHA1 UID; distinct from mkndx SHA256 identity",
+      "signed_payload": {
+        "usr/bin/reader-buddy": {
+          "bytes": 15994448,
+          "sha256": "998f99f4731ea0333827482ddaf9d7629ca9653b01a147faf44a8f8b62f452a1"
+        },
+        "usr/share/remarkable-buddies/LICENSE": {
+          "bytes": 35823,
+          "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+        },
+        "usr/share/remarkable-buddies/build.json": {
+          "bytes": 1627,
+          "sha256": "377051a71b17aa681d206db33b43c31b67926b4bf0ff21c81453913ab31c849f"
+        }
+      },
+      "source": {
+        "epoch": 1790469645,
+        "repository": "https://github.com/s116821/ReMarkableBuddies",
+        "sha": "ff8ad75bec45fca403d55a7b6d93eb83ab732e3d",
+        "tag": "v0.2.0"
+      }
+    },
+    "armv7": {
+      "apk_file_bytes": 15033936,
+      "apk_file_sha256": "2e51a553671c28f3b0a5ce64318094c0037440879ca85bbfb216a08fb50cc7e9",
+      "arch": "armv7",
+      "full_version": "0.2.0-r0",
+      "index_hash_basis": "matches saved producer regeneration; not independently regenerated",
+      "index_metadata_hash": "7cddfcf49c3a722e8f6d9347bef9b15ff20dc1fb36ba61f54263c1132ef1eedc",
+      "package_embedded_hash": "8870ef70f68262730fdabb20341e51baf418071d",
+      "package_embedded_hash_basis": "pinned mkpkg SHA1 UID; distinct from mkndx SHA256 identity",
+      "signed_payload": {
+        "usr/bin/reader-buddy": {
+          "bytes": 14994836,
+          "sha256": "999cbe4d9ce121801c580b1db83509653b8767d1b79d7ce10938a513d9c38a66"
+        },
+        "usr/share/remarkable-buddies/LICENSE": {
+          "bytes": 35823,
+          "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+        },
+        "usr/share/remarkable-buddies/build.json": {
+          "bytes": 1630,
+          "sha256": "4c52d06f197018a1a15151ec01d54176af4549835f0660b86bb37016af779d63"
+        }
+      },
+      "source": {
+        "epoch": 1790469645,
+        "repository": "https://github.com/s116821/ReMarkableBuddies",
+        "sha": "ff8ad75bec45fca403d55a7b6d93eb83ab732e3d",
+        "tag": "v0.2.0"
+      }
+    }
+  },
+  "payloads_extracted_or_executed": false,
+  "private_key_available": false,
+  "producer_docs_commit": "fdb33b7ef79e4f6773bf96ad884782ab8d80958b",
+  "profile": "legacy-no-sdk",
+  "qualification_helper_sha256": "c65c20f9902e6eb29f7695e7e21f58889e1ad4089de80179189eb03e51f119ec",
+  "roots_unchanged": true,
+  "runtime_image_id": "sha256:48608ea0b7ce360f41a27f8d3c4c7d8d897366a03cc32de0c5f45da4f2fe4983",
+  "source": {
+    "epoch": 1790469645,
+    "repository": "https://github.com/s116821/ReMarkableBuddies",
+    "sha": "ff8ad75bec45fca403d55a7b6d93eb83ab732e3d",
+    "tag": "v0.2.0"
+  },
+  "tool_binary_sha256": "1f574216fca1b0145931f7cdb8e843634c909f578d791d0cabddd8a826d5ef8f",
+  "tool_source": "ee31d275c7a2b7486e6de481ffe624b1de46d131",
+  "update_eligible": false
+}

@@ -1,0 +1,158 @@
+{
+  "capture_version": 1,
+  "qualification_scope": "Actual early CLI refusals only; held stdin without EOF, no intended input bytes, no real service invocation or runtime/native qualification",
+  "verification": {
+    "provenance": {
+      "executable_sha256": "7fc4e0c64cf7429b38ef8d1834fe48b838f7de204f419b23ed9a9b3ce9857ff4",
+      "platform": "windows",
+      "scope": "actual early inventory refusals only; no real service invocation",
+      "source_head": "4d4d9e7049eefa8c0cd7caf13abf352b810f8b22",
+      "source_tree": "5d0d8c59868b9fc7af95cd6fd4d009d04ba148de"
+    },
+    "records": 11,
+    "verified_output_stream_hashes": 22,
+    "raw_bytes": 8411,
+    "raw_sha256": "83391b6610db78571dfb38359ca96e268bde2f0ee2924b74dcb6d926e084afce",
+    "normalized_bytes": 6953,
+    "normalized_sha256": "b06b7091e665dbdab6164163dabd720a082cb38c96b54f41692670c98f1f63c9",
+    "scope": "Actual early CLI refusals only; held stdin without EOF, no intended input bytes, no real service invocation or runtime/native qualification"
+  },
+  "records": [
+    {
+      "argv_extra": [
+        "--inspect-conversations=true"
+      ],
+      "case": "ordinary-parser",
+      "exit_code": 2,
+      "stderr_sha256": "40e2c86681b219f84e2f79bfcc0adf895156ad515ee445134621b0e44a4600aa",
+      "stderr_utf8": "error: unexpected value 'true' for '--inspect-conversations' found; no more were expected\n\nUsage: reader-buddy.exe <--inspect-conversations|--conversation-operation <CONVERSATION_OPERATION>|--conversation-input <INPUT>|--inspect-source-cache|--source-cache-operation <SOURCE_CACHE_OPERATION>|--source-cache-input <INPUT>|--credential-reference-operation <CREDENTIAL_REFERENCE_OPERATION>|--credential-reference-input <INPUT>|--model-credential-operation <MODEL_CREDENTIAL_OPERATION>|--model-credential-input <INPUT>|--memory-settings-operation <MEMORY_SETTINGS_OPERATION>|--memory-settings-input <INPUT>|--ordinary-export-operation <ORDINARY_EXPORT_OPERATION>|--ordinary-export-input <INPUT>|--model-settings-operation <MODEL_SETTINGS_OPERATION>|--model-settings-input <INPUT>|--restore-operation <RESTORE_OPERATION>|--restore-input <INPUT>|--basic-settings-operation <BASIC_SETTINGS_OPERATION>|--basic-settings-input <INPUT>|--configuration-operation <CONFIGURATION_OPERATION>|--simulate <SCENARIO>|--inspect-owned-data|--api-key <API_KEY>|--model <MODEL>|--base-url <BASE_URL>|--trigger-corner <TRIGGER_CORNER>|--log-level <LOG_LEVEL>|--debug-dump|--memory-operation <MEMORY_OPERATION>|--memory-input <FILE>|--sync-mode-operation <SYNC_MODE_OPERATION>|--sync-mode-input <FILE>|--archive-operation <ARCHIVE_OPERATION>|--archive-input <FILE>|--personalization-operation <PERSONALIZATION_OPERATION>|--export-note>\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "ordinary-unexpected"
+      ],
+      "case": "ordinary-parser",
+      "exit_code": 2,
+      "stderr_sha256": "e33cf7432c3f607c967fc72d884f695c985dc78d32a48432744aa896889391b3",
+      "stderr_utf8": "error: unexpected argument 'ordinary-unexpected' found\n\nUsage: reader-buddy.exe [OPTIONS]\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [],
+      "case": "parameterless-held",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "0bf64c0fb9e8571731d076c0da19841c33637a16fd0a1c0af894f8ed55d1a135",
+      "stdout_utf8": "{\"report_version\":1,\"status\":\"unsupported\",\"scope\":\"ordinary-current-root-candidates\",\"complete\":false,\"candidates\":null,\"candidate_count\":null,\"eligibility_evaluated\":false,\"mutation_authority\":false,\"native_authority\":false,\"runtime_unverified\":true,\"physical_reclamation\":false,\"local_only\":true,\"service_observation\":\"unverified\"}\n"
+    },
+    {
+      "argv_extra": [
+        "--api-key",
+        "PRIVATE_INVENTORY_SENTINEL"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "6eb0e45861fb208a6c08ef1d08d57dc3d6ac7c8740ee5d767bde4215ce0cb3b9",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--api-key <API_KEY>'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--conversation-operation",
+        "inspect",
+        "--conversation-input=-"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "fa6bc2f95a024d2bb6dcac12e1894a35940166deb35175e4b69b86453386909a",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with:\n  --conversation-operation <CONVERSATION_OPERATION>\n  --conversation-input <INPUT>\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--debug-dump"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "0b1e91f34179dfc3410abc7214ee6fab94024f78653ced743b04ab3ca0ce3402",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--debug-dump'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--inspect-owned-data"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "d63e50cdeb3a6d611c60c899c59ad1ec6453b0fea50fa26f6e8576debaf7baa6",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--inspect-owned-data'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--inspect-source-cache"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "f902b7f80f317adf47f23301ac52c76918f05076e78c720b1bfe309fdea1c916",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--inspect-source-cache'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--log-level",
+        "trace"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "aef698540d3521b4a30e82c5f6f50926ddfca1deacf3d5e395772c892435a0bb",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--log-level <LOG_LEVEL>'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--model",
+        "PRIVATE_INVENTORY_SENTINEL"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "67c8ec9277ab661a5bb8c4cbfde12be1b08906bd75c2a1ca35bd9376abac9110",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--model <MODEL>'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--simulate",
+        "PRIVATE_INVENTORY_SENTINEL"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "407835ba03498c7685637a868b39a0aa22966dd8c187b2914a25e3c6e2f4a7ba",
+      "stderr_utf8": "error: the argument '--inspect-conversations' cannot be used with '--simulate <SCENARIO>'\n\nUsage: reader-buddy.exe --inspect-conversations\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    }
+  ]
+}
