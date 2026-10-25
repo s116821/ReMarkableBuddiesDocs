@@ -74,9 +74,10 @@ shutdown dependencies and must not resurrect services during system shutdown.
 
 The recovery helper requires its own approved service context, the original
 lease and an inactive/failed Buddy service with no remaining native process group.
-Validate the retained cgroup directory/mount identity and recursive population;
-a bare MainPID=0 or successful stop command is insufficient. Preserve uncertainty
-if emptiness cannot be established. Once safe, start the unchanged stock unit,
+Validate the original cgroup identity against the same mount and namespace and
+establish recursive emptiness under the concrete contract below; a bare MainPID=0
+or successful stop command is insufficient. Preserve uncertainty if emptiness
+cannot be established. Once safe, start the unchanged stock unit,
 then observe its actual process, executable, policy, group and absence of pending
 jobs under one bounded recovery deadline. Service-level recovery is distinct
 from visual UI readiness and document persistence, which need native acceptance.
@@ -104,15 +105,64 @@ stock exactly once and never touches either real stock or installed Buddy. Use
 fresh bounded units and archive/clean only their exact files and groups. This is
 a platform fixture, not native activation or document-preservation evidence.
 
-Independent review accepted only that isolated fixture phase. The existing
-retained-directory requirement is not yet implemented: an after-exit recovery
-process cannot inherit Buddy-local descriptors. Record PID1 removing the stopped
-service group explicitly; absence or reopening a pathname does not establish
-retained identity. Resolve the actual proof handoff before product acceptance.
-Also test recovery-helper failure/restart: a spent native-activation latch must
-still allow idempotent stock restoration. Test shutdown-job cancellation without
-shutting down the development tablet; a modeled isolated target is preliminary
-evidence, not proof of real system shutdown behavior. These remain open gates.
+Initial independent review identified that an after-exit recovery process cannot
+inherit Buddy-local descriptors. The observed group removal motivates the explicit
+deletion contract below, replacing that descriptor-handoff premise. The fake
+helper failure/restart test now passes; the production consumed-activation lease
+must still permit idempotent stock restoration. Shutdown-job cancellation remains
+open. Test it without shutting down the development tablet; a modeled isolated
+target is preliminary evidence, not proof of real system shutdown behavior.
+
+### Deleted-cgroup recovery contract to implement and qualify
+
+The five live fake-unit cases in
+[resident-supervisor-fixture-result.md](resident-supervisor-fixture-result.md)
+all found the actor group removed before recovery. Keep the after-exit helper;
+do not introduce a persistent monitor merely to wait for a final event read.
+
+The proposed lease records the actual populated service cgroup device/inode,
+validated cgroup2 mount identity and path, mount/cgroup namespaces, boot, Buddy
+invocation and process incarnation, and actual Buddy parent membership. Child
+membership, when available, is additional corroboration rather than a recovery
+prerequisite: stock may already be stopped when Buddy fails before native spawn
+or before recording the new child. Qualified fork inheritance and no migration
+must cover that entire spawn/record crash window through the original parent
+group. Do not require a post-spawn receipt to restore stock or introduce another
+native effect journal. Missing parent membership still refuses activation.
+Recovery must bracket its lookup with an inactive/failed Buddy, MainPID=0, no
+pending activation/job and no new invocation. A consumed activation lease stays
+consumed while repeated stock restoration can finish idempotently. The helper's
+Conflicts/After relation prevents overlapping ordinary Buddy startup during its
+restoration; startup also checks the same lease/latch before any native launch.
+
+Allow two separately typed outcomes only: the unchanged original group reports
+recursive `populated 0`, or lookup of its exact validated location returns ENOENT
+under the qualified kernel-deletion contract. Changed mount/namespace/boot,
+replacement inode, a symlink, permission/I/O errors, missing parent membership
+or uncertain service incarnation refuse. Never map arbitrary read errors to an
+empty group. Successful restoration still requires the actual stock service,
+process/executable, policy and job checks in the original recovery deadline.
+
+This relies on trusted PID1 and no task migration out of the owned group, no
+external privileged cgroup renames or hierarchy replacement. `Delegate=no` does
+not itself restrict privileged application code; qualify the supported payload's
+group membership and make these assumptions explicit in the platform profile.
+Do not claim robustness against another privileged actor moving native processes.
+
+Upstream [Linux 5.4 cgroup destruction](https://raw.githubusercontent.com/torvalds/linux/v5.4/kernel/cgroup/cgroup.c)
+rejects populated groups and live child groups before removal, then prevents
+migration into the dying group. That motivates the deletion outcome; the vendor
+kernel contract and implementation remain to be qualified. Upstream
+[kernfs reads and polling](https://raw.githubusercontent.com/torvalds/linux/v5.4/fs/kernfs/file.c)
+can report ENODEV after deactivation, and ordinary changes can also signal poll
+error/priority. Neither event alone proves emptiness. A retained descriptor may
+aid measurement but is not a substitute for the full recovery predicate.
+
+Next source work implements lease/context validation and typed group observations
+with real-filesystem refusal tests. A narrowly scoped fake-group check must then
+verify the supported kernel rejects removal while populated and records the
+qualified deletion transition. Shutdown cancellation remains a separate open
+requirement; none of these checks permits a real stock takeover by itself.
 
 Then implement/review the actual lease, helper, heartbeat and installed handoff.
 Qualify bootstrap/resource relocation with an observation-only resident candidate
