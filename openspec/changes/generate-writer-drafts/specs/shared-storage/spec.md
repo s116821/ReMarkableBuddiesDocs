@@ -6,9 +6,11 @@ stable record/revision/operation/actor IDs, explicit parents, payload kind and
 content-hash references. Domain adapters SHALL remain separate for conversation,
 source, export association, subject memory and handwriting; subject memory SHALL
 NOT be required to enable Writer or another domain. Format-one envelopes SHALL
-admit domain version 1 across existing namespaces and version 2 only for export
-associations and normalized-text Source records, with the same restriction in the
-offline JSON contract. The Ledger SHALL validate the corresponding payload shape.
+admit domain version 1 across existing namespaces and version 2 only for current
+conversation intent/settlement records, export-association attempts and
+normalized-text Source records, with the same restriction in the offline JSON
+contract. Domain adapters SHALL validate their corresponding namespace/version/
+payload shape without weakening current conversation or export admission.
 Unknown versions SHALL be preserved or refused without being silently overwritten
 or republished.
 Source: REM-36 outcome/coordination; design section 2; scoped prepared-note export and normalized-text Writer admission.
@@ -30,5 +32,9 @@ Source: REM-36 outcome/coordination; design section 2; scoped prepared-note expo
 - **THEN** the supported export envelope is admitted, the domain adapter refuses mismatched payloads, and envelope/store format remains 1.
 
 #### Scenario: Scoped text source upgrade
-- **WHEN** a normalized-text Source uses domain 2, a legacy image/capture claims Source2, a new text source claims Source1, or another unsupported namespace uses version 2
+- **WHEN** a normalized-text Source uses domain 2, a legacy image/capture claims Source2, a new text source claims Source1, or subject-memory/handwriting claims unsupported version 2
 - **THEN** only the supported text-source schema/shape is interpreted, all mismatches refuse, and existing Source1 image/capture records retain their original serialization.
+
+#### Scenario: Current conversation and export schemas survive composition
+- **WHEN** current Conversation2 intent/settlement and Export2 attempt records are reopened alongside Source2 normalized text, or record kinds are cross-labeled into another namespace/version
+- **THEN** each valid existing record retains its own admission, bytes and receipt fingerprints, supported text records remain distinct, and wrong-schema or wrong-namespace shapes refuse without rewriting history or granting native authority.

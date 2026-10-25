@@ -27,8 +27,9 @@ needed. Validate content before model dispatch and after reopen. Do not pretend 
 is retained original bytes, a screenshot or a native observation. No synthetic
 capture facts or extra identity registry.
 
-Source-domain2 is explicitly admitted alongside existing ExportAssociation2;
-other namespaces remain1, outer format stays1. Ledger schema/payload matching
+Source-domain2 is explicitly admitted alongside existing ExportAssociation2 and
+current-main Conversation2 intent/settlement records; subject-memory and
+handwriting remain1, outer format stays1. Ledger schema/payload matching
 rejects old-shaped Source2 and new-shaped Source1. Existing source/turn shapes and
 ordinary Reader context behavior stay unchanged. Context carries the new linked
 source facts without promoting Generated drafts into completed visible turns.
@@ -115,6 +116,73 @@ No Mem calls or native startup may occur. Run representative authorized live
 model quality examples separately; do not substitute fake fixture responses for
 model quality or native qualification. Central checks and independent source
 review precede coordinated paired delivery, sync and archive of this scope only.
+
+## October 25 current-main composition and live qualification
+
+The accepted R3 pair e525b766 / bd4e7fe and its review/build evidence remain
+historical, not qualification of a composed successor. Compose the existing
+branches with actual Source49fbf8a and Docs63c1720 using normal merge history,
+preserving all unrelated current-main entries and the SDK/Manager owners. Source
+is currently conflicting; Docs composition is clean. Do not create another PR,
+worktree or component-local spec tree, and do not rewrite the old accepted refs.
+
+Main now admits Conversation2 intent/settlement and Export2 attempt records. The
+old Writer decoder's global version2 iff(text-or-export) condition is obsolete:
+it would reject valid newer Conversation2 records. Composition must preserve the
+current encoder, admission/settlement and receipt fingerprint rules, adding only
+Source2 NormalizedText admission. Validate version/namespace/record-kind together:
+Source2 only for normalized text, Export2 for its existing attempt shape, and
+Conversation2 only for its existing intent/settlement shapes. Source1 images,
+SDK/development/legacy captures, original receipts and all unsupported shapes
+retain their current validation and original bytes. No payload is downgraded,
+reinterpreted as another domain or upgraded into native authority. The offline
+JSON contract must admit the same namespace/version union as the runtime.
+
+Keep current-main source evidence, resolution, source/memory/research receiving,
+cache/normalizers, credentials/settings, selected/runtime and native behavior
+intact. Add the Writer Record/Context/CLI cases to current exhaustive matches;
+do not replace newer modules with old branch copies or enable installed Writer.
+Re-run affected actual Store/Ledger/Writer/command and current Conversation2
+regressions plus current-head strict/default/hosted checks. Old13 Writer tests
+and old CI are retained at their own source, never transferred to a new head.
+
+The current project resume and required model-quality scope, together with
+REM-28's local LLM development setup, cover this bounded qualification. This is
+an authorization interpretation of the current scope, not an invented
+Writer-specific human quote or permission inferred solely from earlier calls.
+The old missing-configuration observation remains historical. The known approved
+access-restricted current-directory dotenv source can be loaded inside the
+private launcher without copying a key to either checkout or a new credential
+store. No new credential question, provider/account choice or saved setting is
+needed. Credentials and configured values must not be printed.
+
+Preserve the original private two-page invented-text plan: cart mass2kg,
+acceleration3m/s^2, force6N, initial velocity0m/s; Dana checks units, Lee checks the
+derivation, no assigned due date, and unconfirmed scratch x=9 is omitted. Generate
+once and refine that draft once in the same owned conversation; independently
+inspect equations/units, source/page attribution, action ordering and absence of
+invented deadline/scratch. PrepareExport may produce a local artifact, never send
+a note. A generated status is not semantic quality or native completion.
+
+The updated task-private launcher must be reviewed before execution and pinned
+to the composed clean Source head. Its old source/plan/build are preserved. It
+must require explicit execution, verify that cwd is exactly the approved setup
+directory, load only cwd `.env` without parent traversal, and resolve an in-memory
+configuration selecting the same OpenAI endpoint and default gpt-5.6-terra.
+Configured provider/model mismatch refuses before dispatch instead of silently
+retargeting. Original configuration/Store/sync paths are not opened or changed;
+use a newly owned private Store. Enforce at most two invocations before dispatch,
+retain the existing90second per-call timeout,24KiB Writer output and bounded
+transport behavior, and use a bounded outer execution deadline. Preserve raw
+invented-text returns, sanitized reports and incomplete/failure state without
+automatic retry, easier fixture substitution or semantic relabeling. No tablet,
+Mem export, new credential store, provider purchase or overage is admitted.
+
+Independent precode/composition/launcher review precedes the repair and live
+calls; freeze the composed pair and launcher, qualify that exact Source and
+inspect actual quality before final sync/archive/review. Writer delivery follows
+the preceding notebook-image publication closeout. Full extraction/drawings,
+large-notebook reduction, installed/native behavior and whole Writer remain open.
 
 Source basis: current Linear requirements/comments and directly inspected local
 source/specs; private chronology has no public transcript link. Decisions above

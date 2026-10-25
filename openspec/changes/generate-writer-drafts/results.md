@@ -104,7 +104,7 @@ remain retained. Final independent review must confirm this repair.
 
 ## Unperformed and pending checks
 
-No live provider credential/configuration was available in this process or the
+At the original R3 checkpoint, no live provider credential/configuration was available in this process or the
 inspected current-project checkout locations. Only presence was checked; no key
 values read, unrelated-project search or live attempt occurred. Representative
 invented-text generation/refinement through the actual live provider remains a
@@ -118,3 +118,33 @@ creation/rendering, installed module/gesture integration, full physical notebook
 coverage or whole Writer/MVP acceptance is claimed. Source basis: actual current
 source, retained local command/HTTP/Store outputs and central contracts. Private
 raw logs/review conversation have no public transcript link.
+
+## October 25 reassessment, not successor qualification
+
+Current main is Source49fbf8a / Docs63c1720. The old accepted Source e525b766 and
+Docs bd4e7fe, R3 review5561793519, private two-call plan/launcher/build and all
+earlier failures/results remain preserved. Docs has been composed with current
+main without changing the six active Writer artifacts during that merge. Source
+composition, renewed review and current-head checks are still pending; no old CI
+or local result is credited to the future successor.
+
+Current REM-23 and all16 accessible comments, REM-28 description/sole setup
+comment and the actual private harness were read. The approved protected
+current-directory environment source is available, verified by presence/access
+metadata without values or unrelated search. Root confirmed current-roadmap local
+quality authorization; this is a scope interpretation, not a fabricated direct
+Writer-specific quote or authorization based only on an earlier API call.
+
+The old harness requires a Config JSON and cannot directly consume that dotenv
+setup. Its reviewed successor will load only the approved cwd `.env`, choose the
+same OpenAI/default model in memory, cap before the third invocation and retain
+bounded exact invented inputs/results in a new private Store. No saved settings,
+credential copies/store, Mem send or tablet effect is selected. The original
+invented two-page generation/refinement expectations are unchanged. No Writer
+live call has occurred; semantic quality remains an unperformed required gate.
+
+Current-main Conversation2 intent/settlement support must survive the Source2
+text addition. The old global schema2 text/export condition must not be reused
+unchanged. The updated design/delta and launcher require independent review
+before repair or dispatch. New quality evidence and final lifecycle/delivery
+remain pending; full Writer/MVP is unfinished.

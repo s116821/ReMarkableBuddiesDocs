@@ -17,5 +17,12 @@
 - [ ] Publish linked implementation/Docs PRs, exact revision/evidence comments and inspect hosted/bot feedback.
 - [ ] Sync implemented canonical deltas, archive only this completed scope and coordinate squash delivery.
 
+## October 25 composition prerequisites
+- [x] Reassess current REM-23 chronology and REM-28/current-project authorization/configuration; preserve the old accepted pair, private plan/launcher/build and all original evidence without treating earlier calls as blanket authorization.
+- [x] Compose only the existing Docs branch with current main, preserving the active six-artifact change and unrelated canonical/archive files.
+- [ ] Independently review the updated central composition contract and task-private launcher before repairing Source or making the two live calls.
+- [ ] Compose the existing Source branch with current main, preserving Conversation2/Export2 and adding only namespace/shape-correct Source2 text support; cover cross-domain rejection, legacy bytes/fingerprints and current-main Conversation2 regressions.
+- [ ] Freeze the composed pair and reviewed launcher/source pin; complete current-head local/hosted checks before bounded generation/refinement quality, retaining failures without retry or substitution.
+
 Large-notebook chunk/reduction, drawings/OCR, handwritten guidance recognition,
 native rendering/triggers and full Writer/MVP acceptance remain open.
