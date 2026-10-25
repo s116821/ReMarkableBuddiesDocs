@@ -1,7 +1,7 @@
 # Resident stock-service ownership and recovery
 
-This is the next integration design, not an installed capability. The runtime
-owner exists; stock-service takeover, independent recovery and Reader wiring do
+This is the integration design, not an installed capability. The runtime owner,
+lease/context support and read-only service sampler exist; stock-service takeover, independent recovery and Reader wiring do
 not yet exist in the normal application. Keep those tasks open until verified.
 
 ## Refreshed platform evidence
@@ -120,7 +120,7 @@ The five live fake-unit cases in
 all found the actor group removed before recovery. Keep the after-exit helper;
 do not introduce a persistent monitor merely to wait for a final event read.
 
-The proposed lease records the actual populated service cgroup device/inode,
+The lease records the actual populated service cgroup device/inode,
 validated cgroup2 mount identity and path, mount/cgroup namespaces, boot, Buddy
 invocation and process incarnation, and actual Buddy parent membership. Child
 membership, when available, is additional corroboration rather than a recovery
@@ -129,11 +129,33 @@ or before recording the new child. Qualified fork inheritance and no migration
 must cover that entire spawn/record crash window through the original parent
 group. Do not require a post-spawn receipt to restore stock or introduce another
 native effect journal. Missing parent membership still refuses activation.
-Recovery must bracket its lookup with an inactive/failed Buddy, MainPID=0, no
-pending activation/job and no new invocation. A consumed activation lease stays
+Recovery must bracket its lookup with the admitted terminal Buddy state, MainPID=0,
+no pending activation/job and the incarnation checks below. A consumed activation lease stays
 consumed while repeated stock restoration can finish idempotently. The helper's
 Conflicts/After relation prevents overlapping ordinary Buddy startup during its
 restoration; startup also checks the same lease/latch before any native launch.
+
+PID1 retained the actor's invocation/process metadata for the first live helper
+call, then cleared it before a subsequent call (see the fixture result). Requiring
+the cached original invocation on every retry would strand otherwise safe stock
+recovery. Distinguish two explicit branches; never interpret missing fields as zero:
+
+- Retained metadata must match the original lease's Buddy invocation and process
+  incarnation under the admitted inactive/failed terminal state.
+- Fully cleared metadata requires an approved **loaded** unit with the expected
+  policy, inactive/dead, MainPID=0, no job, an explicitly empty InvocationID,
+  ExecMainPID=0 and ExecMainStartTimestampMonotonic=0. It additionally requires the
+  unchanged original private boot lease and qualified `OriginalAbsent`; merely
+  `EmptyOriginal` is insufficient. Every installed native-entry path must enforce
+  the same boot-scoped non-resettable activation latch, without alternate-directory
+  bypass. This branch proves prior group deletion and prevention of another native
+  launch; it does not claim PID1 still remembers the original invocation.
+
+Bracket group observation with both service samples. Refuse partial clearing,
+missing/error fields, not-found/masked/unapproved policy, or any changed nonempty
+invocation. Preserve a regression where the helper fails before writing any
+terminal proof marker and PID1 has fully cleared metadata by the next attempt.
+No persistent monitor or second native-effect journal is needed for this retry.
 
 Allow two separately typed outcomes only: the unchanged original group reports
 recursive `populated 0`, or lookup of its exact validated location returns ENOENT
@@ -158,17 +180,119 @@ can report ENODEV after deactivation, and ordinary changes can also signal poll
 error/priority. Neither event alone proves emptiness. A retained descriptor may
 aid measurement but is not a substitute for the full recovery predicate.
 
-Next source work implements lease/context validation and typed group observations
-with real-filesystem refusal tests. A narrowly scoped fake-group check must then
-verify the supported kernel rejects removal while populated and records the
-qualified deletion transition. Shutdown cancellation remains a separate open
+The support implementation and real-filesystem refusal tests are recorded in
+[resident-supervisor-integration-result.md](resident-supervisor-integration-result.md).
+The fresh isolated fake-group check below demonstrates direct populated-group
+removal refusal and subsequent PID1 deletion; it does not qualify child-only nested
+groups or privileged migration. Shutdown cancellation remains a separate open
 requirement; none of these checks permits a real stock takeover by itself.
 
-Then implement/review the actual lease, helper, heartbeat and installed handoff.
+The isolated `populated-delete` fixture captures the fake actor and its
+sleeping child's actual unified membership, requires both to belong to the exact
+nonce-owned actor group, and observes that group's identity and `populated 1`.
+From the fake actor it attempts to remove only that exact group, requires failure
+with the C-locale busy diagnostic, then rechecks unchanged identity and population.
+It then exits normally and uses the existing ordered recovery/cleanup assertions
+to observe PID1's later removal. All original independent unit bounds remain.
+This is a narrow vendor-kernel behavior check; it does not establish safety under
+privileged task migration or qualify native startup/stock takeover by itself.
+
+### Initial implementation boundary
+
+Linux `resident_supervisor` supplies support for the forthcoming installed
+helper. It captures the actual caller process incarnation and cgroup membership,
+boot and namespace identities, exact cgroup2 mount record, mount/system.slice
+identities and original service-group identity. All group path components are
+opened relative to directory descriptors with no symlink following. Bound proc
+and events reads, reject duplicate/malformed fields, and bracket observations
+with unchanged context. Group observations are typed as populated, unchanged
+empty, or original location absent. Absence is not itself execution authority;
+the qualified platform and actual service-state checks remain mandatory at the
+helper integration boundary.
+
+Publish a versioned immutable service-ownership record in an existing private
+boot-scoped directory using exclusive creation, file synchronization and directory
+synchronization. Record the source profile/artifact hashes and the original stock
+service baseline alongside the group baseline and activation identity. The
+module never overwrites or clears malformed, partial, stale or consumed state at
+the supplied lease path. Installed startup must enforce one fixed common path
+whose occupied record prevents another automatic activation. Recovery can reopen the
+same record repeatedly, without consuming a one-shot right to restore stock.
+No generic state journal or fabricated native child receipt is introduced.
+
+The record retains Buddy's exact nonzero systemd
+`ExecMainStartTimestampMonotonic` in microseconds separately from the parent's
+`/proc` start ticks. Admission must verify it in the same service bracket as
+MainPID and InvocationID; recovery compares the saved systemd value without
+converting between representations. Publication rechecks current caller
+incarnation, exact unified group membership and group population before and
+after synchronization. A late mismatch returns failure and leaves the occupied
+lease untouched; it cannot authorize stock stop. These checks detect stale
+capture and do not remove the qualified no-migration assumption after return.
+
+The ownership module does not activate the resident child or install service
+units; the service submodule below adds bounded read-only systemctl observations.
+Its tests use actual Linux files and malformed/replaced
+path cases; fake filesystem fixtures cannot qualify kernel cgroups. The next
+integration supplies bounded stock commands, verified installed recovery policy,
+stock verification and the actual first-gesture caller before native activation.
+
+Then implement/review the fixed installed lease/latch caller, helper, heartbeat and handoff.
 Qualify bootstrap/resource relocation with an observation-only resident candidate
 and independent recovery before enabling effects. Subsequent native acceptance
 must still cover reusable capacity, actual Reader state, write/reopen/persistence,
 current/adjacent reuse, middle/end insertion, cancellation and preservation.
+
+### Service observation implementation
+
+The implemented read-only service boundary samples PID1 through a fixed absolute `systemctl`
+executable and explicit properties for one validated unit. Clear inherited
+environment, select the system manager and C locale, disable pager/password
+interaction, and pass arguments directly without a shell, with `--` before the
+unit so its name cannot become a command option. Keep stdout/stderr
+nonblocking and individually bounded to 16 KiB. Clamp each observation to the
+remaining operation deadline and at most three seconds; failed/expired commands
+must kill and attempt to reap only their owned child under a separate two-second
+cleanup bound. Never wait on a pipe-reader thread after the deadline. Nonzero
+exit, stderr, malformed UTF-8, missing/duplicate/unknown fields and overflow refuse.
+Success requires zero exit and both pipe EOFs before the original deadline;
+every error after spawn enters the same bounded cleanup path. An unreaped child
+is explicitly reported. Keep this runner separate from the older maintenance
+observer, whose unconditional wait/join cannot satisfy this bound.
+
+Parse explicit unit identity/load/state, main/control/last-main process IDs,
+InvocationID, exact start timestamp, pending Job and ControlGroup. Preserve the
+explicit selected service-policy properties for comparison with the supported
+installed profile. Both service samples surrounding group observation must be
+independently valid for the original lease and unchanged policy; a transition
+between retained and cleared identity inside that bracket refuses that attempt.
+Return the exact bracketed group outcome alongside the terminal identity and
+policy snapshot, so the helper can distinguish unchanged-empty from qualified
+deletion without performing an unbracketed replacement read. Recheck the operation
+deadline after the final lease read and bracket validation before returning success.
+The retained branch allows only inactive/dead or failed/failed with no main or
+control PID and no job. The cleared branch is stricter as specified above.
+
+These observations alone must not expose a stock-start operation or assert that
+the installed profile, common activation latch or vendor deletion contract is
+qualified. The actual helper must combine those independently established facts,
+its own service context and the original current lease before a bounded stock
+start, then verify the resulting actual stock process and policy. Regression
+fixtures must exercise real owned command children, timeout/output/error cleanup,
+both terminal branches, partial clearing, changed invocation/policy and state
+changes across the bracket. This is service-integration coverage; no synthetic
+Reader or native-write authority follows from it.
+
+A fresh read-only target sample at 22:39:36 UTC confirmed all 26 selected
+properties are emitted using this exact option/operand ordering. Both existing
+real service PIDs/invocations and the boot identity remained as recorded above.
+The installed Buddy still has Restart=on-failure, no recovery handlers and
+WatchdogUSec=0, so it does not satisfy the proposed recovery policy. Stock reports
+DefaultDependencies=no and explicit Conflicts=shutdown.target; preserve its
+vendor policy. The new helper must retain its own normal shutdown dependencies.
+This read verifies the property contract, not installation or recovery behavior.
+The exact script, stdout/stderr and receipt are retained in the local evidence
+directory `supervisor-properties-ca50e981172d4cd6a9c1169ab354934e`.
 
 Source basis: current application/runtime source and the directly captured live
 platform inventory. The lifecycle above is a proposed integration design.

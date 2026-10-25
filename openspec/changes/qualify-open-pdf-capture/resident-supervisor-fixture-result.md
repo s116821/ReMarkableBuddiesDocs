@@ -71,5 +71,65 @@ Reader reacquisition, then qualify native bootstrap and full document workflows.
 The fixture's marker files are not the production durable lease or native effect
 journal. No capability promotion, merge or archive is justified by this result.
 
+## Service-incarnation retention on a later retry
+
+A separate fresh clean case at 22:21:51 UTC answered whether PID1 retains the
+original actor incarnation across distinct recovery calls. The only script change
+adds read-only samples of InvocationID, ExecMainPID and
+ExecMainStartTimestampMonotonic before fake-stock stop and in each helper call.
+Exact script SHA256:
+`b2d256b0844e09da1f0ecc850f1f4d8f78231d998d0043199bdae31c61cbd3d5`.
+Nonce: `b30eb9f512ad483f8404bf2cdacef94e`. Archive SHA256:
+`d900597b170fe7920f5af8a08d201b170b64f3fabf11e4b622d2ef3f6c21d6cd`.
+
+| Sample | InvocationID | ExecMainPID | ExecMainStartTimestampMonotonic |
+| --- | --- | --- | --- |
+| Before fake-stock stop | `fe85417f07d445a8ad7986c92e7ee0b4` | 31750 | 1493716388120 |
+| First recovery | `fe85417f07d445a8ad7986c92e7ee0b4` | 31750 | 1493716388120 |
+| Second recovery | explicitly empty | 0 | 0 |
+
+The actor was inactive/dead with successful result. Fake stock started exactly
+twice and there were two distinct recovery invocations. Execution, archival and
+the separately verified exact-file cleanup all returned zero. Actual stock/Buddy
+before/after snapshots remained identical. Original archives remain local under
+the nonce-specific evidence directory; earlier five-case evidence is unchanged.
+
+This finding requires the explicit cleared-metadata branch in the integration
+design. Cleared metadata alone is not proof of no native process: the original
+lease, qualified deleted group, approved loaded terminal unit, bracketed state and
+common activation latch remain required. The new branch and the regression for
+failure before any terminal proof marker still require implementation. This run
+did not exercise actual production recovery or native activation.
+
+## Populated-group deletion refusal
+
+One fresh `populated-delete` case ran at 22:47:16 UTC with nonce
+`2af5cf4268e642ad83cf9a9324f73893`. Frozen script SHA256:
+`83277f48f88baeb5c57a9f4bc8f967f7f1d0e5465dba89a1f4431517e87bfd75`.
+Archive SHA256:
+`3972c12ae3a0461ba2afe60e3955468e32e82e5064112b40133e12e231767f82`.
+
+The actual actor shell and sleeping child both belonged to the exact owned actor
+group in the unified and named-systemd hierarchies. A single nonrecursive `rmdir`
+against that exact unified group returned 1 with the C-locale diagnostic
+`Device or resource busy`. Group identity was `21:80421` both before and after;
+`cgroup.events` still reported `populated 1` afterward. The actor then exited
+successfully. Both subsequent recovery calls observed the group absent after
+PID1 shutdown. Fake stock started exactly twice, with two recovery invocations.
+
+Execution and archival returned zero; before/after real-service snapshots were
+byte-identical. The verified archive contains 31 regular files. After verification,
+a separate bounded cleanup checked owned unit definitions absent and units not
+loaded, removed only those exact archived files and the empty owned directory,
+and returned zero. Local source, receipts, archive, verification summary and
+cleanup output remain preserved in the nonce-specific evidence directory.
+
+This demonstrates refusal to remove this directly populated group and subsequent
+PID1 removal on the observed vendor kernel. The actor itself was a member, so it
+does not independently establish child-only nested-group behavior, resistance to
+privileged migration or production native recovery. The helper still needs its
+installed policy/latch checks and actual stock restoration integration; no native
+capability is promoted by this fixture.
+
 Source basis: frozen fixture source, direct target PID1/process/filesystem output,
 retained archives, independent source review and upstream unit verification.
