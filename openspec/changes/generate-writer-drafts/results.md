@@ -124,7 +124,8 @@ raw logs/review conversation have no public transcript link.
 Current main is Source49fbf8a / Docs63c1720. The old accepted Source e525b766 and
 Docs bd4e7fe, R3 review5561793519, private two-call plan/launcher/build and all
 earlier failures/results remain preserved. Docs has been composed with current
-main without changing the six active Writer artifacts during that merge. Source
+main without changing the seven active Writer files (six precode artifacts plus
+results) during that merge. Source
 composition, renewed review and current-head checks are still pending; no old CI
 or local result is credited to the future successor.
 
