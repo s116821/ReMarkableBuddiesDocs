@@ -24,15 +24,19 @@ unknown-schema or inconsistent records refuse access rather than resetting data.
 The journal is bounded to 1,024 attempts and 8 MiB; reaching either limit refuses
 new reservations without evicting original attempts.
 
-Reject an already reserved unresolved/observed conversation or any reused operation,
+For insertion, reject an already reserved unresolved/observed conversation or any reused operation,
 including an identical request, a changed frame, a fresh operation or a replacement target. A reservation
 survives caller failure, transport retirement, process restart and Store generation
 changes. There is no automatic erase/retry API. A later reply is retained only as
 historical correspondence; insertion observation is not durable native persistence,
 current target selection or binding/rendering authority. Failure to retain a reply
-leaves the original reservation unresolved. Only a durably recorded known refusal
+leaves the reservation unresolved when no valid outcome was retained. The actual
+stored correlated reply can recover historical outcome after a reported publication
+error; it never reuses the original operation. The selection extension in
+resident-selection-integration.md defines allowed fresh same-target operations and
+requires complete-journal synchronization before any later effect. Only a durably recorded known refusal
 before native mutation (or a client-proven failure before request admission) may
-permit a new caller-selected operation for the conversation; the original operation
+permit a new insertion operation for the conversation; the original operation
 stays consumed, and the wrapper never performs an automatic retry. Read-only reconciliation uses that
 same original source/target; target presence alone does not establish attribution.
 

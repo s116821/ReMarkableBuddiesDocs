@@ -19,6 +19,32 @@ The resident SDK consumer SHALL durably reserve the exact original insertion fra
 - **WHEN** the consumer moves from v1 to v2 with prior insertion attempts
 - **THEN** original canonical frame/digest fields, consumed operations and unresolved reservations survive unchanged; responses require the original digest and matching revision, and live requests use v2 without replaying historical effects
 
+### Requirement: Durable resident target-selection attempts
+Selection SHALL reserve its exact original effect frame/digest before pending
+admission or bytes, using the same Store-owned bounded journal and consumed-operation
+namespace as insertion. Unknown outcomes SHALL block later effects for that
+conversation. Observed insertion/selection SHALL allow only fresh selection of the
+same document/target, not another insertion or different-target fallback. A known
+refusal SHALL NOT erase an earlier target restriction. Historical selection SHALL
+remain separate from binding, capture, writing and native settlement authority.
+Detailed transition and schema obligations are in resident-selection-integration.md.
+
+#### Scenario: Selection response is lost
+- **WHEN** a selection request loses its response after admission
+- **THEN** its original operation/source/target remains reserved, later insertion and selection refuse, and only typed read-only reconciliation is available without clearing the reservation
+
+#### Scenario: Created or reused Buddy needs selection
+- **WHEN** an earlier insertion or selection was observed for a conversation
+- **THEN** a new operation may select only that same document/target under fresh expected facts; a refusal of that new selection does not remove the earlier restriction
+
+#### Scenario: Selection journal is upgraded
+- **WHEN** a successful write upgrades the legacy insertion-only journal to format 2
+- **THEN** original frame/digest/outcome fields and consumed operation IDs are retained, and readers that do not support the new format refuse it
+
+#### Scenario: Outcome publication reports failure after storing a valid reply
+- **WHEN** a publication error is reported and the journal is later reopened
+- **THEN** the actual validated stored outcome governs fresh-operation admission: an observed result restricts selection to its original document/target, Reserved or Indeterminate blocks both effects, and every later effect requires a successful synchronized whole-journal reservation write before bytes; the original operation is never replayed
+
 ### Requirement: Stored association input remains historical in SDK acquisition decisions
 The existing SDK acquisition decision seam SHALL consume the real historical Ledger through a read-only lookup under historical-binding-projection-contract.md. A saved match SHALL map only to historical evidence, and missing/failed/conflicted/tombstoned stored data SHALL remain unresolved rather than the model's affirmative Missing or RelevantModelAssociation input. Existing complete Synthetic observation/receipt guards SHALL precede lookup. This increment SHALL leave installed Reader behavior unchanged and grant no reuse, insertion, adoption, binding or rendering permission.
 
