@@ -14,8 +14,18 @@ fixtures. Ten Windows journal tests passed before the final Linux-only fixture
 addition; final-source Windows strict all-target/all-feature Clippy passes after
 correcting a conditional import. The Linux additions check original-fact read-only
 reconciliation over strict v2 with an unchanged journal, replacement refusal and
-malformed history refusing before a socket connection. Linux execution and full
-current-source CI are pending; prior consumer results below remain historical.
+malformed history refusing before a socket connection.
+
+On October 25, the retained Linux run was confirmed complete: **546 passed,
+3 ignored**, including all **15 resident journal/socket tests**. Its container
+could not embed Git provenance, so it remains local development evidence.
+The exact source commit separately passed all required hosted checks, application
+build and integration in [Buddy CI 40144048485](https://github.com/s116821/ReMarkableBuddies/actions/runs/40144048485).
+The pinned SDK passed [CI 40143522893](https://github.com/s116821/ReMarkableOpenSDK/actions/runs/40143522893),
+and Docs `a89d53d5db3490aa1f385ba239f3080ffc32564b` passed
+[CI 40144063933](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40144063933).
+Release jobs are intentionally skipped for these draft PRs. The compatibility
+checkpoint is verified; earlier results below retain their original scope.
 
 No installed Reader selection, journal reset, runtime activation or native
 qualification is included. Historical capture `SDK_SOURCE` remains

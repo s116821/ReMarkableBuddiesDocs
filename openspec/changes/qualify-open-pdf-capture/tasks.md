@@ -20,7 +20,7 @@ Buddy acquisition/reuse/adoption/binding and Manager work are separate downstrea
 
 ## 1. Evidence and design
 - [x] Integrate the authenticated resident SDK client and Store-owned durable insertion journal under resident-client-integration.md; verify duplicate/changed attempt refusal, restart/loss/reconciliation and owned socket interoperability without promoting historical facts to native binding or rendering authority.
-- [ ] Preserve original v1 journal bytes/digests and reservations during the v2 SDK upgrade, with historical revision/correlation checks and frozen-vector restart/refusal coverage.
+- [x] Preserve original v1 journal bytes/digests and reservations during the v2 SDK upgrade, with historical revision/correlation checks and frozen-vector restart/refusal coverage.
 - [x] Independently review historical-binding-projection-contract.md and its atomic Store/Ledger read plus conservative SDK lookup delta against the delivered historical library; preserve all protected selected-admission WIP.
 - [x] Implement the bounded atomic historical association query and Ledger-backed lookup with no new Store/binding writes, native effects or positive relevance/absence promotion.
 - [x] Verify actual Store fixtures, snapshot completeness/revision correspondence, conflict/tombstone/malformed refusals and actual current/neighbor model decisions; record the independently accepted scoped checks and final strict-quality result in historical-binding-projection-result.md.
