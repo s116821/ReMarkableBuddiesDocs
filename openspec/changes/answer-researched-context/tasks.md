@@ -1,8 +1,8 @@
 ## 1. Scope and implementation
 - [x] 1.1 Establish concrete current model-consumption gap and ownership from current code, requirements and held PR inventory.
-- [ ] 1.2 Obtain exact independent precode acceptance before source implementation.
-- [ ] 1.3 Implement the explicitly invoked receiving answer boundary, strict captured citations, complete budgets and engine-content lifecycle without held API/runtime edits.
-- [ ] 1.4 Add actual existing-engine HTTP/regression controls and a maintained explicit development caller.
+- [x] 1.2 Obtain exact independent precode acceptance before source implementation (review5644495530 at5d42a28).
+- [x] 1.3 Implement the explicitly invoked receiving answer boundary, strict captured citations, complete budgets and engine-content lifecycle without held API/runtime edits.
+- [x] 1.4 Add actual existing-engine HTTP/regression controls and a maintained explicit development caller (eleven focused controls and ten subprocess/HTTP caller cases; exact frozen revision qualification follows).
 
 ## 2. Qualification and delivery
 - [ ] 2.1 Qualify exact Source/Docs through affected/default checks, Clippy/fmt/guidance/current CI and actual example controls, retaining failures.

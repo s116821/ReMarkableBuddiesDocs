@@ -109,6 +109,12 @@ which facts the model used. Instructions require citing relied-on evidence and
 identifying relevant disagreements, but those semantic properties require actual
 qualification and remain unverified model assertions.
 
+Concrete reserved scanning begins at `[` followed by uppercase S/M/R and then a
+digit or sign. This rejects `[S0]`, `[S01]`, `[R-1]`, `[S1 x]` and unterminated
+`[S1`, while preserving ordinary `[Source]`, `[R, S]`, `[S x]`, `[S]` and interval
+brackets. Every listed ID is validated independently, regardless of its marker
+spelling. This distinguishes malformed reserved citations from ordinary math.
+
 Resolve IDs locally to bounded metadata from the captured context only:
 - Source: complete original IndexKey/document identity plus unit/page/section and
   half-open normalized UTF8 range; label declared historical source text, not
