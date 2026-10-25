@@ -31,3 +31,11 @@ normative keyword was not on its first description line. The wording was
 corrected without changing the policy; the original diagnostic is retained.
 Final local validation passes87/0 and guidance/provenance25/126. No Source
 implementation has begun; complete precode review remains required.
+
+Independent precode review requested two additional concrete protections before
+acceptance: post-admission checks use that transaction's exact new references,
+and observed zero write polls stay distinct from a successfully persisted
+no-send state. Design/tasks/scenarios now cover own-revision self-invalidation,
+intervening edits and root deletion/conflict during discovery with failed
+no-send recording. These are integration requirements, not defects attributed
+to the delivered standalone commands. Source implementation remains unstarted.

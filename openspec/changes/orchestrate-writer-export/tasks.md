@@ -12,7 +12,7 @@
 
 ## 3. Verification and delivery
 - [ ] Execute direct-create/reopen/refine/update plus review-first explicit export through actual production APIs, local HTTP model/Mem adapters and owned Store.
-- [ ] Execute replay/lost-ack/crash-gap, pre-admission change, pending-discovery cancel/change, first-write-poll uncertainty/reconciliation and cross-entrypoint overlap cases without automatic retry.
+- [ ] Execute replay/lost-ack/crash-gap, exact post-admission reference/self-invalidation, pre-admission change, pending-discovery cancel/change/root-deletion with failed no-send recording, first-write-poll uncertainty/reconciliation and cross-entrypoint overlap cases without automatic retry.
 - [ ] Verify strict input/credentials/bounds/optional-memory behavior, legacy regressions, maintained simulator assertions and exact current-head local/hosted checks.
 - [ ] Complete independent final code/spec/evidence review; distinguish scripted/local transport from model/account/native qualification without replaying the closed two-call test.
 - [ ] Publish coordinated implementation/Docs evidence, inspect feedback, sync canonical deltas and archive only the verified scope in the same paired delivery.

@@ -50,12 +50,18 @@ exact draft/source values and revision references into the same atomic
 publication that admits the export attempt. Fresh producer completion SHALL
 return a private committed snapshot rather than export permission inferred from
 serialized Generated fields. Changed/deleted/conflicting root, draft or source
-SHALL refuse admission. Outgoing content SHALL freeze at successful guarded
+SHALL refuse admission. Checks after admission SHALL use the exact newly
+published root/guard/association references returned by that transaction, never
+pre-admission or refreshed heads. Outgoing content SHALL freeze at successful guarded
 admission and SHALL never be replaced by later reads. Eligibility SHALL be checked
 before first destination polling and after pending discovery before the first
 write poll; pre-write cancellation/change SHALL yield known no-send. After the
 first write poll, cancellation/failure SHALL use the existing truthful uncertainty
 boundary and SHALL NOT claim reversal or authorize retry.
+
+#### Scenario: Admission publishes its own guard revisions
+- **WHEN** guarded admission succeeds without an external change, or a later edit advances one of its returned references
+- **THEN** its exact post-admission references permit the unchanged operation and detect the later edit without self-invalidating or refreshing to bless new heads.
 
 #### Scenario: Selection changes before admission
 - **WHEN** a selected draft/source/root changes after selection but before export preparation
@@ -68,6 +74,10 @@ boundary and SHALL NOT claim reversal or authorize retry.
 #### Scenario: Change during discovery
 - **WHEN** cancellation or selected-state change occurs while destination discovery/readback is pending
 - **THEN** the frozen body is not substituted, no create/update is polled and the result preserves a known no-send/stale distinction.
+
+#### Scenario: No-send recording cannot commit
+- **WHEN** selected-root deletion/conflict during discovery prevents recording the observed zero-write-poll outcome
+- **THEN** the report separates that invocation-local observation from the actual Refused/Storage persistence failure, retains unresolved attempt state and grants no later dispatch authority from the failed recording.
 
 #### Scenario: Write already polled
 - **WHEN** a write future was polled before cancellation, response loss or failure

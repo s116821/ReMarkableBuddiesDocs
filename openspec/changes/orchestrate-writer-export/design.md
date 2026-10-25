@@ -85,6 +85,12 @@ export; no destination future is polled. The ordinary PreparedNote-only export
 API remains unchanged; its new internal guarded variant accepts the typed
 selection/grant and cannot manufacture them from a Generated report.
 
+The atomic admission returns its exact newly published root, draft/source guard
+and association revision references. Subsequent eligibility checks MUST use
+those post-admission references produced by that transaction, never the earlier
+selection revisions and never heads refreshed by a new read. Its own publication
+must neither invalidate the grant nor bless an intervening edit.
+
 The outgoing body is frozen ONLY at successful guarded export admission, using
 the selected committed bytes and digest; later reads never substitute content.
 Dispatch eligibility remains guarded before the first destination poll and
@@ -92,6 +98,13 @@ again after pending discovery/readback before the first create/update poll.
 Cancellation or selected root/draft/source change during that pre-write interval
 records a positively known no-send/stale outcome and performs no write.
 The exporter must not turn a historical/lost-ack admission into another send.
+
+Keep the invocation's observed write-poll count separate from durable outcome
+recording. A selected-root deletion/conflict can prevent `finish_no_send` from
+persisting its transition: report the observed zero write polls AND the actual
+Refused/Storage recording failure, not a successfully stored CanceledNoEffect.
+The existing unresolved attempt remains unresolved; that local observation is
+not durable permission for a later effect, and outer replay remains no-dispatch.
 
 The first actual write-future poll is the irreversible/uncertainty boundary.
 After it, cancellation/failure cannot claim no remote effect or undo; preserve
@@ -148,6 +161,9 @@ Writer-absent/lifecycle documentation in the affected guides.
    state is not silently guarded while old text is sent.
 5. Cancel after model completion/before first destination poll sends nothing;
    cancel or selection change while discovery is pending causes no write.
+   Verify exact post-admission references (no self-invalidation/head refresh),
+   and delete/conflict the selected root during discovery so no-send recording
+   fails: observed zero polls and failed durable recording remain distinct.
 6. Lost export-prepare acknowledgment retains existing no-resend behavior;
    cancel before first write poll is no-send; lost response after write poll is
    uncertain and explicit reconciliation only reads the known ID.
