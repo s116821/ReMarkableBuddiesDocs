@@ -135,6 +135,23 @@ The Linux resident runtime owner SHALL verify supplied approved artifact bytes, 
 - **WHEN** artifacts/admission/process identity fail, the child exits, the deadline expires, or the caller shuts down the owner
 - **THEN** the connection closes, only the owned child is stopped within a bounded recovery attempt, original uncertainty and admission/diagnostic files remain, and no launch, handshake or native effect is automatically retried
 
+### Requirement: Independent bounded stock restoration
+Installed native activation and recovery SHALL share one fixed boot-scoped occupied lease path. A versioned lease SHALL bind a distinct release-approved recovery-profile digest as well as the native profile and adapter identities. The recovery helper SHALL verify its own actual PID1 oneshot process, invocation, executable and populated service group, the unchanged protected installation/profile, and the original terminal Buddy service/group before restoring stock under resident-supervisor-integration.md. Missing, malformed, duplicate, stale or changed evidence SHALL refuse without resetting the activation lease. An unqualified profile SHALL NOT be synthesized from live observations or shipped as approved configuration.
+
+Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=fail per helper attempt, only after zero stock process fields, no job and actual group emptiness are bracketed with unchanged service state. Already active or starting stock SHALL be observed without a new command. Unknown command outcome SHALL retain possible queued-job effects without automatic retry. Success SHALL require stable actual stock process incarnation, executable bytes/argv, group membership/population, loaded policy and no pending job, followed by renewed original Buddy/helper/lease admission within the original deadline. Recovery SHALL NOT kill/restart stock or imply visual readiness or document persistence.
+
+#### Scenario: Conflicting shutdown job arrives
+- **WHEN** a conflicting PID1 stop job arrives after the pre-start sample
+- **THEN** job-mode=fail refuses replacement, the helper retains the consumed lease and reports failure or uncertainty without a second command
+
+#### Scenario: Recovery is invoked again after an uncertain start
+- **WHEN** the original immutable lease remains valid and stock is already active or starting
+- **THEN** the helper verifies or observes stock without another start, and reports success only after the complete stable process/service checks
+
+#### Scenario: Installation or process changes during restoration
+- **WHEN** the bound profile, loaded policy, artifact, original Buddy terminal evidence, helper context, or restored stock identity changes
+- **THEN** restoration does not report success and neither resets the activation latch nor repeats a native effect
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

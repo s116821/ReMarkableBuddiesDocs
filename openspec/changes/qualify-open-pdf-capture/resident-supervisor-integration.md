@@ -1,8 +1,9 @@
 # Resident stock-service ownership and recovery
 
 This is the integration design, not an installed capability. The runtime owner,
-lease/context support and read-only service sampler exist; stock-service takeover, independent recovery and Reader wiring do
-not yet exist in the normal application. Keep those tasks open until verified.
+lease/context support, service sampler and fixed-profile restoration helper exist;
+stock-service takeover, installed independent recovery and Reader wiring do not
+yet exist in the normal application. Keep those tasks open until verified.
 
 ## Refreshed platform evidence
 
@@ -231,11 +232,13 @@ lease untouched; it cannot authorize stock stop. These checks detect stale
 capture and do not remove the qualified no-migration assumption after return.
 
 The ownership module does not activate the resident child or install service
-units; the service submodule below adds bounded read-only systemctl observations.
+units; the service submodule below adds bounded systemctl observations and the
+recovery submodule's fixed stock-start command.
 Its tests use actual Linux files and malformed/replaced
 path cases; fake filesystem fixtures cannot qualify kernel cgroups. The next
-integration supplies bounded stock commands, verified installed recovery policy,
-stock verification and the actual first-gesture caller before native activation.
+recovery implementation supplies bounded stock commands and profile-bound stock
+verification. The actual first-gesture caller, installation and qualified profile
+remain required before native activation.
 
 Then implement/review the fixed installed lease/latch caller, helper, heartbeat and handoff.
 Qualify bootstrap/resource relocation with an observation-only resident candidate
@@ -245,7 +248,7 @@ current/adjacent reuse, middle/end insertion, cancellation and preservation.
 
 ### Service observation implementation
 
-The implemented read-only service boundary samples PID1 through a fixed absolute `systemctl`
+The implemented observation boundary samples PID1 through a fixed absolute `systemctl`
 executable and explicit properties for one validated unit. Clear inherited
 environment, select the system manager and C locale, disable pager/password
 interaction, and pass arguments directly without a shell, with `--` before the
@@ -293,6 +296,44 @@ vendor policy. The new helper must retain its own normal shutdown dependencies.
 This read verifies the property contract, not installation or recovery behavior.
 The exact script, stdout/stderr and receipt are retained in the local evidence
 directory `supervisor-properties-ca50e981172d4cd6a9c1169ab354934e`.
+
+### Installed recovery helper implementation contract
+
+Use one fixed `/run/reader-buddy-resident` activation directory and a separately
+installed, root-owned `resident-recovery.json` beside the application payload.
+The installed entrypoint takes no path, unit, environment or command overrides.
+The recovery profile is a release/Manager artifact approved after platform and
+payload qualification; do not generate approval by copying a live service sample.
+No approved production profile ships until those gates pass. The fixed helper API
+is implemented but no CLI dispatch or production service invokes it yet. Bind its exact bytes
+in a distinct version-2 lease field, preserving the native profile digest separately.
+Version-1 records remain occupied and cannot silently upgrade or authorize takeover.
+
+The helper verifies root-owned immutable artifact bytes and all selected loaded
+policies, including its own ordered oneshot service, against that profile. It
+requires its actual process incarnation and membership to match PID1's running
+ExecStart process. Unit files, executable and drop-ins must match the installed
+profile and the original lease's stock baseline. Recheck the profile and lease
+through the operation; changing installation during recovery is an error.
+
+Once the original Buddy terminal/group bracket is admitted, request only
+`systemctl --system --no-pager --no-ask-password --no-block --job-mode=fail start -- xochitl.service`.
+Issue this at most once per helper invocation, only for inactive/dead or
+failed/failed stock with no job or process. Already active stock is verified
+without a command; an existing start transition is observed without another
+request. Never replace another PID1 job, reset a failed unit, stop/restart stock,
+or kill a stock process. Explicit job-mode=fail closes the conflicting-job race
+between sampling PID1 and submitting the request. A failed or timed-out start command may already have
+queued a job; retain the lease and report uncertainty instead of retrying it.
+
+Success requires stable loaded active/running stock with no pending job/control
+process, the exact executable and argv, unchanged process start ticks, populated
+expected cgroup and actual membership, and matching policy. Observe those facts
+between service snapshots under the same monotonic recovery deadline. Verify
+Buddy remains terminal and the helper still owns its approved context before
+returning. This is service restoration only; visual readiness, document effects
+and persistence need their separate native checks. Fixture seams stay private
+and cannot select arbitrary commands or disable checks in the installed entrypoint.
 
 Source basis: current application/runtime source and the directly captured live
 platform inventory. The lifecycle above is a proposed integration design.
