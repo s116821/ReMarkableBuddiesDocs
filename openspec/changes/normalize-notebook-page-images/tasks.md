@@ -1,5 +1,5 @@
 ## 1. Design admission
-- [ ] 1.1 Validate concrete proposal/design/delta and obtain independent exact precode review before Source implementation.
+- [x] 1.1 Validate concrete proposal/design/delta and obtain independent exact precode review before Source implementation.
 
 ## 2. Implementation and local controls
 - [ ] 2.1 Implement bounded explicit PNG-set OCR, historical identity/profile, strict all-page response, cooperative cancellation and scoped engine cleanup.
