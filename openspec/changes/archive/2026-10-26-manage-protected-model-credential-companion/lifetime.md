@@ -1,4 +1,4 @@
-# Confidential lifetime and uncertainty (proposed consumer policy)
+# Confidential lifetime and uncertainty (accepted consumer policy)
 
 | Material | Maximum owned logical lifetime | Release and safe result |
 | --- | --- | --- |
@@ -24,3 +24,5 @@ Before status starts, require a live original packet and positive remaining orig
 The pending row says: “Outcome unknown. Original check is no longer available; the current saved file cannot prove what this operation did.” Its Check action is disabled. When capacity is exhausted, say: “Eight unresolved operations are retained. Another saved-file change is unavailable in this host session.” Do not offer a retry or automatic restart. Retained/status/cancel are still safe local operations; cancel cannot erase the row or free a slot. Fresh Begin/Save are refused at capacity. Neither a reference/config edit nor a new inspection reconstructs the old original or frees capacity. Separate user-authorized future work may inspect current state, without claiming historical settlement.
 
 A host-process restart discards its in-memory inventory and private packets; there is deliberately no vault or recovery store. A surviving renderer must retain its own safe unknown warning and must not interpret the new empty host inventory as resolution. A full page/process restart may also lose that renderer warning, so this proposal makes no durable cross-restart uncertainty recovery claim. Restart is not presented as a recovery or capacity-clearing workflow. These limits require explicit independent review before implementation.
+
+The exact policy above was accepted at precode review and again with qualified Manager5299a74; final-qualification.md records current acceptance and separate delivery limits. The original proposed wording remains attributable to the accepted precode commit.

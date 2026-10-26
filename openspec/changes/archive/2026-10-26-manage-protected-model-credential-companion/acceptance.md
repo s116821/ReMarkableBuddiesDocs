@@ -1,4 +1,6 @@
-# Meaningful controls (planned, not executed)
+# Original planned meaningful controls
+
+Historical precode checklist, preserved for traceability. Observed disposition and attribution are recorded in final-qualification.md; this table itself is not an execution log.
 
 | Boundary | Required control |
 | --- | --- |

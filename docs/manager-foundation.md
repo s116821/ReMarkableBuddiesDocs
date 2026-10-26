@@ -87,6 +87,15 @@ without overwrite. Explicit failed-job retries reuse retained artifacts for 14
 days; conflicting tags/assets refuse. Outside writers are not covered by an
 atomic immutability guarantee. These portable archives are not tablet installers.
 
+## Protected model credential file
+
+Both companions support deliberate management of the already declared protected
+credential file under the [bounded consumer specification](../openspec/specs/protected-model-credential-companion/spec.md).
+Use the [Manager saved-file guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/model-credential.md)
+for Install/Replace/Remove, exact private input, original-only checks and their
+expiry/capacity limits. Reference editing remains a separate explicit operation;
+saved file presence establishes neither provider authentication nor runtime adoption.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan
