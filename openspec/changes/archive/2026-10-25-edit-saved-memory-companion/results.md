@@ -2,9 +2,11 @@
 
 ## Current reviewed pair and delivery state
 
-Current candidate for [Manager38](https://github.com/s116821/ReMarkableBuddiesManager/pull/38): `bd3baac03c832c5699d7fbcabf1fb1c8588f572e`, tree `a5b3ea6f1b25daa7530ac1fcf57ea15030b4e716`, sole parent reviewed56ded80. Only the two memory UI/controller test files change; every production file remains exact to56ded80, which normally composed preserved0240 and actual mainf8b0aaf. Paired [Docs83](https://github.com/s116821/ReMarkableBuddiesDocs/pull/83) review candidate is `e8b1004795dcd3334a86446784dd197bbdf682d2`, tree `c8cc59cc8488a080ecac526b5dc0c87b8b4b70b9`, following accepted continuation precodeb891827. This Docs successor preserves the prepared status correction and adds the failed-CI investigation below. The previous56ded80/e8b1004 pair remains the independent review baseline; the test successor awaits exact review/publication.
+Current candidate for [Manager38](https://github.com/s116821/ReMarkableBuddiesManager/pull/38): `bd3baac03c832c5699d7fbcabf1fb1c8588f572e`, tree `a5b3ea6f1b25daa7530ac1fcf57ea15030b4e716`, sole parent reviewed56ded80. Only the two memory UI/controller test files change; every production file remains exact to56ded80, which normally composed preserved0240 and actual mainf8b0aaf. Paired [Docs83](https://github.com/s116821/ReMarkableBuddiesDocs/pull/83) reviewed/published baseline is `3c1159392990e6ba09b3eebe63fe8df83dad303a`, tree `13bd90ff720ad629bc7c497db9356f75a289b2bc`. The earlier e8b1004 is the previous Docs baseline, not the current candidate. This final Docs lifecycle successor is pinned by native commit/tree/parent in the review handoff; Manager remains unchanged atbd3baac.
 
-Root independently reviewed this exact source/UI/evidence pair and reported no blocking source finding, with its review posted on Manager38. [Docs40265373840](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/40265373840) passed. [Manager40265376525](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/40265376525) passed Title/Checks/Build but both OS integration jobs FAILED in the repeated memory editor setup. That attempt is closed and remains failed; no unchanged rerun or upload-byte qualification is credited. Root is the sole CI observer and normal publisher. Current full both-OS integration/upload-byte qualification, own canonical sync/archive, final paired lifecycle review and actual delivery/publication remain pending. No additional build, auth retry or release watch follows from this correction.
+Root independently accepted and published the exactbd3baac/3c11593 successor. Current [Manager40267736023](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/40267736023), attempt1 at exactbd3baac, passed PR Title, Checks, Build and both required integrations: Linux121394459215 completed04:22:54Z and Windows121394459275 completed04:27:35Z. Release correctly skipped on the PR. Root's sole observer closed exit0; [Docs40267733117](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/40267733117) passed at exact3c11593. This is hosted current-source/retained qualification independently relayed through the canonical issue, distinct from local dirty-build evidence below. No new source check or duplicate observer was started here.
+
+Prior40265376525 remains a failed historical attempt; neither failed OS job is relabeled. The completed bounded implementation now has its own canonical3requirements/7scenarios synced and15 artifacts archived. Final exact paired lifecycle review/current final Docs CI, normal Docs-first delivery, actual merged trees/main/new tag/provenance remain pending under Root. Whole REM42/MVP remains In Progress; native/provider/runtime/tablet acceptance is not implied.
 
 The historical0240/five-lane/precode sections below retain their original evidence and limits. They describe previous checkpoints, not the current candidate. Current six-lane implementation and local evidence appear under "Current implementation continuation on actual main" below. Original failures/captures remain intact and are not recredited.
 
@@ -72,7 +74,7 @@ Local log receipts are recorded below. They are workspace evidence, not external
 
 ## Remaining gates
 
-Exact continuation precode b891827 is accepted, and current local composition/repair56ded80 has received independent source/UI/evidence review with no blocking source finding. Root owns normal native publication with its existing valid account; no SCRAPPY authentication retry is required. Ordinary current both-OS source/retained CI remains required before own canonical sync/archive, final exact paired review, normal Docs-first delivery and actual merged trees/main/new tag/provenance. Broader backend setup/provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
+Exact continuation precode and currentbd3baac/3c11593 successor are independently accepted; current hosted40267736023 both-OS qualification passed. Own canonical sync/archive is prepared in this final Docs successor. Root owns final exact paired lifecycle review/current Docs CI and normal Docs-first delivery followed by actual merged trees/main/new tag/provenance. No SCRAPPY authentication retry is required. Broader backend setup/provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
 
 Source basis: accepted public contract/review, current source files, original captured corpus and local command/render outputs. Pending outcomes are explicitly unverified; no hardware or runtime inference is promoted to a verified result.
 
@@ -87,7 +89,7 @@ Six actual peers and30 directed pairs will replace the old five-peer/20-pair com
 The original SCRAPPY credential failure is historical. Root's existing valid account/native bundle handoff now owns ordinary publication; no credential change or auth retry is required here. Final six-lane implementation/current both-OS qualification, own canonical lifecycle/final paired review and actual normal delivery/publication remain unfinished. No saved-memory implementation or new feature is completed by this Docs-only preparation.
 
 
-## Current implementation continuation on actual main
+## Historical56ded80 implementation continuation on actual main
 
 Independent review accepted exact precode Docs b891827915c4a9964ca092c31ece363308f2403d, without a new user gate. Current Manager56ded80dca1e7f0cbb9cd53148156842683df366 / tree21dd5ec681dc4fc5b37eec8aeb8fa0f63b447636 is a normal two-parent composition of preserved0240bb073ff77049d117c1d8cab480990654cd1c and actual merged mainf8b0aaf209d1c976b8e47781be5a999ff63f7e0c. Original source/Docs refs, corpus and original captures remain intact. This source candidate is published in Manager38 and has received independent source/UI/evidence review with no blocking finding. Full both-OS integration and final lifecycle/delivery remain pending; it is not a delivered feature.
 
@@ -117,7 +119,7 @@ The final fixture amendment (shared six-peer base) required focused and UI check
 Source basis: accepted public precode, exact local native source/history, synthetic command/HTTP/IPC/UI outputs and visual capture inspection. Windows/both-OS integration completion, own canonical lifecycle/final paired review and normal publication remain unverified here. Independent source/UI/evidence review is recorded in the current status above. Root separately closed research v0.22.0; no duplicate release watch was started.
 
 
-## Failed both-OS CI attempt and bounded test successor
+## Historical failed both-OS CI attempt and bounded test successor
 
 Root's retained attempt1 Linux121387314505 log is84589bytes/SHA256 `8497b3eedcfb339e6bb87e10a24591d5141fa5eafb4484c20f4fbdbe544a1956`; Windows121387314438 log SHA256 `803f40d93522d7ec3938e1d1299b9c9089ece958f960ca1f3d821b048056c146`. Root observed the API snapshot and full logs: both jobs passed prior model/basic/research source/retained flows, then failed at memory-host line20. Linux saw disabled Save for30s; Windows saw the profile textarea detach during focus. The outer step's Python-install label does not identify the actual failure. These raw receipts stay with Root; this lane did not download them or create another observer.
 
@@ -130,3 +132,10 @@ Directly affected local controls: controller8 PASS (including the added case), o
 Retained diagnostic failures are separate: a duplicate local identifier caused the initial trace SyntaxError; an initial reference predicate allowed null and is not a positive fresh-reference result. The corrected positive-reference trace is retained separately. Ordinary lint first included two ignored standalone diagnostic scripts located in test-results and failed on their browser globals/unused imports; those owned diagnostic files were moved intact into the external evidence folder and ordinary lint then passed. No lint rule/configuration or hook was bypassed. Failed hosted attempt, diagnostic inputs, outputs and initial lint log remain available with exact successor transport.
 
 Sync/archive, current both-OS CI, independent successor/final paired lifecycle review and delivery tasks remain unchecked. Root alone reviews/publishes the successor; no tablet/provider/SDK/backend/auth action occurred.
+
+
+## Final own lifecycle
+
+Current hosted qualification and independent successor acceptance supersede only the pending status at the prior checkpoints above; their evidence, failures and local attribution remain unchanged. Canonical saved-memory-settings-companion contains exactly the accepted3requirements/7scenarios, with no delta-only markers. Only this change is archived under2026-10-25 using the client date. Original metadata, delta, producer corpus attribution and all8 captures remain byte-exact; contract changes only phase status and relative producer links necessitated by the move. All unrelated Docs baseline entries and every Manager source entry remain untouched.
+
+Tasks3.3/3.4 now record observed qualification and own lifecycle. External final paired review/current final Docs CI and actual delivery/publication (3.5/3.6) intentionally remain unchecked: archiving this qualified implementation does not claim those future observations. Root remains sole publisher/merger of Manager38/Docs83. No tablet, SDK/backend, provider, auth or new resource action occurred.

@@ -13,9 +13,13 @@
 ## 3. Verification and own delivery
 - [x] 3.1 Original90reports/160hashes and independent vector were consumed unchanged by the new parser in0240's historical local verification; preserve that exact attribution without producer/corpus replay.
 - [x] 3.2 Verify current guarded HTTP/main-frame IPC, all30 directed actual lane pairs, Busy/no-hook/old-cancel ownership, original cancel/failed/late-status regressions, private bounds and stale/expiry/Stop outcomes.
-- [ ] 3.3 Pass ordinary current both-OS development/source/retained-browser/packaged-Electron and upload-byte identity checks; inspect390/1280 captures with current content.
-- [ ] 3.4 Complete independent implementation acceptance and own canonical sync/archive; preserve unrelated main/other work.
+- [x] 3.3 Pass ordinary current both-OS development/source/retained-browser/packaged-Electron and upload-byte identity checks; inspect390/1280 captures with current content.
+- [x] 3.4 Complete independent implementation acceptance and own canonical sync/archive; preserve unrelated main/other work.
+
+## 4. External final delivery observations (pending after own archive)
 - [ ] 3.5 Obtain final exact current-main composed paired review/current Docs CI.
 - [ ] 3.6 Complete normal Docs-first linked delivery, then separately verify actual merged trees/main/new exact tag/small provenance; broader runtime/provider/native/MVP acceptance stays open.
 
-Original review5622256281/61d4 and263Node/9Python/source-host evidence remain historical, not six-lane or fallback-repair qualification. Original0240 andfa204ab are retained. Exact continuation precode b891827 was independently accepted; source56ded80 now contains the reviewed composition/repair, with current local limits in results.md. Independent exact56ded80/e8b1004 source/UI/evidence review found no blocking source finding. Both-OS integration completion, own canonical lifecycle/final paired review and delivery remain open. Root owns normal publication with its existing valid account via native bundles; no SCRAPPY auth retry or new user approval gate. Research release observation remains separately owned.
+Historical pre-successor checkpoint: original review5622256281/61d4 and263Node/9Python/source-host evidence remain historical, not six-lane or fallback-repair qualification. Original0240 andfa204ab are retained. Exact continuation precode b891827 was independently accepted; source56ded80 now contains the reviewed composition/repair, with current local limits in results.md. Independent exact56ded80/e8b1004 source/UI/evidence review found no blocking source finding. Both-OS integration completion, own canonical lifecycle/final paired review and delivery remain open. Root owns normal publication with its existing valid account via native bundles; no SCRAPPY auth retry or new user approval gate. Research release observation remains separately owned.
+
+Current exactbd3baac/3c11593 successor independently accepted and hosted40267736023 required jobs all PASS; own canonical sync/archive completed in the final native Docs successor. Remaining unchecked tasks are external final review/actual delivery observations, not unfinished implementation. Original failed40265376525 remains failed.
