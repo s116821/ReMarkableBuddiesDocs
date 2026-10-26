@@ -2,7 +2,7 @@
 
 Current REM-42 selective cleanup is the product requirement. Root scope/ownership acceptance804995cd confirms no competing remote cleanup consumer and current included allowance30%used/70%remaining. Root verified all seven assessed producer/manual blobs in actual source853768fb0a514223b4a123bb8e24af9be9db87f4 equal the local immutable6e33 snapshot; static proof/closure attribution is in evidence.md. The completed source producer and inventory are not reopened.
 
-Start this Docs change directly at actual595d3df8b39e74d9dcde9097a9c3f64ca8dbcdbf. Frozen Manageraad0509 and actual867731b share tree7eac762; old branches remain preserved. Source implementation starts only after exact precode acceptance on an own branch from actual merged867731b, with current-main refresh before final composition. Root publishes/reviews/delivers through native bundles. Existing inventory main/release observation remains Root-owned.
+Start this Docs change directly at actual595d3df8b39e74d9dcde9097a9c3f64ca8dbcdbf. Frozen Manageraad0509 and actual867731b share tree7eac762; old branches remain preserved. Source implementation starts only after exact precode acceptance on an own branch from corrected actual merged ad1d7fbefcb6fd388c56c76593e6a58a4e082401/tree874b956b98407a49584ebb8d5c281bfcaf5a5a0a, with current-main refresh before final composition. This supersedes867 as the implementation base after the normal test-only PR42 correction. Root publishes/reviews/delivers through native bundles. Existing inventory main/release observation remains Root-owned.
 
 ## Deliberate selection without granting inventory authority
 
