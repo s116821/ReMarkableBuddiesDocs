@@ -206,3 +206,29 @@ active stock/Buddy process and invocation identities as the earlier inventory,
 with sufficient tablet storage and no installed resident profiles or latch.
 It transfers no payload and performs no service or input action. Live fixture
 and native qualification remain open.
+
+## Current source checks and fixture preparation
+
+Buddy `70c794159f153d33f9437136152d5e2641631c81` passes the Checks job in
+`40399634191`: strict lint, 718 library tests with three separately ignored
+cases, 12 binary tests, the full integration/CLI/simulator suites and ten offline
+bootstrap verifier tests. The deterministic delayed-listen case passes. Earlier
+combined-source runs are retained failures: `1a99229` referenced an inaccessible
+test deadline helper, and `ec7e00e` retained unnecessary mutability after that
+correction. Neither failure was suppressed; both were corrected before this pass.
+The current ARM build and full application pipeline remain pending.
+
+SDK `83ed037636707ce8036774f04d19f28f42c0019a` completes the full
+`40397665119` pipeline successfully, including Linux/Windows checks, build and
+integration. This qualifies the source/build boundary, not native activation.
+
+Independent source review accepts the single clean fake-service invocation and
+its separate cleanup. Cleanup must verify the collected control archive, original
+real-service baseline, terminal actor/helper and exact runtime unit bytes before
+stopping only the two stand-ins. It must bracket group observations with retained
+boot/namespace/mount/slice context, compare surviving groups with fresh cleanup
+incarnations and readable empty population, and distinguish explicit final-path
+absence from missing parents, wrong types or other errors. Only then may the four
+exact unit definitions be removed and reloaded, with real services verified
+unchanged. Preserve staged payloads and control evidence. Source review is not an
+execution result; the matching ARM artifact and live fixture evidence remain open.
