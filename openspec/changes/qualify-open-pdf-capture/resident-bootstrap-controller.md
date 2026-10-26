@@ -403,3 +403,45 @@ source review accepted the change; formatting, twelve offline verifier tests and
 scoped strict OpenSpec pass. Compiled and live evidence for this revision remain
 pending. Frozen `49402bd` Checks job `121873106695` has passed in run
 `40408694687`; its separate ARM build remains live for the clean-case question.
+
+## Reloaded dependency ordering: observed refusal and correction
+
+The frozen `49402bd` pipeline subsequently passed completely. Its build source
+`c8b638eaa4c6064c4fb3d6cd28050604a0c1c3b1` has the same tree as that reviewed
+head; the downloaded archive digest, binary checksums and ARM ELF identities
+were verified. Controller SHA256 is
+`799fb86c385e81f1d5276b09b1510ed957ced0fa7d03d8ff32fc0a3b37b8d337`.
+
+Fresh clean fixture `3b69df8947f14223b667238e883d20b6` failed after publishing
+ownership and stopping only its disposable Buddy stand-in. Actor and both
+planned recovery invocations reported `service policy changed during stop`.
+Neither stock stop nor observer launch was admitted. Both helpers verified the
+unchanged stock stand-in and unchanged disposable source, then refused Buddy
+restoration. Actual stock Reader/Buddy service identities remained unchanged.
+
+The retained original and fresh cleared Buddy snapshots contain the same four
+`After` dependencies in different order: `system.slice sysinit.target
+systemd-journald.socket basic.target` versus `systemd-journald.socket basic.target
+sysinit.target system.slice`. Its other policy difference is the already modeled
+cleared `WatchdogUSec=infinity` sentinel. This is a failed fixture, not successful
+recovery qualification. Separately reviewed cleanup stopped only the exact
+original still-running stock stand-in, proved terminal groups, removed the four
+definitions and confirmed unchanged real services. All evidence remains retained.
+
+Compare `After` and `Conflicts` as unordered, duplicate-rejecting unit lists in
+explicit policy matching, including the stopped baseline and diagnostic restore
+paths. Share the existing installed recovery token validation. Keep raw snapshot
+equality, encoded candidates/ownership, and property access unchanged; do not
+normalize evidence. Preserve strict comparison for every other policy and the
+separate original-group proof required by the watchdog exception. Regression
+coverage must exercise reordered dependencies together with cleared watchdog,
+added/removed/duplicate dependencies, unchanged raw serialization, and unrelated
+policy changes. A corrected source build and fresh fixture remain required.
+
+Buddy `59ab44e5147f6f130c59c3967ed7bcf9db5c4998` implements this correction.
+Independent source review found no production-code blocker and corrected one
+test expectation: changed raw samples yield pending (`Ok(None)`), not an error.
+Formatting, whitespace and twelve offline bootstrap verifier tests pass; new
+Rust regression execution and the matching ARM artifact are still pending.
+Earlier `068c532` Checks passed 724 library tests (three ignored), twelve binary
+tests and the integration/simulator suites, but do not validate this correction.
