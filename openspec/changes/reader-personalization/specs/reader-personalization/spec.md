@@ -31,12 +31,16 @@ The Reader SHALL use the accepted validated startup snapshot for requests in tha
 - **THEN** the in-flight request retains its snapshot and the save does not report the running process as activated
 
 ### Requirement: Ordinary runtime memory admission
-The ordinary Reader receiving integration SHALL accept only actual local memory while preserving current-main verification and output guards. Enabled selected memory SHALL refuse before device/provider startup rather than fall back to global or unverified selected context. Disabled memory SHALL remain ineffective. Ordinary historical captures SHALL NOT fabricate document association or selected admission.
+The ordinary Reader receiving integration SHALL accept only actual local memory while preserving current-main verification and output guards. Enabled selected memory SHALL refuse before credentials/provider/device initialization or any Store/config mutation rather than fall back to global or unverified selected context. Disabled memory SHALL remain ineffective. Ordinary historical captures SHALL NOT fabricate document association or selected admission.
 
 #### Scenario: Unsupported selected memory is explicit
 - **WHEN** the ordinary runtime starts with enabled memory selecting a shared profile identity
-- **THEN** it refuses before device/provider startup, leaves records unchanged and grants no selected/native permission.
+- **THEN** it refuses after configuration validation but before credentials/provider/device initialization or any Store/config mutation, leaves records unchanged and grants no selected/native permission.
 
 #### Scenario: Disabled selection does not become active
 - **WHEN** memory is disabled but retained settings include a selected identity
 - **THEN** no memory consumer is created and an otherwise valid preference follows the ordinary preference-only path.
+
+#### Scenario: Helper cannot admit selected memory
+- **WHEN** a caller supplies a selected QueryResult to the ordinary answer-context helper
+- **THEN** the helper refuses before touching the engine rather than treating its presence as selected admission.
