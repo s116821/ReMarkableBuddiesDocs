@@ -23,3 +23,11 @@ Windows, Rust1.98.1, locked/offline/all-features, one Cargo job:
 The launching process and scoped ignored local configuration have no provider credential. No real-model result is claimed. The maintained `live/personalized-reader.json` and public setup guide supply the concrete representative run; actual preference, explicit-request and fixed-output precedence must be assessed before merge. Independent source/spec review and final hosted checks remain open. Keep this change active and unsynchronized/unarchived until its required gates are satisfied.
 
 Only ordinary Reader startup consumes the preference in this increment. No Writer, routing, gesture preset, running reload, controlled service restart, effective running-config receipt, Manager active state, selected sync or native output qualification is claimed. Disk maintenance continues to report restart-required. Whole REM-53 remains open.
+
+## Current-main reconciliation preparation
+
+The existing Reader branch is being reconciled with current main under the independently reviewed ordinary-only integration plan. Source caf4ee5 and its earlier provider/simulator evidence remain historical. Precode245a010 and7bdf708 add the ordinary LocalMemory-only boundary, early selected-configuration refusal and selected-result helper refusal before source changes. No new model or tablet call has occurred.
+
+Normal Docs integration composes actual main0f900e3 while preserving all819 main entries outside the six owned active Reader paths. The complete original Reader/parent heads stay in merge ancestry and all other active branches/evidence remain intact. Existing source/Docs branch names already target main; actual base commit, full integrated tree and fresh hosted checks still need verification.
+
+The integrated pre-code tree passes92 strict OpenSpec items and guidance25files/126preserved source blobs. A full cached diff check against the old stacked HEAD reports two blank-at-EOF lines in main-owned conversation-layout-projection and sanitized-conversation-feedback specs. Both files are byte-identical to actual main and are intentionally preserved, not silently repaired under this change. The scoped Reader diff against actual main passes. These are specification/preservation checks, not source, provider, runtime or native qualification.
