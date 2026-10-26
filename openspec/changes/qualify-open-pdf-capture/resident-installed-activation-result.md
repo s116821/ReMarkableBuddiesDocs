@@ -41,9 +41,14 @@ The preliminary `installed-activation-r1.log` compilation was intentionally
 stopped with exit 137 to apply those fixes. It establishes no passing test result.
 Final-source `installed-activation-r2.log` passed all 94 resident/library tests
 in 41.18 seconds, including the new handoff, ownership and shutdown regressions.
-Binary tests/build, both real CLI fixtures and strict all-target/all-feature
-lint are still running. The full chain is pending, not completed evidence. The updated Docs pass 88 strict
-OpenSpec checks and the manifest/source-provenance checks.
+The same unchanged-source chain completed with exit 0: 11 binary CLI tests,
+the standalone binary build, all 22 bounded recovery/startup CLI cases, all 8
+health-entry CLI cases, and strict all-target/all-feature lint (8m24s). The CLI
+fixtures use owned host processes, without PID1 or tablet effects. The updated
+Docs pass 88 strict OpenSpec checks and the manifest/source-provenance checks.
+Docs revision `4f2b32a` passed hosted run `40251377764`; Buddy `8c10f63` hosted
+run `40251260065` passed Title, Checks, application Build and Integration, with
+Release correctly skipped. Native qualification is still separate.
 
 ## Refreshed read-only target evidence
 

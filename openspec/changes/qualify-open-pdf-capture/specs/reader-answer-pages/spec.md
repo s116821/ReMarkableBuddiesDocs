@@ -1,5 +1,29 @@
 ## ADDED Requirements
 
+### Requirement: Resident caller progress
+Buddy SHALL service caller cancellation and main-thread health during resident
+socket startup and request waits using the original deadline. Progress failure
+SHALL preserve original pending-effect uncertainty and Store reservations;
+only explicit predispatch proof SHALL permit known-not-dispatched recording.
+Startup failure after spawn SHALL retain evidence and stop only the owned child.
+For an established session, ordinary request cancellation, timeout or idle
+connection retirement SHALL preserve the resident process. Reconnection SHALL
+retain its verified activation, use fresh connection identities, preserve
+original uncertainty and never replay an effect. Health or session integrity
+failure SHALL still enter independent recovery.
+
+#### Scenario: Cancel while the resident endpoint is starting
+- **WHEN** installed progress fails before socket readiness or handshake completion
+- **THEN** startup fails under the unchanged deadline, the owned child is stopped and reaped, and retained evidence does not claim native cancellation or recovery
+
+#### Scenario: Cancel an already dispatched effect
+- **WHEN** input or health progress fails while awaiting insertion or selection
+- **THEN** the original attempt remains uncertain across Store restart and no retry is inferred from the closed connection
+
+#### Scenario: Idle connection closes between conversations
+- **WHEN** the endpoint retires an idle connection while the verified resident process remains healthy
+- **THEN** the next admitted connection uses fresh identities with the same resident process and retained evidence, without restarting stock or replaying a prior request
+
 ### Requirement: Durable resident insertion attempt reservation
 The resident SDK consumer SHALL durably reserve the exact original insertion frame/digest and conversation before request bytes, using the existing Store ownership/serialization boundary. A reservation SHALL reject reused operations and replacement attempts for unresolved or observed conversations, survive restart and generation changes, and retain uncertain outcomes for read-only reconciliation of the original target. Only a durably recorded known-no-effect outcome SHALL permit a new caller-selected operation; no automatic retry is supplied. Historical replies SHALL NOT grant binding, rendering or native persistence authority. Malformed or incomplete journal state SHALL refuse without resetting it. Detailed consumer obligations are in resident-client-integration.md.
 

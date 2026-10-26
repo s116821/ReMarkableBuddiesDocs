@@ -76,6 +76,13 @@ establish an open Reader, native mutation support, page ownership or capture/wri
 authority. The admission's consumed hard link must match the original file before
 returning the runtime. Verify file/directory/process identity again after Ready.
 
+The installed admission callback continues during endpoint creation and through
+the SDK's progress-aware handshake, on the original caller thread and unchanged
+deadline. After each callback, recheck copied artifacts and the child before
+accepting readiness. Callback failure after spawn uses the same owned cleanup;
+it cannot skip cleanup or erase the preserved evidence. See
+[caller progress](resident-progress-integration.md) for the request-side contract.
+
 Retain the Child, connection and activation-directory descriptor together. The
 caller uses the existing ResidentConnection methods and Store-owned effect journal;
 no second request journal or binding registry is introduced. Startup failure,

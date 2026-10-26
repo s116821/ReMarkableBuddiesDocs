@@ -183,6 +183,9 @@ lease/artifacts/Buddy/helper, absence of competing stock, cancellation, health
 and original deadline. Recheck the copied files after that callback. A refusal
 at either boundary performs no corresponding stop or spawn; post-handshake
 validation cannot substitute for this pre-spawn check.
+Continue the same installed checks during endpoint and handshake waits; the
+callback never renews activation's deadline. Successful replies remain historical
+facts and do not establish post-restart source continuity.
 Observe stock termination and its original recursive group under the original
 deadline; require stable loaded policy and no job/main/control process. A newly
 running or changed stock incarnation refuses. Only the original empty group or
@@ -194,13 +197,23 @@ fixed boot directory; the SDK admission retains its independently fresh protocol
 nonce. These identities serve different purposes and must not be silently
 substituted. Before child launch and when exposing the live connection, recheck
 the lease, installation, Buddy context and absence of competing stock. The child
-must belong to the admitted Buddy group. Any failure after lease publication is
-fatal to the ordinary runtime so independent recovery owns stock restoration;
+must belong to the admitted Buddy group. Activation failure after lease publication,
+or verified installed/runtime/health integrity failure, is fatal to the ordinary
+runtime so independent recovery owns stock restoration;
 the latch and diagnostics remain. The successful session retains the exit guard;
 session shutdown/drop permanently fails that same health owner, causing the
 existing main-loop fatal predicate to exit. Merely stopping the child while the
 ordinary loop remains healthy would strand stock and is forbidden. Dropping the
 session only closes/stops its owned child and never starts stock itself.
+
+Established-session request cancellation, timeout or ordinary connection/idle
+retirement must not be classified as whole-session failure or restart xochitl.
+The current explicit `Session::connection` helper conflates its caller progress
+error with failed admission, and is not yet a per-request product route. Typed
+request-versus-session failure handling and reconnection to the same independently
+verified runtime remain required before enabling that route. A reconnect needs
+fresh connection/handshake/server nonces and must preserve original uncertain
+effects without replay. It does not replace the child or consumed activation.
 
 This service handoff cannot manufacture a native page observation or a supported
 SDK mutation capability. The first-gesture product route must also discard old
