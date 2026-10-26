@@ -1,6 +1,6 @@
 # Verification record
 
-State: implementation candidate; hosted qualification and independent implementation review pending. No runtime acceptance.
+State: scoped implementation verified, canonical requirements synchronized and own change archived. Final archived-Docs checks and paired delivery acceptance remain required. No native/runtime activation or publication is claimed.
 
 Basis: current feedback/layout requirements and issue chronology, delivered src/conversation/feedback.rs, src/conversation_layout.rs and domain Turn/ContextView definitions. The delivered fixture correction is a separate completed source increment; its actual-main publication is still independently observed.
 
@@ -59,3 +59,9 @@ Pre-merge lifecycle readiness includes a concrete post-merge observation handoff
 Current33b3 run40382731211 completed SUCCESS: Title, Checks, package Build and Integration passed; Release skipped normally for the PR. The sole current observer closed after retaining all actual logs. Build178418 bytes has SHA256 f8140e2200e777ac244d0bb289636e93cd6c0d5dfd7bb3a9d7f4ef5103e15627; Integration43310 bytes has SHA256 a2ba854a9f95689c9828c5ae71ba99f5f5a76a05c0e09549e73078a013573e45. This is exact-candidate hosted/package evidence, not actual merged-main publication or tablet execution. All three earlier failed candidates remain separately retained.
 
 The canonical feedback specification now preserves the complete original4-requirement/9-scenario prefix and adds exactly the accepted2 requirements/6 scenarios, for6 requirements/15 scenarios total. No other canonical capability changes. Only this change remains active while the synchronized Docs checkpoint obtains current portable/strict hosted qualification; archive and final delivery review remain pending.
+
+## Completed own lifecycle; final delivery gates
+
+The synchronized Docs7926e6fac7322eefe04656acf18555ae65ef771f passed run40387370108:12 portable tests on each of Windows/Linux,25 current guidance files/126 preserved blobs, and95 strict OpenSpec items. This qualified the implemented canonical contract before moving the five own artifacts to archive/2026-10-26-logical-feedback-projection. No other active change was archived. The original canonical4-requirement/9-scenario prefix and all unrelated current main entries remain intact; final canonical total is6 requirements/15 scenarios.
+
+Current source remains33b3, fully qualified as recorded above. Independent source/spec reviews accepted the implemented scope and complete valid fixture lifecycle. Final archived-Docs hosted checks and independent paired delivery acceptance remain mandatory before merge. Coordinated order is Docs113 first, then Buddy108, using exact reviewed heads and normal squash delivery. A separate actual-main/publication observation handoff preserves the distinction between PR qualification and delivered artifacts. No actual merge, official release, live-model or tablet execution is claimed in this record. All unassociated retention, live status, actual error-turn writing and native/current-admission gates remain open.
