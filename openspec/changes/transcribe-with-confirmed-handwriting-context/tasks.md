@@ -8,7 +8,7 @@
 ## Implementation
 - [ ] Implement typed target/context admission and one owned snapshot with exact current-revision/media/lineage validation; no commit or implicit fallback.
 - [ ] Extend existing notebook normalizer with typed context/payload/reply outcomes and frozen no-context compatibility; implement one progress-aware engine invocation, bounded response and held report/CLI routing.
-- [ ] Exercise actual Store, real output failure, privacy, mode/publisher lifetime, context corruption/conflicts and actual subprocess boundaries through production paths.
+- [ ] Exercise actual Store, real output failure, privacy, mode/publisher lifetime, context corruption/conflicts and actual subprocess boundaries through production paths; retain valid-storage APNG/trailing-container consumer refusals, original record/media equality, cooperative versus noncooperative cancellation and revision-only unchanged-prompt controls.
 - [ ] Run current-head format/Clippy/tests/build and independent source review; preserve every failure and avoid large local build under disk pressure.
 - [ ] Establish new representative shareable fixtures and independent reading before at most eight bounded live calls; record baseline/context results including abstention/degradation without efficacy overclaim.
 
