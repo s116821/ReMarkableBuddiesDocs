@@ -6,7 +6,7 @@ The delivered static feedback catalog requires an already validated OutcomeFact.
 
 ## What Changes
 
-Add one ordinary, read-only receiving API for an explicit conversation and outcome-fact identity. Validate a single current Conversation-namespace metadata snapshot using existing Ledger decoders/root/chronology checks, then describe the exact retained fact through the existing catalog. Return original historical identities and static text only. A known completed fact yields no error; missing or unsafe input refuses explicitly.
+Add one ordinary, read-only receiving API for an explicit conversation and outcome-fact identity. Validate a single current Conversation-namespace metadata snapshot using existing Ledger decoders/root/chronology checks, then describe the exact retained fact through the existing catalog. Return original historical identities and static text only. Only supported schema-one Failed/Canceled/ReconcileRequired facts produce a description; completed or unsafe records refuse explicitly.
 
 ## Scope
 

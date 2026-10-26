@@ -6,7 +6,7 @@
 ## Implementation and verification
 
 - [ ] Implement the stored receiver using existing ordinary custody/domain snapshot validation and static catalog, with no new storage schema or runtime wiring.
-- [ ] Add actual Store/Ledger reopen, secrecy, identity, conflict/tombstone/schema/mode/bounds and historical-stability controls; retain original failed evidence.
+- [ ] Add actual Store/Ledger reopen, secrecy, identity, explicit-ID malformed/foreign-head capture, pre-inspection conflict/tombstone/schema/mode refusal, unsupported-completed refusal, 1024-byte serialization and later-turn historical-stability controls; retain original failed evidence.
 - [ ] Run focused tests, formatting/strict Clippy and required exact-head source/Docs CI; read current reviews/bot feedback.
 - [ ] Obtain independent implementation/preservation acceptance and publish exact paired evidence/limits.
 
