@@ -305,3 +305,37 @@ Independent source review accepted both, including strict active-helper matching
 and first-use versus previously-used helper tests. Source formatting and
 whitespace pass. Hosted validation and the next fresh compiled fixture must use
 the latter revision; no earlier green run validates these new paths.
+
+## Cleared services and uninitialized runtime watchdog observations
+
+Source review identifies the same runtime-property distinction after PID1
+garbage-collects and reloads a stopped unit. This is not yet a live fixture result.
+An exact policy comparison against the original running interval would reject
+`infinity` even with all invocation metadata cleared. The affected paths include
+the original-service baseline, diagnostic restoration, installed stock-stop
+admission, original Buddy recovery admission and native stock observation.
+
+Preserve raw snapshots and represent this case as a typed cleared/uninitialized
+watchdog observation. Require inactive/dead, main/control/executed PID zero,
+start timestamp zero, empty invocation/job/control-group fields, and separately
+verified group absence under the retained context. The original service type
+still matches its approved policy; this case is not limited to oneshot helpers.
+Only the runtime watchdog value may differ from the original approved interval.
+All other policy values, original identity and artifact checks remain in force.
+Retained, running, stopping, partially cleared, replaced or populated cases must
+retain strict watchdog comparison. Group absence must be established before
+using the exception, including the native stock path that previously compared
+policy before its group check. No snapshot or approved profile is rewritten.
+Regression cases must cover zero and two-minute original watchdogs, changed
+non-watchdog policy, every partial clearing, stable observation brackets and
+empty-but-existing versus absent original groups.
+
+Implemented in Buddy `9df989274e91782ceee7f845ca87167c6a0baf13`.
+Independent source review accepted the five affected paths and their retained
+raw observations. Predicate and policy regression tests do not exercise the
+complete native stock observation sequence. Hosted run
+[40407288991](https://github.com/s116821/ReMarkableBuddies/actions/runs/40407288991)
+has passed formatting and strict all-target/all-feature Clippy; its test and
+artifact stages remain pending completion. A fresh compiled fixture is still
+required, followed by separate native qualification. Neither the previous
+helper fix's green checks nor this source review proves those runtime gates.
