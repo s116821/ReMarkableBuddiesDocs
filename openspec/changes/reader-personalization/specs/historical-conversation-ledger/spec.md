@@ -18,4 +18,3 @@ The historical library SHALL persist stable conversation, turn, operation and co
 #### Scenario: Narrow terminal reason and text guards
 - **WHEN** the caller changes interpreted text, omits or changes the corresponding reason, requests another terminal transition or targets an interpreted Writer turn
 - **THEN** this additional transition refuses with no partial record change, while previous transitions and reconciliation guards remain unchanged.
-
