@@ -1,6 +1,7 @@
-# Proposed one-shot transport v1
+# One-shot transport v1
 
-Invoke --handwriting with the existing explicit configuration option and stdin.
+Invoke --handwriting with stdin; select the existing owned configuration through
+REMARKABLE_BUDDIES_CONFIG. There is no additional configuration command-line flag.
 Allow no unrelated command/runtime/device/model flags. This option returns before
 normal runtime initialization. Input is one strict JSON object followed by EOF;
 no file/URL fallback or line-delimited multiple mutations. handwriting_version

@@ -1,4 +1,12 @@
-## ADDED Requirements
+# Confirmed handwriting records
+
+## Purpose
+
+Define explicit local confirmed sample/text retention, truthful readback and invalidation. Detailed version-one [design](../../changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/design.md), [transport](../../changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/contract.md), [report schema](../../changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/report-schema.md) and [literal identity vectors](../../changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/identity-vectors.json) pin exact fields and bounds.
+
+Source basis for these requirements: [implemented source a9d01cd](https://github.com/s116821/ReMarkableBuddies/tree/a9d01cdce62bc67916ce398f4ac4432ce811988d/src/handwriting), [passing current-head CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/40269256006) and [independent source/evidence acceptance](https://github.com/s116821/ReMarkableBuddies/pull/104#pullrequestreview-5650161916). Stored caller assertions do not establish recognition improvement, native integration or sync authority.
+
+## Requirements
 
 ### Requirement: Explicit confirmed samples remain distinct from inference
 The component SHALL offer an explicitly invoked offline typed correction provider
@@ -50,7 +58,7 @@ availability. Required missing bytes SHALL prevent complete usable-sample claims
 Ordinary local mode and legacy-data leases SHALL span actual command output;
 the live local domain SHALL exclude both already-active and newly admitted legacy
 publishers until output ownership is released, without claiming permanent sync policy.
-unsupported selected/sync/native paths SHALL refuse without implicit activation.
+Unsupported selected/sync/native paths SHALL refuse without implicit activation.
 Routine logs SHALL redact content and images, while explicit reports remain bounded.
 Metadata traversal SHALL retain a single4096-envelope/8 MiB causal snapshot bound
 for query and refuse incomplete/excess closure. Output subset

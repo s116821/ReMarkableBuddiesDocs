@@ -65,8 +65,9 @@ dimensions remain immutable. Replacing those requires a new correction identity.
 # 2. Exact identity and durable shape
 
 Existing Handwriting/domain1 gets a strict payload discriminator
-kind:"confirmed-correction". This is proposed until ordinary owner/precode review;
-generic namespace admission does not reserve the shape. Never deserialize old
+kind:"confirmed-correction". Independent precode review5647066616 accepted this
+narrow shape before implementation; generic namespace admission alone did not
+reserve it. Never deserialize old
 unknown/synthetic handwriting payloads into this shape by defaults.
 
 Record fields in serialization order: kind, profile, correction, original_text,

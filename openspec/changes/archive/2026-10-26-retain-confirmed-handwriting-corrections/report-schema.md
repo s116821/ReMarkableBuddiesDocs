@@ -1,4 +1,4 @@
-# Exact proposed report schema v1
+# Exact report schema v1
 
 All objects reject unknown/duplicate fields. Keys appear in the order below;
 absent values use explicit null, never omitted fields. Integers are unsigned u64;
