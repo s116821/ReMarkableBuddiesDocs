@@ -380,3 +380,26 @@ by independent source review. All twelve offline evidence-verifier tests,
 formatting and whitespace checks pass. Compiled and device fault evidence are
 pending. The frozen `49402bd` run continues only for its reviewed clean-case
 question; it cannot validate this source-change injection or the current head.
+
+## Recovery trigger transaction mode
+
+Matching upstream systemd 255.21 commit
+`70500d37992a01d3275b1c414c3ed161d6f91f9e`, `src/core/unit.c`, initializes
+failure triggers with `JOB_REPLACE`, success triggers with `JOB_FAIL`, then
+passes the selected mode directly to `manager_add_job`. Existing shutdown
+conflicts and ordering do not choose that transaction mode. This is a source
+policy gap, not an observed tablet shutdown failure or vendor-patch equivalence.
+
+The diagnostic actor must explicitly render `OnFailureJobMode=fail` and
+`OnSuccessJobMode=fail`, then verify both loaded properties. Missing values,
+`replace` and other modes refuse admission. This prevents the trigger from
+replacing conflicting existing jobs; it is not a general shutdown inhibit and
+does not complete shutdown qualification. Future installed Buddy trigger policy
+needs the same requirement before approval; retain the vendor stock policy.
+
+Buddy `068c5328d252900739cee4611367fb56c7d7994d` implements the diagnostic
+requirement and records both loaded modes in the host policy capture. Independent
+source review accepted the change; formatting, twelve offline verifier tests and
+scoped strict OpenSpec pass. Compiled and live evidence for this revision remain
+pending. Frozen `49402bd` Checks job `121873106695` has passed in run
+`40408694687`; its separate ARM build remains live for the clean-case question.
