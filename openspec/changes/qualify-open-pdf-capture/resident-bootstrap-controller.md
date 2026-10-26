@@ -190,7 +190,19 @@ pin with its SDK dependency and deterministic delayed-listen peer regression.
 The first rebuild attempt is preserved and explicitly marked
 unusable because source changed during compilation; it must never be selected.
 The refreshed observer/controller CI and actual fixture/native runs remain open.
-PR60 cannot currently schedule a pull-request build because it conflicts with
-new upstream Reader personalization, Writer and handwriting changes. Resolve the
-existing branch against main and validate the combined revision; do not credit
-the prior controller's green build to the new adapter or merged product code.
+PR60 initially could not schedule a pull-request build because it conflicted
+with upstream Reader personalization, Writer and handwriting changes. Buddy
+`1a992291223d0de3af4c19c99d05bf7de71932a6` resolves the existing branch against
+main `0ecdfc5`, preserving both exclusive early command paths, storage helpers,
+Reader memory/personalization and the single sync worker before health readiness.
+Independent source review accepted the merge for hosted validation. Reciprocal
+CLI refusal cases and the handwriting health-entry fixture are included.
+CI `40398709040` is the current combined-source run; do not credit the prior
+controller's green build to this adapter or merged product code.
+
+The fresh read-only prerequisite inventory in
+`bootstrap-preflight-e301703907f54e8994514b379998aa6f` retains the same boot and
+active stock/Buddy process and invocation identities as the earlier inventory,
+with sufficient tablet storage and no installed resident profiles or latch.
+It transfers no payload and performs no service or input action. Live fixture
+and native qualification remain open.
