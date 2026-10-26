@@ -495,3 +495,27 @@ whitespace, scoped strict OpenSpec and Docs manifest/guidance/source checks pass
 Compiled checks and a fresh corrected artifact/device fixture remain pending.
 Previous `db5fd13` Checks passed 729 library tests (three ignored), twelve binary
 tests and the integration suites; those do not validate this correction.
+
+## Durable diagnostic completion observation
+
+The full cdeb0bb pipeline passed. Fresh disposable fixture
+`3e615cf3a7434ff981c17c9dcbbfefd8` recorded successful actor and first recovery
+results, restored both stand-ins, and preserved real services. The Python driver
+timed out because PID1 cleared the successful helper's invocation and start
+timestamp before polling. No second helper was selected. Separately reviewed
+cleanup completed; this remains an incomplete fixture, never a retroactive pass.
+
+Correct the diagnostic driver only. Read the bounded nonce-specific control
+archive with a successful collection status. For a cleared successful helper,
+require exactly one new strictly named recovery result containing `Ok(())\n`,
+then resample fully cleared terminal state (no PID, job or invocation). Preserve
+all previous result filenames and hashes; freeze the first map before selecting
+the one second helper. Its success needs exactly one additional successful result
+and unchanged earlier bytes. Result UUIDs are independent of recovery-attempt
+UUIDs and must never be correlated. Retained failed helper timestamps remain
+usable for intentional signal faults that cannot write a result. Keep all existing
+effect, restoration, source and state assertions and check final result stability.
+Missing, stale, changed, extra, malformed or incompletely collected evidence
+cannot authorize the second helper or constitute completion. Keep the original
+deadline and no-replay behavior. Offline driver regressions and independent review
+precede a fresh isolated fixture; none of this qualifies a public native SDK.
