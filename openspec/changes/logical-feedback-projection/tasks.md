@@ -1,11 +1,11 @@
 ## 1. Contract and ownership
-- [ ] Review the concrete central proposal and exact three-path source scope before implementation.
-- [ ] Record exact source/Docs bases and preservation of unrelated files and held branches.
+- [x] Review the concrete central proposal and exact three-path source scope before implementation.
+- [x] Record exact source/Docs bases and preservation of unrelated files and held branches.
 
 ## 2. Implementation
-- [ ] Share the existing ordinary stored-feedback snapshot validation through a private callback while preserving describe_stored behavior.
-- [ ] Add exact stored-turn/context equality and the public composed planning API.
-- [ ] Add the historical-only wrapper without changing existing planner shapes or APIs.
+- [x] Share the existing ordinary stored-feedback snapshot validation through a private callback while preserving describe_stored behavior.
+- [x] Add exact stored-turn/context equality and the public composed planning API.
+- [x] Add the historical-only wrapper without changing existing planner shapes or APIs.
 
 ## 3. Verification and delivery
 - [ ] Add actual Store composition/refusal/privacy/borrow-preservation tests; retain original receiver tests unchanged.
