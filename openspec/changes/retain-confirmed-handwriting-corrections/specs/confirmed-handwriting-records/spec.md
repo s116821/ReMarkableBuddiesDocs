@@ -24,6 +24,10 @@ immutable original sample/linkage. Changed-content operation reuse SHALL refuse.
 Updates SHALL require CAS and explicit new confirmation; forget SHALL tombstone
 only the selected logical key while retaining historical bytes/references.
 Unknown domain shapes SHALL be preserved/refused rather than reinterpreted.
+An explicit non-mutating operation-status path SHALL inspect accepted history
+without staging/committing. Absence SHALL mean unknown, never rollback or dispatch
+permission. A later deliberately invoked mutation SHALL be distinguished from
+read-only reconciliation and pass exact replay/CAS without automatic resubmission.
 
 #### Scenario: Replay, conflict and sample replacement
 - **WHEN** an operation replays across restart, heads conflict, or an update substitutes the original sample/text/source linkage
@@ -32,6 +36,10 @@ Unknown domain shapes SHALL be preserved/refused rather than reinterpreted.
 #### Scenario: Forget and backup closure
 - **WHEN** an explicit current-head forget completes and the whole owned Store is backed up/restored
 - **THEN** active query excludes that key while exact history, tombstone, conflicts and all retained sample bytes survive without deleting another correction/profile.
+
+#### Scenario: Uncertain commit and absent status
+- **WHEN** a commit acknowledgment is uncertain and explicit status does or does not find the requested accepted operation
+- **THEN** status performs no staging/commit, reports retained success versus unknown absence accurately, and never infers rollback or an automatic mutation grant from missing history.
 
 ### Requirement: Bounded readback and local ownership report honest scope
 Query/inspect SHALL use bounded current snapshots with explicit profile and complete
@@ -44,6 +52,8 @@ Metadata traversal SHALL retain the existing8 MiB snapshot bound. Output subset
 selection SHALL precede at most16 sample verifications/8 MiB compressed media and
 the declared sequential pixel budget per command. Omitted samples SHALL remain
 not-examined rather than acquire invented availability from metadata alone.
+Reports SHALL follow the exact fact/head/sample states, diagnostics, fixed failure
+codes and command/status/null/history/mutation-outcome matrix in report-schema.md.
 
 #### Scenario: Query budget or missing data
 - **WHEN** matches exceed requested output bounds, heads conflict or required media/commits are unavailable
@@ -56,6 +66,10 @@ not-examined rather than acquire invented availability from metadata alone.
 #### Scenario: Large matching corpus
 - **WHEN** many metadata matches exceed the requested result/output budget
 - **THEN** no more than the bounded selected subset is image-verified, omitted availability remains not-examined, and partial diagnostics do not claim every retained sample is usable.
+
+#### Scenario: Exact report variants
+- **WHEN** command results include unsupported/conflicted heads, missing/not-examined samples, empty status or query-budget refusal
+- **THEN** strict output matches the pinned public fields, nullability and outcome matrix without guessed availability, accepted-history claims or invented transaction IDs.
 
 ### Requirement: Stored corrections do not imply recognition improvement
 The implementation SHALL keep typed correction retention separate from recognition

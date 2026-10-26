@@ -17,7 +17,7 @@ their actual source provenance before claiming stronger links.
 # 1. Local explicit provider and transport
 
 Add a provider-independent handwriting module with confirm/update, inspect,
-query and forget operations, plus a one-shot --handwriting command using strict
+query, forget and non-mutating operation status, plus a one-shot --handwriting command using strict
 tagged JSON on stdin. Reject duplicate/unknown fields, nil identities, partial
 reference triples and invalid values before Store opening/admission. No automatic
 sample capture, network provider, model construction or native startup occurs.
@@ -105,8 +105,15 @@ implementation is accepted by this initial design checkpoint.
 Validate the full mutation/sample before staging. Stage admitted bytes with the
 existing generic blob primitive and publish one typed value envelope using the
 existing CAS transaction. Staged-only content is not a visible correction.
-Unknown commit acknowledgment is not proof of rollback; replay the same operation
-for readback only, never infer another confirmation. Return receipt/identity and
+Unknown commit acknowledgment is not proof of rollback. The separate status
+command looks up the exact operation/key in retained history and never stages or
+commits. Absence means unknown, not rolled back/not-dispatched. Do not automatically
+resubmit a mutation. A new explicit confirm/update/forget invocation is a deliberate
+CAS submission: an exact accepted operation returns historical without commit;
+changed content refuses; absent accepted history may still proceed through CAS
+as an explicit submission and is not represented as read-only reconciliation.
+This distinction avoids pretending a first dispatch and an absent uncertain
+dispatch can be distinguished without a durable intent. Return receipt/identity and
 observed result honestly; no automatic retries or alternate destinations.
 
 Each typed envelope must have exact namespace/version/discriminator/record ID,
@@ -133,7 +140,11 @@ actual complete JSON encoding, including diagnostics. If matches cannot all fit,
 return bounded Partial/omitted counts or a fixed budget refusal, never false empty
 or silently truncate a text/sample. Do not emit partial JSON on output failure.
 
-Inspect returns exact current heads and completeness/conflict/unsupported state.
+Inspect returns exact captured current heads and completeness/conflict/unsupported
+state. Status returns only the requested retained operation, including a historical
+tombstone; it does not construct new confirmation or infer no effect from absence.
+Exact public facts, diagnostics, failure codes and outcome matrix are fixed in
+report-schema.md; all reads are historical observations, not live consumption grants.
 Forget requires explicit nonempty current heads and publishes a tombstone; it
 removes the correction from active query without rewriting/deleting historical
 samples or other keys/profiles. Invalidating one record does not wipe a corpus.

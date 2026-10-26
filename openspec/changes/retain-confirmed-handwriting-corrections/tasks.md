@@ -2,6 +2,7 @@
 - [x] Read current canonical requirement/discussion and source/PR inventory; distinguish generic namespace from typed handwriting support.
 - [x] Record primary-source alternatives and a bounded independent correction-retention scope without claiming recognition effectiveness.
 - [x] Freeze five literal identity/serialization hash vectors and record/revision UUIDs, independently cross-checked with Python and Node standard libraries.
+- [x] Reconcile reviewer findings with explicit non-mutating operation status, honest explicit-CAS resubmission semantics and an exact fact/diagnostic/failure/outcome report contract.
 - [ ] Obtain independent design/domain-shape acceptance before source implementation.
 
 ## Implementation and evidence
