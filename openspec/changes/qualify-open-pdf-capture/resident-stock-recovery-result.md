@@ -89,10 +89,18 @@ Independent source review found no blocking defect. Initial run
 directory replacement, invalid-record and consumed-lease preservation cases. It
 passed 10 of 11 binary tests: the explicit option inventory needed the newly added
 flag; exclusivity itself passed. The final commit updates that inventory and checks
-the default is off. Current-source run `resident-stock-entry-r2.log` repeats resident,
-binary and Writer tests, runs the real CLI fixture, then strict all-target/all-feature
-lint. That run is still pending. The fixture poisons ordinary configuration and exercises bounded
+the default is off. Final-source run `resident-stock-entry-r2.log` exited zero:
+75 resident tests, 11 binary CLI tests, 13 Writer tests and 22 actual recovery/startup
+CLI cases passed, followed by strict all-target/all-feature lint (12m13s).
+The fixture poisons ordinary configuration and exercises bounded
 real subprocess calls; it never runs against PID1 or a tablet.
+
+Hosted run [40246344504](https://github.com/s116821/ReMarkableBuddies/actions/runs/40246344504)
+at this same commit has passed Rust tests and strict lint; later CI stages were
+still pending at the health-integration checkpoint. Docs `52b099a` passed its
+Windows/Linux portable and OpenSpec checks in
+[40246379267](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40246379267).
+These results do not validate later service-health source changes.
 
 A fresh read-only tablet query at 2026-10-25 23:15:47 UTC returned all 28 service
 properties, including the new `Type` and `NeedDaemonReload`. Both existing units

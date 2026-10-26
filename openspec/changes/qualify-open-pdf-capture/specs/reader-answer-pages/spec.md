@@ -161,6 +161,21 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 - **WHEN** the bound profile, loaded policy, artifact, original Buddy terminal evidence, helper context, or restored stock identity changes
 - **THEN** restoration does not report success and neither resets the activation latch nor repeats a native effect
 
+### Requirement: Main-thread service health
+The installed ordinary Buddy runtime SHALL emit service readiness only after initialization and watchdog notifications only from actual main-thread progress under resident-supervisor-integration.md. Idle input polling, including the ordinary touch fallback, and active request-progress checks SHALL drive those notifications; no independent indefinite keep-alive thread SHALL be introduced. Notification I/O SHALL be nonblocking and errors, owner mismatch or expiration SHALL permanently fail that instance and reach service exit. Existing operation deadlines and input/cancellation semantics SHALL remain unchanged. Service readiness SHALL NOT grant native activation, page identity or write authority.
+
+#### Scenario: Main loop stalls after reporting readiness
+- **WHEN** successful progress callbacks stop for the watchdog window
+- **THEN** no background worker emits watchdog messages, and a late callback cannot renew the expired health instance
+
+#### Scenario: Idle input continues without a user gesture
+- **WHEN** the real main-thread input loop successfully polls without a gesture
+- **THEN** it may send a due bounded watchdog notification without manufacturing input, resetting the contact reducer or changing the existing observation deadline
+
+#### Scenario: Notification endpoint fails
+- **WHEN** a notification cannot be sent immediately or is attempted by a different process/thread
+- **THEN** health failure remains latched and the ordinary runtime exits without retrying notification or reporting native readiness
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

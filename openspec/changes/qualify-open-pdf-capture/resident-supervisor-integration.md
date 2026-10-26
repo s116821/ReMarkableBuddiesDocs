@@ -93,6 +93,32 @@ thread that pings indefinitely is not sufficient. Final heartbeat placement and
 the service timeout values require implementation review before installation.
 The resident child must not inherit Buddy's notification socket.
 
+Implement health notifications on the calling main thread, without a keep-alive
+thread. Read systemd's notification/watchdog environment before dotenv and ordinary
+initialization; require the supported 120-second watchdog and an absent or matching
+WATCHDOG_PID. Incomplete or malformed notification settings refuse. Existing
+non-notify operation keeps its current behavior. Send READY only after ordinary
+initialization completes, then send WATCHDOG at most every 30 seconds when actual
+idle-input polling or request-progress callbacks succeed. Both supported native
+history input and the ordinary touch fallback must call the same progress hook.
+Keep the existing bounded input-observation timeout semantics unchanged.
+
+Use a nonblocking Unix datagram socket with no retry/wait on a full or failed
+notification endpoint. A failed send, wrong process/thread, clock regression or
+at least 120 seconds since the last successful READY/WATCHDOG send permanently
+fails that health instance. A callback that does not send cannot renew that deadline;
+later callbacks cannot revive it. Propagate failure out of the ordinary main loop
+so independent service recovery can run. READY/WATCHDOG establish service progress
+only, never SDK/page readiness, current source identity or mutation permission.
+The 120-second service window covers the existing at-most-95-second model request
+and at-most-60-second activation, but does not extend either operation deadline.
+No notification environment or socket may be inherited by the resident child.
+
+The notification wire contract follows upstream
+[sd_notify](https://www.freedesktop.org/software/systemd/man/255/sd_notify.html)
+and [sd_watchdog_enabled](https://www.freedesktop.org/software/systemd/man/255/sd_watchdog_enabled.html).
+Their standard semantics are distinct from target PID1/unit/native qualification.
+
 OnSuccess and OnFailure request a separate `reader-buddy-stock-recovery.service`.
 That service conflicts with and is ordered after Buddy, so PID1 completes Buddy
 shutdown before recovery starts. Do not synchronously start the ordered stock
@@ -332,7 +358,7 @@ The installed entrypoint takes no path, unit, environment or command overrides.
 The recovery profile is a release/Manager artifact approved after platform and
 payload qualification; do not generate approval by copying a live service sample.
 No approved production profile ships until those gates pass. The fixed helper API
-is implemented but no CLI dispatch or production service invokes it yet. Bind its exact bytes
+and exclusive CLI dispatch are implemented, but no production service invokes them yet. Bind its exact bytes
 in a distinct version-2 lease field, preserving the native profile digest separately.
 Version-1 records remain occupied and cannot silently upgrade or authorize takeover.
 
