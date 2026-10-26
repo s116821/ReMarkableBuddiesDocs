@@ -118,7 +118,14 @@ ordinary queries, with partial diagnostics; no newest-timestamp winner heuristic
 
 Query takes explicit profile, optional query text (at most2048 bytes), max_matches
 1..16 and max_encoded_bytes512..65536. Scan at most4096 current envelopes under
-the existing bounded snapshot primitive; fail on exhausted/incomplete traversal.
+the existing bounded snapshot primitive and its8 MiB metadata cap; fail on
+exhausted/incomplete traversal. Reserve the selected fact/output subset before
+image reads: verify at most16 samples and8 MiB compressed image bytes per command,
+with at most16 times4,194,304 decoded pixels processed sequentially. Validate typed
+descriptor size before reading; never decode every matching/nonmatching sample
+while scanning4096 heads. Omitted sample availability is not-examined, not available;
+missing_media counts only the actually examined subset and cannot prove corpus-wide
+availability. Inspect applies the same aggregate verification bounds.
 Filter exact profile and strict confirmed values. Optional text performs plain
 Unicode-lowercase token matching over original/corrected text; no semantic claim.
 Order matching keys by canonical record UUID, not asserted confidence/date. Count

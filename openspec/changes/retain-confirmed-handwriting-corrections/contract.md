@@ -36,8 +36,11 @@ historical is true only for a confirmed identical replay, not a dispatch grant.
 
 facts contains bounded typed value/head observations and sample availability, not
 PNG/base64 bytes. diagnostics contains counts for scanned, matched, omitted,
-conflicted, unsupported and missing_media plus mutation_outcome. mutation_outcome
-is not-requested/not-dispatched/observed/unknown. A failed stdout write cannot
+conflicted, unsupported and missing_media plus mutation_outcome.
+Sample verification is bounded to16 images/8 MiB compressed bytes per command,
+after metadata/output subset selection. Omitted media is not-examined; missing_media
+counts examined samples only and does not assert corpus-wide completeness.
+mutation_outcome is not-requested/not-dispatched/observed/unknown. A failed stdout write cannot
 prove rollback or produce a second report. Inspect reports exact current heads;
 query reports only usable strict confirmed values, never conflicted winner guesses.
 All encoding including complete diagnostics fits the caller query bound, or query

@@ -40,6 +40,10 @@ availability. Required missing bytes SHALL prevent complete usable-sample claims
 Ordinary local mode and legacy-data leases SHALL span actual command output;
 unsupported selected/sync/native paths SHALL refuse without implicit activation.
 Routine logs SHALL redact content and images, while explicit reports remain bounded.
+Metadata traversal SHALL retain the existing8 MiB snapshot bound. Output subset
+selection SHALL precede at most16 sample verifications/8 MiB compressed media and
+the declared sequential pixel budget per command. Omitted samples SHALL remain
+not-examined rather than acquire invented availability from metadata alone.
 
 #### Scenario: Query budget or missing data
 - **WHEN** matches exceed requested output bounds, heads conflict or required media/commits are unavailable
@@ -48,6 +52,10 @@ Routine logs SHALL redact content and images, while explicit reports remain boun
 #### Scenario: Ownership and failed output
 - **WHEN** another owner holds the Store, an unsupported selected mode is configured, or stdout fails after a mutation
 - **THEN** ownership/refusal remains enforced through actual completion and mutation uncertainty is not relabeled rollback or followed by an automatic retry/second report.
+
+#### Scenario: Large matching corpus
+- **WHEN** many metadata matches exceed the requested result/output budget
+- **THEN** no more than the bounded selected subset is image-verified, omitted availability remains not-examined, and partial diagnostics do not claim every retained sample is usable.
 
 ### Requirement: Stored corrections do not imply recognition improvement
 The implementation SHALL keep typed correction retention separate from recognition
