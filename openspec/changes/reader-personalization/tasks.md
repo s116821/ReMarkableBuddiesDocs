@@ -12,3 +12,11 @@
 - [x] Publish linked implementation/Docs PRs with exact source/spec revisions and separately attributed results.
 - [ ] Resolve independent review, required hosted checks and current bot/issue feedback.
 - [ ] Sync only this completed capability into canonical specs and archive this change; retain wider REM-53 and runtime/native gates.
+
+## Current-main reconciliation, proposed
+
+- [ ] Independently accept the exact ordinary integration boundary and complete branch/main preservation map before source changes.
+- [ ] Reconcile existing branches with current main while preserving all unrelated current-main entries and historical/in-flight work.
+- [ ] Port the ordinary Reader receiving path and LocalMemory-only admission without SDK/native or selected Reader changes.
+- [ ] Execute current-head capturing, filesystem/CLI, loopback, default regression and hosted source/Docs checks.
+- [ ] Review new evidence and obtain an explicit separate live qualification plan; no additional call is authorized here.

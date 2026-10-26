@@ -29,3 +29,14 @@ The Reader SHALL use the accepted validated startup snapshot for requests in tha
 #### Scenario: Saved edit during a running request
 - **WHEN** configuration maintenance saves a different preference while an existing process has a startup snapshot
 - **THEN** the in-flight request retains its snapshot and the save does not report the running process as activated
+
+### Requirement: Ordinary runtime memory admission
+The ordinary Reader receiving integration SHALL accept only actual local memory while preserving current-main verification and output guards. Enabled selected memory SHALL refuse before device/provider startup rather than fall back to global or unverified selected context. Disabled memory SHALL remain ineffective. Ordinary historical captures SHALL NOT fabricate document association or selected admission.
+
+#### Scenario: Unsupported selected memory is explicit
+- **WHEN** the ordinary runtime starts with enabled memory selecting a shared profile identity
+- **THEN** it refuses before device/provider startup, leaves records unchanged and grants no selected/native permission.
+
+#### Scenario: Disabled selection does not become active
+- **WHEN** memory is disabled but retained settings include a selected identity
+- **THEN** no memory consumer is created and an otherwise valid preference follows the ordinary preference-only path.

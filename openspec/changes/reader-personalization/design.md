@@ -15,3 +15,7 @@ The actual Reader analyzes source images, independently verifies the handwritten
 ## Verification and limits
 
 Offline workflow tests must inspect outgoing requests, persisted question and call counts for unset, enabled, disabled, empty, memory-empty, memory-present and disagreement cases. Exercise multiline Unicode without echoing user configuration into diagnostic logs. Representative live provider evidence checks actual precedence and source-grounded answers; deterministic framing tests alone cannot establish semantic obedience. Simulator evidence does not prove hardware, Writer support or live runtime activation. Canonical sync and archive wait successful scoped implementation, checks and independent review.
+
+## Proposed current-main reconciliation
+
+The pending [ordinary integration plan](integration-plan.md) maps the accepted feature to current main and defines the proposed LocalMemory-only receiving boundary. It preserves existing recognition and native/selected guards, explicitly refuses enabled selected memory in this ordinary runtime, and retains source/host and live/native qualification as separate gates. It is pre-code scope subject to independent review, not an implementation claim.
