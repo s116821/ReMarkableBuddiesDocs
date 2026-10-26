@@ -242,6 +242,11 @@ The installed caller SHALL compose the protected recovery installation, fixed bo
 - **WHEN** a new stock incarnation, changed loaded policy, replaced group or incomplete terminal evidence is observed
 - **THEN** the session does not launch or expose native work and any consumed activation remains fatal to the ordinary runtime
 
+#### Scenario: Reloaded terminal dependency lists change textual order
+- **WHEN** independently qualified terminal observations differ only in the order of their After or Conflicts dependency lists
+- **THEN** the stable-state check accepts the equivalent duplicate-free lists while retaining the original raw evidence and requiring every other sampled field to match exactly
+- **AND** missing, added or duplicated dependencies, changed watchdog/runtime state, pending jobs, identity changes or failed original-group proof still refuse admission
+
 ### Requirement: Main-thread service health
 The installed ordinary Buddy runtime SHALL emit service readiness only after initialization and watchdog notifications only from actual main-thread progress under resident-supervisor-integration.md. Idle input polling, including the ordinary touch fallback, and active request-progress checks SHALL drive those notifications; no independent indefinite keep-alive thread SHALL be introduced. Notification I/O SHALL be nonblocking and errors, owner mismatch or expiration SHALL permanently fail that instance and reach service exit. Existing operation deadlines and input/cancellation semantics SHALL remain unchanged. Service readiness SHALL NOT grant native activation, page identity or write authority.
 

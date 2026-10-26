@@ -445,3 +445,53 @@ Formatting, whitespace and twelve offline bootstrap verifier tests pass; new
 Rust regression execution and the matching ARM artifact are still pending.
 Earlier `068c532` Checks passed 724 library tests (three ignored), twelve binary
 tests and the integration/simulator suites, but do not validate this correction.
+
+## Dependency ordering across terminal observation brackets
+
+The full `59ab44e` pipeline `40413867926` subsequently passed, including both
+dependency-order regressions. Build source `0b5a10566f7b4969a31c5f9d85bda5a8c53f114b`
+has the reviewed tree. Its verified ARM controller SHA256 is
+`ca60c48c1e35a7662b93c557a78c0a05266ecbef28dda1ae0cc3a08b4cce005f`.
+
+Fresh fixture `2cfbbd565ecd4d099f9be2f227685fcd` stopped only its disposable
+Buddy stand-in, then its actor reached the service-observation deadline. Both
+planned helpers refused `recovery target policy changed before terminal state`.
+Ownership and Buddy stop intent are the only effect records; stock stop, observer
+launch and restoration-start intents are absent. Both helpers verified original
+fake stock and unchanged source. Real Reader/Buddy identities remained unchanged.
+Separately reviewed cleanup stopped only the original active fake stock, verified
+terminal groups, removed all four definitions and preserved the collected evidence.
+
+Four subsequent read-only full snapshots of the cleared Buddy contain identical
+fields except `After` ordering: the first pair differs, the middle pair matches,
+and the final pair differs again. Policy matching accepts these equivalent lists,
+but raw snapshot equality in the terminal bracket can return pending indefinitely.
+This also explains why recovery cannot obtain its required terminal observation;
+the historical actor samples themselves were not retained, so that attribution
+remains a mechanism supported by the fresh reproduction, not a reconstructed trace.
+
+Use an explicit stable-observation comparison after existing state/identity/group
+qualification. Require the same field set; compare only `After` and `Conflicts`
+as duplicate-rejecting unordered lists. Every other field remains exact, including
+watchdog value, invocation, PIDs, timestamp, pending job, state, control group and
+all other policy. Keep raw equality, serialization and candidate bytes unchanged;
+equal raw malformed lists must not bypass duplicate rejection.
+
+Apply this to baseline and installed stock terminal brackets, original Buddy
+recovery observation, cleared actor/stock watchdog resampling, the final startable
+stock recheck after group proof, and the already-validated idle helper comparison.
+Keep active-incarnation checks exact. Regression coverage must reproduce two
+different permutations in one terminal bracket and preserve changed identity,
+group, policy, runtime-watchdog and pending-state refusals. Independent review
+accepted the terminal-bracket direction; final source and compiled/device checks
+remain required. This does not extend the actor deadline or replay the failed run.
+
+Buddy `cdeb0bb604a83cc01cf72e4ffb9e04bad53b5182` implements the correction.
+Independent source review accepted all seven comparison sites, including the
+post-group startable recheck and validated idle helper. Regression source covers
+changed/missing fields, duplicate self-comparison, cross-sample permutations,
+original-group refusal and one-start/no-start recovery behavior. Formatting,
+whitespace, scoped strict OpenSpec and Docs manifest/guidance/source checks pass.
+Compiled checks and a fresh corrected artifact/device fixture remain pending.
+Previous `db5fd13` Checks passed 729 library tests (three ignored), twelve binary
+tests and the integration suites; those do not validate this correction.
