@@ -1,0 +1,164 @@
+{
+  "capture_version": 1,
+  "qualification_scope": "Current Linux synthetic inventory and preserved independent cleanup behavior; no tablet/provider/native qualification",
+  "verification": {
+    "reviewed_source_head": "b473875768eccd9fed5c7174911e6554c6bc9781",
+    "source": {
+      "executable_sha256": "840d47c5a08be27b7fb5ed7bc3f02af3f3290567f165529cd3d0f9998b2a7b52",
+      "platform": "linux",
+      "source_head": "b4a09e8666d4b6ad1c4b467a6b80af2dd7e58e5c",
+      "source_tree": "93b9b7c928f4702c9a38b676da8a090956313a1a"
+    },
+    "records": 12,
+    "verified_stream_hashes": 24,
+    "independently_verified_prepared_intents": 0,
+    "raw_log_bytes": 640731,
+    "raw_log_sha256": "3d3a94fb19638e5f0019f3f2bcb06d3f005372ddae2727a9c91e576ee41b17da",
+    "normalized_bytes": 8771,
+    "normalized_sha256": "810163ffc8bfd85b8ce57a9695412aaa329cde35525ccb2e92ce4d9445e5792a",
+    "scope": "Current Linux synthetic inventory and preserved independent cleanup behavior; no tablet/provider/native qualification"
+  },
+  "records": [
+    {
+      "argv_extra": [],
+      "case": "missing-config",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "36ac04654b400d204c01d35cbcbde4113c62763a6da5244495f7a4980e724b5d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect-source-cache\",\"status\":\"unavailable\",\"runtime_unverified\":true,\"cleanup_authority\":false,\"entry_payloads_read\":false,\"entry_payloads_validated\":false,\"source_freshness_verified\":false,\"byte_basis\":\"apparent-file-length-per-owned-slot; no-allocated-or-reclaimable-claim\",\"actor\":null,\"generation\":null,\"entries\":null,\"total_apparent_bytes\":null}\n"
+    },
+    {
+      "argv_extra": [
+        "--api-key",
+        "private-fixture-sentinel"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "710dabc8a5a7b0897f86ce6ec3037b6aeee32ac47c145ba042d3524d6f7da069",
+      "stderr_utf8": "error: the argument '--inspect-source-cache' cannot be used with '--api-key <API_KEY>'\n\nUsage: reader-buddy --inspect-source-cache\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--model",
+        "private-fixture-sentinel"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "837825d879056abcc3a0bec2ad6a619e255b164acc097a097b910d5b304d99be",
+      "stderr_utf8": "error: the argument '--inspect-source-cache' cannot be used with '--model <MODEL>'\n\nUsage: reader-buddy --inspect-source-cache\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [],
+      "case": "corrupt-payload",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e771e575887143511bc1727c9f43216fc1bdccf5f5384cb2a31dfc58cb4c52c9",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect-source-cache\",\"status\":\"ok\",\"runtime_unverified\":true,\"cleanup_authority\":false,\"entry_payloads_read\":false,\"entry_payloads_validated\":false,\"source_freshness_verified\":false,\"byte_basis\":\"apparent-file-length-per-owned-slot; no-allocated-or-reclaimable-claim\",\"actor\":\"2b1c1c98-087f-4a33-9de9-24b09ecf6042\",\"generation\":\"81c854ba-63af-4535-8327-400aee240050\",\"entries\":[{\"document\":\"5511fdbd-f510-406a-b05f-3e93bd19d884\",\"apparent_bytes\":8}],\"total_apparent_bytes\":8}\n"
+    },
+    {
+      "argv_extra": [
+        "--simulate",
+        "private-fixture-sentinel"
+      ],
+      "case": "recognized-conflict",
+      "exit_code": 2,
+      "stderr_sha256": "9e2cb0b0c8e95d775af3977cd468a0df7003ab2bfe2f4c902ac12c438088d874",
+      "stderr_utf8": "error: the argument '--inspect-source-cache' cannot be used with '--simulate <SCENARIO>'\n\nUsage: reader-buddy --inspect-source-cache\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "unexpected-fixture-token"
+      ],
+      "case": "ordinary-syntax-diagnostic",
+      "exit_code": 2,
+      "stderr_sha256": "aa561a782701ebc30fe92eefcff7e0cf09ba79fb275df765a7ddbdfbafd783a5",
+      "stderr_utf8": "error: unexpected argument 'unexpected-fixture-token' found\n\nUsage: reader-buddy [OPTIONS]\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--inspect-source-cache=unexpected-fixture-value"
+      ],
+      "case": "ordinary-syntax-diagnostic",
+      "exit_code": 2,
+      "stderr_sha256": "6cec69bbd61f1bc5ac80cb555e5511ad356a4203e9421258750d0c52b75293d3",
+      "stderr_utf8": "error: unexpected value 'unexpected-fixture-value' for '--inspect-source-cache' found; no more were expected\n\nUsage: reader-buddy <--inspect-source-cache|--source-cache-operation <SOURCE_CACHE_OPERATION>|--source-cache-input <INPUT>|--credential-reference-operation <CREDENTIAL_REFERENCE_OPERATION>|--credential-reference-input <INPUT>|--model-credential-operation <MODEL_CREDENTIAL_OPERATION>|--model-credential-input <INPUT>|--memory-settings-operation <MEMORY_SETTINGS_OPERATION>|--memory-settings-input <INPUT>|--ordinary-export-operation <ORDINARY_EXPORT_OPERATION>|--ordinary-export-input <INPUT>|--model-settings-operation <MODEL_SETTINGS_OPERATION>|--model-settings-input <INPUT>|--restore-operation <RESTORE_OPERATION>|--restore-input <INPUT>|--basic-settings-operation <BASIC_SETTINGS_OPERATION>|--basic-settings-input <INPUT>|--configuration-operation <CONFIGURATION_OPERATION>|--simulate <SCENARIO>|--inspect-owned-data|--api-key <API_KEY>|--model <MODEL>|--base-url <BASE_URL>|--trigger-corner <TRIGGER_CORNER>|--log-level <LOG_LEVEL>|--debug-dump|--memory-operation <MEMORY_OPERATION>|--memory-input <FILE>|--sync-mode-operation <SYNC_MODE_OPERATION>|--sync-mode-input <FILE>|--archive-operation <ARCHIVE_OPERATION>|--archive-input <FILE>|--personalization-operation <PERSONALIZATION_OPERATION>|--export-note>\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [],
+      "case": "zero-length",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "fa5ddcb9bf3214947f1edcf10db85c46e8c5ba84966e1a0bfee2d01b0b6caa69",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect-source-cache\",\"status\":\"ok\",\"runtime_unverified\":true,\"cleanup_authority\":false,\"entry_payloads_read\":false,\"entry_payloads_validated\":false,\"source_freshness_verified\":false,\"byte_basis\":\"apparent-file-length-per-owned-slot; no-allocated-or-reclaimable-claim\",\"actor\":\"2b1c1c98-087f-4a33-9de9-24b09ecf6042\",\"generation\":\"81c854ba-63af-4535-8327-400aee240050\",\"entries\":[{\"document\":\"5511fdbd-f510-406a-b05f-3e93bd19d884\",\"apparent_bytes\":0}],\"total_apparent_bytes\":0}\n"
+    },
+    {
+      "argv_extra": [
+        "--unexpected-fixture-option"
+      ],
+      "case": "ordinary-syntax-diagnostic",
+      "exit_code": 2,
+      "stderr_sha256": "36eaa34bc15df5f5387e074d306f664d297ddad4f905a93be1f61e2432c00722",
+      "stderr_utf8": "error: unexpected argument '--unexpected-fixture-option' found\n\nUsage: reader-buddy --inspect-source-cache\n\nFor more information, try '--help'.\n",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_utf8": ""
+    },
+    {
+      "argv_extra": [
+        "--source-cache-operation",
+        "prepare",
+        "--source-cache-input",
+        "-"
+      ],
+      "case": "separate-cleanup-revalidates",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"document\":\"5511fdbd-f510-406a-b05f-3e93bd19d884\",\"operation\":\"ac535e61-4016-45bb-a634-aa32470c746f\",\"request_version\":1}",
+      "stdin_held_without_eof": false,
+      "stdout_sha256": "faf7533f2784a4b6d6073457aca3082494d165f8229ed9c38a8fbdf247dd091a",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"5511fdbd-f510-406a-b05f-3e93bd19d884\",\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "argv_extra": [],
+      "case": "empty-owned-namespace",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "ced1be8f13d437498b51dc8f3932548ec732e2f3ffbb06676283afe94d28af15",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect-source-cache\",\"status\":\"ok\",\"runtime_unverified\":true,\"cleanup_authority\":false,\"entry_payloads_read\":false,\"entry_payloads_validated\":false,\"source_freshness_verified\":false,\"byte_basis\":\"apparent-file-length-per-owned-slot; no-allocated-or-reclaimable-claim\",\"actor\":\"2b1c1c98-087f-4a33-9de9-24b09ecf6042\",\"generation\":\"81c854ba-63af-4535-8327-400aee240050\",\"entries\":[],\"total_apparent_bytes\":0}\n"
+    },
+    {
+      "argv_extra": [],
+      "case": "unknown-owned-entry",
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_held_without_eof": true,
+      "stdout_sha256": "402c2c15f92d69b9bf9a65128ce193de86238a3c82153fefe66e623a06490cd5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect-source-cache\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"cleanup_authority\":false,\"entry_payloads_read\":false,\"entry_payloads_validated\":false,\"source_freshness_verified\":false,\"byte_basis\":\"apparent-file-length-per-owned-slot; no-allocated-or-reclaimable-claim\",\"actor\":null,\"generation\":null,\"entries\":null,\"total_apparent_bytes\":null}\n"
+    }
+  ]
+}

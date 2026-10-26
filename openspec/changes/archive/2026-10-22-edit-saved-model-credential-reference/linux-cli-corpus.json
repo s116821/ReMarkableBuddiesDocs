@@ -1,0 +1,969 @@
+{
+  "basis": "Historical original successful Linux CLI capture at the exact CI checkout/executable below. All Config, names and Store contents are synthetic task-owned fixtures. This is not native/provider/runtime or transport-loss qualification. Do not relabel this corpus as later source execution.",
+  "capture": {
+    "basis": "Actual captured host CLI bytes; synthetic task-owned Config/Stores only. Separate from fixture/reference calculations and native/runtime/provider qualification.",
+    "provenance": {
+      "executable_sha256": "97f53a49a48a71473ada862928cf412ee5a03558974bbb23f3cb45a127b141af",
+      "scope": "Actual host CLI against task-owned synthetic Config and Stores; no real credential/provider/tablet/runtime or transport-loss test.",
+      "source_checkout_sha": "a81ed1273b0303bd4ea409b6c5861429091b500e"
+    },
+    "records": 105,
+    "verified_record_hashes": 181,
+    "source_log_bytes": 548684,
+    "source_log_sha256": "dfd5e33a6436d15082a631f367084644c177e0ec62c0c029073bacafd97dcb4b",
+    "normalized_records_bytes": 146612,
+    "normalized_records_sha256": "fc48cb200cb7726c43b4459601fe5a615cb64521eb6bc6dc7a418e36a589d1d3",
+    "reviewed_source_head": "e425768e2e81179205558652331d39e9d46dfea8",
+    "ci_run": 39869946858,
+    "checks_job": 120141649243,
+    "checkout_tree": "2b5fa5b949cffbe65cc7fb8e3eb58cef9581100e",
+    "reviewed_tree_matches_checkout": true
+  },
+  "records": [
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "a4d4dbc46a2a336b9354489e8c6813ea13afac6f270191f2674a265801e1a81b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"10f68fac1ee0446bc461d03e3af57032ec53b033a35bdf424f9a74a6b707d04b\",\"config_path_sha256\":\"7096ec952a9b31714439dd3e079e2a0de385742886526fa700e6926545804500\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "43b82b705b35c42f7737e48d531ba581f4055560e470252c388640282fc79bfd",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"d95a4dc4291ee39097353b85c257fc49ef430ed80059b1870f41418ef6ba350a\",\"config_path_sha256\":\"e0ef6ed44922a422ba6440d2077c1bb69749f69825e88b5b0e99c1ded2ca8ef9\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "e46aa1cd0bc444d050644b785cf2fb9347f4ec8ac292e13732e66144093a209c",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"b19ae3ae214d3aa32421b05ab85680e5072da7f43acdbc762129c74c0baf511f\",\"config_path_sha256\":\"d9a925c3a3eb78c17154ff1cac82731bc485d57464a5c961c8d9d458af7d3c1d\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjEwZjY4ZmFjMWVlMDQ0NmJjNDYxZDAzZTNhZjU3MDMyZWM1M2IwMzNhMzViZGY0MjRmOWE3NGE2YjcwN2QwNGIiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI3MDk2ZWM5NTJhOWIzMTcxNDQzOWRkM2UwNzllMmEwZGUzODU3NDI4ODY1MjZmYTcwMGU2OTI2NTQ1ODA0NTAwIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiZjg1NTE5NmYtYzNkMy00MTA4LTllYjAtNzA1MDcwNmNmNzE0In0=",
+      "stdin_sha256": "7ee00c119b44ae2ba05d0bd22cbfacebfda8d1a58b8a566e09a7c331f7b0d6ea",
+      "stdout_sha256": "1f5ab99ec582fdc80b6011b8cbb47dcbe0ed7c3f2743e2b51bc8d97e4d0eda80",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"f855196f-c3d3-4108-9eb0-7050706cf714\",\"base_sha256\":\"10f68fac1ee0446bc461d03e3af57032ec53b033a35bdf424f9a74a6b707d04b\",\"target_sha256\":\"716d97505c3267d4a844ceda6ec0b641addbd8cfe489dd83ddc2b069333d41ed\",\"config_path_sha256\":\"7096ec952a9b31714439dd3e079e2a0de385742886526fa700e6926545804500\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImIxOWFlM2FlMjE0ZDNhYTMyNDIxYjA1YWI4NTY4MGU1MDcyZGE3ZjQzYWNkYmM3NjIxMjljNzRjMGJhZjUxMWYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJkOWE5MjVjM2EzZWI3OGMxNzE1NGZmMWNhYzgyNzMxYmM0ODVkNTc0NjRhNWM5NjFjOGQ5ZDQ1OGFmN2QzYzFkIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiM2RlNmQxNzgtMmFlZC00OTEyLTkzOWEtYTZiMzQ2MjUwZDZmIn0=",
+      "stdin_sha256": "22ec526c1a1a3d7c10de720caab56426d1670bd34ae04ee8732155bd889b480d",
+      "stdout_sha256": "fb04c6b1a67c341c147b7d68a05c47e169a237e1cb3f16a50c3d059f01023e91",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"3de6d178-2aed-4912-939a-a6b346250d6f\",\"base_sha256\":\"b19ae3ae214d3aa32421b05ab85680e5072da7f43acdbc762129c74c0baf511f\",\"target_sha256\":\"cf1d954fe32143cd7374151d0b77a9d742b85ddf0389caac1e3de75b6774a886\",\"config_path_sha256\":\"d9a925c3a3eb78c17154ff1cac82731bc485d57464a5c961c8d9d458af7d3c1d\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX09USEVSIn0sImludGVudCI6eyJiYXNlX3NoYTI1NiI6IjEwZjY4ZmFjMWVlMDQ0NmJjNDYxZDAzZTNhZjU3MDMyZWM1M2IwMzNhMzViZGY0MjRmOWE3NGE2YjcwN2QwNGIiLCJjaGFuZ2VzX3NoYTI1NiI6ImZiYjlkMDY0Y2U4OGY4N2E0NzMzNmFlY2RmYzEwY2JjNWFkNmRiMmIwYTFjNzA0NzIxNGM2NTA0ZTM1YjQyNWYiLCJjb25maWdfcGF0aF9zaGEyNTYiOiI3MDk2ZWM5NTJhOWIzMTcxNDQzOWRkM2UwNzllMmEwZGUzODU3NDI4ODY1MjZmYTcwMGU2OTI2NTQ1ODA0NTAwIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiZjg1NTE5NmYtYzNkMy00MTA4LTllYjAtNzA1MDcwNmNmNzE0IiwidGFyZ2V0X3NoYTI1NiI6IjcxNmQ5NzUwNWMzMjY3ZDRhODQ0Y2VkYTZlYzBiNjQxYWRkYmQ4Y2ZlNDg5ZGQ4M2RkYzJiMDY5MzMzZDQxZWQifX0=",
+      "stdin_sha256": "a7a4a83a88d1ac514cdc7af218507d64970f5fef122c2ae22155aaf67aa0a072",
+      "stdout_sha256": "5160ee218c635824c6271a2c9984dc7c0729aee94d04cee79e2cb357de2ae39d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJiMTlhZTNhZTIxNGQzYWEzMjQyMWIwNWFiODU2ODBlNTA3MmRhN2Y0M2FjZGJjNzYyMTI5Yzc0YzBiYWY1MTFmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZDlhOTI1YzNhM2ViNzhjMTcxNTRmZjFjYWM4MjczMWJjNDg1ZDU3NDY0YTVjOTYxYzhkOWQ0NThhZjdkM2MxZCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjNkZTZkMTc4LTJhZWQtNDkxMi05MzlhLWE2YjM0NjI1MGQ2ZiIsInRhcmdldF9zaGEyNTYiOiJjZjFkOTU0ZmUzMjE0M2NkNzM3NDE1MWQwYjc3YTlkNzQyYjg1ZGRmMDM4OWNhYWMxZTNkZTc1YjY3NzRhODg2In19",
+      "stdin_sha256": "1affb4fa7ed84f0bfa5fee25ce0b8ed9d5c6a819599eec1ab9daa43c56773774",
+      "stdout_sha256": "392bd19f50916da00fa3a911f57a1db0031b6f534ec0391961d2197ff19425fb",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"cf1d954fe32143cd7374151d0b77a9d742b85ddf0389caac1e3de75b6774a886\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "30c64275b898319568f3a14765ff23ccf39f628a4f72e0b0b4309feeb944d68e",
+      "stdout_sha256": "f63c557f2b0f378ab3181a82e272ad0171ac0683d6401ccad78a4eaca997a7ab",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"conflict\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJiMTlhZTNhZTIxNGQzYWEzMjQyMWIwNWFiODU2ODBlNTA3MmRhN2Y0M2FjZGJjNzYyMTI5Yzc0YzBiYWY1MTFmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZDlhOTI1YzNhM2ViNzhjMTcxNTRmZjFjYWM4MjczMWJjNDg1ZDU3NDY0YTVjOTYxYzhkOWQ0NThhZjdkM2MxZCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjNkZTZkMTc4LTJhZWQtNDkxMi05MzlhLWE2YjM0NjI1MGQ2ZiIsInRhcmdldF9zaGEyNTYiOiJjZjFkOTU0ZmUzMjE0M2NkNzM3NDE1MWQwYjc3YTlkNzQyYjg1ZGRmMDM4OWNhYWMxZTNkZTc1YjY3NzRhODg2In19",
+      "stdin_sha256": "b88627bb0bc83c09c953289c9633ec33d7d4b3f596a111f64d4de8ef80d7d2c7",
+      "stdout_sha256": "4ce5cf9eb74dc4e34b6798607870ac9ae0d2779bcd0584aaa3595c241d68f55a",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"cf1d954fe32143cd7374151d0b77a9d742b85ddf0389caac1e3de75b6774a886\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "4d3faef8197e9794ed050beff46c317fad5d4bc7980596eec12dd42e2c645c6b",
+      "stdout_sha256": "f63c557f2b0f378ab3181a82e272ad0171ac0683d6401ccad78a4eaca997a7ab",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"conflict\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIn19",
+      "stdin_sha256": "273f0d66d4832a3ae04c52e5291d0cfafb2bb07dca2f273754cefca6f4fc9346",
+      "stdout_sha256": "5160ee218c635824c6271a2c9984dc7c0729aee94d04cee79e2cb357de2ae39d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "d361af952826ea3d76a7a6d40de450333af9c0f8ef86c8860be6b8883cd6c7f0",
+      "stdout_sha256": "5160ee218c635824c6271a2c9984dc7c0729aee94d04cee79e2cb357de2ae39d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "f29a5ffc8a8983e79c6436efc2c4663915b556f59fadefa7af6907d8a04f80cf",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"39a5ebb130080ccb9f64f92d20216f1867686c531c4a0cba6d4c0e81fbf6e78b\",\"config_path_sha256\":\"5b26e5b8360d3232590e67bf16d4148a4b28198eb41efda8cdab1d45c8a00105\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "3d0401c8f58638075cc2dbd2a286dfe65a52552f5f7d3cccfe0e32798b3457ee",
+      "stdout_sha256": "c374bd070b4d82d4eab71625bfe8a9e6c4a9665a29339202d820c5099c71df57",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"busy\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjM5YTVlYmIxMzAwODBjY2I5ZjY0ZjkyZDIwMjE2ZjE4Njc2ODZjNTMxYzRhMGNiYTZkNGMwZTgxZmJmNmU3OGIiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI1YjI2ZTViODM2MGQzMjMyNTkwZTY3YmYxNmQ0MTQ4YTRiMjgxOThlYjQxZWZkYThjZGFiMWQ0NWM4YTAwMTA1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNzI1YjQ5NzUtODY0Yy00NzFmLWI0YmEtMWRlMTY1OWVkOTQwIn0=",
+      "stdin_sha256": "b584a0512b1e439a7de1932c11179e01b6c7a346808ff82b0a2ebb07a36ef6f6",
+      "stdout_sha256": "e15255bc920f1ac6deb882603713f8d04ec43b9aa30facd414cabfa81ff828c5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"725b4975-864c-471f-b4ba-1de1659ed940\",\"base_sha256\":\"39a5ebb130080ccb9f64f92d20216f1867686c531c4a0cba6d4c0e81fbf6e78b\",\"target_sha256\":\"c2820932a64e3ed74f2a249fb16aa6f20aecbbcfbc0d52638396e6b3b74e0ffc\",\"config_path_sha256\":\"5b26e5b8360d3232590e67bf16d4148a4b28198eb41efda8cdab1d45c8a00105\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "a4d4dbc46a2a336b9354489e8c6813ea13afac6f270191f2674a265801e1a81b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"10f68fac1ee0446bc461d03e3af57032ec53b033a35bdf424f9a74a6b707d04b\",\"config_path_sha256\":\"7096ec952a9b31714439dd3e079e2a0de385742886526fa700e6926545804500\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIzOWE1ZWJiMTMwMDgwY2NiOWY2NGY5MmQyMDIxNmYxODY3Njg2YzUzMWM0YTBjYmE2ZDRjMGU4MWZiZjZlNzhiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNWIyNmU1YjgzNjBkMzIzMjU5MGU2N2JmMTZkNDE0OGE0YjI4MTk4ZWI0MWVmZGE4Y2RhYjFkNDVjOGEwMDEwNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjcyNWI0OTc1LTg2NGMtNDcxZi1iNGJhLTFkZTE2NTllZDk0MCIsInRhcmdldF9zaGEyNTYiOiJjMjgyMDkzMmE2NGUzZWQ3NGYyYTI0OWZiMTZhYTZmMjBhZWNiYmNmYmMwZDUyNjM4Mzk2ZTZiM2I3NGUwZmZjIn19",
+      "stdin_sha256": "86620395796c3f58b4dd62ad14541b682184407adb4969631d464506b34ca412",
+      "stdout_sha256": "5ff26230366eb28518cec9f82b3bcb6c5366f95b63f96900d521a511c14aae1d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"c2820932a64e3ed74f2a249fb16aa6f20aecbbcfbc0d52638396e6b3b74e0ffc\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "5ed07efb6e23a3fdd44d68a710e40bea29adc7c89d2d4ac3a1f8c7964314769b",
+      "stdout_sha256": "5acdf15d758fc98bb9afa2de9f7691103b32522841bd31e83068274ce0944352",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"unresolved\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIzOWE1ZWJiMTMwMDgwY2NiOWY2NGY5MmQyMDIxNmYxODY3Njg2YzUzMWM0YTBjYmE2ZDRjMGU4MWZiZjZlNzhiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNWIyNmU1YjgzNjBkMzIzMjU5MGU2N2JmMTZkNDE0OGE0YjI4MTk4ZWI0MWVmZGE4Y2RhYjFkNDVjOGEwMDEwNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjcyNWI0OTc1LTg2NGMtNDcxZi1iNGJhLTFkZTE2NTllZDk0MCIsInRhcmdldF9zaGEyNTYiOiJjMjgyMDkzMmE2NGUzZWQ3NGYyYTI0OWZiMTZhYTZmMjBhZWNiYmNmYmMwZDUyNjM4Mzk2ZTZiM2I3NGUwZmZjIn19",
+      "stdin_sha256": "5fcf31eb478c340b3c13dd6f16d786edd7f7a982f909a999e78daa633b0d108e",
+      "stdout_sha256": "e88cb449aed0fed92c9aa8381e26d7060a454121ce6d00aeadb3e534426b52d1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"c2820932a64e3ed74f2a249fb16aa6f20aecbbcfbc0d52638396e6b3b74e0ffc\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIxMGY2OGZhYzFlZTA0NDZiYzQ2MWQwM2UzYWY1NzAzMmVjNTNiMDMzYTM1YmRmNDI0ZjlhNzRhNmI3MDdkMDRiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNzA5NmVjOTUyYTliMzE3MTQ0MzlkZDNlMDc5ZTJhMGRlMzg1NzQyODg2NTI2ZmE3MDBlNjkyNjU0NTgwNDUwMCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImY4NTUxOTZmLWMzZDMtNDEwOC05ZWIwLTcwNTA3MDZjZjcxNCIsInRhcmdldF9zaGEyNTYiOiI3MTZkOTc1MDVjMzI2N2Q0YTg0NGNlZGE2ZWMwYjY0MWFkZGJkOGNmZTQ4OWRkODNkZGMyYjA2OTMzM2Q0MWVkIn19",
+      "stdin_sha256": "3d0401c8f58638075cc2dbd2a286dfe65a52552f5f7d3cccfe0e32798b3457ee",
+      "stdout_sha256": "f63c557f2b0f378ab3181a82e272ad0171ac0683d6401ccad78a4eaca997a7ab",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"conflict\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "587196657a787a0a836d63548f9bf5f0d0763405d85a5accedf4212d5d452daf",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"f40ad81eb5489cde5b8e42cc6c374d2546049cecd0a3bfcaa1053b4249000519\",\"config_path_sha256\":\"04643e8ba3984dc8f66a743ee0e9160fb97e479a2ed551e7235358dde510222f\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "0bf746cb9fcf883f6a4f9fc2cd8c7c76b45512d76743e1d9cf2a4d44da47fbed",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"7e75d7e0cc8509d80ea5dd6f0ed9bdfe415a08b7bd7821d4796bd568bf63aeb4\",\"config_path_sha256\":\"a9008b48b8d9815fb33b161b68ca1089c82f7902dfb140c787cda3771b0d08fa\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImY0MGFkODFlYjU0ODljZGU1YjhlNDJjYzZjMzc0ZDI1NDYwNDljZWNkMGEzYmZjYWExMDUzYjQyNDkwMDA1MTkiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiIwNDY0M2U4YmEzOTg0ZGM4ZjY2YTc0M2VlMGU5MTYwZmI5N2U0NzlhMmVkNTUxZTcyMzUzNThkZGU1MTAyMjJmIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNzQxMzVhOGQtZmQ3NS00MTRhLTg4ZDQtNmY5MzVhMmNjNjg0In0=",
+      "stdin_sha256": "aad2058e50fa794e418741a899cf9050e653699799dd4df6d0d6ddbb4f75b9e5",
+      "stdout_sha256": "dd969054a478c539b77252e79056956763a43ac0450174601bc56a17e91a8bda",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"74135a8d-fd75-414a-88d4-6f935a2cc684\",\"base_sha256\":\"f40ad81eb5489cde5b8e42cc6c374d2546049cecd0a3bfcaa1053b4249000519\",\"target_sha256\":\"49a538bd04d7f8450565cf41e626a4de7d5aba8775a2c916549fa69a3f9c0a01\",\"config_path_sha256\":\"04643e8ba3984dc8f66a743ee0e9160fb97e479a2ed551e7235358dde510222f\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJmNDBhZDgxZWI1NDg5Y2RlNWI4ZTQyY2M2YzM3NGQyNTQ2MDQ5Y2VjZDBhM2JmY2FhMTA1M2I0MjQ5MDAwNTE5IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMDQ2NDNlOGJhMzk4NGRjOGY2NmE3NDNlZTBlOTE2MGZiOTdlNDc5YTJlZDU1MWU3MjM1MzU4ZGRlNTEwMjIyZiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijc0MTM1YThkLWZkNzUtNDE0YS04OGQ0LTZmOTM1YTJjYzY4NCIsInRhcmdldF9zaGEyNTYiOiI0OWE1MzhiZDA0ZDdmODQ1MDU2NWNmNDFlNjI2YTRkZTdkNWFiYTg3NzVhMmM5MTY1NDlmYTY5YTNmOWMwYTAxIn19",
+      "stdin_sha256": "36b589f2c71177f3e0c0fdd39b6510368f1f2c0d7cc5a7e796fd601d12b0c22b",
+      "stdout_sha256": "08375596d3dce4ce15580b6769359f37de1e1623ad34ea191154d508ca2911e4",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unavailable\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjdlNzVkN2UwY2M4NTA5ZDgwZWE1ZGQ2ZjBlZDliZGZlNDE1YTA4YjdiZDc4MjFkNDc5NmJkNTY4YmY2M2FlYjQiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJhOTAwOGI0OGI4ZDk4MTVmYjMzYjE2MWI2OGNhMTA4OWM4MmY3OTAyZGZiMTQwYzc4N2NkYTM3NzFiMGQwOGZhIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiODkyNGIzOGUtMzkzMy00ZmY2LThhZjEtZDU0MjlkMjNiODlkIn0=",
+      "stdin_sha256": "07f1de81b8882fb38810d2da1aa9ded7dbae2587a2c39604f8450d8f4cee9c2b",
+      "stdout_sha256": "613d0dcba3fe50740ca114e33f97ccc575bb62b4102ed487d2b1f17aaf6ae2ca",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"8924b38e-3933-4ff6-8af1-d5429d23b89d\",\"base_sha256\":\"7e75d7e0cc8509d80ea5dd6f0ed9bdfe415a08b7bd7821d4796bd568bf63aeb4\",\"target_sha256\":\"01ae031429e2b2efc9693ee3efba2a4d68d5fec15ee0b27250d7596e0e9f9eef\",\"config_path_sha256\":\"a9008b48b8d9815fb33b161b68ca1089c82f7902dfb140c787cda3771b0d08fa\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJmNDBhZDgxZWI1NDg5Y2RlNWI4ZTQyY2M2YzM3NGQyNTQ2MDQ5Y2VjZDBhM2JmY2FhMTA1M2I0MjQ5MDAwNTE5IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMDQ2NDNlOGJhMzk4NGRjOGY2NmE3NDNlZTBlOTE2MGZiOTdlNDc5YTJlZDU1MWU3MjM1MzU4ZGRlNTEwMjIyZiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijc0MTM1YThkLWZkNzUtNDE0YS04OGQ0LTZmOTM1YTJjYzY4NCIsInRhcmdldF9zaGEyNTYiOiI0OWE1MzhiZDA0ZDdmODQ1MDU2NWNmNDFlNjI2YTRkZTdkNWFiYTg3NzVhMmM5MTY1NDlmYTY5YTNmOWMwYTAxIn19",
+      "stdin_sha256": "96f5f54fe22b7e6bc82471cce25d29d0392364d6f299c577ae9e90cd21def679",
+      "stdout_sha256": "5acdf15d758fc98bb9afa2de9f7691103b32522841bd31e83068274ce0944352",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"unresolved\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI3ZTc1ZDdlMGNjODUwOWQ4MGVhNWRkNmYwZWQ5YmRmZTQxNWEwOGI3YmQ3ODIxZDQ3OTZiZDU2OGJmNjNhZWI0IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiYTkwMDhiNDhiOGQ5ODE1ZmIzM2IxNjFiNjhjYTEwODljODJmNzkwMmRmYjE0MGM3ODdjZGEzNzcxYjBkMDhmYSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijg5MjRiMzhlLTM5MzMtNGZmNi04YWYxLWQ1NDI5ZDIzYjg5ZCIsInRhcmdldF9zaGEyNTYiOiIwMWFlMDMxNDI5ZTJiMmVmYzk2OTNlZTNlZmJhMmE0ZDY4ZDVmZWMxNWVlMGIyNzI1MGQ3NTk2ZTBlOWY5ZWVmIn19",
+      "stdin_sha256": "3f83a5e9f7511467d305171ffc786a59a4a13dc11268aaef68d44fd04a08cbaf",
+      "stdout_sha256": "8a748c39064327e9264ff2f6b9089060ba661fe03abc01a66a0307d0d55efc77",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"01ae031429e2b2efc9693ee3efba2a4d68d5fec15ee0b27250d7596e0e9f9eef\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI3ZTc1ZDdlMGNjODUwOWQ4MGVhNWRkNmYwZWQ5YmRmZTQxNWEwOGI3YmQ3ODIxZDQ3OTZiZDU2OGJmNjNhZWI0IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiYTkwMDhiNDhiOGQ5ODE1ZmIzM2IxNjFiNjhjYTEwODljODJmNzkwMmRmYjE0MGM3ODdjZGEzNzcxYjBkMDhmYSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijg5MjRiMzhlLTM5MzMtNGZmNi04YWYxLWQ1NDI5ZDIzYjg5ZCIsInRhcmdldF9zaGEyNTYiOiIwMWFlMDMxNDI5ZTJiMmVmYzk2OTNlZTNlZmJhMmE0ZDY4ZDVmZWMxNWVlMGIyNzI1MGQ3NTk2ZTBlOWY5ZWVmIn19",
+      "stdin_sha256": "5b60e8599f5deeb0bbb7f75170c11a8381e4bdc3969bd51812640f2ad940b026",
+      "stdout_sha256": "1bb5daadc4abf2381ae441f9a63229bb2b5209e0131b8ce74b6b153d558e99fa",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"01ae031429e2b2efc9693ee3efba2a4d68d5fec15ee0b27250d7596e0e9f9eef\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "e5cb629a0f2b1966daa750d4d74a4ad332bfe0e87f18fe9dc26e40f9aea5347d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjA3ZDJiYTNiNmY5YmEyNTRlZmEyYTg1ODg3YTZkZWNiZmYzZGFjZmRkYmE5ZDcxYTc4YmNlMDE3OTczN2E3NzYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjBmNmQzMjBmLTNiOWItNDRjOC1hMGVlLTBiOTRiYjk3ODg4YiJ9",
+      "stdin_sha256": "ecdb938487754890dcabc5016ba4aab90019742e1b5e528f445112d08b8643e4",
+      "stdout_sha256": "e336bdb10d22c883ea216043243e7147fcc048eae8e5035dbdca0d46962ad4be",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"no-change\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"base_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"changes_sha256\":\"88c0eb350510891f14d2c7604bc047490a468f9f575b8b1d57b60294cb085f80\"}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "0ca68c89c405095726616a76108982fbdc98c9589d1797516af70786c811ff9d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"0133c0d4a417d064e6ec2c443fd04cffe6f0b8797f8715ff3380d064964f850f\",\"config_path_sha256\":\"580d6e1a6e7adc97135fe909882256a3024a950d5ad2cbc8a2774925bfce2015\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "e5cb629a0f2b1966daa750d4d74a4ad332bfe0e87f18fe9dc26e40f9aea5347d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjAxMzNjMGQ0YTQxN2QwNjRlNmVjMmM0NDNmZDA0Y2ZmZTZmMGI4Nzk3Zjg3MTVmZjMzODBkMDY0OTY0Zjg1MGYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI1ODBkNmUxYTZlN2FkYzk3MTM1ZmU5MDk4ODIyNTZhMzAyNGE5NTBkNWFkMmNiYzhhMjc3NDkyNWJmY2UyMDE1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiMWU0OTM5MjUtYzVjOS00M2Q2LWEwNjgtN2RhYTdmMmY1NGU0In0=",
+      "stdin_sha256": "24dcd879c58cadceaa286de5cd6985bf3a8dfd85cc58f0abb4c2bd910fc69f4b",
+      "stdout_sha256": "08954456d7f99aefb6304fc28eb43162e508862ca73ca93488027a73c20b96aa",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"1e493925-c5c9-43d6-a068-7daa7f2f54e4\",\"base_sha256\":\"0133c0d4a417d064e6ec2c443fd04cffe6f0b8797f8715ff3380d064964f850f\",\"target_sha256\":\"74855ac0f74edc666f1713d0909e1b83e7ec5d4be0b6efcd067a3dd33761b850\",\"config_path_sha256\":\"580d6e1a6e7adc97135fe909882256a3024a950d5ad2cbc8a2774925bfce2015\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjA3ZDJiYTNiNmY5YmEyNTRlZmEyYTg1ODg3YTZkZWNiZmYzZGFjZmRkYmE5ZDcxYTc4YmNlMDE3OTczN2E3NzYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JlZi1hcGlfMDEifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImU2MjNlZGVhLTdhMTMtNGI3Ni05MWRkLTE4ZTE0ODBkMTRhOSJ9",
+      "stdin_sha256": "f1af5f3db3f98093ba92c7781e1c7f4f2028bf9c46a721af2bfa203c29dd84a9",
+      "stdout_sha256": "09b45f23890e76369ba04041dd00a749277655287785cc1715bd4c32fbd4d42c",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"e623edea-7a13-4b76-91dd-18e1480d14a9\",\"base_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"target_sha256\":\"2906c4ff2273d1977ba3971f514a7bfcff00570437be1440837e73a5f2f39abb\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"changes_sha256\":\"b8341e3466a3f13916f602ad3f2c5d9cd70d8dce2034246e1adadcff015c92d4\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIwMTMzYzBkNGE0MTdkMDY0ZTZlYzJjNDQzZmQwNGNmZmU2ZjBiODc5N2Y4NzE1ZmYzMzgwZDA2NDk2NGY4NTBmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNTgwZDZlMWE2ZTdhZGM5NzEzNWZlOTA5ODgyMjU2YTMwMjRhOTUwZDVhZDJjYmM4YTI3NzQ5MjViZmNlMjAxNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjFlNDkzOTI1LWM1YzktNDNkNi1hMDY4LTdkYWE3ZjJmNTRlNCIsInRhcmdldF9zaGEyNTYiOiI3NDg1NWFjMGY3NGVkYzY2NmYxNzEzZDA5MDllMWI4M2U3ZWM1ZDRiZTBiNmVmY2QwNjdhM2RkMzM3NjFiODUwIn19",
+      "stdin_sha256": "30fdd83ac482b90ec43dc3c176dae2e12120a03f2ac854611c2310186062db2a",
+      "stdout_sha256": "a4b0c7999818ee67390697a6a52c28537109d74fee770ccd4afe3bd11db6c60e",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"74855ac0f74edc666f1713d0909e1b83e7ec5d4be0b6efcd067a3dd33761b850\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "a2ddb74b849d93e3003fa350d2ec07dbd64ecd1e8f36124e742066bc9bd532bd",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"badc190ddc9fc678c084dcdda53f2e5c1ec8ad5f25822db679bd8853d2544393\",\"config_path_sha256\":\"e494193ea4da1fe05b9462162d0680da11cf33141d7c112d6eaf4d7fafd80355\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIwN2QyYmEzYjZmOWJhMjU0ZWZhMmE4NTg4N2E2ZGVjYmZmM2RhY2ZkZGJhOWQ3MWE3OGJjZTAxNzk3MzdhNzc2IiwiY2hhbmdlc19zaGEyNTYiOiJiODM0MWUzNDY2YTNmMTM5MTZmNjAyYWQzZjJjNWQ5Y2Q3MGQ4ZGNlMjAzNDI0NmUxYWRhZGNmZjAxNWM5MmQ0IiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImU2MjNlZGVhLTdhMTMtNGI3Ni05MWRkLTE4ZTE0ODBkMTRhOSIsInRhcmdldF9zaGEyNTYiOiIyOTA2YzRmZjIyNzNkMTk3N2JhMzk3MWY1MTRhN2JmY2ZmMDA1NzA0MzdiZTE0NDA4MzdlNzNhNWYyZjM5YWJiIn19",
+      "stdin_sha256": "7cf44780cf3329151ce17ec9eca968ac06ad91a18a55dfe1925ee891394e382d",
+      "stdout_sha256": "5acdf15d758fc98bb9afa2de9f7691103b32522841bd31e83068274ce0944352",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"unresolved\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "d1fe03d11678231f78197f02deea7a572d624d0c1ee19190cd4e8c7da0a4db0c",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"f22d68ca8c332ca1a48e91b5fde52aa1a908a4e854c56911ff4c6e46913d8d76\",\"config_path_sha256\":\"93f494a1c9dd4d52cdb6074ba947eb0eb35020625ae362510dfcbbce8c608ced\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIwMTMzYzBkNGE0MTdkMDY0ZTZlYzJjNDQzZmQwNGNmZmU2ZjBiODc5N2Y4NzE1ZmYzMzgwZDA2NDk2NGY4NTBmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNTgwZDZlMWE2ZTdhZGM5NzEzNWZlOTA5ODgyMjU2YTMwMjRhOTUwZDVhZDJjYmM4YTI3NzQ5MjViZmNlMjAxNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjFlNDkzOTI1LWM1YzktNDNkNi1hMDY4LTdkYWE3ZjJmNTRlNCIsInRhcmdldF9zaGEyNTYiOiI3NDg1NWFjMGY3NGVkYzY2NmYxNzEzZDA5MDllMWI4M2U3ZWM1ZDRiZTBiNmVmY2QwNjdhM2RkMzM3NjFiODUwIn19",
+      "stdin_sha256": "09e0b9ab9e7d34120415cb604eb21f1c4f394b53adab1d56675df180603fcdb3",
+      "stdout_sha256": "c9cd024711e503c9783b65f2bb57fc4309474deceef7dde3d7722dc396c5cdeb",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"74855ac0f74edc666f1713d0909e1b83e7ec5d4be0b6efcd067a3dd33761b850\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIiLCJ2YWx1ZSI6IlBSSVZBVEVfRVhUUkEifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZTQ5NDE5M2VhNGRhMWZlMDViOTQ2MjE2MmQwNjgwZGExMWNmMzMxNDFkN2MxMTJkNmVhZjRkN2ZhZmQ4MDM1NSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjY1ZDMwYjNhLTA4MGEtNDU1ZC04ZjkyLWRmMmQ4MGU5MGI0ZiJ9",
+      "stdin_sha256": "de07c14012f3b660cdcc0f3c56b0ba6cb4efbf9e345f7656553203291fd6ab37",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImYyMmQ2OGNhOGMzMzJjYTFhNDhlOTFiNWZkZTUyYWExYTkwOGE0ZTg1NGM1NjkxMWZmNGM2ZTQ2OTEzZDhkNzYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI5M2Y0OTRhMWM5ZGQ0ZDUyY2RiNjA3NGJhOTQ3ZWIwZWIzNTAyMDYyNWFlMzYyNTEwZGZjYmJjZThjNjA4Y2VkIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNzkzMTVlMDktNjQyZS00N2VlLTllOGEtYWNiODdlOTYzZjIyIn0=",
+      "stdin_sha256": "dd22e40aa7f16914d77f52e0521c6d5fac115d58ddc7ee6f614519ce20f6b715",
+      "stdout_sha256": "1af20c49b8f7c002a2b002f9e5744b5d85cdaf4fb3a12a5f9e85fd14d19ea7e7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"79315e09-642e-47ee-9e8a-acb87e963f22\",\"base_sha256\":\"f22d68ca8c332ca1a48e91b5fde52aa1a908a4e854c56911ff4c6e46913d8d76\",\"target_sha256\":\"809ebb3a7d30ae7713f14ad1dd1d85527450fe76471bd30bc1b78bdf5f7cac4c\",\"config_path_sha256\":\"93f494a1c9dd4d52cdb6074ba947eb0eb35020625ae362510dfcbbce8c608ced\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIiLCJleHRyYSI6dHJ1ZX0sImNvbmZpZ19wYXRoX3NoYTI1NiI6ImU0OTQxOTNlYTRkYTFmZTA1Yjk0NjIxNjJkMDY4MGRhMTFjZjMzMTQxZDdjMTEyZDZlYWY0ZDdmYWZkODAzNTUiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiI2NWQzMGIzYS0wODBhLTQ1NWQtOGY5Mi1kZjJkODBlOTBiNGYifQ==",
+      "stdin_sha256": "f5f6bf4215e847e18c8b892969138ab20ee3b3fd625867e1a125738dc17a5d7f",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JlZi1hcGlfMDEifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiMDdkMmJhM2I2ZjliYTI1NGVmYTJhODU4ODdhNmRlY2JmZjNkYWNmZGRiYTlkNzFhNzhiY2UwMTc5NzM3YTc3NiIsImNoYW5nZXNfc2hhMjU2IjoiYjgzNDFlMzQ2NmEzZjEzOTE2ZjYwMmFkM2YyYzVkOWNkNzBkOGRjZTIwMzQyNDZlMWFkYWRjZmYwMTVjOTJkNCIsImNvbmZpZ19wYXRoX3NoYTI1NiI6IjMyMDVkMmQ4YTI0Zjk0YjI5NjQ5ODRmYjUzODExNGI4OTI2NWFkY2FkNWVlYzNkMWM5YTFlZWRiMjAwMDA2M2IiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiJlNjIzZWRlYS03YTEzLTRiNzYtOTFkZC0xOGUxNDgwZDE0YTkiLCJ0YXJnZXRfc2hhMjU2IjoiMjkwNmM0ZmYyMjczZDE5NzdiYTM5NzFmNTE0YTdiZmNmZjAwNTcwNDM3YmUxNDQwODM3ZTczYTVmMmYzOWFiYiJ9fQ==",
+      "stdin_sha256": "75b2d6e978b95a18290f731eb38639ac00a255e6ab0ab39867fb8c06859c9f3a",
+      "stdout_sha256": "cfe88d01cf329c01f6892e5b8473e6d9cccbf79ee9026daca6cc5cf657d5095a",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"2906c4ff2273d1977ba3971f514a7bfcff00570437be1440837e73a5f2f39abb\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJmMjJkNjhjYThjMzMyY2ExYTQ4ZTkxYjVmZGU1MmFhMWE5MDhhNGU4NTRjNTY5MTFmZjRjNmU0NjkxM2Q4ZDc2IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiOTNmNDk0YTFjOWRkNGQ1MmNkYjYwNzRiYTk0N2ViMGViMzUwMjA2MjVhZTM2MjUxMGRmY2JiY2U4YzYwOGNlZCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijc5MzE1ZTA5LTY0MmUtNDdlZS05ZThhLWFjYjg3ZTk2M2YyMiIsInRhcmdldF9zaGEyNTYiOiI4MDllYmIzYTdkMzBhZTc3MTNmMTRhZDFkZDFkODU1Mjc0NTBmZTc2NDcxYmQzMGJjMWI3OGJkZjVmN2NhYzRjIn19",
+      "stdin_sha256": "ae0d3c54c72d022e23526f669c3732304a6d66c0542eae11d23c6a521dac72d0",
+      "stdout_sha256": "5acdf15d758fc98bb9afa2de9f7691103b32522841bd31e83068274ce0944352",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"unresolved\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOm51bGx9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "86372f117f216695da8cc57442c30f076a48bc83baf776192b023404bc04b735",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiIwN2QyYmEzYjZmOWJhMjU0ZWZhMmE4NTg4N2E2ZGVjYmZmM2RhY2ZkZGJhOWQ3MWE3OGJjZTAxNzk3MzdhNzc2IiwiY2hhbmdlc19zaGEyNTYiOiJiODM0MWUzNDY2YTNmMTM5MTZmNjAyYWQzZjJjNWQ5Y2Q3MGQ4ZGNlMjAzNDI0NmUxYWRhZGNmZjAxNWM5MmQ0IiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImU2MjNlZGVhLTdhMTMtNGI3Ni05MWRkLTE4ZTE0ODBkMTRhOSIsInRhcmdldF9zaGEyNTYiOiIyOTA2YzRmZjIyNzNkMTk3N2JhMzk3MWY1MTRhN2JmY2ZmMDA1NzA0MzdiZTE0NDA4MzdlNzNhNWYyZjM5YWJiIn19",
+      "stdin_sha256": "7cf44780cf3329151ce17ec9eca968ac06ad91a18a55dfe1925ee891394e382d",
+      "stdout_sha256": "7107880589cf96aa919f8dc2bc0f14ebbeb01bde926b9c791e2702dfa687f7e0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"2906c4ff2273d1977ba3971f514a7bfcff00570437be1440837e73a5f2f39abb\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJmMjJkNjhjYThjMzMyY2ExYTQ4ZTkxYjVmZGU1MmFhMWE5MDhhNGU4NTRjNTY5MTFmZjRjNmU0NjkxM2Q4ZDc2IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiOTNmNDk0YTFjOWRkNGQ1MmNkYjYwNzRiYTk0N2ViMGViMzUwMjA2MjVhZTM2MjUxMGRmY2JiY2U4YzYwOGNlZCIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6Ijc5MzE1ZTA5LTY0MmUtNDdlZS05ZThhLWFjYjg3ZTk2M2YyMiIsInRhcmdldF9zaGEyNTYiOiI4MDllYmIzYTdkMzBhZTc3MTNmMTRhZDFkZDFkODU1Mjc0NTBmZTc2NDcxYmQzMGJjMWI3OGJkZjVmN2NhYzRjIn19",
+      "stdin_sha256": "b259544404ba007dc85c2fd1a703b0b0dce006cc7f98bcac83a2dfa599291678",
+      "stdout_sha256": "facde4e87ef1007e152efd1f5ade787da52a368c8f1d957b020927d96764b9ed",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unsupported\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwiZXh0cmEiOnRydWUsInZhbHVlIjoieCJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "53bf7a2e2be5c6ae3e1cf43906e9376ed2b06910c941864e2dcdb417b640ec33",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOlsiY2xlYXIiXSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZTQ5NDE5M2VhNGRhMWZlMDViOTQ2MjE2MmQwNjgwZGExMWNmMzMxNDFkN2MxMTJkNmVhZjRkN2ZhZmQ4MDM1NSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjY1ZDMwYjNhLTA4MGEtNDU1ZC04ZjkyLWRmMmQ4MGU5MGI0ZiJ9",
+      "stdin_sha256": "45633096609026f3c0a3e7429860b4cead33f111df4b27db23c77e10f380e681",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JlZi1hcGlfMDEifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiMDdkMmJhM2I2ZjliYTI1NGVmYTJhODU4ODdhNmRlY2JmZjNkYWNmZGRiYTlkNzFhNzhiY2UwMTc5NzM3YTc3NiIsImNoYW5nZXNfc2hhMjU2IjoiYjgzNDFlMzQ2NmEzZjEzOTE2ZjYwMmFkM2YyYzVkOWNkNzBkOGRjZTIwMzQyNDZlMWFkYWRjZmYwMTVjOTJkNCIsImNvbmZpZ19wYXRoX3NoYTI1NiI6IjMyMDVkMmQ4YTI0Zjk0YjI5NjQ5ODRmYjUzODExNGI4OTI2NWFkY2FkNWVlYzNkMWM5YTFlZWRiMjAwMDA2M2IiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiJlNjIzZWRlYS03YTEzLTRiNzYtOTFkZC0xOGUxNDgwZDE0YTkiLCJ0YXJnZXRfc2hhMjU2IjoiMjkwNmM0ZmYyMjczZDE5NzdiYTM5NzFmNTE0YTdiZmNmZjAwNTcwNDM3YmUxNDQwODM3ZTczYTVmMmYzOWFiYiJ9fQ==",
+      "stdin_sha256": "75b2d6e978b95a18290f731eb38639ac00a255e6ab0ab39867fb8c06859c9f3a",
+      "stdout_sha256": "f63c557f2b0f378ab3181a82e272ad0171ac0683d6401ccad78a4eaca997a7ab",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"conflict\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJiYWQubmFtZSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "21804b4dd9439320d1283461e5851652cd3248fea6b569660f83a2d050bdce92",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "c667223848fa03b0648f3777a5f38f3b4789e6880dd44ea12bd32ee26c9aa372",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"bd230c397517d2ffb18420e6cd0ae6b4fc536075cc23fb769c4c5115d0472b7e\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "c497a766382e19a836c1256d15f282fdb3cbd53b23c1bfd7b1173d3e7766fdd7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"ccc82baf857c9782faca0bb22a9c393e534fbe8224232fd17257c1baba1e0633\",\"config_path_sha256\":\"3a2d9d1532b66a37c9f583b91d998c2b37eda322adec9fde720f2f7c4a7f2e35\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJ4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHgifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZTQ5NDE5M2VhNGRhMWZlMDViOTQ2MjE2MmQwNjgwZGExMWNmMzMxNDFkN2MxMTJkNmVhZjRkN2ZhZmQ4MDM1NSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjY1ZDMwYjNhLTA4MGEtNDU1ZC04ZjkyLWRmMmQ4MGU5MGI0ZiJ9",
+      "stdin_sha256": "e5886e235fdb81da7c8c61157403c8b87d566358d922e79b2a10555fa8d98215",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImNjYzgyYmFmODU3Yzk3ODJmYWNhMGJiMjJhOWMzOTNlNTM0ZmJlODIyNDIzMmZkMTcyNTdjMWJhYmExZTA2MzMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiIzYTJkOWQxNTMyYjY2YTM3YzlmNTgzYjkxZDk5OGMyYjM3ZWRhMzIyYWRlYzlmZGU3MjBmMmY3YzRhN2YyZTM1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiYTRiOGFhYWEtZmZlMy00MThjLWFmOTQtZjQ0MzMwNGRkZDJjIn0=",
+      "stdin_sha256": "1151310c10e4314fad640d3d5ecef0679d4a2170acbe688ad16f161693f0b6e5",
+      "stdout_sha256": "8c0198f8a608f4cc1c9a98bc73ee3e8f74e7c44762f297b849344266aa87a9f1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"a4b8aaaa-ffe3-418c-af94-f443304ddd2c\",\"base_sha256\":\"ccc82baf857c9782faca0bb22a9c393e534fbe8224232fd17257c1baba1e0633\",\"target_sha256\":\"97991b24d82155e0328b047f1513a8bec8acb43dd8dcad47a356e872902f364a\",\"config_path_sha256\":\"3a2d9d1532b66a37c9f583b91d998c2b37eda322adec9fde720f2f7c4a7f2e35\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "10d6667d8d06e5b6b55cf74797213f09310c3acab50311e40b4d9a2c9480e16b",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJkMjMwYzM5NzUxN2QyZmZiMTg0MjBlNmNkMGFlNmI0ZmM1MzYwNzVjYzIzZmI3NjljNGM1MTE1ZDA0NzJiN2UiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JlZi1hcGlfMDEifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImYxY2FiZjcyLTBhNzYtNGVmYi05MTM1LWMyMjZjNzI1NzdiNCJ9",
+      "stdin_sha256": "bfc692064a24e3d4ce4c7d01d70492356a01bf6889ee924770f11eeec9acdf0d",
+      "stdout_sha256": "82e6928220cbebf91b08c9f1c275a40899ad5ea588424881c476189e9589a155",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"no-change\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"base_sha256\":\"bd230c397517d2ffb18420e6cd0ae6b4fc536075cc23fb769c4c5115d0472b7e\",\"changes_sha256\":\"b8341e3466a3f13916f602ad3f2c5d9cd70d8dce2034246e1adadcff015c92d4\"}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwiYWN0aW9uIjoiY2xlYXIiLCJ2YWx1ZSI6IlBSSVZBVEVfUkVGRVJFTkNFIn0sImNvbmZpZ19wYXRoX3NoYTI1NiI6ImU0OTQxOTNlYTRkYTFmZTA1Yjk0NjIxNjJkMDY4MGRhMTFjZjMzMTQxZDdjMTEyZDZlYWY0ZDdmYWZkODAzNTUiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiI2NWQzMGIzYS0wODBhLTQ1NWQtOGY5Mi1kZjJkODBlOTBiNGYifQ==",
+      "stdin_sha256": "93b27ac0ac754f9c92a0ac579ae0063fca858f906b9ab72db1e708f9679455a8",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "c667223848fa03b0648f3777a5f38f3b4789e6880dd44ea12bd32ee26c9aa372",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"bd230c397517d2ffb18420e6cd0ae6b4fc536075cc23fb769c4c5115d0472b7e\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJjY2M4MmJhZjg1N2M5NzgyZmFjYTBiYjIyYTljMzkzZTUzNGZiZTgyMjQyMzJmZDE3MjU3YzFiYWJhMWUwNjMzIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiM2EyZDlkMTUzMmI2NmEzN2M5ZjU4M2I5MWQ5OThjMmIzN2VkYTMyMmFkZWM5ZmRlNzIwZjJmN2M0YTdmMmUzNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImE0YjhhYWFhLWZmZTMtNDE4Yy1hZjk0LWY0NDMzMDRkZGQyYyIsInRhcmdldF9zaGEyNTYiOiI5Nzk5MWIyNGQ4MjE1NWUwMzI4YjA0N2YxNTEzYThiZWM4YWNiNDNkZDhkY2FkNDdhMzU2ZTg3MjkwMmYzNjRhIn19",
+      "stdin_sha256": "25ec57114ffc951c48f28dc80ada4be6068cd6654fd5eeb49a1d821940a2bbff",
+      "stdout_sha256": "65e80491cb1d7a3af25c40c98e10ef5b4aeec09d397f65f8f0b056334b5e1948",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"97991b24d82155e0328b047f1513a8bec8acb43dd8dcad47a356e872902f364a\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0ge30=",
+      "stdin_sha256": "d0d27d75f62358989bf62140a1ed693bfe9f6c71cf1cda83129ac20389d8e9a8",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJkMjMwYzM5NzUxN2QyZmZiMTg0MjBlNmNkMGFlNmI0ZmM1MzYwNzVjYzIzZmI3NjljNGM1MTE1ZDA0NzJiN2UiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX3JlZi1hcGlfMDEifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjVlNTJiYmQxLTA2YTEtNGMyOC1hZTMxLWRjNGU5MzQ4YTY5YyJ9",
+      "stdin_sha256": "3e552bec557baa9d9f2df0a984d7286a2396b129d3aa693d6cecfd8952f5752b",
+      "stdout_sha256": "44fe37d0f515401bbc9358db54032a166c1c690dcc2a264ecda2a14b361922be",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"5e52bbd1-06a1-4c28-ae31-dc4e9348a69c\",\"base_sha256\":\"bd230c397517d2ffb18420e6cd0ae6b4fc536075cc23fb769c4c5115d0472b7e\",\"target_sha256\":\"eee01199ad3b15592133a275ab4b64bca2c3b59563eaeb47999b07a46e155072\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"changes_sha256\":\"6375e0419d3cdc6b2583ee7cb976cebf2712fa79ea5dfe23642a04c6e17e6105\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsidW5rbm93biI6MCwiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "dcdd34c3aa01f61c78b602e26771d782d355b5bf857c0cb6bc41bf761b5046bc",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJjY2M4MmJhZjg1N2M5NzgyZmFjYTBiYjIyYTljMzkzZTUzNGZiZTgyMjQyMzJmZDE3MjU3YzFiYWJhMWUwNjMzIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiM2EyZDlkMTUzMmI2NmEzN2M5ZjU4M2I5MWQ5OThjMmIzN2VkYTMyMmFkZWM5ZmRlNzIwZjJmN2M0YTdmMmUzNSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImE0YjhhYWFhLWZmZTMtNDE4Yy1hZjk0LWY0NDMzMDRkZGQyYyIsInRhcmdldF9zaGEyNTYiOiI5Nzk5MWIyNGQ4MjE1NWUwMzI4YjA0N2YxNTEzYThiZWM4YWNiNDNkZDhkY2FkNDdhMzU2ZTg3MjkwMmYzNjRhIn19",
+      "stdin_sha256": "42b1be0a7a63fc7ba2a71a0de3963fb63f58c82762b50947f6204f1c5de1051e",
+      "stdout_sha256": "b31242a9db52005e9af9875e7281eb54af55716f7556bc6bbe5d8f464f93be20",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"97991b24d82155e0328b047f1513a8bec8acb43dd8dcad47a356e872902f364a\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==",
+      "stdin_sha256": "100e4d6e0f8f5ccce2da2e7798a3ba7d491c5133392d2d565090e75ab3a300d9",
+      "stdout_sha256": "12343829cfa370d0b119015b18479d61ec39c8c0919e558503dc8991ec32f6b5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"65d30b3a-080a-455d-8f92-df2d80e90b4f\",\"base_sha256\":\"badc190ddc9fc678c084dcdda53f2e5c1ec8ad5f25822db679bd8853d2544393\",\"target_sha256\":\"e97ad740de44e4316a8173cb9102236ea20ac9c8fd7d112ba0bde24abd35f457\",\"config_path_sha256\":\"e494193ea4da1fe05b9462162d0680da11cf33141d7c112d6eaf4d7fafd80355\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX3JlZi1hcGlfMDEifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiYmQyMzBjMzk3NTE3ZDJmZmIxODQyMGU2Y2QwYWU2YjRmYzUzNjA3NWNjMjNmYjc2OWM0YzUxMTVkMDQ3MmI3ZSIsImNoYW5nZXNfc2hhMjU2IjoiNjM3NWUwNDE5ZDNjZGM2YjI1ODNlZTdjYjk3NmNlYmYyNzEyZmE3OWVhNWRmZTIzNjQyYTA0YzZlMTdlNjEwNSIsImNvbmZpZ19wYXRoX3NoYTI1NiI6IjMyMDVkMmQ4YTI0Zjk0YjI5NjQ5ODRmYjUzODExNGI4OTI2NWFkY2FkNWVlYzNkMWM5YTFlZWRiMjAwMDA2M2IiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiI1ZTUyYmJkMS0wNmExLTRjMjgtYWUzMS1kYzRlOTM0OGE2OWMiLCJ0YXJnZXRfc2hhMjU2IjoiZWVlMDExOTlhZDNiMTU1OTIxMzNhMjc1YWI0YjY0YmNhMmMzYjU5NTYzZWFlYjQ3OTk5YjA3YTQ2ZTE1NTA3MiJ9fQ==",
+      "stdin_sha256": "21ff18c4399d9b3cf290510dede07ee317904ab2a41739663f332e6d66008c10",
+      "stdout_sha256": "d68de63d25cd66f101e0170956d13035ecfde826b02b6cf3a77bacb29f6fb272",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"eee01199ad3b15592133a275ab4b64bca2c3b59563eaeb47999b07a46e155072\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "aea452bb66b025c4cd9c262409b4aa9eefc6397faf8daf6198b777a0f0838268",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"eee01199ad3b15592133a275ab4b64bca2c3b59563eaeb47999b07a46e155072\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=",
+      "stdin_sha256": "9fcb9c699a06b938604e0e14d15d0df5122a8962ed0c3b63b9d2c060428e76ed",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImVlZTAxMTk5YWQzYjE1NTkyMTMzYTI3NWFiNGI2NGJjYTJjM2I1OTU2M2VhZWI0Nzk5OWIwN2E0NmUxNTUwNzIiLCJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjI2ODU5YjliLTJmMTgtNDNhYS1iYWI0LWI3MzI5ODIzMWQxMyJ9",
+      "stdin_sha256": "bb624381f05ecdd6f5b1e48160f24d305db0782e29731530c512ee2909017cbe",
+      "stdout_sha256": "0a0259a4c5038b8edaf8b8db4b0fba0b3acce88f411e408508239724c6b60d10",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"after\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"26859b9b-2f18-43aa-bab4-b73298231d13\",\"base_sha256\":\"eee01199ad3b15592133a275ab4b64bca2c3b59563eaeb47999b07a46e155072\",\"target_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"changes_sha256\":\"88c0eb350510891f14d2c7604bc047490a468f9f575b8b1d57b60294cb085f80\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6Miwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "b4675c3d00aa254bc79ba56ca6857cfd48ea311504c3709ee5705826d7d6efac",
+      "stdout_sha256": "cc325ce69cf39610f929b6399a04308021c860d654ee0d8a0b4846ae6deb0094",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiZWVlMDExOTlhZDNiMTU1OTIxMzNhMjc1YWI0YjY0YmNhMmMzYjU5NTYzZWFlYjQ3OTk5YjA3YTQ2ZTE1NTA3MiIsImNoYW5nZXNfc2hhMjU2IjoiODhjMGViMzUwNTEwODkxZjE0ZDJjNzYwNGJjMDQ3NDkwYTQ2OGY5ZjU3NWI4YjFkNTdiNjAyOTRjYjA4NWY4MCIsImNvbmZpZ19wYXRoX3NoYTI1NiI6IjMyMDVkMmQ4YTI0Zjk0YjI5NjQ5ODRmYjUzODExNGI4OTI2NWFkY2FkNWVlYzNkMWM5YTFlZWRiMjAwMDA2M2IiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiIyNjg1OWI5Yi0yZjE4LTQzYWEtYmFiNC1iNzMyOTgyMzFkMTMiLCJ0YXJnZXRfc2hhMjU2IjoiMDdkMmJhM2I2ZjliYTI1NGVmYTJhODU4ODdhNmRlY2JmZjNkYWNmZGRiYTlkNzFhNzhiY2UwMTc5NzM3YTc3NiJ9fQ==",
+      "stdin_sha256": "f1d919dc95f7af721473722c61d1674aa47bcfadd60a8fc8782ffca7ec50d57e",
+      "stdout_sha256": "f3f590fe4eb170136f0896b69d249ae8571b19f3bb2751c67cec3a357ad95f65",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIn0=",
+      "stdin_sha256": "d29b7d24a59c2a07e0f735d54d3be26e93031ab5329734ac418d89a0c73e56e2",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "87d6e3ae96b60a2abbedd732b64104b82b559920e6ff855843608dca245a22b6",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"649fe9dca8e26a32f17e1396672584b02ffe99f433d8ee423fd7ad4d634240bf\",\"config_path_sha256\":\"7f9bc671984765cc1d24c334da22bfdd0db8e1cd93d6e84fb1e928250ac6e987\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "e5cb629a0f2b1966daa750d4d74a4ad332bfe0e87f18fe9dc26e40f9aea5347d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "b62812d94281f7517ab33730428aa259951f7868816fee7e8863be8924736069",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjY0OWZlOWRjYThlMjZhMzJmMTdlMTM5NjY3MjU4NGIwMmZmZTk5ZjQzM2Q4ZWU0MjNmZDdhZDRkNjM0MjQwYmYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI3ZjliYzY3MTk4NDc2NWNjMWQyNGMzMzRkYTIyYmZkZDBkYjhlMWNkOTNkNmU4NGZiMWU5MjgyNTBhYzZlOTg3IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNGQwZTk3OGQtMzhhZS00ZjZkLWE2NDAtNmRmZjFjYTY5ZGZlIn0=",
+      "stdin_sha256": "5c85c1ce5e926e70e027d8dd364ecddbd2eaad968a957626cdaa696676b35d60",
+      "stdout_sha256": "cf5ef0b38a06d4a461b390cd3c3e15989e0680ca4778f1717b7173362e83443e",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"4d0e978d-38ae-4f6d-a640-6dff1ca69dfe\",\"base_sha256\":\"649fe9dca8e26a32f17e1396672584b02ffe99f433d8ee423fd7ad4d634240bf\",\"target_sha256\":\"a56578f2e196409c556e168718bd7153ea7f1ab2afaf04956f49ff9fae17e7b9\",\"config_path_sha256\":\"7f9bc671984765cc1d24c334da22bfdd0db8e1cd93d6e84fb1e928250ac6e987\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "7acbb91545f303daaef2c62a7389424e4a6434402aa8c2b8e85b140a7d81ca98",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"17cbe52c165a42b4c886bcb2b7a47111f2168ad27efc0a7cb186aeb08e2e0786\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"declared-null\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "a2ddb74b849d93e3003fa350d2ec07dbd64ecd1e8f36124e742066bc9bd532bd",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"badc190ddc9fc678c084dcdda53f2e5c1ec8ad5f25822db679bd8853d2544393\",\"config_path_sha256\":\"e494193ea4da1fe05b9462162d0680da11cf33141d7c112d6eaf4d7fafd80355\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "7acbb91545f303daaef2c62a7389424e4a6434402aa8c2b8e85b140a7d81ca98",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"17cbe52c165a42b4c886bcb2b7a47111f2168ad27efc0a7cb186aeb08e2e0786\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"current\":{\"model_credential\":{\"origin\":\"declared-null\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNTUxZjBhNDYtNTRhMC00YTllLWE4YmYtOWZhYzMzMDc5NWY4In0=",
+      "stdin_sha256": "3ac5a402a05cf22700564f9cb8475fa1654c4def55147fe23a76658c7da636a9",
+      "stdout_sha256": "3e05f59501ade3a9a70cb1a1edbc964d5ac95d9e49b4b7f164a7181050c73854",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"551f0a46-54a0-4a9e-a8bf-9fac330795f8\",\"base_sha256\":\"badc190ddc9fc678c084dcdda53f2e5c1ec8ad5f25822db679bd8853d2544393\",\"target_sha256\":\"e97ad740de44e4316a8173cb9102236ea20ac9c8fd7d112ba0bde24abd35f457\",\"config_path_sha256\":\"e494193ea4da1fe05b9462162d0680da11cf33141d7c112d6eaf4d7fafd80355\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI2NDlmZTlkY2E4ZTI2YTMyZjE3ZTEzOTY2NzI1ODRiMDJmZmU5OWY0MzNkOGVlNDIzZmQ3YWQ0ZDYzNDI0MGJmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiN2Y5YmM2NzE5ODQ3NjVjYzFkMjRjMzM0ZGEyMmJmZGQwZGI4ZTFjZDkzZDZlODRmYjFlOTI4MjUwYWM2ZTk4NyIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjRkMGU5NzhkLTM4YWUtNGY2ZC1hNjQwLTZkZmYxY2E2OWRmZSIsInRhcmdldF9zaGEyNTYiOiJhNTY1NzhmMmUxOTY0MDljNTU2ZTE2ODcxOGJkNzE1M2VhN2YxYWIyYWZhZjA0OTU2ZjQ5ZmY5ZmFlMTdlN2I5In19",
+      "stdin_sha256": "f06d1674b5a734ec59e21f933f08c432ea7bd553b1b475d7fa592bac7fde3af1",
+      "stdout_sha256": "b9cb7bfaee4d92fab6dd22ee4b877f4f906d6d0df2efc7e068105271e3f2a959",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"a56578f2e196409c556e168718bd7153ea7f1ab2afaf04956f49ff9fae17e7b9\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjE3Y2JlNTJjMTY1YTQyYjRjODg2YmNiMmI3YTQ3MTExZjIxNjhhZDI3ZWZjMGE3Y2IxODZhZWIwOGUyZTA3ODYiLCJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiY29uZmlnX3BhdGhfc2hhMjU2IjoiMzIwNWQyZDhhMjRmOTRiMjk2NDk4NGZiNTM4MTE0Yjg5MjY1YWRjYWQ1ZWVjM2QxYzlhMWVlZGIyMDAwMDYzYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImM0Yzk5YjkxLThkYjctNDhmYi04YjhiLTBmMDBhZjVjZGExYiJ9",
+      "stdin_sha256": "9cfa1a6f94d2853d31d3837c5909ff7555523dd012558021267d52b6a6104aee",
+      "stdout_sha256": "0422f71e4ce46d7042ce4ffe08bfcc49916ecf79b7c9dd29f525b42a01d8bcfb",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"declared-null\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"c4c99b91-8db7-48fb-8b8b-0f00af5cda1b\",\"base_sha256\":\"17cbe52c165a42b4c886bcb2b7a47111f2168ad27efc0a7cb186aeb08e2e0786\",\"target_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"config_path_sha256\":\"3205d2d8a24f94b2964984fb538114b89265adcad5eec3d1c9a1eedb2000063b\",\"changes_sha256\":\"88c0eb350510891f14d2c7604bc047490a468f9f575b8b1d57b60294cb085f80\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiYmFkYzE5MGRkYzlmYzY3OGMwODRkY2RkYTUzZjJlNWMxZWM4YWQ1ZjI1ODIyZGI2NzliZDg4NTNkMjU0NDM5MyIsImNoYW5nZXNfc2hhMjU2IjoiZmJiOWQwNjRjZTg4Zjg3YTQ3MzM2YWVjZGZjMTBjYmM1YWQ2ZGIyYjBhMWM3MDQ3MjE0YzY1MDRlMzViNDI1ZiIsImNvbmZpZ19wYXRoX3NoYTI1NiI6ImU0OTQxOTNlYTRkYTFmZTA1Yjk0NjIxNjJkMDY4MGRhMTFjZjMzMTQxZDdjMTEyZDZlYWY0ZDdmYWZkODAzNTUiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiI1NTFmMGE0Ni01NGEwLTRhOWUtYThiZi05ZmFjMzMwNzk1ZjgiLCJ0YXJnZXRfc2hhMjU2IjoiZTk3YWQ3NDBkZTQ0ZTQzMTZhODE3M2NiOTEwMjIzNmVhMjBhYzljOGZkN2QxMTJiYTBiZGUyNGFiZDM1ZjQ1NyJ9fQ==",
+      "stdin_sha256": "b74d652a83c0a701d4165c63921ea2fa9188090ba0ace68be721ab5e2e11b1bb",
+      "stdout_sha256": "b7576da97de499f125d49471cc08928b2ceb156b443e14feb5e07060b83f5136",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI2NDlmZTlkY2E4ZTI2YTMyZjE3ZTEzOTY2NzI1ODRiMDJmZmU5OWY0MzNkOGVlNDIzZmQ3YWQ0ZDYzNDI0MGJmIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiN2Y5YmM2NzE5ODQ3NjVjYzFkMjRjMzM0ZGEyMmJmZGQwZGI4ZTFjZDkzZDZlODRmYjFlOTI4MjUwYWM2ZTk4NyIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjRkMGU5NzhkLTM4YWUtNGY2ZC1hNjQwLTZkZmYxY2E2OWRmZSIsInRhcmdldF9zaGEyNTYiOiJhNTY1NzhmMmUxOTY0MDljNTU2ZTE2ODcxOGJkNzE1M2VhN2YxYWIyYWZhZjA0OTU2ZjQ5ZmY5ZmFlMTdlN2I5In19",
+      "stdin_sha256": "6637b2b6232fecbd02bab6ad57f7b0b09fcee5e014a31c55ffa0141569c8492d",
+      "stdout_sha256": "a94a268eab44fd18a91c0faaf8cf385d3772f3051eff277c5172b4ec21e4951d",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"a56578f2e196409c556e168718bd7153ea7f1ab2afaf04956f49ff9fae17e7b9\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoiY2xlYXIifSwiaW50ZW50Ijp7ImJhc2Vfc2hhMjU2IjoiMTdjYmU1MmMxNjVhNDJiNGM4ODZiY2IyYjdhNDcxMTFmMjE2OGFkMjdlZmMwYTdjYjE4NmFlYjA4ZTJlMDc4NiIsImNoYW5nZXNfc2hhMjU2IjoiODhjMGViMzUwNTEwODkxZjE0ZDJjNzYwNGJjMDQ3NDkwYTQ2OGY5ZjU3NWI4YjFkNTdiNjAyOTRjYjA4NWY4MCIsImNvbmZpZ19wYXRoX3NoYTI1NiI6IjMyMDVkMmQ4YTI0Zjk0YjI5NjQ5ODRmYjUzODExNGI4OTI2NWFkY2FkNWVlYzNkMWM5YTFlZWRiMjAwMDA2M2IiLCJjcmVkZW50aWFsX3JlZmVyZW5jZV92ZXJzaW9uIjoxLCJvcGVyYXRpb24iOiJjNGM5OWI5MS04ZGI3LTQ4ZmItOGI4Yi0wZjAwYWY1Y2RhMWIiLCJ0YXJnZXRfc2hhMjU2IjoiMDdkMmJhM2I2ZjliYTI1NGVmYTJhODU4ODdhNmRlY2JmZjNkYWNmZGRiYTlkNzFhNzhiY2UwMTc5NzM3YTc3NiJ9fQ==",
+      "stdin_sha256": "6b69d7b796c17ec5768cc2f505f089c461bbfb992be822a62b19f2a171333b9c",
+      "stdout_sha256": "f3f590fe4eb170136f0896b69d249ae8571b19f3bb2751c67cec3a357ad95f65",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"07d2ba3b6f9ba254efa2a85887a6decbff3dacfddba9d71a78bce0179737a776\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJiYWRjMTkwZGRjOWZjNjc4YzA4NGRjZGRhNTNmMmU1YzFlYzhhZDVmMjU4MjJkYjY3OWJkODg1M2QyNTQ0MzkzIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiZTQ5NDE5M2VhNGRhMWZlMDViOTQ2MjE2MmQwNjgwZGExMWNmMzMxNDFkN2MxMTJkNmVhZjRkN2ZhZmQ4MDM1NSIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6IjU1MWYwYTQ2LTU0YTAtNGE5ZS1hOGJmLTlmYWMzMzA3OTVmOCIsInRhcmdldF9zaGEyNTYiOiJlOTdhZDc0MGRlNDRlNDMxNmE4MTczY2I5MTAyMjM2ZWEyMGFjOWM4ZmQ3ZDExMmJhMGJkZTI0YWJkMzVmNDU3IiwidW5rbm93biI6dHJ1ZX19",
+      "stdin_sha256": "16682a2d13e1f6a6a2b31fd79217ecb8164c86a8af21d2c635f092a2faa93d1c",
+      "stdout_sha256": "b7576da97de499f125d49471cc08928b2ceb156b443e14feb5e07060b83f5136",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b4ab27dbdf700f84d07ee4b7cfe7613523607ba816b93db75055a7495eb0adb5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "efb13d42c42427690f928994923fd6e466f073a61075f00fd6db49ee484e99cd",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b4ab27dbdf700f84d07ee4b7cfe7613523607ba816b93db75055a7495eb0adb5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "efb13d42c42427690f928994923fd6e466f073a61075f00fd6db49ee484e99cd",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "3d9ea23d52b481fbe49ec843dc219dc9fc71cbd2e450adbdf02ecf45c73a8d5c",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"ef93b8577302910788678c7030f0ac88d2865d7190cf2edb408e890542cefe98\",\"config_path_sha256\":\"419445e6d2fcd891c96061c5763912ca331bcea9800f98faface60280225aea3\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b4ab27dbdf700f84d07ee4b7cfe7613523607ba816b93db75055a7495eb0adb5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImVmOTNiODU3NzMwMjkxMDc4ODY3OGM3MDMwZjBhYzg4ZDI4NjVkNzE5MGNmMmVkYjQwOGU4OTA1NDJjZWZlOTgiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI0MTk0NDVlNmQyZmNkODkxYzk2MDYxYzU3NjM5MTJjYTMzMWJjZWE5ODAwZjk4ZmFmYWNlNjAyODAyMjVhZWEzIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiZDVlMzgyM2UtNDVkNC00YTQ4LTliNmItYzAxMWZlM2JmYmFkIn0=",
+      "stdin_sha256": "f3046cbf84d2e793131b988ec007f90196a120d8a231db45d570eb89eef57d84",
+      "stdout_sha256": "14dcf395e8223b7852683c2f4b80f6641a52636d7f853c7f369f638d90c90eab",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"d5e3823e-45d4-4a48-9b6b-c011fe3bfbad\",\"base_sha256\":\"ef93b8577302910788678c7030f0ac88d2865d7190cf2edb408e890542cefe98\",\"target_sha256\":\"47322cb398318d83ce7fd85726722b36d0ad6b9ac4f15674d004024c257aecdc\",\"config_path_sha256\":\"419445e6d2fcd891c96061c5763912ca331bcea9800f98faface60280225aea3\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "efb13d42c42427690f928994923fd6e466f073a61075f00fd6db49ee484e99cd",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b4ab27dbdf700f84d07ee4b7cfe7613523607ba816b93db75055a7495eb0adb5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJlZjkzYjg1NzczMDI5MTA3ODg2NzhjNzAzMGYwYWM4OGQyODY1ZDcxOTBjZjJlZGI0MDhlODkwNTQyY2VmZTk4IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNDE5NDQ1ZTZkMmZjZDg5MWM5NjA2MWM1NzYzOTEyY2EzMzFiY2VhOTgwMGY5OGZhZmFjZTYwMjgwMjI1YWVhMyIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImQ1ZTM4MjNlLTQ1ZDQtNGE0OC05YjZiLWMwMTFmZTNiZmJhZCIsInRhcmdldF9zaGEyNTYiOiI0NzMyMmNiMzk4MzE4ZDgzY2U3ZmQ4NTcyNjcyMmIzNmQwYWQ2YjlhYzRmMTU2NzRkMDA0MDI0YzI1N2FlY2RjIn19",
+      "stdin_sha256": "8352dc5300917a8d3006f8eda32cf1a91db06f65fbe991cbfeffd68febd7591f",
+      "stdout_sha256": "7ef05bf9e5a823d9c03d4b51191f3184ecff87c4f712ba2f63b57c5ca1c49018",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"47322cb398318d83ce7fd85726722b36d0ad6b9ac4f15674d004024c257aecdc\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "efb13d42c42427690f928994923fd6e466f073a61075f00fd6db49ee484e99cd",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiJlZjkzYjg1NzczMDI5MTA3ODg2NzhjNzAzMGYwYWM4OGQyODY1ZDcxOTBjZjJlZGI0MDhlODkwNTQyY2VmZTk4IiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiNDE5NDQ1ZTZkMmZjZDg5MWM5NjA2MWM1NzYzOTEyY2EzMzFiY2VhOTgwMGY5OGZhZmFjZTYwMjgwMjI1YWVhMyIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImQ1ZTM4MjNlLTQ1ZDQtNGE0OC05YjZiLWMwMTFmZTNiZmJhZCIsInRhcmdldF9zaGEyNTYiOiI0NzMyMmNiMzk4MzE4ZDgzY2U3ZmQ4NTcyNjcyMmIzNmQwYWQ2YjlhYzRmMTU2NzRkMDA0MDI0YzI1N2FlY2RjIn19",
+      "stdin_sha256": "539afab3f8f4bbc2b63c3a3f7a73f2fd36ffeeaba1fae189efa07269a035fb5b",
+      "stdout_sha256": "4c001535acdc46d9f0b73f23eb8dd16e5f165888678e3b9bd3728a819e7045cb",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"47322cb398318d83ce7fd85726722b36d0ad6b9ac4f15674d004024c257aecdc\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b4ab27dbdf700f84d07ee4b7cfe7613523607ba816b93db75055a7495eb0adb5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6ImJhZGMxOTBkZGM5ZmM2NzhjMDg0ZGNkZGE1M2YyZTVjMWVjOGFkNWYyNTgyMmRiNjc5YmQ4ODUzZDI1NDQzOTMiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiJlNDk0MTkzZWE0ZGExZmUwNWI5NDYyMTYyZDA2ODBkYTExY2YzMzE0MWQ3YzExMmQ2ZWFmNGQ3ZmFmZDgwMzU1IiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiNjVkMzBiM2EtMDgwYS00NTVkLThmOTItZGYyZDgwZTkwYjRmIn0=",
+      "stdin_sha256": "efb13d42c42427690f928994923fd6e466f073a61075f00fd6db49ee484e99cd",
+      "stdout_sha256": "dcada7fb674c564d3fa0e6bd129084ac20b5f3b1501715e5eaa1db0f61c5db9b",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"outcome\":\"not-dispatched\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "20f4b625559d49ea4e637c88dc5097bee3bda8bbc83ce320c24c14d5543602a6",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"unavailable\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":null}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_utf8": "",
+      "stdin_base64": null,
+      "stdin_sha256": null,
+      "stdout_sha256": "b2f2e01cb93ba7048d93ed3f423ab5c333a514553a59e616dcf5a601076cb16f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ok\",\"outcome\":\"read-only\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"schema_version\":1,\"base_sha256\":\"65b1d4bafbeb09169719786609a308c98f49de3c33b196633988aee7868b3dcb\",\"config_path_sha256\":\"9a85e4981927709ec6a47a35b70ad9ee8f8b239d876b0514f02070580ee508eb\",\"current\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJiYXNlX3NoYTI1NiI6IjY1YjFkNGJhZmJlYjA5MTY5NzE5Nzg2NjA5YTMwOGM5OGY0OWRlM2MzM2IxOTY2MzM5ODhhZWU3ODY4YjNkY2IiLCJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJjb25maWdfcGF0aF9zaGEyNTYiOiI5YTg1ZTQ5ODE5Mjc3MDllYzZhNDdhMzViNzBhZDllZThmOGIyMzlkODc2YjA1MTRmMDIwNzA1ODBlZTUwOGViIiwiY3JlZGVudGlhbF9yZWZlcmVuY2VfdmVyc2lvbiI6MSwib3BlcmF0aW9uIjoiZDNjMjMxMTEtZWY5NS00N2RlLTg4ZmYtZDE3YzgwOTgwYjQwIn0=",
+      "stdin_sha256": "44006660c80c2a34e140cb5008497686fb7aa6faa9b39d5a4d6dbeda654d5ec1",
+      "stdout_sha256": "dc98a692366d2579d23e7b5a1c283ab0fe7d235a0fdc554d5ab1e5daf391a1d6",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"ok\",\"outcome\":\"prepared\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"before\":{\"model_credential\":{\"origin\":\"default\",\"present\":false}},\"after\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}},\"intent\":{\"credential_reference_version\":1,\"operation\":\"d3c23111-ef95-47de-88ff-d17c80980b40\",\"base_sha256\":\"65b1d4bafbeb09169719786609a308c98f49de3c33b196633988aee7868b3dcb\",\"target_sha256\":\"857d33ff71b479a8005f5cd03ea040d7e07909e2a17191e8933a2cbb0eccab92\",\"config_path_sha256\":\"9a85e4981927709ec6a47a35b70ad9ee8f8b239d876b0514f02070580ee508eb\",\"changes_sha256\":\"fbb9d064ce88f87a47336aecdfc10cbc5ad6db2b0a1c7047214c6504e35b425f\"}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJjaGFuZ2UiOnsiYWN0aW9uIjoic2V0IiwidmFsdWUiOiJQUklWQVRFX1JFRkVSRU5DRSJ9LCJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI2NWIxZDRiYWZiZWIwOTE2OTcxOTc4NjYwOWEzMDhjOThmNDlkZTNjMzNiMTk2NjMzOTg4YWVlNzg2OGIzZGNiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiOWE4NWU0OTgxOTI3NzA5ZWM2YTQ3YTM1YjcwYWQ5ZWU4ZjhiMjM5ZDg3NmIwNTE0ZjAyMDcwNTgwZWU1MDhlYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImQzYzIzMTExLWVmOTUtNDdkZS04OGZmLWQxN2M4MDk4MGI0MCIsInRhcmdldF9zaGEyNTYiOiI4NTdkMzNmZjcxYjQ3OWE4MDA1ZjVjZDAzZWEwNDBkN2UwNzkwOWUyYTE3MTkxZTg5MzNhMmNiYjBlY2NhYjkyIn19",
+      "stdin_sha256": "6cbcb80311d8ec5e0267df423c2893f95e3f6f1c535af73120deb626410fd03d",
+      "stdout_sha256": "a6d300a656066d5a2ecd83f7ad871307276b76ff658ed2d6c07a1a13cfb4cecd",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"ok\",\"outcome\":\"verified\",\"disk_readback_verified\":true,\"runtime_activation\":\"unverified\",\"data\":{\"target_sha256\":\"857d33ff71b479a8005f5cd03ea040d7e07909e2a17191e8933a2cbb0eccab92\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    },
+    {
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_utf8": "",
+      "stdin_base64": "eyJpbnRlbnQiOnsiYmFzZV9zaGEyNTYiOiI2NWIxZDRiYWZiZWIwOTE2OTcxOTc4NjYwOWEzMDhjOThmNDlkZTNjMzNiMTk2NjMzOTg4YWVlNzg2OGIzZGNiIiwiY2hhbmdlc19zaGEyNTYiOiJmYmI5ZDA2NGNlODhmODdhNDczMzZhZWNkZmMxMGNiYzVhZDZkYjJiMGExYzcwNDcyMTRjNjUwNGUzNWI0MjVmIiwiY29uZmlnX3BhdGhfc2hhMjU2IjoiOWE4NWU0OTgxOTI3NzA5ZWM2YTQ3YTM1YjcwYWQ5ZWU4ZjhiMjM5ZDg3NmIwNTE0ZjAyMDcwNTgwZWU1MDhlYiIsImNyZWRlbnRpYWxfcmVmZXJlbmNlX3ZlcnNpb24iOjEsIm9wZXJhdGlvbiI6ImQzYzIzMTExLWVmOTUtNDdkZS04OGZmLWQxN2M4MDk4MGI0MCIsInRhcmdldF9zaGEyNTYiOiI4NTdkMzNmZjcxYjQ3OWE4MDA1ZjVjZDAzZWEwNDBkN2UwNzkwOWUyYTE3MTkxZTg5MzNhMmNiYjBlY2NhYjkyIn19",
+      "stdin_sha256": "bd1ccaa9c63a7f61a466c42532fe6d8a77396fe04c1b41c00724437dade477fc",
+      "stdout_sha256": "f67aa8e0fd9c8c42fc5dde0ac5a08d3e428aa6199044bf7969fa43f86c4a0966",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"ok\",\"outcome\":\"desired-file-observed\",\"disk_readback_verified\":false,\"runtime_activation\":\"unverified\",\"data\":{\"observed_sha256\":\"857d33ff71b479a8005f5cd03ea040d7e07909e2a17191e8933a2cbb0eccab92\",\"current\":{\"model_credential\":{\"origin\":\"declared\",\"present\":true}}}}\n"
+    }
+  ]
+}
