@@ -1,0 +1,159 @@
+{
+  "basis": "Explicitly synthetic independent Python reference only; no producer execution. Real raw secrets AND these fingerprint/binding/intent shapes are confidential and forbidden in public results/logs.",
+  "producer_reference_vectors_unchanged": {
+    "basis": "Independent Python synthetic reference only; not producer execution or a real credential. Secret-derived hashes remain confidential for real inputs.",
+    "metadata_vectors": [
+      {
+        "kind": "parent",
+        "metadata": {
+          "device": "7",
+          "inode": "901",
+          "uid": "1000",
+          "gid": "1000",
+          "mode": "16832"
+        },
+        "canonical_utf8": "{\"device\":\"7\",\"gid\":\"1000\",\"inode\":\"901\",\"mode\":\"16832\",\"uid\":\"1000\"}",
+        "prefixed_bytes": 119,
+        "sha256": "36d5ac1d7d35ae762bde4de4418119d0a24633fdca5b5bc0c6a9a3e44b802131"
+      },
+      {
+        "kind": "file-metadata",
+        "metadata": {
+          "device": "7",
+          "inode": "902",
+          "uid": "1000",
+          "gid": "1000",
+          "mode": "33152",
+          "links": "1",
+          "length": "24",
+          "mtime_seconds": "123",
+          "mtime_nanoseconds": "45",
+          "ctime_seconds": "124",
+          "ctime_nanoseconds": "67"
+        },
+        "canonical_utf8": "{\"ctime_nanoseconds\":\"67\",\"ctime_seconds\":\"124\",\"device\":\"7\",\"gid\":\"1000\",\"inode\":\"902\",\"length\":\"24\",\"links\":\"1\",\"mode\":\"33152\",\"mtime_nanoseconds\":\"45\",\"mtime_seconds\":\"123\",\"uid\":\"1000\"}",
+        "prefixed_bytes": 246,
+        "sha256": "b4fb8e8bdb1e48ca94733e86bd1e99662998dc4d95be757f7bc22a6f7acb1a86"
+      }
+    ],
+    "path_vectors": [
+      {
+        "kind": "config-path",
+        "exact_path": "/owned/config.json",
+        "prefixed_bytes": 73,
+        "sha256": "0ba35943fc4355e8e41778a3ed8daea9ce9696beea408e88c2341c84d797d0c5"
+      },
+      {
+        "kind": "file-path",
+        "exact_path": "/owned/credentials/modelkey",
+        "prefixed_bytes": 80,
+        "sha256": "f2a9cd1d35ed2de6547f0d42aaf7de2d4fa6f46e77defae046896ebc5df49ebb"
+      }
+    ],
+    "synthetic_secret_utf8": "SYNTHETIC_KEY\r\n tail \u03b1 ",
+    "synthetic_secret_bytes": 24,
+    "synthetic_secret_sha256": "8115badbff481c026b6f8968086b12b294fe48f7d7ffde130ae5f5d7b90141bb"
+  },
+  "consumer_text_vectors": [
+    {
+      "synthetic_only": true,
+      "raw_text": "SYNTHETIC_KEY\r\n tail \u03b1 ",
+      "utf8_bytes": 24,
+      "sha256": "8115badbff481c026b6f8968086b12b294fe48f7d7ffde130ae5f5d7b90141bb",
+      "valid_nonblank": true,
+      "textarea_display": "SYNTHETIC_KEY\n tail \u03b1 "
+    },
+    {
+      "synthetic_only": true,
+      "raw_text": "SYNTHETIC\u0000KEY\rTAIL\r\n \t",
+      "utf8_bytes": 22,
+      "sha256": "bb4468bf1ce55e2e941b271746a5edf1aaf880c0dbadb9b52835f4461d544d62",
+      "valid_nonblank": true,
+      "textarea_display": "SYNTHETIC\u0000KEY\nTAIL\n \t"
+    },
+    {
+      "synthetic_only": true,
+      "raw_text": "\ufeff",
+      "utf8_bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "valid_nonblank": true,
+      "textarea_display": "\ufeff"
+    },
+    {
+      "synthetic_only": true,
+      "raw_text": "\u0085",
+      "utf8_bytes": 2,
+      "sha256": "f7e0ef1c73a0bb196477a2fa9a5de1d790b0a32c6c8ea20e72e2b7e092bf1985",
+      "valid_nonblank": false,
+      "textarea_display": "\u0085"
+    },
+    {
+      "synthetic_only": true,
+      "raw_text": "SYNTHETIC_KEY\n tail \u03b1 ",
+      "utf8_bytes": 23,
+      "sha256": "b887a63bde09d721e2172535c93249bcf5137509ae96f937d8ef259f8e014a49",
+      "valid_nonblank": true,
+      "textarea_display": "SYNTHETIC_KEY\n tail \u03b1 "
+    }
+  ],
+  "synthetic_private_install": {
+    "binding": {
+      "config_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "config_path_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "credential_path_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "parent_identity_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "state": {
+        "kind": "absent"
+      }
+    },
+    "intent": {
+      "credential_version": 1,
+      "operation": "77777777-7777-4777-8777-777777777777",
+      "base": {
+        "config_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "config_path_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "credential_path_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "parent_identity_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "state": {
+          "kind": "absent"
+        }
+      },
+      "action": "install",
+      "target": {
+        "kind": "present",
+        "sha256": "8115badbff481c026b6f8968086b12b294fe48f7d7ffde130ae5f5d7b90141bb",
+        "mode": 384
+      }
+    },
+    "prepare_json_bytes": 532,
+    "apply_json_bytes": 677,
+    "safe_current": {
+      "present": true
+    },
+    "forbidden_public_keys": [
+      "binding",
+      "intent",
+      "base",
+      "target",
+      "sha256",
+      "metadata_sha256",
+      "config_sha256",
+      "config_path_sha256",
+      "credential_path_sha256",
+      "parent_identity_sha256",
+      "mode",
+      "value"
+    ]
+  },
+  "escape_expansion_refusal": {
+    "synthetic_text_recipe": "'SYNTHETIC' + U+0001 repeated8183",
+    "raw_utf8_bytes": 8192,
+    "apply_json_bytes": 49758,
+    "expected": "not-dispatched; no clipping/chunking/apply"
+  },
+  "blank_boundary": {
+    "predicate_codepoints": "U+0009..000D,0020,0085,00A0,1680,2000..200A,2028,2029,202F,205F,3000",
+    "U+0085_only_valid": false,
+    "U+FEFF_only_valid": true
+  }
+}
