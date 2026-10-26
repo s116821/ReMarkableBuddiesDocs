@@ -7,7 +7,14 @@ Define maintained local Reader execution, deterministic scenarios and explicit h
 ## Requirements
 
 ### Requirement: Shared workflow execution
-The simulator SHALL implement the same device-facing interface as the real tablet and run the production Reader orchestrator, model content/parsing/verification, image classification and recovery policies. Deterministic scenarios SHALL use scripted LLMEngine replies with no credentials or network calls. Explicit live scenarios SHALL use the configured provider through the same orchestration and result path. Source: src/device/backend.rs; src/simulator; src/workflow/orchestrator.rs.
+The Reader simulator SHALL retain the real device-facing interface and production
+Reader orchestration, parsing/verification, classification and recovery policies.
+Writer host scenarios SHALL run the production joined Writer/export flow and
+Ledger with declared normalized text and a scripted destination. Deterministic
+scenarios SHALL use scripted LLMEngine replies with no credentials or network
+calls. Explicit live Reader scenarios SHALL retain the configured provider path.
+Separate loopback HTTP integration tests SHALL remain distinct from scripted
+simulation and live account/native evidence.
 
 #### Scenario: Accepted question
 - **WHEN** proposal and independent transcription agree and the successor is blank
@@ -17,8 +24,18 @@ The simulator SHALL implement the same device-facing interface as the real table
 - **WHEN** a proposal is NONE or independent reading disagrees
 - **THEN** the source receives no feedback ink, successor navigation or answer text; the matching non-ink diagnostic is recorded.
 
+#### Scenario: Writer create and refined update
+- **WHEN** a scripted Writer host scenario generates/exports, reopens and deliberately refines/re-exports one correlation
+- **THEN** the production flow retains exact drafts/source history, creates then updates the same scripted destination identity and records actual stage/poll counts without claiming tablet output.
+
 ### Requirement: Structured reproducible scenarios
-Scenarios SHALL specify initial page snapshots, active page, bounded iterations, gesture frames, scripted model replies, operation-indexed faults and expected results. Unknown fields, unsupported modes and invalid page/fault/gesture values SHALL fail before execution. Relative asset/output paths SHALL resolve from the scenario location. Source: src/simulator/scenario.rs; src/simulator/mod.rs.
+Reader scenarios SHALL preserve their existing page, iteration, gesture, reply,
+fault and expected-result contract. Writer host scenarios SHALL declare bounded
+normalized source/selection, steps, scripted replies, restart and phase-indexed
+cancellation/state/destination faults. Unknown/duplicate fields, unsupported
+modes and invalid values SHALL fail before execution. Relative assets/output
+SHALL resolve from the scenario location; mode dispatch SHALL use strict schemas
+without silently accepting Reader fields as Writer instructions.
 
 #### Scenario: Bounded gesture input
 - **WHEN** a short contact precedes a stationary two-second corner hold
@@ -27,6 +44,10 @@ Scenarios SHALL specify initial page snapshots, active page, bounded iterations,
 #### Scenario: Exhausted gestures
 - **WHEN** a scenario has no valid remaining trigger
 - **THEN** execution records a bounded error instead of waiting forever.
+
+#### Scenario: Writer phase faults
+- **WHEN** replay, acknowledgment loss, cancellation or selected-state change is injected at a declared joined-flow phase
+- **THEN** actual production admission/dispatch rules determine the result and assertions verify exact forbidden model/destination/write counts without sleeps as success.
 
 ### Requirement: Page and fault model
 The simulator SHALL retain ordered pages and page-local text/marks, model end boundaries, cached header recognition and requested delays, and inject capture, input, rendering, no-motion and stale-capture conditions at declared operation calls. Shared recovery SHALL never exceed one reverse swipe. Explicit owner-change and external-input faults SHALL invalidate the retained request independently of wrong-page pixels. Source: src/simulator/device.rs; src/workflow/navigation.rs.
@@ -48,19 +69,39 @@ The simulator SHALL retain ordered pages and page-local text/marks, model end bo
 - **THEN** cancellation remains latched, later operations stop and a fresh capture cannot silently repin the request.
 
 ### Requirement: Inspectable results and meaningful assertions
-Every executed scenario SHALL export page PNGs and a JSON report of exact rendered text, marks, active page, model calls, errors and ordered timestamped operations. Expected-result mismatches SHALL fail the command after output is saved. Optional text_contains assertions SHALL check stable substrings while exact text assertions remain supported. Reports SHALL label scripted-offline or live-provider execution. Source: src/simulator/mod.rs; tests/simulator.rs.
+Reader scenarios SHALL preserve page PNGs and JSON reports of exact rendered
+text, marks, active page, model calls, errors and timestamped operations. Writer
+host scenarios SHALL save exact draft/export content, source preservation,
+ordered phase/destination traces, call/write counts and assertion failures,
+without invented tablet PNGs or native output. Expected mismatches SHALL fail
+after artifacts are saved. Existing Reader exact/text_contains assertions SHALL
+remain supported, and execution labels SHALL distinguish scripted simulation,
+loopback transport and explicit live-provider observations.
 
 #### Scenario: Failed assertion
 - **WHEN** expected text, page, operation counts or error behavior differs
 - **THEN** the process exits unsuccessfully and the report identifies the mismatch.
 
+#### Scenario: Writer report is not rendered output
+- **WHEN** a Writer host scenario succeeds
+- **THEN** its report exposes the actual production draft/export state and no fabricated navigation, page drawing, tool/menu operation or native-completion claim.
+
 ### Requirement: Honest fidelity and extension boundaries
-Documentation SHALL attribute modeled dimensions, holds, delays, masks and recovery to observed RM2 behavior and distinguish scripted replies/raster output from hardware and live-model validation. Writer/combined execution SHALL report unsupported until production Writer is implemented; REM-23/REM-17 SHALL extend coverage and REM-25 SHALL extend insertion. Source: docs/simulator.md; src/simulator/scenario.rs.
+Documentation SHALL retain the modeled Reader dimensions/holds/delays/recovery
+provenance and distinguish scripts/raster output from hardware/model evidence.
+Writer host execution SHALL explicitly mean supplied-text production flow with
+scripted destination behavior. Combined native Reader/Writer routing, physical
+notebook/OCR coverage, gestures, insertion and on-tablet proposal rendering SHALL
+remain unsupported until their production paths and evidence exist. Seeded
+Reader Ledger history SHALL NOT be called actual combined workflow execution.
 
 #### Scenario: Unsupported product
-- **WHEN** a scenario requests Writer or combined mode
-- **THEN** validation fails explicitly without simulated claims of those workflows.
+- **WHEN** a scenario requests combined/native Writer behavior outside the implemented host-flow contract
+- **THEN** validation fails explicitly without simulated claims of that workflow.
 
+#### Scenario: Same conversation fixture
+- **WHEN** a Writer scenario starts with declared historical Reader turns
+- **THEN** real Ledger preservation and subsequent Writer behavior may be asserted, while the report labels those initial turns as fixture history rather than a newly executed native Reader→Writer transition.
 ### Requirement: Reproducible history sessions
 The simulator SHALL drive the shared last-Q&A history state using declared undo/redo holds, departures/returns, new iterations and intervening edits. Reports SHALL expose transaction state, ordered events and exact page text. Faults SHALL exercise uncertain/partial mutation without silently claiming rollback. Source: src/simulator/scenario.rs; src/simulator/device.rs; tests/simulator.rs.
 
