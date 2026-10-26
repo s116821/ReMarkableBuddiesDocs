@@ -40,6 +40,27 @@ protect and bind the record's exact bytes; a decoded observation is not a lease.
 
 ## Execution sequence still to implement and qualify
 
+The diagnostic controller is an explicit example behind a development-only Cargo
+feature, not an installed dispatch mode. Its fixed nonce selects the staging
+directory and owned unit names; a bounded candidate record selects native or
+isolated fixture mode. Fixture mode may address only the two nonce-owned fake
+units and an owned source directory. Native mode fixes stock/Buddy units and
+the reviewed observer paths. Native fault injection is forbidden. Unit text is
+rendered deterministically and loaded policy is checked, including independent
+runtime/stop bounds and shutdown ordering. Existing service policy defaults are
+not changed to make this diagnostic pass.
+
+The candidate binds exact original service baselines, executable and controller
+hashes, a fresh complete bounded source manifest and external backup identity.
+After validation, write one complete ownership record before consuming either
+stop intent. A missing ownership record with any stop intent is an error.
+Successful publication is durable; records and per-invocation recovery intents
+are exclusive and never overwritten. Recovery failures remain recorded and may
+be independently inspected. A durable per-service start intent survives helper
+interruption: a later invocation may verify an already-running service but must
+never repeat that uncertain start. Exercise interruption after publishing the
+intent and after submitting the start request in isolated fixture mode.
+
 Before stopping either existing service, verify fresh source preservation,
 original service/process/artifact identities, the actual observer input guard,
 and the independent loaded recovery path. Publish the actor and both original
@@ -52,7 +73,10 @@ and non-replacing PID1 jobs. Prove both original groups terminal before starting
 the fixed observer. Run it once, with no mutation, input injection or automatic
 retry. Recovery must prove the original actor/child group terminal before stock
 restoration, retain uncertainty, and verify the resulting stock process and
-source preservation. Account explicitly for shutdown interruption and partial
+source preservation. Restore stock before running recovery source diagnostics;
+their expiry or failure must withhold Buddy without preventing stock restoration.
+Recheck input after authority sampling immediately before each stop, observer
+launch and Buddy start. Account explicitly for shutdown interruption and partial
 admission before permitting legacy Buddy restoration. Preserve every record,
 log and payload until independently verified collection and exact cleanup.
 
@@ -80,6 +104,29 @@ they do not qualify live PID1 ownership, migration exclusion or recovery.
 
 Independent source review accepted the implementation and identified the actor
 service-type constraint recorded above. Formatting and whitespace checks pass.
-Exact-revision hosted compilation/tests remain pending; local Rust builds remain
-unavailable with insufficient disk space. The executable controller, isolated
-failure cases and native bootstrap selection are still unfinished.
+Exact-revision hosted Checks passed in run 40261613767; the application build is
+still pending. Local Rust builds remain unavailable with insufficient disk space.
+
+## Controller source implementation
+
+Buddy `884a07c799885f10b77beb60a462ac07f0f5aec7` implements the development-only
+controller and independent recovery example with fixed native/fixture targets,
+durable ownership and stop/start intent, original-group checks, artifact pins,
+bounded input admission and stock-first recovery. Its separate PR diagnostic
+artifact includes the controller and observer checksums and actual build-source
+SHA. Installed release packages do not select the feature or contain these tools.
+
+Independent source review identified and verified fixes for uncertain start
+replay across helper invocations, late input checks and source diagnostics
+consuming stock restoration's deadline. Six host tests include recovery ordering
+and refusal after diagnostic expiry or uncertain stock restoration. Formatting,
+whitespace and the focused artifact-workflow fixture pass locally. These Rust
+tests have not yet executed for this revision; hosted compilation, full checks
+and ARM artifact generation remain pending.
+
+Isolated PID1 cases must still exercise normal completion, actor SIGKILL with
+a child, runtime expiry, partial stop, recovery exit, interruption after durable
+start intent and after queued start, repeated-helper refusal, source mismatch
+and shutdown. No fixture fault execution, native takeover, service change or
+document mutation is claimed by this source implementation. Native candidate
+selection remains dependent on those results and fresh independent review.
