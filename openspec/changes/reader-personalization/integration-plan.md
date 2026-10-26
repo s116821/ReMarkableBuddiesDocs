@@ -33,3 +33,11 @@ Capturing-engine controls cover default identity/sequence, exact question and im
 No additional live call is admitted by this proposal. A later exact question, fixture, model, expected facts and budget need separate review. Host tests do not prove provider obedience, native output, verified running restart/reload or Manager active state. Keep broader Reader/Writer routing, selected memory/sync and whole personalization requirements open.
 
 Source basis: current public PR49/41 discussions and reviews, accepted c2dc54e delta, current-main Git object reads and dry integration checks. The ordinary-only reconciliation is proposed behavior, not implemented evidence.
+
+## Narrow terminal-outcome refinement, pending review
+
+The first integrated sourcefb61144 compiled under strict Clippy, but its new withholding control failed: the ledger permits Prepared and Generated terminal transitions, but not an already Interpreted user becoming Failed/Canceled. The Reader correctly persists its verified question before contextual generation. Delaying that persistence or weakening the test would hide the defect. Original failed evidence remains preserved.
+
+Add only src/conversation/mod.rs to the source envelope (519 protected main entries instead of520), plus this change's historical-conversation-ledger delta. Extend only the fact-only Reader User/Interpreted transition to Failed/ProviderFailure or Canceled/Canceled, with unchanged exact verified text, immutable facts and no completion evidence. No reason-free advance, Writer transition, selected/native effect, replay permission or reconciliation bypass. Reuse existing expected-head checks, atomic publication and historical acknowledgment; no second ledger writer or schema change.
+
+Actual ledger positive/replay and negative reason/text/mode/transition controls must accompany the unchanged workflow withholding/cancellation expectation. Failedfb61144 evidence is547passed/1failed/3ignored, not qualification; the first failing loop iteration does not qualify later cancellation cases. Implement only after independent scope acceptance, then run new exact-head checks. No model or device call is authorized.

@@ -20,3 +20,9 @@
 - [ ] Port the ordinary Reader receiving path and LocalMemory-only admission without SDK/native or selected Reader changes.
 - [ ] Execute current-head capturing, filesystem/CLI, loopback, default regression and hosted source/Docs checks.
 - [ ] Review new evidence and obtain an explicit separate live qualification plan; no additional call is authorized here.
+
+## Terminal-outcome refinement
+
+- [ ] Independently accept the one-path fact-only transition/preservation-envelope extension.
+- [ ] Implement exact-text/reason guard through existing atomic publication and actual positive/replay/refusal controls.
+- [ ] Re-run exact-head qualification, preservingfb61144 failure and open live/native gates.
