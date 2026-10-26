@@ -65,3 +65,18 @@ These are workspace evidence, not hosted Windows or retained-artifact results.
 Source and Docs commits are local-only. Existing GitHub authentication/publication remains gated; no auth/push retry or credential workaround was attempted. Public fetch succeeded independently and does not establish write authorization. Obtain independent implementation review using the bounded native snapshot, publish the existing owned branches when allowed, create linked PRs and complete ordinary current both-OS source/retained CI. Then sync/archive only this completed capability, compose then-current Docs/Manager preserving unrelated work, obtain final exact paired review/current gates and perform normal Docs-first squash. Actual merged trees/main/new tag/provenance remain separate observations. No duplicate watch of the closed producerv0.42.0 or Managerv0.21.0.
 
 Source basis: accepted contract/review, actual public fetched refs/files, native source-content manifests and local command/render outputs. Synthetic transport/UI evidence is not device/provider/service/runtime/model qualification. Broader REM-42/MVP remains unfinished.
+
+## Focused successor: unresolved followup fallback
+
+Independent review found a P2 in d9: after a lost apply response and successful unresolved status, cancel or a failed/late status emitted unresolved with a null report, which the unchanged public parser correctly refused. This is a reconciliation result defect; the original remained retained and no second apply occurred. The original d9/8af review packet remains intact and is not relabeled accepted.
+
+Three added real-coordinator tests reproduced all three failures against the d9 host (0pass/3fail). The successor changes only host/research-settings.mjs and tests/research-settings.test.mjs. #uncertain now publishes unknown with null report/current, while preserving the exact original and its last retained unresolved observation. It grants no fresh successful status observation, refreshed authorization, retry, apply or settlement. Tests bind the original intent/reference/identity and assert exactly one total apply and only the required status call (no I/O for idle cancel).
+
+Successor lint, all10 coordinator groups and full265Node tests pass with zero failures/skips/cancellations. The Python/renderer/HTML/IPC/HTTP transport implementation and captures are unchanged from d9; their earlier passes retain that exact attribution and were not replayed for a snapshot. No successor Windows/retained/producer/tablet result is claimed. Native file-content manifests identify the exact successor commit; commands used the same source contents immediately before committing it. Independent implementation review/current hosted qualification and remaining lifecycle gates stay open.
+
+| Successor or original red log | Bytes | SHA256 |
+| --- | ---: | --- |
+| `unresolved-red-d9.log` | 3849 | `c6909e4d31af0eca4070962833738a51e95f80a225b17e99bc2c76246b758aa4` |
+| `unresolved-successor-focused.log` | 1281 | `ee8716c98e9cfa93b4bc5d41692cdce51ff11c1e5a80e81493135bc58f613499` |
+| `unresolved-successor-lint.log` | 20 | `6ba41d3386946f3480608c0bcb80bb893d785c187db4178012a840ea9081d89b` |
+| `unresolved-successor-node.log` | 38885 | `bd69f8ee051d694424f6a669a1b53364b99853b9f96c36ab120e469e209a67c1` |
