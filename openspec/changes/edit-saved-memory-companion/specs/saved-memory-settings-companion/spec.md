@@ -20,17 +20,17 @@ The consumer SHALL clear exact private replacement draft and actual DOM synchron
 
 #### Scenario: Possible publication or unresolved status
 - **WHEN** apply may have run without a complete verified response or original desired bytes remain unresolved
-- **THEN** the original opaque reference supports explicit read-only status with no profile patch, reapply, automatic retry, silent eviction or settlement by a later refusal.
+- **THEN** the original opaque reference supports explicit read-only status with no profile patch, reapply, automatic retry, silent eviction or settlement by a later refusal. After an unresolved observation, cancel or failed/late status returns valid unknown/null-report fallback retaining the same original and last retained observation, without a fabricated successful read or repeated write.
 
 ### Requirement: Saved-only authority, shared custody and attributed verification
-The consumer SHALL keep runtime activation unverified, preserve all existing Reader/Writer/selected-memory drafts and manual behavior, enforce five-lane ownership and complete only its own guarded independently reviewed lifecycle.
+The consumer SHALL keep runtime activation unverified, preserve all existing Reader/Writer/selected-memory drafts and manual behavior, enforce six-lane ownership and complete only its own guarded independently reviewed lifecycle.
 
 #### Scenario: Saved disable or profile replacement
 - **WHEN** saved enabled/profile changes verify or desired bytes are currently observed
 - **THEN** both companions state saved-only/runtime-unverified results, without claiming automatic Reader activation, profile membership, provider/native readiness, manual maintenance disablement or restart/next-request effects.
 
 #### Scenario: Busy or stale cancellation across maintenance
-- **WHEN** another model/basic/forget/export/memory-settings invocation owns I/O or an old callback races newer work
+- **WHEN** another model/basic/forget/export/research/memory-settings invocation owns I/O or an old callback races newer work
 - **THEN** Busy performs no hook/cancel/I/O and stale cancellation/completion cannot revoke, release, clear or settle the unrelated owner.
 
 #### Scenario: Historical inputs and complete linked delivery
