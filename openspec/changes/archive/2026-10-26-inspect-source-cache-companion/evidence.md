@@ -13,8 +13,8 @@ vectors.json uses independently generated conspicuously synthetic JSON/UUID meta
 Root separately closed the prior protected-file consumer at actual Manager3586234, official v0.25.0/release424388805, with main40342060370/Docs40342021769 passing and independent tag/provenance/assets proof. This lane did not duplicate that watch. Closure is an external prior-delivery receipt, not a change to historical archives or installed target compatibility.
 
 Original static inspection for this precode read all19 current Linux/Windows wrapper records and rechecked38 stdout/stderr SHA256 values, without running any executable. Exactly6 records are inspect-source-cache JSON reports; the remainder are ordinary/recognized parser outcomes or one separate cleanup revalidation report. They are not all inventory-success records and are never new consumer execution evidence.
-- [linux-current-inventory-corpus.json](../archive/2026-10-23-inspect-source-cache-metadata/linux-current-inventory-corpus.json): 10874 bytes, SHA256b7365db610b9135b976998e3af02d5a3db720bdb664abc2860f5a9dbaecec662; original verification metadata and record order retained.
-- [windows-current-inventory-corpus.json](../archive/2026-10-23-inspect-source-cache-metadata/windows-current-inventory-corpus.json): 6461 bytes, SHA25688873e0b9461c4028a2d036a2d8a324d27270df7d2b5db0298466f7b4e64e6e2; original verification metadata and record order retained.
+- [linux-current-inventory-corpus.json](../2026-10-23-inspect-source-cache-metadata/linux-current-inventory-corpus.json): 10874 bytes, SHA256b7365db610b9135b976998e3af02d5a3db720bdb664abc2860f5a9dbaecec662; original verification metadata and record order retained.
+- [windows-current-inventory-corpus.json](../2026-10-23-inspect-source-cache-metadata/windows-current-inventory-corpus.json): 6461 bytes, SHA25688873e0b9461c4028a2d036a2d8a324d27270df7d2b5db0298466f7b4e64e6e2; original verification metadata and record order retained.
 
 ## Implementation checkpoint (2026-10-26; unfinished qualification)
 

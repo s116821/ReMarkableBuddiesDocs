@@ -10,8 +10,8 @@
 
 ## 3. Qualification and complete own delivery
 - [x] 3.1 Pass meaningful independent shape/vector/original-static/null/bounds/privacy/identity/timeout/Stop/owner controls, preserving every genuine failure and provenance.
-- [ ] 3.2 Pass current Windows/Linux development/source/retained browser/packaged Electron and exact upload-byte qualification; inspect safe390/1280 captures.
-- [ ] 3.3 Obtain implementation/host acceptance, then own canonical/manual sync/archive with exact links/unrelated native preservation proof.
+- [x] 3.2 Pass current Windows/Linux development/source/retained browser/packaged Electron and exact upload-byte qualification; inspect safe390/1280 captures.
+- [x] 3.3 Obtain implementation/host acceptance, then own canonical/manual sync/archive with exact links/unrelated native preservation proof.
 - [ ] 3.4 Obtain final exact paired current-main review/Docs CI, normal Docs-first delivery and separate actual-main/tag/provenance observation. WholeREM42/MVP remains open.
 
-Implementation is in progress after exact precode96c7 acceptance (Linear a4fab7e6). Root publishes/reviews/merges. Prior protected-file publication remains closed. Manager own implementation branch starts directly at actual3586234; Docs precode starts at actualec94b0c. Current-main refresh, independent implementation/host acceptance, canonical synchronization/archive and delivery remain pending. No producer replay, new worker/worktree/resource/settings, tablet/provider/USB/SDK/RE action.
+Implementation/host acceptance is granted for frozen Manager aad0509 after exact hosted40359199841 completed Title/Checks/Build/Linux and Windows Integration successfully; PR Release correctly skipped. This own canonical/manual sync/archive follows that receipt. Root owns final exact paired review/Docs checks, normal Docs-first delivery and actual-main/tag/provenance observations under3.4, which remains unchecked until observed. Prior releases, broader REM42/MVP and runtime/native adoption remain separate. Source is unchanged; all earlier failures/artifacts remain preserved.
