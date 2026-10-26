@@ -35,3 +35,20 @@ events must retain the resident child. The existing `Session::connection` helper
 does not yet make that distinction; do not use it as the product request route.
 Implement separately reviewed reconnect to the same verified runtime with fresh
 connection/handshake/server nonces, retained uncertain effects and no replay.
+
+The consumer must retain typed SDK failure causes and original lost-request
+identity, including callback errors, rather than parse diagnostic strings.
+Explicit runtime reconnection retires only the prior socket, validates the
+original child incarnation and copied files plus consumed admission, and uses
+the existing Store. It must not rerun activation, rewrite the original process
+identity, or consume another admission. Failed reconnection leaves that child
+owned by the session and retains all uncertainty for later reconciliation or
+shutdown. An unresolved effect from a retired connection makes subsequent
+connections read-only for effects, including requests from other conversations;
+observation and explicit original-target reconciliation remain available.
+
+Exercise same-process repeated handshakes with fresh identities, idle EOF,
+caller refusal during reconnect, tampered admission/artifact refusal before new
+handshake, and reply-retention loss across reconnect and shutdown. The installed
+Session still needs typed health/input classification and lease/group checks in
+its product request route before these runtime primitives may be composed there.

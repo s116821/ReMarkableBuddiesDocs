@@ -34,9 +34,13 @@ than crediting the earlier revision or relabeling the run successful.
 
 Hosted Buddy run `40253971614` at `c3ba9c1` passed formatting and strict
 all-target/all-feature Clippy; its all-feature tests remain in progress.
-SDK run `40253152513` at `df4383e` passed Linux and Windows staging checks;
-the build stage remains in progress. These are scoped results, not completed
-pipeline or installed/native acceptance claims.
+SDK run `40253152513` at `df4383e` completed successfully, including Linux,
+Windows staging, Build and Integration. Docs run `40254592014` at `0c280cc`
+also succeeded. These results do not establish installed/native acceptance.
+
+The subsequent same-runtime reconnect increment is tracked separately in
+[its result](resident-reconnect-result.md); this progress revision's test evidence
+must not be credited to that newer source.
 
 SDK stable all-feature tests/lint, explicit Rust 1.88.0 checks, exact package
 containment and rebuilt Qt interoperability passed as recorded in SDK PR31's
