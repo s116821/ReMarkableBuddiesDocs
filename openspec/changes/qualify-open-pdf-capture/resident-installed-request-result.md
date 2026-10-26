@@ -38,10 +38,12 @@ Formatting, whitespace and Python fixture syntax checks passed before publicatio
 The matching Docs changes pass all 88 strict OpenSpec validations and the
 manifest/guidance/source check (25 guidance files, 126 preserved source blobs).
 The exact Buddy [pipeline 40257213471](https://github.com/s116821/ReMarkableBuddies/actions/runs/40257213471)
-has compiled and passed strict lint; all-feature tests are running. Execution
-success is not yet claimed. The prior reconnect-only revision `c546e77` has passed
-Checks in [40255895994](https://github.com/s116821/ReMarkableBuddies/actions/runs/40255895994),
-with packaging still running; that does not validate this revision. SDK `df4383e`
+has passed Checks, including strict lint, 679 library tests (three ignored),
+11 binary tests and all integration/CLI/simulator suites. Application packaging
+is still running. The completed Checks job log is retained as
+`session-b585517-checks.log`. The prior reconnect-only revision `c546e77` passed
+its full [40255895994 pipeline](https://github.com/s116821/ReMarkableBuddies/actions/runs/40255895994);
+that does not validate this revision. SDK `df4383e`
 has passed its full [40253152513 pipeline](https://github.com/s116821/ReMarkableOpenSDK/actions/runs/40253152513).
 
 Local Rust builds remain unavailable after the preserved disk-full failure.
@@ -56,3 +58,7 @@ binding or Writer lease. Approved installation/profile/bootstrap resources,
 Manager lifecycle, reusable native ownership and actual Reader/Writer/tablet
 acceptance remain required. No tablet action occurred for this increment. Native
 capability remains disabled; the overall change remains unarchived.
+
+The subsequent [owned input integration](resident-input-result.md) replaces the
+production Session's arbitrary callback with an actual observer guard; its
+source and verification are recorded independently.

@@ -93,3 +93,26 @@ Check admission again after successful journal outcome publication before
 delivering the reply. Cancellation, deadline or integrity failure at that point
 must refuse delivery while retaining the actual historical outcome; do not
 rewrite a recorded observation into uncertainty or known-not-dispatched evidence.
+
+## Native input producer
+
+The installed Session API shall require an owned Linux request-input guard built
+from the existing InputObserver, rather than an arbitrary production callback.
+Any interaction or nonquiescent contact cancels this request permanently; later
+quiet polls cannot revive it. Polls must continue to detect observer loss even
+after cancellation, and an observer error is fatal rather than ordinary cancel.
+No input grab or injected event is needed for these read-only observations.
+
+After activation, reacquire input descriptors while the old observer still
+covers the transition: poll old, construct new, poll old again, then poll new
+before replacing old. Cancellation from either remains sticky, and any failure
+invalidates the guard rather than permitting renewal retries. Activation refuses
+to publish a session unless this handoff and final installed checks succeed.
+This is input continuity only. It cannot preserve or create a page/process guard;
+source reacquisition remains separately required before Reader/Writer continuation.
+
+Verify actual InputObserver poll/quiescence semantics with scripted OS input and
+owned runtime fixtures: quiet handoff, activity during replacement, initial or
+unfinished contact without a completed gesture, error after cancellation, and
+failures from old/new observer or replacement construction. No native qualification
+follows from these host checks.

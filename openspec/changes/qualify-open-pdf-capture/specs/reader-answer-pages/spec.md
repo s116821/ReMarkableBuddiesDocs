@@ -11,6 +11,11 @@ connection retirement SHALL preserve the resident process. Reconnection SHALL
 retain its verified activation, use fresh connection identities, preserve
 original uncertainty and never replay an effect. Health or session integrity
 failure SHALL still enter independent recovery.
+Installed Session operations SHALL obtain input progress from an owned Linux
+observer guard. Cancellation SHALL remain sticky for that request, while later
+observer errors SHALL still be treated as integrity loss. Postactivation input
+descriptor renewal SHALL overlap old and new observation without reusing a stale
+page/process guard or resetting cancellation.
 
 #### Scenario: Cancel while the resident endpoint is starting
 - **WHEN** installed progress fails before socket readiness or handshake completion
@@ -35,6 +40,14 @@ failure SHALL still enter independent recovery.
 #### Scenario: Caller deadline differs from failed service observation
 - **WHEN** a bounded service read fails during request progress
 - **THEN** only an explicitly typed caller deadline with successful owned-command cleanup may retire the request ordinarily; internal read timeout, integrity failure, or an unreaped command remains fatal
+
+#### Scenario: Input quiets after canceling a request
+- **WHEN** an owned observer reports activity or an unfinished contact and later reports quiet input
+- **THEN** the same request remains canceled, and a subsequent observer error still becomes integrity loss
+
+#### Scenario: Input changes while descriptors are renewed after activation
+- **WHEN** fresh input descriptors are constructed before retiring the old observer
+- **THEN** old and new observations both participate in final admission, activity on either refuses continuation, and any renewal failure invalidates the guard without retry
 
 ### Requirement: Durable resident insertion attempt reservation
 The resident SDK consumer SHALL durably reserve the exact original insertion frame/digest and conversation before request bytes, using the existing Store ownership/serialization boundary. A reservation SHALL reject reused operations and replacement attempts for unresolved or observed conversations, survive restart and generation changes, and retain uncertain outcomes for read-only reconciliation of the original target. Only a durably recorded known-no-effect outcome SHALL permit a new caller-selected operation; no automatic retry is supplied. Historical replies SHALL NOT grant binding, rendering or native persistence authority. Malformed or incomplete journal state SHALL refuse without resetting it. Detailed consumer obligations are in resident-client-integration.md.
