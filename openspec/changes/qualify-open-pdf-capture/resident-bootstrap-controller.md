@@ -356,3 +356,27 @@ retained identity, existing/populated groups, changed policy, unstable service
 snapshots, read errors and ownership-free refusal. Formatting and whitespace
 checks pass; hosted compilation and the fresh clean fixture remain pending.
 This revision supersedes `9df9892` as the next diagnostic artifact selection.
+
+## Disposable source-change recovery case
+
+Keep the reviewed `49402bd` clean-case controller and host inputs frozen while
+adding source-mismatch coverage separately. Never credit that frozen build with
+the new fault path. The explicit fixture-only `source_mismatch` case adds one
+new file under its nonce-owned disposable source directory after the stand-in
+observer has exited successfully. It must never touch the native document root.
+Record the injection durably before the actor's ordinary preservation check.
+
+The expected actor result is source-manifest refusal. Each of two independently
+selected recovery helper invocations must restore/verify the same new stock
+incarnation, record the preservation refusal, and withhold Buddy. Require both
+stop intents, the completed observer, the injection marker, exactly two failed
+preservation receipts and no Buddy start/restored record. Live state must prove
+stock restoration without a second restart and Buddy terminal throughout both
+helper observations. Native mutation remains disabled; shutdown and the other
+recovery cases remain separate qualification requirements.
+
+Implemented in Buddy `9d803c9acf534c7b7118abf617e6d755b3820f65` and accepted
+by independent source review. All twelve offline evidence-verifier tests,
+formatting and whitespace checks pass. Compiled and device fault evidence are
+pending. The frozen `49402bd` run continues only for its reviewed clean-case
+question; it cannot validate this source-change injection or the current head.
