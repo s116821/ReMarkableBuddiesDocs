@@ -35,8 +35,11 @@ failed compiling a new test's unqualified `anyhow!` macro. The error was correct
 to `anyhow::anyhow!`, without production changes or weakened assertions. Its
 failed log is retained as `input-b20f942-failed.log`. Corrected exact-revision
 execution [40258687350](https://github.com/s116821/ReMarkableBuddies/actions/runs/40258687350)
-is running. Prior `b585517` Checks passed but do not validate
-this increment. No local build was attempted with insufficient disk space.
+has passed Checks: 686 library tests passed (3 ignored), 11 binary tests and
+the integration/CLI/simulator suites passed, together with strict lint. The
+application build remains running. The completed Checks log is retained as
+`input-4fdabf3-checks.log`. Prior `b585517` full CI also passed but does not
+validate this increment. No local build was attempted with insufficient disk space.
 
 This supplies input continuity to the installed Session component. Workflow
 still needs first-gesture ownership, source reacquisition and actual capture/
