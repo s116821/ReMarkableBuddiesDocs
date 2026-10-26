@@ -1,7 +1,7 @@
-# Shared saved credential-reference companion contract (unimplemented precode)
+# Shared saved credential-reference companion contract
 
 ## Baseline and exclusions
-Use unchanged [canonical producer](../../specs/saved-model-credential-reference/spec.md) and its [exact contract](../archive/2026-10-22-edit-saved-model-credential-reference/contract.md). Current bases/ownership are in design.md. This contract is not source/API implementation or independent acceptance. Only saved root model_credential is editable. No credential-file install/remove/read/discovery, credentials-root mutation, arbitrary path/command, provider/service/runtime call, environment key resolution, profile/other Config repair, implicit two-file transaction or producer replay. Existing CLI/environment/file precedence is unchanged.
+Use unchanged [canonical producer](../../../specs/saved-model-credential-reference/spec.md) and its [exact contract](../2026-10-22-edit-saved-model-credential-reference/contract.md). Current bases/ownership are in design.md. Accepted precode, independent implementation review and hosted evidence are separately attributed in results.md; lifecycle completion does not imply runtime, native or provider readiness. Only saved root model_credential is editable. No credential-file install/remove/read/discovery, credentials-root mutation, arbitrary path/command, provider/service/runtime call, environment key resolution, profile/other Config repair, implicit two-file transaction or producer replay. Existing CLI/environment/file precedence is unchanged.
 
 ## Exact public capability
 Add optional `credentialReference(request)` to both hosts, HTTP POST `/manager-credential-reference`, IPC `manager:credentialReference`, lane `credential-reference`. Request is one exact object:

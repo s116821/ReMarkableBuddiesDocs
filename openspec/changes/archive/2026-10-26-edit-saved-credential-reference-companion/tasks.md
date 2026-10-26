@@ -9,9 +9,11 @@
 - [x] 2.3 Preserve producer, old APIs/bounds/JSON/helper/export/forget fixes, audited locks, CI/version behavior and prior evidence.
 
 ## 3. Verification and own lifecycle
-- [ ] 3.1 Pass acceptance.md controls, independent vectors/new-parser evidence with correct attribution; no producer replay or device contact.
-- [ ] 3.2 Qualify ordinary current both-OS development/source/retained-browser/packaged-Electron and upload-byte identity; inspect390/1280 current captures.
-- [ ] 3.3 Obtain independent implementation acceptance, own canonical sync/archive and unrelated-path proof.
+- [x] 3.1 Pass acceptance.md controls, independent vectors/new-parser evidence with correct attribution; no producer replay or device contact.
+- [x] 3.2 Qualify ordinary current both-OS development/source/retained-browser/packaged-Electron and upload-byte identity; inspect390/1280 current captures.
+- [x] 3.3 Obtain independent implementation acceptance, own canonical sync/archive and unrelated-path proof.
+
+## 4. External final paired delivery observations
 - [ ] 3.4 Complete final exact paired current-main review/current CI and normal Docs-first delivery, then verify actual trees/main/new tag/provenance separately; broad REM42 stays open.
 
-Accepted precodea6d527d has local implementation0584f31; current results.md distinguishes local checks from pending independent/hosted qualification. Root alone publishes exact native handoffs/merges; no SCRAPPY reauthentication gate. No prior completed producer/release/corpus is replayed and no other lane's artifacts are archived.
+Accepted precodea6d527d and exact repaired3b2cb8d/0a7928d are independently accepted. Required current40311864238 all jobs PASS with documented PR-merge checkout/tree attribution and preserved upload bytes; own canonical/manual sync/archive completed in this final Docs successor. Historical058 and dirty-repair local evidence remain distinct. Final external paired review/current final Docs CI/merge/publication stay unchecked. Root alone publishes/merges; no SCRAPPY reauthentication gate, other-lane archive or producer/device replay.
