@@ -30,8 +30,13 @@ preserving the exact new failure cause. The combined regression covers this
 failure and a subsequent successful reconnect plus shutdown.
 
 Formatting, diff whitespace and Python fixture syntax passed. Source review
-accepted the corrected code. Compilation, execution and hosted CI are pending;
-the host has insufficient disk for another local build. Earlier c3ba9c1 test
+accepted the corrected code. Hosted run `40255036133` compiled all targets and
+passed strict lint, then failed library tests: 669 passed, two failed, three
+ignored. Both new failing tests tried to open a second Store while the runtime
+correctly retained its owner. Their assertions were corrected to inspect the
+runtime's existing Store handle. This changes no ownership rule or runtime code.
+The failed log is retained; validation of the corrected revision remains pending.
+The host has insufficient disk for another local build. Earlier c3ba9c1 test
 results do not validate this new revision. Do not mark the installed request
 route or native acceptance complete based on these runtime primitives.
 
