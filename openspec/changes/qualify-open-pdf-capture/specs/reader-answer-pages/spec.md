@@ -144,6 +144,18 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 - **WHEN** a conflicting PID1 stop job arrives after the pre-start sample
 - **THEN** job-mode=fail refuses replacement, the helper retains the consumed lease and reports failure or uncertainty without a second command
 
+#### Scenario: Recovery starts during original stock shutdown
+- **WHEN** an approved stock service is deactivating in a known stop/final substate with the lease's original invocation and last-main PID
+- **THEN** recovery waits within its original 120-second deadline, retaining the nonzero systemd start timestamp, and may issue its first start only after that identity is retained or completely cleared in inactive/dead, no process/job remains and the stock group is empty
+
+#### Scenario: Startup uncertainty precedes shutdown
+- **WHEN** the helper has already requested a start or observed startup or an unknown pending job before a later shutdown/terminal sample
+- **THEN** it never resets the no-retry restriction or issues another start, and partial/changed shutdown identity or deadline expiry also refuses
+
+#### Scenario: Recovery timeout policy differs
+- **WHEN** loaded or approved helper TimeoutStartUSec, Buddy WatchdogUSec or stock TimeoutStopUSec differs from the supported 130-second, 120-second and 90-second values
+- **THEN** installed admission refuses; matching these values alone does not qualify actual shutdown/startup timing
+
 #### Scenario: Exclusive recovery command on a boot without a recorded activation
 - **WHEN** the exclusive recovery command observes only the final activation record absent beneath the unchanged existing protected fixed directory
 - **THEN** it returns NoRecordedActivation without configuration, Store, provider, device or service startup, without changing the directory or claiming stock readiness
@@ -160,6 +172,21 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 #### Scenario: Installation or process changes during restoration
 - **WHEN** the bound profile, loaded policy, artifact, original Buddy terminal evidence, helper context, or restored stock identity changes
 - **THEN** restoration does not report success and neither resets the activation latch nor repeats a native effect
+
+### Requirement: Installed resident session owns stock handoff
+The installed caller SHALL compose the protected recovery installation, fixed boot lease, actual Buddy/helper/stock service contexts and resident runtime under resident-supervisor-integration.md. It SHALL arm fatal main-thread health ownership before exclusive lease publication can leave occupied state, issue at most one fixed nonblocking stock stop with job-mode=fail, and launch only after stable original stock termination and recursive group emptiness or qualified deletion. The entire activation SHALL use one at-most-60-second deadline. The session SHALL retain its lease, artifact pins and child, verify child membership before exposing its connection, and permanently fail the actual ordinary runtime on any post-publication failure or session drop. Neither publication, service health, handshake nor caller callback success SHALL establish current page identity or native mutation authority. Product admission and fresh source/cancellation reacquisition remain required.
+
+#### Scenario: Lease publication fails after creating occupied state
+- **WHEN** exclusive publication or its closing checks fail without returning a lease
+- **THEN** the already-armed health guard forces ordinary runtime exit, leaves the occupied record and diagnostics intact, and issues no stop retry
+
+#### Scenario: Resident session ends while ordinary Buddy remains alive
+- **WHEN** the session drops or its validated connection becomes unavailable
+- **THEN** its actual health owner fails permanently and the ordinary runtime exits for independent recovery; the session never starts stock from its destructor
+
+#### Scenario: Stock changes during the takeover wait
+- **WHEN** a new stock incarnation, changed loaded policy, replaced group or incomplete terminal evidence is observed
+- **THEN** the session does not launch or expose native work and any consumed activation remains fatal to the ordinary runtime
 
 ### Requirement: Main-thread service health
 The installed ordinary Buddy runtime SHALL emit service readiness only after initialization and watchdog notifications only from actual main-thread progress under resident-supervisor-integration.md. Idle input polling, including the ordinary touch fallback, and active request-progress checks SHALL drive those notifications; no independent indefinite keep-alive thread SHALL be introduced. Notification I/O SHALL be nonblocking and errors, owner mismatch or expiration SHALL permanently fail that instance and reach service exit. Existing operation deadlines and input/cancellation semantics SHALL remain unchanged. Service readiness SHALL NOT grant native activation, page identity or write authority.

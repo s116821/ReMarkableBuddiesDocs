@@ -40,13 +40,24 @@ tests and four touch regressions. Run `service-health-r1.log` was deliberately
 stopped (exit 137) during its later simulator build to apply the reviewed deadline
 fix; it is intermediate evidence, not a completed validation chain.
 
-Final-source run `service-health-r2.log` is pending in a disposable Linux
-container. It runs resident, native-history, touch, binary and simulator tests,
-both real CLI fixtures, then strict all-target/all-feature lint. Tests cover
-socket timing/ownership, endpoint failure/fullness, actual orchestrator exit,
-native observer callback behavior and existing contact/simulator regressions.
-No final result is claimed while the run remains pending. The real CLI startup
-isolation fixture is `tools/systemd_fixture/health_entry.py`.
+Final-source run `service-health-r2.log` at `557e88c` passed 81 resident tests,
+three native-history tests, four touch tests, 11 binary CLI tests and 42 of 43
+simulator tests. The remaining CLI simulator fixture failed because it creates
+`CARGO_MANIFEST_DIR/target` while the source was mounted read-only. The failed
+log is preserved. The unchanged-source continuation `service-health-r2-cont.log`
+added a disposable writable mount for that output directory and passed the one
+remaining simulator test, all 22 recovery/startup CLI cases and all eight health
+entry cases, followed by strict all-target/all-feature Clippy (8m08s). The
+continuation exited zero. No source correction was needed for that mount failure.
+Hosted [Buddy run 40248344329](https://github.com/s116821/ReMarkableBuddies/actions/runs/40248344329)
+also completed successfully at `557e88c`, including Checks, application Build and
+Integration. [Docs run 40248460704](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40248460704)
+passed at `4d0c5df`; later documentation edits require their own checks.
+Tests cover socket timing/ownership, endpoint failure/fullness, actual
+orchestrator exit, native observer callbacks and existing contact/simulator
+regressions. The CLI startup isolation fixture is
+`tools/systemd_fixture/health_entry.py`. Later activation changes require their
+own validation; these results describe `557e88c` only.
 
 These shared workflow/socket fixtures test application behavior. They do not
 model PID1 scheduling, actual native input ownership, recovery ordering or

@@ -1,9 +1,10 @@
 # Resident stock-service ownership and recovery
 
 This is the integration design, not an installed capability. The runtime owner,
-lease/context support, service sampler, fixed-profile restoration helper and
-isolated CLI dispatch exist; stock-service takeover, installed independent recovery and Reader wiring do not
-yet exist in the normal application. Keep those tasks open until verified.
+lease/context support, service sampler, fixed-profile restoration helper,
+isolated CLI dispatch and service health exist. Installed activation composition
+is being verified; the normal Reader path, installed independent recovery and
+approved payload/profile remain open. Keep those tasks open until verified.
 
 ## Refreshed platform evidence
 
@@ -150,6 +151,62 @@ PageObservation or visit/revision/write authority from resident ReaderFacts.
 Installed acquisition, binding and capture/write composition remain required.
 
 ## Concrete verification before stock takeover
+
+### Installed caller composition
+
+The installed handoff reuses recovery's protected-file/profile/policy checks;
+it does not accept arbitrary unit names, executable paths, environment or command
+overrides. Fixed native payload siblings are `resident-profile.json` and
+`libremarkable-resident.so` beside the application and `resident-recovery.json`.
+Their independently qualified hashes come from the recovery profile. No approved
+profile is added by this source implementation.
+
+Under one at-most-60-second absolute activation deadline, admit the unchanged
+installation, the current main Buddy process in its original service invocation,
+an inactive recovery helper with no queued job, and actual unmodified running
+stock. Require the fixed protected boot directory and an unoccupied latch. The
+ordinary main-thread health owner must be active; source/input cancellation checks
+remain the product caller's responsibility and run at every handoff boundary.
+A callback's success alone does not establish current page identity.
+
+Arm a sticky exit-on-drop guard tied to the actual ready main-thread health owner
+before attempting publication: exclusive creation/write/sync can fail after
+leaving a partial occupied record without returning a `Lease`. Every such error
+must exit the ordinary runtime; do not wait for successful publication to arm it.
+Publish the immutable lease exclusively, then repeat installation, Buddy/helper
+and original stock checks before issuing one fixed nonblocking stock stop with
+`--job-mode=fail`. No stop retry or conflicting-job replacement is permitted.
+Repeat input/health and the original deadline immediately before that command,
+after all service observations. After runtime artifact copying and synchronized
+admission preparation, but before spawning the child, recheck the installed
+lease/artifacts/Buddy/helper, absence of competing stock, cancellation, health
+and original deadline. Recheck the copied files after that callback. A refusal
+at either boundary performs no corresponding stop or spawn; post-handshake
+validation cannot substitute for this pre-spawn check.
+Observe stock termination and its original recursive group under the original
+deadline; require stable loaded policy and no job/main/control process. A newly
+running or changed stock incarnation refuses. Only the original empty group or
+its qualified deletion can permit launch; a missing unrelated path cannot.
+
+The session owns the lease, pinned installation and `ResidentRuntime` together.
+Its fresh child directory is derived from that lease's activation UUID below the
+fixed boot directory; the SDK admission retains its independently fresh protocol
+nonce. These identities serve different purposes and must not be silently
+substituted. Before child launch and when exposing the live connection, recheck
+the lease, installation, Buddy context and absence of competing stock. The child
+must belong to the admitted Buddy group. Any failure after lease publication is
+fatal to the ordinary runtime so independent recovery owns stock restoration;
+the latch and diagnostics remain. The successful session retains the exit guard;
+session shutdown/drop permanently fails that same health owner, causing the
+existing main-loop fatal predicate to exit. Merely stopping the child while the
+ordinary loop remains healthy would strand stock and is forbidden. Dropping the
+session only closes/stops its owned child and never starts stock itself.
+
+This service handoff cannot manufacture a native page observation or a supported
+SDK mutation capability. The first-gesture product route must also discard old
+input/Reader handles, reacquire source and cancellation, and refuse an unknown or
+different source before continuing Reader/Writer. Installed payload/bootstrap,
+source continuity and reusable native capacity still need their actual acceptance.
 
 First exercise the selected PID1 ordering/recovery behavior with uniquely named
 owned fake-stock, actor and recovery units. Test clean exit, abrupt actor failure,
@@ -378,6 +435,31 @@ request. Never replace another PID1 job, reset a failed unit, stop/restart stock
 or kill a stock process. Explicit job-mode=fail closes the conflicting-job race
 between sampling PID1 and submitting the request. A failed or timed-out start command may already have
 queued a job; retain the lease and report uncertainty instead of retrying it.
+
+Recovery may begin while the original stock shutdown is still running. Distinguish
+an explicit deactivating stop/final substate from startup or an unknown queued job;
+the numeric Job property alone never identifies its operation. Waiting through
+shutdown requires the lease's original stock invocation and ExecMainPID, an
+original-or-zero MainPID, expected group, and a nonzero stable systemd start
+timestamp. A control process may remain during that wait. Preserve the first
+shutdown identity across observations. A later terminal sample must retain that
+identity or be completely cleared and inactive/dead; no main/control process or
+job and an empty stock group are still required before the helper's first start.
+Observing startup or any unknown pending job permanently forbids a subsequent
+start request in that helper invocation. Never clear that restriction merely
+because a later sample is deactivating. An attempted start also remains one-shot.
+
+Use one 120-second monotonic helper deadline, retaining the three-second command
+and separate two-second cleanup bounds. Sample TimeoutStartUSec with the other
+approved loaded policy: the supported helper profile uses exactly `2min 10s`,
+Buddy WatchdogUSec exactly `2min`, and stock TimeoutStopUSec `1min 30s`. Those fixed
+values make the budget assumptions reviewable; they do not prove that every
+shutdown/startup completes within the budget. Qualification must account for
+systemd's per-phase stop timeouts and actual vendor commands before approving
+the installation. Expiry during shutdown issues no start or retry. Upstream
+[systemd 255.21 service states](https://github.com/systemd/systemd-stable/blob/v255.21/src/core/service.c)
+define the deactivating stop/final substates used for this distinction; target
+behavior still requires the installed acceptance checks.
 
 Success requires stable loaded active/running stock with no pending job/control
 process, the exact executable and argv, unchanged process start ticks, populated
