@@ -1,12 +1,20 @@
 # Saved-memory consumer verification checkpoint
 
-## Exact revisions and delivery state
+## Current reviewed pair and delivery state
 
-Accepted concrete precode: Docs `61d4ae5cf895fe1ebc426db0c057a768562be7e9`, independently accepted in [review5622256281](https://github.com/s116821/ReMarkableBuddiesDocs/pull/83#pullrequestreview-5622256281) before API/source edits. Current implementation: Manager `0240bb073ff77049d117c1d8cab480990654cd1c`, based on actual main `0983fed62a547d4fb1f01ff209a8aa7423d60a8e`. Source is committed locally; its push failed when the existing GitHub credential became invalid. No feature implementation PR or hosted feature run is claimed yet.
+Current candidate for [Manager38](https://github.com/s116821/ReMarkableBuddiesManager/pull/38): `bd3baac03c832c5699d7fbcabf1fb1c8588f572e`, tree `a5b3ea6f1b25daa7530ac1fcf57ea15030b4e716`, sole parent reviewed56ded80. Only the two memory UI/controller test files change; every production file remains exact to56ded80, which normally composed preserved0240 and actual mainf8b0aaf. Paired [Docs83](https://github.com/s116821/ReMarkableBuddiesDocs/pull/83) review candidate is `e8b1004795dcd3334a86446784dd197bbdf682d2`, tree `c8cc59cc8488a080ecac526b5dc0c87b8b4b70b9`, following accepted continuation precodeb891827. This Docs successor preserves the prepared status correction and adds the failed-CI investigation below. The previous56ded80/e8b1004 pair remains the independent review baseline; the test successor awaits exact review/publication.
+
+Root independently reviewed this exact source/UI/evidence pair and reported no blocking source finding, with its review posted on Manager38. [Docs40265373840](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/40265373840) passed. [Manager40265376525](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/40265376525) passed Title/Checks/Build but both OS integration jobs FAILED in the repeated memory editor setup. That attempt is closed and remains failed; no unchanged rerun or upload-byte qualification is credited. Root is the sole CI observer and normal publisher. Current full both-OS integration/upload-byte qualification, own canonical sync/archive, final paired lifecycle review and actual delivery/publication remain pending. No additional build, auth retry or release watch follows from this correction.
+
+The historical0240/five-lane/precode sections below retain their original evidence and limits. They describe previous checkpoints, not the current candidate. Current six-lane implementation and local evidence appear under "Current implementation continuation on actual main" below. Original failures/captures remain intact and are not recredited.
+
+## Historical original precode and0240 delivery checkpoint
+
+Accepted concrete precode: Docs `61d4ae5cf895fe1ebc426db0c057a768562be7e9`, independently accepted in [review5622256281](https://github.com/s116821/ReMarkableBuddiesDocs/pull/83#pullrequestreview-5622256281) before API/source edits. Original implementation: Manager `0240bb073ff77049d117c1d8cab480990654cd1c`, based on actual main `0983fed62a547d4fb1f01ff209a8aa7423d60a8e`. Source is committed locally; its push failed when the existing GitHub credential became invalid. No feature implementation PR or hosted feature run is claimed yet.
 
 The separate test-only correction [Manager36](https://github.com/s116821/ReMarkableBuddiesManager/pull/36) stays unchanged at `c4b52f4f9f7b4f993784c219126b3e254c6af048` for independent review. This feature has not speculatively composed that unmerged branch. Compose its actual merged main before ordinary feature CI. Earlier actual-main/test failures remain failed and separately attributed; no historical failure is relabeled.
 
-## Completeness and contract mapping
+## Historical0240 completeness and contract mapping
 
 | Requirement/scenario | Implementation and local evidence |
 | --- | --- |
@@ -20,7 +28,7 @@ The separate test-only correction [Manager36](https://github.com/s116821/ReMarka
 
 Three requirements/seven scenarios are mapped. Tasks2.1–2.3 and3.1–3.2 are locally complete. Task3.3 remains open for ordinary both-OS retained artifact checks;3.4 and3.5 remain open for review, own canonical lifecycle and actual delivery/publication. This checkpoint is not ready for archival.
 
-## Verification actually performed
+## Historical0240 verification actually performed
 
 - Node24.21.0: ESLint, development and production Angular builds pass at the current source revision. Full Node run: **263 passed, zero failed/skipped/cancelled**.
 - Nine Python transport groups pass, including twelve real local socketpair SSH selector/exit cases. These are synthetic local peers, never a tablet. Actual supervised-child tests independently exercise private response handling, cancellation and finite output.
@@ -36,7 +44,7 @@ The original Windows-host corpus is copied byte-for-byte to `tests/fixtures/memo
 
 The independent mixed Boolean/uppercase-profile vector is115 canonical/163 prefixed UTF8 bytes, SHA256 `eb760e429bd11cdebf432a7dbb2f43588474e78112b042d244fd671d188dec0d`. Tests verify reordered/escaped equivalence and spelling distinction without introducing a profile UUID grammar. Synthetic fixed-POSIX reports are separately constructed; original streams remain unchanged. Delivered producer `7f07169faef2a2e5ec6761412034c012cc37d9f4`/v0.24.0 and its closed publication are not replayed or reopened.
 
-## Scope and reproducibility
+## Historical0240 scope and reproducibility
 
 Against actual Manager0983, exactly14 existing paths change and16 are added; all230 other baseline entries are unchanged. Product integration is additive in observer/browser/IPC/Angular, with separate new protocol/coordinator/transport/controller. The old quarantine strictJSON scanner body is mechanically identical after extraction into a pure shared module. No dependency, maintained source version, release contract, producer source or older API cap changes.
 
@@ -64,7 +72,7 @@ Local log receipts are recorded below. They are workspace evidence, not external
 
 ## Remaining gates
 
-Exact continuation precode b891827 is accepted, and current local composition/repair56ded80 is frozen below for independent implementation review. Root owns normal native publication with its existing valid account; no SCRAPPY authentication retry is required. Ordinary current both-OS source/retained CI and independent implementation acceptance remain required before own canonical sync/archive, final exact paired review, normal Docs-first delivery and actual merged trees/main/new tag/provenance. Broader backend setup/provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
+Exact continuation precode b891827 is accepted, and current local composition/repair56ded80 has received independent source/UI/evidence review with no blocking source finding. Root owns normal native publication with its existing valid account; no SCRAPPY authentication retry is required. Ordinary current both-OS source/retained CI remains required before own canonical sync/archive, final exact paired review, normal Docs-first delivery and actual merged trees/main/new tag/provenance. Broader backend setup/provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
 
 Source basis: accepted public contract/review, current source files, original captured corpus and local command/render outputs. Pending outcomes are explicitly unverified; no hardware or runtime inference is promoted to a verified result.
 
@@ -81,7 +89,7 @@ The original SCRAPPY credential failure is historical. Root's existing valid acc
 
 ## Current implementation continuation on actual main
 
-Independent review accepted exact precode Docs b891827915c4a9964ca092c31ece363308f2403d, without a new user gate. Current Manager56ded80dca1e7f0cbb9cd53148156842683df366 / tree21dd5ec681dc4fc5b37eec8aeb8fa0f63b447636 is a normal two-parent composition of preserved0240bb073ff77049d117c1d8cab480990654cd1c and actual merged mainf8b0aaf209d1c976b8e47781be5a999ff63f7e0c. Original source/Docs refs, corpus and original captures remain intact. This source candidate is implemented locally and awaits independent review/publication; it is not a delivered or both-OS-qualified feature.
+Independent review accepted exact precode Docs b891827915c4a9964ca092c31ece363308f2403d, without a new user gate. Current Manager56ded80dca1e7f0cbb9cd53148156842683df366 / tree21dd5ec681dc4fc5b37eec8aeb8fa0f63b447636 is a normal two-parent composition of preserved0240bb073ff77049d117c1d8cab480990654cd1c and actual merged mainf8b0aaf209d1c976b8e47781be5a999ff63f7e0c. Original source/Docs refs, corpus and original captures remain intact. This source candidate is published in Manager38 and has received independent source/UI/evidence review with no blocking finding. Full both-OS integration and final lifecycle/delivery remain pending; it is not a delivered feature.
 
 Three new actual-coordinator regressions first reproduced RED on0240: after a valid unresolved observation, idle cancel, failed status and late status all threw the protocol refusal for unresolved/null-report. The minimal successor changes only #uncertain to current unknown/null-report. Focused GREEN controls retain exact reference/identity/hash-only original intent and last unresolved retained state, prove one apply, and prove idle cancel sends nothing. No new successful observation, refreshed intent, retry, repeated write, lost data or runtime activation is claimed.
 
@@ -106,4 +114,19 @@ The final fixture amendment (shared six-peer base) required focused and UI check
 ![Continuation source Electron1280](continuation-captures/electron-1280.png)
 ![Continuation source Electron390](continuation-captures/electron-390.png)
 
-Source basis: accepted public precode, exact local native source/history, synthetic command/HTTP/IPC/UI outputs and visual capture inspection. Windows/both-OS CI, independent implementation acceptance, own canonical lifecycle and normal publication remain unverified here. Root separately closed research v0.22.0; no duplicate release watch was started.
+Source basis: accepted public precode, exact local native source/history, synthetic command/HTTP/IPC/UI outputs and visual capture inspection. Windows/both-OS integration completion, own canonical lifecycle/final paired review and normal publication remain unverified here. Independent source/UI/evidence review is recorded in the current status above. Root separately closed research v0.22.0; no duplicate release watch was started.
+
+
+## Failed both-OS CI attempt and bounded test successor
+
+Root's retained attempt1 Linux121387314505 log is84589bytes/SHA256 `8497b3eedcfb339e6bb87e10a24591d5141fa5eafb4484c20f4fbdbe544a1956`; Windows121387314438 log SHA256 `803f40d93522d7ec3938e1d1299b9c9089ece958f960ca1f3d821b048056c146`. Root observed the API snapshot and full logs: both jobs passed prior model/basic/research source/retained flows, then failed at memory-host line20. Linux saw disabled Save for30s; Windows saw the profile textarea detach during focus. The outer step's Python-install label does not identify the actual failure. These raw receipts stay with Root; this lane did not download them or create another observer.
+
+The original helper redundantly began another memory editor immediately after the prior stage had already made one ready, synchronizing only on identical "origins ready" text. A bounded30-repeat local run did not reproduce the hosted timing and is not used to call it a flake. A separate deterministic same-stack actual development-browser trace establishes the setup hazard: after clicking Begin, old ready DOM remained visible while the actual controller was busy/reference-null/actions-keep/invalid and ignored old-control input. After positively awaiting a different, non-null ready reference, the new editor remained actions-keep/invalid/draft-empty. This explains the observed disabled/detached input patterns without establishing a production controller defect. A fresh ordinary hosted successor must still confirm the correction.
+
+Narrow source successorbd3baac changes only `tests/memory-settings-hosts.mjs` and `tests/memory-settings-controller.test.mjs`. The UI helper explicitly finishes an existing ready editor, waits for unique invalidated status and old Save removal, and asserts no cancellation/write before beginning fresh. It preserves repeated setup stages, reciprocal research clearing and delayed-apply/Stop/reload/status coverage; no timeout is raised. The new actual-controller regression gates repeated Begin, verifies ignored old actions/paste and a genuinely different fresh reference, then verifies fresh input succeeds. No production code, public contract, transport, dependency, workflow or captured source data changes.
+
+Directly affected local controls: controller8 PASS (including the added case), ordinary ESLint PASS, development browser/source Electron plus retained production browser/packaged Electron memory flows PASS, and both actual Electron30-pair controls PASS. Existing locally built56 production bytes were reused because every production file is unchanged; no build or unrelated suite replay was needed. These local passes do not qualify Windows/current-head hosted integration/upload bytes.
+
+Retained diagnostic failures are separate: a duplicate local identifier caused the initial trace SyntaxError; an initial reference predicate allowed null and is not a positive fresh-reference result. The corrected positive-reference trace is retained separately. Ordinary lint first included two ignored standalone diagnostic scripts located in test-results and failed on their browser globals/unused imports; those owned diagnostic files were moved intact into the external evidence folder and ordinary lint then passed. No lint rule/configuration or hook was bypassed. Failed hosted attempt, diagnostic inputs, outputs and initial lint log remain available with exact successor transport.
+
+Sync/archive, current both-OS CI, independent successor/final paired lifecycle review and delivery tasks remain unchecked. Root alone reviews/publishes the successor; no tablet/provider/SDK/backend/auth action occurred.
