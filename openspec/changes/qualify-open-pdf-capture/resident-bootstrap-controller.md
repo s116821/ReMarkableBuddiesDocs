@@ -232,3 +232,76 @@ absence from missing parents, wrong types or other errors. Only then may the fou
 exact unit definitions be removed and reloaded, with real services verified
 unchanged. Preserve staged payloads and control evidence. Source review is not an
 execution result; the matching ARM artifact and live fixture evidence remain open.
+
+## First compiled clean fixture: pre-ownership watchdog refusal
+
+The full Buddy pipeline `40399634191` subsequently passed Checks, Build and
+Integration. Its diagnostic artifact records build source
+`ffce0bcf6899727c0766ceec0d48296e3c24f9b6`, whose tree equals Buddy `70c7941`.
+Both manifest hashes and ELF32 ARM identities were verified. Controller SHA256:
+`a123c3193cf0a4ed9a178ec615906b34e4905f495effd400b253b195181e9fdc`.
+Observer SHA256:
+`1e5537f933f9159190f1f154bc162debb1c3d67e0cdfc8757bf367abe1c785e3`.
+
+The announced clean fixture selected nonce
+`828e4398826b44138fd642fd0c76d641` once. It failed with
+`unsafe diagnostic unit recovery: WatchdogUSec` before publishing ownership or
+any stop/start/observer intent. Both helper invocations returned successful
+no-ownership no-ops; this is not successful recovery qualification. The archive
+contains exactly that actor error and two helper results. Original stand-in
+invocations remained unchanged, as did the real stock/Buddy processes, service
+definitions and stock executable. A subsequent read-only inspection confirmed
+those identities and watchdog zero after the helper had run. No native adapter
+was loaded. Preserve the failed selection; do not replay it.
+
+The matching upstream systemd-stable v255.21 source explains the observed
+transition: `service_init()` sets `watchdog_original_usec` to `USEC_INFINITY`,
+`service_get_watchdog_usec()` returns it absent an override, and `service_start()`
+copies the configured interval. The vendor patch set remains unknown; the
+original run did not retain the pre-start numeric property. The next fresh
+fixture therefore records that loaded policy before starting the actor.
+
+The correction explicitly renders `WatchdogSec=0` and permits the infinity
+sentinel only when the actor observes its never-started recovery helper:
+oneshot, inactive/dead, no main/control/executed PID, start timestamp zero,
+empty invocation/group/job. Exact rendered unit bytes and no drop-ins remain
+required. Running actors and recovery invocations still require watchdog zero.
+Regression coverage rejects each missing or contradictory sentinel field and
+a finite nonzero watchdog. Formatting and ten offline verifier tests pass;
+compiled checks and a new matching ARM fixture are still required.
+
+The failed run requires separate cleanup admission, since the successful-run
+cleanup requires ownership evidence that this refusal correctly never created.
+Bind the exact error-only archive and original stand-in records, use the matching
+stock/Buddy candidate group contexts, freshly prove actor/helper termination,
+and apply the same owned-unit, group and real-service checks before removing
+only these four definitions. Preserve payloads, candidate and control evidence.
+Cleanup is now verified. The first selection refused during read-only admission
+because BusyBox spells final-path ENOENT as `can't stat`. A separately reviewed
+selection accepted exactly that diagnostic, stopped the original stand-ins once
+and verified all four groups absent. Its failure reset cleared the actor but
+returned errors for three already-unloaded inactive units. The final reviewed
+selection repeated neither stop nor reset: it required fresh cleared terminal
+states, group absence and exact unit bytes, removed only the four definitions,
+verified not-found after reload, and confirmed unchanged real services. All
+three selections and their source snapshots remain preserved. Future cleanup
+resets only freshly failed units. This cleanup result does not change the
+original fixture failure.
+
+The same lifecycle distinction applies to installed activation's idle-helper
+admission. Its approved profile must specify watchdog zero for the helper;
+the idle check may match the infinity sentinel only with the complete
+never-started predicate above. All other profile policy values still match
+exactly, and active recovery must match zero normally. Share the predicate
+between the diagnostic and installed paths, retain the approved unit hash and
+no-drop-in requirements, and test first-use, already-used, changed policy and
+partially populated service identities. This does not create or install a
+production profile or authorize a native session.
+
+Buddy `ce8bd9058385324b9417699b57b98ec48d81ca77` implements the diagnostic
+correction; `4e7a0d7b58347ad758ac956bd7c4e2c8c11e29fd` shares that predicate
+with installed activation and constrains its helper profile to zero watchdog.
+Independent source review accepted both, including strict active-helper matching
+and first-use versus previously-used helper tests. Source formatting and
+whitespace pass. Hosted validation and the next fresh compiled fixture must use
+the latter revision; no earlier green run validates these new paths.
