@@ -339,3 +339,20 @@ has passed formatting and strict all-target/all-feature Clippy; its test and
 artifact stages remain pending completion. A fresh compiled fixture is still
 required, followed by separate native qualification. Neither the previous
 helper fix's green checks nor this source review proves those runtime gates.
+
+Follow-up review found an earlier diagnostic-unit gate that could still reject
+a fully cleared actor's uninitialized watchdog before original-group proof.
+Recovery must decode and validate its durable ownership first, then admit this
+actor-only sentinel through the original actor's stopped/absent observation and
+a fresh matching service snapshot. Exact diagnostic unit bytes, no drop-ins and
+all other policy checks remain required. The running recovery helper gets no
+such exception. Missing ownership permits no service restoration; it does not
+justify relaxing the actor watchdog check.
+
+Buddy `49402bd16511a136f74f242991f0a6c8ef70eea4` implements this follow-up.
+Independent review accepted the production path and corrected complete policy
+fixture. Regression coverage checks proof-before-resampling, failed/missing proof,
+retained identity, existing/populated groups, changed policy, unstable service
+snapshots, read errors and ownership-free refusal. Formatting and whitespace
+checks pass; hosted compilation and the fresh clean fixture remain pending.
+This revision supersedes `9df9892` as the next diagnostic artifact selection.
