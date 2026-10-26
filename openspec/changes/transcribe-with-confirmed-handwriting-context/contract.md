@@ -3,13 +3,13 @@
 All JSON objects reject unknown/duplicate fields and wrong types. UUIDs are canonical nonnil lowercase hyphenated strings. Strings preserve exact Unicode; no normalization, whitespace repair or coercion. No paths are accepted.
 
 ## Input
-Exclusive CLI `--handwriting-transcription` consumes exactly one stdin object, at most786432 bytes plus one rejection byte:
+Exclusive CLI `--handwriting-transcription` consumes exactly one stdin object, at most12582912 bytes plus one rejection byte:
 
 ```json
 {"transcription_version":1,"invocation":"00000000-0000-4000-8000-000000000001","document":"00000000-0000-4000-8000-000000000002","page":1,"target_png":"<strict-standard-padded-base64>","context":null}
 ```
 
-context is required nullable. Non-null shape is exactly `{ "profile": UUID, "examples": [{ "correction": UUID, "revision": UUID }] }`, one to three distinct correction IDs/revisions in the provided order. No implicit latest lookup. Null context does not open/create a Store. Non-null context refuses if configured sync/selected mode, unavailable ownership, unsupported history, nonunique/current-mismatched head or unavailable verified sample. No network/provider call on admission refusal. Config is selected through REMARKABLE_BUDDIES_CONFIG; no additional config CLI flag.
+document is a caller-asserted canonical nonnil UUID and page is a positive u32. Target PNG is bounded by the existing notebook decoder to8 MiB/4096 per side/8,000,000 pixels; selected examples retain512 KiB/2048/4,194,304 bounds. Complete prompt descriptor is at most24 MiB and text-only prompt content at most32 KiB; aggregate target-plus-three-examples bounds are9.5 MiB compressed/20,582,912 pixels, decoded sequentially without image transformation. context is required nullable. Non-null shape is exactly `{ "profile": UUID, "examples": [{ "correction": UUID, "revision": UUID }] }`, one to three distinct correction IDs/revisions in the provided order. No implicit latest lookup. Null context does not open/create a Store. Non-null context refuses if configured sync/selected mode, unavailable ownership, unsupported history, nonunique/current-mismatched head or unavailable verified sample. No network/provider call on admission refusal. Config is selected through REMARKABLE_BUDDIES_CONFIG; no additional config CLI flag.
 
 ## Model reply and normalized result
 Reuse the existing notebook reply exactly: `{ "pages": [{ "page": REQUEST_PAGE, "status": "transcribed", "text": STRING }] }`, or status blank/unreadable with text="". Exactly one target entry; example images are not target pages. Strict unknown/duplicate field/page/order rejection remains. Nonempty transcribed text is at most4096 UTF-8 bytes and not whitespace-only. Existing control-character policy applies: only newline/carriage-return/tab controls are permitted. Preserve exact admitted wording without trimming. Reply at most16384 UTF-8 bytes; no markdown stripping, prefix/suffix repair or partial salvage.
