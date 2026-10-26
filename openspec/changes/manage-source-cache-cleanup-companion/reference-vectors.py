@@ -5,6 +5,10 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8", newline="\n")
+sys.stderr.reconfigure(encoding="utf-8", newline="\n")
 
 HERE = Path(__file__).resolve().parent
 FIXED_CONFIG = '/home/root/.config/remarkable-buddies/config.json'
@@ -28,7 +32,7 @@ def frame(domain, parts):
     return sha(out)
 
 def wire(v):
-    return json.dumps(v, separators=(',', ':'), ensure_ascii=False).encode()+b'\n'
+    return json.dumps(v, separators=(',', ':'), ensure_ascii=False).encode("utf-8")+b'\n'
 
 def uuid(v):
     return isinstance(v, str) and re.fullmatch('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', v) and v != '00000000-0000-0000-0000-000000000000'
@@ -190,7 +194,7 @@ for selector in ('prepare','apply','status'):
     b=wire(dict(report_version=2))
     try:admit(b,selector)
     except Future:future.append(row(selector+'-future',selector,b,{'state':'unknown' if selector=='apply' else 'unsupported','report':None,'preview':None}))
-old=json.loads(FROZEN.read_text())
+old=json.loads(FROZEN.read_text(encoding="utf-8"))
 for r in old['vectors']:assert frame(r['domain'],r['parts'])==r['sha256']
 lanes=['model','basic','forget','ordinary-export','research-settings','memory-settings','credential-reference','model-credential','source-cache-inventory','source-cache-cleanup']
 pairs=[dict(first=a,second=b,old72='source-cache-cleanup' not in (a,b),expected='busy without hooks/cancel/I/O/grant/original/timer changes; late token cannot revoke newer owner')for a in lanes for b in lanes if a!=b]
@@ -233,7 +237,7 @@ for q in requests[1:]:
         try:public_request(raw)
         except (AssertionError,ValueError,UnicodeError,TypeError):public_invalid.append(dict(name=q['action']+'-'+label,hex=raw.hex(),bytes=len(raw),sha256=sha(raw),expected='refused'))
         else:raise AssertionError('public request unexpectedly valid')
-for label,raw in [('over385',padded+b' '*(385-len(padded))),('duplicate-invocation',wire(requests[1])[:-1].replace(b'"invocation":',b'"invocation":"'+INV.encode()+b'","invocation":'))]:
+for label,raw in [('over385',padded+b' '*(385-len(padded))),('duplicate-invocation',wire(requests[1])[:-1].replace(b'"invocation":',b'"invocation":"'+INV.encode("utf-8")+b'","invocation":'))]:
     try:public_request(raw)
     except (AssertionError,ValueError,UnicodeError,TypeError):public_invalid.append(dict(name=label,hex=raw.hex(),bytes=len(raw),sha256=sha(raw),expected='refused'))
     else:raise AssertionError(label)
@@ -241,7 +245,7 @@ for label,raw in [('over385',padded+b' '*(385-len(padded))),('duplicate-invocati
 # Bounded independent state calculation, NOT a Manager coordinator/transport.
 def nonce(label):
     if uuid(label):return label
-    raw=bytearray(hashlib.sha256(('SYNTHETIC:'+label).encode()).digest()[:16]);raw[6]=(raw[6]&15)|64;raw[8]=(raw[8]&63)|128
+    raw=bytearray(hashlib.sha256(('SYNTHETIC:'+label).encode("utf-8")).digest()[:16]);raw[6]=(raw[6]&15)|64;raw[8]=(raw[8]&63)|128
     h=raw.hex();return f'{h[:8]}-{h[8:12]}-{h[12:16]}-{h[16:20]}-{h[20:]}'
 class InvocationModel:
     def __init__(self,ready=False):
@@ -291,5 +295,5 @@ assert m.admit('last-active')=='admitted'and len(m.ledger)==32;before=m.snapshot
 m=InvocationModel();assert m.admit('status')=='admitted';before=m.snapshot();assert m.cancel('e'*64,'status')=='unavailable'and m.snapshot()==before;invocation_cases.append(dict(name='other-reference-cancel-zero-effect',before=before,after=m.snapshot()))
 m=InvocationModel(ready=True);before=m.snapshot();assert m.cancel(m.ref,m.prepare)=='invalidated'and m.cancels==0 and m.releases==0;assert m.admit('late-confirm','confirm')=='unavailable';invocation_cases.append(dict(name='matching-idle-ready-origin-only',before=before,after=m.snapshot()))
 vectors=dict(basis='Independent synthetic reference calculations only; no producer/Manager/device execution. All names/IDs/hashes fictitious and not authority.',private_intent=intent,valid=valid_rows,invalid=negative_rows,future=future,public_request_sizes=public,public_invalid=public_invalid,public_cap=384,invocation_cases=invocation_cases,invocation_ledger_cap=32,total_nonce_bound=288,owner_pairs=pairs,peer_boundaries=boundaries,extra_forget_receipt_boundary={'method':'forgetAction','argument':'receipt'},outgoing_clear_recipes=[{'cleanup_action':a,'peer':p}for a in ['prepare','confirm','status']for p in lanes if p!='source-cache-cleanup'],frozen_producer_vectors_recomputed=len(old['vectors']))
-(HERE/'vectors.json').write_text(json.dumps(vectors,indent=2)+'\n')
+(HERE/'vectors.json').write_text(json.dumps(vectors,indent=2)+'\n', encoding="utf-8", newline="\n")
 print(json.dumps(dict(valid=len(valid_rows),invalid=len(negative_rows),future=len(future),owner_pairs=len(pairs),old72=72,peer_boundaries=len(boundaries),outgoing_clear=27,producer_encoding_vectors=7,public_invalid=len(public_invalid),invocation_reference_cases=len(invocation_cases),execution='reference calculations only')))
