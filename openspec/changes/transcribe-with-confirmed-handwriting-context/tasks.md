@@ -3,7 +3,7 @@
 ## Preparation
 - [x] Read current task and all comments; compare delivered correction provider and existing Reader/Writer/LLMEngine routes.
 - [x] Define one explicit bounded shared transcription seam, exact referenced examples, reuse of existing notebook OCR and unconfirmed output and no automatic hooks/new schema.
-- [ ] Independently review exact precode, data lifetime, output/attempt matrix and representative live qualification plan before source edits.
+- [x] Independently accept exact precode/data lifetime/output-attempt matrix before source edits (90ab84d, review5650772407); concrete representative live packet remains a separate pre-call gate.
 
 ## Implementation
 - [ ] Implement typed target/context admission and one owned snapshot with exact current-revision/media/lineage validation; no commit or implicit fallback.
