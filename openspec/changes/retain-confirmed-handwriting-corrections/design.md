@@ -28,7 +28,13 @@ expected head UUIDs (empty only for new records). Profile is a caller-selected
 logical grouping, not a personal account or discovered identity. All runtime
 selection/sync modes except absent/LocalOnly refuse before opening the domain.
 Hold existing OrdinaryModeLease and LegacySyncLease through actual stdout/error
-completion, using the established host-command ownership pattern. Store opening
+completion, using the established host-command ownership pattern. Also admit a
+narrow local-domain lifetime mutually exclusive with legacy publisher admission.
+Existing leases alone do not exclude an already active publisher: the process-local
+counter/guard rejects both publisher-first and domain-first races and stays owned
+by the report through output. No new persisted format, worker or registry is
+introduced. This protects the live command, not a permanent claim about later
+independently configured generic backup/publication. Store opening
 may perform documented recovery writes; zero command mutation is not a blanket
 claim of filesystem read-only behavior.
 
@@ -102,8 +108,8 @@ implementation is accepted by this initial design checkpoint.
 
 # 3. Publication, retained bytes and read outcomes
 
-Validate the full mutation/sample before staging. Stage admitted bytes with the
-existing generic blob primitive and publish one typed value envelope using the
+Validate the full mutation/sample before staging. Stage admitted bytes through
+the existing transaction's media-object publication and publish one typed value envelope using the
 existing CAS transaction. Staged-only content is not a visible correction.
 Unknown commit acknowledgment is not proof of rollback. The separate status
 command looks up the exact operation/key in retained history and never stages or
@@ -124,9 +130,13 @@ Unavailable commits refuse completeness. Current conflicts are withheld from
 ordinary queries, with partial diagnostics; no newest-timestamp winner heuristic.
 
 Query takes explicit profile, optional query text (at most2048 bytes), max_matches
-1..16 and max_encoded_bytes512..65536. Scan at most4096 current envelopes under
-the existing bounded snapshot primitive and its8 MiB metadata cap; fail on
-exhausted/incomplete traversal. Reserve the selected fact/output subset before
+1..16 and max_encoded_bytes512..65536. Read one retained metadata snapshot including
+required causal closure, at most4096 envelopes/8 MiB, and derive current heads from
+that snapshot. Validate strict ancestral values, immutable original sample/linkage
+and known-key tombstones; orphan/foreign/cyclic/unsupported closure refuses usable
+claims. Even a small current-head set may refuse when its retained closure exceeds
+the bound. Do not scan each key's history separately during query. Refuse exhausted/
+incomplete traversal. Reserve the selected fact/output subset before
 image reads: verify at most16 samples and8 MiB compressed image bytes per command,
 with at most16 times4,194,304 decoded pixels processed sequentially. Validate typed
 descriptor size before reading; never decode every matching/nonmatching sample

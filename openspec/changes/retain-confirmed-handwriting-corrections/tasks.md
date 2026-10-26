@@ -3,12 +3,16 @@
 - [x] Record primary-source alternatives and a bounded independent correction-retention scope without claiming recognition effectiveness.
 - [x] Freeze five literal identity/serialization hash vectors and record/revision UUIDs, independently cross-checked with Python and Node standard libraries.
 - [x] Reconcile reviewer findings with explicit non-mutating operation status, honest explicit-CAS resubmission semantics and an exact fact/diagnostic/failure/outcome report contract.
-- [ ] Obtain independent design/domain-shape acceptance before source implementation.
+- [x] Obtain independent design/domain-shape acceptance before source implementation (0318efbe, review5647066616).
 
 ## Implementation and evidence
 - [ ] Implement strict local-only provider and one-shot transport with exact confirmation, source/sample provenance, input/decode bounds and held ownership through output.
 - [ ] Implement typed Handwriting1 records, immutable sample identity, CAS/replay/tombstones and exact complete/partial/unavailable reports over existing Store.
 - [ ] Exercise actual Store/CLI image/budget/replay/conflict/acknowledgment/output/privacy/mode and whole backup/restore boundaries without network/device operations.
+
+Implementation is published at Source8e3314a for review/qualification. Those
+checkboxes remain open until actual current-head execution and source review;
+written controls and formatting alone do not complete them.
 - [ ] Complete current-head hosted checks and independent source/evidence review; preserve failures and avoid large local builds under disk pressure.
 - [ ] Sync canonical requirements, archive only implemented work and complete coordinated Source/Docs normal delivery and separate actual-main publication observations.
 

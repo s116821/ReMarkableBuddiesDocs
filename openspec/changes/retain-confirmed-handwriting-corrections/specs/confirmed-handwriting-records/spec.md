@@ -21,6 +21,8 @@ No canceled/uncertain model output, refinement or export SHALL imply confirmatio
 The domain SHALL use exact Handwriting1 discriminator/identity/media validation,
 explicit profile/key/operation and expected heads, deterministic replay and
 immutable original sample/linkage. Changed-content operation reuse SHALL refuse.
+Reads SHALL validate required retained causal closure and known-key tombstones;
+unrecognized/orphan history SHALL NOT masquerade as confirmed correction deletion.
 Updates SHALL require CAS and explicit new confirmation; forget SHALL tombstone
 only the selected logical key while retaining historical bytes/references.
 Unknown domain shapes SHALL be preserved/refused rather than reinterpreted.
@@ -46,9 +48,12 @@ Query/inspect SHALL use bounded current snapshots with explicit profile and comp
 encoded output budgets, deterministic ordering and truthful partial/conflict/media
 availability. Required missing bytes SHALL prevent complete usable-sample claims.
 Ordinary local mode and legacy-data leases SHALL span actual command output;
+the live local domain SHALL exclude both already-active and newly admitted legacy
+publishers until output ownership is released, without claiming permanent sync policy.
 unsupported selected/sync/native paths SHALL refuse without implicit activation.
 Routine logs SHALL redact content and images, while explicit reports remain bounded.
-Metadata traversal SHALL retain the existing8 MiB snapshot bound. Output subset
+Metadata traversal SHALL retain a single4096-envelope/8 MiB causal snapshot bound
+for query and refuse incomplete/excess closure. Output subset
 selection SHALL precede at most16 sample verifications/8 MiB compressed media and
 the declared sequential pixel budget per command. Omitted samples SHALL remain
 not-examined rather than acquire invented availability from metadata alone.
@@ -70,6 +75,10 @@ codes and command/status/null/history/mutation-outcome matrix in report-schema.m
 #### Scenario: Exact report variants
 - **WHEN** command results include unsupported/conflicted heads, missing/not-examined samples, empty status or query-budget refusal
 - **THEN** strict output matches the pinned public fields, nullability and outcome matrix without guessed availability, accepted-history claims or invented transaction IDs.
+
+#### Scenario: Existing or newly started legacy publisher
+- **WHEN** a legacy publisher already owns the Store or attempts admission while a local correction report is live
+- **THEN** the conflicting lifetime refuses through actual output completion, and releasing the report releases that local exclusion without starting any publisher.
 
 ### Requirement: Stored corrections do not imply recognition improvement
 The implementation SHALL keep typed correction retention separate from recognition

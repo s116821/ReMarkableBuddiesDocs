@@ -97,7 +97,9 @@ before output/media selection. omitted counts those matching keys excluded by th
 result/output budget, excluding selected examples whose verification fails.
 conflicted counts requested-profile keys with multiple captured current heads;
 unknown-key/profile payloads instead increment unsupported. unsupported counts
-uninterpretable examined handwriting envelopes, without asserting profile absence.
+examined head/retained-operation observations refused by typed or causal validation,
+without asserting profile absence. One invalid ancestor can invalidate multiple
+head observations; this is not a distinct corrupt-object count.
 missing_media counts examined supported values whose required content verification
 failed; it says nothing about unexamined/omitted content. No estimate is presented
 as an exact count. Scanning exhaustion returns unavailable/refusal, not a guessed
@@ -145,6 +147,7 @@ stderr and no second JSON; output-failure is not a fictitious delivered report.
 | Any read output budget failure | unavailable / output-limit | null / false | empty / not-requested; status uses unknown |
 | Invalid declared read budget | invalid-input / invalid-budget | null / false | empty / not-requested; status uses unknown |
 | Accepted mutation replay missing media | unavailable / media-unavailable | null / true | empty / observed |
+| Fresh commit observed, subsequent media verification fails | unavailable / media-unavailable | observed commit UUID / false | empty / observed |
 
 Invalid JSON/version/identity/input before an operation/key is established uses
 invalid-input/its matching code (unsupported/invalid-version for unknown version),
