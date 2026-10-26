@@ -130,3 +130,39 @@ start intent and after queued start, repeated-helper refusal, source mismatch
 and shutdown. No fixture fault execution, native takeover, service change or
 document mutation is claimed by this source implementation. Native candidate
 selection remains dependent on those results and fresh independent review.
+
+## Isolated fixture driver requirements
+
+The host-side driver selects a fresh nonce and exactly one fixture-mode actor,
+followed by one explicit second helper invocation. It records every selected
+command before dispatch, has bounded SSH observation, never replays on timeout,
+and preserves failed evidence. It brackets the experiment with actual stock/Buddy
+identities and artifact hashes while issuing service commands only for the four
+owned fake units. Payload transfer, unit loading and fixture execution still
+require the existing idle-development-tablet authorization and advance notice.
+
+Verify the requested actor result and both helper outcomes, a distinct second
+helper invocation, expected restored identities and durable refusal after an
+uncertain start. Crash/timeout cases must first witness a live child in the
+actor's original group. Publish readiness bytes durably before a completion
+marker; parse and correlate the archived child identity/group with the original
+ownership record. Empty/partial records or matching filenames cannot prove the
+child-bearing fault. Preserve explicit recovery-fault phase markers as well.
+
+Collect the control archive without extracting untrusted paths. Offline verifier
+tests must reject missed faults, unchanged services when a stop was required,
+accidental active-service restarts, repeated-helper snapshots, duplicate fields,
+archive links, incomplete child witnesses and changed child groups. These are
+evidence-verifier tests, not actual service-execution results. The first compiled
+controller revision has passed hosted compilation/strict lint; its tests remain
+running. The new child-handshake delta and driver still need their own exact
+revision checks and live fixture qualification. Cleanup remains a separate
+operation after verified collection and terminal owned-service/group checks.
+
+Buddy `b4601c141738302bc791d540662248a8d476e464` implements this driver and
+child-witness/fault-marker delta. Independent source review accepted the fixes
+after identifying readiness publication and partial-witness false-pass races.
+All ten offline verifier tests passed locally, along with formatting and
+whitespace checks. Hosted CI now includes those verifier tests. This revision's
+Rust checks and ARM artifact are still pending; no fixture run or tablet action
+has occurred.
