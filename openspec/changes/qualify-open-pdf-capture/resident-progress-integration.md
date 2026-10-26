@@ -31,9 +31,9 @@ transport increment.
 The endpoint's 30-second idle timeout retires its connection, not the resident
 process. Product integration must distinguish ordinary request cancellation,
 timeout and EOF from health or installed/runtime identity failure. Those ordinary
-events must retain the resident child. The existing `Session::connection` helper
-does not yet make that distinction; do not use it as the product request route.
-Implement separately reviewed reconnect to the same verified runtime with fresh
+events must retain the resident child. The installed `Session::request` route
+replaces the former unscoped connection accessor with typed request outcomes.
+Explicit reconnect uses the same verified runtime with fresh
 connection/handshake/server nonces, retained uncertain effects and no replay.
 
 The consumer must retain typed SDK failure causes and original lost-request
@@ -50,5 +50,46 @@ observation and explicit original-target reconciliation remain available.
 Exercise same-process repeated handshakes with fresh identities, idle EOF,
 caller refusal during reconnect, tampered admission/artifact refusal before new
 handshake, and reply-retention loss across reconnect and shutdown. The installed
-Session still needs typed health/input classification and lease/group checks in
-its product request route before these runtime primitives may be composed there.
+Session composes typed health/input classification and lease/group checks in
+its request route. Source implementation and validation are tracked separately in
+[the installed request result](resident-installed-request-result.md); the
+first-gesture Reader/Writer caller and native acceptance remain open.
+
+## Installed request route
+
+Replace the unscoped installed connection accessor with explicit request and
+reconnect operations. Requests carry fresh operation IDs and use the same
+ResidentConnection journal/dispatch methods. Caller input progress returns a
+typed quiet/canceled observation; an input-observer error is an integrity failure,
+not ordinary cancellation. Health ownership, installed pins, fixed lease,
+Buddy/helper invocation, stock exclusion and resident group membership are
+revalidated during progress. Runtime-owned child and consumed admission checks
+must continue through the transport wait as well.
+
+Distinguish cancellation, original request deadline expiry, ordinary socket
+retirement, unresolved prior work and request refusal from integrity failure.
+Request retirement closes only the connection and preserves the original lost
+operation/digest. Actual health, input-observer or installed/runtime integrity
+failure poisons the service health owner; whole-session drop remains fatal.
+Unknown or malformed peer responses are integrity failures. Explicit reconnect
+uses the same admission checks and never automatically retries an effect.
+
+Deadline errors must be typed at their origin, including bounded PID1 reads;
+do not infer timeout from error text or an expired clock after an unrelated
+failure. A service-command cleanup that cannot reap its owned child is fatal
+even if the initiating request deadline expired. Internal service-read timeout
+is distinct from the caller's request deadline. Startup failure retains the
+existing fatal activation/cleanup rules.
+
+Exercise the common installed-request dispatcher against owned sockets/children
+and injected admission outcomes: cancellation/deadline/EOF retains process and
+healthy session, input/health/identity/protocol failure marks fatal, uncertain
+effects survive retirement/reconnect and fresh requests, and no action happens
+after refused admission. Actual installed service and native-device acceptance
+remain separate; this does not fabricate current-page/capture/write authority.
+
+Sample input again after potentially slow authority checks before dispatch.
+Check admission again after successful journal outcome publication before
+delivering the reply. Cancellation, deadline or integrity failure at that point
+must refuse delivery while retaining the actual historical outcome; do not
+rewrite a recorded observation into uncertainty or known-not-dispatched evidence.

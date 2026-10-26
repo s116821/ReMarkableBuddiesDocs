@@ -208,12 +208,15 @@ session only closes/stops its owned child and never starts stock itself.
 
 Established-session request cancellation, timeout or ordinary connection/idle
 retirement must not be classified as whole-session failure or restart xochitl.
-The current explicit `Session::connection` helper conflates its caller progress
-error with failed admission, and is not yet a per-request product route. Typed
-request-versus-session failure handling and reconnection to the same independently
-verified runtime remain required before enabling that route. A reconnect needs
+The installed `Session::request` and `Session::reconnect` operations replace the
+unscoped connection accessor. Their typed input callback distinguishes ordinary
+cancellation from observer failure, and progress retains health, installed lease,
+service incarnation, stock exclusion, group and original child checks. A reconnect needs
 fresh connection/handshake/server nonces and must preserve original uncertain
 effects without replay. It does not replace the child or consumed activation.
+See [the installed request result](resident-installed-request-result.md) for exact
+source and validation status. This component does not supply the first-gesture
+Reader/Writer caller or qualify an installed native profile.
 
 This service handoff cannot manufacture a native page observation or a supported
 SDK mutation capability. The first-gesture product route must also discard old

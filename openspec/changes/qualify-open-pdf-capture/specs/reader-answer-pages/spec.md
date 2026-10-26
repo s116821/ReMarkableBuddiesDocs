@@ -24,6 +24,18 @@ failure SHALL still enter independent recovery.
 - **WHEN** the endpoint retires an idle connection while the verified resident process remains healthy
 - **THEN** the next admitted connection uses fresh identities with the same resident process and retained evidence, without restarting stock or replaying a prior request
 
+#### Scenario: Input changes during an authority check
+- **WHEN** a request's service or runtime authority check takes time and input cancels during that check
+- **THEN** fresh input admission refuses the request before effect reservation or dispatch
+
+#### Scenario: Request expires during outcome publication
+- **WHEN** cancellation, the original deadline, or input-observer failure occurs while a valid reply is being durably recorded
+- **THEN** final admission refuses reply delivery, preserves the actual recorded historical outcome without replay, and treats observer failure as a session integrity failure
+
+#### Scenario: Caller deadline differs from failed service observation
+- **WHEN** a bounded service read fails during request progress
+- **THEN** only an explicitly typed caller deadline with successful owned-command cleanup may retire the request ordinarily; internal read timeout, integrity failure, or an unreaped command remains fatal
+
 ### Requirement: Durable resident insertion attempt reservation
 The resident SDK consumer SHALL durably reserve the exact original insertion frame/digest and conversation before request bytes, using the existing Store ownership/serialization boundary. A reservation SHALL reject reused operations and replacement attempts for unresolved or observed conversations, survive restart and generation changes, and retain uncertain outcomes for read-only reconciliation of the original target. Only a durably recorded known-no-effect outcome SHALL permit a new caller-selected operation; no automatic retry is supplied. Historical replies SHALL NOT grant binding, rendering or native persistence authority. Malformed or incomplete journal state SHALL refuse without resetting it. Detailed consumer obligations are in resident-client-integration.md.
 
