@@ -1,0 +1,23 @@
+# Manager implementation qualification increment
+
+Implementation candidate: Manager `6a440961ea9504864c996cfc35c95fc176292669`, tree `9614047bdc0f363e40e5714bea395aa2341b0e68`, single parent actual main `358623485c77d150115bf3208930ad100778e43f`. Exactly32 owned files change. This is an implementation-review increment; hosted Windows/current-main composition, independent implementation/host acceptance and complete delivery are pending. Canonical sync/archive is intentionally not performed before that acceptance.
+
+## Executed local evidence
+
+- Full Node suite:355 pass/0 fail; independent42 report/framing vectors, actual child16384/16385 envelopes, controller Stop/pause/timeout/generation, host13s/12s remaining budget and newer-owner isolation included.
+- New Python helper:9 pass/0 fail, including deterministic local POSIX SSH peer: exact fixed command, no selectors, zero stdin/EOF, capability exits, bounded diagnostics, boot/route guards, exact8192 output/oversize refusal, original deadline and one response. This is synthetic local transport, not Windows USB or tablet qualification.
+- Each actual browser and Electron factory:72 directed grant exclusions and72 active-owner Busy directions, preserving the old56. Busy produces no raw transport/cancel side effect. Combined fixture controls preserve each of eight prior uncertainty records with no status/apply dispatch; separate credential control preserves eight retained originals and expires their private packets at the original30-minute deadline despite intervening inventory reads.
+- Actual development browser:24 peer Begin/Save/original-status handler boundaries clear the snapshot synchronously. Actual private credential DOM clears at admitted inventory before await; known same-renderer Busy preserves raw/DOM. A separately admitted external owner races local erasure: host Busy preserves the owner's invocation, and erased private text is never restored. These are admitted synthetic component controls where explicitly marked by the test, not invented user-reachable prepared operations.
+- Actual development/production browser and source/retained packaged Electron: explicit-only snapshots, empty/refusal/future-version, local Stop without global cancel/release, same-ID late-result refusal, Busy until the original read finishes, reload without inspection, exact optional IPC arity/main-frame guards and packaged helper bytes pass. All provider/network origins are blocked except synthetic loopback/controlled release404.
+- Lint, production/development Angular builds, Linux packaging, foundation startup/responsive/focus hosts, wired exposed capability/guards, old credential-file hosts and10 CI workflow guards pass. Both builds retain the existing initial bundle-budget warning. No dependency installation or version/source-setting change occurred.
+- Docs check,12 tests and strict OpenSpec93 pass. Source/manual implementation is linked from README; the accepted contract and original producer wrappers are unchanged.
+
+## Capture and attribution limits
+
+Inspected safe390/1280 browser and native Electron PNGs. Narrow native display is713 CSS pixels high despite reporting885; retained top/bottom frames show the complete section. UUID text alone uses break-all; apparent-size words wrap normally. The native image is captured directly, with no synthesis or clipping claim. The two IDs are publicly synthetic fixture UUIDs, not actual tablet content.
+
+Local artifacts were built from the dirty implementation tree rooted at3586234 before the normal commit; generated build-time development identifiers consequently describe that tree, not a release. Native preservation proof records the committed source tree; hosted exact-head package checks remain required. Every app version stays build-time/tag-derived. Root owns public publication, exact-head CI, independent review and final Docs-first delivery. Latest supplied Docs mainb66d1b9 must be composed normally before final acceptance; no auth retry is authorized.
+
+Original logs, including all failed attempts, and PNGs are retained unchanged and included with SHA256/byte manifests in the native review ZIP. In addition to the chronology in evidence.md, wired-hosts-first failed only the expected capability-list alphabetical order; hosts-final failed a capture callback syntax edit before execution. Neither is presented as a passing control. Corrected passing logs remain separate. The repeated-pause global-cancel defect is a real product correction and is explicitly included for independent review.
+
+No actual tablet, provider/backend service, SDK/RE operation, producer/cache/cleanup replay or prior release requalification occurred. This does not close broader REM42, runtime adoption or the MVP.
