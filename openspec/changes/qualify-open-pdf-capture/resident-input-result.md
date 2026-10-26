@@ -37,7 +37,7 @@ failed log is retained as `input-b20f942-failed.log`. Corrected exact-revision
 execution [40258687350](https://github.com/s116821/ReMarkableBuddies/actions/runs/40258687350)
 has passed Checks: 686 library tests passed (3 ignored), 11 binary tests and
 the integration/CLI/simulator suites passed, together with strict lint. The
-application build remains running. The completed Checks log is retained as
+full application Build and Integration now also pass in that run. The completed Checks log is retained as
 `input-4fdabf3-checks.log`. Prior `b585517` full CI also passed but does not
 validate this increment. No local build was attempted with insufficient disk space.
 
