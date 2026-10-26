@@ -193,6 +193,11 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 - **WHEN** a conflicting PID1 stop job arrives after the pre-start sample
 - **THEN** job-mode=fail refuses replacement, the helper retains the consumed lease and reports failure or uncertainty without a second command
 
+#### Scenario: Installed Buddy recovery trigger can replace pending jobs
+- **WHEN** approved or loaded Buddy OnSuccessJobMode or OnFailureJobMode is absent, duplicated or differs from fail
+- **THEN** installed admission refuses before stock stop or native launch; trigger targets alone do not grant recovery eligibility
+- **AND** unchanged vendor stock modes remain pinned without unit rewriting, and matching Buddy trigger modes alone do not qualify system shutdown behavior
+
 #### Scenario: Recovery starts during original stock shutdown
 - **WHEN** an approved stock service is deactivating in a known stop/final substate with the lease's original invocation and last-main PID
 - **THEN** recovery waits within its original 120-second deadline, retaining the nonzero systemd start timestamp, and may issue its first start only after that identity is retained or completely cleared in inactive/dead, no process/job remains and the stock group is empty

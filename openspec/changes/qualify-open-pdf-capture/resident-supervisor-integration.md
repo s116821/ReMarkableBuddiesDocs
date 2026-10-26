@@ -121,6 +121,19 @@ and [sd_watchdog_enabled](https://www.freedesktop.org/software/systemd/man/255/s
 Their standard semantics are distinct from target PID1/unit/native qualification.
 
 OnSuccess and OnFailure request a separate `reader-buddy-stock-recovery.service`.
+The approved Buddy unit/profile must explicitly select `OnSuccessJobMode=fail`
+and `OnFailureJobMode=fail`. Both properties are part of every sampled and pinned
+service policy, including activation and recovery revalidation. Missing, duplicate
+or alternate Buddy values refuse admission before a stock stop/native launch;
+matching trigger names alone is insufficient. Preserve the independently approved
+vendor stock trigger modes as sampled values, without rewriting its unit. The
+helper has no success/failure targets; its approved modes still match loaded
+policy exactly. Previously incomplete recovery profiles remain rejected; no
+profile is inferred or approved from the current machine. Older serialized
+baselines lacking these fields are also rejected; keep historical
+fixtures paired with their original controller rather than rewriting evidence.
+The trigger modes prevent replacement of conflicting queued jobs, but do not themselves prove
+shutdown cancellation or forbid all recovery during shutdown.
 That service conflicts with and is ordered after Buddy, so PID1 completes Buddy
 shutdown before recovery starts. Do not synchronously start the ordered stock
 service from Buddy's ExecStopPost: it participates in stop ordering and can wait

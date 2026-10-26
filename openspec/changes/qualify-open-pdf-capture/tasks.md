@@ -128,3 +128,4 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 
 - [x] Assess the distinct read-only input observation and initial strict-seed coordinate visibility limit without assigning a historical cause or weakening guards.
 - [x] Implement and independently review output-only slot-position metadata with focused released/failed-axis controls; freeze any delivery separately and retain original observation evidence.
+- [ ] Enforce and verify installed Buddy success/failure trigger job modes fail in approved and loaded policy, preserving stock policy and separately qualifying shutdown behavior before enabling an installed profile.

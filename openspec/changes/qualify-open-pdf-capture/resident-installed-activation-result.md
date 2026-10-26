@@ -69,3 +69,20 @@ This read does not qualify recovery timing or install the proposed units.
 Source basis: current Rust source, independent source review, local validation
 output and the bounded read-only target receipt. Product and native qualification
 remain open in `tasks.md`.
+
+## Installed recovery trigger policy
+
+Buddy `db5fd1398d1fd8f9657703faccb48e1a4478586c` adds both success/failure
+trigger job modes to the complete sampled/profile policy. Approved Buddy must
+require `fail` for both; loaded policy must match. Stock and the target-free
+helper retain their independently approved values. Neither vendor files nor
+historical profile/baseline evidence are rewritten. Records missing either new
+field are rejected, so frozen fixtures retain their original controller.
+
+Independent source review accepted this delta. New tests reject missing and
+duplicate fields, alternate/ambiguous approved modes, and loaded mode mismatches
+at a synthetic final handoff without calling its counted stop action. They also
+retain stock/helper `replace` values unchanged. These are source-level predicates,
+not actual PID1 or shutdown qualification. Formatting and whitespace checks pass;
+compiled regression checks and the updated ARM artifact remain pending. The
+installed profile, first-gesture product route and native acceptance remain open.
