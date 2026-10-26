@@ -18,7 +18,7 @@ This local preparation does not require saved-memory publication. It uses preser
 - Default Required is a saved resolution, not proof research is available or running. NoInternet remains dominant in the unchanged producer API; this editor cannot set request opt-out.
 - Equal resolved values can conceal declaration changes. Origin and original producer response, not display equality, control no-op.
 - Stop/transport loss is not rollback. Bounded retained originals survive renderer reload only within a surviving host process; no process-restart recovery guarantee.
-- Auth/publication is currently gated. Local precode can be reviewed from exact committed files; remote checks and current-main composition must not be fabricated. No auth retries or credential workaround follows from this proposal.
+- The initial SCRAPPY credential failure did not prevent normal publication by the existing authorized Root account after native bundle verification. Read-only inventory/composition succeeded. Required current CI and final review remain gates; no credential transfer/change or fabricated remote qualification follows.
 
 ## Delivery
 Obtain independent exact concrete precode acceptance before any new Manager API/source changes. Freeze linked implementation/Docs revisions, finish normal current CI and implementation review, then sync/archive only this completed capability. Compose current Docs preserving other lanes, obtain final paired review, deliver normal Docs-first squash and independently observe actual merged trees/main/new tag/provenance. No tablet operation is part of this workflow.
