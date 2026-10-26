@@ -1,4 +1,4 @@
-# Evidence and ownership (precode only)
+# Cleanup evidence, ownership and historical checkpoints
 
 Canonical tracking: REM-42 selective owned cleanup requirements, SCRAPPY-DOO label. Assessment1f7fef65-e66f-48f3-a795-888e662a1466 identifies the existing consumer gap; Root exact scope/remote-ownership acceptance804995cd-0814-47ba-9f9e-38d6e64311c1 reports no competing cleanup consumer, included usage30%used/70%remaining/ordinaryUsageAllowed:true. Cutoff remains99%used/1%remaining. No live quota endpoint is exposed here; later Root reports supersede this snapshot. No reset redemption/paid overage.
 
@@ -47,3 +47,7 @@ Local qualification and independent implementation review remain separate. Curre
 Current ordinary source852207627a6a781059a6e4315af5ab8425c6f962 adds the pre-handoff lost-public-response/original-check correction and capture viewport synchronization described in results.md. Exact source/Docs native handoff and direct local results precede independent acceptance; no premature sync/archive.
 
 Review candidate ceffd148bda500f9e8aa06afe27588565c0902b3 is an ordinary test-only852 successor correcting ambiguous row-order selection in the new actual lost-response control. Product files are exactly852; preserved377-test full-check and new candidate build/host/capture results stay separately attributed.
+
+## Current qualification and lifecycle authority
+
+Current Managerb410 exact hosted acceptance is recorded in results.md from Root's40394901149 receipt and independently verified ten-entry qualification package. Source/host review is clear, both retained OS jobs pass and own canonical/manual sync/archive is explicitly cleared. Earlier pending/failed/precode paragraphs above are preserved historical checkpoints, not current status. Current final paired review/CI, normal Docs-first delivery and actual-main/publication remain Root-owned and unobserved here; no whole-MVP or native tablet completion is claimed. Root reports65%used/35%remaining;99%used checkpoint remains in force, with no live quota endpoint or overage/reset action. Manager source staysb410 and all delivereda30 feedback entries remain exact.
