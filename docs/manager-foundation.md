@@ -96,6 +96,18 @@ for Install/Replace/Remove, exact private input, original-only checks and their
 expiry/capacity limits. Reference editing remains a separate explicit operation;
 saved file presence establishes neither provider authentication nor runtime adoption.
 
+## Source-cache slot inventory
+
+Both companions provide an explicit read-only snapshot of bounded source-cache slot
+metadata under the [consumer specification](../openspec/specs/source-cache-inventory-companion/spec.md).
+Use the [Manager inventory guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/source-cache-inventory.md)
+for deliberate inspection, empty/refusal states and local Stop waiting. Contents
+remain unread and unvalidated; source freshness and runtime remain unverified.
+Apparent slot lengths are neither allocated nor reclaimable space and are not
+added to aggregate owned-data totals. The snapshot grants no cleanup permission.
+Inventory quiesces pending observation requests without global cancellation;
+retained uncertain operations keep their original lifetimes.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan
