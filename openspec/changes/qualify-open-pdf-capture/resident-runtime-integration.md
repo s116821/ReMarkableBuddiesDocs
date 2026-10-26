@@ -133,3 +133,24 @@ Source basis: current Buddy Workflow/service/client/runtime source and the SDK
 bootstrap, ActivationAdmission, Linux Client and activation.h contracts. The
 owned launch component implements this bounded contract; native behavior remains
 unqualified. Verification is recorded separately from the required product gates.
+
+## Socket publication race found during integration
+
+Buddy b4601c1 run 40264931478 failed at initial runtime connection with
+ConnectionRefused after the final socket name appeared (695 tests passed, one
+failed, three ignored). The owned Python peer and native endpoint both exposed
+sdk.sock on bind, before chmod/listen. Preserve that failure; do not rerun until
+green or add transport reconnect/replay to conceal it.
+
+The SDK endpoint must publish only after listening: bind sdk.pending in the
+pinned private directory, restrict its inode to 0600, listen, and atomically
+rename to sdk.sock with RENAME_NOREPLACE. Refuse occupied entries and retain
+owned-inode-only cleanup. The Python peer uses the same Linux atomic rename;
+link-then-unlink is insufficient because transport requires nlink==1 at every
+authentication boundary. A deterministic delayed-listen case verifies continued
+caller admission while staging exists, no early final name or handshake, and one
+connection after publication. Endpoint fixtures cover pre-listen refusal,
+occupied final file/symlink preservation, changed staging inode and immediate
+post-publication connection. Native adapter and artifact pins must be rebuilt
+before using this changed SDK source on the tablet. This fixes startup ordering;
+it does not qualify native Reader/Writer or permit mutation.

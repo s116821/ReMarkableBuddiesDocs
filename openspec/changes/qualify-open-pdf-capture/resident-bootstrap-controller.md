@@ -166,3 +166,31 @@ All ten offline verifier tests passed locally, along with formatting and
 whitespace checks. Hosted CI now includes those verifier tests. This revision's
 Rust checks and ARM artifact are still pending; no fixture run or tablet action
 has occurred.
+
+## Resume validation and native artifact refresh
+
+The b4601c1 pipeline failed in an existing runtime startup test with
+ConnectionRefused; the controller compiled and strict lint passed. The prior
+884a07c controller pipeline completed successfully. The failure exposed a
+bind/listen publication window in both the owned Python peer and native endpoint,
+tracked in resident-runtime-integration.md. SDK
+`83ed037636707ce8036774f04d19f28f42c0019a` implements reviewed atomic no-replace
+publication after listen. Final host and ARM/QEMU endpoint suites pass 1825
+checks each; these are owned endpoint results, not native Reader evidence.
+
+The frozen rebuild in `endpoint-publication-library-r2` completed and all 48
+input/artifact manifest entries were checked against current source and artifacts.
+Adapter SHA256 is
+`751098608084e342602c30a31807f5b578dbe4ad8ee4828dd82ad6c620b54eb2`;
+profile SHA256 remains
+`0ab8a72e32d978cbb0be14a01c6b0145240f83f13c64cdee6fef5431c411bdff`.
+Mutation remains disabled. Buddy
+`42a570ef7cadbcb01119824beba7f992999377c5` updates the observer's fixed adapter
+pin with its SDK dependency and deterministic delayed-listen peer regression.
+The first rebuild attempt is preserved and explicitly marked
+unusable because source changed during compilation; it must never be selected.
+The refreshed observer/controller CI and actual fixture/native runs remain open.
+PR60 cannot currently schedule a pull-request build because it conflicts with
+new upstream Reader personalization, Writer and handwriting changes. Resolve the
+existing branch against main and validate the combined revision; do not credit
+the prior controller's green build to the new adapter or merged product code.
