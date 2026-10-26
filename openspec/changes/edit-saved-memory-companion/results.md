@@ -55,7 +55,7 @@ Local log receipts are recorded below. They are workspace evidence, not external
 | `wired-regression.log` | 118 | `f467ed0d39eee16d3caddcac46e37e97a27ee457b91de826009506176e77cc9d` |
 | `workflow-controls.log` | 1051 | `a2dfff39df3a8a27047ac500f33ce436e60c8e3425c4785775c2d5128b53591f` |
 
-## Inspected current source captures
+## Original source captures (historical0240)
 
 ![Development browser at1280](captures/browser-1280.png)
 ![Development browser at390](captures/browser-390.png)
@@ -64,11 +64,11 @@ Local log receipts are recorded below. They are workspace evidence, not external
 
 ## Remaining gates
 
-Obtain independent continuation precode acceptance, then compose the preserved memory feature onto actual Manager f8b0aaf and repair the specified fallback. Root owns normal exact-commit publication through native bundles using its existing valid account; no SCRAPPY authentication retry is required. Complete ordinary current both-OS source/retained CI and independent implementation review before own canonical sync/archive. Then compose current Docs without altering other lanes, obtain final exact paired review/current CI, perform normal Docs-first squash and independently verify actual merged trees/main/new tag/provenance. Broader backend setup, provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
+Exact continuation precode b891827 is accepted, and current local composition/repair56ded80 is frozen below for independent implementation review. Root owns normal native publication with its existing valid account; no SCRAPPY authentication retry is required. Ordinary current both-OS source/retained CI and independent implementation acceptance remain required before own canonical sync/archive, final exact paired review, normal Docs-first delivery and actual merged trees/main/new tag/provenance. Broader backend setup/provider/runtime/native/installer/MVP acceptance remains outside this bounded delivery.
 
 Source basis: accepted public contract/review, current source files, original captured corpus and local command/render outputs. Pending outcomes are explicitly unverified; no hardware or runtime inference is promoted to a verified result.
 
-## Continuation precode after actual research delivery
+## Historical continuation precode after actual research delivery
 
 Normal read-only inventory establishes actual Manager f8b0aaf209d1c976b8e47781be5a999ff63f7e0c / Docs a14df94c72eef4f4ec05590770b676a4681a4c56. Both actual trees match the separately reviewed research delivery; its actual-main/new release observation remains Root-owned and is not duplicated. Preserved memory source0240bb073ff77049d117c1d8cab480990654cd1c and Docsfa204ab60fcfbeef20dd8b3bf6fd0316916e3f49 are reachable through local refs/keep preservation refs and original history. Only Docs is composed, through a normal merge of current actual main; Manager source remains uncomposed/unrepaired at the original candidate.
 
@@ -77,3 +77,33 @@ Read-only tracing confirms an existing source/contract contradiction at memory h
 Six actual peers and30 directed pairs will replace the old five-peer/20-pair composition before delivery, preserving the actually delivered export/forget correction, identical strict-json helper, research routes/UI and audited tool locks. The proposed wire/field/cap/deadline/runtime boundary remains unchanged. The previous local263Node/9Python/source-host evidence and old captures remain historical only; they are not credited to an unimplemented composition or repair. Updated tasks re-open the affected implementation/verification work and require independent exact amendment acceptance before source repair.
 
 The original SCRAPPY credential failure is historical. Root's existing valid account/native bundle handoff now owns ordinary publication; no credential change or auth retry is required here. Final six-lane implementation/current both-OS qualification, own canonical lifecycle/final paired review and actual normal delivery/publication remain unfinished. No saved-memory implementation or new feature is completed by this Docs-only preparation.
+
+
+## Current implementation continuation on actual main
+
+Independent review accepted exact precode Docs b891827915c4a9964ca092c31ece363308f2403d, without a new user gate. Current Manager56ded80dca1e7f0cbb9cd53148156842683df366 / tree21dd5ec681dc4fc5b37eec8aeb8fa0f63b447636 is a normal two-parent composition of preserved0240bb073ff77049d117c1d8cab480990654cd1c and actual merged mainf8b0aaf209d1c976b8e47781be5a999ff63f7e0c. Original source/Docs refs, corpus and original captures remain intact. This source candidate is implemented locally and awaits independent review/publication; it is not a delivered or both-OS-qualified feature.
+
+Three new actual-coordinator regressions first reproduced RED on0240: after a valid unresolved observation, idle cancel, failed status and late status all threw the protocol refusal for unresolved/null-report. The minimal successor changes only #uncertain to current unknown/null-report. Focused GREEN controls retain exact reference/identity/hash-only original intent and last unresolved retained state, prove one apply, and prove idle cancel sends nothing. No new successful observation, refreshed intent, retry, repeated write, lost data or runtime activation is claimed.
+
+Both actual host factories retain all five delivered peers plus memory, with one owner and reciprocal before-I/O invalidation. Both guarded routes/preload capabilities and strict child keys/caps remain separate. Memory/research integration fixtures now compose the same six actual coordinators through a shared synthetic memory fixture base rather than retaining a second five-lane test topology. The actual HTTP and actual source/packaged Electron factories each pass all30 directed idle-grant invalidations; synthetic real-coordinator checks additionally pass all30 Busy/no-hook/no-cancel/no-I/O combinations. Existing targeted old cancellation/token/generation controls remain green.
+
+Shared App preserves both sections and reciprocal begin/save/status/Stop busy guards, clears the actual private memory textarea synchronously before research acquisition and other invalidation boundaries, and retains unrelated query/Reader/Writer drafts. Both editor source/retained host flows pass unknown/reload/original-status controls. The delivered export/forget correction's four files, audited filelock/Undici locks, strict-json and quarantine source are byte-exact to actualf8. The unnecessary original quarantine extraction is omitted; no dependency, producer, release recipe, version source, SDK or tablet action was added.
+
+### Current local qualification and attribution
+
+- Focused current Node set:46 PASS, including both editors' coordinator/controller/guarded-HTTP/bounded-child suites and new fallback/six-lane checks. No old report/corpus or producer replay; the historical263-node/corpus evidence above is not a current full-suite result.
+- Python memory synthetic socketpair/transport controls:9 PASS. ESLint, development Angular build, production Angular build and ordinary Linux x64 package creation PASS.
+- Final six-peer-fixture development browser/source Electron and retained production browser/packaged Electron memory controls PASS. Actual Electron30-pair controls pass in both source and packaged hosts. Delivered research source/retained UI controls PASS after fixture composition. All lower tablet transport is synthetic.
+- New390/1280 browser and Electron captures below were visually inspected for clipping, visible input and control labels. Original four captures above remain unchanged. These current captures are Linux rendered-host evidence, not Windows/native/tablet evidence.
+- Builds/packages were created from the explicit dirty composition before native commit56ded80; build identifiers truthfully record that local state. Final committed source and tests are pinned separately. No immutable clean-checkout, official artifact/upload-byte identity or hosted both-OS qualification is inferred from these local builds. Required ordinary CI remains unchecked.
+
+Three retained local UI setup failures precede the successful runs: incorrect plural research status expectation; direct Electron factory calls before connection observation; and source Electron loading stale production output after only development output was built. Corrected test expectation/order and fresh ordinary production build resolve these inputs. All failure logs remain retained separately; none is overwritten or credited as a pass. The three original protocol regressions are separately retained production-source findings and were repaired as described above.
+
+The final fixture amendment (shared six-peer base) required focused and UI checks again; final logs are continuation-focused-six-fixtures.log, continuation-lint-final.log, continuation-final-source-hosts.log, continuation-final-retained-hosts.log, continuation-final-research-source.log and continuation-final-research-retained.log. Python/build/package and original red/green logs retain distinct names. Frozen review transport pins log/capture bytes; Linear owns evolving task/review status.
+
+![Continuation browser1280](continuation-captures/browser-1280.png)
+![Continuation browser390](continuation-captures/browser-390.png)
+![Continuation source Electron1280](continuation-captures/electron-1280.png)
+![Continuation source Electron390](continuation-captures/electron-390.png)
+
+Source basis: accepted public precode, exact local native source/history, synthetic command/HTTP/IPC/UI outputs and visual capture inspection. Windows/both-OS CI, independent implementation acceptance, own canonical lifecycle and normal publication remain unverified here. Root separately closed research v0.22.0; no duplicate release watch was started.
