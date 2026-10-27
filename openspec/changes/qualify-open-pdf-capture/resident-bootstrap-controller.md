@@ -519,3 +519,17 @@ Missing, stale, changed, extra, malformed or incompletely collected evidence
 cannot authorize the second helper or constitute completion. Keep the original
 deadline and no-replay behavior. Offline driver regressions and independent review
 precede a fresh isolated fixture; none of this qualifies a public native SDK.
+
+Driver `255506e1869e73460bee909511664596c936a674` implements this correction;
+21 offline regressions pass and independent review accepted the final delta.
+Intermediate collections use `completion-archive`, preserving the cleanup
+contract's one final `control-archive`. Fresh clean fixture
+`7cc413de5e46451ea9adb54e18928f1b` passed with the frozen cdeb0bb controller
+(build source `4ab85a48e2ff5171a8da71d167d3fd322cb213bd`). Both helpers returned
+success with distinct durable results; earlier result bytes remained unchanged,
+both source checks passed, and both restoration receipts stayed identical across
+helpers. The second helper did not restart either stand-in. Separate cleanup
+passed, removed all four definitions and preserved payloads/evidence. Real
+stock/Buddy remained unchanged. This is disposable PID1 fixture evidence;
+remaining fault/shutdown cases, native runtime and installed/product acceptance
+remain separate open work.
