@@ -674,7 +674,8 @@
     "partial_domains": "sparse allowed; missing is not zero",
     "unknown_retained_format": "unsupported-generation issue plus incomplete status; not in supported-format list",
     "feature_invalid": "report2 partial/unsupported; never complete",
-    "not_effect_authority": true
+    "not_effect_authority": true,
+    "complete_current_generation_format": 3
   },
   "reports": {
     "legacy1": {
