@@ -593,3 +593,38 @@ inspection follows the same narrow dependency rule without rewriting the frozen
 candidate. Test changed membership, duplicate self-comparison, all nondependency
 fields and group identities, raw encoding preservation and ownership binding.
 This correction removes an availability refusal, not a native capability gate.
+
+## Native preparation must verify the installed invocation
+
+Corrected build `4401852` passed its full CI and fresh clean fixture
+`d55deb69d08044b0add8c262b7efef39`, followed by separately reviewed cleanup.
+Native candidate `aee25250ed524cf5adfc31d117a78327` then reached actor admission
+but refused with `running process argv mismatch`, before ownership publication,
+stop intent or observer launch. Its control archive contains only the failed
+actor result and successful no-effect recovery result. Stock and Buddy retained
+their original running identities. This candidate is spent, not a native pass.
+
+Read-only process inspection confirmed stock's `/usr/bin/xochitl --system` and
+Buddy's `/opt/bin/reader-buddy` invocation. Buddy's actual executable and that
+symlink target are `/home/root/.local/lib/reader-buddy/reader-buddy`. The diagnostic
+must distinguish exact command-line spelling from canonical executable identity:
+expect the reviewed installed alias in argv, while preserving canonical path,
+executable hash, process incarnation, loader-environment and group checks.
+Do not accept arbitrary aliases or infer arguments from untrusted process state.
+
+Run the same process verification during read-only preparation inventory as
+during actor admission and restoration. A command-line incompatibility must
+therefore refuse before candidate selection. Include the service role in errors.
+Exercise an actual child whose argv[0] differs from its canonical executable,
+checking exact alias acceptance and rejection of a substituted argv, executable
+hash, incarnation or loader environment. This is diagnostic admission work;
+installed activation and native page capabilities remain unqualified.
+
+The separately reviewed cleanup of `aee25250ed524cf5adfc31d117a78327` subsequently
+passed. It verified the exact terminal invocation, absence of both diagnostic
+groups, unchanged original services/source and the two-result control archive;
+cleared only that actor's failure state; removed/unloaded both definitions; and
+rechecked those invariants. No stock/Buddy start or stop occurred. Failed receipts,
+payloads and control evidence remain intact. The correction is implemented at
+Buddy `36e5f5681f5f1d0f70dc5f28e021fc0094441791`; its fresh CI and native evidence
+must be evaluated independently of the prior successful `4401852` build.
