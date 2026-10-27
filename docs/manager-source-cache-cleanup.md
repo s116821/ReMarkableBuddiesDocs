@@ -1,0 +1,7 @@
+# Source-cache cleanup companion
+
+Both Manager companions provide deliberate cleanup of one validated existing derived source-cache slot under the [consumer specification](../openspec/specs/source-cache-cleanup-companion/spec.md). The [Manager cleanup guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/source-cache-cleanup.md) describes explicit selection, fresh preview, separate one-use confirmation and original-only checks. The unchanged [producer contract](../openspec/specs/prepared-source-cache-cleanup/spec.md) defines target behavior; the inventory snapshot grants no cleanup permission.
+
+Original documents and source history remain outside this operation. Unknown outcomes never automatically retry. Current absence does not identify a deleter or acknowledge historical success. Custody is in memory only, with two-minute previews, thirty-minute originals and bounded retained tombstones. Restart or a lost terminal response may leave an uncheckable local unknown. Desktop synthetic qualification does not verify source freshness, runtime adoption or native target durability.
+
+The linked implementation and archived consumer contract preserve public manual/fork workflows without private tools or a tablet. Component tags remain the version authority. This bounded delivery does not complete general cleanup, restore, conversation management or the broader configuration/data-management roadmap.
