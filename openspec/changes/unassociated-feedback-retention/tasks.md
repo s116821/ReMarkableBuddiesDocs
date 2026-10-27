@@ -1,5 +1,5 @@
 ## 1. Design and ownership gate
-- [ ] Independently review both routing options, the preferred fence and exact authored envelopes; no source edit before acceptance.
+- [x] Independently review both routing options, the preferred fence and exact authored envelopes; Root accepted87860 before source edits.
 - [ ] Pin current Source/Docs/Manager bases, old artifact provenance and protected/held state.
 - [ ] Review exact reference wire vectors and generation/capability/restore boundaries.
 - [ ] Resolve Manager cleanup handback and consumer-first release/activation ordering.
