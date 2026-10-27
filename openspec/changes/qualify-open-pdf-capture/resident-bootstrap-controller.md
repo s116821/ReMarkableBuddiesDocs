@@ -533,3 +533,63 @@ passed, removed all four definitions and preserved payloads/evidence. Real
 stock/Buddy remained unchanged. This is disposable PID1 fixture evidence;
 remaining fault/shutdown cases, native runtime and installed/product acceptance
 remain separate open work.
+
+## Isolated failure and queued-trigger results
+
+The same frozen cdeb0bb controller and independently reviewed 255506e driver
+subsequently passed all seven selected disposable-service failure cases:
+
+| Case | Fresh identity | Observed behavior |
+| --- | --- | --- |
+| Actor SIGKILL with child | `f516b2f3b0e54c2ab72ac2bd552cf38a` | Child witness recorded; actor group terminated; both stand-ins restored |
+| Actor runtime expiry | `cf9a769c3cd540d3af69d7f1e26728c4` | PID1 timeout terminated the child-bearing group; both stand-ins restored |
+| Failure after Buddy stop | `3dac5c0a245649199eafb888fed62118` | Original stock retained; Buddy restored |
+| First recovery exits | `648a8dc2e1084648a2a68a5354c07c63` | Second helper restored both stand-ins |
+| Recovery dies after start intent | `58457f2968e342578069f02f9aacad41` | Second helper refused uncertain start replay; both stand-ins remained stopped |
+| Recovery dies after submitting start | `1d782628f11c498b8a2f69900ea392cd` | Existing stock instance verified; Buddy restored without another stock start |
+| Source mismatch | `f2701fa42d4647baacc1ab783d5f313c` | Stock restored first; both helpers refused preservation and withheld Buddy |
+
+Each case passed the unchanged effect/source/state assertions and separate
+receipt-bound cleanup. All owned definitions were removed; real stock/Buddy
+identities and policies remained unchanged. These are actual vendor PID1 runs
+against disposable units, not native document or installed lifecycle acceptance.
+
+The synthetic queued-target experiment also passed all four controls with separate
+cleanup: fail/success `f25d5ef9a7a04d418c1e9292190f18cc`, fail/failure
+`dfd412112fc44628ad376c44afe2dc93`, replace/success
+`0263e4d1a0924fbcab90fa6311921676`, and replace/failure
+`8b968e55844b41ac8e76a64f0c75ddf4`. Fail mode rejected the destructive recovery
+transaction, retained the exact pending target job and never invoked the helper;
+the target subsequently completed. Replace mode invoked the helper and canceled
+that target job, establishing the negative control. This covers the vendor
+scheduler's queued-conflict mechanism only. Actual reboot, shutdown, power-loss
+and installed-profile behavior remain unqualified.
+
+## Original-service dependency ordering across reload
+
+Native candidate `2cae38feca39406cb5267a526e33bb54` refused before actor start:
+installing the two diagnostic definitions and reloading PID1 reordered `After`
+in the original stock/Buddy baselines. Source, executable/unit bytes, service
+incarnations and group context remained identical. The candidate is spent; this
+is not a native observation pass. Separate unused-definition cleanup is required.
+
+That separately reviewed cleanup subsequently completed in 22 bounded calls:
+both definitions removed and unloaded, both diagnostic groups absent with matching
+namespace/mount context, original real-service identities and source unchanged.
+No service start, stop or reset was issued. The failed execution receipt and
+payloads remain preserved. The preceding full Buddy `255506e` CI pipeline passed;
+it does not validate the subsequent comparison correction below.
+
+Correct original-service comparison as well as the earlier terminal comparison.
+Only duplicate-free `After`/`Conflicts` permutations may compare equal. Validate
+both selected and fresh baselines, compare every other snapshot property exactly,
+and require exact full group/process/context identity. Both samples surrounding
+the live process check use this rule. Raw encoding and recorded evidence remain
+unchanged. After proving the fresh baseline matches selection, ownership retains
+the original candidate strings so recovery's candidate/ownership byte binding
+does not change. Apply the same rule to existing restored-service receipts; it
+must never authorize another start or conceal a changed incarnation. Host-side
+inspection follows the same narrow dependency rule without rewriting the frozen
+candidate. Test changed membership, duplicate self-comparison, all nondependency
+fields and group identities, raw encoding preservation and ownership binding.
+This correction removes an availability refusal, not a native capability gate.
