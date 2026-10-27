@@ -42,6 +42,17 @@ Any remote matching canonical upstream or the explicit override permits reuse, i
 
 Manual equivalents are ordinary `git clone URL PATH`, `git remote add upstream CANONICAL_URL`, and `git worktree add -b TOPIC PATH BASE`. Select BASE explicitly from the intended reviewed branch; never overwrite a dirty checkout. Fork PRs and local checks require no canonical write access.
 
+## Build and workspace hygiene
+
+Apply these rules on every development machine and in each component checkout.
+
+- Before heavy builds, check free space on the actual build and temporary volumes. Estimate headroom from comparable builds; reduce scope or free disposable outputs before proceeding. Reuse existing CI/results when they cover the required revision and checks; repeat validation only for a concrete change or unresolved concern.
+- Reuse a compatible active build cache deliberately, or isolate it when concurrent work/toolchains require separation. Coordinate ownership before sharing or cleaning caches; identify active processes and exact paths so one lane cannot disrupt another.
+- After handoff or delivery, delete unused generated `target`, `node_modules`, `dist` and package/review scratch. Preserve source commits, lockfiles and useful test results, CI links and artifact hashes rather than entire reproducible build trees. Do not move disposable caches to network storage as a substitute for deletion.
+- Retain an exceptional frozen binary/input only for a specific purpose, with a named owner and expiry or review point. Record its revision/hash and exact retained path; keep required held evidence separate from disposable intermediates. Do not delete active inputs, credentials, useful failure results or unpreserved work.
+- Before retiring source or a worktree, verify it is clean, synchronized with its intended upstream, pushed and merged as applicable, and no longer needed by another owner. Preserve unmerged or dirty work first. Use the normal Git worktree removal lifecycle; do not remove checkout directories or shared Git metadata blindly.
+- At cleanup closeout, record the exact retained exceptions and measured freed space, distinguishing deleted bytes from other disk activity. Cleanup is owner-coordinated task work, not an unattended daemon or a global configuration change.
+
 ## Routing and linked delivery
 
 | Task | Repositories | Central change |
