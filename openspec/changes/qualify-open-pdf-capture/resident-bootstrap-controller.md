@@ -628,3 +628,53 @@ rechecked those invariants. No stock/Buddy start or stop occurred. Failed receip
 payloads and control evidence remain intact. The correction is implemented at
 Buddy `36e5f5681f5f1d0f70dc5f28e021fc0094441791`; its fresh CI and native evidence
 must be evaluated independently of the prior successful `4401852` build.
+
+## Native handoff and input admission boundaries
+
+Build `36e5f56` passed full CI and the fresh clean recovery fixture. Native
+candidate `2271fc0330834529a19ead9a65b6e160` stopped Buddy, then refused with
+`original service group remains populated`. Recovery restarted Buddy but refused
+with `Input device set changed`. Stock retained its original process; no stock
+stop or observer launch occurred. Separate strict process/source inspection and
+reviewed cleanup succeeded, without manufacturing a successful recovery receipt.
+The failed evidence remains preserved. These results do not qualify native launch.
+
+A retained terminal service with its original group still populated is pending,
+not stopped. Preserve all incarnation, policy, group and deadline checks; require
+a fresh consistent terminal/empty bracket before advancing. Mixed stopping and
+terminal samples must not turn normal asynchronous teardown into a hard failure.
+Changed identity or policy remains an error, and persistent population must expire
+under the original deadline. The exact transient sample order in this failed run
+was not recorded; this race is a source-supported explanation, not a measured fact.
+
+The standalone diagnostic has two distinct input admissions. Its initial guard
+must remain valid and quiet through the final checks before the single Buddy-stop
+submission. A canceled or failed guard cannot advance. After submission, explicitly
+end that handoff admission and wait for the original Buddy to be proved stopped.
+Only then create a fresh observation admission, validate its inventory and seeded
+contacts, recheck source preservation and unchanged stock identity, and require
+quiet input immediately before stock stop. Retain this new guard through stock
+shutdown, observer launch and completion; any later input/inventory failure refuses.
+Record both admission boundaries. There is no continuous input observation during
+the Buddy-stop interval, so a completed contact there cannot be detected later.
+This permits only a fresh read-only diagnostic observation, never continuity with
+an earlier request, source capture, page identity or mutation authority. It neither
+reopens a lost guard nor excludes devices by name. The observer retains its own
+existing real input guard through preparation, handshake and Observe.
+
+This phase distinction is development-only. The installed Session remains inside
+Buddy, whose own keyboard stays alive; its first-trigger cancellation and overlapping
+input reacquisition requirements do not change. Product integration must not reuse
+the diagnostic handoff gap as request admission.
+
+Recovery requires valid quiet input immediately before a fresh Buddy-start request.
+Once that request has occurred, record an independently verified running service
+without requiring the pre-start input inventory to survive Buddy's keyboard creation.
+That restoration receipt is historical service evidence, not input/request authority.
+An already running service may be verified without creating a new input admission.
+Retain executable, argv, policy, incarnation, group, source and no-retry checks.
+
+Regressions cover mixed shutdown brackets, populated-group deadline expiry and
+changed identity/policy refusal; pre-stop cancellation/integrity loss; no fresh
+admission before terminal proof; seeded contact and later inventory loss; and single
+stop submission without deadline renewal. Native qualification remains outstanding.

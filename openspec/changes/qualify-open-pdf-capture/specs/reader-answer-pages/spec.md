@@ -1,5 +1,39 @@
 ## ADDED Requirements
 
+### Requirement: Development bootstrap handoff uses distinct input admissions
+The standalone observation-only controller SHALL require valid quiet input before
+its single Buddy-stop submission. After submission it MAY end that admission,
+wait for the original service's terminal and empty-group proof, then establish a
+fresh read-only observation admission under the original deadline. It SHALL record
+both boundaries and disclose the uncovered handoff interval. It SHALL NOT claim
+request or source continuity across that interval, reset a failed admission, or
+exclude devices by name. Fresh seeded contacts or observer failure SHALL refuse.
+The new guard SHALL remain active through stock shutdown, observer launch and
+completion. Installed Session input continuity SHALL remain unchanged.
+
+Same-incarnation terminal snapshots with an original populated group SHALL remain
+pending under the existing deadline, never stopped. Identity, policy, group and
+cleared-state validation SHALL remain mandatory. Recovery SHALL require fresh quiet
+input before a new Buddy-start submission; independently verified restoration
+afterward SHALL be recorded as historical service evidence without requiring the
+pre-start input inventory to survive or granting input authority.
+
+#### Scenario: Buddy shutdown removes its input device
+- **WHEN** the diagnostic has admitted one Buddy stop and is awaiting terminal proof
+- **THEN** it records the ended handoff admission, grants no observation authority during the interval, and creates its fresh admission only after the original service and group are proved stopped
+
+#### Scenario: Fresh observation admission sees a held contact
+- **WHEN** the new observer's seeded state is not quiet or its inventory cannot be validated
+- **THEN** the diagnostic refuses before stock stop without retrying admission or claiming a quiet handoff interval
+
+#### Scenario: Service termination precedes group teardown
+- **WHEN** a valid original terminal service snapshot brackets a still-populated original group
+- **THEN** shutdown remains pending until a fresh valid empty-group bracket or the original deadline, while changed policy or identity still refuses
+
+#### Scenario: Restored Buddy creates its keyboard
+- **WHEN** recovery has submitted the sole admitted start and independently verifies Buddy running
+- **THEN** it may record historical restoration without reusing pre-start input authority or submitting another start
+
 ### Requirement: Resident caller progress
 Buddy SHALL service caller cancellation and main-thread health during resident
 socket startup and request waits using the original deadline. Progress failure
