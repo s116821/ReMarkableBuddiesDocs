@@ -1,6 +1,6 @@
 # Unassociated feedback retention
 
-The paired Buddy/Manager change adds a local library API for typed error observations that have no conversation or turn. These observations are historical data, not a display queue, success/cancellation receipt, page identity or permission to write to the tablet. The delivery evidence and remaining qualification gates live in [the change record](../openspec/changes/unassociated-feedback-retention/results.md) until its completed archive is linked here.
+The paired Buddy/Manager change adds a local library API for typed error observations that have no conversation or turn. These observations are historical data, not a display queue, success/cancellation receipt, page identity or permission to write to the tablet. The delivery evidence and remaining qualification gates live in [the completed change record](../openspec/changes/archive/2026-10-26-unassociated-feedback-retention/results.md). The archived implementation does not claim a published release or production activation.
 
 ## Explicit preparation
 
