@@ -4,7 +4,7 @@ Historical feedback now composes a stored fact with an exact conversation turn, 
 ## What Changes
 - Propose an UnassociatedFeedback namespace containing immutable typed error observations, with no conversation/turn/page identity or display receipt.
 - Propose storage contract2 and an explicitly prepared generation format3 fence before the first new-namespace commit, preserving the existing contract1 and legacy generation behavior.
-- Add bounded ordinary-mode retention and historical query APIs using the existing Store and static feedback catalog, plus qualified recovery/backup/restore handling.
+- Add bounded ordinary-mode retention and historical query APIs using the existing Store and static feedback catalog, plus bounded ordinary recovery/backup and a separate same-actor additive restore; existing selected restore remains unsupported.
 - Add conditional read-only report2 accounting and a strict Manager consumer while preserving report1 behavior. Manager implementation follows the existing cleanup handback.
 
 ## Capabilities

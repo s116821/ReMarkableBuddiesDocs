@@ -1,6 +1,7 @@
 ## 1. Design and ownership gate
 - [ ] Independently review both routing options, the preferred fence and exact authored envelopes; no source edit before acceptance.
 - [ ] Pin current Source/Docs/Manager bases, old artifact provenance and protected/held state.
+- [ ] Review exact reference wire vectors and generation/capability/restore boundaries.
 - [ ] Resolve Manager cleanup handback and consumer-first release/activation ordering.
 
 ## 2. Data semantics and adoption
@@ -11,7 +12,7 @@
 - [ ] Qualify crash boundaries, existing/in-flight custody and explicit unsupported maintenance/old-writer behavior.
 
 ## 3. Recovery and consumers
-- [ ] Qualify version3 backup/restore and monotonic activated compatibility, preserving all prior bytes/authority distinctions.
+- [ ] Qualify the explicit additive-restore matrix, same-actor3 eligibility, selected/cross-owner refusals, monotonic generation/CURRENT and per-open capability publication, preserving existing restore APIs and exact bytes.
 - [ ] Refuse new namespace live sync before effects; preserve five-domain behavior.
 - [ ] Implement nonmutating conditional report2 and unchanged report1 behavior.
 - [ ] Implement strict Manager report2/readonly category after handback, retaining stale-target and privacy guards.

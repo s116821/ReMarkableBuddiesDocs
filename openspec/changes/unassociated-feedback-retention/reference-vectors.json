@@ -1,0 +1,1081 @@
+{
+  "state": "proposed-only; wire validation is not Store/native qualification",
+  "format": 1,
+  "contract_v2_proposed": {
+    "contract_version": 2,
+    "service": "reader-buddy.service",
+    "maintenance": [
+      "remember-unit-state",
+      "stop-unit",
+      "confirm-inactive",
+      "acquire-stable-store-lock",
+      "validate-version-owner-expected-revision",
+      "stage-and-commit",
+      "release-lock",
+      "restart-if-previously-running-and-valid"
+    ],
+    "schemas": {
+      "envelope": {
+        "$id": "urn:remarkable-buddies:envelope:contract-v2",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "envelope_version",
+          "namespace",
+          "domain_schema_version",
+          "record_id",
+          "revision_id",
+          "parents",
+          "operation_id",
+          "actor_id",
+          "kind",
+          "payload",
+          "media_descriptors"
+        ],
+        "properties": {
+          "envelope_version": {
+            "const": 1
+          },
+          "namespace": {
+            "enum": [
+              "conversation",
+              "source",
+              "export-association",
+              "subject-memory",
+              "handwriting",
+              "unassociated-feedback"
+            ]
+          },
+          "domain_schema_version": {
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "record_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "revision_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "operation_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "actor_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "parents": {
+            "type": "array",
+            "maxItems": 4096,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "kind": {
+            "enum": [
+              "value",
+              "tombstone"
+            ]
+          },
+          "payload": {},
+          "media_descriptors": {
+            "type": "array",
+            "maxItems": 4096,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sha256",
+                "bytes",
+                "media_type"
+              ],
+              "properties": {
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "bytes": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 268435456
+                },
+                "media_type": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128
+                }
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "domain_schema_version": {
+                  "const": 2
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "namespace": {
+                  "enum": [
+                    "conversation",
+                    "source",
+                    "export-association"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "config": {
+        "$id": "urn:remarkable-buddies:config:v1",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "config_schema_version": {
+            "const": 1,
+            "default": 1
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "base_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trigger_corner": {
+            "enum": [
+              "UR",
+              "UL",
+              "LR",
+              "LL",
+              null
+            ]
+          },
+          "log_level": {
+            "enum": [
+              "off",
+              "error",
+              "warn",
+              "info",
+              "debug",
+              "trace",
+              null
+            ]
+          },
+          "debug_dump": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "model_credential": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[A-Za-z0-9_-]{1,80}$"
+          },
+          "paths": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "data",
+              "cache",
+              "credentials"
+            ],
+            "properties": {
+              "data": {
+                "type": "string"
+              },
+              "cache": {
+                "type": "string"
+              },
+              "credentials": {
+                "type": "string"
+              }
+            }
+          },
+          "sync": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              },
+              "namespaces": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "enum": [
+                    "conversation",
+                    "source",
+                    "export-association",
+                    "subject-memory",
+                    "handwriting"
+                  ]
+                }
+              },
+              "media": {
+                "type": "boolean",
+                "default": false
+              },
+              "max_media_bytes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 268435456,
+                "default": 33554432
+              },
+              "poll_seconds": {
+                "type": "integer",
+                "minimum": 5,
+                "maximum": 3600,
+                "default": 60
+              },
+              "batch_items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 128,
+                "default": 32
+              },
+              "collection": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uuid"
+              },
+              "create_new": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        }
+      },
+      "manifest": {
+        "$id": "urn:remarkable-buddies:manifest:contract-v2",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "format",
+          "transaction_id",
+          "scope",
+          "records",
+          "record_namespaces",
+          "media",
+          "media_coverage"
+        ],
+        "$defs": {
+          "object": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sha256",
+              "bytes"
+            ],
+            "properties": {
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 268435456
+              }
+            }
+          }
+        },
+        "properties": {
+          "format": {
+            "const": 1
+          },
+          "transaction_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "scope": {
+            "enum": [
+              "local-transaction",
+              "selected-records",
+              "supplemental-media"
+            ]
+          },
+          "records": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4096,
+            "items": {
+              "$ref": "#/$defs/object"
+            }
+          },
+          "record_namespaces": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "additionalProperties": {
+              "enum": [
+                "conversation",
+                "source",
+                "export-association",
+                "subject-memory",
+                "handwriting",
+                "unassociated-feedback"
+              ]
+            }
+          },
+          "media": {
+            "type": "array",
+            "maxItems": 4096,
+            "items": {
+              "$ref": "#/$defs/object"
+            }
+          },
+          "media_coverage": {
+            "type": "array",
+            "maxItems": 4096,
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "availability",
+                    "sha256"
+                  ],
+                  "properties": {
+                    "availability": {
+                      "const": "included"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "availability",
+                    "sha256",
+                    "reason"
+                  ],
+                  "properties": {
+                    "availability": {
+                      "const": "omitted"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "reason": {
+                      "enum": [
+                        "policy-disabled",
+                        "size-deferred",
+                        "unavailable-at-source"
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "backup": {
+        "$id": "urn:remarkable-buddies:backup:v1",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "format",
+          "manifests",
+          "objects",
+          "complete_media",
+          "config_snapshot"
+        ],
+        "properties": {
+          "format": {
+            "const": 1
+          },
+          "manifests": {
+            "type": "array",
+            "maxItems": 4096,
+            "items": {
+              "$ref": "urn:remarkable-buddies:manifest:v1"
+            }
+          },
+          "objects": {
+            "type": "array",
+            "maxItems": 4096,
+            "items": {
+              "$ref": "urn:remarkable-buddies:manifest:v1#/$defs/object"
+            }
+          },
+          "complete_media": {
+            "type": "boolean"
+          },
+          "config_snapshot": {
+            "anyOf": [
+              {
+                "$ref": "urn:remarkable-buddies:config:v1"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      },
+      "drive_credentials": {
+        "$id": "urn:remarkable-buddies:drive-credentials:v1",
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "credential_version",
+          "client_id",
+          "access_token",
+          "refresh_token",
+          "expires_at",
+          "scopes",
+          "account_permission_id",
+          "collection"
+        ],
+        "properties": {
+          "credential_version": {
+            "const": 1
+          },
+          "client_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "client_secret": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "access_token": {
+            "type": "string",
+            "minLength": 1
+          },
+          "refresh_token": {
+            "type": "string"
+          },
+          "expires_at": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "scopes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "contains": {
+              "const": "https://www.googleapis.com/auth/drive.appdata"
+            }
+          },
+          "account_permission_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "collection": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      }
+    },
+    "additional_runtime_validation": [
+      "non-nil IDs",
+      "same-record acyclic parent lineage",
+      "full expected-head CAS for local mutations",
+      "media coverage and namespace-map equality",
+      "SHA-256 and byte-length integrity",
+      "one-MiB record and eight-MiB aggregate record bounds",
+      "exclusive ownership lease",
+      "absolute owned non-overlapping non-symlink paths",
+      "supported domain adapters only",
+      "tombstones have null payload and no media"
+    ],
+    "status_codes": [
+      "disabled",
+      "discovering",
+      "pending",
+      "current",
+      "recovery-required",
+      "authorization-required",
+      "retry-later",
+      "unsupported-or-corrupt"
+    ],
+    "limits": {
+      "record_bytes": 1048576,
+      "metadata_bytes": 8388608,
+      "required_objects_per_manifest": 4096,
+      "backup_manifests": 4096,
+      "backup_objects": 4096,
+      "remote_inventory_entries": 4096,
+      "media_bytes": 268435456,
+      "upload_chunk_bytes": 262144
+    },
+    "boundaries": [
+      "No Buddy HTTP/RPC/admin listener",
+      "Selected-record sync completeness is not full media recovery",
+      "No native page-operation journal is registered",
+      "No native firmware/reset or live Drive evidence is implied"
+    ],
+    "feedback_feature": {
+      "namespace": "unassociated-feedback",
+      "domain_schema_version": 1,
+      "generation_format": 3,
+      "marker_file": "feedback-feature.json",
+      "marker_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "format",
+          "actor",
+          "generation"
+        ],
+        "properties": {
+          "format": {
+            "const": 1
+          },
+          "actor": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "generation": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      },
+      "archive_format": 3,
+      "live_sync": "unsupported"
+    }
+  },
+  "generation_format_json": 3,
+  "feedback_feature_json": {
+    "format": 1,
+    "actor": "11111111-1111-4111-8111-111111111111",
+    "generation": "22222222-2222-4222-8222-222222222222"
+  },
+  "capabilities_v2_feedback_fields": {
+    "contract_version": 2,
+    "schema_file": "contract-v2.json",
+    "store_versions": [
+      1,
+      2,
+      3
+    ],
+    "selected_store_feature": "actor-generation-bound-v1",
+    "unassociated_feedback_feature": "actor-generation-bound-v1",
+    "envelope_versions": [
+      1
+    ],
+    "config_versions": [
+      1
+    ],
+    "namespaces": [
+      "conversation",
+      "source",
+      "export-association",
+      "subject-memory",
+      "handwriting",
+      "unassociated-feedback"
+    ]
+  },
+  "capabilities_other_fields": "All existing paths/lock/linux_lock/maintenance/sync fields retain their exact definitions; this is the exact changed-field projection, not a complete capabilities file.",
+  "archive3_required_feedback_history": {
+    "format": 1,
+    "origin_actor": "11111111-1111-4111-8111-111111111111",
+    "origin_generation": "22222222-2222-4222-8222-222222222222",
+    "namespace": "unassociated-feedback",
+    "domain_schema_version": 1
+  },
+  "archive3_shape": {
+    "required": [
+      "format",
+      "manifests",
+      "objects",
+      "complete_media",
+      "config_snapshot",
+      "feedback_history"
+    ],
+    "format": 3,
+    "additionalProperties": false,
+    "forbidden": [
+      "selected_history"
+    ],
+    "unchanged_fields": "manifest/object/config fields retain original Backup validation and bounds"
+  },
+  "report2_additional_fields": {
+    "current_generation_format": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "enum": [
+        null,
+        1,
+        2,
+        3
+      ]
+    },
+    "retained_generation_formats": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 3,
+      "items": {
+        "enum": [
+          1,
+          2,
+          3
+        ]
+      },
+      "order": "strict ascending; supported observed noncurrent format versions only"
+    }
+  },
+  "report2_policy": {
+    "max_json_bytes": 32768,
+    "root_keys": "exactly all22 report1 keys plus the two additional fields",
+    "complete_domain_keys": [
+      "conversation",
+      "source",
+      "export-association",
+      "subject-memory",
+      "handwriting",
+      "unassociated-feedback"
+    ],
+    "partial_domains": "sparse allowed; missing is not zero",
+    "unknown_retained_format": "unsupported-generation issue plus incomplete status; not in supported-format list",
+    "feature_invalid": "report2 partial/unsupported; never complete",
+    "not_effect_authority": true
+  },
+  "reports": {
+    "legacy1": {
+      "report_version": 1,
+      "status": "complete",
+      "owner_actor": "11111111-1111-4111-8111-111111111111",
+      "current_generation": "22222222-2222-4222-8222-222222222222",
+      "observed_files": 4,
+      "observed_apparent_bytes": 2000,
+      "complete_apparent_bytes": 2000,
+      "storage": {
+        "structural": {
+          "files": 3,
+          "apparent_bytes": 1872
+        },
+        "record-metadata": {
+          "files": 1,
+          "apparent_bytes": 128
+        }
+      },
+      "observed_domains": {
+        "conversation": {
+          "observed_record_files": 1,
+          "observed_record_bytes": 128,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "source": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "export-association": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "subject-memory": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "handwriting": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        }
+      },
+      "domain_accounting_complete": true,
+      "cache_inspected": false,
+      "shared_media_files": 0,
+      "shared_media_apparent_bytes": 0,
+      "issues": {},
+      "byte_basis": "apparent-file-length-per-owned-path; data-and-cache-only; no-allocated-or-reclaimable-claim",
+      "reference_totals_additive": false,
+      "media_content_verified": false,
+      "logical_liveness_evaluated": false,
+      "credentials_inspected": false,
+      "native_documents_inspected": false,
+      "lease_identity_check": "device-inode",
+      "excluded_scopes": [
+        "credentials",
+        "native-documents",
+        "legacy-cache",
+        "external-transient-diagnostics"
+      ]
+    },
+    "feedback3": {
+      "report_version": 2,
+      "status": "complete",
+      "owner_actor": "11111111-1111-4111-8111-111111111111",
+      "current_generation": "22222222-2222-4222-8222-222222222222",
+      "observed_files": 4,
+      "observed_apparent_bytes": 2000,
+      "complete_apparent_bytes": 2000,
+      "storage": {
+        "structural": {
+          "files": 3,
+          "apparent_bytes": 1872
+        },
+        "record-metadata": {
+          "files": 1,
+          "apparent_bytes": 128
+        }
+      },
+      "observed_domains": {
+        "conversation": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "source": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "export-association": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "subject-memory": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "handwriting": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "unassociated-feedback": {
+          "observed_record_files": 1,
+          "observed_record_bytes": 128,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        }
+      },
+      "domain_accounting_complete": true,
+      "cache_inspected": false,
+      "shared_media_files": 0,
+      "shared_media_apparent_bytes": 0,
+      "issues": {},
+      "byte_basis": "apparent-file-length-per-owned-path; data-and-cache-only; no-allocated-or-reclaimable-claim",
+      "reference_totals_additive": false,
+      "media_content_verified": false,
+      "logical_liveness_evaluated": false,
+      "credentials_inspected": false,
+      "native_documents_inspected": false,
+      "lease_identity_check": "device-inode",
+      "excluded_scopes": [
+        "credentials",
+        "native-documents",
+        "legacy-cache",
+        "external-transient-diagnostics"
+      ],
+      "current_generation_format": 3,
+      "retained_generation_formats": [
+        1
+      ]
+    },
+    "invalid_feature3": {
+      "report_version": 2,
+      "status": "partial",
+      "owner_actor": "11111111-1111-4111-8111-111111111111",
+      "current_generation": "22222222-2222-4222-8222-222222222222",
+      "observed_files": 4,
+      "observed_apparent_bytes": 2000,
+      "complete_apparent_bytes": null,
+      "storage": {
+        "structural": {
+          "files": 3,
+          "apparent_bytes": 1872
+        },
+        "record-metadata": {
+          "files": 1,
+          "apparent_bytes": 128
+        }
+      },
+      "observed_domains": {
+        "conversation": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "source": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "export-association": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "subject-memory": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "handwriting": {
+          "observed_record_files": 0,
+          "observed_record_bytes": 0,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        },
+        "unassociated-feedback": {
+          "observed_record_files": 1,
+          "observed_record_bytes": 128,
+          "declared_media_bytes": 0,
+          "present_referenced_media_bytes": 0,
+          "missing_references": 0,
+          "uninspected_references": 0,
+          "size_mismatched_references": 0,
+          "omitted_references": 0
+        }
+      },
+      "domain_accounting_complete": false,
+      "cache_inspected": false,
+      "shared_media_files": 0,
+      "shared_media_apparent_bytes": 0,
+      "issues": {
+        "invalid-metadata": 1
+      },
+      "byte_basis": "apparent-file-length-per-owned-path; data-and-cache-only; no-allocated-or-reclaimable-claim",
+      "reference_totals_additive": false,
+      "media_content_verified": false,
+      "logical_liveness_evaluated": false,
+      "credentials_inspected": false,
+      "native_documents_inspected": false,
+      "lease_identity_check": "device-inode",
+      "excluded_scopes": [
+        "credentials",
+        "native-documents",
+        "legacy-cache",
+        "external-transient-diagnostics"
+      ],
+      "current_generation_format": 3,
+      "retained_generation_formats": [
+        1
+      ]
+    }
+  },
+  "rejection_cases": [
+    {
+      "case": "report1-extra-key",
+      "base_report": "legacy1",
+      "set": {
+        "current_generation_format": 1
+      },
+      "new_consumer": "reject",
+      "old_consumer": "reject"
+    },
+    {
+      "case": "report2-old-consumer",
+      "base_report": "feedback3",
+      "set": {},
+      "new_consumer": "accept",
+      "old_consumer": "unsupported-version"
+    },
+    {
+      "case": "unknown-report-version",
+      "base_report": "feedback3",
+      "set": {
+        "report_version": 3
+      },
+      "new_consumer": "unsupported-version",
+      "old_consumer": "unsupported-version"
+    },
+    {
+      "case": "unknown-generation-format",
+      "base_report": "feedback3",
+      "set": {
+        "current_generation_format": 9
+      },
+      "new_consumer": "reject"
+    },
+    {
+      "case": "unknown-root-key",
+      "base_report": "feedback3",
+      "set": {
+        "displayed": true
+      },
+      "new_consumer": "reject"
+    }
+  ],
+  "restore_eligibility": [
+    {
+      "entry": "existing-restore",
+      "current": 1,
+      "archive": 1,
+      "selected": false,
+      "result": "existing additive behavior unchanged"
+    },
+    {
+      "entry": "existing-restore",
+      "current": 3,
+      "archive": 1,
+      "selected": false,
+      "result": "refuse unsupported3 before staging"
+    },
+    {
+      "entry": "prepared-feedback-additive",
+      "current": 3,
+      "archive": 1,
+      "selected": false,
+      "result": "additive union into3; no feedback records allowed in archive1"
+    },
+    {
+      "entry": "prepared-feedback-additive",
+      "current": 3,
+      "archive": 3,
+      "selected": false,
+      "same_actor": true,
+      "result": "validated additive union into3; exact original IDs/bytes"
+    },
+    {
+      "entry": "prepared-feedback-additive",
+      "current": 3,
+      "archive": 3,
+      "selected": false,
+      "same_actor": false,
+      "result": "refuse before staging; no actor rewrite"
+    },
+    {
+      "entry": "either-restore",
+      "current": 1,
+      "archive": 2,
+      "selected": true,
+      "result": "refuse; inspection is not restore admission"
+    },
+    {
+      "entry": "prepared-feedback-additive",
+      "current": 2,
+      "archive": 1,
+      "selected": true,
+      "result": "refuse before staging"
+    },
+    {
+      "entry": "prepared-feedback-additive",
+      "current": 3,
+      "archive": 3,
+      "selected": true,
+      "result": "refuse selected feature/history before staging"
+    }
+  ]
+}
