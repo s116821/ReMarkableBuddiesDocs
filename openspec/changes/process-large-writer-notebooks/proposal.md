@@ -31,6 +31,11 @@ notebook completeness or native Writer interaction.
 
 The proposed schema allocation and each shared consumer's support/refusal matrix
 require coordination with the native/source owner before implementation. Existing
+storage generation3 feedback is independent of proposed payload schema3. The
+[in-place adoption contract](compatibility-adoption.md) preserves current
+generation identity and immutable data, requires a separately reserved unsupported
+format/backup/contract revision and leaves contracts1/2 unchanged. Numerical
+allocations and the complete revised precode remain acceptance gates. Existing
 narrow cleanup and native receiving are not broadened into new features. The
 change must add explicit safe refusal where necessary, rather than silently omit
 new records. A generic blob API is not evidence that those consumers support them.

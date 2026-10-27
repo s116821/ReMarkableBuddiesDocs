@@ -1,5 +1,32 @@
 # Precode checkpoint
 
+## Current compatibility revision
+
+Reconciled Docs00da988a237b294b501ac6254787ba7153c23869 preserving unrelated
+changes. Reviewed feedback source86d6c4f2fafa6c05534612bdb16b5ba93a0d59bb is
+delivered with the same tree at68e42968b4c58b6f8ed1102078d78b40fad33ffc.
+[Adoption](compatibility-adoption.md) specifies explicit in-place format adoption,
+preserving generation identity, CURRENT, immutable receipts/media and contracts1/2.
+Copying a generation is not required merely to fence predecessors; additive
+restore remains separate. Payload3 is independent of feedback generation3.
+
+Direct reads covered lease/open ordering, feedback preparation, atomic file and
+directory synchronization, maintenance/restore/mode/cache entrypoints, conditional
+generation/receipt checks and inspection refusal. These are source evidence, not
+new notebook/predecessor tests. The revision requires unique-custody resume and
+revalidation, truthful pre-format old-writer and auxiliary-metadata limits,
+explicit feedback composition and qualified platform durability. Windows
+power-loss durability is not established.
+
+In-place direction is accepted for this precode revision. Exact payload/shared
+path reservations, numerical generation/backup/contract allocations and complete
+revised precode acceptance remain pending. Implementation and qualification tasks
+remain unchecked; this change remains active, unsynced and unarchived. No provider,
+export, device action or source implementation follows from Docs checks. Exact
+candidate checks are recorded in the PR evidence after freezing.
+
+## Historical accepted precode evidence
+
 This is the next unimplemented supplied-normalized-input increment. The preceding
 joined host flow is delivered as Source9be88628 / Docs11090c3. Its actual-main
 CI and v0.47.0 publication were independently closed in the existing delivery;
