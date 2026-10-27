@@ -4,7 +4,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), [architecture](docs/architecture.md), [
 
 All OpenSpec artifacts and workflow assets live here exclusively. Follow [central workflow](openspec/README.md): proposal/design/tasks/deltas before code; linked Docs/code PRs with exact revisions and merge order; verify, sync and archive completed work only. Never archive another lane's unfinished change or label plans as implemented behavior.
 
-Read complete public requirements and timestamped comments. Review private chronology only when available and publish material requirements. Private tools are optional. Preserve dirty clones and unfinished work; use isolated checkouts. Coordinate before creating workers or editing another lane's scope. Follow [build and workspace hygiene](CONTRIBUTING.md#build-and-workspace-hygiene) on every development machine: check disk headroom, coordinate active caches and delete obsolete generated outputs at closeout.
+Read complete public requirements and timestamped comments. Review private chronology only when available and publish material requirements. Private tools are optional. Preserve dirty clones and unfinished work; use isolated checkouts. Coordinate before creating workers or editing another lane's scope. Use the shared [development hygiene skill](.agents/skills/development-hygiene/SKILL.md) before heavy builds and at handoff/delivery on every development machine.
 
 PR bodies are exactly `# Summary` plus concise bullets; detailed evidence, revision pairs, limits and bot responses go in comments. Use scoped semantic titles, inspect required CI and bug-bot feedback, and obtain coordinated independent review before merge. Docs never tags/builds applications; components release independently; REM-35 alone owns 1.0.
 

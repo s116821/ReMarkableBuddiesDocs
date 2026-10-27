@@ -44,14 +44,9 @@ Manual equivalents are ordinary `git clone URL PATH`, `git remote add upstream C
 
 ## Build and workspace hygiene
 
-Apply these rules on every development machine and in each component checkout.
+On every development machine, check build/temp disk headroom and deliberately reuse appropriate active caches and exact-revision validation. At handoff or delivery, delete unused generated outputs instead of moving disposable caches to network storage. Preserve source, lockfiles and useful results; exceptional frozen artifacts need a concrete pending use, owner, revision/hash and expiry or review point.
 
-- Before heavy builds, check free space on the actual build and temporary volumes. Estimate headroom from comparable builds; reduce scope or free disposable outputs before proceeding. Reuse existing CI/results when they cover the required revision and checks; repeat validation only for a concrete change or unresolved concern.
-- Reuse a compatible active build cache deliberately, or isolate it when concurrent work/toolchains require separation. Coordinate ownership before sharing or cleaning caches; identify active processes and exact paths so one lane cannot disrupt another.
-- After handoff or delivery, delete unused generated `target`, `node_modules`, `dist` and package/review scratch. Preserve source commits, lockfiles and useful test results, CI links and artifact hashes rather than entire reproducible build trees. Do not move disposable caches to network storage as a substitute for deletion.
-- Retain an exceptional frozen binary/input only for a specific purpose, with a named owner and expiry or review point. Record its revision/hash and exact retained path; keep required held evidence separate from disposable intermediates. Do not delete active inputs, credentials, useful failure results or unpreserved work.
-- Before retiring source or a worktree, verify it is clean, synchronized with its intended upstream, pushed and merged as applicable, and no longer needed by another owner. Preserve unmerged or dirty work first. Use the normal Git worktree removal lifecycle; do not remove checkout directories or shared Git metadata blindly.
-- At cleanup closeout, record the exact retained exceptions and measured freed space, distinguishing deleted bytes from other disk activity. Cleanup is owner-coordinated task work, not an unattended daemon or a global configuration change.
+Coordinate with active owners before cleanup. Retire source only after checking that valuable work is preserved upstream, using the normal Git/worktree lifecycle. Follow the shared [development hygiene checklist](.agents/skills/development-hygiene/SKILL.md) for path/process checks and measured closeout.
 
 ## Routing and linked delivery
 
