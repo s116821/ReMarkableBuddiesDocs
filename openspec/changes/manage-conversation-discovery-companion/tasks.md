@@ -13,6 +13,7 @@
 - [x] 2.5 Correct the common-helper CI suite to its single guarded Checks owner, preserve original failure and rerun unchanged workflow/focused tests without rebuilding unchanged packages.
 
 ## 3. Verify and complete the same paired delivery
+- [x] 3.0 Prepare only accepted own canonical requirements and public manual/index links after independent source acceptance; leave archive/hosted/delivery completion gated.
 - [ ] 3.1 Record exact source/current producer provenance and all executed checks/failures/limitations; obtain independent implementation and current Windows/Linux hosted/retained acceptance.
 - [ ] 3.2 Complete public manual and sync only own accepted canonical requirements, then archive only this implemented change in this same paired PR; verify links/parity/current-main preservation.
 - [ ] 3.3 Obtain final paired review/current CI/bot resolution and normal Docs-first/source squash; observe actual-main/publication separately, preserve native evidence and remove obsolete generated outputs under hygiene.
