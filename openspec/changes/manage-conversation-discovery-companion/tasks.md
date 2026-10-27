@@ -10,6 +10,8 @@
 - [x] 2.3 Implement shared explicit snapshot/empty/refusal UI with ten-peer clearing, queued observation quiescence and bounded local Stop/no implicit action.
 - [x] 2.4 Add meaningful protocol/child/controller/helper/actual-factory110old90/29incoming10outgoing and both-host source/development/retained cases, keeping original uncertainty/frozen report1report2 fixtures unchanged.
 
+- [x] 2.5 Correct the common-helper CI suite to its single guarded Checks owner, preserve original failure and rerun unchanged workflow/focused tests without rebuilding unchanged packages.
+
 ## 3. Verify and complete the same paired delivery
 - [ ] 3.1 Record exact source/current producer provenance and all executed checks/failures/limitations; obtain independent implementation and current Windows/Linux hosted/retained acceptance.
 - [ ] 3.2 Complete public manual and sync only own accepted canonical requirements, then archive only this implemented change in this same paired PR; verify links/parity/current-main preservation.
