@@ -42,6 +42,12 @@ Any remote matching canonical upstream or the explicit override permits reuse, i
 
 Manual equivalents are ordinary `git clone URL PATH`, `git remote add upstream CANONICAL_URL`, and `git worktree add -b TOPIC PATH BASE`. Select BASE explicitly from the intended reviewed branch; never overwrite a dirty checkout. Fork PRs and local checks require no canonical write access.
 
+## Build and workspace hygiene
+
+On every development machine, check build/temp disk headroom and deliberately reuse appropriate active caches and exact-revision validation. At handoff or delivery, delete unused generated outputs instead of moving disposable caches to network storage. Preserve source, lockfiles and useful results; exceptional frozen artifacts need a concrete pending use, owner, revision/hash and expiry or review point.
+
+Coordinate with active owners before cleanup. Retire source only after checking that valuable work is preserved upstream, using the normal Git/worktree lifecycle. Follow the shared [development hygiene checklist](.agents/skills/development-hygiene/SKILL.md) for path/process checks and measured closeout.
+
 ## Routing and linked delivery
 
 | Task | Repositories | Central change |
