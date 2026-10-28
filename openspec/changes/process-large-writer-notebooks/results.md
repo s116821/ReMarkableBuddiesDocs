@@ -1,4 +1,54 @@
-# Precode checkpoint
+# Implementation checkpoint
+
+## Production storage and stage qualification in progress
+
+The same draft implementation now contains explicit in-place generation4
+adoption/resume, canonical archive/media validation, typed plan/stage facts,
+consumed Ledger preparation/result/final cursors and ordinary same-actor backup4.
+Only user requests and final proposals allocate visible chronology. Source1/2,
+native ExistingBinding2 and delivered feedback behavior remain separate retained
+contracts. Linux file admission uses retained directory handles, no-follow and
+nonblocking opens, file identity/metadata and raw-hash checks; other platforms
+currently return Unsupported rather than weakening the contract.
+
+Exact source20bb590cc3bc333eec53fed9f41faf36a037b403 passed formatting and strict
+Clippy, then all Rust suites and the compile-fail doc-test in
+[run40754525017](https://github.com/s116821/ReMarkableBuddies/actions/runs/40754525017).
+The library result was779 passed,0 failed,7 ignored. Observed new cases include
+real Store adoption interruptions, ordinary LocalOnly leases, original archive
+reopen/context/media and same-actor restore, literal identities, consumed map and
+reduce/final publication, map acknowledgment loss and bounded Linux file faults.
+The overall run was canceled unnecessarily after the Rust step finished, before
+remaining non-Rust/build gates completed. It is not a complete CI pass. Its full
+partial log is preserved with SHA256
+d0a1dc5e2d6cca28d2ca33163bb81b3389920d02baf0e1e53419cc15ab1f8c00.
+
+Later4ed37c1 fixes empty selection-feature backup composition and adds its
+export/restore/reopen fixture. Later48b8b94 adds publication/recovery/archive
+semantic closure checks and the unrelated-sibling file-admission correction;
+a4d5a086b3bdeaeb68226899d126d120ac544aa4 repairs only a test assertion.
+[Current run40756412643](https://github.com/s116821/ReMarkableBuddies/actions/runs/40756412643)
+was still running when this checkpoint was written. The20bb results do not
+qualify these later changes. Subsequent acknowledgment-loss and child-receipt
+tests also require their own exact-source result.
+
+Earlier failing checkpoints remain preserved:2934d46 passed strict Clippy but
+failed one new archive-context completeness check (766 library passed,1 failed,
+7 ignored);4257846 failed a Scope variant name and strict Clippy comparison;
+1a44a3c failed three test calls missing an existing inspection argument;
+125c77d failed test-module placement under strict Clippy;48b8b94 failed a test
+assertion requiring an intentionally absent Debug implementation. Repairs are
+separate commits; failed logs are not relabeled. Stopped local Windows builds
+remain incomplete, with no Windows execution or durability qualification.
+
+Full command/provider runner, joined export ownership and final guards,
+maintained simulator scenarios, remaining exact-source qualification and the
+new separately authorized quality gate remain required in this same delivery.
+Full generation4 owned-data accounting and companion support remain required
+under the data-management/integrated-readiness dependency. No model, destination
+account or tablet execution is implied. Canonical sync and archival remain open.
+Source basis: committed implementation and revision-specific hosted outputs;
+private retained logs have no public download link.
 
 ## Initial implementation and acknowledged shared window
 
