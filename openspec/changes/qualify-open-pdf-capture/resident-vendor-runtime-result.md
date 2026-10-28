@@ -227,6 +227,55 @@ All 41 runtime tests, including root-only cases, and strict all-target/all-featu
 Clippy passed on the diagnostic source. All 88 strict OpenSpec items and the Docs
 checks passed. No native result is attributed to this later diagnostic revision.
 
+## Version-3 setup readiness and ambiguous visual discovery
+
+Full CI `40778232463` passed for Buddy `6a67d19`, building reviewed merge
+`d9940dfcd62005002d28e679bd53639b7912d588`, tree
+`7e9f6610eb9205d61f0cf5b886cfbf44f6bd9e09`. Its source differs from the previous
+reviewed merge only in the startup diagnostics and their regression. The exact
+ARM controller passed clean fake-service fixture
+`66560a2cc9f14d52aa301c82c7024fb0` and its separate 23-call cleanup; real services
+were unchanged. These checks do not model the native vendor pair.
+
+Fresh candidate `4fd4cc80722842d9bc8d8421ecc8f675`, digest
+`8525bcc3c4e138e4ec575b304ac7e92390e3a58cb974145d8d212a2c30fda525`, passed
+preparation and independent review and was executed once. The owned Reader
+passed startup and reached the two-participant setup barrier. Matching ready,
+actor-ended and observer-ended records bind the candidate, runtime, observer,
+boot, activation and artifacts. This is observed setup readiness, not native
+source/page identity or a visual assertion about the Reader.
+
+The separately selected before-image helper, built from Buddy `228f151`, exited
+with `Expected one RM2 framebuffer allocation, found 2; refusing ambiguous
+capture`. This means two allocation-shaped matches, not two verified framebuffers.
+No image was published, no tap or setup-completion signal was selected, and no
+SDK CaptureSource request or mutation was admitted. The helper was not retried.
+The actor later reported a service-observation deadline failure and its independent
+recovery ran successfully. The failed run has no final observation JSON or capture
+PNG; preserve those absent-artifact failures rather than interpreting them as
+successful capture. The earlier executable/incarnation refusal did not recur;
+its cause remains unproven.
+
+Recovery retained matching stock, dependency-driven sync and Buddy restoration
+receipts, with successful source preservation and byte-identical opening metadata.
+Separately reviewed cleanup verified the actor/recovery/helper terminal states
+and group absence, reset only the failed actor and screenshot helper, removed the
+two actor/recovery definitions and passed closing checks for all three restored
+services, the complete source inventory and sync baseline. Its 24 calls passed.
+All inputs, logs and failed records remain preserved; this candidate is spent.
+
+Fresh post-cleanup stock visual sample `a6b4e509c0324e0398f8c82645d79c29` decoded
+and visibly showed normal My files. The helper terminated successfully, all three
+service snapshots and the 161-file source hash manifest remained unchanged, and
+its PNG is byte-identical to the existing
+[stock image](evidence/stock-library-visual-42548855.png). This confirms the
+restored visible state, not the earlier owned Reader's display or page identity.
+
+The next setup increment must provide an unambiguous, explicitly visual-only
+observation. Do not choose the first, last or cached allocation, infer UI context
+from transport readiness, or use the restored stock image as owned-reader evidence.
+The existing guarded native source-capture path remains separately unqualified.
+
 ## Remaining integration
 
 Both installed and disposable source paths now explicitly select the companion
