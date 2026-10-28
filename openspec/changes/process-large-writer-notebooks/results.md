@@ -1,5 +1,72 @@
 # Implementation checkpoint
 
+## Command, provider and export integration checkpoint
+
+Source8448023ed4c5e164ee410e2c8001fb8e41cd6bfd now dispatches all four explicit
+notebook commands through the existing Writer stdin entrypoint. Read-only
+context/file/payload preflight precedes explicit adoption. Joined generation
+retains Writer/export owners, the consumed final witness and complete guards
+through destination polls; deliberate saved-draft export validates the retained
+final publication separately. The replay-context correction reconstructs the
+original publication with exact conversation/range/domain boundaries rather
+than current history. Regression inputs include a real subrange, second
+conversation, unrelated domain, later history and restart.
+
+This frozen source also adds maintained multi-map simulator cases for replay,
+refinement/update, final cancellation, uncertain-write reconciliation and
+inline-to-archive re-export. New tests drive the actual Writer binary/provider
+over local HTTP and the actual Mem adapter over local HTTP with the real Store.
+Owner/media checks cover both destination poll boundaries. These are committed
+test implementations, not yet successful execution claims for844.
+
+[CI40774324495](https://github.com/s116821/ReMarkableBuddies/actions/runs/40774324495)
+is the exact844 qualification run; it was running when this checkpoint was
+written. Its predecessor a611c550c7e760c25ab6cc552ebca5079f3c3a3e passed
+formatting/strict Clippy but failed one new library fixture:793 passed,1 failed,
+7 ignored. The fixture supplied identical first/refined note bodies yet expected
+a second write; the exporter correctly verified the existing content.844 changes
+the fixture refinement body to exercise a real update without weakening that
+assertion. The failed raw log remains preserved; it is not credited to844.
+
+Earlier a4d5a086b3bdeaeb68226899d126d120ac544aa4 and
+e1b5e86ee81461b7830da85125ec107cb9256661 each completed full hosted CI
+(Checks, ARM Build, Integration; PR Release correctly skipped). Their library
+results were780 and789 passed respectively,0 failed/7 ignored. Those results
+qualify their exact sources only. Accepted c644 raw retained-object references,
+publication timestamps and no-call result fields are preserved in844; source
+review alone did not qualify later command/export changes.
+
+Independent final review, remaining failure/boundary qualification, the new
+original six-call maximum quality gate and canonical sync/archive remain open.
+No live provider, Mem account or tablet action occurred in this checkpoint.
+Full generation4 accounting/companion support remains a required integrated
+readiness dependency; physical notebook ingestion/native Writer are separate
+unfinished roadmap requirements.
+
+Source basis: exact Git source and observed hosted CI outputs. Private retained
+failure logs have no public download link.
+
+### Successor qualification and Docs environment observation
+
+844's run stopped at an integration-test compile call to the crate-private
+Ledger decoder. Source d0d2481bcd8a5c75150966a7e2f7b72b74c5ded7 changes only
+that test to use public Ledger inspection; reviewed production code is unchanged.
+[Exact run40775071546](https://github.com/s116821/ReMarkableBuddies/actions/runs/40775071546)
+was running when recorded. Root independently accepted844 source review and
+closed the replay finding in
+[review5690109994](https://github.com/s116821/ReMarkableBuddies/pull/110#pullrequestreview-5690109994).
+No successful runtime result for844/d0 follows from that review.
+
+Current Docs guidance/provenance29/126 and strict OpenSpec98/0 passed. Windows
+tests with disposable Git fixtures on the network work volume had six setup
+errors (12 attempted), before the workspace assertions. Docker Desktop could
+not bind that SMB volume. A 912-file in-memory snapshot, streamed into an
+existing network-disabled/read-only Linux container with tmpfs work/test paths,
+then passed all12 Docs tests in0.526s. No repository/global Git settings were
+changed. The slow first snapshot inventory was stopped before a container/test
+started; no cache cleanup or source deletion was attempted. These platform and
+fixture observations do not establish Windows notebook runtime support.
+
 ## Production storage and stage qualification in progress
 
 The same draft implementation now contains explicit in-place generation4
