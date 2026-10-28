@@ -50,13 +50,51 @@ the validated PNG and its identity/hash metadata as historical evidence only.
 Original uncertain mutation history remains untouched. Stock-first independent
 recovery remains mandatory even when preservation or capture fails.
 
-Source preservation initially remains byte-exact for the entire original source
-inventory in both actor and recovery. No metadata exemption is granted by this
-setup protocol. Before a native candidate can be selected, inspect its backed-up
-disposable fixture and qualify any necessary opening-metadata policy with narrow
-typed fields; unrelated documents, page order, PDF/ink and unknown fields must
-remain protected. A whole-directory exemption is forbidden. This implementation
-alone is not a runnable approved native packet or installed first-gesture flow.
+Source preservation remains byte-exact before setup and for candidates without
+the following explicit policy. An optional version-2 opening-metadata policy may
+carry the exact original UTF-8 bytes of the selected document's `.content` and
+`.metadata`, at most 64 KiB each. Their SHA-256 values must match their original
+entries in the complete backup manifest. Paths are derived from the canonical
+selected document UUID; callers cannot exempt arbitrary paths.
+
+After a durable setup-ready record is verified against both ended-admission
+records and the original candidate binding, actor and recovery may accept only
+these typed activity changes in those two files:
+
+- `.metadata.lastOpened`: a canonical decimal timestamp string, nondecreasing.
+- `.metadata.lastOpenedPage`: an integer equal to the original index or the
+  selected fixture index within the complete original order.
+- `.content.cPages.lastOpened.value`: the original remembered UUID or selected
+  fixture UUID, both within that original order.
+- `.content.cPages.lastOpened.timestamp`: a canonical `client:counter` string
+  with the same client and a nondecreasing counter.
+
+Monotonic comparisons are against the original backed-up values at each
+checkpoint, not a claim about every intermediate write. A changed remembered UUID
+requires an advancing register counter; a changed remembered page index requires
+an advancing `lastOpened` timestamp. Retain both original and sampled resulting
+metadata bytes in the private evidence, including rejected samples.
+
+The policy declares permitted incidental activity; it does not claim that
+opening necessarily changes these fields or that remembered values prove the
+actual displayed page. Strict recursive parsing must reject duplicate keys.
+Every other key, typed value and array order must match the original JSON. No
+protected numeric token may be rounded before comparison: preserve its exact
+JSON text, including integers beyond `u64`, precision and exponent notation.
+Equivalent alternate numeric spellings may conservatively refuse. No
+addition/removal of keys, file or directory is permitted. `lastModified`,
+`sizeInBytes`, page `modifed`, `.local`, PDF, ink and thumbnails remain protected.
+Both source files must still be regular protected files, read under retained
+pins, and their bytes must match the sampled inventory. Every other file remains
+byte-identical. No on-device metadata rewrite or restoration is introduced.
+
+The actor uses this same rule at completion as recovery uses after restoring
+stock. A missing setup-ready signal leaves byte-exact policy in force; malformed
+or mismatched phase evidence refuses the allowance. Preservation failure still
+withholds Buddy while stock restoration comes first. A whole-directory exemption
+is forbidden. Source/host checks do not qualify actual opening or create a runnable
+native packet: freeze and review the setup driver, artifact set and fresh source
+admission separately before selecting the bounded native capture.
 
 Owned host tests must cover the two-participant barrier, delayed/partial records,
 wrong binding, replacements, input cancellation, expiry and single-use admission.

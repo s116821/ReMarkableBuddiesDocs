@@ -332,6 +332,15 @@ The development-only native capture experiment SHALL follow resident-capture-set
 - **WHEN** source inventory differs from the candidate's preservation contract
 - **THEN** preservation fails without a directory exemption or success claim, and stock restoration still precedes the decision whether Buddy may resume
 
+#### Scenario: Explicit opening activity allowance
+- **WHEN** a version-2 candidate supplies original manifest-bound content/metadata bytes and durable matching setup-ready and ended-admission evidence exists
+- **THEN** actor completion and recovery may accept only the typed opening activity changes specified in resident-capture-setup.md, while retaining sampled bytes and checking their inventory correspondence and file pins
+- **AND** all protected JSON fields, exact numeric tokens, page order and other file/directory inventory remain unchanged; activity metadata never proves the displayed page
+
+#### Scenario: Missing or invalid setup history
+- **WHEN** the opening allowance is requested but setup-ready is absent or its durable history is mismatched, partial or replaced
+- **THEN** missing setup-ready leaves byte-exact preservation in force, invalid history refuses the allowance, and recovery restores stock before deciding whether Buddy may resume
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

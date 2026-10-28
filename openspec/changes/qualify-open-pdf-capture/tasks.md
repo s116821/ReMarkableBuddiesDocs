@@ -137,6 +137,7 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 ## Resident historical capture consumer
 
 - [x] Implement and independently review the explicit two-participant setup and fresh-input barrier under resident-capture-setup.md, with owned host regressions and unchanged version-1 behavior. Buddy f026bb6 and resident-capture-setup-result.md record source/host evidence; native selection remains open.
+- [x] Implement and review the optional original-byte-bound opening-metadata policy with the same actor/recovery checks; exercise permitted activity changes and forbidden original-content/order/unknown-field/inventory changes. opening-metadata-policy-result.md records final source/host evidence; native selection remains open.
 - [ ] Qualify the disposable-source opening/preservation policy, freeze exact capture artifacts and independent recovery, then execute one fresh capture candidate; setup markers alone do not prove Reader identity.
 
 - [x] Upgrade the SDK pin and expose historical capture through the existing resident connection and installed request dispatcher under resident-capture-integration.md; source and owned evidence is recorded in resident-capture-integration-result.md.
