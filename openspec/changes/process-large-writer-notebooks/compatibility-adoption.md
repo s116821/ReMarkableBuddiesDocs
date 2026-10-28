@@ -16,21 +16,24 @@ contract-v2.json remain immutable. Accepted allocations are:
 | Notebook descriptor | notebook-feature.json format1, bound to actor and generation |
 
 Other domain versions and envelope/manifest/actor format1 retain their meaning.
-These numeric axes are independent. Complete amended-contract review remains
-required before notebook source work. Intended single-writer ownership is
+These numeric axes are independent. The complete amended contract is reviewed
+and accepted for exclusive notebook source work. Intended single-writer ownership is
 accepted, but overlapping shared paths remain closed until the native owner
 acknowledges an exact handoff revision and preservation of unfinished work.
 
-Main owns notebook-only modules src/writer/notebook.rs,
+The notebook implementation owner owns notebook-only modules src/writer/notebook.rs,
 src/conversation/notebook.rs, src/storage/notebook_generation.rs and the new
 contract-v3.json, notebook tests and Writer host integration. Only during an
-explicit handoff window does Main become sole writer of conversation
+explicit handoff window does that owner become sole writer of conversation
 mod/types/selected/receiving/cleanup and storage
 mod/types/selection/recovery/inspection/feedback_generation/conversation_cleanup,
 including required sync refusal guards. Shared main/simulator dispatch edits also
-require that window. Native retains workflow/resident/bootstrap/SDK and
-conversation evidence/evidence_tests/historical_association/pending. Root
-coordinates rather than becoming a second concurrent source writer.
+require that window. The concurrent native integration owner retains
+workflow/resident/bootstrap/SDK and conversation
+evidence/evidence_tests/historical_association/pending. The coordinating maintainer
+arranges the handoff rather than becoming a second concurrent source writer.
+These are portable concurrent-source roles, not a prerequisite on any particular
+private agent, chat, assistant platform or account.
 
 # Explicit in-place adoption
 

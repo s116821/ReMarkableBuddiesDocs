@@ -2,10 +2,11 @@
 - [x] Read current issue chronology and delivered Writer/export/Store/source-consumer boundaries; preserve the completed delivery and sole publication observer.
 - [x] Define complete source retention, deterministic work/call/output bounds, per-stage fresh receipts, final export selection and honest host-only coverage before implementation.
 - [x] Incorporate early review: explicit safe regular-file/handle/hash admission and exact ordered identity recipes with independently calculated literal Unicode/legacy vectors.
-- [ ] Independently review the complete amended candidate and obtain actual native shared-path handoff for the accepted Source3/Conversation3 kinds and consumer support/refusal matrix before shared schema edits.
+- [x] Independently review and accept the complete amended candidate, exact Source3/Conversation3 kinds and consumer support/refusal matrix; actual shared-path handoff remains separate.
 - [x] Obtain exact Value-only Source3 ArchivedNormalizedSource / Conversation3 NotebookPlan/NotebookStage reservations, generation4, ordinary same-actor backup4, contract3/contract-v3.json and actor/generation-bound notebook-feature.json1; preserve independent axes and contracts1/2.
 - [ ] Receive native owner's exact-revision shared codec/selection/receiving/storage handoff and unfinished-work protection acknowledgment; accepted intended ownership is not an open window.
-- [ ] Accept the complete revised in-place adoption, capability publication, feedback composition and actual predecessor-entrypoint refusal contract before source edits; pin predecessor versions and supported platform durability limits.
+- [x] Accept the complete revised in-place adoption, capability publication, feedback composition and predecessor-entrypoint refusal contract for exclusive source work.
+- [ ] Pin predecessor versions and qualify supported platform durability limits during implementation verification; source review alone is not execution evidence.
 
 ## 2. Implementation
 - [ ] Add strict explicit budgeted notebook commands and bounded immutable source-file resolution while preserving all existing command behavior and before-admission credential checks.
