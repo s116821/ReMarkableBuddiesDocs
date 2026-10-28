@@ -229,20 +229,28 @@ The pure synthetic consumer bridge SHALL exhaustively map ExistingQA to LegacyBu
 - **THEN** existing witness guards refuse, and matching fields alone still do not establish actual capture/current-device provenance
 
 ### Requirement: Owned resident runtime startup
-The Linux resident runtime owner SHALL verify supplied approved artifact bytes, publish one fresh synchronized SDK admission, retain its directly launched child and authenticated connection, and preserve diagnostics under resident-runtime-integration.md. It SHALL use one absolute startup deadline and at most one handshake, close and stop only its owned child on failure/shutdown, retain effect uncertainty, and make no native capability claim from protocol readiness. Stock-service handoff, lazy activation, health/recovery and installed Reader qualification SHALL remain required before production use.
+The Linux resident runtime owner SHALL verify supplied approved artifact bytes, publish one fresh synchronized SDK admission, retain its directly launched reader, required vendor companion and authenticated connection, and preserve diagnostics under resident-runtime-integration.md and resident-vendor-companion.md. It SHALL use one absolute startup deadline and at most one handshake, close and stop only its owned processes on failure/shutdown, retain effect uncertainty, and make no native capability claim from protocol readiness. Both original vendor services SHALL be terminal with their groups drained before replacement launch. The companion SHALL retain its exact executable, process and broker-owner identity; loss SHALL fail the session without restart or effect replay. Stock-service handoff, lazy activation, health/recovery and installed Reader qualification SHALL remain required before production use.
+
+#### Scenario: Vendor companion cannot start or loses ownership
+- **WHEN** the required companion cannot start, exits, changes identity or no longer owns its admitted system-bus name
+- **THEN** the runtime withholds request delivery, preserves unresolved effects and attempts bounded cleanup of every owned child before independent recovery
+
+#### Scenario: Stock restoration includes its companion
+- **WHEN** independent recovery restores the original stock service graph
+- **THEN** it verifies the restored stock and companion incarnations and original policies before restoring Buddy or reporting completion, without replaying the failed activation
 
 #### Scenario: Owned endpoint becomes ready
-- **WHEN** the exact launched child consumes the original admission and completes its single authenticated handshake within the startup deadline
-- **THEN** the owner retains that child, process incarnation, directory and connection together; readiness establishes only the protocol connection and grants no page-writing authority
+- **WHEN** the exact reader child consumes the original admission and completes its single authenticated handshake, and the owned companion passes its process/executable/broker-owner admission within the same startup deadline
+- **THEN** the owner retains both children, their process incarnations and artifact pins, directory and connection together; readiness establishes only the admitted runtime connection and grants no page-writing authority
 
 #### Scenario: Startup fails or runtime closes
-- **WHEN** artifacts/admission/process identity fail, the child exits, the deadline expires, or the caller shuts down the owner
-- **THEN** the connection closes, only the owned child is stopped within a bounded recovery attempt, original uncertainty and admission/diagnostic files remain, and no launch, handshake or native effect is automatically retried
+- **WHEN** artifacts/admission/process identity fail, either child exits or loses its admitted ownership, the deadline expires, or the caller shuts down the owner
+- **THEN** the connection closes and bounded termination is attempted for both owned children even if one cleanup fails; separate reaping/error evidence, original uncertainty and admission/diagnostic files remain, and no launch, handshake or native effect is automatically retried
 
 ### Requirement: Independent bounded stock restoration
 Installed native activation and recovery SHALL share one fixed boot-scoped occupied lease path. A versioned lease SHALL bind a distinct release-approved recovery-profile digest as well as the native profile and adapter identities. The recovery helper SHALL verify its own actual PID1 oneshot process, invocation, executable and populated service group, the unchanged protected installation/profile, and the original terminal Buddy service/group before restoring stock under resident-supervisor-integration.md. Missing, malformed, duplicate, stale or changed evidence SHALL refuse without resetting the activation lease. An unqualified profile SHALL NOT be synthesized from live observations or shipped as approved configuration.
 
-Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=fail per helper attempt, only after zero stock process fields, no job and actual group emptiness are bracketed with unchanged service state. Already active or starting stock SHALL be observed without a new command. Unknown command outcome SHALL retain possible queued-job effects without automatic retry. Success SHALL require stable actual stock process incarnation, executable bytes/argv, group membership/population, loaded policy and no pending job, followed by renewed original Buddy/helper/lease admission within the original deadline. Recovery SHALL NOT kill/restart stock or imply visual readiness or document persistence.
+Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=fail per helper attempt, only after zero stock process fields, no job and actual group emptiness are bracketed with unchanged service state, and the owned reader/companion group has drained. Already active or starting stock SHALL be observed without a new command. Unknown command outcome SHALL retain possible queued-job effects without automatic retry. Success SHALL require stable actual stock and vendor companion process incarnations, executable bytes/argv, group membership/population, original loaded policies and no pending jobs, followed by renewed original Buddy/helper/lease admission within the original deadline. The companion's original dependency graph SHALL supply restoration; recovery SHALL NOT independently start its original service while stock is inactive. Recovery SHALL NOT kill/restart stock or imply visual readiness or document persistence.
 
 #### Scenario: Conflicting shutdown job arrives
 - **WHEN** a conflicting PID1 stop job arrives after the pre-start sample
