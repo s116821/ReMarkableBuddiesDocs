@@ -99,14 +99,54 @@ it never signals a saved PID from a report. These tests use real owned host proc
 with synthetic broker/fault evidence and do not reproduce the vendor's ninety-second
 stop allowance or establish native data preservation.
 
+## Versioned disposable service admission
+
+Buddy `6d9224b3d4e26c928380c59c19dde40666e6d77d` adds the shared fixed-profile
+vendor admission module and connects it to the disposable controller/observer.
+Candidate version 3 explicitly carries the original sync baseline; ownership
+version 2 binds those exact bytes to the candidate digest. Older candidates and
+fixture candidates cannot opt in. A separate strict loaded-policy parser preserves
+the existing baseline serialization and its watchdog-reset handling.
+
+Admission pins the original sync executable, unit and drop-in, firmware/kernel,
+loaded dependencies, launch and termination settings. It observes original sync
+process/argv, group and broker ownership before stock stop. The controller's stock
+stop waits for both original services and groups, and includes sync in subsequent
+terminal checks. The observer selects its companion profile only from the pinned
+candidate and checks original sync termination at admission and delivery.
+
+Recovery never starts sync separately. A new stock start waits for the original
+sync group to drain, including after controller interruption, and rechecks before
+dispatch. Already-active stock is independently observed. Recovery retains the
+exact stock baseline written to its restoration record; it does not recapture a
+possibly replaced process. It waits for dependency-driven sync activation and bus
+name readiness, retaining the first captured incarnation. Missing name is pending;
+replacement or integrity loss refuses. Both restored incarnations remain retained
+through source checks, Buddy restoration and final verification.
+
+Independent review identified and verified fixes for the asynchronous name race,
+stock recapture and missing sync-drain admission in interrupted recovery. On final
+source, all 118 Linux host supervisor tests and strict all-target/all-feature Clippy
+passed; formatting and whitespace checks passed. New tests cover policy/schema
+changes, duplicate and reordered dependencies, absent-name-to-ready, replacement
+during waiting, canceled/lost delivery, candidate/ownership version boundaries and
+retained-pair orchestration. The first draft's 115-test/lint result is preserved
+separately and is not evidence for the corrected source.
+
+These are source and host-model checks. The existing PID1 fixture models stock and
+Buddy; it does not model native vendor-pair transitions or broker ownership. No ARM
+artifact, new native candidate, vendor-pair execution, capture or recovery result is
+claimed here. A separate new staging script has only been syntax-checked and remains
+unexecuted and unqualified. Existing spent candidate inputs remain unchanged.
+
 ## Remaining integration
 
-Versioned installed profile/lease and native candidate admission must retain the
-original sync service/process/group and fixed policy/artifact identities, prove
-both original services stopped before replacement, and independently verify both
-restored services before Buddy/completion. Existing callers intentionally remain
-unchanged until that path is implemented and reviewed. Host shutdown is not a
-guardian recovery result. Native capture, automatic creation/reuse for Reader,
+Versioned installed profile/lease must consume the original sync service/process/
+group and fixed policy/artifact admission, prove both original services stopped,
+and verify both restored services before completion. The installed caller still
+selects no companion. Disposable admission above still needs exact-artifact PID1
+fixture checks and a fresh bounded native run. Host shutdown is not a guardian
+recovery result. Native capture, automatic creation/reuse for Reader,
 Writer and blank-start, broader simulator acceptance and coordinated delivery all
 remain required.
 

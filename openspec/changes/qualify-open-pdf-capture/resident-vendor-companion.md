@@ -123,6 +123,22 @@ preservation and independently verified two-service recovery can qualify that
 native step. Automatic Reader/Writer/blank-start creation/reuse remains the required
 product end state.
 
+The disposable controller uses candidate version 3 with a required original
+companion baseline and native capture plan, and ownership version 2 binding that
+same baseline to the candidate digest. Versions 1/2 and fixture candidates reject
+the new field. A separate, fixed-profile loaded-policy observation leaves the
+existing serialized service-baseline schema unchanged. It checks duplicate-free
+dependency sets, launch/termination settings and original artifact pins. Stock
+stop is the sole stop request for the vendor pair; both original groups must be
+terminal before observer launch and throughout the observation. Recovery starts
+stock through its original dependency graph, never starts sync separately, and
+withholds Buddy until both restored incarnations, executable/argv, policy and
+broker ownership have been independently observed. Retain those restored
+incarnations across source checks and Buddy restoration. Observer companion
+selection comes only from the pinned version-3 candidate, never a separate CLI
+switch. Installed profile/lease integration is a separate unfinished consumer of
+this shared admission logic.
+
 Source basis: measured vendor unit/drop-in, process environment and dependency
 journal; current runtime/SDK ownership source. The owned-companion design is an
 integration decision, not a proven explanation for the historical error screen.

@@ -235,6 +235,21 @@ The Linux resident runtime owner SHALL verify supplied approved artifact bytes, 
 - **WHEN** the required companion cannot start, exits, changes identity or no longer owns its admitted system-bus name
 - **THEN** the runtime withholds request delivery, preserves unresolved effects and attempts bounded cleanup of every owned child before independent recovery
 
+#### Scenario: Companion name acquisition follows service activation
+- **WHEN** dependency-driven recovery observes the companion active before its bus name exists
+- **THEN** it retains that exact process incarnation and waits within the original deadline for the matching owner
+- **AND** replacement, malformed ownership, failed admission or deadline expiry withholds Buddy and completion without a separate companion start
+
+#### Scenario: Controller fails while the vendor pair is stopping
+- **WHEN** independent recovery observes stock terminal but the original companion group is still populated
+- **THEN** it waits within the original recovery deadline and submits no stock start until both original services and groups have terminal proof
+- **AND** an already-active verified stock service is observed without a new start or a demand that its restored companion be stopped
+
+#### Scenario: Disposable companion selection is versioned
+- **WHEN** a native disposable candidate explicitly selects the companion contract
+- **THEN** candidate version 3 and ownership version 2 bind the same original companion baseline, and the observer obtains its runtime selection from those pinned candidate bytes
+- **AND** old candidates and fixture candidates cannot silently select the companion contract or reuse spent execution state
+
 #### Scenario: Stock restoration includes its companion
 - **WHEN** independent recovery restores the original stock service graph
 - **THEN** it verifies the restored stock and companion incarnations and original policies before restoring Buddy or reporting completion, without replaying the failed activation
