@@ -239,6 +239,11 @@ The Linux resident runtime owner SHALL verify supplied approved artifact bytes, 
 - **WHEN** independent recovery restores the original stock service graph
 - **THEN** it verifies the restored stock and companion incarnations and original policies before restoring Buddy or reporting completion, without replaying the failed activation
 
+#### Scenario: Companion shutdown consumes its grace or fails signalling
+- **WHEN** the explicit two-process runtime stops and its companion does not exit cooperatively or a signal fails
+- **THEN** fixed TERM/KILL/reaping phases retain the original cleanup deadline, reader termination still occurs, and each retained child has separate signal-error and observed-exit evidence
+- **AND** an exhausted deadline still permits required forced dispatch, but never proves reaping, graceful vendor persistence or independent stock recovery
+
 #### Scenario: Owned endpoint becomes ready
 - **WHEN** the exact reader child consumes the original admission and completes its single authenticated handshake, and the owned companion passes its process/executable/broker-owner admission within the same startup deadline
 - **THEN** the owner retains both children, their process incarnations and artifact pins, directory and connection together; readiness establishes only the admitted runtime connection and grants no page-writing authority

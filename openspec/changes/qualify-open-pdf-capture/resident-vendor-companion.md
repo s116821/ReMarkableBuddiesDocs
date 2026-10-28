@@ -81,6 +81,16 @@ forced KILL escalation, with a finite grace interval and reserved final cleanup
 time inside one original deadline. An already exhausted budget SHALL still
 dispatch necessary forced termination to both owned children. The historical
 single-process forced-cleanup path is not evidence of this vendor shutdown policy.
+The owned runtime keeps its existing two-second cleanup cap and caller deadline.
+At shutdown entry, divide the remaining interval into fixed quarter boundaries:
+companion TERM grace ends at one quarter, companion forced reaping at one half,
+reader TERM grace at three quarters, and reader forced reaping at the original end.
+Start reader termination after companion completion or its allocated timeout; do
+not extend any phase after an error or retry. If a grace boundary has already
+passed, force termination immediately. Record each signal attempt/error and the
+actual observed exit code or signal separately for each retained Child. These
+bounds reproduce signal choice and stop ordering, not the vendor's ninety-second
+allowance or a promise of graceful vendor persistence.
 Retain separate termination/reaping/error evidence for each child. A timeout or
 failed termination cannot be reported as complete shutdown. Exhausting the wait
 budget on one child SHALL NOT skip termination dispatch for the other. The existing independent

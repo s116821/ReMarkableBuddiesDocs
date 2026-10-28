@@ -31,11 +31,10 @@ Shutdown dispatches companion termination before reader termination, then waits
 under one original deadline. It retains separate child results and reports overall
 reaping only when both are reaped. Failure to reap still requires independent group
 recovery. A partial companion spawn failure cleans up the already-owned reader.
-This source increment retains the earlier forced KILL cleanup mechanism. Fresh
-read-only loaded-unit inspection confirms the vendor's TERM-then-KILL policy;
-bounded graceful shutdown/escalation for the two-process selection must be added
-and tested before any native qualification. Separate reaping evidence does not
-establish graceful vendor shutdown.
+The initial `0e414236` increment retained forced KILL cleanup. Fresh read-only
+loaded-unit inspection confirmed the vendor's TERM-then-KILL policy; the ordered
+shutdown follow-up below implements that bounded source path. Separate reaping
+evidence still does not establish graceful vendor persistence.
 
 ## Source validation
 
@@ -73,6 +72,32 @@ accepted this coverage refinement. All seven companion tests and strict
 all-target/all-feature Clippy passed on final test revision
 `08576dbec7cdd375dd97468b1570f62a98f6965d`; formatting and whitespace checks passed.
 Production behavior remains that of `0e414236437ac1f405f7376e4ef723310aaa2c77`.
+
+## Ordered shutdown follow-up
+
+Buddy `ba143d81e39fb544d5b369686329444a56049dba` implements the fixed phase
+boundaries in the lifecycle contract without extending the original two-second
+cleanup cap or caller deadline. The explicit two-process path requests companion
+TERM, observes its completion or allocated timeout, then terminates the reader.
+KILL escalation and final reaping have reserved intervals. An exhausted deadline
+still reaches forced dispatch for both retained children. One-process callers keep
+the earlier forced-cleanup policy.
+
+Each child retains ordered signal attempts/errors and actual exit code/signal;
+the overall report includes both child receipts and succeeds only when both were
+reaped without an error. Signal dispatch alone does not imply termination. The
+emergency companion destructor remains bounded forced cleanup.
+
+Independent source review accepted this implementation. All 39 runtime tests,
+including explicit root-only fixtures, passed, as did strict all-target/all-feature
+Clippy and formatting/whitespace checks. Cooperative handlers are installed before
+readiness and prove the companion is reaped before the reader's TERM handler runs.
+Other cases require KILL when both children ignore TERM, preserve a modeled signal
+failure while still stopping the reader, and verify forced dispatch after deadline
+exhaustion. That last fixture retains its actual Child handles for separate cleanup;
+it never signals a saved PID from a report. These tests use real owned host processes
+with synthetic broker/fault evidence and do not reproduce the vendor's ninety-second
+stop allowance or establish native data preservation.
 
 ## Remaining integration
 
