@@ -176,15 +176,62 @@ failure, and sticky membership/namespace refusal with owned-process cleanup.
 Injected membership mismatches fail at the parent sample; child-only divergence
 and actual kernel migration are not independently tested.
 
-The new version-3 staging script has passed source review for preparation only.
-It remains unexecuted and still requires fresh verified artifacts and matching
-fixture/cleanup evidence; it grants no native execution authority.
+At that source checkpoint, the new version-3 staging script had passed source
+review for preparation only and remained unexecuted. The following attempt used
+fresh verified artifacts and matching fixture/cleanup evidence.
+
+## First version-3 native attempt and startup refusal
+
+Full Buddy CI `40770948819` passed for PR head `e919f4a`, building merge
+`8cc20ebdc8f1fda5325baef648985fde15d929d7`, tree
+`755fde1ff0d3a36f2b5af37575a60ff25cf84cad`. The separately reviewed merge adds
+unassociated-feedback storage paths; the bounded diagnostic review traced the
+observer's fresh format-1 Store without selecting that feature. Archive and ELF
+identity checks passed. The exact controller passed one clean fake-service PID1 fixture
+and its separately verified cleanup. This fake-service case does not model the
+vendor pair.
+
+Fresh candidate `e4c06d386f8f4c21a982a3ea6683d95b`, digest
+`cda5af11e99015b0d779abdb29dc404d6baee967c86a866531f5938401022957`, was staged,
+independently reviewed and executed once. Its version-3 contract retained original
+sync along with stock/Buddy and the complete 191-entry source inventory. The SDK
+`80b29eb` profile remained mutation-disabled. Original services stopped, but the
+owned Reader failed the first post-spawn executable/incarnation comparison before
+companion spawn. The observer recorded startup failure, reader cleanup with
+SIGTERM/reap, no companion child and no pending mutation. Both native output logs
+were empty. There was no setup-ready record, screenshot, tap, capture or mutation.
+
+The independent helper restored stock, dependency-driven sync and Buddy, retaining
+the matching three restoration receipts and successful source-preservation result.
+Separate cleanup rechecked live source/service/companion identity, proved diagnostic
+group absence, reset only the failed diagnostic actor and removed its two definitions.
+Closing checks confirmed unchanged restored services, full source inventory and
+companion baseline. All failed inputs and records remain preserved; the candidate
+is spent and is not replay authority. This is native evidence for this failed-startup
+recovery case, not successful owned-pair startup, capture or installed activation.
+
+A separate bounded screenshot after cleanup was retrieved and visually inspected:
+the restored stock UI showed the normal My files screen. The screenshot helper
+terminated successfully; all three service snapshots and the 161-file source
+hash manifest were unchanged across capture. This visual observation establishes
+neither native page identity nor SDK authority.
+
+The failed comparison combined inode equality with start-tick equality, so its
+record does not identify which check failed. Buddy revision
+`6a67d19b894c314f5f70b14e27311e995b2ad618` retains
+both expected/observed values, executable symlink target and sampling errors while
+preserving refusal and owned cleanup. It introduces no identity relaxation, wait
+or retry. An exec-race explanation remains unproven. Focused host controls inject
+the two distinct identity mismatches; they do not reproduce the native cause.
+All 41 runtime tests, including root-only cases, and strict all-target/all-feature
+Clippy passed on the diagnostic source. All 88 strict OpenSpec items and the Docs
+checks passed. No native result is attributed to this later diagnostic revision.
 
 ## Remaining integration
 
 Both installed and disposable source paths now explicitly select the companion
 through their new versioned contracts. Approved profile packaging/installation,
-exact-artifact PID1 fixture checks and fresh bounded native runs remain required.
+broader exact-artifact PID1 fault checks and fresh bounded native runs remain required.
 No actual installed or disposable vendor-pair lifecycle is qualified by these
 host checks. Host shutdown is not a guardian
 recovery result. Native capture, automatic creation/reuse for Reader,
