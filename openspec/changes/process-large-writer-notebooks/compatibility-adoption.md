@@ -18,8 +18,10 @@ contract-v2.json remain immutable. Accepted allocations are:
 Other domain versions and envelope/manifest/actor format1 retain their meaning.
 These numeric axes are independent. The complete amended contract is reviewed
 and accepted for exclusive notebook source work. Intended single-writer ownership is
-accepted, but overlapping shared paths remain closed until the native owner
-acknowledges an exact handoff revision and preservation of unfinished work.
+accepted. The native integration owner acknowledged the shared-path handoff at
+f026bb6385a2c450fa4d79542fb57c097b98673f, preserving unfinished work and pausing
+edits to the handed-off paths until coordinated return. That bounded window is
+open; it does not transfer the retained native-exclusive paths or device authority.
 
 The notebook implementation owner owns notebook-only modules src/writer/notebook.rs,
 src/conversation/notebook.rs, src/storage/notebook_generation.rs and the new
@@ -27,7 +29,9 @@ contract-v3.json, notebook tests and Writer host integration. Only during an
 explicit handoff window does that owner become sole writer of conversation
 mod/types/selected/receiving/cleanup and storage
 mod/types/selection/recovery/inspection/feedback_generation/conversation_cleanup,
-including required sync refusal guards. Shared main/simulator dispatch edits also
+including required sync refusal guards. The same owner has the narrow storage/maintenance.rs and
+storage/sync/mode.rs guard extension for legacy refusal before staging/mutation;
+supported explicit notebook flows must remain admitted. Shared main/simulator dispatch edits
 require that window. The concurrent native integration owner retains
 workflow/resident/bootstrap/SDK and conversation
 evidence/evidence_tests/historical_association/pending. The coordinating maintainer

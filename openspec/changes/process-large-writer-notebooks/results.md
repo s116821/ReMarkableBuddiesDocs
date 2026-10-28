@@ -1,6 +1,30 @@
 # Precode checkpoint
 
-## Accepted allocation amendment
+## Initial implementation and acknowledged shared window
+
+The native integration owner acknowledged the exact shared-path window at
+f026bb6385a2c450fa4d79542fb57c097b98673f, preserving its unfinished and
+native-exclusive work. The notebook owner may now compose the handed-off paths
+with delivered68e42968 feedback storage. This is coordination, not native runtime
+qualification or permission to alter the retained native-exclusive paths.
+
+Initial source0493f33ae07092ed05147eacdf8df2e6f22e96f1 adds only the Writer
+notebook module/declaration, focused tests and unchanged central literal vectors:
+immutable canonical input/identity and complete UTF8 coverage with bounded,
+selected-only context. It does not yet implement persistence/adoption, full
+payload reservation or stage orchestration. Exact-head hosted40735474663 passed
+Checks/ARM Build/Integration: all ten new notebook tests passed in the full
+560-pass library suite (three existing ignored), with formatting, strict Clippy
+and other regression suites. Two local dependency builds were interrupted and
+preserved without a Windows test result; hosted evidence is not relabeled as
+Windows or native qualification. Normal composition776275e00d4df622313e04e64439d00e5a1352ac
+combines that draft with nativef026 (treee8bdf33e7c3b115b8f2d2abbe6af1a69b299b1ec);
+the old run does not validate that later composition or new adoption work. The
+portable-role Docs correction at542341a1b3bfc28015477a8c9bca785e2da2768e passed
+all current local/hosted Docs checks. Later exact source/check results are recorded
+in PR evidence; old runs do not validate changed source.
+
+## Historical accepted allocation amendment atf020
 
 This revision reconciles Docs6394f582101076e4df9770ba6a46051e2b65beab and
 records accepted exact Value-only Source3 ArchivedNormalizedSource and

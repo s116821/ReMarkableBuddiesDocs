@@ -11,12 +11,12 @@ src/storage/contract-v1.json, src/storage/contract-v2.json, src/retrieval.rs, sr
 src/conversation/cleanup.rs and src/conversation/receiving.rs. The prior host-flow archive and closed
 two-call quality observation are historical evidence, not new-run authorization.
 
-Source/native shared-path handoff remains a pre-implementation gate. Source3 is
+Source/native shared-path handoff is acknowledged at the preserved revision below. Source3 is
 reserved for ArchivedNormalizedSource, Conversation3 for NotebookPlan/NotebookStage,
 Kind::Value only, with exact record_kind strings in the adoption contract. Native
 source f026bb6385a2c450fa4d79542fb57c097b98673f retains ExistingBinding schema2
 and historical capture/evidence work; its older storage baseline lacks delivered
-feedback contract-v2. Compose both after exact native-owner handoff, preserving
+feedback contract-v2. Compose both within the acknowledged handoff, preserving
 unfinished work. No native adapter, supervisor, service,
 personal document, account pairing or firmware action is in this increment.
 
@@ -28,9 +28,10 @@ old-writer fence. Envelope format1 and payload schema3 are independent of that
 discriminator and feedback storage generation3. Contract1/2 remain immutable.
 Generation4, ordinary same-actor backup4, contract3/contract-v3.json and
 actor/generation-bound notebook-feature.json1 are reserved. Exclusive notebook
-modules may proceed after review of this amended contract. Overlapping shared
-edits still require a real native-owner acknowledgment at an exact revision;
-allocation acceptance does not open that window.
+modules have amended-contract review acceptance. The shared-path owner explicitly
+opened the listed integration window at f026bb6385a2c450fa4d79542fb57c097b98673f;
+retained native-exclusive paths remain outside it. Source composition and
+implementation qualification are distinct from that coordination acknowledgment.
 
 # 1. Explicit commands and frozen input
 
