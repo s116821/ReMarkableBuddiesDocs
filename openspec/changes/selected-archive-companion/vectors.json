@@ -846,6 +846,19 @@
       },
       "expect": "refuse",
       "basis": "Exact shape/identity/action"
+    },
+    {
+      "id": "renderer-cannot-supply-expected-history",
+      "request": {
+        "action": "check-export",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "expected_original_outcome": "unknown"
+      },
+      "expect": "refuse",
+      "basis": "Expected history belongs only to private response context"
     }
   ],
   "public_cases": [
@@ -1095,7 +1108,16 @@
         }
       },
       "expect": "accept",
-      "basis": "Phase-specific current custody, history separate"
+      "basis": "Phase-specific current custody, history separate",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "partial-media-inspect",
@@ -1255,7 +1277,16 @@
         }
       },
       "expect": "accept",
-      "basis": "Explicit intentional omission"
+      "basis": "Explicit intentional omission",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "unknown-original",
@@ -1399,7 +1430,16 @@
         }
       },
       "expect": "accept",
-      "basis": "No rollback/history inference"
+      "basis": "No rollback/history inference",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "check-upgrades-history-row-mismatch",
@@ -1455,7 +1495,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Original and matching row agree, immutable original enforced in lifecycle"
+      "basis": "Original and matching row agree, immutable original enforced in lifecycle",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "wrong-invocation",
@@ -1511,7 +1560,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "wrong-reference",
@@ -1567,7 +1625,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "wrong-identity",
@@ -1623,7 +1690,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "missing-summary",
@@ -1671,7 +1747,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "invented-check-exported",
@@ -1727,7 +1812,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "private-path",
@@ -1784,7 +1878,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Closed phase/context/private fields"
+      "basis": "Closed phase/context/private fields",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "unknown-with-summary",
@@ -1896,7 +1999,16 @@
         }
       },
       "expect": "refuse",
-      "basis": "Read-only check cannot report export execution"
+      "basis": "Read-only check cannot report export execution",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "retained-expired-safe-row",
@@ -1929,7 +2041,172 @@
       "basis": "Expired metadata stays bounded, no private authority"
     },
     {
-      "id": "over-capacity-rows",
+      "id": "retained-8-distinct",
+      "request": {
+        "action": "retained"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "unconfigured",
+        "observation": null,
+        "selected_archive": {
+          "state": "idle",
+          "reference": null,
+          "invocation": null,
+          "summary": null,
+          "original_outcome": null,
+          "check_outcome": null,
+          "retained": [
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000001",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000002",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000003",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000004",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000005",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000006",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000007",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000008",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            }
+          ]
+        }
+      },
+      "expect": "accept",
+      "basis": "Independent row-capacity boundary; all references distinct and valid"
+    },
+    {
+      "id": "retained-9-distinct",
+      "request": {
+        "action": "retained"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "unconfigured",
+        "observation": null,
+        "selected_archive": {
+          "state": "idle",
+          "reference": null,
+          "invocation": null,
+          "summary": null,
+          "original_outcome": null,
+          "check_outcome": null,
+          "retained": [
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000001",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000002",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000003",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000004",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000005",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000006",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000007",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000008",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            },
+            {
+              "reference": "0000000000000000000000000000000000000000000000000000000000000009",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": true
+            }
+          ]
+        }
+      },
+      "expect": "refuse",
+      "basis": "Independent row-capacity boundary; all references distinct and valid"
+    },
+    {
+      "id": "retained-two-duplicates",
       "request": {
         "action": "retained"
       },
@@ -1950,69 +2227,280 @@
               "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
               "boot_id": "00000007-1111-4111-8111-000000000007",
               "original_outcome": "unknown",
-              "expired": true
+              "expired": false
             },
             {
               "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
               "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
               "boot_id": "00000007-1111-4111-8111-000000000007",
               "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
-            },
-            {
-              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-              "boot_id": "00000007-1111-4111-8111-000000000007",
-              "original_outcome": "unknown",
-              "expired": true
+              "expired": false
             }
           ]
         }
       },
       "expect": "refuse",
-      "basis": "Eight unique safe rows maximum"
+      "basis": "Uniqueness independent of capacity: two rows only"
+    },
+    {
+      "id": "check-forged-self-consistent-upgrade",
+      "request": {
+        "action": "check-export",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "observed",
+        "observation": {
+          "model": "reMarkable 1",
+          "firmware": "3.0.0",
+          "firmware_conflict": false,
+          "architecture": "armv7l",
+          "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "boot_id": "00000007-1111-4111-8111-000000000007",
+          "service": {
+            "LoadState": "loaded",
+            "ActiveState": "inactive",
+            "SubState": "dead"
+          },
+          "installed_version": null,
+          "provenance": "unknown"
+        },
+        "selected_archive": {
+          "state": "archive-observed",
+          "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "invocation": "00000001-1111-4111-8111-000000000001",
+          "summary": {
+            "format": 2,
+            "manifests": 2,
+            "objects": 7,
+            "selected_scopes": 1,
+            "selection_receipts": 2,
+            "complete_media": true,
+            "configuration_included": false
+          },
+          "original_outcome": "exported",
+          "check_outcome": "archive-observed",
+          "retained": [
+            {
+              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "exported",
+              "expired": false
+            }
+          ]
+        }
+      },
+      "expect": "refuse",
+      "basis": "Both result and row say exported, captured original remains unknown",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
+    },
+    {
+      "id": "check-row-wrong-connection_id",
+      "request": {
+        "action": "check-export",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "observed",
+        "observation": {
+          "model": "reMarkable 1",
+          "firmware": "3.0.0",
+          "firmware_conflict": false,
+          "architecture": "armv7l",
+          "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "boot_id": "00000007-1111-4111-8111-000000000007",
+          "service": {
+            "LoadState": "loaded",
+            "ActiveState": "inactive",
+            "SubState": "dead"
+          },
+          "installed_version": null,
+          "provenance": "unknown"
+        },
+        "selected_archive": {
+          "state": "archive-observed",
+          "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "invocation": "00000001-1111-4111-8111-000000000001",
+          "summary": {
+            "format": 2,
+            "manifests": 2,
+            "objects": 7,
+            "selected_scopes": 1,
+            "selection_receipts": 2,
+            "complete_media": true,
+            "configuration_included": false
+          },
+          "original_outcome": "unknown",
+          "check_outcome": "archive-observed",
+          "retained": [
+            {
+              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "connection_id": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "unknown",
+              "expired": false
+            }
+          ]
+        }
+      },
+      "expect": "refuse",
+      "basis": "Matching reference is insufficient: captured original row identity must match",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
+    },
+    {
+      "id": "check-row-wrong-boot_id",
+      "request": {
+        "action": "check-export",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "observed",
+        "observation": {
+          "model": "reMarkable 1",
+          "firmware": "3.0.0",
+          "firmware_conflict": false,
+          "architecture": "armv7l",
+          "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "boot_id": "00000007-1111-4111-8111-000000000007",
+          "service": {
+            "LoadState": "loaded",
+            "ActiveState": "inactive",
+            "SubState": "dead"
+          },
+          "installed_version": null,
+          "provenance": "unknown"
+        },
+        "selected_archive": {
+          "state": "archive-observed",
+          "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "invocation": "00000001-1111-4111-8111-000000000001",
+          "summary": {
+            "format": 2,
+            "manifests": 2,
+            "objects": 7,
+            "selected_scopes": 1,
+            "selection_receipts": 2,
+            "complete_media": true,
+            "configuration_included": false
+          },
+          "original_outcome": "unknown",
+          "check_outcome": "archive-observed",
+          "retained": [
+            {
+              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000063-1111-4111-8111-000000000063",
+              "original_outcome": "unknown",
+              "expired": false
+            }
+          ]
+        }
+      },
+      "expect": "refuse",
+      "basis": "Matching reference is insufficient: captured original row identity must match",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "unknown",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
+    },
+    {
+      "id": "check-known-exported-history",
+      "request": {
+        "action": "check-export",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "result": {
+        "contract_version": 1,
+        "status": "observed",
+        "observation": {
+          "model": "reMarkable 1",
+          "firmware": "3.0.0",
+          "firmware_conflict": false,
+          "architecture": "armv7l",
+          "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "boot_id": "00000007-1111-4111-8111-000000000007",
+          "service": {
+            "LoadState": "loaded",
+            "ActiveState": "inactive",
+            "SubState": "dead"
+          },
+          "installed_version": null,
+          "provenance": "unknown"
+        },
+        "selected_archive": {
+          "state": "archive-observed",
+          "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "invocation": "00000001-1111-4111-8111-000000000001",
+          "summary": {
+            "format": 2,
+            "manifests": 2,
+            "objects": 7,
+            "selected_scopes": 1,
+            "selection_receipts": 2,
+            "complete_media": true,
+            "configuration_included": false
+          },
+          "original_outcome": "exported",
+          "check_outcome": "archive-observed",
+          "retained": [
+            {
+              "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+              "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "boot_id": "00000007-1111-4111-8111-000000000007",
+              "original_outcome": "exported",
+              "expired": false
+            }
+          ]
+        }
+      },
+      "expect": "accept",
+      "basis": "Captured known history remains known without inventing it",
+      "response_context": {
+        "action": "check-export",
+        "reference": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "connection_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "boot_id": "00000007-1111-4111-8111-000000000007",
+        "invocation": "00000001-1111-4111-8111-000000000001",
+        "expected_original_outcome": "exported",
+        "source": "Previously retained immutable original captured privately before awaiting, not renderer authority or returned data"
+      }
     },
     {
       "id": "original-without-row",

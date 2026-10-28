@@ -1,10 +1,10 @@
 {
-  "total_cases": 130,
+  "total_cases": 137,
   "raw_cases": 58,
-  "request_cases": 25,
-  "public_cases": 23,
+  "request_cases": 26,
+  "public_cases": 29,
   "lifecycle_cases": 24,
-  "vectors_sha256": "a889408070651acc00b7cbbbde40a3c453c9ec0768795a4ce4990127126cd520",
-  "checks": "Unique IDs; raw bytes/digests; inclusive report/path boundaries; target-invocation cancellation; literal CRLF preservation and policy-only/history distinction fixture integrity.",
+  "vectors_sha256": "2ec4db038b8e7304a490c9716388aa9eebc710f8ce89d1d127913101fcfa1cab",
+  "checks": "Unique IDs; raw bytes/digests; inclusive report/path boundaries; target-invocation cancellation; literal CRLF preservation; independent8/9unique/two-duplicate boundaries; private captured-history/self-consistent-upgrade and wrong-row-identity fixture integrity.",
   "not_tested": "No consumer implementation or producer replay. Expect fields are proposed independent oracles. No device/provider/native/host execution."
 }

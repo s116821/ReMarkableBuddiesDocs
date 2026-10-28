@@ -65,13 +65,17 @@ for action in ['confirm-export','check-export','cancel']:
  q=req(action,reference=ref,path=path);rq(action+'-substitute-path',q,'refuse','Original-only followup, closed keys')
  q=req(action,reference=ref,intent={'operation':inv});rq(action+'-substitute-intent',q,'refuse','No caller conditions')
 for id,q in [('bad-reference',req('confirm-export',reference=uid(9))),('bad-invocation',req('inspect',path=path,invocation='0'*36)),('uppercase-identity',req('inspect',path=path,connection_id='A'*64)),('retained-with-identity',{'action':'retained','connection_id':cid}),('unknown-action',req('restore',path=path))]:rq(id,q,'refuse','Exact shape/identity/action')
+rq('renderer-cannot-supply-expected-history',req('check-export',reference=ref,expected_original_outcome='unknown'),'refuse','Expected history belongs only to private response context')
 old=json.loads((p.parent/'archive/2026-10-28-restore-ordinary-archive-companion/vectors.json').read_text());obs=cp(old['public_cases'][0]['result']['observation']);obs.update(connection_id=cid,boot_id=boot)
 def row(outcome='unknown',expired=False):return {'reference':ref,'connection_id':cid,'boot_id':boot,'original_outcome':outcome,'expired':expired}
 def result(state,action,original=None,check=None,s=None):
  retained=[] if original is None else [row(original)]
  return {'contract_version':1,'status':'observed','observation':cp(obs),'selected_archive':{'state':state,'reference':ref,'invocation':inv,'summary':cp(s),'original_outcome':original,'check_outcome':check,'retained':retained}}
 public=[]
-def pub(id,q,v,expect,basis):public.append({'id':id,'request':q,'result':v,'expect':expect,'basis':basis})
+def pub(id,q,v,expect,basis,expected_original='unknown'):
+ c={'id':id,'request':q,'result':v,'expect':expect,'basis':basis}
+ if q['action']=='check-export':c['response_context']={**{k:q[k] for k in ['action','reference','connection_id','boot_id','invocation']},'expected_original_outcome':expected_original,'source':'Previously retained immutable original captured privately before awaiting, not renderer authority or returned data'}
+ public.append(c)
 prep=req('prepare-export',path=path);confirm=req('confirm-export',reference=ref);check=req('check-export',reference=ref);inspect=req('inspect',path=path)
 ready=result('ready','prepare-export');pub('ready-policy-only',prep,ready,'accept','No producer counts/receipt')
 v=cp(ready);v['selected_archive']['summary']=cp(summary);pub('ready-invented-counts',prep,v,'refuse','Preview has no frozen data')
@@ -87,7 +91,17 @@ for id,mutate in [('wrong-invocation',lambda v:v['selected_archive'].update(invo
 v=cp(unknown);v['selected_archive']['summary']=cp(summary);pub('unknown-with-summary',confirm,v,'refuse','Unknown cannot carry invented custody')
 v=result('exported','confirm-export','exported',None,summary);pub('check-returns-export-action',check,v,'refuse','Read-only check cannot report export execution')
 v=result('idle','retained');v.update(status='unconfigured',observation=None);v['selected_archive'].update(reference=None,invocation=None,retained=[row('unknown',True)]);pub('retained-expired-safe-row',{'action':'retained'},v,'accept','Expired metadata stays bounded, no private authority')
-v=cp(v);v['selected_archive']['retained']*=9;pub('over-capacity-rows',{'action':'retained'},v,'refuse','Eight unique safe rows maximum')
+retained_base=cp(v)
+for count,expect in [(8,'accept'),(9,'refuse')]:
+ v=cp(retained_base);v['selected_archive']['retained']=[{**row('unknown',True),'reference':f'{i+1:064x}'} for i in range(count)]
+ pub(f'retained-{count}-distinct',{'action':'retained'},v,expect,'Independent row-capacity boundary; all references distinct and valid')
+v=cp(retained_base);v['selected_archive']['retained']=[row(),row()];pub('retained-two-duplicates',{'action':'retained'},v,'refuse','Uniqueness independent of capacity: two rows only')
+v=result('archive-observed','check-export','exported','archive-observed',summary)
+pub('check-forged-self-consistent-upgrade',check,v,'refuse','Both result and row say exported, captured original remains unknown')
+for field,value in [('connection_id','c'*64),('boot_id',uid(99))]:
+ v=result('archive-observed','check-export','unknown','archive-observed',summary);v['selected_archive']['retained'][0][field]=value
+ pub('check-row-wrong-'+field,check,v,'refuse','Matching reference is insufficient: captured original row identity must match')
+pub('check-known-exported-history',check,result('archive-observed','check-export','exported','archive-observed',summary),'accept','Captured known history remains known without inventing it',expected_original='exported')
 v=cp(unknown);v['selected_archive']['retained']=[];pub('original-without-row',confirm,v,'refuse','Every attempted original has matching retained metadata')
 life=[]
 def lc(id,steps,expect):life.append({'id':id,'steps':steps,'expected':expect})
