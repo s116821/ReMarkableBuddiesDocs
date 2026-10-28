@@ -1,5 +1,11 @@
 # Bounded native bootstrap observation
 
+This contract describes version-1 single-Observe candidates and their retained
+evidence. The version-2 capture extension is specified separately in
+[resident-capture-setup.md](resident-capture-setup.md); both diagnostic examples
+require the `development-resident-bootstrap` feature. It does not replay or
+requalify the spent observation candidate below.
+
 The next native qualification question is whether the unchanged read-only
 bootstrap can launch its copied Reader with the installed launch environment,
 consume admission, expose the authenticated endpoint and return one Observe

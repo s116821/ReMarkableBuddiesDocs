@@ -31,6 +31,7 @@ Reader/Writer/blank-start composition and native acceptance remain required.
 The observation-only development example must pin the matching revision-3
 profile and library from SDK80b29eb's capture-native-library-r2 build. Changing
 those compile-time pins prepares a new artifact; it does not update, replay or
-requalify the frozen revision-2 bootstrap candidate. The example still issues
-one Observe only, with no retry or navigation. A new native capture experiment
-requires its own explicit setup/admission contract and independent recovery.
+requalify the frozen revision-2 bootstrap candidate. Version-1 diagnostic
+candidates still issue one Observe only, with no retry or navigation. Version-2
+capture candidates follow [resident-capture-setup.md](resident-capture-setup.md)
+and require explicit setup, fresh admission and independent recovery.

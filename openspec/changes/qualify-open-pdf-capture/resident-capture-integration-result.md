@@ -51,8 +51,11 @@ failures are not relabeled as passes.
 
 ## Remaining delivery
 
-SDK CI40715054528 passed at the pinned revision. Buddy exact-commit CI and ARM
-build are separate delivery gates. The updated development observer still sends
+SDK CI40715054528 passed at the pinned revision. Buddy
+[CI40721613058](https://github.com/s116821/ReMarkableBuddies/actions/runs/40721613058)
+subsequently passed at `af265bdba34d9b12c5fccef3152a70bd711dfbb8`, including
+the build/integration jobs. That evidence belongs to this consumer revision,
+not later capture-setup changes. At this revision the development observer sends
 only one Observe; no new native candidate was executed or old candidate replayed.
 Actual native capture, installed first-gesture source acquisition, Reader/Writer/
 blank-start creation and reuse, native lifecycle/preservation acceptance and

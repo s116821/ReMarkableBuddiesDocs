@@ -317,6 +317,21 @@ The installed ordinary Buddy runtime SHALL emit service readiness only after ini
 - **WHEN** a notification cannot be sent immediately or is attempted by a different process/thread
 - **THEN** health failure remains latched and the ordinary runtime exits without retrying notification or reporting native readiness
 
+### Requirement: Explicit developer capture setup
+The development-only native capture experiment SHALL follow resident-capture-setup.md. Both controller and observer SHALL end launch input admission before publishing setup-ready, bind setup completion to the original candidate and resident incarnation, and acquire quiet fresh input guards exactly once before one CaptureSource request. Original deadlines, runtime/service checks, whole-source preservation and independent stock-first recovery SHALL remain active. Setup completion SHALL NOT establish Reader identity or installed product readiness.
+
+#### Scenario: Setup completes for a different incarnation
+- **WHEN** the setup completion record is stale, replaced, partial or bound to a different candidate, observer or resident process
+- **THEN** the experiment aborts without capture, guard renewal, retry or effect replay and independent recovery remains responsible for stock restoration
+
+#### Scenario: Input continues after setup
+- **WHEN** either newly acquired input guard observes contact, cancellation or an input error
+- **THEN** capture is refused and that guard is never reset or reacquired to make the attempt pass
+
+#### Scenario: Deliberate setup changes protected source bytes
+- **WHEN** source inventory differs from the candidate's preservation contract
+- **THEN** preservation fails without a directory exemption or success claim, and stock restoration still precedes the decision whether Buddy may resume
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

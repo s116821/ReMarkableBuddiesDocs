@@ -237,6 +237,11 @@ The explicit development policy stop-at-declared-neighbor-v1 in [relative-gestur
 
 ## Product recognition and original-source placement
 
+The next native capture experiment uses the bounded developer-only
+[explicit setup barrier](resident-capture-setup.md). It retains separate launch
+and capture input admissions, immutable candidate/runtime bindings and independent
+stock recovery; it does not establish installed product readiness.
+
 [buddy-page-reuse-contract.md](buddy-page-reuse-contract.md) retains the human-required current/adjacent Buddy reuse precondition. Reconcile the existing planned REM-37 Store binding with verified current identities/order, fall back to recognition for unknown/stale claims, and never equate absent binding with non-Buddy ownership. Inspection may navigate to a neighbor, but insertion remains anchored after the ORIGINAL source and before that preserved non-Buddy neighbor. Current production code is the legacy successor classifier; new duplicate-prevention/acquisition integration remains an explicit unfinished gate, separate from the ongoing terminal-gesture capability fix.
 
 ## Explicit stable Source5 witness
