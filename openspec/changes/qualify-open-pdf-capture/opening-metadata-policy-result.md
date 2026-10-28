@@ -65,3 +65,39 @@ fresh source admission. Private raw receipts and journal are preserved; this
 sanitized record excludes device/account identifiers. The host preservation
 model covers typed policy and inventory failures; it does not simulate vendor
 signal handling or prove on-device recovery.
+
+## Process-bound visual follow-up
+
+A separately selected memory-read screenshot succeeded on the same firmware with
+Buddy `247833198746731774bef2cb5adfce1b0db87b61`, source tree
+`939a07a49d1b6080b4729addb2140005ef1a0300`. The existing screenshot example was
+cross-built with the locked dependencies and pinned release cross image. ARM32
+binary SHA-256 was
+`8929a991540e5a596514882e9f312a4255a469092e59a9fea45c689af89ad6f2`.
+The source tree was clean after the build; unavailable embedded Git metadata is
+recorded separately from this external source/build provenance.
+
+One unique transient service imposed a 20-second runtime limit and invoked the
+helper against the exact stock boot/PID/start identity and running executable
+hash. It sent no signal, input or stock-service command. The helper completed
+successfully and was terminal. Completed source/service postchecks verified the
+same 161 source-file paths and hashes and unchanged stock/Buddy/sync identities.
+The before/after source manifest remains the value recorded above.
+
+![Stock library after the bounded memory-read screenshot](evidence/stock-library-visual-42548855.png)
+
+The retrieved 768-by-1024 PNG was fully decoded and visually inspected. It shows
+the stock My files screen and the 12-page disposable fixture in the top-left tile.
+PNG SHA-256 is
+`85e12893948eaa433a629d9735e839146a0ca2dfe4881b8d1be2b6485da547d6`.
+This identifies a visual setup target; it does not prove Reader page identity,
+native allocation ownership, SDK capture or product readiness.
+
+Independent runner review corrected postcheck acceptance of matching stdout
+after a late SSH failure, and ensured traversal and individual hash failures
+propagate before sorting. Five fake-SSH tests cover successful postchecks and
+matching-output nonzero/timeout results for each postcheck. The runner and exact
+command/output receipts are retained privately with the image; evidence-copy
+manifest SHA-256 is
+`e6863f400156654fd34841f7514f7224739d695c84491c50efc615852848ff99`.
+This attempt is consumed. Future setup/capture requires its own fresh selection.
