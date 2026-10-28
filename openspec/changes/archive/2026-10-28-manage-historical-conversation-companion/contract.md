@@ -1,4 +1,6 @@
-# Ordinary historical-conversation management consumer — source implemented, qualification pending
+# Ordinary historical-conversation management consumer — source and retained qualification accepted
+
+Independent source review and exact Manager8d2b9cabe84204f97c3d418ae7b4e79016b2dc77 Windows/Linux retained-package qualification are accepted; results.md owns current evidence and historical failures. Historical proposed-matrix language below records the precode comparison, not a remaining source/retained gate. Final paired review/merge/publication and real-device/native/runtime qualification are separate.
 
 ## Authority and scope
 Use the unchanged canonical prepared-conversation-deletion capability and archived `2026-10-23-prepare-historical-conversation-deletion/contract.md`. This consumer performs local logical removal of the supported ordinary schema1 current root and optional historical binding only. Retained history, turns, sources, media, export associations and native pages remain. No physical-space estimate, synchronized-delete promise, service stop/start, native lookup, Store repair, provider/credential access or generation-format expansion. The producer itself performs bounded owned-store content validation; do not describe it as metadata-only.

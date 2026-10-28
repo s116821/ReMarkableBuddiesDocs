@@ -118,6 +118,18 @@ record the implemented contract and accepted Windows/Linux retained-package
 qualification. Physical-device/runtime health and final paired merge/publication
 remain separate outcomes. No selection or deletion action follows.
 
+## Historical conversation management
+
+Both companions provide explicit selection, fresh Inspect/Prepare, deliberate
+once-only logical removal and original-intent read-only Status. See the
+[central management guide](manager-conversation-management.md),
+[consumer requirements](../openspec/specs/conversation-management-companion/spec.md)
+and [completed implementation archive](../openspec/changes/archive/2026-10-28-manage-historical-conversation-companion/results.md)
+for accepted source/Windows+Linux retained qualification and exact limits.
+Retained history/media/export associations/native pages remain; physical
+reclamation, synchronized deletion and native/runtime health are not implied.
+Final paired review, normal merge and actual-main/publication stay separate.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan

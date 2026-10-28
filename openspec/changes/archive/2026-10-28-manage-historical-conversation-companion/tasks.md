@@ -13,7 +13,9 @@
 
 ## 3. Verification and complete paired delivery
 - [x] 3.1 Execute frozen vectors, directed132/old110 factory cases, source/helper/controller/UI and relevant predecessor regressions. Preserve red/green evidence and exact-source attribution.
-- [ ] 3.2 Independent source review plus required source/development and retained Windows/Linux browser/Electron checks, original-loss/custody and public-boundary tests. No tablet/provider execution implied.
-- [ ] 3.3 Sync only the final own canonical capability; update public manuals/index links; verify exact final delta/canonical parity and archive only this completed change in the same pair.
+- [x] 3.2 Independent source review plus required source/development and retained Windows/Linux browser/Electron checks, original-loss/custody and public-boundary tests. No tablet/provider execution implied.
+- [x] 3.3 Sync only the final own canonical capability; update public manuals/index links; verify exact final delta/canonical parity and archive only this completed change in the same pair.
 - [ ] 3.4 Perform shared hygiene, preserve useful evidence/native bundles and source/locks, retire only verified obsolete generated outputs; verify clean exact handoff and current-main composition.
 - [ ] 3.5 Independent final paired review and required current CI, normal Docs-first/Manager squash merge, separately verified actual-main/publication evidence by coordinator. Broad roadmap obligations remain open.
+
+Tasks3.4–3.5 retain the final current-main composition/independent paired review/current final DocsCI/normal merge/publication gates. Local scoped hygiene and exact handoff are recorded in results.md; no post-merge outcome is pre-claimed. The source/retained-qualified implementation and own sync/archive are complete under the explicit same-pair closeout authorization.
