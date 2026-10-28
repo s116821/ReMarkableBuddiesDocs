@@ -1,8 +1,8 @@
 # Resident SDK client and durable insertion journal
 
 This continues the existing automatic acquisition delivery using SDK
-`9880766f5bb0bdb91445716132703b02587d372e`. That revision provides historical
-v1/v2 inspection, authenticated v2 Linux Client and resident dispatcher source; native activation/qualification is
+`80b29ebec3a46b6976e5288d2e8d65fbeccca816`. That revision provides historical
+v1/v2/v3 inspection, authenticated v3 Linux Client and resident dispatcher source; native activation/qualification is
 still open. The SDK owns its adapter specifications. This document owns Buddy's
 consumer behavior and does not replace the current-first/adjacent reuse contract.
 
@@ -42,20 +42,20 @@ same original source/target; target presence alone does not establish attributio
 
 ## Journal compatibility across SDK revisions
 
-Before upgrading to the SDK's v2 transport, load retained v1 and v2 frames through
+When upgrading to the SDK's v3 transport, load retained v1 and v2 frames through
 its separate HistoricalFrame API. Keep original canonical bytes, SHA256, operation,
 source/target and outcome fields unchanged. Expose historical request bytes and
 digest together; never validate old evidence using a newly encoded Frame.
 Request and response revisions must match, in addition to existing scope,
 sequence, operation, original digest and insertion-result checks.
 
-New reservations use current v2 encoding. Old unresolved/observed attempts still
+New reservations use current v3 encoding. Old unresolved/observed attempts still
 block replacement and reused operation IDs; appending an unrelated reservation
 cannot rewrite old frame/digest fields. Read-only reconciliation may use old
-source/target facts in a freshly correlated v2 read request. There is no replay,
+source/target facts in a freshly correlated v3 read request. There is no replay,
 reset, migration rewrite or weakening of live protocol admission.
 
-Verify frozen v1 request/response fixtures, restart and generation restoration,
+Verify frozen v1/v2 request/response fixtures, restart and generation restoration,
 unchanged old record fields after append, same-operation/replacement refusal,
 mixed-revision replies, bad original digest and v2-only tags labeled v1. Unknown
 or malformed history must preserve the original file and refuse before connect.
@@ -65,7 +65,9 @@ or malformed history must preserve the original file and refuse before connect.
 The Linux consumer wrapper owns one SDK Client and the Store reference. It accepts
 the Supervisor's independently verified runtime and retained activation-directory
 descriptor, never fixture-echoed identity as production attestation. Observe and
-Reconcile remain read-only. InsertAfter uses the durable reservation callback
+Reconcile remain read-only. CaptureSource also remains read-only under
+[the capture consumer contract](resident-capture-integration.md) and does not
+alter effect history. InsertAfter uses the durable reservation callback
 before SDK pending admission/write. No automatic reconnect, mutation replay,
 new-target fallback, runtime launch or restart is included in this increment.
 

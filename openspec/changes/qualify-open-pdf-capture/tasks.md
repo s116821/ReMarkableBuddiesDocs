@@ -133,3 +133,10 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 - [ ] Verify terminal observation brackets tolerate only reordered duplicate-free dependencies, including diagnostic and installed recovery paths, with fresh compiled and tablet evidence after the preserved 2cfbbd fixture failure.
 - [x] Correct and independently verify durable diagnostic completion observation after PID1 clears successful helper timestamps; preserve first-result hashes, require one new second-helper result, retain signal-fault handling and execute a fresh isolated fixture without replaying the incomplete 3e615 observation. Driver255506e passes21 offline regressions; fresh clean7cc413 and separate cleanup pass using the frozen cdeb0bb controller. Remaining fault/native/product gates stay open.
 - [ ] Verify retained-terminal/populated-group pending behavior and the development-only handoff/observation input phases, with pre-stop cancellation, terminal proof, seeded contact, later input loss, unchanged deadline and no-retry regressions; qualify a fresh native observation while preserving the failed 2271 run and installed input-continuity requirements.
+
+## Resident historical capture consumer
+
+- [x] Upgrade the SDK pin and expose historical capture through the existing resident connection and installed request dispatcher under resident-capture-integration.md; source and owned evidence is recorded in resident-capture-integration-result.md.
+- [x] Verify large-image delivery, source/image integrity refusal, cancellation/deadline, same-child reconnect and retained unresolved effects through the production request route with owned peers; native acceptance remains below.
+- [x] Verify original v1/v2 journal bytes and digests survive the revision-3 upgrade without expanding mutation-journal bounds.
+- [ ] Qualify actual native capture and compose it with installed first-gesture Reader/Writer/blank-start acquisition before claiming product acceptance.

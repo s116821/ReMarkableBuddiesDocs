@@ -1,5 +1,26 @@
 ## ADDED Requirements
 
+### Requirement: Resident historical source capture
+Buddy SHALL route source capture through the existing resident request, input,
+health and runtime checks under resident-capture-integration.md. It SHALL retain
+the original deadline and expected source, accept only SDK-validated historical
+image evidence and grant no page observation or write authority from that result.
+Capture SHALL neither journal a mutation nor resolve a prior uncertain effect.
+Original v1/v2 mutation frames and digests SHALL remain unchanged when live
+transport advances to revision 3; mutation-journal bounds SHALL remain unchanged.
+
+#### Scenario: Capture exceeds an ordinary control frame
+- **WHEN** an admitted source capture returns a valid bounded image larger than 64 KiB
+- **THEN** the consumer delivers historical image evidence only after final input, health and runtime admission
+
+#### Scenario: Capture is canceled while awaiting pixels
+- **WHEN** input cancels or the original deadline expires during capture
+- **THEN** the request retires without image delivery or automatic retry, preserves the resident child and retains prior uncertain effects
+
+#### Scenario: Capture source or image is inconsistent
+- **WHEN** a correlated response changes the expected source or has invalid image bytes
+- **THEN** the consumer reports integrity failure and withholds the capture
+
 ### Requirement: Development bootstrap handoff uses distinct input admissions
 The standalone observation-only controller SHALL require valid quiet input before
 its single Buddy-stop submission. After submission it MAY end that admission,
@@ -100,7 +121,7 @@ The resident SDK consumer SHALL durably reserve the exact original insertion fra
 
 #### Scenario: SDK protocol upgrades with retained attempts
 - **WHEN** the consumer moves from v1 to v2 with prior insertion attempts
-- **THEN** original canonical frame/digest fields, consumed operations and unresolved reservations survive unchanged; responses require the original digest and matching revision, and live requests use v2 without replaying historical effects
+- **THEN** original canonical frame/digest fields, consumed operations and unresolved reservations survive unchanged; responses require the original digest and matching revision, and live requests use v3 without replaying historical effects
 
 ### Requirement: Durable resident target-selection attempts
 Selection SHALL reserve its exact original effect frame/digest before pending

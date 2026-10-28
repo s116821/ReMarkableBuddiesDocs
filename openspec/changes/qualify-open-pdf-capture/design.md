@@ -250,3 +250,12 @@ The explicit development policy stop-at-declared-neighbor-v1 in [relative-gestur
 [buddy-source-continuity-contract.md](buddy-source-continuity-contract.md) extends only model continuity. Private plans distinguish uninspected end from an actual inspected successor completion. The latter matches a supported Previous receipt's source to that exact completion, its target to the original key, and supplied source to the returned completion under unchanged order/adjacency and explicit Synthetic origins. End plans require no receipt and unchanged complete original observation. The result is point-in-time synthetic source continuity, not proof an observation was collected now, refreshed logical absence/recognition, qualified native source or permission to create/render/bind. Independently changed Store projections remain a separate future revalidation gate.
 
 [buddy-legacy-recognition-bridge-contract.md](buddy-legacy-recognition-bridge-contract.md) connects existing AnswerPageType data to that model without capture or installed behavior changes. Its exhaustive ExistingQA/Blank/Invalid mapping yields only LegacyBuddy/Blank/Unknown with modeled observation/conversation context. Header matches require adoption when unbound, and blank/invalid cannot become confirmed non-Buddy absence. The supplied enum contains no capture provenance, so the bridge does not qualify a current captured page, relevant conversation or native use.
+
+## Resident historical capture integration
+
+[The capture consumer contract](resident-capture-integration.md) extends the
+existing installed request dispatcher to the SDK's revision-3 historical image
+reply while retaining input, health, deadline and unresolved-effect boundaries.
+[The source and owned result](resident-capture-integration-result.md) records
+verification and remaining native/product gates. No operational PageObservation
+or writing permission is inferred from the image.
