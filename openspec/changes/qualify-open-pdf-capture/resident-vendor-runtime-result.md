@@ -139,13 +139,54 @@ artifact, new native candidate, vendor-pair execution, capture or recovery resul
 claimed here. A separate new staging script has only been syntax-checked and remains
 unexecuted and unqualified. Existing spent candidate inputs remain unchanged.
 
+## Installed wiring and sampled group ownership
+
+Buddy `3a4b53af8750e92377a8c64e2ba353841a058629`, with final launch-deadline
+guard at `e919f4aecac0a2ac382c0aead09bd2a69e806f64`, connects the shared vendor
+admission to installed activation and independent recovery. Recovery profile v2
+explicitly selects `rm2-3.28.0.172-v1`; lease v3 retains the original sync baseline
+in the same boot/cgroup context and a distinct service group. Profile v1/lease v2
+preserve their one-process contract. Version, profile or baseline mismatch refuses.
+
+Activation retains original sync before lease publication, rechecks it at the
+final stock-stop boundary, then checks cancellation/health again before dispatch.
+Launch and session checks require both originals stopped. Sync termination is
+sampled inside stock's before/after bracket. Independent recovery waits for original
+sync drainage before a new stock start and verifies it again at dispatch; active
+stock is not restarted. It retains restored sync through closing admission and
+returns a separate sync process/invocation receipt. No installed profile is shipped,
+generated from live state, approved or installed by this source change.
+
+The companion runtime now retains parent membership bytes and namespace
+descriptors, sampling parent/child/parent membership and namespaces between child
+PID/start checks. Observed loss is a sticky integrity failure. The launch deadline
+is checked again after the final parent sample and before spawn. Recovery still
+depends on its separately qualified directory identity, drainage and trusted
+no-migration/fork-inheritance premise; sampling is not proof against unobserved
+migration or movement after supervisor failure.
+
+Independent review accepted the corrected source. On final `e919f4a` source,
+all 40 Linux host runtime tests and 123 supervisor tests passed, as did strict
+all-target/all-feature Clippy, formatting and whitespace checks. The earlier r1
+installed draft passed 123 supervisor tests/lint; r2 passed both suites/lint before
+the final spawn-deadline guard. Those logs remain separate from final r3 evidence.
+New regressions cover profile/lease compatibility, baseline context and distinct
+group binding, delayed/lost sync drainage, independent sync restoration/closing
+failure, and sticky membership/namespace refusal with owned-process cleanup.
+Injected membership mismatches fail at the parent sample; child-only divergence
+and actual kernel migration are not independently tested.
+
+The new version-3 staging script has passed source review for preparation only.
+It remains unexecuted and still requires fresh verified artifacts and matching
+fixture/cleanup evidence; it grants no native execution authority.
+
 ## Remaining integration
 
-Versioned installed profile/lease must consume the original sync service/process/
-group and fixed policy/artifact admission, prove both original services stopped,
-and verify both restored services before completion. The installed caller still
-selects no companion. Disposable admission above still needs exact-artifact PID1
-fixture checks and a fresh bounded native run. Host shutdown is not a guardian
+Both installed and disposable source paths now explicitly select the companion
+through their new versioned contracts. Approved profile packaging/installation,
+exact-artifact PID1 fixture checks and fresh bounded native runs remain required.
+No actual installed or disposable vendor-pair lifecycle is qualified by these
+host checks. Host shutdown is not a guardian
 recovery result. Native capture, automatic creation/reuse for Reader,
 Writer and blank-start, broader simulator acceptance and coordinated delivery all
 remain required.

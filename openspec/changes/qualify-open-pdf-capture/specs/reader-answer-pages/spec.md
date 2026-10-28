@@ -317,6 +317,16 @@ The installed caller SHALL compose the protected recovery installation, fixed bo
 - **WHEN** exclusive publication or its closing checks fail without returning a lease
 - **THEN** the already-armed health guard forces ordinary runtime exit, leaves the occupied record and diagnostics intact, and issues no stop retry
 
+#### Scenario: Installed profile and boot lease disagree about the companion
+- **WHEN** a profile or lease version lacks its required companion selection or baseline, or an older version carries those fields
+- **THEN** admission refuses before takeover; a profile-v2 companion selection requires a lease-v3 original sync baseline in the same boot/cgroup context with a distinct service group
+- **AND** the new recovery path reports success only with a separately verified restored sync process/invocation receipt and closing admission
+
+#### Scenario: Companion membership differs from its owner
+- **WHEN** the retained companion process is observed in a different cgroup or mount/cgroup namespace from its admitted parent
+- **THEN** the session permanently fails, withholds request exposure and retains effect uncertainty for independent recovery
+- **AND** restoring the sampled expectation cannot clear the integrity latch; sampling does not replace the owner's qualified drainage and no-migration premise
+
 #### Scenario: Resident session ends while ordinary Buddy remains alive
 - **WHEN** the session drops or its validated connection becomes unavailable
 - **THEN** its actual health owner fails permanently and the ordinary runtime exits for independent recovery; the session never starts stock from its destructor

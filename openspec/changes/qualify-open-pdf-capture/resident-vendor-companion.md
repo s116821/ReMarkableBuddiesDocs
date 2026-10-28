@@ -50,6 +50,14 @@ alone SHALL NOT substitute for binding the executable before dispatch. Verify
 the running executable inode and canonical /proc executable link against the retained handle, its
 PID/start/boot identity and original command line. Retain the Child handle for the
 entire session. Both children belong to the existing owned activation group.
+The companion runtime retains bounded parent cgroup-membership bytes and open
+mount/cgroup namespace descriptors before spawn. Every process check brackets the
+child's membership/namespace sample with unchanged parent checks and child PID/start
+checks. Observed mismatch permanently fails the session. These samples detect
+observed migration; they do not prove that a process never migrated between
+samples or after supervisor failure. Actual group-directory identity/drainage
+authority and the trusted no-migration/fork-inheritance premise remain with the
+installed/controller owner. No cgroup manipulation is introduced.
 
 Start the reader first, then the companion, before waiting for the reader's SDK
 handshake to complete. Startup of both uses the same original activation deadline
@@ -136,8 +144,22 @@ withholds Buddy until both restored incarnations, executable/argv, policy and
 broker ownership have been independently observed. Retain those restored
 incarnations across source checks and Buddy restoration. Observer companion
 selection comes only from the pinned version-3 candidate, never a separate CLI
-switch. Installed profile/lease integration is a separate unfinished consumer of
-this shared admission logic.
+switch. Installed profile/lease wiring uses the same shared admission logic;
+installation, actual service transitions and native product qualification remain
+separate required gates.
+
+Installed recovery profile version 2 explicitly selects
+`rm2-3.28.0.172-v1`; its boot lease is version 3 and carries the original sync
+baseline. Profile version 1 and lease version 2 preserve their one-process
+contract and reject companion fields. Admission must bind the sync group to the
+same cgroup/boot context as Buddy before publishing a lease. The installed
+activation rechecks original sync at the final stock-stop admission and both
+original services throughout launch and requests. Independent recovery must wait
+for original sync drainage before a new stock start, then retain and verify the
+restored sync incarnation across closing recovery admission. An installed result
+for the new profile includes a separate observed sync process/invocation receipt;
+stock readiness alone cannot produce completion. No profile is installed or
+qualified merely by this source implementation.
 
 Source basis: measured vendor unit/drop-in, process environment and dependency
 journal; current runtime/SDK ownership source. The owned-companion design is an
