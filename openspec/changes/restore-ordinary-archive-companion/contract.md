@@ -1,6 +1,6 @@
 # Ordinary additive restore companion — concrete precode candidate
 
-Status: independently accepted concrete precode; implementation is pending. This contract consumes the unchanged [ordinary restore producer](https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/restore_maintenance.rs) and [live ordinary-owned-restore specification](https://github.com/s116821/ReMarkableBuddiesDocs/blob/380229ec0f1db067733be2d21f0a00812d662761/openspec/specs/ordinary-owned-restore/spec.md). Exact source hashes and evidence limits are in source-proof.json. The source-selection exception below is specified explicitly; historical archives remain unchanged. No producer/device/provider execution follows from this design.
+Status: accepted contract implemented in source; independent source review and retained-platform qualification remain pending. This contract consumes the unchanged [ordinary restore producer](https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/restore_maintenance.rs) and [live ordinary-owned-restore specification](https://github.com/s116821/ReMarkableBuddiesDocs/blob/380229ec0f1db067733be2d21f0a00812d662761/openspec/specs/ordinary-owned-restore/spec.md). Exact source hashes and evidence limits are in source-proof.json. The source-selection exception below is specified explicitly; historical archives remain unchanged. No producer/device/provider execution follows from this design.
 
 ## Outcome and scope
 

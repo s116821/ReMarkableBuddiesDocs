@@ -1,6 +1,6 @@
-# Design and integration notes — proposal only
+# Design and integration notes — source implemented, qualification pending
 
-The detailed closed DTOs and phase/state relation are in contract.md; literal expectations are in vectors.json. This accepted precode is now the central change; implementation remains pending.
+The detailed closed DTOs and phase/state relation are in contract.md; literal expectations are in vectors.json. This accepted contract is implemented at Manager9775d265d2225a8beb2c73c3d83cdd23a84c4776; independent source review and retained-platform qualification remain pending.
 
 The new consumer reuses existing finite wired private-stdin maintenance transport, guards, shared owner, Angular controller and original-ledger patterns. It adds no dependency, SDK protocol, backend writer or service API. New source/private parser work remains separate from renderer imports. Body/phase bounds are capability-specific; no old action cap changes.
 
