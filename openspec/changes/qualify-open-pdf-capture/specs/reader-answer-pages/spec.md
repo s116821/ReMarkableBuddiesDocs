@@ -341,6 +341,15 @@ The development-only native capture experiment SHALL follow resident-capture-set
 - **WHEN** the opening allowance is requested but setup-ready is absent or its durable history is mismatched, partial or replaced
 - **THEN** missing setup-ready leaves byte-exact preservation in force, invalid history refuses the allowance, and recovery restores stock before deciding whether Buddy may resume
 
+#### Scenario: Developer visual setup uses the copied executable
+- **WHEN** an explicitly bound developer screenshot targets the resident's private copied reader
+- **THEN** it requires the fixed candidate-derived path, exact executable hash and retained file/process identity through capture, while ordinary stock discovery remains unchanged
+- **AND** process names or pixels alone confer no Reader identity or native capability
+
+#### Scenario: A developer setup tap was selected
+- **WHEN** any developer tap step was selected, including a failed or uncertain step
+- **THEN** setup completion requires both successful tap evidence and a successfully retrieved and inspected after-image; before-only inspection cannot authorize completion
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic

@@ -100,3 +100,31 @@ Owned host tests must cover the two-participant barrier, delayed/partial records
 wrong binding, replacements, input cancellation, expiry and single-use admission.
 These model process coordination only; actual UI setup and persistence remain
 native acceptance requirements.
+
+## Copied-reader visual setup helper
+
+The existing screenshot helper assumes a stock process named `xochitl`. The
+resident launcher instead copies the executable into the candidate-owned
+`/run/rsdk-bootstrap-<nonce>/session/reader` and launches that path. Developer
+setup MAY use an explicit process-bound screenshot mode under the existing
+development-resident-bootstrap feature. It SHALL require the complete boot/PID/
+start tuple, canonical candidate nonce and expected executable SHA-256. Ordinary
+stock discovery and its process-name checks SHALL remain unchanged.
+
+This mode SHALL derive the exact copied-reader path from the nonce, require the
+running executable link to that path, and verify a bounded executable hash before
+reading memory and again before publishing pixels. Closing content verification
+SHALL NOT rely solely on file timestamps, which can be too coarse to distinguish
+same-size writes. It SHALL retain the executable file handle and compare the
+original file identity, ownership, permissions, length and modification/change
+timestamps through capture. The admitted process name may be `reader` or
+`xochitl`; neither name alone confers authority. A changed executable, path,
+process identity, mapping or allocation header SHALL refuse publication. The
+existing ambiguity and framebuffer-layout rules remain unchanged.
+
+The helper SHALL neither rename a process nor send a signal or input. Its pixels
+remain visual setup context only. Each developer input selection requires fresh
+visual inspection, and any selected tap requires a successful tap result plus a
+successfully retrieved and inspected after-image before setup completion. A
+failed or uncertain tap SHALL prohibit completion; before-only completion is
+permitted only when no tap was selected. The original setup deadline remains.
