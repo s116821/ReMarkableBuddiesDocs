@@ -1,4 +1,4 @@
-# Ordinary historical-conversation management consumer — proposed
+# Ordinary historical-conversation management consumer — source implemented, qualification pending
 
 ## Authority and scope
 Use the unchanged canonical prepared-conversation-deletion capability and archived `2026-10-23-prepare-historical-conversation-deletion/contract.md`. This consumer performs local logical removal of the supported ordinary schema1 current root and optional historical binding only. Retained history, turns, sources, media, export associations and native pages remain. No physical-space estimate, synchronized-delete promise, service stop/start, native lookup, Store repair, provider/credential access or generation-format expansion. The producer itself performs bounded owned-store content validation; do not describe it as metadata-only.
