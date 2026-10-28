@@ -129,6 +129,7 @@ lc('sensitive-boundaries',['paste-exact-CRLF','admit-before-await','pagehide-bfc
 lc('check-not-same-publisher',['confirm(A):unknown','external-valid-archive-at-original-path','check(A):ok'],{'original_outcome':'unknown','publisher_proven':False})
 lc('gen3-vs-pending4',['inspect:format3-ok','export-selected:unsupported-feedback3','future-format4-report'],{'inspect3_admitted':True,'export_no_fallback':True,'format4_refused':True})
 lc('read-inspect-not-original',['inspect(A):ok','inspect(B):ok'],{'export_rows_allocated':0,'private_paths_dropped':True})
+lc('known-reference-cancel-remains-fenced',['original(A):retained','cancel(A,check-x):before-arrival','15seconds-pass','check(A,x)'],{'inspect_dispatch':False,'original_history_unchanged':True,'fence_in_original_ledger':True,'session_fence_expiry_not_new_authority':True})
 v={'schema':1,'purpose':'Independent literal proposed admission and lifecycle oracles, no implementation/producer replay','context':{'connection_id':cid,'boot_id':boot,'reference':ref,'invocation':inv,'path':path,'summary':summary},'raw_cases':raw,'request_cases':request,'public_cases':public,'lifecycle_cases':life}
 (p/'vectors.json').write_text(json.dumps(v,indent=2,ensure_ascii=True)+'\n')
 print({k:len(v[k]) for k in ['raw_cases','request_cases','public_cases','lifecycle_cases']})

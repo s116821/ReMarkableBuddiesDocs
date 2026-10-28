@@ -2833,6 +2833,21 @@
         "export_rows_allocated": 0,
         "private_paths_dropped": true
       }
+    },
+    {
+      "id": "known-reference-cancel-remains-fenced",
+      "steps": [
+        "original(A):retained",
+        "cancel(A,check-x):before-arrival",
+        "15seconds-pass",
+        "check(A,x)"
+      ],
+      "expected": {
+        "inspect_dispatch": false,
+        "original_history_unchanged": true,
+        "fence_in_original_ledger": true,
+        "session_fence_expiry_not_new_authority": true
+      }
     }
   ]
 }
