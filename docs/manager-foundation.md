@@ -108,6 +108,16 @@ added to aggregate owned-data totals. The snapshot grants no cleanup permission.
 Inventory quiesces pending observation requests without global cancellation;
 retained uncertain operations keep their original lifetimes.
 
+## Conversation discovery
+
+The reviewed implementation provides explicit read-only Buddy conversation-ID
+snapshots in both companions. See the [central discovery guide](manager-conversation-discovery.md)
+for the reviewed Manager manual, empty/refusal semantics, local Stop and limits.
+Its [consumer requirements](../openspec/specs/conversation-discovery-companion/spec.md)
+record the implemented contract and accepted Windows/Linux retained-package
+qualification. Physical-device/runtime health and final paired merge/publication
+remain separate outcomes. No selection or deletion action follows.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan
