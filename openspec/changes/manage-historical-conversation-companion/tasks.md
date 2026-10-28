@@ -2,7 +2,7 @@
 - [x] 1.1 Import normal exact current Manager/Docs bases and current Buddy source; verify hashes/trees/prerequisites without reconstructing commits or retiring predecessors.
 - [x] 1.2 Confirm no matching consumer draft; obtain initial own branch publication, then move these artifacts into the central change only.
 - [x] 1.3 Compare complete source/manual/corpora and settle the closed selector/report matrix, custody-loss Unknown and nullability. Validate digest/receipt/reference vectors independently.
-- [ ] 1.4 Obtain independent acceptance of complete proposal/design/contract/spec/vectors and exact authored envelope before Manager implementation.
+- [x] 1.4 Obtain independent acceptance of complete proposal/design/contract/spec/vectors and exact authored envelope before Manager implementation.
 
 ## 2. Consumer implementation
 - [ ] 2.1 Add strict private report/intent/receipt parser and safe public protocol/declarations; preserve old wires/bounds and privacy.

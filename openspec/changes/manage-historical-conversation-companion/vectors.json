@@ -1014,6 +1014,36 @@
         "admit": false,
         "fallback": false
       }
+    },
+    {
+      "name": "captured-status-valid-apply-ack",
+      "fixture": "unbound",
+      "selector": "status",
+      "raw": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"acknowledged\",\"runtime_unverified\":true,\"local_only\":true,\"physical_reclamation\":false,\"service_observation\":\"inactive\",\"possible_effect\":true,\"conversation\":\"22222222-2222-4222-8222-222222222222\",\"intent\":null,\"receipt\":{\"operation\":\"11111111-1111-4111-8111-111111111111\",\"transaction\":\"ccf1f488-c06d-5e36-85e1-304b28a5c14b\",\"root_revision\":\"6e504255-1011-5671-b426-ec24a11cc0d6\",\"binding_revision\":null},\"current_state\":\"changed\",\"summary\":null}\n",
+      "expected": {
+        "admit": false,
+        "fallback": false
+      }
+    },
+    {
+      "name": "captured-apply-valid-status-ack",
+      "fixture": "unbound",
+      "selector": "apply",
+      "raw": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"acknowledged\",\"runtime_unverified\":true,\"local_only\":true,\"physical_reclamation\":false,\"service_observation\":\"inactive\",\"possible_effect\":true,\"conversation\":\"22222222-2222-4222-8222-222222222222\",\"intent\":null,\"receipt\":{\"operation\":\"11111111-1111-4111-8111-111111111111\",\"transaction\":\"ccf1f488-c06d-5e36-85e1-304b28a5c14b\",\"root_revision\":\"6e504255-1011-5671-b426-ec24a11cc0d6\",\"binding_revision\":null},\"current_state\":\"changed\",\"summary\":null}\n",
+      "expected": {
+        "admit": false,
+        "fallback": false
+      }
+    },
+    {
+      "name": "wrong-path-valid-intent-hash",
+      "fixture": "unbound",
+      "selector": "prepare",
+      "raw": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"prepared\",\"runtime_unverified\":true,\"local_only\":true,\"physical_reclamation\":false,\"service_observation\":\"inactive\",\"possible_effect\":false,\"conversation\":\"22222222-2222-4222-8222-222222222222\",\"intent\":{\"intent_version\":1,\"operation\":\"11111111-1111-4111-8111-111111111111\",\"conversation\":\"22222222-2222-4222-8222-222222222222\",\"config_path_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"config_bytes_sha256\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"roots_sha256\":\"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\",\"actor\":\"33333333-3333-4333-8333-333333333333\",\"generation\":\"44444444-4444-4444-8444-444444444444\",\"mode_sha256\":\"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\",\"target_history_sha256\":\"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\",\"root\":{\"revision\":\"55555555-5555-4555-8555-555555555555\",\"sha256\":\"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\"},\"binding\":null,\"summary\":{\"turns\":2,\"source_records\":1,\"export_associations\":0},\"intent_sha256\":\"85d1bb343d1d12701fac3fc6ab3f0fa2dc4b888fbd7e3c8b1be1139b672b9ed3\"},\"receipt\":null,\"current_state\":\"live-original\",\"summary\":{\"turns\":2,\"source_records\":1,\"export_associations\":0}}\n",
+      "expected": {
+        "admit": false,
+        "fallback": false
+      }
     }
   ],
   "boundary_vectors": [
