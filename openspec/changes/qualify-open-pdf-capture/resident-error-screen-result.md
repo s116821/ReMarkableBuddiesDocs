@@ -76,10 +76,23 @@ diagnostic observer selected `LANG=C` and `/usr/bin:/bin`. Both use `--system` a
 working directory `/`. These are observed differences, not a demonstrated cause.
 No new runtime selection follows from this comparison.
 
+Further bounded read-only inspection established a concrete missing service
+dependency: stock `xochitl.service` wants `rm-sync.service`, and the latter has
+both `BindsTo=xochitl.service` and `PartOf=xochitl.service`. Its journal records
+successful shutdown at monotonic 1739818.49 and restart at 1739943.97, spanning
+the resident attempt. The direct resident child therefore ran without the vendor
+companion, while successful stock runs included it. The integration must account
+for that lifecycle; this observation alone does not prove which startup difference
+caused the error screen. No companion was manually started and no new native
+selection was made during diagnosis.
+
+The restored stock journal also contains the same missing-bin and keymap warnings.
+Those warnings do not distinguish the failed resident launch from working stock.
+
 Native opening/capture, installed first-gesture acquisition and automatic
 Reader/Writer/blank-start creation/reuse remain open, along with the integrated
 simulator, review and coordinated spec completion gates.
 
 Source basis: current source/build proof, actual helper image, retained native
 logs and recovery records, fresh successful cleanup, and bounded read-only stock
-launch-context inspection. Root-cause hypotheses remain unverified.
+launch-context/dependency/journal inspection. Root-cause hypotheses remain unverified.
