@@ -130,6 +130,10 @@ Retained history/media/export associations/native pages remain; physical
 reclamation, synchronized deletion and native/runtime health are not implied.
 Final paired review, normal merge and actual-main/publication stay separate.
 
+## Restore an archive already on the tablet
+
+Both companions provide a preview and separate confirmation to add compatible archived Buddy data while keeping current records. See the [central restore guide](manager-ordinary-restore.md), [consumer requirements](../openspec/specs/ordinary-archive-restore-companion/spec.md) and [detailed consumer contract](../openspec/changes/archive/2026-10-28-restore-ordinary-archive-companion/contract.md). Exact counts are optional technical details; media completeness and inactive saved settings are explicit. Earlier unconfirmed results remain distinct from a later check finding expected data. This does not download a backup, set up an empty/replacement tablet or restore native pages. Source/retained qualification, tablet/runtime health and final release are separate outcomes.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan
