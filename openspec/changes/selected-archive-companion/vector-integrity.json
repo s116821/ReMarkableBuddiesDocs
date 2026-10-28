@@ -1,0 +1,10 @@
+{
+  "total_cases": 130,
+  "raw_cases": 58,
+  "request_cases": 25,
+  "public_cases": 23,
+  "lifecycle_cases": 24,
+  "vectors_sha256": "a889408070651acc00b7cbbbde40a3c453c9ec0768795a4ce4990127126cd520",
+  "checks": "Unique IDs; raw bytes/digests; inclusive report/path boundaries; target-invocation cancellation; literal CRLF preservation and policy-only/history distinction fixture integrity.",
+  "not_tested": "No consumer implementation or producer replay. Expect fields are proposed independent oracles. No device/provider/native/host execution."
+}
