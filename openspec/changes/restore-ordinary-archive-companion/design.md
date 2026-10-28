@@ -1,6 +1,6 @@
 # Design and integration notes — source implemented, qualification pending
 
-The detailed closed DTOs and phase/state relation are in contract.md; literal expectations are in vectors.json. This accepted contract is implemented at Manager3472a294eda3c43c5941a013a5dd00c1528c5100 (initial9775d26 preserved); independent source review and retained-platform qualification remain pending.
+The detailed closed DTOs and phase/state relation are in contract.md; literal expectations are in vectors.json. This accepted contract is implemented at Managerfa144e094e41f0a263cc3460b2fef19281767978 (runtime unchanged from3472a29; initial9775d26 preserved). Prior paired source review accepted3472a29; the focused Drive assertion/documentation successor needs independent review and fresh retained-platform qualification after the earlier hosted failure.
 
 The new consumer reuses existing finite wired private-stdin maintenance transport, guards, shared owner, Angular controller and original-ledger patterns. It adds no dependency, SDK protocol, backend writer or service API. New source/private parser work remains separate from renderer imports. Body/phase bounds are capability-specific; no old action cap changes.
 
