@@ -61,3 +61,49 @@ The read-only tablet inventory is retained under
 `7147f5ce4cd24c206e34e2074c178f6733c0664e0d009091d9505649f2f78542`.
 It sampled services and available commands only; no payload transfer, service
 change, input or document mutation occurred. Native acceptance remains open.
+
+## Completed bootstrap diagnostic, October 28, 2026
+
+Buddy `72cef541562f9884ca3b348a339a81b0cb8e81bd` passed
+[full CI 40437426851](https://github.com/s116821/ReMarkableBuddies/actions/runs/40437426851),
+including the new input-handoff regressions. The collected ARM source
+`6e62582d04c191b7a524167a58d35400449317e9` has the reviewed head's identical tree.
+Controller SHA-256 is
+`127e114a8b3762c17d22cb208a250357ee7a5c5715e63f557426e99ca5a45aba`;
+observer SHA-256 is
+`36ba20e327dcad583de2329b38055c94d77ed46ef7e4854b873953e36a313e01`.
+The fresh isolated clean fixture passed 41 calls and both recovery checks, then
+separately reviewed cleanup passed with real services unchanged.
+
+Candidate `080c1914df7a447eb54ec609225f6640` was staged, independently reviewed,
+and selected once after a fresh live inventory matched its original process,
+group, policy, unit and 191-entry source inventory. Its candidate digest is
+`3833471cb79b0bd365b1ef4a2ab75c651aaae55ce29cc3cc3011c9487f777456`.
+All 36 execution/collection calls succeeded. The retained evidence verifies both
+nonce-bound input-admission boundaries, launch admission, the authenticated SDK
+Observe reply, child shutdown and independent stock-first restoration. The child
+was reaped with no cleanup error and no pending mutation; source inventory and
+unit files were preserved. Execution receipt SHA-256:
+`d6a52f5921f58ed6ce627af2e11d69d53c58d68952e42be11fcc37134d5012f9`.
+
+The actual reply was `Ok(Rejected(UnknownIdentity))`. This completes the question
+of whether the resident runtime can launch, exchange one authenticated Observe
+and return to stock under the diagnostic recovery controller. It does **not**
+identify a Reader page, explain the refusal, establish visual/source continuity,
+or qualify capture, insertion, writing or the installed Session. No refusal was
+retried and no input/navigation was injected. The original minimal environment
+also emitted a non-UTF-8 locale warning; the warning alone does not establish the
+cause of UnknownIdentity.
+
+Separately reviewed cleanup passed 18 calls, removed only the two diagnostic
+definitions, and verified restored stock PID 14606 and Buddy PID 14675 unchanged.
+Its receipt SHA-256 is
+`9baef438026beafd50fb2849f51023e633f29f566fe256b4bcbbe6414f7b1412`.
+Payloads, control records and failed earlier attempts remain preserved. This
+candidate is spent; none of this evidence authorizes its replay.
+
+Next implement and qualify the actual source capture path under the SDK's
+[native capture contract](https://github.com/s116821/ReMarkableOpenSDK/blob/9804c66219750bf68a2159e51d1c02a4f705f51b/openspec/changes/integrate-resident-native-adapter/native-capture.md),
+with full-order checks inside both native source callbacks and private image
+ownership until final admission. Product activation must still reacquire source
+and input correctly; the diagnostic Buddy-stop gap grants no request continuity.
