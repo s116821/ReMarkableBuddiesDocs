@@ -1,49 +1,73 @@
 {
   "verified_input_commit": "68e42968b4c58b6f8ed1102078d78b40fad33ffc",
   "verified_input_tree": "6c6f606f30f6ff3b0af158456794443337e60f61",
-  "basis": "Hash-verified source snapshot at the public producer commit below; no producer replay or latest-main assertion",
+  "basis": "Existing bytes/sha256 pins preserve the historical supplied CRLF snapshot; separately labeled canonical LF Git content pins match the public URLs. LF-to-CRLF projection reproduces every historical snapshot pin. No source drift or producer replay.",
   "files": [
     {
       "path": "src/restore_maintenance.rs",
       "bytes": 24665,
       "sha256": "66ea5912b045d423d937613e5ce8c18d64e5f9193a93c5fe7b262e2ee1a8e9c0",
       "normalized_equal_historical_6e33": true,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/restore_maintenance.rs"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/restore_maintenance.rs",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 23959,
+      "canonical_blob_sha256": "ae70d1671942af204be9f4bba3defa578f9f99bcc809f4a6ff686f2979dfd467",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     },
     {
       "path": "src/storage/ordinary_restore.rs",
       "bytes": 40404,
       "sha256": "1d2a5ec7d65138eed4a0e9a11933b7b584838d72c3a4a04a38a1762c28dde295",
       "normalized_equal_historical_6e33": true,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/ordinary_restore.rs"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/ordinary_restore.rs",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 39397,
+      "canonical_blob_sha256": "ed733698f77a81edacd4916c600cbfd7a9950415420b312545c3148b271ef5aa",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     },
     {
       "path": "src/main.rs",
       "bytes": 49537,
       "sha256": "172842ba34d018484a95c4c4b3cc7a8896804570c3adc415a5f447ca4242a24c",
       "normalized_equal_historical_6e33": false,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/main.rs"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/main.rs",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 48576,
+      "canonical_blob_sha256": "c77a0127a8251d36a20e8473c86dce246e7f6da6e7ed36cf32e782723e8855d2",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     },
     {
       "path": "docs/ordinary-restore.md",
       "bytes": 3735,
       "sha256": "c46ada442f1525255ddb04e068cfa018efab785daaea44d4a9c1b5d9b8a65e5b",
       "normalized_equal_historical_6e33": true,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/docs/ordinary-restore.md"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/docs/ordinary-restore.md",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 3676,
+      "canonical_blob_sha256": "7c34021df732bb73e785b597721403f8e9a42a24b4ea6d80c9afc3b223ec4b54",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     },
     {
       "path": "tests/fixtures/ordinary-restore-history-vector.json",
       "bytes": 4176,
       "sha256": "3a27965d4615fe2be38ea304df8f24c959fc07d2e4e5dadf8c6cbfaa28d9a9e5",
       "normalized_equal_historical_6e33": true,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/tests/fixtures/ordinary-restore-history-vector.json"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/tests/fixtures/ordinary-restore-history-vector.json",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 4100,
+      "canonical_blob_sha256": "46ed998abb16136d96c09dc525eaa5af042cfc16ce7fe2225a69482f660291fe",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     },
     {
       "path": "tests/fixtures/ordinary-restore-c3b6a4b-corpus.json",
       "bytes": 132535,
       "sha256": "6c06719ea02be6bd1c424dcbb42ef38b2fb5b6233bbf18c9598185b4e8df1404",
       "normalized_equal_historical_6e33": true,
-      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/tests/fixtures/ordinary-restore-c3b6a4b-corpus.json"
+      "url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/tests/fixtures/ordinary-restore-c3b6a4b-corpus.json",
+      "snapshot_representation": "Historical supplied Windows CRLF snapshot; bytes/sha256 above refer to this representation",
+      "canonical_blob_bytes": 131595,
+      "canonical_blob_sha256": "cef993333bbdcf5a3b46145e500bee8c3ea75d4971df5eb132c2797b958e20a1",
+      "canonical_blob_representation": "Git LF content at the pinned public URL; SHA256 hashes content bytes, not the Git object header"
     }
   ],
   "rechecked_supplied_source": true,
