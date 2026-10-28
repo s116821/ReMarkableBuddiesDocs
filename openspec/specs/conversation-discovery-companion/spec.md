@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Provide explicit, bounded, read-only Buddy conversation-ID snapshots in both Manager companions. Accepted source requirements are synchronized here as documentation preparation; hosted package acceptance and final delivery remain pending. The [active detailed consumer contract](../../changes/manage-conversation-discovery-companion/contract.md) owns the exact wire/lifecycle limits, and the [public guide](../../../docs/manager-conversation-discovery.md) links the reviewed Manager manual. The active change remains unarchived.
+Provide explicit, bounded, read-only Buddy conversation-ID snapshots in both Manager companions. Implementation source review and Windows/Linux retained-package qualification are accepted; the [archived detailed consumer contract](../../changes/archive/2026-10-28-manage-conversation-discovery-companion/contract.md) defines the exact wire/lifecycle limits and its [results](../../changes/archive/2026-10-28-manage-conversation-discovery-companion/results.md) preserve qualification and original failures. The [public guide](../../../docs/manager-conversation-discovery.md) links the reviewed Manager manual. Physical tablet/native/runtime health is not established by this qualification; final paired review, merge and actual-main/release verification remain separately tracked.
 
 ## Requirements
 
