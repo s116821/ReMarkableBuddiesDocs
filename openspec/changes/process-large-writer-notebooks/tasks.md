@@ -19,6 +19,7 @@
 - [ ] Implement supported historical/media/whole-backup traversal and explicit narrow cleanup/native-receiving/older-consumer refusals without silently skipping new references.
 - [ ] Preserve report1/2 unsupported/null for generation4 without enum widening; track complete generation4 category/media accounting and companion handling as required data-management/final-readiness (REM42/REM35) integration, not removed 1.0 scope.
 - [ ] Extend maintained Writer host scenarios, reports and faults through the production path; preserve Reader contracts and truthful native limits.
+- [ ] Freeze scenario-relative notebook assets before fixture effects, verify relocated application execution and unused scripts/faults, and support bounded opt-in closed Store fixtures for inspectable host qualification without credentials/native authority.
 
 ## 3. Verification and delivery
 - [ ] Execute full-source/range/UTF-8/context coverage, all byte/call/storage boundaries, per-stage faults/replay/cancellation/change and cross-entrypoint cases through real Store/production APIs.

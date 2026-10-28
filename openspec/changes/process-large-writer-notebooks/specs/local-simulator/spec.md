@@ -52,6 +52,11 @@ Store/model/device effects. Original fixture files SHALL remain unmodified.
 Each new asset SHALL declare its raw SHA-256 and follow the same regular-file,
 opened-handle, bounded-read, strict JSON and path-sanitization contract as notebook
 generation; special files and changed/unsupported bindings SHALL refuse.
+Relative notebook assets SHALL resolve against the scenario file's directory,
+not the build machine's source checkout. Complete validated observed buffers
+SHALL freeze before fixture Store creation; production preparation SHALL consume
+those buffers without reopening mutable transport paths. The sum of declared
+raw notebook asset bytes SHALL be at most 8 MiB per scenario.
 
 #### Scenario: Bounded gesture input
 - **WHEN** a short contact precedes a stationary two-second corner hold
@@ -73,6 +78,10 @@ generation; special files and changed/unsupported bindings SHALL refuse.
 #### Scenario: Asset substitution or special file
 - **WHEN** an asset is a FIFO/symlink/reparse path, changes opened-file binding or does not match its expected raw hash
 - **THEN** the scenario refuses before Store/model/destination effects with a fixed sanitized error, without a blocking special-file read or fallback to newer path content.
+
+#### Scenario: Relocated maintained fixture
+- **WHEN** a scenario and its declared relative notebook asset are copied outside the build checkout
+- **THEN** the actual application resolves and freezes the asset beside that scenario, retaining its exact raw hash and complete coverage.
 ### Requirement: Inspectable results and meaningful assertions
 Reader scenarios SHALL preserve page PNGs and JSON reports of exact rendered
 text, marks, active page, model calls, errors and timestamped operations. Writer
@@ -89,6 +98,17 @@ content and actual destination/write observations. They SHALL distinguish
 processed coverage from semantic quality, invoked model cost from zero writes,
 and failed recording from local zero-invocation/no-send observations. Reports
 SHALL be saved before assertion failures and SHALL NOT fabricate tablet PNGs.
+An explicit `retain_store_fixture` option MAY retain a closed test-owned data
+directory beneath a new `store-fixture` directory in the declared scenario
+output. It SHALL default off, refuse existing/symlink destinations, exclude
+credential/cache roots, and bound the copy at 8192 regular files/64 MiB with
+relative-path/hash evidence. This diagnostic fixture SHALL NOT claim backup
+restore compatibility, native authority or fresh model/export admission.
+Unused scripted replies and unreached declared phase faults SHALL fail assertions.
+
+#### Scenario: Fresh empty host fixture
+- **WHEN** a scripted scenario performs only a restart and explicitly retains its Store fixture
+- **THEN** it saves the actual closed ordinary Store and newly created conversation with zero model/destination calls, without creating a fake model result or native binding.
 
 #### Scenario: Failed assertion
 - **WHEN** expected text, page, operation counts or error behavior differs

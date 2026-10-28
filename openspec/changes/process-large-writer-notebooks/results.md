@@ -67,6 +67,40 @@ changed. The slow first snapshot inventory was stopped before a container/test
 started; no cache cleanup or source deletion was attempted. These platform and
 fixture observations do not establish Windows notebook runtime support.
 
+### Frozen simulator portability correction
+
+Source d934b082c63caf57e6e6e28284c71fd5b4e5adfa passed the complete Checks job
+of40777639210: formatting/strict Clippy,800 library tests (0 failed/7 ignored),
+all other Rust suites/doc-test, actual Writer binary/provider HTTP, actual Mem
+HTTP, Python and dependency gates. ARM Build/Integration were still pending
+when recorded, so this is not an overall CI pass. The maximum selected256KiB
+input executed all eight maps/one reduction through the actual Store; final
+publication acknowledgment loss/post-commit cancellation and retained invalid
+reduction cases also passed. Earlier d0/867 failed logs remain separate: one
+new destination-counter assertion, then an inadmissible old inline fixture,
+were corrected without changing production limits or claiming a model result.
+
+Subsequent frozen source63c55deb0d7f7fdb4e6d689c82d440446d1478ca fixes the
+identified shipped-simulator asset path: assets resolve relative to the scenario,
+freeze as validated complete buffers before fixture effects, and have an8MiB
+aggregate bound. A default-off closed Store fixture copy excludes credentials/
+cache, refuses existing/symlink output and is bounded at8192 files/64MiB with
+relative-path/hash evidence. Unused replies/unreached faults fail assertions.
+Actual relocated-binary/reopen/no-overwrite and empty restart-only fixture tests
+are committed but not yet execution-qualified. This correction received precode
+review before implementation and requires its own exact-source checks/review.
+
+The published v0.52.0 predecessor is pinned to68e42968b4c58b6f8ed1102078d78b40fad33ffc;
+its ARMv7 package matches release provenance SHA256
+60649e8931c74a4dcc6242ba6f1a5dd2d364d357964af23ceeb6f710cb82046c.
+The existing pinned cross image30e0b69c3728006c21ccbe1341ecef820d30afa9d48c6a5a745ba86155631911,
+QEMU ARM8.2.2/sysroot, ran its version as0.52.0 with network disabled. That probe
+is environment/predecessor identity evidence, not the still-required format fence
+execution. No local build, tablet action, live provider or destination-account
+call was made. The existing project-owned credential source was identified by
+the coordinator for protected loading only after new quality-plan admission;
+no key value was emitted or tested.
+
 ## Production storage and stage qualification in progress
 
 The same draft implementation now contains explicit in-place generation4
