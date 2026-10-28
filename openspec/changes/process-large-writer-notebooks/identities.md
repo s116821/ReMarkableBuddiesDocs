@@ -1,6 +1,8 @@
 # Proposed exact identity recipes, revision 1
 
-These recipes are proposed new-path contracts, pending schema-owner acceptance.
+These are new-path recipes under the accepted exact Source3/Conversation3 kind
+reservations. Shared-path handoff and amended-contract review remain required;
+allocation does not qualify an implementation.
 The literal fixture identity-vectors.json pins examples independently of eventual
 Rust implementation. The fixture is recipe evidence, not a model prompt or valid
 large-notebook quality run. Do not regenerate expected values from the function

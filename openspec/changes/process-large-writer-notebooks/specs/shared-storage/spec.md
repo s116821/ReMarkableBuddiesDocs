@@ -21,9 +21,14 @@ Notebook domain3 SHALL require explicitly adopted notebook-capable storage and
 successor capabilities; it SHALL NOT be written under legacy generation1/2 or
 feedback-only generation3. Generic envelope format1 SHALL remain unchanged;
 payload schema3 SHALL NOT imply storage generation3. Existing contract1/2 bytes
-SHALL remain immutable. Exact payload-kind reservations, numerical successor
-generation/backup/contract allocations and shared-path ownership SHALL be accepted
-before implementation; this proposal assigns no successor numbers.
+SHALL remain immutable. Reserved schema3 Value kinds SHALL be exactly Source
+ArchivedNormalizedSource (record_kind archived-normalized-source), Conversation
+NotebookPlan (notebook-plan) and NotebookStage (notebook-stage). Notebook storage
+SHALL use generation4, whole ordinary same-actor backup4 and contract3 /
+contract-v3.json with envelope schema ID
+urn:remarkable-buddies:envelope:contract-v3 and actor/generation-bound
+notebook-feature.json format1. Actual shared-path handoff and amended-contract
+acceptance SHALL precede overlapping implementation edits.
 Source: REM-36 outcome/coordination; design section 2; scoped prepared-note export and normalized-text Writer admission.
 
 #### Scenario: Idempotent local mutation
@@ -106,6 +111,12 @@ domain3 into legacy formats. Relevant narrow cleanup/native receiving SHALL
 refuse before effects without silently dropping references or acquiring native
 authority. Any supported predecessor bypass or unpreservable lineage SHALL block
 delivery until the contract is revised.
+Generic report1/report2 SHALL retain truthful unsupported/null behavior for
+generation4 in this increment without silently widening report2. Dedicated
+notebook Ledger/history/whole-backup paths SHALL support complete notebook
+traversal. Full generation4 category/media accounting and companion handling
+SHALL remain a required data-management/final-readiness 1.0 integration dependency,
+not removed scope.
 
 #### Scenario: Actual predecessor entrypoints meet adopted storage
 - **WHEN** pinned supported predecessor writer, sync, import, restore, recovery or cleanup commands encounter notebook-capable current storage or its successor archive
@@ -118,3 +129,7 @@ delivery until the contract is revised.
 #### Scenario: Explicit complete same-actor archive round trip
 - **WHEN** a supported deliberate whole ordinary same-actor backup/restore includes notebook JSON media and retained feedback
 - **THEN** exact envelope/media/receipt/feature closure survives under the allocated successor archive policy, with no use of feedback backup3, legacy-generation domain3 import, silent rollback or historical byte rewriting.
+
+#### Scenario: Interim generic reporting does not discard final integration
+- **WHEN** generic owned-data report1/report2 encounters generation4 before complete companion/accounting integration
+- **THEN** it truthfully refuses with unsupported/null rather than widening report2 or claiming complete accounting, dedicated notebook traversal remains real and complete, and full category/media accounting plus companion support remains required before 1.0 readiness.

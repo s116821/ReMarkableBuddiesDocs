@@ -29,13 +29,15 @@ notebook completeness or native Writer interaction.
 
 # Boundaries and delivery
 
-The proposed schema allocation and each shared consumer's support/refusal matrix
-require coordination with the native/source owner before implementation. Existing
-storage generation3 feedback is independent of proposed payload schema3. The
+Exact Source3/Conversation3 kinds, generation4, ordinary same-actor backup4,
+contract3/contract-v3.json and notebook-feature.json1 are allocated in the adoption
+contract. Actual shared-path handoff and amended-contract review still gate
+implementation. Existing storage generation3 feedback is independent of payload3. The
 [in-place adoption contract](compatibility-adoption.md) preserves current
 generation identity and immutable data, requires a separately reserved unsupported
-format/backup/contract revision and leaves contracts1/2 unchanged. Numerical
-allocations and the complete revised precode remain acceptance gates. Existing
+format/backup/contract revision and leaves contracts1/2 unchanged. Generic
+report1/2 may truthfully refuse generation4 for now; complete generation4 data
+accounting and companion handling remain required 1.0 integration. Existing
 narrow cleanup and native receiving are not broadened into new features. The
 change must add explicit safe refusal where necessary, rather than silently omit
 new records. A generic blob API is not evidence that those consumers support them.

@@ -2,7 +2,7 @@
 
 Original basis: delivered Source9be8862822e4ff0f110d91a0127b1af6db379e5c and
 Docs11090c3a8f2cd1b1578798ab390cd757b315d0c3. This revision reconciles Docs
-main00da988a237b294b501ac6254787ba7153c23869 and the reviewed feedback Source
+main6394f582101076e4df9770ba6a46051e2b65beab and the reviewed feedback Source
 86d6c4f2fafa6c05534612bdb16b5ba93a0d59bb (delivered tree at
 68e42968b4c58b6f8ed1102078d78b40fad33ffc). Relevant current code is
 src/writer/mod.rs, src/conversation/writer.rs, src/conversation/writer_flow.rs,
@@ -11,10 +11,13 @@ src/storage/contract-v1.json, src/storage/contract-v2.json, src/retrieval.rs, sr
 src/conversation/cleanup.rs and src/conversation/receiving.rs. The prior host-flow archive and closed
 two-call quality observation are historical evidence, not new-run authorization.
 
-Source/native ownership coordination is a pre-implementation gate. This design
-proposes Source3 for one archived normalized source and Conversation3 for typed
-Writer plan/stage facts. If that allocation conflicts with concurrent owned work,
-revise this precode before source edits. No native adapter, supervisor, service,
+Source/native shared-path handoff remains a pre-implementation gate. Source3 is
+reserved for ArchivedNormalizedSource, Conversation3 for NotebookPlan/NotebookStage,
+Kind::Value only, with exact record_kind strings in the adoption contract. Native
+source f026bb6385a2c450fa4d79542fb57c097b98673f retains ExistingBinding schema2
+and historical capture/evidence work; its older storage baseline lacks delivered
+feedback contract-v2. Compose both after exact native-owner handoff, preserving
+unfinished work. No native adapter, supervisor, service,
 personal document, account pairing or firmware action is in this increment.
 
 The revised [adoption contract](compatibility-adoption.md) is part of this
@@ -23,9 +26,11 @@ CURRENT and historical bytes; it does not copy retained media or require a new
 generation UUID. The separately reserved unsupported format discriminator is the
 old-writer fence. Envelope format1 and payload schema3 are independent of that
 discriminator and feedback storage generation3. Contract1/2 remain immutable.
-Numerical generation/backup/contract allocations, exact Source3/Conversation3
-reservations and shared-path owner acknowledgment remain unaccepted gates. No
-source implementation follows until the complete revised precode is accepted.
+Generation4, ordinary same-actor backup4, contract3/contract-v3.json and
+actor/generation-bound notebook-feature.json1 are reserved. Exclusive notebook
+modules may proceed after review of this amended contract. Overlapping shared
+edits still require a real native-owner acknowledgment at an exact revision;
+allocation acceptance does not open that window.
 
 # 1. Explicit commands and frozen input
 
@@ -186,11 +191,12 @@ retry writes automatically. Model cost already incurred is not erased by no-send
 
 | Existing boundary | Required new-path behavior |
 | --- | --- |
-| Generic envelope/contract | Envelope format1 unchanged; exact Source3/Conversation3 shapes require explicitly adopted unsupported successor format and successor contract; contracts1/2 remain immutable; no numerical allocation yet |
+| Generic envelope/contract | Envelope format1 unchanged; exact Value-only Source3/Conversation3 shapes require adopted generation4 and contract3; contracts1/2 immutable |
 | Ledger decode/inspect/context/retained_media | Exact descriptors, original source-turn linkage, required JSON bytes and truthful missing-media state; no fake dimensions, image role or visible intermediate turns |
 | Writer source reads/refinement/export | Complete archive/ranges and immutable plan lineage; source changes/absence refuse; no fallback to cache or original input path |
 | Historical selected projection | Explicit non-native source ownership and exact same-conversation origin linkage, analogous to Source2; never make document UUID into native ownership |
-| Whole owned backup/restore | Explicit same-actor successor archive preserves original record/media bytes, conflicts/tombstones, lineage and reference counts; distinct archive discriminator remains unallocated; selected/cross-actor import refuses |
+| Whole owned backup/restore | Ordinary same-actor backup4 preserves original record/media bytes, conflicts/tombstones, lineage and reference counts; selected/cross-actor notebook import refuses |
+| Generic report1/2 | Truthful unsupported/null for generation4; no enum widening or complete-accounting claim; full accounting/companion handling remains required data-management/final-readiness integration |
 | Narrow conversation cleanup | Preserve current Source1-oriented support/refusals; Source3/Conversation3 relevant data must produce explicit pre-mutation unsupported/refused results, not silent omission or deletion |
 | Native receiving source_id/source_media and execution | Remain explicitly unsupported for the new host schema; no broadening of native receiving/admission, synthetic image conversion or runtime activation |
 | Older consumers | Unsupported current format fences history recovery/publication; actual predecessor entrypoints need qualification; pending pre-format metadata may be ignored by old writers; supported historical bytes retain meaning |

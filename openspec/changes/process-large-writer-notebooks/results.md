@@ -1,6 +1,25 @@
 # Precode checkpoint
 
-## Current compatibility revision
+## Accepted allocation amendment
+
+This revision reconciles Docs6394f582101076e4df9770ba6a46051e2b65beab and
+records accepted exact Value-only Source3 ArchivedNormalizedSource and
+Conversation3 NotebookPlan/NotebookStage reservations, generation4, ordinary
+same-actor backup4, contract3/contract-v3.json and actor/generation-bound
+notebook-feature.json1. The accepted in-place mechanism is unchanged. Intended
+single-writer paths are recorded; the native owner's actual shared-path handoff
+is still pending, and complete amended-contract review precedes exclusive source
+work. Native f026bb6385a2c450fa4d79542fb57c097b98673f ExistingBinding2 and
+capture/evidence must compose with delivered68e42968 feedback contract2 rather
+than substituting the native branch's older storage baseline.
+
+Generic report1/2 may truthfully refuse generation4 temporarily; full generation4
+accounting/companion handling remains a required data-management/final-readiness
+1.0 dependency. Dedicated notebook traversal cannot return fabricated success.
+No Source implementation, provider/export/device execution or new qualification
+is claimed. Exact current Docs checks are recorded in public PR evidence.
+
+## Historical compatibility revision at932b
 
 Reconciled Docs00da988a237b294b501ac6254787ba7153c23869 preserving unrelated
 changes. Reviewed feedback source86d6c4f2fafa6c05534612bdb16b5ba93a0d59bb is
