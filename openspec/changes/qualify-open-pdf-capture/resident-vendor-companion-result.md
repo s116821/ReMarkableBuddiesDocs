@@ -57,13 +57,15 @@ native execution result.
 
 ## Still required
 
-The broker primitive is not wired into resident startup or requests yet. Admitted
-inode execution, two-child ownership, original companion stop/group admission,
-ongoing integrity, shutdown accounting, versioned profile/candidate changes and
-verified companion restoration remain unfinished. No installed capability or
-native acceptance follows from this source increment. The full Reader/Writer/
-blank-start creation/reuse, simulator, native and coordinated delivery gates
-remain required.
+At this first source revision the broker primitive was not wired into resident
+startup or requests. The subsequent [owned runtime checkpoint](resident-vendor-runtime-result.md)
+implements explicit two-child ownership and integrates those checks, with host
+process evidence. Original companion stop/group admission, versioned installed
+profile/candidate changes and verified companion restoration remain unfinished;
+existing installed/native callers still select their original one-process path.
+No installed capability or native acceptance follows from either source increment.
+The full Reader/Writer/blank-start creation/reuse, simulator, native and coordinated
+delivery gates remain required.
 
 Source basis: current source and independent review, owned host tests/probe and
 read-only vendor process/unit/broker evidence. Architectural selection remains

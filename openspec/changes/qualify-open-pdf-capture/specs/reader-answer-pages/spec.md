@@ -291,7 +291,7 @@ Restoration SHALL issue at most one fixed nonblocking stock start with job-mode=
 - **THEN** restoration does not report success and neither resets the activation latch nor repeats a native effect
 
 ### Requirement: Installed resident session owns stock handoff
-The installed caller SHALL compose the protected recovery installation, fixed boot lease, actual Buddy/helper/stock service contexts and resident runtime under resident-supervisor-integration.md. It SHALL arm fatal main-thread health ownership before exclusive lease publication can leave occupied state, issue at most one fixed nonblocking stock stop with job-mode=fail, and launch only after stable original stock termination and recursive group emptiness or qualified deletion. The entire activation SHALL use one at-most-60-second deadline. The session SHALL retain its lease, artifact pins and child, verify child membership before exposing its connection, and permanently fail the actual ordinary runtime on any post-publication failure or session drop. Neither publication, service health, handshake nor caller callback success SHALL establish current page identity or native mutation authority. Product admission and fresh source/cancellation reacquisition remain required.
+The installed caller SHALL compose the protected recovery installation, fixed boot lease, actual Buddy/helper/stock service contexts and resident runtime under resident-supervisor-integration.md and resident-vendor-companion.md. The two-process profile SHALL explicitly retain and admit the original vendor companion service/process/group and its fixed artifact/policy identities; an old profile SHALL NOT silently opt in. It SHALL arm fatal main-thread health ownership before exclusive lease publication can leave occupied state, issue at most one fixed nonblocking stock stop with job-mode=fail, and launch only after stable termination of both original services and recursive group emptiness or qualified deletion. The entire activation SHALL use one at-most-60-second deadline. The session SHALL retain its lease, artifact pins and both children, verify child membership before exposing its connection, and permanently fail the actual ordinary runtime on any post-publication failure or session drop. Neither publication, service health, handshake nor caller callback success SHALL establish current page identity or native mutation authority. Product admission and fresh source/cancellation reacquisition remain required.
 
 #### Scenario: Lease publication fails after creating occupied state
 - **WHEN** exclusive publication or its closing checks fail without returning a lease
@@ -302,7 +302,7 @@ The installed caller SHALL compose the protected recovery installation, fixed bo
 - **THEN** its actual health owner fails permanently and the ordinary runtime exits for independent recovery; the session never starts stock from its destructor
 
 #### Scenario: Stock changes during the takeover wait
-- **WHEN** a new stock incarnation, changed loaded policy, replaced group or incomplete terminal evidence is observed
+- **WHEN** a new stock or companion incarnation, changed loaded policy, replaced group or incomplete terminal evidence is observed
 - **THEN** the session does not launch or expose native work and any consumed activation remains fatal to the ordinary runtime
 
 #### Scenario: Reloaded terminal dependency lists change textual order
