@@ -58,6 +58,15 @@ the unchanged restored stock/Buddy service instances and all original source pat
 and hashes. Payloads, images, logs, control records and failures remain preserved.
 The successful recovery and cleanup do not turn this setup refusal into a pass.
 
+A separate fresh stock visual sample, `98cd6cb4709141b7aae6c393131f409b`, used
+the previously frozen stock helper built from Buddy `2478331`. All 12 calls
+succeeded. The fully decoded and inspected image shows normal My files and is
+pixel-identical to the earlier stock screenshot (PNG SHA-256
+`85e12893948eaa433a629d9735e839146a0ca2dfe4881b8d1be2b6485da547d6`).
+All 161 source-file hashes and stock/Buddy/sync service instances remained
+unchanged during that sample. This confirms the restored visible stock state;
+it does not establish a native Reader page identity.
+
 ## Remaining diagnosis
 
 The retained native log includes a non-UTF-8 locale warning and generic missing-bin
