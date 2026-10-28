@@ -28,6 +28,11 @@ Before native selection, pin these original unit and ordered drop-in bytes as we
 as this executable. The original unit is Type=simple, has no watchdog, and owns
 the system-bus name `no.remarkable.sync`; process spawn alone is not readiness.
 The HOME drop-in and measured dependency graph are part of the admitted profile.
+Fresh loaded-unit observation additionally confirms `KillSignal=15`,
+`FinalKillSignal=9`, `RestartForceExitStatus=HUP INT PIPE TERM`, and the expected
+nice level, bus name, original paths and no pending reload. Pin these loaded
+settings as well as the unit bytes; ordering-only lists require duplicate-free
+set comparison, not substring matching.
 No pairing, account change, firmware change or new provider operation is added.
 
 ## Ownership and ordering
@@ -71,7 +76,11 @@ effect uncertainty and require independent recovery; do not silently restart the
 companion or replay a request. Reconnection retains this same two-process session.
 
 Normal shutdown requests companion termination before reader termination, matching
-the vendor stop ordering. Both are bounded by one original cleanup deadline.
+the vendor stop ordering. The two-process path SHALL request TERM before bounded
+forced KILL escalation, with a finite grace interval and reserved final cleanup
+time inside one original deadline. An already exhausted budget SHALL still
+dispatch necessary forced termination to both owned children. The historical
+single-process forced-cleanup path is not evidence of this vendor shutdown policy.
 Retain separate termination/reaping/error evidence for each child. A timeout or
 failed termination cannot be reported as complete shutdown. Exhausting the wait
 budget on one child SHALL NOT skip termination dispatch for the other. The existing independent

@@ -31,6 +31,11 @@ Shutdown dispatches companion termination before reader termination, then waits
 under one original deadline. It retains separate child results and reports overall
 reaping only when both are reaped. Failure to reap still requires independent group
 recovery. A partial companion spawn failure cleans up the already-owned reader.
+This source increment retains the earlier forced KILL cleanup mechanism. Fresh
+read-only loaded-unit inspection confirms the vendor's TERM-then-KILL policy;
+bounded graceful shutdown/escalation for the two-process selection must be added
+and tested before any native qualification. Separate reaping evidence does not
+establish graceful vendor shutdown.
 
 ## Source validation
 
@@ -55,6 +60,19 @@ that 34-test run. Formatting/whitespace checks passed. The fixed profile digest 
 independently compared to the measured vendor digest and matches. The preserved
 host logs retain missing Git metadata warnings; they do not identify an ARM build.
 Docs guidance and all 88 strict OpenSpec items passed before publication.
+
+A later test refinement requires handshake evidence and a typed startup deadline
+for the absent-broker case. It exposed two fixture limits: a two-second bound could
+end before companion launch, and the reader's three-second socket timeout could
+end the reader before the expanded startup deadline. The companion test now uses
+a five-second startup bound and a dedicated ten-second reader-fixture idle bound;
+other reader fixture modes retain their original timeout. A test-only witness at
+the successful missing-owner return additionally proves startup reached broker
+observation, rather than merely creating the handshake marker. Independent review
+accepted this coverage refinement. All seven companion tests and strict
+all-target/all-feature Clippy passed on final test revision
+`08576dbec7cdd375dd97468b1570f62a98f6965d`; formatting and whitespace checks passed.
+Production behavior remains that of `0e414236437ac1f405f7376e4ef723310aaa2c77`.
 
 ## Remaining integration
 
