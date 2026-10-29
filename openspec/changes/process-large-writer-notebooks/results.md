@@ -1,4 +1,4 @@
-# Implementation checkpoint
+# Current qualification and preserved checkpoints
 
 ## Qualified pipeline and original live quality attempt
 
@@ -83,8 +83,13 @@ using existing dependencies. It also extends the example through real old
 SyncEngine and Worker with pure-memory outbound transport; inbound/new-object
 behavior remains unqualified. Five focused command-provenance tests, three CI
 budget/architecture tests and three mocked outer safety cases pass locally.
-This corrective candidate is under independent review and has not yet obtained
-hosted compilation or runtime evidence. Remaining acceptance, canonical
+Independent source review accepted the correction. Source
+47ac945ba4f4d7ec6f1e40fb4dde273c0df61f39 is pushed and
+[ordinary CI40945449959](https://github.com/s116821/ReMarkableBuddies/actions/runs/40945449959)
+is running; its hosted compilation/runtime result is not yet credited. Full local
+workflow tests passed10/0 after a task-local verified jq supplied the missing
+local dependency. The initial missing-jq failure remains an environment failure.
+Git-normalized Linux helper hashes were verified against staged blobs before push. Remaining acceptance, canonical
 sync/archive and coordinated delivery remain open. Physical ingestion/native
 Writer and generation4 companion/accounting integration remain required separate
 roadmap work.
@@ -106,7 +111,12 @@ successor still requires its own hosted result.
 | Complete generated graph archive | `tests/writer.rs` generated notebook backup/inspect/restore fixture, extended at6e47 and executed by CI40791751564 | Selected/group/cross-actor/native paths retain their explicit refusals |
 | Actual predecessor behavior | Published ARM writer/maintenance/inventory receipts and f650 host old-library receipt above | Corrective real SyncEngine/Worker execution remains pending; no inbound/new-object qualification |
 
-## Command, provider and export integration checkpoint
+## Historical command, provider and export integration checkpoint
+
+The sections below preserve earlier checkpoint statements at their named
+revisions. Their then-pending status is historical; current qualification and
+remaining gates are described above. Failed attempts remain failed and are not
+credited to later successors.
 
 Source8448023ed4c5e164ee410e2c8001fb8e41cd6bfd now dispatches all four explicit
 notebook commands through the existing Writer stdin entrypoint. Read-only
@@ -207,7 +217,7 @@ call was made. The existing project-owned credential source was identified by
 the coordinator for protected loading only after new quality-plan admission;
 no key value was emitted or tested.
 
-## Production storage and stage qualification in progress
+## Historical production storage and stage qualification checkpoint
 
 The same draft implementation now contains explicit in-place generation4
 adoption/resume, canonical archive/media validation, typed plan/stage facts,
@@ -257,7 +267,7 @@ account or tablet execution is implied. Canonical sync and archival remain open.
 Source basis: committed implementation and revision-specific hosted outputs;
 private retained logs have no public download link.
 
-## Initial implementation and acknowledged shared window
+## Historical initial implementation and acknowledged shared window
 
 The native integration owner acknowledged the exact shared-path window at
 f026bb6385a2c450fa4d79542fb57c097b98673f, preserving its unfinished and

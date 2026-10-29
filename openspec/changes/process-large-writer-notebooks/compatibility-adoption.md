@@ -1,6 +1,8 @@
-# Accepted allocations and shared-path handoff gate
+# Accepted allocations and shared-path ownership
 
-This is unimplemented precode. Source3 is reserved only for
+These accepted allocations are implemented by the bounded host increment.
+Exact execution evidence and remaining delivery gates are recorded in results.md.
+Source3 is reserved only for
 ArchivedNormalizedSource; Conversation3 only for NotebookPlan/NotebookStage.
 Generic envelopes stay format1. Feedback storage generation3 contains its own
 namespace/schema1 and is not notebook adoption. Contract-v1.json and
@@ -17,8 +19,8 @@ contract-v2.json remain immutable. Accepted allocations are:
 
 Other domain versions and envelope/manifest/actor format1 retain their meaning.
 These numeric axes are independent. The complete amended contract is reviewed
-and accepted for exclusive notebook source work. Intended single-writer ownership is
-accepted. The native integration owner acknowledged the shared-path handoff at
+and accepted for exclusive notebook source work. Single-writer ownership was
+accepted before implementation. The native integration owner acknowledged the shared-path handoff at
 f026bb6385a2c450fa4d79542fb57c097b98673f, preserving unfinished work and pausing
 edits to the handed-off paths until coordinated return. That bounded window is
 open; it does not transfer the retained native-exclusive paths or device authority.
@@ -149,5 +151,26 @@ custody, stale-snapshot revalidation and the same unsupported format gate.
 Source basis: inspected storage/mod.rs, selection.rs, feedback_generation.rs,
 files.rs, maintenance.rs, conditional.rs and recovery.rs plus public maintenance
 entrypoints at the pinned source in design.md. These are design evidence, not
-new tests or predecessor execution. Existing test definitions were read, not
-rerun as notebook qualification.
+new tests or predecessor execution. That initial design inspection did not establish execution qualification.
+The later actual hosted tests, published-predecessor receipts and separately
+accepted quality attempt are recorded by exact revision in results.md.
+
+
+# Implemented platform and qualification boundaries
+
+External file admission is implemented on supported Linux local filesystems
+(ext4, XFS and Btrfs) using retained no-follow component/file handles and exact
+raw-buffer digest validation. Other filesystem/platform guarantees, including
+Windows external-file admission, fail with Unsupported rather than a weaker
+path-based read. Owned immutable-buffer library admission remains separately
+bounded. This is not a claim of atomic concurrent-write snapshots.
+
+The Unix atomic-publication tests inject failures before rename, after the real
+rename without acknowledgment, and at parent sync; they verify observed format,
+failed custody, ordinary refusal and explicit resume. They model acknowledgment
+uncertainty, not physical power-loss durability or Windows directory-sync behavior.
+The actual predecessor fence is its unsupported-format refusal before ordinary
+Store recovery/clients/effects; old positive controls and real outbound sync/worker
+fixtures do not qualify inbound/new-object features, Drive accounts or native use.
+Physical ingestion/native Writer and full generation4 accounting/Manager support
+remain named 1.0 dependencies, separate from this bounded host delivery.
