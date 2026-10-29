@@ -1,0 +1,49 @@
+{
+  "source_commit": "6fd4082c6401bab698a5c685bf0735b12f91340c",
+  "source_tree": "3e6618c383c6341005889f8eb3341d43bbc1ea12",
+  "docs_base": "2024b37597a0591691e8fc16f9ab7549a9f55193",
+  "manager_base": "b6ca230515f4d70f95fad066a9190430778c9a69",
+  "native_source_inputs": {
+    "src/storage/inspection.rs": {
+      "git_blob": "a26627a881cc8f7e9eb7f95ce84f658edd83929c",
+      "sha256": "e5145d81e2edae1bdc4a0eae072cca7eb59aeb653bf1930ca39f4b4baa6f17a8",
+      "bytes": 41296
+    },
+    "src/storage/types.rs": {
+      "git_blob": "579360c7739bd4c77515187683d3e1dd055b9307",
+      "sha256": "bec581b4550c4738e48289808a2b09a0281cfedeb347d18e314678ec90f97e64",
+      "bytes": 7721
+    },
+    "src/storage/notebook_generation.rs": {
+      "git_blob": "de743de3f71a739261a546ce8e1ee788a6001e87",
+      "sha256": "e1620d76bf373cfcc84879b4df0d9c5223ecd43898aa0956aa318d068c69e1c2",
+      "bytes": 12006
+    },
+    "src/storage/feedback_generation.rs": {
+      "git_blob": "774d206dfb3dcf76626310dd651cac90868ba6c4",
+      "sha256": "f40d20cbb9f459bbc2f85a3c0807682779d757e09583ef4891a17da6ba8e600c",
+      "bytes": 12177
+    },
+    "src/storage/contract-v3.json": {
+      "git_blob": "ea78d91ebf9aa0c570b369390d45925a6112bec6",
+      "sha256": "db3c71df08ea5e0ee01a4fee62371ab23dadb5339708555fdd8bc83fe3bdc820",
+      "bytes": 18107
+    },
+    "src/conversation/mod.rs": {
+      "git_blob": "07fd5ed6641a040c02225e7c9d80de7fa51b5177",
+      "sha256": "5e17694c3bf77f1999df7e39ccbecebc965cd1ec2508dddbff5ab7f04ae89dcd",
+      "bytes": 72125
+    },
+    "src/conversation/notebook.rs": {
+      "git_blob": "c40543623aaad172bab0a4ce929abfb1c9d0096a",
+      "sha256": "55dcc3f34b0dab9bf89a3ac2b572a18602936cdd5ec193e23553685b0eee0313",
+      "bytes": 6749
+    },
+    "src/main.rs": {
+      "git_blob": "dc017633cad8fb05293d78d36ecb3570bcf75f99",
+      "sha256": "267a63dbdd9cfd47cbf157cec898f8395e0803c04b6ca5260b544ff36338e946",
+      "bytes": 52152
+    }
+  },
+  "status": "Static source/contract evidence only; no new source/consumer implementation or execution qualification"
+}
