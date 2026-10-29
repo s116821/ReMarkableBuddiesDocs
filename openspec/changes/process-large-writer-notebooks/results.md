@@ -1,5 +1,46 @@
 # Implementation checkpoint
 
+## Qualified pipeline and original live quality attempt
+
+Source eff2c151ad99904af0ff07898d59b2bf7a842349 completed
+[full CI40783068679](https://github.com/s116821/ReMarkableBuddies/actions/runs/40783068679):
+Checks, ARM Build and Integration passed; release was correctly skipped. Library
+tests passed802/0failed/7ignored, including the relocated actual-binary fixture.
+The compiled merge ae5d57c140bccc1fbfcd8efc24df74b80dd0976b has the same
+63aa53087920fa7de4adc138d03497f951c9cf1c tree as that source. Qualified ARM
+package SHA256 ac49148ede3c0c7116497d707b4acaa67b866965231ee127b786bb4ad4fa170c
+contains binary e183b69d3e7d1dbcd8a6063106f089f32a1e91ec92d76d6fd3f2dc2e270014c4.
+Its v0.53.0 metadata describes a CI candidate, not a published release.
+
+One independently admitted original synthetic six-page quality attempt ran on
+that artifact with OpenAI gpt-5.6-terra. The56316raw-byte input contains55296
+selected text bytes, two maps plus one reduction per request. Generation and
+one deliberate refinement each reported generated with3local invocations and
+3confirmed stage results:6total, no retry/probe/substitution, no unobserved
+publication or reported remote-cost uncertainty. There were zero destination
+writes and zero tablet operations. The original successful seed retains its
+actual earlier operator provenance; no duplicate preparation was performed.
+The final owned container was verified closed, full useful evidence preserved,
+then normally removed, with cleanup complete. Independent semantic review of
+both actual notes remains pending; call completion alone is not a quality pass.
+
+The actual published v0.52.0 predecessor writer/inspection/preformat-resume
+subset passed offline against this artifact with retained immutable bytes and
+zero external provider requests. Broader actual predecessor sync/import/restore/
+recovery/cleanup/archive qualification remains open. Current exact-head tests
+also passed archived source-media backup4/reopen/context/restore and cross-actor
+refusal, but these fixtures do not alone prove complete generated stage closure.
+
+Test-only successor6e47e11482799865eecd4b9f25e640d81d59332d extends the
+existing actual scripted-binary fixture through backup4/restore of its generated
+source, plan, three stages and notes, comparing original object bytes in both
+generations and the restored conversation records. Its
+[CI40791751564](https://github.com/s116821/ReMarkableBuddies/actions/runs/40791751564)
+is running; no eff result is transferred to that successor. Production code is
+unchanged. Remaining acceptance, canonical sync/archive and coordinated delivery
+remain open. Physical ingestion/native Writer and generation4 companion/accounting
+integration remain required separate roadmap work.
+
 ## Command, provider and export integration checkpoint
 
 Source8448023ed4c5e164ee410e2c8001fb8e41cd6bfd now dispatches all four explicit
