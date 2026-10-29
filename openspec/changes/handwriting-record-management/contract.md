@@ -27,8 +27,21 @@ Proved forget refusal before commit has not-dispatched only for this submission.
 Public view is a strict projection, not raw report forwarding. Detail contains validated profile/correction, derived record, captured supported text/provenance/sample descriptor/availability, and per-head revision/state/conflict metadata; unsupported bodies are absent. Status/forget output contains only safe original reference/outcome/check metadata and sanitized diagnostics, never correction content after confirmation. Query/inspect public fields are closed in contract-public.md; no arbitrary maps. Retained rows contain exactly {reference,connection_id,boot_id,original_outcome,expired}. Later check_outcome exists only at the top level and is never stored in a retained row. Private operation/profile/key/heads/request hash do not leave the host after content confirmation clears.
 
 ## Public actions and result contexts
-Common executing request fields: action,connection_id,boot_id,invocation (fresh canonical UUID). query adds profile,query_text; inspect/prepare-remove adds profile,correction; confirm-remove/check-remove adds reference (opaque64hex). cancel adds reference (nullable only before reference creation) and uses the original captured invocation, never a fresh cancellation ID. retained is exactly {action:"retained"}. No public operation/expected_heads/hash/raw report/sample/command/config input. Query/inspect are reads and do not create removal authority. prepare-remove calls inspect anew; only a valid complete single-value head can create ready authority.
+Common executing request fields: action,connection_id,boot_id,invocation (fresh canonical UUID). query adds profile,query_text; inspect/prepare-remove adds profile,correction; confirm-remove/check-remove adds reference (opaque64hex). cancel adds reference (nullable only before the caller knows its reference) and uses the original captured invocation, never a fresh cancellation ID. retained is exactly {action:"retained"}. No public operation/expected_heads/hash/raw report/sample/command/config input. Query/inspect are reads and do not create removal authority. prepare-remove calls inspect anew; only a valid complete single-value head can create ready authority.
 
 Each response binds contract_version1, verified observation (or null/refusal), original action/invocation/reference, state, content view or null, removal outcome or null, status check or null, diagnostics or null, and bounded retained rows. Exact key sets, state matrix and literal fixture expectations are frozen in contract-public.md and vectors.json as part of this precode. Result must match captured context and original row/outcome at entry, not mutable renderer state read after await. No late reply may regain a prepared capability.
 
 State classes: idle, queried, inspected, partial, prepared; busy, unsupported, unavailable, invalidated, expired, capacity; not-dispatched, unknown, removal-observed, historical-removal-observed, unresolved. Completion is only the precisely validated new/historical tombstone outcomes above. Busy/no-dispatch must not change an earlier unknown operation. Check outcomes are independently historical-removal-observed or unresolved and preserve original submission disposition. No action automatically retries, changes profile/key/head/operation, re-prepares or refreshes. One explicit future independently prepared operation can use newly inspected current heads, but no UI retry control may regenerate one from unknown history.
+
+## Permanent cancellation of an unconsumed preparation
+A cancel with the matching connection/boot and opaque prepared reference revokes
+that preparation even when its invocation is the fresh not-yet-arrived confirm,
+rather than the preparation creator. If reference is null because its reply has
+not arrived, the matching creator invocation can revoke an already-created ready
+preparation. Wipe its private packet/preview and remove ready authority; do not
+cancel unrelated observer I/O or another owner. This revocation persists beyond
+the14-second arrival fence and throughout the former120-second ready lifetime.
+A different newer reference is untouched. No rollback or accepted-operation
+absence is inferred. The client may remove only its matching provisional unknown
+row when this unconsumed preparation is revoked and the host has no original for
+that reference; real accepted/possibly dispatched originals stay retained.

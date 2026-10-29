@@ -36,3 +36,7 @@ Status checks SHALL use only finite host-custodied original key/operation on the
 #### Scenario: Maintenance owner is occupied or a stale cancel arrives
 - **WHEN** another admitted maintenance owner holds I/O or cancellation names an older action
 - **THEN** Busy preserves that owner before hooks/I/O, and only the exact captured action can be fenced/cancelled while every existing directed owner relationship remains enforced.
+
+#### Scenario: A canceled confirmation is delivered late
+- **WHEN** Stop revokes an unconsumed prepared removal and its original confirmation arrives after the short arrival fence expires
+- **THEN** that preparation remains revoked, no tombstone dispatch occurs, and a newer preparation or maintenance owner stays untouched; canceling an uncertain dispatched operation never implies rollback.

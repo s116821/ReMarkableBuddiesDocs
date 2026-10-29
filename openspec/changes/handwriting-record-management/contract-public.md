@@ -3,7 +3,7 @@
 This file closes the projection mentioned in contract.md. Every key below is required; nulls are explicit. Reject extra/duplicate keys, unsafe integers, malformed Unicode, UUID/hash, byte/depth excess or any cross-field contradiction. There are no arbitrary maps. Query/inspect text is intentionally private user-visible content, not a secret-free telemetry object.
 
 ## Request
-Exact shapes are those in contract.md. query requires a null or admitted query_text, profile UUID; inspect/prepare-remove requires profile and correction UUID. confirm-remove/check-remove/cancel requires reference64hex (cancel alone may null before creation). Every executing action has connection_id64hex/boot_idUUID/invocationUUID. retained has only action. Requests may not carry result view, expected heads, operation ID, receipt, sample, command, arbitrary config or path. Scalar limits and UTF8 bytes from contract.md apply. Public request limit16384bytes; nonquery requests <=1024bytes.
+Exact shapes are those in contract.md. query requires a null or admitted query_text, profile UUID; inspect/prepare-remove requires profile and correction UUID. confirm-remove/check-remove/cancel requires reference64hex (cancel alone may null before the caller knows its reference). Every executing action has connection_id64hex/boot_idUUID/invocationUUID. retained has only action. Requests may not carry result view, expected heads, operation ID, receipt, sample, command, arbitrary config or path. Scalar limits and UTF8 bytes from contract.md apply. Public request limit16384bytes; nonquery requests <=1024bytes.
 
 ## Result
 Exact outer {contract_version:1,status,observation,handwriting_records}. status/observation use the existing observation-protocol v1 validator unchanged. An observed result must match the captured request's connection/boot. Existing nonobserved statuses carry no content. retained alone has unconfigured/null observation.
@@ -36,3 +36,11 @@ confirm success requires original_outcome equal state and matching retained row.
 check historical-removal-observed or unresolved requires nonnull original_outcome unchanged from captured history, check_outcome equal to the returned state, and a matching original row. An original_outcome of unknown may coexist with a check_outcome of historical-removal-observed; those distinct fields must not be forced equal; no content. check can resolve observation of the original operation without changing unknown to removal-observed. busy/unsupported/unavailable/invalidated/expired has null check_outcome; if original metadata is returned it must still match capture and row. expiry may expose safe original outcome only, never private original IDs. Cancel unknown means a possibly dispatched original remains unknown and has matching row; not-dispatched before dispatch has no original/check outcome; invalidated/unavailable carry no view/check/outcome and cannot kill a successor. retained idle has reference/invocation/view/original_outcome/check_outcome/diagnostics all null, plus bounded safe rows. No other state/action pairing is allowed.
 
 Every host result must also fit270336encodedbytes. Deliberately cap query producer output65536bytes while allowing exact inspect up to producer ceiling; projection strips rather than expands raw metadata. Bound the final encoded wrapper before returning. Failure to fit after a possible mutation remains unknown. Never truncate text or substitute an empty success. Rendering validation and host validation use the same schema; the host-only raw decoder is never bundled into the renderer.
+
+A matching unconsumed prepared reference can be canceled using a fresh confirm
+invocation; cancellation permanently invalidates that ready reference rather than
+relying on a short arrival fence. A null reference may match its creator while
+the reference reply is still unknown. invalidated with no matching host original
+proves only that this preparation was unconsumed; a local provisional unknown row
+for it may clear. Existing original rows never disappear or downgrade on that
+basis. A stale different reference cannot cancel a successor or release its I/O.
