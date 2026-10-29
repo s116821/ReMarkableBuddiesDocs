@@ -24,18 +24,22 @@
 ## 3. Verification and delivery
 - [x] Execute full-source/range/UTF-8/context coverage, all byte/call/storage boundaries, per-stage faults/replay/cancellation/change and cross-entrypoint cases through real Store/production APIs.
 - [x] Execute actual localhost model/Mem create/reopen/refine/update and uncertainty cases, media corruption/absence, exact final guards, backup/restore and old/narrow-consumer refusal tests.
-- [ ] Qualify pre/post-format interruption, lost rename/sync acknowledgment, pending metadata after an old writer changed history, partial capabilities, active-handle exclusion, preserved feedback/receipts/media, actual predecessor writer/sync/import/recovery refusal and explicit successor same-actor archive round trips.
-- [ ] Freeze current source/spec/test identities and complete required local/hosted qualification and independent source/semantic evidence review.
+- [x] Qualify pre/post-format interruption, lost rename/sync acknowledgment, pending metadata after an old writer changed history, partial capabilities, active-handle exclusion, preserved feedback/receipts/media, actual predecessor writer/sync/import/recovery refusal and explicit successor same-actor archive round trips.
+- [x] Freeze current source/spec/test identities and complete required local/hosted qualification and independent source/semantic evidence review.
 - [x] Prepare/review the new original bounded quality plan and perform only its authorized single attempt; retain actual outputs/failures and obtain independent semantic assessment without replaying the closed earlier plan.
-- [ ] Complete final paired review, canonical sync/archive and coordinated normal delivery with actual-main/publication observations recorded separately.
+- [x] Complete final paired review, canonical sync/archive and the coordinated normal-delivery handoff; record actual-main/publication observations separately.
 
 Implementation and exact-revision checks are recorded in results/PR evidence.
 The single original six-call model quality attempt was independently accepted;
 no live Mem write, tablet action or physical-notebook qualification is claimed.
 Implementation and the first two verification rows are supported by the
 exact-revision full green runs and concrete test coverage indexed in results.md.
-The corrective hosted predecessor sync/lease result, final exact-head review
-and paired delivery remain unchecked. A predecessor unsupported-format fence
+The corrective hosted predecessor sync/lease result is independently accepted.
+Whole source CI and independent exact-source/runtime/semantic review are
+complete. Canonical sync uses the reviewed exact bytes recorded in
+canonical-sync-proof.json. Final archival/Docs qualification and the coordinated
+normal-delivery handoff are recorded in results.md; actual merges and publication
+remain separately observed coordinator actions. A predecessor unsupported-format fence
 does not claim inbound/new-object functionality. Platform guarantees fail closed
 where unsupported; Unix fault fixtures do not qualify physical power loss or
 Windows directory-sync durability.

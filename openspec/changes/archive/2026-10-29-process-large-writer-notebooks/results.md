@@ -61,7 +61,9 @@ parent-sync error. The tests require failed custody admission, observed format,
 ordinary-open refusal, preserved identity/history and explicit resume. Its
 [CI40795507466](https://github.com/s116821/ReMarkableBuddies/actions/runs/40795507466)
 completed successfully across Checks/Build/Integration; release was skipped.
-This is its own exact-revision result, separately retained from6e. Mocked errors do not prove
+Its retained log confirms803library tests passed/0failed/7ignored, including the
+new atomic-publication fault test and actual-binary notebook fixtures. This is its
+own exact-revision result, separately retained from6e. Mocked errors do not prove
 physical power-loss durability or Windows directory-sync semantics.
 
 Source f65048a7d2e4b4f924bf45dd898974ba97254f42 completed the separate
@@ -84,16 +86,73 @@ SyncEngine and Worker with pure-memory outbound transport; inbound/new-object
 behavior remains unqualified. Five focused command-provenance tests, three CI
 budget/architecture tests and three mocked outer safety cases pass locally.
 Independent source review accepted the correction. Source
-47ac945ba4f4d7ec6f1e40fb4dde273c0df61f39 is pushed and
+47ac945ba4f4d7ec6f1e40fb4dde273c0df61f39 is pushed and its
 [ordinary CI40945449959](https://github.com/s116821/ReMarkableBuddies/actions/runs/40945449959)
-is running; its hosted compilation/runtime result is not yet credited. Full local
-workflow tests passed10/0 after a task-local verified jq supplied the missing
-local dependency. The initial missing-jq failure remains an environment failure.
-Git-normalized Linux helper hashes were verified against staged blobs before push. Remaining acceptance, canonical
-sync/archive and coordinated delivery remain open. Physical ingestion/native
+completed successfully across Checks, ARM Build and Integration, with release
+correctly skipped. Its own library suite passed803/0failed/7ignored; actual-binary
+notebook provider/replay/refinement and relocated generated-graph fixtures passed. The actual normal host
+command was compiled at merge b51c3d6f03b31582ecdf055fb01b7b1f1099409c,
+with exact head-equivalent tree3e6618c383c6341005889f8eb3341d43bbc1ea12,
+Cargo profile.test=false and both declared features. Its binary hash is
+6512e51d2fc30423b5ac6ebc48583f7cf9d0e0fd53e75e74c11ccd45aa7868ca.
+The compiled unchanged old library plus reviewed example ran two SyncEngine
+steps, twelve memory-transport calls, three uploads and one manifest, then
+entered the real Worker's signaled authorization boundary. Held ownership
+excluded current admission with zero entries; explicit release/child exit0
+allowed format4 adoption and the deliberately failed loopback provider entry.
+That failure retains remote_cost_unknown:true and establishes no external
+provider success. Old reopen rejected unsupported generation format before
+handler construction. All43final Store snapshot files were independently
+rehashed, eight original immutable/identity files preserved, and three separate
+ordinary-positive-backup files also verified. The actual report hash is
+48e204fe924b489bf4beb9127322c55d68709df84c58fe6e55a560292d3f8003;
+build receipt d263d176c8f9ecd9d3a0caa6194ad57ad2943d28ba4bc6b4f0c4b67deef5c68f.
+Independent [receipt review5704454019](https://github.com/s116821/ReMarkableBuddies/pull/110#pullrequestreview-5704454019)
+accepted those raw observations, all final/backup file hashes, original immutable
+identity bytes and exact public source/build inputs. The full terminal run is
+qualified at this exact source; no main merge or published release is inferred.
+The actual unsupported-format fence is qualified separately from unclaimed
+inbound/new-object/Drive-account/native functionality.
+
+Full local workflow tests passed10/0 after a task-local verified jq supplied the
+missing local dependency. The initial missing-jq failure remains an environment
+failure. Git-normalized Linux helper hashes were verified against staged blobs
+before push. Paired Docs0139fa073e24800424a83552ae4dfc0671f1e94f passed
+[hosted Linux/Windows/OpenSpec40946741643](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/40946741643),
+with12tests per platform,32guidance files/126preserved blobs and101strict OpenSpec
+items. This result predates final canonical sync/archive and is not transferred
+to a later Docs revision.
+Canonical sync replaces six named requirement blocks and adds eight, preserving
+all26unrelated blocks across five capabilities. Independent content and UTF-8/LF
+byte review preceded application; all five staged Git blobs match the explicit
+expected hashes in canonical-sync-proof.json. This prepares the paired
+normal-delivery handoff; final Docs revision/qualification and actual coordinator
+merges/publication are observed separately. Physical ingestion/native
 Writer and generation4 companion/accounting integration remain required separate
 roadmap work.
 
+
+## Coordinated closeout
+
+Source PR110 and Docs PR104 form the same bounded delivery. Source47ac is frozen
+with full green CI and accepted actual runtime/semantic evidence; no new quality
+attempt is required for its test/CI-only successors. Canonical sync is complete
+and the named change is archived after verification in this PR. Docs merges
+first, then the source PR under the coordinator's normal merge ownership. This
+record establishes preparation and qualification, not a completed main merge,
+published release, physical notebook/native Writer, complete generation4
+accounting/Manager integration or overall 1.0 readiness. Shared source return is
+coordinator-managed with the incoming f026 and frozen47ac identities; retained
+native-exclusive work and device authority remain separate.
+
+Final local archive qualification passed12Python tests,32guidance files and
+126preserved blobs, and101strict OpenSpec items. A separate attempt placing
+synthetic Git test fixtures on the network drive failed six setup operations;
+using ordinary local temporary fixtures passed all12 without changing tests or
+product source. That environmental attempt is not credited as passing. Final
+Git whitespace checks required removing one redundant trailing LF from each of
+two canonical files; the accepted requirement content is unchanged and the
+before/after final byte bindings are retained in canonical-sync-proof.json.
 
 ## Final review coverage index
 
