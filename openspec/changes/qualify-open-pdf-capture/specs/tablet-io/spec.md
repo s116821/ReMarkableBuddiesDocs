@@ -190,3 +190,14 @@ New SOURCE5 selections SHALL explicitly bind source_witness_variant through sele
 #### Scenario: Minimum source captures cannot fit before opening
 - **WHEN** the sticky shared ledger cannot fit both remaining source witnesses and all3 protected postcreation captures
 - **THEN** the stable selection refuses before ordinary open input without increasing or refunding any quota
+
+### Requirement: Development visual diagnostics retain bounded phase failures
+Explicit development visual setup SHALL retain private nonce/candidate/runtime-bound finite phase diagnostics under resident-visual-diagnostics.md before corresponding operations and before owned shutdown. Records SHALL carry sequence, elapsed time and remaining original deadline, with bounded count and error text. Diagnostics SHALL NOT renew deadlines, weaken admission, retry operations or establish source/native authority. Capture API invocation SHALL NOT be labeled proven socket dispatch. Diagnostic failure SHALL NOT suppress owned shutdown.
+
+#### Scenario: Progress expires before the first visual request
+- **WHEN** pre-capture progress fails or exhausts its unchanged deadline
+- **THEN** the entered phase and failure remain available before shutdown, no image/ready or subsequent request is admitted, and cleanup retains its independent bound
+
+#### Scenario: Actor terminates a blocked observer
+- **WHEN** a traced operation does not return before actor termination
+- **THEN** its synced entry remains distinguishable from completion without inferring request dispatch or a cause from missing later records

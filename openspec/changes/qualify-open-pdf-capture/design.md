@@ -270,3 +270,7 @@ reply while retaining input, health, deadline and unresolved-effect boundaries.
 [The source and owned result](resident-capture-integration-result.md) records
 verification and remaining native/product gates. No operational PageObservation
 or writing permission is inferred from the image.
+
+## Visual setup failure observability
+
+Follow resident-visual-diagnostics.md. The spent cc059b handoff reached both ended phases but no before image. Retain bounded, bound diagnostics before operations and shutdown, without changing admission or deadlines or asserting a cause.

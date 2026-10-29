@@ -32,3 +32,5 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 ## Impact
 
 Existing Buddy capture code and development screenshot helper, plus read-only historical Ledger input to the existing SDK decision seam; contracts remain central in Docs. No firmware/account/sync change, new dependency installation, direct native document opening, rejected diagnostic resurrection or full feature-completion claim. Ordinary unique-allocation behavior is preserved pending attribution qualification; historical association inspection grants no native effect authority.
+
+- Add bounded development visual-stage diagnostics under resident-visual-diagnostics.md to retain phase/error evidence before shutdown; no native capture qualification follows.

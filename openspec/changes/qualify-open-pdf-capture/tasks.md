@@ -158,3 +158,11 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 - [x] Verify large-image delivery, source/image integrity refusal, cancellation/deadline, same-child reconnect and retained unresolved effects through the production request route with owned peers; native acceptance remains below.
 - [x] Verify original v1/v2 journal bytes and digests survive the revision-3 upgrade without expanding mutation-journal bounds.
 - [ ] Qualify actual native capture and compose it with installed first-gesture Reader/Writer/blank-start acquisition before claiming product acceptance.
+
+## Visual setup diagnostics
+
+- [x] Record cc059b failure boundary and diagnostic precode before implementation in resident-visual-diagnostics.md.
+- [x] Implement bounded bound phase/error diagnostics before shutdown with unchanged guards/deadlines and an explicitly non-dispatch capture API boundary.
+- [x] Exercise actual visual flow under delayed/stalled/failing progress; verify retained order, bounds, no further effects and mandatory shutdown. Buddy87b63ad passes 776 default library tests, all14 setup tests and the owned-peer diagnostic test plus strict lint; see resident-visual-diagnostics-result.md.
+- [ ] Independently review and validate exact sources/artifacts; qualify a fresh diagnostic candidate only after separate admission.
+  - [x] Independently review final source, original deadline anchors and error/shutdown ordering at Buddy87b63ad. Current ARM artifact and native qualification remain separate.
