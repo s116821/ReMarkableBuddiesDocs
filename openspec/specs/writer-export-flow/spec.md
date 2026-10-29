@@ -64,6 +64,15 @@ write poll; pre-write cancellation/change SHALL yield known no-send. After the
 first write poll, cancellation/failure SHALL use the existing truthful uncertainty
 boundary and SHALL NOT claim reversal or authorize retry.
 
+For notebook drafts, guarded admission SHALL also bind the exact source archive,
+completed-plan lineage and required media identity. Media integrity/availability
+SHALL be validated at source use and eligibility boundaries, without reloading a
+newer body or inferring freshness from stored stage successes. Legacy inline
+source-revision serialization SHALL remain unchanged; notebook revisions SHALL
+use an explicit versioned recipe while retaining logical document/selection
+scope and existing backend correlation. Prior uncertain exports SHALL refuse new
+model stages before cost. Model cost SHALL remain separate from no-send claims.
+
 #### Scenario: Admission publishes its own guard revisions
 - **WHEN** guarded admission succeeds without an external change, or a later edit advances one of its returned references
 - **THEN** its exact post-admission references permit the unchanged operation and detect the later edit without self-invalidating or refreshing to bless new heads.
@@ -87,6 +96,19 @@ boundary and SHALL NOT claim reversal or authorize retry.
 #### Scenario: Write already polled
 - **WHEN** a write future was polled before cancellation, response loss or failure
 - **THEN** the effect remains bound to its admitted frozen body and is verified/reconciled through the known destination identity without automatic resend or a false no-effect claim.
+
+
+#### Scenario: Archived proposal and own admission revisions
+- **WHEN** a fresh notebook proposal reaches export admission or an intervening archive/plan/draft/root revision changes
+- **THEN** exact returned post-admission references allow the unchanged operation and reject changed lineage without self-invalidation or refreshing heads to bless it.
+
+#### Scenario: Blob unavailable before write
+- **WHEN** required source media disappears or changes before the first destination/write poll
+- **THEN** writing is suppressed without restarting model stages or substituting source, and observed zero writes remain distinct from failed durable no-send recording.
+
+#### Scenario: Final notebook acknowledgment is historical
+- **WHEN** a final Generated notebook draft is saved but its current invocation lost acknowledgment
+- **THEN** no automatic send grant is inferred; a later explicit selected-draft operation must validate the current exact source/media/plan closure before exporting.
 
 ### Requirement: Joined ownership composes with standalone entrypoints
 One same-Store joined invocation SHALL span preparation, model waiting, guarded
