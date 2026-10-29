@@ -4,6 +4,10 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 
 ## What Changes
 
+- Add an explicitly selected SDK visual-only before/after setup handoff under
+  resident-visual-setup.md, retaining original clocks, image/runtime correspondence,
+  the two-participant input boundary and independent recovery.
+
 - Continue the completed native-mechanism handoff with the authenticated resident SDK client and Store-owned durable insertion journal under resident-client-integration.md. Persist original requests before dispatch, retain uncertain outcomes and reconcile only the original target; native activation, current/adjacent reuse and rendering qualification remain separate unfinished gates.
 - Bind experimental capture to explicit boot, PID and process-start identity with no process-name fallback.
 - Preserve bounded map/header discovery evidence while retaining ambiguous-match refusal.

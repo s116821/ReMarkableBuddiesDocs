@@ -1,5 +1,9 @@
 # Explicit native capture setup
 
+The optional SDK visual mode in [resident-visual-setup.md](resident-visual-setup.md)
+adds a before/after image handoff for new explicitly selected candidates. The
+six-record protocol below remains the behavior when that mode is absent.
+
 The existing version-1 single-Observe experiment remains unchanged. A version-2
 native candidate may additionally select a capture plan: expected document UUID,
 page UUID and complete ordered page UUID list (one through seventeen entries).

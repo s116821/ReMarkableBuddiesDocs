@@ -355,6 +355,25 @@ The installed ordinary Buddy runtime SHALL emit service readiness only after ini
 - **WHEN** a notification cannot be sent immediately or is attempted by a different process/thread
 - **THEN** health failure remains latched and the ordinary runtime exits without retrying notification or reporting native readiness
 
+### Requirement: SDK visual setup image handoff
+An explicitly selected developer setup SHALL use the admitted observer parent
+for one before and one after SDK visual capture, without inventing Reader facts.
+It SHALL retain the original setup/runtime/service/candidate checks and deadlines,
+publish private validated image/receipt bytes before bound stage markers, and
+retain those file identities through source capture. The external driver SHALL
+inspect the before-image before input and the after-image before completion.
+The selected mode SHALL require two distinct operation IDs and valid matching
+images before the existing two-party fresh-input handshake. Visual evidence
+SHALL NOT grant page/write authority or settle uncertain effects.
+
+#### Scenario: SDK idle connection expires during developer setup
+- **WHEN** the after-image request follows the endpoint idle limit
+- **THEN** the observer reconnects once to the same verified child and makes one visual request under the original setup bound, without retrying failed capture or replaying effects
+
+#### Scenario: Image or stage is missing or changes
+- **WHEN** a receipt, PNG, stage record, binding or file identity is absent, partial, stale, corrupt, duplicated or changed
+- **THEN** setup completion and source capture refuse while existing independent stock-first recovery remains required
+
 ### Requirement: Explicit developer capture setup
 The development-only native capture experiment SHALL follow resident-capture-setup.md. Both controller and observer SHALL end launch input admission before publishing setup-ready, bind setup completion to the original candidate and resident incarnation, and acquire quiet fresh input guards exactly once before one CaptureSource request. Original deadlines, runtime/service checks, whole-source preservation and independent stock-first recovery SHALL remain active. Setup completion SHALL NOT establish Reader identity or installed product readiness.
 

@@ -1,5 +1,11 @@
 ## Context
 
+## SDK visual setup integration
+
+[Resident visual setup](resident-visual-setup.md) selects an owned-observer
+before/after image handoff using SDK wire revision 4. Images remain visual-only;
+both are required before setup completion in this optional developer mode.
+
 ## Historical association consumer increment
 
 The [atomic historical association contract](historical-binding-projection-contract.md)

@@ -136,6 +136,9 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 
 ## Resident historical capture consumer
 
+- [ ] Integrate the explicitly selected SDK visual setup handoff under resident-visual-setup.md, including original clocks, before/after image pins, same-child reconnect and unchanged two-party fresh-input/recovery boundaries; qualify a fresh native image only after the separately reviewed driver and artifacts.
+  - [x] Implement and independently review the Buddy consumer at ec2897b: final Linux library776 and setup11 controls plus strict lint pass; original v1/v2/v3 history remains intact. See resident-visual-setup-result.md. Driver/artifact/native qualification remains open.
+
 - [x] Implement and review the explicit copied-reader visual setup mode under resident-capture-setup.md; preserve stock behavior and executable/process pins. Buddy228f151 and copied-reader-visual-result.md record source/host evidence, including closing executable digest and bounded operator admission.
 - [ ] Freeze the separately built copied-reader helper and qualify fresh setup independently of SDK source identity; source/host checks alone do not complete this gate.
   - Fresh `4fd4cc` reached SDK setup readiness but its before-image helper refused two allocation-shaped matches. No tap/completion/capture was admitted; recovery and cleanup passed. See resident-vendor-runtime-result.md. The visual setup gate remains open; do not select an arbitrary or cached allocation.
