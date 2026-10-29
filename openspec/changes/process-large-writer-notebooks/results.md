@@ -31,7 +31,12 @@ it establishes neither broad model reliability nor native/Mem qualification.
 
 The actual published v0.52.0 predecessor writer/inspection/preformat-resume
 subset passed offline against this artifact with retained immutable bytes and
-zero external provider requests. Broader actual predecessor sync/import/restore/
+zero external provider requests. A subsequent independently reviewed actual
+old mode-inspection/selected-export run also returned unsupported with every
+adopted Store byte unchanged and its fresh external destination absent/not a
+symlink. Closed-container cleanup completed. Conversation inventory remains
+open because its service observer precedes storage admission; a missing service
+tool is not format-fence proof. Broader actual predecessor sync/import/restore/
 recovery/cleanup/archive qualification remains open. Current exact-head tests
 also passed archived source-media backup4/reopen/context/restore and cross-actor
 refusal, but these fixtures do not alone prove complete generated stage closure.
@@ -41,8 +46,24 @@ existing actual scripted-binary fixture through backup4/restore of its generated
 source, plan, three stages and notes, comparing original object bytes in both
 generations and the restored conversation records. Its
 [CI40791751564](https://github.com/s116821/ReMarkableBuddies/actions/runs/40791751564)
-is running; no eff result is transferred to that successor. Production code is
-unchanged. Remaining acceptance, canonical sync/archive and coordinated delivery
+completed successfully across Checks/Build/Integration, with release correctly
+skipped:802library tests passed/0failed/7ignored, and the actual generated-graph
+archive test passed. Production code is unchanged from eff.
+
+Accepted checkpoint848461175ce1dce146e0e879ace9bc523c65fb56 adds Unix test-only
+exact-destination faults inside the actual atomic format publication path,
+covering pre-rename failure, rename taking effect without acknowledgment, and
+parent-sync error. The tests require failed custody admission, observed format,
+ordinary-open refusal, preserved identity/history and explicit resume. Its
+[CI40795507466](https://github.com/s116821/ReMarkableBuddies/actions/runs/40795507466)
+is running; the earlier6e pass is not transferred. Mocked errors do not prove
+physical power-loss durability or Windows directory-sync semantics.
+
+Reviewed old-library/outer-driver/hosted-workflow inputs are being checkpointed
+for unchanged published-source compilation and real lease/adoption/reopen tests.
+Their compilation and actual execution are still unproven; idempotent existing
+object positive controls do not establish new-object ingestion or sync-engine
+coverage. Remaining acceptance, canonical sync/archive and coordinated delivery
 remain open. Physical ingestion/native Writer and generation4 companion/accounting
 integration remain required separate roadmap work.
 
