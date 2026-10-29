@@ -25,8 +25,8 @@ the contributor-facing basis; private tracking is not a prerequisite.
   host/owned-report.mjs and its types have distinct exact report1/2 branches;
   report2formats are1/2/3 and complete requires3/six domains. src/owned-data.ts
   checks connection/boot/epoch and currently uses inspectOwned(). Existing
-  accounting UI is not report3 support. Current handwriting work stays with its
-  owner; these facts must be refreshed before Manager implementation.
+  accounting UI is not report3 support. These pinned consumer facts must be
+  refreshed before Manager implementation.
 
 Implementation source scope must be pinned and independently reviewed against the
 then-current revisions. This assessment changes no storage, envelope/domain,
