@@ -8,7 +8,7 @@
 - [x] Wire guarded browser/IPC/preload and shared controller/protected path/actual DOM/plain UI/manual, preserving every lifetime/privacy boundary.
 - [x] Integrate fourteenth owner in actual factories;182/182directions preserve156; enumerate and test real incoming/outgoing peer boundaries and observation races.
 - [x] Execute literal report/request/public/lifecycle expectations, actual helper/child bounds and meaningful once-export/uncertainty/source-preservation/format/media/custody cases.
-- [ ] Qualify actual development and retained Windows/Linux browser/Electron packages with isolation/privacy and current predecessor coverage; reconcile any newly landed producer refusal without inferring its support.
-- [ ] Obtain independent source/current CI/bot review and final plain-language UI review; keep failures and exact evidence attribution.
-- [ ] Sync only completed canonical delta, verify parity/preservation, archive this completed scope and perform scoped generated-output hygiene.
-- [ ] Complete final coordinated paired review/normal Docs-first squash delivery and actual-main publication verification; do not close broader sync/restore obligations.
+- [x] Qualify actual development and retained Windows/Linux browser/Electron packages with isolation/privacy and current predecessor coverage; reconcile any newly landed producer refusal without inferring its support.
+- [x] Obtain independent source/current CI/bot review and final plain-language UI review; keep failures and exact evidence attribution.
+- [x] Sync only completed canonical delta, verify parity/preservation, archive this completed scope and perform scoped generated-output hygiene.
+Final coordinated paired review, current final Docs checks, normal Docs-first squash delivery and actual-main publication verification remain forthcoming external delivery gates. Archival completes only this implementation/qualification scope; broader sync/restore obligations remain open.
