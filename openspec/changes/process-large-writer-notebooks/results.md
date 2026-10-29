@@ -34,10 +34,14 @@ subset passed offline against this artifact with retained immutable bytes and
 zero external provider requests. A subsequent independently reviewed actual
 old mode-inspection/selected-export run also returned unsupported with every
 adopted Store byte unchanged and its fresh external destination absent/not a
-symlink. Closed-container cleanup completed. Conversation inventory remains
-open because its service observer precedes storage admission; a missing service
-tool is not format-fence proof. Broader actual predecessor sync/import/restore/
-recovery/cleanup/archive qualification remains open. Current exact-head tests
+symlink. Closed-container cleanup completed. Actual predecessor conversation inventory
+subsequently passed its ordinary Complete control and adopted Unsupported refusal
+with unchanged Store bytes, using an explicitly synthetic inactive-service
+observer. The failed first inventory attempt remains failed: its ordinary control
+already contained the future-format marker. The corrected second attempt creates
+the marker only after the ordinary control; independent review accepted its
+retained receipts and cleanup. This does not qualify a native host service.
+Broader actual predecessor sync coverage remains open. Current exact-head tests
 also passed archived source-media backup4/reopen/context/restore and cross-actor
 refusal, but these fixtures do not alone prove complete generated stage closure.
 
@@ -56,16 +60,51 @@ covering pre-rename failure, rename taking effect without acknowledgment, and
 parent-sync error. The tests require failed custody admission, observed format,
 ordinary-open refusal, preserved identity/history and explicit resume. Its
 [CI40795507466](https://github.com/s116821/ReMarkableBuddies/actions/runs/40795507466)
-is running; the earlier6e pass is not transferred. Mocked errors do not prove
+completed successfully across Checks/Build/Integration; release was skipped.
+This is its own exact-revision result, separately retained from6e. Mocked errors do not prove
 physical power-loss durability or Windows directory-sync semantics.
 
-Reviewed old-library/outer-driver/hosted-workflow inputs are being checkpointed
-for unchanged published-source compilation and real lease/adoption/reopen tests.
-Their compilation and actual execution are still unproven; idempotent existing
-object positive controls do not establish new-object ingestion or sync-engine
-coverage. Remaining acceptance, canonical sync/archive and coordinated delivery
-remain open. Physical ingestion/native Writer and generation4 companion/accounting
-integration remain required separate roadmap work.
+Source f65048a7d2e4b4f924bf45dd898974ba97254f42 completed the separate
+[predecessor qualification40938942035](https://github.com/s116821/ReMarkableBuddies/actions/runs/40938942035).
+The unchanged published old library compiled with one reviewed example and ran
+real ordinary Store create/import/idempotent import-staged/export/inspect/restore
+controls. A real old Store lease excluded current admission with zero model
+entries; explicit release allowed current adoption. Old reopen then rejected
+unsupported generation format before constructing its handler, with all adopted
+bytes unchanged. Independent review accepted this bounded receipt. It proves
+neither SyncEngine/Worker nor inbound/new-object/native behavior.
+
+The same source's ordinary [CI40938941934](https://github.com/s116821/ReMarkableBuddies/actions/runs/40938941934)
+failed the existing four-stage budget guard because of the extra PR workflow.
+That failure remains failed. The corrective candidate moves qualification into
+the existing Checks stage, retains the normal Cargo-produced application's
+actual commit/tree/features and binary identity, and builds only the old example
+using existing dependencies. It also extends the example through real old
+SyncEngine and Worker with pure-memory outbound transport; inbound/new-object
+behavior remains unqualified. Five focused command-provenance tests, three CI
+budget/architecture tests and three mocked outer safety cases pass locally.
+This corrective candidate is under independent review and has not yet obtained
+hosted compilation or runtime evidence. Remaining acceptance, canonical
+sync/archive and coordinated delivery remain open. Physical ingestion/native
+Writer and generation4 companion/accounting integration remain required separate
+roadmap work.
+
+
+## Final review coverage index
+
+This index identifies the concrete implementation/tests to reconcile against the
+remaining checklist. Source presence is distinct from execution: the full green
+runs above qualify their exact source revisions; the corrective predecessor
+successor still requires its own hosted result.
+
+| Contract area | Concrete source/test location | Remaining boundary |
+| --- | --- | --- |
+| Complete archive, scope, UTF-8 and literal identities | `src/writer/notebook/tests.rs`: page-scope archive, exact byte/call limits, multi-scalar coverage and central literal vectors | Physical notebook extraction is separate |
+| Strict commands, restart/replay and joined exports | `src/writer/notebook/command/tests.rs`: strict nested commands, removed transport/restart, original subrange replay, both destination poll guards | No native export authority follows |
+| Fresh stage authority and cancellation | `src/writer/notebook/runner.rs` tests: lost map/reducer acknowledgment, no-call distinction, final lost acknowledgment and maximum eight-map/reduction execution | Cooperative deadlines do not claim process isolation |
+| Unique-custody adoption and format publication | `src/storage/notebook_generation/tests.rs`: interrupted adoption, observed atomic-publication faults, retained bytes, feedback/contract2 and actual ordinary leases | Modeled Unix errors do not prove power-loss durability |
+| Complete generated graph archive | `tests/writer.rs` generated notebook backup/inspect/restore fixture, extended at6e47 and executed by CI40791751564 | Selected/group/cross-actor/native paths retain their explicit refusals |
+| Actual predecessor behavior | Published ARM writer/maintenance/inventory receipts and f650 host old-library receipt above | Corrective real SyncEngine/Worker execution remains pending; no inbound/new-object qualification |
 
 ## Command, provider and export integration checkpoint
 

@@ -26,11 +26,11 @@
 - [ ] Execute actual localhost model/Mem create/reopen/refine/update and uncertainty cases, media corruption/absence, exact final guards, backup/restore and old/narrow-consumer refusal tests.
 - [ ] Qualify pre/post-format interruption, lost rename/sync acknowledgment, pending metadata after an old writer changed history, partial capabilities, active-handle exclusion, preserved feedback/receipts/media, actual predecessor writer/sync/import/recovery refusal and explicit successor same-actor archive round trips.
 - [ ] Freeze current source/spec/test identities and complete required local/hosted qualification and independent source/semantic evidence review.
-- [ ] Prepare/review the new original bounded quality plan and perform only its authorized single attempt; retain actual outputs/failures and obtain independent semantic assessment without replaying the closed earlier plan.
+- [x] Prepare/review the new original bounded quality plan and perform only its authorized single attempt; retain actual outputs/failures and obtain independent semantic assessment without replaying the closed earlier plan.
 - [ ] Complete final paired review, canonical sync/archive and coordinated normal delivery with actual-main/publication observations recorded separately.
 
-Partial source implementation and its actual checks are recorded in results/PR
-evidence; no model attempt, live Mem write, tablet action or completed
-large/physical-notebook qualification is claimed by this checklist. Reservations,
-amended-contract review and the exact-revision handoff are accepted; unchecked
-implementation, verification and full lifecycle tasks remain required.
+Implementation and exact-revision checks are recorded in results/PR evidence.
+The single original six-call model quality attempt was independently accepted;
+no live Mem write, tablet action or physical-notebook qualification is claimed.
+Unchecked rows remain subject to final requirement-to-evidence reconciliation,
+including the corrective hosted predecessor sync check and paired delivery.
