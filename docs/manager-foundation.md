@@ -118,6 +118,26 @@ record the implemented contract and accepted Windows/Linux retained-package
 qualification. Physical-device/runtime health and final paired merge/publication
 remain separate outcomes. No selection or deletion action follows.
 
+## Historical conversation management
+
+Both companions provide explicit selection, fresh Inspect/Prepare, deliberate
+once-only logical removal and original-intent read-only Status. See the
+[central management guide](manager-conversation-management.md),
+[consumer requirements](../openspec/specs/conversation-management-companion/spec.md)
+and [completed implementation archive](../openspec/changes/archive/2026-10-28-manage-historical-conversation-companion/results.md)
+for accepted source/Windows+Linux retained qualification and exact limits.
+Retained history/media/export associations/native pages remain; physical
+reclamation, synchronized deletion and native/runtime health are not implied.
+Final paired review, normal merge and actual-main/publication stay separate.
+
+## Restore an archive already on the tablet
+
+Both companions provide a preview and separate confirmation to add compatible archived Buddy data while keeping current records. See the [central restore guide](manager-ordinary-restore.md), [consumer requirements](../openspec/specs/ordinary-archive-restore-companion/spec.md) and [detailed consumer contract](../openspec/changes/archive/2026-10-28-restore-ordinary-archive-companion/contract.md). Exact counts are optional technical details; media completeness and inactive saved settings are explicit. Earlier unconfirmed results remain distinct from a later check finding expected data. This does not download a backup, set up an empty/replacement tablet or restore native pages. Source/retained qualification, tablet/runtime health and final release are separate outcomes.
+
+## Inspect and export historical archives
+
+Both companions expose whole-archive checks and policy-previewed once-only history export. See the [central archive guide](manager-selected-archives.md) for content/exclusions, original uncertainty, exact accepted Windows/Linux qualification and remaining restore/cloud/native limits. Final merge/publication is separate.
+
 ## Central specifications and coordinated delivery
 
 The central capability is `openspec/specs/manager-foundation`. Its complete plan
