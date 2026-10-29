@@ -166,3 +166,5 @@ for literal utilities, semantic tokens and development/production host checks.
 Native Linux and independent Windows evidence are separately attributed in the
 [bounded verification archive](../openspec/changes/archive/2026-10-08-manager-shared-tailwind/verification.md).
 Tablet transport and installer gates remain separate.
+
+The [saved handwriting correction guide](manager-handwriting-corrections.md) covers explicit-profile inspection, fresh exact-record removal confirmation, retained history and original-operation uncertainty in both companions. Recognition effectiveness and provider/native integration remain separate.
