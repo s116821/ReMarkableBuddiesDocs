@@ -33,6 +33,33 @@ below belong to `f9b30c1`; required hosted source/package qualification must run
 the successor. Final copy review, hosted checks and complete sync/archive remain
 open in this paired delivery; no planning-only merge is requested.
 
+## Hosted closed-surface correction
+
+Manager `4079bf4` hosted run41034425114 failed Ubuntu job123993438922 at
+`tests/wired-hosts.mjs:90`: strict equality found the admitted `localModeChoice`
+preload method missing from the expected closed API list. The coordinator preserved
+the original complete failed log, SHA256
+`8e1bbbfd897dbbd599a4e0937a5201eab6dcf51f75223a6ad8b08b3015e09805`.
+This is not a transport/product failure or an unchanged CI retry; Windows remained
+unsettled at the failure handoff.
+
+Normal Manager successor `abbd61a9fc9a8cfa04f60fe4b3bbb8116b381b18`, tree
+`7d7a27d92c3e148d9b130b7c08f6bc44abf72f07`, parent4079, changes only that expected
+list by adding `localModeChoice`. Strict deep equality and all refusal/arity/
+sandbox guards remain unchanged. A search of existing closed preload/bridge
+surface assertions found this single top-level list and the separate unchanged
+Drive Auth method list; no other applicable closed list needed an update.
+
+The affected source wired-host test passes locally using the retained production
+browser assets. Current main/preload source bytes were compared directly with
+the retained Linux package archive and match exactly; the package still identifies
+the earlier development sourcef9. This is bounded existing wired-state/API-surface
+validation against identical bridge/runtime bytes, not a new407/abbd application
+build or successor UI/package qualification. The affected retained-package test
+also passes with strict API equality and all existing guards intact. Hosted
+successor qualification, final review and
+canonical sync/archive remain open.
+
 ## Exact implementation
 
 Manager `f9b30c164638c5ef47671f11f0a7eb48a258d3a2`, tree
