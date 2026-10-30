@@ -93,7 +93,7 @@ repairs without relabeling old evidence as a pass on a newer build. Run code che
 appropriate to changed behavior, and verify the final installed build on hardware.
 Do not equate an architecture build with hardware validation on that device.
 
-Use [the hardware probe](https://github.com/s116821/ReMarkableBuddies/blob/main/examples/hardware_probe.rs) for bounded offline
+Use [the hardware probe](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/examples/hardware_probe.rs) for bounded offline
 input actions and [the fixture guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md)
 for reusable fixture setup and links to PR evidence. Adapt coordinates to observed UI
 state; do not fossilize another machine's paths, addresses or credentials.

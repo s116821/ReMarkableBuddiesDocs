@@ -1,0 +1,493 @@
+{
+  "capture_version": 1,
+  "qualification_scope": "Current669 Linux synthetic operation and CLI evidence; original run, distinct source/executable from d6",
+  "verification": {
+    "reviewed_source_head": "669c0774530699500984dda038cc5138ed474c4e",
+    "source": {
+      "executable_sha256": "552e546b4b14cce41e2535eeb60020230f717a215fa650d14c61b889273c92a9",
+      "platform": "linux",
+      "source_head": "68aba6bfc5e955644173c59d1aeed8529bc7dc9f",
+      "source_tree": "50531b8de160e31984260fe8741baf5db64290cc"
+    },
+    "records": 47,
+    "verified_stream_hashes": 94,
+    "independently_verified_prepared_intents": 1,
+    "raw_log_bytes": 628964,
+    "raw_log_sha256": "1e2ea1a9444f7337c9934bbd2d14f28881b159422221e4390a8f19f48782d5f7",
+    "normalized_bytes": 46256,
+    "normalized_sha256": "9153378bcbbcf8e37281f78e6a85cbbd33074bcfb901360921ef38ba17b555aa",
+    "scope": "Current669 actual Linux CLI and synthetic owned cache; no tablet/provider/native qualification"
+  },
+  "records": [
+    {
+      "case": "./-",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e188be9a33f538391ba9e89177bc2abf6e7dae0d62d134739b6dfeb8bc9e7cd7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "array",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "[]",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e188be9a33f538391ba9e89177bc2abf6e7dae0d62d134739b6dfeb8bc9e7cd7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "array",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "[]",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/.",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e188be9a33f538391ba9e89177bc2abf6e7dae0d62d134739b6dfeb8bc9e7cd7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "array",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "[]",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"request_version\":1}",
+      "stdout_sha256": "444e2b9d498cbaeedb6513432739138315da54ddfebcd37d0e4c5480f83cd3e5",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"ready\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":null,\"entry_bytes\":547,\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\"}\n"
+    },
+    {
+      "case": "not-stdin.json",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e188be9a33f538391ba9e89177bc2abf6e7dae0d62d134739b6dfeb8bc9e7cd7",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "array",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "[]",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "duplicate",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"request_version\":1}",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "duplicate",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"request_version\":1}",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"request_version\":1}",
+      "stdout_sha256": "faa734c84733f1ad126935cb8273138aef0dd46ec4d894e9bec6868447c97b37",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"prepared\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":{\"intent_version\":1,\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"config_path_sha256\":\"15c2dcb256e34cde5595bc37f07d100311a292ddad9652095e1cdc687b393f5d\",\"config_bytes_sha256\":\"9ebf1a71cb8b33addd5cc6e09eb7b4f5a9bde86f7406d237f5d61299b74e025d\",\"roots_sha256\":\"8fe29abf476cd2a1b335225ffb8f1ce06ca781b6ab0be8e323593086522998d9\",\"actor\":\"a7910374-aabc-4902-a368-bc902fdb5ea9\",\"generation\":\"cabe1f31-c170-4bb8-a42d-cf109206b0a9\",\"store_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"cache_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"namespace_owner_sha256\":\"f265ae4238d082d7565a18ee00ce51b7ec731e91a7302f6acd8cfbd3f9dcd5ba\",\"namespace_identity_sha256\":\"bd319a1e093b7cad2b32c3e92aaab364191adfce35ebcace3c2bdcc55edb8ae4\",\"entry_identity_sha256\":\"55a0ef52689aa0e7485eeb0a9f9b7dab936b74a00531a0addcb2723e6f9d5be8\",\"entry_bytes\":547,\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\",\"intent_sha256\":\"1705ed68ea6a26fc3699497ba9de41049c3a33265abc3f6e96de16c21011a5f9\"},\"entry_bytes\":547,\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\"}\n"
+    },
+    {
+      "case": "duplicate",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"request_version\":1}",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "duplicate",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"request_version\":1}",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"intent\":{\"actor\":\"a7910374-aabc-4902-a368-bc902fdb5ea9\",\"cache_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"config_bytes_sha256\":\"9ebf1a71cb8b33addd5cc6e09eb7b4f5a9bde86f7406d237f5d61299b74e025d\",\"config_path_sha256\":\"15c2dcb256e34cde5595bc37f07d100311a292ddad9652095e1cdc687b393f5d\",\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"entry_bytes\":547,\"entry_identity_sha256\":\"55a0ef52689aa0e7485eeb0a9f9b7dab936b74a00531a0addcb2723e6f9d5be8\",\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\",\"generation\":\"cabe1f31-c170-4bb8-a42d-cf109206b0a9\",\"intent_sha256\":\"1705ed68ea6a26fc3699497ba9de41049c3a33265abc3f6e96de16c21011a5f9\",\"intent_version\":1,\"namespace_identity_sha256\":\"bd319a1e093b7cad2b32c3e92aaab364191adfce35ebcace3c2bdcc55edb8ae4\",\"namespace_owner_sha256\":\"f265ae4238d082d7565a18ee00ce51b7ec731e91a7302f6acd8cfbd3f9dcd5ba\",\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"roots_sha256\":\"8fe29abf476cd2a1b335225ffb8f1ce06ca781b6ab0be8e323593086522998d9\",\"store_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\"},\"request_version\":1}",
+      "stdout_sha256": "d485143bb14914a462ef7dde5c403597687413c40d84714ed966d1edfcebc30f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"unchanged\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":null,\"entry_bytes\":547,\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\"}\n"
+    },
+    {
+      "case": "nested-array",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"intent\":[]}",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "nested-array",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"intent\":[]}",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "nested-array",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"intent\":[]}",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"intent\":{\"actor\":\"a7910374-aabc-4902-a368-bc902fdb5ea9\",\"cache_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"config_bytes_sha256\":\"9ebf1a71cb8b33addd5cc6e09eb7b4f5a9bde86f7406d237f5d61299b74e025d\",\"config_path_sha256\":\"15c2dcb256e34cde5595bc37f07d100311a292ddad9652095e1cdc687b393f5d\",\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"entry_bytes\":547,\"entry_identity_sha256\":\"55a0ef52689aa0e7485eeb0a9f9b7dab936b74a00531a0addcb2723e6f9d5be8\",\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\",\"generation\":\"cabe1f31-c170-4bb8-a42d-cf109206b0a9\",\"intent_sha256\":\"1705ed68ea6a26fc3699497ba9de41049c3a33265abc3f6e96de16c21011a5f9\",\"intent_version\":1,\"namespace_identity_sha256\":\"bd319a1e093b7cad2b32c3e92aaab364191adfce35ebcace3c2bdcc55edb8ae4\",\"namespace_owner_sha256\":\"f265ae4238d082d7565a18ee00ce51b7ec731e91a7302f6acd8cfbd3f9dcd5ba\",\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"roots_sha256\":\"8fe29abf476cd2a1b335225ffb8f1ce06ca781b6ab0be8e323593086522998d9\",\"store_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\"},\"request_version\":1}",
+      "stdout_sha256": "6a50a2bc686a39b6dbc0c8377764d119e80d374bb92bcd4a564ddf22362d65a8",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"applied\",\"runtime_unverified\":true,\"possible_effect\":true,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":null,\"entry_bytes\":547,\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\"}\n"
+    },
+    {
+      "case": "nested-array",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"request_version\":1,\"intent\":[]}",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "extra-json",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{} {}",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "extra-json",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{} {}",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"intent\":{\"actor\":\"a7910374-aabc-4902-a368-bc902fdb5ea9\",\"cache_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"config_bytes_sha256\":\"9ebf1a71cb8b33addd5cc6e09eb7b4f5a9bde86f7406d237f5d61299b74e025d\",\"config_path_sha256\":\"15c2dcb256e34cde5595bc37f07d100311a292ddad9652095e1cdc687b393f5d\",\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"entry_bytes\":547,\"entry_identity_sha256\":\"55a0ef52689aa0e7485eeb0a9f9b7dab936b74a00531a0addcb2723e6f9d5be8\",\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\",\"generation\":\"cabe1f31-c170-4bb8-a42d-cf109206b0a9\",\"intent_sha256\":\"1705ed68ea6a26fc3699497ba9de41049c3a33265abc3f6e96de16c21011a5f9\",\"intent_version\":1,\"namespace_identity_sha256\":\"bd319a1e093b7cad2b32c3e92aaab364191adfce35ebcace3c2bdcc55edb8ae4\",\"namespace_owner_sha256\":\"f265ae4238d082d7565a18ee00ce51b7ec731e91a7302f6acd8cfbd3f9dcd5ba\",\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"roots_sha256\":\"8fe29abf476cd2a1b335225ffb8f1ce06ca781b6ab0be8e323593086522998d9\",\"store_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\"},\"request_version\":1}",
+      "stdout_sha256": "0b7eec07abf89e63c1b02f3f43526a1fe4fa22dc8ee9530887b2330241e29ab9",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"absent\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "extra-json",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{} {}",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "extra-json",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{} {}",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "missing",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "synthetic-owned",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{\"intent\":{\"actor\":\"a7910374-aabc-4902-a368-bc902fdb5ea9\",\"cache_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\",\"config_bytes_sha256\":\"9ebf1a71cb8b33addd5cc6e09eb7b4f5a9bde86f7406d237f5d61299b74e025d\",\"config_path_sha256\":\"15c2dcb256e34cde5595bc37f07d100311a292ddad9652095e1cdc687b393f5d\",\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"entry_bytes\":547,\"entry_identity_sha256\":\"55a0ef52689aa0e7485eeb0a9f9b7dab936b74a00531a0addcb2723e6f9d5be8\",\"entry_sha256\":\"e2e0c24b4f152c31984d2792063708e62da00c4ab8514de018106157efafab9e\",\"generation\":\"cabe1f31-c170-4bb8-a42d-cf109206b0a9\",\"intent_sha256\":\"1705ed68ea6a26fc3699497ba9de41049c3a33265abc3f6e96de16c21011a5f9\",\"intent_version\":1,\"namespace_identity_sha256\":\"bd319a1e093b7cad2b32c3e92aaab364191adfce35ebcace3c2bdcc55edb8ae4\",\"namespace_owner_sha256\":\"f265ae4238d082d7565a18ee00ce51b7ec731e91a7302f6acd8cfbd3f9dcd5ba\",\"operation\":\"0dff03c1-6e4e-40fa-bf71-cbcae1c3adfb\",\"roots_sha256\":\"8fe29abf476cd2a1b335225ffb8f1ce06ca781b6ab0be8e323593086522998d9\",\"store_owner_sha256\":\"9501d6da8f1d5c7eb0c09ad0f5b2de27e1155a9cfb7312326026af08854b60d1\"},\"request_version\":1}",
+      "stdout_sha256": "760c6700277102f3f44f198bb1ddadf23aca217b3452786f3e53de8483d7a8c6",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"absent\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":\"3b5279f0-3a79-4ed5-b071-e04a6e497f5b\",\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "missing",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "missing",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "missing",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "oversized",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "literal-eof",
+      "exit_code": 0,
+      "operation": "inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "fa69c93085d4aba098a69545de5ab6d04d0080557a0a7e6959faac63c06843a0",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"inspect\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "./-",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "708a08a607d882647539698573c231a065ea7fe35f317dd18ad21688005c9d5f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "708a08a607d882647539698573c231a065ea7fe35f317dd18ad21688005c9d5f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/.",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "708a08a607d882647539698573c231a065ea7fe35f317dd18ad21688005c9d5f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "not-stdin.json",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "708a08a607d882647539698573c231a065ea7fe35f317dd18ad21688005c9d5f",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "literal-eof",
+      "exit_code": 0,
+      "operation": "prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "f54734435cf4801c8f0693d6c9461b6ea6145c0f568355f905c1bfe087f297df",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"prepare\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "./-",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "b41a7609fc2d6156442ab969afebc3c62311257ac37d1b0e5a8a5caab4a6fc42",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "b41a7609fc2d6156442ab969afebc3c62311257ac37d1b0e5a8a5caab4a6fc42",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/.",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "b41a7609fc2d6156442ab969afebc3c62311257ac37d1b0e5a8a5caab4a6fc42",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "not-stdin.json",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "b41a7609fc2d6156442ab969afebc3c62311257ac37d1b0e5a8a5caab4a6fc42",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "literal-eof",
+      "exit_code": 0,
+      "operation": "apply",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "9b89431e479f47663dfc11dd6453fafe475805c521770b4f4be6b17bc4848808",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"apply\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "./-",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e711b4429711e992953e645021fd7d04fa9715ff8c2b7c163d82b86cd9df7db1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e711b4429711e992953e645021fd7d04fa9715ff8c2b7c163d82b86cd9df7db1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "-/.",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e711b4429711e992953e645021fd7d04fa9715ff8c2b7c163d82b86cd9df7db1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "not-stdin.json",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": null,
+      "stdout_sha256": "e711b4429711e992953e645021fd7d04fa9715ff8c2b7c163d82b86cd9df7db1",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"unsupported\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    },
+    {
+      "case": "literal-eof",
+      "exit_code": 0,
+      "operation": "status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_utf8": "",
+      "stdin_body_utf8": "{}",
+      "stdout_sha256": "13bc5c1bdd2f2c7cb8b2ed5c4f7ff25eb47208d9b96688bf41a1b7b1aed34cee",
+      "stdout_utf8": "{\"report_version\":1,\"operation\":\"status\",\"status\":\"invalid-input\",\"runtime_unverified\":true,\"possible_effect\":false,\"document\":null,\"intent\":null,\"entry_bytes\":null,\"entry_sha256\":null}\n"
+    }
+  ]
+}
