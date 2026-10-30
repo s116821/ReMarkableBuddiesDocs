@@ -1,0 +1,28 @@
+{
+  "docs_base": "c872e91a76a3fdeab7dd1b543a4b4980e4b5e9a0",
+  "actual_docs_main": "2024b37597a0591691e8fc16f9ab7549a9f55193",
+  "qualified_manager": "d36332e35b9880f3019c099c577b3149e7c1c6e3",
+  "qualified_manager_run": "40972873155",
+  "local_product_package": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+  "requirements": 3,
+  "scenarios": 8,
+  "canonical_delta_core_sha256": "cf679127e131d59d4a3e8de9c2e1f487abf3ada0daa927fd15de4e92383ea510",
+  "unchanged_archive_inputs": {
+    "design.md": "a1d2d64a5ef5d42a17680762358d991fd271f3f21d6f290b45143543a43b251e",
+    "contract-public.md": "19388916301704fc978eae4f7a0549084e095196f8430c9b9cfa32f59eb64776",
+    "proposal.md": "c8a955dcc3e5b4a60db7485fd8fc2659abc5348087cb2cee0ea55a4c7ae19b48",
+    "vectors.json": "4ca241289038cabdc84120aa461da3a045dfd396c92c26a1f240e47245e78e66",
+    "acceptance.md": "6ca217a920d42429865d24e91ab2b17b59a948ff1b16b5069490204fc85d1ca4",
+    "source-proof.json": "f1471bf93940f40c43ad48b826a3b866eda5d91770b3ece666aeba05b3f40c60",
+    "precode-results.md": "c41e429785e302aee42d3f06f6e58beaf1d5e785c19baa43a4d7c4e9a627dd70",
+    ".openspec.yaml": "374b8065d2a855e995ccb196a4c93679ecb37066a4c8fb44f18c7e47e9327b2a",
+    "contract.md": "8cb9cc205a4852006404667625ba3e330bfc8d3c3f98ba092f5eeec73aed73dc",
+    "specs/handwriting-record-management/spec.md": "f95b727ca3bbedd0491864dce5e9d746a7967070ec94800865dec8fc2b25992d"
+  },
+  "intentional_metadata_updates": [
+    "tasks.md",
+    "implementation.md historical-stage label/final-results pointer",
+    "results.md new exact qualification/limits record"
+  ],
+  "remaining": "Final Docs review/hosted checks,cleanup resync,normal paired merge and actual-main publication."
+}
