@@ -104,6 +104,19 @@ After REM-36 acceptance and exact-plan review, implement domain schemas/APIs and
 
 ## Open Questions and Dependency Gates
 
+The next mode-aware application admission increment follows
+[startup-mode-admission.md](startup-mode-admission.md). Accepted publisher mode
+leases are not local read-mode lifetime guards. Validate actual persisted choices
+before model/device startup and retain a matched configured shared lease through
+current receiving, while historical recovery remains token-free and ordinary live
+mode switching remains explicitly unfinished.
+
+The next bounded executable integration follows
+[startup-history-runtime.md](startup-history-runtime.md). Exact SDK d01 supplies
+no native Reader capability; selected startup, metadata inspection and token-free
+original-request recovery can be made usable without claiming fresh effects or
+removing native-dependent dead-code diagnostics.
+
 Before code: confirm final REM-36 commit/CAS/media APIs and accepted limits; independently review this exact plan with REM-25 and coordinator. Before native binding: REM-25 must qualify the receipt and insertion/adoption operation. Before external export: REM-23 verifies marker preservation on its actual backend. Before complete native mixed-Buddy experience: REM-38/39 provide routing/rendering and Writer; domain tests here do not close their gates. These dependencies do not permit weakening automatic page creation or silently treating unbound legacy targets as trusted.
 
 ## Capture-facts integration amendment — pending coordinated review
