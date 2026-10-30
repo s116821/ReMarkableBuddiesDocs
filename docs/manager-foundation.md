@@ -29,7 +29,7 @@ automatic updates remain later delivery; do not infer their support.
 Release fixtures additionally require Python 3.12. Install the hash-locked
 maintained tools with `python -m pip install --require-hashes -r cicd/release/python-tools.lock`,
 then run `npm run test:release`. These fixtures use real local Git repositories
-and Python Semantic Release; upstream Action controls use loopback API fixtures.
+and Python Semantic Release to verify project workflow and release-identity rules.
 No experimental production tags or tablet operations are required.
 
 ## Architecture and scope
