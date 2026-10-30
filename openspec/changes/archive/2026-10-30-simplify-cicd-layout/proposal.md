@@ -7,7 +7,7 @@ component roots. CI also rebuilds and requalifies maintained third-party Actions
 creating dependency locks, copied bundles, transfer checks and upstream test
 fixtures that the project need not maintain.
 
-## What changes
+## What Changes
 
 - Place executable examples under `docs/examples/`, release/deployment inputs
   under `cicd/`, and development helpers under `scripts/`.
