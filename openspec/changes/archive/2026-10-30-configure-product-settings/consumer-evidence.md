@@ -1,14 +1,12 @@
 # Shared Manager source verification
 
-Publication head is Manager0e9a63ee194a9deeca7049d7652f5a33c69dd1d3, tree
-f2eb977108786efef9403bdab0f02eb5408e3c6f, on the existing paired feature branch.
-Its exact tree equals the locally tested499832a tree. Private intermediate history
-is retained separately and is not a publication ancestor; the sole public parent
-is the actual published65d baseline. Three capture/test-only changed paths leave
-the qualified103598ed application bytes
-unchanged. The implementation begins at cf7d4ca; ef465692 fixes lifetime clearing and103598ed
-corrects npm's packaged-selector forwarding. These are normal successors.
-Root owns publication, independent review, hosted qualification and delivery.
+Final publication head is Managereb3da3e47d8c9dafee00dc961b610358ab46bb76,
+tree89d384deda5a7eb8c563d036379a5ed2f46cb128, parent0e9a63e, in Manager PR51.
+The earlier0e9 publication tree equals privately tested499832a, with private
+intermediate history retained separately. The clean application103598ed runtime
+inputs remain unchanged; eb3 changes only the development App-boundary fixture.
+Its accepted review and exact hosted success are recorded in delivery-evidence.md.
+The earlier local receipts below retain their original source attribution.
 
 ## Executed consumer checks and provenance
 
@@ -75,12 +73,23 @@ OAuth bundling is explicitly attributed. These resources are the clean103598ed
 developer build; the later three paths are test-only. The executable hash and
 all resource hashes are in the private qualification packet.
 
-## Remaining delivery gates
+## Scoped delivery and remaining product gates
 
-Main's final producer060d012/captured-report cross-replay is recorded above.
-Root's final source review and required hosted Windows/Linux qualification remain distinct.
-Sync and archive this owned completed change in the same paired delivery PRs
-when those gates pass; do not merge a separate planning prerequisite. Broader
-Mem destination/account setup, automatic Reader delegation, actual restart or
-running adoption, native/device/provider acceptance and full REM-42 completion
-remain open. Generic published-config-schema alignment remains Root-owned.
+Both implementation heads now have accepted independent source review and full
+required hosted qualification: Buddy060d012/run41005995620 and Manager
+ eb3da3e/run41010792992. These hosted facts come from the coordinating review
+receipt; no local code/device execution is relabeled as hosted evidence.
+The failed0e9/run41008003257, its stale-readiness fixture cause and the accepted
+test-onlyeb3 repair remain explicitly preserved in delivery-evidence.md.
+
+The owned four-requirement/nine-scenario delta is synced and archived in this
+same paired Docs PR123. Final Docs successor review/CI, coordinated merges and
+actual-main release verification remain with the coordinator. Broader Mem
+account/workspace/collection setup, automatic Reader delegation, actual restart
+or running adoption, native/device/provider acceptance and full REM-42 completion
+remain open. Generic published-config-schema alignment is a separate follow-up.
+
+Completed Manager outputs and dependency/build caches have been removed after
+their verification use. Useful failure logs, source and visual evidence are
+preserved with hashes; installed review tools and current Docs validators remain.
+There is no remaining held Manager package or speculative future cache purpose.

@@ -15,6 +15,10 @@
 ## Verification and coordinated delivery
 - [x] Execute literal and meaningful producer/CAS/default/unknown/reconciliation controls and preserve demonstrated failures.
 - [x] Verify both actual host UIs, all240 directed owner pairs preserving210, enumerated real App boundaries, Stop/late/identity/DOM/privacy paths and applicable transport controls.
-- [ ] Run affected type/lint/build/package checks with measured headroom and cache reuse; obtain exact required Windows/Linux hosted qualification and independent source review.
-- [ ] Sync only completed requirements, verify canonical/vector/other-source parity and archive only this owned completed change in linked PRs.
-- [ ] Deliver final native source/evidence to Root for normal publication/review/merge; preserve specific broader/runtime/provider/device gates and perform bounded post-consumer hygiene.
+- [x] Run affected type/lint/build/package checks with measured headroom and cache reuse; obtain exact required Windows/Linux hosted qualification and independent source review.
+- [x] Sync only completed requirements, verify canonical/vector/other-source parity and archive only this owned completed change in linked PRs.
+- [x] Hand off final native source/evidence to Root for normal publication/review/merge; preserve specific broader/runtime/provider/device gates and perform bounded post-consumer hygiene.
+
+The handoff closes this worker implementation/specification scope. It does not
+claim final Docs successor CI, merges or actual-main release verification; those
+remain with the coordinator. Broader REM-42/native/runtime/account gates stay open.
