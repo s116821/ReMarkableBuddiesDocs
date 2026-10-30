@@ -1,4 +1,4 @@
-# Implementation candidate and staged qualification
+# Historical implementation checkpoints
 
 Manager implementation is committed as f7323cf2829ee374abe4708f1ee3d8d35bbebd0e,
 followed normally by ee64790c2179333ece2a3011224a1644f9c66ad0. Current source is
@@ -69,3 +69,7 @@ bundle, SHA256e2e2fd626fd05e3ec5128739632ebba1287e99f288f84a4d9144ea4159faeb61.
 Normal mergecc8e1b68 has parents3789930/2024b375; Writer notebook canonical/archive
 entries are preserved. No Manager build is required merely for this Docs update.
 Canonical handwriting sync/archive remains pending current source/evidence review.
+
+
+These chronological checkpoints retain their original stage attribution. The final
+accepted source, local/hosted qualification and delivery limits are in [results.md](results.md).

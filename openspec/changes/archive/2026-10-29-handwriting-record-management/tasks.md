@@ -13,8 +13,17 @@
 
 ## Verification and paired delivery
 - [x] Run meaningful red/green literal protocol/lifecycle tests and actual helper/subprocess/synthetic localhost SSH controls; preserve failures and hashes.
-- [ ] Run current build/type checks, both actual browser/Electron flows, all210directed owner relationships plus enumerated real App/observation/cancellation/privacy cases; verify current packages on required platforms through Root CI.
-- [ ] Independently review exact current code/spec/evidence and all available public review feedback; address findings.
-- [ ] Synchronize only completed delta into canonical handwriting-record-management capability; archive only owned completed change; preserve unrelated active Writer/sync specs and all historical entries.
-- [ ] Run required final Docs checks, publish exact final paired heads via Root and complete normal coordinated review/merge with current CI.
-- [ ] Root records actual-main build/release results; keep whole REM-42/REM-26/1.0 open and clean bounded generated outputs with source/evidence/caches preserved.
+- [x] Run current local build/type/lint checks, actual browser/Electron flows, all210directed owner relationships and App/observation/cancellation/privacy cases; retain package attribution and49broader exit-zero receipts.
+- [x] Accept exact d36332e Windows/Linux source/package qualification through coordinated hosted CI40972873155.
+- [x] Receive coordinated independent current source/spec/evidence acceptance and address demonstrated findings with normal successor commits.
+- [x] Synchronize exactly3completed requirements/8scenarios into canonical handwriting-record-management and archive only this change, preserving unrelated work and frozen116vectors.
+- [x] Run final local Docs checks (strict102/0,guidance34/126,12unit tests,diff) and prepare exact native successor/public-image evidence for coordinator publication/review.
+- [x] Retire completed bounded generated outputs after consumers finish; preserve source/evidence/caches and separate logical/free-space receipts.
+
+## Remaining coordinated delivery obligations
+
+The coordinator must publish/review the final Docs successor, reconcile current
+public feedback, resynchronize both feature PRs with the separate merged CI cleanup,
+complete normal paired squash delivery and record actual-main build/release results.
+These are not claimed complete by the implementation archive. Broader handwriting,
+companion and integrated1.0 acceptance remain open.

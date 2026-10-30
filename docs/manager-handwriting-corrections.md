@@ -9,12 +9,14 @@ permanent current-state authority.
 
 The component [usage guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/feature/rem-42-handwriting-record-management/docs/handwriting-corrections.md)
 explains private content, partial results, explicit IDs, supported modes and finite
-custody. The active [consumer contract](../openspec/changes/handwriting-record-management/contract.md)
-and [public projection](../openspec/changes/handwriting-record-management/contract-public.md)
+custody. The archived [consumer contract](../openspec/changes/archive/2026-10-29-handwriting-record-management/contract.md)
+and [public projection](../openspec/changes/archive/2026-10-29-handwriting-record-management/contract-public.md)
 remain central. No sample display, physical erasure, recognition efficacy,
 provider/native acceptance or whole Manager/handwriting/1.0 completion follows.
 
-Implementation qualification and final source review are in progress. Local
-synthetic SSH/host evidence is separate from forthcoming exact hosted
-Windows/Linux package qualification and actual-main release observation. The
-broader requirements remain open; this is one coordinated full-lifecycle pair.
+Local qualification, independent source/evidence review and exact d36332e
+hosted Windows/Linux qualification have passed. Actual-main release observation
+remains a postmerge obligation. The [qualification record](../openspec/changes/archive/2026-10-29-handwriting-record-management/results.md)
+and [synthetic review images](evidence/handwriting-record-management/README.md)
+keep their exact source attribution. Broader requirements remain open; this is
+one coordinated full-lifecycle pair.
