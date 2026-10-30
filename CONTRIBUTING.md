@@ -42,6 +42,18 @@ Any remote matching canonical upstream or the explicit override permits reuse, i
 
 Manual equivalents are ordinary `git clone URL PATH`, `git remote add upstream CANONICAL_URL`, and `git worktree add -b TOPIC PATH BASE`. Select BASE explicitly from the intended reviewed branch; never overwrite a dirty checkout. Fork PRs and local checks require no canonical write access.
 
+## Repository layout and CI maintenance
+
+Keep examples in `docs/examples/`, deployment and release inputs in `cicd/`, and
+helper programs in `scripts/`. Conventional root manifests/build entry points and
+GitHub discovery files retain their normal locations. Executable examples and
+fixtures remain application-relevant even when they live under `docs/`.
+
+Prefer maintained community Actions at reviewed immutable revisions and direct
+workflow steps for ordinary CI orchestration. Keep custom helpers for substantive
+project-specific build, packaging or release guarantees; do not rebuild and
+re-test upstream Action implementations as part of routine application CI.
+
 ## Build and workspace hygiene
 
 On every development machine, check build/temp disk headroom and deliberately reuse appropriate active caches and exact-revision validation. At handoff or delivery, delete unused generated outputs instead of moving disposable caches to network storage. Preserve source, lockfiles and useful results; exceptional frozen artifacts need a concrete pending use, owner, revision/hash and expiry or review point.
