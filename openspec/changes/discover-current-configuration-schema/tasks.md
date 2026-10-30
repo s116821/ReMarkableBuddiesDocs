@@ -4,6 +4,7 @@
 - [x] Record proposal/design/delta and acceptance before behavior code.
 - [x] Implement embedded bounded independent schema and exclusive early CLI.
 - [x] Cover current declaration structure/defaults/nulls and explicit validation limits.
+- [ ] Validate standards replay in the existing CI Checks step and existing workflow fixtures.
 - [ ] Run meaningful actual CLI/schema/typed-object and affected regression controls at exact source inputs.
 - [ ] Reconcile normally with actual merged Buddy/Docs product-settings delivery.
 - [ ] Obtain independent review and required exact-head validation.

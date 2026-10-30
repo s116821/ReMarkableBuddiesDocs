@@ -21,3 +21,7 @@ The schema SHALL cover all thirteen current root properties and closed nested ob
 #### Scenario: Schema success is not runtime admission
 - **WHEN** an object satisfies the structural document but violates a parser, byte, semantic, filesystem or credential rule
 - **THEN** existing typed/runtime checks remain authoritative and schema success grants no execution or activation authority
+
+#### Scenario: Automated standards replay
+- **WHEN** the current schema is checked in CI
+- **THEN** the existing Checks job validates its meta-schema and expected structural corpus with a standards-conforming locked development engine against the already-built normal host executable selected from compiler provenance, without inserting defaults, creating another job or rebuilding the executable

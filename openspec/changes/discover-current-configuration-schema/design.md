@@ -1,8 +1,8 @@
 # Design
 
-The selected CLI is --configuration-schema, with Clap exclusive admission and early dispatch immediately after argument parsing. It has no value/input selector. Emit one static UTF8 JSON document plus LF, at most65536 bytes, directly from an embedded source asset. Use existing Rust/Serde/I/O support only. Consumers explicitly invoke the selector and check the returned $id; an old binary refuses the unsupported argument. No fallback to stale schemas.config and no app-tag negotiation.
+The selected CLI is --configuration-schema, with Clap exclusive admission and early dispatch immediately after argument parsing. It has no value/input selector. Emit one static UTF8 JSON document plus LF, at most 65,536 bytes, directly from an embedded source asset. Use existing Rust/Serde/I/O support only. Consumers explicitly invoke the selector and check the returned $id; an old binary refuses the unsupported argument. No fallback to stale schemas.config and no app-tag negotiation.
 
-Proposed independent document identity after repository collision/caller inspection: urn:remarkable-buddies:configuration-object-schema:v1. Dialect remains JSON Schema2020-12. Runtime config_schema_version remains1. The identity describes schema-document revision, not storage or app version. Preserve contract-v1/v2/v3.json and all generation capability publication bytes.
+Proposed independent document identity after repository collision/caller inspection: urn:remarkable-buddies:configuration-object-schema:v1. Dialect remains JSON Schema 2020-12. Runtime config_schema_version remains1. The identity describes schema-document revision, not storage or app version. Preserve contract-v1/v2/v3.json and all generation capability publication bytes.
 
 Describe the thirteen closed optional root properties, exact nested object/null/default rules, supported enums and faithful static bounds. Defaults are annotations only; never insert them or mutate declarations. Present paths requires all three members. research_policy/product_settings retain absent/null semantics; product object allows empty/version-only/partial declaration and rejects null leaves. Typed default serialization is not the accepted-input template.
 
@@ -10,4 +10,8 @@ Scope is canonical object declarations accepted by saved inspection. Existing le
 
 Regression controls: real exclusive CLI with poisoned/missing selected config, poisoned environment/watchdog/.env and open stdin; closed Args conflict inventory; old inspection/dedicated operations; actual schema validation corpus against the existing typed object inspector for representative structural cases; immutable legacy storage/capability bytes; product declaration origins and permissive loader remain unchanged. Reuse the active owned Cargo cache, serial compilation after the observed paging limit. No real model/provider/tablet/service call.
 
-Starting inputs: Buddy060d012 and Docs6c844375. The separate current product-settings delivery remains frozen. Reconcile normally with its actual merged main inputs before final validation/review; never credit an earlier head to changed source.
+Starting inputs: Buddy 060d012 and Docs 6c844375. The separate current product-settings delivery remains frozen. Reconcile normally with its actual merged main inputs before final validation/review; never credit an earlier head to changed source.
+
+Review control: exact repeated sync namespace array refuses through actual saved CLI and existing inspection uniqueness check. uniqueItems remains faithful to the canonical inspector; legacy BTreeSet decoding can deduplicate, unchanged. This distinction is covered in the shared 41st corpus case and a separate loader assertion.
+
+The existing CI Checks job replays the meta-schema and structural corpus using pinned Ajv 8.20.0 in its existing release-fixture development lock. It selects the already-built normal host command through the existing compiler-artifact provenance helper. No new job, compile, runtime dependency, installed schema artifact or package-installer helper is introduced. The development checker proves emitted-byte equality and no input default mutation.
