@@ -202,3 +202,19 @@ model evidence, parent delivery, native/fresh source, Pending/context/settlement
 ordinary lifetime caller and whole MVP gates remain open. No unfinished change
 is canonically promoted or archived. No provider, tablet, account or service
 operation, held/spent replay or saved-byte replay occurred.
+
+## Completed integration checks
+
+Exact source `3ee307d203386af1e4957912d5e74b79c6ae7a39` completed
+[hosted run39367854695](https://github.com/s116821/ReMarkableBuddies/actions/runs/39367854695)
+successfully through Title, Checks, Build and Integration; PR Release was skipped.
+The run API confirms that exact source identity. Raw run identity and logs were
+retained separately from the original historical evidence.
+
+Independent source integration review
+[5580690776](https://github.com/s116821/ReMarkableBuddies/pull/37#pullrequestreview-5580690776)
+and paired Docs review
+[5580691470](https://github.com/s116821/ReMarkableBuddiesDocs/pull/22#pullrequestreview-5580691470)
+accepted the prepared integration. This receipt adds no source, requirement,
+task or lifecycle behavior and repeats no tests. All live-model, parent delivery,
+native/fresh context and wider active-change limitations above remain open.

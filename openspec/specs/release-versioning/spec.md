@@ -117,11 +117,11 @@ required predecessors SHALL enter the one dedicated release job.
 - **THEN** its separate CI-only retained output is exercised on both supported hosts without an integration rebuild or inclusion in production release assets.
 
 ### Requirement: Four-stage application CI
-Application CI SHALL run four Buddy jobs and five Manager jobs per application PR or eligible main merge, counting matrix executions and excluding skipped jobs that allocate no runner. PRs SHALL run PR Title before Checks; main merges SHALL run Release after Integration. Common source, dependency and workflow checks SHALL run once in Checks before Build, and downstream jobs SHALL depend on that result rather than rerun those suites. Supported-platform runtime checks SHALL belong to Integration. Candidate selection and uploader qualification SHALL remain steps rather than standalone administrative jobs. Existing maintained upstream Actions SHALL be reused where applicable. Required status contexts SHALL remain satisfiable without weakening the protected delivery gate.
+Application CI SHALL run four Buddy jobs and five Manager jobs per application PR or eligible main merge, counting matrix executions and excluding skipped jobs that allocate no runner. PRs SHALL run PR Title before Checks; main merges SHALL run Release after Integration. Common source, dependency and workflow checks SHALL run once in Checks before Build, and downstream jobs SHALL depend on that result rather than rerun those suites. Supported-platform runtime checks SHALL belong to Integration. Candidate selection SHALL remain a step rather than a standalone administrative job. Maintained upstream Actions SHALL be consumed directly at reviewed immutable revisions; application CI SHALL NOT rebuild, transfer or requalify their implementations. Ordinary command orchestration SHALL live in the workflow. Substantive project-specific packaging, source admission, artifact identity and recoverable publication checks MAY remain tested helpers. Required status contexts SHALL remain satisfiable without weakening the protected delivery gate.
 
 #### Scenario: Application change
 - **WHEN** a Buddy or Manager application change is checked
-- **THEN** Checks gates Build, Build's exact artifacts feed Integration, and only successful eligible main runs enter Release; existing tests remain.
+- **THEN** Checks gates Build, Build's exact artifacts feed Integration, and only successful eligible main runs enter Release; application-specific tests remain.
 
 #### Scenario: Invalid PR title
 - **WHEN** the maintained title Action rejects a PR title
@@ -133,8 +133,49 @@ Application CI SHALL run four Buddy jobs and five Manager jobs per application P
 
 #### Scenario: Documentation-only change
 - **WHEN** maintained filtering identifies a documentation-only change
-- **THEN** metadata checks finish without application compilation or entering the application publication queue.
+- **THEN** metadata checks finish without application compilation or entering the application publication queue; executable examples under docs remain application-relevant.
 
 #### Scenario: Earlier stage fails
 - **WHEN** a required check, build or artifact integration fails or is canceled
 - **THEN** dependent application stages do not publish any tag or release.
+
+#### Scenario: Direct maintained uploader
+- **WHEN** publication uses the pinned upstream upload Action
+- **THEN** it uses that revision's distributed implementation without a project-built vendor bundle, while exact release identity, no-overwrite behavior and complete uploaded-byte verification remain application gates.
+
+### Requirement: PR metadata event isolation
+
+Application CI SHALL validate current PR titles before source checks. Source
+events and actual title changes SHALL preserve the existing normal check names,
+stage order and job budget. Only positively identified body-only edits with
+exact known body/from shape SHALL omit application work. Such edits SHALL NOT execute application work
+or create/update its normal check contexts. Omitted metadata-only jobs SHALL
+have explicitly distinct names and SHALL NOT mask an earlier failed/canceled
+application result. No branch-setting change, successful placeholder or extra
+normal PR job SHALL be required.
+
+GitHub may retain the literal job-name expression for an omitted job rather
+than render its friendly label. Qualification SHALL record that actual context
+name, prove it differs from normal application contexts, and preserve the
+original failed check identity/conclusion; it SHALL NOT claim a rendered label
+or infer application success from a successful metadata-only workflow.
+
+#### Scenario: Body edit after failed source check
+
+- **WHEN** a PR body changes on unchanged source with a recorded failed application check
+- **THEN** current title validation runs, no normal application check is created or replaced, and the original failure remains authoritative.
+
+#### Scenario: Correct an initially invalid title
+
+- **WHEN** an invalid title prevented source checks and the title is corrected without changing source
+- **THEN** the same maintained title validation refreshes and successful validation admits real source checks and downstream stages with their normal names.
+
+#### Scenario: Base change or unrecognized edit
+
+- **WHEN** an edited event retargets the base, combines body with base/title changes, or has missing, empty, malformed or unrecognized change details
+- **THEN** normal source validation runs because unchanged head alone does not prove unchanged tested merge context.
+
+#### Scenario: Source or main event
+
+- **WHEN** source changes or an eligible main merge is evaluated
+- **THEN** normal stage names, required dependencies, artifact identity, failure propagation and existing normal job budgets remain unchanged.
