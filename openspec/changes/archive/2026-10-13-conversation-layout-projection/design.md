@@ -1,0 +1,6 @@
+# Boundary and semantics
+Use Main PR30 b085b3684edfe5e2bb3f8738fd28030772730279 conversation types read-only. New conversation_layout module and integration fixtures, plus one library registration; no domain/projector/schema/admission/source workflow changes. Plan is historical presentation only and never current write permission.
+
+Chronological source context remains unchanged. Group existing turns by exchange, require original user before assistant and stable unique sequence/identity; reverse exchange presentation only. Preserve exact text, original turn/source references and caller draft; no header pixels, font/scale, OCR, global cache or raw device identity enter the API. Blank start has title/input and no fabricated turn or model command. Header/input/status/history regions are normalized disjoint owned plan regions; overflow keeps complete text and requires later supported SDK scrolling/edit integration, not clipping, page clearing or fabricated pages. Unknown/unbound/legacy presentation requests refuse.
+
+Native ownership/transactional rendering, cursor/focus, About interpretation text, typed submission, SDK capabilities, viewport scrolling and interruption/apply admission remain separate unfinished integration gates. Host plan fixtures are not simulator/native execution proof. Existing user content/source ledger never changes during planning.
