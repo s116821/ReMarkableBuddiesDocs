@@ -179,7 +179,7 @@ provider/bootstrap, full conversation and MVP lifecycle gates remain open. No
 source, requirement, canonical or archive behavior changes, merge waiver, tablet
 contact or provider execution follows from these completed software checks.
 
-## October 30, 2026 resync: preserve the ordinary CLI refusal contract
+## October 30, 2026 UTC resync: preserve the ordinary CLI refusal contract
 
 The preceding behavior and pass records describe their historical candidates.
 During cleanup resync, current PR35 failed the unchanged main regression
