@@ -58,6 +58,7 @@ An explicitly configured selected Reader runtime SHALL use the existing shared S
 #### Scenario: Persisted mode before runtime construction
 - **WHEN** an existing Store has an explicit nonlocal or contradictory publisher mode
 - **THEN** startup SHALL validate the actual mode before credentials/model/device construction and refuse an unsupported or mismatched runtime without ordinary all-history fallback; unconfigured compatibility and local-only data access SHALL remain distinct from shared authority.
+- **AND** with no `reader.selection`, the actual CLI SHALL exit unsuccessfully with empty stdout and a fixed private-data-free diagnostic while retaining early preflight/no-write checks; successful fixed JSON responses remain scoped to selected-config startup and explicit report commands.
 
 #### Scenario: Configured shared receiving lifetime
 - **WHEN** a current selected history report consumes data in configured shared mode
