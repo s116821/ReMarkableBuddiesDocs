@@ -1,7 +1,7 @@
 ## 1. Contract and source
 
 - [x] 1.1 Verify current producer reference and receipt/uncertainty semantics; preserve existing inspect contract.
-- [ ] 1.2 Obtain early independent review of proposal/design/delta and resolve findings.
+- [x] 1.2 Obtain early independent review of proposal/design/delta and resolve findings.
 
 ## 2. Implementation
 

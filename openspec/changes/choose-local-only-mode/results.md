@@ -3,6 +3,36 @@
 This change remains active. Independent review, required hosted qualification,
 canonical sync/archive and coordinated delivery are pending.
 
+## Review and copy successor
+
+Manager `4079bf4493b314c43a69ae94c97189ac9c5db49e`, tree
+`b57a6e1611ea3b69022fc62be24aefedb4d25545`, is a normal successor to the implementation
+below. Independent core review accepted private intent/fingerprint/receipt checks,
+one dispatch, retained uncertainty/separate refresh, bounds and fixed transport,
+both guarded bridges, observer hook and lifecycle ownership. The five-requirement,
+eight-scenario contract was accepted; proposal/design/delta remain unchanged.
+
+The review requested plain product wording in the new card. The successor changes
+only display text/labels, their existing UI selectors and usage guide, and the
+synthetic test control used to compare new epochs without showing them to users.
+The card uses Save Local-only mode, Review change, Save Local-only, Saved mode and
+Not set. Unconfirmed-save/restart/blocked-change guidance appears only when
+relevant; Stop waiting remains distinct from Cancel review and never implies undo.
+All host coordinator/protocol/transport, bridge authority and specification bytes
+remain unchanged from the implementation below.
+
+Focused22 tests, lint and development build pass for the successor content. A
+bounded replay of the existing actual browser section passes the same one-shot,
+new-epoch, uncertainty/reload/separate-current-inspection, privacy, lifecycle120s
+and49/49/16 App checks. Only absolute imports/fixture URL, browser-only execution
+and separate screenshot names adapt the replay. Ready390/1280 and unconfirmed
+screenshots were read: text wraps, confirmation is visible and internal epoch,
+token/receipt and host-lifetime terminology is absent. No new tests merely compare
+the replacement wording. The earlier full850, Linux package and cross-host results
+below belong to `f9b30c1`; required hosted source/package qualification must run
+the successor. Final copy review, hosted checks and complete sync/archive remain
+open in this paired delivery; no planning-only merge is requested.
+
 ## Exact implementation
 
 Manager `f9b30c164638c5ef47671f11f0a7eb48a258d3a2`, tree
