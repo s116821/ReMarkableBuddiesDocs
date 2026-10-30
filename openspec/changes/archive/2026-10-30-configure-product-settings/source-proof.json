@@ -1,0 +1,118 @@
+{
+  "kind": "scoped-implementation-source-review-and-required-integration-complete",
+  "Manager": {
+    "commit": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
+    "tree": "b47788bb4622b77ef0686ccb06aa6855be0f0b98",
+    "bundle_sha256": "ca2eb9dbc1ae79dfba3863afc19518448ff91e3e4e39066ee7ad968f5f2e4292"
+  },
+  "Docs": {
+    "commit": "6c844375b392d863a4a2398bc5a5de277e935a77",
+    "tree": "038a74ee5a51281d1ce99f28b8b8be25778154d2",
+    "bundle_sha256": "a37f5b5d33fb751fd74b55e9d30b715bee276d64de1f46a64ab138cb7dc45950"
+  },
+  "Buddy": {
+    "commit": "e1e79226b31fddb7339ca3c59038c88f048fc3a9",
+    "source_basis": "Main current-source review in REM-42 b10caaaf, not independently imported Buddy objects",
+    "reviewed_paths": [
+      "src/config.rs",
+      "src/config/inspection.rs",
+      "src/config/basic.rs",
+      "src/writer/command.rs",
+      "src/writer/notebook/command.rs",
+      "src/note_export/command.rs"
+    ]
+  },
+  "branch": "feature/rem-42-role-export-configuration",
+  "tracking": "REM-42 thread98b11f34-2518-44b4-9990-25d92a8a4f55; contract questions9c98de0b",
+  "pending": [
+    "Root final Docs successor review/publication/CI",
+    "Root coordinated squash merges and actual-main release verification; not claimed here"
+  ],
+  "acceptance": {
+    "docs_contract_commit": "c3d095c093e486c07a0aa14a2e656fbd13ab5fc9",
+    "root_receipt": "REM-42 a827a170-0f71-40b1-bb23-159e2072bbf8",
+    "fixture_correction": "REM-42 04048115-1e0a-4e61-ac36-0fec845c668c",
+    "corrected_vectors_sha256": "9f0f2b6e1f2e9c49323390f8038f93fc5a0cd6765dde9f2400e0215e08914152"
+  },
+  "consumer_implementation": {
+    "commit": "eb3da3e47d8c9dafee00dc961b610358ab46bb76",
+    "tree": "89d384deda5a7eb8c563d036379a5ed2f46cb128",
+    "parent": "0e9a63ee194a9deeca7049d7652f5a33c69dd1d3",
+    "local_node_tests": 827,
+    "local_python_mock_transport_tests": {
+      "count": 7,
+      "source_commit": "cf7d4ca53eb0c5ac42a5075d818c52b06c74d2be",
+      "transport_source_unchanged_in_successors": true
+    },
+    "actual_ui_and_ownership": "Source and retained-package verification is recorded separately; no device/provider claim.",
+    "qualified_application_source": "103598ed4ef3dd1fe68c8f16f97d424f99701eea",
+    "test_only_successor_paths": [
+      "tests/fixtures/product-settings-producer-060d012.json",
+      "tests/product-settings-hosts.mjs",
+      "tests/product-settings-producer.test.mjs"
+    ],
+    "publication_commit": "0e9a63ee194a9deeca7049d7652f5a33c69dd1d3",
+    "publication_sole_parent": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
+    "publication_tree_equivalent_to_local_tested_head": true,
+    "initial_local_audit_commit": "499832a3643139cb55c0b28d2bb53bbbed428cdf",
+    "initial_local_audit_tree": "f2eb977108786efef9403bdab0f02eb5408e3c6f",
+    "final_publication_commit": "eb3da3e47d8c9dafee00dc961b610358ab46bb76",
+    "local_node_tests_source": "499832a3643139cb55c0b28d2bb53bbbed428cdf",
+    "test_only_eb3_successor_path": "tests/fixtures/product-app-boundaries.mjs",
+    "eb3_qualification": "Root accepted independent source review; full exact-head hosted run41010792992 success, including Linux and Windows integration. Local affected current-source/held-package maintenance and lifetime checks pass; original46 assertion suffix unchanged."
+  },
+  "producer_capture": {
+    "source_head": "060d012ab60438d8bec933ff296afb3ff5fa05d8",
+    "source_tree": "7d441f1cbb121cc6c8fd893b9b7301c0f4e6ed73",
+    "source_basis": "Main published clean-source receipt; captured output packet independently downloaded and all manifest hashes verified here. Native Rust source/test execution is Main/Root attribution, not local execution.",
+    "packet_sha256": "1045662dd00e982b1ccb339120add75512442b242443f85280159d26966e1aa3",
+    "capture_sha256": "cf691e077ca6c9a5c5d8ad3fa6fe7106703d3503fcd1b546de56cdd949b0a44a",
+    "actual_product_frames_replayed": 15,
+    "legacy_bootstrap_frame_separately_labeled": 1,
+    "cross_replay_tests": 17,
+    "host_limit": "Synthetic Windows host CLI paths; no Linux/tablet/runtime/provider qualification.",
+    "public_fixture_sha256": "1b46e345fa493c2d2dac516cf63a050aa995157ecb001d9e650a095329cd8ae8",
+    "public_fixture_transformation": "Exact removal of one fixture_root wrapper line; all remaining bytes and all16 record objects, including15 product stdout frames and exact private requests, unchanged."
+  },
+  "publication": "Normal clean publication successor0e9a63e from actual published65d, exact final tree f2eb977 matches locally tested499832a. All intermediate implementation history is preserved privately and is not an ancestor of the publication commit. No force/push/amend/new branch.",
+  "hosted_qualification": {
+    "source_basis": "Root coordinator final integration-success receipt; hosted observation belongs to Root, not local reruns.",
+    "Buddy": {
+      "head": "060d012ab60438d8bec933ff296afb3ff5fa05d8",
+      "run": 41005995620,
+      "result": "SUCCESS",
+      "linux_reader_gate": "linux_reader_gate_precedes_notification_connect_and_keeps_trusted_predotenv_settings passed"
+    },
+    "Manager": {
+      "head": "eb3da3e47d8c9dafee00dc961b610358ab46bb76",
+      "run": 41010792992,
+      "result": "SUCCESS",
+      "jobs": {
+        "Checks": 123916018719,
+        "Build": 123916796844,
+        "LinuxIntegration": 123917208915,
+        "WindowsIntegration": 123917208950
+      },
+      "PR_Release": "normally skipped"
+    },
+    "preserved_failed_Manager_predecessor": {
+      "head": "0e9a63ee194a9deeca7049d7652f5a33c69dd1d3",
+      "run": 41008003257,
+      "jobs": [
+        123908393316,
+        123908393371
+      ],
+      "cause": "Idle boundary fixture accepted preceding ready DOM during a fresh busy Begin. Exact local actual-App reproduction preserved.",
+      "fix": "Test-onlyeb3 requires fresh reference, ready/not-busy state and acknowledged actual draft/dirty edit; all46 original assertions remain byte-identical."
+    },
+    "independent_review": "https://github.com/s116821/ReMarkableBuddiesManager/pull/51#issuecomment-6516026570"
+  },
+  "post_consumer_hygiene": {
+    "logical_bytes_removed": 1153800750,
+    "actual_free_delta": 1186029568,
+    "evidence_members_preserved": 404,
+    "evidence_archive_sha256": "4b429dd5c15b8bd92956f503c4d5fe2286f4fd55bbb1ee30d50884753c2f1e4e",
+    "remaining_Manager_package_or_build_cache_holds": [],
+    "retained": "Installed Node/OpenSpec/Xvfb review tools and existing Docs validation environment; source/native evidence untouched."
+  }
+}

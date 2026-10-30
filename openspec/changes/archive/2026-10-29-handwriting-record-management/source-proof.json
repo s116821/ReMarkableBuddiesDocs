@@ -1,0 +1,191 @@
+{
+  "kind": "precode-source-audit-not-implementation-acceptance",
+  "actual_mains_from_coordinator": {
+    "Manager": {
+      "commit": "b6ca230515f4d70f95fad066a9190430778c9a69",
+      "tree": "fa354c30d291b4097129b1288c03382683f728a4"
+    },
+    "Docs": {
+      "commit": "850ed9b87f316f638b35bc86c794ffa1a8e038a5",
+      "tree": "1bd98eb0a55739a1858140f81725542231c12a5e"
+    }
+  },
+  "pending": [
+    "Independent complete precode/vector/source review pending; no behavior implementation/test/build run."
+  ],
+  "sources": {
+    "buddy68e42968": [
+      {
+        "path": "src/main.rs",
+        "bytes": 49537,
+        "sha256": "172842ba34d018484a95c4c4b3cc7a8896804570c3adc415a5f447ca4242a24c",
+        "lf_sha256": "c77a0127a8251d36a20e8473c86dce246e7f6da6e7ed36cf32e782723e8855d2",
+        "lf_git_blob": "94a2a5c9005c7bf4d3531c74bc8ccb50c4983781"
+      },
+      {
+        "path": "src/handwriting/mod.rs",
+        "bytes": 17694,
+        "sha256": "046f22e0677f12701350a7540eeef39a1a97fd1635c1f3afcb5f7e2bc9072898",
+        "lf_sha256": "de032ce30100cc2f56e7beca81c1b8989124d0e229a3822d265068db7b571271",
+        "lf_git_blob": "dd822986f82d53532dba864f64741ea5942f3ff6"
+      },
+      {
+        "path": "src/handwriting/provider.rs",
+        "bytes": 20004,
+        "sha256": "70ec239adc9d9360da1377031cfd7246eeb6d798706be31abd2cc4668ea59e1b",
+        "lf_sha256": "24fea5c209b7d4d46c6d27f3e35645d795da85ded31a6f0f7159d0c2ce052072",
+        "lf_git_blob": "016f468f98f4c664f5a9c5f6b6a4d050589a7996"
+      },
+      {
+        "path": "src/handwriting/command.rs",
+        "bytes": 1564,
+        "sha256": "f7a167bfb3b515f66563be99fc4e8d15f5ecbb22a53541e8364248fd8e257fd4",
+        "lf_sha256": "b086c4e6f2577608141e0e46d7e63de0328280d94d80f6b827808e89079b1a89",
+        "lf_git_blob": "8fdef1059046e5120d333d4ebe752bfb41edae60"
+      },
+      {
+        "path": "src/handwriting/report.rs",
+        "bytes": 5976,
+        "sha256": "635e99fdf24b026ce8bae4fa8d44847478bb7c38934a135d308efdf3ae28dec5",
+        "lf_sha256": "2cc18b8fa2af4b280edf78563830880a943fe6a162678448139d47cd82214987",
+        "lf_git_blob": "5355dd5b7cb657c07696f4c9638f16077ccbea78"
+      },
+      {
+        "path": "docs/handwriting-records.md",
+        "bytes": 2069,
+        "sha256": "d22cf36754882d8278d4bea7a50811711e3773db5dffd47227ea79977d3a7a9d",
+        "lf_sha256": "a86b48c71ed575e321cf04bbcf27faba047886fb5a12ffd5328603ccaa35f2ec",
+        "lf_git_blob": "f3504972c6840812304387d97d4fa82d6abb7ffc"
+      },
+      {
+        "path": "tests/handwriting_cli.rs",
+        "bytes": 6245,
+        "sha256": "2aef673ea8d6b9342210d9055d519ca78856e8b7eed27e95607a807dfdd59e58",
+        "lf_sha256": "e2cfa37f5478dbb2ab3ad74286dc9e53b43079cc18dd55099c541dc9d5a22751",
+        "lf_git_blob": "f1302bff22736c307feed8e21c9b9670ea021567"
+      }
+    ],
+    "docs_e882df6": [
+      {
+        "path": "openspec/specs/confirmed-handwriting-records/spec.md",
+        "bytes": 8149,
+        "sha256": "ecc0e1e6a40212dbb1ad92a0bf9a91e917ae170a87cdbdbec81c3967852745c2",
+        "lf_sha256": "ecc0e1e6a40212dbb1ad92a0bf9a91e917ae170a87cdbdbec81c3967852745c2",
+        "lf_git_blob": "4abbb04c4c1aae91274f8a0e83693203df757528"
+      },
+      {
+        "path": "openspec/changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/contract.md",
+        "bytes": 4005,
+        "sha256": "e6b716557d0cc333ffc14e2a51022c30ecd299ae76f478d107d611fb06ce1986",
+        "lf_sha256": "e6b716557d0cc333ffc14e2a51022c30ecd299ae76f478d107d611fb06ce1986",
+        "lf_git_blob": "6d476878768bf02943ae422bf1f292b08de03ca6"
+      },
+      {
+        "path": "openspec/changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/report-schema.md",
+        "bytes": 9840,
+        "sha256": "e76bf2f794eb6acb1197fa5affeba97c459087d8c86460253a4e3733f3b6585e",
+        "lf_sha256": "e76bf2f794eb6acb1197fa5affeba97c459087d8c86460253a4e3733f3b6585e",
+        "lf_git_blob": "fb4be2eb6f987ce98f9295290aaffe9f0e8f3be6"
+      },
+      {
+        "path": "openspec/changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/design.md",
+        "bytes": 13312,
+        "sha256": "ca6236ee95513376d86e64894e6f62e11b77f953052a41b44912c929ca28c501",
+        "lf_sha256": "ca6236ee95513376d86e64894e6f62e11b77f953052a41b44912c929ca28c501",
+        "lf_git_blob": "afce777839d274066b3dcf20dbe10123810089c2"
+      },
+      {
+        "path": "openspec/changes/archive/2026-10-26-retain-confirmed-handwriting-corrections/identity-vectors.json",
+        "bytes": 4667,
+        "sha256": "07d3780b6e3cfb1e4720d4750adf5b084d56dbd31126a89fb05c1184e442f59b",
+        "lf_sha256": "07d3780b6e3cfb1e4720d4750adf5b084d56dbd31126a89fb05c1184e442f59b",
+        "lf_git_blob": "36f9f8b1683d80019d99c174c0bb3b0f4f67bb8d"
+      }
+    ],
+    "manager2256975": [
+      {
+        "path": "host/observer.mjs",
+        "bytes": 19852,
+        "sha256": "6a5409864bfd1f9267a1275b602676b0c12649572646854acd076aefe7e5305f",
+        "lf_sha256": "6a5409864bfd1f9267a1275b602676b0c12649572646854acd076aefe7e5305f",
+        "lf_git_blob": "a5196e5899ebabfc414e61aacb0f0dbccc99f3e7"
+      },
+      {
+        "path": "host/strict-json.mjs",
+        "bytes": 1355,
+        "sha256": "2d515a447bc64f7a90b37892165c7f1f25f7ba5d3b8f0ceb6976438f7664104c",
+        "lf_sha256": "2d515a447bc64f7a90b37892165c7f1f25f7ba5d3b8f0ceb6976438f7664104c",
+        "lf_git_blob": "84b05b3ebc1a5f735cee4591957992e96517874c"
+      },
+      {
+        "path": "host/maintenance-io.mjs",
+        "bytes": 627,
+        "sha256": "4970c3f48c0eac0a1de6e3f3aeb953177440d2c8f2bc4367367f697a49ca6055",
+        "lf_sha256": "4970c3f48c0eac0a1de6e3f3aeb953177440d2c8f2bc4367367f697a49ca6055",
+        "lf_git_blob": "81bee21c1aa34865e86828be0d24205c736402d3"
+      },
+      {
+        "path": "host/selected-archive.mjs",
+        "bytes": 11604,
+        "sha256": "3d90d5dbdd92fd6b4d141837a452ef2794586049f831612a7a01dff259bee60b",
+        "lf_sha256": "3d90d5dbdd92fd6b4d141837a452ef2794586049f831612a7a01dff259bee60b",
+        "lf_git_blob": "b79507674bfac4ef170b286b3e987e39c641d46d"
+      },
+      {
+        "path": "host/selected-archive-protocol.mjs",
+        "bytes": 6834,
+        "sha256": "ce6ed499e1eb3e75d215d84195b41ff9960bf3b0b32d92c80b62965c62e9b4a8",
+        "lf_sha256": "ce6ed499e1eb3e75d215d84195b41ff9960bf3b0b32d92c80b62965c62e9b4a8",
+        "lf_git_blob": "2b31c6daca0054606e54618c31766e7bb5604ea0"
+      },
+      {
+        "path": "host/memory-forget.mjs",
+        "bytes": 9510,
+        "sha256": "412a0dd4cb7390e5b56ed8981b1458057258e57f968f7355fc6d2cf2dbc8f31d",
+        "lf_sha256": "412a0dd4cb7390e5b56ed8981b1458057258e57f968f7355fc6d2cf2dbc8f31d",
+        "lf_git_blob": "4250b81609e7e0a46d48c32055c44b748b0f07dd"
+      },
+      {
+        "path": "tests/fixtures/maintenance-fourteen-lanes.mjs",
+        "bytes": 2609,
+        "sha256": "a43d62a189f3adfcf86de792be1cebe72acee18309c6d28402144b320cba56da",
+        "lf_sha256": "a43d62a189f3adfcf86de792be1cebe72acee18309c6d28402144b320cba56da",
+        "lf_git_blob": "3898b077fbd417266383d15af1e34c332281f844"
+      }
+    ]
+  },
+  "tracking": {
+    "REM42_scope_comment": "601d095b-39ab-4997-8efc-6e21846c0865",
+    "REM26_read": "description and relevant delivered-retention/latest-recognition comments from complete33-comment listing",
+    "field_notes": "get_agent_context tool returned Tool not found; no field notes claimed"
+  },
+  "source_basis": "Current connected Linear/coordinator fresh GitHub receipt, verified native bundle objects/ancestry and direct local source files. Producer code at current published68e42968; proposed behavior remains design, not implemented fact.",
+  "local_git": {
+    "ReMarkableBuddiesManager-rem54": {
+      "head_tree_parent": "b6ca230515f4d70f95fad066a9190430778c9a69 fa354c30d291b4097129b1288c03382683f728a4 4ca15cee26563e191f065524a0c1b86d0dd959aa",
+      "branch": "feature/rem-42-handwriting-record-management",
+      "status_before_artifact_import": "",
+      "preserved_completed_branch": "22569756b06c2372243210dd8f5e483ccaf97d08"
+    },
+    "ReMarkableBuddiesDocs-rem52": {
+      "head_tree_parent": "850ed9b87f316f638b35bc86c794ffa1a8e038a5 1bd98eb0a55739a1858140f81725542231c12a5e c3345cc8b2c4dfae4e42caaff2c81cec09d2b2e9",
+      "branch": "feature/rem-42-handwriting-record-management",
+      "status_before_artifact_import": "",
+      "preserved_completed_branch": "e882df6d3ac1da923d8814f12dba7b4b5b414ef5"
+    }
+  },
+  "native_transfer": {
+    "linear_comment": "dba15413-f615-4aae-a5ca-5bbc3187dedc",
+    "zip_bytes": 91815,
+    "zip_sha256": "5dee57720bf8e78d9491e049325a77931ea5617931a700386dbc0f3c4194671d",
+    "both_bundle_hashes_prerequisites_and_refs_verified": true,
+    "actual_objects_imported": true,
+    "both_published_owned_branches": "feature/rem-42-handwriting-record-management",
+    "no_remote_auth_retry": true
+  },
+  "published_backend_confirmation": {
+    "commit": "68e42968b4c58b6f8ed1102078d78b40fad33ffc",
+    "method": "coordinator fresh GitHub comparison: identical zero commits/files",
+    "authority": "REM-42 dba15413-f615-4aae-a5ca-5bbc3187dedc; coordinator delegation confirms no delta"
+  }
+}

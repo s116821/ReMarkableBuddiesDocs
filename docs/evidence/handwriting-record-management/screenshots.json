@@ -1,0 +1,65 @@
+[
+  {
+    "path": "handwriting-records-browser-production-1280.png",
+    "width": 1096,
+    "height": 1088,
+    "bytes": 105574,
+    "sha256": "53915717743de9730fa500605eea286337686ed07a9152ac0adfca989bf56ae0",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-browser-production-390.png",
+    "width": 334,
+    "height": 1604,
+    "bytes": 106969,
+    "sha256": "3aafc329ad00e2869d2580c29e86bb96ba17d1bd647aef76c10b2eacebcba5c2",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-electron-packaged-1280-bottom.png",
+    "width": 2560,
+    "height": 1426,
+    "bytes": 168262,
+    "sha256": "9d9b7bd0312208244d22d7adfa70c8200155afb100f8e683d41a563219f2924f",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-electron-packaged-1280.png",
+    "width": 2560,
+    "height": 1426,
+    "bytes": 151499,
+    "sha256": "85db73d034d9507adf5496829616c2d7592452b2201950238f0e9c7aa0ab4654",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-electron-packaged-390-bottom.png",
+    "width": 780,
+    "height": 1426,
+    "bytes": 136534,
+    "sha256": "ae384988c2d8e96c9a447c0a3840a5e6d02250e9b761651780d2951c094ba110",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-electron-packaged-390-middle.png",
+    "width": 780,
+    "height": 1426,
+    "bytes": 113208,
+    "sha256": "a01a3418ec271a0169d917d6f43ac38600f48b3501430e8df9e18241287f5f96",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  },
+  {
+    "path": "handwriting-records-electron-packaged-390.png",
+    "width": 780,
+    "height": 1426,
+    "bytes": 108506,
+    "sha256": "5c934129ca968bd21b648a7e5a0e820689abc798c9a42d1a13b7442ae077d109",
+    "product_source": "0a0deee82fbdfe6a0c8358de688ddda18ef801c7",
+    "fixture_content_only": true
+  }
+]
