@@ -49,9 +49,13 @@ after credential/config validation; absence must not invent a shared group.
 
 Use a real startup decision carrying either the admitted ordinary Store or the
 existing fixed report. It replaces the current check/return/drop boundary, not a
-second facade/registry. Fixed failures retain report version/status/private-output
-rules. Normal owned Store recovery/metadata writes remain disclosed and separately
-bounded; missing selected state is never bootstrapped.
+second facade/registry. The actual CLI with no `reader.selection` converts a
+refused decision into an unsuccessful exit, empty stdout and a fixed diagnostic;
+it must not turn ordinary startup failure into a successful report command.
+Selected-config startup and explicit selected report commands retain the fixed
+report version/status/private-output rules. Normal owned Store recovery/metadata
+writes remain disclosed and separately bounded; missing selected state is never
+bootstrapped.
 
 - Mode absent: unconfigured legacy compatibility. Preserve existing ordinary
   startup and old publisher policy; do not call it shared mode. Explicit selected
@@ -77,8 +81,14 @@ without that selector proceeds locally only with sync disabled; contradictory
 sync enabled is Unsupported. IsolatedBackup current startup/inspect/context is
 Unsupported. SharedGroup missing/mismatched reader group/binding is Unsupported.
 Malformed/foreign mode metadata is Unavailable; actual Store/mode contention is
-Busy. Responses preserve existing fixed/private schema and echo no mode IDs,
-provider root or credential data.
+Busy. These statuses describe library decisions and selected reports. Actual
+ordinary CLI refusals instead preserve its existing failing-exit/empty-stdout
+contract: nonordinary mode reports `ordinary mode requires absent or LocalOnly
+choice`, and LocalOnly with legacy synchronization reports `explicit local mode
+requires legacy sync disabled`. Other refused ordinary admissions use fixed
+busy/unsupported/unavailable messages. No mode IDs, provider root or credential
+data is echoed. Early preflight and its no-write protections remain in force;
+this distinction does not bypass preflight by opening a fresh Store first.
 
 Absent or safe completely empty default roots may defer ordinary creation.
 Partial, non-owned, symlinked or nonempty unsupported state must refuse before
