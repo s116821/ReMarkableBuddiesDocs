@@ -1,8 +1,8 @@
 ## 1. Precode and coordination
 - [x] Inspect merged generation4/report1/2 producer and immutable Manager parser sources; keep native/backup/restore readiness distinct.
 - [x] Create the central proposal/design/deltas and concrete closed report3 shape before source changes.
-- [ ] Finish chronological contract/ownership reconciliation and independent literal case review; publish relevant requirements for public contributors.
-- [ ] Obtain independent precode acceptance and pin affected producer/consumer scope and current revision bases.
+- [x] Finish chronological contract/ownership reconciliation and independent literal case review; publish relevant requirements for public contributors.
+- [x] Obtain independent precode acceptance and pin affected producer/consumer scope and current revision bases.
 
 ## 2. Producer
 - [ ] Add separate v3 selector/types without changing the legacy selector, report1/2 shapes or domain codecs.
