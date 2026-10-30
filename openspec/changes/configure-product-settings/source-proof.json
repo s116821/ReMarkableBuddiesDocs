@@ -1,5 +1,5 @@
 {
-  "kind": "accepted-contract-consumer-implementation-producer-and-delivery-pending",
+  "kind": "implementation-and-cross-replay-complete-final-review-and-hosted-delivery-pending",
   "Manager": {
     "commit": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
     "tree": "b47788bb4622b77ef0686ccb06aa6855be0f0b98",
@@ -50,7 +50,10 @@
       "tests/fixtures/product-settings-producer-060d012.json",
       "tests/product-settings-hosts.mjs",
       "tests/product-settings-producer.test.mjs"
-    ]
+    ],
+    "publication_commit": "0e9a63ee194a9deeca7049d7652f5a33c69dd1d3",
+    "publication_sole_parent": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
+    "publication_tree_equivalent_to_local_tested_head": true
   },
   "producer_capture": {
     "source_head": "060d012ab60438d8bec933ff296afb3ff5fa05d8",
@@ -65,5 +68,5 @@
     "public_fixture_sha256": "1b46e345fa493c2d2dac516cf63a050aa995157ecb001d9e650a095329cd8ae8",
     "public_fixture_transformation": "Exact removal of one fixture_root wrapper line; all remaining bytes and all16 record objects, including15 product stdout frames and exact private requests, unchanged."
   },
-  "publication": "Root imports clean native application103598ed and applies the sanitized three-test-file patch to the final tree on the existing branch; local-only intermediate capture history is not published. This is a normal new commit, not a remote history rewrite."
+  "publication": "Normal clean publication successor0e9a63e from actual published65d, exact final tree f2eb977 matches locally tested499832a. All intermediate implementation history is preserved privately and is not an ancestor of the publication commit. No force/push/amend/new branch."
 }

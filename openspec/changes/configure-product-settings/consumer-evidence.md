@@ -1,8 +1,11 @@
 # Shared Manager source verification
 
-Consumer head is Manager499832a3643139cb55c0b28d2bb53bbbed428cdf, tree
+Publication head is Manager0e9a63ee194a9deeca7049d7652f5a33c69dd1d3, tree
 f2eb977108786efef9403bdab0f02eb5408e3c6f, on the existing paired feature branch.
-Its three capture/test-only changed paths leave the qualified103598ed application bytes
+Its exact tree equals the locally tested499832a tree. Private intermediate history
+is retained separately and is not a publication ancestor; the sole public parent
+is the actual published65d baseline. Three capture/test-only changed paths leave
+the qualified103598ed application bytes
 unchanged. The implementation begins at cf7d4ca; ef465692 fixes lifetime clearing and103598ed
 corrects npm's packaged-selector forwarding. These are normal successors.
 Root owns publication, independent review, hosted qualification and delivery.
