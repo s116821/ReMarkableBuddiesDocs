@@ -76,3 +76,11 @@ Linked Docs and code PRs form one reviewed delivery, not a separately completed 
 Current user policy is to **squash merge every PR**, including the initial Docs migration, until explicitly changed. [Preserved source evidence](docs/migration/README.md) is independent of topic-branch history and remains verifiable in a shallow clone after squash. Do not change repository settings to enforce or bypass this instruction.
 
 Documentation changes need working examples/checks, not paid model or native runs. Use the shared [simulator checklist](.agents/skills/reader-simulator-testing/SKILL.md) and, only for authorized idle hardware, [tablet checklist](.agents/skills/reader-buddy-testing/SKILL.md) for relevant implementation changes. Label offline, live-model and native evidence separately; unavailable native checks remain maintainer gates. Preserve source documents and secrets. See [licensing](docs/licensing.md).
+
+## Delivery ownership
+
+The coordinator remains accountable for delegated or parallel work through review, integration and delivery. A worker reporting completion does not close the task. At each handoff and before a checkpoint or new assignment, reconcile the canonical task record with every linked open PR: current revision, remaining acceptance work or dependency, next action and its owner. Use the existing task record rather than maintaining a second queue; public contributors can use GitHub issues and PR comments.
+
+Deliver an independently ready increment once its required review and checks pass and merge is authorized. Do not leave it waiting for unrelated roadmap work. When a stack includes changes already merged elsewhere, compare the remaining source diff before extracting the ready increment or closing a superseded PR; preserve unique code, evidence and unfinished work. Update dependent branches after delivery so old changes cannot overwrite it or be implemented again.
+
+Verify the merge commit and applicable main/release checks, then record the bounded delivered scope and remaining work. A merged subtask must not automatically mark its wider issue complete. At a stop, leave each unfinished PR with a specific next action and owner; a generic status such as "waiting for SDK" is insufficient unless that exact dependency prevents the action.
