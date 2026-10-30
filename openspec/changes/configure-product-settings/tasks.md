@@ -1,9 +1,9 @@
 ## Source and contract admission
 - [x] Read current issue, latest comments and shipped editor/safety patterns; identify specific schema gap without duplicating delivered research editing.
 - [x] Verify/import actual cleaned Manager/Docs main bundles, preserve delivered refs/evidence and use published named branches in existing worktrees.
-- [ ] Pin exact current Buddy config/admission/export source and enumerate all affected entry points.
-- [ ] Agree complete object/default/null/Set/Clear semantics, exact requests/reports/intents/outcomes/bounds/hash domains and original reconciliation limits.
-- [ ] Freeze independent literal raw/public/lifecycle vectors; complete coordinated precode review before behavior implementation.
+- [x] Record Main-reviewed exact Buddy e1e source/config/admission/export pin and actual entry list, with source attribution explicit.
+- [x] Reconcile Main b10caaaf into one exact object/default/null/Set/Clear and producer/public contract candidate, including compatibility ordering.
+- [ ] Accept coordinated review of this exact contract and129literal/catalog definitions, then freeze before behavior implementation.
 
 ## Implementation
 - [ ] Implement supported versioned producer with immutable original CAS, safe filesystem custody and saved readback; preserve older wire contracts.

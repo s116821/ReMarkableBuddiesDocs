@@ -1,27 +1,25 @@
-# Contract review status: UNFROZEN
+# Shared contract amendment: candidate freeze, review pending
 
-This draft defines intended behavior, not wire/schema or implementation admission.
-Main's proposed reader_enabled, writer_enabled and export_destination fields are
-under review in one optional versioned object. The current gap was source-reviewed
-by Main; full exact source pin/types are still required before freezing.
+The single Main proposal b10caaaf-fbff-4092-8d69-dd2216732c01 is reconciled into
+contract.md and contract-public.md. No alternate producer schema is introduced.
+All shape/default/null/independent-Clear/entry-gate questions in the original draft
+are now explicit. Source baseline is Buddy e1e79226b31fddb7339ca3c59038c88f048fc3a9,
+as reviewed by Main; source links/pin are attribution, not a local native checkout.
 
-## Required freeze decisions
+Main/Root must review this exact amendment, its finite public host custody and
+literal vectors before behavior code. The vectors' content/hash integrity is a
+precode check only, not producer or consumer execution. Main should flag any
+current Basic divergence from the deterministic path/stale-base→conflict and
+reconstructed-target→invalid-input cases; do not freeze ambiguous either-status
+assertions. Successful apply alone is true/restart-required; status stays unverified.
 
-1. Exact object name and schema revision; member optionality; absent/null/type/
-   unknown/future-version handling; missing and explicit default origin; clear one
-   or last field; empty/version-only object; no-op byte preservation. Do not choose
-   these independently in producer and consumer.
-2. Fixed CLI selectors and mutually exclusive dispatch, bounded '-' stdin/EOF,
-   exact framing/UTF8/duplicates/unknown keys, statuses and complete report matrix.
-3. Raw/current/public fields; original intent, operation, path/base/change/target
-   hash domains and canonical serialization; no private hashes/packets leaked.
-4. All Reader/Writer/export entry gates, maintenance ordering and disabled-export
-   historical reconciliation that cannot cause a new provider dispatch.
-5. Frozen size/deadline/ready/original/capacity/cancel bounds and all no-change,
-   conflict, not-dispatched, verified, unknown and desired-file observation rules.
-6. Independent literal positive/negative/custody vectors with hashes and explicit
-   actual-source vs synthetic attribution. No vector-generator self-oracle.
+Intentional compatibility change: valid export request preflight now precedes
+nonsecret config/policy checks, which precede MEM_API_KEY. Error ordering changes;
+credential selection precedence and literal values do not. No OS activation or
+full destination/Reader-to-Writer qualification is claimed.
 
-This increment intentionally offers no private free-text destination/account/URL
-or new credential entry unless the reviewed real producer changes that scope.
-The Mem/Disabled choice must not close all destination requirements by wording.
+Candidate vector corpus:19literal storage cases,60raw protocol frames,19public
+requests,17public results and14lifecycle catalog expectations (129definitions).
+No case is claimed executed against producer/consumer yet. Base/path/target
+arithmetic has been independently checked; future execution must distinguish
+literal case coverage from catalog mechanisms. See vector-integrity.json.

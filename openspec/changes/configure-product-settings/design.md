@@ -3,9 +3,10 @@
 Manager starts at actual main65d2e7717a95e19d0460d46b36e39fa4850f8eda; Docs
 starts at6c844375b392d863a4a2398bc5a5de277e935a77. Both existing owned worktrees
 use the published feature/rem-42-role-export-configuration branch. Cleanup paths,
-all delivered editors and coordinator delivery ownership stay intact. Main's
-current-source review reports configuration schema1 lacks role and export
-settings; an exact Buddy source pin and full contract are still required.
+all delivered editors and coordinator delivery ownership stay intact. Main's source review at Buddy e1e79226b31fddb7339ca3c59038c88f048fc3a9
+confirms configuration schema1 lacks these settings. The proposed addition and
+complete producer/public contracts are reconciled here; exact amendment review
+remains required before behavior implementation.
 
 ## Decisions
 
@@ -64,3 +65,10 @@ actual-host/retained-artifact behavior, review exact heads, then sync/archive on
 this completed capability in the paired delivery. Root owns final publication,
 review/integration/merge and actual-main release verification. No planning-only
 merge or wider issue closure follows from this draft.
+
+The reviewed contract now defines the optional product_settings object, independent
+Set/Clear and exact default/null/version-only semantics. See contract.md for the
+intentional export config-versus-token error ordering and contract-public.md for
+unchanged shared public envelope plus finite custody. Mem backend choice leaves
+full destination/account setup open; automatic Reader-to-Writer integration is
+not present in current source and is not introduced by this increment.
