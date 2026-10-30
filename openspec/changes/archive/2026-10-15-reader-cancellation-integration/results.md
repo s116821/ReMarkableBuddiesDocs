@@ -29,3 +29,33 @@ Build retained artifact11967808160,19173669-byte ZIP, transport SHA256460e5a75d9
 Final pre-lifecycle Docs9df run38724611046 passed all three jobs; actual strict log tested merge0b54c7c56d350c35afe2749b1d4ddc07153b35aa into879f5ec0 and reported25 passed/zero failed. Local20 and prepared-canonical21 counts describe different snapshots and are attributed separately. No inline bot findings appeared on either PR at the final pre-archive read.
 
 Only this change's five files are archived and its exact one-requirement/two-scenario body is synchronized into the canonical reader-cancellation-integration capability. Parent9df has239 unrelated tracked blobs, which must remain unchanged. Paired PR50/Docs42 stay drafts pending coordinated parent delivery; wider REM40, native/production, personalized-provider behavior and REM35 remain open. Final Docs lifecycle CI and narrow archive-preservation review are recorded as documentation-only successors in the PR comments.
+
+
+## Delivery audit, October 30, 2026 UTC
+
+The earlier source, compiler and execution records above remain historical.
+The async transport and ordinary personalization path have since landed on main.
+[Buddy PR50](https://github.com/s116821/ReMarkableBuddies/pull/50) is narrowed
+through normal commits, preserving its old source history, to the actual Reader
+regression control and its simulator module registration. The control body at
+`38ae61f` is byte-identical to the accepted `6fea00fc` version. Its current
+baseline is `629d4c1f3c042831a9b7a26b9a6e7fa4f4c81bb1`; the final exact-source
+CI and review receipts are recorded in the linked PR discussion. Historical
+passes above are not credited to this newer composition.
+
+The two cases still use actual loopback HTTP, the ordinary Orchestrator and real
+Ledger, with modeled ownership loss only after the full provider request is
+received. The response remains withheld when cancellation returns; the control
+checks durable canceled records, retained source images, no assistant/page
+output and no extra request on another iteration. These tests add regression
+coverage; they do not introduce a second transport or import unfinished selected
+Reader production code.
+
+This Docs PR now contains only its five accepted archive records and the
+canonical one-requirement/two-scenario contract. All other current-main files
+are unchanged. Unfinished conversation, subject-memory, selected publication,
+ordinary-adapter and personalization ancestor records remain preserved in
+prior commits and their own active PRs; they are excluded from this delivery.
+The historical proposal/design/task/delta files and requirement/scenario body
+are unchanged. No provider account, native tablet, billing, physical gesture or
+export rollback qualification is implied.

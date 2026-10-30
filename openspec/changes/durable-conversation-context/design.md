@@ -1,20 +1,5 @@
 ## Context
 
-[Composed memory admission](composed-memory-admission.md) joins the Reader and
-existing memory pin gates before actual draft publication; it cannot call a
-locking writer from an already-held memory callback. The path is data-only and
-keeps native source/dispatch qualification separate.
-
-The bounded [Reader quality disposition](reader-quality-gate.md) scopes fixture-only
-development transport without changing normal refusal or hiding required native
-admission/dispatch work. Strict native integration remains an open gate.
-
-The next application increment is specified in
-[selected-reader-publication.md](selected-reader-publication.md): selected
-interpretation/Generated publication and actual Attempt routing under canonical
-admission, while SDK acquisition/live source and branch-dependent effects remain
-separate dependencies.
-
 REM-37 supplies durable conversation context on accepted REM-36 storage. Current Reader orchestration captures an overview and derives detail images for proposal and independent verification; native undo ownership is process-local. REM-9 already guards capture, provider waits, navigation and keyboard output. REM-25 owns native page acquisition and its device-local recovery journal. Its static firmware inspection identifies a possible explicit page UUID argument but proves no runtime insertion or persistence semantics.
 
 Authority is the complete REM-37 description and September 26 correlation clarification, plus the resumed roadmap. The public acceptance mapping accompanies this plan. The inspected REM-36 checkpoint is an interface candidate, not permission to begin implementation before independent review and dependency acceptance.
@@ -118,19 +103,6 @@ integration supplies historical evidence and no device or effect authority.
 After REM-36 acceptance and exact-plan review, implement domain schemas/APIs and tests, then integrate the shared Store handle into actual Reader capture/terminal recording. Preserve config defaults and source/navigation behavior. No old-page rewrite is needed. Unknown newer schemas fail closed for writes; rollback to an older application must not delete newer storage. Use REM-36 backup/restore contracts and document that rollback cannot replay interrupted effects. Verify native capture/persistence with a disposable authorized fixture and restore the original device state. Sync/archive only after every REM-37 gate is satisfied in the linked Docs/Rust delivery.
 
 ## Open Questions and Dependency Gates
-
-The next mode-aware application admission increment follows
-[startup-mode-admission.md](startup-mode-admission.md). Accepted publisher mode
-leases are not local read-mode lifetime guards. Validate actual persisted choices
-before model/device startup and retain a matched configured shared lease through
-current receiving, while historical recovery remains token-free and ordinary live
-mode switching remains explicitly unfinished.
-
-The next bounded executable integration follows
-[startup-history-runtime.md](startup-history-runtime.md). Exact SDK d01 supplies
-no native Reader capability; selected startup, metadata inspection and token-free
-original-request recovery can be made usable without claiming fresh effects or
-removing native-dependent dead-code diagnostics.
 
 Before code: confirm final REM-36 commit/CAS/media APIs and accepted limits; independently review this exact plan with REM-25 and coordinator. Before native binding: REM-25 must qualify the receipt and insertion/adoption operation. Before external export: REM-23 verifies marker preservation on its actual backend. Before complete native mixed-Buddy experience: REM-38/39 provide routing/rendering and Writer; domain tests here do not close their gates. These dependencies do not permit weakening automatic page creation or silently treating unbound legacy targets as trusted.
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Describe the bounded host Reader integration of the accepted cooperative provider cancellation lifecycle. This contract does not establish native cancellation/readiness, real-provider semantics, remote billing or export rollback. The source is a stacked candidate; unrelated parent delivery remains separate.
+Describe the bounded host Reader integration of the accepted cooperative provider cancellation lifecycle. This contract does not establish native cancellation/readiness, real-provider semantics, remote billing or export rollback. The current delivery is the actual ordinary Reader regression control over the already-delivered async transport and personalization path. Selected Reader/Attempt composition remains in its independent unfinished stack.
 
 ## Requirements
 
