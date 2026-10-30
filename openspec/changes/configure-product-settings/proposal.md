@@ -30,8 +30,8 @@ using the existing settings safety model in both browser and Electron.
 
 ### Modified Capabilities
 
-None until the exact current source mapping and contract freeze identify a
-necessary change. Do not rewrite older wire contracts to make this feature fit.
+None. Older wire contracts remain frozen; the dedicated capability negotiates
+its own support.
 
 ## Impact
 
@@ -39,4 +39,5 @@ Central Docs and linked Buddy/Manager changes form one delivery. No new runtime
 dependency, repository, service API, application version field or product WLAN
 management path. Schema/contract revisions are independent of Git-tag releases.
 Main owns producer implementation; the matching consumer uses one frozen shared
-contract. This draft is not implementation admission: see contract-review.md.
+contract. The shared contract is accepted; final producer/consumer qualification and
+coordinated delivery remain pending: see contract-review.md.

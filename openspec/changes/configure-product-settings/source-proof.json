@@ -1,5 +1,5 @@
 {
-  "kind": "candidate-contract-freeze-review-pending",
+  "kind": "accepted-contract-consumer-implementation-producer-and-delivery-pending",
   "Manager": {
     "commit": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
     "tree": "b47788bb4622b77ef0686ccb06aa6855be0f0b98",
@@ -25,7 +25,45 @@
   "branch": "feature/rem-42-role-export-configuration",
   "tracking": "REM-42 thread98b11f34-2518-44b4-9990-25d92a8a4f55; contract questions9c98de0b",
   "pending": [
-    "Coordinated exact amendment/vector review before code",
-    "Literal vector execution against producer/consumer during implementation"
-  ]
+    "Root independent final source review and required hosted Windows/Linux qualification",
+    "Coordinated spec sync/archive and paired delivery in the same eventual PRs"
+  ],
+  "acceptance": {
+    "docs_contract_commit": "c3d095c093e486c07a0aa14a2e656fbd13ab5fc9",
+    "root_receipt": "REM-42 a827a170-0f71-40b1-bb23-159e2072bbf8",
+    "fixture_correction": "REM-42 04048115-1e0a-4e61-ac36-0fec845c668c",
+    "corrected_vectors_sha256": "9f0f2b6e1f2e9c49323390f8038f93fc5a0cd6765dde9f2400e0215e08914152"
+  },
+  "consumer_implementation": {
+    "commit": "499832a3643139cb55c0b28d2bb53bbbed428cdf",
+    "tree": "f2eb977108786efef9403bdab0f02eb5408e3c6f",
+    "parent": "8fbf4bc58ee816e9a85587d7069dc65b82fe3f8c",
+    "local_node_tests": 827,
+    "local_python_mock_transport_tests": {
+      "count": 7,
+      "source_commit": "cf7d4ca53eb0c5ac42a5075d818c52b06c74d2be",
+      "transport_source_unchanged_in_successors": true
+    },
+    "actual_ui_and_ownership": "Source and retained-package verification is recorded separately; no device/provider claim.",
+    "qualified_application_source": "103598ed4ef3dd1fe68c8f16f97d424f99701eea",
+    "test_only_successor_paths": [
+      "tests/fixtures/product-settings-producer-060d012.json",
+      "tests/product-settings-hosts.mjs",
+      "tests/product-settings-producer.test.mjs"
+    ]
+  },
+  "producer_capture": {
+    "source_head": "060d012ab60438d8bec933ff296afb3ff5fa05d8",
+    "source_tree": "7d441f1cbb121cc6c8fd893b9b7301c0f4e6ed73",
+    "source_basis": "Main published clean-source receipt; captured output packet independently downloaded and all manifest hashes verified here. Native Rust source/test execution is Main/Root attribution, not local execution.",
+    "packet_sha256": "1045662dd00e982b1ccb339120add75512442b242443f85280159d26966e1aa3",
+    "capture_sha256": "cf691e077ca6c9a5c5d8ad3fa6fe7106703d3503fcd1b546de56cdd949b0a44a",
+    "actual_product_frames_replayed": 15,
+    "legacy_bootstrap_frame_separately_labeled": 1,
+    "cross_replay_tests": 17,
+    "host_limit": "Synthetic Windows host CLI paths; no Linux/tablet/runtime/provider qualification.",
+    "public_fixture_sha256": "1b46e345fa493c2d2dac516cf63a050aa995157ecb001d9e650a095329cd8ae8",
+    "public_fixture_transformation": "Exact removal of one fixture_root wrapper line; all remaining bytes and all16 record objects, including15 product stdout frames and exact private requests, unchanged."
+  },
+  "publication": "Root imports clean native application103598ed and applies the sanitized three-test-file patch to the final tree on the existing branch; local-only intermediate capture history is not published. This is a normal new commit, not a remote history rewrite."
 }
