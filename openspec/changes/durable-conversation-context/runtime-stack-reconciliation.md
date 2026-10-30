@@ -39,3 +39,6 @@ canonical sync/archive of this unfinished Reader change or whole-issue Done.
 
 Source basis: current PR heads/comments, exact source ownership/caller changes,
 accepted parent source/spec review and Root's current dispatch.
+
+See [the actual reconciliation result](runtime-stack-result.md) for replacement
+source identities, performed checks and remaining gates.
