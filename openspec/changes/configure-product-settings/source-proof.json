@@ -1,0 +1,21 @@
+{
+  "kind": "draft-precode-not-implementation-admission",
+  "Manager": {
+    "commit": "65d2e7717a95e19d0460d46b36e39fa4850f8eda",
+    "tree": "b47788bb4622b77ef0686ccb06aa6855be0f0b98",
+    "bundle_sha256": "ca2eb9dbc1ae79dfba3863afc19518448ff91e3e4e39066ee7ad968f5f2e4292"
+  },
+  "Docs": {
+    "commit": "6c844375b392d863a4a2398bc5a5de277e935a77",
+    "tree": "038a74ee5a51281d1ce99f28b8b8be25778154d2",
+    "bundle_sha256": "a37f5b5d33fb751fd74b55e9d30b715bee276d64de1f46a64ab138cb7dc45950"
+  },
+  "Buddy": "Main current-source schema/admission/export pin and complete shape still required; older68e snapshot not authority.",
+  "branch": "feature/rem-42-role-export-configuration",
+  "tracking": "REM-42 thread98b11f34-2518-44b4-9990-25d92a8a4f55; contract questions9c98de0b",
+  "pending": [
+    "Exact schema/wire/entry-gate agreement",
+    "Independent literal vectors",
+    "Coordinated precode acceptance before behavior code"
+  ]
+}
