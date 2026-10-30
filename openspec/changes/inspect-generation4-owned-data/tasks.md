@@ -5,11 +5,11 @@
 - [x] Obtain independent precode acceptance and pin affected producer/consumer scope and current revision bases.
 
 ## 2. Producer
-- [ ] Add separate v3 selector/types without changing the legacy selector, report1/2 shapes or domain codecs.
-- [ ] Implement existing-only Linux directory/file/lease custody, complete read-budget accounting and final witness through output; unsupported guarantees refuse.
-- [ ] Traverse valid current/retained1/2/3/4metadata and feedback/notebook composition; classify exact notebook records and descriptor media without reading archived-media/original-document payloads.
-- [ ] Implement checked lossless counters, unknown overflow aggregates, file-path dedup/nonadditive references and truthful partial/busy/unsupported outcomes.
-- [ ] Cover real CLI flag composition, read-only/no-startup/no-secret behavior, bounded serialization and unchanged legacy controls.
+- [x] Add separate v3 selector/types without changing the legacy selector, report1/2 shapes or domain codecs.
+- [x] Implement existing-only Linux directory/file/lease custody, complete read-budget accounting and final witness through output; unsupported guarantees refuse.
+- [x] Traverse valid current/retained1/2/3/4metadata and feedback/notebook composition; classify exact notebook records and descriptor media without reading archived-media/original-document payloads.
+- [x] Implement checked lossless counters, unknown overflow aggregates, file-path dedup/nonadditive references and truthful partial/busy/unsupported outcomes.
+- [x] Cover real CLI flag composition, read-only/no-startup/no-secret behavior, bounded serialization and unchanged legacy controls.
 
 ## 3. Both Manager hosts
 - [ ] Add exact report3 request/parser/type/reduction branches with raw framing/duplicate/lexical integer checks; preserve report1/2.
