@@ -3,8 +3,9 @@
 The [Manager repository](https://github.com/s116821/RemarkableBuddiesManager)
 contains one Angular application delivered as a static browser app and an
 Electron desktop app. This is a **foundation preview**, not a completed tablet
-installer or updater. Both hosts show an unconfigured connection and unknown
-tablet version. They perform no tablet or Buddy-service calls.
+installer or updater. The base foundation has an unconfigured connection and
+unknown tablet version. The additive [wired observation slice](manager-wired-observation.md)
+adds explicit Linux read-only transport while preserving the installer gates.
 
 ## Public setup and checks
 
@@ -25,23 +26,24 @@ launches the packaged desktop executable. Windows x64 and Linux x64 are the
 foundation's portable desktop targets. macOS, signing/notarization and desktop
 automatic updates remain later delivery; do not infer their support.
 
-Release fixtures additionally require Python 3.12 and git-cliff 2.14.2 on PATH.
-Run `npm ci --prefix release`, then `npm run test:release`. These fixtures use real
-local Git repositories, git-cliff and release-it; GitHub publication is simulated.
+Release fixtures additionally require Python 3.12. Install the hash-locked
+maintained tools with `python -m pip install --require-hashes -r cicd/release/python-tools.lock`,
+then run `npm run test:release`. These fixtures use real local Git repositories
+and Python Semantic Release to verify project workflow and release-identity rules.
 No experimental production tags or tablet operations are required.
 
 ## Architecture and scope
 
 Angular 22.2.0 and TypeScript 6.0.3 compile shared components. Electron 44.4.5
 loads the same static output with a sandboxed, context-isolated renderer and no
-Node integration. The preload exposes host identity only; no command IPC is
-available. The main process denies unapproved navigation, popups and permissions.
+Node integration. The preload exposes host identity and the separately specified bounded
+[wired observation/cancel capability](manager-wired-observation.md); arbitrary
+command IPC remains unavailable. The main process denies unapproved navigation, popups and permissions.
 The sole external link opens the public Docs hub in the system browser.
 
 Browser output is `dist/manager/browser`, deployable under a static server's root
-or subdirectory. No site hosting is provisioned. Future browser tablet transport
-may use an authenticated companion helper; Electron may use controlled SSH/OS
-integration. Neither permits a queryable Rust Buddy service/API.
+or subdirectory. No site hosting is provisioned. The bounded Linux wired observation path uses an explicit authenticated
+loopback companion helper for browsers and controlled SSH/OS integration for Electron. Neither permits a queryable Rust Buddy service/API.
 
 REM-41 still owns host transport, identity/authentication, separate Manager/Rust
 release discovery, compatibility checks, install/update/rollback, page-extension
@@ -53,34 +55,88 @@ claims these outcomes or RM2/Paper Pro validation.
 
 Manager tags/releases are independent of the
 [Rust application](https://github.com/s116821/ReMarkableBuddies/releases).
-The package manifest version 0.0.0 is a non-authoritative tooling placeholder.
-Development builds display `0.0.0-dev-<commit>[-dirty]`. Official builds contain
-the exact semantic tag version and commit in both UI and package metadata.
-
-The release policy is adapted from actual Rust revision
-`33db26add721cea6c0121ad769a54d06ae600b4e`: git-cliff 2.14.2 computes versions;
-release-it 19.0.6 creates immutable annotated tags on application squash commits.
-There are no generated version-bump commits. For a new repository, the initial
-calculation excludes its verified docs-only history prefix so a non-semantic
-GitHub README initialization cannot block the first application release. An initially untagged Manager starts
-at v0.1.0; feat increments minor, fix/maintenance increments patch, and breaking
-changes calculate major. A publication guard blocks major 1+ until a reviewed
-REM-35 change enables the completed ecosystem's release.
+No maintained source version is authoritative. Development builds display
+`0.0.0-dev-<commit>[-dirty]`. The [release contract](../openspec/specs/release-versioning/spec.md)
+uses pinned Python Semantic Release 10.7.0 for a read-only semantic candidate
+before build, and tag-only creation after every required gate passes. Scoped feat
+increments minor, recognized maintenance increments patch, and breaking changes
+calculate major even at 0.x. The separate REM-35 guard blocks premature 1.0.
+There are no generated version-bump commits.
 
 Explicit documentation-only paths skip tags and all main application builds.
 Unknown paths, dependencies, tests and workflow changes are application relevant;
 mixed code/docs changes release normally. Application changes cannot use a docs
 PR title. Required PR checks still finish for docs-only changes.
 
-One lock covers refresh, recovery, tagging, building and draft publication.
-After verifying the remote tag, the release job clones the exact source and builds
-`manager-browser.zip`, `manager-win32-x64.zip`, `manager-linux-x64.zip` plus
-`provenance.json`. Archives contain tag/SHA metadata and verified SHA-256 digests.
-Cross-packaged Linux archives preserve executable permissions. Windows and Linux
-PR CI exercise their native packaged host; the official Windows release runner
-executes the Windows package and cross-packages Linux. These portable archives are
-not tablet installers. Pending tags recover before newer application commits;
-verified published assets are immutable and partial drafts remain retryable.
+The ordered application workflow runs checks, builds frozen candidate artifacts,
+then exercises those downloaded artifacts on Windows and Linux without rebuilding.
+Build produces `manager-browser.zip`, `manager-win32-x64.zip`,
+`manager-linux-x64.zip` plus `provenance.json`; separate retained development
+browser output preserves the existing development/Tailwind checks on both hosts.
+Archives contain source/version metadata and verified SHA-256 digests. The
+unchanged four-field build-info schema's `official:true` identifies the controlled
+recipe; an unpublished CI candidate is not a trusted release or installer.
+
+One final release job alone creates the official annotated tag and publishes the
+same integration-tested bytes. It requires an exact merged-main source proof and
+successful preceding gates. Single-first-parent push admission refuses ambiguous
+batches; actual main commit semantics are checked independently of the PR title.
+Failed sources are not backfilled by later successes. Maintained Actions serialize
+publication, observe an exact draft ID and upload only missing verified assets
+without overwrite. Explicit failed-job retries reuse retained artifacts for 14
+days; conflicting tags/assets refuse. Outside writers are not covered by an
+atomic immutability guarantee. These portable archives are not tablet installers.
+
+## Protected model credential file
+
+Both companions support deliberate management of the already declared protected
+credential file under the [bounded consumer specification](../openspec/specs/protected-model-credential-companion/spec.md).
+Use the [Manager saved-file guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/model-credential.md)
+for Install/Replace/Remove, exact private input, original-only checks and their
+expiry/capacity limits. Reference editing remains a separate explicit operation;
+saved file presence establishes neither provider authentication nor runtime adoption.
+
+## Source-cache slot inventory
+
+Both companions provide an explicit read-only snapshot of bounded source-cache slot
+metadata under the [consumer specification](../openspec/specs/source-cache-inventory-companion/spec.md).
+Use the [Manager inventory guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/source-cache-inventory.md)
+for deliberate inspection, empty/refusal states and local Stop waiting. Contents
+remain unread and unvalidated; source freshness and runtime remain unverified.
+Apparent slot lengths are neither allocated nor reclaimable space and are not
+added to aggregate owned-data totals. The snapshot grants no cleanup permission.
+Inventory quiesces pending observation requests without global cancellation;
+retained uncertain operations keep their original lifetimes.
+
+## Conversation discovery
+
+The reviewed implementation provides explicit read-only Buddy conversation-ID
+snapshots in both companions. See the [central discovery guide](manager-conversation-discovery.md)
+for the reviewed Manager manual, empty/refusal semantics, local Stop and limits.
+Its [consumer requirements](../openspec/specs/conversation-discovery-companion/spec.md)
+record the implemented contract and accepted Windows/Linux retained-package
+qualification. Physical-device/runtime health and final paired merge/publication
+remain separate outcomes. No selection or deletion action follows.
+
+## Historical conversation management
+
+Both companions provide explicit selection, fresh Inspect/Prepare, deliberate
+once-only logical removal and original-intent read-only Status. See the
+[central management guide](manager-conversation-management.md),
+[consumer requirements](../openspec/specs/conversation-management-companion/spec.md)
+and [completed implementation archive](../openspec/changes/archive/2026-10-28-manage-historical-conversation-companion/results.md)
+for accepted source/Windows+Linux retained qualification and exact limits.
+Retained history/media/export associations/native pages remain; physical
+reclamation, synchronized deletion and native/runtime health are not implied.
+Final paired review, normal merge and actual-main/publication stay separate.
+
+## Restore an archive already on the tablet
+
+Both companions provide a preview and separate confirmation to add compatible archived Buddy data while keeping current records. See the [central restore guide](manager-ordinary-restore.md), [consumer requirements](../openspec/specs/ordinary-archive-restore-companion/spec.md) and [detailed consumer contract](../openspec/changes/archive/2026-10-28-restore-ordinary-archive-companion/contract.md). Exact counts are optional technical details; media completeness and inactive saved settings are explicit. Earlier unconfirmed results remain distinct from a later check finding expected data. This does not download a backup, set up an empty/replacement tablet or restore native pages. Source/retained qualification, tablet/runtime health and final release are separate outcomes.
+
+## Inspect and export historical archives
+
+Both companions expose whole-archive checks and policy-previewed once-only history export. See the [central archive guide](manager-selected-archives.md) for content/exclusions, original uncertainty, exact accepted Windows/Linux qualification and remaining restore/cloud/native limits. Final merge/publication is separate.
 
 ## Central specifications and coordinated delivery
 
@@ -100,3 +156,13 @@ foundation; full REM-41/42 acceptance stays outstanding.
 - [Electron stable releases](https://releases.electronjs.org/release?channel=stable)
 - [Electron process model](https://www.electronjs.org/docs/latest/tutorial/process-model)
 - [Electron security](https://www.electronjs.org/docs/latest/tutorial/security)
+
+## Shared styling conventions
+
+The completed [shared Tailwind capability](../openspec/specs/manager-shared-tailwind/spec.md)
+uses one theme and reusable accessible components across browser and Electron.
+Follow the Manager [styling guide](https://github.com/s116821/RemarkableBuddiesManager/blob/main/docs/styling.md)
+for literal utilities, semantic tokens and development/production host checks.
+Native Linux and independent Windows evidence are separately attributed in the
+[bounded verification archive](../openspec/changes/archive/2026-10-08-manager-shared-tailwind/verification.md).
+Tablet transport and installer gates remain separate.
