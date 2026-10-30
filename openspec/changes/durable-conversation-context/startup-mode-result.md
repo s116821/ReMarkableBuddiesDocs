@@ -178,3 +178,33 @@ integration. Parent33 representative live-model/delivery, native/fresh context,
 provider/bootstrap, full conversation and MVP lifecycle gates remain open. No
 source, requirement, canonical or archive behavior changes, merge waiver, tablet
 contact or provider execution follows from these completed software checks.
+
+## October 30, 2026 UTC resync: preserve the ordinary CLI refusal contract
+
+The preceding behavior and pass records describe their historical candidates.
+During cleanup resync, current PR35 failed the unchanged main regression
+`actual_normal_startup_refuses_nonordinary_mode_before_runtime_constructors`:
+its ordinary refusal had become a successful JSON report before the main
+ordinary-mode error path. [Run40989270899](https://github.com/s116821/ReMarkableBuddies/actions/runs/40989270899)
+preserves that failure; it is not waived or replaced by a test-only retry.
+
+The correction in Buddy PR35 at `b6d4de7` retains every early preflight,
+safe-deferred-creation, private-output and no-write check. Actual CLI startup
+without `reader.selection` converts refused decisions to nonzero exit and empty
+stdout. A private, non-serialized static reason preserves main's distinct
+nonordinary-mode and contradictory-legacy-sync diagnostics; other failures use
+fixed private-data-free messages. Selected-config startup and explicit report
+commands retain their JSON behavior. The library decision/report wire schema
+and Store reuse remain unchanged. Four newer no-selected test expectations are
+aligned with that existing ordinary CLI contract, retaining their original
+foreign-byte/no-created-data assertions; the existing main regression is unchanged.
+
+Current-source independent review and exact hosted results are tracked in the
+linked PRs. Old passes above do not qualify this correction. This clarification
+is inherited by Docs20/22/29 and source36/37/40 through normal commits; it does
+not sync or archive any unfinished selected Reader capability.
+
+The generic mode guard and actual ordinary-main lifetime already landed through
+Buddy31/67. The unique historical `ordinary_store` return-guard adapter/test from
+closed Buddy48 is preserved in active Buddy40. Neither this routing correction
+nor that custody transfer claims selected runtime or native qualification.
