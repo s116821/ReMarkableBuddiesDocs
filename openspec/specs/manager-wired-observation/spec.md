@@ -27,8 +27,23 @@ The Manager SHALL bound operations, invalidate old observations/results on cance
 - **THEN** the owned operation is cancelled and previous state cannot be presented as current or replaced by a late result
 
 ### Requirement: Shared UI with protected local host boundary
-Browser and Electron SHALL use the same Angular observation UI and versioned adapter. Electron SHALL expose only narrow authorized observation/cancel calls. Browser transport SHALL have an explicit user-launched loopback helper and host-controlled setup, with origin/session validation; ordinary webpages SHALL not directly open SSH or discover arbitrary local hosts.
+Browser and Electron SHALL use the same Angular observation UI and versioned adapter. The observation interface SHALL expose only narrow authorized observation/cancel calls. Separately specified owned-data inspection, provider authorization, personalization, binary identity and verified Manager download capabilities SHALL expose their own narrow authorized fixed actions without allowing arbitrary renderer commands or weakening observation, trust, origin/session or main-frame boundaries. Browser transport SHALL have an explicit user-launched loopback helper and host-controlled setup, with origin/session validation; ordinary webpages SHALL not directly open SSH or discover arbitrary local hosts.
 
 #### Scenario: Browser helper ownership
 - **WHEN** the user opens the helper-served local UI with protected host configuration
 - **THEN** the same observation path is available without renderer access to authentication or arbitrary commands, while remote origins and unsupported hosts fail closed and show their setup boundary
+
+### Requirement: Quiet automatic connection refresh
+The shared Manager connection UI SHALL retain the last successfully verified status, details and original verification timestamp while an automatic observation is pending, without a new checking label, spinner or pending announcement. Initial and explicit user-requested reads SHALL retain visible pending feedback. Only a successful result SHALL advance the verification timestamp. Actual failed observation, connection/boot identity change, cancellation or disconnect SHALL still clear current details and prevent late-result restoration; existing explicit-reconnection and transport safeguards SHALL remain.
+
+#### Scenario: Automatic observation pending and successful
+- **WHEN** a previously observed connection starts a scheduled read
+- **THEN** its last verified status, details and timestamp remain visible without a pending-state update, and a successful same-identity result replaces them with the newly verified sample.
+
+#### Scenario: Explicit read
+- **WHEN** the user starts an initial or manual connection read
+- **THEN** the UI shows pending feedback until that request resolves.
+
+#### Scenario: Failure or cancellation during automatic read
+- **WHEN** a pending automatic read fails, observes a changed identity or is cancelled by disconnect
+- **THEN** the UI clears current details according to the existing failure/cancellation contract and a late response cannot restore them or silently reconnect.

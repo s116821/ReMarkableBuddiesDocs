@@ -1,0 +1,12 @@
+## Precode
+- [x] Inspect existing Forget/replay/mode/catalog/selected admission and consumer questions; distinguish historical acknowledgement from current state.
+- [x] Publish proposed strict bounded preparation, confirmation and receipt-only DTO/binding/currentness/uncertainty contract.
+- [x] Obtain independent producer precode review and concrete browser/Electron consumer contract agreement before code.
+## Implementation
+- [x] Implement same-view read-only preparation and original config/mode/store/selected evidence checks without changing file APIs or unrelated refusal paths.
+- [x] Implement atomic Store-locked local generation/content/head conditional publication, gated selected confirmation and pure bounded exact historical receipt reconciliation with original parent-content checks; never mutation on receipt absence.
+## Verification and delivery
+- [x] Verify actual local/selected DTO, admission/re-entry/base/generation/atomic restore/publication interleaving, CAS/replay/unique-manifest ambiguity/changed-parent/tampered-hash/collision/bounds/no-init and commit/output uncertainty controls; preserve exact corpus for independent consumer compatibility.
+- [x] Pass appropriate no-default/lint/current hosted checks and independent implementation review; reconcile findings.
+- [x] Sync only accepted canonical requirements, archive only completed own scope and prepare the final composed review packet.
+- External delivery gates remain: final independent composition review, normal Docs-first/source-second squash and separate actual merged-tree/main/publication observations. This archive does not claim those future results.
