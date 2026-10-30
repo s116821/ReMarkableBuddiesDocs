@@ -6,7 +6,7 @@ Keep the actual ordinary Reader lifetime pinned to its admitted ordinary storage
 
 ## Delivery boundary
 
-This records the scoped implementation and preserves its separate delivery gates. The conversation/storage foundation is still an unmerged parent; this contract does not claim deployment to main, native or provider qualification, a mode-changing UI, or full REM-24/52 completion. The ordinary guard is distinct from data, publishing and selected-domain authority.
+The ordinary main runtime implements this contract through `mode_maintenance::admit_ordinary` and its retained `OrdinaryLifetime`. The generic guard landed in Buddy PR31 and the actual ordinary caller in PR67. The historical `reader_runtime::ordinary_store` adapter in PR48 is separate selected-stack integration; its historical acceptance does not establish current selected-stack delivery. Native/provider qualification and full REM-24/52 completion remain separate. The ordinary guard is distinct from data, publishing and selected-domain authority.
 
 ## Requirements
 

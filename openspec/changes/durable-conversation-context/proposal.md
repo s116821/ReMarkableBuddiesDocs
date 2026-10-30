@@ -4,28 +4,6 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
-- Integrate real composed subject-memory/selected Reader publication through
-  [composed-memory-admission.md](composed-memory-admission.md), using one ordered
-  admission set and the existing writer while preserving native refusal.
-
-- Scope development-only transport to its actual test/harness ownership through
-  [reader-quality-gate.md](reader-quality-gate.md); preserve needed native SDK
-  interfaces and the honest remaining strict-lint gate.
-
-- Continue selected Reader request/draft publication and actual Attempt routing
-  through [selected-reader-publication.md](selected-reader-publication.md), using
-  acknowledged selected evidence without inventing native source authority.
-
-- Continue actual startup/current-history mode admission through
-  [startup-mode-admission.md](startup-mode-admission.md), reusing accepted mode
-  interfaces and preserving local data compatibility without claiming a missing
-  LocalOnly/None lifetime lease or enabling a nonlocal worker.
-
-- Continue the actual executable integration through explicit selected startup
-  and historical request handling in [startup-history-runtime.md](startup-history-runtime.md).
-  Keep unconfigured SDK acquisition unsupported and fresh native Reader authority
-  unavailable; use existing runtime/admission components rather than fake lint use.
-
 - Propose the REM-52-coordinated existing Receipt/OutcomeFact schema-2 migration,
   selected-only projector and shared effect admission described in
   [selected-intent-migration.md](selected-intent-migration.md); preserve historical

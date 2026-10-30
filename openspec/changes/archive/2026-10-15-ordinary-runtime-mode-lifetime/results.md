@@ -114,3 +114,35 @@ subject-memory and document-scoped sync changes remain unfinished. The PR stays
 a stacked delivery: foundation merge, current source-main deployment, supported
 provider/mode UI, native capability and full REM-24/52/35 gates remain separate.
 The canonical contract does not claim those missing outcomes are implemented.
+
+
+## Delivery audit, October 30, 2026 UTC
+
+The earlier snapshots above remain historical evidence. The ordinary-main
+contract no longer depends on merging the old conversation stack: the generic
+`OrdinaryModeLease` landed in [Buddy PR31](https://github.com/s116821/ReMarkableBuddies/pull/31),
+and [PR67](https://github.com/s116821/ReMarkableBuddies/pull/67) retains an
+`OrdinaryLifetime` through the actual ordinary caller. At main
+`629d4c1f3c042831a9b7a26b9a6e7fa4f4c81bb1`, admission checks the current
+mode token, retains both mode and legacy-data leases, and rejects explicit local
+mode with legacy synchronization enabled. The original generic guard controls
+remain present; later maintenance and notebook checks are additions.
+[Actual-main CI40986293632](https://github.com/s116821/ReMarkableBuddies/actions/runs/40986293632)
+passed Checks, Build, Integration and Release. That is current ordinary-main
+evidence, separate from the older candidate results above.
+
+The old `reader_runtime::ordinary_store` return-guard adapter and its actual
+startup test are still useful to the selected Reader stack. Their custody and
+review continue in [Buddy PR40](https://github.com/s116821/ReMarkableBuddies/pull/40);
+they are not declared deployed by this documentation. PR48's source history
+remains preserved. Its remaining adapter scope must not be confused with a
+missing generic or ordinary-main guard.
+
+This PR now delivers only this accepted five-file historical archive and its
+canonical ordinary-runtime contract. Unfinished conversation, subject-memory,
+selected Reader and other inherited records are removed from this PR's current
+diff, but remain preserved in its prior commits and their active PRs. No other
+capability is synced, archived or represented as complete. The four historical
+proposal/design/task/delta files are unchanged, and the requirements/scenarios
+are unchanged. No new application build, model call or tablet operation was
+performed for this audit.
