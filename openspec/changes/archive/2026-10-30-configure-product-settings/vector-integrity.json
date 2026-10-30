@@ -1,0 +1,12 @@
+{
+  "sha256": "9f0f2b6e1f2e9c49323390f8038f93fc5a0cd6765dde9f2400e0215e08914152",
+  "counts": {
+    "storage": 19,
+    "raw_protocol": 60,
+    "public_requests": 19,
+    "public_results": 17,
+    "lifecycle_catalog": 14
+  },
+  "total_definitions": 129,
+  "qualification": "Definition/hash arithmetic only; no behavior execution or native/account evidence."
+}
