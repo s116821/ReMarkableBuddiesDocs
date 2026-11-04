@@ -1,0 +1,228 @@
+# Manager consumer implementation checkpoint
+
+## Revisions and ownership
+
+Root independently accepted consumer precode at Docs fad76c8 on November 4,2026.
+SCRAPPY reused the existing feature/rem-42-generation4-owned-inspection pair.
+Manager implementation is df0e4c4b6da2b03417781319a37d38692dbd5490, followed by
+normal test-only unused-import correction f7beada76da5ad64a9410dc9673811c5119adf7e
+and portable CI command-name correction8203124fbb054c725e2f523e827d84d4e143e7a7
+(treea1b43c0c20a5d48380a2fbfad65f56649f952403), based on delivered main7d8faaa4.
+No dependency or lockfile changed. Existing report1/2 parser/types/controller and
+wired_observer.py remain byte-identical. Frozen producer2d7d8e9 and its five pinned
+Docs artifacts remain unchanged; their earlier qualification is recorded in
+implementation-checkpoint.md, not recreated as consumer evidence.
+
+## Implemented scope
+
+The separate identity-only request, guarded browser endpoint/main-frame IPC,
+preload arity and bounded public adapter feed one shared controller/UI. The
+host-only raw parser uses existing strictJson duplicate/depth checks plus standard
+JSON.parse reviver source context; no additional JSON grammar was introduced.
+Python rejects duplicate/noncanonical numeric tokens and relays original raw
+bytes as private base64. Decimal strings and BigInt preserve exact u64 values,
+including physical overflow, complete coverage and notebook subset relations.
+Only the closed21-key reduced view reaches the renderer.
+
+Both actual host factories use the shared MaintenanceIO owner. All17predecessor
+coordinators reciprocate. Busy cannot invalidate, cancel or perform competing
+I/O; old deadlines/finally cannot release a newer token. Stop/page lifecycle fence
+local delivery. Queued observations must quiesce before dispatch within the same
+14s UI budget. Local-only unknown records are retained without resolution/replay.
+
+The plain UI groups physical accounting, nonadditive references and included
+notebook metadata, preserves exact decimal text and distinguishes Unknown,
+Not checked and observed0. Current/retained formats stay in inspection details.
+No compatibility, liveness, safe cleanup or feature activation follows.
+
+The measured initial production assets are approximately632.5kB. The explicit
+error budget changes625kB to650kB, retaining the400kB warning; this reviewable
+feature allowance preserves an enforced upper bound. No package version is
+maintained in source; existing Git-tag/build-time versioning remains authoritative.
+
+## Verification scope and remaining gates
+
+Detailed exact-head local checks, retained package receipts and hosted qualification
+are appended below as they complete. Early working-tree source runs established
+43frozen literal vector outcomes, both real factory17peer/34Busy/15preview
+controls, a52entry-point development App matrix with17outgoing clears, and four
+actual-browser observation-quiescence cases. These are synthetic producer/
+transport fixtures, not tablet/native/provider or installed-release evidence.
+
+The new tests caught and corrected a missing clear when the older source-cache
+inspection replaced this new view. A copied test's identity mutation accidentally
+matched its baseline; its input was corrected. Initial production build failed
+at631.55kB against625kB; the explicit budget change above is preserved. An initial
+normal-check attempt stopped at the unused test import, corrected by f7beada.
+Original failure logs remain in the handoff evidence rather than being relabeled.
+
+Root owns native publication, independent code review, both-platform hosted
+qualification and eventual coordinated merge/main/release observation. No
+planning-only merge, producer-only merge, canonical sync or archive is requested
+at this checkpoint. The same change stays active until the remaining acceptance
+and both-platform qualification permit final sync/archive and coordinated delivery.
+
+## Exact local check record
+
+At f7beada, npm run check passed: lint,911Node tests, development CSS/focus checks,
+production build and browser/responsive/Electron startup. Python transport9tests
+passed. The61focused raw/child/controller tests are included in the911. Both
+actual source-host factories passed the17peer/34Busy/15preview matrix; the
+browser development App passed52incoming Busy/invalidation boundaries and17
+outgoing clears plus four real observation-quiescence cases. Electron exercised
+all43frozen raw vectors on its actual Node runtime.
+
+The final8203124 only renames the test command to test:owned-notebook-hosts in
+package/workflow/docs. Runtime source and test content remain byte-identical to
+f7beada. The name avoids the existing native-command guard's letter/hyphen-only
+syntax. All10workflow tests passed; all13release Python tests passed using the
+existing10.7.0semantic-release tool matching the committed lock. The system's
+missing python alias and an initially absent fixture dependency were environment
+failures, not application failures. The locked fixture dependencies were installed
+normally; the existing release-tool environment was reused unchanged. An attempted
+new venv lacked ensurepip and was not used. No host-wide tooling/settings changed.
+
+Final8203124 production build passed at approximately632.60kB and the retained
+Linux package embeds the exact unofficial0.0.0-dev-8203124fbb05 build identity.
+Final package and hosted gates are recorded separately below. No official release
+or physical target compatibility is asserted.
+
+## Final local handoff at abca008
+
+Manager final normal successor **abca008f366c8cfdc190adc7b65397a42d15c6a8**,
+tree **3d4673e9ca33dbf518b606ba56dfc00525f36eb3**, follows8203124 with only the
+native Electron screenshot-harness correction. Earlier emulated-viewport crops
+could show the wrong region despite passing DOM controls; native window sizing,
+actual PNG dimensions and native capture now provide the retained390/1280evidence.
+Runtime modules and all911unit-test contents remain identical to qualifiedf7beada.
+
+At exactabca008, lint, production build, Linux packaging,
+`test:owned-notebook-hosts -- --packaged` and
+`test:wired-hosts -- --packaged` passed. The new package test independently checks
+all43frozen vectors on packaged Electron, all17peer/34Busy/15preview directions
+in each actual factory, preserved Local-only unknown state, exact maximum-u64,
+unknown/uninspected UI and Stop/pagehide/hidden/refresh late-result fences.
+Bundled raw/parser/transport modules match source bytes. Native390/1280captures
+were visually inspected. The package embeds unofficial0.0.0-dev-abca008f366c.
+The earlier exact8203124 package additionally passed the foundation check and
+legacy report1/report2 browser+packaged-desktop complete/partial/refusal/session
+and responsive-layout cases; those runtime modules remain byte-identical.
+
+All five frozen producer artifacts and1,027delivered Docs main blobs were
+reverified unchanged. The Manager lockfile and five legacy/parser/transport
+inputs are preserved; the43copied literal vectors are byte-identical to their
+accepted source. No source-owned application version field was added.
+
+Retain only the current Linux developer package for Root's pending review and
+hosted qualification, with source identity and executable/app.asar/host SHA256
+receipt in the native handoff. Existing active installed tools are retained as
+instructed; no installed tool or denied cleanup scope was touched. Earlier
+application package output was replaced through the normal packaging tool.
+
+Root next: independently import/review/publish the normal Manager successor and
+this existing Docs125 successor, observe exact-head required CI including both
+host OSes, and return any findings. SCRAPPY then completes accepted qualification
+mapping, syncs only both named capabilities and archives this same change for
+coordinated final delivery. Windows hosted results, independent final review,
+canonical sync/archive, guarded merges and actual-main/release evidence remain
+open. This source handoff does not authorize a planning-only or producer-only
+merge and does not complete the broader REM-42/MVP.
+
+## Spacing correction and delivered Docs integration
+
+Root's bounded review accepted the consumer source/contract and measured650kB
+budget; a narrow390browser image showed Unassociated feedback touching its Files
+count. Normal successor **d7c12096ec9fbe91d832ed0c8d5cf412f8a1b7a3** changes only
+this table's class and three scoped CSS rules: inter-column spacing, left/top
+alignment and nonwrapping tabular numeric cells. Exact values, protocols,
+coordination and existing table-only overflow remain unchanged. Lint, production
+build, Linux package and the existing packaged-host/UI controls pass. Corrected
+production browser and actual packaged Electron390/1280images were visually
+checked; originals remain in the handoff rather than being overwritten as history.
+
+Delivered Docs main **bd952e033a5d4636d9d4555d16dc12e994e364ff**, tree
+**74022d0779f994cb8ab55c3605c9da19bd56f853**, was supplied as a native bundle,
+verified against known68ac033 and normally merged with existingcd7ee6a as
+**c5c6f769f162947b433e58f7e8b15d47a22406c9**. The delivered host startup/history
+archive and canonical spec additions are preserved. Root's actual-main Docs
+run41806946492 passed; this is an attributed receipt, not another CI read.
+
+qualification-mapping.md prepares all eight requirements/thirteen scenarios.
+Canonical previews remain outside the repository, not synced requirements.
+Final current-head both-platform integration, correction acceptance and final
+same-change sync/archive remain open. Original Manager41806188777 Title/Checks/
+Build passed while Linux/Windows integration was still running in Root's latest
+report. Docs41806184059 passed atcd7ee6a. None of those receipts is mislabeled as
+qualification of this new spacing successor. Root retains hosted observation.
+
+## Latest delivered-main integration and hosted checkpoint
+
+Delivered Docs main **cddaa686dc7cd274069b218dcc0d7e17f9050c6f**, tree
+**18c4959e0a9320ba83160fe9c33fd26e3b8bbf70**, arrived in a7,976byte native bundle
+with SHA2566f3b67cac4f2f60c539f9148042823139239691e0e71d0045e9b4a28d3cf5551.
+Bytes/hash/prerequisitebd952e0 and advertised identity were verified before import.
+Normal merge **55f8ca34f072fcb35d9a74b9d828a7ebd5ad678a** has exact parents
+63a70b1 + cddaa686 and preserves the delivered host-selected-publication archive
+and reader-analysis additions. Producer frozen artifacts remain unchanged.
+
+Root accepted the scoped spacing correction and all four corrected images.
+Current Managerd7c1209 run41809761997 passed Title,Checks,Build and Ubuntu
+integration; Windows remains in progress. Docs63a70b1 run41809796839 and actual
+maincddaa686 run41811843128 passed. These are Root's supplied results; SCRAPPY
+performed no duplicate hosted observation or local matrix run. Source remains
+frozen atd7c1209. Qualification mapping is updated, but canonical sync/archive
+has not occurred and waits for the final Windows receipt. Root owns the separate
+Buddy116 normal resync preserving producer bodies and final revision reconciliation.
+
+## Accepted consumer qualification and final specification closeout
+
+Root's current-head Manager **d7c12096ec9fbe91d832ed0c8d5cf412f8a1b7a3**
+[run41809761997](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41809761997)
+is now fully successful: Title,Checks,Build,Ubuntu and Windows integration.
+PR Release correctly skips. This supersedes the earlier pending-Windows
+checkpoint only; previous failures and older heads keep their original results.
+Root independently accepted the source/contract, explicit650kB hard budget and
+all four corrected narrow/wide browser/Electron images. No local matrix was
+repeated and Manager source remains frozen.
+
+Root normally integrated/published Buddy116 at
+**923551fc769e6298fe5b9116692b28010f45471b**, tree
+**c9de37e2e6c37b005ccdc95a7bb63c9fbc0e0d54**, preserving all eight nonoverlapping
+producer bodies and reviewing the sole src/main.rs composition. Current producer
+[run41813734745](https://github.com/s116821/ReMarkableBuddies/actions/runs/41813734745)
+remains **pending**. Earlier accepted2d7d8e9 qualification is not credited as a
+passed current-resync run. Producer source and hosted observation are Root-owned.
+
+The accepted implementation/specification lifecycle is synced for only
+manager-owned-data-inspection and generation4-owned-data-inspection and archived
+as2026-11-04-inspect-generation4-owned-data in this existing Docs125 delivery.
+The archive preserves original proposal/design/raw contract/schema/vectors and
+producer delta bytes, rather than rewriting historical precode claims. The final
+qualification mapping pins all eight requirements/thirteen scenarios, exact heads,
+software-fixture limits and remaining delivery gates. Previous Manager canonical
+requirements remain unchanged.
+
+All own implementation/spec preparation tasks are complete. The qualification
+task explicitly separates accepted producer-body/current-consumer evidence from
+Root's still-pending resynced-producer and final archived-Docs CI. No required CI
+is waived. Root retains final source/archive CI observation, independent final
+revision reconciliation, coordinated guarded triple merges and actual-main/
+release verification. The archive does not claim a merged triple, official
+release, whole REM-42/MVP or physical tablet/native/provider qualification.
+
+## Scoped generated-output retirement
+
+After accepted source/UI review and full current-head both-OS consumer success,
+the local developer package had no active qualification purpose. SCRAPPY verified
+itsd7c1209identity and executable/app.asar hashes, checked exact resolved owned
+paths and active processes, and retired only Manager **out**, **dist**,
+**.angular** and **test-results/development**. Removed305,303,556logical bytes;
+measured affected-filesystem free-space delta+305,995,776bytes. Concurrent activity
+and allocation can make the measured delta differ from logical sizes.
+
+Source/lockfiles/history, native bundles, original failure logs, prior and corrected
+screenshots and their compact packets were rehashed/preserved. Installed
+Node/Electron/Chromium/Xvfb and existing tool dependencies were left unchanged.
+No shared/denied cache, tablet, provider, resource or settings operation occurred.
+Producer resync and final archive delivery gates need no retained local app binary.
+The final handoff includes the exact retirement/preservation receipt.
