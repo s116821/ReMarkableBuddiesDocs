@@ -45,7 +45,8 @@ setup. Use the actual exclusive --writer-note legacy command for generate
 and refine in separate processes, with one existing immutable config
 snapshot per invocation. Configure gpt-6.1-terra and the fixed https://api.openai.com base URL in
 the isolated Writer config. Verify the exact nonsecret identity of the
-prepared local qualification config before admission. The credential route
+prepared local qualification config before admission, including its
+logical path and observed Windows application-local resolved path. The credential route
 must be separately marked ready and approved for this exact Writer execution.
 Only then read its named protected key file for a live child and pass it
 only in that child's environment. Ignore any inherited key. Writer uses
