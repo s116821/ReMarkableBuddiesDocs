@@ -116,3 +116,43 @@ Linux package custody remains attributed to `8bce05b` through independent review
 Normal actual-main integration already completed at Manager `3740eea1` / Docs
 `a668b211`, with complete tree equality to those original implementation inputs.
 This correction follows those integrated heads on the same owned branches.
+
+## Complete historical action and identity controls
+
+The original action-boundary cases were independently rechecked as resolved at
+`deb5133`/`bd2a67b`. Review then identified adjacent malformed replies: a no-current
+Confirm replay or Refresh could select a prepared/unknown original with a foreign
+connection/boot, and an unknown/current Refresh reply could be mislabeled Confirm.
+No genuine host emission or physical dispatch was established.
+
+Manager `1f258ce39f15127aef524167289815177a2b4e14`, tree
+`f715b31464927e7c4d24e09481b6183722acaed3`, binds prepared/unknown originals to
+both request identities for Confirm/Refresh, regardless of current presence.
+Confirm/current additionally requires prepared. Begin's connection-only older-boot
+unknown block and Cancel's no-current historical echoes remain valid. Genuine
+unavailable wrong-session refusals keep their closed historical rows without
+claiming an outcome or current authority for the refused request.
+
+All 30 focused cases pass (17 host/raw/public, 12 controller, one child). One new
+matrix checks all 48 combinations of two historical outcomes, four selecting
+request actions, current/no-current and same/foreign-connection/foreign-boot rows.
+Genuine retained reads and wrong-connection/boot Confirm/Refresh refusals are
+positive controls. Controller mutations separately cover foreign no-current
+Confirm/Refresh custody and unknown/current Confirm, preserving only the correct
+local unknown history on refusal. Lint passes. Shared predicates replace repeated
+checks; matching request identities plus existing observation identity checks
+preserve the original/current relationship without a duplicate comparison.
+Prior build/package/full-suite evidence retains its exact earlier source.
+
+The coherent boundary also reserves state none for Retained. Additional malformed
+non-Retained none variants are rejected, including a Confirm that would otherwise
+discard local uncertainty. Genuine retained history, Begin/Cancel semantics and
+all 48 historical combinations retain their controls. No new host dispatch or
+state format is introduced. The 30-case selection passes again at the final
+successor; earlier counts/builds remain separately attributed.
+
+Production build at clean `1f258ce` passes at 649.90 kB under the unchanged
+650 kB error ceiling; the 400 kB warning remains. No package/matrix reconstruction
+or tablet/provider operation was performed. The original `8bce05b` Linux package
+was retired after its independent review purpose ended; source, captures and logs
+remain preserved. Corrected-head hosted packaging/qualification is separate.

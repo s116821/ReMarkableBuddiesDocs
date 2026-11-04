@@ -78,6 +78,22 @@ the reference and connection of an unknown retained row, while deliberately
 allowing its older boot identity. Genuine confirm replay/cancel responses can
 return retained prepared/unknown with null current; history is not a fresh read.
 
+A prepared/unknown reply to confirm or refresh must match the request's original
+connection AND boot even when current is null. Confirm may carry current only
+with prepared; unknown plus current is refresh-only. Cancel's no-current
+historical echo has no target request identity and grants no current authority.
+A refused unavailable reply may retain the host's closed history list, including
+the differently bound reference that caused refusal; it cannot claim a historical
+outcome or current observation for that request.
+
+| Action | Prepared/unknown outcome | Current kind | Matching original identity |
+| --- | --- | --- | --- |
+| Begin | Unknown only | Never | Same connection; older boot allowed |
+| Confirm | Either | Prepared only | Original connection and boot |
+| Refresh | Either | Either outcome | Original connection and boot |
+| Cancel | Either historical echo | Never | No caller target identity |
+| Retained | State is none; rows remain history | Never | No selected original |
+
 - begin may return ready with a new reference/null invocation, or the existing
   same-target unknown reference/null invocation. Ready uses the current verified
   observation as target context, not a new storage observation. Pre-dispatch
