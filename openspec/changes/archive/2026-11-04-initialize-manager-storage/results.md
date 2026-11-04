@@ -188,3 +188,37 @@ and development application resources remain from exact1f258ce, whose runtime
 files are unchanged; the correction affects only three test/lint files. No new
 package is built to replace the retired package. Prior full-unit/build/package
 receipts keep their own source attribution.
+
+## Final coordinated source and hosted qualification
+
+Manager head `38461574a5e585517f953d47ef31225a6ceb8b01`, tree
+`9ae8f09ae11bc6a34780b251fa09b8d37e79d300`, passed the complete
+[hosted workflow](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41833512490):
+Title, Checks, Build and both Linux and Windows Integration. Those integration
+jobs exercised development hosts and the verified retained package bytes without
+rebuilding, and confirmed the upload inventory remained unchanged. Windows native
+API and NTFS custody controls also passed. The PR-only Release job was correctly
+skipped. These are fixture and package software qualifications, not physical
+tablet, provider, native lifecycle or actual storage-preparation observations.
+
+Root reviewed the complete implementation and all successive protocol/test fixes.
+Main independently accepted the final test-only correction with no substantive
+blocker. The historical runs at `3740eea1`, `deb5133` and `1f258ce` remain failures
+with their original evidence; the final success is attributed only to `3846157`.
+The controlled delayed-render case establishes the former fixture race
+precondition, not the exact scheduling of those earlier hosted runs.
+
+Paired Docs `f3a19629cfbdbbc23cbb7e6c74699182bf4fa71c` passed
+[its exact-head workflow](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/41833526346).
+The closeout integrates actual Docs main
+`038fcc5698c47c420f77052e8978c8671cc3071c`, synchronizes these three accepted
+requirements and six scenarios, and archives only `initialize-manager-storage`.
+Final Docs-head CI and exact merge revisions are linked in the paired PR comments.
+Delivery order is Docs #131 followed by Manager #55; Root retains actual-main and
+release verification ownership after the merges. The already-started Stop feature
+remains a separate active change and gains no production qualification here.
+
+The obsolete original Linux package was retired after review, as recorded above.
+Root created no replacement local build/package for closeout. Preserve source,
+locked inputs and useful failed/current evidence; retire remaining review checkouts
+only after verifying no active dependency and remote preservation.

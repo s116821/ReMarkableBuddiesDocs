@@ -13,6 +13,6 @@
 
 ## 3. Verification and coordinated delivery
 - [x] Verify meaningful raw/controller/child/SSH and real browser/Electron cases with original failure/source provenance retained.
-- [ ] Qualify Linux/Windows development and retained packages; distinguish fixture software from physical tablet/provider/native evidence.
-- [ ] Complete independent implementation review, exact-head hosted checks, canonical sync/archive in this same paired change and current-main preservation.
-- [ ] Prepare normal coordinated delivery and ownership-aware output retirement; the delivery coordinator retains publication/merge/actual-main/release follow-through.
+- [x] Qualify Linux/Windows development and retained packages; distinguish fixture software from physical tablet/provider/native evidence.
+- [x] Complete independent implementation review, exact-head hosted checks, canonical sync/archive in this same paired change and current-main preservation.
+- [x] Prepare normal coordinated delivery and ownership-aware output retirement; the delivery coordinator retains publication/merge/actual-main/release follow-through.

@@ -9,7 +9,7 @@ use those capabilities through Manager even though the delivered host-mode CLI
 already offers explicit initialization. This is one missing user-facing setup
 step; it does not complete replacement-device restore, installation or cloud sync.
 
-## Change
+## What Changes
 
 Add a distinct **Prepare Buddy storage** capability to browser helper and Electron.
 Show a policy-only review of the existing producer's actual effects, require a
