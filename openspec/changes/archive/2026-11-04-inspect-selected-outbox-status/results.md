@@ -41,3 +41,27 @@ contents.
 
 The library test build reported existing dead-code warnings in notebook writer
 test helpers.
+
+## Independent review and hosted qualification
+
+The full [Buddy CI run 41832628503](https://github.com/s116821/ReMarkableBuddies/actions/runs/41832628503)
+passed on exact implementation head `7d173baae3278ae5176a4f4aba149ffe5ef15207`:
+PR Title, Checks (including Linux host tests and lint), Build and Integration.
+PR Release correctly skipped. The paired implementation Docs head
+`13decb05e4383cacb8e8e25007516d42560c7b18` passed
+[Docs CI 41832610774](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/41832610774).
+
+Independent review covered the complete production diff, inherited file-reader
+guarantees, actual-format and byte/entry limits, CLI exclusivity, cross-process
+Busy and output/flush custody. No blocking discrepancy with the accepted bounded
+contract remained. Existing successful Windows evidence was reused rather than
+rebuilding unchanged code.
+
+The single requirement and its three scenarios are synchronized to the canonical
+document-scoped-buddy-sync spec. This bounded change is archived in the same
+[Docs #132](https://github.com/s116821/ReMarkableBuddiesDocs/pull/132) /
+[Buddy #121](https://github.com/s116821/ReMarkableBuddies/pull/121) delivery.
+Merge order is Docs then Buddy; final Docs checks and actual-main/release receipts
+are recorded in the linked PR discussions. The larger document-scoped sync change
+stays active. Notebook format 4 remains explicitly unsupported; no provider,
+Manager consumer or native qualification is inferred from this host report.

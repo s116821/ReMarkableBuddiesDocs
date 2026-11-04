@@ -12,5 +12,5 @@
 - [x] Verify real CLI exclusivity, closed JSON, no stdin reads, cross-process
       Busy, held output custody, and prefix/flush failure without second
       output. Keep Linux and Windows scope explicit.
-- [ ] Obtain independent source review and exact-head hosted evidence, sync
+- [x] Obtain independent source review and exact-head hosted evidence, sync
       and archive only this bounded slice in the linked delivery.
