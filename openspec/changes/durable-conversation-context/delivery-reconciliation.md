@@ -128,3 +128,7 @@ production native handoffs. Final coordinated squash and actual-main publication
 verification remain pending. Only three pure API requirements are canonical;
 the parent and all other nine conversation/Reader/native/platform obligations
 remain active and unarchived.
+
+The bounded [host startup and history integration](../archive/2026-11-04-host-startup-history/result.md)
+has its own paired delivery. The remaining Reader and conversation requirements
+and tasks continue here.
