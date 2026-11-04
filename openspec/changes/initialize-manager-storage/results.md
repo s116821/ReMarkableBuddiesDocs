@@ -156,3 +156,35 @@ Production build at clean `1f258ce` passes at 649.90 kB under the unchanged
 or tablet/provider operation was performed. The original `8bce05b` Linux package
 was retired after its independent review purpose ended; source, captures and logs
 remain preserved. Corrected-head hosted packaging/qualification is separate.
+
+## Hosted keyboard fixture synchronization repair
+
+Hosted runs41825476475 at3740eea1 and41827823378 atdeb5133 passed
+Title/Checks/Build but failed both Linux/Windows Integration: after the keyboard
+Review action the Prepare button was absent. The prior factory and App-boundary
+matrices had passed. Their exact full failed logs are retained with verified
+packet/file hashes; no transient cause or passing hosted rerun is inferred.
+
+Manager test-only successor `38461574a5e585517f953d47ef31225a6ceb8b01`, tree
+`9ae8f09ae11bc6a34780b251fa09b8d37e79d300`, replaces the existing-element wait
+with a fresh observed timestamp wait before keyboard review, and asserts actual
+focus before Enter. It reloads after deliberate App/controller boundary mutations,
+removing fixture wrappers/state before the independent UI scenario. Product
+captured-observation identity, maintenance guards and timeouts are unchanged.
+
+A deterministic browser regression pauses rendering and holds an actual helper
+observation response. The previous model/enabled DOM remains present while the
+actual controller is checking. The former DOM/enabled/keyboard sequence proceeds
+but is correctly refused by the unchanged product guard; it sends no storage
+command. The fresh-observation wait cannot accept that stale marker. After the
+real reply/render resumes, keyboard Review succeeds and Prepare appears. No sleep,
+timeout increase, synthetic ready override or guard weakening supplies the pass.
+This reproduces the unsafe synchronization precondition; the original hosted logs
+alone do not prove that exact browser scheduling was their cause. Final hosted
+Linux/Windows validation is still required.
+
+Initial corrected source browser/Electron run and lint pass locally. Production
+and development application resources remain from exact1f258ce, whose runtime
+files are unchanged; the correction affects only three test/lint files. No new
+package is built to replace the retired package. Prior full-unit/build/package
+receipts keep their own source attribution.
