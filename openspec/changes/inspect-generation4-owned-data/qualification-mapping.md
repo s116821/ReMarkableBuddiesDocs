@@ -12,7 +12,7 @@ The final raw/schema/vector and producer design/delta artifacts remain frozen.
 | Separate notebook-inclusive inspection in both companions | Disjoint inspectOwnedV3 API, browser route, main-frame IPC/preload arity, shared controller/UI; actual browser helper and packaged Electron exact maximum-u64/unknown/uninspected/status/lifecycle views; legacy report1/2 inputs preserved and actual legacy UI package checked. | Final current-head Linux/Windows integration. |
 | Coordinated successor producer and consumer qualification | Buddy116, Manager54 and existing Docs125 remain one delivery. Producer qualified; consumer source/contract review accepted except narrow spacing correction. Exact hashes and original failures retained in native handoffs. | Correction review, hosted qualification, spec sync/archive, guarded delivery. |
 | Strict report3 raw admission and exact relationships | All43frozen byte/hash vectors on Node and actual packaged Electron; fatal UTF8/BOM, duplicates, integer spelling, u64 overflow/coverage/subset controls plus closed independent public validation; unit/runtime tests retain exact decimal strings. | Exact correction source runtime is unchanged; final hosted gates remain Root-owned. |
-| Closed private reduction and nonadditive presentation | Closed21-key view removes owner/current-generation/custody/raw fields; both bridges and renderer validate. UI shows included notebook metadata, overlapping references, Unknown/Not checked/observed0; reviewed390/1280browser/Electron images, scoped column-spacing correction. | Spacing images passed local visual review atd7c1209; Root acceptance remains. |
+| Closed private reduction and nonadditive presentation | Closed21-key view removes owner/current-generation/custody/raw fields; both bridges and renderer validate. UI shows included notebook metadata, overlapping references, Unknown/Not checked/observed0; reviewed390/1280browser/Electron images, scoped column-spacing correction. | Spacing correction independently accepted by Root atd7c1209; Windows qualification remains. |
 | Bounded report3 invocation and shared ownership | Fixed no-input command,32KiB raw/48KiB private/16KiB public caps;2/8/12/13/14s budgets. Both actual factories17peers/34Busy/15preview controls;52development App boundaries/17clears; four actual queued-observation cases; retained Local-only unknown preserved; stale timers/finally cannot affect newer owner. | Exact-head both-OS hosted integration; no live-device qualification substituted. |
 
 Preparation expects exactly three producer requirements/four scenarios and five
@@ -26,6 +26,19 @@ Local successor d7c12096ec9fbe91d832ed0c8d5cf412f8a1b7a3 passed lint, production
 The new table-only CSS changes neither wire contracts, numeric formatting nor
 coordination. Root accepted the measured650kB hard build budget with400kB warning.
 Root owns CI observation, final review/publication, coordinated guarded merges and
-actual-main/release checks. Current Manager41806188777 Title/Checks/Build passed;
-both integration jobs were still running in the latest canonical report. Docs
-41806184059 passed. These are attributed receipts, not independent CI queries.
+actual-main/release checks. Root independently accepted the scoped spacing change
+and all four corrected images at exactd7c1209. In the current Manager
+[run41809761997](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41809761997),
+Title/Checks/Build/Ubuntu integration passed; **Windows integration is still in
+progress**. Exact Docs63a70b1
+[run41809796839](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/41809796839)
+passed. Delivered Docs maincddaa686
+[run41811843128](https://github.com/s116821/RemarkableBuddiesDocs/actions/runs/41811843128)
+passed and was normally merged into this branch through55f8ca34. These are
+attributed Root receipts, not independent CI queries. No pending Windows result
+is called successful. Canonical sync/archive waits for Root's final result.
+
+Root separately owns the normal Buddy116 resync onto delivered main while
+preserving all producer bodies. SCRAPPY does not change producer source or
+substitute older qualification for an undisclosed new source head. Final revision
+reconciliation remains part of Root's coordinated delivery review.

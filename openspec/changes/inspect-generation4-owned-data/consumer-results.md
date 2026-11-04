@@ -154,3 +154,22 @@ same-change sync/archive remain open. Original Manager41806188777 Title/Checks/
 Build passed while Linux/Windows integration was still running in Root's latest
 report. Docs41806184059 passed atcd7ee6a. None of those receipts is mislabeled as
 qualification of this new spacing successor. Root retains hosted observation.
+
+## Latest delivered-main integration and hosted checkpoint
+
+Delivered Docs main **cddaa686dc7cd274069b218dcc0d7e17f9050c6f**, tree
+**18c4959e0a9320ba83160fe9c33fd26e3b8bbf70**, arrived in a7,976byte native bundle
+with SHA2566f3b67cac4f2f60c539f9148042823139239691e0e71d0045e9b4a28d3cf5551.
+Bytes/hash/prerequisitebd952e0 and advertised identity were verified before import.
+Normal merge **55f8ca34f072fcb35d9a74b9d828a7ebd5ad678a** has exact parents
+63a70b1 + cddaa686 and preserves the delivered host-selected-publication archive
+and reader-analysis additions. Producer frozen artifacts remain unchanged.
+
+Root accepted the scoped spacing correction and all four corrected images.
+Current Managerd7c1209 run41809761997 passed Title,Checks,Build and Ubuntu
+integration; Windows remains in progress. Docs63a70b1 run41809796839 and actual
+maincddaa686 run41811843128 passed. These are Root's supplied results; SCRAPPY
+performed no duplicate hosted observation or local matrix run. Source remains
+frozen atd7c1209. Qualification mapping is updated, but canonical sync/archive
+has not occurred and waits for the final Windows receipt. Root owns the separate
+Buddy116 normal resync preserving producer bodies and final revision reconciliation.
