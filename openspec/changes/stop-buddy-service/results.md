@@ -168,6 +168,23 @@ scope where the relevant implementation has not changed. No native/physical
 qualification or completed-feature delivery follows from these fixtures.
 
 
+## Independent source review and current-main reconciliation
+
+Root accepted Manager `706a4ce9f70a39e2f2df9a2cd69ed4c48182f5ab` and
+Docs `9050436d6591322cbab9588d7fbfc0b75ed80773` for draft hosted validation.
+The successor fixes the three independent review findings and preserves empty
+production qualification registries. The packet and every changed source blob
+were verified independently against the native Git bundles.
+
+Manager reconciliation commit `26f38ed589a7356cd46c0c58a8afdff35393ba76`
+has the exact reviewed tree `fc09c73e4ed2b2fa7d29e8b9af7ccd47994d185d`.
+Its delivered-main parent `bfe4a52de205bd74df5668726810cae5453d6c00` has
+the same tree as the Stop branch's existing `3846157` storage ancestor; the
+merge therefore preserves the reviewed source without replacing delivered
+storage behavior. Docs retains both delivered storage and outbox archives and
+canonical specs, removes the obsolete active storage copy, and leaves this
+Stop change active. Hosted validation of the published revisions remains pending.
+
 ## Final local handoff, production gates remain empty
 
 Final Manager source706a4ce9f70a39e2f2df9a2cd69ed4c48182f5ab,
