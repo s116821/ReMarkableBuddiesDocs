@@ -88,8 +88,8 @@ single integration case using official Python 3.12 Bookworm, pinned to the
 Linux AMD64 image digest `034c3e9d991f148d14c32ff8350286b91420baca7757d37819c7a9cc771317a0`.
 Only release test code is mounted read-only. The test creates its own temporary
 repository under bounded writable `/tmp`, with no network, daemon socket,
-credentials or application source input. It does not modify Git configuration
-or weaken ownership, raw-byte, index, mode or dirty-state assertions.
+credentials or application source input. It adds no Git trust exception or configuration-loading bypass and does not
+weaken ownership, raw-byte, index, mode or dirty-state assertions.
 
 This isolates synthetic fixture prerequisites from the CI runner's ambient
 Git trust configuration. Both earlier hosted failures remain attributable to
