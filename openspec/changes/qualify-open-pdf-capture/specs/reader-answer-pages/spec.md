@@ -432,50 +432,6 @@ Unselected startup SHALL keep its existing behavior.
 - **THEN** the first genuine released request acquires that open page without restarting Reader or requiring a setup gesture
 - **AND** later requests keep the process and obtain their own input and page authority
 
-## MODIFIED Requirements
-
-### Requirement: Successor navigation and identity heuristic
-After agreement, the automatic native acquisition path SHALL first resolve current Buddy-page reuse under buddy-page-reuse-contract.md. A relevant current Buddy page SHALL be reused without a successor navigation attempt. Otherwise the path SHALL retain the ORIGINAL source identity/order, resolve its immediate successor, reuse a qualified relevant Buddy successor, or insert after that original source and before a positively identified non-Buddy successor after fresh placement revalidation. A verified end of document SHALL allow qualified creation after the original source once current-page reuse is ruled out. Unknown recognition/association SHALL not authorize creation. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract.
-
-The explicitly authorized legacy/manual fallback SHALL retain its one-successor visual heuristic for unsupported layouts and its separately documented REM-25 fallback limits; it SHALL not be represented as the automatic path. Masked screenshot similarity at least0.999 SHALL still identify unchanged pages. Neither failure nor refusal SHALL draw source feedback.
-
-#### Scenario: Automatic end of document
-- **WHEN** qualified current-page assessment rules out reuse and verified native order has no successor after the original source
-- **THEN** the automatic path may create after that source under the native creation/identity/preservation gates; a callback alone does not establish a usable target
-
-#### Scenario: Legacy fallback has no successor
-- **WHEN** the selected legacy/manual fallback has no known successor or its next-page attempt leaves the screenshot sufficiently similar to the source
-- **THEN** no answer is written and a non-ink NoSuccessor diagnostic is recorded without creating a page or swiping backward
-
-#### Scenario: Physical gesture and completion
-- **WHEN** navigation requires a swipe
-- **THEN** ordinary product gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims
-
-### Requirement: Invalid successor recovery
-In the automatic path, a positively identified non-Buddy successor SHALL be preserved and may permit qualified insertion between the ORIGINAL source and that neighbor after current source/session/order revalidation. An unknown/uncertain successor or recognized Buddy candidate with unresolved association SHALL grant no insertion permission. If restoring the original displayed source is required, recovery SHALL check source identity before navigation, attempt at most one previous-page swipe and verify once; any failure SHALL stop without retry or relocating the insertion anchor.
-
-In the explicitly selected legacy/manual fallback, an Invalid successor SHALL retain the existing source precheck and bounded return behavior: if already on the saved source at similarity0.999, do not navigate; otherwise attempt at most one previous-page swipe and verify once, with no retry after failed verification or input/capture error. The caller SHALL record a non-ink typed failure after recovery or recovery failure, with no source-page display mutation. Legacy Invalid classification alone SHALL not authorize automatic insertion. Source: src/workflow/navigation.rs and the planned automatic acquisition contract.
-
-#### Scenario: Automatic inspection finds an ordinary neighbor
-- **WHEN** the inspected successor is positively non-Buddy and original source/session/order remain qualified immediately before publication
-- **THEN** the automatic path may insert before that preserved neighbor under the native contract instead of treating it solely as a legacy InvalidSuccessor failure
-
-#### Scenario: First return fails
-- **WHEN** the single previous-page swipe does not restore source similarity
-- **THEN** recovery reports Unconfirmed and the caller records Device without another swipe or insertion
-
-#### Scenario: Already on the source
-- **WHEN** recovery's initial check matches the saved source, including a forward attempt that did not leave it
-- **THEN** recovery reports AlreadySource with no previous-page swipe
-- **AND** the legacy forward no-movement guard records NoSuccessor without invoking reverse recovery at end of document
-
-#### Scenario: Successful return
-- **WHEN** the source is initially absent and the single previous-page swipe restores it
-- **THEN** recovery reports Returned after one precheck, one swipe and one postcheck; an automatic insertion still requires its separate qualified acquisition and placement checks
-
-#### Scenario: Navigation or capture error
-- **WHEN** a source-identity check or the previous-page operation returns an error
-- **THEN** recovery propagates that error and performs no further navigation or insertion; the render-error handler records Device without feedback input
 ### Requirement: Blank-start placement uses an open, qualified Reader page
 
 An explicit blank-start request SHALL use the same resident page acquisition,
@@ -536,3 +492,48 @@ queue admission separately from generation, native submission or save.
   places its fresh draft through the same verified insertion or reuse path
 - **AND** the local submitting process does not call the provider or write
   to the tablet page
+
+## MODIFIED Requirements
+
+### Requirement: Successor navigation and identity heuristic
+After agreement, the automatic native acquisition path SHALL first resolve current Buddy-page reuse under buddy-page-reuse-contract.md. A relevant current Buddy page SHALL be reused without a successor navigation attempt. Otherwise the path SHALL retain the ORIGINAL source identity/order, resolve its immediate successor, reuse a qualified relevant Buddy successor, or insert after that original source and before a positively identified non-Buddy successor after fresh placement revalidation. A verified end of document SHALL allow qualified creation after the original source once current-page reuse is ruled out. Unknown recognition/association SHALL not authorize creation. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract.
+
+The explicitly authorized legacy/manual fallback SHALL retain its one-successor visual heuristic for unsupported layouts and its separately documented REM-25 fallback limits; it SHALL not be represented as the automatic path. Masked screenshot similarity at least0.999 SHALL still identify unchanged pages. Neither failure nor refusal SHALL draw source feedback.
+
+#### Scenario: Automatic end of document
+- **WHEN** qualified current-page assessment rules out reuse and verified native order has no successor after the original source
+- **THEN** the automatic path may create after that source under the native creation/identity/preservation gates; a callback alone does not establish a usable target
+
+#### Scenario: Legacy fallback has no successor
+- **WHEN** the selected legacy/manual fallback has no known successor or its next-page attempt leaves the screenshot sufficiently similar to the source
+- **THEN** no answer is written and a non-ink NoSuccessor diagnostic is recorded without creating a page or swiping backward
+
+#### Scenario: Physical gesture and completion
+- **WHEN** navigation requires a swipe
+- **THEN** ordinary product gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims
+
+### Requirement: Invalid successor recovery
+In the automatic path, a positively identified non-Buddy successor SHALL be preserved and may permit qualified insertion between the ORIGINAL source and that neighbor after current source/session/order revalidation. An unknown/uncertain successor or recognized Buddy candidate with unresolved association SHALL grant no insertion permission. If restoring the original displayed source is required, recovery SHALL check source identity before navigation, attempt at most one previous-page swipe and verify once; any failure SHALL stop without retry or relocating the insertion anchor.
+
+In the explicitly selected legacy/manual fallback, an Invalid successor SHALL retain the existing source precheck and bounded return behavior: if already on the saved source at similarity0.999, do not navigate; otherwise attempt at most one previous-page swipe and verify once, with no retry after failed verification or input/capture error. The caller SHALL record a non-ink typed failure after recovery or recovery failure, with no source-page display mutation. Legacy Invalid classification alone SHALL not authorize automatic insertion. Source: src/workflow/navigation.rs and the planned automatic acquisition contract.
+
+#### Scenario: Automatic inspection finds an ordinary neighbor
+- **WHEN** the inspected successor is positively non-Buddy and original source/session/order remain qualified immediately before publication
+- **THEN** the automatic path may insert before that preserved neighbor under the native contract instead of treating it solely as a legacy InvalidSuccessor failure
+
+#### Scenario: First return fails
+- **WHEN** the single previous-page swipe does not restore source similarity
+- **THEN** recovery reports Unconfirmed and the caller records Device without another swipe or insertion
+
+#### Scenario: Already on the source
+- **WHEN** recovery's initial check matches the saved source, including a forward attempt that did not leave it
+- **THEN** recovery reports AlreadySource with no previous-page swipe
+- **AND** the legacy forward no-movement guard records NoSuccessor without invoking reverse recovery at end of document
+
+#### Scenario: Successful return
+- **WHEN** the source is initially absent and the single previous-page swipe restores it
+- **THEN** recovery reports Returned after one precheck, one swipe and one postcheck; an automatic insertion still requires its separate qualified acquisition and placement checks
+
+#### Scenario: Navigation or capture error
+- **WHEN** a source-identity check or the previous-page operation returns an error
+- **THEN** recovery propagates that error and performs no further navigation or insertion; the render-error handler records Device without feedback input

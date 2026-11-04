@@ -22,6 +22,14 @@ The historical Ledger SHALL inspect a desired conversation and exact document/pa
 ### Requirement: Resident source history preserves distinct historical provenance
 The proposed resident historical evidence bridge SHALL use the existing Ledger and Source schema2 record boundary under resident-source-handoff.md. It SHALL atomically retain original validated pixels, historical runtime/operation/source correspondence and every actual ordered provider image with the Prepared turn/root CAS. It SHALL preserve other evidence variants and confer no live observation, binding/adoption, selected-context or output authority. Missing or inconsistent stored media SHALL refuse without recapture or legacy relabeling.
 
+#### Scenario: A resident batch is delivered to proposal and independent verification
+- **WHEN** preparation is acknowledged and the stored evidence passes strict schema/link/hash/image checks
+- **THEN** both calls use the same persisted provider bytes and the source remains ResidentHistoricalUnqualified
+
+#### Scenario: A restored resident parent or derivative is absent
+- **WHEN** retrieval cannot verify all required committed media
+- **THEN** image-dependent use refuses without querying the device, substituting another source or issuing an effect permit
+
 ### Requirement: Resolve the resident answer conversation before preparing a repeat request
 Given a fresh resident Reader capture, a request SHALL prefer the currently bound
 Buddy page. If the source is a separate page, its immediate successor is eligible
@@ -38,10 +46,3 @@ A resumed request with an unavailable target SHALL refuse insertion.
 - **AND** output uses the exact adjacent page after live admission
 - **AND** a missing or changed binding does not result in a duplicate page
 
-#### Scenario: A resident batch is delivered to proposal and independent verification
-- **WHEN** preparation is acknowledged and the stored evidence passes strict schema/link/hash/image checks
-- **THEN** both calls use the same persisted provider bytes and the source remains ResidentHistoricalUnqualified
-
-#### Scenario: A restored resident parent or derivative is absent
-- **WHEN** retrieval cannot verify all required committed media
-- **THEN** image-dependent use refuses without querying the device, substituting another source or issuing an effect permit
