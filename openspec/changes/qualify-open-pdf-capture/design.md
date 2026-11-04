@@ -353,3 +353,10 @@ native profile, adapter and both service files against the reviewed recovery
 profile. Each file hash is bracketed with matching file metadata. The loaded
 service fragments must use the package paths. A legacy override therefore
 blocks preparation before a stop can be recorded.
+
+The host stores the stop intent in the private wired configuration directory,
+indexed by boot and activation. It publishes exclusively and flushes the
+intent before dispatch. An existing file blocks another stop for that
+activation, even if publication or the original command is uncertain.
+A restarted host must read the same private record, confirm the original
+connection and approved profile, and reobserve recovery before continuing.
