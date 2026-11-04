@@ -166,3 +166,63 @@ Historical superseded selection: fresh eight-page insertion-plus-navigation now 
 - [x] Exercise actual visual flow under delayed/stalled/failing progress; verify retained order, bounds, no further effects and mandatory shutdown. Buddy87b63ad passes 776 default library tests, all14 setup tests and the owned-peer diagnostic test plus strict lint; see resident-visual-diagnostics-result.md.
 - [ ] Independently review and validate exact sources/artifacts; qualify a fresh diagnostic candidate only after separate admission.
   - [x] Independently review final source, original deadline anchors and error/shutdown ordering at Buddy87b63ad. Current ARM artifact and native qualification remain separate.
+
+## Proposed installed resident source handoff
+
+- [x] Inspect actual main/Workflow/Session, trigger release/dismissal and existing REM-37 capture transactions; record proposed resident-source-handoff.md before code.
+- Historical review-before-implementation prerequisite superseded by the current tablet-first direction. Final PR checks/review remain part of delivery.
+- [x] Implement the development-selected actual main/Workflow Session ownership/reuse and Observe-to-CaptureSource composition; actual r23/r24 installations retained one native Reader across Library/NoDocument and fresh fixture requests. Ordinary product enablement remains open.
+- [x] Implement distinct resident historical preparation/retrieval and acknowledged provider images through the existing Ledger. Actual installed main acquired and independently verified the saved question; existing source variants, CAS/reference semantics and separate output authority remain in place. Full repeated-conversation/product acceptance remains open.
+- [ ] Exercise actual selected branch/factory/owned peer/provider/Store paths, held/released input and all refusal/restart/uncertainty controls; validate exact sources independently.
+- [ ] Complete separately qualified native acquisition/reuse/adoption/binding/rendering and Reader/Writer/blank-start composition before product enablement or full REM-25 completion.
+
+## Required admission progress integration
+
+- [x] Inspect frozen87b63ad and retained05301e timing; distinguish measured46.851-second pre-capture progress from source-derived subprocess counts in resident-admission-progress.md.
+- Historical pre-implementation review prerequisite superseded by the current tablet-first direction; retain final delivery checks and exact artifact evidence.
+- [ ] Implement a CLOSED read-only request dispatcher/reconnect without generic mutable-connection escapes; add real Session full delivery admission before original-deadline discharge and cheap retained-child/lease/pin/group pulses during provider and actual idle polling; preserve existing effectful/Reconcile guards and stock-first recovery.
+- [ ] Validate real command/mailbox/owned-peer routes for fixed counts, cancellation/deadlines, changed service/broker/identity, malformed batches, full delivery refusal after payload preparation and owned Reader/companion death during provider/idle; independently review exact source/artifacts.
+- [ ] Complete actual native acquisition/reuse/rendering and full REM-25 acceptance. Source/unit/lint/review work does not precede each exploratory tablet attempt.
+
+## Tablet-first write and persistence continuation
+
+The current user instruction supersedes historical pre-experiment review/unit/lint
+prerequisites above. Compilation, exact artifact/source binding and independent
+recovery remain part of running the experiment; final delivery checks remain open.
+
+- [x] Observe native insertion, conditional supported Next and exact fresh target identity/order on the actual tablet; retain the r13 evidence separately from product qualification.
+- [x] Observe real pen ink through SDK CaptureSource, then reopen the exact target and retain the failed persistence result; see resident-write-close-reopen.md.
+- [x] Implement reuse-only fresh write intents and the typed SDK ordinary-close/observed-closed path without another insertion, replay or default capability promotion; r15 compiled and actually observed both close dispatch and closed view, while its pre-close ink capture stayed blank.
+- [x] Reproduce the measured REM-57 stroke/trace and full close, same-process fixture reopen and capture sequence, with distinct bounded phases inside the original outer deadline; actual r17 completed with retained raw trace and same-process reopened ink.
+- [x] Independently cold-reopen the exact target in a fresh Reader and confirm persisted ink and byte-exact saved source archive; actual 47bcd715 readback passed. This is separate from write-run size accounting.
+- [ ] Verify saved ink by actual reopen, fresh native identity/order and pixels, with exact preservation and permitted target-only source changes.
+- [x] Exercise installed actual-main question acquisition, independent verification and supported Next to the real immediate legacy successor; preserve its exact native image and the no-output r8/r9 results separately from successful output/save claims.
+- [x] Exercise development-selected actual-main legacy adoption and guarded typing: r26/r12 appended one new Q/A block below the three legacy blocks; fresh native post-render and same-Reader developer UI close/reopen captures showed the saved block. All 163 other regular files and the question page remained exact; ten-page order/IDs remained unchanged. This is one bounded development fixture, not ordinary/default product enablement.
+- [x] Cold-reopen the exact saved r12 answer page in a new Reader process and confirm all four Q/A blocks and exact target identity/order. Read-only capture 24eaaa82 matched the earlier image byte for byte and verified saved source preservation. Broader saved-output qualification remains open.
+- [x] Exercise a fresh Reader request from the original question with an existing adjacent binding. Actual app r27/r13 used the original conversation and binding, appended a fresh exchange, rendered below prior answers, and preserved the ten ordered page IDs and original question file after close.
+- [x] Exercise actual-main automatic end-of-notebook creation and output. r27/r14 allocated one page after the question, rendered the answer, preserved the original page and cold-reopened the exact saved answer page in a fresh Reader.
+- [x] Exercise actual-main automatic insertion between two inked notebook pages. r27/r16 rendered on the allocated middle page and preserved both original page IDs, records, ink files and thumbnails after ordinary Close.
+- [x] Exercise actual-main automatic insertion between original PDF pages. r27/r19 wrote a new note page after the annotated source, preserved the original PDF, page records, redirects and ink, and reopened the saved answer in a fresh stock Reader.
+- [x] Exercise actual-main automatic insertion after the last original PDF page. r27/r21 wrote page 7 of 7 with no redirect, preserved the PDF and all six existing page records and assets, and reopened the answer in a fresh stock Reader.
+- [x] Exercise two separate actual-main requests in one Reader activation against the same existing bound answer page. r28/r22 saved both exchanges and reopened all three answer blocks with the original page IDs and binding unchanged.
+- [x] Exercise two distinct actual-main native insertions in one Reader activation. r29/r23 reclaimed the executor after each operation, saved both new pages across separate notebooks and reopened both in a fresh stock Reader.
+- [x] Exercise explicitly selected actual-main blank-start creation from an open blank notebook. r30/r25 created and bound one adjacent empty conversation page without a model call or invented turn, preserved the blank source, and reopened the saved page in a fresh stock Reader.
+- [x] Exercise existing-bound Writer refinement reuse. r31/r26 saved a fresh refinement below the three existing Reader answers in the same conversation and bound page. Fresh stock reopen confirmed the two-page notebook and saved text.
+- [x] Exercise existing-bound blank-start reuse. r31/r27 navigated from the blank source to the existing bound page without a model call or write. The page order, records, assets, binding and zero-turn Ledger were preserved.
+- [x] Exercise Writer refinement creation. r31/r28 created one adjacent page for a fresh unbound Writer conversation, saved the note, and reopened it in stock Reader. The source page record and ink were exact.
+- [x] Exercise one-time startup activation under the explicit development installation. r32/r29 acquired the first open source without a setup gesture. A second fresh request reused the same native process, order, conversation and page.
+- [x] Exercise recognition without fixture PNG digests for plain portrait notebook pages. r33/r30 recognized an inked source and its inked successor using saved RMv6 structure and live captures, inserted between them, and saved a native answer. Both original page records and assets were exact.
+- [x] Exercise recognition without fixture PNG digests for original PDF pages. r34/r31 recognized an annotated source and an original successor without an ink file, inserted between them, and saved a native answer with exact PDF and original-page preservation.
+- [x] Exercise unresolved successor refusal on the RM2. r35/r32 inspected an unbound copied answer note, returned once to the exact original source, and left the page assets and insertion journal unchanged.
+- [x] Exercise Reader creation and reuse through the normal installed service command. r36/r33 selected the open PDF from live evidence, with no installed fixture plan, and recorded exactly one insertion for two separate requests.
+- [x] Exercise the installed stock recovery helper after ordinary Close and clean Buddy stop. r36/r33 restored stock Reader and sync before manual restoration of the original Buddy package.
+- [x] Exercise installed same-boot restart after clean recovery and interruption after observed insertion. r37/r34 independently recovered stock Reader and sync twice and archived both exact leases. The interrupted target persisted blank and unbound with an unchanged source.
+- [x] Verify a fresh installed request against that interrupted source refuses output without adding an insertion reservation or changing native page records. r38/r35 created a distinct Ledger conversation, reported reconciliation for the original target, and left the insertion journal and every regular file in the native document store byte-identical.
+- [ ] Qualify legacy adoption and broader recognition.
+- [x] Exercise active Reader cancellation after model verification and before output. r41/r39 exposed the premature Ledger uncertainty marker. r42/r40 records canceled, preserves page records, source ink and the insertion journal, and accepts a distinct fresh release in the same Reader with exactly one adjacent placement.
+- [x] Exercise explicit installed Writer refinement on RM2 with new and existing bindings. r41/r38 consumed the local requests after matching released captures, saved two successive refinements on the same adjacent page and Reader, and kept the original page and ink exact. The duplicate queue submission and stale draft were refused.
+- [x] Exercise installed blank-start release, new binding and repeat reuse on a fresh RM2 notebook. r39/r36 used two released three-contact holds in one resident Reader, one insertion, one binding and zero model calls or Ledger turns. Fresh stock Reader reopened the saved empty conversation. Gesture separation has a shared reducer regression for PR CI.
+- [ ] Qualify the startup lifecycle for production packaging, including interruption before and after takeover and a supported default request route.
+- [ ] Qualify native cold readback of the PDF and notebook middle cases, production repeat capacity, and remaining placement and recovery cases.
+- [ ] Calibrate simulator save/close and own-input behavior from these tablet findings in the coordinated delivery; run unit/lint in PR checks and only briefly locally when PR-ready.
+- [ ] Complete all remaining installed Reader/Writer/blank-start/reuse/interruption acceptance and coordinated spec sync/archive; these native experiments alone do not finish REM-25.

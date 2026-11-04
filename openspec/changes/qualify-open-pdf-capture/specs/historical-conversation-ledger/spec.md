@@ -18,3 +18,30 @@ The historical Ledger SHALL inspect a desired conversation and exact document/pa
 #### Scenario: Durable request evidence accompanies the historical binding
 - **WHEN** the snapshot contains request evidence
 - **THEN** inspection validates its exact snapshot evidence/receipt pair and bounded immutable references/original transaction; missing or replaced receipts and inconsistent evidence refuse without a second operation-head lookup
+
+### Requirement: Resident source history preserves distinct historical provenance
+The proposed resident historical evidence bridge SHALL use the existing Ledger and Source schema2 record boundary under resident-source-handoff.md. It SHALL atomically retain original validated pixels, historical runtime/operation/source correspondence and every actual ordered provider image with the Prepared turn/root CAS. It SHALL preserve other evidence variants and confer no live observation, binding/adoption, selected-context or output authority. Missing or inconsistent stored media SHALL refuse without recapture or legacy relabeling.
+
+### Requirement: Resolve the resident answer conversation before preparing a repeat request
+Given a fresh resident Reader capture, a request SHALL prefer the currently bound
+Buddy page. If the source is a separate page, its immediate successor is eligible
+only when the binding identifies the exact source and the native profile, adapter
+and ordered page IDs agree. The Prepared turn SHALL append to that conversation
+using the selected root revision and a fresh exchange. Conflicts or changed
+associations SHALL refuse reuse. Before navigating or writing, the app SHALL
+recheck the selected binding revision and confirm the current native facts.
+A resumed request with an unavailable target SHALL refuse insertion.
+
+#### Scenario: A new trigger on a question with its existing answer page
+- **WHEN** fresh capture identifies the question and its bound adjacent answer
+- **THEN** the Ledger prepares a fresh exchange on the existing conversation
+- **AND** output uses the exact adjacent page after live admission
+- **AND** a missing or changed binding does not result in a duplicate page
+
+#### Scenario: A resident batch is delivered to proposal and independent verification
+- **WHEN** preparation is acknowledged and the stored evidence passes strict schema/link/hash/image checks
+- **THEN** both calls use the same persisted provider bytes and the source remains ResidentHistoricalUnqualified
+
+#### Scenario: A restored resident parent or derivative is absent
+- **WHEN** retrieval cannot verify all required committed media
+- **THEN** image-dependent use refuses without querying the device, substituting another source or issuing an effect permit

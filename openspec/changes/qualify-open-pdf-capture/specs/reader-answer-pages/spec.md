@@ -100,6 +100,16 @@ page/process guard or resetting cancellation.
 - **WHEN** an owned observer reports activity or an unfinished contact and later reports quiet input
 - **THEN** the same request remains canceled, and a subsequent observer error still becomes integrity loss
 
+#### Scenario: A verified answer is canceled before its first possible native effect
+
+- **WHEN** input cancels a generated Reader answer during read-only target admission
+- **THEN** Buddy records the assistant turn as canceled and does not navigate, bind, insert or write
+- **AND** a distinct later release may reconnect to the same healthy Reader
+
+Before the first possible navigation, binding, insertion or output, Buddy
+SHALL durably record pending output. Cancellation after that boundary SHALL
+retain uncertainty unless an independent observation settles the effect.
+
 #### Scenario: Input changes while descriptors are renewed after activation
 - **WHEN** fresh input descriptors are constructed before retiring the old observer
 - **THEN** old and new observations both participate in final admission, activity on either refuses continuation, and any renewal failure invalidates the guard without retry
@@ -407,6 +417,21 @@ The development-only native capture experiment SHALL follow resident-capture-set
 - **WHEN** any developer tap step was selected, including a failed or uncertain step
 - **THEN** setup completion requires both successful tap evidence and a successfully retrieved and inspected after-image; before-only inspection cannot authorize completion
 
+### Requirement: Explicit installation activation precedes conversation input
+
+A selected startup activation SHALL use the installed pinned runtime,
+supervised owner, quiet input guard, and independent stock recovery. Startup
+activation SHALL grant no conversation or page authority. After activation,
+the first and later released Reader requests SHALL use fresh connections to
+the retained process with ordinary observation and effect admission.
+Unselected startup SHALL keep its existing behavior.
+
+#### Scenario: First request after selected startup activation
+
+- **WHEN** activation completes before the user opens a source in stock Reader
+- **THEN** the first genuine released request acquires that open page without restarting Reader or requiring a setup gesture
+- **AND** later requests keep the process and obtain their own input and page authority
+
 ## MODIFIED Requirements
 
 ### Requirement: Successor navigation and identity heuristic
@@ -451,3 +476,63 @@ In the explicitly selected legacy/manual fallback, an Invalid successor SHALL re
 #### Scenario: Navigation or capture error
 - **WHEN** a source-identity check or the previous-page operation returns an error
 - **THEN** recovery propagates that error and performs no further navigation or insertion; the render-error handler records Device without feedback input
+### Requirement: Blank-start placement uses an open, qualified Reader page
+
+An explicit blank-start request SHALL use the same resident page acquisition,
+insertion and binding path as Reader output. With no relevant existing binding,
+the request SHALL require an identified open source and positive placement
+evidence before creating the adjacent page. The initial page SHALL contain
+the empty conversation presentation without synthesizing a first question,
+answer, or model request. An existing compatible binding SHALL be reused
+without rewriting its content. A missing Reader document SHALL produce a
+refusal. Interrupted or unresolved creation SHALL require reconciliation
+before any further insertion for the original conversation.
+
+The installed native output route SHALL accept a distinct stationary
+three-contact hold after complete release through the shared contact reducer.
+It SHALL resolve the conversation from a current or immediately adjacent
+qualified binding, or allocate a new conversation when no binding applies.
+An unselected runtime SHALL leave this gesture inactive. The Reader corner
+hold and existing two- and four-contact gesture meanings SHALL be preserved.
+
+#### Scenario: Open blank notebook starts an empty conversation
+
+- **WHEN** a blank-start request is explicitly selected on a qualified open source
+- **THEN** one adjacent native page is created or the existing compatible page is reused
+- **AND** neither the Ledger nor the provider receives a fabricated first turn
+
+#### Scenario: Repeat the installed blank-start gesture on the same source
+
+- **WHEN** a fresh released three-contact hold identifies the same open source
+  and its compatible adjacent binding
+- **THEN** the existing page and conversation are selected without another
+  insertion, write or model request
+
+### Requirement: Writer refinement uses the shared placement path
+
+The resident route SHALL use the current Writer draft and its recorded
+normalized source for the existing refinement operation. The source document
+SHALL match the admitted open Reader document. A fresh refined draft can
+request the same native insertion or bound-page reuse as Reader. Historical
+refinement receipts and changed draft, source or page binding SHALL refuse
+output. Native submission and durable draft generation SHALL remain distinct
+from verified page persistence and external export.
+
+The installed service SHALL accept an explicit local Writer refinement
+request naming the draft, operation, document and page. The existing
+bounded Writer command SHALL submit this request to the current private
+activation. It SHALL expire, be consumed once before provider work, and
+require a fresh Reader-corner release on the named page and the current
+generated draft. The Writer root revision captured at acceptance SHALL
+remain valid through draft generation and placement. Releases on other pages and the distinct blank-start
+gesture SHALL keep their ordinary meanings. The local command SHALL report
+queue admission separately from generation, native submission or save.
+
+#### Scenario: Place a locally requested refinement from its open source
+
+- **WHEN** a fresh release on the named page consumes a current installed
+  Writer request
+- **THEN** the service forwards the exact refinement text to Writer and
+  places its fresh draft through the same verified insertion or reuse path
+- **AND** the local submitting process does not call the provider or write
+  to the tablet page

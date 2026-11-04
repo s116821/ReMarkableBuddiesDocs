@@ -274,3 +274,25 @@ or writing permission is inferred from the image.
 ## Visual setup failure observability
 
 Follow resident-visual-diagnostics.md. The spent cc059b handoff reached both ended phases but no before image. Retain bounded, bound diagnostics before operations and shutdown, without changing admission or deadlines or asserting a cause.
+
+## Proposed installed resident source handoff
+
+Follow resident-source-handoff.md, pending independent REM-25/domain review before
+code. The selected path must bypass legacy trigger dismissal and held-contact
+fallback, own/reuse the actual Session, and persist a separately typed historical
+resident image batch before provider delivery. Propose an additive Source envelope
+schema2 record through the existing Ledger; no storage engine, registry or native
+output authority is introduced. The original acquisition90 deadline is anchored before activation; the new
+activate-until seam intersects it with the existing60-second limit. Version3
+selection and distinct Source2 resident evidence require independent review. Reader/Writer/blank-start acquisition,
+adoption/binding and rendering remain required; this precode completes none of them.
+
+## Required resident admission progress integration
+
+Follow [resident-admission-progress.md](resident-admission-progress.md) after the
+current source-handoff validation. Split cheap cancellation/health/identity pulses
+from fresh service/broker boundaries; batch PID1 observations without changing
+validators, original deadlines, effectful guards or independent recovery. The
+measured05301e pre-capture46.851-second phase and source-derived subprocess
+amplification are separate evidence. This next implementation is not native or
+product acceptance and does not justify another diagnostics-only run.

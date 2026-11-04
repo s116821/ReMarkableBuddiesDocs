@@ -31,3 +31,23 @@ Verify current relevant Buddy reuse with zero creation; immediate relevant succe
 Record this clarification in the central Docs change and current Mem handoff. Root reports Linear reauthentication is blocked; no issue comment has been posted. Canonical as-built reader-answer-pages remains the implemented baseline until the separately checked product integration satisfies these gates. The terminal-release source fix continues against its exact c2c6dc5 owning freeze; this product clarification does not retroactively alter old gesture or insertion trials.
 
 Source basis: current human clarification relayed by Root, current inspected repository code/specs/roadmap, and the explicitly reviewed REM-37 planned binding design. Registry reconciliation as an inspection-saving option is assessed design, not implemented evidence.
+
+## Native recognition without fixture PNGs
+
+Exercise an explicit RM2 portrait recognition mode with no expected PNG
+digest. Binding inspection still comes first. For a page with no claim,
+require a bounded, identity-stable saved RMv6 scene with validated zero-text
+PageInfo and the observed supported ink/metadata blocks. Corroborate that
+scene with a fresh identity-bound native capture whose stock heading area
+is clear. A saved text root, unknown scene, occluded heading area, missing
+file, or conflicting association cannot authorize insertion. This first
+qualification covers plain notebook pages with the observed viewport.
+For an original PDF page, require a matching native ordered page table and
+an in-range, unique redirect to the original PDF. Require the corresponding
+PDF file and a fresh capture of the exact native page. Read the saved RMv6
+annotation scene if present. A known zero-text annotation scene or no
+annotation file is admissible only after the original redirect is established.
+An inserted PDF note with no redirect is a distinct case and is never
+recognized as an original PDF page. Typed or unknown annotations, duplicate
+redirects, and changed saved assets refuse. Other viewports and legacy
+adoption require separate evidence.

@@ -201,3 +201,52 @@ Explicit development visual setup SHALL retain private nonce/candidate/runtime-b
 #### Scenario: Actor terminates a blocked observer
 - **WHEN** a traced operation does not return before actor termination
 - **THEN** its synced entry remains distinguishable from completion without inferring request dispatch or a cause from missing later records
+
+### Requirement: Selected resident source handoff owns released input and session
+An explicitly selected installed resident source route SHALL follow
+resident-source-handoff.md. Source-only selection activates on the first
+qualified release. The pinned installed native output profile can activate
+once at service startup under the recovery policy. Either route SHALL use
+qualified release without legacy dismissal or Touch fallback, one retained
+Session, guarded post-activation Observe/CaptureSource, and one original
+request deadline. Selected failure SHALL NOT downgrade to legacy capture
+or retry effects. Historical facts and images SHALL NOT grant native output
+or blank-start authority.
+
+#### Scenario: A held contact is returned by the old trigger fallback
+- **WHEN** a selected route lacks its own released/quiescent observer handoff
+- **THEN** no Session factory, native request, dismissal input or provider call occurs
+
+#### Scenario: A later distinct released request follows completed capture
+- **WHEN** the retained Session remains valid and fresh input/installed admission succeeds
+- **THEN** the same native child is reused with one explicitly selected reconnect, rather than another activation or replay of the old request
+
+### Requirement: Resident polling separates pulses from fresh admission boundaries
+Read-only resident source and visual routes SHALL follow resident-admission-progress.md. Internal command and mailbox polling SHALL use cheap deadline/input/health/lease/file/known-child/group pulses without recursively launching PID1 or broker observations. Fresh complete service/broker boundaries SHALL gate native request dispatch and reply/delivery, and marker acceptance/admission. PID1 batching SHALL preserve existing complete Snapshot, policy, incarnation, job and group bracket predicates and output bounds. A CLOSED read-only enum/dispatcher SHALL expose no generic action or mutable-connection escape; existing effectful/Reconcile and unresolved-journal guards SHALL remain unchanged. Real Session full delivery admission SHALL run after stored readback/encoding/payload assembly and before clearing the original acquisition deadline. Cheap retained Reader/companion, lease, file and group checks SHALL also run during provider progress and actual idle polling; ownership loss SHALL poison the health owner and refuse subsequent work. No cached success, budget increase or weaker effectful/recovery admission SHALL replace these checks.
+
+#### Scenario: Broker response needs many pipe polls
+- **WHEN** one bounded read-only broker query requires additional internal pipe polls
+- **THEN** cancellation and identity pulses continue under the original deadline without multiplying full service/broker subprocess observations or authorizing stale dispatch/delivery
+
+#### Scenario: A marker arrives after a service or owner changed
+- **WHEN** a mailbox marker or native reply arrives after a required service, broker or known ownership identity changed
+- **THEN** its current full boundary refuses onward admission/delivery without retry, fallback, deadline renewal or effect authority
+
+#### Scenario: A retained native child dies during provider work or idle wait
+- **WHEN** the owned Reader or companion loses its admitted live identity while a provider request or actual idle Reader poll runs
+- **THEN** the cheap real Session pulse poisons the health owner and refuses later delivery/new requests without healthy-watchdog continuation, PID1/broker poll amplification, restart or replay
+
+#### Scenario: Full delivery admission fails after payload preparation
+- **WHEN** stored readback, encoding or model-payload construction is followed by changed service/broker ownership or original acquisition expiry
+- **THEN** the real Session full boundary refuses the first provider admission before the original deadline is discharged, even if input and health checks alone succeed
+
+### Requirement: Resident native writing verifies persistence across ordinary close and reopen
+The resident write continuation SHALL follow resident-write-close-reopen.md. Live ink capture SHALL remain distinct from saved output. A retry on an existing target SHALL use fresh operation identities and exact target source baselines without another insertion. A typed SDK ordinary-close request SHALL bind fresh expected page/runtime identity, preserve the original deadline, consume once and distinguish invocation, observed closure and subsequent persistence. Unknown effects SHALL remain unreplayed. The explicit developer sequence SHALL permit the known same-process fixture reopen after observed closure without a preceding file-change gate. Saved-ink acceptance SHALL additionally require a fresh Reader instance, fresh SDK target/order and visible ink, plus preservation of all unrelated original pages and source bytes with only declared target and exact metadata/size changes. The fixture-only opening route SHALL NOT become a required product direct-opening or manual-reopening flow.
+
+#### Scenario: A live stroke disappears after Reader restart
+- **WHEN** SDK capture shows a stroke but a fresh reopen of the same native page shows the original blank content
+- **THEN** persistence fails even if input, capture, process shutdown and service restoration all succeeded
+
+#### Scenario: A fresh retry writes an existing inserted page
+- **WHEN** the existing target and its original file hashes are freshly admitted
+- **THEN** the retry performs no insertion or native selection, retains a separate consumed pen/close intent, and credits saved output only after independent reopen and preservation verification

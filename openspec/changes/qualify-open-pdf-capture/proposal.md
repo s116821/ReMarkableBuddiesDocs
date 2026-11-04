@@ -34,3 +34,9 @@ The selected REM-25 open-PDF insertion trial refused screenshot capture before i
 Existing Buddy capture code and development screenshot helper, plus read-only historical Ledger input to the existing SDK decision seam; contracts remain central in Docs. No firmware/account/sync change, new dependency installation, direct native document opening, rejected diagnostic resurrection or full feature-completion claim. Ordinary unique-allocation behavior is preserved pending attribution qualification; historical association inspection grants no native effect authority.
 
 - Add bounded development visual-stage diagnostics under resident-visual-diagnostics.md to retain phase/error evidence before shutdown; no native capture qualification follows.
+
+- Assess the real installed resident source handoff and distinct historical provider/domain evidence bridge under resident-source-handoff.md; preserve released-input, qualification and unfinished automatic acquisition/output boundaries.
+
+- Implement the required bounded admission progress integration under resident-admission-progress.md: cheap guarded polling, fresh read-only dispatch/delivery boundaries and coherent bounded PID1 batches, preserving effectful/recovery admission and qualification gates.
+
+- Correct the observed live-ink-without-persistence failure under resident-write-close-reopen.md: reuse the existing exact target with fresh write/close operations, integrate the SDK's development-only ordinary-close and observed-closed path, and verify saved ink through independent native reopen. Keep closure as a diagnostic persistence path rather than requiring Library/manual reopening after every product answer. The current tablet-first instruction supersedes historical pre-experiment review/unit/lint prerequisites; full product acceptance and final delivery remain unfinished.
