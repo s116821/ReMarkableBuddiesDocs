@@ -51,3 +51,22 @@ An inserted PDF note with no redirect is a distinct case and is never
 recognized as an original PDF page. Typed or unknown annotations, duplicate
 redirects, and changed saved assets refuse. Other viewports and legacy
 adoption require separate evidence.
+
+## Explicit installed adoption of an adjacent answer page
+
+An operator can queue one `adopt-legacy-page` request through the installed
+binary's local `--writer-note` command. The approval identifies an operation,
+the live activation, document, original source, immediate target and SHA-256 of
+the saved target scene. Pass JSON on stdin with `command` set to
+`adopt-legacy-page` and an `approval` object containing `operation`,
+`activation`, `document`, `source`, `target`, and `scene_sha256`.
+The private slot expires after 120 seconds. Queueing
+does not navigate, bind or write. The ordinary Reader request still has to
+reach the exact adjacent target through guarded navigation and fresh capture.
+
+Require a missing binding, matching native document/order, the exact approved
+scene bytes and the known answer heading in the decoded native text. Consume
+the operation durably before publishing the Ledger binding. Recheck scene
+identity and then use the existing observation and render guards. A duplicate
+operation within the activation, changed proof, or competing binding grants no
+adoption. This route covers explicitly selected adjacent RMv6 answer pages.
