@@ -218,3 +218,38 @@ and paired Docs review
 accepted the prepared integration. This receipt adds no source, requirement,
 task or lifecycle behavior and repeats no tests. All live-model, parent delivery,
 native/fresh context and wider active-change limitations above remain open.
+
+## Current-main composition candidate
+
+Buddy `26b650a0aa6f703e30bfa4cf78a25c7fe1a1d7e6`, tree
+`9716c79ee6840492eec66dc437a68dfefbf24e98`, composes the published
+Buddy #37 head `b473038a99b36fb8b422305baf903b48e4850928` with actual main
+`b2868fdee1788ee552baf5d13968fb826d8b640e`. This Docs successor composes
+Docs #22 head `1e40aa090b5d8b401be57b0529883ebf1a9a5afb` with actual
+main `9ba028956e40422bc57aa549bf99ae7e2f294aa7`. Both are normal merges.
+Docs #22 is intended to target main after independent review of this pair.
+
+The composed path retains one ordered admission set, mixed-document scope
+validation, historical receipt recovery and the post-consumption panic witness.
+The current-main startup dispatch, Cargo/SDK pins and refusing backend stay
+byte-identical. Ordinary local memory retains its existing setter. The
+prepared selected path uses explicit provider setup and checks admission
+before model work. The simulator retains both the current-main selected
+publication cases and the dedicated composed cases.
+
+This Docs candidate adds the composed requirements and evidence to the active
+change. The delivered startup/history and selected-publication archives keep
+their existing ownership. REM-24 representative live semantics, independent
+source review, hosted checks, and qualified native acquisition, Pending and
+settlement remain separate gates.
+
+On Windows, the final Buddy tree passed 28 distinct targeted tests. These were
+six library tests, two SDK integration tests and 20 real CLI tests. Subcases
+and child invocations are excluded from the total. The first current-main
+fixture run caught an outdated assertion for the blanket memory refusal.
+The final test verifies the specific unsupported-provider admission error
+and still checks zero model calls, zero device calls and unchanged ordinary
+manifests. The first failure remains separate from the passing rerun.
+The library build emitted six existing Writer fixture dead-code warnings.
+The local check used scripted inputs and did not run a saved-byte or live
+provider case.
