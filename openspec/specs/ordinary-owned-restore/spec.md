@@ -1,7 +1,7 @@
 # Ordinary owned-archive restore producer
 
 ## Purpose
-Restore a compatible ordinary archive additively into an existing ordinary unconfigured/local-only Store through the existing guarded generation writer. Original history/source conditions, exact desired readback and phase-specific uncertainty remain distinct from runtime activation or historical publisher identity. The detailed [contract](../../changes/archive/2026-10-20-restore-ordinary-owned-archive/contract.md) fixes shapes, limits and fingerprint recipes. Selected restore, clean/replacement-device setup and companion UI remain separately unfinished.
+Restore a compatible ordinary archive additively into an existing ordinary unconfigured/local-only Store through the existing guarded generation writer. Original history/source conditions, exact desired readback and phase-specific uncertainty remain distinct from runtime activation or historical publisher identity. The detailed [contract](../../changes/archive/2026-10-20-restore-ordinary-owned-archive/contract.md) fixes shapes, limits and fingerprint recipes. The [ordinary archive companion](../ordinary-archive-restore-companion/spec.md) adds only the bounded existing-device on-tablet flow under its [consumer contract](../../changes/archive/2026-10-28-restore-ordinary-archive-companion/contract.md), including the explicit untrusted Prepare source-selection exception below. Selected/shared/cloud/generation4 restore and clean/replacement-device setup remain separately unfinished.
 
 ## Requirements
 
@@ -37,3 +37,14 @@ Status SHALL observe original binding and full intended active generation/manife
 #### Scenario: Report prefix fails
 - **WHEN** complete output or a prefix write fails
 - **THEN** Store/current-mode custody lasts through the consuming write/failure, then releases without a second report or automatic restore.
+
+### Requirement: Explicit untrusted companion source selection
+A companion consumer MAY accept exactly one untrusted source-path draft during deliberate Prepare under a reviewed bounded consumer contract. The host SHALL derive all authoritative operation/intent/hash/generation conditions from the fixed producer and retained original context, independently validate source/config path domains and exact private packet custody, and accept no renderer path/intent/hash/generation for Confirm, Status or Cancel. This is an explicit prospective exception to the archived producer contract's blanket renderer-path prohibition; the historical archive and producer behavior SHALL remain unchanged.
+
+#### Scenario: User selects an existing on-tablet archive
+- **WHEN** the user deliberately prepares one explicit compatible source already on the verified wired tablet
+- **THEN** its bounded scalar/path draft is passed only in private stdin and erased synchronously from renderer signal and actual DOM before any await, while producer safe-root/integrity/ordinary-custody checks remain authoritative.
+
+#### Scenario: Later action supplies substitute source conditions
+- **WHEN** Confirm, Status or Cancel supplies a source path, intent, hash, generation or replacement original instead of the host-issued reference and captured identity
+- **THEN** the consumer refuses without dispatch or refreshed conditions and preserves any genuine original uncertainty.

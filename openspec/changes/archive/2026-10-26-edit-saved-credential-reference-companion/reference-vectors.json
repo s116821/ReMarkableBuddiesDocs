@@ -1,0 +1,29 @@
+{
+  "basis": "Independent Python synthetic reference only, not producer execution. Real reference names and their hashes remain private.",
+  "patch_prefix": "urn:remarkable-buddies:credential-reference-patch:v1:",
+  "vectors": [
+    {
+      "change": {
+        "action": "set",
+        "value": "MODEL_api-01"
+      },
+      "canonical_utf8": "{\"action\":\"set\",\"value\":\"MODEL_api-01\"}",
+      "canonical_bytes": 39,
+      "prefixed_bytes": 92,
+      "sha256": "8827f2f47ed870c6f825ed0877ed30acb9587da784ef4a74ec767f963b4aa560"
+    },
+    {
+      "change": {
+        "action": "clear"
+      },
+      "canonical_utf8": "{\"action\":\"clear\"}",
+      "canonical_bytes": 18,
+      "prefixed_bytes": 71,
+      "sha256": "88c0eb350510891f14d2c7604bc047490a468f9f575b8b1d57b60294cb085f80"
+    }
+  ],
+  "equivalent_set_inputs": [
+    "{\"action\":\"set\",\"value\":\"MODEL_api-01\"}",
+    "{\"value\":\"\\u004dODEL_api-01\",\"action\":\"set\"}"
+  ]
+}

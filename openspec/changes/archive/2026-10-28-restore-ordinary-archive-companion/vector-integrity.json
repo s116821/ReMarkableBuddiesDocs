@@ -1,0 +1,15 @@
+{
+  "vector_artifact": "vectors.json",
+  "unique_cases": 124,
+  "raw_cases": 60,
+  "request_cases": 24,
+  "packet_cases": 1,
+  "public_cases": 17,
+  "lifecycle_cases": 22,
+  "checks": "JSON syntax, unique IDs, raw lengths/digests, fourteen-field fixture, distinct original path domains, packet overflow and explicit executing-versus-targeted-cancel invocation relationships",
+  "not_tested": "No consumer parser exists yet. Literal accept/reject/lifecycle expectations are proposed oracles, not implementation passes. No producer/device replay.",
+  "previous_independent_history_check": {
+    "history_sha256": "8df8ee19ccf766193ae7d6064bb62c724a66268fb0a904e6b2d34f3e1d904b94",
+    "limit": "Synthetic serialization only; object contents and lineage not qualified; exact supplied source/golden vector originally hash-verified as pinned in source-proof.json."
+  }
+}

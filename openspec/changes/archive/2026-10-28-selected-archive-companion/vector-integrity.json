@@ -1,0 +1,10 @@
+{
+  "total_cases": 138,
+  "raw_cases": 58,
+  "request_cases": 26,
+  "public_cases": 29,
+  "lifecycle_cases": 25,
+  "vectors_sha256": "303424fcce493e70e4937493a778cc4a1fc364d4f7a341fd4eca80f1011f9581",
+  "checks": "Unique IDs; raw bytes/digests; inclusive report/path boundaries; target-invocation cancellation; literal CRLF preservation; independent8/9unique/two-duplicate boundaries; private captured-history/self-consistent-upgrade and wrong-row-identity fixture integrity.",
+  "not_tested": "This integrity check executes no consumer/producer. Independent expected fields remain oracles; consumer/host evidence is recorded separately. No device/provider/native replay."
+}

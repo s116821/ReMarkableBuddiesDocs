@@ -1,0 +1,21 @@
+{
+  "docs_base": "d75c7a25375771640869a20d10b453225354d3f4",
+  "manager_fixed": "22569756b06c2372243210dd8f5e483ccaf97d08",
+  "qualified_manager_run": "40794699538",
+  "qualified_docs_run": "40794607330",
+  "requirements": 3,
+  "scenarios": 9,
+  "canonical_delta_core_sha256": "8e72c032e8fe5e2e80e77f671cb8210724975c56f8fc04ef74b038f6cb647c3e",
+  "unchanged_archive_inputs": {
+    ".openspec.yaml": "9e0a467e3934b14a2d9c9175305310e9359d34e2484a458af3d182c2956b9e2d",
+    "build_vectors.py": "79a3a35eb64d013d9fcc6b3801cec901c6db4d68e7b5214e20d043aa508c8cb1",
+    "check_vectors.py": "8cc2e771cff517d118b19dcdb6ca8f02ab71103d7d12abf4f2bfba7c3bc607d7",
+    "contract.md": "8250095bce42d6d8ba5550d0faf63dfbead468905842d093f3754907af0bebf4",
+    "proposal.md": "0fd6a288269cdd6477ee3721361eefbbd380f2a5c5f5f5a5aa80011a66cd7d52",
+    "source-proof.json": "53783c20656adff5df882332e3675e5ec2827443b245c889470ffa9138d127f5",
+    "specs/selected-archive-companion/spec.md": "7a613e339250efe0b44fb7c3ba1ecfe93a28337e1cd4cdceff9ea3ce9a152a5a",
+    "vector-integrity.json": "0bc255ef68280b8462134e8bafa00226a4b2ecd19fb94b26077de1a54a0b7702",
+    "vectors.json": "303424fcce493e70e4937493a778cc4a1fc364d4f7a341fd4eca80f1011f9581"
+  },
+  "remaining": "Final Docs review/checks, normal paired merge and actual-main publication; all broader obligations open."
+}

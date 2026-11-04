@@ -1,0 +1,63 @@
+{
+  "producer_commit": "68e42968b4c58b6f8ed1102078d78b40fad33ffc",
+  "producer_tree": "6c6f606f30f6ff3b0af158456794443337e60f61",
+  "representation": "Supplied Windows CRLF snapshot; canonical native LF bytes separately verified below. Source review only, no replay.",
+  "files": {
+    "src/archive_maintenance.rs": {
+      "supplied_crlf_bytes": 6372,
+      "supplied_crlf_sha256": "35159a199b9774222a9af91d570886b84e861bc44200e8d04fc4024760b339f7",
+      "canonical_lf_bytes": 6172,
+      "canonical_lf_sha256": "998a7825ac664d3ff96eab52f72eea13de13a4c95f1d002284872c4b2301c0a1",
+      "native_blob": "8193294dc4e8e96f74c4ea8d50fb3159210fe3a0",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/archive_maintenance.rs"
+    },
+    "src/storage/recovery.rs": {
+      "supplied_crlf_bytes": 37162,
+      "supplied_crlf_sha256": "5df0e10511f18b73e93b7c5bd00611aba59580a70ce4c375f1bb659baed733a9",
+      "canonical_lf_bytes": 36244,
+      "canonical_lf_sha256": "afae85fa454b30ded7f39e670d8bbfd02f0fe34989ba40a9da74a32b2997ca64",
+      "native_blob": "bcbe1a5dab640d034b7225ecba3339507c887a1d",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/recovery.rs"
+    },
+    "src/storage/types.rs": {
+      "supplied_crlf_bytes": 7392,
+      "supplied_crlf_sha256": "083ce2e5e3d06401b5ed60a417b6ab9a1ccdcef1c943692536a57ba4bfe88527",
+      "canonical_lf_bytes": 7159,
+      "canonical_lf_sha256": "6000ad534f067cccfcda10479a8213020236a0aad6ada5040f97154338e23ac3",
+      "source_basis": "Same coordinator-verified current pinned snapshot; LF projection, not separately fetched native blob.",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/types.rs"
+    },
+    "src/storage/feedback_generation.rs": {
+      "supplied_crlf_bytes": 11197,
+      "supplied_crlf_sha256": "62a6a5f8b416a5fc813004a6096e5ecc49d326809e0a83eb5492ddf0b556cb52",
+      "canonical_lf_bytes": 10892,
+      "canonical_lf_sha256": "b0efe3cd90eed5fdf5fa1f94295a6ead0c3a5e360e10fd9647aa5a7438f4912f",
+      "source_basis": "Same coordinator-verified current pinned snapshot; LF projection, not separately fetched native blob.",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/feedback_generation.rs"
+    },
+    "src/storage/selection/portable.rs": {
+      "supplied_crlf_bytes": 6575,
+      "supplied_crlf_sha256": "4cf452fcb4e7f2395dca7e84bfcd333a851d90b839fca3bc9f4a9d1223006b71",
+      "canonical_lf_bytes": 6398,
+      "canonical_lf_sha256": "49526c14638f6d243564d553fb6ded1f67b3f37fdccc0d86335a7b7b06498f2b",
+      "source_basis": "Same coordinator-verified current pinned snapshot; LF projection, not separately fetched native blob.",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/src/storage/selection/portable.rs"
+    },
+    "docs/host-selection-archives.md": {
+      "supplied_crlf_bytes": 4492,
+      "supplied_crlf_sha256": "7d2f5d39c5d7e18b16dad14fdd63ab6f877008c3710b9d567c2f85d8584b8f8d",
+      "canonical_lf_bytes": 4414,
+      "canonical_lf_sha256": "68f3d43d002c2e3a0e072915d6e8b77f294438186afe0ac9158803e487ea81f7",
+      "source_basis": "Same coordinator-verified current pinned snapshot; LF projection, not separately fetched native blob.",
+      "public_url": "https://github.com/s116821/ReMarkableBuddies/blob/68e42968b4c58b6f8ed1102078d78b40fad33ffc/docs/host-selection-archives.md"
+    }
+  },
+  "current_feedback_generation": 3,
+  "current_inspect_formats": [
+    1,
+    2,
+    3
+  ],
+  "selected_export_format": 2,
+  "pending_generation4": "Separately owned Writer refusal, no current support claim."
+}

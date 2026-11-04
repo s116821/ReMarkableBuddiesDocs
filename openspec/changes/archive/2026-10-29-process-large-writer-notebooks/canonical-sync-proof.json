@@ -1,0 +1,26 @@
+{
+  "source_head": "47ac945ba4f4d7ec6f1e40fb4dde273c0df61f39",
+  "source_ci": "https://github.com/s116821/ReMarkableBuddies/actions/runs/40945449959",
+  "source_ci_conclusion": "success",
+  "modified_requirements": 6,
+  "added_requirements": 8,
+  "unrelated_requirement_blocks_preserved": 26,
+  "canonical_staged_blob_sha256": {
+    "openspec/specs/historical-conversation-ledger/spec.md": "75e8a5215ade768f01293df57d80a291aab6e69c71d1ee5011e001b885916f3f",
+    "openspec/specs/large-writer-notebooks/spec.md": "dc128d8c6e5e15444b90db4a8aad3f19e250ab14b8aabad35f1f72f3a799243d",
+    "openspec/specs/local-simulator/spec.md": "f9d2fcc36b3b4ff0ca4725f183f89aeee81bba91a99c6cb3b701455e7242f3f3",
+    "openspec/specs/shared-storage/spec.md": "f14d266e226ecb836d688aa4d3354bc0a5511dd6fc7fcca1f9a169514e9847a3",
+    "openspec/specs/writer-export-flow/spec.md": "9f9a8f599db6700b78ef7cb8a4cb3f66fb1df8474eaf1500e55dacb6e65c92a4"
+  },
+  "limits": "Bounded host increment; physical ingestion/native Writer and full generation4 accounting/Manager support remain separate required 1.0 dependencies. No physical power-loss or Windows directory-sync qualification.",
+  "eof_formatting_correction": {
+    "openspec/specs/large-writer-notebooks/spec.md": {
+      "accepted_r2_sha256": "b8db30ca525e94d79e601fe0bbe47d6f385e5350e6719c79f148714033b0e596",
+      "final_single_lf_eof_sha256": "dc128d8c6e5e15444b90db4a8aad3f19e250ab14b8aabad35f1f72f3a799243d"
+    },
+    "openspec/specs/shared-storage/spec.md": {
+      "accepted_r2_sha256": "6a884a99a1f4ec87ad6de31c20db9283ad106c3027685f195a09a70cd8214a9f",
+      "final_single_lf_eof_sha256": "f14d266e226ecb836d688aa4d3354bc0a5511dd6fc7fcca1f9a169514e9847a3"
+    }
+  }
+}

@@ -27,9 +27,9 @@ foundation's portable desktop targets. macOS, signing/notarization and desktop
 automatic updates remain later delivery; do not infer their support.
 
 Release fixtures additionally require Python 3.12. Install the hash-locked
-maintained tools with `python -m pip install --require-hashes -r release/python-tools.lock`,
+maintained tools with `python -m pip install --require-hashes -r cicd/release/python-tools.lock`,
 then run `npm run test:release`. These fixtures use real local Git repositories
-and Python Semantic Release; upstream Action controls use loopback API fixtures.
+and Python Semantic Release to verify project workflow and release-identity rules.
 No experimental production tags or tablet operations are required.
 
 ## Architecture and scope
@@ -86,6 +86,57 @@ publication, observe an exact draft ID and upload only missing verified assets
 without overwrite. Explicit failed-job retries reuse retained artifacts for 14
 days; conflicting tags/assets refuse. Outside writers are not covered by an
 atomic immutability guarantee. These portable archives are not tablet installers.
+
+## Protected model credential file
+
+Both companions support deliberate management of the already declared protected
+credential file under the [bounded consumer specification](../openspec/specs/protected-model-credential-companion/spec.md).
+Use the [Manager saved-file guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/model-credential.md)
+for Install/Replace/Remove, exact private input, original-only checks and their
+expiry/capacity limits. Reference editing remains a separate explicit operation;
+saved file presence establishes neither provider authentication nor runtime adoption.
+
+## Source-cache slot inventory
+
+Both companions provide an explicit read-only snapshot of bounded source-cache slot
+metadata under the [consumer specification](../openspec/specs/source-cache-inventory-companion/spec.md).
+Use the [Manager inventory guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/source-cache-inventory.md)
+for deliberate inspection, empty/refusal states and local Stop waiting. Contents
+remain unread and unvalidated; source freshness and runtime remain unverified.
+Apparent slot lengths are neither allocated nor reclaimable space and are not
+added to aggregate owned-data totals. The snapshot grants no cleanup permission.
+Inventory quiesces pending observation requests without global cancellation;
+retained uncertain operations keep their original lifetimes.
+
+## Conversation discovery
+
+The reviewed implementation provides explicit read-only Buddy conversation-ID
+snapshots in both companions. See the [central discovery guide](manager-conversation-discovery.md)
+for the reviewed Manager manual, empty/refusal semantics, local Stop and limits.
+Its [consumer requirements](../openspec/specs/conversation-discovery-companion/spec.md)
+record the implemented contract and accepted Windows/Linux retained-package
+qualification. Physical-device/runtime health and final paired merge/publication
+remain separate outcomes. No selection or deletion action follows.
+
+## Historical conversation management
+
+Both companions provide explicit selection, fresh Inspect/Prepare, deliberate
+once-only logical removal and original-intent read-only Status. See the
+[central management guide](manager-conversation-management.md),
+[consumer requirements](../openspec/specs/conversation-management-companion/spec.md)
+and [completed implementation archive](../openspec/changes/archive/2026-10-28-manage-historical-conversation-companion/results.md)
+for accepted source/Windows+Linux retained qualification and exact limits.
+Retained history/media/export associations/native pages remain; physical
+reclamation, synchronized deletion and native/runtime health are not implied.
+Final paired review, normal merge and actual-main/publication stay separate.
+
+## Restore an archive already on the tablet
+
+Both companions provide a preview and separate confirmation to add compatible archived Buddy data while keeping current records. See the [central restore guide](manager-ordinary-restore.md), [consumer requirements](../openspec/specs/ordinary-archive-restore-companion/spec.md) and [detailed consumer contract](../openspec/changes/archive/2026-10-28-restore-ordinary-archive-companion/contract.md). Exact counts are optional technical details; media completeness and inactive saved settings are explicit. Earlier unconfirmed results remain distinct from a later check finding expected data. This does not download a backup, set up an empty/replacement tablet or restore native pages. Source/retained qualification, tablet/runtime health and final release are separate outcomes.
+
+## Inspect and export historical archives
+
+Both companions expose whole-archive checks and policy-previewed once-only history export. See the [central archive guide](manager-selected-archives.md) for content/exclusions, original uncertainty, exact accepted Windows/Linux qualification and remaining restore/cloud/native limits. Final merge/publication is separate.
 
 ## Central specifications and coordinated delivery
 

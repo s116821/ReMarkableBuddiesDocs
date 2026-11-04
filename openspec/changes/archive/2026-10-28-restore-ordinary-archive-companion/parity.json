@@ -1,0 +1,34 @@
+{
+  "scope": "Exact accepted delta promotion; historical archives unchanged; ordinary-local only. Final Docs review/merge/main-publication remain pending.",
+  "docs_source_before_sync": "88ecc2ed1279fd0f58e42538be0fa47b20adea8d",
+  "manager_source": "fa144e094e41f0a263cc3460b2fef19281767978",
+  "manager_tree": "0b64b461a6230ec4f227cd9c95af7f35e38c3275",
+  "qualified_run": "40771899390",
+  "consumer": {
+    "requirements": 3,
+    "scenarios": 9,
+    "delta_core_sha256": "0409dd57039e5d657ba2f009ebcd28b74e2d1c01e5cdb6b07090d97dc6f8237f",
+    "canonical_core_sha256": "0409dd57039e5d657ba2f009ebcd28b74e2d1c01e5cdb6b07090d97dc6f8237f"
+  },
+  "producer": {
+    "added_requirements": 1,
+    "added_scenarios": 2,
+    "delta_core_sha256": "251069b81ef38f48c9545f8fdcb790f052e144d7f36bb15a4751b3d0845d022e",
+    "prior_requirements_preserved_as_exact_prefix": true,
+    "prior_requirement_core_sha256": "346680d89f01b74e098eb9bbf21f8a11394f202d062cf06ca8b277b24f3deb04",
+    "canonical_core_sha256": "cde5550e7df0cbb3c0746057346568b47e05a93a7e62e7fcc78c03b02c72540c"
+  },
+  "literal_fixture_sha256": "6a602fb497b85756589fd8d91d4db063a52f646ab79651144d8b60c9448fdb22",
+  "prearchive_unchanged_files": {
+    ".openspec.yaml": "9e0a467e3934b14a2d9c9175305310e9359d34e2484a458af3d182c2956b9e2d",
+    "build_vectors.py": "737617060cf47193d2f19fd1ec3a63b1f92eef44d8847bb2dc52e4064d25dd7a",
+    "check_vectors.py": "fc84c33f4923f3cfb55975fa700fb4987b31761ccf978b322b650f48b6a1fdf9",
+    "contract.md": "d48105d09436802ed87414b4e7de174db4751a61d5da03c12ba91450888efd40",
+    "proposal.md": "e1dfe71f53ca8c149baf4d3d3934e19969338d15b16bf4a49c7926bcd2495c93",
+    "source-proof.json": "7713e692abeccd0b0c399fbcfaef7c312a83739aa1494a4f92013a8b61c61a52",
+    "specs/ordinary-archive-restore-companion/spec.md": "e962c0c37e01908b27d7427a0dabea7a97551c95e5b2373be96d03fa884df535",
+    "specs/ordinary-owned-restore/spec.md": "079ecae3a133535ac4730e5ea1a2881a7aa718f12ef2597faff7b0ce8fc81c59",
+    "vector-integrity.json": "d03c7fc24bc57e7ea994f8bdef393655a2948d7fd5ad96b3e5cf14bc07d8b385",
+    "vectors.json": "6a602fb497b85756589fd8d91d4db063a52f646ab79651144d8b60c9448fdb22"
+  }
+}
