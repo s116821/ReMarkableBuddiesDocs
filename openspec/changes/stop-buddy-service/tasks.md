@@ -9,9 +9,9 @@
 
 ## 2. Implementation and qualification
 - [x] Import the accepted central change before code.
-- [ ] Implement the closed fixed-unit service capability in both hosts and the shared UI.
-- [ ] Verify every action/current/history identity combination, single submission, exact cancellation, expiry/capacity/Busy/currentness and private reduction.
-- [ ] Verify fixed systemctl/SSH input/output/deadline/provenance refusal cases and all actual predecessor interlocks.
+- [x] Implement the closed fixed-unit source capability in both hosts/shared UI with production mutation profiles disabled pending qualification.
+- [x] Verify the closed48 historical action/current/identity cases and8 Retained negatives, single submission, exact cancellation, expiry/capacity/Busy/currentness and private reduction with local fixtures.
+- [x] Verify fixed-command input/output/deadline/provenance refusals and all19 predecessor interlocks with local/synthetic and actual host-route fixtures; retain physical/Windows gates separately.
 - [ ] Qualify actual Linux/Windows browser/Electron and retained packages, preserving earlier failures and evidence scope.
 - [ ] Obtain owner-qualified ordinary/native shutdown and supported unit/package behavior before enabling their mutation profiles.
 - [ ] Complete independent review, final-head CI, canonical sync/archive and coordinated paired delivery; preserve all unrelated current-main work.
@@ -21,5 +21,14 @@
 - [x] Implement bounded host history/ownership/cancellation and guarded routes in both actual factories; wire shared UI with on-demand controller loading.
 - [x] Verify 19-peer/38-direction Busy and16 predecessor preview invalidations per actual factory; unsupported production UI performs no Stop submission.
 - [x] Verify shared App53 incoming Busy/invalidation boundaries with the new Stop wait and preserve existing storage guard behavior after exact clear-sequence reuse.
-- [ ] Complete qualified fixed-path native sampler/backend and fixed submission adapter after exact supported tuple admission; current read-only production boundary cannot dispatch Stop.
-- [ ] Complete every profile/policy/record semantic predicate and actual native evidence before production enablement; structural facts alone remain insufficient.
+- [x] Implement and locally fixture-test the protected fixed-path sampler/backend and fixed submission adapter behind empty compiled qualification gates; production cannot dispatch Stop.
+- [x] Implement source-backed candidate policy/record semantics and live sampled namespace/cgroup comparisons without transferring native FD ownership.
+- [ ] Obtain actual native/target/toolchain evidence and reviewed immutable tuples before production enablement; candidate matching alone remains insufficient.
+
+## 4. Independent review corrections
+- [x] Make hung-Begin timeout cleanup independent of remaining time while preserving exact owner/epoch/token checks; test newer-owner and obsolete-timer cases.
+- [x] Wire reciprocal StorageInitialization-to-Stop invalidation in both factories; test an isolated synthetic idle review with production gates unchanged.
+- [x] Clear ordinary export and all26 peer/view controllers from actual Stop preparation; distinguish this from storage's18 outgoing-clear regression assertion.
+- [x] Include on-demand module loading in the same14-second UI deadline and forbid Ready from reusing a retained original.
+- [x] Complete local source/browser/Electron/package qualification at e8f4ff9, preserving test-only706a4ce attribution.
+- [ ] Obtain independent successor review and hosted final-head platform gates before delivery.
