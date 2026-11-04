@@ -15,3 +15,11 @@
 - [ ] Qualify actual Linux/Windows browser/Electron and retained packages, preserving earlier failures and evidence scope.
 - [ ] Obtain owner-qualified ordinary/native shutdown and supported unit/package behavior before enabling their mutation profiles.
 - [ ] Complete independent review, final-head CI, canonical sync/archive and coordinated paired delivery; preserve all unrelated current-main work.
+
+## 3. Source implementation checkpoint
+- [x] Implement closed public/private DTO boundaries, exact property catalog, canonical sample digest and two-bracket collector boundary; production profile admission remains empty.
+- [x] Implement bounded host history/ownership/cancellation and guarded routes in both actual factories; wire shared UI with on-demand controller loading.
+- [x] Verify 19-peer/38-direction Busy and16 predecessor preview invalidations per actual factory; unsupported production UI performs no Stop submission.
+- [x] Verify shared App53 incoming Busy/invalidation boundaries with the new Stop wait and preserve existing storage guard behavior after exact clear-sequence reuse.
+- [ ] Complete qualified fixed-path native sampler/backend and fixed submission adapter after exact supported tuple admission; current read-only production boundary cannot dispatch Stop.
+- [ ] Complete every profile/policy/record semantic predicate and actual native evidence before production enablement; structural facts alone remain insufficient.
