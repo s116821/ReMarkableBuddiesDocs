@@ -244,7 +244,10 @@ when staging fails. They pass on local Node 24.11.0; this does not replace the
 required hosted Node 24.21.0 Windows/Linux integrations. Syntax and whitespace
 checks pass. Fresh full run
 [41864907151](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41864907151)
-is pending. Both failed runs and their logs remain evidence; none was relabeled.
+completed successfully on this exact successor, including Checks, Build and
+both Node 24.21.0 Windows/Linux Integration jobs. Release was skipped for the
+draft PR. Both failed runs and their logs remain evidence; none was relabeled.
+This verifies hosted source/package behavior, not native Stop qualification.
 
 Docs normally merged delivered main `3fa30982e55d8405cfdb28d2823a8deb0e024f81`,
 preserving the completed notebook archive spec and archive. The Stop change
