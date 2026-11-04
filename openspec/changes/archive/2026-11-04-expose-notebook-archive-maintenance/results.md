@@ -5,6 +5,13 @@ Buddy candidate `69b8941ed683ad38b1b621d0f1ef56f69b052fd6` has tree
 dependency graph. Raw logs are retained in `work/rem52-notebook-archive-evidence`
 alongside the worktrees.
 
+The paired delivery is [Buddy #122](https://github.com/s116821/ReMarkableBuddies/pull/122)
+and [Docs #133](https://github.com/s116821/ReMarkableBuddiesDocs/pull/133).
+Independent review accepted the source and verified all 853 blobs in the
+successful Linux source archive against the reviewed Git tree. The existing
+Buddy CI runs on Linux; Windows archive evidence below comes from local host
+execution. The Docs CI separately checks portability on Linux and Windows.
+
 ## Windows
 
 - Five archive unit controls passed, covering the work and capacity limits,
@@ -44,6 +51,20 @@ separately. Windows power-loss durability remains unqualified.
   the CRLF-converted asset because the scenario binds the original bytes. The
   final run verified the asset hash. Earlier refusals have separate logs.
 
-Independent review, hosted checks and canonical spec sync and archival are
-separate completion gates. Local tests exercise host archive behavior with
-fixtures and scripted model replies.
+## Independent review and hosted validation
+
+Independent review accepted the corrected Windows canonical-alias admission and
+the exact source/evidence pair. All 22 evidence entries and the 853 committed
+blobs in the successful Linux source export were independently verified.
+
+[Buddy CI 41855396934](https://github.com/s116821/ReMarkableBuddies/actions/runs/41855396934)
+passed title, checks, build and integration at the exact candidate above. The
+release job correctly skipped this PR run. Initial
+[Docs CI 41855406173](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/41855406173)
+passed at `dfebe666281000e735e35a8b77107b6982b185bd`; the final spec sync/archive
+revision requires its own hosted Docs checks before merge.
+
+The explicit ordinary archive requirement is synchronized into
+`large-writer-notebooks` and this completed bounded change is archived in the
+same paired delivery. Local tests exercise host archive behavior with fixtures
+and scripted model replies; they do not establish native, restore or sync support.
