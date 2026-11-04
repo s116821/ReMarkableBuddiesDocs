@@ -532,6 +532,12 @@ The explicitly authorized legacy/manual fallback SHALL retain its one-successor 
 - **WHEN** navigation requires a swipe
 - **THEN** ordinary product gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims
 
+#### Scenario: Capture allocation changes after the swipe
+- **WHEN** a destination observation within verified RM2 navigation detects changed mappings or a discovery candidate disappears from the fresh map after an I/O error
+- **THEN** navigation SHALL discard the incomplete observation and any partial destination pair
+- **AND** it SHALL require two fresh matching observations under the original deadline, retained input guard and native document, order and visit checks
+- **AND** it SHALL issue no second swipe and SHALL preserve the existing refusal behavior for other capture errors
+
 ### Requirement: Invalid successor recovery
 In the automatic path, a positively identified non-Buddy successor SHALL be preserved and may permit qualified insertion between the ORIGINAL source and that neighbor after current source/session/order revalidation. An unknown/uncertain successor or recognized Buddy candidate with unresolved association SHALL grant no insertion permission. If restoring the original displayed source is required, recovery SHALL check source identity before navigation, attempt at most one previous-page swipe and verify once; any failure SHALL stop without retry or relocating the insertion anchor.
 
