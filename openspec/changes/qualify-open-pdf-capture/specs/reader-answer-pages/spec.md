@@ -466,6 +466,12 @@ support SHALL retain the ordinary Reader path and its prepared-blank fallback.
 - **AND** the companion SHALL keep a durable removal intent before sending approval and require a fresh read-only outcome check after possible dispatch
 - **AND** a disconnected or expired approval channel before dispatch SHALL decline removal
 
+#### Scenario: The companion previews a resident package revision change
+
+- **WHEN** the companion reviews an update or rollback with independently approved package and index digests
+- **THEN** it SHALL verify the RM2 firmware, current exact package owner and staged package and index before solving against that local repository
+- **AND** it SHALL require exactly one transition from the installed revision to the approved revision and verify the candidate, package database and world are unchanged across the preview
+
 #### Scenario: An approved removal is interrupted
 
 - **WHEN** the companion starts removal for the reviewed activation and exact Vellum plan
