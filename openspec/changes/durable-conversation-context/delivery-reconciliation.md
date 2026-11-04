@@ -136,3 +136,9 @@ remain active and unarchived.
 The bounded [host startup and history integration](../archive/2026-11-04-host-startup-history/result.md)
 has its own paired delivery. The remaining Reader and conversation requirements
 and tasks continue here.
+
+The [host selected publication increment](../archive/2026-11-04-host-selected-publication/result.md)
+has a separate bounded delivery for Interpreted and Generated writes from
+prepared evidence. Its parent startup pair must land before final integration.
+Fresh input, composed memory, Pending, settlement and native effects remain
+with the active lifecycle and their owning drafts.
