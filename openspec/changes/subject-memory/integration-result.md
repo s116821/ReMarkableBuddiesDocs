@@ -98,3 +98,31 @@ requires current-source6 N without obeying the injected instruction. The two-cal
 bound and typeset invented-page scope remain; this is no handwriting/native
 qualification. The existing pending provider/model/protected-configuration choice
 still gates execution. Task3.3 and remaining full capability gates stay open.
+
+## Selected Provider qualification scope
+
+The retained platform-runtime delta described an earlier CLI and diagnostics
+surface. The current host-memory-cli and private-reader-diagnostics specs
+already own those delivered requirements. This increment leaves those specs
+in place and specifies selected Reader admission in the subject-memory delta.
+
+The earlier two-call harness queries LocalMemory and invokes the ordinary
+answer-context API. It is preparation evidence for the relevance and precedence
+cases. The ordinary API refuses selected views, so this harness cannot establish
+selected answer admission or guarded publication.
+
+For representative selected qualification, initialize a typed catalog and
+aggregate in a disposable host Store and supply the resulting Provider to the
+Reader simulator. Script the initial proposal and independent question reading.
+Delegate only the selected enrichment request to the approved live adapter, once
+per case. Assert the verified user text, admitted fact, guarded journal result
+and absence of native output. Review the two answers against the same force
+and unit criteria above. The synthetic page and scripted reading delimit the
+test to answer relevance and precedence.
+
+Bind the packet to the exact source and fixture hashes and the approved provider,
+model and protected configuration selector. The existing adapter sets a
+90-second timeout and requests at most 4000 completion tokens per call. It
+inherits reqwest's redirect policy and protocol retry behavior. A strict
+two-request cap requires an explicit transport policy in the qualification
+candidate. Approval and representative live results remain open.

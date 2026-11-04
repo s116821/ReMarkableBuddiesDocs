@@ -40,6 +40,10 @@ An explicitly selected memory Provider SHALL discover current facts only through
 - **WHEN** another registration wins for the same aggregate key
 - **THEN** adoption SHALL validate the accepted identical owner/genesis and acknowledge current membership separately from original replay, without republishing a losing fact payload.
 
+#### Scenario: Selected answer admission
+- **WHEN** the Reader is explicitly supplied a selected Provider and its verified question retrieves a selected view
+- **THEN** the Reader SHALL check the sealed payload and current Store tokens before sending the selected context to the answer model. This check SHALL preserve the one consuming admission for journal publication. Ordinary startup SHALL continue to use its existing local Provider when enabled.
+
 #### Scenario: Replacement before answer publication
 - **WHEN** a catalog or queried aggregate changes after retrieval or model response and before the consuming Ledger write
 - **THEN** shared admission SHALL revalidate all participating Store-issued tokens at that actual write boundary and refuse the stale answer without a generated assistant draft or native authority.
