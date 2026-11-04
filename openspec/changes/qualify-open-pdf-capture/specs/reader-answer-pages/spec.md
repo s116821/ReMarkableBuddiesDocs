@@ -432,6 +432,26 @@ Unselected startup SHALL keep its existing behavior.
 - **THEN** the first genuine released request acquires that open page without restarting Reader or requiring a setup gesture
 - **AND** later requests keep the process and obtain their own input and page authority
 
+### Requirement: The Buddy package owns installed resident output
+
+The supported RM2 release SHALL make the installed Reader, Writer refinement
+and blank-start paths available through the normal Buddy service. Selection
+SHALL require the approved firmware, native adapter, native profile and
+matching Buddy and recovery units. The release path SHALL keep fixture plans
+and diagnostic input commands outside that installed interface.
+
+The companion SHALL deliver these prerequisites with the existing signed
+Buddy package and Vellum ownership flow. Update, disable and uninstall SHALL
+keep the resident recovery helper and its prerequisites available until stock
+Reader and sync recovery is verified. Devices without approved resident
+support SHALL retain the ordinary Reader path and its prepared-blank fallback.
+
+#### Scenario: The installed package is upgraded or removed
+
+- **WHEN** the user requests an upgrade or removal while Buddy owns the resident Reader
+- **THEN** the package transition waits for verified stock recovery before replacing or removing the resident prerequisites
+- **AND** the transition preserves the user's Buddy data
+
 ### Requirement: Blank-start placement uses an open, qualified Reader page
 
 An explicit blank-start request SHALL use the same resident page acquisition,

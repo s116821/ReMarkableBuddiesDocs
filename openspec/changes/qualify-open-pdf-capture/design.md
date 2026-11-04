@@ -296,3 +296,17 @@ validators, original deadlines, effectful guards or independent recovery. The
 measured05301e pre-capture46.851-second phase and source-derived subprocess
 amplification are separate evidence. This next implementation is not native or
 product acceptance and does not justify another diagnostics-only run.
+
+## Resident output in the Buddy package
+
+Use the normal Buddy service entry point and the existing installed recovery
+profile. Separate installed output selection from developer fixture input.
+Bind the package's eligible RM2 firmware to the exact SDK bundle, Buddy
+executable, and service files. Reuse REM-41's signed Vellum package and host
+installer contract. The package must preserve the recovery entry point and
+its pinned inputs until the resident owner is gone and stock Reader and sync
+are verified. The stock path remains available on unsupported configurations.
+
+The tablet runs so far used a manually staged service and pinned SDK bundle.
+They establish the behavior the signed package must reproduce. The production
+build, package ownership, and installed lifecycle require separate evidence.
