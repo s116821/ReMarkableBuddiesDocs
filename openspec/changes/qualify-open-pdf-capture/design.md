@@ -332,3 +332,11 @@ The resident APK and index must declare both `rm2` and
 `remarkable-os=3.28.0.172` as dependencies.
 The existing test-key output stays installation-ineligible until production
 signing and Manager's applicability and lifecycle checks are qualified.
+
+Before updating or removing an active resident package, the Manager host
+retains the same-boot activation identity and lease digest. Its recovery
+observation checks that the native helper archived those exact lease bytes,
+the original package profile is still present, Buddy and the helper have
+stopped, and both stock processes are running. A missing lease alone cannot
+authorize a package transition. The observation stays separate from package
+ownership, operator consent, and the actual update or removal command.
