@@ -125,4 +125,25 @@ model and protected configuration selector. The existing adapter sets a
 90-second timeout and requests at most 4000 completion tokens per call. It
 inherits reqwest's redirect policy and protocol retry behavior. A strict
 two-request cap requires an explicit transport policy in the qualification
-candidate. Approval and representative live results remain open.
+candidate.
+
+The Buddy library test `selected_qualification_loopback` drives the real
+selected Reader, with synthetic proposal and verification responses and the
+actual HTTP adapter for enrichment. Its local server checks the transmitted
+request. It exercises both successful journal writes, an HTTP redirect, a
+connection closed after reading a request, and an invalid answer frame.
+On Windows x64, Buddy `dd5b05db7eb8bb7b3d168c1b1ffd60b86fa3ba82` passed that
+control alongside the four existing Reader memory tests. The test checked
+the exact retrieved Fact in each HTTP body and compared its four encoded
+images against the locally pinned hashes. The overview is 768 by 1024 pixels
+and its three 768 by 409 strips begin at rows 0, 307 and 615.
+
+The separately ignored `selected_qualification_live` test requires an explicitly
+approved HTTPS origin, model, protected configuration with its SHA-256 and
+a new receipt path.
+The test-only transport disables retries, redirects and ambient proxies. The
+live test allows one POST per case, at most 4000 completion tokens per POST,
+90 seconds per request and a shared 180-second deadline. Transport, framing
+and journal failures stop the run. Review the two retained answers manually.
+The two-case design has no no-memory comparison, so it cannot establish a
+causal improvement. Approval and representative live results remain open.
