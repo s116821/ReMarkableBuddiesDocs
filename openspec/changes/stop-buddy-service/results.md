@@ -219,3 +219,40 @@ native FD/stock ownership is not transferred by this sampler. The change stays
 active, unarchived, until actual qualification and coordinated delivery.
 
 The new e8f4ff9 package retention exception contains233files/298,672,798logical bytes; only for Root successor review/correction, retire when that concrete use ends. Its full hashes and exact source/path are recorded independently from the retiredff manifest. Own Xvfb stopped. Obsolete new out/staging, out/host and out/scripts retired after named path/process checks: 2,526,946logical bytes, separately measured free+3,039,232. Source/lockfiles/useful logs/captures/first failures preserved; active node_modules/.angular/dist/development resources remain for current review.
+
+## Hosted fixture corrections
+
+Manager run [41859544541](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41859544541)
+failed both integration platforms because the closed preload inventory omitted
+`serviceStop`. Test-only successor `5f8028e396ead9e29e059dd3057743f19a5ab8ac`
+corrected that expectation. The actual preload was independently executed with
+a mocked Electron boundary and exposed exactly the 34 expected keys without IPC.
+
+Its run [41861062823](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41861062823)
+then reached a later Linux Electron fixture failure: six maintenance fixtures
+copied only three development assets into the fixed production URL. Retained
+development artifact `13341035148` contains static and deferred JavaScript
+chunks, so that partial staging omitted required modules. Earlier production
+host checks passed; the timeout was not a native Stop or dependency-install result.
+
+Test-only successor `3fdca4c1a1bfc7ad030b7aba16a47254e664a1c3`, tree
+`77dfa99297c9413f9c90c30d9e34512c0e5bd4ca`, stages the complete development
+directory and restores the untouched production directory after each fixture.
+Two local dependency-free controls load static/deferred nested modules, verify
+exact original bytes and filenames after restoration, and preserve production
+when staging fails. They pass on local Node 24.11.0; this does not replace the
+required hosted Node 24.21.0 Windows/Linux integrations. Syntax and whitespace
+checks pass. Fresh full run
+[41864907151](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41864907151)
+is pending. Both failed runs and their logs remain evidence; none was relabeled.
+
+Docs normally merged delivered main `3fa30982e55d8405cfdb28d2823a8deb0e024f81`,
+preserving the completed notebook archive spec and archive. The Stop change
+and both PRs remain active/draft with empty production qualification registries.
+
+After Root completed the earlier package review, its owner retired the exact
+233-file e8f4ff9 package and unused production/development/build-cache output:
+305,510,771 logical bytes removed; measured free-space increase 306,216,960 bytes.
+The source, lockfiles, failure logs, screenshots, manifests and native bundles
+remain preserved. The compatible active dependency toolchain is retained only
+for the next independently owned Manager consumer and reviewed at its handoff.
