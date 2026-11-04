@@ -42,3 +42,26 @@ These are local source and mechanism results. Hosted checks, independent
 implementation review and a separately approved semantic method remain open.
 Historical r2 remains NOT MET with all eight calls spent. This increment
 did not invoke a live provider, allocate a new budget or qualify recognition.
+
+## Focused protocol controls after main integration
+
+Buddy merged the pinned main 82201bb8e63c61182f68b30d2fc191f6046f7b5d
+into source 98ec7ba20d9ffb035380e2c4b1365230a1a9f1b2, tree
+21d5ff8f620eed8fc7f3abc13f917c7930464000. The only conflict was the adjacent
+CLI declarations in src/main.rs. The merge keeps both declarations and
+checks transcription exclusivity against product settings. src/lib.rs
+merged automatically. Those two files are the only main-side changed
+Buddy files that differ from the pinned main. Docs integrated pinned main
+f4643fc9ce8c3a60d813ae07da15e757e2b750cb without overlap.
+
+The partial parser now explicitly checks the existing serialized result byte
+limit before returning. Focused controls exercised selected v2 complete,
+blank and unreadable replies with a retained Store example and stable
+captured payload identity. They also verified partial cancellation before
+dispatch and at BeforeReturn, including actual attempt state, held custody
+and empty result slots. The parser admitted 64 alternating spans and
+refused 65 or one span. All 21 focused library tests passed at the merged
+Windows head. Both Windows CLI subprocess tests and the focused binary
+argument exclusivity test also passed on that head. The Unix-only SIGINT
+case was outside this run. Historical evidence and the spent semantic
+comparison remain unchanged.
