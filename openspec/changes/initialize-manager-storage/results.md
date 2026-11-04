@@ -68,3 +68,51 @@ review, normal actual-main integration, final-head CI and canonical sync/archive
 remain required in the same paired delivery. The central change stays active
 until qualified; this is not a planning-only delivery or completion of broader
 management, installer or release/MVP requirements.
+
+## Action-bound public admission correction
+
+Independent source review found that a malformed host reply could present a
+prepared result/current kind to policy-only Begin, a ready result to Cancel, or
+an unrelated connection's unknown original to Begin. The genuine host was not
+shown to emit those values, and no physical dispatch was established. The public
+validator and shared controller needed to reject them independently.
+
+Manager successor `deb513355c08efb0c4a10af9120f6235c62b6ec1`, tree
+`8052e0fdfb91a91a7a9a32259b94ea29b5d44e69`, restricts ready to Begin, forbids
+prepared/current on Begin, permits current only on Confirm/Refresh, and binds a
+Begin unknown to the requested connection. It intentionally permits an older boot
+for that connection-only historical block. Existing original-row lookup is reused
+for the outcome/current-identity checks. The host producer/dispatch and old mode
+parsers are unchanged.
+
+All 28 focused cases pass at this successor: 16 host/raw/public, 11 controller,
+and one supervised child case. New malformed public/controller variants have
+genuine policy, original success, no-current replay/cancellation, older-boot
+unknown and current-inspection positive controls. Lint passes. The earlier
+935-case full suite and package/matrix receipts retain their earlier-head
+attribution; they are not later-head qualification. The same central contract
+clarifies action admission without changing the accepted requirements or delta.
+Final-head hosted qualification and independent recheck remain required.
+
+The first correction commit `3482ce6` passed focused tests/lint but exceeded the
+unchanged production size ceiling by 96 bytes. The successor consolidates the
+same admission conditions into the existing state/shape clauses; all 28 focused
+cases and lint pass again. No whole package/peer matrix was repeated locally: the
+wire, genuine host state machine, command dispatch and resource packaging are
+unchanged, while focused genuine-result controls exercise their compatibility.
+The production build is checked because the public validator enters the renderer
+and the prior build was close to its existing size ceiling.
+
+The consolidated intermediate `8ae8669` was still 9 bytes over the ceiling. Final
+`deb5133` removes a duplicated early observation-status check: the existing final
+observed/unconfigured branch continues to reject every non-observed current kind.
+The full 28-case focused selection and lint pass at that final correction. Both
+failed build receipts are retained separately from the final build result.
+
+Production build at clean `deb5133` passes: initial total 649.99 kB under the
+unchanged 650 kB error ceiling; the 400 kB warning remains. No package rebuild or
+physical/provider execution was performed for this correction. Existing earlier
+Linux package custody remains attributed to `8bce05b` through independent review.
+Normal actual-main integration already completed at Manager `3740eea1` / Docs
+`a668b211`, with complete tree equality to those original implementation inputs.
+This correction follows those integrated heads on the same owned branches.

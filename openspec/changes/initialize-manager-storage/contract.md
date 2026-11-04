@@ -71,6 +71,13 @@ wires and fixed commands remain unchanged.
 
 ## State/identity interpretation
 
+Public admission binds results to the requested action: ready is permitted only
+for begin; begin cannot return prepared or any current kind. A nonnull current
+kind is permitted only for confirm/refresh. A begin/unknown response must match
+the reference and connection of an unknown retained row, while deliberately
+allowing its older boot identity. Genuine confirm replay/cancel responses can
+return retained prepared/unknown with null current; history is not a fresh read.
+
 - begin may return ready with a new reference/null invocation, or the existing
   same-target unknown reference/null invocation. Ready uses the current verified
   observation as target context, not a new storage observation. Pre-dispatch
