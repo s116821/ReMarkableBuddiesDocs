@@ -323,3 +323,12 @@ creates its private runtime directory and preserves it across stops so recovery
 can inspect the original lease. The installer must verify which unit PID1
 loaded before allowing takeover, including refusal when a legacy unit shadows
 the package fragment.
+
+The APK builder's resident option applies only to the ARMv7 artifact and
+requires the pinned SDK bundle. The signed metadata identifies the resident
+profile, firmware, and bundle digest. The public-key-only observer rebuilds
+the expected file inventory from the verified build input and pinned bundle.
+The resident APK and index must declare both `rm2` and
+`remarkable-os=3.28.0.172` as dependencies.
+The existing test-key output stays installation-ineligible until production
+signing and Manager's applicability and lifecycle checks are qualified.
