@@ -10,4 +10,4 @@ Renderer operation including lazy load/quiescence is bounded by fourteen seconds
 
 Optional archived settings can contain private model/endpoint/reference text. Only their presence flag is public. Archives stay on the tablet; off-device durability, restoration and native pages are separate. Host memory erasure is not promised.
 
-Independent Manager base 0f6a7a561a61bb96d5e3d22ca62151bc2916d379 includes delivered storage and test-asset repair only. No Stop source is stacked. Root reconciles the new peer into that separately owned feature later.
+Independent Manager base 0f6a7a561a61bb96d5e3d22ca62151bc2916d379 includes delivered storage and test-asset repair only. No Stop source is stacked. The delivery owner reconciles the new peer into that separately owned feature later.
