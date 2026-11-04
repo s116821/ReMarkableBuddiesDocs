@@ -459,6 +459,13 @@ support SHALL retain the ordinary Reader path and its prepared-blank fallback.
 - **AND** the companion SHALL keep a durable removal intent before sending approval and require a fresh read-only outcome check after possible dispatch
 - **AND** a disconnected or expired approval channel before dispatch SHALL decline removal
 
+#### Scenario: An approved removal is interrupted
+
+- **WHEN** the companion starts removal for the reviewed activation and exact Vellum plan
+- **THEN** it SHALL verify that the plan still matches before stopping Buddy
+- **AND** it SHALL complete stock recovery and disable Buddy startup before submitting removal
+- **AND** a later observation SHALL read the last recorded phase without submitting any command that changes device state
+
 ### Requirement: Blank-start placement uses an open, qualified Reader page
 
 An explicit blank-start request SHALL use the same resident page acquisition,
