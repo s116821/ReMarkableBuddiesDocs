@@ -347,3 +347,9 @@ transaction records possible submission before sending the request. A
 disconnect or timeout retains that uncertainty. A later observation can
 resolve the same activation without sending another stop. This preparation
 does not replace signature, package ownership, or mutation admission.
+
+Recovery preparation and reconciliation also check the installed executable,
+native profile, adapter and both service files against the reviewed recovery
+profile. Each file hash is bracketed with matching file metadata. The loaded
+service fragments must use the package paths. A legacy override therefore
+blocks preparation before a stop can be recorded.
