@@ -6,21 +6,33 @@ e33a2703680730c63792f83635dc7d91dc70049a. The v1 contract and spec delta govern
 until this option is accepted. The spent r2 recognition result remains NOT MET
 with all eight calls spent.
 
-## Request and model reply
+## Request, routing and failure precedence
 
 Use the existing exclusive stdin operation. Select v2 only with
 `"transcription_version":2,"policy":"partial-transcription"` in the same strict
-envelope, keeping the original required nullable context. The v1 envelope
-still rejects the extra key. A v2 envelope missing the policy, providing any
-other value or containing extra or duplicate fields fails before image
-admission, Store access or dispatch. Parse strict JSON once and decode the
-specific envelope. Keep the original failure precedence and report bytes for
-legacy and unrecognized envelopes. Once the complete v2 envelope and positive
-page are accepted, emit v2 reports for all subsequent outcomes. No saved
-preference, context selection or automatic caller can enable the policy.
+envelope, keeping the original required nullable context. No saved preference,
+context selection or automatic caller can enable the policy. Process the
+following checks in order. Until an envelope and positive page are admitted,
+the report has version 1, invocation=null, and no partial field.
 
-The v2 prompt and its context addendum have separate immutable revision
-strings. Do not append v2 instructions to the legacy prompt, whose base and
+| Order | Check | Outcome on refusal |
+| --- | --- | --- |
+| 1 | Input byte cap before decoding | v1 input-limit |
+| 2 | Existing strict_json pass rejects syntax, duplicate keys at any depth and trailing data | v1 invalid-input |
+| 3 | Extract an exact integer u32 version from the object without coercion | v1 invalid-input |
+| 4 | Version 2 uses the strict v2 envelope with required exact policy. Other numeric versions use the strict legacy envelope, which forbids policy. Both validate all required field types, canonical UUIDs, and page greater than zero. | v1 invalid-input, invocation=null |
+| 5 | A structurally valid legacy envelope with numeric version other than 1 | v1 invalid-version, caller invocation echoed, before image admission |
+| 6 | A structurally valid v1 or v2 envelope with positive page | Echo invocation and select report version before existing PNG, context and configuration admission |
+
+An admitted v2 report uses its required nullable partial field on every
+subsequent outcome, including invalid-image and cancellation. Keep existing
+v1 failure ordering, Store custody, and attempt rules after the envelope.
+
+## Model reply
+
+The v2 prompt and its context addendum are the pinned literals
+[prompt-partial-v2.txt](prompt-partial-v2.txt) and
+[context-instructions-partial-v2.txt](context-instructions-partial-v2.txt). Do not append v2 instructions to the legacy prompt, whose base and
 context suffix both demand whole-page abstention. Keep target last, examples
 in exact requested order, content labeled as untrusted and only one provider
 method entry. The v2 prompt asks for directly legible visible text in reading
@@ -71,14 +83,14 @@ Report overflow clears both result slots and emits the same bounded output-limit
 failure, preserving only already admitted descriptors and attempt facts. Stdout
 failure retains ownership until write/flush/error/drop and emits no second report.
 
-Proposed v2 identity pins are manifest `{"protocol":2,"pages":[PAGE]}`, profile
+V2 identity pins use the manifest `{"pages":[PAGE],"protocol":2}`, profile
 protocol 3 for both v2 context branches, prompt revisions
 `transcribe-partial-v2` and `transcribe-partial-confirmed-examples-v2`, and
 extractor prefix `notebook-ocr-partial-v2:` plus the existing canonical profile
 hash. Keep the ordered selected-context descriptor recipe. Revision-only
 selection changes extractor identity but cannot change an otherwise identical
 payload digest. Target-only source and PNG hashes do not change when policy or
-context changes. Review exact serialized identity vectors before code.
+context changes. The exact [serialized vectors](partial-v2-identity-vectors.json) are frozen for review before code.
 
 | Existing seam | Proposed boundary |
 | --- | --- |
@@ -87,6 +99,24 @@ context changes. Review exact serialized identity vectors before code.
 | `retrieval::notebook::normalize`, `normalize_admitted`, `normalize_inner`, `Response` and `Normalized` | Keep public normalizer and v1 prompt/profile/parser behavior exact. Use a private v2 entry and parser and reuse the bounded image/payload/dispatch/progress machinery where it leaves legacy bytes exact. Build a partial report type without constructing a `NotebookText`, `NormalizedDocument` or `SourceUnit` for partial. |
 | Writer supplied normalized sources, `writer::Report::PreparedExport` and `note_export::PreparedNote` | There is no implicit partial adapter, source registration, draft, cache, indexing or export hook. `result:null` and the distinct partial type prevent a partial response from satisfying the normalized input contract. No text flattening or marker substitution. |
 | `handwriting::ConfirmInput` and the existing explicit confirmation command | Captured examples stay read-only. No candidate can become a correction through this command, including partial, canceled or complete output. Existing deliberate user-confirmed sample admission remains separate. No record, schema, sync, learning or rollback change. |
+
+## V2 result and partial status matrix
+
+All v2 rows retain confirmed=false. Context and target digest are retained
+only once their existing admission completes. Failure status and exit refer
+to the actually serialized report, including output-limit fallback.
+
+| Boundary | Report status | Failure | Attempt | result | partial | Exit |
+| --- | --- | --- | --- | --- | --- | --- |
+| Complete transcribed or blank reply | normalized | null | called | NotebookText | null | 0 |
+| Strict unreadable reply | unreadable | null | called | null | null | 0 |
+| Strict partial reply | partial | null | called | null | PartialTranscription | 0 |
+| Admission or credential refusal after v2 envelope | refused, or failed for storage-unavailable | Existing fixed code | not-called | null | null | nonzero |
+| Malformed provider reply | refused | invalid-response | called | null | null | nonzero |
+| Progress refusal | canceled | canceled | Actual attempt | null | null | nonzero |
+| Provider error | failed | provider-failed | called | null | null | nonzero |
+| Report byte overflow | refused | output-limit | Original attempt | null | null | nonzero |
+| Stdout write or flush error | No second report | No new wire code | Original attempt | No second write | No second write | nonzero |
 
 ## Qualification before delivery
 

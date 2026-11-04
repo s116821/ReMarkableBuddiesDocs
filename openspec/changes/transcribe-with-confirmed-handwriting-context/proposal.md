@@ -16,3 +16,13 @@ No new persisted domain, inferred confirmation, automatic collection/application
 Keep this Docs PR open through paired Rust implementation, meaningful executed checks, independent review, canonical sync/archive and normal Docs-first delivery. This is not a planning-only merge. Broader shared integration and efficacy remain open.
 
 Source basis: current shared-handwriting requirements; delivered confirmed-handwriting-records capability; direct Source6e33bfd inspection of handwriting, existing retrieval/notebook normalization, Reader orchestration, Writer and LLMEngine; open Source PR/branch inventory found no matching correction-context work. Design choices below are proposals.
+
+## Explicit partial-transcription v2 review scope
+
+Extend this same operation only for a request with version 2 and the exact
+partial-transcription policy. Its separate prompt and result schema preserve
+visible uncertainty without making a partial report a normalized source or
+confirmation. The default notebook normalizer and v1 operation keep their
+existing wire bytes and whole-page policy. The [v2 precode](partial-v2-review.md)
+is pending implementation acceptance. The spent r2 recognition result stays
+NOT MET and no fresh provider execution is admitted by this change.

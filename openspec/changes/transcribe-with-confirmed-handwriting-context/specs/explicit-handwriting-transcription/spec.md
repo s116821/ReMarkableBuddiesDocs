@@ -12,7 +12,7 @@ The component SHALL offer a provider-independent explicitly invoked transcriptio
 - **THEN** the entire operation refuses before provider invocation and does not claim complete usable context or substitute another example.
 
 ### Requirement: Bounded model invocation preserves unconfirmed results
-The operation SHALL use a fixed transcription-only instruction, distinctly labeled example data and target-last ordering through the existing progress-aware engine. It SHALL enforce the exact versioned input/reply/report contract and resource bounds in the change contract. Exactly one provider invocation SHALL be attempted with no automatic retry/fallback. Only the existing strict page reply SHALL be accepted, distinguishing normalized text/blank from unreadability; all proposed text SHALL remain unconfirmed and distinct from learned state or improved-recognition evidence.
+The operation SHALL use a fixed transcription-only instruction, distinctly labeled example data and target-last ordering through the existing progress-aware engine. It SHALL enforce the exact versioned input/reply/report contract and resource bounds in the change contract. Exactly one provider invocation SHALL be attempted with no automatic retry/fallback. V1 SHALL accept only the existing strict page reply, distinguishing normalized text/blank from unreadability; all proposed text SHALL remain unconfirmed and distinct from learned state or improved-recognition evidence.
 
 #### Scenario: Strict normalization or unreadability
 - **WHEN** the engine returns an exact bounded valid result
@@ -46,3 +46,21 @@ Delivery SHALL include production-path Store/CLI/payload/cancellation controls a
 #### Scenario: Representative live comparison
 - **WHEN** connected cursive, technical shorthand, ambiguous writing and misleading examples are evaluated
 - **THEN** baseline/context outcomes and stable expected facts/refusals are recorded without success fishing, easier fixture replacement or a generalized accuracy/training claim.
+
+### Requirement: Explicit versioned partial transcription preserves uncertainty
+
+The proposed v2 operation SHALL require the exact version and policy pair,
+use separate pinned v2 prompt and identity bytes, and enforce the strict
+admission and outcome matrix in the v2 review contract. The default notebook
+normalizer and explicit v1 request, report, prompt and profile bytes SHALL
+remain compatible. The explicit admitted-page limit SHALL remain 4096 UTF-8
+bytes. The operation SHALL continue rejecting duplicate JSON fields before
+version routing.
+
+#### Scenario: Admitted partial reply
+- **WHEN** an explicitly opted-in v2 call returns a strict partial response with both bounded known and uncertain spans
+- **THEN** the operation SHALL return a distinct unconfirmed partial result with the exact span order and null normalized result. No automatic source, index, export, or confirmation path SHALL consume the partial result.
+
+#### Scenario: Malformed opt-in or malformed provider reply
+- **WHEN** an input cannot admit the v2 version/policy pair or a called engine returns a malformed v2 variant
+- **THEN** the operation SHALL refuse at the respective boundary, keep the applicable versioned envelope and attempt facts, and preserve no partial or normalized result.

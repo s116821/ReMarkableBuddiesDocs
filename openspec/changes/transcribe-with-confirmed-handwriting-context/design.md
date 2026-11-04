@@ -33,3 +33,24 @@ Live evidence is a separate required delivery gate: select new representative re
 
 ## Implemented admission refinement, qualification pending
 Source66 uses a narrowly named existing-store handwriting custody entry over the unchanged maintenance constructor, with typed Busy/Unavailable/Unsupported refusal. It does not invoke the initializer or clean staging/publish capabilities. Existing layouts are validated before ordinary/local-domain mode admission; selected mode remains refused. The caller keeps any acquired context owner through failure output as well as successful normalization. CLI signal polling occurs on its existing thread at progress points, with no wrapper worker. These source choices remain subject to current-head execution and independent implementation review.
+
+## Opt-in partial v2 precode
+
+The [v2 review contract](partial-v2-review.md) fixes envelope precedence and
+exclusive report slots. Use the exact UTF-8 bytes in
+[prompt-partial-v2.txt](prompt-partial-v2.txt) and
+[context-instructions-partial-v2.txt](context-instructions-partial-v2.txt).
+Neither literal ends in a line break. Keep the original default and v1
+literals in their existing paths. After the optional examples, serialize the
+manifest using the existing serde_json Value ordering, so the exact
+single-page v2 manifest is `{"pages":[7],"protocol":2}` for page 7. Keep the
+original image label and descriptor construction.
+
+Use typed Profile serialization order for the extractor hash and the
+existing Value serialization order for the exact prompt descriptor and report
+bytes. The latter sorts object keys recursively and appends one LF only to
+the final report. The response hash covers the raw provider reply bytes.
+See [offline v2 vectors](partial-v2-identity-vectors.json) for compact UTF-8
+profile, payload and report bytes, hashes, malformed-envelope controls and
+representative v1 compatibility controls. The older identity vectors remain
+unchanged. These are offline serialization vectors, not recognition fixtures.
