@@ -6,7 +6,7 @@ Describe the implemented reader answer pages contracts, initially baselined from
 ## Requirements
 
 ### Requirement: Successor navigation and identity heuristic
-After agreement, the system SHALL recapture the source and resolve one successor attempt. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract. Unsupported layouts retain the explicitly identified legacy fallback. Masked screenshot similarity at least0.999 SHALL still reject unchanged pages without a reverse swipe. Neither failure nor refusal draws source feedback.
+After agreement, the system SHALL recapture the source and resolve one successor attempt. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract. Unsupported ordinary layouts or missing portrait admission SHALL refuse before a swipe. Masked screenshot similarity at least0.999 SHALL still reject unchanged pages without a reverse swipe. Neither failure nor refusal draws source feedback.
 
 #### Scenario: End of document
 - **WHEN** the known native page order has no successor or the next-page attempt leaves the screenshot sufficiently similar to the source
@@ -14,7 +14,7 @@ After agreement, the system SHALL recapture the source and resolve one successor
 
 #### Scenario: Physical gesture and completion
 - **WHEN** navigation requires a swipe
-- **THEN** physical gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims.
+- **THEN** physical gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, and unsupported ordinary layouts refuse before emission.
 
 ### Requirement: Blank and existing answer page classification
 The classifier SHALL compare the current screenshot to white using masked grayscale similarity and classify at least 0.998 as Blank. Otherwise it SHALL compare the top 150 pixels with the cached header at threshold 0.998, classifying a match as ExistingQA and other pages as Invalid. Source: src/workflow/mod.rs is_valid_answer_page/compute_image_similarity_masked.
@@ -96,7 +96,7 @@ Reader SHALL retain distinct Selection, Transcription, Provider, NoSuccessor, In
 - **THEN** it remains untouched on success and failure, with no new feedback eligibility requirement.
 
 ### Requirement: Reusable page decisions and Q&A composition
-The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and verified completion semantics, with documented unsupported-layout timing exceptions. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
+The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and verified completion semantics. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
 
 #### Scenario: Equivalent navigation comparison
 - **WHEN** forward movement or return-to-source is verified
