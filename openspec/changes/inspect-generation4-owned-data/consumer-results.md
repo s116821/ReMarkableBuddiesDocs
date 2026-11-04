@@ -127,3 +127,30 @@ coordinated final delivery. Windows hosted results, independent final review,
 canonical sync/archive, guarded merges and actual-main/release evidence remain
 open. This source handoff does not authorize a planning-only or producer-only
 merge and does not complete the broader REM-42/MVP.
+
+## Spacing correction and delivered Docs integration
+
+Root's bounded review accepted the consumer source/contract and measured650kB
+budget; a narrow390browser image showed Unassociated feedback touching its Files
+count. Normal successor **d7c12096ec9fbe91d832ed0c8d5cf412f8a1b7a3** changes only
+this table's class and three scoped CSS rules: inter-column spacing, left/top
+alignment and nonwrapping tabular numeric cells. Exact values, protocols,
+coordination and existing table-only overflow remain unchanged. Lint, production
+build, Linux package and the existing packaged-host/UI controls pass. Corrected
+production browser and actual packaged Electron390/1280images were visually
+checked; originals remain in the handoff rather than being overwritten as history.
+
+Delivered Docs main **bd952e033a5d4636d9d4555d16dc12e994e364ff**, tree
+**74022d0779f994cb8ab55c3605c9da19bd56f853**, was supplied as a native bundle,
+verified against known68ac033 and normally merged with existingcd7ee6a as
+**c5c6f769f162947b433e58f7e8b15d47a22406c9**. The delivered host startup/history
+archive and canonical spec additions are preserved. Root's actual-main Docs
+run41806946492 passed; this is an attributed receipt, not another CI read.
+
+qualification-mapping.md prepares all eight requirements/thirteen scenarios.
+Canonical previews remain outside the repository, not synced requirements.
+Final current-head both-platform integration, correction acceptance and final
+same-change sync/archive remain open. Original Manager41806188777 Title/Checks/
+Build passed while Linux/Windows integration was still running in Root's latest
+report. Docs41806184059 passed atcd7ee6a. None of those receipts is mislabeled as
+qualification of this new spacing successor. Root retains hosted observation.
