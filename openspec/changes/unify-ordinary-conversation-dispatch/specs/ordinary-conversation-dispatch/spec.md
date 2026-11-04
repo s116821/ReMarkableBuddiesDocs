@@ -7,6 +7,14 @@ The ordinary local application SHALL route through a shared coordinator using th
 - **WHEN** a request is admitted to a different enabled buddy in the current conversation
 - **THEN** the receiver gets the unchanged request and ordered Ledger history, with bounded verified associated media and separate preset and personalization content.
 
+#### Scenario: Verified Writer visibility
+- **WHEN** the page owner confirms the exact Writer response for its current draft, operation and visit
+- **THEN** subsequent receivers see the exact response as a completed turn in the same exchange, while the original draft remains available for refinement and export.
+
+#### Scenario: Bounded notebook receiving
+- **WHEN** a fresh notebook generation or refinement is admitted against an existing ready local notebook Store
+- **THEN** the existing stage runner processes the exact selected source and history, and the reducer receives digest-bound historical image attachments within the receiving budget.
+
 #### Scenario: Refuse unresolved intent
 - **WHEN** the module, page authority, required media or requested capability is unavailable, or export intent is ambiguous
 - **THEN** dispatch refuses or requests clarification without a destination effect.

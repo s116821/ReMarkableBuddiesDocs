@@ -6,6 +6,7 @@
 - [x] Preserve request/history and resolve bounded historical media in the Reader follow-up and supplied-text Writer paths.
 - [x] Verify modeled blank start, module admission, ambiguous export, duplicate/stale operations and late Reader suppression.
 - [ ] Connect verified native composer and gesture input to typed dispatch. Keep native creation and observation with their owning capability.
-- [ ] Extend unified receiving to bounded notebook Writer phases and qualify effect and aggregate-apply gates with their owners.
+- [ ] Verify bounded notebook receiving and Writer visibility on the exact successor revision.
+- [ ] Qualify native effect, resident notebook startup and real aggregate-apply gates with their owners.
 - [x] Run the maintained combined simulator through the Windows binary and its local regression checks.
 - [ ] Record independent review and hosted validation. Sync and archive completed scope with the linked delivery.
