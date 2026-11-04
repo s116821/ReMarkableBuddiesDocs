@@ -77,3 +77,28 @@ association list.
 Buddy `66b2408736b25ed73fa2a36cb17eee3e3a218f65` passed both combined
 controls, both notebook payload tests and all 14 Writer-flow tests on
 Windows. The exact run is `14-windows-associations-final.log`.
+
+## Independent source review
+
+Root reviewed Buddy `66b2408736b25ed73fa2a36cb17eee3e3a218f65`, tree
+`e1f10dffe27c8d2b224fa8908ac1c876ae31bc32`, against delivered main
+`5e18c63edbde1b69970a6540668a0d9f08f96a90`. The earlier visibility finding
+and subsequent missing image-association finding are resolved at source level.
+The output witness pins the exact generated revision, current conversation
+root and source visit. The separate completed Writer response preserves the
+original draft for later refinement/export. Stored image associations remain
+attached to their verified content when identical bytes are deduplicated; the
+notebook reducer binds the mapping as well as the ordered attachment bytes.
+Standalone and map payloads keep their existing shape.
+
+All eleven files in the preceding successor manifest were independently
+verified by byte count and SHA-256. Its 55 Windows checks belong to `10732b3`;
+the later association correction has its own exact 18-test Windows log at
+`66b2408`. The latter includes the meaningful multi-source/shared-content
+model-input and persisted-digest controls. Earlier results are not credited
+to the later revision. Full hosted validation of the published pair is next.
+
+This review admits draft publication, not native composer/gesture integration,
+runtime activation, provider qualification or whole-feature completion. The
+change stays active with those tasks open; canonical spec sync and archival
+await completion of the actual scoped requirements.
