@@ -18,7 +18,7 @@ The application SHALL expose --configuration-schema as an exclusive read-only se
 - **THEN** argument admission refuses before either operation executes
 
 ### Requirement: Faithful object declarations and explicit validation scope
-The schema SHALL cover all thirteen current root properties and closed nested object/null/default declarations without materializing defaults. It SHALL retain absent/null/empty/partial product semantics and required children of present path objects. It SHALL describe faithful structural constraints and explicitly separate parser framing, duplicate members, lexical integers, UTF8 byte bounds, semantic constraints, filesystem/credential checks and runtime admission. It SHALL NOT silently change permissive legacy Config decoding or imply schema success activates settings.
+The schema SHALL cover all fourteen current root properties, including the closed Reader declaration and its optional selected scope, and closed nested object/null/default declarations without materializing defaults. It SHALL retain absent/null/empty/partial product semantics and required children of present path objects. It SHALL describe faithful structural constraints and explicitly separate parser framing, duplicate members, lexical integers, UTF8 byte bounds, semantic constraints, filesystem/credential checks and runtime admission. It SHALL NOT silently change permissive legacy Config decoding or imply schema success activates settings.
 
 #### Scenario: Current declaration variants
 - **WHEN** canonical object declarations omit members, use allowed null parents, contain partial supported objects or include unknown members/null product leaves
