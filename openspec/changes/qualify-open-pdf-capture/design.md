@@ -329,7 +329,9 @@ requires the pinned SDK bundle. The signed metadata identifies the resident
 profile, firmware, and bundle digest. The public-key-only observer rebuilds
 the expected file inventory from the verified build input and pinned bundle.
 The resident APK and index must declare both `rm2` and
-`remarkable-os=3.28.0.172` as dependencies.
+`remarkable-os=3.28.0.172-r0` as dependencies. Vellum registers the firmware as
+an APK package with revision `-r0`. The actual firmware and firmware metadata
+value are `3.28.0.172`.
 The existing test-key output stays installation-ineligible until production
 signing and Manager's applicability and lifecycle checks are qualified.
 
