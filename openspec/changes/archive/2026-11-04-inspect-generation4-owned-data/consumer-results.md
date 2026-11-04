@@ -173,3 +173,56 @@ performed no duplicate hosted observation or local matrix run. Source remains
 frozen atd7c1209. Qualification mapping is updated, but canonical sync/archive
 has not occurred and waits for the final Windows receipt. Root owns the separate
 Buddy116 normal resync preserving producer bodies and final revision reconciliation.
+
+## Accepted consumer qualification and final specification closeout
+
+Root's current-head Manager **d7c12096ec9fbe91d832ed0c8d5cf412f8a1b7a3**
+[run41809761997](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41809761997)
+is now fully successful: Title,Checks,Build,Ubuntu and Windows integration.
+PR Release correctly skips. This supersedes the earlier pending-Windows
+checkpoint only; previous failures and older heads keep their original results.
+Root independently accepted the source/contract, explicit650kB hard budget and
+all four corrected narrow/wide browser/Electron images. No local matrix was
+repeated and Manager source remains frozen.
+
+Root normally integrated/published Buddy116 at
+**923551fc769e6298fe5b9116692b28010f45471b**, tree
+**c9de37e2e6c37b005ccdc95a7bb63c9fbc0e0d54**, preserving all eight nonoverlapping
+producer bodies and reviewing the sole src/main.rs composition. Current producer
+[run41813734745](https://github.com/s116821/ReMarkableBuddies/actions/runs/41813734745)
+remains **pending**. Earlier accepted2d7d8e9 qualification is not credited as a
+passed current-resync run. Producer source and hosted observation are Root-owned.
+
+The accepted implementation/specification lifecycle is synced for only
+manager-owned-data-inspection and generation4-owned-data-inspection and archived
+as2026-11-04-inspect-generation4-owned-data in this existing Docs125 delivery.
+The archive preserves original proposal/design/raw contract/schema/vectors and
+producer delta bytes, rather than rewriting historical precode claims. The final
+qualification mapping pins all eight requirements/thirteen scenarios, exact heads,
+software-fixture limits and remaining delivery gates. Previous Manager canonical
+requirements remain unchanged.
+
+All own implementation/spec preparation tasks are complete. The qualification
+task explicitly separates accepted producer-body/current-consumer evidence from
+Root's still-pending resynced-producer and final archived-Docs CI. No required CI
+is waived. Root retains final source/archive CI observation, independent final
+revision reconciliation, coordinated guarded triple merges and actual-main/
+release verification. The archive does not claim a merged triple, official
+release, whole REM-42/MVP or physical tablet/native/provider qualification.
+
+## Scoped generated-output retirement
+
+After accepted source/UI review and full current-head both-OS consumer success,
+the local developer package had no active qualification purpose. SCRAPPY verified
+itsd7c1209identity and executable/app.asar hashes, checked exact resolved owned
+paths and active processes, and retired only Manager **out**, **dist**,
+**.angular** and **test-results/development**. Removed305,303,556logical bytes;
+measured affected-filesystem free-space delta+305,995,776bytes. Concurrent activity
+and allocation can make the measured delta differ from logical sizes.
+
+Source/lockfiles/history, native bundles, original failure logs, prior and corrected
+screenshots and their compact packets were rehashed/preserved. Installed
+Node/Electron/Chromium/Xvfb and existing tool dependencies were left unchanged.
+No shared/denied cache, tablet, provider, resource or settings operation occurred.
+Producer resync and final archive delivery gates need no retained local app binary.
+The final handoff includes the exact retirement/preservation receipt.
