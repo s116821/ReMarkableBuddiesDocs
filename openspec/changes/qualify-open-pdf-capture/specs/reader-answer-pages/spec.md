@@ -472,6 +472,12 @@ support SHALL retain the ordinary Reader path and its prepared-blank fallback.
 - **THEN** it SHALL verify the RM2 firmware, current exact package owner and staged package and index before solving against that local repository
 - **AND** it SHALL require exactly one transition from the installed revision to the approved revision and verify the candidate, package database and world are unchanged across the preview
 
+#### Scenario: The companion applies a reviewed resident revision change
+
+- **WHEN** the exact reviewed replacement follows verified stock recovery and Buddy disable
+- **THEN** the companion SHALL recheck the sole transition and retained recovery while Vellum holds the package lock
+- **AND** it SHALL record the intent before dispatch and reconcile the approved new owner, package files, stock processes and other world entries without replay
+
 #### Scenario: An approved removal is interrupted
 
 - **WHEN** the companion starts removal for the reviewed activation and exact Vellum plan
