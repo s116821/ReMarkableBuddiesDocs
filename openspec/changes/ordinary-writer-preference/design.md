@@ -20,3 +20,6 @@ preference is absent from the JSON request/history, and that refinement keeps
 the earlier source, request and draft. The test proves prompt construction,
 not model adherence. Existing notebook stage digests and prompt contracts
 remain separate.
+
+The [live Writer receiving gate](live-plan.md) is required for this prompt
+change before merge, sync or archival. The local fixture does not satisfy it.
