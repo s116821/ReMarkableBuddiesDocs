@@ -11,6 +11,10 @@ The ordinary local application SHALL route through a shared coordinator using th
 - **WHEN** the page owner confirms the exact Writer response for its current draft, operation and visit
 - **THEN** subsequent receivers see the exact response as a completed turn in the same exchange, while the original draft remains available for refinement and export.
 
+#### Scenario: Shared historical image bytes
+- **WHEN** multiple historical sources use identical verified PNG bytes
+- **THEN** the receiving payload carries one attachment and retains each ordered source and ordinal association with its dimensions, attachment index and content digest.
+
 #### Scenario: Bounded notebook receiving
 - **WHEN** a fresh notebook generation or refinement is admitted against an existing ready local notebook Store
 - **THEN** the existing stage runner processes the exact selected source and history, and the reducer receives digest-bound historical image attachments within the receiving budget.

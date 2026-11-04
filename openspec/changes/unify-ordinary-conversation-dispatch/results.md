@@ -63,3 +63,17 @@ refusal and byte-identical `CURRENT` without automatic repair.
 The modeled page-owner receipt and scripted destination qualify host behavior.
 Native input, page/composer effects, new gestures, real aggregate application,
 live-model behavior and hosted checks remain open.
+
+## Historical attachment associations
+
+The maintained combined fixture seeds a two-image capture and a separate
+source that shares the first PNG. It checks the source IDs, ordinals,
+dimensions, content hashes and attachment positions in both receiving buddies.
+It checks the notebook reducer's persisted input digest against the actual
+model-facing parts and verifies that changing association order or assignment
+changes that digest. The notebook map contains neither PNG attachments nor the
+association list.
+
+Buddy `66b2408736b25ed73fa2a36cb17eee3e3a218f65` passed both combined
+controls, both notebook payload tests and all 14 Writer-flow tests on
+Windows. The exact run is `14-windows-associations-final.log`.

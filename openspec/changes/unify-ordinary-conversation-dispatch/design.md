@@ -18,6 +18,13 @@ Serialize cancellation, model completion and effect admission through the same o
 
 ## Verification and limits
 
+Receiving payloads label each historical PNG with its source ID, ordinal,
+dimensions, zero-based attachment index and original content SHA-256. Identical
+bytes share one attachment and retain each source association. At most 256
+associations accompany the existing 12-attachment and 16 MiB limits. Notebook
+reduction binds the ordered association list and attachment digests in its
+input. Notebook maps and standalone payloads keep their existing shape.
+
 Run a maintained combined simulator scenario using one Store and the same dispatcher as ordinary local startup. Exercise real receiving inputs, retained image identity, late and duplicate events, cancellation and synthetic aggregate replacement. Keep native page/composer/gesture and live selected sync acceptance open.
 
 | Existing input | Product dispatch treatment |
