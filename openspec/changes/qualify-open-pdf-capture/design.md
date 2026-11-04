@@ -310,3 +310,16 @@ are verified. The stock path remains available on unsupported configurations.
 The tablet runs so far used a manually staged service and pinned SDK bundle.
 They establish the behavior the signed package must reproduce. The production
 build, package ownership, and installed lifecycle require separate evidence.
+
+The RM2 package keeps one executable, the recovery profile, and the native
+adapter in `/home/root/.local/lib/remarkable-buddies`. The development RM2
+root filesystem had about 10 MiB free, below the 32 MiB executable size.
+Only the two small service fragments belong in `/usr/lib/systemd/system`.
+The signed APK builder and verifier must use this home-backed payload for the
+RM2 resident variant. Profile version 6
+selects those fixed paths. Existing profile versions keep their original paths.
+Simultaneous package and legacy recovery profiles refuse activation. The service
+creates its private runtime directory and preserves it across stops so recovery
+can inspect the original lease. The installer must verify which unit PID1
+loaded before allowing takeover, including refusal when a legacy unit shadows
+the package fragment.
