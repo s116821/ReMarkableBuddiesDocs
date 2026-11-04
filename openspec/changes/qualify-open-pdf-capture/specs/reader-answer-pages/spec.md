@@ -446,6 +446,13 @@ keep the resident recovery helper and its prerequisites available until stock
 Reader and sync recovery is verified. Devices without approved resident
 support SHALL retain the ordinary Reader path and its prepared-blank fallback.
 
+#### Scenario: The resident package is independently verified
+
+- **WHEN** the public-key observer verifies the RM2 package and its signed index
+- **THEN** it SHALL compare the signed index with one freshly generated from the exact verified APKs without a signing key
+- **AND** its evidence SHALL bind the exact package revision and file digest to the recovery profile digest, source, SDK and target firmware
+- **AND** a test-key observation SHALL remain ineligible for installation
+
 #### Scenario: The installed package is upgraded or removed
 
 - **WHEN** the user requests an upgrade or removal while Buddy owns the resident Reader
