@@ -47,10 +47,15 @@ an in-range, unique redirect to the original PDF. Require the corresponding
 PDF file and a fresh capture of the exact native page. Read the saved RMv6
 annotation scene if present. A known zero-text annotation scene or no
 annotation file is admissible only after the original redirect is established.
-An inserted PDF note with no redirect is a distinct case and is never
-recognized as an original PDF page. Typed or unknown annotations, duplicate
-redirects, and changed saved assets refuse. Other viewports and legacy
-adoption require separate evidence.
+Typed or unknown annotations, duplicate redirects, and changed saved assets
+refuse. Other viewports and legacy adoption require separate evidence.
+
+The installed path also recognizes a handwritten stock PDF note page in the
+same portrait best-fit layout. Require an unredirected, untemplated record in
+the exact live order, at least one valid original-page redirect, stable backing
+PDF bytes, and a stable supported no-text scene for the note. The fresh capture
+must show visible body marks and a clear heading area. Blank, typed, and
+unfamiliar inserted notes remain unresolved.
 
 ## Explicit installed adoption of an adjacent answer page
 
