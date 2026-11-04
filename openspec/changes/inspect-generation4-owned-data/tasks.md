@@ -12,10 +12,10 @@
 - [x] Cover real CLI flag composition, read-only/no-startup/no-secret behavior, bounded serialization and unchanged legacy controls.
 
 ## 3. Both Manager hosts
-- [ ] Obtain independent acceptance of concrete consumer-design.md and the consumer-specific delta before implementation.
-- [ ] Add exact report3 request/parser/type/reduction branches with raw framing/duplicate/lexical integer checks; preserve report1/2.
-- [ ] Wire the fixed v3 CLI through browser helper and Electron main/preload under existing verified observation/custody/cancellation paths.
-- [ ] Implement shared honest observed-versus-empty UI, nonadditive notebook metadata labels, unavailable/partial/unsupported states and manual compatibility path.
+- [x] Obtain independent acceptance of concrete consumer-design.md and the consumer-specific delta before implementation.
+- [x] Add exact report3 request/parser/type/reduction branches with raw framing/duplicate/lexical integer checks; preserve report1/2.
+- [x] Wire the fixed v3 CLI through browser helper and Electron main/preload under existing verified observation/custody/cancellation paths.
+- [x] Implement shared honest observed-versus-empty UI, nonadditive notebook metadata labels, unavailable/partial/unsupported states and manual compatibility path.
 - [ ] Enumerate actual current maintenance/observation peers and qualify all real reciprocal Busy/stale/cancellation controls without guessed counts.
 
 ## 4. Verification and delivery
@@ -25,3 +25,5 @@
 - [ ] Verify actual browser/Electron UI and retained Linux/Windows packages with meaningful fixture cases; distinguish fixture transport from tablet evidence.
 - [ ] Freeze exact component/spec hashes, obtain independent review and required current-head local/hosted checks without duplicate builds.
 - [ ] Sync only these named canonical requirements, archive the completed change and prepare coordinated normal delivery with actual-main/release observation separate.
+
+Early consumer precode acceptance: Root independently accepted Docs fad76c8 on November 4, 2026. Implementation and qualification remain outstanding below their own tasks.

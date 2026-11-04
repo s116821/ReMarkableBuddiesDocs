@@ -175,3 +175,7 @@ and dependencies, sync only both named capabilities, archive the completed chang
 once producer and both consumers qualify, and use coordinated guarded delivery.
 Actual-main/release observation stays separate. No producer-only or planning-only
 merge is requested.
+
+## Implementation budget note
+
+The explicit new raw/public validation and shared UI measured approximately632.5kB of initial production assets. Manager retains its400kB warning and raises only the initial hard ceiling from625kB to650kB for this feature. The threshold change is part of the reviewable Manager diff; it does not disable the build gate or imply a responsiveness result.
