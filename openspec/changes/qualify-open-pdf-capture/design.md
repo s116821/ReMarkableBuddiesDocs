@@ -340,3 +340,10 @@ the original package profile is still present, Buddy and the helper have
 stopped, and both stock processes are running. A missing lease alone cannot
 authorize a package transition. The observation stays separate from package
 ownership, operator consent, and the actual update or removal command.
+
+The host rechecks the reviewed activation and package profile on the same
+verified wired connection before sending one nonblocking Buddy stop. The
+transaction records possible submission before sending the request. A
+disconnect or timeout retains that uncertainty. A later observation can
+resolve the same activation without sending another stop. This preparation
+does not replace signature, package ownership, or mutation admission.
