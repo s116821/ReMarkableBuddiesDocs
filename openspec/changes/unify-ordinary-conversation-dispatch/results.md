@@ -28,3 +28,38 @@ live model behavior, real aggregate activation and hosted checks remain open.
 Logs are retained under `work/rem39-unified-conversation-evidence` in the
 development workspace. `03-windows-exact.log` identifies the tested code
 revision. The Windows Cargo target belongs to the shared existing build cache.
+
+## Writer handoff successor
+
+Buddy `10732b30fc9457e172c27e5deb97e8c049c7c06c`, tree
+`85223fa5896718dc23f0d06b26cfb64556faac61`, passed 2 combined controls,
+22 notebook tests, 14 Writer-flow tests and 17 Reader runtime CLI tests on
+Windows. The actual combined CLI reported three inline-path model calls,
+three notebook-path model calls, one blank start and one scripted write.
+The authoritative log is `10-windows-final.log`. Earlier runs remain separate.
+
+The successor reconciles the delivered notebook archive revisions
+`5e18c63edbde1b69970a6540668a0d9f08f96a90` in Buddy and
+`3fa30982e55d8405cfdb28d2823a8deb0e024f81` in Docs. The archive change and
+canonical requirements are preserved.
+
+The combined fixture now requires the third Reader's exact input history to
+include the verified Writer response as well as the earlier Reader response.
+The Writer receipt is checked against the exact draft revision, response text,
+operation, source visit and conversation heads. Mismatched text, a departed
+visit and stale heads refuse. The original generated draft remains usable for
+the explicit scripted export. Missing PNG bytes and a history over the image
+count limit each refuse before model invocation.
+
+The maintained CLI also runs the bounded notebook route on a separately
+prepared fixture Store. It checks map and reduction inputs, reducer-only PNG
+attachment and digest binding, the subsequent Reader's exact notebook response
+history, consumed-operation refusal and canceled refinement before reduction.
+The startup integration test exercises the production ordinary startup and
+Store admission helpers, retains the ready generation and blocks a sync mode
+change while the dispatcher holds its lease. It then verifies missing-marker
+refusal and byte-identical `CURRENT` without automatic repair.
+
+The modeled page-owner receipt and scripted destination qualify host behavior.
+Native input, page/composer effects, new gestures, real aggregate application,
+live-model behavior and hosted checks remain open.
