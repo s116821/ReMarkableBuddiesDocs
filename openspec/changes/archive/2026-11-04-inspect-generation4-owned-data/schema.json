@@ -1,0 +1,647 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:remarkable-buddies:owned-data-report:3",
+  "title": "Proposed separate owned-data report3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_version",
+    "status",
+    "owner_actor",
+    "current_generation",
+    "observed_files",
+    "observed_apparent_bytes",
+    "complete_apparent_bytes",
+    "storage",
+    "observed_domains",
+    "domain_accounting_complete",
+    "cache_inspected",
+    "shared_media_files",
+    "shared_media_apparent_bytes",
+    "issues",
+    "byte_basis",
+    "reference_totals_additive",
+    "media_content_verified",
+    "logical_liveness_evaluated",
+    "credentials_inspected",
+    "native_documents_inspected",
+    "lease_identity_check",
+    "excluded_scopes",
+    "current_generation_format",
+    "retained_generation_formats",
+    "observed_notebook_records",
+    "notebook_record_totals_additive"
+  ],
+  "properties": {
+    "report_version": {
+      "const": 3
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "unavailable",
+        "unsupported",
+        "busy"
+      ]
+    },
+    "owner_actor": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^(?!00000000-0000-0000-0000-000000000000$)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+          "minLength": 36,
+          "maxLength": 36
+        }
+      ]
+    },
+    "current_generation": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^(?!00000000-0000-0000-0000-000000000000$)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+          "minLength": 36,
+          "maxLength": 36
+        }
+      ]
+    },
+    "current_generation_format": {
+      "enum": [
+        null,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "retained_generation_formats": {
+      "type": "array",
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "observed_files": {
+      "$ref": "#/$defs/counter"
+    },
+    "observed_apparent_bytes": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/counter"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "complete_apparent_bytes": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/counter"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "shared_media_files": {
+      "$ref": "#/$defs/counter"
+    },
+    "shared_media_apparent_bytes": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/counter"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "storage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "structural": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "record-metadata": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "media-object": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "unclassified-object": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "retained-generation": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "cache": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "diagnostics": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "staging": {
+          "$ref": "#/$defs/fileUsage"
+        }
+      }
+    },
+    "observed_domains": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "conversation": {
+          "$ref": "#/$defs/domainUsage"
+        },
+        "source": {
+          "$ref": "#/$defs/domainUsage"
+        },
+        "export-association": {
+          "$ref": "#/$defs/domainUsage"
+        },
+        "subject-memory": {
+          "$ref": "#/$defs/domainUsage"
+        },
+        "handwriting": {
+          "$ref": "#/$defs/domainUsage"
+        },
+        "unassociated-feedback": {
+          "$ref": "#/$defs/domainUsage"
+        }
+      }
+    },
+    "observed_notebook_records": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "archived-normalized-source": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "notebook-plan": {
+          "$ref": "#/$defs/fileUsage"
+        },
+        "notebook-stage": {
+          "$ref": "#/$defs/fileUsage"
+        }
+      }
+    },
+    "issues": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "configuration-unavailable": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "invalid-paths": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "missing-owner": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "invalid-owner": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "missing-current": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "missing-lock": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "busy-writer": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "lock-unavailable": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "lock-unsupported": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "lease-identity-changed": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unsupported-generation": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "missing-entry": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unreadable-entry": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unsafe-entry": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unexpected-entry": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "entry-limit": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "metadata-limit": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "byte-count-overflow": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "invalid-metadata": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "invalid-reference": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "missing-object": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "uninspected-reference": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "omitted-media": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "size-mismatch": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "inconsistent-reference": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "state-changed": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "state-unverifiable": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "cache-unavailable": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "cache-owner-mismatch": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unsupported-platform": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "report-limit": {
+          "$ref": "#/$defs/positiveCounter"
+        },
+        "unclassified-object": {
+          "$ref": "#/$defs/positiveCounter"
+        }
+      }
+    },
+    "byte_basis": {
+      "const": "apparent-file-length-per-owned-path; data-and-cache-only; no-allocated-or-reclaimable-claim"
+    },
+    "lease_identity_check": {
+      "enum": [
+        "device-inode",
+        "unavailable"
+      ]
+    },
+    "excluded_scopes": {
+      "const": [
+        "credentials",
+        "native-documents",
+        "legacy-cache",
+        "external-transient-diagnostics"
+      ]
+    },
+    "domain_accounting_complete": {
+      "type": "boolean"
+    },
+    "cache_inspected": {
+      "type": "boolean"
+    },
+    "reference_totals_additive": {
+      "const": false
+    },
+    "notebook_record_totals_additive": {
+      "const": false
+    },
+    "media_content_verified": {
+      "const": false
+    },
+    "logical_liveness_evaluated": {
+      "const": false
+    },
+    "credentials_inspected": {
+      "const": false
+    },
+    "native_documents_inspected": {
+      "const": false
+    }
+  },
+  "$defs": {
+    "counter": {
+      "type": "string",
+      "pattern": "^(?:0|[1-9][0-9]*)(?![\\s\\S])",
+      "maxLength": 20,
+      "description": "Canonical unsigned decimal, semantic maximum18446744073709551615; never Number-coerce"
+    },
+    "positiveCounter": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*(?![\\s\\S])",
+      "maxLength": 20,
+      "description": "Canonical unsigned decimal, semantic maximum18446744073709551615; never Number-coerce"
+    },
+    "fileUsage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "apparent_bytes"
+      ],
+      "properties": {
+        "files": {
+          "$ref": "#/$defs/counter"
+        },
+        "apparent_bytes": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/counter"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "domainUsage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_record_files",
+        "observed_record_bytes",
+        "declared_media_bytes",
+        "present_referenced_media_bytes",
+        "missing_references",
+        "uninspected_references",
+        "size_mismatched_references",
+        "omitted_references"
+      ],
+      "properties": {
+        "observed_record_files": {
+          "$ref": "#/$defs/counter"
+        },
+        "observed_record_bytes": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/counter"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "declared_media_bytes": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/counter"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "present_referenced_media_bytes": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/counter"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_references": {
+          "$ref": "#/$defs/counter"
+        },
+        "uninspected_references": {
+          "$ref": "#/$defs/counter"
+        },
+        "size_mismatched_references": {
+          "$ref": "#/$defs/counter"
+        },
+        "omitted_references": {
+          "$ref": "#/$defs/counter"
+        }
+      }
+    },
+    "knownFileUsage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "apparent_bytes"
+      ],
+      "properties": {
+        "files": {
+          "$ref": "#/$defs/counter"
+        },
+        "apparent_bytes": {
+          "$ref": "#/$defs/counter"
+        }
+      }
+    },
+    "knownDomainUsage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_record_files",
+        "observed_record_bytes",
+        "declared_media_bytes",
+        "present_referenced_media_bytes",
+        "missing_references",
+        "uninspected_references",
+        "size_mismatched_references",
+        "omitted_references"
+      ],
+      "properties": {
+        "observed_record_files": {
+          "$ref": "#/$defs/counter"
+        },
+        "observed_record_bytes": {
+          "$ref": "#/$defs/counter"
+        },
+        "declared_media_bytes": {
+          "$ref": "#/$defs/counter"
+        },
+        "present_referenced_media_bytes": {
+          "$ref": "#/$defs/counter"
+        },
+        "missing_references": {
+          "const": "0"
+        },
+        "uninspected_references": {
+          "const": "0"
+        },
+        "size_mismatched_references": {
+          "const": "0"
+        },
+        "omitted_references": {
+          "const": "0"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "complete"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "complete_apparent_bytes": {
+            "$ref": "#/$defs/counter"
+          },
+          "observed_apparent_bytes": {
+            "$ref": "#/$defs/counter"
+          },
+          "domain_accounting_complete": {
+            "const": true
+          },
+          "cache_inspected": {
+            "const": true
+          },
+          "lease_identity_check": {
+            "const": "device-inode"
+          },
+          "issues": {
+            "maxProperties": 0
+          },
+          "storage": {
+            "required": [
+              "structural",
+              "record-metadata",
+              "media-object",
+              "unclassified-object",
+              "retained-generation",
+              "cache",
+              "diagnostics",
+              "staging"
+            ],
+            "properties": {
+              "structural": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "record-metadata": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "media-object": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "unclassified-object": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "retained-generation": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "cache": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "diagnostics": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "staging": {
+                "$ref": "#/$defs/knownFileUsage"
+              }
+            }
+          },
+          "observed_domains": {
+            "required": [
+              "conversation",
+              "source",
+              "export-association",
+              "subject-memory",
+              "handwriting",
+              "unassociated-feedback"
+            ],
+            "properties": {
+              "conversation": {
+                "$ref": "#/$defs/knownDomainUsage"
+              },
+              "source": {
+                "$ref": "#/$defs/knownDomainUsage"
+              },
+              "export-association": {
+                "$ref": "#/$defs/knownDomainUsage"
+              },
+              "subject-memory": {
+                "$ref": "#/$defs/knownDomainUsage"
+              },
+              "handwriting": {
+                "$ref": "#/$defs/knownDomainUsage"
+              },
+              "unassociated-feedback": {
+                "$ref": "#/$defs/knownDomainUsage"
+              }
+            }
+          },
+          "observed_notebook_records": {
+            "required": [
+              "archived-normalized-source",
+              "notebook-plan",
+              "notebook-stage"
+            ],
+            "properties": {
+              "archived-normalized-source": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "notebook-plan": {
+                "$ref": "#/$defs/knownFileUsage"
+              },
+              "notebook-stage": {
+                "$ref": "#/$defs/knownFileUsage"
+              }
+            }
+          },
+          "owner_actor": {
+            "type": "string",
+            "pattern": "^(?!00000000-0000-0000-0000-000000000000$)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "current_generation": {
+            "type": "string",
+            "pattern": "^(?!00000000-0000-0000-0000-000000000000$)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "current_generation_format": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "shared_media_apparent_bytes": {
+            "$ref": "#/$defs/counter"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "complete_apparent_bytes": {
+            "type": "null"
+          },
+          "domain_accounting_complete": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}
