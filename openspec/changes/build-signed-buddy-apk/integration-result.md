@@ -74,3 +74,30 @@ marker task1.3a; broader1.3 and all package reproducibility/SDK-consuming builds
 signed negatives, production trust, release integration and physical lifecycle
 tasks remain open. Normal source CI does not produce qualified signed APK input
 or replace the historical r5 evidence. The active change stays unarchived.
+
+
+## Isolated real-Git host fixture
+
+Source `3f0a10a3e62f364f14225200d5eed5281103d3dc` normally integrates
+main `b008027b378f8f06422c17d5e58ed7bb041e402b` and changes only test
+placement and its CI invocation. Production Git admission remains unchanged.
+The real-Git source method is preserved byte-for-byte in
+`cicd/release/integration/test_apk_source_git.py`; the 57 ordinary host cases
+remain in their original discovery stage. The additional CI stage runs that
+single integration case using official Python 3.12 Bookworm, pinned to the
+Linux AMD64 image digest `034c3e9d991f148d14c32ff8350286b91420baca7757d37819c7a9cc771317a0`.
+Only release test code is mounted read-only. The test creates its own temporary
+repository under bounded writable `/tmp`, with no network, daemon socket,
+credentials or application source input. It does not modify Git configuration
+or weaken ownership, raw-byte, index, mode or dirty-state assertions.
+
+This isolates synthetic fixture prerequisites from the CI runner's ambient
+Git trust configuration. Both earlier hosted failures remain attributable to
+runs [41814819566](https://github.com/s116821/ReMarkableBuddies/actions/runs/41814819566)
+and [41817324112](https://github.com/s116821/ReMarkableBuddies/actions/runs/41817324112);
+they do not establish the configuration entry's runtime origin. Independent
+discovery found one integration case and 57 host cases without import errors.
+The moved case passed locally on Windows in 16.203 seconds before the
+nonoverlapping main integration. Current Linux container execution and final
+hosted checks remain pending. This source-test environment does not qualify
+an actual SDK-consuming source build, package, signature or installation.
