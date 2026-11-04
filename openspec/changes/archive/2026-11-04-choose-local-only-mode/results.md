@@ -1,7 +1,10 @@
-# Qualification checkpoint
+# Local-only mode choice qualification
 
-This change remains active. Independent review, required hosted qualification,
-canonical sync/archive and coordinated delivery are pending.
+The bounded implementation is qualified at Manager `abbd61a` after independent
+review and both-OS hosted checks. This document preserves earlier checkpoints at
+their actual inputs. The final section records completed specification sync and
+archival on 2026-11-04; guarded merges and actual-main/release verification remain
+the coordinating agent's next actions.
 
 ## Review and copy successor
 
@@ -29,9 +32,9 @@ and separate screenshot names adapt the replay. Ready390/1280 and unconfirmed
 screenshots were read: text wraps, confirmation is visible and internal epoch,
 token/receipt and host-lifetime terminology is absent. No new tests merely compare
 the replacement wording. The earlier full850, Linux package and cross-host results
-below belong to `f9b30c1`; required hosted source/package qualification must run
-the successor. Final copy review, hosted checks and complete sync/archive remain
-open in this paired delivery; no planning-only merge is requested.
+below belong to `f9b30c1` and did not qualify the successor. The final hosted
+qualification below records the subsequent accepted successor checks. No
+planning-only merge is requested.
 
 ## Hosted closed-surface correction
 
@@ -56,9 +59,79 @@ the retained Linux package archive and match exactly; the package still identifi
 the earlier development sourcef9. This is bounded existing wired-state/API-surface
 validation against identical bridge/runtime bytes, not a new407/abbd application
 build or successor UI/package qualification. The affected retained-package test
-also passes with strict API equality and all existing guards intact. Hosted
-successor qualification, final review and
-canonical sync/archive remain open.
+also passes with strict API equality and all existing guards intact. These local
+checks did not qualify the successor build; the subsequent hosted qualification
+is recorded below.
+
+## Final hosted qualification and review
+
+[Manager PR53](https://github.com/s116821/ReMarkableBuddiesManager/pull/53) source
+`abbd61a9fc9a8cfa04f60fe4b3bbb8116b381b18` passed the complete
+[run41036508484](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/41036508484):
+Title123998546461, Checks123998623380, Build123999438704,
+Linux Integration124000058468 and Windows Integration124000058322 all succeeded.
+PR Release was correctly skipped. The coordinator observed these exact hosted
+results and accepted final source, product copy and the closed-surface correction.
+These results supersede the earlier pending status without relabeling any old run.
+
+The original4079 run41034425114 failed on both operating systems at the same
+missing expected API key. Preserved Ubuntu log SHA256 is
+`8e1bbbfd897dbbd599a4e0937a5201eab6dcf51f75223a6ad8b08b3015e09805`;
+Windows log SHA256 is
+`13ce389b3b4aa4d864db9bfe7024dd61a6cd3e61ff6d900cd6b62e1e60637292`.
+The normal successor changes only the explicit expected list; equality and guards
+remain strict. Neither old failure is treated as a successful or unchanged retry.
+
+[Docs PR126](https://github.com/s116821/ReMarkableBuddiesDocs/pull/126) at
+`77800412f5929a13ada7b97c9b06e9683dfb551e` passed all three hosted checks in
+[run41036555062](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/41036555062).
+Its final archive successor still needs its own exact hosted Docs checks before
+merge. The coordinating agent owns publication, final paired review, guarded merge
+order and actual-main/release observation; no official Local-only release is
+claimed by these PR results.
+
+## Requirement and scenario verification
+
+- Deliberate existing-Store choice: both real companion UI flows exercise fresh
+  review then one save; known missing/Busy/stale and unsupported producer cases
+  remain refusals. The old inspection parser/transport/controller stay unchanged.
+- Private original authority: exact-intent/fingerprint/current-historical controls,
+  twelve sanitized report fixtures and malformed/framing/privacy controls qualify
+  the reduced protocol. Same-valued saves have distinct epochs without exposing
+  internal identifiers in visible product copy;120s expiry and8-record capacity
+  remain covered.
+- One dispatch/uncertainty: duplicate and queued confirmations, failed/incomplete
+  output including unsupported after possible dispatch, cancellation and delayed
+  success preserve original unknown state with no automatic replay/rebase.
+- Separate current observation: reload retains the host records, fixed inspect
+  shows saved metadata without resolving an unconfirmed change, and the UI keeps
+  another change blocked for that target. Process restart is not reconciliation.
+- Ownership/staleness: actual coordinator interactions and49 Busy/49 incoming/
+  16 outgoing App controls cover peer admission; same-ID refresh, foreign boot,
+  hidden/pagehide, expiry and late replies cannot restore revoked authority or
+  release another invocation. Hosted source and retained packages qualify both
+  Manager host operating systems.
+
+Completeness/correctness/coherence review has no remaining bounded implementation
+finding. Evidence stays synthetic below the real host/controller/UI boundary;
+producer-source relationships are not device/provider execution. No tablet,
+cloud/provider, service/runtime/native, data conversion or installed-release
+compatibility qualification is implied. Wider owned-data/sync/runtime work remains
+unfinished and separate.
+
+## Specification sync and coordinated archive
+
+Canonical `manager-local-only-mode-choice` contains exactly the accepted five
+requirements and eight scenarios. Proposal, design, delta and change metadata are
+preserved byte-for-byte in the dated archive. Only this change is archived; other
+tracked files and active changes remain unchanged, including the separately owned
+generation4 producer/consumer work. The same Docs PR carries the full completed
+spec lifecycle and the paired Manager implementation; this is not a planning-only
+merge. Required final local Docs/guidance validation and the exact archive-successor
+identity are pinned in the review handoff/PR discussion. The coordinated merge
+order is completed Docs126 first, then the already qualified Manager53; the
+coordinator verifies current checks/review before each guarded squash and observes
+actual main/release separately. No merge or release is asserted by task completion.
 
 ## Exact implementation
 
@@ -98,7 +171,8 @@ unchanged. Proposal/design/delta are at Docs `27e08552559fb8f991f5e3fb7503f82419
 - Existing product-maintenance regression passes both browser and Electron:
   240 invalidation/240 Busy directions with predecessor210 preserved, the original
   46 incoming/15 outgoing product App assertions, queued-Begin and four held
-  observation/quiescence cases. Hosted Windows qualification remains pending.
+  observation/quiescence cases. These local f9 results did not qualify Windows;
+  the subsequent abbd hosted results above cover both operating systems.
 
 ## Preserved findings
 
@@ -119,6 +193,6 @@ derivatives, not original receipt bytes or integrity authority. The fixed lower
 transport/producer is synthetic in host/UI controls. Current producer source/tests
 define selected preservation and post-commit/prefix uncertainty; these were read,
 not executed again. No physical tablet, provider/cloud, service control, native
-runtime or installed-release compatibility was exercised. Windows source/package
-qualification and required CI remain hosted gates; final review and both actual
-main/release outcomes remain separate coordinated work.
+runtime or installed-release compatibility was exercised. Source/package qualification and required CI for
+both host operating systems subsequently passed at abbd as recorded above.
+Actual main/release outcomes remain separate coordinated work.

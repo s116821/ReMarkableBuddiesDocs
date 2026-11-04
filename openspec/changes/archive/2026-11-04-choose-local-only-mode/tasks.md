@@ -14,11 +14,11 @@
 
 - [x] 3.1 Verify parser/receipt/fingerprint, malformed framing, privacy and transport controls.
 - [x] 3.2 Verify ownership, duplicate/queued dispatch, cancellation, same-ID refresh, late output, expiry/capacity and retained unknown/current observation.
-- [ ] 3.3 Verify actual browser/Electron source and retained-package UI, build/type/lint and required CI; record exact source and limitations.
-- [ ] 3.4 Complete independent implementation review and resolve findings.
+- [x] 3.3 Verify actual browser/Electron source and retained-package UI, build/type/lint and required CI; record exact source and limitations.
+- [x] 3.4 Complete independent implementation review and resolve findings.
 
 ## 4. Coordinated completion
 
-- [ ] 4.1 Sync only the completed canonical capability and validate all specs strictly.
-- [ ] 4.2 Archive this completed change, preserving unrelated active work.
-- [ ] 4.3 Deliver paired Docs/Manager PRs with exact revisions, evidence and merge order; Root verifies actual main/release separately.
+- [x] 4.1 Sync only the completed canonical capability and validate all specs strictly.
+- [x] 4.2 Archive this completed change, preserving unrelated active work.
+- [x] 4.3 Prepare coordinated Docs126/Manager53 delivery with exact revisions, evidence and Docs-first merge order; Root owns final checks, guarded merges and actual-main/release verification.
