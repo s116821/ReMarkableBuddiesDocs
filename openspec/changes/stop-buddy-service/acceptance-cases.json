@@ -1,0 +1,173 @@
+{
+  "kind": "precode acceptance vectors; not executed product tests",
+  "cases": [
+    {
+      "id": "ordinary-manual-disabled",
+      "layer": "profile",
+      "variation": "ordinary-manual source shape matches; qualification absent",
+      "expected": "unsupported; zero submissions"
+    },
+    {
+      "id": "ordinary-manual-qualified-fixture",
+      "layer": "profile",
+      "variation": "ordinary-manual exact accepted synthetic tuple; unchanged brackets",
+      "expected": "review ready; confirm exactly one fixed submission; no restoration claim"
+    },
+    {
+      "id": "resident-installed-disabled",
+      "layer": "profile",
+      "variation": "resident-installed source shape matches; qualification absent",
+      "expected": "unsupported; zero submissions"
+    },
+    {
+      "id": "resident-installed-qualified-fixture",
+      "layer": "profile",
+      "variation": "resident-installed exact accepted synthetic tuple; unchanged brackets",
+      "expected": "review ready; confirm exactly one fixed submission; no restoration claim"
+    },
+    {
+      "id": "manual-latch",
+      "layer": "profile",
+      "variation": "ordinary occupied/partial/refused latch",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "manual-no-binding",
+      "layer": "profile",
+      "variation": "manual digest observed but no accepted source/build binding",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "resident-missing-lease",
+      "layer": "profile",
+      "variation": "resident lease absent/partial/foreign",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "resident-dev-alias",
+      "layer": "profile",
+      "variation": "resident executable or argv uses development /opt alias",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "apk-layout",
+      "layer": "profile",
+      "variation": "pending APK /usr/bin layout",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "platform",
+      "layer": "profile",
+      "variation": "model/firmware/kernel unsupported or absent",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "hooks",
+      "layer": "profile",
+      "variation": "unknown hooks/drop-ins/wrapper/extra argv",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "policy",
+      "layer": "profile",
+      "variation": "policy absent/unknown/infinite/unsafe or mismatched",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "file",
+      "layer": "profile",
+      "variation": "unsafe owner/mode/ancestor; symlink/deleted executable/hash mismatch",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "drift",
+      "layer": "profile",
+      "variation": "second bracket or confirm differs in boot/invocation/PID/start/policy/file",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "mode",
+      "layer": "profile",
+      "variation": "saved local-only file but no runtime mode receipt; only local-only qualified",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "extra-key",
+      "layer": "private",
+      "variation": "extra/missing nested DTO key or selector mismatch",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "json",
+      "layer": "private",
+      "variation": "duplicate/BOM/invalid UTF8/trailing frame",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "bounds",
+      "layer": "private",
+      "variation": "input/show/profile/lease/envelope/stderr budget exceeded",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "numeric",
+      "layer": "private",
+      "variation": "noncanonical/overflow decimal; invalid invocation/hash/base64",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "args",
+      "layer": "private",
+      "variation": "unexpected argv with secret-bearing extra argument",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "accepted",
+      "layer": "host",
+      "variation": "original live fixed-command zero exit",
+      "expected": "request-accepted; current OS read separate"
+    },
+    {
+      "id": "lost",
+      "layer": "host",
+      "variation": "possibly submitted lost/nonzero/malformed/late/cancelled result",
+      "expected": "unknown; no automatic retry"
+    },
+    {
+      "id": "inactive",
+      "layer": "host",
+      "variation": "refresh after unknown observes inactive",
+      "expected": "unknown history retained plus current inactive; no restoration or automatic continuation"
+    },
+    {
+      "id": "cancel",
+      "layer": "host",
+      "variation": "stale cancel/finalizer after owner changes",
+      "expected": "no remote cancel; no newer-owner invalidation"
+    },
+    {
+      "id": "busy",
+      "layer": "host",
+      "variation": "each predecessor owns either actual factory",
+      "expected": "Busy; zero competing dispatch/cancel/invalidation"
+    },
+    {
+      "id": "expiry",
+      "layer": "host",
+      "variation": "queued review expires or connection changes before dispatch",
+      "expected": "refuse; zero command"
+    },
+    {
+      "id": "capacity",
+      "layer": "host",
+      "variation": "8 retained attempts or32 fences exhausted",
+      "expected": "refuse without eviction"
+    },
+    {
+      "id": "identities",
+      "layer": "host",
+      "variation": "all public action/current/history combinations and foreign connection/boot",
+      "expected": "accept only contract table; malformed reply cannot clear uncertainty"
+    }
+  ]
+}

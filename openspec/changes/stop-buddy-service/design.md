@@ -1,0 +1,90 @@
+# Fixed service stop and independent lifecycle evidence
+
+## Verified source and scope
+
+Current Manager1f258ce has fixed service observation and no service mutation.
+Main sourceb008027 and separately pending APK3f0a10a were verified through all18
+payload hashes/bytes and17original Git blobs. source-assessment.md records precise
+route/Drop/recovery limits; profile-admission.md defines the complete two-profile
+predicate and private DTO. Committed source is not deployed qualification.
+Existing Store/mode/configuration/native guards remain independent. The current
+native candidate's narrower RM2 reports do not qualify released-source/RM1 safety.
+
+## Systemd semantics
+
+Primary systemd docs distinguish job completion, process exit and application
+cleanup. Without ExecStop, systemd sends the configured termination signal; its
+stop policy may later escalate. Killing the SSH client does not establish that a
+queued remote job stopped or that native resources were restored. Do not assume a
+universal TimeoutStopSec or target systemd version. Read effective properties and
+admit only an explicitly supported loaded unit/lifecycle profile.
+
+References: https://www.freedesktop.org/software/systemd/man/255/systemctl.html,
+https://www.freedesktop.org/software/systemd/man/248/systemd.kill.html and
+https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html.
+These versions explain risks; they do not establish installed firmware behavior.
+
+## Admission decision
+
+The accepted intent is UNIT-SCOPED: request that fixed reader-buddy.service stop.
+Revalidate current connection/boot and the original observed profile/invocation,
+refusing observed drift. Do not claim atomic original-PID targeting, create a
+bespoke lifecycle lock, or require a new compare-and-stop protocol. No stock or
+native mutation authority follows from this intent.
+
+Exactly ordinary-manual and resident-installed candidate profiles are recognized.
+The closed predicates, observations, artifact/path/argv policies, mode-agnostic
+scope, release enablement gates and explicit refusals are in profile-admission.md.
+The current manual Type=simple/Restart=on-failure unit and canonical/notify
+resident installation are distinct; the development legacy alias and pending
+/usr APK layout are unsupported. Missing/occupied/partial native metadata cannot
+become a readiness grant. There is no invented tablet flag/receipt or native lock.
+
+No profile is enabled by this assessment. Owner qualification must bind the exact
+source/build/unit/effective-policy/platform tuple and cover every runtime mode
+that tuple admits, including active work. A source shape match is not that gate.
+This does not block implementing the now-closed sampler, refusals, protocol,
+transport/queue and UI fixtures after independent precode acceptance. The whole
+paired change remains active until its actual qualification and delivery gates.
+
+## Host and UI
+
+Use a distinct serviceStop capability and existing MaintenanceIO across both real
+factories. Derive peers from the admitted final source (storage initialization
+adds a nineteenth predecessor). Review and Confirm acquire ownership before
+invalidation/I/O; Busy has no cancellation or invalidation side effects. Ordinary
+observation polling quiesces before review/confirmation. Ready expires after120s
+and is invalidated by peer/session/invocation/unit drift. Confirm revalidates the
+original private review and never silently upgrades admission. The operation remains unit-scoped and never promises original-PID CAS.
+
+After possible stop submission, lost/nonzero/incomplete/timeout/cancelled output
+is unknown. Even a later inactive observation cannot settle original delivery,
+prove a graceful stop or grant another stop. At most8possible submissions and32
+invocation/fence entries per original, no eviction or renewal. Unknown blocks
+another stop for that connection across reboot within host lifetime. History is
+in-memory only. Cancel targets the original host reference+invocation; it stops
+local waiting, never sends systemctl cancel/start/recovery or a delayed global
+kill. A stale cancellation/finally cannot affect a newer host owner.
+
+Use the existing fixed-command pattern: /bin/systemctl --system --no-pager
+--no-ask-password --no-block --job-mode=fail stop -- reader-buddy.service. This
+is a candidate command supported by current native source usage for another
+fixed unit, not target-version qualification. Success means request accepted by
+PID1, not completed shutdown. A conflicting pending job refuses rather than being
+replaced. No cancellation/restart/recovery command is sent.
+
+Current service observation and historical command outcome are separate. Report
+at most current OS state and whether the original fixed stop request was accepted
+under the admitted contract. Neither field means native restoration/flush success.
+No automatic config save/restart/restore continuation follows. Existing maintenance
+must independently observe current inactive state and acquire its own guards.
+
+## Useful work and real qualification
+
+After current source/policy acceptance, independent work can implement strict
+protocol/action matrix, fixed transport, shared ownership/lifetime/controller,
+closed UI reduction and local process/SSH/systemctl-fixture cases without a tablet
+or provider. These can exercise unavailable profiles, queued/lost requests,
+changed invocation, unsafe unit policy and late output. Final actual host/browser/
+Electron/package/platform checks remain required. Native stop safety and unit
+package compatibility are owner-supplied dependencies, not waived by those tests.
