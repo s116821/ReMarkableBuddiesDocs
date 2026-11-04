@@ -452,6 +452,13 @@ support SHALL retain the ordinary Reader path and its prepared-blank fallback.
 - **THEN** the package transition waits for verified stock recovery before replacing or removing the resident prerequisites
 - **AND** the transition preserves the user's Buddy data
 
+#### Scenario: Removal is approved against the locked Vellum plan
+
+- **WHEN** an owned Buddy removal reaches Vellum's commit decision
+- **THEN** the companion SHALL confirm the exact approved Buddy revision and sole-package removal while the package database lock is held
+- **AND** the companion SHALL keep a durable removal intent before sending approval and require a fresh read-only outcome check after possible dispatch
+- **AND** a disconnected or expired approval channel before dispatch SHALL decline removal
+
 ### Requirement: Blank-start placement uses an open, qualified Reader page
 
 An explicit blank-start request SHALL use the same resident page acquisition,
