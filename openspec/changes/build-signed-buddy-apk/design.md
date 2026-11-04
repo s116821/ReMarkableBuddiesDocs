@@ -177,20 +177,26 @@ diagnostic allowance, admit partial/cached executable output, or retry unchanged
 settings as a substitute for actual build evidence.
 
 
-The actual Windows-to-Linux build diagnostic found the same tracked source bytes
-clean in host Git (core.autocrlf=true) but changed in the pinned Linux image's
-default Git view; command-local core.autocrlf=true restored equality without
-changing source/index/config files. This is a concrete conversion-view mismatch,
-not proof of the complete historical build-script failure reason. Record the
-host's effective core.autocrlf (false/true/input) and core.eol (lf/crlf/native),
-resolve native eol to the host platform, and supply only those verified semantics
-in the existing temporary Linux Git config alongside its exact safe.directory.
-Recheck these effective inputs after build/runtime and retain the comparison
-privately. Both host and container still must admit exact clean tagged source;
-never suppress Git status, alter source/index, disable cleanliness, or treat
-line-ending configuration as compiler/source authentication. Unknown semantics
-refuse. Metadata, compilation and artifact caps/eligibility remain unchanged.
+The historical Windows-to-Linux diagnostic observed clean host Git and a
+different Linux Git conversion view of the same checkout. Historical override
+evidence remains scoped to that attempt. New APK admission uses ordinary Git
+on both sides with no generated Git configuration, configuration redirect,
+or ownership exception. Each observation checks the exact source root, HEAD,
+tag object and peeled commit, clean state, tracked regular files and executable
+modes. Record the conversion settings and the raw working and committed blob
+inventories. Both views must observe identical working bytes. Differing
+settings require every tracked working file to equal its committed raw blob.
+Repeat both observations and refuse changed identities before freezing output.
 
+For Cross 49cd054, the local rootful Docker path binds the canonical host
+workspace at its POSIX path (Windows drive paths become /mnt/<drive>/...)
+and uses host user namespace and UID/GID 1000:1000 on Windows. On Linux it
+uses the invoking UID/GID. Refuse unsupported engines or mappings. The
+bounded observation uses the same source path, image, namespace and user with
+a read-only source mount and no network. Require ordinary Git ownership and
+the observed source and Git directory owners to agree with the effective
+UID. Any failed admission prevents compilation. A source-only observation
+does not establish compiler, runtime or APK qualification.
 
 The corrected fourth actual ARM build completed fresh compilation in 4m54s, but
 Cross run began another compilation and hit the unchanged120s runtime-phase

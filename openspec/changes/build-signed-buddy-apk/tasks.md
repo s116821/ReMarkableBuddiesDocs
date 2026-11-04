@@ -6,6 +6,7 @@
 - [x] 1.2 Freeze concrete serialization with Manager owner and implement actual external-tool build/sign/verify helper without a release engine or source version field.
 - [ ] 1.3 Derive exact Buddy/consumed-SDK/build identity from real build/artifact inputs, rejecting mismatches and preserving untagged/absent SDK as ineligible.
 - [x] 1.3a Qualify metadata-only admission of Cargo's exact root completion marker while refusing all other SDK dirt and invalid marker identity/type/content; no source compilation or package qualification follows. Source636a2f6 reviews5580852332/5580852439 accepted; current Linux nine controls including symlink and full hosted run39370871074 pass. See integration-result.md for separate Windows skip and remaining package gates.
+- [ ] 1.3b Review and verify ordinary Git source admission in the pinned Cross views. Local controls cover raw inventory, mode and dirty-state refusal. The live mapping and source observation are separate, and build/SDK qualification remains open.
 - [ ] 1.4 Produce real reproducible test-key Buddy APK/index/public-key artifacts from an actual checked executable; never substitute text/fake metadata for payload proof.
 
 ## 2. Verification and delivery
