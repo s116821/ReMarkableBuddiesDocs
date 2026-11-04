@@ -12,6 +12,7 @@
 - [x] Cover real CLI flag composition, read-only/no-startup/no-secret behavior, bounded serialization and unchanged legacy controls.
 
 ## 3. Both Manager hosts
+- [ ] Obtain independent acceptance of concrete consumer-design.md and the consumer-specific delta before implementation.
 - [ ] Add exact report3 request/parser/type/reduction branches with raw framing/duplicate/lexical integer checks; preserve report1/2.
 - [ ] Wire the fixed v3 CLI through browser helper and Electron main/preload under existing verified observation/custody/cancellation paths.
 - [ ] Implement shared honest observed-versus-empty UI, nonadditive notebook metadata labels, unavailable/partial/unsupported states and manual compatibility path.
