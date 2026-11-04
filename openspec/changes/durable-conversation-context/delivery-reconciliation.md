@@ -8,6 +8,10 @@ verbatim into canonical conversation-context. The other nine conversation
 requirements and every unfinished Reader/native/platform/simulator delta remain
 active. No native or provider gate is checked off by this preparation.
 
+The [ordinary SDK gesture consumer](../archive/2026-11-04-host-gesture-consumer/result.md)
+has a separate bounded delivery for guarded portrait plan consumption.
+Current native qualification and the retained adapter continue separately.
+
 ## Complete production behavior
 
 The candidate contains the original unbound Orchestrator/Ledger composition,
