@@ -21,6 +21,6 @@ Source/CI/live execution and implementation acceptance have not occurred at this
 ## Opt-in partial v2 review and qualification
 
 - [x] Freeze the versioned precode in this change: exact prompt and context addendum, identity and report vectors, version/policy precedence and exclusive result matrix.
-- [ ] Independently accept the exact v2 precode before changing Buddy source.
+- [x] Independently accept the exact v2 precode before changing Buddy source (Docs 052d1b2).
 - [ ] Verify byte-exact default and v1 compatibility and all v2 admission, outcome, bounds, cancellation and ownership cases through production paths.
 - [ ] Review separately authorized semantic qualification before any fresh provider execution. The historical r2 result remains NOT MET and all eight calls are spent.

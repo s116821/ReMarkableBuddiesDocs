@@ -11,3 +11,34 @@ The initial source180355a run40312062011 failed during all-target Clippy compila
 Current Docs strict/guidance results, literal recipe checks and precode acceptance establish specification only. No model call has occurred. The pre-call review packet must still freeze representative new images, independent expected facts, exact same-byte baseline/context comparisons, configured model and eight-call/90-second limits before any dispatch. Broad recognition/learning efficacy, automated Reader/Writer integration, notebook schema allocation, selected sync/native and MVP completion remain unclaimed. The separately accepted notebook970 candidate and native/SDK drafts are untouched.
 
 Source basis: current native source/Docs state, complete independent precode review and directly inspected existing CI failure; written controls and proposed behavior are separate from executed qualification.
+
+## Opt-in v2 implementation checkpoint
+
+Accepted precode is Docs 052d1b25abfac4ba39fe1bffb3bd09c2e5cfcbc8.
+The local Buddy #105 successor is
+33031f51e49198fc4f7aece190ad417671fa88e8, tree
+d2e4dad44e1382cc6c27b976670bc319313fb751. The paired prompt, context
+addendum and offline fixture Git blobs match. The explicit CLI selects v2
+only after strict envelope and policy admission. V2 shares the existing
+target/context custody, provider dispatch and progress checks. It parses
+partial replies into a distinct result with known and uncertain spans.
+Partial never constructs a normalized source, and tests exercise refusal
+at the normalized-document and explicit confirmation parsers.
+
+The focused local Windows library suite passed all 19 tests at the exact
+source head, and both Windows CLI subprocess tests passed. The CLI checks
+strict refusal, credentials-before-provider and actual cross-process
+contention. The Unix-only loopback SIGINT test was outside this Windows run.
+Library controls cover default and v1 bytes, v2 payload/profile/report
+vectors, refusal precedence and malformed replies, the 4096-byte UTF-8 limit,
+one-call facts, actual Store custody, overflow and cancellation. Two earlier
+runs exposed Windows mandatory lock reads in the inherited contention test.
+The fixture now snapshots before and after custody while asserting both
+contention and retained refusal ownership. The production lock and Store
+implementation were unchanged. The existing Writer test module emitted six
+unused-code warnings during the Windows library run.
+
+These are local source and mechanism results. Hosted checks, independent
+implementation review and a separately approved semantic method remain open.
+Historical r2 remains NOT MET with all eight calls spent. This increment
+did not invoke a live provider, allocate a new budget or qualify recognition.
