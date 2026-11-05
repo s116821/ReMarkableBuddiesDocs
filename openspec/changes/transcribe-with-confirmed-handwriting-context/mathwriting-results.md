@@ -6,12 +6,12 @@ No result is accepted as a user-confirmed correction or normalized source truth.
 
 ## Exact attribution
 
-The run uses unchanged Buddy98ec7ba20d9ffb035380e2c4b1365230a1a9f1b2,
-tree21d5ff8f620eed8fc7f3abc13f917c7930464000, and method Docs
-217f4fe59a6a5e5fd6e42c3dbf1c8c8d5559a9cf/treee8525fa19262942d89cb2b1a8250542dd80315e2.
+The run uses unchanged Buddy 98ec7ba20d9ffb035380e2c4b1365230a1a9f1b2,
+tree 21d5ff8f620eed8fc7f3abc13f917c7930464000, and method Docs
+217f4fe59a6a5e5fd6e42c3dbf1c8c8d5559a9cf / tree e8525fa19262942d89cb2b1a8250542dd80315e2.
 [The criteria and input identities](mathwriting-qualification.md) were frozen
-before model output. The model was gpt-6.1-terra, with at most4,000 completion
-tokens and90seconds per request. Inputs were the same two previously selected
+before model output. The model was gpt-6.1-terra, with at most 4,000 completion
+tokens and 90 seconds per request. Inputs were the same two previously selected
 human expressions; no sample replacement, target label or preceding response
 was supplied. The sole selected correction was the unrelated technical example.
 
@@ -35,10 +35,10 @@ This correction changes no product prompt, parser or scoring rule.
 | Condition-blinded scoring input | `51c5c0c7b84c6d400b95b4781d4a7dd49e98ab4f775c427ca29f67e6a641a9e4` |
 | Independent blinded score | `c7f5946e852f5a078c30b2b835964a734700f5b83281309faeb5fbe9474c48d2` |
 
-The one-shot supervisor returned exit0, with no stdout/stderr and30,214 retained
-bytes across56 entries. All four response envelopes reported stop; observed
+The one-shot supervisor returned exit 0, with no stdout/stderr and 30,214 retained
+bytes across 56 entries. All four response envelopes reported stop; observed
 sequence was A/no-context, B/selected, A/selected, B/no-context. The disposable
-Store was unchanged. Returned usage fields total14,812prompt and2,574completion
+Store was unchanged. Returned usage fields total 14,812 prompt and 2,574 completion
 tokens; these are provider reports, not an independent billing audit. The run is
 consumed and has no replay path. No tablet operation occurred.
 

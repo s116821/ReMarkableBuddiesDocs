@@ -1,6 +1,6 @@
 # Tasks
 
-Current November 5 checkpoint: source98ec7ba and prospective-method Docs217f4fe
+Current November 5 checkpoint: source 98ec7ba and prospective-method Docs 217f4fe
 pass their hosted checks. Implementation/local-control receipts are in results.md.
 The new [mathematical comparison](mathwriting-results.md) completed once and
 independent blinded scoring found **0/4 passing cells; NOT MET**. Historical
