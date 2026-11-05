@@ -9,10 +9,14 @@
 - [x] Implement the bounded typed result and existing operation integration;
   verify actual production paths and unchanged legacy vectors.
 - [x] Independently review source and exact prompt/identity vectors.
-- [ ] Verify required hosted checks on the integrated structured-math revision.
+- [x] Verify required hosted Checks, ARM Build and Integration on source7398569
+  in run42103299628; retain each earlier check's original attribution.
 - [x] Review and execute a genuinely new finite recognition comparison, then
   apply the unchanged source glyph/attachment criteria; retain strict 0/4 and
   full-fidelity 0/4 without treating execution as acceptance.
+- [x] Independently review and execute the same-input Sol comparison; preserve
+  its strict0/4 and fidelity0/4, both abstentions and the reviewers' union-token
+  criterion disagreement. No historical result or acceptance rule changes.
 
 The structured implementation's local checks and remaining review/recognition
 gates are recorded in [structured results](structured-math-results.md).

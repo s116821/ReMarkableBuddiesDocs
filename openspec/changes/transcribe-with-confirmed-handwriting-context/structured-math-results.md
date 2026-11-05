@@ -47,10 +47,11 @@ warnings remain outside this change. The separate Windows all-feature check with
 helpers and dead code). That failure remains recorded; it is not a passing check
 or a substitute for the required hosted Linux validation.
 
-The exact-source Linux host Checks job passed in
+The exact-source Linux host Checks, ARM Build and Integration passed in
 [run 42103299628](https://github.com/s116821/ReMarkableBuddies/actions/runs/42103299628).
-All three Docs checks passed on `79620ff`. Application Build/Integration and the
-remaining delivery gates are separate from those host results.
+All three Docs checks passed on `79620ff`; the results-only successor `81dd215`
+also passed its required checks. Recognition and remaining delivery gates are
+separate from those build results.
 
 ## Finite live comparison
 
@@ -93,3 +94,41 @@ Reproducibility identifiers:
 Keep this change active and unarchived. A successor must address the demonstrated
 recognition failures and satisfy the existing acceptance criteria; this completed
 experiment and all historical failed packets must not be replayed.
+
+## Same-input Sol comparison
+
+The separately admitted four-call Sol comparison completed once on the same
+source7398569, with Docs81dd215 at execution. Production prompt/context, original
+PNGs, selected correction, order, bounds and semantic criteria stayed fixed.
+Only the model and required fresh experiment/request identities changed. The
+fresh binary's four complete loopback requests passed; unchanged refusal and
+custody controls retain their earlier candidate attribution. All four real calls
+completed technically, with Store unchanged and no retries or output repair.
+
+**Semantic criterion NOT MET: strict0/4; full fidelity0/4**, independently scored
+by two reviewers before arm disclosure. Both A arms retain the principal scoped
+expression but omit the colon in `:=`. Both B arms return `unreadable`, with no
+positive fraction, radical, radicand or external-subscript structure. These are
+safe abstentions, not correct expressions or blank-page results.
+
+One per-criterion disagreement remains explicit: for A with selected context,
+Root rejected the ordinary-union token as insufficient for the required large
+union; the independent reviewer credited the union-shaped token with explicit
+below-condition scope. Both original scores are preserved. Both reviewers still
+fail that cell for the missing colon, so the aggregate does not depend on that
+disagreement. No foreign-context content or metadata blinding breach was found.
+This was arm-blinded, not sample-blinded or outcome-naive.
+
+The model change did not satisfy this finite criterion. It establishes neither
+general model ranking nor context causality, and does not alter the Terra or
+earlier results. Representation support and conservative abstention remain
+distinct from required mathematical recognition and full feature acceptance.
+
+Reproducibility identifiers:
+
+- Packet `ae1737e76518c775825c28e6a8ef63d7c0ab130ec99ff840b343dd60f79da9ba`;
+  method `d8862b132ae46472c8255dde29fcb9f2b0245bb14b0122af9a23a7ae4ab1ff1e`.
+- Candidate `ac1bf19b34120413057c5b55f9d7e20d7ef50c2fd667bdd626b7eccfa54d44c5`;
+  collection `2c90d7c9377ee53a803f6885f497f66472a1622c639c2d55dfaf909ee1b8eac0`.
+- Root score `519d71455a63d34ca0a84f7cf3da40f5c7b47d747b59189ace0dbf271d6551ef`;
+  independent score `863f2b6de903d8534deecc9d849be61ad09e2d4517d8f7315bdc692d3bbe6431`.
