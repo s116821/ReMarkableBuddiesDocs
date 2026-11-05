@@ -46,3 +46,12 @@
 - [x] Expose a usable library receiver carrying explicit acknowledged Writer selection; keep ordinary CLI refusal unchanged pending separate wire review.
 - [x] Verify actual Store ownership/replacement/budget/failure/cancellation/panic/replay controls and ordinary regressions at the new exact source; retain [scoped results and failed attempts](selected-writer-receiving-result.md).
 - [ ] Obtain Root independent review and required hosted checks; keep selected CLI/native/export/sync/recovery/full lifecycle scope open.
+
+## 7. Explicit selected Writer caller
+
+- [x] Review bounded Writer operations in existing conversation command family, explicit evidence/original references, recover-before-fresh/credentials and guarded historical fallback.
+- [x] Implement writer-inspect/generate/refine/recover with strict typed bounded input and saved shared-group/binding/mode validation; never infer Writer scope from memory/Reader settings.
+- [x] Reuse exact evidence-only historical recovery without model/query/permit or new writes; admit fresh requests only against actual current Store snapshots.
+- [x] Return guarded current references or original Historical publication without current handles if membership changes before report emission.
+- [x] Verify actual process/CLI inspect/Generate/reopen/Refine, failure/recovery/identity/bounds/output controls and ordinary refusal regressions; retain [caller evidence](selected-writer-caller-result.md).
+- [ ] Root exact-source review/hosted delivery and separately pinned selected semantic check; keep full native/export/sync/recovery/lifecycle gates open.

@@ -277,8 +277,15 @@ or fresh action. Failed/Canceled evidence without usable memory pins is permitte
 only while the acknowledged Writer selection is current, without generated text
 or selectable draft.
 
-This library increment has local Store/receiver controls, with Root review and
-hosted acceptance pending. It adds no CLI wire: ordinary command selected refusal
-remains. Selected export preparation, destinations, notebook processing, native
+The explicit caller candidate adds `writer-inspect`, `writer-generate`,
+`writer-refine` and `writer-recover` to `--conversation-operation`, using bounded
+`--conversation-input` JSON. It carries exact original references and explicit
+selection evidence, verifies saved shared-group/binding/mode and recovers exact
+history before fresh admission/credentials. No token or fresh model permit crosses
+the wire. Guarded response handles are omitted if a committed result becomes
+historical before emission. Ordinary `--writer-note` selected refusal remains.
+See the [caller contract, frame and process-level evidence](../openspec/changes/subject-memory/selected-writer-caller-result.md).
+Independent review, current hosted acceptance and selected live semantics remain
+pending at their respective source revisions. Selected export preparation, destinations, notebook processing, native
 output and full sync/recovery remain separate. See the
 [receiving result and exact source](../openspec/changes/subject-memory/selected-writer-receiving-result.md).

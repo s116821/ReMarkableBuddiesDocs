@@ -85,3 +85,14 @@ The selected supplied-text Writer library receiver SHALL require an explicit ack
 #### Scenario: Memory failure without a usable view
 - **WHEN** retrieval fails or cancellation occurs after fresh preparation while the acknowledged Writer selection remains current
 - **THEN** only selected Failed/Canceled evidence without generated text or selectable draft MAY publish without unavailable memory pins; stale or uncertain writes SHALL remain refusal/reconciliation.
+
+### Requirement: Explicit selected Writer caller and evidence exchange
+The existing conversation operation/input command family SHALL expose bounded explicit Writer inspect/generate/refine/recover operations with typed request identity, original ObjectRefs and explicit selection evidence/raw-head digest. Production SHALL validate saved shared-group/binding/mode without inferring Writer selection from memory or Reader configuration. Neither live tokens nor private fresh model permits SHALL be serialized. Ordinary selected-memory refusal SHALL remain unchanged.
+
+#### Scenario: Lost report or replaced winner
+- **WHEN** an exact request is recovered after preparation/finish/report acknowledgment loss or replacement of current membership
+- **THEN** evidence-only historical verification SHALL run before fresh admission and credentials, returning original Historical/HistoricalPending or NotFound without a model/query/new write; conflicting input SHALL refuse.
+
+#### Scenario: Publication changes before response emission
+- **WHEN** a fresh draft was acknowledged but membership changes before current handle emission
+- **THEN** the bounded report SHALL preserve the original publication as Historical without current handles or fresh action authority, rather than undoing the commit, misreporting it as uncommitted or rerunning its model.
