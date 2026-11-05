@@ -1,5 +1,10 @@
 # Selected Writer receiving implementation and evidence
 
+Historical revision-specific record. Later implementation, live results and the
+finite delivery disposition are in [delivery closeout](delivery-closeout.md).
+Earlier pending statements below describe their recorded revision, not the final
+status; no earlier failure or evidence attribution is overwritten.
+
 Status: implementation/local verification complete; Root independent review and
 current hosted qualification remain required. No selected model/native
 qualification or whole-capability completion is claimed.

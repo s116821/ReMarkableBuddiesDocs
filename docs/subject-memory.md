@@ -7,10 +7,12 @@ default offline implementation. Explicit local selected membership uses
 `SelectedMemory` over the same Store. It does not automatically learn from answers, failed
 transcriptions, cancellation or model guesses.
 
-The implementation belongs to the active
-[subject-memory change](../openspec/changes/subject-memory). Full Writer and
-Manager integration, selected cross-device sync/recovery, live-model effectiveness
-and native acceptance remain open.
+The implemented receiving contract is [canonical subject memory](../openspec/specs/subject-memory/spec.md).
+The completed [subject-memory increment](../openspec/changes/archive/2026-11-05-subject-memory/delivery-closeout.md)
+records ordinary and selected Reader/Writer behavior, exact live evidence and
+remaining issue boundaries. Manager search, inspection and prepared forget have
+separately delivered contracts. Remote selected sync/recovery, migrations, firmware
+survival and native acceptance remain unqualified by this increment.
 
 ## Optional configuration
 
@@ -68,7 +70,7 @@ result returns unavailable/incomplete without partial refresh data.
 Inspect/query deliberately print saved values on stdout to the requesting caller.
 Failure reports do not echo request values, private parser data or filenames, and
 routine logs do not receive those values. See the detailed
-[maintenance contract](../openspec/changes/subject-memory/maintenance-cli.md)
+[maintenance contract](../openspec/changes/archive/2026-11-05-subject-memory/maintenance-cli.md)
 for exact input/output limits and verified scope.
 
 The local adapter conservatively refuses any Store with selected storage, even
@@ -263,7 +265,7 @@ refinement. Existing internal callers retain memory disabled until they explicit
 adopt an admitted receiving path. It does not modify notebook plans, selected
 Writer publication, presets, sync/recovery, native rendering or export execution.
 The ordinary Writer's fresh representative memory-model check independently
-passes at source b8cc818; [exact evidence and limits](../openspec/changes/subject-memory/writer-receiving-result.md#fresh-ordinary-writer-live-evidence)
+passes at source b8cc818; [exact evidence and limits](../openspec/changes/archive/2026-11-05-subject-memory/writer-receiving-result.md#fresh-ordinary-writer-live-evidence)
 remain distinct from Reader enrichment and Writer preference qualification.
 
 ## Explicit selected Writer library receiver
@@ -277,15 +279,18 @@ or fresh action. Failed/Canceled evidence without usable memory pins is permitte
 only while the acknowledged Writer selection is current, without generated text
 or selectable draft.
 
-The explicit caller candidate adds `writer-inspect`, `writer-generate`,
+The explicit caller adds `writer-inspect`, `writer-generate`,
 `writer-refine` and `writer-recover` to `--conversation-operation`, using bounded
 `--conversation-input` JSON. It carries exact original references and explicit
 selection evidence, verifies saved shared-group/binding/mode and recovers exact
 history before fresh admission/credentials. No token or fresh model permit crosses
 the wire. Guarded response handles are omitted if a committed result becomes
 historical before emission. Ordinary `--writer-note` selected refusal remains.
-See the [caller contract, frame and process-level evidence](../openspec/changes/subject-memory/selected-writer-caller-result.md).
-Independent review, current hosted acceptance and selected live semantics remain
-pending at their respective source revisions. Selected export preparation, destinations, notebook processing, native
+See the [caller contract, frame and process-level evidence](../openspec/changes/archive/2026-11-05-subject-memory/selected-writer-caller-result.md).
+Root reviewed the caller at52595dc and its required source hosted checks pass.
+The separately pinned selected Generate and Refine semantic results both PASS;
+[exact receipts and limits](../openspec/changes/archive/2026-11-05-subject-memory/delivery-closeout.md)
+retain source attribution and distinguish content scoring from runtime evidence.
+Final Docs review/checks and coordinated delivery remain separate. Selected export preparation, destinations, notebook processing, native
 output and full sync/recovery remain separate. See the
-[receiving result and exact source](../openspec/changes/subject-memory/selected-writer-receiving-result.md).
+[receiving result and exact source](../openspec/changes/archive/2026-11-05-subject-memory/selected-writer-receiving-result.md).

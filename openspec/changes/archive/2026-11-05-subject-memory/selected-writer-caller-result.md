@@ -1,5 +1,10 @@
 # Explicit selected Writer caller: contract and local evidence
 
+Historical revision-specific record. Later implementation, live results and the
+finite delivery disposition are in [delivery closeout](delivery-closeout.md).
+Earlier pending statements below describe their recorded revision, not the final
+status; no earlier failure or evidence attribution is overwritten.
+
 Status: implemented and locally checked; Root independent review, current hosted
 checks, coordinated delivery and separately pinned selected semantic run remain.
 No live model, tablet, native output or export qualification is claimed.

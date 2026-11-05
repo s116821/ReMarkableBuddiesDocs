@@ -1,5 +1,10 @@
 # Subject memory: local and selected receiving increments
 
+Historical revision-specific record. Later implementation, live results and the
+finite delivery disposition are in [delivery closeout](delivery-closeout.md).
+Earlier pending statements below describe their recorded revision, not the final
+status; no earlier failure or evidence attribution is overwritten.
+
 ## Exact source and contract
 
 Rust revision `916dbbd089ec9f7e81b4af7c76e95cfa48b304c9` implements typed local

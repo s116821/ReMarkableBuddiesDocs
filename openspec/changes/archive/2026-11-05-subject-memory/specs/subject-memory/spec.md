@@ -27,7 +27,7 @@ Retrieval SHALL use bounded current membership, profile/scope restrictions, rele
 - **THEN** the ledger SHALL permit only an explicit failure/cancellation fact with unchanged interpreted text and appropriate reason, SHALL preserve the verified question, and SHALL NOT create a generated or completed assistant answer.
 
 ### Requirement: Honest shared-domain delivery
-Memory SHALL reuse existing generic sync/export/restore and coordinate stable logical scopes with REM-52. A document conflict SHALL NOT discard unrelated global or document facts. Writer use SHALL be optional. Simulated/protocol, live-provider and real-device evidence SHALL be distinguished, and incomplete Manager, Writer, cross-device or native gates SHALL remain open.
+The local and selected receiving memory domain SHALL reuse the existing generic Store and selected-closure/admission primitives and coordinate stable logical scopes with the shared sync contract, without creating a second sync/export/restore engine. A document conflict SHALL NOT discard unrelated global or document facts. Writer use SHALL be optional. Simulated/protocol, live-provider and real-device evidence SHALL be distinguished. Host receiving and historical recovery SHALL NOT imply remote shared/isolated synchronization, selected restore activation, replacement-device recovery or native acceptance; undelivered broader capabilities SHALL remain explicitly unqualified.
 
 #### Scenario: Local proof before cross-device qualification
 - **WHEN** local/protocol memory checks pass but shared/isolated selected membership or clean-device recovery has not been verified

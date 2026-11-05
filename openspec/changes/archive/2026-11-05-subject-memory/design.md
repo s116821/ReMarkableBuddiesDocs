@@ -1,9 +1,11 @@
 # Local subject-memory design
 
-The next selected receiving phase is specified in
-[selected membership](selected-membership.md). Its exact identity, cumulative
-read-budget and consuming-admission candidates require focused review before
-implementation; the completed local phase below remains the default.
+The implemented selected receiving phase is specified in
+[selected membership](selected-membership.md), with exact identity, cumulative
+read budgets and consuming admissions. Local memory remains the default. This
+design retains the original domain decisions below;
+[delivery closeout](delivery-closeout.md) records the later ordinary/selected
+Writer implementation, exact evidence and approved finite scope correction.
 
 ## Records, identity and persistence
 
@@ -137,7 +139,9 @@ successful verification, preserving exact recognized question and original sourc
 images. Disabled/empty retrieval preserves the existing two-call path. Failed
 enrichment cannot silently publish a memory-enriched success. Provider fixtures
 verify actual request assembly; they do not prove model obedience or recognition.
-Writer receives the same optional interface when its real integration exists.
+Ordinary Writer now receives an optional same-Store associative snapshot; selected
+Writer joins its explicit acknowledged selection and memory pins at actual
+publication. Exact receiving contracts and results are linked in the closeout.
 
 Reader policy: complete-empty/disabled uses the existing answer path; partial with
 valid nonconflicting relevant facts may enrich while retaining diagnostics.
@@ -159,8 +163,12 @@ with disabled/enabled/irrelevant/conflicting/expired memory. Preserve source and
 transcript bytes, fail on invalid budgets, and make local/protocol/live-provider/
 native evidence distinct. Default operation does not require a cloud provider.
 
-Generic export/restore/sync stays REM-36/REM-52-owned; verify domain payloads through
-those existing interfaces rather than implement a second engine. Schema migration,
-two-device selected membership/deletion, clean-device restore, Manager UI, Writer
-and live/native effectiveness remain open until their real gates are verified.
-This change must not be canonically synced or archived as complete prematurely.
+Generic export/restore/sync remains infrastructure-owned; this increment reuses
+its Store and selected admission rather than adding another engine. The November
+5 scope correction separates completed host receiving behavior from undelivered
+remote synchronization/deletion, migration/restore/replacement recovery, firmware
+survival and native acceptance. Those remain owning-issue requirements. Existing
+Manager maintenance is separately delivered; neither it nor representative
+Reader/Writer semantics establishes full lifecycle completion. Sync/archive only
+the seven completed receiving requirements mapped in the closeout; final paired
+review, checks and actual merge remain separate delivery gates.

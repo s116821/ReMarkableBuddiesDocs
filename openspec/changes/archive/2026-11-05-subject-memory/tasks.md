@@ -14,12 +14,12 @@
 - [x] 2.3 Run required exact-source checks and independent final review, inspect CI/bot findings, publish paired implementation/Docs drafts and disclose failures.
 - [x] 2.4 Verify actual maintenance CLI offline operations, preflight privacy/state/lease failures, bounded response and preserved ordinary routes on exact committed inputs; execute Unix FIFO control on Unix.
 
-## 3. Full capability gates
+## 3. Approved finite delivery boundary
 
-- [ ] 3.1 Integrate optional real Writer use and Manager inspect/forget without requiring memory for Writer.
-- [ ] 3.2 Verify REM-52 selected membership, shared/isolated policy, independent keys, deletion, migrations and clean/replacement-device recovery through existing infrastructure.
-- [ ] 3.3 Verify representative live-provider relevance/precedence and native/local-survival claims where required; preserve qualified evidence limits.
-- [ ] 3.4 Complete coordinated acceptance, required checks, canonical sync and archive only after the full named capability is implemented and verified; REM-35 owns 1.0.
+- [x] 3.1 Record the November 5 reviewed scope correction: this change delivers the seven implemented ordinary/selected Reader/Writer receiving requirements, not the full owning issue.
+- [x] 3.2 Map original mixed whole-ticket tasks to their unchanged remaining issue acceptance without marking their unimplemented portions complete; retain [the mapping and evidence limits](delivery-closeout.md).
+- [x] 3.3 Verify representative Reader, ordinary Writer and selected Writer semantic receipts at their actual source revisions, separately from current-source mechanism regressions and native evidence.
+- [x] 3.4 Complete the finite requirement/scenario verification and synchronize the seven requirements before archiving this completed increment. Final Docs successor review/CI and coordinated merge remain Root-owned delivery gates, not a claim of a merged PR or full issue completion.
 
 ## 4. Selected receiving increment
 
@@ -29,13 +29,13 @@
 - [x] 4.4 Guard catalog/all queried aggregates through the actual consuming Ledger write; verify replacement races, losing registrations versus losing fact edits and exact reference preservation using real Store consumers.
 - [x] 4.5 Publish exact source/Docs evidence and independent review while keeping cloud, Writer, Manager, native and restore gates open.
 
-## 5. Proposed optional ordinary Writer increment
+## 5. Optional ordinary Writer increment
 
 - [x] Review [the Writer receiving contract](writer-receiving-contract.md), including local/selected scope and local snapshot freshness, before implementation.
-- [x] Implement and verify only the accepted receiving slice with the existing Provider/Store/Ledger primitives; keep remaining task3.1 and full-capability gates open.
+- [x] Implement and verify only the accepted receiving slice with the existing Provider/Store/Ledger primitives; retain the broader owning-issue requirements distinguished in section3.
 
 - [x] Independently review the exact Writer-memory/current-main successor and separately qualify representative ordinary Writer-memory model behavior; retain [the bounded live evidence](writer-receiving-result.md#fresh-ordinary-writer-live-evidence).
-- [ ] Complete required current hosted checks and Root final coordinated delivery review; preserve all full-capability gates.
+- [x] Complete Root source review and required source hosted checks at52595dc; preserve separately attributed ordinary live evidence and all broader issue gates. Final Docs delivery remains outside this implementation checklist.
 
 ## 6. Selected Writer receiving increment
 
@@ -45,7 +45,7 @@
 - [x] Implement recover-first selected finish and Provider memory composition under one complete ordered admission set.
 - [x] Expose a usable library receiver carrying explicit acknowledged Writer selection; keep ordinary CLI refusal unchanged pending separate wire review.
 - [x] Verify actual Store ownership/replacement/budget/failure/cancellation/panic/replay controls and ordinary regressions at the new exact source; retain [scoped results and failed attempts](selected-writer-receiving-result.md).
-- [ ] Obtain Root independent review and required hosted checks; keep selected CLI/native/export/sync/recovery/full lifecycle scope open.
+- [x] Obtain Root independent source review and current hosted acceptance at52595dc. The caller is completed below; native/export/remote sync/replacement recovery and full lifecycle remain outside this increment.
 
 ## 7. Explicit selected Writer caller
 
@@ -54,4 +54,4 @@
 - [x] Reuse exact evidence-only historical recovery without model/query/permit or new writes; admit fresh requests only against actual current Store snapshots.
 - [x] Return guarded current references or original Historical publication without current handles if membership changes before report emission.
 - [x] Verify actual process/CLI inspect/Generate/reopen/Refine, failure/recovery/identity/bounds/output controls and ordinary refusal regressions; retain [caller evidence](selected-writer-caller-result.md).
-- [ ] Root exact-source review/hosted delivery and separately pinned selected semantic check; keep full native/export/sync/recovery/lifecycle gates open.
+- [x] Complete Root exact-source review, required source hosted checks and the separately pinned selected semantic run: Generate and Refine independently PASS at52595dc. Preserve native/export/remote sync/replacement recovery/lifecycle boundaries and Root ownership of final Docs review/CI and coordinated delivery.

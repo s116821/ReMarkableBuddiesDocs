@@ -1,5 +1,10 @@
 # Current backend reconciliation
 
+Historical revision-specific record. Later implementation, live results and the
+finite delivery disposition are in [delivery closeout](delivery-closeout.md).
+Earlier pending statements below describe their recorded revision, not the final
+status; no earlier failure or evidence attribution is overwritten.
+
 This is the existing subject-memory delivery, preserved as an active incomplete
 change. Original source bc930c1cffc990f83f1a1edb477aa52b4f6879d8 carries the
 ad6a70f selected-receiving implementation and separately attributed source/test

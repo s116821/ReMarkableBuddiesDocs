@@ -1,5 +1,10 @@
 # Ordinary Writer-memory local verification
 
+Historical revision-specific record. Later implementation, live results and the
+finite delivery disposition are in [delivery closeout](delivery-closeout.md).
+Earlier pending statements below describe their recorded revision, not the final
+status; no earlier failure or evidence attribution is overwritten.
+
 ## Exact candidate and scope
 
 Buddy `b8cc818dd2fbd5ab504ab3d4759b6b1bb9e4fbfd`, tree
