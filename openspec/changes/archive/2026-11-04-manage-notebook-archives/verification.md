@@ -7,3 +7,27 @@
 - Local 981 Node / 7 Python, lint, build and retained Linux package checks pass. Final hosted Windows/Linux, independent review, merge/release and exact-main verification remain with delivery owner. They are delivery gates, not a native/tablet claim or an unimplemented source feature.
 
 No unresolved source requirement or wire ambiguity remains. Canonical notebook-archive-companion is synced from this exact delta without altering producer or unrelated specs. Only manage-notebook-archives is archived; the separately owned Stop pair remains untouched.
+
+## Delivery review and cancellation correction
+
+The coordinator reviewed the whole Manager/Docs pair and corrected one remaining
+read-cancellation error path in Manager
+`90118b800b3bd1f3672ef0c75365197e8ef18f5d`, tree
+`8f71640ea1b26c507f85fe010c20aabd5cae6ba0`. A failed acknowledgement while stopping
+an inspection or current-folder check now describes the read that may finish,
+while preserving earlier export outcomes. Mutating cancellation still reports
+export uncertainty. The host UI matcher checks the complete current read message.
+
+Two new regressions wait for the actual read to enter before failing its cancel
+acknowledgement. Both fail against the previous controller and pass with the
+correction; the late result cannot change the stopped UI or trigger another
+export. The coordinator's focused suite and an independent reviewer each passed
+all 40 controller, host, protocol, child and observed-frame checks. The reviewer
+also confirmed that a failed acknowledgement during an export retains unknown
+history and export uncertainty.
+
+These checks apply to the exact source above. The earlier retained package stays
+at its original `6ef76f5` attribution. Hosted checks, any later source composition
+and final main validation require their own evidence. This Docs branch also
+includes delivered Docs `db4c4b2a25e1b54ef8f8d8add7446d5725f54ced` through a normal
+merge; the notebook capability and bounded delivery scope are unchanged.
