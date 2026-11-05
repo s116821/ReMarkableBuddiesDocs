@@ -51,3 +51,18 @@ An explicitly selected memory Provider SHALL discover current facts only through
 #### Scenario: Cumulative read exhaustion
 - **WHEN** catalog, aggregate, retained/history or media verification would exceed the shared read budget
 - **THEN** reading SHALL refuse before the excess read/hash and report unavailable rather than a truncated authoritative view.
+
+### Requirement: Optional ordinary Writer memory snapshot
+The explicitly enabled ordinary Writer enrichment path SHALL retrieve bounded local associative context using the existing Provider and the same Store, separately from exact source/history/current-request and personalization data. Current request, current source and fixed task/source-safety instructions SHALL take precedence. The context SHALL grant no actions or permission and SHALL be labeled an author-asserted retrieval snapshot, without a claim of atomic local-memory freshness across model I/O. Actual publication SHALL retain fresh Writer preparation, same-Store ownership and finish_writer CAS.
+
+#### Scenario: Disabled and empty Writer context
+- **WHEN** ordinary Writer memory is absent, disabled or returns a valid empty view
+- **THEN** existing model parts and outcomes are preserved; disabled memory performs no memory read and deliberate PrepareExport remains memory/model/destination-free.
+
+#### Scenario: Bounded context and receiving failure
+- **WHEN** the enabled receiver retrieves usable local facts or cannot admit/retrieve/encode them within the existing query and context bounds
+- **THEN** usable facts appear once as labeled separate data, while unsupported configuration, unavailable or unusable Partial context and excess bounds refuse before model dispatch without silent fallback; fresh failure, cancellation, stale ownership and replay retain truthful Ledger outcomes.
+
+#### Scenario: Selected Writer remains separately admitted
+- **WHEN** the new ordinary enrichment path is given selected configuration, a selected view or a foreign/unsupported provider
+- **THEN** it refuses before model use and never interprets selected data as ordinary all-history context or replaces the required selected consuming publication with an ordinary write.

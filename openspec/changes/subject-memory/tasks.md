@@ -31,5 +31,5 @@
 
 ## 5. Proposed optional ordinary Writer increment
 
-- [ ] Review [the Writer receiving contract](writer-receiving-contract.md), including local/selected scope and local snapshot freshness, before implementation.
+- [x] Review [the Writer receiving contract](writer-receiving-contract.md), including local/selected scope and local snapshot freshness, before implementation.
 - [ ] Implement and verify only the accepted receiving slice with the existing Provider/Store/Ledger primitives; keep remaining task3.1 and full-capability gates open.
