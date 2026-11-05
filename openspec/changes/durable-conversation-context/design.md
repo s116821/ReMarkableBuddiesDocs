@@ -51,6 +51,12 @@ Alternative: storing only filenames or recapturing after output loses exact evid
 
 ### 3. Binding is an atomic logical association, not a native command
 
+The REM-25 integration extension in
+[existing-page-binding.md](../qualify-open-pdf-capture/existing-page-binding.md)
+adds an explicit existing-current/adjacent acquisition form with unchanged order.
+It preserves original insertion receipt bytes and the same claim/CAS/history
+mechanism below; adoption must never fabricate an insertion-shaped order.
+
 A canonical binding record has a deterministic logical identity from native document ID and Buddy page ID, independent of installation/Store actor identity. Freeze its encoding as UUIDv5 using the RFC URL namespace and UTF-8 name `urn:remarkable-buddies:binding:v1:<document-uuid>:<page-uuid>`, where each UUID is canonical lowercase hyphenated text. Device qualification belongs to the receipt, not this key. Thus reinstall/restore retains the same claim key and cannot create a second claim merely by changing installation identity. Copied documents that retain identical native IDs intentionally contend on the same logical claim; ambiguity fails closed. It contains the logical conversation association and qualified receipt reference. Atomically CAS this record and the conversation root; do not build a separate identity registry. Imported logical associations do not authorize native operations on another device. Fresh current-device qualification is required even if the same logical IDs exist there.
 
 Initial acquisition is create-or-identical only: a conversation already bound to another live page refuses a new claim. A future page migration must atomically reconcile the old claim through an explicitly designed transition; it cannot overwrite the root reference and strand the old claim. Concurrent same-conversation/different-page acquisitions contend on the root CAS.
