@@ -40,6 +40,35 @@ fixture does not qualify Paper Pro or inherit RM2 resident compatibility.
 
 ## Authenticated metadata
 
+### Explicit SDK release source (implementation scope)
+
+Tagged SDK identity requires both --sdk-tag and --sdk-tag-source, an independent
+clean complete Git SDK release source. Missing/invalid proof refuses explicitly;
+there is no lookup in Cargo's cache layout or automatic tag synthesis/fallback.
+Reuse ordinary full source snapshot admission for canonical SDK origin, exact
+root/HEAD, nonshallow history, clean index/worktree, regular tracked inventory,
+stable file identity and real tag object/peel. Require resolved Cargo SDK commit
+and actual manifest bytes to match that source; retain Cargo checkout/marker
+admission independently. Commit-only mode without either option stays untagged.
+
+Observe the exact canonical remote tag/object/peel before/after the read-only
+source observation using the existing bounded Git runner. The already-present
+local object must match the remote object and peel; no fetch/ref/config write is
+needed in either proof source or Cargo cache. Compare the complete proof across
+pre/post build observations and targets, and reobserve before final completion.
+Bind stable tag/object/commit/manifest evidence into the existing graph digest;
+retain filesystem source identity only in private build evidence. Existing signed
+SDK fields still bind repository/tag/commit/manifest; no new trust service or
+sidecar authority is introduced. Remote replacement, dirty/replaced proof, wrong
+manifest/commit/origin, malformed remote refs and missing tag all refuse.
+
+Validate the actual functions with disposable local Git sources and a local-Git
+transport stand-in for the canonical remote, preserving real tag/object/peel and
+ordinary source admission. Never run a live remote qualification, build or signer
+as part of these source controls. Historical tagless Cargo refusal remains valid
+for its predecessor; the new proof transport needs independent review before a
+real admitted qualification run.
+
 Use standard APKv3 metadata and its signed vendor tags, not an unsigned sidecar
 as the authority. Fixed metadata includes name/version/arch/origin/repo-commit
 and deterministic build-time. Reserved remarkable-buddies: tags carry contract1,

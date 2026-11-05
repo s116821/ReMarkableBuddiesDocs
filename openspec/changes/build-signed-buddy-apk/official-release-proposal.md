@@ -88,7 +88,7 @@ development-capture/mock/native-adapter features (metadata includes dev edges),
 with default features disabled on both declarations. These are resolved graphs,
 not compilation evidence or a claim that dev mock code ships in the binary.
 
-The actual unchanged cargo_identity check with sdk_tag=v0.2.0 refuses after
+At Buddy be488154, the unchanged cargo_identity check with sdk_tag=v0.2.0 refused after
 metadata because Cargo's generated a0c6480 checkout has no refs/tags/v0.2.0.
 The direct rev-parse command exits 128; show-ref --tags exits 1 with no tags.
 The checkout's origin is Cargo's local Git database, which also retains only
@@ -97,20 +97,27 @@ manually. With no SDK tag requested, the original helper accepts metadata-only
 commit-pinned identity and explicitly returns tag=null. That separate observation
 does not pass the required tagged identity or confer installation eligibility.
 
-Minimal proof fix for separate review: give SDK version proof an explicit clean
-full SDK release Git source, independent of Cargo's generated checkout. Require
-its exact HEAD/manifest to match the resolved SDK commit/manifest, the canonical
-repository identity, and an actual stable tag object peeling to that same commit.
-Keep the existing Cargo checkout cleanliness/HEAD checks. Reuse the existing SDK
-remote-identity contract (observe exact remote ref, verify the fetched object and
-peel, reobserve unchanged) at an independently admitted proof boundary without
-writing SDK/cache tag refs. Bind tag/object/commit/manifest proof into pre/post
-producer observations; absence, disagreement or drift refuses. The current dirty
-research checkout is not an admissible release source. No new proof API or
-verification code is implemented here, and no remote qualification is executed.
-Maintainer must review the concrete source/transport/ownership boundary and
-negative controls before admitting that follow-up. Manifest tag text alone,
-local cache commit refs or adjacent release JSON cannot replace actual tag proof.
+The source successor implements the maintainer-accepted explicit proof boundary:
+--sdk-tag must be paired with --sdk-tag-source, an independent clean full Git SDK
+release source. It reuses ordinary source snapshot admission with canonical SDK
+origin, exact tag/HEAD, clean tracked inventory and actual Cargo manifest equality.
+The real local tag object/peel must match two bounded canonical remote
+observations; the local object already exists, so no fetch or ref/config write is
+needed. Effective remote URL rewriting refuses. File and source/Git directory
+identity, local snapshots and remote observations must stay unchanged. Build
+pre/post, both targets and final completion recheck the same proof. The stable
+tag object enters the existing normalized graph digest; filesystem facts remain
+private. SDK signed metadata shape and test-key eligibility are unchanged.
+
+Missing/refused proof is explicit; commit-only mode stays tag=null only when no
+SDK tag/proof was requested. The dirty research checkout is not admissible.
+Offline actual local-Git controls cover the positive tagless-Cargo case and
+malformed/mismatched/moved/dirty/replaced proofs with a simulated canonical
+remote transport. Original be488154 refusal remains historical evidence; it was
+not rerun through or overwritten by this code. No live remote qualification,
+source compilation, packaging or signing ran. Independent source review and a
+separately admitted real proof run remain required. Manifest tag text, cache
+commit refs and adjacent release JSON alone never replace actual tag proof.
 
 Fresh [Buddy v0.62.0 release metadata](https://github.com/s116821/ReMarkableBuddies/releases/tag/v0.62.0)
 points to native consumer `91dcc601154507790254946f8f0f811204a0fd43` and lists
@@ -206,7 +213,7 @@ official local-package release dependency.
 
 | Gate | Required input or decision | Owner / next action |
 | --- | --- | --- |
-| Source | Reviewed Buddy adoption now selects actual SDK v0.2.0/a0c6480 with unchanged bundle; exact-tag helper still refuses missing Cargo checkout ref | Maintainer reviews separate SDK tag-proof boundary, then exact successor CI and eligible Buddy tag |
+| Source | Buddy selects actual SDK v0.2.0/a0c6480 with unchanged bundle; explicit release-source proof implemented and only offline qualified | Maintainer reviews exact successor and CI, then admits a real clean SDK source/tag proof and eligible Buddy tag |
 | Qualification | Exact producer revision, source path, build budget/tool identities and separate execution admission | Maintainer reviews new packet; existing held/spent packets stay untouched |
 | Signing | Selected custodian/location/interface and approved public fingerprint/policy | Maintainer supplies concrete proposal for approval; no production key created/read |
 | Trust | Initial enrollment, rotation/revocation/staleness and Vellum bootstrap rollback | Manager/package owner implements only after approved trust contract |

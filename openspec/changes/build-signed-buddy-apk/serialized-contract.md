@@ -127,6 +127,19 @@ commands and metadata stay in private build evidence; normalization is not a
 claim that different flags/inputs are identical. Normalize before computing
 metadata_identity_sha256 and reproducible package bytes.
 
+Tagged SDK build admission now pairs --sdk-tag with --sdk-tag-source. The latter
+is a clean complete canonical SDK Git release source independent of Cargo's
+generated checkout. Exact local/remote tag object and peel, resolved commit and
+manifest equality, tracked source identity and pre/post drift checks are
+mandatory. Missing/refused proof never falls back to commit-pinned identity.
+No requested tag/proof retains the existing explicitly untagged variant.
+The tagged normalized graph additionally includes sdk_release_tag_object; all
+existing public SDK members and signed tag names/limits above are unchanged.
+Raw proof root/filesystem snapshots and remote observations stay in private
+build evidence, checked across targets and before final output. No path or
+filesystem identity enters the reproducible graph digest, and no SDK/cache ref
+is fetched or rewritten by the verifier.
+
 Bytes are UTF8 without BOM, ASCII-only JSON via sorted object keys, compact comma/
 colon separators, standard JSON escaping, then exactly one LF; no indentation,
 CR or trailing spaces. Arrays retain defined order (features sorted; argv exact).

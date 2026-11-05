@@ -33,6 +33,12 @@ runtime separately, or introduce custom release/version/publication logic.
 - **THEN** the producer refuses before source/tool admission or creating output
 - **AND** fresh sibling roots proceed through the normal exact-source and tool checks.
 
+#### Scenario: Tagged SDK proof independent of Cargo cache
+
+- **WHEN** tagged SDK identity is requested from a Cargo-generated checkout without tag refs
+- **THEN** the producer requires an explicit independent clean full SDK Git release source whose canonical origin, actual tag object/peel, commit and manifest match resolved Cargo identity and stable canonical remote observations
+- **AND** missing, dirty, malformed, replaced, mismatched or moving proof refuses without cache/ref/config writes or silent commit-only fallback.
+
 #### Scenario: Signature and reproducibility
 
 - **WHEN** signed control/payload changes, the key is wrong/missing, or identical fixed inputs/key are rebuilt

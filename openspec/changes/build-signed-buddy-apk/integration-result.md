@@ -187,3 +187,54 @@ qualification or native operation ran. Earlier 21beace6/a6e5ed8d hosted results
 remain attributed to those heads; successor review/CI is required. The whole
 package capability remains active with exact tagged-source build, official
 signing/trust/release and installed lifecycle gates open.
+
+## Independent SDK release-source proof implementation
+
+The maintainer accepted this boundary before implementation. Buddy
+`0e5f0b13919ed5bbb92b873c8af86ff07a5dea56` (parent be488154) adds explicit
+--sdk-tag-source paired with --sdk-tag, using an independent clean full Git SDK
+release source. It reuses ordinary source snapshot/identity admission with only
+the selected canonical repository parameterized; original Buddy checks remain.
+Actual local tag object/peel and Cargo commit/manifest must match canonical
+remote observations. Effective URL rewrites, malformed/duplicate/missing refs,
+dirty or replaced source, manifest/commit mismatch and remote drift refuse.
+The verifier only reads: it creates no tag, fetch, ref, config or cache entry.
+
+Existing Cargo checkout/HEAD/completion-marker checks stay independent. Tagged
+proof is bound into the existing graph digest and private source evidence,
+compared before/after build, across targets and before completed output. Commit-
+only mode remains explicitly tag=null when neither tag/proof is requested; a
+requested but missing/refused proof cannot silently downgrade. The public SDK
+JSON/signed tag shapes, native bundle hashes and ineligible test profile remain
+unchanged. This resolves the source design defect behind the historical tagless
+Cargo refusal; it does not relabel that old attempt as a success.
+
+Current Windows Python 3.12 checks: 48 host cases (44 pass/four existing skips)
+and 11 integration cases (all pass, 105.978 seconds). Integration includes ten
+new actual local-Git proof controls and the original source admission regression.
+The canonical remote transport is explicitly replaced by local Git only in the
+fixture; real tag objects, peels, checkout/source/manifest checks and mutations
+are exercised on disposable fixture repositories. Actual Cargo compilation,
+network, signer, package and tablet operations are absent. The positive case
+also verifies unchanged generated-cache refs/config and explicitly untagged mode.
+Same-commit annotation replacement changes the bound graph identity; replacing
+either the manifest inode or entire proof directory refuses. The existing fake
+build boundary additionally refuses changed proof across pre/post observations.
+
+Retained host log SHA-256
+`acc88f54067acd09cf18aefa2d919380c8fa454b40e8a26829672ddf8a4ff333`;
+integration log SHA-256
+`82789b5a3cf6edff23f0b6602a015f804d39657a363ec1fc80b2ba46adc2d507`.
+The initial eight-case development run is retained but is not counted again.
+Existing CI separately discovers all integration cases in its pinned isolated
+Git fixture stage. Hosted exact-successor Linux checks and independent review
+remain pending, not supplied by these Windows results.
+
+Remaining real gate: independently admit a concrete clean full SDK release
+source/tag proof for the current producer and exact eligible Buddy tag, then the
+separately held SDK-tagged build/package/signature/reproducibility qualification.
+No proof run against the live canonical SDK remote occurred here. Production
+signer/trust/release and installed lifecycle remain open; the full active change
+is not synced or archived. Dirty SDK source, real Cargo cache and original refusal
+receipts were untouched by this implementation/test slice. Local fixture scratch
+uses its existing temporary-directory cleanup; no build cache was created.
