@@ -68,3 +68,37 @@ The active change stays open for its explicitly unfinished native composer,
 gesture/page/effect and genuine aggregate-apply requirements. Root owns final
 delivery scope and review; this reconciliation does not authorize silent merge
 or whole-issue completion.
+
+## Linux all-feature initializer correction
+
+Required hosted run42083031527 rejected ee88697 in the Checks job: all-target,
+all-feature strict Linux Clippy reports E0063 at `workflow/orchestrator.rs:370`.
+The resident Writer `OwnedRun` initializer missed the new `historical_images`
+field. Earlier Windows default checks exclude that Linux function and did not
+cover this failure. The original log is retained with SHA256
+`97890ec33334502389c533da3d310bf23cec24d1f07ef7a157a87bdbd20c744c`;
+no passing receipt replaces or waives it.
+
+Source successor `2b74d7ca3d0df95545922eefcbbfd48689621a76`, tree
+`8ae6a161e366fa777d934f445f40d03d71907d67`, adds only that explicit field and
+its two-line scope comment in one file. Resident refinement retains the delivered
+text-only, memory-disabled `run_owned` contract: current resident capture checks
+source document and page-placement ownership; it does not opt into historical
+image attachment. Therefore the field is false. All three `OwnedRun` initializers
+were inspected: Writer flow already uses false, and the shared ordinary receiver
+keeps its explicit `unified_root.is_some()` association/image path. No provider,
+memory, native permission or new image capability is enabled.
+
+Four distinct focused Windows default controls pass on the successor's source:
+the actual Writer transport Generate/reopen/Refine/PrepareExport control, joined
+Writer/export owner exclusion, and both maintained combined dispatcher/media
+controls. Logs29/30/31 in the same evidence directory preserve these results;
+they are not added to the earlier65count or relabeled as Linux execution.
+Formatting and diff checks pass. The existing target was reused with locked
+offline Cargo/jobs2/incremental0 and explicitly released after no build process
+remained. No source change followed these tests apart from recording the commit.
+
+This local validation does not compile or execute the Linux-only resident
+initializer. Exact successor hosted Linux/all-feature checks, build/integration
+and independent review remain required. The broader native/effect/semantic
+limits remain unchanged; no paid model or tablet action occurred.
