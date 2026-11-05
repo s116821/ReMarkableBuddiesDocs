@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Expose explicit protected same-actor format4 notebook restoration through the existing maintenance family. See the [contract](../../changes/restore-ordinary-notebook-archive/contract.md) for versioned selectors, preserved custody and uncertainty limits.
+Expose explicit protected same-actor format4 notebook restoration through the existing maintenance family. See the [contract](../../changes/archive/2026-11-05-restore-ordinary-notebook-archive/contract.md) for versioned selectors, preserved custody and uncertainty limits.
 
 ## Requirements
 
