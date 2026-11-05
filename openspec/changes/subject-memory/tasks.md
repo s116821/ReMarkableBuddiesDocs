@@ -28,3 +28,8 @@
 - [x] 4.3 Implement selected Provider/catalog projection and actual Reader/maintenance selection, retaining default LocalMemory behavior.
 - [x] 4.4 Guard catalog/all queried aggregates through the actual consuming Ledger write; verify replacement races, losing registrations versus losing fact edits and exact reference preservation using real Store consumers.
 - [x] 4.5 Publish exact source/Docs evidence and independent review while keeping cloud, Writer, Manager, native and restore gates open.
+
+## 5. Proposed optional ordinary Writer increment
+
+- [ ] Review [the Writer receiving contract](writer-receiving-contract.md), including local/selected scope and local snapshot freshness, before implementation.
+- [ ] Implement and verify only the accepted receiving slice with the existing Provider/Store/Ledger primitives; keep remaining task3.1 and full-capability gates open.
