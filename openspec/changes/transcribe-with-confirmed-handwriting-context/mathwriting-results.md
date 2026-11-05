@@ -76,3 +76,65 @@ mathematics failures, NOT MET. Their source/model attribution is unchanged.
 This result does not finish the partial command, Reader/Writer integration,
 shared learning, sync/recovery, native qualification or the whole roadmap.
 The paired change remains active and unarchived.
+
+## Upstream-default rendering comparison
+
+The separately reviewed rendering comparison also remains **NOT MET: 0/4 strict
+usability passes and 0/4 full-expression fidelity passes**. The preceding run
+and all historical scores remain unchanged.
+
+This comparison used the same two original human InkML samples, rendered using
+the dataset's published Cairo defaults. The original traces, scoring rules,
+Buddy 98ec7ba, Terra/high-detail profile, product prompt/parser, selected example
+and four conditions were unchanged. The paired method/result Docs revision was
+380705c19c238528f939076d489acadcd298b2c4. No labels or previous responses entered
+the model request. The raster size, line thickness, antialiasing and margins
+changed together; this is not an isolated test of any one rendering parameter.
+
+| Input | Dimensions | PNG SHA-256 |
+| --- | --- | --- |
+| A | 1335 × 464 | `18d277124829d986bfac7b6800dfcefde0d2105862f03d760111105b74577c18` |
+| B | 536 × 608 | `826690e23474e9b53d5f5594f3590c6668afe2675ffa4976e0be3a69a1774d7f` |
+
+The full packet had 340 verified pins. Independent review reconstructed all four
+typed requests, prompt parts, profiles and complete provider bodies against
+actual-binary loopback captures. The success case and eleven transport or
+incomplete-termination cases passed. These controls qualify the bounded runner,
+not the model's recognition.
+
+| Artifact | SHA-256 |
+| --- | --- |
+| Prospective changed-input method | `d9bd73c5a7691f8e19c9d8ee04a1da1e02c02a5d2289d9b1e827cdd5206ac821` |
+| Packet | `d137e619f4c6d114bea0d9f16121f3e70219258e0217a1a3fef4483b1595d4e9` |
+| Plan | `e249e4e4c32c537c126019d805bb47ac645d9af364d31107002444532d9dbbb0` |
+| Helper binary | `646bb73ebc9ebcfcda27ae90d4ed18f3ac2571eca3a7635d6d33f428883b5f86` |
+| Independent pre-execution review | `e452e283ba955832cfd3cf612c8cbefae389998fa0a32c749b77f0837c6b2120` |
+| Completion receipt | `6f1d10efd324ad232974d60f8bf39f55f106ef8a5ecc70dd169391cbda610daf` |
+| Collected provenance | `192e7f46408488c6063ae4bb45b8ecf268962fe6e64490be2f6ad1d9a1dc3407` |
+| Condition-blinded input | `1368f592db37e5b6fafe097e281205c0c51303c02eab2f7b7e75cb01be240b2e` |
+| Independent blinded score | `db54f2e00a444bf1839e7ec9b95552a2ef4e2f374e60097a5cdef179c49a4893` |
+| Coordinator reconciliation | `711c9ccefc0f9f8de09f1aacd71ef0228977c1867dc5945c30bccbd310675a29` |
+
+All four calls completed once in order A/no-context, B/selected, A/selected,
+B/no-context, with stop termination and unchanged Store. The supervisor returned
+exit 0 with no stdout/stderr, retaining 30,911 bytes across 56 entries. Provider
+usage fields total 5,402 prompt and 2,085 completion tokens. No tablet was used.
+
+The reviewer received sample A/B and randomly identified responses without the
+condition mapping. Root unblinded only after the scoring receipt was saved and
+matched every cell's original response digest.
+
+| Cell | Observed outcome | Frozen criterion |
+| --- | --- | --- |
+| A, no context | Plain equals replaces colon-equals; membership becomes less-than-or-equal; final-Q subscript and union-condition scopes are not encoded. Union and T0 are retained. | Fail |
+| A, selected context | The same assignment/relation/scope errors, with capital U instead of the large union operator. T0 is retained. | Fail |
+| B, no context | Unreadable with no text. | Honest abstention, but required positive structure is absent; fail |
+| B, selected context | Blank with no text despite visible fraction/radical ink. | False blank; fail |
+
+No unrelated technical-example content was observed. This finite result shows
+that the bundled rendering change was insufficient; it does not establish the
+cause, a context effect, or general recognition accuracy. The next source review
+addresses the prompt's lack of a mathematical-layout serialization convention.
+Any revision must remain general, retain uncertainty and exact context isolation,
+use distinct prompt/profile identities, and keep the strict rubric and previous
+failures intact. No new model call follows from this result alone.

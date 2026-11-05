@@ -1,19 +1,21 @@
 # Tasks
 
-Current November 5 checkpoint: source 98ec7ba and prospective-method Docs 217f4fe
+Current November 5 checkpoint: source 98ec7ba and method/result Docs 380705c
 pass their hosted checks. Implementation/local-control receipts are in results.md.
-The new [mathematical comparison](mathwriting-results.md) completed once and
-independent blinded scoring found **0/4 passing cells; NOT MET**. Historical
-Terra/Sol eight-cell comparisons remain six passes/two mathematics failures each.
-The [prospective method](mathwriting-qualification.md) is unchanged. Input-quality
-and mathematical-layout diagnosis is next; no repeat, changed rubric or delivery
-acceptance follows from a mechanically completed request. Earlier preparation
-wording below is historical, not current execution status.
+The [original mathematical comparison and upstream-default rendering comparison](mathwriting-results.md)
+each completed once and independently scored **0/4 passing cells; NOT MET**.
+Historical Terra/Sol eight-cell comparisons remain six passes/two mathematics
+failures each. Rendering changes alone were insufficient. A general mathematical
+layout prompt/contract revision is under review; there is no unchanged rerun,
+relaxed rubric or delivery acceptance. Earlier preparation checkpoints in the
+linked results remain historical, not current execution status.
 
 - [x] Prepare and independently review the exact four-cell MathWriting packet;
   verify schema-compatible scoring, request isolation and unchanged Store.
 - [x] Execute once and independently score all four cells without regrading old
   results; retain the failed acceptance and explicit remaining gates.
+- [x] Compare the existing rasterizer with the published defaults, review a fresh
+  changed-input packet, and independently score the four new calls; retain 0/4.
 - [ ] Diagnose the observed false blank and incorrect mathematical structure;
   review any genuinely changed-input or implementation experiment before running it.
 - [ ] Meet the frozen semantic criterion on a reviewed successor and reconcile
@@ -25,8 +27,8 @@ wording below is historical, not current execution status.
 - [x] Independently accept exact precode/data lifetime/output-attempt matrix before source edits (90ab84d, review5650772407); concrete representative live packet remains a separate pre-call gate.
 
 ## Implementation
-- [ ] Implement typed target/context admission and one owned snapshot with exact current-revision/media/lineage validation; no commit or implicit fallback.
-- [ ] Extend existing notebook normalizer with typed context/payload/reply outcomes and frozen no-context compatibility; implement one progress-aware engine invocation, bounded response and held report/CLI routing.
+- [x] Implement typed target/context admission and one owned snapshot with exact current-revision/media/lineage validation; no commit or implicit fallback.
+- [x] Extend existing notebook normalizer with typed context/payload/reply outcomes and frozen no-context compatibility; implement one progress-aware engine invocation, bounded response and held report/CLI routing.
 - [ ] Exercise actual Store, real output failure, privacy, mode/publisher lifetime, context corruption/conflicts and actual subprocess boundaries through production paths; retain valid-storage APNG/trailing-container consumer refusals, original record/media equality, cooperative versus noncooperative cancellation and revision-only unchanged-prompt controls.
 - [ ] Run current-head format/Clippy/tests/build and independent source review; preserve every failure and avoid large local build under disk pressure.
 - [ ] Establish new representative shareable fixtures and independent reading before at most eight bounded live calls; record baseline/context results including abstention/degradation without efficacy overclaim.
@@ -35,7 +37,9 @@ wording below is historical, not current execution status.
 - [ ] Reconcile current implementation/specs and simulator impact, complete independent acceptance, sync canonical capability and archive only the qualified unit.
 - [ ] Complete normal coordinated Docs-first/Source-second delivery and observe actual-main/publication separately.
 
-Source/CI/live execution and implementation acceptance have not occurred at this preparation checkpoint. Broader Reader/Writer integration and native/learning/sync scope remain unfinished.
+Implementation, local controls, hosted checks and the attributed live runs have
+occurred; semantic acceptance and coordinated delivery remain open. Broader
+Reader/Writer integration and native/learning/sync scope remain unfinished.
 
 ## Opt-in partial v2 review and qualification
 
