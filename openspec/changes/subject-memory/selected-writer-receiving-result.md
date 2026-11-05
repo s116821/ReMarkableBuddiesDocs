@@ -6,7 +6,7 @@ qualification or whole-capability completion is claimed.
 
 ## Explicit caller and dependency
 
-Exact source candidate: `d3cd3c1ae84f98f740a368157aeaf9ad3c602aa5`, tree
+Reviewed source predecessor: `d3cd3c1ae84f98f740a368157aeaf9ad3c602aa5`, tree
 `33a7e9a68f7e0da0e9a7e499b16b2eee5aa3f673`, clean existing subject-memory branch.
 Checkpoint2ffb305 precedes final controls and reconciliation corrections.
 
@@ -64,18 +64,50 @@ fixture failures and distinct succeeding logs. The first five focused tests
 passed; expanded ten passed. The mixed document-memory test then exposed the
 logical-grouping omission above. The subsequent full Writer run passes34 tests:
 23 existing ordinary/preference/notebook/command tests plus11 selected tests,
-excluding subcases. These include separate-process Store reopening, exact
+excluding subcases. These include Store drop/reopen within the same process, exact
 history/source/correction and replay, selected memory enabled/empty/disabled,
 foreign provider/selection and export refusal, tampered/consumed views and empty
 membership replacement, global/Writer replacement, preparation/finish commit
 failure/lost acknowledgment, model failure/cancellation and shared document gates.
-Final source passes all34 Writer tests,96 selected library tests in the parallel
+That reviewed predecessor passes all34 Writer tests,96 selected library tests in the parallel
 batch plus the one existing Reader panic-witness test in isolation, three
 ordinary Reader-memory tests and four actual inspection CLI tests:138 distinct
 passing tests. One paid selected-model test remains ignored. Count child witness
 invocations and subcases only once. The preceding full selected run also passed
 its expensive maximum-size notebook case; it is not added to the138 final-source
-count after the later receiver-only changes.
+count after the later receiver-only changes. This138-count receipt remains
+attributed to the predecessor, not automatically to later corrections.
+
+## Independent review corrections
+
+Corrected source candidate: `16bb123c374aa954aba75d79666822e170349994`, tree
+`1e11db31c2a1b2721f8305c2b97646ae482e81e2`, direct successor to the preserved
+reviewed predecessor. Source diff is limited to preserving the Refine source
+reference, exact-history bounds and two new focused regression controls.
+
+Root found two source corrections before publication. Fresh Refine preparation
+now preserves the caller's exact existing source IntentRecordRef, including its
+original ObjectRef, instead of reserializing imported source bytes. Only newly
+authored Generate sources use newly serialized pins. An actual imported source
+with reordered keys/indented JSON now refines successfully, replays exactly and
+remains byte-identical after Store drop/reopen in the same process. No test here
+proves separate-process reopening.
+
+The receiver also bounds the exact history array it sends: all included turn
+variants count toward64 turns, and all included text contributes to the16KiB
+history budget. Existing Reader-context/media checks and the full96KiB payload
+bound remain. Controls with65 short extra Generated/Failed/Canceled turns and a
+single over-budget Generated text refuse with TooLarge before another model call,
+while preserving every original turn verbatim. No history is truncated.
+
+Focused successor verification passes two tests in16-review-corrections.log.
+All36 Writer tests pass in17-review-all-writer.log, including those two controls
+(counted once, not added again). All-target Windows default-feature Clippy
+completes in18-review-clippy.log with the same inherited three library/nine
+library-test warnings (two duplicated), without new lint findings. Formatting
+and diff checks pass. Broad predecessor receipts are not relabeled as reruns of
+the corrected source. The prior failed batch
+and isolated panic pass remain preserved with their original attribution.
 
 The final parallel selected batch retained one failure: the existing Reader
 panic-witness child exceeded its unchanged20-second parent deadline under batch
