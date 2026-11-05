@@ -9,6 +9,8 @@
 - [ ] 1.3b Review and verify ordinary Git source admission in the pinned Cross views. Local controls cover raw inventory, mode and dirty-state refusal. The live mapping and source observation are separate, and build/SDK qualification remains open.
 - [ ] 1.4 Produce real reproducible test-key Buddy APK/index/public-key artifacts from an actual checked executable; never substitute text/fake metadata for payload proof.
 - [x] 1.5 Refuse equal/nested build and final output roots before source/tool admission or creation; pure-local controls cover all three overlap forms and normal sibling admission. No tagged build or signing is implied.
+- [x] 1.6 Adopt reviewed actual SDK v0.2.0 source in both dependency declarations/lock and resident SDK pin, retaining exact native bundle hashes; observe both locked target graphs and preserve the unchanged exact-tag check's concrete missing-ref refusal.
+- [ ] 1.7 Review and implement legitimate SDK release tag proof independent of Cargo's tagless generated checkout, with exact commit/manifest and pre/post tag-object binding. Do not create cache tags or relax identity checks; see official-release-proposal.md.
 
 ## 2. Verification and delivery
 

@@ -147,3 +147,43 @@ trust/resource/settings change, publication or tablet operation occurred. The
 full producer change remains active, unsynced and unarchived pending its listed
 acceptance gates. Raw local receipts/logs are retained by the maintainer without
 a public download link; source identities and hosted references are public.
+
+## Actual released SDK source adoption
+
+Maintainer accepted the source-equivalence review before the four-line
+three-file SDK adoption at Buddy
+`be488154b06a546ce2c8d25d8870643dcba970e7` (parent 21beace6). Both SDK dependency
+edges now select actual v0.2.0, Cargo.lock binds a0c6480, and the resident contract
+requires that exact SDK commit. The native bundle hash and every test-key and
+installation-ineligible field remain unchanged. Source manifests/lock were
+byte-identical before and after ordinary locked metadata, matching the reviewed
+patch; no Cargo package version was manually changed.
+
+Ordinary Cargo used the existing Cargo home/cache and populated its normal
+a0c6480 Git checkout from the canonical repository. No separate cache or build
+target was created, and no cache ref was manually written. ARMv7 resident and
+ordinary AArch64 metadata accepted both tag-selected dependency edges with their
+declared default-feature opt-out, normal/dev feature sets and locked source.
+Actual metadata-only helper observations have 388 and 390 graph nodes; their
+normalized graph digests are respectively
+`f810e8bde45d6f7f120a35532f18b92ee872562bbace02f6cfd2a22cb42ad76e`
+and `0defc0737d0cc819c1f008d28acf73ae271adac9cb767fcb9e2c49de3f0b4d0a`.
+The shared lock digest is
+`5ae32abe822fd06668d034e09cab8559665dbb0014c6905a8e64a83974cbdaf9`.
+
+The unchanged exact-tag helper was also invoked with v0.2.0 and refused after
+metadata. Independently repeating its read-only SDK rev-parse command returned
+exit 128: Cargo's checkout has no refs/tags/v0.2.0. Both checkout and Cargo Git
+database retain no tag refs. With sdk_tag=None, the same helper accepts only
+commit-pinned/tag=null metadata, which is recorded separately and is not tagged
+qualification. The missing-ref refusal is preserved; no exact-tag logic, SDK
+research files or cache refs were edited to force it through. The separate
+proof-boundary proposal in official-release-proposal.md remains unimplemented
+and requires maintainer review.
+
+Current adopted-source Python APK suite: 47 cases, 43 pass/four existing explicit
+skips. No compilation, actual APK tool, package generation, signing, remote
+qualification or native operation ran. Earlier 21beace6/a6e5ed8d hosted results
+remain attributed to those heads; successor review/CI is required. The whole
+package capability remains active with exact tagged-source build, official
+signing/trust/release and installed lifecycle gates open.

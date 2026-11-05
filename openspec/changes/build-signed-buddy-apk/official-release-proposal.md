@@ -21,7 +21,8 @@ maintainer reconciles their PR status; do not merge another copy of their code.
 The normal builder reconciliation uses main for the ten add/add conflicts:
 each incoming file is the reviewed resident extension of that builder file.
 The entire resulting source tree equals delivered main before the separate
-output-path refusal repair. That repair is the only new source behavior here.
+output-path refusal repair. That reconciliation's first successor adds only the
+refusal repair; the later reviewed SDK identity adoption is described below.
 The paired Docs draft still has its unique active contract/evidence; it must
 remain active until the unfinished capability is verified, synced and archived.
 
@@ -37,7 +38,7 @@ lane. Maintainer owns delivery; native operator remains the sole tablet owner.
 
 ## Exact resident input, still ineligible
 
-The current RM2 fixture selects installed-resident-output, SDK commit
+The delivered RM2 fixture selected installed-resident-output, SDK commit
 `c87e5628f35af5647c1d2da3331ad5e07a55f0f8`, and bundle SHA-256
 `f9c4b44b9baf281bc47c74470ddd8d098853e79383e9323e5ff02ef2846fb477`.
 It packages eight resident files plus package LICENSE/build.json. Executable,
@@ -54,10 +55,62 @@ Fresh remote tag observation finds SDK v0.2.0 tag object
 `a0c6480be6785480c2e0da76a3c06697a18efae4`, different from the consumed c87e5628.
 The existing cargo_identity --sdk-tag check requires exact commit equality.
 SDK publication alone therefore does not make this consumed pin tagged.
-Do not label c87e5628 as v0.2.0, change the pin or weaken that check. Maintainer
-must resolve the SDK version contract explicitly: qualify a Buddy update to an
-approved SDK release and reproducible bundle, or provide a legitimately approved
-exact-source SDK release contract. Both require review beyond this preparation.
+Do not label c87e5628 as v0.2.0 or weaken that check. The reviewed source adoption
+below changes Buddy to the actual released commit; the historical native evidence
+remains attributed to its original source. Exact-tag producer admission remains
+an observed separate gap rather than an assumed pass.
+
+### Reviewed source adoption and observed tag refusal
+
+Maintainer source review accepted the SDK update after independently verifying
+173 identical existing Rust/manifest/tool/license/native entries, four exact
+bundle recipe files and the squash tree correspondence. Consumed c87e5628 is an
+ancestor of PR31 head 2f7c886, whose complete tree equals released a0c6480. It is
+not an ancestor of the squash commit itself. Between c87e5628 and that tree,
+only deterministic bundle tooling, attributes/docs and OpenSpec closeout changed;
+the Rust API/features/dependencies, existing native build/profile inputs and
+licenses are unchanged. A new SDK release or retag is unnecessary for adoption.
+
+Buddy now selects tag v0.2.0 in both dependency declarations, locks exact
+a0c6480be6785480c2e0da76a3c06697a18efae4 and requires that same SDK hash in the
+resident package contract. The native bundle hash remains f9c4b44b...: all
+existing native inputs and the executed R128 recipe are identical in released
+source. This is source/recipe equivalence plus prior operator evidence, not a
+new native rebuild. The Git dependency's generated Cargo package version stays
+0.0.0 because its source manifest omits version; Git tag and locked source remain
+the version authority.
+
+Ordinary locked Cargo metadata resolves both normal and dev edges to the actual
+tag/commit. ARMv7 has root features development-input-diagnostics,
+development-resident-bootstrap and installed-resident-output; the ordinary
+AArch64 root has no enabled features. Both metadata graphs show the SDK's
+development-capture/mock/native-adapter features (metadata includes dev edges),
+with default features disabled on both declarations. These are resolved graphs,
+not compilation evidence or a claim that dev mock code ships in the binary.
+
+The actual unchanged cargo_identity check with sdk_tag=v0.2.0 refuses after
+metadata because Cargo's generated a0c6480 checkout has no refs/tags/v0.2.0.
+The direct rev-parse command exits 128; show-ref --tags exits 1 with no tags.
+The checkout's origin is Cargo's local Git database, which also retains only
+commit refs after normal Cargo resolution. No cache tag was fabricated/fetched
+manually. With no SDK tag requested, the original helper accepts metadata-only
+commit-pinned identity and explicitly returns tag=null. That separate observation
+does not pass the required tagged identity or confer installation eligibility.
+
+Minimal proof fix for separate review: give SDK version proof an explicit clean
+full SDK release Git source, independent of Cargo's generated checkout. Require
+its exact HEAD/manifest to match the resolved SDK commit/manifest, the canonical
+repository identity, and an actual stable tag object peeling to that same commit.
+Keep the existing Cargo checkout cleanliness/HEAD checks. Reuse the existing SDK
+remote-identity contract (observe exact remote ref, verify the fetched object and
+peel, reobserve unchanged) at an independently admitted proof boundary without
+writing SDK/cache tag refs. Bind tag/object/commit/manifest proof into pre/post
+producer observations; absence, disagreement or drift refuses. The current dirty
+research checkout is not an admissible release source. No new proof API or
+verification code is implemented here, and no remote qualification is executed.
+Maintainer must review the concrete source/transport/ownership boundary and
+negative controls before admitting that follow-up. Manifest tag text alone,
+local cache commit refs or adjacent release JSON cannot replace actual tag proof.
 
 Fresh [Buddy v0.62.0 release metadata](https://github.com/s116821/ReMarkableBuddies/releases/tag/v0.62.0)
 points to native consumer `91dcc601154507790254946f8f0f811204a0fd43` and lists
@@ -153,7 +206,7 @@ official local-package release dependency.
 
 | Gate | Required input or decision | Owner / next action |
 | --- | --- | --- |
-| Source | Exact eligible Buddy tag and compatible consumed SDK release/bundle; resolve c87e5628 versus v0.2.0 | Maintainer coordinates SDK/Buddy source review; no pin change here |
+| Source | Reviewed Buddy adoption now selects actual SDK v0.2.0/a0c6480 with unchanged bundle; exact-tag helper still refuses missing Cargo checkout ref | Maintainer reviews separate SDK tag-proof boundary, then exact successor CI and eligible Buddy tag |
 | Qualification | Exact producer revision, source path, build budget/tool identities and separate execution admission | Maintainer reviews new packet; existing held/spent packets stay untouched |
 | Signing | Selected custodian/location/interface and approved public fingerprint/policy | Maintainer supplies concrete proposal for approval; no production key created/read |
 | Trust | Initial enrollment, rotation/revocation/staleness and Vellum bootstrap rollback | Manager/package owner implements only after approved trust contract |
