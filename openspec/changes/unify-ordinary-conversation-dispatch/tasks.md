@@ -13,7 +13,7 @@
 
 ## Delivered-baseline receiving reconciliation
 
-- [ ] Normally integrate delivered Buddy f6af5d1 and Docs3bfecf70 without rewriting the existing reviewed branch or attributing old checks to the successor.
+- [x] Normally integrate delivered Buddy f6af5d1 and Docs3bfecf70 without rewriting the existing reviewed branch or attributing old checks to the successor.
 - [ ] Preserve current Reader selected/joined publication, resident startup, standalone Writer memory contracts and the routed exact request/history/image-association contract.
 - [ ] Resolve actual receiving API differences explicitly; keep optional ordinary memory a receiver concern and refuse selected/foreign configuration without ordinary fallback.
 - [ ] Verify affected ordinary dispatch, source associations, Writer and Reader regression controls when the shared target is coordinated; record exact successor review and hosted evidence separately.
