@@ -26,3 +26,12 @@ confirmation. The default notebook normalizer and v1 operation keep their
 existing wire bytes and whole-page policy. The [v2 precode](partial-v2-review.md)
 is pending implementation acceptance. The spent r2 recognition result stays
 NOT MET and no fresh provider execution is admitted by this change.
+
+## Explicit mathematical layout policy
+
+Add an opt-in `partial-math-transcription` policy within the existing v2 envelope.
+Its general layout addendum and distinct profile identity request unambiguous
+LaTeX for readable mathematics while preserving existing policies and schemas.
+The [prospective contract](math-layout-profile.md) records the partial-span
+representation limit and required regressions. This is not an accuracy claim or
+permission to reinterpret either failed mathematical comparison.

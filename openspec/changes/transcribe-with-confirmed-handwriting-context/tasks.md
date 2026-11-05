@@ -47,3 +47,15 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
 - [x] Independently accept the exact v2 precode before changing Buddy source (Docs 052d1b2).
 - [ ] Verify byte-exact default and v1 compatibility and all v2 admission, outcome, bounds, cancellation and ownership cases through production paths.
 - [ ] Review separately authorized semantic qualification before any fresh provider execution. The historical r2 result remains NOT MET and all eight calls are spent.
+
+## Explicit mathematical layout policy
+
+- [x] Specify the general math addendum, explicit policy, distinct profile recipe,
+  unchanged schema and uncertainty limitation before code.
+- [ ] Independently review the exact precode, prompt and six identity vectors.
+- [ ] Implement the opt-in policy through existing admission/normalization only;
+  verify old vectors, new identities, inert string preservation and actual CLI.
+- [ ] Independently review current source and required checks before a fresh
+  four-cell math comparison with the unchanged targets and strict rubric.
+- [ ] Qualify the unchanged Hunter/Howe/blank fixtures in a separate six-cell
+  regression packet before coordinated delivery; preserve every failed result.

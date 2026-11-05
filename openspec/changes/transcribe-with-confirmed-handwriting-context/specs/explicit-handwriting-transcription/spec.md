@@ -64,3 +64,22 @@ version routing.
 #### Scenario: Malformed opt-in or malformed provider reply
 - **WHEN** an input cannot admit the v2 version/policy pair or a called engine returns a malformed v2 variant
 - **THEN** the operation SHALL refuse at the respective boundary, keep the applicable versioned envelope and attempt facts, and preserve no partial or normalized result.
+
+### Requirement: Mathematical layout is an explicit inert-text policy
+
+The v2 envelope SHALL additionally accept the exact explicit policy
+`partial-math-transcription`. It SHALL reuse the existing partial response schema
+and parser with the general layout addendum and distinct prompt/profile identities
+specified in the math layout contract. Default, v1 and original v2 policy bytes
+SHALL remain unchanged. Mathematical notation SHALL remain unverified inert
+string content, without rendering, execution, repair, automatic confirmation or
+cross-uncertainty concatenation. All existing custody, limits and invocation rules
+SHALL remain applicable.
+
+#### Scenario: Explicit mathematical layout
+- **WHEN** a caller selects the math policy in a valid v2 request
+- **THEN** the prompt requests grouped mathematical notation through one additional fixed instruction part, retains target-last context isolation, and identifies the new profile without changing target-only source identity or the output schema.
+
+#### Scenario: Unknown mathematical attachment
+- **WHEN** a glyph or attachment cannot be encoded as an independently complete known fragment
+- **THEN** the prompt requires an uncertain enclosing expression instead of guessed arguments or flattened structure; absence of required positive structure remains a failed recognition criterion even when the response is a safe abstention.

@@ -1,5 +1,16 @@
 # Design
 
+## Prospective mathematical layout policy
+
+The separately opt-in [math profile](math-layout-profile.md) adds only a general
+instruction part and distinct profile identity. It retains existing request and
+response fields, partial parser, context capture, limits and transport. Preserve
+default, v1 and original v2 bytes; do not silently replace a failed profile.
+Closed mathematical fragments can remain inert LaTeX strings, but unknown
+structural attachments cannot be represented by the existing textless uncertainty
+span. The prompt must conservatively mark the enclosing expression uncertain;
+this limitation does not waive the required positive-structure qualification.
+
 ## Current behavior and ownership
 Delivered local corrections retain explicit confirmed sample/text pairs under Handwriting1. Reader's existing two-pass analysis and Writer generation do not consume them. The shared LLMEngine supports text/image parts and cooperative progress callbacks. Its default execute_with_progress checks once before execute; arbitrary engines cannot be forcibly preempted. The configured OpenAI transport separately owns, cancels and joins its worker. The configured OpenAI-compatible transport bounds a response to10 MiB and4000 completion tokens. Reuse it; do not add a worker, dependency, model installation or new persistence format.
 
