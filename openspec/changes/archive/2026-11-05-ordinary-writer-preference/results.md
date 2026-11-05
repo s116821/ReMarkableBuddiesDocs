@@ -19,7 +19,7 @@ frozen notebook plan, running reload or preset-routing qualification.
 The original local receipt above retains its revision. The reviewed source is
 `34fe4decc9764a34a3bbe843e484c26b0fe0687b`, unchanged by this Docs closeout.
 Its hosted run41826253840 passes all required source checks; pre-closeout
-Docs414a433 passes41826269409. Current PR reads show the same heads and no
+Docs414a433 passes41826269409. PR reads at acceptance showed those heads and no
 review-comment findings. The reviewed route successor packet is `0fd85ff9`,
 driver `44b9098d`, with exact admission
 `fc8448653953a34236fd8d2752a09a6ec9aaa18103c105284057e3ebbb0085a3`.
@@ -51,3 +51,12 @@ paragraph and scenario. Existing capability requirements are preserved. This
 archive is a prepared paired delivery; coordinator owns final review, exact
 successor Docs checks, publication and merge. No application release or native
 runtime claim follows from this Docs revision.
+
+## Delivered-main reconciliation
+
+Buddy PR #120 now proposes `8dd025d50d148a3625319347cd3bc43cf1ac7f92`,
+tree `8beaf22c86ffa748cb2d6405ff5f8455d258be83`, after a normal merge of
+delivered main `91dcc60`. The ordinary Writer module and its integration-test
+file remain byte-identical to the live-qualified `34fe4de` revision. The live
+receipt remains attributed to its original binary; fresh hosted checks on the
+combined source and this Docs successor are required before paired merge.
