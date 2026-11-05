@@ -1,16 +1,23 @@
 # Tasks
 
-Current November 5 checkpoint: source98ec7ba and Docs84fe6b0 pass their hosted
-checks; implementation/local-control receipts are in results.md. Historical
-Terra/Sol comparisons each passed six cells and failed both old mathematics cells.
-The new [prospective mathematical method](mathwriting-qualification.md) is frozen
-before any output; its packet review and execution remain pending. Earlier
-preparation-checkpoint wording below is historical, not current execution status.
+Current November 5 checkpoint: source98ec7ba and prospective-method Docs217f4fe
+pass their hosted checks. Implementation/local-control receipts are in results.md.
+The new [mathematical comparison](mathwriting-results.md) completed once and
+independent blinded scoring found **0/4 passing cells; NOT MET**. Historical
+Terra/Sol eight-cell comparisons remain six passes/two mathematics failures each.
+The [prospective method](mathwriting-qualification.md) is unchanged. Input-quality
+and mathematical-layout diagnosis is next; no repeat, changed rubric or delivery
+acceptance follows from a mechanically completed request. Earlier preparation
+wording below is historical, not current execution status.
 
-- [ ] Prepare and independently review the exact four-cell MathWriting packet;
+- [x] Prepare and independently review the exact four-cell MathWriting packet;
   verify schema-compatible scoring, request isolation and unchanged Store.
-- [ ] Execute once and independently score all four cells without regrading old
-  results; reconcile bounded acceptance and remaining gates before delivery.
+- [x] Execute once and independently score all four cells without regrading old
+  results; retain the failed acceptance and explicit remaining gates.
+- [ ] Diagnose the observed false blank and incorrect mathematical structure;
+  review any genuinely changed-input or implementation experiment before running it.
+- [ ] Meet the frozen semantic criterion on a reviewed successor and reconcile
+  remaining source/spec/delivery gates; no blanket efficacy claim.
 
 ## Preparation
 - [x] Read current task and all comments; compare delivered correction provider and existing Reader/Writer/LLMEngine routes.
