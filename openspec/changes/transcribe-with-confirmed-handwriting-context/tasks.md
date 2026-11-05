@@ -1,12 +1,16 @@
 # Tasks
 
-Current November 5 checkpoint: source 98ec7ba and method/result Docs 380705c
-pass their hosted checks. Implementation/local-control receipts are in results.md.
+Current November 5 checkpoint: source a25d1bc implements the reviewed explicit
+math policy; 23 focused tests, two actual CLI tests and local Clippy pass.
+Its hosted checks are pending. Earlier source 98ec7ba and method/result Docs
+380705c passed their own hosted checks. Implementation/local-control receipts
+are in results.md and [the math implementation record](math-layout-profile.md#implementation-record).
 The [original mathematical comparison and upstream-default rendering comparison](mathwriting-results.md)
 each completed once and independently scored **0/4 passing cells; NOT MET**.
 Historical Terra/Sol eight-cell comparisons remain six passes/two mathematics
 failures each. Rendering changes alone were insufficient. A general mathematical
-layout prompt/contract revision is under review; there is no unchanged rerun,
+layout prompt/contract revision passed independent precode and source review;
+its live semantic qualification remains pending. There is no unchanged rerun,
 relaxed rubric or delivery acceptance. Earlier preparation checkpoints in the
 linked results remain historical, not current execution status.
 
@@ -52,8 +56,9 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
 
 - [x] Specify the general math addendum, explicit policy, distinct profile recipe,
   unchanged schema and uncertainty limitation before code.
-- [ ] Independently review the exact precode, prompt and six identity vectors.
-- [ ] Implement the opt-in policy through existing admission/normalization only;
+- [x] Independently review the exact precode, prompt and six identity vectors;
+  clarify unreadable fallback when no independently complete known text remains.
+- [x] Implement the opt-in policy through existing admission/normalization only;
   verify old vectors, new identities, inert string preservation and actual CLI.
 - [ ] Independently review current source and required checks before a fresh
   four-cell math comparison with the unchanged targets and strict rubric.

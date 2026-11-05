@@ -97,3 +97,41 @@ These prospective checks do not authorize execution by themselves. Existing
 human API authority can support a concrete reviewed run without another user
 permission request. Positive live evidence remains distinct from native testing,
 automatic Reader/Writer integration, learning efficacy and whole-feature closure.
+
+## Implementation record
+
+Source `a25d1bc6f1f7c7f3c1d1765766d2a96093884734`, tree
+`00db852a937dc57010a1660abd28bc4d6432b714`, implements this contract in the
+existing admission and notebook normalizer. The literal and six vectors match
+the reviewed precode. The private policy carries through admission; old default
+and partial-v2 request bytes, reply schema and bounds remain unchanged. LaTeX is
+an inert returned string, with no renderer, parser, repair or execution added.
+
+Windows checks on the implementation passed: 23 focused transcription tests,
+two actual CLI tests, formatting and all-target Clippy. Clippy retains six
+pre-existing Windows-only dead-code warnings in unrelated Writer test helpers;
+this is not a warnings-as-errors or Unix execution claim. The actual Store and
+normalizer tests cover old/new vectors, exact context/target assembly, full and
+partial string preservation, unreadable/all-uncertain outcomes, output bounds,
+cancellation, lifetime and unchanged data. CLI controls cover version/policy
+precedence and refusal before credentials/model dispatch. Existing Unix SIGINT
+controls are not claimed as locally executed math-policy tests.
+
+Independent source review found no blocking issue and recommended one additional
+prompt-budget control. The added test holds the examples constant: legacy text
+parts total 31,336 bytes; the math addendum raises them to 33,310, exceeding the
+unchanged 32,768-byte limit. Actual admission refuses before a second model call.
+The first fixture used too much example text and exceeded both budgets; its
+failed log is retained. Reducing only that fixture to the independently checked
+boundary produced the final 23/23 pass. No production limit was changed.
+
+Evidence digests:
+
+- Final focused test log: `01fd63da97fbb2fc3e3e343cb3fa495a223eb0044b4dd9aec0d2c7fcb5716e3e`.
+- Actual CLI log: `8fb1937573782195d982a5eee4cc8b493ed433db8c3c3c388a33072efe9edf97`.
+- Clippy log: `f13307e5558714d4739465db70e4681e115ef81d38e217fa2fa0ee94a6088ed1`.
+- Independent source review: `dd9ab2be8933477475e8f612d67b6b4fb33b1d0316ba6a900766de12dc5a30d5`.
+- Independent boundary follow-up: `80a1edcfe756db600e5a3984ee320d7a0f425351558ce4347cd64a42e536dddf`.
+
+Hosted checks, the fresh four-cell semantic comparison and separate six-cell
+regression remain delivery gates. Prior failed recognition results are unchanged.
