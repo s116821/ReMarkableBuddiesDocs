@@ -94,6 +94,10 @@ The domain SHALL atomically associate a conversation and deterministic document/
 - **WHEN** only a legacy header match or imported association is available
 - **THEN** it does not authorize native reuse; verified identity and current device ownership are required, and no OCR import or native edit occurs automatically.
 
+#### Scenario: Explicit existing-page acquisition receipt
+- **WHEN** a separately qualified adoption supplies an ExistingCurrent or ExistingAdjacent binding receipt under existing-page-binding.md
+- **THEN** the existing atomic binding API preserves unchanged complete page order and exact current/adjacent target correspondence under schema 2, retains legacy schema-1 insertion bytes/fingerprints and historical retry semantics, and exposes only historical candidate evidence rather than native permission
+
 ### Requirement: Exact context with explicit limits
 Context assembly SHALL preserve canonical chronology and exact visible turn text, return its included turn/media identities, and report exceeded or unknown requested bounds explicitly. It SHALL NOT silently truncate, summarize or rewrite the ledger, and SHALL keep storage-byte limits distinct from provider-token budgets. Source: REM-37 context limits and later REM-38/39 consumers.
 
