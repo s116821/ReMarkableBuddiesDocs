@@ -26,7 +26,9 @@ exact [math layout addendum](prompt-math-layout-v1.txt) as the second text part
 only for the new policy. Then append the unchanged confirmed-context instructions
 and selected examples, when present, followed by the unchanged manifest and
 target image. Do not modify images, labels, selected context, provider options
-or model. The original prompt/addendum files are not edited.
+or model. The original prompt/addendum files are not edited. The new multiline
+literal uses LF bytes on every host, enforced by scoped Git attributes in both
+repositories, so Windows checkout conversion cannot alter its pinned digest.
 
 | Field | New policy value |
 | --- | --- |
