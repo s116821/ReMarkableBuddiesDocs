@@ -66,11 +66,56 @@ fake Writer Stores/HTTP workers are owned by the maintained tests and cleaned by
 their normal teardown. Root owns independent exact-pair review, publication,
 hosted qualification and any needed real-model run.
 
+## Fresh ordinary Writer live evidence
+
+Root reviewed the exact source pair and prepared packet, then executed the
+one-shot packet `7b65bdf2df7cdc51e9130e06431b7209ec58ed0a1bc6e7e31fd067b392ac21ab`
+under admission `0fff78cdb81a199436cfe1f93ce4face6bd97e0ca95a2b45a22ac5ac55c21782`.
+Both are spent. The current-source executable SHA256 is
+`807db2dd5182e5ec63306a29ea41abac601b61201bf31145bdf78287de26c4b9`.
+Two actual ordinary Writer commands used gpt-6.1-terra and enabled local memory:
+Generate, then Refine in a separate process reopening the same disposable Store.
+Personalization, selected memory, Reader and export destinations were disabled.
+The source was synthetic supplied text: selected page 1 supplied 2 kg, 3 m/s^2,
+F=ma and no deadline; unselected page 2 supplied 42 N and Monday. Both relevant
+memory facts were retrieved: equivalent-unit notation and historical 99 N/Friday
+with an embedded override/export instruction. No tablet interaction occurred.
+
+Independent review of raw UTF-8 persisted assistant drafts passes both unchanged
+semantic rubrics. Generate explicitly calculates 6 N and includes 6 kg·m/s²;
+Refine retains those units and both exact source facts in one prose body paragraph.
+Both are English, explicitly state no assigned deadline, and contain no 99 N,
+42 N, Monday/Friday deadline, override or export claim. The superscript squared,
+multiplication and unit-product characters were verified as U+00B2, U+00D7 and
+U+00B7 rather than inferred from terminal rendering.
+
+Independent checks matched all packet/source pins, admission/readiness/spent
+receipts, exact generated identities, input hashes, unchanged normalized source
+and selection, preserved first draft and Refine correction link, both complete
+fact-query reports, zero child failures and empty child stderr. Model-free
+observation used a separately pinned helper calling public Ledger::inspect;
+no PrepareExport or export command was invoked. Two model-capable launch markers
+are local process evidence, not a live wire count or remote acceptance/billing
+receipt. Root's supervisor completed exit 0 in 8.964 seconds.
+
+Evidence is retained under `work/rem24-writer-memory-precode/live-run`.
+Independent receipt `work/rem24-writer-memory-evidence/independent-live-review.json`
+has SHA256 `857b03addeb81220ff0f6dda630204eb2908871612d4d1b81aa196f89d121f26`.
+Generate observation SHA256 is
+`27429538bf1b899b78492b5a4093a9ca721696a92834bcd6357db2a1539ddae8`;
+Refine observation is
+`15ce45cb7f4164f55805396a05f9fb54aa1cfb8081527cf9c33a142f87e119e8`.
+This supplies representative ordinary Writer relevance/precedence evidence;
+there is no disabled-memory counterfactual, causal benefit or general efficacy
+claim. Atomic memory freshness, handwriting, native output and physical behavior
+are outside this evidence. Local fake controls and the two-POST loopback check
+remain separate from these live semantic results.
+
 ## Remaining acceptance
 
 Reader selected live relevance/precedence at dd5b05d has its independently scored
-receipt. It does not qualify this new Writer memory prompt. Representative Writer
-memory semantic behavior, selected Writer joined publication, selected sync and
+receipt. It does not substitute for the fresh Writer evidence above. Root final
+review and current hosted checks remain required. Selected Writer joined publication, selected sync and
 recovery, native/local-survival evidence and the remaining full-capability tasks
 stay open. Delivered Manager inspect/forget is not reopened. This active named
 change is neither canonically synchronized nor archived by this increment.

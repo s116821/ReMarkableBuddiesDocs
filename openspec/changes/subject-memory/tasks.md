@@ -34,4 +34,5 @@
 - [x] Review [the Writer receiving contract](writer-receiving-contract.md), including local/selected scope and local snapshot freshness, before implementation.
 - [x] Implement and verify only the accepted receiving slice with the existing Provider/Store/Ledger primitives; keep remaining task3.1 and full-capability gates open.
 
-- [ ] Independently review the exact Writer-memory/current-main successor, complete required hosted checks and separately qualify representative Writer-memory model behavior before delivery.
+- [x] Independently review the exact Writer-memory/current-main successor and separately qualify representative ordinary Writer-memory model behavior; retain [the bounded live evidence](writer-receiving-result.md#fresh-ordinary-writer-live-evidence).
+- [ ] Complete required current hosted checks and Root final coordinated delivery review; preserve all full-capability gates.
