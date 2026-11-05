@@ -166,3 +166,21 @@ for literal utilities, semantic tokens and development/production host checks.
 Native Linux and independent Windows evidence are separately attributed in the
 [bounded verification archive](../openspec/changes/archive/2026-10-08-manager-shared-tailwind/verification.md).
 Tablet transport and installer gates remain separate.
+
+The [saved handwriting correction guide](manager-handwriting-corrections.md) covers explicit-profile inspection, fresh exact-record removal confirmation, retained history and original-operation uncertainty in both companions. Recognition effectiveness and provider/native integration remain separate.
+
+## Deliberate storage preparation
+
+Both companions add policy-only **Review storage setup** and separate
+**Prepare storage** using the existing fixed Initialize selector. Review sends no
+tablet command; confirmation permits normal configured owned-storage creation and
+recovery, including owned staging cleanup. Saved mode remains unchanged. See the
+[Manager setup guide](https://github.com/s116821/RemarkableBuddiesManager/blob/main/docs/storage-initialization.md)
+for prerequisites, bounded history and the manual command equivalent.
+
+A complete validated original success means storage prepared, without runtime,
+cloud or durability qualification. A possibly dispatched operation without an
+admitted result remains unconfirmed. Current inspection cannot settle it, and
+unknown history blocks another initialization for the same connection within the
+host lifetime even after reboot. History is in memory only; restart supplies no
+reconciliation. Physical tablet/provider/native qualification remains separate.

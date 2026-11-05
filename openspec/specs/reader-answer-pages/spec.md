@@ -7,7 +7,7 @@ Describe the implemented reader answer pages contracts, initially baselined from
 ### Requirement: Successor navigation and identity heuristic
 After agreement, the automatic native acquisition path SHALL first resolve current Buddy-page reuse under buddy-page-reuse-contract.md. A relevant current Buddy page SHALL be reused without a successor navigation attempt. Otherwise the path SHALL retain the ORIGINAL source identity/order, resolve its immediate successor, reuse a qualified relevant Buddy successor, or insert after that original source and before a positively identified non-Buddy successor after fresh placement revalidation. A verified end of document SHALL allow qualified creation after the original source once current-page reuse is ruled out. Unknown recognition/association SHALL not authorize creation. Verified RM2 navigation SHALL use ordered native identity and fresh settled pixels under the reader-responsiveness contract.
 
-The explicitly authorized legacy/manual fallback SHALL retain its one-successor visual heuristic for unsupported layouts and its separately documented REM-25 fallback limits; it SHALL not be represented as the automatic path. Masked screenshot similarity at least0.999 SHALL still identify unchanged pages. Neither failure nor refusal SHALL draw source feedback.
+The explicitly authorized legacy/manual fallback SHALL retain its one-successor visual heuristic when the resident profile cannot be selected and the ordinary portrait route is admitted. Missing portrait admission or an unsupported ordinary layout SHALL refuse before a swipe. Masked screenshot similarity at least0.999 SHALL still identify unchanged pages. Neither failure nor refusal SHALL draw source feedback.
 
 #### Scenario: Automatic end of document
 - **WHEN** qualified current-page assessment rules out reuse and verified native order has no successor after the original source
@@ -19,7 +19,7 @@ The explicitly authorized legacy/manual fallback SHALL retain its one-successor 
 
 #### Scenario: Physical gesture and completion
 - **WHEN** navigation requires a swipe
-- **THEN** ordinary product gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, while unsupported layouts retain documented legacy waits without verified-layout claims
+- **THEN** ordinary product gesture timing remains15 steps at10ms after50ms initial contact; verified-layout completion uses correlated state, and unsupported ordinary layouts refuse before emission
 
 #### Scenario: Capture allocation changes after the swipe
 - **WHEN** a destination observation within verified RM2 navigation detects changed mappings or a discovery candidate disappears from the fresh map after an I/O error
@@ -113,7 +113,7 @@ Reader SHALL retain distinct Selection, Transcription, Provider, NoSuccessor, In
 - **THEN** it remains untouched on success and failure, with no new feedback eligibility requirement.
 
 ### Requirement: Reusable page decisions and Q&A composition
-The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and verified completion semantics, with documented unsupported-layout timing exceptions. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
+The workflow SHALL expose reusable source-page verification and pure answer-page classification/Q&A composition helpers, preserving existing thresholds, masks, formatting and verified completion semantics. Recovery SHALL use the single-attempt policy in Invalid successor recovery. Source: src/workflow/mod.rs, src/workflow/navigation.rs and src/workflow/orchestrator.rs.
 
 #### Scenario: Equivalent navigation comparison
 - **WHEN** forward movement or return-to-source is verified

@@ -8,6 +8,10 @@ verbatim into canonical conversation-context. The other nine conversation
 requirements and every unfinished Reader/native/platform/simulator delta remain
 active. No native or provider gate is checked off by this preparation.
 
+The [ordinary SDK gesture consumer](../archive/2026-11-04-host-gesture-consumer/result.md)
+has a separate bounded delivery for guarded portrait plan consumption.
+Current native qualification and the retained adapter continue separately.
+
 ## Complete production behavior
 
 The candidate contains the original unbound Orchestrator/Ledger composition,
@@ -128,3 +132,13 @@ production native handoffs. Final coordinated squash and actual-main publication
 verification remain pending. Only three pure API requirements are canonical;
 the parent and all other nine conversation/Reader/native/platform obligations
 remain active and unarchived.
+
+The bounded [host startup and history integration](../archive/2026-11-04-host-startup-history/result.md)
+has its own paired delivery. The remaining Reader and conversation requirements
+and tasks continue here.
+
+The [host selected publication increment](../archive/2026-11-04-host-selected-publication/result.md)
+has a separate bounded delivery for Interpreted and Generated writes from
+prepared evidence. Its parent startup pair must land before final integration.
+Fresh input, composed memory, Pending, settlement and native effects remain
+with the active lifecycle and their owning drafts.
