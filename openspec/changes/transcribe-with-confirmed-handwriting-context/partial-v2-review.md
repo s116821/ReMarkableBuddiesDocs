@@ -120,6 +120,13 @@ to the actually serialized report, including output-limit fallback.
 
 ## Qualification before delivery
 
+The original pre-code criteria below remain historical context. Following the
+completed Terra/Sol comparisons and independent reference audit, the
+[prospective MathWriting method](mathwriting-qualification.md) replaces only
+step 3's literal logarithm reference for future bounded partial-v2 qualification.
+Both historical comparisons remain NOT MET; no result is regraded. All other
+source, protocol, final review and broader capability boundaries remain due.
+
 1. Review the strict wire shapes, failure precedence, identity recipe and
    exact prompt/addendum before implementation. Freeze legacy request,
    report, prompt and profile vectors for no-context and selected-context and

@@ -1,5 +1,17 @@
 # Tasks
 
+Current November 5 checkpoint: source98ec7ba and Docs84fe6b0 pass their hosted
+checks; implementation/local-control receipts are in results.md. Historical
+Terra/Sol comparisons each passed six cells and failed both old mathematics cells.
+The new [prospective mathematical method](mathwriting-qualification.md) is frozen
+before any output; its packet review and execution remain pending. Earlier
+preparation-checkpoint wording below is historical, not current execution status.
+
+- [ ] Prepare and independently review the exact four-cell MathWriting packet;
+  verify schema-compatible scoring, request isolation and unchanged Store.
+- [ ] Execute once and independently score all four cells without regrading old
+  results; reconcile bounded acceptance and remaining gates before delivery.
+
 ## Preparation
 - [x] Read current task and all comments; compare delivered correction provider and existing Reader/Writer/LLMEngine routes.
 - [x] Define one explicit bounded shared transcription seam, exact referenced examples, reuse of existing notebook OCR and unconfirmed output and no automatic hooks/new schema.
