@@ -64,6 +64,10 @@ and invented placeholders in known text. This conservative result can still fail
 the unchanged positive-structure criterion. No AST or relaxed criterion is hidden
 in the text contract.
 
+If this leaves no independently complete known text, the prompt explicitly asks
+for unreadable with empty text. It does not authorize an all-uncertain partial
+response; the unchanged parser continues to reject that variant.
+
 ## Implementation and verification
 
 Carry a private `PartialMath` policy from strict admission through the existing
@@ -76,7 +80,9 @@ six vectors. Add production-path tests for exact opt-in routing, invalid/version
 precedence, full/partial LaTeX byte preservation, target-last/context isolation,
 distinct profile identity and unchanged target identity. Reuse existing bounds,
 Store/output/cancellation tests and test the new policy through actual CLI
-admission with no live provider. No extra cache, dependency or renderer is needed.
+admission with no live provider. Include the no-independent-known-text unreadable
+outcome and refusal of an all-uncertain partial response under the new policy.
+No extra cache, dependency or renderer is needed.
 
 After independent source review and current checks, a separately bounded fresh
 four-call math packet may use the same two upstream-default PNGs, model, context,
