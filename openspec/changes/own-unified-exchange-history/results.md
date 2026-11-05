@@ -62,3 +62,22 @@ and the two new invalidation cases. No blocking source finding remains in this
 bounded correction. The exact logs are retained under
 `work/rem43-owned-exchange-evidence/nov05-*.log`; no new tablet operation,
 provider call or build-cache directory was used.
+
+Windows successor verification passes the maintained unit, all six layout tests,
+and actual CLI scenario with 22 modeled cases and `native_effects: 0`. Default
+library Clippy completes with three inherited Windows resident dead-code warnings;
+it is not a strict lint pass. The additional all-target/all-feature attempt fails
+with eight E0425 errors in unchanged delivered ordinary_close/ordinary_reopen:
+feature-gated code references encode/digest, whose definitions are Linux-or-test
+only. No suppressions or unrelated source changes were added. Its failing log is
+preserved. Hosted strict Linux checks still must qualify the published successor.
+
+Docs checker passes 34 guidance files and 126 preserved blobs, and strict
+OpenSpec passes all 111 current items. Formatting and effective source/Docs diff
+checks pass. Local successor logs are `nov05-*.log` in
+`work/rem43-owned-exchange-evidence`; the original manifest and payloads remain
+unchanged. Existing shared target `work/partial-transcription_rust-rem25/target`
+was reused after checking no Cargo/rustc process and about 91 GB free. No new
+cache, provider call, tablet action or cleanup was introduced. Coordinator owns
+independent review, publication to the same PRs and the hosted gate; wider native
+work remains pending.
