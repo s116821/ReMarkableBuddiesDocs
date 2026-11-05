@@ -1,16 +1,18 @@
 # Tasks
 
-Current November 5 checkpoint: source a25d1bc implements the reviewed explicit
-math policy; 23 focused tests, two actual CLI tests and local Clippy pass.
-Its hosted checks are pending. Earlier source 98ec7ba and method/result Docs
-380705c passed their own hosted checks. Implementation/local-control receipts
-are in results.md and [the math implementation record](math-layout-profile.md#implementation-record).
+Current November 5 checkpoint: integrated source `5403ae1` passed all required
+hosted checks. The explicit math-layout comparison completed once and remains
+**NOT MET (0/4)**; the separate unchanged-policy Hunter/blank/Howe regression
+passed **6/6** after independent blinded scoring. See the exact revisions,
+receipts and limits in [integrated results](integrated-regression-results.md).
+Earlier implementation/local-control receipts remain in results.md and
+[the math implementation record](math-layout-profile.md#implementation-record).
 The [original mathematical comparison and upstream-default rendering comparison](mathwriting-results.md)
 each completed once and independently scored **0/4 passing cells; NOT MET**.
 Historical Terra/Sol eight-cell comparisons remain six passes/two mathematics
 failures each. Rendering changes alone were insufficient. A general mathematical
 layout prompt/contract revision passed independent precode and source review;
-its live semantic qualification remains pending. There is no unchanged rerun,
+its live semantic qualification failed the unchanged positive criteria. There is no unchanged rerun,
 relaxed rubric or delivery acceptance. Earlier preparation checkpoints in the
 linked results remain historical, not current execution status.
 
@@ -33,9 +35,9 @@ linked results remain historical, not current execution status.
 ## Implementation
 - [x] Implement typed target/context admission and one owned snapshot with exact current-revision/media/lineage validation; no commit or implicit fallback.
 - [x] Extend existing notebook normalizer with typed context/payload/reply outcomes and frozen no-context compatibility; implement one progress-aware engine invocation, bounded response and held report/CLI routing.
-- [ ] Exercise actual Store, real output failure, privacy, mode/publisher lifetime, context corruption/conflicts and actual subprocess boundaries through production paths; retain valid-storage APNG/trailing-container consumer refusals, original record/media equality, cooperative versus noncooperative cancellation and revision-only unchanged-prompt controls.
-- [ ] Run current-head format/Clippy/tests/build and independent source review; preserve every failure and avoid large local build under disk pressure.
-- [ ] Establish new representative shareable fixtures and independent reading before at most eight bounded live calls; record baseline/context results including abstention/degradation without efficacy overclaim.
+- [x] Exercise actual Store, real output failure, privacy, mode/publisher lifetime, context corruption/conflicts and actual subprocess boundaries through production paths; retain valid-storage APNG/trailing-container consumer refusals, original record/media equality, cooperative versus noncooperative cancellation and revision-only unchanged-prompt controls.
+- [x] Run current-head format/Clippy/tests/build and independent source review; preserve every failure and avoid large local build under disk pressure. Current integrated source5403ae1 has its own hosted evidence; older results retain their original revision attribution.
+- [x] Establish representative shareable fixtures and independent reading before bounded live calls; record baseline/context results including abstention/degradation without efficacy overclaim. Execution is complete; the separate positive mathematical recognition gate above remains unchecked.
 
 ## Paired delivery
 - [ ] Reconcile current implementation/specs and simulator impact, complete independent acceptance, sync canonical capability and archive only the qualified unit.
@@ -49,8 +51,8 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
 
 - [x] Freeze the versioned precode in this change: exact prompt and context addendum, identity and report vectors, version/policy precedence and exclusive result matrix.
 - [x] Independently accept the exact v2 precode before changing Buddy source (Docs 052d1b2).
-- [ ] Verify byte-exact default and v1 compatibility and all v2 admission, outcome, bounds, cancellation and ownership cases through production paths.
-- [ ] Review separately authorized semantic qualification before any fresh provider execution. The historical r2 result remains NOT MET and all eight calls are spent.
+- [x] Verify byte-exact default and v1 compatibility and v2 admission, outcome, bounds, cancellation and ownership cases through production paths.
+- [x] Review separately authorized semantic qualification before fresh provider execution. The historical r2 result remains NOT MET and all eight calls are spent; later individually reviewed outcomes never regrade it.
 
 ## Explicit mathematical layout policy
 
@@ -60,7 +62,9 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
   clarify unreadable fallback when no independently complete known text remains.
 - [x] Implement the opt-in policy through existing admission/normalization only;
   verify old vectors, new identities, inert string preservation and actual CLI.
-- [ ] Independently review current source and required checks before a fresh
+- [x] Independently review current source and required checks before a fresh
   four-cell math comparison with the unchanged targets and strict rubric.
-- [ ] Qualify the unchanged Hunter/Howe/blank fixtures in a separate six-cell
+- [x] Execute and independently score that math comparison; retain the 0/4
+  result without treating successful execution as semantic acceptance.
+- [x] Qualify the unchanged Hunter/Howe/blank fixtures in a separate six-cell
   regression packet before coordinated delivery; preserve every failed result.

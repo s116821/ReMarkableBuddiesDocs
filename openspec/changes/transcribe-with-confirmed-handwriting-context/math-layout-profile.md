@@ -133,5 +133,11 @@ Evidence digests:
 - Independent source review: `dd9ab2be8933477475e8f612d67b6b4fb33b1d0316ba6a900766de12dc5a30d5`.
 - Independent boundary follow-up: `80a1edcfe756db600e5a3984ee320d7a0f425351558ce4347cd64a42e536dddf`.
 
-Hosted checks, the fresh four-cell semantic comparison and separate six-cell
-regression remain delivery gates. Prior failed recognition results are unchanged.
+That historical implementation checkpoint was normally integrated with delivered
+main as source `5403ae1e524f89e2e198d6c39319b34d81203e10`, tree
+`244fbeef5fedb1ccd37ae4ebe8c5a9a7eb6bfefb`. Its required hosted checks passed.
+The fresh four-cell semantic comparison completed and failed all four strict
+criteria; the separate six-cell legacy-policy regression passed. The exact
+attribution and limitations are in [integrated results](integrated-regression-results.md).
+Positive mathematical recognition, remaining acceptance and coordinated delivery
+stay open. No failed result is reinterpreted or overwritten.
