@@ -1,6 +1,8 @@
 # Optional ordinary Writer memory: contract for review
 
-Status: proposed, no implementation or new model/native qualification.
+Status: accepted for the local ordinary implementation in Root review2f86e6fa;
+implementation/local verification is complete and awaits independent review.
+No new Writer-memory model/native qualification.
 
 ## Existing state and boundary
 
@@ -93,6 +95,6 @@ not changing the ordinary receiver into an implicit selected path.
    refuse before ordinary side effects. Keep selected ownership and recovery
    work open; add actual joined-gate tests only when that separate consumer exists.
 
-Root review must confirm this local ordinary cut and the stated snapshot-freshness
+Root accepted this local ordinary cut and the stated snapshot-freshness
 boundary before code. Whole REM-24 sync/recovery/native/local-survival and lifecycle
 remain open; delivered Manager inspect/forget work is not reopened here.

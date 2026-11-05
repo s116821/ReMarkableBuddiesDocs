@@ -1,0 +1,9 @@
+# Notebook archive companion controls
+
+Both companions provide explicit ordinary notebook export and detached format-4 inspection. Use the [Manager guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/notebook-archives.md) for manual commands, exact private paths, optional saved-configuration inclusion, on-tablet location and bounded history/uncertainty.
+
+The [consumer capability](../openspec/specs/notebook-archive-companion/spec.md) and [archived contract](../openspec/changes/archive/2026-11-04-manage-notebook-archives/contract.md) fix the closed protocol and original custody. The [producer contract](../openspec/changes/archive/2026-11-04-expose-notebook-archive-maintenance/contract.md) remains backend-owned. [Verification](../openspec/changes/archive/2026-11-04-manage-notebook-archives/verification.md) and [results](../openspec/changes/archive/2026-11-04-manage-notebook-archives/results.md) distinguish local source/package controls, actual Windows producer-frame replay and remaining hosted delivery/native gates.
+
+A known producer refusal means no export writes began, not that the command never launched. Matching success requires successful exit and current identity. A later detached check observes present closure only. Stopping a check cancels its captured wait and preserves earlier exported/unknown/refused history. No retry, overwrite, cleanup, restore, transfer, mode change or runtime activation is implied.
+
+The independently based source preserves delivered storage and test-asset staging. Native Stop remains separate and unqualified; its owner applies the [peer checklist](../openspec/changes/archive/2026-11-04-manage-notebook-archives/stop-peer-reconciliation.md) after integration. No Stop enablement is bundled or required. Independent review, hosted Windows/Linux and final merge/release verification remain delivery-owner gates.

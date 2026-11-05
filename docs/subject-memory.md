@@ -232,3 +232,35 @@ The shared receiving context interface is usable by future real Writer consumers
 this does not claim Writer implementation. Provider protocol fixtures verify
 question/image bytes and labeled data assembly, not live model precedence or native
 rendering. Consult the owning change for exact revisions and observed test evidence.
+
+## Optional ordinary Writer context
+
+The explicit ordinary Writer Generate/Refine command can opt into the same local
+memory configuration used by Reader. Memory remains optional and disabled by
+default. Disabled memory performs no memory read; a valid empty result adds no
+prompt part. PrepareExport remains a local, model-free observation and does not
+query memory, even when enrichment is configured.
+
+Enabled ordinary enrichment queries the exact new request within its 2048-byte
+query bound and the immutable normalized source document scope. Retrieval defaults
+to eight facts and 8192 encoded context bytes. The existing source/history payload
+is preserved rather than shortened to fit memory. Facts appear in one separately
+labeled author-asserted retrieval-snapshot part, outside exact source/history,
+current request and saved personalization. Current request/source and fixed
+instructions take precedence; memory grants no export, erase or other action.
+
+This path admits a compatible local Provider using the exact same open Store.
+Selected memory configuration, selected views and foreign/unsupported providers
+refuse without local/all-history fallback. Unavailable or unusable Partial context,
+invalid data and exceeded bounds fail before model dispatch. Cancellation, stale
+Writer preparation and failed publication retain the existing guarded outcomes
+and do not retry the model. Local context is a retrieval snapshot; it does not
+promise atomic memory freshness through model I/O. The actual draft publication
+still uses Writer preparation, same-Store ownership and Ledger CAS.
+
+This increment is limited to explicitly supplied ordinary text generation and
+refinement. Existing internal callers retain memory disabled until they explicitly
+adopt an admitted receiving path. It does not modify notebook plans, selected
+Writer publication, presets, sync/recovery, native rendering or export execution.
+Representative Writer-memory model behavior remains a separate qualification gate;
+Reader live enrichment and Writer preference tests do not substitute for it.
