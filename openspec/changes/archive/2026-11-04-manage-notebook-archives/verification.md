@@ -31,3 +31,11 @@ at its original `6ef76f5` attribution. Hosted checks, any later source compositi
 and final main validation require their own evidence. This Docs branch also
 includes delivered Docs `db4c4b2a25e1b54ef8f8d8add7446d5725f54ced` through a normal
 merge; the notebook capability and bounded delivery scope are unchanged.
+
+Manager successor `6306b9ab39c49ebf9dbfdc49f2ca69eaf9689e32`, tree
+`c2efc4899d51298cc9a593f1c445c836814b09b6`, normally merges delivered selected-archive
+fix `0045efc8beea7b67eb2500e97eb1414e2027d2f7`. Its five selected-archive files match
+that delivered fix exactly. All 69 combined selected/notebook controller, host,
+protocol, child and observed-frame checks pass, as do both host-script syntax
+checks. Fresh hosted package and host integration checks remain the final
+delivery gate for this composed source.
