@@ -39,12 +39,13 @@
 - [x] Verify actual factory/controller/App boundaries, queued/late cancellation and both histories; retain exact source/failure/pass attribution.
 - [x] Prepare exact paired successors with active Stop lifecycle and focused evidence; coordinating owner retains final hosted/delivery gates.
 
-## 6. Delivered package contract reconciliation (precode)
+## 6. Delivered package contract reconciliation
 - [x] Read delivered91dcc601 recovery/activation/lease/vendor source and SDK lifetime contract; reconcile retained R128/R129/R135 evidence without extending its qualification.
 - [x] Propose exact PACKAGE/Profile6/Lease3/nested ServiceBaseline1 schemas, paths, companion artifacts/policies/terminal sampling, digest fields and bounds in this active change; both production registries remain empty.
 - [x] Identify unsupported historical LEGACY contracts and bare APK separately from the ordinary manual profile; preserve original source/results attribution.
 - [x] Specify bounded Manager file/test changes and new acceptance vectors for coordinating-owner review; no Manager implementation or execution claimed.
-- [ ] Obtain Root acceptance of this exact precode revision before changing Manager c013eb2.
-- [ ] Implement only the accepted package/private sampler/parser/matcher delta and corresponding fixtures, preserving public protocol, maintenance ownership and empty registries.
-- [ ] Verify nested records, fixed vendor policy/artifacts, companion incarnation/group drift, digest/bounds/deadlines and unchanged ordinary/public/unknown behavior on the final source pair.
+- [x] Obtain Root acceptance of precode3f059509 with the explicit original/current zero-watchdog invariant before changing Manager c013eb2.
+- [x] Implement only the accepted package/private sampler/parser/matcher delta and corresponding fixtures, preserving public protocol, maintenance ownership and empty registries.
+- [x] Verify focused nested-record, vendor artifact/policy, companion incarnation/group/watchdog, digest/bounds/deadline and existing ordinary/public/history controls; retain actual-host/platform/native gates separately.
+- [ ] Obtain independent exact-successor review and final hosted/package gates before delivery; the focused source checks do not replace these.
 - [ ] Separately qualify released ordinary-unit sampling and eligible resident Stop/shutdown/recovery tuples before production enablement; do not make independent helper-failure recovery a generic source-work wait.

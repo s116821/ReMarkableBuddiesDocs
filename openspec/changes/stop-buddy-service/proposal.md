@@ -39,8 +39,9 @@ Delivered Buddy91dcc601 and retained package evidence distinguish the /opt manua
 unit from PACKAGE/Profile6/Lease3 with the original rm-sync baseline. The earlier
 LEGACY/Profile1/Lease2 consumer proposal and bare /usr/bin APK are not qualified
 Stop profiles. package-record-contract.md defines the proposed closed records,
-fixed paths, companion/vendor observations and digest delta; Manager c013eb2
-has not implemented it. profile-admission.md retains unavailable config/runtime
+fixed paths, companion/vendor observations and digest delta implemented in the
+paired successor after Manager c013eb2. Both companion watchdog observations
+must be zero. profile-admission.md retains unavailable config/runtime
 facts and separate enablement gates. Unit-scoped user intent is accepted; no atomic
 original-PID stop or new lifecycle lock is proposed. Both profiles remain disabled
 until owner-qualified binary/unit/policy/platform and active/native stop evidence

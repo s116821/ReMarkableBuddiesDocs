@@ -1,9 +1,11 @@
-# Proposed Manager integration after precode acceptance
+# Manager integration mapping from accepted precode
 
-Status: source plan only against clean c013eb241d02923cfbcefb64df7d292d53e7f888,
-tree fd787446268fe3ee330c5eb1e6ec00cb8b8fca4e. No listed Manager change or new
-acceptance control has been implemented or executed by this Docs handoff.
-The coordinating owner accepts the exact proposed Docs revision before code.
+Baseline: c013eb241d02923cfbcefb64df7d292d53e7f888,
+tree fd787446268fe3ee330c5eb1e6ec00cb8b8fca4e. The coordinating owner accepted
+precode3f059509 with an explicit original/current rm-sync zero-watchdog
+correction. The paired source successor implements the bounded mapping below;
+results.md records controls and remaining platform/native gates. This document
+retains the accepted mapping, not a completed product qualification claim.
 
 ## Bounded production file changes
 
@@ -15,7 +17,8 @@ The coordinating owner accepts the exact proposed Docs revision before code.
 2. host/service-stop-profiles.mjs: resident candidate uses only fixed PACKAGE
    paths and the exact installed-output definition. Match companion/source_mode,
    native pair, twelve artifacts, immutable companion/vendor policies and sampled
-   terminal relationships. Keep ordinary-manual semantics and separate source
+   terminal relationships, requiring original/current WatchdogUSec=0 independently
+   of any tuple. Keep ordinary-manual semantics and separate source
    trust gate. A valid shape with an empty registry remains unsupported.
 3. host/service_stop_sampler.py: read fixed package artifacts and check absent
    LEGACY recovery profile using the two specified protected missing-component
@@ -74,16 +77,17 @@ The coordinating owner accepts the exact proposed Docs revision before code.
   actual-host staging coverage. Update only private fixture data/resource lists
   where the schema requires it. No new renderer feature is proposed.
 
-These are meaningful implementation acceptance controls, not a demand to run a
-new build/test cycle during this source-only precode handoff. Root owns the
-subsequent implementation/test/hosted/native sequence. Existing successful
+The focused private/profile/public-history and Python sampler/transport controls
+are recorded in results.md; they do not replace subsequent actual-host/package
+qualification. Root owns independent successor review and the hosted/native
+sequence. Existing successful
 974/1026-case reports remain attributed to their original revisions and schemas.
 
 ## Root review and delivery boundary
 
-Review the exact record/projection/source comparison, conservative legacy
+Independently review the exact implemented record/projection/source comparison, conservative legacy
 exclusion, companion terminal sampling, raw-byte digest and unchanged-cap budget.
-Then authorize the bounded Manager delta or return a concrete contract finding.
+Return concrete source findings before normal publication and delivery.
 Do not enable either registry, merge this precode alone, sync canonical specs,
 archive the unfinished change, or dispatch a tablet operation as part of that
 acceptance. Ordinary target sampling and independent resident helper-failure

@@ -1,8 +1,9 @@
 # Closed profile admission and private observation
 
-Current proposed delta: package-record-contract.md supersedes the earlier
-resident LEGACY/Profile1/Lease2 shape. Manager c013eb2 still implements that
-older shape; this precode has not been implemented or qualified. Both production
+Current source delta: package-record-contract.md supersedes the earlier resident
+LEGACY/Profile1/Lease2 shape implemented at Manager c013eb2. The paired successor
+implements the accepted private package/companion contract; results.md attributes
+its source controls separately from native qualification. Both production
 registries stay empty. Ordinary-manual retains its original predicates with the
 closed private DTO additions below.
 

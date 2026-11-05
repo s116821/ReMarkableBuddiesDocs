@@ -1,12 +1,13 @@
 # Candidate service-stop consumer boundary
 
-Status: active source-backed proposal for independent review. Unit-scoped intent
+Status: active source contract for independent successor review. Unit-scoped intent
 is accepted. package-record-contract.md specifies the proposed delivered
-PACKAGE/Profile6/Lease3/rm-sync delta, not yet implemented in Manager c013eb2.
+PACKAGE/Profile6/Lease3/rm-sync delta implemented after Manager c013eb2 in the
+paired successor, with both original/current companion watchdog values pinned0.
 The closed admission table and private DTO are in profile-admission.md,
 private-property-keys.json and the separate vendor-policy-keys.json. No production profile is
 enabled before its explicit owner qualification gate; there is no new runtime
-readiness flag. This is not implemented behavior or tablet execution authority.
+readiness flag. Source/control results are not native qualification or execution authority.
 
 ## Public API and matrix
 

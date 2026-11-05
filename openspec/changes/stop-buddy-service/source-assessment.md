@@ -1,7 +1,7 @@
 # Verified source assessment and remaining qualification
 
 Historical source packet below: b008027 and the pending bare APK are retained
-with their original evidence. Current proposed consumer reconciliation uses
+with their original evidence. Current accepted consumer reconciliation uses
 delivered91dcc601 and is defined in package-record-contract.md. The old resident
 paths/Profile1/Lease2 are not current Stop admission; production gates remain empty.
 

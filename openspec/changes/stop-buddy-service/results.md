@@ -260,7 +260,62 @@ The source, lockfiles, failure logs, screenshots, manifests and native bundles
 remain preserved. The compatible active dependency toolchain is retained only
 for the next independently owned Manager consumer and reviewed at its handoff.
 
-## Package record reconciliation precode checkpoint
+## Delivered package source implementation
+
+Manager source successor51bf6f123514460c1ff30aeca9d29f01bf37af04,
+tree6740f6446c2cca5415e188f9444998167a3141c6, directly follows c013eb2.
+It implements the accepted private package/record/sampler/matcher/resource delta
+and corresponding fixtures. Ordinary/public protocol, service-stop host/controller,
+shared maintenance, peer hooks and renderer sources remain unchanged. Both
+compiled production registries remain empty. Matching fixture facts do not
+authorize a production Stop, install, native cancellation or recovery.
+
+Coordinating-owner acceptance of precode3f059509 added the explicit source
+invariant that original AND current rm-sync WatchdogUSec must be0, even if an
+arbitrary proposed tuple agrees with a nonzero value. Both Node and Python
+controls exercise that refusal. The companion terminal matrix also covers the
+source-valid cleared identity retaining its original ControlGroup only after
+original group absence, and rejects cleared/empty-original or populated groups.
+Nested duplicate/unknown/type/version/identity checks, fixed native/vendor pins,
+both27-key vendor projections, raw-byte digest coverage, bounds/deadlines,
+safe installation-conflict absence, namespace/group drift and zero-channel
+production refusal are exercised without contacting a tablet.
+
+Final focused Windows controls on the committed Manager tree:
+
+- Node24.21.0: all43 service-stop test cases pass,2.974s. Log
+  outputs/2026-11-05-stop-package/manager-stop-node-final.log on the coordinating
+  laptop, SHA256a96aa89c85776d33e1bb18e7863469e4327a75864647ff00a8992c8cb64ca35a.
+- Python3.12.14, with the same Node24.21.0 on PATH for the actual cross-language
+  parser/matcher/digest bridge:24cases,23pass and1POSIX-only GNU-stat fixture
+  skipped on Windows,2.468s. Log manager-stop-python-final.log in the same folder,
+  SHA2565a6b098d1f461c5290b809ac9b373178235b4070d3957250997737fe8021698d.
+- Earlier focused runs are retained under their original log names. The sampler
+  fixture's permission injection was narrowed to the actual companion group path
+  before the final run, ensuring that refusal does not merely hit an earlier
+  missing legacy directory. No failed run is described as a tablet incident.
+
+Docs main e21d09a4e7302809e121096bc7b9cdafcd254683 was explicitly fetched and
+normally merged as034e12512ae62519686e84f4770160ada264c611, preserving the delivered
+Writer change. Native contract attribution remains91dcc601; Writer's later scope
+does not requalify these native inputs. The final central strict-validation output
+is retained alongside the control logs and its exact outcome is recorded in the
+handoff. The active acceptance checklist now has41specified vectors, including
+the explicit watchdog refusal; vector count is not a test execution count.
+
+Hygiene review found no generated build/package/dependency/cache directories in
+the named Manager worktree to retire. No binary, new dependency cache or package
+was created; removed scopes/bytes are0. PYTHONDONTWRITEBYTECODE prevented test
+bytecode output. Small source/control logs remain for independent review; all
+prior useful source/native/failure evidence remains preserved. No tablet contact,
+transfer, staging, installation, service mutation, new RE or old experiment replay
+occurred. No production admission, actual browser/Electron/USB/native shutdown,
+Linux package or independent helper-failure recovery qualification is claimed.
+The coordinating owner retains independent exact-source review, hosted/platform
+checks, publication/integration and later bounded operator packets. Stop remains
+active and unarchived, with no canonical spec sync or standalone planning merge.
+
+## Package record reconciliation precode checkpoint (historical)
 
 This checkpoint proposes a contract delta against Manager c013eb241d02923cfbcefb64df7d292d53e7f888
 and Docs fdb27a6c17a7ecdc4faaa66c9c495230e6f449ad. Manager remains clean and

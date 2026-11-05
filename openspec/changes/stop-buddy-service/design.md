@@ -2,10 +2,11 @@
 
 ## Verified source and scope
 
-Current reconciliation proposal: package-record-contract.md binds delivered
+Current reconciliation contract: package-record-contract.md binds delivered
 Buddy91dcc601 PACKAGE/Profile6/Lease3, including its original rm-sync baseline,
-fixed vendor artifacts and loaded policy checks. Manager c013eb2 still implements
-the earlier LEGACY/Profile1/Lease2 candidate. The following original source packet
+fixed vendor artifacts, zero original/current companion watchdog and loaded
+policy checks. The paired successor replaces Manager c013eb2's earlier
+LEGACY/Profile1/Lease2 candidate. The following original source packet
 is historical evidence, not qualification of either current candidate. Existing
 results are retained under their original revisions. Both production registries
 remain empty pending implementation and exact tuple qualification.

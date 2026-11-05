@@ -18,6 +18,10 @@ Resident Stop admission SHALL use only the independently qualified PACKAGE/Profi
 - **WHEN** a synthetic or observed package has matching Profile6/Lease3 and companion facts but its exact build/unit/policy/platform tuple has not passed the independent enablement gate
 - **THEN** Stop remains unavailable with zero submissions; matching versions, hashes or a successful development experiment cannot enroll it.
 
+#### Scenario: A proposed tuple weakens the companion watchdog invariant
+- **WHEN** the original baseline or current rm-sync WatchdogUSec differs from zero, including when a proposed tuple agrees with that nonzero value
+- **THEN** resident Stop admission refuses independently of tuple matching, preserving the fixed vendor-source invariant.
+
 #### Scenario: Companion or package evidence differs from the original review
 - **WHEN** an original companion record, fixed artifact, loaded policy, incarnation, group/context, package path or canonical private sample differs or cannot be observed within bounds
 - **THEN** review or confirmation refuses before dispatch without dropping fields, translating legacy records, repairing an installation or granting native recovery authority.

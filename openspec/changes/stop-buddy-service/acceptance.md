@@ -5,8 +5,10 @@ outcomes for implementation fixtures. These are NOT executed product tests.
 Synthetic accepted tuples exist only inside isolated fixtures; they never enroll
 observed tablet bytes or enable a production profile.
 
-The PACKAGE/Profile6/Lease3 delta in package-record-contract.md and its additional
-acceptance vectors are PRECODE. They have not run against Manager c013eb2.
+The PACKAGE/Profile6/Lease3 delta in package-record-contract.md is implemented
+after Manager c013eb2; results.md records its focused source/control evidence.
+Acceptance vectors remain specifications, not a claim that all physical or
+platform cases have executed. Original/current rm-sync WatchdogUSec must both be0.
 Require exact fixed paths, twelve artifacts, nested duplicate-free ServiceBaseline1
 string/snapshot/group checks, current companion terminal/group brackets, both
 27-key vendor policies, all new digest fields, bounds/deadline refusal, ordinary

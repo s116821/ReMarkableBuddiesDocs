@@ -236,6 +236,12 @@
       "expected": "refuse within unchanged ceilings; no cap widening, omitted fields or Stop; possible original dispatch remains unknown"
     },
     {
+      "id": "package-companion-zero-watchdog",
+      "layer": "profile",
+      "variation": "original or current rm-sync WatchdogUSec is nonzero, including a proposed tuple that agrees with it",
+      "expected": "refuse independently of tuple; preserve vendor OriginalCompanion source invariant"
+    },
+    {
       "id": "package-empty-production-gates",
       "layer": "host",
       "variation": "complete updated fixture and host resource staging while both compiled registries remain empty",

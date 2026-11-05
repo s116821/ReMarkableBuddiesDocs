@@ -1,8 +1,9 @@
 # Delivered package reconciliation proposal
 
-Status: precode delta for review against Manager c013eb2 and Docs fdb27a6.
-Manager has not implemented this delta. Both production qualification registries
-remain empty. Existing test results retain their original source/schema scope.
+Status: accepted source delta from precode3f059509 against Manager c013eb2.
+The paired successor implements this private contract; exact source/control
+evidence is recorded in results.md. Both production qualification registries
+remain empty. Earlier results retain their original source/schema scope.
 No target observation, execution or qualification follows from this document.
 
 ## Source and scope
@@ -101,6 +102,9 @@ snapshot is the source newline-framed `key=value` STRING containing exactly
 11STATE plus20POLICY unique keys; it is bounded16KiB. Parse the actual source
 format; do not treat it as an arbitrary shell/systemd command or generic object.
 
+Original AND current rm-sync WatchdogUSec must equal `0`, independently of any
+tuple. This is vendor::OriginalCompanion::load's explicit source invariant;
+nonzero values refuse even if an arbitrary proposed tuple agrees with them.
 The original snapshot must identify loaded/active/running rm-sync.service,
 ControlPID0, empty Job, MainPID=ExecMainPID>1, nonzero start micros and canonical
 nonnil InvocationID, with ControlGroup=/system.slice/rm-sync.service. Its group
@@ -199,7 +203,7 @@ depends on vendor readiness/lease retirement; independent helper-failure
 recovery remains a separately prepared operator unit. Ordinary released-unit
 sampling is also separate and does not block this source reconciliation.
 
-proposed-manager-changes.md names the bounded files and acceptance controls for
-Root review. Manager c013eb2 remains the baseline, with both qualification
-registries empty. Do not sync/archive this unfinished change or relabel earlier
-fixtures as coverage of this proposed schema.
+proposed-manager-changes.md maps the bounded files and acceptance controls for
+independent review. Manager c013eb2 remains the implementation baseline, with
+both qualification registries empty. Do not sync/archive this unfinished change
+or relabel earlier fixtures as coverage of this schema.
