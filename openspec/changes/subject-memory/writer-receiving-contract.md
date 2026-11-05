@@ -1,8 +1,11 @@
 # Optional ordinary Writer memory: contract for review
 
 Status: accepted for the local ordinary implementation in Root review2f86e6fa;
-implementation/local verification is complete and awaits independent review.
-No new Writer-memory model/native qualification.
+implementation/local verification and independent source review are complete.
+The [fresh ordinary Writer live result](writer-receiving-result.md#fresh-ordinary-writer-live-evidence)
+independently passes both representative cases. Native, selected Writer and
+full-capability qualification remain open. The pre-code contract below is retained
+as historical design context; current delivery evidence is in the linked result.
 
 ## Existing state and boundary
 
