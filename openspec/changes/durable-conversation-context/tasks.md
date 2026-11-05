@@ -22,7 +22,13 @@
 ## 3. Real Reader integration
 
 - [x] 3.21 Review and implement the bounded [runtime compilation boundary](runtime-compilation-boundary.md) at owning PR30, retain recording guards/tests and public read-only/storage behavior, run affected checks and strict lint, then reconcile dependent PR32 without enabling unqualified runtime effects. Bounded source/Docs and required checks are verified; production integration and whole lifecycle remain open. Descendant reconciliation is tracked separately below.
-- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see runtime-stack-reconciliation.md.
+- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see [the preserved receiver history](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-result.md) and its separately bounded closeout without treating that receiver delivery as full descendant/native acceptance.
+
+Tasks3.18–3.20 for the bounded composed Reader/memory publication are now
+owned by the [completed receiver closeout](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Original source review, panic/currentness evidence and source hosted acceptance
+are preserved there. This moves the completed receiver slice only; parent3.22,
+full4.7 and native/Pending/settlement requirements remain unfinished.
 
 - [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
 - [x] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review. Fourteen controls pass in the exact committed source; strict lint and broad native/lifecycle gates remain open.
@@ -66,3 +72,12 @@ source patch. See [complete delivery scope](delivery-reconciliation.md).
 - [x] Complete current exact-head hosted checks and final bot/status review.
 - [ ] Coordinate paired normal squash and verify actual-main CI/publication.
 - [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
+
+## November 5 composed receiver delivery
+
+The implemented resident historical-evidence validation and composed Generated
+publication are preserved in the separately completed receiver archive linked
+above. Its source delivered through merged Buddy33; Buddy37 is superseded source
+provenance. Native lifecycle, full resumption/settlement and remaining live/model
+acceptance stay with this parent and the owning issues. No unfinished parent
+task is checked complete by the bounded receiver closeout.
