@@ -32,3 +32,9 @@
 - [x] Include on-demand module loading in the same14-second UI deadline and forbid Ready from reusing a retained original.
 - [x] Complete local source/browser/Electron/package qualification at e8f4ff9, preserving test-only706a4ce attribution.
 - [ ] Obtain independent successor review and hosted final-head platform gates before delivery.
+
+## 5. Notebook peer composition
+- [x] Compose reviewed notebook candidate6306b9a/Docac19323 and preserve selected cancellation0045efc and staging repair.
+- [x] Wire reciprocal factory invalidation/shared lease exclusion and renderer Busy/epoch/draft clearing without enabling native profiles.
+- [x] Verify actual factory/controller/App boundaries, queued/late cancellation and both histories; retain exact source/failure/pass attribution.
+- [x] Prepare exact paired successors with active Stop lifecycle and focused evidence; coordinating owner retains final hosted/delivery gates.

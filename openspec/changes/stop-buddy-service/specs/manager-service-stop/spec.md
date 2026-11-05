@@ -32,3 +32,10 @@ Both actual factories SHALL enforce strict bounded action-specific requests/resu
 #### Scenario: Malformed or contradictory public reply
 - **WHEN** a result contradicts its action, selected original connection/boot, allowed current observation or retained history
 - **THEN** both host bridges and the shared controller refuse the complete result without clearing a possibly submitted original or leaking private metadata.
+
+### Requirement: Reciprocal notebook archive maintenance ownership
+The Stop controls SHALL share the existing maintenance owner with notebook archive controls. Either lane SHALL refuse conflicting active work without side effects and invalidate the other lane's idle review before new work. Retained lookup SHALL neither dispatch nor invalidate an unrelated review, and each lane SHALL preserve the other's uncertain history. Production native qualification registries SHALL remain empty until their separate native qualification is complete.
+
+#### Scenario: Notebook and Stop contend
+- **WHEN** either lane owns an invocation or replaces the other lane's idle review
+- **THEN** both host factories and the actual shared UI preserve Busy exclusion, exact draft clearing and current owner/epoch cancellation without granting native Stop qualification.
