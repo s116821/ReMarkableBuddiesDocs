@@ -6,7 +6,7 @@ AArch64, with explicit real stable Buddy tag/commit and independent SDK v0.2.0
 source. It copies the already qualified descriptor-frozen binary and canonical
 existing build metadata, saves private evidence and publishes an exclusive final
 hash manifest only after complete validation. Partial outputs remain incomplete;
-there is no signing/key/trust/package stage or inferred install eligibility.
+there is no signing/key/trust/package stage or inferred install eligibility. Preserve the existing full SDK release-proof equality across targets and fresh final proof, plus full release source snapshot equality before completion; public SDK fields alone are insufficient.
 
 Fresh build/output roots must be disjoint and outside source/SDK/producer roots.
 The completion verifier rejects changed bytes, extra/missing files, invalid

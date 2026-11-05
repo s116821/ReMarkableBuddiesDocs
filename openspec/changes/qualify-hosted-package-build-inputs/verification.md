@@ -1,14 +1,14 @@
 # Verification and separately gated execution
 
 Source [Buddy PR128](https://github.com/s116821/ReMarkableBuddies/pull/128),
-`25d4c12765ecb1cbedf7a9ea1ce9bdac2b4257d2`; paired
+`785f553fc1904e60fc0880a855d81e3b86a9f358`; paired
 [Docs PR139](https://github.com/s116821/ReMarkableBuddiesDocs/pull/139).
 
-Local Windows focused input controls:5pass/2Linux skips. The real filesystem
+Local Windows focused input controls:6pass/2Linux skips. The real filesystem
 tests cover complete frozen inputs, byte/metadata/evidence tamper, absent marker,
 extra files, source/producer mismatch, disjoint external roots, preserved partial
 first-target output after second-target failure and contradictory SDK metadata
-before completion. These use explicitly synthetic build results, not native builds.
+before completion. A complete SDK proof must also remain identical across targets and through the fresh final proof before completion; changed tag-object proof controls pass. These use explicitly synthetic build results, not native builds.
 The Linux-only controls cover symlink rejection and maintained/unknown/rootless
 Cross mapping. Focused parsed-YAML gate control passes: manual-only event,
 default-false execute gate, ordinary full checkout custody, no signing command,
