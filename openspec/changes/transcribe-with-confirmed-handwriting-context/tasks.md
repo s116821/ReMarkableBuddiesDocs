@@ -17,6 +17,9 @@
 - [x] Independently review and execute the same-input Sol comparison; preserve
   its strict0/4 and fidelity0/4, both abstentions and the reviewers' union-token
   criterion disagreement. No historical result or acceptance rule changes.
+- [x] Independently assess the separate short-instruction diagnostic; preserve
+  the initial TLS failure, recovered B structure and remaining punctuation/scope
+  errors without treating free-form output as production qualification.
 
 The structured implementation's local checks and remaining review/recognition
 gates are recorded in [structured results](structured-math-results.md).

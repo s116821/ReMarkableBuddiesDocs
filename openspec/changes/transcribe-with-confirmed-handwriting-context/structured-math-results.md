@@ -132,3 +132,59 @@ Reproducibility identifiers:
   collection `2c90d7c9377ee53a803f6885f497f66472a1622c639c2d55dfaf909ee1b8eac0`.
 - Root score `519d71455a63d34ca0a84f7cf3da40f5c7b47d747b59189ace0dbf271d6551ef`;
   independent score `863f2b6de903d8534deecc9d849be61ad09e2d4517d8f7315bdc692d3bbe6431`.
+
+## Short-instruction recognition diagnostic
+
+A separate two-image diagnostic used the same original PNGs, Sol and high
+detail with a short literal-transcription instruction and free-form LaTeX.
+It supplied no selected examples or source labels. This bypassed the production
+adapter, parser and profile, so it cannot qualify the feature or replace the
+four-cell production comparison.
+
+The first attempt stopped on TLS certificate verification before any successful
+response. Its Python runtime loaded no default CA certificates. A new reviewed
+attempt loaded the existing system CA bundle explicitly while requiring
+certificate and hostname verification. Both calls completed once, in 17.531s
+and 23.640s; the failed attempt and every earlier outcome remain preserved.
+
+| Target | Observed useful content | Remaining error |
+|---|---|---|
+| A | Q, equality, proposed union/limit, final Q-sigma and lower condition | Omits the colon in `:=`; union identity and limit placement are explicitly uncertain |
+| B | Numerator 1, fraction and denominator radical | Proposed LaTeX puts the final u inside the radicand, with an uncertainty note; the required external subscript is not recovered |
+
+Two independent visual assessments agree that neither result is fully faithful.
+The recovered B structure motivates investigating a shorter generic instruction
+with the existing structured vocabulary; it does not prove a causal explanation
+from two samples. Production strict0/4 and fidelity0/4 remain unchanged.
+
+Reproducibility identifiers:
+
+- Completed diagnostic plan `5492578dc6bf3f0323233be20a8c89eef36c8a937c9faf03a107362b700d3042`;
+  prompt `062967c66daa831292f502ff4985f1eb3d1a8446470b7465df8f95444112c68a`.
+- Raw A response `134a0d63e89546cccdbe99d05a9bbbdf0cdf0d9113c0bd4959f9d3f9640e2090`;
+  raw B response `2cf7ddfc5b0edc3ed3db1ed803f57813c70c67734c618cd2666483bdf96f4bd4`.
+- Root assessment `3779cbcdf8249e3ba6adc69eb9ab299b8625b6984647e5861f75f56ef722beac`;
+  independent assessment `78baf19d425329e41f7724f4a8da07ea6b3b1653ab0d262ecf6dba30cd96e271`.
+
+## Compact structured diagnostic
+
+A new independently reviewed two-call diagnostic shortened the generic
+instructions while requesting the existing closed v3 vocabulary. The original
+images, Sol/high-detail selection, verified transport and limits stayed fixed;
+no source answers or examples were added. Both calls completed once with
+structured JSON, in 11.828s and 25.516s. These were direct diagnostic requests
+with page 1, not production adapter, parser, profile or context qualification.
+
+Both independent visual assessments still find the critical source errors: A
+omits the colon in `:=`; B asserts `msqrt(mrow(∂,u))` as its denominator, placing u in
+the radicand rather than preserving the external subscript, and asserts the
+looped glyph without an unknown marker. Positive fraction/radical structure is
+retained, but neither output is source-faithful. There is no production prompt
+change, new acceptance score or regrading of any earlier result.
+
+- Plan `db04c7907fce4c28332a0079bafda4f559f89579b01fb32a133415153cca3bd3`;
+  prompt `f58f3befd89dfa64a15a3488ef94bb60b3e7e9283240a1314665132f47b78af9`.
+- Raw A response `1438288848f2fe4555156240c44830ebddcf78a1fb5f789e78618ac68c1a011d`;
+  raw B response `486bf7ca92db5906584f46bdd6e4346f7eb1d0860ef00eb38c3e0575102c47b0`.
+- Root assessment `3b3250be317299340acfc34e49ef9d01907dd162009ac7ded6b9db68edff4f43`;
+  independent assessment `10f13f66f3831bc56cd5c0270cc65f89e47bca38e3a887522edec03b31485f96`.
