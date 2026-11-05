@@ -49,7 +49,7 @@ offline Cargo and jobs2. No new cache or copied executable was created.
 | Actual executable maintained combined scenario |3inline and3notebook scripted model calls,1modeled blank start,1scripted destination write|`24-current-main-combined-cli.log`|
 
 There are65distinct passing tests, with no subcase or CLI-child inflation.
-Formatting/diff checks pass. Full strict Docs validation passes112items and
+Formatting/diff checks pass. Full strict Docs validation passes113items and
 guidance verifies36current files/126preserved source blobs. The live paid test
 stays ignored and all models/destination effects above are local fixtures.
 No new failure occurred in this validation. The earlier174d0fb Clippy correction
