@@ -53,6 +53,12 @@ Alternative: storing only filenames or recapturing after output loses exact evid
 
 ### 3. Binding is an atomic logical association, not a native command
 
+The REM-25 integration extension in
+[existing-page-binding.md](../qualify-open-pdf-capture/existing-page-binding.md)
+adds an explicit existing-current/adjacent acquisition form with unchanged order.
+It preserves original insertion receipt bytes and the same claim/CAS/history
+mechanism below; adoption must never fabricate an insertion-shaped order.
+
 A canonical binding record has a deterministic logical identity from native document ID and Buddy page ID, independent of installation/Store actor identity. Freeze its encoding as UUIDv5 using the RFC URL namespace and UTF-8 name `urn:remarkable-buddies:binding:v1:<document-uuid>:<page-uuid>`, where each UUID is canonical lowercase hyphenated text. Device qualification belongs to the receipt, not this key. Thus reinstall/restore retains the same claim key and cannot create a second claim merely by changing installation identity. Copied documents that retain identical native IDs intentionally contend on the same logical claim; ambiguity fails closed. It contains the logical conversation association and qualified receipt reference. Atomically CAS this record and the conversation root; do not build a separate identity registry. Imported logical associations do not authorize native operations on another device. Fresh current-device qualification is required even if the same logical IDs exist there.
 
 Initial acquisition is create-or-identical only: a conversation already bound to another live page refuses a new claim. A future page migration must atomically reconcile the old claim through an explicitly designed transition; it cannot overwrite the root reference and strand the old claim. Concurrent same-conversation/different-page acquisitions contend on the root CAS.
@@ -115,3 +121,18 @@ Accepted SDK capture contract49171a079f82958d65481dbedb0d246207704256 and indepe
 The evidence export must be bounded and versioned, retain every required fact without lossy conversion, and remain distinct from the opaque live guard. Imported/retrieved facts support inspection and historical correlation only. A missing or unsupported required fact refuses image-dependent dispatch; it is not defaulted from timestamps, matching UUIDs, delays, or buffer hashes. Current explicitly synthetic domain fixtures must remain distinguishable from qualified acquisition. Adapter/capture evidence, its native parent and all submitted derivatives commit before first provider use; exact restored image bytes are reused for proposal and verification. Any provider-specific processing creates an explicitly recorded derivative before submission.
 
 The SDK owner is preparing the minimal historical export contract separately. Implementation of this amendment starts only after exact SDK/consumer review resolves field coverage and serialization limits. Native-assigned allocation remains outside this amendment and still requires the separate REM-25 journal/binding review.
+## November 5 delivered resident composition
+
+Compose the existing memory-aware Generated publication with delivered Buddy
+91dcc601154507790254946f8f0f811204a0fd43 resident acquisition, association reuse
+and output recording. Keep selected Provider publication under its existing joined
+admission and preserve its explicit native-output refusal. Ordinary resident
+attempts keep their delivered evidence/association ownership; this integration
+does not turn historical source facts into selected binding authority.
+
+Move the delivered resident output branch into the shared publication helper,
+after Generated acknowledgment and the memory/native authorization guard. Preserve
+all delivered Pending, cancellation, uncertainty and SubmittedUnverified outcomes.
+Verify composition and resident evidence reuse with focused host tests. Live
+semantic memory qualification remains pending the key; tablet execution requires
+coordinator ownership. Historical receipts above retain their original scope.

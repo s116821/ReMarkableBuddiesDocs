@@ -253,3 +253,56 @@ manifests. The first failure remains separate from the passing rerun.
 The library build emitted six existing Writer fixture dead-code warnings.
 The local check used scripted inputs and did not run a saved-byte or live
 provider case.
+
+## November 5 delivered resident composition
+
+This successor integrates delivered Buddy main
+`91dcc601154507790254946f8f0f811204a0fd43` into the existing composed-memory
+branch. Local source is `7a4421cea6944e38976c96b47e4ba79c674b620a`, tree
+`219a976f9662152b902269ed5c8b542ce98a3599`. The normal merge is
+`8dbf0f18f3c438b8734890e09a0c77a45065ef42`, with parents `26b650a` and
+`91dcc60`; its sole successor removes trailing spaces in a documentation comment.
+Docs integrates delivered main `db4c4b2a25e1b54ef8f8d8add7446d5725f54ced`.
+These source revisions have not been published from this checkout.
+
+Delivered acquisition, installed resident source/output setup, SDK/Cargo pins,
+blank-start and Writer refinement remain intact. Resident output now follows the
+memory-aware Generated helper, preserving its original Pending, cancellation,
+uncertainty and SubmittedUnverified outcomes. Selected prepared publication
+continues to refuse native output. Its validator now accepts ResidentCapture
+only with the current root/user ownership and complete required media, matching
+the other historical capture types. It grants no fresh native authority.
+
+The actual composed Orchestrator fixture adds three resident-capture cases:
+selected document-memory enrichment, selection replacement, and failed write.
+It checks saved image order/bytes, source preservation, exact enriched text,
+selected-only publication, and zero backend calls. The first resident case
+failed because text-write validation omitted this capture type; that failure
+is retained separately from corrected passes. The fixture now has 17 cases;
+those cases are not counted as 17 separate Rust tests.
+
+Local Windows evidence is retained in `work/rem37-composed-integration-evidence`
+under `nov05-*.log`. The composition/panic controls, resident restart/export,
+invalid derivative and omitted-media controls, and ordinary-memory workflow
+pass. These runs used the final functional source; the successor changes only
+comment whitespace. The Windows build reports three resident-platform dead-code
+warnings, plus six Writer fixture warnings in library tests. Linux-only resident
+output is source-reviewed here and still requires hosted Linux compilation and
+coordinator review at this successor. No new tablet or provider run occurred.
+REM-24 live semantic qualification remains pending. Wider lifecycle tasks and
+canonical sync/archive remain open.
+
+The two shared-key/opposing-set SDK tests also pass, including their child
+process controls. Additional current-head checks cover the existing selected
+publication fixture, personalization, and ordinary no-output/cancellation outcomes.
+Final validation and exact paired handoff are recorded in the owning issue.
+
+Final local total: 11 distinct Rust tests passed (nine library, two SDK),
+excluding child invocations and subcases. Docs passed 12 unit tests, its manifest/
+guidance/provenance checker and all 110 strict OpenSpec items. Formatting and
+source/Docs diff checks pass. Log SHA256: composed
+`9ef2eb6a685d62492a73e05f34f31dd4fd8cf6b6e4e1ba803bb20f1170534ea5`;
+SDK `37c2498af5c185999b79fd708b404ffd90d98eff04d220511e9080fd33af24e5`.
+The active shared Windows target was reused; no new cache or cleanup scope was
+created. Preserve the original dirty/divergent worktrees and both earlier failed
+logs. This handoff does not close the active change or qualify native settlement.

@@ -142,3 +142,12 @@ has a separate bounded delivery for Interpreted and Generated writes from
 prepared evidence. Its parent startup pair must land before final integration.
 Fresh input, composed memory, Pending, settlement and native effects remain
 with the active lifecycle and their owning drafts.
+
+## November 5 successor status
+
+The current composed-memory successor now includes the delivered resident
+acquisition/reuse integration. See [the dated composition result](composed-memory-result.md#november-5-delivered-resident-composition)
+for exact source, the resident selected-write gap and bounded local checks.
+Earlier candidate receipts above describe their original revisions. REM-25's
+merged resident path is available; remaining selected publication/native
+settlement and live semantic gates continue under this active change.

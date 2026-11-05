@@ -70,3 +70,9 @@ source patch. See [complete delivery scope](delivery-reconciliation.md).
 - [x] Complete current exact-head hosted checks and final bot/status review.
 - [ ] Coordinate paired normal squash and verify actual-main CI/publication.
 - [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
+
+## November 5 delivered resident composition
+
+- [x] Reconcile delivered resident acquisition/reuse with memory-aware Generated publication, retaining selected admission and native refusal.
+- [x] Verify affected composition/resident tests and record exact paired source state for coordinator review; hosted Linux and independent review remain pending.
+- [ ] Complete remaining live semantic and native lifecycle gates before parent sync/archive.
