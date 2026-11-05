@@ -18,6 +18,18 @@ Serialize cancellation, model completion and effect admission through the same o
 
 ## Verification and limits
 
+The November 5 receiving reconciliation normally integrates delivered Buddy
+f6af5d1 and Docs3bfecf70 into this existing pair. It preserves the current
+selected Reader publication and resident paths, ordinary Writer memory snapshot
+contract and exact routed source/history/image associations. Optional memory is
+assembled only by an explicitly admitted receiving buddy, never by rewriting
+router requests or fabricating visible turns. Selected configuration must remain
+outside ordinary local dispatch. Resolve changed receiving signatures explicitly
+and verify the actual combined consumer; no historical CI or live receipt is
+silently promoted to the reconciled source. Build/hosted validation and any
+later live semantic gate retain their own attribution. Native gesture/composer,
+remote aggregate activation and device effects remain outside this unit.
+
 Receiving payloads label each historical PNG with its source ID, ordinal,
 dimensions, zero-based attachment index and original content SHA-256. Identical
 bytes share one attachment and retain each source association. At most 256
