@@ -184,3 +184,7 @@ admitted result remains unconfirmed. Current inspection cannot settle it, and
 unknown history blocks another initialization for the same connection within the
 host lifetime even after reboot. History is in memory only; restart supplies no
 reconciliation. Physical tablet/provider/native qualification remains separate.
+
+## Ordinary notebook archives
+
+The paired [notebook archive consumer](manager-notebook-archives.md) adds policy-previewed ordinary notebook export and detached format-4 inspection. Local source/fixture, actual host UI, product interoperability, hosted delivery and physical tablet qualification remain separately attributed in its change results.
