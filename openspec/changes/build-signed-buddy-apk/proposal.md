@@ -39,3 +39,19 @@ comments, exact Rust publisher and preserved REM-46 build helper, accepted Manag
 ea0c753 / Docs029d823 verifier contract and minimal producer handoff, and pinned
 APKv3 upstream documentation. This is precode, not an implemented artifact or
 installation/trust qualification.
+
+## Current coordinated delivery boundary
+
+The original producer/resident implementation is already present in delivered
+Buddy main. The remaining Buddy PR38 source diff is the usable source correction:
+SDK v0.2.0 adoption, independent SDK tag/source proof, disjoint-output refusal and
+focused tests. Docs PR25 synchronizes that precise implemented contract in
+[canonical source admission](../../specs/buddy-package-source-admission/spec.md)
+within this existing pair; it does not create a second feature or planning PR.
+See [the scoped delivery receipt](source-admission-result.md) for exact revisions,
+actual proof/Cargo identities, validation and Root's next integration action.
+
+This parent remains active and unarchived. Source-proof completion does not
+complete its actual artifact/signature/reproducibility, production signer/trust,
+release integration, native install or lifecycle requirements. Existing historical
+failures and unfinished tasks remain authoritative at their original scope.

@@ -1,5 +1,10 @@
 ## ADDED Requirements
 
+The implemented source-admission and output-root correction is synchronized in
+[the canonical source-admission contract](../../../../specs/buddy-package-source-admission/spec.md).
+It is not duplicated in this unfinished signed-artifact delta. The broader
+package/signature/reproducibility/production requirements below remain active.
+
 ### Requirement: Signed exact-source Buddy package artifacts
 
 The Buddy producer SHALL create actual signed APKv3 artifacts with one permanent
@@ -26,18 +31,6 @@ runtime separately, or introduce custom release/version/publication logic.
 - **WHEN** resolved SDK source has only Cargo's root untracked completion marker
 - **THEN** source admission may exclude that marker only after verifying the exact Git root/HEAD and an absent or empty regular single-link marker with stable inspected identity
 - **AND** tracked markers, links/reparse points, directories, nonempty or changed markers and every other tracked/untracked modification refuse without deleting files or changing ignore/configuration policy.
-
-#### Scenario: Overlapping build and final output paths
-
-- **WHEN** resolved build and final output roots are equal or one contains the other
-- **THEN** the producer refuses before source/tool admission or creating output
-- **AND** fresh sibling roots proceed through the normal exact-source and tool checks.
-
-#### Scenario: Tagged SDK proof independent of Cargo cache
-
-- **WHEN** tagged SDK identity is requested from a Cargo-generated checkout without tag refs
-- **THEN** the producer requires an explicit independent clean full SDK Git release source whose canonical origin, actual tag object/peel, commit and manifest match resolved Cargo identity and stable canonical remote observations
-- **AND** missing, dirty, malformed, replaced, mismatched or moving proof refuses without cache/ref/config writes or silent commit-only fallback.
 
 #### Scenario: Signature and reproducibility
 

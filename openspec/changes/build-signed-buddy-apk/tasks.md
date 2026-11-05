@@ -12,6 +12,7 @@
 - [x] 1.6 Adopt reviewed actual SDK v0.2.0 source in both dependency declarations/lock and resident SDK pin, retaining exact native bundle hashes; observe both locked target graphs and preserve the unchanged exact-tag check's concrete missing-ref refusal.
 - [x] 1.7 Implement the maintainer-reviewed SDK release-source boundary independent of Cargo's tagless generated checkout, with exact commit/manifest and pre/post tag-object binding. No cache ref writes or relaxed identity checks; independent final source review remains under2.2.
 - [x] 1.8 Verify explicit proof CLI/contract and positive offline local-Git admission plus malformed/mismatched/moved-tag/dirty/replaced-proof controls; preserve missing/refused diagnostics and commit-only untagged mode. Ten SDK local-Git controls plus original source fixture pass; live remote/tagged build qualification remains separate.
+- [x] 1.9 Synchronize the implemented source-admission/output-root correction into its canonical contract in this same coordinated pair; remove transferred scenario bodies from this unfinished parent delta. See source-admission-result.md. This is partial source-contract sync only; do not archive the full parent.
 
 ## 2. Verification and delivery
 
@@ -52,3 +53,12 @@ owner received links, manifest hashes and an independently communicated issuer
 SPKI for host-only offline consumer verification. This is durable handoff2.3,
 not PR13 ZIP admission, production trust or physical lifecycle qualification.
 All production/native/full release and coordinated lifecycle items remain open.
+
+## Current source-correction delivery only
+
+Tasks1.5–1.9 describe implemented source correction, not a signed-package result.
+The source proof and actual per-target Cargo identities are recorded in
+[source-admission-result.md](source-admission-result.md). All unchecked broader
+items above remain unchecked. Root still owns independent final review of this
+Docs amendment, exact successor hosted checks, coordinated merge and real normal
+release observation. No new release tag or full-parent archival is performed here.
