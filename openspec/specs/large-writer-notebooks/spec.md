@@ -152,3 +152,19 @@ combined Writer routing, live account acceptance or whole Writer/MVP completion.
 #### Scenario: New model-facing quality gate
 - **WHEN** the new map/reduction prompts are ready for delivery
 - **THEN** an original frozen beyond-inline-bound notebook/refinement plan receives independent bounded preparation and semantic review, retaining raw outcomes and failures without replaying the closed earlier two-call attempt or substituting easier inputs after failure.
+
+### Requirement: Explicit ordinary notebook archive maintenance
+The archive command SHALL provide explicit format-4 notebook export and
+detached inspection operations. Export SHALL admit only a complete existing
+ordinary notebook Store under its exclusive lease and validate complete
+lineage and required media. The destination and configured owned roots
+SHALL be canonically disjoint. Inspection SHALL require the explicit
+complete notebook format, with bounded work and no runtime activation.
+
+#### Scenario: Export and detached readback
+- **WHEN** an admitted existing notebook Store is exported to a new directory under a trusted local parent
+- **THEN** publication verifies complete original objects, publishes a no-replace marker last and verifies the committed archive before reporting success.
+
+#### Scenario: Refused custody or incomplete archive
+- **WHEN** custody, path separation, format, bounds, required media or the detached inventory witness fail
+- **THEN** the operation refuses without falling back to a legacy route, overwriting an archive or granting restore or runtime authority.
