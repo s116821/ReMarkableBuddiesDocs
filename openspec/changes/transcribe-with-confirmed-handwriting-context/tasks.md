@@ -10,8 +10,9 @@
   verify actual production paths and unchanged legacy vectors.
 - [x] Independently review source and exact prompt/identity vectors.
 - [ ] Verify required hosted checks on the integrated structured-math revision.
-- [ ] Review and execute a genuinely new finite recognition comparison, then
-  apply the unchanged source glyph/attachment criteria before delivery.
+- [x] Review and execute a genuinely new finite recognition comparison, then
+  apply the unchanged source glyph/attachment criteria; retain strict 0/4 and
+  full-fidelity 0/4 without treating execution as acceptance.
 
 The structured implementation's local checks and remaining review/recognition
 gates are recorded in [structured results](structured-math-results.md).
