@@ -27,6 +27,12 @@ runtime separately, or introduce custom release/version/publication logic.
 - **THEN** source admission may exclude that marker only after verifying the exact Git root/HEAD and an absent or empty regular single-link marker with stable inspected identity
 - **AND** tracked markers, links/reparse points, directories, nonempty or changed markers and every other tracked/untracked modification refuse without deleting files or changing ignore/configuration policy.
 
+#### Scenario: Overlapping build and final output paths
+
+- **WHEN** resolved build and final output roots are equal or one contains the other
+- **THEN** the producer refuses before source/tool admission or creating output
+- **AND** fresh sibling roots proceed through the normal exact-source and tool checks.
+
 #### Scenario: Signature and reproducibility
 
 - **WHEN** signed control/payload changes, the key is wrong/missing, or identical fixed inputs/key are rebuilt

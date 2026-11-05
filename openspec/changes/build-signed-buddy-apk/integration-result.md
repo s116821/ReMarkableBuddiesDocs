@@ -101,3 +101,49 @@ The moved case passed locally on Windows in 16.203 seconds before the
 nonoverlapping main integration. Current Linux container execution and final
 hosted checks remain pending. This source-test environment does not qualify
 an actual SDK-consuming source build, package, signature or installation.
+
+## November 5 delivered packaging convergence
+
+Fresh immutable comparison finds all 25 effective paths from builder head
+`3f0a10a3e62f364f14225200d5eed5281103d3dc` (19 paths) and resident extension
+`221bdfa13d7482e420ee33c19e8d245e7a0c7d12` (16 overlapping/additional paths)
+already absorbed into delivered main
+`f6af5d1ce08c7ad518c0943d4a293e7c18688699`. Each resulting resident blob matches
+main, including CI and unit-byte attributes. The normal builder merge
+`429be1743314716a3ef2eaf02636d4472e203405` resolves ten add/add paths to these
+delivered resident blobs; its entire tree equals main. No unique code is lost.
+Retained comparison receipt SHA-256 is
+`809b6126e88e1dc5c77e3b45e01c8da488b463f548c5815d2e784332a2824782`.
+Docs normally integrates delivered `7121367efe6989ade78cd5a75cf57b8e88a7288a`
+at `5a4666dfbe7f76cfba277b701907b0f7ecb8b0da`, preserving the six unique active
+producer contract/evidence files. The drafts' history is not evidence of missing
+implementation; their remaining qualification work is real and stays open.
+
+Separate source repair `21beace6ee96fecff4ec1f491c137a2dca181f86` changes only
+apk_builder.py and test_apk_source.py: reject equal/nested build/final output
+roots before source/tool calls or creation. Two local controls cover three
+overlap forms and the accepted sibling path. The Windows Python 3.12 APK-only
+suite runs 47 cases: 43 pass, four explicit skips (three pinned-tool container
+cases and the SDK symlink privilege case). It invokes no actual Cross build,
+APK tool or signer. Retained APK test log SHA-256:
+`34c75ce920878c1d8848969686992d3ffe060262fcb3146a97df0061bf713517`.
+
+The initial broader Python discovery ran 60 cases: 48 passed, four skipped and
+eight semantic-tool cases errored because the local semantic-release executable
+was absent. That failed log is retained, SHA-256
+`1679746ba184fa83d213e93f8fb3951699d0839a8345641e2eecf2d7d80d8ac2`.
+No unrelated tooling or fixture policy was changed to conceal that result.
+Hosted exact-successor application checks and independent review remain required;
+no Rust compilation or shared Cargo cache was used. Earlier hosted run
+[41823558749](https://github.com/s116821/ReMarkableBuddies/actions/runs/41823558749)
+passed the original 3f0a10a source/isolated fixture; it is not this repair's CI.
+
+[The official release proposal](official-release-proposal.md) records exact
+delivered native inputs, the observed SDK tag/pin mismatch, production signer
+and trust decisions, post-tag maintained release integration, complete asset
+admission and Manager lifecycle gates. It is preparation only. Existing test-key
+and ineligible metadata remain unchanged. No signing, remote qualification,
+trust/resource/settings change, publication or tablet operation occurred. The
+full producer change remains active, unsynced and unarchived pending its listed
+acceptance gates. Raw local receipts/logs are retained by the maintainer without
+a public download link; source identities and hosted references are public.

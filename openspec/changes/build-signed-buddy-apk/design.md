@@ -27,10 +27,16 @@ prerelease/promote flow open. Application and SDK versions are not source fields
 Targets are fixed armv7-unknown-linux-gnueabihf -> armv7 and
  aarch64-unknown-linux-gnu -> aarch64, with measured ELF class/machine/endianness,
 interpreter and ABI evidence. This correspondence is build data, not an RM1/RM2/
-Paper Pro firmware eligibility table. Initial fixture payload paths are fixed
+Paper Pro firmware eligibility table. Initial ordinary fixture payload paths are fixed
 usr/bin/reader-buddy plus the applicable license/provenance file, without service
 scripts or arbitrary caller paths. Actual Vellum root/lifecycle ownership remains
 a separate required design before installable artifacts.
+
+The delivered optional ARMv7 resident fixture instead uses the fixed package
+paths, v6 recovery policy, two units and pinned native SDK bundle described in
+[the current convergence and official release proposal](official-release-proposal.md).
+It remains a test-key, installation-ineligible profile. An ordinary AArch64
+fixture does not qualify Paper Pro or inherit RM2 resident compatibility.
 
 ## Authenticated metadata
 
@@ -82,7 +88,8 @@ existing receipt/package or silently rebase inputs.
 
 Producer inputs are fixed regular files, no symlink/device/special file or
 caller-controlled archive extraction. Bound package/input size (128MiB per target),
-metadata (64KiB), file inventory (fixed <=8), subprocess time (120s per actual
+metadata (64KiB), file inventory (ordinary three; resident ten including package
+license/build metadata), subprocess time (120s per actual
 package/tool phase;900s for the separately bounded fresh source compilation only)
 and output diagnostics (16KiB sanitized combined per phase). Streams
 hash/copy with pre/post identity and complete byte counts; changed/truncated
@@ -90,6 +97,10 @@ input, unexpected inventory, signature/metadata mismatch or timeout discards
 incomplete staging and preserves earlier outputs. Container network is disabled,
 capabilities dropped, host credentials/trust/config excluded and mounts read-only
 except owned new outputs/tmpfs. Do not widen shared image tags or permissions.
+Build and final output roots must be fresh, outside source, and mutually
+disjoint after path resolution. Reject equality or nesting in either direction
+before source/tool admission or output creation; final artifacts must not live
+in the writable compiler tree.
 
 ## Verification and limits
 
