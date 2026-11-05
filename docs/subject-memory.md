@@ -228,8 +228,8 @@ lost request progress prevents output and records failure. Enriched answers requ
 a bounded `ANSWER:` frame. Routine logs retain only memory status/count diagnostics,
 not saved memory context or enriched answer text.
 
-The shared receiving context interface is usable by future real Writer consumers;
-this does not claim Writer implementation. Provider protocol fixtures verify
+The shared receiving context interface also supports the bounded Writer consumers
+described below. Provider protocol fixtures verify
 question/image bytes and labeled data assembly, not live model precedence or native
 rendering. Consult the owning change for exact revisions and observed test evidence.
 
@@ -262,5 +262,23 @@ This increment is limited to explicitly supplied ordinary text generation and
 refinement. Existing internal callers retain memory disabled until they explicitly
 adopt an admitted receiving path. It does not modify notebook plans, selected
 Writer publication, presets, sync/recovery, native rendering or export execution.
-Representative Writer-memory model behavior remains a separate qualification gate;
-Reader live enrichment and Writer preference tests do not substitute for it.
+The ordinary Writer's fresh representative memory-model check independently
+passes at source b8cc818; [exact evidence and limits](../openspec/changes/subject-memory/writer-receiving-result.md#fresh-ordinary-writer-live-evidence)
+remain distinct from Reader enrichment and Writer preference qualification.
+
+## Explicit selected Writer library receiver
+
+The selected supplied-text entry is `writer::selected::run`, requiring an explicit
+acknowledged Writer token/root and exact Refine source/draft references. Optional
+selected memory never chooses Writer scope. Preparation admits model work once;
+Generated publication joins Writer/catalog/queried-aggregate guards at the actual
+selected commit. Empty memory retains guards; historical receipts admit no rerun
+or fresh action. Failed/Canceled evidence without usable memory pins is permitted
+only while the acknowledged Writer selection is current, without generated text
+or selectable draft.
+
+This library increment has local Store/receiver controls, with Root review and
+hosted acceptance pending. It adds no CLI wire: ordinary command selected refusal
+remains. Selected export preparation, destinations, notebook processing, native
+output and full sync/recovery remain separate. See the
+[receiving result and exact source](../openspec/changes/subject-memory/selected-writer-receiving-result.md).

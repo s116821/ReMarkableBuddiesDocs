@@ -36,3 +36,13 @@
 
 - [x] Independently review the exact Writer-memory/current-main successor and separately qualify representative ordinary Writer-memory model behavior; retain [the bounded live evidence](writer-receiving-result.md#fresh-ordinary-writer-live-evidence).
 - [ ] Complete required current hosted checks and Root final coordinated delivery review; preserve all full-capability gates.
+
+## 6. Selected Writer receiving increment
+
+- [x] Review the explicit library entry, preparation/finish types, historical recovery and failure-only publication policy; name exact Reader dependency 550805a.
+- [x] Normally reconcile exact Reader dependency with ordinary Writer source; preserve both parents and report conflict resolutions separately.
+- [x] Implement acknowledged selected preparation with a fresh one-shot model permit and exact source/draft/history projection.
+- [x] Implement recover-first selected finish and Provider memory composition under one complete ordered admission set.
+- [x] Expose a usable library receiver carrying explicit acknowledged Writer selection; keep ordinary CLI refusal unchanged pending separate wire review.
+- [x] Verify actual Store ownership/replacement/budget/failure/cancellation/panic/replay controls and ordinary regressions at the new exact source; retain [scoped results and failed attempts](selected-writer-receiving-result.md).
+- [ ] Obtain Root independent review and required hosted checks; keep selected CLI/native/export/sync/recovery/full lifecycle scope open.

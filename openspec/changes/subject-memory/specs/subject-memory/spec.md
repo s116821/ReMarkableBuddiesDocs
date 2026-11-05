@@ -66,3 +66,22 @@ The explicitly enabled ordinary Writer enrichment path SHALL retrieve bounded lo
 #### Scenario: Selected Writer remains separately admitted
 - **WHEN** the new ordinary enrichment path is given selected configuration, a selected view or a foreign/unsupported provider
 - **THEN** it refuses before model use and never interprets selected data as ordinary all-history context or replaces the required selected consuming publication with an ordinary write.
+
+### Requirement: Explicit selected Writer preparation and joined publication
+The selected supplied-text Writer library receiver SHALL require an explicit acknowledged Writer selection independent of memory configuration. Fresh selected preparation SHALL preserve exact request/source/history and admit model work once; historical preparation SHALL NOT admit another model call. Generated publication with enabled selected memory SHALL validate Writer and all catalog/queried-aggregate pins under one ordered same-Store admission set at commit_selected. Empty usable memory SHALL retain its pins. Ordinary snapshot behavior and ordinary-command selected refusal SHALL remain unchanged.
+
+#### Scenario: Reopened selected refinement
+- **WHEN** a current selected Writer request refines a generated draft after reopening its Store
+- **THEN** preparation SHALL validate exact current root/source/draft references, retain the original source owner and verbatim history, and record the new correction link without ordinary all-history lookup.
+
+#### Scenario: Supplied source logical grouping
+- **WHEN** a validated normalized source and its owning turn establish a stable source-document ID
+- **THEN** selected ownership MAY use that ID for historical logical document grouping and memory partition validation, but SHALL NOT treat supplied text as current device/page identity or native permission; foreign or ambiguous document ownership SHALL refuse.
+
+#### Scenario: Changed selection or lost acknowledgment
+- **WHEN** Writer or memory membership changes before publication, or a preparation/finish acknowledgment is lost
+- **THEN** new stale publication SHALL refuse; exact historical receipts SHALL reconcile without a new model permit, duplicate draft, ordinary fallback or fresh native/export capability.
+
+#### Scenario: Memory failure without a usable view
+- **WHEN** retrieval fails or cancellation occurs after fresh preparation while the acknowledged Writer selection remains current
+- **THEN** only selected Failed/Canceled evidence without generated text or selectable draft MAY publish without unavailable memory pins; stale or uncertain writes SHALL remain refusal/reconciliation.
