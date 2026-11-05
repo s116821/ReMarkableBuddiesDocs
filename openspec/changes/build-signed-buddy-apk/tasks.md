@@ -62,3 +62,5 @@ The source proof and actual per-target Cargo identities are recorded in
 items above remain unchecked. Root still owns independent final review of this
 Docs amendment, exact successor hosted checks, coordinated merge and real normal
 release observation. No new release tag or full-parent archival is performed here.
+
+The finite strict build-input source extension is tracked in [qualify-hosted-package-build-inputs](../qualify-hosted-package-build-inputs/proposal.md). It does not complete actual build qualification or task3.3 production integration/signing.
