@@ -1,18 +1,5 @@
 ## ADDED Requirements
 
-### Requirement: Composed selected memory publication
-Compatible selected subject memory and selected Reader draft publication SHALL use
-one canonical ordered admission set, preserving original payload/token/raw-head
-and budget seals. The writer SHALL NOT reacquire an already-held participating
-gate. Unsupported or foreign providers SHALL refuse before model/publication.
-
-#### Scenario: Memory and Reader share a document key
-- **WHEN** the same selected document scope participates in both the memory view and Reader draft
-- **THEN** its gate is held once with the complete ordered set, both inputs are revalidated, and the guarded draft publishes without duplicate gate acquisition or new native authority.
-
-#### Scenario: Selected resident historical evidence
-- **WHEN** the selected prepared request references a complete resident historical capture and compatible selected memory
-- **THEN** the exact saved overview and detail images are reused, source ownership and required media are checked before text publication, and the enriched draft uses the shared admission without granting native output authority; replacement or failed writes publish no draft.
 ### Requirement: Durable actual inference evidence
 Reader SHALL persist a guarded evidence batch containing the exact overview/details submitted to proposal and independent verification before provider dispatch. It SHALL reuse the prepared bytes, retain REM-9 ownership checks across storage work, and record verified request and actual terminal outcome without changing recognition prompts or mistaking a draft for visible output. Source: REM-37 source-image retention and actual Reader integration.
 

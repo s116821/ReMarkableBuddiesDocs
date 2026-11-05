@@ -146,8 +146,19 @@ with the active lifecycle and their owning drafts.
 ## November 5 successor status
 
 The current composed-memory successor now includes the delivered resident
-acquisition/reuse integration. See [the dated composition result](composed-memory-result.md#november-5-delivered-resident-composition)
+acquisition/reuse integration. See [the dated composition result](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-result.md#november-5-delivered-resident-composition)
 for exact source, the resident selected-write gap and bounded local checks.
 Earlier candidate receipts above describe their original revisions. REM-25's
 merged resident path is available; remaining selected publication/native
 settlement and live semantic gates continue under this active change.
+
+## Composed receiver closeout boundary
+
+The bounded composed selected Reader/memory receiver is implemented in merged
+[Buddy33](https://github.com/s116821/ReMarkableBuddies/pull/33), with
+[Buddy37](https://github.com/s116821/ReMarkableBuddies/pull/37) retained as
+superseded source provenance. Its original contract/evidence and finite lifecycle
+are preserved in the [receiver archive](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Earlier candidate/pending wording above is historical. This parent stays active;
+qualified native effects, Pending/settlement, complete resumption/restore and
+remaining broad issue acceptance are not archived or declared complete here.

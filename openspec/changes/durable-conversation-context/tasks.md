@@ -22,11 +22,13 @@
 ## 3. Real Reader integration
 
 - [x] 3.21 Review and implement the bounded [runtime compilation boundary](runtime-compilation-boundary.md) at owning PR30, retain recording guards/tests and public read-only/storage behavior, run affected checks and strict lint, then reconcile dependent PR32 without enabling unqualified runtime effects. Bounded source/Docs and required checks are verified; production integration and whole lifecycle remain open. Descendant reconciliation is tracked separately below.
-- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see [the composed result](composed-memory-result.md) for the current candidate and earlier scoped evidence.
+- [ ] 3.22 Reconcile the accepted parent boundary through runtime/mode/selected/composed descendants, preserving their functioning production refusal and publication paths, affected checks and explicit native limits; see [the preserved receiver history](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-result.md) and its separately bounded closeout without treating that receiver delivery as full descendant/native acceptance.
 
-- [x] 3.18 Review [composed memory admission](composed-memory-admission.md) against the selected Provider pins and Reader write gate.
-- [x] 3.19 Implement compatible selected Provider and Attempt publication under one ordered set. Preserve native refusal and currentness, including the post-consumption panic witness.
-- [ ] 3.20 Complete independent review and current hosted checks for the composed candidate. Keep REM-24 live semantic qualification and native/Pending/settlement work open. See [composed memory results](composed-memory-result.md).
+Tasks3.18–3.20 for the bounded composed Reader/memory publication are now
+owned by the [completed receiver closeout](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Original source review, panic/currentness evidence and source hosted acceptance
+are preserved there. This moves the completed receiver slice only; parent3.22,
+full4.7 and native/Pending/settlement requirements remain unfinished.
 
 - [x] 3.5 Independently review selected-buddy-binding-contract.md; implement the real token-checked Store projection and actual Workflow read-only SDK consumer while preserving the eight dirty native/Cargo files and tools; keep native reuse/bootstrap unfinished. Verified bounded source increment only: selected-buddy-binding-result.md.
 - [x] 3.6 Verify real Store reopen, selected omission/retained losers/current tombstones/link and ownership failures, stale tokens and full SDK observation drift through the actual consumer with recording mock I/O; assert zero device calls/publications and record exact provenance and independent review. Fourteen controls pass in the exact committed source; strict lint and broad native/lifecycle gates remain open.
@@ -71,8 +73,11 @@ source patch. See [complete delivery scope](delivery-reconciliation.md).
 - [ ] Coordinate paired normal squash and verify actual-main CI/publication.
 - [ ] Finish broader runtime/native/provider/end-to-end gates before final parent sync/archive.
 
-## November 5 delivered resident composition
+## November 5 composed receiver delivery
 
-- [x] Reconcile delivered resident acquisition/reuse with memory-aware Generated publication, retaining selected admission and native refusal.
-- [x] Verify affected composition/resident tests and record exact paired source state for coordinator review; hosted Linux and independent review remain pending.
-- [ ] Complete remaining live semantic and native lifecycle gates before parent sync/archive.
+The implemented resident historical-evidence validation and composed Generated
+publication are preserved in the separately completed receiver archive linked
+above. Its source delivered through merged Buddy33; Buddy37 is superseded source
+provenance. Native lifecycle, full resumption/settlement and remaining live/model
+acceptance stay with this parent and the owning issues. No unfinished parent
+task is checked complete by the bounded receiver closeout.

@@ -4,7 +4,7 @@ Reader currently retains only process-local undo ownership, so a restart cannot 
 
 ## What Changes
 
-- Compose selected subject memory with Reader draft publication through [one ordered admission set](composed-memory-admission.md). Keep installed acquisition, native effects and the REM-24 live semantic gate separate.
+- Compose selected subject memory with Reader draft publication through [one ordered admission set](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-admission.md). Keep installed acquisition, native effects and the REM-24 live semantic gate separate.
 
 - Propose the REM-52-coordinated existing Receipt/OutcomeFact schema-2 migration,
   selected-only projector and shared effect admission described in
@@ -42,3 +42,14 @@ Rust owns a new conversation module and scoped orchestration/capture/main integr
 ## Authority and delivery
 
 Read the complete REM-37 description (updated September26 21:28:14UTC), its sole21:12:36 correlation comment, and full resumed roadmap. The resume supersedes historical planning-pause wording. Export identity is the portable metadata/title convention, not a separate architecture blocker. New REM-46 requires upstream Action release logic and remains separate. Base Docs e7fbdc44/Rust3df3b1e6 include accepted REM-9; inspected REM-36 API checkpoint7483087 is not yet accepted. No production implementation until accepted REM-36 plus independent exact-plan review. REM-25 binding interface is coordinated before either consumer implements it. One coordinator owns hardware. Stop/checkpoint at90% reported usage; no reset/credits. Full linked Docs/Rust delivery, Summary-only PRs, squash-only merges, no planning-only feature PR or premature archive. REM-35 owns1.0.
+
+## Composed receiver closeout boundary
+
+The bounded composed selected Reader/memory receiver is implemented in merged
+[Buddy33](https://github.com/s116821/ReMarkableBuddies/pull/33), with
+[Buddy37](https://github.com/s116821/ReMarkableBuddies/pull/37) retained as
+superseded source provenance. Its original contract/evidence and finite lifecycle
+are preserved in the [receiver archive](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Earlier candidate/pending wording above is historical. This parent stays active;
+qualified native effects, Pending/settlement, complete resumption/restore and
+remaining broad issue acceptance are not archived or declared complete here.

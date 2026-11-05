@@ -1,6 +1,6 @@
 ## Context
 
-[Composed memory admission](composed-memory-admission.md) binds selected Reader and memory pins before draft publication. The delivered host startup and history and selected publication contracts retain separate ownership.
+[Composed memory admission](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-admission.md) binds selected Reader and memory pins before draft publication. The delivered host startup and history and selected publication contracts retain separate ownership.
 
 REM-37 supplies durable conversation context on accepted REM-36 storage. Current Reader orchestration captures an overview and derives detail images for proposal and independent verification; native undo ownership is process-local. REM-9 already guards capture, provider waits, navigation and keyboard output. REM-25 owns native page acquisition and its device-local recovery journal. Its static firmware inspection identifies a possible explicit page UUID argument but proves no runtime insertion or persistence semantics.
 
@@ -136,3 +136,14 @@ all delivered Pending, cancellation, uncertainty and SubmittedUnverified outcome
 Verify composition and resident evidence reuse with focused host tests. Live
 semantic memory qualification remains pending the key; tablet execution requires
 coordinator ownership. Historical receipts above retain their original scope.
+
+## Composed receiver closeout boundary
+
+The bounded composed selected Reader/memory receiver is implemented in merged
+[Buddy33](https://github.com/s116821/ReMarkableBuddies/pull/33), with
+[Buddy37](https://github.com/s116821/ReMarkableBuddies/pull/37) retained as
+superseded source provenance. Its original contract/evidence and finite lifecycle
+are preserved in the [receiver archive](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Earlier candidate/pending wording above is historical. This parent stays active;
+qualified native effects, Pending/settlement, complete resumption/restore and
+remaining broad issue acceptance are not archived or declared complete here.
