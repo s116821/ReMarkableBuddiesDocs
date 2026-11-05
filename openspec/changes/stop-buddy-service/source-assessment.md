@@ -1,5 +1,10 @@
 # Verified source assessment and remaining qualification
 
+Historical source packet below: b008027 and the pending bare APK are retained
+with their original evidence. Current proposed consumer reconciliation uses
+delivered91dcc601 and is defined in package-record-contract.md. The old resident
+paths/Profile1/Lease2 are not current Stop admission; production gates remain empty.
+
 Source packet: 108119bytes SHA256
 `5e2aa83671499566ffab2bfeb457e91006c237eb5811c663150734a5620de34c`.
 All18payload lengths/SHA256 values and17tracked Git blob identities independently

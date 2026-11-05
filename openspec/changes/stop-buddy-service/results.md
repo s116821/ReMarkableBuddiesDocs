@@ -260,6 +260,39 @@ The source, lockfiles, failure logs, screenshots, manifests and native bundles
 remain preserved. The compatible active dependency toolchain is retained only
 for the next independently owned Manager consumer and reviewed at its handoff.
 
+## Package record reconciliation precode checkpoint
+
+This checkpoint proposes a contract delta against Manager c013eb241d02923cfbcefb64df7d292d53e7f888
+and Docs fdb27a6c17a7ecdc4faaa66c9c495230e6f449ad. Manager remains clean and
+unchanged. package-record-contract.md and vendor-policy-keys.json describe the
+delivered PACKAGE/Profile6/Lease3/nested rm-sync baseline and exact proposed
+private evidence/digest/policy changes. proposed-manager-changes.md lists the
+bounded implementation and acceptance controls for coordinating-owner review.
+The forty acceptance vectors are specifications, not newly executed tests.
+
+Source basis is delivered Buddy91dcc601 (tree-equivalent75f8017), SDK a0c6480,
+and preserved R128/R129/R135 receipts. R128 result SHA256
+8c1f9bb2a31b11c7fd73d874ce86d01cee8def0150b18a849f36b32528c21c89
+records the exact reproducible native bundle. R129 expected-manifest SHA256
+906eb9e99a1e50f7f47c1f2dfd002306ad43a2aaf7897904a9821ce7875478b5
+and observer SHA256 b7e91e2bd5c07f5e8d9cc911fc3322f47f612741b253f3fab14db922d2ee05f9
+bind the development-signed package. R135 takeover stdout SHA256
+09606c7a92705486f0b26448824e36435a80588f6df21ad69a792dd8809f6567
+and lifecycle SHA2562238316262cee7050c016f09cb56534335dafe5eb667e24b1b549a9da6900e2c
+retain their no-document-request SIGKILL/helper-success scope. They do not
+qualify fixed Stop/SIGTERM, all active modes or production signing.
+
+Only source reading, editing, JSON inspection and Git diff/object inspection
+were used for this proposed Docs delta. No test suite, lint, OpenSpec validation,
+build, package generation, payload staging, tablet contact or runtime execution
+was performed. No generated binaries/caches were added or retired. Useful source
+and earlier failure/native receipts remain in their original locations.
+Both production registries remain empty, and the active change is neither synced
+to canonical specs nor archived. Independent resident helper-failure recovery
+and ordinary released-unit sampling remain separately bounded operator work.
+Coordinating owner retains precode acceptance, Manager integration and subsequent
+qualification/publication/delivery. Earlier results below retain original scope.
+
 ## Bounded notebook peer composition
 
 Composed exact Stop inputs Manager3fdca4c/Docs63c6b25 with reviewed notebook candidate Manager6306b9a/Docsac19323 through verified native bundles. The source ZIP is586,007bytes/SHA256c44ffc1fecfdde868946fbe59bab2801e16445a3422136a8c643242108bc83af. All three payload lengths/hashes, advertised prerequisites/heads and trees were verified before use. The notebook inputs are a reviewed candidate here; their merge/release is not inferred. Selected cancellation0045efc and complete-development-asset staging are preserved.

@@ -1,5 +1,11 @@
 # Closed profile admission and private observation
 
+Current proposed delta: package-record-contract.md supersedes the earlier
+resident LEGACY/Profile1/Lease2 shape. Manager c013eb2 still implements that
+older shape; this precode has not been implemented or qualified. Both production
+registries stay empty. Ordinary-manual retains its original predicates with the
+closed private DTO additions below.
+
 ## Meaning and release gate
 
 The action is unit-scoped: request Stop for reader-buddy.service on this verified
@@ -18,9 +24,10 @@ feature or advertise qualified Stop while the gate remains open.
 A self-reported version, a root-owned file alone, fresh metadata copied into an
 expected record, or absent native metadata cannot satisfy binary/profile trust.
 No automatic trust enrollment or package repair is introduced. The manual profile
-currently lacks an established production binary-to-source binding; pending APK
-fixtures do not supply it. That is an explicit unsupported condition, not an
-unspecified DTO or permission to trust observed bytes.
+still requires an independently accepted extracted binary binding. Buddy v0.62.0
+supplies a released ordinary tarball/source input, not native shutdown
+qualification or a signed installed-output package. Development fixtures do not
+satisfy production trust or all-mode shutdown qualification.
 
 ## Exact common predicate
 
@@ -50,26 +57,26 @@ For either profile, all of the following must hold before submission:
 
 | Evidence | ordinary-manual | resident-installed |
 | --- | --- | --- |
-| Source | main b008027 cicd/deploy unit | main b008027 recovery Installation/Profile and activation admission |
-| Unit file | /etc/systemd/system/reader-buddy.service; exact SHA256434d00dc6b62096b782dc85d417338a8283269f913f954af897a85cbc8ba64a6 | Same fixed unit path; digest must match existing protected recovery profile buddy_unit_sha256 and accepted source tuple |
+| Source | Delivered91dcc601 manual unit, unchanged from b008027 | Delivered91dcc601 PACKAGE/Profile6/Lease3 and installed-output activation |
+| Unit file | /etc/systemd/system/reader-buddy.service; exact SHA256434d00dc6b62096b782dc85d417338a8283269f913f954af897a85cbc8ba64a6 | /usr/lib/systemd/system/reader-buddy.service; digest matches protected Profile6 and accepted tuple; no shadowing /etc unit |
 | Effective base | Type=simple; Restart=on-failure; RestartUSec=5s; WorkingDirectory=/home/root | Type=notify; Restart=no; existing complete20-property buddy_policy must match source-approved protected recovery profile |
 | Effective hooks | ExecStop/ExecStopPost/OnSuccess/OnFailure empty; RestartForceExitStatus empty | OnSuccess=OnFailure=reader-buddy-stock-recovery.service; both job modes fail; ExecStop/ExecStopPost empty in this candidate (unknown hooks unsupported) |
 | Termination | KillMode=control-group; Delegate=no; KillSignal=15; FinalKillSignal=9; SendSIGKILL=yes; DefaultDependencies=yes; WatchdogUSec=0 | Source requires control-group/no delegation/SendSIGKILL=yes and fixed watchdog2min. Same signal restrictions; other20-policy fields equal the verified recovery profile |
 | Timeouts | Finite observed TimeoutStopUSec/TimeoutStartUSec, exact qualified tuple required; no universal default is assumed | Exact existing profile values. Helper TimeoutStartUSec=2min10s; stock TimeoutStopUSec=1min30s. Do not shorten these to the Manager wait |
-| Executable and argv | /opt/bin/reader-buddy, regular file (no alias); argv exactly [/opt/bin/reader-buddy]; digest requires independently accepted source/build binding | /home/root/.local/lib/reader-buddy/reader-buddy; argv exactly that canonical path; digest equals existing profile app_sha256 and accepted source/build tuple |
+| Executable and argv | /opt/bin/reader-buddy, regular file (no alias); argv exactly [/opt/bin/reader-buddy]; digest requires independently accepted source/build binding | /home/root/.local/lib/remarkable-buddies/reader-buddy; argv exactly that PACKAGE path; digest equals Profile6 app_sha256 and accepted installed-output tuple |
 | Environment declaration | Exactly the committed EnvironmentFiles path /home/root/.config/reader-buddy/environment with ignore-errors=no; no raw values read/exported | Declared environment/working directory/argv must match the pinned unit and qualified tuple; no secret values read/exported |
-| Native ownership observations | Any occupied/partial/refused resident latch is a veto. A well-observed missing final component only removes that veto; it does not establish no native activity or grant Stop | Require a well-formed existing version2 lease matching current boot, unit/group parent MainPID/start ticks, InvocationID/start micros, native/adapter/recovery profile hashes; no absent/partial/foreign lease fallback |
-| Recovery artifacts | Not asserted from the manual unit; no automatic stock recovery claim | Existing fixed recovery profile and native profile/adapter/app/Buddy unit/helper unit/stock binary/unit/drop-in hashes match protected regular files; helper idle; complete helper/stock policies match existing profile |
-| Platform | Exact model/firmware/kernel in qualified ordinary tuple; no RM1/RM2 equivalence inferred | Source Profile version1 accepts firmware3.28.0.172/kernel5.4.70-v1.6.3-rm11x only; do not widen it or infer a tablet model from kernel text |
+| Native ownership observations | Any occupied/partial/refused resident latch is a veto. A well-observed missing final component only removes that veto; it does not establish no native activity or grant Stop | Closed Lease3 binds current Buddy identity/context/hashes and original rm-sync ServiceBaseline1; package-record-contract.md defines current companion terminal/group and vendor checks; no absent/partial/foreign fallback |
+| Recovery artifacts | Not asserted from the manual unit; no automatic stock recovery claim | Fixed PACKAGE artifacts and all three rm-sync artifacts; helper idle; Profile6 policies, original/current companion policy and both27-key vendor projections match immutable tuple |
+| Platform | Exact model/firmware/kernel in qualified ordinary tuple; no RM1/RM2 equivalence inferred | Profile6 firmware3.28.0.172/kernel5.4.70-v1.6.3-rm11x and companion rm2-3.28.0.172-v1 only; model independently qualified |
 | Current enablement | Unsupported until trusted binary binding and ordinary interruption/native-safety qualification cover every admitted runtime mode | Unsupported until exact installed-profile/native active cancellation/recovery and source delivery qualification are accepted |
 
 The manual termination values are deliberate candidate restrictions supported by
 systemd's property model, not assertions that the unit explicitly sets them or
 that a particular tablet uses the defaults. Unknown/unsupported property spellings
-refuse. resident-installed is NOT the development bootstrap: its legacy /opt
-argv exception is explicitly development-only and does not satisfy installed
-activation's canonical [APP] check. The pending /usr/bin APK has no unit/hooks and
-matches neither row; no alias/copy/installation is attempted.
+refuse. resident-installed is not the development bootstrap. The legacy /opt argv
+exception is development-only. Other source-supported LEGACY versions have no
+qualified Stop tuple and are excluded from this candidate. The old /usr/bin APK
+matches neither row. No translation, alias, copy or version widening is attempted.
 
 ## Configuration and mode evidence
 
@@ -77,7 +84,8 @@ Source main559–664 loads Config, checks Reader enablement/selection/startup,
 retains ordinary mode lifetime and starts optional sync before the loop. Saved
 configuration or Store mode may change after startup. effective-config.json
 contains effective source labels, not a complete current runtime-mode receipt.
-The recovery profile/LeaseRecord has no config-mode field. PID1 properties and
+The recovery profile/LeaseRecord has no effective configuration-mode field;
+source_mode selects the native contract, not the running sync/provider mode. PID1 properties and
 self-reported binary version do not supply one either.
 
 Stop is therefore explicitly MODE-AGNOSTIC. It reads no credential/environment
@@ -110,7 +118,9 @@ the accepted unit-scoped action.
 
 ## Exact private DTO
 
-All objects are closed. Public caller fields cannot supply any of these facts.
+All objects are closed. package-record-contract.md defines exact Profile6,
+Lease3/nested ServiceBaseline1 and three new private fields. Public caller fields
+cannot supply any of these facts.
 A private child request is exactly
 `{connection_id,boot_id,selector,budget_ms,expected}`: selector review|stop|inspect,
 budget integer1..12000; expected null for review/inspect and otherwise exactly
@@ -122,7 +132,8 @@ The digest is SHA256 of UTF8 JSON with recursively sorted ASCII object keys,
 no whitespace, ordinary JSON escaping, and unchanged array order/string bytes.
 Its closed input is `{connection_id,boot_id,profile,buddy,helper,stock,process,
 platform,artifacts,recovery_profile_base64,lease_base64,lease_observation,
-configuration}` from the accepted review. No timestamp/status/selector/command/
+configuration,companion,companion_group,vendor_policy}` from the accepted review.
+No timestamp/status/selector/command/
 reason is included. The child re-samples the same facts and compares this digest
 before the command. Root/native qualification is independently required; matching
 a digest does not enable an unsupported tuple.
@@ -145,7 +156,10 @@ The child result is exactly the existing validated
   "recovery_profile_base64": null,
   "lease_base64": null,
   "lease_observation": "not-read|absent-final-component|occupied|refused",
-  "configuration": {"read":"not-read","effective_mode":"unverified"}
+  "configuration": {"read":"not-read","effective_mode":"unverified"},
+  "companion": null,
+  "companion_group": null,
+  "vendor_policy": null
 }
 ```
 
@@ -156,14 +170,14 @@ acknowledgment may report request-accepted; every possibly submitted failure is
 unknown. review/inspect must be not-submitted. There is no safe_to_stop, admitted,
 restored, mode-derived grant, arbitrary diagnostic or claimed native owner field.
 
-Each nonnull buddy/helper/stock is exactly `{state,policy,stop_extra}`. Keys are
+Each nonnull buddy/helper/stock/companion is exactly `{state,policy,stop_extra}`. Keys are
 listed in private-property-keys.json: the existing11STATE and20POLICY names plus
 12Stop-specific properties, all required with no aliases/unknowns. Each property
 value is a bounded ASCII string, no controls/newline, at most4096bytes; each raw
 fixed show response at most32KiB. Integers retain canonical decimal strings:
 PID32bit, timestamp64bit; InvocationID empty only with cleared runtime, otherwise
-32lowerhex. Empty Job is required for review/stop. The three unit IDs are fixed;
-only read-only show may inspect helper/stock. No caller unit or helper mutation.
+32lowerhex. Empty Job is required for review/stop. The four unit IDs are fixed;
+only read-only show may inspect helper/stock/companion. No caller unit or helper mutation.
 The configured ExecStart declaration is pinned by exact unit bytes and no drop-ins;
 the executing command is checked through exact /proc PID executable and NUL-framed
 argv. No new parser guesses systemd's diagnostic ExecStart rendering or treats a
@@ -190,7 +204,8 @@ refused before serialization, avoiding secret-bearing arbitrary process args.
 
 artifacts is null or a closed object with exactly these fixed slots:
 `buddy_unit,buddy_executable,recovery_profile,native_profile,adapter,helper_unit,
-stock_executable,stock_unit,stock_dropin`. Each slot is null or exactly
+stock_executable,stock_unit,stock_dropin,companion_executable,companion_unit,
+companion_dropin`. Each slot is null or exactly
 `{device,inode,uid,gid,mode,length,mtime_ns,ctime_ns,sha256}`, numeric facts encoded
 as canonical unsigned64decimal strings (mode/uid/gid32bit), nonzero device/inode,
 64lowerhex hash. Slot paths are fixed by source/constants, never read from a JSON
@@ -204,16 +219,20 @@ sampled evidence, not a promise against hostile root writers.
 
 recovery_profile_base64/lease_base64 are null or canonical original UTF8 JSON bytes,
 max32KiB decoded each. Strict duplicate/unknown field/type/version/identity checks
-reuse the exact existing Profile(version1)/LeaseRecord(version2) source schema;
-no new fields are added. Only resident observation uses them. Lease absence never
+use exactly the delivered Profile6/Lease3/nested ServiceBaseline1 schemas in
+package-record-contract.md, including companion fields. Original outer record
+bytes remain unchanged. Only resident observation uses them. Lease absence never
 becomes an owner grant. Do not persist or log the
 original bytes or private evidence. Release references at invalidation/completion
 and clear owned mutable byte buffers where available; immutable strings and
 runtime copies have no secure-erasure guarantee.
 
 Raw service responses max32KiB each, discarded stderr8KiB; complete child envelope
-cap256KiB covers three property snapshots and the two existing32KiB records with
-base64 overhead. UTF8/BOM/duplicate/framing/selector/closed-shape/bounds validation
+cap256KiB remains unchanged. Each serialized private service snapshot and vendor
+policy map is bounded16KiB; the two original32KiB records retain base64 overhead,
+with the complete envelope cap enforced independently. vendor-policy-keys.json
+is separate from the existing11/20/12 catalog.
+UTF8/BOM/duplicate/framing/selector/closed-shape/bounds validation
 precedes any reduction; refused facts and secrets are never echoed. Public cap
 remains8KiB. Ready/stop admission is computed independently by the host from the
 facts/table and accepted profile release gate, never from a child readiness flag.

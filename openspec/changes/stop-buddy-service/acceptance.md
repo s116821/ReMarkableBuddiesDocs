@@ -5,6 +5,14 @@ outcomes for implementation fixtures. These are NOT executed product tests.
 Synthetic accepted tuples exist only inside isolated fixtures; they never enroll
 observed tablet bytes or enable a production profile.
 
+The PACKAGE/Profile6/Lease3 delta in package-record-contract.md and its additional
+acceptance vectors are PRECODE. They have not run against Manager c013eb2.
+Require exact fixed paths, twelve artifacts, nested duplicate-free ServiceBaseline1
+string/snapshot/group checks, current companion terminal/group brackets, both
+27-key vendor policies, all new digest fields, bounds/deadline refusal, ordinary
+null fields and unchanged public/unknown/ownership guarantees before source acceptance.
+Legacy resident schemas are negative controls, not alternate accepted profiles.
+
 After independent precode acceptance, implement the vectors through the real
 private parser/sampler and host controller, then both actual factories and shared
 browser/Electron UI. Exercise all action/state/current/reference/connection/boot
@@ -26,12 +34,15 @@ and a truthful supported recovery/handback procedure after failure. Ordinary
 source currently supplies no established all-mode shutdown proof or binary binding.
 
 Production resident-installed enablement additionally requires the exact installed
-Profile/LeaseRecord/artifact/policy tuple and owner-qualified active Reader/Writer
+Profile6/Lease3/companion/artifact/policy tuple and owner-qualified active Reader/Writer
 cancellation, terminal Buddy/group retirement, helper success/failure/watchdog
 paths and independent stock identity/readiness. Preserve occupied latch semantics
 through all cases. Source delivery and actual supported tablet model/firmware/kernel
-must match the accepted tuple. Newer unmerged RM2 notebook reuse evidence does not
-satisfy those requirements or establish RM1 compatibility.
+must match the accepted tuple. Delivered REM25/R128/R129/R135 evidence supplies
+native inputs and development-signed lifecycle controls, not fixed Stop/SIGTERM,
+all-mode cancellation, production signing or helper-failure/watchdog qualification.
+Ordinary released-unit sampling and independent resident failure-path recovery
+remain separate operator units, not prerequisites to this source correction.
 
 For each profile, Maintainers and native owners must identify the exact evidence and release
 that satisfy these gates before code admits that tuple. No per-device flag or

@@ -1,8 +1,10 @@
 # Candidate service-stop consumer boundary
 
-Status: concrete source-backed proposal for independent review. Unit-scoped intent
-is accepted. The closed supported-shape/admission table and exact private DTO are
-in profile-admission.md and private-property-keys.json. No production profile is
+Status: active source-backed proposal for independent review. Unit-scoped intent
+is accepted. package-record-contract.md specifies the proposed delivered
+PACKAGE/Profile6/Lease3/rm-sync delta, not yet implemented in Manager c013eb2.
+The closed admission table and private DTO are in profile-admission.md,
+private-property-keys.json and the separate vendor-policy-keys.json. No production profile is
 enabled before its explicit owner qualification gate; there is no new runtime
 readiness flag. This is not implemented behavior or tablet execution authority.
 
@@ -59,13 +61,19 @@ fixed paths/source policies, mode evidence explicitly unavailable from this
 interface, the existing ownership checks and their non-transferable limits,
 all unsupported cases, and qualification required before enabling each profile.
 It also specifies every private request/result member and nested field. The
-machine-readable private-property-keys.json contains exactly11STATE/20POLICY
-source properties plus12Stop-specific ones; all snapshots are closed.
+machine-readable private-property-keys.json retains11STATE/20POLICY plus12Stop
+properties; vendor-policy-keys.json separately pins both27-key vendor projections.
+All snapshots are closed. Three new nullable private fields (companion,
+companion_group,vendor_policy), twelve artifact slots and the nested record rules
+are specified in package-record-contract.md and included in the canonical digest.
 
 Private input4KiB, raw show32KiB per service, original existing profile/lease32KiB
 each, full child envelope256KiB (including base64), discarded stderr8KiB; public
-result8KiB. These revised private bounds accommodate the actual existing source
-record limits. Validate framing/UTF8/BOM/duplicates/selector/identity/closed shape
+result8KiB. Proposed serialized service snapshots and vendor policy maps are
+individually bounded16KiB, with the complete envelope cap independently enforced.
+The nested ServiceBaseline has its source64KiB bound and remains constrained by
+the original outer32KiB lease; its snapshot is separately16KiB. Validate
+framing/UTF8/BOM/duplicates/selector/identity/closed shape
 before reducing. No environment contents, arbitrary argv or native grant reaches
 renderer/logs. Do not persist or log private evidence. Drop references on
 completion/invalidation and clear owned mutable byte buffers where available;

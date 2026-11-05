@@ -11,6 +11,17 @@ Both companions SHALL require a separately reviewed, explicitly confirmed stop o
 - **WHEN** the service's invocation, package/unit policy or ordinary/resident source-backed evidence or shutdown qualification is absent, changed or unqualified
 - **THEN** Stop is unavailable before dispatch; no signal, stop job, unit repair or alternate recovery is attempted.
 
+### Requirement: Delivered resident package records remain closed and source bound
+Resident Stop admission SHALL use only the independently qualified PACKAGE/Profile6/Lease3 contract defined in package-record-contract.md. The host SHALL bind fixed package paths, all twelve protected artifacts, the original nested rm-sync ServiceBaseline1, current companion identity/group observations, both fixed vendor policy projections and every private fact in the original sample digest. Historical LEGACY schemas, missing or contradictory companion records, observed-policy enrollment and unqualified build tuples SHALL refuse. Both production qualification registries SHALL remain empty during this proposed source reconciliation. The public protocol and unit-scoped Stop intent SHALL remain unchanged.
+
+#### Scenario: Complete package shape has no production qualification
+- **WHEN** a synthetic or observed package has matching Profile6/Lease3 and companion facts but its exact build/unit/policy/platform tuple has not passed the independent enablement gate
+- **THEN** Stop remains unavailable with zero submissions; matching versions, hashes or a successful development experiment cannot enroll it.
+
+#### Scenario: Companion or package evidence differs from the original review
+- **WHEN** an original companion record, fixed artifact, loaded policy, incarnation, group/context, package path or canonical private sample differs or cannot be observed within bounds
+- **THEN** review or confirmation refuses before dispatch without dropping fields, translating legacy records, repairing an installation or granting native recovery authority.
+
 ### Requirement: Historical stop outcome remains separate from current service state
 Possible submission without an admitted complete result SHALL remain unknown. Later inactive state SHALL NOT settle historical uncertainty, establish native restoration or automatically continue maintenance. Stop waiting SHALL cancel only its original local transport wait and SHALL NOT cancel or reverse a remote systemd job. Eight possible-submission and thirty-two-invocation/fence limits SHALL refuse without eviction; a connection's unknown history SHALL block another stop within host lifetime even after reboot.
 

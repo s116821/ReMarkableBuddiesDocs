@@ -2,6 +2,14 @@
 
 ## Verified source and scope
 
+Current reconciliation proposal: package-record-contract.md binds delivered
+Buddy91dcc601 PACKAGE/Profile6/Lease3, including its original rm-sync baseline,
+fixed vendor artifacts and loaded policy checks. Manager c013eb2 still implements
+the earlier LEGACY/Profile1/Lease2 candidate. The following original source packet
+is historical evidence, not qualification of either current candidate. Existing
+results are retained under their original revisions. Both production registries
+remain empty pending implementation and exact tuple qualification.
+
 Current Manager1f258ce has fixed service observation and no service mutation.
 Main sourceb008027 and separately pending APK3f0a10a were verified through all18
 payload hashes/bytes and17original Git blobs. source-assessment.md records precise
@@ -35,9 +43,9 @@ native mutation authority follows from this intent.
 Exactly ordinary-manual and resident-installed candidate profiles are recognized.
 The closed predicates, observations, artifact/path/argv policies, mode-agnostic
 scope, release enablement gates and explicit refusals are in profile-admission.md.
-The current manual Type=simple/Restart=on-failure unit and canonical/notify
-resident installation are distinct; the development legacy alias and pending
-/usr APK layout are unsupported. Missing/occupied/partial native metadata cannot
+The manual Type=simple/Restart=on-failure unit and PACKAGE/notify resident
+installation are distinct. The development alias, LEGACY resident contracts and
+bare /usr/bin APK remain unsupported by Stop. Missing/occupied/partial native metadata cannot
 become a readiness grant. There is no invented tablet flag/receipt or native lock.
 
 No profile is enabled by this assessment. Owner qualification must bind the exact

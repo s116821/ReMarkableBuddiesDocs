@@ -35,10 +35,13 @@ restoration or permits another operation without its independent checks.
 
 ## Assessment and enablement
 
-Verified current main ordinary/resident and separately pending APK source establish
-the /opt manual, canonical resident and /usr package distinctions. The exact
-closed two-profile admission table, property DTO and unavailable config/runtime
-facts are in profile-admission.md. Unit-scoped user intent is accepted; no atomic
+Delivered Buddy91dcc601 and retained package evidence distinguish the /opt manual
+unit from PACKAGE/Profile6/Lease3 with the original rm-sync baseline. The earlier
+LEGACY/Profile1/Lease2 consumer proposal and bare /usr/bin APK are not qualified
+Stop profiles. package-record-contract.md defines the proposed closed records,
+fixed paths, companion/vendor observations and digest delta; Manager c013eb2
+has not implemented it. profile-admission.md retains unavailable config/runtime
+facts and separate enablement gates. Unit-scoped user intent is accepted; no atomic
 original-PID stop or new lifecycle lock is proposed. Both profiles remain disabled
 until owner-qualified binary/unit/policy/platform and active/native stop evidence
 cover their admitted runtime modes. No new readiness file or flag supplies that
