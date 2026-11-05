@@ -15,3 +15,13 @@ Use an explicit operation identity and expected page state for each modeled effe
 ## Evidence
 
 Use a maintained offline scenario backed by the actual Ledger, layout and ownership logic. Exercise repeated actions, edit and identity loss, late and unknown results, aggregate replacement and session restart. Capture unchanged transcript, sources and external export associations. The modeled owner does not confer native edit authority.
+
+## Delivered interaction reconciliation
+
+Blank Start begins a new operation and invalidates any prior exchange ownership,
+just as a new Reader operation or explicit invalidation does. Handle it explicitly
+in the exhaustive semantic interaction match. Discard both undo and redo eligibility
+without backend edits, transcript changes or effects. The maintained scenario will
+exercise Blank Start while the exchange is visible and after Undo, so neither the
+old Undo nor the old Redo can act after the transition. Native range/settlement
+qualification remains outside this host increment.

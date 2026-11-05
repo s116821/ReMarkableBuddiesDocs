@@ -5,3 +5,5 @@
 - [x] Verify the maintained simulator and unchanged durable records on Windows.
 - [ ] Obtain independent review and hosted checks.
 - [ ] Qualify native SDK range effects and durable native settlement before completing the wider issue.
+
+- [x] Reconcile delivered main interaction variants and verify Blank Start invalidates visible and undone exchange ownership without an effect.

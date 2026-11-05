@@ -18,3 +18,8 @@ The unified history controller SHALL identify one latest complete exchange from 
 
 - **WHEN** persisted history is reopened or a newer revision replaces it
 - **THEN** historical records remain readable and supply no live undo or redo grant.
+
+#### Scenario: Blank Start retires history ownership
+
+- **WHEN** Blank Start begins after an exchange is armed or after its Undo
+- **THEN** both old Undo and Redo eligibility are discarded without a backend edit, transcript change, or recreation of an old ownership grant.
