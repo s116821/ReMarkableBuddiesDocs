@@ -83,3 +83,24 @@ SHALL remain applicable.
 #### Scenario: Unknown mathematical attachment
 - **WHEN** a glyph or attachment cannot be encoded as an independently complete known fragment
 - **THEN** the prompt requires an uncertain enclosing expression instead of guessed arguments or flattened structure; absence of required positive structure remains a failed recognition criterion even when the response is a safe abstention.
+### Requirement: Explicit structured math preserves unknown children without confirmation
+
+An exact version 3 `structured-math-transcription` request SHALL admit the
+bounded typed tree and report contract in structured-math-contract.md. The
+normalizer SHALL preserve declared child roles, token bytes and unknown slots,
+derive coverage and provenance from admitted state, enforce shared byte/node/
+depth limits, and emit only inert unconfirmed data. Versions 1 and 2 SHALL retain
+their current wire and identity behavior. Failure and output-limit fallback
+SHALL clear every result slot without retry or salvage.
+
+#### Scenario: Known structure with unknown children
+- **WHEN** a valid structured reply contains a fraction and a subscripted radical with unknown child expressions
+- **THEN** the exact tree and unknown boundaries are retained with partial coverage and no invented token or automatic normalized-source conversion.
+
+#### Scenario: Malformed or excessive structure
+- **WHEN** a reply has unknown fields, invalid arity, deep nesting, duplicate keys, forbidden token controls or excess shared nodes/bytes
+- **THEN** the called operation refuses with no result payload, preserving its exact invocation/attempt facts and owned context lifetime.
+
+#### Scenario: Well-formed but wrong recognition
+- **WHEN** an allowed tree asserts a wrong glyph or attachment from the source image
+- **THEN** parser success is not recognition acceptance; independent source-based qualification retains the failure and does not confirm the output.

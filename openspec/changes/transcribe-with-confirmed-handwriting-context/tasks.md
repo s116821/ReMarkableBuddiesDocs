@@ -1,5 +1,21 @@
 # Tasks
 
+## Structured math successor
+
+- [x] Independently review representational limits and the bounded standard-role
+  proposal, preserving the known relation and positive-structure failures.
+- [x] Define the explicit v3 request/result, identity, uncertainty, custody and
+  compatibility boundary before source implementation.
+- [x] Implement the bounded typed result and existing operation integration;
+  verify actual production paths and unchanged legacy vectors.
+- [x] Independently review source and exact prompt/identity vectors.
+- [ ] Verify required hosted checks on the integrated structured-math revision.
+- [ ] Review and execute a genuinely new finite recognition comparison, then
+  apply the unchanged source glyph/attachment criteria before delivery.
+
+The structured implementation's local checks and remaining review/recognition
+gates are recorded in [structured results](structured-math-results.md).
+
 Current November 5 checkpoint: integrated source `5403ae1` passed all required
 hosted checks. The explicit math-layout comparison completed once and remains
 **NOT MET (0/4)**; the separate unchanged-policy Hunter/blank/Howe regression

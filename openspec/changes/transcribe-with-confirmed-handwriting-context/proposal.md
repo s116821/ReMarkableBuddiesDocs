@@ -35,3 +35,12 @@ LaTeX for readable mathematics while preserving existing policies and schemas.
 The [prospective contract](math-layout-profile.md) records the partial-span
 representation limit and required regressions. This is not an accuracy claim or
 permission to reinterpret either failed mathematical comparison.
+
+## Explicit structured mathematical transcription
+
+Add a separate version 3 `structured-math-transcription` request and bounded
+inert result to preserve known mathematical relationships around unknown child
+expressions. The [structured contract](structured-math-contract.md) defines the
+strict MathML-role subset, compatibility, provenance and unchanged recognition
+gate. This does not establish that the recognizer can identify those structures
+or correct its observed relation-symbol errors.

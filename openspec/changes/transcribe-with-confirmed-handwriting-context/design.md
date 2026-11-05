@@ -65,3 +65,11 @@ See [offline v2 vectors](partial-v2-identity-vectors.json) for compact UTF-8
 profile, payload and report bytes, hashes, malformed-envelope controls and
 representative v1 compatibility controls. The older identity vectors remain
 unchanged. These are offline serialization vectors, not recognition fixtures.
+## Structured mathematical result extension
+
+Implement the separately opted-in version 3 boundary specified in
+[structured-math-contract.md](structured-math-contract.md). Keep the existing
+whole-page and partial branches unchanged. Use the same provider/custody path
+and existing serde stack; a finite typed math tree preserves unknown child
+slots, with normalizer-owned provenance and no rendering or automatic consumer.
+Representation and source accuracy remain separate acceptance questions.
