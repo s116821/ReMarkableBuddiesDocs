@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Explicit private V1 export and offline inspection for the three supported saved preference declarations. See the [wire contract](../../changes/export-portable-configuration/contract.md). Import/application, archive/sync integration and broader portable domains remain separate.
+Explicit private V1 export and offline inspection for the three supported saved preference declarations. See the [wire contract](../../changes/archive/2026-11-06-export-portable-configuration/contract.md). Import/application, archive/sync integration and broader portable domains remain separate.
 
 ## Requirements
 

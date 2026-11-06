@@ -154,4 +154,4 @@ in [bounded delivery status](implementation-status.md).
 
 ## Bounded portable preference artifact
 
-The separately owned finite [export-portable-configuration](../export-portable-configuration/proposal.md) exposes explicit private product/personalization/research preference export and offline inspection. It does not settle this parent's portable record-key policy, archive inclusion, import/application, model/memory preferences or actual synchronization. Parent tasks remain open.
+The separately owned finite [export-portable-configuration](../archive/2026-11-06-export-portable-configuration/proposal.md) exposes explicit private product/personalization/research preference export and offline inspection. It does not settle this parent's portable record-key policy, archive inclusion, import/application, model/memory preferences or actual synchronization. Parent tasks remain open.
