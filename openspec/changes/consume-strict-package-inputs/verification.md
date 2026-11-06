@@ -1,5 +1,21 @@
 # Bounded source verification
 
+## Reopened precode finding
+
+This change is reopened within the same paired Buddy PR132/Docs PR144 after
+read-only preflight found exactly a historical SDK `.git` ctime difference. The
+initial source/tests below remain evidence for their exact revision, not passing
+evidence for the proposed correction. No package invocation occurred. Updated
+design/tasks/delta are precode only; the canonical spec remains the initial
+as-built contract until corrected implementation is selected and verified.
+
+Keep the SDK source observer unchanged. Proposed classification preserves both
+complete proofs and explicit ctime difference, while current-operation proof
+equality stays strict. Positive and refusal controls in design/tasks remain
+unfinished; do not rearchive or claim this finding resolved from precode alone.
+
+## Initial source evidence
+
 Paired implementation is Buddy's `feature/rem-41-consume-strict-package-inputs`
 branch, based on delivered main `4ec94a6b162a6f00959f5bf6518dd4835bd0ec7b`.
 This central change starts at Docs `b0370dab33efc28349df337ff235db59d0677c15`.

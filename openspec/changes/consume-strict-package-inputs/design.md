@@ -1,0 +1,83 @@
+# Design
+
+Use a separate explicit `apk_package_inputs.py` CLI. Its external completion hash
+and original producer SHA are independent inputs, not inferred from adjacent JSON.
+Run the unchanged strict verifier, then bind actual full source/license and
+independent SDK release proof to both retained target records. Normalize tuples
+and lists through JSON representation only; compare every proof field, including
+types and missing/extra dictionary members or list entries.
+
+## Historical correspondence and current-operation stability
+
+Keep `sdk_release_source` unchanged. It must continue refusing any location,
+snapshot, local/remote tag or other proof change during a single observation.
+After strict input verification, both retained target proofs must match each other
+in full. Capture a new independent proof through that unchanged observer.
+
+Classify the complete recursive historical/current comparison:
+
+- No differences: `historical-proof-equal`.
+- Exactly one differing leaf, `$.location_identity[1][3]`, with both old/current
+  values nonnegative integers (not booleans), in two well-formed four-integer
+  root/Git location identities: `historical-git-ctime-only-revalidated`.
+- Every other difference or malformed proof: refuse before staging/generation.
+
+The second classification records content correspondence after fresh independent
+validation; it does not declare directory metadata unchanged or explain the cause
+as a fact. Do not remove/replace a field to compare projections, infer missing
+proof, rewrite historical evidence, or provide an allow-drift CLI flag. Compare
+all keys, shapes, values and types; root ctime, Git dev/inode/mode, tracked-file
+identity, manifest, local tag object/peel, remote observations, conversion and
+unknown-field changes all refuse. No externally supplied exception record or
+general transition framework is introduced.
+
+Retain a private `sdk-proof-correspondence.json` in the packaging work directory:
+complete normalized historical and admitted-current proofs, classification,
+explicit old/current values at every differing field, and
+`continuous_custody_claimed=false`. The two original per-target private records
+remain unchanged. Bind this new record's exact bytes/digest plus classification
+and explicit difference into final `build_input_provenance`. This references the
+private record; it does not add an APK/index/public artifact or change signed
+build metadata. The private record is retained and delivered with operation
+evidence, never treated as adjacent self-authentication or production trust.
+
+Every subsequent recheck calls the unchanged observer again and demands complete
+equality with the newly captured proof, including its admitted ctime. Do not
+reclassify later changes. A second ctime change after admission refuses just like
+any other current-proof change, before generation/observation/completion at the
+next boundary. Rehash the private correspondence record across the same boundaries.
+
+Keep original producer and new packaging executor checkouts and revisions
+distinct. The original tagged producer/release/SDK inputs remain read-only. Use
+fresh disjoint external work/final roots. Stage exact binary and canonical build
+metadata bytes with checked copies; source LICENSE and the pinned resident bundle
+complete the existing generator inventory. Private build evidence stays private.
+
+Extract the original builder's generation/observation tail into one helper. Both
+CLIs use its unchanged container arguments, pins, 120-second phases, owned cleanup,
+ephemeral private key and separately supplied generation-control SPKI pin. A
+receipt consumer callback rechecks source, proof and inputs before generation,
+after observation and before exclusive completion. The final receipt identifies
+both the accepted build receipt/original producer and the packaging executor.
+
+Host tests use owned synthetic files and mock only external source/tool/phase
+boundaries. They prove refusal before launch, no compiler/build calls, checked
+copies, unchanged metadata, failure without completion and separate public-key
+observation. Actual signing/container/device execution remains a later explicit
+operation, not a requirement for completing this bounded source capability.
+
+## Correction controls before renewed review
+
+Exercise the classification through the actual receipt consumer with mocked phase
+boundaries: a genuine historical/current ctime-only fixture difference completes
+both phases without build calls, preserves original bytes and retains full proofs
+and explicit difference in evidence/provenance. Also retain the equal-proof case.
+
+Parameterized refusals cover root path/device/inode/mode/ctime; Git
+device/inode/mode; manifest; source repository/tag/commit/epoch; local tag object;
+remote tag object/peel and key inventory; raw working/committed/file identities;
+conversion; missing/extra/unknown nested keys; list length/type and invalid ctime
+types; ctime plus any second difference. Check source observer's implementation
+unchanged. During a successful mocked package operation, change only fresh Git
+ctime after admission (before generation, between phases, after observation and
+during final copies): no later classification or completion is allowed.
