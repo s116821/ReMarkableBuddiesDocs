@@ -150,3 +150,8 @@ in [bounded delivery status](implementation-status.md).
 - [x] Obtain independent review of only the schema/contract resolution, main preservation and bounded lifecycle delta.
 - [ ] Coordinate normal paired squash delivery and verify actual-main CI/publication.
 - [ ] Finish the remaining end-to-end requirements before final parent sync/archive.
+
+
+## Bounded portable preference artifact
+
+The separately owned finite [export-portable-configuration](../archive/2026-11-06-export-portable-configuration/proposal.md) exposes explicit private product/personalization/research preference export and offline inspection. It does not settle this parent's portable record-key policy, archive inclusion, import/application, model/memory preferences or actual synchronization. Parent tasks remain open.

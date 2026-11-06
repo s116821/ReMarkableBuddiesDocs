@@ -49,3 +49,9 @@
 - [x] Verify focused nested-record, vendor artifact/policy, companion incarnation/group/watchdog, digest/bounds/deadline and existing ordinary/public/history controls; retain actual-host/platform/native gates separately.
 - [ ] Obtain independent exact-successor review and final hosted/package gates before delivery; the focused source checks do not replace these.
 - [ ] Separately qualify released ordinary-unit sampling and eligible resident Stop/shutdown/recovery tuples before production enablement; do not make independent helper-failure recovery a generic source-work wait.
+
+## 7. Delivered notebook restore composition
+- [x] Reconcile the delivered notebook restore consumer and current Docs main without reopening or overwriting their completed changes.
+- [x] Cover Stop and both notebook archive operations with shared host exclusion and reciprocal App preview/Busy boundaries; preserve empty native profiles.
+- [x] Verify the changed actual host/UI controls and focused tests, retain failures, and preserve the unchanged production size budget.
+- [ ] Review final hosted/package results and the separately required native qualification before enabling or delivering Stop.

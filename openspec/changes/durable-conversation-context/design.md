@@ -1,5 +1,7 @@
 ## Context
 
+[Composed memory admission](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-admission.md) binds selected Reader and memory pins before draft publication. The delivered host startup and history and selected publication contracts retain separate ownership.
+
 REM-37 supplies durable conversation context on accepted REM-36 storage. Current Reader orchestration captures an overview and derives detail images for proposal and independent verification; native undo ownership is process-local. REM-9 already guards capture, provider waits, navigation and keyboard output. REM-25 owns native page acquisition and its device-local recovery journal. Its static firmware inspection identifies a possible explicit page UUID argument but proves no runtime insertion or persistence semantics.
 
 Authority is the complete REM-37 description and September 26 correlation clarification, plus the resumed roadmap. The public acceptance mapping accompanies this plan. The inspected REM-36 checkpoint is an interface candidate, not permission to begin implementation before independent review and dependency acceptance.
@@ -119,3 +121,29 @@ Accepted SDK capture contract49171a079f82958d65481dbedb0d246207704256 and indepe
 The evidence export must be bounded and versioned, retain every required fact without lossy conversion, and remain distinct from the opaque live guard. Imported/retrieved facts support inspection and historical correlation only. A missing or unsupported required fact refuses image-dependent dispatch; it is not defaulted from timestamps, matching UUIDs, delays, or buffer hashes. Current explicitly synthetic domain fixtures must remain distinguishable from qualified acquisition. Adapter/capture evidence, its native parent and all submitted derivatives commit before first provider use; exact restored image bytes are reused for proposal and verification. Any provider-specific processing creates an explicitly recorded derivative before submission.
 
 The SDK owner is preparing the minimal historical export contract separately. Implementation of this amendment starts only after exact SDK/consumer review resolves field coverage and serialization limits. Native-assigned allocation remains outside this amendment and still requires the separate REM-25 journal/binding review.
+## November 5 delivered resident composition
+
+Compose the existing memory-aware Generated publication with delivered Buddy
+91dcc601154507790254946f8f0f811204a0fd43 resident acquisition, association reuse
+and output recording. Keep selected Provider publication under its existing joined
+admission and preserve its explicit native-output refusal. Ordinary resident
+attempts keep their delivered evidence/association ownership; this integration
+does not turn historical source facts into selected binding authority.
+
+Move the delivered resident output branch into the shared publication helper,
+after Generated acknowledgment and the memory/native authorization guard. Preserve
+all delivered Pending, cancellation, uncertainty and SubmittedUnverified outcomes.
+Verify composition and resident evidence reuse with focused host tests. Live
+semantic memory qualification remains pending the key; tablet execution requires
+coordinator ownership. Historical receipts above retain their original scope.
+
+## Composed receiver closeout boundary
+
+The bounded composed selected Reader/memory receiver is implemented in merged
+[Buddy33](https://github.com/s116821/ReMarkableBuddies/pull/33), with
+[Buddy37](https://github.com/s116821/ReMarkableBuddies/pull/37) retained as
+superseded source provenance. Its original contract/evidence and finite lifecycle
+are preserved in the [receiver archive](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Earlier candidate/pending wording above is historical. This parent stays active;
+qualified native effects, Pending/settlement, complete resumption/restore and
+remaining broad issue acceptance are not archived or declared complete here.
