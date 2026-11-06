@@ -1,20 +1,28 @@
-## Why
+# Why
 
-Ordinary Reader waits for a Reader trigger inside its own loop. Standalone Writer has a separate command and a separate startup. Combined use needs one admission decision before either receiving buddy runs and one conversation across both.
+The ordinary dispatcher and bounded receiving slice is implemented and separately
+[archived](../archive/2026-11-06-unify-ordinary-conversation-dispatch/verification.md).
+That evidence does not supply verified native composer, page effects or real
+aggregate activation. Preserve those obligations as active integration work.
 
-## What Changes
+# What Changes
 
-- Route admitted ordinary local intents from the real idle loop and the combined simulator.
-- Reuse product module settings, shared Ledger, receiving owners and guarded device operations.
-- Separate presets and personalization from exact request and historical turns. Resolve explicitly selected historical media inside receiving adapters.
-- Keep one active operation, with duplicate and stale refusal, cancellation and effect settlement.
-- Retain the previous ordinary route for supported nonlocal configurations. Preserve explicit standalone commands and selected and immediate diagnostics.
+Integrate existing input/page/SDK/sync owners when their actual verified contracts
+are available. Preserve exact transcript forwarding and operation/visit/revision
+guards. Never construct authority from simulator input or saved facts.
 
-## Capabilities
+# Scope and ownership
 
-- `ordinary-conversation-dispatch` adds bounded shared dispatch.
-- `local-simulator` adds an offline combined scenario.
+Native text/edit/Submit/currentness and gestures remain with the existing input/
+SDK owner. Native composer/status/turn-region/focus/page effects remain with the
+unified-page owner. Genuine aggregate-apply fencing remains with the sync owner.
 
-## Impact
+Enabled-memory receiving is separately tracked in
+[ordinary memory caller integration](https://github.com/s116821/ReMarkableBuddiesDocs/pull/151),
+change integrate-ordinary-memory-callers. Its owner retains that design and
+qualification; no duplicate memory specification or implementation is selected
+here. Current Dispatch memory is disabled. Existing subject-memory behavior and
+the separate caller change are authoritative for that remaining work.
 
-Rust and central Docs are paired. Native page creation, composer input, additional gesture acquisition, live provider and selected aggregate activation require separate evidence.
+This active change is unimplemented and must not be synced/archived by the
+ordinary slice closeout. Whole routing and integrated release acceptance stay open.

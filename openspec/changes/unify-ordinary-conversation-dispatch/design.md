@@ -1,48 +1,18 @@
-## Admission and entry
+# Remaining integration boundary
 
-Expose idle semantic interactions before Reader preparation in the ordinary application. The existing observer retains release, invalidation and service health. Interaction values carry no page identity. Bind admitted work to verified source and visit facts supplied by its owner and refuse missing facts. Keep legacy nonlocal routing explicit and keep the unified local path fenced against sync mode changes for its lifetime. The Google worker belongs only to the legacy route. Keep the selected and standalone contracts separate.
+Reuse the delivered coordinator, Ledger and receiving owners. Obtain actual
+native input/effect/currentness from their existing owners; do not infer these
+from typed fixtures, simulated CompletionEvidence, ReaderFacts or a staged draft.
+Revalidate real source/document/page/visit/edit/revision at dispatch and effect
+settlement. Keep unavailable capability fail-closed.
 
-Use the existing product configuration. Keep one device owner and one Ledger. A shared dispatcher receives typed intent and scoped operation ownership, then calls the existing receiving path. It neither constructs prompts nor owns Writer export state. Reuse Writer's single-owner admission and reconciliation, without nested lease acquisition or a second Store.
+Apply real aggregates at the existing safe transaction boundary and prove that
+superseded operations cannot later render/export. Synthetic replacement tests and
+saved revisions are not proof of actual remote activation.
 
-The ordinary entry currently receives the legacy Reader capture trigger and existing history events. The dispatcher arbitrates that batch before preparing the capture. Typed Reader and Writer requests require a verified input owner. The combined simulator supplies that input and proves receiving behavior. Native Writer-only startup retains an explicit refusal while its input is unavailable. The existing standalone Writer command remains available under its own admission.
-
-## Receiving and effects
-
-Pass the request as supplied or reference its durable interpreted turn. Use exact ordered Ledger history from the admitted range. Keep receiving-specific presets and personalization separate from user turns. Resolve associated historical image evidence through the Ledger. The first receiving adapters accept at most 12 distinct PNG attachments and at most 16 MiB of original bytes. They attach stored provider derivatives and preserve acquisition parents as provenance. Missing, unsupported or over-budget evidence refuses the receiving request. The historical text-only answer helper remains separate.
-
-The Writer owner returns a fresh publication witness with the draft and exact conversation heads. Visibility requires a separate page-owner receipt matching the draft text, effect operation, source visit and current heads. Record a separate completed assistant fact in the original exchange and keep the generated draft identity for refinement and export. External export alone provides no visibility receipt. The existing Ledger history filter remains in force.
-
-Notebook generation takes owner-frozen normalized bytes and uses the same Ledger on an explicitly prepared local notebook Store. Refinement loads the original archive from that Store. Reuse existing coverage, stage caps, cancellation and publication checks. Only the reducer receives the bounded historical PNGs. Ordered encoded attachment digests are part of the reducer's frozen input and reservation. Map stages retain their existing text inputs. The routed operation refuses replay before a model call and preserves the standalone command contract. The ordinary startup validators admit an existing ready generation and the local-domain lease retains it. A missing notebook readiness marker refuses startup without repair. Store readiness does not provide native Writer input.
-
-Serialize cancellation, model completion and effect admission through the same owner. Revalidate visit and conversation revision at the effect boundary. Reuse native request guards and Writer's dispatch and reconciliation fences. Blank start calls the page owner with no model call and no synthetic turn. Ambiguous export yields clarification without destination dispatch. Reserve unavailable preset gestures and refuse missing native capability.
-
-## Verification and limits
-
-The November 5 receiving reconciliation normally integrates delivered Buddy
-f6af5d1 and Docs3bfecf70 into this existing pair. It preserves the current
-selected Reader publication and resident paths, ordinary Writer memory snapshot
-contract and exact routed source/history/image associations. Optional memory is
-assembled only by an explicitly admitted receiving buddy, never by rewriting
-router requests or fabricating visible turns. Selected configuration must remain
-outside ordinary local dispatch. Resolve changed receiving signatures explicitly
-and verify the actual combined consumer; no historical CI or live receipt is
-silently promoted to the reconciled source. Build/hosted validation and any
-later live semantic gate retain their own attribution. Native gesture/composer,
-remote aggregate activation and device effects remain outside this unit.
-
-Receiving payloads label each historical PNG with its source ID, ordinal,
-dimensions, zero-based attachment index and original content SHA-256. Identical
-bytes share one attachment and retain each source association. At most 256
-associations accompany the existing 12-attachment and 16 MiB limits. Notebook
-reduction binds the ordered association list and attachment digests in its
-input. Notebook maps and standalone payloads keep their existing shape.
-
-Run a maintained combined simulator scenario using one Store and the same dispatcher as ordinary local startup. Exercise real receiving inputs, retained image identity, late and duplicate events, cancellation and synthetic aggregate replacement. Keep native page/composer/gesture and live selected sync acceptance open.
-
-| Existing input | Product dispatch treatment |
-| --- | --- |
-| Configured Reader corner trigger | Existing released capture trigger. The batch can carry the existing history invalidation before Reader. |
-| Released history gestures | Existing two-contact redo and four-contact undo remain owned by the history workflow. |
-| Active request interruption | Existing request-input guard retains sticky cancellation and integrity loss. |
-| Source-question and Writer guidance marks | Evidence interpreted by their receiving owners. A mark alone carries no page or export authority. |
-| Writer current-page, whole-notebook and circled-only presets, blank start | Reserved semantic actions. Typed fixture input can exercise supported receiving operations. No new native gesture assignment is made. |
+Enabled-memory caller work belongs to
+[its separate delivery](https://github.com/s116821/ReMarkableBuddiesDocs/pull/151).
+Do not copy its design here or claim the archived memory-disabled live run
+qualifies it. The completed ordinary source and both live attempts are in
+[the finite archive](../archive/2026-11-06-unify-ordinary-conversation-dispatch/verification.md).
+Future native/source/provider evidence needs its own exact attribution.
