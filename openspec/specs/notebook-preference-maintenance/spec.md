@@ -1,12 +1,12 @@
 # Notebook preference maintenance
 
 ## Purpose
-Permit the existing product, research, basic, model/endpoint and memory-declaration conditional writers on ready ordinary notebook storage. See the [declaration admission contract](../../changes/archive/2026-11-06-save-notebook-config-declarations/contract.md). Credential reference/file operations and runtime/native authority remain separate; personalization retains its separately specified boundary.
+Permit the existing product, research, basic, model/endpoint and memory-declaration conditional writers on ready ordinary notebook storage. See the [declaration admission contract](../../changes/archive/2026-11-06-save-notebook-config-declarations/contract.md). Credential-reference admission is separately specified in the saved-reference contract; actual credential-file operations and runtime/native authority remain separate. Personalization retains its separately specified boundary.
 
 ## Requirements
 
 ### Requirement: Scoped existing notebook preference admission
-Product, research, basic, model/endpoint and memory-declaration conditional setting publication SHALL admit a ready existing ordinary local notebook Store through a distinct narrowly scoped admission path under the original exclusive custody. It SHALL validate original owned identity/current generation, notebook readiness/contract/capabilities, complete recovery, local manifests, absent/empty selected/history state and validated absent/LocalOnly mode without initialization/adoption/repair. Existing selected-aware legacy admission and all other constructors/callers SHALL remain unchanged; separately specified personalization admission SHALL retain its own family/lifetime boundary.
+Product, research, basic, model/endpoint and memory-declaration conditional setting publication SHALL admit a ready existing ordinary local notebook Store through a distinct narrowly scoped admission path under the original exclusive custody. It SHALL validate original owned identity/current generation, notebook readiness/contract/capabilities, complete recovery, local manifests, absent/empty selected/history state and validated absent/LocalOnly mode without initialization/adoption/repair. Existing selected-aware legacy admission and all other constructors/callers SHALL remain unchanged; separately specified personalization and credential-reference admission SHALL retain its own family/lifetime boundary.
 
 #### Scenario: Ready ordinary notebook
 - **WHEN** a supported notebook Store and current original declaration intent satisfy all custody/readiness/ordinary-state conditions
@@ -17,8 +17,8 @@ Product, research, basic, model/endpoint and memory-declaration conditional sett
 - **THEN** publication refuses in existing categories without fallback, data/config change, initialization, stage cleanup or source repair.
 
 #### Scenario: Another configuration or maintenance caller
-- **WHEN** the original generic config opener or excluded credential-reference/credential-file/mode/outbox path encounters notebook storage
-- **THEN** its existing notebook refusal is preserved rather than inheriting the scoped declaration admission; separately specified personalization semantics remain unchanged.
+- **WHEN** the original generic config opener or excluded credential-file/mode/outbox path encounters notebook storage
+- **THEN** its existing notebook refusal is preserved rather than inheriting the scoped declaration admission; separately specified personalization and credential-reference semantics remain unchanged.
 
 ### Requirement: Existing conditional publication and uncertainty preserved
 The product, research, basic, model and memory declaration writers SHALL retain current raw-declaration target semantics, exact original input/path/base/target and applicable patch conditions, mode/report custody through consuming output, publication fault outcomes and each existing disk-readback/runtime distinction. Original Status SHALL remain read-only and SHALL NOT repeat Apply or infer running/native activation. Model values and memory profile identities SHALL retain their private presence/origin-only output contracts.
