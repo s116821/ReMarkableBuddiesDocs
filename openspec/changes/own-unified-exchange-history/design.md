@@ -1,27 +1,11 @@
-## Ownership
+## Existing host boundary
 
-A presentation owner supplies a receipt for the current page, session, visit and opaque content seal. Historical binding and the logical plan identify the candidate only. Recheck conversation and turn heads, exact membership and text, and the full observed presentation before effects. Keep one live unit in memory and never recreate it from historical data.
+The completed [host design](../archive/2026-11-06-own-host-exchange-history/design.md) and canonical owned-exchange-history requirement define exact latest-exchange eligibility and truthful modeled outcomes. The current sole PageBackend implementation is modeled; it is not a native range API. Reuse that controller rather than introduce another history registry.
 
-The first increment admits exactly one interpreted request and one completed
-response in the newest projected exchange. A newer incomplete or ambiguous
-exchange refuses admission. The live receipt carries the exact root and binding
-revisions. An armed unit also retains the identity of the current open Store.
-Reopening the same data cannot carry the old ownership forward.
+## Unfinished native integration
 
-## Effects
+Obtain an actual platform-issued current page/session/visit/content and owned-region capability, compare the complete original state at the native effect boundary, and verify operation-correlated completion plus fresh readback. Do not synthesize current ownership from saved layout, screenshots, coordinates or restored data. New user editing, page departure, replacement or any ownership loss invalidates eligibility.
 
-Use an explicit operation identity and expected page state for each modeled effect. The only eligible change removes the latest complete exchange or restores the same exchange in the same position. Preserve all unrelated regions and content. Verify the result and fresh readback under the same owner, then check Ledger revisions again. Unknown or unverified outcomes consume eligibility and require reconciliation. The controller never compensates or retries.
+Persist/reconcile interrupted native effects with conversation/presentation state without replaying an uncertain action or resurrecting stale responses. Unknown results stop effects and require explicit read-only reconciliation; do not compensate by broader deletion. Preserve older exchanges, draft/focus/status/header, source records and external exports. Native synchronization does not transfer an old live grant.
 
-## Evidence
-
-Use a maintained offline scenario backed by the actual Ledger, layout and ownership logic. Exercise repeated actions, edit and identity loss, late and unknown results, aggregate replacement and session restart. Capture unchanged transcript, sources and external export associations. The modeled owner does not confer native edit authority.
-
-## Delivered interaction reconciliation
-
-Blank Start begins a new operation and invalidates any prior exchange ownership,
-just as a new Reader operation or explicit invalidation does. Handle it explicitly
-in the exhaustive semantic interaction match. Discard both undo and redo eligibility
-without backend edits, transcript changes or effects. The maintained scenario will
-exercise Blank Start while the exchange is visible and after Undo, so neither the
-old Undo nor the old Redo can act after the transition. Native range/settlement
-qualification remains outside this host increment.
+Qualify actual first/latest/repeated actions, user-edit races, page/visit changes, cancellation, replacement/restore and restart uncertainty, including legacy coexistence and newline/persistence findings. Measure actual ownership/latency and use verified completion rather than a fixed stall. These requirements remain unimplemented/unqualified; modeled host success does not close them.

@@ -1,11 +1,11 @@
 ## Why
 
-Legacy Reader history owns a verified appended suffix. A newest-first conversation needs an ownership boundary for a complete exchange without touching the composer, status, header or unrelated content.
+The host ownership controller and maintained modeled fixture are completed separately in [the host archive](../archive/2026-11-06-own-host-exchange-history/verification.md). The application still lacks an actual native exact-range effect adapter and durable settlement after uncertain or interrupted native mutations.
+
+## What Changes
+
+Keep the remaining native integration and qualification active. Reuse the delivered controller and require an actual platform-owned presentation/range capability, conditional effects, readback and durable reconciliation. Preserve composer/header/status, unrelated user edits, transcript/source/export facts and existing semantic gesture intent. Historical bindings or simulator receipts never supply native authority.
 
 ## Scope
 
-Use actual Ledger turns and the delivered logical layout to identify the latest complete exchange. Require a live owner receipt and verify the whole presentation around a reversible modeled edit. Reuse semantic Undo and Redo. Preserve the transcript, source and export records.
-
-## Delivery
-
-Pair the host implementation and maintained simulator with central Docs. Native exact-range effects and durable native reconciliation require separate qualification.
+This follow-on is unfinished. It does not reopen or duplicate the host controller, legacy suffix history or pure layout implementation. Native platform contracts belong to their platform owner; product eligibility and settlement consume those contracts. No native implementation or qualification is claimed by the host delivery.
