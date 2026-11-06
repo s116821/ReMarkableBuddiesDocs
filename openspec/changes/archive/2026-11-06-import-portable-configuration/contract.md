@@ -1,4 +1,4 @@
-# Portable preference import v1 contract proposal
+# Portable preference import v1 contract
 
 ## Entry and bounds
 

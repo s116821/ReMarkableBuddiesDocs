@@ -2,7 +2,7 @@
 
 ## Existing boundary
 
-Source baseline is Buddy6b52a6db5067f18dcaf4f8da03c6290bae98e702; Docs baseline isf0bad1743cf03c851e8af316804068709b4221b9. config::portable has only Export/Inspect. Its complete validator accepts exactly three raw declarations and preserves omission/sparse/null semantics. The [original artifact contract](../archive/2026-11-06-export-portable-configuration/contract.md) says missing fields are not reset commands. The existing raw conditional publisher is Store::replace_config_document; basic::Custody supplies Store/mode ownership through consuming output. Personalization's current family is legacy1 plus ready ordinary notebooks, narrower than the selected-aware product/research family.
+The precode baseline was Buddy6b52a6db5067f18dcaf4f8da03c6290bae98e702 and Docsf0bad1743cf03c851e8af316804068709b4221b9. At that baseline config::portable had only Export/Inspect. Its complete validator accepts exactly three raw declarations and preserves omission/sparse/null semantics. The [original artifact contract](../2026-11-06-export-portable-configuration/contract.md) says missing fields are not reset commands. The existing raw conditional publisher is Store::replace_config_document; basic::Custody supplies Store/mode ownership through consuming output. Personalization's current family is legacy1 plus ready ordinary notebooks, narrower than the selected-aware product/research family.
 
 ## Application policy
 
@@ -24,6 +24,23 @@ Validate configured roots and canonical disjointness, including the existing Con
 
 Exercise actual file/Store/CLI behavior on legacy1 and real record/media notebooks with absent/LocalOnly mode. Cover all overlay presence/null/sparse/disabled-text cases; exact Unicode/CRLF/control text under existing validation; excluded private declaration preservation; invalid whole originals/artifacts/targets and duplicate/version refusal; no-op exact bytes; Busy, stale original/path/artifact/target and Status without the artifact. Assert data/cache/media/identity/current/other credentials unchanged. Include legacy2/3 refusal, notebook readiness/mode/history corruption without repair, actual Windows case-alias and Unix special-path controls. Use existing publisher AtomicCall/AfterPublication/ChangedReadback hooks and immediate/prefix output faults with actual lock-held/released probes. Use actual bounded subprocess CLI with open stdin Inspect and poisoned runtime/provider environment; preserve current binary option inventory. No provider/native proof follows from synthetic host tests.
 
-## Delivery status
+## Implementation and delivery
 
-Precode only: no production implementation or execution is claimed. Independent contract review and fresh normal baseline reconciliation precede code. Keep original failed evidence, exact tested revisions and platform limitations distinct. Complete this finite change in paired source/Docs PRs through verification, canonical sync and archival; broader synchronization and native qualification remain separate.
+The accepted precode at69f90bb771b4366bec72cbb78f4517ef6de16911 was reconciled
+normally with delivered Buddy516b60b29fe7d7db46a22480312d6155657a69d0 and
+Docs1b26d39cd72442c373ad68c112d167c88ed52870 before implementation.
+config::portable::import reuses the artifact validator and basic checked-document
+and consuming custody helpers. A distinct open_existing_for_portable_preferences
+constructor uses selected_aware=false with NotebookAdmission::Preferences;
+Apply additionally refuses every nonordinary mode for legacy1 as well as notebook4.
+Canonical separation reuses the existing Windows-aware overlap comparison and
+rechecks path identities and original bytes under the same custody before the
+existing raw publisher. No other constructor or writer admission changes.
+
+The new private report is metadata-only, uses no Debug rendering and maps output
+failures to output-failure without flush or replacement. Existing exporter and
+offline inspector behavior remains unchanged. Actual-file library/subprocess
+qualification and platform limits are recorded in verification.md. Complete this
+finite source change in paired PRs with canonical sync/archive; independent
+review, required current CI and coordinated integration remain delivery gates.
+Broader synchronization and native qualification remain separate.
