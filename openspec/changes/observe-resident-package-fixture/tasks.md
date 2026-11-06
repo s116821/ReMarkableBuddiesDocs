@@ -4,6 +4,7 @@
 - [x] Define proposal/design/requirements/controls before implementation.
 
 ## Implementation and verification
+- [ ] Obtain the requested exact Native/Root precode review before Manager implementation.
 - [ ] Extend existing admission with explicit external schema2 manifest and legacy preservation.
 - [ ] Add finite resident/ordinary SDK-bound metadata, path/mode/dependency/index correspondence.
 - [ ] Reuse existing bounded public-only tool operation and controlled negatives without new installer authority.
