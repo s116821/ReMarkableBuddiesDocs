@@ -1,7 +1,7 @@
 # Notebook preference maintenance
 
 ## Purpose
-Permit only the existing product and research conditional writers on ready ordinary notebook storage. See the [admission contract](../../changes/save-notebook-product-research-settings/contract.md). Other settings and runtime/native authority remain separate.
+Permit only the existing product and research conditional writers on ready ordinary notebook storage. See the [admission contract](../../changes/archive/2026-11-06-save-notebook-product-research-settings/contract.md). Other settings and runtime/native authority remain separate.
 
 ## Requirements
 
