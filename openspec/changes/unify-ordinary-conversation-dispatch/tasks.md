@@ -24,3 +24,4 @@
 - [x] Add the minimal explicit live/scripted simulator entry with actual Dispatch/Writer/notebook paths, original payload/reply traces and strict call/time/error limits.
 - [x] Verify the same entry without credentials and preserve existing combined/offline association and transport controls; hand off exact source/build/fixture/request correspondence for independent review before provider dispatch.
 - [ ] Execute the separately reviewed bounded live sequence and independently assess image-derived facts, source attribution and actual returned Writer history; preserve failures without retry or native overclaim.
+- [x] Preserve the first selected live attempt's three returned stages and fourth-stage HTTP500 as partial failure; retain original evidence and independent scoped semantic review without claiming handback/notebook completion.
