@@ -43,4 +43,3 @@ outcomes without granting runtime, native, settings or retry authority.
 #### Scenario: Browser and Electron use the new capability
 - **WHEN** either shared Angular surface performs notebook preview, confirmation, cancellation or retained-status inspection
 - **THEN** the actual narrow host bridge applies the same family and lifecycle checks and excludes original paths/full intents from the safe view
-
