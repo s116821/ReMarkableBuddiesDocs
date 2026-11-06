@@ -1,5 +1,10 @@
 ## Implementation
 
+- [x] Share early POSIX pinned-tool readiness admission and repeat it across existing rechecks without production chmod.
+- [x] Reuse private phase stream retention with only the existing generation64KiB/None profile additionally eligible; preserve all execution/output bounds.
+- [x] Verify real-mode early/drift refusals, equivalent modes and bounded private subprocess controls without real signing/container/build actions.
+- [x] Sync the corrected canonical requirements and rearchive after source/test verification in the same delivery.
+
 - [x] Add explicit strict receipt admission and checked staging without build calls.
 - [x] Share the existing generation/observation tail and preserve original CLI.
 - [x] Bind external receipt/original producer/new executor and original strict full source/SDK proof.

@@ -1,5 +1,41 @@
 # Bounded source verification
 
+## Executable tool and private diagnostics correction
+
+The same change was reopened again after the one actual r1 generation invocation
+failed with no artifacts/observer/completion. Its first internal failure remains
+unknown because nested phase stderr was discarded. The correct-hash supplied tool
+was independently observed as0664/non-executable; this is a necessary defect if
+tool invocation is reached, not a reconstructed first cause. Original r1 wrapper,
+claim, result, lifecycle/absence evidence and staged inputs remain preserved.
+
+Shared admission now checks ordinary POSIX effective task-owner read/execute and
+the pinned cap-dropped default UID/GID0's applicable file permission class. Both
+entry points and existing boundaries use it; admission never chmods. Real-mode
+controls refuse0664/0744/0701 before image/build/phase, accept equivalent
+0755/0775/0555/0705/0745 without normalization, and refuse readiness loss after
+generation/observer or during final copies without completion.
+
+The existing private finally writer additionally accepts only the exact existing
+generation stdout65536/combinedNone profile; stderr16KiB, existing8/16KiB combined
+profiles, process ownership/cleanup and phase120s limits remain unchanged. Fresh
+private generation/observation paths are forwarded through existing phase kwargs,
+with no actual argv/mount/resource/public inventory change. Owned nonsecret toy
+process controls retain40KiB success output/nonzero stderr and deadline evidence,
+while excessive stdout/stderr and unsupported profiles still refuse. This captures
+outer traces, not stderr already discarded by nested commands. No generic logger
+or key/environment dump was introduced.
+
+The current APK host suite passes74tests with3existing explicit-container skips
+(71executed), including15focused consumer controls. Final Docs/OpenSpec checks
+and exact source revisions are recorded in the handoff. No target build or new
+actual package/signing/container/tablet invocation was needed for this correction.
+Separately selected owner preparation changed only the exact tool0664→0755;
+size/hash/owner/group/inode remained identical, with before/after mode evidence.
+
+Historical sections below describe their exact predecessor revisions; their
+file-identity statements do not override this later narrow retention/helper delta.
+
 ## Historical/current correction
 
 This change is reopened within the same paired Buddy PR132/Docs PR144 after

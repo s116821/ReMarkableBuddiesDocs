@@ -24,6 +24,11 @@ continuous-custody claim or repeating successful target builds.
   as freshly revalidated content correspondence. Preserve full historical/current
   proofs; every other identity difference refuses. Full current proof equality
   stays strict throughout each observation and the complete packaging operation.
+- Refuse a pinned tool whose ordinary POSIX permissions cannot support the
+  task-owner read and pinned cap-dropped container read/execute contract. The
+  actual failed diagnostic supplied correct bytes without execute permission.
+- Reuse bounded private stream retention for the existing generation output
+  profile, preserving all command/resource/time limits and public artifact sets.
 
 ## Impact
 

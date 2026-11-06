@@ -1,5 +1,32 @@
 ## ADDED Requirements
 
+### Requirement: Executable pinned tool admission and bounded private diagnostics
+Both package entry points SHALL share regular/name/content-pin admission and
+ordinary POSIX read/execute readiness checks before build/container/signing. The
+task owner's effective access and pinned cap-dropped image identity's applicable
+permission class SHALL permit tool use; equivalent non-special modes SHALL NOT
+be needlessly excluded. Production admission SHALL NOT change permissions.
+Existing rechecks SHALL refuse later loss of readiness before completion.
+
+Private phase diagnostics SHALL reuse the existing finally-based stream writer,
+accepting only the existing8192/16384 combined profiles or the exact existing
+generation65536-stdout/None-combined profile. All output/stderr/time/process bounds
+SHALL remain unchanged. Fresh private work paths SHALL retain outer phase errors
+without new key access, environment dump, container mount or public artifacts.
+They SHALL NOT claim recovery of discarded nested-tool stderr.
+
+#### Scenario: Correct bytes without executable readiness
+- **WHEN** the pinned POSIX tool has0664 or owner-only0744 permissions for the selected owner/image identities
+- **THEN** admission refuses before build/image execution or signing, without chmod or retry
+
+#### Scenario: Equivalent readable executable modes
+- **WHEN** actual tool bytes and effective permissions satisfy both task-owner and image read/execute needs with ordinary non-special modes
+- **THEN** ordinary admission proceeds without an exact0755 whitelist or loss of other source checks
+
+#### Scenario: Phase failure with private diagnostics
+- **WHEN** a bounded generation or observation command fails or reaches its unchanged deadline/output cap
+- **THEN** captured bounded outer stdout/stderr remain private while owned cleanup and refusal semantics remain unchanged
+
 ### Requirement: Explicit strict receipt consumption
 The packaging-only consumer SHALL accept an independently supplied completion
 digest and original producer identity, call the strict input verifier without

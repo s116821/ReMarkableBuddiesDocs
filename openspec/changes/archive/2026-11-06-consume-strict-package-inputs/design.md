@@ -1,5 +1,34 @@
 # Design
 
+## Executable tool and bounded private phase diagnostics
+
+One shared helper retains the actual regular/non-symlink/name/content pin checks
+and adds ordinary POSIX readiness before builds or image execution. The task owner
+must have effective read/execute access. For the immutable image's default UID/GID
+0 with capabilities dropped, the applicable owner/group/other permission class
+must have read/execute. Reject special mode bits. Normal 0755/0775 are examples,
+not a mode whitelist: equivalent non-special 0555/0705 permissions remain valid
+for an ordinary UID/GID1000 file. Owner-only0744 does not satisfy the container.
+Keep non-POSIX behavior explicit without claiming this validates Windows bind
+permissions. Production admission never chmods. Repeat this helper at existing
+phase/completion rechecks; a later mode change refuses completion.
+
+Reuse `run(private_diagnostics)` and its existing finally writer. Permit the exact
+already-bounded generation combination stdout_limit65536/combined_limitNone in
+addition to the existing8192/16384 combined profiles. Stdout still stops at64KiB,
+stderr at16KiB, phase timeout120s and process cleanup are unchanged. No arbitrary
+new profile or new logger. Pass fresh private work/generation-diagnostics and
+observation-diagnostics through existing phase kwargs; no argv/mount/resource/
+key or public inventory change. Known command streams contain control metadata,
+progress/errors and tracebacks; private keys remain only in disposed generation
+tmpfs. No key/file/environment dump is introduced. The outer trace still cannot
+recover stderr discarded by a nested failing run; do not overstate diagnostics.
+
+Host controls use real owned file modes, mock phase/build boundaries, and owned
+nonsecret toy subprocesses to verify early refusal, equivalent modes, later-mode
+drift, private success/nonzero/deadline retention, unchanged output caps and
+unsupported profile refusal. Actual package runs remain separately selected.
+
 Use a separate explicit `apk_package_inputs.py` CLI. Its external completion hash
 and original producer SHA are independent inputs, not inferred from adjacent JSON.
 Run the unchanged strict verifier, then bind actual full source/license and
