@@ -1,7 +1,7 @@
 # Design
 
 ## Source and ownership
-Current untouched source base is Buddycc3dd72e82bdb2a1c130198442e39355886146ae; Docs93907cede7417638db7d4ce10f50c790894bcb13. Read current REM53 description and all59comments chronologically plus actual configuration/personalization/maintenance/publisher source and canonical contract. Current source PRs and registered worktrees establish no competing maintenance owner. Main owns this finite pair; Root independently reviews and integrates. Reader/Writer receiving and Manager editor deliveries are preserved. Running/native activation, service control, selected sync and other lanes retain their owners.
+Precode was prepared on untouched Buddycc3dd72e82bdb2a1c130198442e39355886146ae and Docs93907cede7417638db7d4ce10f50c790894bcb13. At that intake, read the REM53 description and all59comments chronologically plus actual configuration/personalization/maintenance/publisher source and canonical contract. Current source PRs and registered worktrees establish no competing maintenance owner. Main owns this finite pair; Root independently reviews and integrates. Reader/Writer receiving and Manager editor deliveries are preserved. Running/native activation, service control, selected sync and other lanes retain their owners.
 
 Root accepted precode496a208 before implementation. Buddy130/Docs142 delivered as actual mains4ec94a6b162a6f00959f5bf6518dd4835bd0ec7b/b0370dab33efc28349df337ff235db59d0677c15. Both were freshly fetched and normally reconciled into this own pair before source edits. Their ready-notebook gate and inspection-custody correction are preserved. No source edit or test/build preceded accepted precode.
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Define the optional portable preference and bounded existing-writer configuration maintenance contract, separately from receiving-runtime activation and synchronization. See the [declaration and family contract](../../changes/preserve-personalization-documents/contract.md).
+Define the optional portable preference and bounded existing-writer configuration maintenance contract, separately from receiving-runtime activation and synchronization. See the [declaration and family contract](../../changes/archive/2026-11-06-preserve-personalization-documents/contract.md).
 
 ## Requirements
 

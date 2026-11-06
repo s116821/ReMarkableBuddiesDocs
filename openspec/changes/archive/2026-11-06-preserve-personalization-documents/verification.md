@@ -1,6 +1,6 @@
 # Verification status
 
-Root accepted precode496a208 before source implementation. Actual delivered Buddy130/Docs142 mains4ec94a6b162a6f00959f5bf6518dd4835bd0ec7b/b0370dab33efc28349df337ff235db59d0677c15 were freshly fetched and normally reconciled before edits. Implementation is [Buddy PR131](https://github.com/s116821/ReMarkableBuddies/pull/131) exact4dafcc6319883616873d308af248ff00a7543384. Independent implementation review, current normal Linux/full CI and finite canonical sync/archive remain pending.
+Root accepted precode496a208 before source implementation. Actual delivered Buddy130/Docs142 mains4ec94a6b162a6f00959f5bf6518dd4835bd0ec7b/b0370dab33efc28349df337ff235db59d0677c15 were freshly fetched and normally reconciled before edits. Implementation is [Buddy PR131](https://github.com/s116821/ReMarkableBuddies/pull/131) exact4dafcc6319883616873d308af248ff00a7543384. Independent implementation review is accepted; the full current Linux workflow passes, including Build and emulated Integration. Canonical requirements are synchronized and this finite change is archived.
 
 ## Source and scenario correspondence
 
@@ -14,11 +14,11 @@ Only personalization maintenance and its distinct private storage entry change p
 | Exact bounds | Actual inclusive1MiB source/128KiB stdin, over-limit refusal,16KiB escaped text and multibyte/NUL limits with unchanged rejected source; Windows PASS |
 | Publication and final reload | Actual AtomicCall/AfterPublication/ChangedReadback faults retain Failed; publisher sees Busy, returned report does not hold output custody; prefix output error cannot retry; lower-level Conflict/Refused/Unknown all stay public Failed while initial stale request stays Conflict. Two additional controls alter personalization or another raw field after a successful lower-level readback: final reload refuses both; Windows PASS |
 | Existing API/CLI | All10personalization_config controls PASS, including the8existing controls plus external public Report construction/non-consuming7-member frame and actual notebook CLI Set/Disable/Clear/raw-sibling roundtrip. Inspect exits with stdin still open; fixed private provider sentinels unused; no sideband output; data unchanged |
-| Unix special source | New symlink/FIFO source control is Unix-only and not compiled on Windows; current hosted evidence pending |
+| Unix special source | New symlink/FIFO source control is Unix-only and not compiled on Windows; current Linux control passes in42156540775 |
 
 The five focused Windows unit groups passed first run. After adding the two meaningful post-success competing-edit controls, only that extended group was rerun and passed; other accepted groups were not repeated. The unchanged production code was exercised by the10-test compatibility/actual CLI suite. Existing9unit/3library platform warnings are retained. No test failure occurred in these local runs.
 
-## Evidence and remaining gates
+## Evidence and delivery boundary
 
 Logs in the originating workspace:
 - personalization-document-unit-r1.log:3,467bytes, SHA25614e692eef8e896e6bc079f02d2a720b09609b48deade385fe70283225404259c;5/5focused groups pass.
@@ -27,4 +27,14 @@ Logs in the originating workspace:
 
 The final completed-log hash index is work/personalization-document-evidence.json (final:true). A separate provisional working snapshot is retained; it captured the readback log while that command was still writing and is not the final receipt. The existing ordinary-configuration-target cache was reused; no target/dependency or frozen executable copy was added. No held cleanup was retried.
 
-Inspect and mutation reports are private explicit editor output; unrelated values stay excluded. Disk readback/restart-required is not running activation; borrowed Report output is historical and owns no Store lease. No real preferences, provider/model calls, tablet/native execution, service restart, Manager protocol change or selected sync qualification occurred. Independent final review/current-head normal CI and finite same-pair archive remain necessary. Root owns final integration and actual-main/release verification; broader REM53/42/52/35 remain open.
+Inspect and mutation reports are private explicit editor output; unrelated values stay excluded. Disk readback/restart-required is not running activation; borrowed Report output is historical and owns no Store lease. No real preferences, provider/model calls, tablet/native execution, service restart, Manager protocol change or selected sync qualification occurred. Current-head full normal CI and finite same-pair archival are complete; final exact documentation closeout review remains with Root. Root owns final integration and actual-main/release verification; broader REM53/42/52/35 remain open.
+
+
+## Independent implementation acceptance
+
+Root independently accepted source4dafcc6 and synchronized Docsb84521f after reviewing all changed production/tests/shared publisher/admission/guide/canonical contracts and independently rehashing the three final completed Windows logs. No blocking source finding or redundant test run. Current PR inline review threads were checked and empty. This acceptance does not substitute for the current full workflow evidence or the final archive review. Source remains fixed at the accepted revision.
+
+
+## Current Linux Checks
+
+Normal run42156540775 at exact4dafcc6319883616873d308af248ff00a7543384 passes strict all-target/all-feature Clippy, full host tests and existing predecessor qualification. All6new personalization unit groups pass, including actual Unix symlink/FIFO source refusal before stdin. Host library948passed/0failed/35ignored. All10personalization_config compatibility/CLI tests pass, including the public7-member Report construction and actual notebook CLI/open-stdin inspection. These are current Linux results, separate from the Windows evidence above. Completed-job raw log personalization-document-linux-checks-4daf.log is1,420,541bytes, SHA256861f2634bf33b2d299ed49a6c1a949abf1162f3273706140a730952a94975228. Build and emulated Integration also pass in the completed workflow. Full raw workflow log personalization-document-linux-full-4daf.log is 2,233,611 bytes, SHA256 c8f48d9906e60d1ebc0f1060a3c9b1a5eac1f456d19978f7b91e7c08b4ee3239. This hosted build/emulation evidence does not qualify native/tablet execution or running activation. [Completed workflow](https://github.com/s116821/ReMarkableBuddies/actions/runs/42156540775).
