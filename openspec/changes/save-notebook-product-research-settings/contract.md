@@ -1,0 +1,11 @@
+# Unchanged wire, widened scoped store admission
+
+This change adds no wire member, selector, version, setting, request or report. Existing --product-settings-operation and --research-settings-operation, their exact-dash mutation input, protected config selection, byte/path fingerprint domains, intent schemas, status/outcome/readback/privacy/output bounds and raw-preserving target bytes remain authoritative. Only their Apply store admission can now include a fully ready ordinary local format4 generation. Inspection/Prepare/Status still do not open a Store or gain current native authority.
+
+The new crate-private opener is a distinct function used by these two callers. Its complete route is decided within ExistingCustody. There is no arbitrary error fallback or caller-supplied storage generation override. Existing generic config/legacy/notebook-restore constructors preserve their current semantics; they are regression obligations, not silently repurposed convenience APIs.
+
+Notebook gate: full original owned roots/actor/CURRENT -> supported format4 and marker/contract/capability readiness -> normal complete recovery -> absent/empty selections and selection-history -> all manifests local transactions -> existing validated absent/LocalOnly mode. Every failure returns the existing Busy/Unavailable/Unsupported admission category without configuration publication, metadata repair, bootstrap, target adoption, stage deletion, group change or provider/native execution. No new sanitized report fields disclose these private reasons.
+
+Admitted write: existing full-config/path/base/target checks -> existing mode/report custody -> existing exact target publisher -> exact existing disk readback. Unknown publication is not historical failure/success/rollback; original Status is observation only. Persisted configuration does not prove the running Reader/Writer reloaded or that any mode/module/tool is allowed to execute. Existing runtime guards retain authority.
+
+Qualification must separately establish Windows/Linux host fixtures, actual CLI selectors and current-head normal compilation/checks. Actual tablet quiescence/restart/activation, private credential-file mutation, broader settings, imports and synchronization are not selected.
