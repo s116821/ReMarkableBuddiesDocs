@@ -1,7 +1,8 @@
 # Design
 
 ## Exact source and ownership
-Buddy delivered base4a75316e358a471a08ba28c0c9408d1c6eacff3f; Docs9c64e47852f9cf8c4a9076a73f8bef5444a33873. Portable129/Docs141 is independently in flight and not a dependency of this admission change. Main owns Buddy/Docs implementation, Root independent review/integration. Root's Manager61/Docs140, Native REM-61 and held packaging/device operations remain separate. No source code precedes this precode.
+Precode was reviewed against Buddy4a75316 and Docs9c64e47 before implementation. The implementation normally reconciled delivered Buddycc3dd72e82bdb2a1c130198442e39355886146ae and Docs93907cede7417638db7d4ce10f50c790894bcb13, preserving merged portable configuration and notebook restore. Main owns this finite Buddy/Docs implementation and returned fixes; Root owns independent review, paired integration and actual-main/release verification. Manager/SDK/native and held packaging/device work retain their separate owners. No source code preceded accepted precode. The existing-boundary section below describes the original refusal this implementation changes.
+
 
 ## Existing boundary
 product_settings::apply_with and research_settings::apply use Store::open_existing_for_config, then basic::Custody::acquire and the existing Store::replace_config_document. maintenance::open_existing_for_config selects the existing selected-aware legacy admission, which passes notebook=false into open_existing_using. CURRENT's format4 or any notebook marker therefore refuses before normal recovery. Notebook restore already has a distinct existing-only ready constructor. Product/research raw-preserving target encoders and report schemas need no change.
