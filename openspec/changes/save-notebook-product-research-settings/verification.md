@@ -1,6 +1,6 @@
 # Verification status
 
-Root accepted precode0c9fa3c in the canonical REM42 discussion before implementation. The paired branches normally reconciled delivered Buddycc3dd72 and Docs93907ce, preserving portable configuration and notebook restore. Independent final implementation review, exact-head hosted checks and finite sync/archive remain pending.
+Root accepted precode0c9fa3c in the canonical REM42 discussion before implementation. The paired branches normally reconciled delivered Buddycc3dd72 and Docs93907ce, preserving portable configuration and notebook restore. Implementation is [Buddy PR130](https://github.com/s116821/ReMarkableBuddies/pull/130), exactc0a2e1a4d93b5752dacadd361c3bc49b31ee49ed, paired with [Docs PR142](https://github.com/s116821/ReMarkableBuddiesDocs/pull/142). Independent final implementation review, exact-head hosted checks and finite sync/archive remain pending.
 
 ## Implementation and controls
 
@@ -13,7 +13,7 @@ Only product_settings::apply_with and research_settings::apply_with route to the
 | Existing callers | Old generic/config/mode/archive/outbox refusal preserved on the same notebook; notebook restore still admits; empty regular selected directories admit; passes |
 | Uncertain publication/output | Both writers use existing AtomicCall/AfterPublication/ChangedReadback faults; original unknown preserved, immediate/prefix write errors prove Busy throughout write and release afterward; data inventory unchanged; Status only observes original desired bytes; passes |
 | Unix link refusal | New symlink directory control is Unix-only, not a Windows pass; hosted evidence pending |
-| Actual command dispatch | Both notebook selectors and existing selected-family regression use real bounded subprocesses; execution pending |
+| Actual command dispatch | Both notebook selectors and existing selected-family regression use real bounded subprocesses; Windows3/3pass; no provider/runtime startup |
 
 Reports retain their existing consuming write_all interface, without a flush call. Product successful Apply remains restart-required; research remains runtime unverified. The precode's mistaken flush expectation was corrected to this actual unchanged source boundary. A downstream flush after write_to returns is outside existing custody; no stronger promise was implemented.
 
@@ -21,6 +21,6 @@ Reports retain their existing consuming write_all interface, without a flush cal
 
 Initial unit-r1 failed because new fixtures used run_stdin for inspection and expected an existing report flush. Unit-r2 corrected those but its success case sent research Status an extra changes member and was refused as designed. Unit-r3 sends only the original intent and passes the corrected success group. Unit-r4 extends that group with both optional feature markers and passes. Other passing groups were not rerun after this fixture-only extension. Original logs and failed temporary fixtures remain retained; no production validation or assertion was weakened. Existing platform warnings remain.
 
-Evidence logs live in the originating workspace as notebook-preferences-unit-r1/r2/r3/r4.log and notebook-preferences-cli-r1.log. Exact hashes and final current-head CI will be recorded with the source handoff. The existing ordinary-configuration-target cache was reused, with no dependency added or held cleanup retried.
+Evidence logs live in the originating workspace as notebook-preferences-unit-r1/r2/r3/r4.log and notebook-preferences-cli-r1.log. Exact SHA256 logs: unit-r1 fda0c0a4743b22e23b4231b13d122620e07bd2627b17bcbe4bffd2c14b8436f1; unit-r2 c3af97bb9d5031eb3a9e1c2473ecbfa2c1eab6d47e7cf9d6d5c006508a648440; unit-r3 5aad9df6a1270d98abbfbaa6d595db6ece9432d6ea6dbb52b0d996f22143473e; unit-r4 0ccc1dc341128c40d350bce2dab7bbad5b4f226ce86a1ad1a8f9fb6cd6a96261; CLI-r1 ede28e5fa08eb43303cc1878561f62fa94c0f26b6b9f2c2f9e03cb615a17e9ad. The5Windows unit groups pass across r2/r4; the additional Unix symlink group is not compiled on Windows. Normal current-head Linux CI remains pending. The existing ordinary-configuration-target cache was reused, with no dependency added or held cleanup retried.
 
 No real preferences, provider calls, tablet/native execution, credential-file mutation, settings beyond these two writers, notebook imports/sync or runtime activation are qualified. Root owns independent final review, paired integration and actual-main/release verification. Broader REM42/52/35 remain open.
