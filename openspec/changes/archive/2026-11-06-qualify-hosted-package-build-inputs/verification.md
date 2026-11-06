@@ -19,8 +19,23 @@ semantic-tool fixtures unable to spawn the absent `semantic-release` executable.
 The broader Node workflow suite passes11of12; its sole error is absent `jq` in
 an existing body-only predicate fixture. Preserve these failures; they are not
 passing hosted checks. No global tool installation or weakened assertion was
-used. Normal exact-head hosted checks remain required. Strict OpenSpec validation
-passes. Independent source review and finite archival remain pending in this pair.
+used. These preserved local failures are distinct from the completed hosted checks.
+
+Normal exact-head [CI42132317733](https://github.com/s116821/ReMarkableBuddies/actions/runs/42132317733)
+passes PR Title, Checks, application Build and Integration; Release is correctly
+skipped for a PR. Linux executes all8new Python controls, including the2Windows
+skips; full Python suite69tests passes with3existing skips. Parsed workflow
+controls, the broader Node fixtures, host Rust tests and strict Clippy pass.
+The retained raw Checks log has SHA256
+`4fbb609fd96e8bb84df21f4524c460325177442fbd424572ca9a621a82451bd4`.
+This normal application CI does not execute the new strict manual qualification.
+
+Root independently accepted source785f553 with Docs e1ba99de after reviewing the
+complete helper/YAML/tests/spec/operator plan and actual maintained Cross/Rust
+action behavior. Canonical package-build-inputs requirements are synced; this
+finite source-interface change is archived in the same paired delivery. Final
+Docs checks qualify the archive revision. Root owns final paired merge and actual
+main/release verification. Full packaging task3.3 remains open.
 
 ## Actual execution plan to review separately
 
@@ -46,4 +61,5 @@ is invented for them. This finite source interface does not settle actual build
 qualification, authenticated artifact provenance or full packaging task3.3.
 
 Source basis: current implementation/parsed workflow, actual local test logs and
-directly reviewed maintained Cross source. Remote execution remains prospective.
+directly reviewed maintained Cross source, exact-head hosted CI outputs and
+independent Root source review. New strict remote qualification remains prospective.
