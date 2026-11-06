@@ -1,7 +1,7 @@
 # Notebook preference maintenance
 
 ## Purpose
-Permit the existing product, research, basic, model/endpoint and memory-declaration conditional writers on ready ordinary notebook storage. See the [declaration admission contract](../../changes/save-notebook-config-declarations/contract.md). Credential reference/file operations and runtime/native authority remain separate; personalization retains its separately specified boundary.
+Permit the existing product, research, basic, model/endpoint and memory-declaration conditional writers on ready ordinary notebook storage. See the [declaration admission contract](../../changes/archive/2026-11-06-save-notebook-config-declarations/contract.md). Credential reference/file operations and runtime/native authority remain separate; personalization retains its separately specified boundary.
 
 ## Requirements
 
