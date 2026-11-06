@@ -43,6 +43,15 @@ notebook parsers refuse version1 and legacy selectors. No fallback dispatch is
 permitted. A producer that lacks the new command yields unsupported/unavailable,
 not legacy restore or empty success.
 
+Notebook-positive frames require `complete_media:true` in both source and target
+preview summaries, the original intent and every positive observed inspection.
+The notebook producer requires complete closures. A consistently false set of
+fields is therefore not a valid notebook preview/result even when its hashes,
+version and selectors agree. Keep valid legacy incomplete-media cases unchanged;
+enforce this additional condition only in the fixed notebook family. Successful
+Apply has `disk_readback_verified:true`; successful Status observation retains
+false, as specified by the producer.
+
 ## Shared safe view and independent custody
 
 The existing safe `ordinary_restore` view shape can represent either ordinary
@@ -88,6 +97,8 @@ Buddy version2 and current Manager lifecycle code. Focused controls exercise rea
 parsers/host/controller/helper code, original packet byte retention, family/version/
 selector mismatch, cross-host reference refusal, ownership contention,
 pre-dispatch cancellation, uncertain apply then status, expiry and teardown.
+Include negative notebook incomplete-media frames paired with accepted legacy
+incomplete-media controls, and the Apply/Status readback-flag distinction.
 Preserve the existing legacy vectors and meaningful regression tests.
 
 Use literal notebook reports derived from the producer contract, explicitly marked

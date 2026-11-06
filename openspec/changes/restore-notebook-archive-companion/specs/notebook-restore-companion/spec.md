@@ -5,6 +5,8 @@ Manager SHALL expose the delivered same-actor ordinary notebook restore as an
 explicit capability using only version2 notebook selectors. Existing legacy
 restore SHALL retain its original version1 admission. Family choice SHALL remain
 fixed through preview, original intent custody, apply, status and cancellation.
+Notebook-positive source/target previews, original intents and observed
+inspections SHALL require complete media, without narrowing valid legacy cases.
 
 #### Scenario: Prepare and confirm a notebook archive
 - **WHEN** a user explicitly selects notebook restore for an archive already on the tablet
@@ -13,6 +15,10 @@ fixed through preview, original intent custody, apply, status and cancellation.
 #### Scenario: Wrong family or unavailable producer
 - **WHEN** a response/intent belongs to another version or selector family, a reference belongs to another host instance, or the installed producer lacks notebook restore
 - **THEN** Manager refuses without translating the intent or dispatching a legacy fallback
+
+#### Scenario: Consistent but incomplete notebook media claim
+- **WHEN** a notebook response or original intent declares incomplete media even if all other fields agree
+- **THEN** Manager refuses that notebook-positive frame while preserving existing valid incomplete-media legacy admission
 
 ### Requirement: Reused bounded restore lifecycle
 The notebook capability SHALL reuse existing maintenance ownership and finite
