@@ -83,8 +83,8 @@ No production signer/trust/publication, stable asset eligibility, GUI downloads,
 package installation, runtime profile enablement, service/Stop/recovery change,
 SDK/native support or actual source-switching qualification. Legacy output stays
 unchanged; new report is explicitly current fixture/public-key-only and installation-
-ineligible. Use one unchanged public artifact set for consumer qualification; avoid redundant
-large copies and duplicate signing trials.
+ineligible. Use one unchanged public artifact set for consumer qualification;
+avoid redundant large copies and duplicate signing trials.
 
 ## Review and operation boundaries
 Independent review should check the finite handoff, metadata and qualification
@@ -92,4 +92,4 @@ contract before implementation. Current source checks remain required.
 A deliberate opt-in actual run must budget the existing controlled-copy stage
 for the larger bounded inputs, preserve one original set and current process/
 container cleanup, and retain its own result. It is not an automatic repeat of
-the producer's R3 signing/generation or of the original historical matrix.
+the producer's fixture signing/generation or of the original historical matrix.

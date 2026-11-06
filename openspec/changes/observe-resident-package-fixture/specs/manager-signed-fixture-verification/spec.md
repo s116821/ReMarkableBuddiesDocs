@@ -43,8 +43,8 @@ manifest alone SHALL NOT invent allowed paths or prove compiler/native provenanc
 The extension SHALL reuse readonly no-network verify/adbdump and existing negative
 controls, nonroot ownership, snapshots and bounded timeout cleanup. It SHALL NOT
 sign, mutate a package database, execute/extract payloads, enable a runtime profile
-or infer production trust/install/native support. Actual invocation requires deliberate opt-in execution and is distinct from
-synthetic source controls.
+or infer production trust/install/native support. Actual invocation requires deliberate opt-in
+execution and is distinct from synthetic source controls.
 
 #### Scenario: Successful current public-only result
 - **WHEN** a deliberate opt-in actual operation completes all original-byte and

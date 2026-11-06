@@ -9,7 +9,7 @@ correctly refuses this new shape; producer-side observation is not Manager proof
 
 ## What changes
 Extend only the existing opt-in public-key-only real_fixture.py observer, focused
-controls and guide. Preserve the historical default/schema/caps unchanged. Add a
+controls and guide. Preserve the historical default/schema/caps unchanged. Add an
 explicit resident fixture handoff with external manifest pin and finite
 reviewed metadata/layout constraints. Keep update/install authority false and all
 recovery/service-stop interfaces and normal Manager UI/ZIP behavior unchanged.
