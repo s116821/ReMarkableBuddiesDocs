@@ -1,0 +1,308 @@
+# Composed subject memory and selected Reader result
+
+## Revision and scope
+
+Rust `2f6f7383491f345e92d8634f7ca15ced291ae5b0` implements the bounded
+composed-memory increment over quality base `fac54284013faf1d4baa4bc908ebc06c59010ac0`.
+Precode `9dfe0f7890f837536ef7c704efe829e2dcd722ab` and the mixed-document
+prerequisite `ece586ce103a99d113fb921d8ea86b5890b79b4b` were independently accepted.
+Source `2ebe8e1` and the test-only opposing-document successor `2f6f738` were
+independently accepted with no findings. Completed local evidence review was accepted. Hosted outcome review accepted
+with the executed-checkout and grouped-diagnostic corrections recorded below;
+final result-successor de2e0a5 review was independently accepted with no findings. This result does not complete
+REM-24, REM-37, native output, or the full OpenSpec lifecycle.
+
+The actual selected Provider passes its original catalog and aggregate admission
+handles to the controlled Reader publisher. The publisher joins its Reader handle
+through the existing canonical gate set, deduplicating equal keys and holding
+one ordered set. It recovers exact original Reader receipts before current-state
+refusal. A new write verifies receiving tokens, raw heads, original remaining
+budget, provider instance and result payload; it consumes the view before the
+actual writer. Failure remains sticky. Historical recovery supplies no current
+Attempt state or native permission.
+
+The reciprocal mixed-document projector validates all records and raw reference
+bounds before partitioning supported SubjectMemory facts/tombstones. Reader roots
+need exclusive historical ownership of the document matching the selected key.
+The reusable memory validator checks fact identity, immutable claim, owned
+ancestry and tombstones. Unknown namespaces, foreign/global facts in this closure,
+unsupported schema, forks, cycles, missing ancestry and unresolved ownership
+refuse. The existing domain-only pinned projector remains strict.
+
+The actual Orchestrator interprets and independently verifies the original question
+before memory query. Selected Generated publication uses the combined Provider
+method. Empty memory preserves the ordinary provisional answer. Unsupported or
+incompatible providers refuse before model/query/state installation. The existing
+ordinary Reader route is preserved. Generated data publication still stops before
+qualified Pending/native dispatch or terminal settlement.
+
+## Current verification
+
+The following controls passed on working inputs and are now included in the exact
+committed-SDK proof described below. They are host/recording-model evidence:
+
+- One bounded publication control has seven fresh child modes: normal shared
+  document plus distinct global aggregate; BeforeCommit; AfterCommit; concurrent
+  publication; Reader replacement; global fact selection replacement; receiving
+  budget exhaustion. Each child has a 20-second deadline.
+- The concurrent case constructs another Reader handle after memory setup and
+  releases two publications together. Exactly one publishes and the other
+  refuses; the selected transcript contains exactly one assistant.
+- A second bounded control uses different Reader document keys and independent
+  Providers constructed before versus after Reader setup. Both queries discover
+  catalog/global and both document selections before either handoff. Opposing
+  Reader-first sets are released together; exactly one publishes, the other
+  refuses its changed inputs, original images remain exact and the global
+  selection is unchanged. Its deadline is also 20 seconds.
+- BeforeCommit publishes nothing and the receiving view cannot retry a new write.
+  AfterCommit immediately returns Historical; identical retry returns the same
+  historical operation and leaves one assistant.
+- Normal controls cover consumed and changed results, foreign provider instance,
+  catalog replacement, sticky refusal, exact image order and unchanged distinct
+  global selection. Twelve partition negatives and five reference/count negatives
+  refuse; an owned later tombstone and another profile's owned document fact are
+  accepted without changing the on-disk selection.
+- The application control has 13 executed Orchestrator cases and one prior mixed
+  closure refusal. New cases cover real memory answering, shared-mode lease held
+  during all three model calls, CompleteEmpty, incompatible Store/group/binding
+  with zero model/backend effects, and refusal of document memory with unbound
+  development evidence. Original seven application cases remain in the control.
+- Recording-model checks preserve original image bytes/order, exact handwritten
+  request, separate answer-policy/current-request/associative-memory frames,
+  and interpretation without memory. This proves request assembly and application
+  behavior, not live model relevance or handwriting effectiveness.
+
+Exact normal LF source archive SHA-256:
+`98d62b3dddca21accd6c2ab94aefbf6fd9e0ad7edbcfd7363f0477e3d58caf06`.
+Owner verified all 11 changed source/test blobs plus committed Cargo.toml/Cargo.lock
+against raw Git bytes. The SDK remains
+`d01b4bdfbc4dc11673f84ff82bbc62c8dc77bbb1`; protected nine working files match
+the saved byte hashes. The reviewer independently recomputed both source ZIP
+checksums; raw blobs, SDK and protected hashes remain owner verification.
+
+Exact Windows Rust 1.98.1 evidence is intentionally separated by revision:
+
+- Source `2ebe8e1`: locked/offline/all-features library passes 294 tests with one
+  existing saved-byte harness ignored. All 16 binary/integration executable groups
+  pass, including SDK13 and the expanded application control. Child subprocess
+  results are included in their parent controls and are not extra distinct tests.
+- Final `2f6f738`: only the integration test file changes. Every other changed
+  source/test and Cargo blob is byte-identical to `2ebe8e1`; no full library rerun
+  is attributed to this successor. Exact SDK suite passes all 14 tests, including
+  both bounded controls. Formatting and normal nonmock library/binaries pass.
+- Required final strict Clippy fails with 20 dead-code error diagnostics,
+  exit 101. The separate command-local warning collector reaches all targets
+  and reports exactly 20 warnings, all dead_code, with no new memory/conversation
+  or SDK-test warning. Equal count is not identical method inventory: the grouped
+  ReaderAttempt warning now includes the unused generated wrapper because actual
+  publication uses generated_with_memory, alongside its native methods. The collector is not a strict pass or a waiver.
+- Final compile-fail documentation check passes (one actual API misuse control).
+  Docs unit tests pass
+  12; manifest/guidance checks verify 19 current files and 126 preserved blobs;
+  strict OpenSpec passes all 17 items.
+
+Hosted source CI `38352958014` is completed: Test `115149323752` passes
+298 Linux library tests, one existing ignored, and the remaining suites including
+SDK14 and both bounded controls. Release policy/title pass; lint `115149323733`
+fails 20 with exit101 and tablet build steps are skipped. Overall CI fails.
+
+Both completed test/lint logs directly identify executed checkout
+`e58a673f5e80e30816ac84394fdaeca24f8f4290`, merging final source2f6 into
+quality basefac5428. Its GitHub commit parents are exactly fac5428 and2f6;
+reviewer independently fetched it and verified tree
+`654fe104b755838f1df28687bb9dbad4e5d069a9`, equal to exact2f6. The current
+PR API instead advertises main-base merge
+`d5b62dbd80b099168fef78543538185f4be20447` (ff8 +2f6), with the same tree.
+That current pointer was not the executed checkout for this run. Cause is not
+inferred and the hosted result is not described as a tested main merge.
+
+Docs967 hosted `38352641565` passes Ubuntu `115148288881`, Windows
+`115148289049` and OpenSpec `115148289125`. Sol independently read completed
+local logs/result, both hosted source logs/Actions states and the executed merge
+identity; no independent matrix rerun, raw-blob/pin/protected-hash recreation,
+current main-base run or native qualification is claimed.
+
+## Open gates
+
+The focused actual Provider joined-publisher panic witness now executes at Rust
+3e87abc862b40c98a8a7c9dd4586ab377e268d37, following accepted test-only precode
+bb3132e and repaired source assertions. The cfg(test)-only one-shot thread-local
+hook runs immediately after valid receiving-view consumption while its pins and
+combined canonical admission gates remain held. One exact bounded child witnesses
+the intended panic, same-view pins refusal and specific still-live domain-gate
+refusal with a second prequeried view/new Reader handle, no new assistant/receipt,
+unchanged Store manifests and exact original media. Parent verifies its exclusive
+nonce acknowledgment written only after all assertions. This is Provider/gate
+execution evidence, not actual Orchestrator Attempt-currentness or an exception
+matrix; tasks3.20 and subject-memory4.7 remain open for their larger scope.
+
+Owner immutable-source final execution passed one child and one parent test in
+1.10s/1.15s under the20s child deadline, exit0. Final log SHA256
+2230980f7b197031e359cd9122c13635c421d35266d2e8e1be7dd732d8f43625.
+Predecessor babcb5b also passed4.75s/4.79s, with two new copied-fixture warnings;
+final3e87 removed only unused imports/helper and those warnings are absent. This
+is not a strict-lint pass. Exact committed SDKd01 and all protected nine bytes were
+preserved; the existing standalone execution checkout was restored clean to39b1.
+Independent final result/source agreement inspection accepted the exact log checksum, witness markers and one child/parent pass; reviewer did not build or rerun. Owner execution/restoration/protected-file checks remain separately attributed. Required strict lint has no waiver; the quality base retains 20 native dependency
+diagnostics. Qualified Source/Binding, Pending, dispatch/uncertainty, native geometry,
+render-to-source linkage, lifetime/recovery, installed acquisition, actual settlement,
+representative live-model effectiveness, Writer/Manager integration, release,
+canonical sync/archive and issue completion remain open. No SDK pin, tablet,
+provider/account/service action, held/spent replay, merge or lifecycle closure
+occurred in this increment.
+
+Source basis: accepted central precode, exact repository source and execution
+logs, owner raw archive/hash verification and attributed independent source,
+local-result and corrected hosted-outcome reviews. No independent test rerun or
+independent runtime panic or native qualification is claimed.
+
+## Canonical bounded review receipt
+
+Root published and fully read back the attributed [Rust review](https://github.com/s116821/ReMarkableBuddies/pull/37#pullrequestreview-5499431949)
+and [paired Docs receipt](https://github.com/s116821/ReMarkableBuddiesDocs/pull/22#issuecomment-6139386670).
+The final reviewed result is de2e0a5; REM-37 receipt
+66ab313d-b50b-4cd4-adb2-2d68cca305a8 records the same scope. Root verified
+Docs de2e0a5 CI38354336804 passes. This later receipt-only amendment changes no
+source, requirement, checked task or qualification boundary. Panic, native,
+strict-lint, issue completion and full lifecycle remain open; no unchanged
+source/test matrix is repeated.
+
+## Current-parent integration
+
+Current source 3ee307d203386af1e4957912d5e74b79c6ae7a39 normally integrates
+existing composed-memory branch f1bc512 and selected-application parent 9f0b502.
+The effective child has twelve source paths. Eleven original child bodies remain
+byte-identical to f1bc512, including composed admission, mixed-domain projection,
+publication, panic witness and actual Reader fixtures. The orchestrator retains
+current parent content-free logs while adding the original combined publication
+and historical document-scope behavior. Recognition/answer prompt literals remain
+unchanged. Six critical parent bodies, including Cargo/SDK32b86e4, Store/mode,
+main routes and refusing backend, remain exact. No source conflict or new domain
+implementation was required during this normal integration.
+
+Current Windows21 distinct focused controls pass: two composed publication/
+opposing-document controls, fourteen actual startup/mode CLI controls, one
+bounded post-consumption panic witness, one actual selected-Orchestrator control
+containing fourteen cases, and three memory callback controls. Child-process
+invocations and cases are not additional unique tests. The panic witness reports
+the exact expected marker after caught post-consumption unwind, poisoned retry
+refusal, zero publication and preserved media; its parent verifies completion
+within the existing bound. No saved-byte harness or device observation ran.
+
+Strict all-target/all-feature Clippy with denied warnings, locked no-default
+library, formatting and diff checks pass. Docs strict validation passes39 items,
+with25 guidance files and126 original source blobs preserved. Original source/
+range-equivalence/panic acceptance and historical failures remain attributed to
+their original revisions; no unchanged full matrix was repeated or original
+domain review replaced. This current evidence covers software integration only.
+
+Current hosted checks and independent full integration review remain pending.
+The active wider conversation and subject-memory tasks, representative live
+model evidence, parent delivery, native/fresh source, Pending/context/settlement,
+ordinary lifetime caller and whole MVP gates remain open. No unfinished change
+is canonically promoted or archived. No provider, tablet, account or service
+operation, held/spent replay or saved-byte replay occurred.
+
+## Completed integration checks
+
+Exact source `3ee307d203386af1e4957912d5e74b79c6ae7a39` completed
+[hosted run39367854695](https://github.com/s116821/ReMarkableBuddies/actions/runs/39367854695)
+successfully through Title, Checks, Build and Integration; PR Release was skipped.
+The run API confirms that exact source identity. Raw run identity and logs were
+retained separately from the original historical evidence.
+
+Independent source integration review
+[5580690776](https://github.com/s116821/ReMarkableBuddies/pull/37#pullrequestreview-5580690776)
+and paired Docs review
+[5580691470](https://github.com/s116821/ReMarkableBuddiesDocs/pull/22#pullrequestreview-5580691470)
+accepted the prepared integration. This receipt adds no source, requirement,
+task or lifecycle behavior and repeats no tests. All live-model, parent delivery,
+native/fresh context and wider active-change limitations above remain open.
+
+## Current-main composition candidate
+
+Buddy `26b650a0aa6f703e30bfa4cf78a25c7fe1a1d7e6`, tree
+`9716c79ee6840492eec66dc437a68dfefbf24e98`, composes the published
+Buddy #37 head `b473038a99b36fb8b422305baf903b48e4850928` with actual main
+`b2868fdee1788ee552baf5d13968fb826d8b640e`. This Docs successor composes
+Docs #22 head `1e40aa090b5d8b401be57b0529883ebf1a9a5afb` with actual
+main `9ba028956e40422bc57aa549bf99ae7e2f294aa7`. Both are normal merges.
+Docs #22 is intended to target main after independent review of this pair.
+
+The composed path retains one ordered admission set, mixed-document scope
+validation, historical receipt recovery and the post-consumption panic witness.
+The current-main startup dispatch, Cargo/SDK pins and refusing backend stay
+byte-identical. Ordinary local memory retains its existing setter. The
+prepared selected path uses explicit provider setup and checks admission
+before model work. The simulator retains both the current-main selected
+publication cases and the dedicated composed cases.
+
+This Docs candidate adds the composed requirements and evidence to the active
+change. The delivered startup/history and selected-publication archives keep
+their existing ownership. REM-24 representative live semantics, independent
+source review, hosted checks, and qualified native acquisition, Pending and
+settlement remain separate gates.
+
+On Windows, the final Buddy tree passed 28 distinct targeted tests. These were
+six library tests, two SDK integration tests and 20 real CLI tests. Subcases
+and child invocations are excluded from the total. The first current-main
+fixture run caught an outdated assertion for the blanket memory refusal.
+The final test verifies the specific unsupported-provider admission error
+and still checks zero model calls, zero device calls and unchanged ordinary
+manifests. The first failure remains separate from the passing rerun.
+The library build emitted six existing Writer fixture dead-code warnings.
+The local check used scripted inputs and did not run a saved-byte or live
+provider case.
+
+## November 5 delivered resident composition
+
+This successor integrates delivered Buddy main
+`91dcc601154507790254946f8f0f811204a0fd43` into the existing composed-memory
+branch. Local source is `7a4421cea6944e38976c96b47e4ba79c674b620a`, tree
+`219a976f9662152b902269ed5c8b542ce98a3599`. The normal merge is
+`8dbf0f18f3c438b8734890e09a0c77a45065ef42`, with parents `26b650a` and
+`91dcc60`; its sole successor removes trailing spaces in a documentation comment.
+Docs integrates delivered main `db4c4b2a25e1b54ef8f8d8add7446d5725f54ced`.
+These source revisions have not been published from this checkout.
+
+Delivered acquisition, installed resident source/output setup, SDK/Cargo pins,
+blank-start and Writer refinement remain intact. Resident output now follows the
+memory-aware Generated helper, preserving its original Pending, cancellation,
+uncertainty and SubmittedUnverified outcomes. Selected prepared publication
+continues to refuse native output. Its validator now accepts ResidentCapture
+only with the current root/user ownership and complete required media, matching
+the other historical capture types. It grants no fresh native authority.
+
+The actual composed Orchestrator fixture adds three resident-capture cases:
+selected document-memory enrichment, selection replacement, and failed write.
+It checks saved image order/bytes, source preservation, exact enriched text,
+selected-only publication, and zero backend calls. The first resident case
+failed because text-write validation omitted this capture type; that failure
+is retained separately from corrected passes. The fixture now has 17 cases;
+those cases are not counted as 17 separate Rust tests.
+
+Local Windows evidence is retained in `work/rem37-composed-integration-evidence`
+under `nov05-*.log`. The composition/panic controls, resident restart/export,
+invalid derivative and omitted-media controls, and ordinary-memory workflow
+pass. These runs used the final functional source; the successor changes only
+comment whitespace. The Windows build reports three resident-platform dead-code
+warnings, plus six Writer fixture warnings in library tests. Linux-only resident
+output is source-reviewed here and still requires hosted Linux compilation and
+coordinator review at this successor. No new tablet or provider run occurred.
+REM-24 live semantic qualification remains pending. Wider lifecycle tasks and
+canonical sync/archive remain open.
+
+The two shared-key/opposing-set SDK tests also pass, including their child
+process controls. Additional current-head checks cover the existing selected
+publication fixture, personalization, and ordinary no-output/cancellation outcomes.
+Final validation and exact paired handoff are recorded in the owning issue.
+
+Final local total: 11 distinct Rust tests passed (nine library, two SDK),
+excluding child invocations and subcases. Docs passed 12 unit tests, its manifest/
+guidance/provenance checker and all 110 strict OpenSpec items. Formatting and
+source/Docs diff checks pass. Log SHA256: composed
+`9ef2eb6a685d62492a73e05f34f31dd4fd8cf6b6e4e1ba803bb20f1170534ea5`;
+SDK `37c2498af5c185999b79fd708b404ffd90d98eff04d220511e9080fd33af24e5`.
+The active shared Windows target was reused; no new cache or cleanup scope was
+created. Preserve the original dirty/divergent worktrees and both earlier failed
+logs. This handoff does not close the active change or qualify native settlement.

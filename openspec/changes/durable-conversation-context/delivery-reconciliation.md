@@ -8,6 +8,10 @@ verbatim into canonical conversation-context. The other nine conversation
 requirements and every unfinished Reader/native/platform/simulator delta remain
 active. No native or provider gate is checked off by this preparation.
 
+The [ordinary SDK gesture consumer](../archive/2026-11-04-host-gesture-consumer/result.md)
+has a separate bounded delivery for guarded portrait plan consumption.
+Current native qualification and the retained adapter continue separately.
+
 ## Complete production behavior
 
 The candidate contains the original unbound Orchestrator/Ledger composition,
@@ -128,3 +132,33 @@ production native handoffs. Final coordinated squash and actual-main publication
 verification remain pending. Only three pure API requirements are canonical;
 the parent and all other nine conversation/Reader/native/platform obligations
 remain active and unarchived.
+
+The bounded [host startup and history integration](../archive/2026-11-04-host-startup-history/result.md)
+has its own paired delivery. The remaining Reader and conversation requirements
+and tasks continue here.
+
+The [host selected publication increment](../archive/2026-11-04-host-selected-publication/result.md)
+has a separate bounded delivery for Interpreted and Generated writes from
+prepared evidence. Its parent startup pair must land before final integration.
+Fresh input, composed memory, Pending, settlement and native effects remain
+with the active lifecycle and their owning drafts.
+
+## November 5 successor status
+
+The current composed-memory successor now includes the delivered resident
+acquisition/reuse integration. See [the dated composition result](../archive/2026-11-05-compose-selected-reader-memory/composed-memory-result.md#november-5-delivered-resident-composition)
+for exact source, the resident selected-write gap and bounded local checks.
+Earlier candidate receipts above describe their original revisions. REM-25's
+merged resident path is available; remaining selected publication/native
+settlement and live semantic gates continue under this active change.
+
+## Composed receiver closeout boundary
+
+The bounded composed selected Reader/memory receiver is implemented in merged
+[Buddy33](https://github.com/s116821/ReMarkableBuddies/pull/33), with
+[Buddy37](https://github.com/s116821/ReMarkableBuddies/pull/37) retained as
+superseded source provenance. Its original contract/evidence and finite lifecycle
+are preserved in the [receiver archive](../archive/2026-11-05-compose-selected-reader-memory/verification.md).
+Earlier candidate/pending wording above is historical. This parent stays active;
+qualified native effects, Pending/settlement, complete resumption/restore and
+remaining broad issue acceptance are not archived or declared complete here.
