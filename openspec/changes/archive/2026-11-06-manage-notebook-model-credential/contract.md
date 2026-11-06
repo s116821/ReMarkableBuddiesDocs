@@ -1,6 +1,6 @@
 # Original protected-file contract with scoped notebook admission
 
-The [original v1 contract](../archive/2026-10-22-manage-declared-model-credential/contract.md) remains authoritative for confidential records/fingerprints, limits, exact text/private modes, original binding, stage/publication/status/outcome and consuming custody. This increment adds only storage-family admission for the existing Linux Apply.
+The [original v1 contract](../2026-10-22-manage-declared-model-credential/contract.md) remains authoritative for confidential records/fingerprints, limits, exact text/private modes, original binding, stage/publication/status/outcome and consuming custody. This increment adds only storage-family admission for the existing Linux Apply.
 
 A distinctly named Linux-only credential-file entry reuses complete existing Preferences admission under original exclusive custody. Ready ordinary notebook4 requires exact owned identity/current/readiness/capabilities, definite absent/empty selected+retained history, complete local recovered manifests and validated absent/LocalOnly mode. Legacy1/2/3 and supported mode admission remains. Replace the now unused generic wrapper; do not widen shared Deny or remaining maintenance callers.
 
