@@ -20,8 +20,8 @@ The two writers SHALL retain current raw-declaration target semantics, exact ori
 
 #### Scenario: Successful config-only publication
 - **WHEN** the original target is published and exactly read back under notebook custody
-- **THEN** only the requested product/research declarations change and the existing verified/restart-required report is returned without service/runtime activation.
+- **THEN** only the requested product/research declarations change and the existing verified report (product restart-required; research runtime unverified) is returned without service/runtime activation.
 
 #### Scenario: Ambiguous publication or output failure
-- **WHEN** publication/readback may have happened or output accepts a prefix/flush fails
+- **WHEN** publication/readback may have happened or output immediately fails or accepts a prefix before failure
 - **THEN** the original uncertain outcome and ownership/error rules remain, no automatic retry/replacement report occurs and later Status only observes the original desired file.
