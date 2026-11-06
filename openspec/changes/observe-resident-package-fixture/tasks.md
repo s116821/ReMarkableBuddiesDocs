@@ -1,10 +1,10 @@
 ## Intake and scope
-- [x] Read current issue/chronology, actual fixture and existing source/contract.
-- [x] Confirm independent delivered observer scope and separate recovery ownership.
+- [x] Review published requirements, the actual fixture and existing source/contract.
+- [x] Confirm the delivered observer scope and unchanged recovery/service interfaces.
 - [x] Define proposal/design/requirements/controls before implementation.
 
 ## Implementation and verification
-- [ ] Obtain the requested exact Native/Root precode review before Manager implementation.
+- [ ] Obtain independent review of the finite handoff/metadata contract before implementation.
 - [ ] Extend existing admission with explicit external schema2 manifest and legacy preservation.
 - [ ] Add finite resident/ordinary SDK-bound metadata, path/mode/dependency/index correspondence.
 - [ ] Reuse existing bounded public-only tool operation and controlled negatives without new installer authority.
@@ -13,7 +13,7 @@
 - [ ] Sync canonical requirements and archive completed source scope in this same paired delivery.
 
 ## Separate operation
-- [ ] Obtain separate actual current-fixture public-only observation selection and record real results/cleanup, or leave operation explicitly unqualified.
+- [ ] Deliberately opt into current-fixture public-only observation and record real results/cleanup, or leave that operation explicitly unqualified.
 
-No actual operation is selected by source/spec completion. Production/device gates
-and Root-owned current deliveries remain open. Stop/checkpoint at99% usage.
+Source/spec completion does not execute the opt-in observation or establish
+production trust, installation or device qualification.

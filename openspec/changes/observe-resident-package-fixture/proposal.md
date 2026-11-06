@@ -10,12 +10,12 @@ correctly refuses this new shape; producer-side observation is not Manager proof
 ## What changes
 Extend only the existing opt-in public-key-only real_fixture.py observer, focused
 controls and guide. Preserve the historical default/schema/caps unchanged. Add a
-separately selected resident fixture handoff with external manifest pin and finite
+explicit resident fixture handoff with external manifest pin and finite
 reviewed metadata/layout constraints. Keep update/install authority false and all
-Root-owned recovery/Stop drafts and normal Manager UI/ZIP behavior unchanged.
+recovery/service-stop interfaces and normal Manager UI/ZIP behavior unchanged.
 
 ## Capabilities
 - Modified: manager-signed-fixture-verification, for the explicit current fixture.
 
-Actual tool execution and consumer observation remain separately selected; this
+Actual tool execution and consumer observation remain deliberate opt-in steps; this
 source change neither creates a production trust policy nor reruns packaging.

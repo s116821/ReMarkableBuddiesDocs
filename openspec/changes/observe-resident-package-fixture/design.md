@@ -1,11 +1,11 @@
 # Finite current fixture extension
 
-## Reuse and ownership
+## Reuse and scope
 Use the existing observer/admission/metadata functions and test module; no second
 verifier, compiler, release engine or renderer/host service. Actual source base is
 Manager2c61579270d0478c74d6e6f76390b962f87bee9f; central Docsf0bad1743cf03c851e8af316804068709b4221b9 after a normal merge
 of the delivered package contract. The existing
-recovery draft has no tests/vellum consumer overlap and stays with its owner.
+recovery interfaces have no tests/vellum consumer overlap and remain unchanged.
 Historical canonical contract and archived original outcomes remain intact.
 
 ## Handoff and immutable originals
@@ -15,7 +15,7 @@ never infer the profile from adjacent files. Independently supplied manifestSHA
 and generation DER-SPKI remain required. The new original root contains exactly
 two APKs, index, fixture.pub and completed receipt; no manifest or derived bytes
 are written there. External manifest is regular/ancestor-safe, bounded16KiB and
-rehashed across the operation. No APK copies are needed before an actual selected
+rehashed across the operation. No APK copies are needed before an explicit opt-in
 negative-control operation. Input receipt/artifact bytes stay independently pinned.
 
 The schema2 manifest has exactly schema/purpose/profile/eligibility,
@@ -75,7 +75,7 @@ verify/adbdump calls, original/root snapshots and timeout cleanup. Keep wrong-ke
 missing-key, changed signed control/index/payload controls, recognized signature/
 integrity failures and no crash/timeout/usage-error-as-success. No mkpkg/mkndx,
 key generation, payload extraction/execution, package-manager mutation or tablet.
-Actual-tool observation requires separate selection; pure owned schema/metadata/
+Actual-tool observation requires deliberate opt-in execution; pure schema/metadata/
 filesystem controls do not claim cryptographic/native success.
 
 ## Limits
@@ -83,13 +83,13 @@ No production signer/trust/publication, stable asset eligibility, GUI downloads,
 package installation, runtime profile enablement, service/Stop/recovery change,
 SDK/native support or actual source-switching qualification. Legacy output stays
 unchanged; new report is explicitly current fixture/public-key-only and installation-
-ineligible. One retained final fixture remains owned by the package lane until
-consumer handoff; no new large output tree or duplicate signing trial.
+ineligible. Use one unchanged public artifact set for consumer qualification; avoid redundant
+large copies and duplicate signing trials.
 
 ## Review and operation boundaries
-Root requested return of this exact precode for Native/Root review before source
-implementation. No Manager source changes or actual tool invocation have occurred.
-The separately selected actual run must budget the existing controlled-copy stage
+Independent review should check the finite handoff, metadata and qualification
+contract before implementation. Current source checks remain required.
+A deliberate opt-in actual run must budget the existing controlled-copy stage
 for the larger bounded inputs, preserve one original set and current process/
 container cleanup, and retain its own result. It is not an automatic repeat of
 the producer's R3 signing/generation or of the original historical matrix.
