@@ -1,5 +1,7 @@
 # Design
 
+Exact frames/status/bounds and qualification mapping are in [contract.md](contract.md).
+
 ## Source and ownership
 Pinned delivered source is Buddy4a75316e358a471a08ba28c0c9408d1c6eacff3f; Docs base9c64e47852f9cf8c4a9076a73f8bef5444a33873. Main owns the paired source/spec work, Root independent review/integration. Manager notebook restore, REM-43/39 and Native REM-61 ownership remain separate. No implementation precedes this contract.
 
