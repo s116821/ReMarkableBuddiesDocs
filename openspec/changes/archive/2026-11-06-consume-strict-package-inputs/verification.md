@@ -1,18 +1,42 @@
 # Bounded source verification
 
-## Reopened precode finding
+## Historical/current correction
 
 This change is reopened within the same paired Buddy PR132/Docs PR144 after
 read-only preflight found exactly a historical SDK `.git` ctime difference. The
-initial source/tests below remain evidence for their exact revision, not passing
-evidence for the proposed correction. No package invocation occurred. Updated
-design/tasks/delta are precode only; the canonical spec remains the initial
-as-built contract until corrected implementation is selected and verified.
+initial source/tests below remain evidence for their exact revision. No package
+invocation occurred. The correction was specified in reopened active artifacts
+before implementation, then verified, synced and archived in this same delivery.
 
-Keep the SDK source observer unchanged. Proposed classification preserves both
-complete proofs and explicit ctime difference, while current-operation proof
-equality stays strict. Positive and refusal controls in design/tasks remain
-unfinished; do not rearchive or claim this finding resolved from precode alone.
+The SDK source observer, strict verifier, builder/generator/observer, tool/image/
+bundle pins and owned isolation are byte-identical to the initial implementation.
+Only consumer logic, host controls and operator documentation changed. The new
+classification preserves both complete proofs and explicit ctime difference,
+while typed current-operation proof equality stays strict. Structured path
+components prevent a dictionary key from impersonating the classified leaf.
+
+The APK host suite passes 67 tests with 3 existing explicit-container skips
+(64 executed), including 11 focused consumer controls with parameterized cases.
+An actual consumer fixture with only historical Git ctime changed reaches both
+mocked phases, retains full old/current proof and bound correspondence evidence,
+preserves every original byte and calls no build function. Equal proofs remain
+accepted with tuple/list normalization. Every other location/source/tag/remote/
+manifest/raw/conversion identity, unknown/missing field, type, list/shape and
+second-difference case refuses before generation. Cross-target integer/boolean/
+float alias controls refuse. Git ctime changes at each of four later boundaries
+and changed private correspondence evidence refuse without completion.
+
+A separate actual read-only source preflight observes the original retained SDK
+proof and a fresh proof through the unchanged observer. The classifier reports
+only the previously recorded Git ctime leaf as
+`historical-git-ctime-only-revalidated`; the current observation remains internally
+stable. This is source/classification evidence, not package, signing or device
+execution. The first failed preflight remains preserved unchanged.
+
+The corrected canonical spec is synced within this delivery. Final strict spec,
+Docs and preservation checks are retained with the source handoff. Hosted full
+checks and independent review remain delivery gates; actual package/signing and
+device operations remain separately selected. No target build was repeated.
 
 ## Initial source evidence
 

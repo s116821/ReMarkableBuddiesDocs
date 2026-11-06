@@ -31,6 +31,10 @@ identity, manifest, local tag object/peel, remote observations, conversion and
 unknown-field changes all refuse. No externally supplied exception record or
 general transition framework is introduced.
 
+The implementation uses structured key/index components to identify the sole
+classified leaf. Human-readable bracketed JSON paths are evidence only; an extra
+dictionary key resembling a dotted/indexed path cannot alias that location.
+
 Retain a private `sdk-proof-correspondence.json` in the packaging work directory:
 complete normalized historical and admitted-current proofs, classification,
 explicit old/current values at every differing field, and
