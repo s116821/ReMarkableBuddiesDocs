@@ -76,7 +76,12 @@ Identity is verified before/after every phase using current shared wired callbac
 Private decoded requests cap262144bytes; compact embedded artifact cap131072bytes;
 import producer report cap16384bytes; export producer report cap131072bytes,
 including newline framing. Use the producer's complete duplicate-free report
-validator, not its process exit code alone. Base64 private request envelopes cap
+validator, not its process exit code alone. The SSH collector must receive actual
+completion (empty reads) from both stdout and stderr before accepting an available
+exit status. Temporarily empty buffers are not EOF. Drain both streams fairly
+under the original aggregate deadline and unchanged caps; late trailing output
+invalidates the whole frame, late diagnostics remain private, and missing EOF
+times out. Possible Apply dispatch followed by this timeout remains unknown. Base64 private request envelopes cap
 360448bytes; export response envelopes cap196608bytes, import envelopes24576bytes.
 Enforce bounds as streaming input/output arrives, kill only the owned child on
 excess/deadline, ignore raw stderr and do not log private stdin/stdout/errors.

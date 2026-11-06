@@ -7,7 +7,9 @@ before source edits. Manager starts from delivered
 3f14a0d268ef0b6824756ff503f213d40b41f978. Docs normally reconciles delivered
 producer main53cbfe5be4b328a58781a6d2772b5172863b8c3b through merge
 a07d8b51843f328b7ef7928658e4a0b5902b4d24; its canonical import specification
-and archive are preserved without a duplicate importer. Final Manager source head is64f45ffffcea81239f94d240672ef9d19e3ba0bf.
+and archive are preserved without a duplicate importer. Initial Manager handoff source head is64f45ffffcea81239f94d240672ef9d19e3ba0bf;
+review correction successor is a9bb5466fbea508ecd8a3beccb91ff1e3c4a956b.
+The full exact revision is recorded in the paired delivery comment.
 Exact paired Docs revision is recorded in the delivery comments.
 
 The implementation is one shared file UI/controller, a closed private/public
@@ -115,7 +117,7 @@ were678.80kB,657.86kB and686.02kB; framework costs did not meet that bound. The 
 implementation keeps the existing simple pattern and explicitly changes only the
 initial error allowance650→675kB (+25kB,3.85%), leaving400kB warning and all protocol/
 privacy/custody bounds unchanged. Final initial assets are670.17kB,115.44kB estimated
-transfer. This measured allowance requires independent final review. The failed
+transfer. Root independently accepted this measured allowance during review. The failed
 budget diagnostics are retained in the author task/paired review record rather
 than misreported as passes; there are no abandoned lazy UI/runtime files in source.
 
@@ -162,3 +164,39 @@ source archive does not claim those checks or production publication passed.
 Export is a browser/OS handoff, not proof of durable save/private permissions.
 Saved Config readback is not running adoption. Wider installer, credential,
 cloud/group/archive/native/tablet and final1.0 obligations remain outside scope.
+
+## Review correction: receive completion, host allowlist and plain copy
+
+Independent review reproduced premature acceptance when exit status arrived before
+remote output completion. Five deterministic schedule controls first failed against
+the initial collector (9 tests, 5 failures); the corrected collector passes all9.
+It reads stdout and stderr nonblocking through actual empty receive results, with
+fair bounded chunks and the unchanged aggregate deadline/output/diagnostic caps.
+Delayed second-frame stdout refuses the whole result; late private stderr drains
+without publication; oversized late diagnostics refuse; absent EOF times out;
+valid completion preserves the exact original frame. Possible Apply loss retains
+the existing original-only unknown outcome and never retries.
+
+The hosted Ubuntu wired-host failure was a stale exact expected capability list;
+portableConfiguration was added without weakening exact-key checking. Inspection
+found no other maintained whole-host key inventory. UI copy now explains review,
+saved-file observation versus running Buddy, and an import that did not start in
+plain language, with exact state assertions and unchanged private outcomes.
+
+Correction checks on Linux: ESLint PASS; all25 focused Node controls PASS; all9
+Python transport controls PASS; development and production builds PASS; package
+PASS; real wired-host source and packaged checks PASS; real portable file UI
+source and packaged checks PASS (browser plus sandboxed Electron each). All8
+390/1200px screenshots were refreshed; production browser390 and packaged
+Electron1200 visually inspected, with readable copy and no overflow/private text.
+Final initial assets670.14kB/115.55kB estimated transfer, within accepted675kB
+allowance; unchanged400kB warning remains. Docs12 controls and strict OpenSpec123
+items PASS. No tablet/provider operation or hosted Windows success is claimed.
+
+The correction packet retains original failing/passing logs, screenshots, tested
+source hashes and normal successor bundles against the published initial pair.
+Its manifest/delivery comment identifies exact successor revisions. Earlier
+execution evidence and producer corpus remain unchanged. Task-owned node_modules,
+Angular cache, browser builds and rebuilt Linux package remain active pending
+Root review of this correction; review that retention after integration. No
+shared or held inputs were cleaned by this correction.

@@ -27,6 +27,9 @@ conditional publication; no direct Config writer or alternate sync engine is add
 - **THEN** no Apply is dispatched and the UI reports the limited result without fallback or initialization.
 
 ### Requirement: Private file transport and honest export handoff
+The consumer SHALL require actual stdout and stderr receive completion before
+accepting SSH exit status, draining both streams under the original deadline and
+size bounds; missing completion SHALL time out without retrying possible Apply.
 The consumer SHALL validate complete bounded public/private frames and original
 phase correspondence, keeping artifact/text/intent/hashes out of reduced results
 except the explicitly requested export-file payload. It SHALL use fixed guarded
