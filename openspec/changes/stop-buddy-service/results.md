@@ -439,3 +439,49 @@ enrollment or whole-feature completion. Command ceilings are not tablet timing
 results. Independent exact-pair review and current hosted/platform/package gates
 remain required. The change and actual lifecycle/enablement tasks remain active;
 no broader Stop canonical sync/archive is claimed.
+
+## November 6 SSH receive-completion correction
+
+Manager `1ac80af05d3af54822ee40bd352cb2308fea61bd` repairs the collector at
+`f89834f90e81baaccc77d6ff8e04bfb0d52b00a8`. Exit-status availability plus empty
+current buffers was insufficient: delayed bytes and missing EOF could be accepted
+as complete. The collector now uses bounded nonblocking reads, drains both streams
+fairly through actual empty reads, and requires available exit status. Original
+channel/collection/deadline and stdout/stderr caps, command grammar, mutable-buffer
+clearing/channel close and possible-submission/unknown behavior remain unchanged.
+The existing reviewed portable collector supplied the pattern; no framework or
+dependency was introduced. Both production Stop registries remain empty.
+
+Eight deterministic scheduling controls ran against the OLD product source
+before repair. Seven test methods failed, including two missing-EOF subcases
+(eight reported assertion failures); the existing fair-drain bound already
+passed. Actual results demonstrated truncated delayed stdout, hidden delayed
+stderr, missed late output caps, unobserved EOF, and an actual main/execute Stop
+result incorrectly reported accepted despite missing stderr EOF. The first log
+also retains a test-harness AttributeError caused by inspecting assertRaises
+after a suppressed subtest failure. Corrected only the test nesting and repeated
+against the unchanged old collector; the second failure log has no harness error.
+
+Final Windows focused maintained service_stop run on the repaired source:
+41 tests, 40 passed and one existing Linux-only POSIX GNU-stat fixture skipped,
+3.387 seconds. All eight new controls pass. The real main/execute reducer now
+reports timeout/unknown after one synthetic submitted Stop with missing EOF,
+closes the channel, and performs no replacement dispatch. Existing typed-group,
+candidate-loop, cross-language digest, private DTO and zero-channel production
+refusal controls remain passing. These are deterministic/owned injected-channel
+observations, not SSH/tablet or Linux execution evidence.
+
+Small retained logs and SHA256 values:
+
+- `eof-old-source.log`: 7205 bytes,
+  `ac9306e4215abb315a99fa2907e75731f0c51d11fa61c6abfd3b7405bc8120e7`.
+- `eof-old-source-final.log`: 7105 bytes,
+  `608da5371639175d6b566c74ce4496c456de3b22067f0b3a031c7c7ac6357027`.
+- `service-stop-final.log`: 6296 bytes,
+  `b09566e1e7bc2f45453822150d6a6346d2085dc449ee5dce8239c9501fcf5b33`.
+
+The prior hosted Linux/Windows/package pass remains attributed to f89834f, not
+this successor. Independent exact-successor review/current CI and actual fresh
+operator sampling, shutdown, recovery and tuple enrollment remain open. This
+repair neither performs nor qualifies a tablet action and does not archive the
+unfinished Stop change.

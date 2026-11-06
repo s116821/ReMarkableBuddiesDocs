@@ -62,3 +62,9 @@
 - [x] Migrate closed Python/JS private facts, all required service predicates and canonical digest fixtures; never insert fabricated empty strings.
 - [x] Verify meaningful changed producer/consumer, privacy, drift, deadline and candidate-loop failure controls with production gates empty.
 - [ ] Obtain independent exact-source/spec review and required current checks; actual Stop/recovery/tuple qualification and final lifecycle remain open.
+
+## 9. SSH receive completion repair
+- [x] Reproduce exit-status-before-delayed-output and missing-EOF behavior against the prior collector without device I/O.
+- [x] Drain both streams through actual receive EOF plus available exit status within unchanged deadlines/caps; preserve close/clear and submitted-unknown semantics.
+- [x] Verify delayed stdout/stderr, late caps, missing EOF, fair draining and complete EOF through focused maintained controls; retain original failures and exact source attribution.
+- [ ] Obtain independent exact-successor review and current hosted checks; actual tablet observation/shutdown/recovery and production tuple enrollment remain separate.

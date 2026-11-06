@@ -98,6 +98,14 @@ quiescence grant. Current readback is separate. All lost/nonzero/malformed/late/
 incomplete/cancelled post-submission outcomes remain unknown. No automatic retry.
 A later inactive read cannot settle it or grant another stop for the connection.
 
+SSH exit-status availability and temporarily empty receive buffers do not prove
+complete output. The collector drains stdout and stderr fairly with bounded
+nonblocking reads until BOTH streams return actual EOF and exit status is
+available, under the unchanged remaining deadline and per-stream caps. Missing
+EOF or late excess bytes refuses; a possibly submitted Stop remains unknown.
+Every exit closes the owned channel and clears mutable drain buffers. This is
+completion evidence, not proof of remote job termination or native restoration.
+
 Ready lasts120s; at most32invocation/fence entries per original, including early
 cancel tombstones. Cancel targets only the captured original local wait. Stale
 cancel/timer/finally cannot revoke another owner; no delayed global cancel. Remote
