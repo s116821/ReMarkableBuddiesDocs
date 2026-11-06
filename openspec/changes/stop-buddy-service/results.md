@@ -373,3 +373,69 @@ The initial merge duplicated unused App helpers and exceeded the unchanged 650 k
 Retained source-control evidence hashes: unit log `52a0d58ac805f623df55461ff368707fc7727c5591f693a5f2e23c4c2619f733`; browser/Electron Stop log `b2180faa2fa47f75e006bd068f8d35487d77e5b941be8abff7de93b1e5c592f6`; notebook host log `75f6f7f5b9ae08f54a906c6193a7b3a29aabe520e5648aa0196147a58d6a8f9e`; production build log `b65dc87c535dc1cc982787f681e3e5edaec27a9f9c0231360e3b504600adec41`. Generated build identity predates the merge commit and is not claimed as a retained final-head package.
 
 The same source was normally merged into recovery [PR57](https://github.com/s116821/ReMarkableBuddiesManager/pull/57) at `9745838c08dc8451fe063854e8a9e73f2531e37b`. Its nine recovery-specific files remain byte-identical to the preceding `d1b1415`; the App, host factories and new restore/Stop test composition are identical to the qualified Stop source. No duplicate dependency tree or build was created for that unchanged composition. Current hosted CI and eventual native/profile qualification remain separate gates. This active Stop change is not archived or enabled by the resync. Current delivered Docs main `93907cede7417638db7d4ce10f50c790894bcb13` is preserved in the normal merge.
+
+## November 6 typed hook source integration
+
+The completed ordinary typed metadata observation remains historical: attempt
+929dd30f-f719-4e42-ae56-4c1d1fff1dca observed both hooks positively typed empty,
+receipt SHA256657d1d6b08478ce15090f4324ac4063ec4606259a9f5329389e716260303aef0.
+It was consumed and its private runtime retired. No repeated device observation
+or new execution packet was used for this integration. Older failures and their
+exact attribution remain unchanged.
+
+Implementation: Manager `f89834f90e81baaccc77d6ff8e04bfb0d52b00a8`. Production/test
+code is `bb892bdc8ce8f44a9699083547ee75655f38122f`; its successor changes only the
+guide heading. Normal actual-main reconciliation preceded source work
+(Manager3f14a0d, Docs1b26d39), and the active typed contract preceded product edits.
+
+The sampler now produces explicit typed hooks while keeping41textual properties
+strict. Every required buddy/helper/stock/companion slot needs both typed-empty
+predicates. One original-operation group brackets bus/owner/reported PID1/loaded
+objects/client identity and resets on every exit. Typed-query uncertainty escapes
+the profile loop. Private Python/JS digests include only reduced hook evidence.
+Original budgets/frame caps, fixed Stop command and empty production gates remain.
+
+Actual Windows source validation:
+
+- Maintained Python suite:33tests,32passed/1Linux-only POSIX GNU-stat fixture
+  skipped,3.091s. Nine new integration tests cover fresh per-slot reads and exact
+  18/40command ceilings, all required hook predicates, malformed later entries,
+  stream/status refusal, context/client drift, shared deadline, actual candidate
+  loop termination, failed-group reset, injection refusal and strict other text.
+  Existing Python-to-JavaScript collector/digest checks pass.
+- Six focused JavaScript files:45passed/0failed. Candidate/closed DTO/digest/frame
+  controls, historical outcomes, cancellation, supervised child and notebook
+  ownership remain passing.
+- Actual browser-helper and Electron IPC/preload/shared UI fixture run passes:
+  21peers/42Busy directions per factory,18predecessor preview invalidations,
+  28Stop peer/view clears, notebook reciprocal/unknown-history controls and
+  shared-deadline UI checks. Production profiles remain0. Synthetic admitted
+  facts are not physical USB or native Stop evidence.
+- Targeted four-file JavaScript lint exits0 with no output. Named strict OpenSpec
+  and documentation guidance36/preserved-source126 checks pass. Whitespace passes.
+
+The first Python run failed because the new adapter expected a top-level bytes
+member instead of metadata[-1].bytes returned by the unchanged reviewed identity
+parser. The corrected adapter passed32tests; final33tests additionally cover strict
+remaining-text refusal. The original failure log remains failed and preserved.
+No parser/guard was relaxed. Existing Node module-type warnings are not failures.
+An initial results-assembly script expected an empty lint.log that Tee-Object did
+not create; the actual completed zero-exit/no-output tool result is recorded
+in lint-result.json without rerunning lint or inventing a log.
+
+Retained small logs and exact hashes:
+- python-r1.log: 11123 bytes, SHA256 `fc9f95fd17c8d796cd0524936b42f85ed28fa04f6c5e5cc25a29af2840e414cc`.
+- python-r2.log: 148 bytes, SHA256 `8c26ba9155ee8dee4043c5e0999b70e9c3e4c69b56b05f2379fb74976c5627fe`.
+- python-final.log: 149 bytes, SHA256 `e827fbd7dd6f572d7d08cbfc8f32957c6f41131f99b1c3f2e437f13a94181f16`.
+- node-r1.log: 5309 bytes, SHA256 `439bfd1a61da82a1fd077ac73ee7f428037cb5bd9b157cf0c7b8d71abe688e83`.
+- hosts-r1.log: 2292 bytes, SHA256 `455d619b26ad32cbe3bf47865ef673551cacbbfd9febe6984e3578b1a5f88bea`.
+- lint-result.json: 370 bytes, SHA256 `68f7b28b20d87f5848452732876b9df0cd79676154c8802cd6d91b8824b90731`.
+- spec-final.log: 38 bytes, SHA256 `d307a346f7d75f4739ad1050d3e1aea4462d233e7dcad72d5575f928bff51229`.
+- docs-final.log: 77 bytes, SHA256 `ed5ede60f1c94250c4d424d4c099476a02464f5f7b2c5581f99171994e9a2fef`.
+
+Source/owned-host evidence only: no Linux execution pass, physical tablet/client
+probe, real credential read, actual Stop/recovery qualification, production tuple
+enrollment or whole-feature completion. Command ceilings are not tablet timing
+results. Independent exact-pair review and current hosted/platform/package gates
+remain required. The change and actual lifecycle/enablement tasks remain active;
+no broader Stop canonical sync/archive is claimed.
