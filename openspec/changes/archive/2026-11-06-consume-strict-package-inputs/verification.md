@@ -136,3 +136,52 @@ zero capabilities and readonly views, without executing any APK or signing tool.
 R1 and R2 remain failed/spent. Actual packaging, signatures, production trust and
 device qualification remain separately selected future operations. Root owns
 independent source review/current hosted CI/publication and any new invocation.
+
+## Accepted R3 host-only package outcome
+
+On 2026-11-06, the separately selected third attempt completed exactly once in
+44.699910 seconds end to end, with exit0 from the generation and separate public-
+key-only observation phases and an exclusive completion receipt. This later
+actual outcome supersedes the prospective packaging wording above only for this
+finite test-key host qualification. R1 and R2 remain failed/spent; their original
+evidence and limitations are preserved, including the unknown first inner R1
+cause and R2's initial tool-read permission failure. Neither was replayed.
+
+The packaging executor was `a521af6762a5003cf3fe0cff073fa106737ebdb5`. It consumed
+unchanged successful frozen Buddy `v0.65.0` inputs from source/producer
+`4a75316e358a471a08ba28c0c9408d1c6eacff3f`, with SDK `v0.2.0` source
+`a0c6480be6785480c2e0da76a3c06697a18efae4`; no target rebuild occurred. Artifact
+version `0.65.0-r0` derives from the accepted tag and package revision.
+
+| Artifact | Bytes | SHA256 |
+| --- | ---: | --- |
+| remarkable-buddies-0.65.0-r0.armv7.apk | 35582576 | 89df13a37c9ab524ab7f69df36649611207916be937f3ca1654ce9a982562cd8 |
+| remarkable-buddies-0.65.0-r0.aarch64.apk | 36231072 | 30aa6b426b540c5bc57161f424985fd608022bf42d754eed084aeabad327f720 |
+| buddy-index.adb | 2184 | 85c23bbb6b5f377b6f41b81818c2ed9332a9060233ae78b197e0e94d7041f1b5 |
+| fixture.pub | 451 | b2d9c030e40834311a10c3ef811723ca6bb32a20f851e20a3967b602beeaf666 |
+
+Completion receipt SHA256:
+`82e21c1b0fb1369da6026892245270135566489567a280138b767ab2b6d125f8`.
+Final exact artifact set, sizes and hashes matched the receipt and generated
+originals. The separate observer verified signatures, root/root payload inventory
+and regenerated index correspondence using the separately supplied public-key
+pin; its recorded private-key availability was false and generation recorded no
+private-key export. Both bounded phase stderr streams were empty.
+
+Actual fixed tool-file binds and private work/artifact permissions matched the
+corrected contract. Complete historical/current SDK proof remained bound with
+the admitted Git-directory-ctime-only difference and no continuous-custody claim.
+Both owned containers completed their recorded lifecycle and were absent after
+cleanup; independent read-only checks also found all owned processes absent.
+Subsequent hygiene retained all raw proof/control/diagnostic evidence and one
+final artifact/receipt set, retiring only hash-identical redundant staging copies.
+
+Eligibility remains `not-qualified` for production/device use. This demonstrates
+actual test-key host packaging and independent signature/payload observation; it
+does not establish production signer enrollment/trust, public release publishing,
+Manager installation/update, tablet compatibility, activation/rollback or native
+qualification. Those gates and required source CI/review remain separate.
+
+Source basis: actual retained execution, completion/control/observer receipts,
+independent artifact hashes and owned lifecycle/cleanup correspondence; no new
+operation was run to write this evidence closeout.
