@@ -55,3 +55,10 @@
 - [x] Cover Stop and both notebook archive operations with shared host exclusion and reciprocal App preview/Busy boundaries; preserve empty native profiles.
 - [x] Verify the changed actual host/UI controls and focused tests, retain failures, and preserve the unchanged production size budget.
 - [ ] Review final hosted/package results and the separately required native qualification before enabling or delivering Stop.
+
+## 8. Typed hook producer and consumer
+- [x] Define the explicit typed hook contract, operation-scoped group, full-slot predicate, original bounds and finite source footprint before implementation.
+- [x] Integrate the reviewed decoder and fixed typed query group; preserve strict remaining text and reset group state on every exit.
+- [x] Migrate closed Python/JS private facts, all required service predicates and canonical digest fixtures; never insert fabricated empty strings.
+- [x] Verify meaningful changed producer/consumer, privacy, drift, deadline and candidate-loop failure controls with production gates empty.
+- [ ] Obtain independent exact-source/spec review and required current checks; actual Stop/recovery/tuple qualification and final lifecycle remain open.

@@ -54,3 +54,48 @@ The Stop controls SHALL share the existing maintenance owner with notebook archi
 #### Scenario: Notebook and Stop contend
 - **WHEN** either lane owns an invocation or replaces the other lane's idle review
 - **THEN** both host factories and the actual shared UI preserve Busy exclusion, exact draft clearing and current owner/epoch cancellation without granting native Stop qualification.
+
+### Requirement: Positive typed Stop-hook evidence
+
+The fixed-service sampler SHALL obtain ExecStop and ExecStopPost through explicit
+bounded Properties.Get calls using the installed standard client, an admitted
+systemd unique owner and the verified loaded object for an already-allowed unit.
+It SHALL use the normal fixed system-bus route and explicit reply, no-auto-start,
+noninteractive-authorization and method-timeout flags. Ordinary OS socket
+activation and ephemeral clients may occur; no zero-infrastructure-effects or
+installed-source-attestation guarantee is implied.
+
+The private service DTO SHALL separate the remaining strict textual fields from
+two closed typed hook observations. Only two complete positively typed empty
+arrays with valid currentness brackets SHALL satisfy the empty-hook predicate.
+Omitted text, missing observations, nonempty arrays, malformed or incomplete
+replies, drift, failed status or bounds SHALL refuse without substituting empty
+strings or retrying through another candidate profile. Every command in a
+nonempty array SHALL be validated before classification. Raw hook commands,
+arguments, errors, private bus identifiers and response hashes SHALL NOT enter
+retained facts or logs.
+
+Every new read SHALL share the original product deadline, caps and observation
+scope. Repeated samples SHALL read hooks afresh, and matching samples SHALL NOT
+be treated as atomic configuration/invocation custody. The private sample digest
+SHALL include reduced typed evidence, with matching Python/JavaScript encoding.
+Public requests/results, the fixed Stop command, pre-submission qualification and
+post-submission uncertainty semantics SHALL remain unchanged. Both production
+qualification registries SHALL remain empty until separate target, lifecycle and
+recovery qualification; historical metadata alone SHALL NOT enable Stop.
+
+#### Scenario: Text omission and positively typed emptiness
+- **WHEN** the remaining textual projection is complete and both current hook replies are complete typed empty arrays under matching original context
+- **THEN** only the private hook evidence predicate is satisfied; no textual value is invented and no production tuple or Stop authority is created.
+
+#### Scenario: Missing, nonempty or unverified hook observation
+- **WHEN** either hook is absent, nonempty, malformed, incomplete, stale or outside its bounds, including a malformed later array member
+- **THEN** admission refuses without raw value disclosure, default emptiness, alternate route, profile-loop retry or Stop submission.
+
+#### Scenario: Currentness or deadline changes
+- **WHEN** bus, owner, reported PID1, loaded unit, boot, client identity, repeated sample or original deadline no longer matches
+- **THEN** the original typed query group stops and cannot be resumed or reused to authorize another operation.
+
+#### Scenario: Complete typed evidence without shutdown qualification
+- **WHEN** source fixtures or an actual metadata observation satisfy the typed hook predicate but production shutdown qualification is absent
+- **THEN** Stop remains disabled and actual native cancellation/recovery acceptance remains unfinished.

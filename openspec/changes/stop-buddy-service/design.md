@@ -97,3 +97,10 @@ or provider. These can exercise unavailable profiles, queued/lost requests,
 changed invocation, unsafe unit policy and late output. Final actual host/browser/
 Electron/package/platform checks remain required. Native stop safety and unit
 package compatibility are owner-supplied dependencies, not waived by those tests.
+
+## Typed hook integration
+Reuse the reviewed pure decoder and the existing injected bounded runner. Keep
+textual parsing strict for the other41 properties; use the separate typed hooks
+DTO defined in contract.md for the two command-array properties. One group spans
+the existing repeated captures and is reset on failure. No new executable,
+transport framework, public protocol or production tuple is introduced.

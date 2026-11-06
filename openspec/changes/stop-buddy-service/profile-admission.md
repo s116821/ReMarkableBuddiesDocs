@@ -171,14 +171,15 @@ acknowledgment may report request-accepted; every possibly submitted failure is
 unknown. review/inspect must be not-submitted. There is no safe_to_stop, admitted,
 restored, mode-derived grant, arbitrary diagnostic or claimed native owner field.
 
-Each nonnull buddy/helper/stock/companion is exactly `{state,policy,stop_extra}`. Keys are
-listed in private-property-keys.json: the existing11STATE and20POLICY names plus
-12Stop-specific properties, all required with no aliases/unknowns. Each property
-value is a bounded ASCII string, no controls/newline, at most4096bytes; each raw
+Each nonnull buddy/helper/stock/companion is exactly `{state,policy,stop_extra,hooks}`.
+private-property-keys.json lists11STATE,20POLICY and10textual Stop extras plus the
+two typed hooks defined in contract.md. Textual keys remain required without
+aliases/unknowns; each textual value is bounded ASCII without controls/newline,
+at most4096bytes. Each raw
 fixed show response at most32KiB. Integers retain canonical decimal strings:
 PID32bit, timestamp64bit; InvocationID empty only with cleared runtime, otherwise
 32lowerhex. Empty Job is required for review/stop. The four unit IDs are fixed;
-only read-only show may inspect helper/stock/companion. No caller unit or helper mutation.
+Only fixed read-only show and typed hook queries may inspect helper/stock/companion. No caller unit or helper mutation.
 The configured ExecStart declaration is pinned by exact unit bytes and no drop-ins;
 the executing command is checked through exact /proc PID executable and NUL-framed
 argv. No new parser guesses systemd's diagnostic ExecStart rendering or treats a
@@ -232,8 +233,18 @@ Raw service responses max32KiB each, discarded stderr8KiB; complete child envelo
 cap256KiB remains unchanged. Each serialized private service snapshot and vendor
 policy map is bounded16KiB; the two original32KiB records retain base64 overhead,
 with the complete envelope cap enforced independently. vendor-policy-keys.json
-is separate from the existing11/20/12 catalog.
+is separate from the existing11/20/10 textual catalog and two typed hooks.
 UTF8/BOM/duplicate/framing/selector/closed-shape/bounds validation
 precedes any reduction; refused facts and secrets are never echoed. Public cap
 remains8KiB. Ready/stop admission is computed independently by the host from the
 facts/table and accepted profile release gate, never from a child readiness flag.
+
+
+## Typed hook candidate predicate
+
+The authoritative private shape and collection contract is
+[contract.md, Typed hook evidence](contract.md#typed-hook-evidence). Every required
+service slot must have both positively typed empty hook observations. A well-formed
+nonempty or unknown observation is not eligible, including helper/stock/companion.
+Both production registries remain empty and actual shutdown/recovery qualification
+is unchanged. No formatted-text omission or earlier diagnostic creates a grant.

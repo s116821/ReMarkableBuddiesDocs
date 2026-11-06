@@ -62,8 +62,8 @@ fixed paths/source policies, mode evidence explicitly unavailable from this
 interface, the existing ownership checks and their non-transferable limits,
 all unsupported cases, and qualification required before enabling each profile.
 It also specifies every private request/result member and nested field. The
-machine-readable private-property-keys.json retains11STATE/20POLICY plus12Stop
-properties; vendor-policy-keys.json separately pins both27-key vendor projections.
+machine-readable private-property-keys.json retains11STATE/20POLICY plus10textual Stop
+properties and two typed hook observations; vendor-policy-keys.json separately pins both27-key vendor projections.
 All snapshots are closed. Three new nullable private fields (companion,
 companion_group,vendor_policy), twelve artifact slots and the nested record rules
 are specified in package-record-contract.md and included in the canonical digest.
@@ -117,3 +117,40 @@ Qualify browser/Electron, Linux/Windows and retained packages without confusing
 fixtures with a real service/native stop. Supported ordinary/native lifecycle and
 package/unit compatibility must have their own current-source and actual-target
 owner evidence. This assessment does not authorize those executions.
+
+## Typed hook evidence
+
+Each private service snapshot has exactly state, policy, stop_extra and hooks.
+The first three contain the strict textual catalog; ExecStop and ExecStopPost are
+removed from stop_extra and never inferred from missing text. hooks has exactly
+ExecStop and ExecStopPost. Each observation has exactly property, observation,
+type_verified and reason, with property equal to its map key. Only
+observed-empty/true/typed-empty for both hooks satisfies the candidate predicate
+for EVERY required service slot. Valid full nonempty arrays are
+observed-nonempty/true/typed-nonempty and refuse; unknown/false with a closed decoder
+reason also refuses. Old text-only, mixed, missing and extra forms refuse.
+
+Use fixed installed busctl Properties.Get calls, cleared normal system-bus
+environment, replies, no destination auto-start, no interactive authorization and
+2s method timeout. Possible OS socket activation and ephemeral clients are
+explicitly permitted effects. There is no installed-source-attestation or zero
+infrastructure-effects prerequisite. Only the four existing fixed units and their
+constant encoded loaded objects are allowed; no LoadUnit or alternate route.
+
+One typed group belongs to one original sampler bracket. It verifies current
+client identity, bus, systemd unique owner/reported PID1 before and after, and
+loaded unit objects before their first and after their last hook read. Every
+service observation reads both hooks afresh, including repeated captures. Reset
+the group on all exits. Typed-query uncertainty terminates the complete candidate
+loop, not a retry against another profile. Keep the remaining original deadline,
+stream/frame limits and repeated sample checks. Additional exec ceilings are18
+ordinary/40resident and at most58 for a two-candidate review; a count is no timing
+qualification. Inspect adds none. No raw hook content, private context identifiers
+or response hashes enter retained facts. The canonical Python/JS digest includes
+reduced hooks, never raw replies. Matched samples are time-point evidence, not
+atomic invocation/configuration custody.
+
+Decoder bounds remain32768stdout/8192stderr,32commands,256argv entries per command,
+4096UTF8 bytes per string and exact integer ranges. Validate every array member
+before classification. Both production registries remain empty. This contract
+does not qualify actual Stop, native effects or independent recovery.

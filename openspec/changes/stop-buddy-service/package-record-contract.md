@@ -157,7 +157,7 @@ readiness and causal restoration remain independent post-experiment evidence.
 
 Add exactly three nullable private raw fields:
 
-- companion: the existing `{state,policy,stop_extra}` snapshot shape, with its
+- companion: the closed `{state,policy,stop_extra,hooks}` private snapshot shape, with its
   fixed Id rm-sync.service. Each section retains its exact catalog. It is a
   current PID1 observation, distinct from the original nested snapshot.
 - companion_group: null or one source observation enum

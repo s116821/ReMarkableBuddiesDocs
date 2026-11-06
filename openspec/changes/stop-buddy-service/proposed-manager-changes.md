@@ -32,7 +32,7 @@ retains the accepted mapping, not a completed product qualification claim.
    flag and independent inspect behavior. No alternate qualification switch or
    new target arguments. Registry admission remains a later reviewed delivery.
 5. Add host/service-stop-vendor-policy.json with the reviewed source27-key vendor
-   maps from this change's vendor-policy-keys.json. Keep the existing11/20/12
+   maps from this change's vendor-policy-keys.json. Keep the11/20/10textual plus two typed-hook
    service-stop-properties.json catalog separate. Include the new fixed resource
    in any explicit host staging/package/resource manifest discovered in code;
    do not widen preload capabilities, public DTO, renderer, transport commands
