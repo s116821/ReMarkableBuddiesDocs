@@ -1,0 +1,11 @@
+# Unchanged personalization v1 contract
+
+Keep --personalization-operation inspect|set|disable|clear and explicit existing REMARKABLE_BUDDIES_CONFIG selection, existing clap exclusivity/startup ordering, input<=131072bytes and source<=1048576bytes. Inspect does not consume stdin or open roots. Mutation uses the existing closed contract_version1/expected_config_sha256 input; Set additionally enabled/text. Keep existing UTF8 text<=16384bytes, no NUL, no trimming/normalization; Disable retains text, Clear resets disabled/empty. No operation/intent/capability/version/schema field is added.
+
+Report remains the same8members: report_version, operation, status, disk_reload_verified, runtime_activation, config_sha256, personalization. The listed existing statuses and public Rust Report API stay unchanged. Success reloads the exact candidate and hash, mutation restart-required versus inspection unverified. Fixed Failed after possible publication is uncertain, never proof of rollback; no new historical outcome or automatic retry is invented. Text is private explicit editor output, not routine diagnostics.
+
+Only personalization's full value is replaced. All unrelated raw JSON values/declarations/omissions/nulls remain identical after decoding; formatting/member order/escape spelling need not. Full typed and duplicate-free validation applies before writing. A stale whole-file digest refuses through the existing conditional publisher. Identical requested values retain existing publisher semantics rather than gaining an undocumented idempotency receipt.
+
+Admission matrix: legacy1 unchanged; legacy2/3 still refused; notebook4 only the complete ordinary-ready preference gate from delivered130; all other formats/refusals unchanged. The decision and write/readback share the original ExistingCustody. No initialization/adoption/repair/staging cleanup, wider configuration/credential-file writer, provider, service, sync or native action.
+
+The original Store lease ends after publication/readback before Report output. Report::write_to(&self) remains write_all only, without a flush or ownership extension; snapshots/results are frozen historical data. A later current-file change is not disproved by an earlier successful disk reload. Runtime adoption remains unverified and separately owned.
