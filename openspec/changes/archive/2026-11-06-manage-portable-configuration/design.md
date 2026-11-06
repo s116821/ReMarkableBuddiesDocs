@@ -3,10 +3,13 @@
 ## Baselines and reuse
 Manager baseline is 3f14a0d268ef0b6824756ff503f213d40b41f978; Docs baseline is
 1b26d39cd72442c373ad68c112d167c88ed52870. Export uses the delivered
-[V1 contract](../archive/2026-11-06-export-portable-configuration/contract.md).
+[V1 contract](../2026-11-06-export-portable-configuration/contract.md).
 Import consumes the exact reviewed [producer precode](https://github.com/s116821/ReMarkableBuddiesDocs/blob/69f90bb771b4366bec72cbb78f4517ef6de16911/openspec/changes/import-portable-configuration/contract.md).
-The producer is being implemented separately; capability refusal remains valid
-until its exact implemented protocol and attributed reports are available.
+The producer implementation and original CLI corpus are separately attributed to
+Buddy e5bf3b8ad7f5681f3f90d7cfc097aee3cae53ca3 and Docs
+2087f0cec22ceb405275bda30dcb4271a9a26789. The corpus retains original Windows
+paths and dev.v0.73.0-dirty precommit build attribution; it is not a clean release
+or a Linux tablet run. Missing installed capability still refuses normally.
 
 Reuse MaintenanceIO, observer identity/generation, before-I/O peer invalidation,
 fixed Python callbacks, strict JSON helpers and sandboxed browser/Electron guards.
@@ -106,5 +109,10 @@ from fixtures or equal release numbers.
 No heavy build is needed for precode. Before implementation builds, check current
 free space and select a task-owned dependency/output directory; do not mutate
 another active checkout/cache. Retain useful failures and source/corpus hashes.
-Independent precode review precedes source edits. Implementation review, current
+Independent precode review accepted e0c3b838 before source edits. The final
+implementation keeps the simple existing presentation pattern. The initial error
+budget changes from650kB to675kB while its400kB warning remains; the measured
+production initial payload is approximately670kB/116kB estimated transfer. This
+explicit build-budget allowance requires final review with the code; it does not
+relax any protocol, privacy or custody bound. Implementation review, current
 CI and coordinated Manager/Docs merge/release follow full same-pair sync/archive.

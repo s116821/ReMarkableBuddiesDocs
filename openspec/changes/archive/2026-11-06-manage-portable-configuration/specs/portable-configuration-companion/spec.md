@@ -49,6 +49,10 @@ or release another operation or erase unrelated original uncertainty.
 - **WHEN** explicit Status returns exact original desired-file correspondence
 - **THEN** the UI may report current desired-file observation while preserving the distinction from historical publication and running behavior.
 
+#### Scenario: Verified reply invalidated before final publication
+- **WHEN** a private verified reply is invalidated before the last bridge generation/publication guard
+- **THEN** its original reservation remains unknown and recoverable rather than being evicted before the late reply is rejected.
+
 ### Requirement: Attributed guarded two-host qualification
 Acceptance SHALL separate exact implemented-producer captures from synthetic fault
 fixtures and exercise both guarded browser/Electron file/UI paths, cross-lane owner

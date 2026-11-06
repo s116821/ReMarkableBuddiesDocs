@@ -98,7 +98,7 @@ metadata. Preserve the original private response bytes and intent before dispatc
 Import Review performs fresh Inspect then Prepare with selected original artifact;
 Confirm supplies the original intent plus that same validated artifact. No-change
 ends at Prepare. Status supplies exactly `{intent:ORIGINAL_INTENT}`, no artifact,
-new base or Store. Producer absence/unsupported capability yields unsupported,
+new base or Store. Neither a delivered source revision nor equal component versions establishes installed capability. Only the complete recognized producer response admits the current invocation. Producer absence/unsupported capability yields unsupported,
 without fallback to direct Config editing or older preference writers. Only the
 backend admits legacy1 or ready ordinary notebook4 in absent/LocalOnly mode and
 owns all canonical/root separation, mutex, publication and write_all custody.
@@ -112,7 +112,12 @@ not-dispatched may clear that reference. Everything else after possible dispatch
 remains unknown, including malformed/mismatched output and late identity changes.
 No automatic Apply retry, condition refresh, rollback, second frame or replay.
 Original Status reports only desired-file-observed/unresolved for an exact valid
-response. It can retire local uncertainty when the target is currently observed,
+response. An unresolved observation followed by transport loss returns unknown,
+without reusing an old observation as a fresh result. Malformed JSON and cyclic
+bridge input yield only fixed errors, never parser excerpts in IPC diagnostics.
+A complete verified private reply reserves its original slot through the final
+bridge generation/publication guard; intervening invalidation preserves unknown
+rather than dropping the original before rejecting the late reply. It can retire local uncertainty when the target is currently observed,
 but does not change the recorded historical claim or imply who published it.
 
 Cancel targets only the exact lane/reference/token. Ready expires at120seconds.
