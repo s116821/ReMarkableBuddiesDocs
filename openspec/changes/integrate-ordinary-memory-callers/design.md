@@ -179,8 +179,17 @@ export authority; existing explicit joined commands keep their separate owner.
 
 Maintain the existing scripted and memory-disabled qualification unchanged. Extend
 its existing sequence with an explicit bounded synthetic-memory fixture; default
-absence is disabled. Seed at most two declared local facts through the existing
-Provider on each scratch Store, with one configured profile and explicit scopes.
+absence is disabled. The existing qualification Scenario gains one optional
+`memory` enum selector accepting only `"local-fixture-v1"`; it does not accept
+arbitrary Provider/config paths, memory payloads or selected identities. Derive
+the fixture profile with UUIDv5 from the literal
+`urn:rmb:simulator:ordinary-memory-fixture:v1`. The fixed fixture helper supplies
+one global SI-unit-context fact and one original-document hostile/stale assertion,
+with explicit provenance and bounded tags matching the source-study requests.
+Seed these at most two facts through the existing Provider on each scratch Store
+and set enabled/profile on that Store's ordinary Dispatch Config. Inspect actual
+query results before interpreting model behavior. The protected saved Config is
+the separate model/credential transport identity, not a source of synthetic facts.
 Fixture Store preparation is deliberate test setup, never product admission.
 Record safe context identities/status/query counts and original payloads/replies;
 do not add API credentials, actual personal memory or raw error bodies to reports.
@@ -188,8 +197,12 @@ do not add API credentials, actual personal memory or raw error bodies to report
 Offline controls exercise actual Dispatch Reader -> Generate -> Refine -> Reader
 and notebook map -> reduce -> Reader on real Stores, with enabled and disabled
 variants. Check exact histories, source/image associations, retained Generated
-drafts, reducer memory/digests, map absence and query counts. Existing domain tests
-remain the conflict/tombstone/expiry authority; add only changed caller/lease
+drafts, reducer memory/digests, map absence and query counts.
+
+Successful seven-stage execution has six queries: four ordinary receiving queries,
+one frozen notebook preparation query and its following Reader query. Map stages
+make no query, and failure stops the remaining sequence without extra queries.
+Existing domain tests remain the conflict/tombstone/expiry authority; add only changed caller/lease
 controls, including malformed/unavailable/foreign/selected context, bounds and
 late ownership loss. Verify wrong-Store lifetime and final-provider-drop release
 with actual mode/publisher/selection attempts, not a Boolean fake lease.
