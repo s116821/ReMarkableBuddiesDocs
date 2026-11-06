@@ -9,4 +9,4 @@ The existing private credential-reference editor still reaches the generic legac
 - Keep generic config and actual credential-file operations unchanged; no file/key/provider readiness or atomic two-file setup claim.
 
 ## Impact
-One existing caller, one narrowly named storage entry, meaningful notebook/legacy/CLI/fault controls and reference guide. No schema/wire/dependency/capability version, credential-file publication, roots/migration, runtime/provider, Manager/SDK/native or synchronization change. Independent precode acceptance and actual delivered-main reconciliation precede implementation. Current133/145 closeout stays primary.
+One existing caller, one narrowly named storage entry, meaningful notebook/legacy/CLI/fault controls and reference guide. Align the newly delivered preference-contract exclusion with the separately specified reference entry. No schema/wire/dependency/capability version, credential-file publication, roots/migration, runtime/provider, Manager/SDK/native or synchronization change. Independent precode acceptance and actual delivered-main reconciliation precede implementation. Current133/145 closeout stays primary.
