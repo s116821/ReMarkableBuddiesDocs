@@ -114,3 +114,19 @@ types; ctime plus any second difference. Check source observer's implementation
 unchanged. During a successful mocked package operation, change only fresh Git
 ctime after admission (before generation, between phases, after observation and
 during final copies): no later classification or completion is allowed.
+
+## Fixed bind-mount access
+
+Both phases bind only the admitted tool file readonly at /tool/apk; retain its
+private host parent. Receipt-only staging creates work0700 (existing builder
+mkdtemp already does); only newly created artifacts is initialized0777 beneath
+that private owned parent. Container UID/GID0 and cap-dropALL remain unchanged,
+as do root/root payload inventory, signing and public-only observation.
+
+Shared existing-module admission refuses symlink/non-directory or non-owned/non-
+private work roots, then checks fixed child roots and ordinary staged entries:
+applicable pinned UID0/GID0 read/traverse, plus artifact root read/write/traverse.
+No chmod occurs in admission. Restrictive umask input/module/control permissions
+refuse rather than broadening frozen sources. Recheck before generation, between
+phases including actual generated-control access, after observer and final copy/
+completion boundaries. Preserve all source/SDK/content evidence and prior failures.

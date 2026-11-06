@@ -18,3 +18,13 @@
 
 Actual APK generation/signing and device qualification are separately selected
 operations and are not claimed by these source tasks.
+
+## Selected fixed bind-access correction
+
+- [x] Reopen this same finite change and align access requirements before code.
+- [x] Bind exact tool file and initialize only fresh private work/artifacts modes.
+- [x] Admit/recheck applicable UID0/GID0 mount access; refuse symlink/nonordinary work roots and staged entries.
+- [x] Verify both entrypoints, restrictive umask/mode, domain/drift and unchanged signing/observer/root metadata boundaries.
+- [x] Sync canonical requirements and rearchive completed source correction in this paired delivery.
+
+No actual R3 package/signing operation is selected by source completion.

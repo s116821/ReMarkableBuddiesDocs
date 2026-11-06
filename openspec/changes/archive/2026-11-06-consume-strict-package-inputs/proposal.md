@@ -35,3 +35,10 @@ continuous-custody claim or repeating successful target builds.
 Buddy release helpers and focused host controls; central package-build-inputs
 contract. No automatic workflow, target rebuild, production signing, publication,
 installation or device qualification follows from source delivery.
+
+## Selected bind-access correction
+
+Correct the complete fixed bind access contract before another package attempt:
+exact readonly tool-file binds, fresh private owned work and narrowly writable
+artifact staging, with staged UID0/GID0 access admission and rechecks. No new
+package/signing run, frozen permission mutation or additional privilege.

@@ -111,3 +111,28 @@ producer inputs, metadata, SDK/source checkouts and their evidence remain unchan
 
 Source basis: current code/spec comparison and actual host test/validation logs;
 no hardware, real signing, compiler rerun or production eligibility is inferred.
+
+## Fixed mount-access source correction
+
+Both tool bindings are exact readonly files at/tool/apk. The existing build CLI
+uses private mkdtemp, and the receipt consumer creates private0700 work. Only
+new artifact staging is initialized0777 beneath that private owned parent.
+Shared admission rejects symlink/nonordinary/nonprivate/nonowned work roots and
+checks fixed staged regular entries under applicable UID0/GID0 permissions.
+Actual generated control is checked before observer, afterward and during final
+copy/completion checks. No original/frozen chmod or capability/identity change.
+
+Host APK tests79total:76pass,3existing explicitly container-only skips. Added
+controls cover both entrypoint staging contracts, exact file-mount argv in both
+phases, original private tool parent, restrictive077umask refusal, bad work root
+mode/link/file/FIFO/owner, unreadable staged entries and symlink/FIFO entries,
+permission loss after generation/observer, control readiness before observer and
+control drift during final copies without completion. External build/signing/
+phase calls are mocked over owned fixtures; these are not actual package passes.
+The earlier separately selected inert same-image Docker control establishes
+file-bind access, legacy parent/output refusals, fresh output writes, UID/GID0/
+zero capabilities and readonly views, without executing any APK or signing tool.
+
+R1 and R2 remain failed/spent. Actual packaging, signatures, production trust and
+device qualification remain separately selected future operations. Root owns
+independent source review/current hosted CI/publication and any new invocation.

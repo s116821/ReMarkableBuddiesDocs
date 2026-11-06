@@ -133,3 +133,26 @@ SHALL refuse rather than being reclassified.
 #### Scenario: Current proof changes after admission
 - **WHEN** even Git-directory ctime alone changes during later packaging rechecks
 - **THEN** the operation refuses at the next boundary and publishes no completion, preserving the first failure without reclassification or retry
+
+### Requirement: Fixed isolated mount access
+Both packaging entrypoints SHALL bind the admitted tool file readonly at /tool/apk
+and SHALL retain the private tool parent and container UID/GID0 with no added
+capabilities. Only newly created artifact staging may be initialized writable by
+that identity inside a private owned work root; frozen inputs SHALL NOT change.
+
+#### Scenario: Accessible private staging
+- **WHEN** fresh work is owned/private0700, its artifact child permits container
+  read/write/traverse, and all mounted staged directories/files permit required
+  applicable UID0/GID0 read/traverse
+- **THEN** the existing bounded phase may start with exact readonly tool-file bind
+
+#### Scenario: Bad work or staged access
+- **WHEN** work is symlink/nonordinary/nonprivate/nonowned, a staged entry is
+  symlink/nonordinary/inaccessible, or required permissions drift
+- **THEN** admission or the next recheck refuses without completion or chmod
+
+#### Scenario: Observation and final boundaries
+- **WHEN** generation returns and actual control/artifact files exist
+- **THEN** required readonly observer access is admitted before its phase and
+  rechecked after observation and before final-copy/completion boundaries, with
+  signing, separate SPKI control, root/root inventory and cleanup limits retained
