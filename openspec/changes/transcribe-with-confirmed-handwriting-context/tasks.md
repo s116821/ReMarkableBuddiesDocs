@@ -94,7 +94,7 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
   regression packet before coordinated delivery; preserve every failed result.
 
 
-## Standalone ready-format4 confirmed context (source accepted; hosted checks pending)
+## Standalone ready-format4 confirmed context (source and hosted checks accepted)
 
 - [x] Read exact current source/intake and reconcile delivered main; identify the existing scoped admission gap without reclassifying historical evidence.
 - [x] Specify concrete supported-family/readiness/no-side-effect/failure/lifetime/identity scenarios in this active change before implementation.
@@ -106,7 +106,7 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
 - [x] Prove successful capture, stale/media capture-refusal and cancellation/output-error ownership through drop, with correct4 post-drop legacy publisher/sync refusal.
 - [x] Run focused affected storage/provider/transcription/CLI controls, format and Clippy; retain exact source-attributed results.
 - [x] Independently review source versus accepted precode at Buddy683ddfc/Docs99630a30; no blocking source finding.
-- [ ] Verify current required hosted checks on the ready4 source revision.
+- [x] Verify ready4 source683ddfc required Checks/Build/Integration in completed-success run42333610255; this does not qualify later runtime sourcec0ea9d4.
 
 This scoped mechanics increment does not check off recognition, held-out learning,
 automatic Reader/Writer integration, sync/native or final delivery tasks above.
