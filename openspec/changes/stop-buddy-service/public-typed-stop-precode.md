@@ -111,3 +111,31 @@ presence and process/cgroup presence must each independently withhold
 settlement. Preserve legacy direct/resident raw/digest vectors, zero
 production dispatch in both factories, and fixed-command/no-caller-path
 tests. No actual installation or Stop is selected by this amendment.
+
+### Exact private wire and time units
+
+The isolated child Stop request adds expected.invocation, an exact nonzero
+lowercase UUID already admitted by the public Confirm ledger. All other
+selectors and the shipped private request remain byte compatible. The
+owner receives only one canonical PublicStop1 line on stdin, at most
+384 bytes including LF. The exec uses a compile-pinned stage path and
+literal action public-stop. The frame travels as a validated ASCII token
+through shell quoting with no path, unit or command from the request.
+
+Device uptime input is exactly two unsigned decimal seconds with two
+fractional digits, single space, final LF, capped at 64 bytes. Convert
+the first field to integer milliseconds with no float rounding. At
+receipt use floor of remaining host monotonic seconds times 1000,
+subtract 100 ms, then add sampled device milliseconds. Cutoff is a
+positive canonical decimal integer <= 9007199254740991. At equality
+the owner refuses to send. This bounds dispatch, not recovery settlement.
+
+The sole successful owner output is the existing job identity extended by
+the binding SHA-256, one ASCII LF line capped at 512 bytes. Exact field
+order is nonce, public-stop, boot, bus ID, manager unique name, trial
+invocation tuple, positive job ID, exact reply SHA-256, binding SHA-256.
+The trial tuple is PID, start micros, 32-lowerhex InvocationID, start ticks,
+cgroup device and inode, separated by colons. Match the sampled PID,
+start micros, InvocationID and start ticks. The existing owner checks
+the entire tuple and cgroup. The host output does not convey native or
+JobRemoved status.
