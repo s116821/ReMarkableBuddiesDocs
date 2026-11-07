@@ -68,11 +68,14 @@ Writer status. An unsuccessful Writer status ends the comparison even when the
 receiving function returned a report. The fixture records no transport headers,
 credentials or provider error messages.
 
-The WholePage instruction advertises a 32,768-byte page limit. The existing
-typed receiving path enforces 4,096 bytes per page and 16,384 bytes for the
-response. This diagnostic leaves the prompt and validation in place to preserve
-the same comparison. The consumed first baseline returned an engine result but
-retained no text, so its exact refusal cause cannot be recovered.
+The original WholePage instruction advertised 32,768 bytes per page even for
+typed receiving. The corrected instruction takes the per-page, aggregate text,
+and complete JSON response byte caps from that call's existing options. Default
+notebook normalization therefore advertises 32,768 / 131,072 / 131,072 bytes,
+and typed receiving advertises 4,096 / 4,096 / 16,384 bytes. The prompt and
+extractor revisions identify the changed instruction. Parser limits and
+whole-page abstention stay the same. The consumed first baseline returned an
+engine result but retained no text, so its exact refusal cause remains unknown.
 
 WholePage requires the entire spread to be readable and treats an empty
 `unreadable` response as valid abstention. The receiving fixture cannot use
