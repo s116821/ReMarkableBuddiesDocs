@@ -6,13 +6,16 @@ unfinished REM-52 delivery, not live-provider acceptance.
 
 ## Resource decisions required before execution
 
-The coordinator must identify an explicitly authorized disposable Google account
-and dedicated test OAuth application/project, protected local credentials, named
-operator, and exact permitted client registrations. Use only drive.appdata scope
-for this candidate. An existing Drive connector or its Personal/ChatGPT folder
-does not establish access to this application's hidden data or permission to
-exercise contention there. Prefer a dedicated test account/application; do not
-infer authorization from the personal-cloud backup or tablet SSH setup.
+The coordinator must identify an explicitly authorized suitable Google account
+and OAuth application, protected local credentials, named operator and exact
+permitted client registrations. Prefer an existing explicitly authorized binding
+when isolated disposable app-data resources, exact registration/visibility and
+cleanup satisfy this contract. A new account or project is not mandatory; resource
+creation, if needed, requires its own explicit execution scope. Use only
+drive.appdata for this candidate. An existing Drive connector or its
+Personal/ChatGPT folder does not establish access to this application's hidden
+data or permission to exercise contention there. Do not infer authorization from
+personal-cloud backup, tablet SSH setup or source fixture results.
 
 Choose one test run UUID and group UUID, agree fixed pre-generated appDataFolder
 IDs before either contender starts, and record every generated/created resource

@@ -1,6 +1,6 @@
 # Document-scoped Buddy backup and shared sync
 
-Status: active, partially implemented; not provider-qualified. Main owns this delivery reconciliation; the existing generic implementation and reviews retain their original SCRAPPY-DOO provenance. Ten completed API requirements are synchronized to the canonical specification; the nine unfinished end-to-end requirements remain in this active change. See [bounded delivery status](implementation-status.md). This linked delivery does not close the parent change or REM-52.
+Status: active, partially implemented; not provider-qualified. The coordinating maintainer owns continuation and independent review; the storage author owns the worker candidate. Existing domain/native drafts remain with their owners and the original generic API reviews retain their provenance. Ten completed API requirements are synchronized to the canonical specification; the nine unfinished end-to-end requirements remain in this active change. See [bounded delivery status](implementation-status.md). This linked delivery does not close the parent change or REM-52.
 
 ## Why
 
@@ -24,3 +24,43 @@ Review the proposal/design/scenarios together, implement the accepted contract i
 
 ## Read-only outbox recovery enumeration
 Add bounded original-intent enumeration so recovery callers need not parse private journal files or already know operation UUIDs. This is custody only; provider/current/domain/native authority remains separately checked.
+
+
+## Source-aligned shared worker integration continuation
+
+At Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 / Docsa1f446b8c4857e4f17726a0cb40ed62b8048b71a,
+implement the real producer-to-worker-to-winner-adoption path using delivered
+mode/outbox/fixed-slot/selected/admission primitives. The concrete precode and
+interface conflicts are in [shared-worker integration](shared-worker-integration.md).
+The coordinating maintainer owns independent review and integration; the storage author owns the
+candidate, while existing domain/native drafts remain preserved.
+
+This includes current notebook Source3/NotebookPlan/NotebookStage product data
+through a reviewed identity-preserving selected-notebook compatibility stage and
+actual selected producer. A legacy-only fixture is insufficient. Existing format4
+maintenance and the deferred inspection-only observer are not reopened. Provider
+resources/qualification remain unexecuted and publication unavailable until the
+actual binding is approved. No planning-only merge or full-parent completion is
+selected; implementation, verification, as-built sync and completed-scope archive
+belong in the eventual paired delivery.
+
+
+## Shared-worker successor r2 review corrections
+
+The [integration design](shared-worker-integration.md) now specifies read-only
+agreed-slot observation without a candidate; explicit CreateGroup allocation under
+ordinary mode followed by exact conditional shared-mode selection; current-original
+same-ID retry versus stale observe-only recovery; and passive first-join/pull
+receiving custody with receipt-first crash reconciliation. No outbound attempt is
+fabricated. It also makes staged mixed-scope readiness depend on exact local
+registration across all product paths, separates active/retained causal projections
+and imported history from verified local uncertainty, chooses committed-not-applied
+for unresolved selected-receipt overlap, and requires notebook live/reopen validation
+parity and original-only capability reconciliation. These are proposed corrections
+after protocol/domain review, not implementation or runtime evidence.
+
+Later provider qualification may use a suitable existing explicitly authorized
+OAuth/account binding with isolated disposable app-data resources and exact cleanup;
+a new account/project is not mandatory. No live credential/resource action or
+production eligibility is selected. Original precode remains preserved; corrected
+precode acceptance still precedes implementation and the eventual paired lifecycle.

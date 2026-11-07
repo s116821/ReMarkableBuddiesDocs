@@ -78,7 +78,7 @@ this paragraph records coordination, not a new implemented wire schema.
 - [x] Return already parsed historical selected envelopes in original reference order within the budgeted accepted lineage, without additional validation I/O or live tokens.
 - [x] Verify actual Store re-rooted identity with and without retained old chains, facts introduced after Initialize, exact noncanonical reference order, unchanged budget usage and current-view separation.
 - [x] Obtain bounded independent custody review of immutable488/943 content and Source488 CI; preserve prior accepted revisions.
-- [ ] Reconcile advertised DocsPR7 pointer and exact successor Docs CI before linked delivery closure.
+- [x] Reconcile historical DocsPR7 pointer and final successor CI in the bounded delivery: final Docs320122c -> actual main2f69e048, with source31/main0a258056 and actual-main checks recorded below; no broader sync gate is waived.
 
 ## Durable selected outbox preparation
 
@@ -148,10 +148,53 @@ in [bounded delivery status](implementation-status.md).
 - [x] Synchronize only the ten implemented and previously accepted API requirements; retain all nine unfinished end-to-end requirements as active.
 - [x] Complete changed-candidate compatibility checks and exact-head hosted checks.
 - [x] Obtain independent review of only the schema/contract resolution, main preservation and bounded lifecycle delta.
-- [ ] Coordinate normal paired squash delivery and verify actual-main CI/publication.
+- [x] Coordinate the bounded API paired squash delivery and actual-main CI/publication: Buddy31 ->0a258056 / Docs7 ->2f69e048; source39359373842 and Docs39359368436 passed. This closes that historical delivery only; the end-to-end parent remains unfinished.
 - [ ] Finish the remaining end-to-end requirements before final parent sync/archive.
 
 
 ## Bounded portable preference artifact
 
 The separately owned finite [export-portable-configuration](../archive/2026-11-06-export-portable-configuration/proposal.md) exposes explicit private product/personalization/research preference export and offline inspection. It does not settle this parent's portable record-key policy, archive inclusion, import/application, model/memory preferences or actual synchronization. Parent tasks remain open.
+
+
+## Selected publication/recovery and product winner adoption
+
+- [x] Establish exact current source/spec bases, retained branch/worktree ownership and existing provider-binding contract; preserve other lanes.
+- [x] Propose the connected worker/public producer/adoption footprint and concrete legacy-worker/local-genesis/notebook-format conflicts before code.
+- [ ] Obtain independent maintainer precode and domain-owner review of retention, portable/local genesis, selected notebook compatibility and remaining domain schema decisions.
+- [ ] Route existing Worker by actual mode/qualification before credentials; connect real selected Writer/memory edits and bounded Store wake to the selected step.
+- [ ] Implement agreed immutable root/catalog/base/slot and durable original staging/attempt recovery through existing transport/file/outbox primitives.
+- [ ] Enforce mode/current binding and actual domain-gated handoff; never hold Store mutex during network or rebase a stale losing candidate.
+- [ ] Validate complete domain/media winner and apply one atomic winner-plus-local-unresolved closure; recover activation-before-withdraw without resend.
+- [ ] Implement and verify the receiving-local memory genesis/catalog bridge without weakening current local ancestry or changing original fact bytes.
+- [ ] Implement the reviewed selected notebook generation stage, exact Source3/NotebookPlan/NotebookStage validation and actual selected notebook producer within this same feature; preserve ordinary format4 routes and old-reader refusal.
+- [ ] Define and implement required handwriting/portable-preference selected adapters with their domain owners; do not silently claim absent coverage or misuse another namespace.
+- [ ] Publish bounded truthful mode/committed/applied/pending/media status from actual original receipts and explicit failure states.
+- [ ] Exercise the REAL producer/Worker/adopter with two Stores and actual HTTP adapter fixtures: same-base winner, independent scopes, catalog races, lost ack/restart/stale mode, active operation/settlement, notebook stages/media and abrupt activation recovery.
+- [ ] Extend relevant maintained simulator scenarios; keep local protocol, actual-provider and native evidence distinct.
+- [ ] Independently qualify the selected disposable provider/account/application/client binding under provider-qualification-contract.md before production publication; no live resource operation follows from source tests.
+- [ ] Obtain exact final source/spec review and applicable checks, reconcile domain shared-file ownership and paired delivery, sync only as-built requirements and archive only completed named scope in the SAME implementation pair; do not merge precode alone or archive unfinished parent requirements.
+
+
+## Shared-worker successor r2 concrete corrections
+
+- [x] Reconcile protocol review db02c677 and independent domain review 2e03d6af into a preserved successor design; no Rust implementation claimed.
+- [x] Add agreed-binding GET-only observation reusing exact pointer/descriptor checks, typed absence/invalid, and candidate comparison only for an actual prepared candidate; source4063d49, 11 fixed-slot HTTP tests passed.
+- [ ] Implement explicit CreateGroup control on existing mode dispatch/checkpoint: current ordinary admission for allocation only, persisted IDs/body, release/revalidate original token, exact conditional shared choice and current shared lease before create.
+- [ ] Recover never-submitted and uncertain original attempts by current admitted SAME-ID/bytes retry; stale selected attempts observe only, changed namespace admits no old network work.
+- [ ] Persist original receiving custody for first join/passive pull without an outbox; reconcile exact Initialize/Activate receipt before checkpoint/health or outbound retirement.
+- [ ] Gate every affected product/admission/send path on exact staged mixed-genesis registration; factor locked registration publication without recursive gate acquisition and resume the original receipt after crash.
+- [ ] Validate active winner and exact retained manifests separately; derive local uncertainty only from verified local Commit/predecessor lineage, preserve foreign history without effect authority, and block ambiguous lineage.
+- [ ] Keep own or competing winners containing an exact unresolved local receipt committed-not-applied; test exclusive-retention settlement separately without promising active-intent release.
+- [ ] Apply notebook semantic closure checks at live selected writer/adopter and recovery, fence actual model handoff/result commit, and recover stale capabilities only through exact original preparation under existing-only custody.
+- [ ] Run real Worker/two-Store branches for pull-only join/update, absent/invalid slots, first-root allocation/mode/root crashes, before-create restart, stale edit after preparation, passive activation-before-checkpoint, readiness windows, sibling retained/foreign receipts and overlap settlement.
+- [ ] At later separately scoped provider selection, prefer suitable existing explicitly authorized OAuth/account with isolated disposable app-data resources and exact cleanup; reconcile the proposed contract before any execution.
+- [x] Obtain successor acceptance before implementation; r2 accepted before source work. Final implementation/checks/spec sync/completed-scope archive remain required in the same paired delivery, not a planning-only PR.
+
+
+## Initial reviewed-contract implementation progress
+
+- [x] Enforce exact receiver-local catalog/genesis readiness across mixed current admission, selected Writer prepare/finish and selected Reader write; absent/corrupt receiving checkpoint grants no readiness.
+- [x] Extend the actual mixed product regression with unregistered/checkpoint-corrupt refusal and exact-registration success; source61ed900 passed111 selected regressions with1 existing ignored test. These results do not cover the unimplemented connected worker or notebook stage.
+- [x] Reconcile the provider resource proposal to permit a suitable existing explicitly authorized account/application with isolated disposable resources and exact cleanup, without authorizing execution.
+- [ ] Complete the connected worker, original controls/receiving, domain retention/uncertainty, notebook format5/producer and their meaningful checks before final lifecycle/delivery.

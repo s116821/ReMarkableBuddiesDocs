@@ -67,10 +67,10 @@ all-target/all-feature Clippy with warnings denied, formatting and diff checks
 pass. Initial combined compilation failures and fixture-development failures
 remain separately retained; they are not successful qualification.
 
-Docs strict validation passes 35 items; manifest verification preserves 23 current
-guidance files and 126 original source blobs. Independent resolution/lifecycle
-review, exact-head hosted CI, paired squash delivery and actual-main verification
-remain pending. Historical green builds are not relabeled as those pending results.
+At that historical checkpoint Docs strict validation passed35 items and guidance
+verification preserved23 files/126 source blobs. Its then-pending independent review,
+exact-head checks and paired delivery were subsequently completed by the bounded
+API delivery receipt below; the earlier failure records remain unchanged.
 
 The first Linux hosted run39356451772 at the integration head failed during
 Clippy compilation: the Unix-only inherited-descriptor fixture still accessed the
@@ -121,6 +121,74 @@ The prior portable-stream finding is fixed and independently accepted; its
 current source is preserved and its inline thread is resolved with a linked
 receipt. The original history/bitmap admission-inventory comment was addressed
 in0830a9af and its accepted contract; resolving that thread does not complete
-actual native/domain handoffs. Final paired squash and actual-main verification
-remain pending. This parent remains active with all nine unfinished end-to-end
-requirements; none is archived or declared complete by this receipt.
+actual native/domain handoffs. That bounded pair was subsequently squash merged:
+Buddy31 at0a258056af6c170b3edd4761f97d0e9a973755af, Docs7 at
+2f69e0481c9677ffde20af03398b29393a207c97, both ancestors of the current source
+bases. Actual-main source[39359373842](https://github.com/s116821/ReMarkableBuddies/actions/runs/39359373842)
+and Docs[39359368436](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/39359368436)
+passed, with official v0.9.0 source publication recorded in the owner closeout.
+This settles only that historical API delivery, not current end-to-end acceptance.
+The parent remains active with all nine unfinished end-to-end requirements.
+
+
+## Current worker continuation
+
+Current basis: Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 and
+Docsa1f446b8c4857e4f17726a0cb40ed62b8048b71a. Later portable preferences,
+notebook archive/restore and historical outbox status have their own delivered
+archives and are not reopened. [Shared-worker precode](shared-worker-integration.md)
+now proposes real product publication/recovery/adoption, including the required
+selected notebook compatibility and producer stage. Current legacy worker,
+foreign/local genesis mapping and notebook-format source conflicts are concrete
+implementation work, not a request to repeat completed primitive tests.
+
+No selected worker implementation, live provider binding or native eligibility
+is established by this proposed amendment. Existing domain admission/projector/
+settlement APIs are reused; actual handoffs, domain coverage and qualification
+retain their stated boundaries. Source/spec review precedes implementation and
+the unfinished parent is not archived as a planning-only delivery.
+
+
+## Shared-worker successor r2 review corrections
+
+The [integration design](shared-worker-integration.md) now specifies read-only
+agreed-slot observation without a candidate; explicit CreateGroup allocation under
+ordinary mode followed by exact conditional shared-mode selection; current-original
+same-ID retry versus stale observe-only recovery; and passive first-join/pull
+receiving custody with receipt-first crash reconciliation. No outbound attempt is
+fabricated. It also makes staged mixed-scope readiness depend on exact local
+registration across all product paths, separates active/retained causal projections
+and imported history from verified local uncertainty, chooses committed-not-applied
+for unresolved selected-receipt overlap, and requires notebook live/reopen validation
+parity and original-only capability reconciliation. These are proposed corrections
+after protocol/domain review, not implementation or runtime evidence.
+
+Later provider qualification may use a suitable existing explicitly authorized
+OAuth/account binding with isolated disposable app-data resources and exact cleanup;
+a new account/project is not mandatory. No live credential/resource action or
+production eligibility is selected. Original precode remains preserved; corrected
+precode acceptance still precedes implementation and the eventual paired lifecycle.
+
+
+## Initial source implementation checkpoint
+
+The first source commits implement binding-only agreed-slot reads (4063d49) and
+exact local mixed catalog/genesis readiness in actual admission and selected
+Writer/Reader paths (61ed900). Product readiness derives from the original local
+Initialize receipt plus exact Registration, independently of worker bookkeeping.
+The existing mixed composition regression now checks refusal before registration,
+refusal with corrupt sync/state.json, and success after exact registration.
+
+Author Linux/Rust1.98.1 offline checks: all11 fixed-slot HTTP adapter tests passed;
+111 selected-storage/domain/product regressions passed with1 existing ignored
+case. The expected composed-panic child witness remains an asserted passing
+failure-containment test. These are host source results, not live provider/device
+qualification. Existing baseline no-feature warnings remain attributed to their
+unmodified resident-source/recovery lines. The first Cargo formatter invocation
+lacked the custom rustup-home context; normal explicit existing toolchain context
+resolved it without installation or global configuration changes.
+
+The connected worker, receiving-control/recovery, uncertainty projection and
+format5/current notebook producer remain implementation work in this SAME paired
+delivery. This checkpoint does not sync/archive the unfinished parent, qualify
+production publication or create a separately completed prerequisite PR.

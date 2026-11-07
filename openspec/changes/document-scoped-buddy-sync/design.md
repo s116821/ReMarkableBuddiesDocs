@@ -62,3 +62,38 @@ Main reviewed exact `ebf8c72cc286de988d0307c98bf34d48dce8f4da` and accepted gene
 Store::selected_attempt_inventory() returns the complete strict local journal as original SelectedAttempt values in deterministic UUID order under one Store lock. Reuse existing actor/fingerprint/filename/item/metadata limits, with whole-read refusal on any corrupt or foreign entry. Do not verify current selection/object availability, fetch provider state, mint live tokens or modify journals; stale and withdrawn intents remain discoverable historical custody. Callers must perform current checks and mode/domain admission separately before any future send/apply.
 
 The remaining live-provider resource and execution boundary is proposed in [provider qualification contract](provider-qualification-contract.md); no live resource or worker activation follows from that proposal.
+
+
+## Current product worker integration precode
+
+[Shared-worker integration](shared-worker-integration.md) maps actual72ddbe55
+interfaces, original-operation handoff/recovery, exact root/catalog/base/slot,
+mode/account/application qualification, complete domain/media winner validation,
+serialized activation/retention and truthful file status. It proposes the required
+notebook format5 compatibility/producer stage rather than pretending format4 is
+already selected-ready. It also preserves local memory genesis validation through
+a receiving-local registration bridge; a foreign local transaction hash is not a
+portable genesis identity. These choices need independent review before code.
+The delivered storage/slot mechanisms are reused; accepted inspection/import/archive
+increments and unrelated domain/native drafts are not reopened.
+
+
+## Shared-worker successor r2 review corrections
+
+The [integration design](shared-worker-integration.md) now specifies read-only
+agreed-slot observation without a candidate; explicit CreateGroup allocation under
+ordinary mode followed by exact conditional shared-mode selection; current-original
+same-ID retry versus stale observe-only recovery; and passive first-join/pull
+receiving custody with receipt-first crash reconciliation. No outbound attempt is
+fabricated. It also makes staged mixed-scope readiness depend on exact local
+registration across all product paths, separates active/retained causal projections
+and imported history from verified local uncertainty, chooses committed-not-applied
+for unresolved selected-receipt overlap, and requires notebook live/reopen validation
+parity and original-only capability reconciliation. These are proposed corrections
+after protocol/domain review, not implementation or runtime evidence.
+
+Later provider qualification may use a suitable existing explicitly authorized
+OAuth/account binding with isolated disposable app-data resources and exact cleanup;
+a new account/project is not mandatory. No live credential/resource action or
+production eligibility is selected. Original precode remains preserved; corrected
+precode acceptance still precedes implementation and the eventual paired lifecycle.

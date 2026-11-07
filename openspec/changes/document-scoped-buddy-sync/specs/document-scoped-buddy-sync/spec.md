@@ -102,3 +102,68 @@ Shared mode SHALL require an explicitly qualified browser/Electron/tablet OAuth 
 #### Scenario: Unsupported client registration
 - WHEN a selected account is used through an unqualified or incompatible OAuth application binding
 - THEN shared mode remains disabled or refuses activation, without widening scopes or exposing credentials.
+
+### Requirement: Connected selected worker uses original publication custody
+The application SHALL connect actual selected domain producers to its existing worker, original selected-attempt journal, agreed fixed-slot transport and complete receiving activation. It SHALL route modes before credential access and SHALL NOT use legacy manifest publication for explicit shared or local-only mode.
+
+#### Scenario: Original publication loses acknowledgement
+- WHEN the real selected producer's prepared original may have committed and the process restarts
+- THEN a still-current original retries exact bytes/IDs at that same slot under actual admission, a stale selection observes only, a changed mode/binding admits no old-namespace network work, and missing or invalid evidence never authorizes a successor.
+
+#### Scenario: Own or competing winner is activated
+- WHEN complete same-base domain/media evidence validates a winner
+- THEN actual domain-gated activation preserves unresolved local intent/evidence, stale work never appends against the new selection, and receipt-before-withdraw recovery retires only that original without resubmitting.
+
+#### Scenario: Passive first join and later pull have no upload candidate
+- WHEN the real worker follows an agreed root/catalog/domain slot on a Store with no local outbound attempt
+- THEN it observes exact metadata and descriptor bytes read-only with typed absence/invalid results, creates no upload candidate or outgoing intent, and retains Joining/recovery state when initial evidence is unavailable.
+
+#### Scenario: Explicit first-group allocation precedes shared root selection
+- WHEN an original CreateGroup control is admitted under the exact current ordinary mode and qualified binding
+- THEN allocation alone occurs under OrdinaryModeLease, complete original IDs/body persist before exact conditional shared-mode selection, and root creation requires the current resulting shared lease; a crash or raced choice cannot create another root or silently refresh the precondition.
+
+#### Scenario: Prepared original stops before its first create
+- WHEN a worker restarts after durable outbox preparation but before send
+- THEN an unchanged original selection/mode/binding can retry the same fixed ID and bytes under actual domain admission; an intervening local edit forces observe-only recovery without a successor or rebase.
+
+#### Scenario: Passive activation precedes checkpoint publication
+- WHEN a first-join or passive-pull local activation receipt is durable but checkpoint or health publication is interrupted
+- THEN the worker recovers the persisted receiver-local original operation and exact receipt, finishes only its registration/status bookkeeping, and neither activates twice nor fabricates an outbound attempt.
+
+### Requirement: Portable ancestry and local admission identities remain distinct
+Receiving SHALL preserve exact portable record/media references and create fresh local selection/admission identity. Local memory registrations SHALL bind receiving-local genesis; foreign transaction hashes and imported receipts SHALL NOT become local publication or effect authority.
+
+#### Scenario: A second Store adopts shared memory and document state
+- WHEN an authorized committed portable genesis is validated on another actor/store
+- THEN original fact bytes and remote ancestry remain exact, the receiver derives its own strict local registration/selection, and no foreign token, pending intent or model/native receipt grants execution authority.
+
+#### Scenario: Mixed genesis is initialized before local registration
+- WHEN reception stops between a staged mixed scope's local Initialize and exact local catalog Registration
+- THEN every affected product read/admission/Writer/worker send refuses readiness until the original receipt and mapping match, and recovery resumes that same staged operation without foreign local authority or recursively acquired gates.
+
+#### Scenario: Retained siblings and imported pending history coexist
+- WHEN a winner and a retained losing original have sibling revisions for the same record and the winner contains a validated foreign pending pair
+- THEN each exact closure is projected separately, imported history grants no local effect or release, and only verified local original Commit lineage supplies the uncertainty fence; ambiguous purported local lineage remains blocked.
+
+#### Scenario: Winner still selects an unresolved local receipt
+- WHEN either own or competing winner includes an exact unresolved locally admitted receipt in selected membership
+- THEN the worker keeps committed-not-applied status and original evidence without a successor until genuine local proof exists; exclusive-retention settlement is not used to clear the overlap.
+
+### Requirement: Current notebook data has a working selected publication route
+The selected worker feature SHALL include a reviewed compatibility stage for current notebook Source3, NotebookPlan and NotebookStage data and its actual selected producer. It SHALL preserve original envelope/media identities, semantic source/plan/stage closure, fresh local activation and older-reader refusal rather than relabeling unsupported format4 as synchronized.
+
+#### Scenario: Notebook publication races winner adoption
+- WHEN a current multi-stage notebook producer and worker encounter a replacement winner
+- THEN each stage's accepted base/generation is checked at its real publication or model handoff, stale results remain historical or unknown without replay, and complete winning records/media activate atomically with local unresolved evidence retained.
+
+#### Scenario: Required notebook source media is unavailable
+- WHEN canonical archive media needed to validate Source3 and plan/stage semantics is absent or intentionally omitted
+- THEN the candidate remains unapplied/incomplete and cannot be reported as a complete domain-valid winner; optional media omission remains separately visible and local evidence is preserved.
+
+#### Scenario: Crash during selected notebook preparation
+- WHEN the compatibility operation stops around generation/marker/contract/CURRENT/capability publication
+- THEN recovery exposes the old complete ordinary generation or the complete new supported generation, retains original bytes and intent, and an older reader refuses the new unsupported format without repair.
+
+#### Scenario: Notebook live validation matches reopen and original preparation recovers
+- WHEN selected notebook publication/adoption or a crash around CURRENT and capabilities occurs
+- THEN live writer/adopter enforce the same source/plan/stage semantics as recovery, actual model handoff and result commit retain current admission, and only the exact actor/source/target-bound preparation under existing-only custody can reconcile stale capabilities.
