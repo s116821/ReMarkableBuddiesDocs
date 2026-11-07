@@ -704,3 +704,26 @@ directions retain the unknown result and prove the late acknowledgment
 cannot release the later peer. All 46 focused Node Stop tests passed in
 parallel. The original parallel failure and sequential pass remain separate
 evidence for the earlier test.
+
+### Typed public Stop source controls
+
+Manager 71f48b5 adds the disabled isolated host adapter and exact owner
+fixture delta against the accepted ordinary trial scripts. Apply the
+fixture patch only against those pinned LF source bytes using
+git -c core.autocrlf=false apply --unidiff-zero. The reproduced owner,
+receipt and trial scripts matched the independently exercised fixture
+bytes. The committed patch is not a device payload or an installation.
+
+All 56 focused Python Stop controls ran with four platform skips. All
+46 focused Node Stop tests passed in parallel. Targeted host lint passed.
+The offline Linux owner fixture reused the actual claim, accepted receipt,
+and ListJobs parser logic. It checked durable success, cutoff expiry,
+malformed binding/reply, reply flush failure, lost acknowledgment and
+duplicate refusal. Same-manager queued job and process presence each
+prevented retirement. Initial fixture CRLF and subshell probe-counter
+failures were corrected locally and retained. No full build was needed.
+
+The patched owner fixture still uses the accepted trial layout. A stable
+installed alias, reviewed tuple, fixed stage/connection inputs and actual
+independent handback must be assembled and reviewed in a later packet.
+No registry or device action was selected here.
