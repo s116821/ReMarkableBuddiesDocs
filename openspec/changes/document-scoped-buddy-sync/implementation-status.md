@@ -243,3 +243,50 @@ imported-original uncertainty policy, format5 and the actual selected Source3
 notebook runner, preference/handwriting producers and compatible consumers,
 Manager parity and live provider/model/native qualification remain unfinished.
 This source increment neither archives the parent nor enables production sync.
+
+## Ordinary startup custody and compound storage
+
+Source5455cb9 corrects a reproducible preflight descriptor race exposed while
+following full source CI42397865817. The unchanged Reader CLI group passed17
+locally on the predecessor, but retaining a duplicate of the actual locked
+preflight descriptor deterministically made real ready-notebook startup report
+busy. Successful preflight now explicitly unlocks before Store reacquisition;
+closing the old duplicate cannot unlock the new Store owner. The regression
+failed before correction and passes afterward. All11 descriptor controls and17
+Reader CLI cases pass, with readiness assertions preserved and status-only
+failure diagnostics. The status-less hosted failure does not itself prove that
+exact interleaving; terminal successor CI remains coordinated separately.
+
+Source [23fd74d](https://github.com/s116821/ReMarkableBuddies/commit/23fd74d4a8624e459bf7697303b8db0e1826f022),
+parent5455cb9, supplies the compound storage/preparation increment for review.
+It stages a fresh format5 generation under existing-only ownership, retaining
+the actor and exact immutable source bytes. The original operation binds source,
+target, group, binding and mode. Contract/feature/source hashes, owned unpublished
+staging, one CURRENT switch and complete target validation precede capability
+publication. Normal open cannot repair capabilities; original reconciliation
+cannot repair missing published feature markers. Ordinary format4 startup and
+maintenance refusals remain, while format5 requires an explicit selected Reader
+route before credentials and again at ordinary-store fallback.
+
+Preparation supports complete owned ordinary families1–4 with no live selected
+metadata/history or pending selected attempt. It explicitly refuses to re-root
+an existing live selection. This limitation preserves source evidence rather
+than silently migrating local admission identities. No public one-shot preparation,
+preference or selected notebook CLI is claimed by this library increment.
+
+Local all-feature checks:175 storage tests pass with2 opt-in/witness tests ignored
+by the default harness; the process-death witness is invoked by its passing
+parent across four abrupt exits, and the separately opt-in old-reader executable
+gate was actually run and passed. A trusted pre-format5 host executable accepts
+a format4 control then rejects format5 through read-only report3, preserving
+critical metadata bytes. Real ordinary notebook Source3/plan/prepared+generated
+stage/media bytes survive staging and foreign-actor receiving-local metadata;
+actual format5 Stores reuse the Worker for lost-ack/original activation recovery.
+Atomic operation reuse races across independent real memory producers admit
+one publication and one typed Store rejection, with exact replay preserved.
+All17 Reader CLI cases, strict all-target/all-feature Clippy, formatter and diff
+checks pass; all12 component inputs are unchanged by commit. Groups overlap.
+
+The actual selected Source3 producer/model handoff, CreateGroup/catalog/new-scope
+admission, preference/handwriting consumers and CLI/Manager parity, and applicable
+hosted/provider/model/native qualification remain open in this same delivery.
