@@ -300,4 +300,3 @@ can exercise supported controlled data honestly without inventing authenticated
 human infrastructure or a native UI event. No API/model/tablet run or new efficacy
 score follows. All original recognition failures and learning/native/delivery
 gates remain unchanged.
-
