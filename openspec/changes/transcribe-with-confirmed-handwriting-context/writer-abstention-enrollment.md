@@ -102,3 +102,36 @@ guards. No new sync behavior or portability claim.
 This amendment is precode. Independent review must accept the ownership and
 compatibility boundary before code. The consumed Barton and Lincoln outcomes,
 frozen semantic criteria and coordinated delivery gates remain separate.
+
+## Consumer trace on reconciled source
+
+The older handwriting provider decodes the typed Correction in
+handwriting/mod.rs. Null in its required String or the unknown provenance enum
+fails decode. In provider.rs, fact reports unsupported, context capture cannot
+admit it, and status and mutation traverse Self::lineage before returning a
+successful result or committing. Confirm/update/forget cannot replace the
+unsupported history through that path. Explicitly restrict the legacy public
+input provenance to CallerConfirmedSample even if the shared enum grows.
+Include provenance kind in same_original for internal mutations.
+
+Storage mod.rs validate_objects_policy validates Envelope, object hash, sizes,
+namespace and media coverage. It does not decode the handwriting payload.
+Notebook backup validation calls that function and notebook_generation/records.rs
+skips domain version one. Opaque object preservation through backup/restore
+therefore does not itself require a new format. Verify this with exact old/new
+record and media round-trip controls, including the common recovery path, before
+publication. Keep payload interpretation and typed mutation refusal separate
+from lossless backup behavior.
+
+## Exact changed components for mixed context
+
+See [mixed-context vectors](writer-abstention-mixed-vectors.json). The fixed
+instruction is a separate text part immediately after the existing context
+addendum, before the first example descriptor, only when at least one example
+has no original. Keep example ordering and image placement unchanged.
+The vectors pin the exact standalone and Reader descriptor strings, ordered
+context identity bytes, four notebook Profile byte strings and extractors,
+and both Reader diagnostic recipe names. The suffix applies only to contexts
+containing a null original. No-context and legacy-only paths retain all current
+protocols, addenda, recipes and hashes. The fixture identifiers and image hashes
+are synthetic serialization inputs. They do not imply admission of any media.
