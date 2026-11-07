@@ -68,3 +68,10 @@
 - [x] Drain both streams through actual receive EOF plus available exit status within unchanged deadlines/caps; preserve close/clear and submitted-unknown semantics.
 - [x] Verify delayed stdout/stderr, late caps, missing EOF, fair draining and complete EOF through focused maintained controls; retain original failures and exact source attribution.
 - [ ] Obtain independent exact-successor review and current hosted checks; actual tablet observation/shutdown/recovery and production tuple enrollment remain separate.
+
+## 10. Portable preferences and bounded-read composition
+- [x] Normally reconcile delivered portable preferences with Stop without overwriting either capability or enabling production Stop profiles.
+- [x] Verify reciprocal host exclusion, preview invalidation and shared UI Busy behavior in the browser and source Electron hosts.
+- [x] Replace unsupported bounded `head` reads with one reviewed byte-preserving `dd` helper; retain exact length, nonzero-exit, EOF, deadline and size refusals.
+- [x] Obtain independent composition and sampler-patch review, verify exact source hashes, and retain focused local checks and original failures.
+- [ ] Complete current hosted/package gates and separately qualified target sampling/shutdown/recovery before production enrollment and final paired delivery.

@@ -485,3 +485,47 @@ this successor. Independent exact-successor review/current CI and actual fresh
 operator sampling, shutdown, recovery and tuple enrollment remain open. This
 repair neither performs nor qualifies a tablet action and does not archive the
 unfinished Stop change.
+
+## November 6 portable-preferences composition and byte-read portability
+
+Manager `551618ac4b764342f97eb9555ee7e2c637f5198c` normally merges delivered
+portable-preferences main `97c38050c7339d49ff9af30c806a9115cd69f870` into the
+existing Stop branch. Both capabilities share maintenance exclusion and clear
+each other's obsolete preview. A busy operation cannot start its peer, and
+neither operation can reuse the other's prior confirmation. The original Stop
+and portable transport limits and both empty production Stop registries remain.
+
+The independently reviewed composition snapshot covered 22 files. Root verified
+all 22 hashes immediately before committing. The review independently ran 32
+focused Node tests successfully. Root's separate composed checks passed 70
+focused Node tests, lint, development/production builds, and actual local browser
+and source-Electron flows. The factory matrix now covers 22 peers, 44 Busy
+directions, 19 predecessor-preview invalidations and 29 Stop peer/view clears.
+Additional UI controls verify reciprocal preview removal, disabled peer actions
+while either operation waits, and zero Stop submissions. The existing portable
+host suite also passes on both local hosts. An initial new UI assertion expected
+a disabled Stop button after invalidation; the existing correct behavior removes
+that button. Only the assertion was corrected; its failed log remains retained.
+
+A separately observed target utility incompatibility also required a two-file
+sampler correction. Both bounded content-read callsites now share POSIX `dd`
+with byte-sized records and a cap-plus-one probe. Complete exact-cap EOF succeeds;
+excess, nonzero exit, partial read errors and missing utilities refuse without a
+fallback. Normal `dd` counters are suppressed, so detailed read-error text is
+unavailable, but its exit status remains mandatory. Regular-file reads retain
+exact length, hash, parent and before/after metadata checks. The unchanged
+receive-EOF, deadline and output limits still apply.
+
+Root independently reviewed the two-path patch, verified its input/output hashes,
+and ran the maintained sampler suite in the final composed tree: 22 passed and
+one existing Windows-inapplicable fixture skipped. The author's nine actual
+local MSYS `dd` controls are separate portability evidence. Neither these tests
+nor the earlier target `head` failure prove target `dd` support or performance.
+The earlier unselected sampler packet remains unchanged and source-only.
+
+Small logs remain under Root's `outputs/rem42-stop-portable-reconcile`, including
+`service-stop-hosts.log` (original assertion failure),
+`service-stop-hosts-r2.log`, `portable-hosts.log` and `sampler-composed.log`.
+This is source and local-host qualification. Current hosted/package checks,
+fresh target sampling, actual shutdown/recovery and production enrollment remain
+open; this change is not archived or declared complete.
