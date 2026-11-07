@@ -97,3 +97,29 @@ OAuth/account binding with isolated disposable app-data resources and exact clea
 a new account/project is not mandatory. No live credential/resource action or
 production eligibility is selected. Original precode remains preserved; corrected
 precode acceptance still precedes implementation and the eventual paired lifecycle.
+
+
+## Reviewed optional-domain integration
+
+The active delta now records portable configuration as one independently selected
+group-global record, consumed through the reviewed strict Artifact and admitted
+LocalConfigSnapshot raw merge. Effective values are request-scoped; current saved
+Manager/import editing remains its delivered local contract. Selection/absence
+pins join the same ordered gate set at actual handoff and result commit. Strict
+decoding starts from the original envelope bytes before a Value can collapse
+duplicate nested members.
+
+Confirmed handwriting uses existing Handwriting1 semantics and one typed scope
+per correction, not a whole-profile snapshot or document-derived key. Its raw
+adapter is independently owned; core Store/catalog/Worker/format5/selectors and
+actual consumers stay in this delivery. Local original operation reuse checking
+and publication must be atomic across applicable producers under the existing
+Store mutex and bounded accepted local transaction evidence, with no shadow
+operation database. Imported envelope operations are not local receipts.
+
+The compatible recognition receiving interfaces from
+[Buddy105](https://github.com/s116821/ReMarkableBuddies/pull/105) remain a real
+separate source dependency. Exact correction transfer does not complete Reader
+analysis/verification, Writer image normalization/ingress, null-original admission
+or fidelity/native qualification. Stored samples remain historical data and their
+selected coverage controls usability independently of unrelated cache contents.

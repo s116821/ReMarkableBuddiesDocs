@@ -167,3 +167,53 @@ The selected worker feature SHALL include a reviewed compatibility stage for cur
 #### Scenario: Notebook live validation matches reopen and original preparation recovers
 - WHEN selected notebook publication/adoption or a crash around CURRENT and capabilities occurs
 - THEN live writer/adopter enforce the same source/plan/stage semantics as recovery, actual model handoff and result commit retain current admission, and only the exact actor/source/target-bound preparation under existing-only custody can reconcile stale capabilities.
+
+
+### Requirement: Shared portable declarations have a real selected producer and consumer
+Shared mode SHALL adjudicate one portable-configuration record under the group-stable global key SHA-256 of UTF-8 `urn:remarkable-buddies:global-record:v1:portable-configuration`, with record UUIDv5 under the group UUID and the same name. Format5 SHALL be the explicit selected namespace/schema boundary. Values SHALL use the delivered strict V1 portable allowlist and raw present-declaration merge; decoded defaults, credentials, paths, model/runtime/native bindings and omitted declarations SHALL NOT become durable shared settings.
+
+#### Scenario: Explicit edit and passive adoption
+- WHEN an explicit conditional shared-preference Edit or a validated passive winner is processed
+- THEN the existing selected Store/Worker/original outbox or ReceiveRequest supplies the sole publication/adoption path, no local Config file is rewritten, equal raw results create no receipt, and join/mode choice alone never seeds a preference record.
+
+#### Scenario: Strict original bytes and sparse values
+- WHEN a portable envelope contains duplicate nested payload members, unsupported null, unknown or excluded fields
+- THEN strict decoding of its original ObjectRef bytes refuses it before generic JSON materialization; valid sparse objects and supported explicit null retain the delivered merge semantics and exact text.
+
+#### Scenario: Effective request changes while work is in flight
+- WHEN the selected preference head or established absence changes after a request captured its admitted raw and typed local configuration
+- THEN one ordered preference/document/memory gate set revalidates the original pins at actual handoff and result publication; stale work refuses, original-only recovery stays readable, and the next request uses the validated in-memory overlay with local excluded values preserved.
+
+#### Scenario: Local saved settings are not effective shared management
+- WHEN the existing local Manager/import maintenance displays or edits the saved file
+- THEN it retains its delivered local contract and cannot claim effective shared-group preference management; mode-aware shared view/edit remains separate integration work.
+
+### Requirement: Confirmed handwriting uses independent exact correction scopes
+Shared confirmed handwriting SHALL use one fixed-slot chain per correction, typed owner HandwritingCorrection(profile, correction), existing Handwriting1 record identity/mutation semantics, and key SHA-256 of UTF-8 `urn:remarkable-buddies:global-record:v1:handwriting:{record_uuid}` using its canonical lowercase hyphenated UUID. Only an explicitly confirmed conditional typed operation in admitted format5 SharedGroup SHALL create or update this scope. Join, mode change, imported history and source/native document availability SHALL NOT confirm, reprofile or silently promote ordinary corrections.
+
+#### Scenario: Confirm, update, forget and rollback
+- WHEN a typed confirmed mutation targets an agreed genesis absence or current expected head
+- THEN it uses existing mode lease, ordered catalog/correction gates and original Store receipt; a first Confirm alone creates genesis, Update preserves immutable original/sample/source linkage, Forget appends a known-key tombstone, and rollback is a fresh confirmed CAS Update without slot rewind or physical sample purge.
+
+#### Scenario: Local operation UUID is reused across producers
+- WHEN competing selected producers reuse one local operation with changed correction, profile, scope or request content
+- THEN bounded complete local transaction evidence and the actual Store publication mutex atomically reject the conflicting publication across applicable producers without a shadow database; identical original replay remains historical, and imported envelope operations are not treated as local publication receipts.
+
+#### Scenario: Competing correction winner and exact sample closure
+- WHEN the existing Worker validates and adopts a same-key handwriting winner
+- THEN strict original envelope/payload bytes, deterministic revisions/parents, one selected head, immutable original and bounded verified PNG/source provenance remain exact; each retained branch is validated separately, local required evidence/media survives one atomic activation, and the original passive receipt resumes after interruption without outbound intent or fresh confirmation.
+
+#### Scenario: Omitted and missing samples differ
+- WHEN a selected correction declares policy omission or promises included sample bytes
+- THEN omission may activate verified metadata with incomplete-media status and no usable example, while missing/corrupt promised bytes prevent usable activation; unrelated cached bytes cannot override selected coverage, no sample is substituted/resampled, and source/retained evidence remains protected.
+
+### Requirement: Shared handwriting reaches only a compatible admitted recognition consumer
+Recognition SHALL use the explicitly selected local profile and a validated catalog/current correction inventory. Catalog/absence and exact example/head/media pins SHALL participate in the same ordered document/memory/preference admission set at actual recognition handoff and result publication. Stored corrections SHALL remain historical data and SHALL NOT authorize native output or import a foreign live capability.
+
+#### Scenario: Bounded selected examples
+- WHEN a compatible admitted shared recognition consumer captures confirmed context
+- THEN it uses exact Included verified samples, target-hash exclusion, bounded confirmed-recency-v1 ordering, at most16 candidates and3 examples and the existing request/PNG budgets; explicitly requested stale/missing examples refuse, automatic selection reports incompleteness truthfully, and unavailable/incomplete with no usable sample never becomes complete-empty.
+
+#### Scenario: Receiving interfaces remain unavailable
+- WHEN the compatible Reader analysis/verification and typed Writer normalization interfaces from the separately owned receiving work are not delivered
+- THEN domain transfer does not claim an actual recognition consumer, text-only Writer or archived normalized notebook processing does not masquerade as recognition, and null-original abstention/native ingress and held fidelity/device gates remain explicitly unfinished.

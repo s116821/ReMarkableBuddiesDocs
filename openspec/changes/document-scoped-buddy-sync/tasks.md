@@ -198,3 +198,17 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Extend the actual mixed product regression with unregistered/checkpoint-corrupt refusal and exact-registration success; source61ed900 passed111 selected regressions with1 existing ignored test. These results do not cover the unimplemented connected worker or notebook stage.
 - [x] Reconcile the provider resource proposal to permit a suitable existing explicitly authorized account/application with isolated disposable resources and exact cleanup, without authorizing execution.
 - [ ] Complete the connected worker, original controls/receiving, domain retention/uncertainty, notebook format5/producer and their meaningful checks before final lifecycle/delivery.
+
+
+## Accepted portable preference and confirmed handwriting integration
+
+- [x] Record the reviewed portable/handwriting domain contracts in the active central change before real core/consumer integration; preserve delivered ordinary/import/Manager behavior.
+- [x] Adopt the independently reviewed portable Artifact/LocalConfigSnapshot adapter through integrated parent458a4cd; this is not the completed selected producer/adopter/consumer route.
+- [ ] Add format5 portable namespace/typed owner, strict original-byte closure validation, explicit Inspect/Edit/Status selector, original receipt/no-op behavior and real Worker/second-Store adoption.
+- [ ] Capture admitted raw+typed local configuration together and integrate the effective request overlay, selected or established-absence pin, actual Writer/notebook role/prompt gates and ordered handoff/result checks; preserve original recovery and excluded local values.
+- [ ] Integrate the disjoint Handwriting1 raw-byte validator/projection/typed preparation adapter after its coherent source handoff; keep ordinary leases and null-original refusal unchanged.
+- [ ] Enforce Store-atomic local operation reuse checking across selected producers with bounded existing local transaction evidence, identical replay and imported-operation separation; test concurrent competing scopes/profiles/corrections.
+- [ ] Connect the real confirmed command, correction catalog/genesis, original sample/tombstone/rollback semantics, fixed-slot winner, passive receipt and exact selected/retained/media validation across two real format5 Stores.
+- [ ] Reconcile compatible existing Reader/Writer receiving interfaces and actual recognition ingress before claiming shared example consumption; Buddy105 remains an explicit separately owned source dependency, not fulfilled by data transfer or archived normalized notebook stages.
+- [ ] Exercise exact selected examples/coverage, target exclusion, bounded ranking/request budgets, stale handoff/result fencing and truthful unavailable/incomplete versus complete-empty behavior through the actual compatible receiving paths.
+- [ ] Keep shared Manager effective-preference view/edit, ordinary promotion policy, broader schemas, isolated backup, live provider, model fidelity/native/device and full-parent qualification open unless independently delivered.
