@@ -282,3 +282,9 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [ ] Obtain independent source/profile review and coordinated publication of the command increment; the coordinator owns hosted successor checks.
 - [ ] Close the actual Buddy/Manager editable-command parity gate with the domain owner; source HTTP adapter cases and synthetic executable Status custody do not imply positive executable Inspect/Edit or live qualification.
 - [ ] Complete effective Reader/Writer/memory preference consumers under the same ordered admission at actual handoff and result commit, alongside remaining handwriting/notebook/native/provider parent gates.
+
+## Constructor checkpoint allowance correction
+
+- [x] Reproduce the uncharged constructor checkpoint reread with a boundary that actually reaches four provider GETs on the uncorrected implementation before exhaustion.
+- [x] Reserve that second bounded checkpoint read in the same original request allowance before credential opening in source `143eb62`; pass all eleven command cases, strict lint/formatting and unchanged two-file hashes, with the same boundary making no additional provider request.
+- [ ] Obtain the requested independent narrow review and coordinator publication of the constructor correction; retain prior broad/executable evidence at its original source.

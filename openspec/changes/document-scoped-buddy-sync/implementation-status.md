@@ -563,3 +563,25 @@ Buddy/Manager editable-command parity remain open. Effective product consumers
 are not yet connected at actual request handoff/result admission. Selected
 notebook, handwriting, broader uncertainty and provider/native parent gates also
 remain unfinished; the active parent is neither synced nor archived.
+
+### Constructor checkpoint read allowance correction
+
+Review of the one-shot first-absence route identified that Engine construction
+rereads the bounded worker checkpoint after caller-local uncertainty inspection.
+That constructor read must be reserved in the same original read allowance before
+opening credentials. The finite correction precharges its MAX_METADATA bound;
+no allowance or deadline is reset and provider qualification remains sealed.
+
+The boundary uses an existing checkpoint and permits caller-local reads plus one
+slot observation, while excluding the additional constructor reservation. On the
+uncorrected implementation it actually issued four GETs (request count10 to14)
+before later exhaustion, failing the required no-provider-I/O assertion. Source
+[143eb62](https://github.com/s116821/ReMarkableBuddies/commit/143eb62752e4bf04e665a1068946f39ba0ab8a46),
+parent `b90b2a5`, now passes the same boundary with no additional provider
+requests. All eleven command cases (the existing ten plus this boundary), strict
+Clippy, formatting and diff checks pass. Both finite correction inputs remain
+unchanged at commit. Prior 209/26 and executable results retain their b90
+attribution; no unrelated check campaign was repeated. Independent narrow
+re-review/publication remain pending. The independently passing
+command/Worker integration prototype is held outside this finite correction and
+provides no evidence for this boundary.
