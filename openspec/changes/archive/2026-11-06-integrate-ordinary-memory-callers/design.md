@@ -1,10 +1,14 @@
 ## Context
 
-This is proposed caller composition, not an implemented or qualified capability.
-The delivered local/selected memory increment and its archive remain unchanged.
-The implementation baseline is the future delivered shared-conversation revision;
-the inspected seams below are from Buddy `200d21733c1a402d3b68a93430f0e05e82e16ca2`.
-The Docs starting point is `53cbfe5be4b328a58781a6d2772b5172863b8c3b`.
+This design was accepted before implementation at Docs
+`0feadf560bc8a5aa9778035d4b910cbf3076f16f`. Its decisions below retain that
+precode wording. The finite implementation is now Buddy
+`02924ffac26527e0dea9d508e9e230f2dff7140e`; see
+[implementation.md](implementation.md) and [verification.md](verification.md)
+for actual delivered-baseline reconciliation, platform evidence and bounded live
+acceptance. The existing local/selected memory archive remains unchanged.
+Originally inspected seams were Buddy `200d21733c1a402d3b68a93430f0e05e82e16ca2`,
+with Docs starting point `53cbfe5be4b328a58781a6d2772b5172863b8c3b`.
 
 `Dispatch::local` already owns a `LocalDispatchLifetime` on the exact Ledger Store.
 That lifetime combines `OrdinaryModeLease` and `LocalDomainLease`, admits absent or

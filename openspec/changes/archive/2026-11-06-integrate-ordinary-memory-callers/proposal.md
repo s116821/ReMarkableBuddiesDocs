@@ -45,8 +45,11 @@ standalone supplied-text Writer behavior and selected receivers remain intact.
 This proposal is based on delivered memory merge
 `f6af5d1ce08c7ad518c0943d4a293e7c18688699` and inspected shared receiving source
 `200d21733c1a402d3b68a93430f0e05e82e16ca2`. Implementation must reconcile the
-eventual delivered shared-conversation successor before edits. This same active
-Docs change/PR remains paired with its eventual Rust implementation through
-verification, canonical sync and archival; this is not a completed planning
+eventual delivered shared-conversation successor before edits. That prerequisite
+is now reconciled at Buddy `cb9cd0c255921385a35d4ca80b8f48815cc2b4e4`
+and Docs `55378445c70eb70245f9f840eb215e2637a6a55d`. This SAME Docs #151
+continues with Buddy #137 source `02924ffac26527e0dea9d508e9e230f2dff7140e`
+through the implemented, verified, synced and archived finite caller increment;
+see implementation.md and verification.md. This was not merged as a planning
 deliverable. Remote shared/isolated sync, native Writer input/effects and wider
 memory lifecycle acceptance retain their existing requirements and owners.

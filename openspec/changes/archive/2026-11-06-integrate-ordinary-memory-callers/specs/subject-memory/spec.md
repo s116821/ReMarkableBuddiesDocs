@@ -50,7 +50,7 @@ history and source data and label usable memory once as author-asserted contextu
 data. It SHALL NOT grant effects or claim atomic freshness across model I/O.
 Enabled requests exceeding the existing 2048-byte query bound SHALL refuse
 without truncation; disabled receivers SHALL retain their existing request bounds.
-Source traceability: memory/receiving.rs (planned), writer/subject_memory.rs and
+Source traceability: memory/receiving.rs, writer/subject_memory.rs and
 conversation/receiving/memory.rs.
 
 #### Scenario: Original source scope on refinement
