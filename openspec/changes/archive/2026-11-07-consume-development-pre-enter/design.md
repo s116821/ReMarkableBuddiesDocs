@@ -6,7 +6,12 @@ The precode was independently accepted in Docs PR 152 at
 `a5e3dc16e437306197438474fc7e44ed74a60f5f`. The consumer implementation is
 published in [Buddy PR 138](https://github.com/s116821/ReMarkableBuddies/pull/138)
 at `9ee80d8d5c9e540ba6c06884da11f8ef511dcfcf`; independent source review and
-local build validation passed. Hosted CI and coordinated delivery remain pending.
+local build validation passed. The exact published source passed required Checks,
+ARM Build and Integration in [run 42352295291](https://github.com/s116821/ReMarkableBuddies/actions/runs/42352295291).
+Canonical spec sync at Docs `d846801bc361bf7af447f8c02de9a2b885d2d56d`
+passed [run 42353087524](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42353087524).
+This completed source change is archived in the paired Docs/Buddy delivery;
+final archive CI and actual-main results remain separately recorded in the PRs.
 This increment contains no
 provider call, installed artifact change or tablet action.
 
@@ -216,9 +221,9 @@ is selected here.
 
 ## Delivery and verification
 
-Keep this central change open with its future affected Buddy PR; implementation,
-verification, canonical sync and archival stay in the same coordinated delivery.
-Do not merge/archive this as a completed planning prerequisite. Preserve ordinary
+Implementation, verification, canonical sync and archival are completed in the
+same coordinated Docs PR 152 and Buddy PR 138 delivery. This is an implemented
+source change, rather than a completed planning prerequisite. Preserve ordinary
 vs diagnostic evidence and all unresolved native gates separately. Focused tests
 are listed in tasks; reuse unchanged SDK wire/retirement coverage rather than
 repeat a broad native matrix. Neither handwriting integration nor SDK source

@@ -28,9 +28,9 @@
 ## 4. Coordinated completion
 
 - [x] Keep any eventual current execution packet separately gated after independent source/build review; source tests do not authorize device/provider work. No execution packet is selected by this consumer increment.
-- [ ] Link exact Docs/Buddy revisions and Native dependency, resolve review findings and applicable CI; keep native-qualification gaps explicit.
+- [x] Link exact Docs/Buddy revisions and Native dependency, resolve review findings and applicable CI; keep native-qualification gaps explicit.
 - [x] Sync the implemented canonical consumer spec and preserve unrelated contracts.
-- [ ] Archive this change only when its selected implementation/verification obligations are complete in the coordinated Docs/Buddy delivery.
+- [x] Archive this change only when its selected implementation/verification obligations are complete in the coordinated Docs/Buddy delivery.
 
 ## Evidence and remaining authority
 
@@ -39,7 +39,14 @@ at `9ee80d8d5c9e540ba6c06884da11f8ef511dcfcf`, based on delivered
 `bafa5cc92c175b1319939265c6da5928315cd8bc`. Ordinary manifest, lock, CI and release
 validation are unchanged. All twelve published source blobs match the independently
 reviewed local implementation. Validation evidence and remaining limits are recorded
-in the paired PR discussion. Hosted CI, canonical sync and archival remain open.
+in the paired PR discussion. The published Buddy revision passed all required
+checks in [run 42352295291](https://github.com/s116821/ReMarkableBuddies/actions/runs/42352295291),
+including ARM Build and Integration. Docs canonical-sync revision
+`d846801bc361bf7af447f8c02de9a2b885d2d56d` passed
+[run 42353087524](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42353087524).
+The seven implemented requirements are synchronized into the canonical spec;
+this completed source change is archived in the coordinated delivery.
+Final archive CI and actual-main publication are recorded in the paired PRs.
 No SDK/native shim rebuild, tablet action, provider call or stock qualification
 is included. The separate REM-61 native experiment remains unqualified.
 
