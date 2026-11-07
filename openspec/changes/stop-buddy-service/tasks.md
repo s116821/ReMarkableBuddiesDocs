@@ -112,5 +112,5 @@
 - [x] Specify exact private alias evidence, digest and retained profile gates.
 - [x] Implement and test fixed alias sampling, private parsing and candidate matching.
 - [x] Verify direct and resident digest compatibility and production refusal in both host factories.
-- [ ] Independently review the exact source and paired contract.
+- [x] Independently review the exact source and paired contract at Manager 82f1c657 and Docs ba64978b.
 - [ ] Qualify a separate stable installed tuple and actual guarded public Stop before any enablement.

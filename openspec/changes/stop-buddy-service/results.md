@@ -695,3 +695,12 @@ targeted lint passed, with the existing initial bundle-budget warning.
 The actual prior ordinary diagnostic and exact two-path disposal are
 retained separately in REM-42. This source-only increment supplies no
 installed tuple, public service actuation, native or package qualification.
+
+Independent review accepted Manager 82f1c657 and Docs ba64978b in REM-42
+comment 81807d62. Manager 1357b114 changes only the reciprocal late-ack test.
+It freezes the injected clock during preparation and advances the mocked
+timer only after actual submission has acquired the shared owner. Both
+directions retain the unknown result and prove the late acknowledgment
+cannot release the later peer. All 46 focused Node Stop tests passed in
+parallel. The original parallel failure and sequential pass remain separate
+evidence for the earlier test.
