@@ -138,13 +138,14 @@ model-qualification prerequisite, implicit selector activation or premature arch
 - [x] Validate actual receiving controls and inherited ownership/replay/Reader controls; preserve synthetic-only attribution and initial failures.
 - [x] Inventory retained corpus provenance without promoting evaluator truth or controlled fixtures into real user confirmation.
 - [x] Independently review the exact test-driver source/contract pairs.
-- [ ] Verify all required hosted checks for the Lincoln driver revision 65de35d5.
+- [x] Verify required hosted Checks, ARM Build and Integration for Lincoln driver 65de35d5 in source run 42353257672.
 - [x] Separately review and execute the bounded exploratory Lincoln fixture once. The target baseline generated and the seed abstained. No paired result exists.
 - [ ] Establish paired benefit/nonregression with separately admitted representative evidence. The consumed Barton and Lincoln attempts do not satisfy this criterion.
 
 ## Explicit image-bound Writer enrollment after abstention
 
 - [x] Draft the [precode amendment](writer-abstention-enrollment.md), failure matrix, and active OpenSpec scenarios.
-- [ ] Independently accept the exact custody, intent, compatibility and payload boundaries.
-- [ ] Implement and verify accepted source/API controls, including frozen legacy vectors.
+- [x] Independently accept the exact custody, intent, compatibility and payload boundaries at Docs 6a1504d2.
+- [x] Implement the typed source/API boundary and verify focused local controls, including frozen legacy vectors.
+- [ ] Complete independent implementation review, exact-head hosted checks and older-binary opaque compatibility evidence.
 - [ ] Attach and qualify the real native image and explicit user-intent owner separately.

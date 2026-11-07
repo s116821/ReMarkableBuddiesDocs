@@ -348,3 +348,29 @@ It does not require changing WholePage, fabricating original text, or
 silently routing partial results into Generate. Partial-aware Writer
 receiving would be a separate product contract. No implementation or
 successor experiment is selected by this finding.
+
+Lincoln driver source run 42353257672 subsequently completed required Checks,
+ARM Build and Integration successfully on 65de35d5. This closes that exact
+hosted checkpoint. It does not change the consumed live result.
+
+### Explicit enrollment implementation
+
+Buddy d20d6dd implements the accepted Docs 6a1504d2 source/API boundary.
+Valid Writer WholePage abstention can yield a same-Store capability. An
+explicit owner action can save exact retained media and confirmed text with
+null original and distinct provenance through the existing publisher.
+Public confirm/update remains legacy-only. Mixed contexts add the pinned
+instruction and recipe while existing payloads and digests retain their
+frozen identities.
+
+On this source, offline library tests filtered to handwriting passed 74
+with four reviewed live or fixture selectors ignored. The new controls
+exercise valid abstention versus malformed response, explicit operation and
+input refusal, exact PNG and provenance, replay refusal, notebook backup
+and restore, and the pinned mixed Reader/WholePage payload components.
+Clippy with library and test targets and strict OpenSpec validation passed.
+Initial compile failures during the type conversion and a shared Windows
+executable link collision were resolved before the final sequential run.
+Older typed refusal and opaque preservation have source-trace evidence.
+An older-binary round trip, independent exact-source review and hosted
+checks remain open. No native UI, provider or efficacy result is credited.
