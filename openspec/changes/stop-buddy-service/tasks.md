@@ -91,3 +91,18 @@
 - [x] Coalesce each original parent chain into one fixed bounded command; retain immediate no-follow tests, strict per-parent framing/parsing, separate before/after chains and unchanged deadlines.
 - [x] Verify identical synthetic full DTOs/digests, reduced command counts, unsafe-parent/drift/framing refusals and actual local GNU/BusyBox producers, with platform evidence kept separate.
 - [ ] Reconcile the exact successor into recovery, verify independent final source/Docs review and current hosted checks; complete actual profile/lifecycle qualification before production admission or final delivery.
+
+
+## 12. Proposed common resident-package host/UI wiring
+
+- [x] Reconcile exact Manager57/Docs134 source and identify the explicit Stop-only public-contract exclusion and absent package routes.
+- [x] Specify the narrow separate capability, reused helper mapping, closed public/private boundaries, ownership/fences and disabled production gates before code.
+- [x] Resolve the reviewed intermediate-phase gap in the contract: durable original goal, exact phase proofs, bounded explicit continuation and goal-specific completion/fences.
+- [x] Obtain independent acceptance of this exact wiring amendment including the continuation delta before implementation.
+- [x] Extend only the existing finite coordinator and bounded intent schema for separately reviewed, single-phase continuation; verify local no replay and host-restart reconstruction.
+- [x] Independently accept actual Windows native-lock/read-sharing execution on the exact stable source; corrected module32e9012f/test0631c5e7 match the actual Windows receipt0c421362, with the original guarded-read failure preserved separately. Actual Linux initial/retained writer exclusion also passes.
+- [x] Add only the approved typed private adapter/shared host/protocol and both guarded browser/Electron routes, reusing the existing package helpers and MaintenanceIO.
+- [x] Add the shared App panel/controller with explicit review/confirm, original-operation check/cancel, host-issued handles and reciprocal peer invalidation/Busy behavior.
+- [x] Verify local real factories/routes/renderer and private entrypoint with synthetic source fixtures for unavailable production gates, approved fixture-only paths, wrong context/handle/input, before/after submission loss, durable uncertainty, no replay, cancellation/late completion and all existing peer boundaries.
+- [ ] Verify required current source/UI/packaged-host checks and independent review, preserving all earlier Stop/native evidence and empty production qualification registries.
+- [ ] Coordinate final same-change canonical sync/archive/delivery only after its selected obligations are complete; source wiring does not waive actual lifecycle qualification or enroll production tuples.
