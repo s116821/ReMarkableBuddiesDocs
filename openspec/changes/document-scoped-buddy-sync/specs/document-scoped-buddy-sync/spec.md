@@ -188,6 +188,43 @@ Shared mode SHALL adjudicate one portable-configuration record under the group-s
 - WHEN the existing local Manager/import maintenance displays or edits the saved file
 - THEN it retains its delivered local contract and cannot claim effective shared-group preference management; mode-aware shared view/edit remains separate integration work.
 
+### Requirement: Shared preferences have guarded effective management
+The Manager SHALL expose shared preference Inspect/Edit/Status through the same guarded private host behavior in browser and Electron. The real versioned Buddy one-shot command SHALL establish selected readiness, exact mode/group/binding/Store/selection or qualified-absence pins and the raw local configuration identity used for the effective projection. Only a successful authoritative Inspect SHALL enable a deliberately confirmed sparse V1 Edit. Saved mode hints, source-only fixtures and saved-file inspection SHALL NOT supply that authority.
+
+For first absence only, Buddy MAY reuse its already-qualified fixed-slot adapter for a bounded GET-only refresh of Drive data under current mode/binding/Store custody, with qualification before credentials. It SHALL revalidate exact root identity, a complete accepted catalog, expected global key/owner, Store generation, epoch and raw local Config pin under existing gates and one original deadline/read budget. The Manager transports SHALL NOT issue provider requests or introduce another engine. This exception SHALL NOT allocate IDs, write Drive data, create OAuth grants/resources, change mode/Config/service state, or move publication/adoption from the existing Worker. Existing separately qualified credential refresh retains its original bounded authorization contract.
+
+#### Scenario: First absence needs complete current evidence
+- WHEN no local preference selection is available and first absence is requested
+- THEN only a verified bootstrap and complete accepted catalog where the exact global key is absent can establish an editable absent guard; an exact-ID 404 alone, missing/partial/invalid/unavailable bootstrap, stale pins, or a known mapping not yet received remain Joining/unavailable without a guard or empty seed.
+
+#### Scenario: First Edit re-admits absence
+- WHEN an Edit presents an original absent Inspect guard
+- THEN Buddy establishes current qualified absence again before conditional local publication; the saved guard grants no live permit, the GET provides no reservation or upstream success, and a later competing registration is adjudicated through the existing catalog/fixed-slot path without rebase of losing user content.
+
+#### Scenario: Established selected work remains offline-capable
+- WHEN an established selected Inspect/Edit or an original Status runs without a provider connection
+- THEN exact current local domain/configuration pins or local original transaction/result custody remain the applicable admission evidence, with no unconditional network prerequisite introduced by first-absence refresh.
+
+#### Scenario: Effective inspection changes before Edit
+- WHEN a selected head, established absence, local fallback configuration, mode or connection changes after inspection
+- THEN the original guard refuses stale Edit, field origins remain distinguishable, and any new edit requires fresh inspection and confirmation rather than rebase or automatic retry.
+
+#### Scenario: Equal effective values have different declarations
+- WHEN an explicit sparse shared declaration yields today's same effective value as local fallback or a default
+- THEN omission, supported null and explicit-default declaration semantics remain distinct, and only an unchanged resulting portable declaration artifact is no-change without a fabricated receipt; effective-value equality alone cannot suppress the edit.
+
+#### Scenario: Original Status after possible dispatch
+- WHEN Edit output is lost or canceled after possible dispatch
+- THEN the host retains the original operation/guard/patch digest and unknown disposition without private patch text, and Status proves correspondence from exact existing transaction and result custody or remains unknown; no fresh Edit, alternate ordinary Status or second operation index is used.
+
+#### Scenario: Shared command meets a resident Store owner
+- WHEN existing-only command acquisition encounters the resident process's exclusive Store lock or an older Buddy lacks the selector
+- THEN both host paths report busy or unsupported truthfully without stopping the service, using a saved-file fallback or pretending effective shared values are available.
+
+#### Scenario: Inspection is a snapshot rather than running activation
+- WHEN Manager displays effective fields or a local pending/upstream applied/replaced disposition
+- THEN explicit private text disclosure and bounded opaque-reference lifecycle preserve uncertainty, and the report identifies the next admitted request's projection without claiming that an already-running request consumed it.
+
 ### Requirement: Confirmed handwriting uses independent exact correction scopes
 Shared confirmed handwriting SHALL use one fixed-slot chain per correction, typed owner HandwritingCorrection(profile, correction), existing Handwriting1 record identity/mutation semantics, and key SHA-256 of UTF-8 `urn:remarkable-buddies:global-record:v1:handwriting:{record_uuid}` using its canonical lowercase hyphenated UUID. Only an explicitly confirmed conditional typed operation in admitted format5 SharedGroup SHALL create or update this scope. Join, mode change, imported history and source/native document availability SHALL NOT confirm, reprofile or silently promote ordinary corrections.
 

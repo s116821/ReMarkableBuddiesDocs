@@ -150,3 +150,144 @@ exposes no enabled selected dispatch or recognition hook. Native owns its raw
 handwriting files; core/catalog/Store/format5/admission/CLI/real callers and Docs
 remain coordinated here. No additional review of these accepted seams is required
 before that disjoint component implementation.
+
+### Shared-preference Manager and one-shot command boundary
+
+The coordinated Manager implementation follows the
+[accepted shared-preference management contract](shared-preferences-manager.md).
+That leaf is owned by the Manager lane; this design, the requirement delta and
+tasks remain core-owned. Saved-file import/export keep their delivered local
+meaning. The separate shared control uses a successful selected Inspect before
+Edit and a strict sparse V1 patch that contains only deliberate declarations.
+
+The core one-shot Inspect/Edit/Status command must bind original mode epoch,
+group/binding, Store/selection identity, accepted head or established absence,
+and the exact raw local configuration snapshot used for the reviewed effective
+projection. Status retains only the original operation, guard and patch digest;
+the original local transaction and exact result must prove correspondence without
+retaining private patch text, creating a second operation index or retrying Edit.
+An unchanged resulting portable declaration artifact under the existing
+structural/declaration semantics is a no-change outcome without a fabricated
+receipt. Equal effective values alone do not establish no-change: omitted,
+supported null and explicit-default declarations remain distinct, and adding a
+shared declaration may change future fallback despite today's equal value.
+
+The browser and Electron paths use the same guarded private host transport and
+opaque bounded references. A saved shared-group mode only offers the control;
+unsupported older Buddy, busy exclusive Store custody, stale inspection and
+post-dispatch uncertainty remain explicit. No automatic Stop, replay, saved-file
+fallback or provider request is introduced by the Manager transports. A verified inspection describes the
+next admitted request's overlay; running activation is unverified. Source-only
+UI/protocol fixtures do not close the real backend/host parity gate, and the
+combined unfinished feature is not independently enabled or merged to main.
+
+Only the real Buddy first-absence path may reuse its already-qualified fixed-slot
+adapter for a bounded GET-only refresh of Drive data. Qualification and current
+mode/binding admission precede credentials. Under existing Store/mode/domain
+custody and one original deadline/read budget, revalidate exact root identity,
+complete accepted catalog, expected global key/owner, Store generation, epoch and
+raw local Config pin. A saved absent Inspect guard establishes correspondence
+only: first Edit must establish current absence again before local conditional
+publication. A competing registration after that read remains subject to the
+existing catalog/fixed-slot arbitration; the GET supplies no reservation or
+upstream-success claim.
+
+An exact-ID 404 alone proves neither absent key nor free slot. Missing bootstrap,
+partial/invalid/unavailable observations, stale pins and a known mapping whose
+content is not received remain Joining/unavailable, without an editable guard or
+empty seed. This path allocates no IDs and creates, updates or deletes no Drive
+data; it introduces no OAuth flow, grant/resource creation, mode transition,
+ordinary fallback, Config rewrite or service action. Existing separately qualified
+credential refresh retains its original bounded authorization contract. Explicit
+local Edit supplies the original selected transaction; the existing Worker alone
+owns catalog/content publication and adoption.
+
+Established selected Inspect/Edit remain local-first/offline with their exact
+current domain/configuration pins. Original Status checks local original receipt
+and result correspondence without a network prerequisite. Neither acquires an
+unconditional provider-read dependency from the first-absence exception.
+
+### One-shot preference report profile
+
+The implemented command keeps the accepted fixed stdin selector and request
+fields in the Manager contract. Its version1 response carries `report_version`,
+`operation` (inspect/edit/status), `status`, `disposition` and
+`runtime_activation: unverified`. Inspect includes `guard` and `view` only after
+current admission. Edit/Status preserve the valid original `guard`,
+`original_operation` and compact `patch_sha256` for correspondence; Status never
+includes a view or private patch text. No response claims running activation or
+remote application.
+
+`ok/read-only` is an admitted inspection. `ok/no-change` describes exact raw
+declaration equality without a fabricated receipt. `ok/local-committed` verifies
+a local original selected transaction, with upstream application still unverified.
+Joining/not-admitted has no editable inspection guard. Changed admission conditions
+produce conflict/not-dispatched; unavailable unknown remains uncertain after a
+possible edit. Busy, unsupported and invalid-input refusals retain their ordinary
+meanings. No client may infer a receipt from matching effective values.
+
+Original Status traverses the bounded accepted local chain, requires an explicit
+Initialize or Commit (never a received Activate), checks the exact predecessor
+selection/revision for Commit and the original Store generation, then verifies
+the local actor, operation and unchanged guard/patch/result-bound revision recipe
+against original raw records. This needs no current mode permit, configuration
+hash equality or provider access and creates no second operation index.
+
+Established selected Inspect/Edit construct no provider adapter. First absence
+alone lazily constructs the qualified adapter under current mode/domain custody
+and refreshes only root/catalog observations, with one original sixty-second
+deadline and conservative read allowance. Each observation is charged before
+I/O for its account-identity response, two metadata responses and bounded 64KiB
+descriptor; exhaustion cannot prove absence. Existing qualified token refresh
+retains its separate bounded authorization contract. Local Config/checkpoint and
+selected-original reads share the same allowance. The domain gate remains held
+while Store mutexes are released for GETs; no command allocates/uploads provider
+data. Raw Config is rechecked at conditional publication and output handoff.
+
+The production qualification factory remains sealed. Actual executable evidence
+therefore covers supported parsing/refusal and original Status; the private test
+HTTP adapter covers positive Inspect/Edit admission, crash and correspondence.
+These evidence categories do not establish live provider qualification or complete
+the Manager's real editable-command parity gate.
+
+### Effective selected Writer consumer implementation
+
+The bounded consumer increment connects the actual selected Writer command,
+not a renderer setting or a saved guard, to the same qualified preference
+admission used above. Capture the exact raw Config and a selected preference token
+or privately established absence, and derive the allowed effective Config from
+those bytes. Historical original recovery stays read-only before new-work policy
+and model credentials. Other runtime settings remain local. No Config rewrite,
+new provider sender, serialized permit or operation index follows.
+
+A private request-scoped preference snapshot joins Writer and any selected memory
+catalog/aggregate admission in the existing ordered gate set. Recheck all current
+pins immediately around the synchronous model handoff and the actual result
+transaction. Existing OpenAI owned-request submission remains the only transport.
+An internal guarded-handoff seam wraps the owned request submission, then releases
+domain gates before waiting for its response. Progress and result checks may
+cancel/refuse stale inputs; they must not reacquire a gate recursively from an
+already locked callback. Unsupported model adapters refuse the guarded path.
+
+One original monotonic lifetime covers the 60-second admission window, the
+existing supported model wait of at most 90 seconds and a bounded 60-second
+completion window. The model handoff is single-use and must occur inside the
+original admission window; waiting for a healthy response does not renew it.
+Reserve the finite preference read allowances once from a single charged parent:
+full admission, handoff and completion validation each keep their own allowance,
+while periodic cancellation checks use a separate finite raw-Config/current-header
+allowance sized for the complete 210-second cadence. Dropping an allowance or
+calling progress cannot replenish it. Cheap progress checks issue no token and
+never replace complete object/history verification at the real handoff or result.
+Generated text without an actual guarded owned submission cannot be published.
+
+The result route uses the existing joined selected Writer publication, adding the
+same preference admission and locked verification alongside selected memory pins.
+An equal display value or a newer snapshot cannot authorize completion for an
+older request. Mode/group/binding, raw Config, Store generation and the captured
+selection/absence must still match. Provider qualification remains sealed in
+production and the current executable/Manager evidence retains its previous
+limits. Reader and remaining memory/research consumers remain separate unfinished
+work. Reader has multiple model submissions and needs its own coherent request
+lifetime and custody; the single-submission Writer snapshot is not a ready Reader
+implementation.

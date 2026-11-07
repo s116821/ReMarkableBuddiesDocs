@@ -1,10 +1,12 @@
 # Bounded selected-storage delivery
 
-This change remains active. The ten implemented API requirements are synchronized
-verbatim into `openspec/specs/document-scoped-buddy-sync/spec.md`. The nine
-unfinished end-to-end requirements remain in this change's delta. No change is
-archived, no unperformed qualification is checked off, and this increment does not
-complete the parent change or the full sync feature.
+This change remains active. The historical bounded delivery synchronized ten
+implemented API requirements into `openspec/specs/document-scoped-buddy-sync/spec.md`;
+separately delivered requirements retain their own provenance. The active delta
+and current checklist also include the later worker, notebook, preference and
+handwriting integration requirements. No unfinished parent is archived and no
+unperformed qualification is checked off. Historical counts and receipts below
+retain their original revision and scope.
 
 ## Source and review provenance
 
@@ -34,6 +36,13 @@ The additional ordinary-mode guard uses the exact accepted API blob
 Its final generic hosted result and original tested temporary merge are recorded
 in [receipt6189560452](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6189560452).
 Its separate ordinary-runtime specification lifecycle remains separately owned.
+
+The disconnected opaque-reference Store fixture originated at `a78d0ca`; its
+blob `d37474a2a84aa5a89808685cd38885593845ad06` is identical in that commit,
+the accepted paired API squash `0a258056`, and the current source. The old
+interface/fixture checklist item is reconciled through that historical delivery,
+not a claim of actual domain projection, activation, admission or native effects.
+The preserved ownership agreement and later domain work keep their own scope.
 
 These are bounded source and host-fixture acceptances at their stated revisions.
 They are not current-head CI, live-provider, device, deployment or whole-feature
@@ -131,9 +140,9 @@ This settles only that historical API delivery, not current end-to-end acceptanc
 The parent remains active with all nine unfinished end-to-end requirements.
 
 
-## Current worker continuation
+## Worker design basis before implementation
 
-Current basis: Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 and
+The pre-implementation basis was Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 and
 Docsa1f446b8c4857e4f17726a0cb40ed62b8048b71a. Later portable preferences,
 notebook archive/restore and historical outbox status have their own delivered
 archives and are not reopened. [Shared-worker precode](shared-worker-integration.md)
@@ -142,8 +151,9 @@ selected notebook compatibility and producer stage. Current legacy worker,
 foreign/local genesis mapping and notebook-format source conflicts are concrete
 implementation work, not a request to repeat completed primitive tests.
 
-No selected worker implementation, live provider binding or native eligibility
-is established by this proposed amendment. Existing domain admission/projector/
+At that design checkpoint, no selected worker implementation, live provider binding
+or native eligibility was established. Subsequent source increments are recorded
+below; their narrower proofs do not establish live binding or native eligibility. Existing domain admission/projector/
 settlement APIs are reused; actual handoffs, domain coverage and qualification
 retain their stated boundaries. Source/spec review precedes implementation and
 the unfinished parent is not archived as a planning-only delivery.
@@ -209,3 +219,493 @@ on author Linux/Rust1.98.1: one test passed, no assertion weakened. The continue
 Worker work was preserved separately during that exact-commit check. Root owns
 successor full hosted CI; the failed predecessor run remains failure evidence.
 The accepted r2 precode review task is reconciled rather than reopened.
+
+## Connected core source increment
+
+Reviewed source [24c1bb6](https://github.com/s116821/ReMarkableBuddies/commit/24c1bb67d8039ddf15ac2c4b4ee4cd0f85c6e163),
+parent7789255, is published in the existing implementation draft139. It connects
+the existing Worker loop to original selected staging/attempts and independent
+passive receiving custody, complete memory/document winner validation and
+receiving-local catalog/genesis publication. Actual selected memory edits and
+the selected Writer Generate/model-entry/finish reach a second Store through the
+real GoogleDrive HTTP adapter. The local HTTP model supplies an existing root and
+catalog; it does not prove CreateGroup, catalog registration or provider behavior.
+
+Four connected cases cover first join and later updates, batch_items=1 progress,
+Worker restart, lost create acknowledgement and durable passive activation before
+checkpoint/catalog publication. They require the original receiving operation,
+exact record references/bytes, local product admission, and no passive outbound
+attempt or POST. Writer uses a deterministic in-process engine. The transport
+now accepts an exactly bounded download while independently refusing oversized
+and zero-bound nonempty responses; the original failure and successor negative
+checks are retained separately.
+
+Author Linux/Rust1.98.1 checks on this core:163 storage tests passed; strict
+all-target/all-feature Clippy, full formatter and diff checks passed. The earlier
+selected regression group passed121 with1 existing ignored; these groups overlap
+and are not additive. All18 committed source files were verified byte-unchanged
+by commit. Hosted successor CI remains the coordinator's check and is not claimed
+complete here. The production qualification constructor remains closed before
+credential loading; the fixture is not configurable production authority.
+
+CreateGroup/original controls and new catalog registration, complete retained/
+imported-original uncertainty policy, format5 and the actual selected Source3
+notebook runner, preference/handwriting producers and compatible consumers,
+Manager parity and live provider/model/native qualification remain unfinished.
+This source increment neither archives the parent nor enables production sync.
+
+## Ordinary startup custody and compound storage
+
+Source5455cb9 corrects a reproducible preflight descriptor race exposed while
+following full source CI42397865817. The unchanged Reader CLI group passed17
+locally on the predecessor, but retaining a duplicate of the actual locked
+preflight descriptor deterministically made real ready-notebook startup report
+busy. Successful preflight now explicitly unlocks before Store reacquisition;
+closing the old duplicate cannot unlock the new Store owner. The regression
+failed before correction and passes afterward. All11 descriptor controls and17
+Reader CLI cases pass, with readiness assertions preserved and status-only
+failure diagnostics. The status-less hosted failure does not itself prove that
+exact interleaving; terminal successor CI remains coordinated separately.
+
+Source [23fd74d](https://github.com/s116821/ReMarkableBuddies/commit/23fd74d4a8624e459bf7697303b8db0e1826f022),
+parent5455cb9, supplies the compound storage/preparation increment for review.
+It stages a fresh format5 generation under existing-only ownership, retaining
+the actor and exact immutable source bytes. The original operation binds source,
+target, group, binding and mode. Contract/feature/source hashes, owned unpublished
+staging, one CURRENT switch and complete target validation precede capability
+publication. Normal open cannot repair capabilities; original reconciliation
+cannot repair missing published feature markers. Ordinary format4 startup and
+maintenance refusals remain, while format5 requires an explicit selected Reader
+route before credentials and again at ordinary-store fallback.
+
+Preparation supports complete owned ordinary families1–4 with no live selected
+metadata/history or pending selected attempt. It explicitly refuses to re-root
+an existing live selection. This limitation preserves source evidence rather
+than silently migrating local admission identities. No public one-shot preparation,
+preference or selected notebook CLI is claimed by this library increment.
+
+Local all-feature checks:175 storage tests pass with2 opt-in/witness tests ignored
+by the default harness; the process-death witness is invoked by its passing
+parent across four abrupt exits, and the separately opt-in old-reader executable
+gate was actually run and passed. A trusted pre-format5 host executable accepts
+a format4 control then rejects format5 through read-only report3, preserving
+critical metadata bytes. Real ordinary notebook Source3/plan/prepared+generated
+stage/media bytes survive staging and foreign-actor receiving-local metadata;
+actual format5 Stores reuse the Worker for lost-ack/original activation recovery.
+Atomic operation reuse races across independent real memory producers admit
+one publication and one typed Store rejection, with exact replay preserved.
+All17 Reader CLI cases, strict all-target/all-feature Clippy, formatter and diff
+checks pass; all12 component inputs are unchanged by commit. Groups overlap.
+
+The actual selected Source3 producer/model handoff, CreateGroup/catalog/new-scope
+admission, preference/handwriting consumers and CLI/Manager parity, and applicable
+hosted/provider/model/native qualification remain open in this same delivery.
+
+### Original first-group control increment
+
+Source [8c97cc2](https://github.com/s116821/ReMarkableBuddies/commit/8c97cc2384bbe39fdee42582d7f2b77b8253532c),
+parent `dc95e43`, connects the explicit `create-group` mode operation to existing-only
+compound Store custody and the bounded selected branch of `sync/state.json`.
+It retains the original strict stdin request, actor/generation pins, each generated
+ID and exact root/initial-catalog bytes. ID allocation holds OrdinaryModeLease;
+the exact conditional mode transition follows its release. Publication requires
+the resulting receipt to remain current and holds SyncModeLease. A historical
+receipt or raced mode choice grants no old-namespace network continuation.
+
+Actual local HTTP tests cover six controlled interruption/reopen points,
+unchanged original IDs, changed-mode refusal, lost root response resolved by the
+existing exact-ID transport observation, and an existing nonempty catalog that
+is adopted without an empty overwrite. A pull-only Worker remains Joining when
+the initial catalog is missing and sends no upload. HTTP-server callbacks verify
+the allocation/publication leases while the request is active and require the
+Store mutex to be available. These are controlled fixture boundaries, not an
+exhaustive process-kill or real-provider qualification claim.
+
+Seven focused control tests, all 183 storage cases (two existing explicit gates
+ignored by the default harness), ten actual mode CLI cases, strict all-target /
+all-feature Clippy, formatter and diff checks pass. The focused group overlaps
+the storage group. All seven source inputs are SHA-verified unchanged by commit.
+The CLI rejects missing/non-stdin, oversized, duplicate or unknown input fields;
+the valid unqualified request preserves CURRENT, mode, checkpoint and credentials.
+Existing Choose/Inspect output omits the new optional control data.
+
+Production application qualification remains sealed before credential access.
+This control increment does not enable live group creation, establish content
+receiving readiness, register new catalog scopes, release the real preference
+command seam, complete the selected notebook/optional-domain consumers, or close
+the parent delivery and its independent final review/qualification gates.
+
+### Additive catalog and losing-content custody increment
+
+Source [e1c170f](https://github.com/s116821/ReMarkableBuddies/commit/e1c170f97edfc348027b9cd054bd609713d7a1ad),
+parent `8c97cc2`, supplies the next bounded source increment for independent review.
+The existing worker discovers explicitly registered local memory/document scopes,
+verifies their exact local genesis against the current root and acquires the
+existing ordered catalog/aggregate gates. Original registration, source generation,
+generated genesis slot and exact catalog proposal remain in the same bounded
+worker checkpoint. Local revalidation shares one cumulative read budget.
+
+Registration adds one mapping to the verified accepted catalog set. A different-key
+race can extend the accepted set at its agreed successor; a same-key race adopts
+the accepted typed mapping. Neither operation rebases a user-content candidate.
+Retired proposal bytes remain original evidence, and a staged proposal cannot
+drop a predecessor mapping. A document fact may precede its first conversation:
+the existing document-fact validator establishes memory custody without minting
+a conversation/native projection. Winning activation preserves losing explicit
+content and omitted original media custody, independently of native/model receipts;
+only current selected records supply the active view.
+The new contention fixture proves record custody; media retention uses exact
+manifest media/coverage comparisons without claiming a new complete media-workflow
+qualification.
+
+New tests first reproduced the document-only ownership failure, withdrawal of an
+outbox that had never reached preparation, and missing retained custody for a
+losing explicit fact. Early review also identified the preparation-write crash
+window. The retained regression actually writes the original outbox, injects
+AfterCommit and reopens the Store. Before correction a missing prepared journal
+was wrongly treated as never-submitted staging. Preparation intent is now saved
+conservatively before entering the Store write. A present original journal
+reconciles/withdraws without a new operation or POST; a missing or legacy-unknown
+journal refuses. Only staging that never entered preparation permits its absence.
+Retired staging is retained in the bounded checkpoint. These are durable-write
+fault/reopen tests, not new process-kill or actual-provider evidence.
+
+Final all-feature results on the six unchanged committed inputs: 191 storage
+tests pass with 2 existing opt-in gates ignored, including all 8 catalog cases;
+74 conversation tests, strict all-target/all-feature Clippy, formatting and diff
+checks pass. Cases include original ID across restart with batch_items=1, exact
+passive receiving, simultaneous different-key catalog contention, same-key losing
+fact retention through reopen, unrelated-root refusal, legacy-unknown staging,
+accepted-map corruption refusal and both preparation-boundary recovery outcomes.
+The earlier 190/74 run preceded the preparation-intent correction and retains that
+separate attribution; it is not final-source evidence. Prior mode CLI/old-reader
+and native results keep their original source attribution rather than being rerun
+or relabeled. Independent source review and hosted checks remain coordinator gates.
+
+This discovers existing explicit domain registrations; it does not establish the
+fresh provider-qualified first-scope admission used by future product/Manager
+commands. Portable preference and handwriting scope producers/consumers, actual
+selected notebook runner, broader uncertainty policy and full live/native/parent
+acceptance remain open. Production provider construction remains closed.
+
+The paired checklist also reconciles thirteen historical bounded increment tasks
+against their existing review/delivery receipts and three already reviewed
+connected-core implementation items. It does not obtain new review or qualification
+by changing checkboxes. Broader compound requirements remain open, stale historical
+pointer statements are labeled as history, and current requirements derive from
+the active delta rather than an obsolete requirement count.
+
+### Portable record namespace and original-condition increment
+
+Source [8a50104](https://github.com/s116821/ReMarkableBuddies/commit/8a5010437247802b9267cc4617a380e1a45891ee),
+parent `54f5e5a`, follows the normally integrated disjoint qualification harness.
+The new `PortableConfiguration` / `portable-configuration` namespace admits only
+format5 selected records, strict original V1 declaration JSON, value envelopes
+and no media. Legacy families1–4 refuse ordinary/selected publication before
+generation or object changes. Existing ordinary portable file controls retain
+their separate admission. The older static contracts are unchanged.
+
+The pure domain adapter owns the fixed group-scoped UUIDv5 record, stable URI key,
+one complete unbranched declaration chain, exact original ObjectRef validation,
+and original-condition/patch/result-bound revision recipe. It rejects duplicate
+raw payload keys, missing/forked/disconnected history, foreign group/key and
+tombstones. Serializable conditions describe preconditions, not current authority.
+Only unchanged resulting raw declaration artifacts are no-ops; explicit null,
+empty objects and omission remain distinct even with equal effective fallback.
+No local Config file, operation index, receipt, provider request or live admission
+is created by the pure preparation/projection helpers.
+
+The unreleased format5 contract fingerprint changes to enumerate this namespace
+and its envelope limits. No earlier draft-format5 migration or deployment support
+is implied. The actual unmodified older format5 executable accepts an exact old
+contract positive control, then refuses the new contract without changing CURRENT,
+identity, capability/feature/contract bytes or creating mode/worker state. The
+current reader reopens the new store. The preserved old schema fixture is hashed
+to its original source. See the [explicit older-reader gate](qualification.md#portable-namespace-contract-refusal).
+
+All 25 portable configuration cases and 195 storage cases pass (three explicit
+default ignored gates, including the separately executed older-reader case).
+Strict all-target/all-feature Clippy, formatting and diff checks pass. The first
+lint run caught five test-only clone-to-slice suggestions; replacing them with
+borrowed slices changed no assertions or production code. The 25 portable cases
+were rerun afterward; storage evidence precedes only that test-only borrowing
+change, with every production/storage-test input unchanged. All 12 final source
+inputs are SHA-verified unchanged by commit. The four new portable record cases
+overlap the 25 portable configuration count. No live/native result is claimed.
+
+Actual qualified first-scope/current-selected producer admission, original-only
+Status, Worker publication/adoption of this owner, effective consumers and real
+CLI/Manager correspondence remain open. This schema/adapter increment does not
+release that command seam or complete the parent.
+
+### Portable raw-parent correction
+
+Independent source review found that original `parents: [P, P]` was normalized
+into one BTreeSet parent before portable arity/graph checks. The new correctly
+rehashed regression confirms both projection and actual Store activation accepted
+that invalid child, after a valid one-parent positive. Source
+[76095e7](https://github.com/s116821/ReMarkableBuddies/commit/76095e7fbea5541a8ec590ed4a4cee8b59716e17),
+parent `8a50104`, shares one portable raw-envelope check before normalization in
+both consumers. Duplicate object fields and raw parent arity are checked before
+the typed set exists; other namespaces retain their existing decode policy.
+
+The valid child now passes while the duplicate raw parent fails projection and
+Store admission with the original selected token/membership unchanged. All 26
+portable configuration cases and 195 storage cases (three default ignored) pass,
+as do strict Clippy, formatting and diff checks. The storage group was rerun
+because the raw hook sits in the shared Store decoder. Contract bytes/fingerprint,
+wire schema and authority rules are unchanged, so no older-reader rebuild or
+relabeling of its prior gate follows. All three committed correction inputs are
+SHA-verified unchanged. The independent narrow re-review accepted this correction;
+the coordinator published source `76095e7` with paired Docs `81667ed` in the
+existing implementation drafts. This does not close final parent review or CI.
+
+The subsequent seven-file Worker preference prototype is preserved separately in
+exact-byte custody and excluded from this correction. Full producer binding,
+generation, mode, configuration and selected-token re-admission remain required;
+the pure projection/Condition helpers do not establish them.
+
+### Portable Worker registration and original receiving
+
+Source [993236a](https://github.com/s116821/ReMarkableBuddies/commit/993236a0000cbd63f7bca4fc924d1c44bc36d4ad),
+parent `76095e7`, extends the existing selected Worker to route the typed portable preference owner
+through its additive catalog, fixed-slot publication and original receiving
+checkpoint. Discovery requires an explicit local original genesis at the exact
+root and current Store generation under the preference admission gate. An empty
+local scope supplies no declaration and causes no catalog allocation or upload.
+Existing memory registrations retain their original checkpoint shape; the new
+portable registration alternative rejects ambiguous source custody. Even at an
+already known empty mapping, imported foreign custody cannot authorize an initial
+publication. This is an original-source check, not the unfinished qualified
+Inspect/Edit producer admission.
+
+Receiving validates the exact original portable closure, reuses the original
+Initialize/Activate receipt after activation-before-checkpoint interruption, and
+retains losing explicit declarations separately from the active selected view.
+Current and retained manifests share a bounded local read budget. No native/model
+receipt is fabricated, local Config is not written, and the Worker remains the
+sole provider publisher/adopter.
+
+Four actual Worker/local HTTP cases pass: sparse explicit edits transfer original
+records to a passive second Store with no passive POST or outbox; competing first
+declarations converge while preserving losing original custody; fault/reopen
+reconciles the original receiving operation without another POST; foreign custody
+at an accepted but empty mapping refuses publication without changing its selected
+token. These are modeled provider interactions with real Store paths, not live
+account/Drive qualification or a supported user-facing command.
+
+Fresh first-use GET-only absence admission, offline selected Inspect/Edit,
+original-only Status, effective consumers and the actual CLI/Manager seam remain
+open. Production provider construction remains closed. No actual provider or
+tablet action is enabled by this increment, and the parent remains active.
+
+Final default-feature storage validation passes 195 cases with 3 existing opt-in
+gates ignored; the four portable Worker cases overlap that count. This run does
+not claim the all-feature provider-harness cases. Strict all-target/all-feature
+Clippy, formatting and diff checks pass. All seven committed Worker inputs match
+the frozen SHA manifest. The existing memory catalog/restart cases remain in the
+storage run. Independent review and hosted successor checks remain coordinator
+gates; no prior build is relabeled as evidence for this commit.
+
+### Shared preference one-shot admission and original Status
+
+Source [b90b2a5](https://github.com/s116821/ReMarkableBuddies/commit/b90b2a55a36f6ab651ade8fbd5e51668ade92060),
+parent `993236a`, implements the accepted fixed stdin Inspect/Edit/Status selector
+and [closed report profile](design.md#one-shot-preference-report-profile). Store
+custody is existing-only; production binding qualification remains sealed before
+credentials. No saved JSON condition can construct the private qualified source.
+
+Inspect/Edit retain actual current shared mode and ordered preference admission
+while rechecking group/key/binding, epoch, Store generation, raw local Config and
+current selected token or fresh qualified absence. Established selection uses only
+local original/root/catalog custody and constructs no provider adapter. First
+absence alone refreshes the exact root and complete accepted catalog through the
+existing GET-only observer with one original deadline/read allowance. Missing or
+unresolved local original custody, partial bootstrap, a known mapping not yet
+received, changed Config or stale pins cannot supply an editable guard or an empty
+seed. Explicit edits use existing Store Initialize/Commit CAS and operation reuse
+checks; the existing Worker alone uploads and adopts. No local Config rewrite or
+second operation index is introduced.
+
+Original Status uses the exact bounded local Initialize/Commit receipt, original
+predecessor and raw result revision bound to actor, operation, original guard,
+patch digest and resulting declaration digest. It works after mode/Config change
+and without credentials, but does not restore effect authority. Received Activate
+transactions and matching effective values cannot stand in for that proof.
+Structural declaration no-ops create no receipt. Failed output or activation-after-
+publication uncertainty resolves through the original operation; Edit is not
+automatically replayed. Late Config change invalidates an editable inspection or
+leaves a possibly committed edit unknown; known non-dispatch/no-change stays known.
+
+Final unchanged nine-file inputs pass 209 all-feature storage cases /3 existing
+ignored gates, including all ten command cases, and 26 portable configuration
+cases. Thirteen real binary argument/default tests and three actual executable
+CLI cases pass. Strict all-target/all-feature Clippy, formatting and diff checks
+pass, and all nine inputs match their frozen hashes at commit. The initial CLI
+interface inventory failure was the missing two new flags in its expected list;
+that failure log is preserved separately from the final passing run. Earlier
+209/26 evidence preceded the output-pin refinement and remains separately
+attributed, with no claim that the earlier binary covered the successor.
+
+The ten core cases use the actual admission and Store APIs with the test-only
+HTTP adapter. They cover current/offline and fresh-absence paths, a catalog race,
+original crash/output recovery, altered original proof, request bounds/deadline,
+Config changes during GET and output, Store mutex release during GET, and
+missing-head original custody. The real executable covers strict bounded stdin,
+selector exclusion, missing existing Store and sealed qualification refusals, and
+Status after mode/Config change from explicitly synthetic original custody. That
+positive Status fixture proves correspondence, not successful executable
+Inspect/Edit admission or live provider qualification. The current executable is
+identified by its frozen input manifest and binary hash; no extra copy is retained.
+
+Coordinator independent source/profile review accepted the bounded command and
+constructor correction. The finite command/correction/test batch is published with successful hosted checks at
+Buddy `23f7a70`, Docs `6f0ced3` and Manager `457d2278`; coordinator evidence is
+recorded below. Real Buddy/Manager editable-command parity and full parent review
+remain open. Effective product consumers were excluded from that finite batch. Selected
+notebook, handwriting, broader uncertainty and provider/native parent gates also
+remain unfinished; the active parent is neither synced nor archived.
+
+### Constructor checkpoint read allowance correction
+
+Review of the one-shot first-absence route identified that Engine construction
+rereads the bounded worker checkpoint after caller-local uncertainty inspection.
+That constructor read must be reserved in the same original read allowance before
+opening credentials. The finite correction precharges its MAX_METADATA bound;
+no allowance or deadline is reset and provider qualification remains sealed.
+
+The boundary uses an existing checkpoint and permits caller-local reads plus one
+slot observation, while excluding the additional constructor reservation. On the
+uncorrected implementation it actually issued four GETs (request count10 to14)
+before later exhaustion, failing the required no-provider-I/O assertion. Source
+[143eb62](https://github.com/s116821/ReMarkableBuddies/commit/143eb62752e4bf04e665a1068946f39ba0ab8a46),
+parent `b90b2a5`, now passes the same boundary with no additional provider
+requests. All eleven command cases (the existing ten plus this boundary), strict
+Clippy, formatting and diff checks pass. Both finite correction inputs remain
+unchanged at commit. Prior 209/26 and executable results retain their b90
+attribution; no unrelated check campaign was repeated. Independent narrow
+re-review accepted the correction, subsequently included in the published green
+`23f7a70` batch. The independently passing
+command/Worker integration prototype is held outside this finite correction and
+provides no evidence for this boundary.
+
+### Real preference producer and two-Store Worker regression
+
+Test-only source
+[23f7a70](https://github.com/s116821/ReMarkableBuddies/commit/23f7a70b0b324f28cab7e755357fb07f4fdd435c),
+parent `143eb62`, connects the actual admitted preference producer to the existing
+Worker and a second Store, then reverses the edit and transfer. Production code is
+byte-identical to the independently reviewed constructor correction. The only
+source change shares a group in the existing fixture and adds this integration
+case; it supplies no new qualification or permit API.
+
+The first admitted edit creates its real local original with no POST. The Worker
+registers/publishes it; the second Store's Inspect stays Joining without an
+editable guard before receiving that known mapping. Passive adoption transfers
+exact original membership without a POST. The second Store then inspects and
+edits offline, retaining the first declaration; its Worker publishes and the
+first Store receives the revised closure without another passive POST. Effective
+shared field origins/text match the exact declarations. Original Status continues
+to prove each Store's own edit after receiving later data, while the imported
+first edit cannot be claimed as a local original on the second Store.
+
+All twelve command cases pass on the unchanged frozen test input, including the
+separately reviewed constructor boundary. Strict Clippy, formatting and diff
+checks pass. The earlier eleven-case integration prototype lacked that boundary;
+the finite correction's eleven cases lacked this integration. Both keep their
+separate attribution. No unrelated broad/executable/live/native tests were
+repeated; b90's broader results and executable hash remain at their original
+source. This is actual core/Worker/local HTTP evidence, not positive qualified
+executable Inspect/Edit or real account/native evidence.
+
+Coordinator independent review, normal publication and hosted checks accepted this
+finite batch: [Buddy run42416822257](https://github.com/s116821/ReMarkableBuddies/actions/runs/42416822257)
+at `23f7a70`, [Docs run42416817301](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42416817301)
+at `6f0ced3`, and [Manager run42416454927](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/42416454927)
+at `457d2278`. Effective product consumers are excluded from those hosted results
+and remain a separate source increment.
+
+### Effective selected Writer request consumer
+
+Source [c249fa9](https://github.com/s116821/ReMarkableBuddies/commit/c249fa9472b2f3df63699ad91c29883766b97fde),
+parent `5c8d238`, integrates delivered main `cf568ae0` by normal merge
+`5c8d238` before the consumer commit. The merge preserves the three reviewed
+resident client/source/supervisor recovery files; all 16 consumer inputs present
+at integration were restored byte-identically from their preserved hashes.
+
+The actual selected Generate/Refine command now obtains the private request-scoped
+preference view before fresh-work policy and model credential resolution. Families
+1–4 retain their delivered local configuration route. Format5 requires the actual
+qualified binding factory, which remains sealed in production. The consumer
+reuses the command's current readiness helper, exact raw Config and its typed
+local base, selected preference token or privately established absence, current
+SharedGroup epoch/lease, group/binding and Store generation. The portable overlay
+stays in memory and preserves excluded local settings. Optional selected memory
+must also match the qualified root profile/group/binding. Exact original recovery
+precedes these new-work gates and never supplies a fresh model permit.
+
+The existing selected Writer and memory publication paths join preferences through
+one canonical ordered ready gate set at the owned model submission and selected
+result transaction. Locked validation is factored to avoid recursive acquisition.
+The existing OpenAI owned request is handed off exactly once under that set; gates
+are released before waiting, and cancellation still owns and joins the worker.
+Unsupported adapters refuse rather than calling an unguarded fallback. A repeated
+handoff or generated text without a guarded submission cannot publish Generated.
+The command uses the existing single-request/no-redirect transport mode.
+
+An actual healthy 65-second localhost OpenAI response initially returned Stale
+under the old 60-second snapshot lifetime and cumulative full-history progress
+allowance. The corrected request reserves one original 210-second lifetime:
+60 seconds for admission, at most the supported 90-second model wait, and 60 for
+completion. The handoff must remain inside the original admission window. A
+single charged parent irrevocably partitions full preference validation for
+admission/handoff/completion and a finite cheap progress allowance sized to the
+whole lifetime. Progress reads only exact raw Config/current selection header as
+cancellation evidence; it issues no new token or replacement authority. Full
+object/history verification remains mandatory at handoff and final publication.
+The original failing run and first-after success retain their own input manifests;
+neither is relabeled as final-source evidence.
+
+The seven fast consumer cases prove disabled shared Writer and foreign snapshot
+refusal before intent/model, exact raw-Config drift before submission, changed
+preferences after submission without replay, corrupt original preference objects
+rejected by full final proof despite unchanged progress headers, single-use
+handoff, no publication without submission, and optional memory changing before
+or after submission alongside a healthy joined-memory control. The actual
+65-second guarded single-request POST includes the captured shared preference and
+exact supplied source, crosses both the former 60-second and 64-pulse limits, and
+finishes with a Published Generated receipt. No sleeps serve as success evidence;
+that bounded delay is an explicit provider-latency fault.
+
+The actual format5 executable test keeps fresh work unavailable without provider
+qualification, sends no model request and leaves the selected token unchanged.
+Explicitly synthetic original Prepared custody then remains recoverable as
+historical-pending with Writer disabled and without model credentials; changed
+original text refuses. Public guarded OpenAI handoff rejection sends no HTTP
+request, and cancellation after actual request receipt joins before the fixture
+releases its withheld reply. These are core/local HTTP/executable controls, not
+positive qualified executable generation, live model quality or account/device
+qualification. Broader Reader, research, handwriting, notebook and Manager editable
+parity work remains open. Reader's multiple model calls require a separately
+owned request lifetime and input/Prepare integration; this single-use Writer
+snapshot is not a Reader implementation. The parent remains active and unarchived.
+
+Final all-feature checks on the unchanged 17-file input manifest pass: 1055 library
+cases /38 existing ignored gates, 13 binary argument cases, 42 Writer cases,
+7 owned-provider cancellation cases, 10 transport cases, 3 shared-preference
+executable cases and 3 storage configuration cases. The library includes all
+12 command regressions, seven fast consumer cases, the actual 65-second guarded
+response and two reservation invariants. Strict all-target/all-feature Clippy,
+formatting and diff checks pass. The earlier broad result predates six redundant
+borrow removals and relocation of two test modules; the final complete run is
+separately preserved as `preference-consumer-final-integrated-checks.log` with
+those mechanical fixes. Earlier fixture lease and private-helper compile failures
+remain separate from the passing executable/transport runs.
+
+Coordinator independent final review, normal publication and hosted successor
+checks remain open for this new source/Docs pair. The previous published
+`23f7a70`/`6f0ced3`/`457d2278` CI results cover only that earlier finite batch.
+The cached executable was built from these frozen consumer inputs while the
+worktree base was `5c8d238` and the consumer edits were uncommitted; its build
+metadata is not relabeled as a build at commit `c249fa9`. Its hash/input receipt
+is preserved without retaining another binary copy.
