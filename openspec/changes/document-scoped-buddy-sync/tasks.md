@@ -161,7 +161,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Establish exact current source/spec bases, retained branch/worktree ownership and existing provider-binding contract; preserve other lanes.
 - [x] Propose the connected worker/public producer/adoption footprint and concrete legacy-worker/local-genesis/notebook-format conflicts before code.
-- [ ] Obtain independent maintainer precode and domain-owner review of retention, portable/local genesis, selected notebook compatibility and remaining domain schema decisions.
+- [x] Obtain independent maintainer precode and domain-owner review of the r2 retention, portable/local genesis and selected notebook compatibility contract; accepted before implementation. Remaining domain coverage and implementation checks stay open below.
 - [ ] Route existing Worker by actual mode/qualification before credentials; connect real selected Writer/memory edits and bounded Store wake to the selected step.
 - [ ] Implement agreed immutable root/catalog/base/slot and durable original staging/attempt recovery through existing transport/file/outbox primitives.
 - [ ] Enforce mode/current binding and actual domain-gated handoff; never hold Store mutex during network or rebase a stale losing candidate.
