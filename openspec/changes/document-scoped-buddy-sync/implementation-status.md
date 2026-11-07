@@ -209,3 +209,37 @@ on author Linux/Rust1.98.1: one test passed, no assertion weakened. The continue
 Worker work was preserved separately during that exact-commit check. Root owns
 successor full hosted CI; the failed predecessor run remains failure evidence.
 The accepted r2 precode review task is reconciled rather than reopened.
+
+## Connected core source increment
+
+Reviewed source [24c1bb6](https://github.com/s116821/ReMarkableBuddies/commit/24c1bb67d8039ddf15ac2c4b4ee4cd0f85c6e163),
+parent7789255, is published in the existing implementation draft139. It connects
+the existing Worker loop to original selected staging/attempts and independent
+passive receiving custody, complete memory/document winner validation and
+receiving-local catalog/genesis publication. Actual selected memory edits and
+the selected Writer Generate/model-entry/finish reach a second Store through the
+real GoogleDrive HTTP adapter. The local HTTP model supplies an existing root and
+catalog; it does not prove CreateGroup, catalog registration or provider behavior.
+
+Four connected cases cover first join and later updates, batch_items=1 progress,
+Worker restart, lost create acknowledgement and durable passive activation before
+checkpoint/catalog publication. They require the original receiving operation,
+exact record references/bytes, local product admission, and no passive outbound
+attempt or POST. Writer uses a deterministic in-process engine. The transport
+now accepts an exactly bounded download while independently refusing oversized
+and zero-bound nonempty responses; the original failure and successor negative
+checks are retained separately.
+
+Author Linux/Rust1.98.1 checks on this core:163 storage tests passed; strict
+all-target/all-feature Clippy, full formatter and diff checks passed. The earlier
+selected regression group passed121 with1 existing ignored; these groups overlap
+and are not additive. All18 committed source files were verified byte-unchanged
+by commit. Hosted successor CI remains the coordinator's check and is not claimed
+complete here. The production qualification constructor remains closed before
+credential loading; the fixture is not configurable production authority.
+
+CreateGroup/original controls and new catalog registration, complete retained/
+imported-original uncertainty policy, format5 and the actual selected Source3
+notebook runner, preference/handwriting producers and compatible consumers,
+Manager parity and live provider/model/native qualification remain unfinished.
+This source increment neither archives the parent nor enables production sync.

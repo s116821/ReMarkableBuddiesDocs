@@ -221,3 +221,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [ ] Exercise identical real guarded browser/Electron paths against the actual Buddy command for unsupported older Buddy, local/shared routing, established absence, selected readiness, sparse/null edits, no-change, stale pins, busy resident Store, post-dispatch unknown and original Status.
 - [ ] Verify opaque-reference expiry/replacement/navigation/mode/connection/boot/deadline/cancellation behavior and bounded private frames, preserving unresolved originals and requiring fresh inspection plus deliberate confirmation after conflict; no automatic service Stop, saved-file fallback or provider access.
 - [ ] Keep Edit unavailable until successful authoritative selected Inspect and exact backend correspondence; distinguish local pending/upstream applied/replaced state, effective inspection snapshot and unverified running activation.
+
+## Connected core verified increment
+
+- [x] Publish reviewed source24c1bb6 in the existing implementation draft: reuse the existing Worker loop, original attempt/receive custody, selected commit wake, domain byte validation and receiving-local registration; keep production qualification closed.
+- [x] Exercise actual selected memory mutation and selected Writer model-entry/finish through the real local HTTP adapter and second Store, including first join/update, batch_items=1, Worker restart, lost create acknowledgement and activation-before-checkpoint original recovery; use a deterministic local engine and an already-created modeled root/catalog.
+- [x] Preserve the exact-bound download failure, implement the bounded EOF probe without accepting oversized data, and verify exact/oversized/zero-bound behavior; pass163 storage regressions, strict all-target/all-feature Clippy and formatter checks with tested files unchanged by commit.
+- [ ] Complete actual CreateGroup/catalog registration, broader uncertainty/retention, selected Source3/format5 producer, optional-domain consumers/CLI and applicable live/hosted qualification before final parent delivery; the connected fixture increment does not close those gates.
