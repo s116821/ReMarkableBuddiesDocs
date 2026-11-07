@@ -73,3 +73,41 @@ whole-page and partial branches unchanged. Use the same provider/custody path
 and existing serde stack; a finite typed math tree preserves unknown child
 slots, with normalizer-owned provenance and no rendering or automatic consumer.
 Representation and source accuracy remain separate acceptance questions.
+
+
+## Proposed handwriting-scoped ready-notebook policy
+
+The current handwriting entry delegates to open_existing_inner(selected_aware=true),
+whose NotebookAdmission::Deny intentionally excludes notebook4. This is a
+pre-existing bounded-consumer gap, not a delivered-main merge regression.
+Introduce a distinct handwriting admission policy in the existing constructor
+(or an equivalently narrow private entry), retaining selected-aware legacy
+validation while adding4 to the existing ordinary-notebook validation branch.
+Do not reuse ReadyOrdinary verbatim: its notebook-only gate would regress legacy.
+Do not broaden Deny, public open_existing, mode/archive/outbox/restore or other
+maintenance callers. Preserve their current selected/sync boundaries.
+
+For notebook4, reuse validate_ready, definitely-empty selections/history, complete
+recovery/local-manifest and ordinary-local mode checks already used by the scoped
+preference/ready receiving admissions. Keep the existing real store lease,
+LocalCorrections and ConfirmedContext/report ownership. No new store engine,
+worker, implicit mutation, same-path initializer fallback or lifetime wrapper.
+No null-context Store probe. Existing typed errors/identity recipes are unchanged.
+
+The smallest production delta should be confined to the handwriting-specific
+maintenance constructor/policy and its inclusion in the existing notebook-local
+validation branch. Actual controls span existing storage/provider/transcription
+and CLI tests; do not fake format4 by editing a legacy format number alone.
+Use explicit preparation only in setup, release setup owners before reopening,
+and retain the report owner during competing mode/OS-lock/output checks.
+
+Standalone capture opens its own Store. A live Reader/Writer operation already
+owning that Store must not call this path unchanged: that would contend with the
+existing owner. A future runtime integration requires a typed same-Store
+capture/handoff tied to its source/cancellation/dispatch lifetime. That is outside
+this increment; no automatic profile search or hook activation is included.
+
+Simulator impact: no Reader/Writer/simulator route changes are selected. Extend
+real local family fixtures and fake-engine regression coverage for this admission
+boundary; existing runtime scenarios remain unchanged. These controls establish
+storage/admission/custody, not real-pen, live recognition or learning efficacy.

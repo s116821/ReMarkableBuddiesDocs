@@ -94,3 +94,24 @@ recognition, held-out learning efficacy, automatic Reader/Writer correction
 consumption, optional sync/native and coordinated delivery gates remain open.
 No tablet/provider/model/API operation, image change or new diagnostic execution
 is selected or performed by this reconciliation.
+
+
+## Ready-format4 standalone context precode — November 6, 2026
+
+Proposed only; implementation and execution are pending independent precode review.
+The exact source baseline is Buddy d7e05fac1bcc79c3022b9b3d501a82210d818d92,
+which contains current delivered main bafa5cc92c175b1319939265c6da5928315cd8bc.
+This Docs branch already contains current main f98ff826aacdf63be373bd812c8eb8fdd102e3d5;
+no additional merge or duplicate branch is required. Existing clean paired drafts
+remain the work location. Source review identifies the current handwriting
+NotebookAdmission::Deny path and existing usable LocalCorrections/report leases;
+there is no passing format4 handwriting-consumer test claimed yet.
+
+The new precode covers scoped ready4 admission, exact selected records, no-call/
+no-side-effect refusal, family-specific lifetime, legacy/null-context compatibility
+and concrete real prepared-store controls. Existing prompts/vectors, prior source
+acceptance and all recognition failures retain their original attribution.
+R10 separately scored0/2 strict and0/2 full fidelity; that two-image result does
+not replace historical0/4 or legacy6/6 and does not affect this storage proposal.
+No source/runtime/consumer activation, model/tablet execution, canonical spec sync
+or archive occurs at this precode checkpoint.

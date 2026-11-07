@@ -92,3 +92,20 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
   result without treating successful execution as semantic acceptance.
 - [x] Qualify the unchanged Hunter/Howe/blank fixtures in a separate six-cell
   regression packet before coordinated delivery; preserve every failed result.
+
+
+## Standalone ready-format4 confirmed context (proposed increment)
+
+- [x] Read exact current source/intake and reconcile delivered main; identify the existing scoped admission gap without reclassifying historical evidence.
+- [x] Specify concrete supported-family/readiness/no-side-effect/failure/lifetime/identity scenarios in this active change before implementation.
+- [ ] Obtain independent acceptance of the exact ready4 precode delta.
+- [ ] Add only the handwriting-scoped existing-store admission; preserve legacy/null-context and unrelated selected/sync/maintenance refusal.
+- [ ] Exercise real prepared4 absent/LocalOnly confirm/reopen/query/inspect/exact-revision capture with one fake-engine call, stable identities and no transcription commit.
+- [ ] Exercise real4 update/CAS/stale/forget/status/reopen/history/media semantics and unchanged legacy-family behavior.
+- [ ] Prove readiness/actor/generation/contract/recovery/locality/selection/history/mode/config-sync/OS-contention refusals are no-call/context-null and tree-byte unchanged.
+- [ ] Prove successful capture, stale/media capture-refusal and cancellation/output-error ownership through drop, with correct4 post-drop legacy publisher/sync refusal.
+- [ ] Run focused affected storage/provider/transcription/CLI controls and current required checks; independently review source versus accepted precode.
+
+This scoped mechanics increment does not check off recognition, held-out learning,
+automatic Reader/Writer integration, sync/native or final delivery tasks above.
+No model/device execution or new recognition experiment is selected here.

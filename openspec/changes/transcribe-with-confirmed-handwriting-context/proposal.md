@@ -44,3 +44,18 @@ expressions. The [structured contract](structured-math-contract.md) defines the
 strict MathML-role subset, compatibility, provenance and unchanged recognition
 gate. This does not establish that the recognizer can identify those structures
 or correct its observed relation-symbol errors.
+
+
+## Standalone ready-notebook context admission (precode)
+
+Extend only the existing handwriting-specific read-only admission so explicit
+confirmed-context transcription can consume an already-ready ordinary notebook
+format4 as well as its existing legacy family. Reuse the existing correction
+store, exact-revision capture and report-held ownership; do not introduce a new
+provider, persistence schema or lifetime. Readiness, local recovery, selection
+history and absent/LocalOnly mode must be validated without mutation.
+
+This is proposed storage/admission work, not an implemented or qualified result.
+Automatic Reader/Writer consumption still requires a separately reviewed
+same-Store handoff; the standalone command must not be installed as that runtime
+path. Recognition quality and all unfinished delivery gates remain unchanged.

@@ -104,3 +104,37 @@ SHALL clear every result slot without retry or salvage.
 #### Scenario: Well-formed but wrong recognition
 - **WHEN** an allowed tree asserts a wrong glyph or attachment from the source image
 - **THEN** parser success is not recognition acceptance; independent source-based qualification retains the failure and does not confirm the output.
+
+
+### Requirement: Standalone confirmed context admits ready ordinary notebooks narrowly
+
+The existing explicit transcription operation SHALL admit selected confirmed
+context from an already-ready ordinary notebook format4 in addition to its
+unchanged legacy-family behavior, through a handwriting-specific read-only
+existing-store entry. Format4 SHALL satisfy existing readiness/actor/generation/
+contract, complete recovery/local-manifest, absent-or-empty selection AND
+selection-history and absent-or-LocalOnly mode checks. The operation SHALL retain
+existing LocalCorrections custody through report completion/error/drop and SHALL
+preserve request/prompt/identity/failure contracts. It SHALL NOT broaden generic
+maintenance or legacy sync/publication, initialize/adopt/repair/restore a notebook,
+activate automatic consumers or open a Store for null context.
+
+#### Scenario: Explicit prepared notebook context
+- **WHEN** a caller selects an exact current confirmed correction revision in a real prepared ready4 store with absent or LocalOnly mode
+- **THEN** query/inspect/capture preserve its exact retained PNG/text/provenance and one explicit fake-engine invocation can produce an unconfirmed result with existing identities and no transcription commit.
+
+#### Scenario: Correction history survives reopen on notebook4
+- **WHEN** explicit confirm/update/CAS/forget/status operations run through their existing correction APIs on4 and the store is reopened
+- **THEN** exact revision history/media/tombstone semantics remain coherent, stale context refuses and no forgotten or alternate example is silently selected.
+
+#### Scenario: Notebook state is not read-only admissible
+- **WHEN** readiness/actor/generation/contract is missing or mismatched, recovery is unavailable/nonlocal, selections or history are nonempty, or mode is nonlocal/configured sync
+- **THEN** context refuses under existing typed failure mapping before any provider invocation, with context=null and unchanged existing path/content inventory including capabilities and staging.
+
+#### Scenario: Real ownership survives failure and output
+- **WHEN** a valid4 context is captured or its capture fails after ownership, including stale/media capture refusal, cancellation or report output failure
+- **THEN** acquired real mode/local ownership excludes competing changes until report drop, no second call/report occurs, and format4 legacy publication/sync stay unsupported afterward.
+
+#### Scenario: Legacy and null-context boundaries remain
+- **WHEN** a caller uses existing legacy fixtures, a null context or an unrelated maintenance admission
+- **THEN** existing legacy outcomes/identities remain, null context creates no Store roots, and generic maintenance plus legacy sync/publication still deny notebook4 without automatic Reader/Writer activation.

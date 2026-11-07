@@ -49,3 +49,75 @@ Serialize a single complete report plus newline into at most32768 bytes before a
 | Complete report overflow | refused / output-limit | unchanged | null | retained if selected |
 
 Envelope decoding validates all required fields/types, canonical nonnil UUIDs and positive u32 page before echoing invocation. Version is then checked before PNG decoding; target digest becomes available after full target admission. Do not echo unvalidated invocation strings. A no-context successful report has context=null. Unknown provider/server failure details never become report fields. Canceled requires a refused progress callback; an arbitrary provider error is not relabeled cancellation. Arbitrary LLMEngine implementations are cooperative: the default callback runs once before execute and cannot preempt an implementation that ignores later progress. Only the configured OpenAI transport provides owned worker cancellation/joining through its existing progress path. Post-return cancellation checks suppress stale results without claiming earlier interruption; no wrapper worker or automatic retry is added.
+
+
+## Standalone ready-format4 context admission â€” proposed, not implemented
+
+The existing non-null-context path SHALL additionally admit an ALREADY ready
+ordinary notebook format4 through a handwriting-specific existing-store entry.
+Its existing legacy-family admission and every legacy accepted/refused outcome
+remain unchanged. This does not promise that all legacy selected layouts are
+usable: existing LocalCorrections ordinary/local-domain checks still apply.
+Null context continues to open no Store and create no roots.
+
+For format4, require all of the existing ready-notebook validation: matching
+actor/current generation/feature/readiness/contract, safe existing paths and
+complete recoverable index, no unavailable commits, all manifests in the local
+transaction scope, definitely absent or empty selections AND selection-history,
+and an absent mode declaration or explicit LocalOnly. A cleared current
+selection does not erase a nonempty selection history. Any unsupported or
+ambiguous state refuses without initialization, adoption, prepare/restore,
+marker repair, capability republication or staging cleanup.
+
+The Store admission remains read-only custody. The explicit correction CLI's
+existing Store::open startup/cleanup/capability behavior is separate and is not
+reclassified as artifact-free. Its explicit confirm/update/forget writes retain
+their existing history/CAS/media semantics and require their normal authority;
+read-only transcription never confirms or changes a correction.
+
+Reuse the same exact Arc<Store>, OrdinaryModeLease and LocalDomainLease already
+owned by LocalCorrections. ConfirmedContext and successful report retain that
+owner; a capture-refusal report retains any acquired refused owner. Leases remain
+held through provider progress/return, cancellation/stale-result suppression,
+write_to success/error/flush and final report drop. Copying example bytes must
+not release custody early. Mode changes remain excluded while either successful
+or refused ownership is held. Format4 legacy publisher and legacy sync stay
+unsupported even AFTER report drop; legacy-family post-drop behavior is preserved
+separately. Do not add a legacy-sync lease or a new synthetic lifetime flag.
+
+Failure mapping stays unchanged: configured sync.enabled returns unsupported-mode
+before Store admission; existing-store Busy maps to ownership-busy, and its
+Unavailable/Unsupported (including format4 readiness/locality refusal) map to
+storage-unavailable. Later LocalCorrections UnsupportedMode remains unsupported-mode;
+context invalid/stale/conflict/unavailable/canceled/storage failures retain the
+existing mapping. On context-admission refusal provider_attempt=not-called,
+context=null, every result slot null and confirmed=false; admitted target digest
+may remain. The command does not construct or call a provider on that refusal; no alternate
+revision or null-context
+fallback follows a refusal. After valid capture, later failure keeps honest
+captured descriptors and its actual attempted/not-attempted status.
+
+Request/report versions, policies, prompts, profile/extractor/payload/source
+recipes, exact revision/profile/media/lineage/static-PNG validation and bounds
+remain unchanged across v1/v2/v3. Store family is not a new prompt input or identity
+field. Same admitted bytes/references produce the same applicable existing
+identity vectors; distinct target/source/provenance facts remain distinct.
+
+Required local proof uses REAL Store::prepare_notebook fixtures created explicitly
+by test setup, with absent and explicit LocalOnly mode. Exercise explicit
+confirm, close/reopen, query/inspect, selected exact-revision capture and one
+capturing fake-engine invocation; verify exact PNG/text/provenance, confirmed=false
+and no transcription commit. Separately exercise update/CAS, stale-original
+refusal, forget/tombstone/status and reopen on4. Legacy1 controls and existing
+legacy2/3 acceptance/refusal controls remain.
+
+Refusal fixtures include missing/mismatched readiness, actor, generation,
+feature/contract, unavailable recovery, nonlocal manifests, selected references,
+selection history without a current head, IsolatedBackup/SharedGroup, configured
+sync and real OS contention. Snapshot existing path/content bytes including
+valid capability files and staging sentinels before the read-only invocation;
+assert identical bytes/path inventory afterward, no call and no context.
+Successful capture, stale/media refusal after ownership acquisition, and
+cancellation/output-error controls on4 prove real ownership through final drop, using family-specific publisher/sync
+assertions. No live model or tablet run is required for these mechanics; they
+remain insufficient for recognition, learning, sync or native qualification.
