@@ -112,3 +112,33 @@ The earlier live selectors retain their legacy complete-page-only rules.
 Any fresh invocation needs its own unused packet and independent review.
 The maximum remains four calls before confirmation and six total for one
 target. Valid seed abstention naturally uses one fewer call.
+
+### Fresh comparison with two valid seed outcomes
+
+A newly selected fixture uses a fresh selector and one explicit seed review
+after either valid outcome. When WholePage yields a complete Page, require
+successful ordinary Writer receiving and the exact retained NormalizedText
+and revision. Freeze the gate outcome valid-whole-page-reading and require
+confirm-supported-controlled-seed for the existing normalized-source
+confirmation. When WholePage yields valid Unreadable, require the exact
+operation-owned abstention capability. Freeze valid-whole-page-abstention
+with absent normalized text/revision and require
+enroll-supported-controlled-seed-after-abstention for typed enrollment.
+Both gates label the intent owner controlled-fixture and bind exact gate
+bytes, source/turn, image, and distinct save operation. Neither branch
+presumes agreement with the supported seed. Independent review may decline.
+
+Malformed output, provider/custody refusal, Writer failure after Page, and
+unavailable or stale capability stop before confirmation. A decision for
+the other branch, missing or stale approval, or publication failure stops
+before paired context. Both targets use the same bytes and ordinary Writer
+receiving. Keep the four-call pre-review and six-call total ceilings, model,
+instructions, seed, target, and evaluator separation. The abstention branch
+uses one fewer call. Do not force either outcome or retry the consumed
+identity. Completion is distinct from benefit or nonregression.
+
+The complete-page-only and abstention-only selectors remain separate
+historical modes. The four-call Lincoln enrollment attempt generated both
+the target and the seed, so the abstention-only selection stopped without
+a gate or paired arm. That result remains spent. No earlier result or
+rubric is rescored by this amendment.
