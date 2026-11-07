@@ -35,9 +35,11 @@ binding and persistence still require their own qualified paths.
   ready format5 Store once. Require configured `reader.selection`, matching
   SharedGroup, current binding, existing registered document admission and the
   existing privately constructed `InstalledReaderSelection` plus supervised
-  `ServiceHealth`. Keep the default selected refusing Workflow and its typed
-  result for missing or unsupported native admission. Mode, registration and
-  closure failures retain their own refusal classification.
+  `ServiceHealth`. Admit the current effective Reader policy before
+  constructing an active resident input owner or invoking any native
+  activation. Keep the default selected refusing Workflow and its typed
+  result for missing or unsupported native admission. Mode, registration,
+  closure and policy failures retain their own refusal classification.
 - Build an input-only Workflow that combines the same Store's
   `SelectedBackendFacade` with `ResidentSourceOwner`. Reuse
   `RequestInput::wait_released_reader` with the actual Reader corner and
@@ -47,18 +49,27 @@ binding and persistence still require their own qualified paths.
   effects refusing. Do not instantiate the ordinary RealDevice screenshot,
   pen, keyboard or touch writer merely to get its Reader release method.
 - Preserve sealed installed profile/artifact, health, quiet-input, service,
-  cgroup, activation and recovery checks. Where the admitted installed profile
-  already selects preactivation, reuse its quiet startup handoff independently
-  of output-backend construction. Retain that child and retire its initial
-  connection. Preactivation creates no Reader request and consumes no gesture.
-  The first genuine release opens the bounded acquisition for the current
-  source. No automatic document reopening, replay of the first gesture, stock
-  restoration bypass or alternate activation.
-- On each admitted release, capture original request and mode custody before
-  acquisition. Require the effective Reader gate before this request can
-  publish Prepared or resolve model credentials. Own exactly one iteration
-  and its finalization. Use the resident health/input guard throughout capture,
-  derivation, Prepare, delivery and model work. Reuse the prepared receiver's
+  cgroup, activation and recovery checks. Where the installed profile selects
+  preactivation, revalidate the original startup policy and mode pins before
+  the quiet startup handoff. Reuse that handoff independently of output-backend
+  construction. Retain the child and retire its initial connection.
+  Preactivation creates no Reader request and consumes no gesture. Startup
+  admission grants no authority for the first or any later release. No
+  automatic document reopening, replay of the first gesture, stock restoration
+  bypass or alternate activation.
+- On each genuine release, take its original timestamp and re-admit the current
+  effective Reader policy under the matching mode and document custody before
+  accepting it as a request or calling the resident owner's begin, activation,
+  Observe or CaptureSource. Freeze that request snapshot across capture,
+  Prepare, model handoffs and results. Recheck the same pins at the actual
+  activation and capture boundaries. A stale, disabled, missing or Joining
+  result leaves the request unavailable without new native activation or
+  capture, model credential access or fallback. If custody is lost after a
+  previously admitted takeover, keep the existing recovery owner. A different
+  SharedGroup epoch cannot reuse the old runtime's mode custody.
+  Own exactly one iteration and its finalization. Use the resident health
+  and input guard throughout capture, derivation, Prepare, delivery and model
+  work. Reuse the prepared receiver's
   inner entry so it does not begin a second iteration or replace the released
   input guard. After acquisition the existing owner retires the socket but
   retains the child and request guard. At first model handoff, its delivery
@@ -151,26 +162,38 @@ qualification flag.
    selected Reader text publication. A lost Prepare, Interpret or Generate
    acknowledgment can be reconciled only against the exact local original
    transaction, predecessor/input fingerprint, operation, closure and
-   acknowledgment. Use existing selected receipts and bounded lineage. Provide
+   acknowledgment. Reuse the selected `Record::Receipt`, Store original
+   transaction recovery and bounded lineage. Provide
    historical-only recovery separately from the live admission branch so current
    preference or memory replacement cannot hide the original. Recovery cannot
    produce an active request, replace the active token, rerun a model, recapture
    or permit a fresh operation. Missing proof remains unresolved. Pending
-   recovery retains its own existing contract. No separate journal or CLI is
-   introduced.
+   recovery retains its own existing contract.
 
 ## Effective policy and bounded multi-stage handoff
 
-Use the final shared preference API once reconciled. Capture the trusted raw
-Config identity and typed base, same Store generation/mode, exact current
-preference token or established absence and admitted document token. Apply
-the portable declaration overlay in memory, preserving excluded local
-settings. Evaluate effective Reader enablement and selected memory compatibility
-before credential-bearing dotenv loading, `Environment::current`, protected
-model credential reads or engine creation. Do not use the saved Reader flag
-as the selected authorization or fetch a replacement preference automatically.
-An unresolved preference state refuses. Keep personalization out of both
-recognition requests. Apply it through the existing optional enrichment path.
+Use the final shared preference API once reconciled. For startup and separately
+at each release, capture the trusted raw Config identity and typed base, same
+Store generation/mode, exact current preference token or established absence
+and admitted document token. Apply the portable declaration overlay in memory,
+preserving excluded local settings. Effective Reader enablement gates quiet
+startup activation, acceptance of a released request, and request capture.
+A shared false overrides a local true, and an admitted shared true overrides a
+local false. Effective enablement and selected memory compatibility precede
+credential-bearing dotenv loading, `Environment::current`, protected model
+credential reads and engine creation. Revalidate only the exact frozen request
+pins throughout the request. Keep personalization out of both recognition
+requests and apply it through the existing optional enrichment path.
+
+Established selected preferences use the existing offline local proof.
+Unresolved first absence stays Joining unless the existing separately
+qualified GET-only exception already admits that original read. The exception
+retains the sealed Binding gate before any provider credential access, existing
+root/catalog checks, original allowance and read-only scope. It neither expands
+the eligible provider or command nor supplies a new fallback. It may establish
+initial absence before a policy snapshot is accepted. It never refreshes
+an admitted snapshot or authorizes native work when the policy remains
+unavailable.
 
 Use the existing proposal, independent verification against the exact same
 persisted source images, then Interpret, optional memory/personalization
@@ -185,11 +208,17 @@ waiting and use bounded cheap progress cancellation, then repeat exact
 revalidation before later dispatch and CAS. Unsupported model/provider
 ownership refuses. No alternate recognition or model pipeline is required.
 
-Proposed maximum parent deadline is 420 seconds from the genuine release.
-Reserve up to the existing 90-second acquisition interval through first
-handoff, up to three 90-second provider windows, and up to 60 seconds total
-for between-call and final publication/readback work. Clamp all subdeadlines
-to the original parent and preserve the existing tighter native limits.
+Startup admission and optional preactivation use their own bounded startup
+window. That window and its snapshot do not carry into a released request.
+The proposed 420-second parent deadline starts at the genuine release
+timestamp, before policy re-admission. Reserve up to the existing 90-second
+acquisition interval for policy and mode checks, any already-qualified
+first-absence read, capture, Prepare and first handoff, up to three 90-second
+provider windows, and up to 60 seconds total for between-call and final
+publication/readback work. Charge initial policy reads to the original
+request reservation, with no fresh command or capture allowance after the
+check. Clamp subdeadlines to the original parent and preserve tighter native
+and qualified first-absence limits.
 An unused stage does not permit a fourth call or extend the parent. Reserve
 one cumulative object/aggregate/byte allowance and a bounded progress
 allowance before admission. Charge discovery, Config and selected reads,
@@ -213,13 +242,16 @@ or native diagnostic is a substitute.
 ### MODIFIED platform-runtime · Explicit selected Reader startup and historical handling
 
 An explicitly configured selected Reader runtime SHALL preserve the refusing
-default unless current SharedGroup document readiness and the existing
-installed resident source and health owners admit the Reader input route.
-Selected input SHALL use the bounded released-request and resident capture
-owner. Startup and every newly admitted request SHALL refuse absent or
-contradictory authority before model credential resolution and SHALL preserve
-ordinary LocalOnly routing, no legacy downgrade, existing-only Store custody
-and independent historical handling.
+default unless current SharedGroup document readiness, current effective
+Reader enablement and the existing installed resident source and health
+owners admit the Reader input route. It SHALL establish effective enablement
+before quiet startup activation and independently at each genuine release
+before request admission, activation or capture. The exact released-request
+policy and mode pins SHALL remain fixed through capture, Prepare and all model
+and result stages. Absent, stale, Joining or disabled policy SHALL refuse
+before new native activation, capture or model credential access. The route
+SHALL preserve ordinary LocalOnly routing, existing-only Store custody and
+independent historical handling without legacy downgrade.
 
 #### Scenario: Qualified resident input without output
 
@@ -228,6 +260,30 @@ and independent historical handling.
 - **THEN** the same selected Store receives one bounded historical capture
   and one fresh Prepared acknowledgment through the selected route, without
   ordinary acquisition or native output authority.
+
+#### Scenario: Shared disable overrides the local Reader flag
+
+- **WHEN** saved Reader is enabled and the admitted current shared declaration
+  disables it
+- **THEN** selected startup and the released-request boundary refuse before
+  activation, capture, Prepared publication or model credentials.
+
+#### Scenario: Shared enable overrides the local Reader flag
+
+- **WHEN** saved Reader is disabled and the admitted current shared declaration
+  enables it
+- **THEN** the effective policy allows the existing selected input route to
+  proceed through its remaining installed and currentness checks.
+
+#### Scenario: Idle startup authority changes before the first release
+
+- **WHEN** effective Reader or SharedGroup custody changes between idle startup
+  and the first genuine release
+- **THEN** the release is independently checked against current policy and mode
+  custody. An unavailable, stale or disabled request performs no new
+  activation or capture and resolves no model credentials. A changed preference
+  that remains enabled under the same admitted mode can proceed only with its
+  newly admitted pins, frozen within the original release deadline.
 
 Retain the existing unsupported, exact historical recovery, invalid metadata,
 idle availability, persisted mode and historical report scenarios.
@@ -296,6 +352,11 @@ active shared preference and selected Worker requirements apply throughout.
   locally created genesis, same-child second request, stale mode/head/catalog,
   foreign document, cancellation, missing/corrupt media, lost acknowledgment
   and no ordinary record, extra operation or effect command.
+- [ ] Exercise both overlay directions at startup and release. Change
+  preference and mode independently between startup and first release, and
+  mutate the admitted pins before capture. Assert disabled/stale cases make no
+  new activation, Observe/CaptureSource, Prepare or credential call. Verify
+  policy admission uses time and reads from the original release reservation.
 - [ ] Extend selected Reader persistence and composed-memory fixtures with
   guarded localhost model calls. Assert same source bytes in both recognition
   requests, independent verification payload, optional enrichment only after
