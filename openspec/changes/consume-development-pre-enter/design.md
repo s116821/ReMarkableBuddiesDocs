@@ -2,8 +2,13 @@
 
 ## Status, source and ownership
 
-Precode only. No Buddy implementation, developer dependency resolution, build,
-provider call, installed artifact change or tablet action is included.
+The precode was independently accepted in Docs PR 152 at
+`a5e3dc16e437306197438474fc7e44ed74a60f5f`. The consumer implementation is
+published in [Buddy PR 138](https://github.com/s116821/ReMarkableBuddies/pull/138)
+at `9ee80d8d5c9e540ba6c06884da11f8ef511dcfcf`; independent source review and
+local build validation passed. Hosted CI and coordinated delivery remain pending.
+This increment contains no
+provider call, installed artifact change or tablet action.
 
 Reviewed delivered sources:
 
@@ -147,7 +152,17 @@ identity is introduced; keep existing Git-derived development build metadata.
 Cargo references: [dependency overrides](https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html),
 [command-line config](https://doc.rust-lang.org/cargo/reference/config.html#command-line-overrides),
 and [custom cfg registration](https://doc.rust-lang.org/cargo/reference/build-scripts.html#rustc-check-cfg).
-Concrete recipe resolution remains an implementation verification task.
+The concrete Linux source recipe and full Cargo-metadata graph checks are in
+the paired [Buddy guide](https://github.com/s116821/ReMarkableBuddies/blob/9ee80d8d5c9e540ba6c06884da11f8ef511dcfcf/docs/development-pre-enter.md).
+It uses Rust/Cargo 1.98.1 and native x86_64-unknown-linux-gnu, with distinct
+ordinary/developer locks and targets. No native shim is rebuilt.
+
+The build script emits a private approval cfg only after effective selection
+passes its guard. Both product crate roots include a compile-time refusal when
+the diagnostic cfg lacks this approval. Consequently final-target-only
+`cargo rustc -- --cfg buddy_development_native_pre_enter` cannot bypass admission
+by withholding that cfg from the build script. The approval cfg is internal,
+not an additional supported developer input.
 
 ## Existing release/package checks stay authoritative
 

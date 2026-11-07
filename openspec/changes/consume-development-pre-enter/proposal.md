@@ -10,7 +10,7 @@ native diagnostic can use the existing connection and original deadline.
 
 ## What Changes
 
-- Plan one build-only typed request and connection method through the existing
+- Add one build-only typed request and connection method through the existing
   read-only admission, progress and retention path.
 - Preserve exact raw UTF-16 and explicit refusal/empty distinctions, without
   exposing current composer or mutation authority.
@@ -30,12 +30,12 @@ native diagnostic can use the existing connection and original deadline.
 
 ### Modified Capabilities
 
-None. Canonical specs remain as-built until coordinated implementation and sync.
+None. The new capability is synchronized in this coordinated implementation.
 
 ## Impact
 
-Future code affects Buddy's build script, closed read-only request dispatch and
+The implementation affects Buddy's build script, closed read-only request dispatch and
 ResidentConnection only. Ordinary Cargo.toml/lock pins, CI feature coverage,
 release/APK validators, production CLI and runtime configuration stay unchanged.
-The eventual Docs and Buddy PRs form one change; this precode is not a separately
-completed planning feature. No native or provider operation is authorized.
+Docs PR 152 and Buddy PR 138 form one implemented change. No native or provider
+operation is authorized by this delivery.
