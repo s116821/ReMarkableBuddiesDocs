@@ -595,6 +595,9 @@ domain; the quoted existing-name check remains and product error matching did
 not widen. Both original failure and corrected evidence are preserved.
 
 The previous Manager `a4fcdcabcdeecf1192b31ed0b979b26ef526200a` CI run passed all
-required Windows/Linux checks. The new successor still needs its own hosted
-checks, recovery composition and fresh target observation. Production registries
-remain empty; no Stop, native recovery or final feature acceptance follows.
+required Windows/Linux checks. Recovery PR #57 normally incorporates this
+successor as `652ab8aefa03e556304a681f86b4786839ada46b`: both reviewed Git blobs
+match, all nine recovery-specific files are unchanged, and23 package recovery/
+transition controls pass. The new heads still need their own hosted checks and
+fresh target observation. Production registries remain empty; no Stop, native
+recovery or final feature acceptance follows.
