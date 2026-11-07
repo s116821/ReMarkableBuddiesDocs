@@ -166,7 +166,11 @@ and the exact raw local configuration snapshot used for the reviewed effective
 projection. Status retains only the original operation, guard and patch digest;
 the original local transaction and exact result must prove correspondence without
 retaining private patch text, creating a second operation index or retrying Edit.
-An unchanged projection is a no-change outcome without a fabricated receipt.
+An unchanged resulting portable declaration artifact under the existing
+structural/declaration semantics is a no-change outcome without a fabricated
+receipt. Equal effective values alone do not establish no-change: omitted,
+supported null and explicit-default declarations remain distinct, and adding a
+shared declaration may change future fallback despite today's equal value.
 
 The browser and Electron paths use the same guarded private host transport and
 opaque bounded references. A saved shared-group mode only offers the control;

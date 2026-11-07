@@ -195,6 +195,10 @@ The Manager SHALL expose shared preference Inspect/Edit/Status through the same 
 - WHEN a selected head, established absence, local fallback configuration, mode or connection changes after inspection
 - THEN the original guard refuses stale Edit, field origins remain distinguishable, and any new edit requires fresh inspection and confirmation rather than rebase or automatic retry.
 
+#### Scenario: Equal effective values have different declarations
+- WHEN an explicit sparse shared declaration yields today's same effective value as local fallback or a default
+- THEN omission, supported null and explicit-default declaration semantics remain distinct, and only an unchanged resulting portable declaration artifact is no-change without a fabricated receipt; effective-value equality alone cannot suppress the edit.
+
 #### Scenario: Original Status after possible dispatch
 - WHEN Edit output is lost or canceled after possible dispatch
 - THEN the host retains the original operation/guard/patch digest and unknown disposition without private patch text, and Status proves correspondence from exact existing transaction and result custody or remains unknown; no fresh Edit, alternate ordinary Status or second operation index is used.
