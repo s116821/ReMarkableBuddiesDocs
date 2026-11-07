@@ -188,3 +188,13 @@ reconciliation. Physical tablet/provider/native qualification remains separate.
 ## Ordinary notebook archives
 
 The paired [notebook archive consumer](manager-notebook-archives.md) adds policy-previewed ordinary notebook export and detached format-4 inspection. Local source/fixture, actual host UI, product interoperability, hosted delivery and physical tablet qualification remain separately attributed in its change results.
+
+## Portable preference files
+
+Both companions provide deliberate preference-file export and Review/Confirm
+import under the [consumer specification](../openspec/specs/portable-configuration-companion/spec.md).
+The [Manager guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/portable-configuration.md)
+explains the three-setting scope, private file custody, preserved omitted/empty
+declarations and original-only reconciliation. Export download handoff does not
+verify a durable/private saved file; saved Config readback does not establish
+running settings. No archive/cloud/store initialization follows.
