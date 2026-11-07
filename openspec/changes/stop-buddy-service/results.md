@@ -601,3 +601,31 @@ match, all nine recovery-specific files are unchanged, and23 package recovery/
 transition controls pass. The new heads still need their own hosted checks and
 fresh target observation. Production registries remain empty; no Stop, native
 recovery or final feature acceptance follows.
+
+## Corrected producer target observation and current CI
+
+The fresh read-only observation of Manager
+`31c540fbc6ed781de5f20d1128e5095c620ee148` completed all14 fixed commands:
+the unchanged typed service group followed by the corrected root metadata
+command. The original service and metadata parsers accepted the captured bytes;
+the root command returned exit0 with no stderr. All captures reached receive
+EOF, the original SSH resources settled, and the host worker was reaped with an
+empty process group. The retained result remains unqualified for production.
+
+The service-and-root-metadata collection took6.219seconds inside its original
+8-second collector budget; the owned outer run settled in10.750seconds. The prior
+`--printf` failure and all original evidence remain unchanged. The new success
+does not retrospectively explain an older failure whose raw replies were absent.
+This observation covered service properties and root metadata only: it did not
+sample the complete artifact/process brackets, submit Stop, exercise package
+recovery, or enroll a production profile.
+
+Current Stop source CI
+[42331606824](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/42331606824)
+passed Checks, Build and both Linux/Windows Integration jobs. Paired Docs
+`18da2b05de1f4def3d111dcf6374d4aac1061537` also passed its checks. Recovery
+`652ab8aefa03e556304a681f86b4786839ada46b` retains the verified source composition
+and23 focused controls; its separate hosted integration was still running at
+this checkpoint. Full sampling, actual shutdown/recovery and reviewed production
+tuples remain required. No application release or device installation is claimed
+from these draft-branch results.

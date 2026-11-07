@@ -82,4 +82,5 @@
 - [x] Use literal-newline `stat -c` metadata and `stat -f -c %t`; preserve strict parsing and all original read guards.
 - [x] Admit only exact exit1/empty-stdout GNU or BusyBox optional-final-component absence; cover permission, wrong status, partial output and extra diagnostic refusals.
 - [x] Verify actual local utility quoting, nanosecond precision, no-follow and missing-file behavior where available, plus existing sampler regressions and independent source review.
-- [ ] Reconcile the reviewed successor into recovery without changing its owned source, then obtain fresh target/hosted evidence separately; no old diagnostic replay or production enrollment.
+- [x] Reconcile the reviewed successor into recovery without changing its owned source; verify the corrected producer against a fresh read-only target observation and current Stop branch hosted checks, without replay or production enrollment.
+- [ ] Finish recovery's own current hosted checks and the separately required full sampling, shutdown/recovery and production-profile acceptance before final paired delivery.
