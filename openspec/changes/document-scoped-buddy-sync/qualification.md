@@ -117,3 +117,33 @@ domain resume or grant portable binding authority. Its explicit fixture-only
 environment variable preserves the root for the caller, whose temporary directory
 then removes it. Retain compiler outputs/source revisions as review evidence and
 remove only your owned temporary build directory when no longer needed.
+
+## Portable namespace contract refusal
+
+The unreleased format5 namespace increment changes its contract fingerprint. Build
+an unchanged host reader from pre-portable format5 source
+[`8c97cc2384bbe39fdee42582d7f2b77b8253532c`](https://github.com/s116821/ReMarkableBuddies/commit/8c97cc2384bbe39fdee42582d7f2b77b8253532c)
+with the same supported compiler, then explicitly supply its trusted absolute
+executable path from the current Rust checkout:
+
+```sh
+BUDDY_TEST_PRE_PORTABLE_FORMAT5_READER=/absolute/trusted/old/reader-buddy \
+  cargo test --locked --offline --all-features --lib \
+  pre_portable_format5_reader_accepts_its_control_and_refuses_new_contract_without_mutation -- --ignored
+```
+
+The test constructs disposable empty stores with the exact preserved old contract
+and a current new-contract store. The unmodified older executable performs only
+the early existing-only mode Inspect with a cleared environment and explicit
+trusted Config. It must first accept its old format5 control, then refuse the
+new contract while preserving critical metadata bytes and absent mode/checkpoint
+state. The current reader must reopen the new store. This demonstrates contract
+refusal, not migration, actual portable publication, provider/native behavior or
+production compatibility for an earlier draft format5 store.
+
+The default harness ignores this explicit maintainer gate when no trusted older
+executable is supplied; that skip is not execution evidence. The Linux author run
+actually passed it with Rust1.98.1 and the unchanged pre-portable executable SHA256
+`32976758b6056c199ba2947bbdc7665df724de29e3bb208ee690725824023ddb`.
+Its old schema SHA256 is
+`14417dc53bf35ead00701737256f4f11dc28fc49645f2c7e4f3db3c0dfef24aa`.

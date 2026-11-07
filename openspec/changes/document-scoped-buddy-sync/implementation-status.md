@@ -394,3 +394,46 @@ connected-core implementation items. It does not obtain new review or qualificat
 by changing checkboxes. Broader compound requirements remain open, stale historical
 pointer statements are labeled as history, and current requirements derive from
 the active delta rather than an obsolete requirement count.
+
+### Portable record namespace and original-condition increment
+
+Source [8a50104](https://github.com/s116821/ReMarkableBuddies/commit/8a5010437247802b9267cc4617a380e1a45891ee),
+parent `54f5e5a`, follows the normally integrated disjoint qualification harness.
+The new `PortableConfiguration` / `portable-configuration` namespace admits only
+format5 selected records, strict original V1 declaration JSON, value envelopes
+and no media. Legacy families1–4 refuse ordinary/selected publication before
+generation or object changes. Existing ordinary portable file controls retain
+their separate admission. The older static contracts are unchanged.
+
+The pure domain adapter owns the fixed group-scoped UUIDv5 record, stable URI key,
+one complete unbranched declaration chain, exact original ObjectRef validation,
+and original-condition/patch/result-bound revision recipe. It rejects duplicate
+raw payload keys, missing/forked/disconnected history, foreign group/key and
+tombstones. Serializable conditions describe preconditions, not current authority.
+Only unchanged resulting raw declaration artifacts are no-ops; explicit null,
+empty objects and omission remain distinct even with equal effective fallback.
+No local Config file, operation index, receipt, provider request or live admission
+is created by the pure preparation/projection helpers.
+
+The unreleased format5 contract fingerprint changes to enumerate this namespace
+and its envelope limits. No earlier draft-format5 migration or deployment support
+is implied. The actual unmodified older format5 executable accepts an exact old
+contract positive control, then refuses the new contract without changing CURRENT,
+identity, capability/feature/contract bytes or creating mode/worker state. The
+current reader reopens the new store. The preserved old schema fixture is hashed
+to its original source. See the [explicit older-reader gate](qualification.md#portable-namespace-contract-refusal).
+
+All 25 portable configuration cases and 195 storage cases pass (three explicit
+default ignored gates, including the separately executed older-reader case).
+Strict all-target/all-feature Clippy, formatting and diff checks pass. The first
+lint run caught five test-only clone-to-slice suggestions; replacing them with
+borrowed slices changed no assertions or production code. The 25 portable cases
+were rerun afterward; storage evidence precedes only that test-only borrowing
+change, with every production/storage-test input unchanged. All 12 final source
+inputs are SHA-verified unchanged by commit. The four new portable record cases
+overlap the 25 portable configuration count. No live/native result is claimed.
+
+Actual qualified first-scope/current-selected producer admission, original-only
+Status, Worker publication/adoption of this owner, effective consumers and real
+CLI/Manager correspondence remain open. This schema/adapter increment does not
+release that command seam or complete the parent.

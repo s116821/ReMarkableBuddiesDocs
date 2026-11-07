@@ -251,3 +251,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Verify all 8 catalog HTTP cases within 191 storage tests / 2 existing ignored gates, plus 74 conversation tests, strict Clippy, formatting and unchanged committed input hashes; keep the earlier pre-intent correction run and initial failures separate.
 - [x] Reconcile thirteen obsolete historical increment tasks and three already reviewed connected-core implementation tasks against existing exact-source public receipts and paired delivery, without reopening qualification or closing broad parent work.
 - [ ] Establish fresh provider-qualified first-scope product admission, preference/handwriting registrations and actual commands/consumers; complete selected notebook, uncertainty and final provider/native/delivery gates in this same active parent.
+
+## Portable record verified increment
+
+- [x] Add format5-only portable namespace/contract and legacy-family publication refusal, exact raw V1 record/chain projection, group-stable key/UUID and original-condition-bound pure preparation; source `8a50104`, independent review pending.
+- [x] Verify declaration-based no-op versus null/empty/omitted fallback, duplicate raw JSON, foreign/conflicted history, real selected Store reopen and all four legacy-family refusal controls; pass 25 portable configuration and 195 storage cases with their stated non-additive attribution.
+- [x] Execute the unmodified older format5 reader's old-contract positive control / new-contract nonmutating refusal; retain its exact source/binary/schema provenance and three default-ignored gate attribution. Pass strict Clippy, formatting and unchanged final input hashes after the test-only borrow cleanup.
+- [ ] Complete fresh first-scope/current-selected admission, portable Worker registration/publication/adoption, original Status and effective product/Manager command integration; pure record helpers grant no live permit.
