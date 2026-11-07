@@ -401,3 +401,12 @@ three engine calls with no confirmation. The accepted synthetic path uses
 five calls, observes a committed nullable-original record and presents the
 exact seed image and controlled text to the paired target normalization
 only. No live run is credited.
+
+Buddy df7868dd implements the separately selected two-valid-outcome fixture.
+Eight offline receiving controls passed and six fixture/live selectors were
+ignored. Both seed outcomes accept only their own review decision and publish
+before the paired context call. Malformed normalization and failed Writer
+generation never reach review. The copied executable passed exact offline PNG
+admission. This is fixture evidence only. No provider comparison is credited.
+Exact prior enrollment source f7ecb3b passed hosted Checks, ARM Build and
+Integration in run 42357465114, separately from either later driver revision.
