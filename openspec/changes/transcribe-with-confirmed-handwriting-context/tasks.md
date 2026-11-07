@@ -141,3 +141,10 @@ model-qualification prerequisite, implicit selector activation or premature arch
 - [ ] Verify all required hosted checks for the Lincoln driver revision 65de35d5.
 - [x] Separately review and execute the bounded exploratory Lincoln fixture once. The target baseline generated and the seed abstained. No paired result exists.
 - [ ] Establish paired benefit/nonregression with separately admitted representative evidence. The consumed Barton and Lincoln attempts do not satisfy this criterion.
+
+## Explicit image-bound Writer enrollment after abstention
+
+- [x] Draft the [precode amendment](writer-abstention-enrollment.md) and failure matrix.
+- [ ] Independently accept the exact custody, intent, compatibility and payload boundaries.
+- [ ] Implement and verify accepted source/API controls, including frozen legacy vectors.
+- [ ] Attach and qualify the real native image and explicit user-intent owner separately.
