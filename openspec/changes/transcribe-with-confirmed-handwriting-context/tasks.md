@@ -147,5 +147,6 @@ model-qualification prerequisite, implicit selector activation or premature arch
 - [x] Draft the [precode amendment](writer-abstention-enrollment.md), failure matrix, and active OpenSpec scenarios.
 - [x] Independently accept the exact custody, intent, compatibility and payload boundaries at Docs 6a1504d2.
 - [x] Implement the typed source/API boundary and verify focused local controls, including frozen legacy vectors.
-- [ ] Complete independent implementation review, exact-head hosted checks and older-binary opaque compatibility evidence.
+- [x] Verify typed refusal and exact opaque notebook backup/restore through the prior binary.
+- [ ] Complete independent implementation review and exact-head hosted checks.
 - [ ] Attach and qualify the real native image and explicit user-intent owner separately.

@@ -380,3 +380,17 @@ and StructuredMath in addition to WholePage and both Reader payload builders.
 The focused offline test passed on this test-only revision. The earlier 74-test
 and Clippy results remain attributed to d20d6dd. An older-binary round trip
 remains open.
+
+### Prior-binary compatibility
+
+Two offline test binaries were built from current f7ecb3b and the immediate
+pre-enrollment Buddy PR predecessor 46a2d98 with test-only fixture adapters
+in disposable detached worktrees. The latter includes the prior typed ready4
+consumer and is the exact comparison source, rather than a released-version
+claim. The current publisher wrote a synthetic enrolled record to a fresh
+same-actor format4 Store. The prior provider returned unsupported on inspect,
+exposed no typed query value and refused status, update and forget without
+publication. The prior notebook backup, restore and second export preserved
+both the exact envelope and PNG bytes. Both single-test runs passed.
+The exact sources, adapter patches, binary hashes, receipts and object
+inventory are pinned in the local evidence for the associated REM-26 handoff.
