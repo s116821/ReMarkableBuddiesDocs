@@ -123,7 +123,7 @@ No model/device execution or new recognition experiment is selected here.
 - [x] Integrate Writer source-image normalization before validated normalized-source receiving/archive; retain explicit native ingress gap.
 - [x] Implement explicit source-bound confirmation adapter through existing Handwriting1 CAS/status; never infer confirmation from Refine/cancel/erasure.
 - [x] Exercise real-Store selection/media/drift/lifetime/replay, actual Reader/Writer payload/confirmation, Config/schema and simulator controls; retain exact results and native/efficacy limits in results.md.
-- [ ] Verify focused/current hosted checks and independently review actual source/spec agreement.
+- [x] Verify runtime source/spec review and hosted Checks/ARM Build/Integration for Buddy c0ea9d4 and Docs d5dc4c3. Later driver and recognition results retain their own attribution.
 - [ ] Attach genuine native Writer source ingress and explicit correction-intent owner; do not label typed fixture admission automatic physical integration.
 - [ ] Establish representative confirmed-learning benefit/nonregression through separately reviewed live evidence; preserve all prior scores.
 
@@ -137,5 +137,7 @@ model-qualification prerequisite, implicit selector activation or premature arch
 - [x] Refuse duplicate images, invalid images and empty/oversized target sets before calls; retain first-failure no-retry behavior.
 - [x] Validate actual receiving controls and inherited ownership/replay/Reader controls; preserve synthetic-only attribution and initial failures.
 - [x] Inventory retained corpus provenance without promoting evaluator truth or controlled fixtures into real user confirmation.
-- [ ] Independently review the exact test-driver source/contract pair and required hosted checks.
-- [ ] Admit a distinct same-writer seed/target corpus and separately reviewed live runner before any efficacy call; no execution is selected by this driver.
+- [x] Independently review the exact test-driver source/contract pairs.
+- [ ] Verify all required hosted checks for the Lincoln driver revision 65de35d5.
+- [x] Separately review and execute the bounded exploratory Lincoln fixture once. The target baseline generated and the seed abstained. No paired result exists.
+- [ ] Establish paired benefit/nonregression with separately admitted representative evidence. The consumed Barton and Lincoln attempts do not satisfy this criterion.

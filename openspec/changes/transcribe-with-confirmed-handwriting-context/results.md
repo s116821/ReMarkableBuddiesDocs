@@ -300,3 +300,51 @@ can exercise supported controlled data honestly without inventing authenticated
 human infrastructure or a native UI event. No API/model/tablet run or new efficacy
 score follows. All original recognition failures and learning/native/delivery
 gates remain unchanged.
+
+### Runtime and receiving evidence reconciliation
+
+Root independently accepted the runtime source/spec pair Buddy c0ea9d4 and
+Docs d5dc4c3 in REM-26 comment a54a5298. The actual Buddy source run 42339976207
+completed Checks, ARM Build and Integration successfully. Docs run 42340411320
+passed its three jobs. The separate metadata-triggered Buddy run is not used
+as source evidence. The later WholePage prompt-bound revision e4111683
+passed Checks, Build and Integration in run 42348946028. Root separately
+reviewed Lincoln driver 65de35d5 and its Docs contract d36f848b. At this
+checkpoint the driver had six passing local controls and passing offline
+fixture admission. Buddy run 42353257672 had passed Checks and was still in
+Build. Docs run 42353257706 passed all three jobs.
+
+The single authorized Lincoln run completed its target baseline and returned
+valid empty-text unreadable normalization for the seed on call three. The
+runner ended with two cells and incomplete status. The worker exit was
+verified. There was no seed Generate, correction, context arm or paired
+word/date or punctuation score. See REM-26 comments 115774d3 and d3224c6e
+for the retained run and independent read. Barton's first baseline refusal
+remains a separate consumed result with an unknown exact cause.
+
+### Writer recognition and explicit correction boundary
+
+Ordinary typed Writer image receiving deliberately uses WholePage under the
+accepted runtime contract. Only a complete Page becomes a validated
+NormalizedDocument and enters Generate. Partial, partial-math and structured
+math are explicit operation policies with typed outcomes and distinct
+identities. Feeding their known fragments or layout into ordinary Generate
+would change the receiving and source/archive contract. The model's reason
+for abstaining on this exact seed is unknown.
+
+Writer confirmation requires the exact retained PNG and a current,
+corresponding NormalizedText interpretation on the Writer turn. A valid
+unreadable result has no such interpretation. The lower-level Handwriting1
+confirm/update contract also requires a nonempty original interpretation and
+corrected text. Generic Refine and user dissatisfaction are not explicit
+confirmation. No native correction-intent owner is attached.
+
+If the intended product behavior includes learning from a user who supplies
+a complete transcription after abstention, the smallest missing contract is
+explicit image-bound enrollment with truthful no-original provenance. It
+needs a real user-intent owner and a reviewed representation for abstention
+or absence, with the existing image custody, CAS and replay protections.
+It does not require changing WholePage, fabricating original text, or
+silently routing partial results into Generate. Partial-aware Writer
+receiving would be a separate product contract. No implementation or
+successor experiment is selected by this finding.
