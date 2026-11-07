@@ -65,3 +65,32 @@ Windows head. Both Windows CLI subprocess tests and the focused binary
 argument exclusivity test also passed on that head. The Unix-only SIGINT
 case was outside this run. Historical evidence and the spent semantic
 comparison remain unchanged.
+
+
+## Delivered-main reconciliation, November 6, 2026
+
+Buddy `d7e05fac1bcc79c3022b9b3d501a82210d818d92` normally merges delivered
+main `bafa5cc92c175b1319939265c6da5928315cd8bc` into the existing source
+`7398569235bd9c329b832d06bdbae188502651da`. Both overlapping paths,
+`src/main.rs` and `src/storage/maintenance.rs`, merged automatically; the
+explicit exclusive transcription route and existing read-only context opener
+remain alongside delivered portable settings, storage and ordinary memory.
+Formatting and whitespace checks pass. No new local application build or
+recognition run is credited; hosted checks apply separately to this successor.
+The initial preservation checker compared Windows checkout bytes with Git LF
+blobs and falsely reported line-ending differences; object-level comparison
+replaces that oracle without rewriting source or historical evidence.
+
+This Docs reconciliation normally integrates delivered main
+`f98ff826aacdf63be373bd812c8eb8fdd102e3d5` into the existing active draft.
+Twelve Docs tests, guidance/provenance validation and all126 strict OpenSpec
+items pass on the composition. The handwriting contract/prompt/vector files
+and unchecked acceptance/delivery tasks remain unchanged; the change is active
+and unarchived. Both PRs remain draft. The finite delivered memory release does
+not qualify handwriting: strict structure0/4, full fidelity0/4 and separately
+attributed legacy6/6 remain unchanged. Later inert diagnostics do not alter
+those scores or promote model output to confirmed corrections. Representative
+recognition, held-out learning efficacy, automatic Reader/Writer correction
+consumption, optional sync/native and coordinated delivery gates remain open.
+No tablet/provider/model/API operation, image change or new diagnostic execution
+is selected or performed by this reconciliation.
