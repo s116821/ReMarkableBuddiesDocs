@@ -456,9 +456,53 @@ as do strict Clippy, formatting and diff checks. The storage group was rerun
 because the raw hook sits in the shared Store decoder. Contract bytes/fingerprint,
 wire schema and authority rules are unchanged, so no older-reader rebuild or
 relabeling of its prior gate follows. All three committed correction inputs are
-SHA-verified unchanged; independent re-review/publication remain pending.
+SHA-verified unchanged. The independent narrow re-review accepted this correction;
+the coordinator published source `76095e7` with paired Docs `81667ed` in the
+existing implementation drafts. This does not close final parent review or CI.
 
 The subsequent seven-file Worker preference prototype is preserved separately in
 exact-byte custody and excluded from this correction. Full producer binding,
 generation, mode, configuration and selected-token re-admission remain required;
 the pure projection/Condition helpers do not establish them.
+
+### Portable Worker registration and original receiving
+
+Source [993236a](https://github.com/s116821/ReMarkableBuddies/commit/993236a0000cbd63f7bca4fc924d1c44bc36d4ad),
+parent `76095e7`, extends the existing selected Worker to route the typed portable preference owner
+through its additive catalog, fixed-slot publication and original receiving
+checkpoint. Discovery requires an explicit local original genesis at the exact
+root and current Store generation under the preference admission gate. An empty
+local scope supplies no declaration and causes no catalog allocation or upload.
+Existing memory registrations retain their original checkpoint shape; the new
+portable registration alternative rejects ambiguous source custody. Even at an
+already known empty mapping, imported foreign custody cannot authorize an initial
+publication. This is an original-source check, not the unfinished qualified
+Inspect/Edit producer admission.
+
+Receiving validates the exact original portable closure, reuses the original
+Initialize/Activate receipt after activation-before-checkpoint interruption, and
+retains losing explicit declarations separately from the active selected view.
+Current and retained manifests share a bounded local read budget. No native/model
+receipt is fabricated, local Config is not written, and the Worker remains the
+sole provider publisher/adopter.
+
+Four actual Worker/local HTTP cases pass: sparse explicit edits transfer original
+records to a passive second Store with no passive POST or outbox; competing first
+declarations converge while preserving losing original custody; fault/reopen
+reconciles the original receiving operation without another POST; foreign custody
+at an accepted but empty mapping refuses publication without changing its selected
+token. These are modeled provider interactions with real Store paths, not live
+account/Drive qualification or a supported user-facing command.
+
+Fresh first-use GET-only absence admission, offline selected Inspect/Edit,
+original-only Status, effective consumers and the actual CLI/Manager seam remain
+open. Production provider construction remains closed. No actual provider or
+tablet action is enabled by this increment, and the parent remains active.
+
+Final default-feature storage validation passes 195 cases with 3 existing opt-in
+gates ignored; the four portable Worker cases overlap that count. This run does
+not claim the all-feature provider-harness cases. Strict all-target/all-feature
+Clippy, formatting and diff checks pass. All seven committed Worker inputs match
+the frozen SHA manifest. The existing memory catalog/restart cases remain in the
+storage run. Independent review and hosted successor checks remain coordinator
+gates; no prior build is relabeled as evidence for this commit.

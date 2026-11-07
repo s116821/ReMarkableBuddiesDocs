@@ -254,7 +254,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 ## Portable record verified increment
 
-- [x] Add format5-only portable namespace/contract and legacy-family publication refusal, exact raw V1 record/chain projection, group-stable key/UUID and original-condition-bound pure preparation; source `8a50104`, independent review pending.
+- [x] Add format5-only portable namespace/contract and legacy-family publication refusal, exact raw V1 record/chain projection, group-stable key/UUID and original-condition-bound pure preparation; source `8a50104`, accepted with the independently reviewed `76095e7` correction and published in the existing implementation draft.
 - [x] Verify declaration-based no-op versus null/empty/omitted fallback, duplicate raw JSON, foreign/conflicted history, real selected Store reopen and all four legacy-family refusal controls; pass 25 portable configuration and 195 storage cases with their stated non-additive attribution.
 - [x] Execute the unmodified older format5 reader's old-contract positive control / new-contract nonmutating refusal; retain its exact source/binary/schema provenance and three default-ignored gate attribution. Pass strict Clippy, formatting and unchanged final input hashes after the test-only borrow cleanup.
 - [ ] Complete fresh first-scope/current-selected admission, portable Worker registration/publication/adoption, original Status and effective product/Manager command integration; pure record helpers grant no live permit.
@@ -263,4 +263,12 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Preserve a valid single-parent positive and correctly rehashed original `[P, P]` failure through both projection and actual Store admission; share one raw portable check before typed set normalization, source `76095e7`.
 - [x] Pass 26 portable configuration / 195 storage cases with 3 explicit default ignored gates, strict Clippy/formatting and unchanged three-file correction hashes; preserve independent Worker drafts outside the correction and keep prior old-reader evidence at its original source.
-- [ ] Obtain the requested independent narrow re-review and coordinator publication; this correction changes no contract fingerprint or live admission rule.
+- [x] Obtain the requested independent narrow re-review and coordinator publication at source `76095e7` / Docs `81667ed`; this correction changes no contract fingerprint or live admission rule.
+
+## Portable Worker integration
+
+- [x] Extend the existing additive catalog and selected publication/receiving route to the typed portable preference owner, preserving original genesis/proposal/receive custody and exact raw record bytes; do not create another Worker or silently seed an empty declaration.
+- [x] Exercise explicit local edits and passive second-Store receiving, competing first declarations with losing-history retention, original activation-before-checkpoint recovery, and foreign-custody refusal at a known empty mapping through the actual Worker/local HTTP fixture.
+- [x] Verify source `993236a` with 195 default-feature storage cases / 3 existing ignored gates, including all four Worker cases; pass strict all-target/all-feature Clippy, formatting and unchanged seven-file input hashes.
+- [ ] Obtain independent review and coordinated publication of the portable Worker increment; hosted successor CI stays with the coordinator.
+- [ ] Implement fresh qualified absence/current-selected Inspect/Edit admission, original-only Status and effective product/Manager consumers; the pure helper, local fixture producer and Worker registration do not supply these permits.
