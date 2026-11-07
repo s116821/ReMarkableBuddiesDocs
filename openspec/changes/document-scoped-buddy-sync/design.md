@@ -123,3 +123,30 @@ separate source dependency. Exact correction transfer does not complete Reader
 analysis/verification, Writer image normalization/ingress, null-original admission
 or fidelity/native qualification. Stored samples remain historical data and their
 selected coverage controls usability independently of unrelated cache contents.
+
+
+### Accepted correction adapter interface split
+
+The disjoint `handwriting::selected` component supplies `Owner::new(profile,
+correction)` and `Owner::scope(group, binding_sha256)` using the existing record
+UUID and approved independent scope key. Core matches the typed catalog owner,
+actual group/binding, actor and format5; this value is not current admission.
+
+`Projection::read(owner, manifest, bounded_original_object_loader)` validates
+exact original record/sample references, duplicate-free JSON, existing Handwriting1
+lineage/immutable genesis, one connected head and exact original-sample coverage.
+It exposes the current head, confirmed value or tombstone and verified bytes only
+for an Included current sample. Read each retained closure separately as evidence.
+Storage-valid PNG custody does not establish the stricter static recognition rule.
+
+`Mutation::prepare(owner, actor, ValidatedInput)` produces an envelope/sample and
+fingerprint without Store effects. Original receipt lookup precedes
+`Mutation::check_predecessor(current_projection_or_qualified_absence)` and fresh
+CAS. First Confirm requires separately established catalog/genesis absence; None
+is not an absence permit. Core performs original-operation identity checking and
+selection publication together under the actual Store mutex across applicable
+producers. The component grants no admission, maintains no journal/index and
+exposes no enabled selected dispatch or recognition hook. Native owns its raw
+handwriting files; core/catalog/Store/format5/admission/CLI/real callers and Docs
+remain coordinated here. No additional review of these accepted seams is required
+before that disjoint component implementation.

@@ -1,6 +1,6 @@
 # Selected publication, recovery and adoption integration precode
 
-Status: successor r2, proposed source integration, awaiting acceptance before code.
+Status: r2 contract accepted for source implementation; implementation remains unfinished.
 This successor preserves the original ef149155 candidate and resolves protocol
 review db02c677 and domain review 2e03d6af on REM-52. The choices below are concrete
 implementation contracts, not implemented APIs or executed provider evidence.
@@ -415,14 +415,17 @@ Tests must attempt actual SelectedAdmission, Writer and Worker access between ea
 boundary, not only SelectedMemory reads. Do not rewrite imported fact records.
 
 Independent global memory scopes use their existing Owner key and domain decoder.
-Handwriting needs a selected adapter over its existing profile/correction record
-identity and confirmed-sample media; its ordinary lease must not simply be removed.
-Portable preferences need an explicitly approved stable selected-record schema
-and namespace over the existing allowlisted raw portable artifact. No such
-Namespace exists now. Do not store Config text in SubjectMemory/Source, copy whole
-Config, auto-apply imported preferences to runtime, or silently mark these domains
-synchronized. These are concrete domain interface/coverage decisions for the
-coordinating owner, not a request to reopen delivered export/import maintenance.
+The accepted optional-domain contract is now recorded in the active delta and
+[design](design.md): one independently owned Handwriting1 scope per correction,
+and one group-global portable-configuration record with a format5 namespace.
+Native supplies the strict raw correction Owner/Projection/Mutation adapter and
+the integrated portable Artifact/LocalConfigSnapshot component. Core owns actual
+Store/catalog/Worker/selectors and request-consumption integration. Ordinary
+leases remain intact; no Config text belongs in SubjectMemory/Source, no whole
+Config is shared or rewritten on adoption, and absent consumers are not completed
+by data transfer. Original-operation checking and publication must be Store-atomic
+across applicable producers. The existing compatible recognition interfaces remain
+an explicit separate dependency. Delivered export/import maintenance stays closed.
 
 ## Required notebook compatibility and production stage
 
@@ -571,8 +574,10 @@ has been exercised or qualified.
   and strict receiving validation, preserving current key/schema/genesis rules.
 - Notebook format5 composition and actual selected notebook producer are required
   above, preserving format4 maintenance and the deferred observer.
-- Handwriting/preference selected adapters require explicit domain contract
-  decisions above; retain source refusals until coordinated, and parent tasks open.
+- Handwriting/preference identities and adapter split are accepted in the active
+  delta/design; integrate the independently owned components into real producers,
+  receiving and ordered request gates. Retain source refusals until implemented
+  and keep unavailable recognition/Manager/parent obligations explicit.
 - Real Store/HTTP integration tests must call selected Writer or memory mutation,
   Worker step and receiving adapter; existing lower-level fixtures are reused.
   Cover two clients same base, different documents/global facts, clock skew,

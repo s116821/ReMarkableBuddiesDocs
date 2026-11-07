@@ -212,7 +212,7 @@ Recognition SHALL use the explicitly selected local profile and a validated cata
 
 #### Scenario: Bounded selected examples
 - WHEN a compatible admitted shared recognition consumer captures confirmed context
-- THEN it uses exact Included verified samples, target-hash exclusion, bounded confirmed-recency-v1 ordering, at most16 candidates and3 examples and the existing request/PNG budgets; explicitly requested stale/missing examples refuse, automatic selection reports incompleteness truthfully, and unavailable/incomplete with no usable sample never becomes complete-empty.
+- THEN it uses exact Included verified samples, target-hash exclusion, bounded confirmed-recency-v1 ordering, at most 16 candidates and 3 examples and the existing request/PNG budgets; explicitly requested stale/missing examples refuse, automatic selection reports incompleteness truthfully, and unavailable/incomplete with no usable sample never becomes complete-empty.
 
 #### Scenario: Receiving interfaces remain unavailable
 - WHEN the compatible Reader analysis/verification and typed Writer normalization interfaces from the separately owned receiving work are not delivered
