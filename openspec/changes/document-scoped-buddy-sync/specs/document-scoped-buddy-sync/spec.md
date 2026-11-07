@@ -188,6 +188,25 @@ Shared mode SHALL adjudicate one portable-configuration record under the group-s
 - WHEN the existing local Manager/import maintenance displays or edits the saved file
 - THEN it retains its delivered local contract and cannot claim effective shared-group preference management; mode-aware shared view/edit remains separate integration work.
 
+### Requirement: Shared preferences have guarded effective management
+The Manager SHALL expose shared preference Inspect/Edit/Status through the same guarded private host behavior in browser and Electron. The real versioned Buddy one-shot command SHALL establish selected readiness, exact mode/group/binding/Store/selection or qualified-absence pins and the raw local configuration identity used for the effective projection. Only a successful authoritative Inspect SHALL enable a deliberately confirmed sparse V1 Edit. Saved mode hints, source-only fixtures and saved-file inspection SHALL NOT supply that authority.
+
+#### Scenario: Effective inspection changes before Edit
+- WHEN a selected head, established absence, local fallback configuration, mode or connection changes after inspection
+- THEN the original guard refuses stale Edit, field origins remain distinguishable, and any new edit requires fresh inspection and confirmation rather than rebase or automatic retry.
+
+#### Scenario: Original Status after possible dispatch
+- WHEN Edit output is lost or canceled after possible dispatch
+- THEN the host retains the original operation/guard/patch digest and unknown disposition without private patch text, and Status proves correspondence from exact existing transaction and result custody or remains unknown; no fresh Edit, alternate ordinary Status or second operation index is used.
+
+#### Scenario: Shared command meets a resident Store owner
+- WHEN existing-only command acquisition encounters the resident process's exclusive Store lock or an older Buddy lacks the selector
+- THEN both host paths report busy or unsupported truthfully without stopping the service, using a saved-file fallback or pretending effective shared values are available.
+
+#### Scenario: Inspection is a snapshot rather than running activation
+- WHEN Manager displays effective fields or a local pending/upstream applied/replaced disposition
+- THEN explicit private text disclosure and bounded opaque-reference lifecycle preserve uncertainty, and the report identifies the next admitted request's projection without claiming that an already-running request consumed it.
+
 ### Requirement: Confirmed handwriting uses independent exact correction scopes
 Shared confirmed handwriting SHALL use one fixed-slot chain per correction, typed owner HandwritingCorrection(profile, correction), existing Handwriting1 record identity/mutation semantics, and key SHA-256 of UTF-8 `urn:remarkable-buddies:global-record:v1:handwriting:{record_uuid}` using its canonical lowercase hyphenated UUID. Only an explicitly confirmed conditional typed operation in admitted format5 SharedGroup SHALL create or update this scope. Join, mode change, imported history and source/native document availability SHALL NOT confirm, reprofile or silently promote ordinary corrections.
 

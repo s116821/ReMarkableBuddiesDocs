@@ -150,3 +150,29 @@ exposes no enabled selected dispatch or recognition hook. Native owns its raw
 handwriting files; core/catalog/Store/format5/admission/CLI/real callers and Docs
 remain coordinated here. No additional review of these accepted seams is required
 before that disjoint component implementation.
+
+### Shared-preference Manager and one-shot command boundary
+
+The coordinated Manager implementation follows the
+[accepted shared-preference management contract](shared-preferences-manager.md).
+That leaf is owned by the Manager lane; this design, the requirement delta and
+tasks remain core-owned. Saved-file import/export keep their delivered local
+meaning. The separate shared control uses a successful selected Inspect before
+Edit and a strict sparse V1 patch that contains only deliberate declarations.
+
+The core one-shot Inspect/Edit/Status command must bind original mode epoch,
+group/binding, Store/selection identity, accepted head or established absence,
+and the exact raw local configuration snapshot used for the reviewed effective
+projection. Status retains only the original operation, guard and patch digest;
+the original local transaction and exact result must prove correspondence without
+retaining private patch text, creating a second operation index or retrying Edit.
+An unchanged projection is a no-change outcome without a fabricated receipt.
+
+The browser and Electron paths use the same guarded private host transport and
+opaque bounded references. A saved shared-group mode only offers the control;
+unsupported older Buddy, busy exclusive Store custody, stale inspection and
+post-dispatch uncertainty remain explicit. No automatic Stop, replay, saved-file
+fallback or provider request is introduced. A verified inspection describes the
+next admitted request's overlay; running activation is unverified. Source-only
+UI/protocol fixtures do not close the real backend/host parity gate, and the
+combined unfinished feature is not independently enabled or merged to main.
