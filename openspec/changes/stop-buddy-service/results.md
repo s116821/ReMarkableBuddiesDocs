@@ -727,3 +727,21 @@ The patched owner fixture still uses the accepted trial layout. A stable
 installed alias, reviewed tuple, fixed stage/connection inputs and actual
 independent handback must be assembled and reviewed in a later packet.
 No registry or device action was selected here.
+
+Manager b0bc337 adds the publication-failure controls without changing
+71f48b5 production or owner source. The expanded Linux run covers binding
+temporary flush, atomic publish and parent flush, reply/identity/directory
+flush, accepted marker publish and parent flush, and cutoff expiry after
+queue preparation immediately before the method. Each case preserves no
+send or one possible send without acknowledgment or replay. A visible
+accepted marker after injected parent flush failure still yields no
+acknowledgment. All fourteen owner cases passed.
+
+The separate stable-layout source bundle pins its fresh stage and exact
+stable target, publishes the payload within the data filesystem and
+retains the original owner/recovery and readback. The host verifies
+reviewed connection, boot, bus, manager and owner pins before upload.
+Its terminal verifier checks the exact public binding, accepted typed
+reply and settlement queue; the positive and four mutation cases passed.
+This is a source inventory. Exact current tuple/pins, retained release
+materialization and isolated build/seal remain required before admission.
