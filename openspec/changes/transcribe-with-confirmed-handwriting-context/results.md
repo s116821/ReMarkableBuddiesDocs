@@ -410,3 +410,23 @@ generation never reach review. The copied executable passed exact offline PNG
 admission. This is fixture evidence only. No provider comparison is credited.
 Exact prior enrollment source f7ecb3b passed hosted Checks, ARM Build and
 Integration in run 42357465114, separately from either later driver revision.
+
+### Lincoln two-valid-outcome paired result
+
+The single selected Buddy df7868dd comparison completed six provider calls
+and three Writer receiving operations. The actual seed normalized as a
+complete Page. Independent exact-gate review admitted the frozen supported
+reading through normalized-source confirmation, which committed before
+the paired context arm. Both target arms used the same PNG and generated.
+The owned host worker exited zero and was independently confirmed settled.
+
+On the unchanged physical-note rubric, both target readings were accurate
+on words/date, and punctuation was unchanged. Both used the allowed period
+after 13. The context arm omitted one blank line before the closing. This
+one exploratory pair shows observed nonregression and no improvement.
+It exercised controlled fixture confirmation after a complete Page. Live
+abstention enrollment, native intent, benefit and general efficacy remain
+open. The prior spent Barton and Lincoln outcomes retain separate attribution.
+Exact evidence and independently checked scoring are recorded in REM-26
+comments b3068c0e and 8a00925b. The one-use executable was retired after
+settlement, with the small receipts and raw evidence retained.
