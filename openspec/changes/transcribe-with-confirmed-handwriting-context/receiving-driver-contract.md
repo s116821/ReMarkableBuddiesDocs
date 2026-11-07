@@ -85,3 +85,11 @@ overprint, faint ink and ambiguous suffixes. This makes the frozen corpus a
 poor fit for qualifying the complete WholePage receiving chain. A valid
 abstention, malformed response and downstream Writer refusal are recorded
 separately.
+
+The Lincoln physical-note fixture uses one full seed frame and one frozen target
+rectangle. Its first stage permits four calls across the target baseline and
+seed operations. Its post-confirmation comparison adds at most two calls for
+the same target bytes. The seed PNG may be losslessly re-encoded to satisfy
+the correction sample byte cap when every decoded RGB pixel matches the
+reviewed full frame. The target evaluation material stays outside the runner.
+This single case is exploratory.
