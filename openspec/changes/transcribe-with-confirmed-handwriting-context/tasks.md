@@ -111,3 +111,21 @@ Reader/Writer integration and native/learning/sync scope remain unfinished.
 This scoped mechanics increment does not check off recognition, held-out learning,
 automatic Reader/Writer integration, sync/native or final delivery tasks above.
 No model/device execution or new recognition experiment is selected here.
+
+
+## Ordinary runtime confirmed-correction integration (precode)
+
+- [x] Reconcile exact current source/main and independent consumer intake.
+- [x] Propose explicit active-profile configuration and bounded deterministic selector, exact same-Store ownership, real Reader/Writer receiving chain and distinct confirmation contract before code.
+- [ ] Independently accept exact runtime precode and selection-policy decision.
+- [ ] Implement configuration/schema/lifecycle and shared bounded selector with no-context compatibility.
+- [ ] Integrate same-Store capture into actual Reader analysis/independent verification with unchanged response contracts/call budget and operation custody.
+- [ ] Integrate Writer source-image normalization before validated normalized-source receiving/archive; retain explicit native ingress gap.
+- [ ] Implement explicit source-bound confirmation adapter through existing Handwriting1 CAS/status; never infer confirmation from Refine/cancel/erasure.
+- [ ] Exercise exact real-Store, selector/media/drift/lifetime/replay, actual payload, schema and simulator cases enumerated in runtime-integration-contract.md.
+- [ ] Verify focused/current hosted checks and independently review actual source/spec agreement.
+- [ ] Attach genuine native Writer source ingress and explicit correction-intent owner; do not label typed fixture admission automatic physical integration.
+- [ ] Establish representative confirmed-learning benefit/nonregression through separately reviewed live evidence; preserve all prior scores.
+
+These tasks extend the same paired delivery; no new CLI-only completion, broad
+model-qualification prerequisite, implicit selector activation or premature archive.

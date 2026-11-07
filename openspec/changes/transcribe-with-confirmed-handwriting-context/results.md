@@ -178,3 +178,15 @@ with warnings denied; host tests and subsequent stages remain in progress at thi
 checkpoint. No completed-hosted-check claim, merge or whole-feature acceptance
 follows. The exact reviewed implementation and prior results retain their own
 revision attribution; this successor only reconciles review status.
+
+
+## Runtime integration precode checkpoint — November 6, 2026
+
+The runtime successor contract is proposed on exact Buddy683ddfc with delivered
+mains bafa5cc9/f98ff826 freshly unchanged. No product source was edited. Explicit
+enabled profile/automatic bounded confirmed selection is an engineering decision;
+recency/16-candidate-window/three-output policy and its efficacy limits await independent review. The
+contract maps existing same-Store custody, actual Reader two-pass payloads, Writer
+source-image normalization and distinct source-bound confirmation. Native Writer
+ingress/input intent attachment and live learning evidence remain open. No new
+model/API/tablet action, fixture image, gold answer or recognition score change.

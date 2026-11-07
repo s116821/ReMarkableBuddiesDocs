@@ -111,3 +111,14 @@ Simulator impact: no Reader/Writer/simulator route changes are selected. Extend
 real local family fixtures and fake-engine regression coverage for this admission
 boundary; existing runtime scenarios remain unchanged. These controls establish
 storage/admission/custody, not real-pen, live recognition or learning efficacy.
+
+
+## Runtime integration successor
+
+The prior standalone sections describe their historical increment. The proposed
+[runtime contract](runtime-integration-contract.md) now specifies the exact separate
+caller/selector and same-Store handoff needed for ordinary Reader/Writer use,
+including configuration, recency/16-candidate-window/three-output policy, partial/failure
+behavior, actual payload/receiving adapters, custody and explicit confirmation.
+It is precode only. Existing low-level explicit selection stays exact; no standalone
+Store reopen is installed into runtime. Native input attachments remain open.

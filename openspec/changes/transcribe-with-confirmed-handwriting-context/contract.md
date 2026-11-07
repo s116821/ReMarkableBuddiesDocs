@@ -123,3 +123,13 @@ Successful capture, stale/media refusal after ownership acquisition, and
 cancellation/output-error controls on4 prove real ownership through final drop, using family-specific publisher/sync
 assertions. No live model or tablet run is required for these mechanics; they
 remain insufficient for recognition, learning, sync or native qualification.
+
+
+## Proposed ordinary runtime consumers
+
+The [runtime integration contract](runtime-integration-contract.md) defines the
+separate enabled-profile selector and same-Store Reader/Writer receiving adapters.
+It does not reinterpret explicit capture arguments or relax standalone contracts.
+The prior standalone no-automatic-consumer statements remain true of that entry;
+only the newly reviewed runtime caller may select its bounded exact IDs. Runtime
+implementation/activation and learning efficacy are not established by this precode.

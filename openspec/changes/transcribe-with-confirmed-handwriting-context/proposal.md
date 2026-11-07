@@ -59,3 +59,15 @@ This is proposed storage/admission work, not an implemented or qualified result.
 Automatic Reader/Writer consumption still requires a separately reviewed
 same-Store handoff; the standalone command must not be installed as that runtime
 path. Recognition quality and all unfinished delivery gates remain unchanged.
+
+
+## Reviewed runtime integration successor (proposed)
+
+Extend this same active change with [the concrete runtime precode](runtime-integration-contract.md).
+Its scope supersedes the standalone-only exclusion solely for the specified ordinary
+Reader/Writer receiving chain: explicit enabled active profile, deterministic bounded
+confirmed-record selection, exact same-Store capture, Reader two-pass payloads,
+Writer source-image normalization and distinct explicit correction intent. Disabled
+retains current behavior; no native Writer ingress or implicit Refine confirmation.
+No new Store/domain/retrieval framework or model/device execution. Independent
+precode acceptance precedes source edits; learning efficacy remains unproved.

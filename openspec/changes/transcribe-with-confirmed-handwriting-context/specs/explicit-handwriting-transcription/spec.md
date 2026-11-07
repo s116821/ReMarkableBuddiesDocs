@@ -138,3 +138,73 @@ activate automatic consumers or open a Store for null context.
 #### Scenario: Legacy and null-context boundaries remain
 - **WHEN** a caller uses existing legacy fixtures, a null context or an unrelated maintenance admission
 - **THEN** existing legacy outcomes/identities remain, null context creates no Store roots, and generic maintenance plus legacy sync/publication still deny notebook4 without automatic Reader/Writer activation.
+
+
+### Requirement: Ordinary runtime selects bounded confirmed examples on its existing Store
+
+An explicitly enabled active handwriting profile SHALL select confirmed examples
+using confirmed-recency-v1 in runtime-integration-contract.md before calling
+the unchanged exact-revision capture contract. Disabled/unset SHALL preserve
+current no-context behavior. Selection SHALL use one complete bounded metadata
+snapshot, descending asserted confirmed_ms order with stable record/revision-ID tie-breaks, at most sixteen candidate media checks, declared
+skip/omission diagnostics and no replacement after capture failure. Capture SHALL use the exact receiving
+Ledger/Dispatch Store and retain real successful/refused ownership through the
+operation. No Store reopen, automatic confirmation or model-assisted retrieval
+SHALL be introduced.
+
+#### Scenario: Stable bounded automatic selection
+- **WHEN** an enabled ordinary profile contains current confirmed values, conflicts, tombstones and unusable samples
+- **THEN** the fixed sixteen-candidate window, at most three usable examples and exact ordered revision IDs/counts/media reads follow the declared recency policy; target sample hashes are excluded and no other profile is used.
+
+#### Scenario: Later learning and forgetting affect selection
+- **WHEN** a later explicit confirm/update has a newer asserted confirmed_ms in the active profile
+- **THEN** its current eligible head can enter subsequent context ahead of older corrections, with deterministic ID tie-breaks; forgetting removes it, while skewed/future caller timestamps remain an explicit ordering limitation.
+
+#### Scenario: Empty differs from failed capture
+- **WHEN** selection is genuinely empty or all candidates were explicitly skipped
+- **THEN** the operation may use None with truthful CompleteEmpty/PartialEmpty diagnostics and unchanged old payloads.
+- **WHEN** storage/ownership/cancellation fails or a frozen selected revision drifts before capture
+- **THEN** the operation refuses before a model call without refill, reselect or null-context fallback.
+
+#### Scenario: Receiver and configuration lifetime
+- **WHEN** a foreign Store, selected/sync route, changed source/root, canceled or replayed operation attempts context admission
+- **THEN** existing ownership/currentness checks refuse; successful/refused owners remain held through receiving/output/error/drop and configuration does not switch midway.
+
+### Requirement: Runtime recognition uses task-specific examples without changing target semantics
+
+Ordinary Reader SHALL capture one same-Store context for its real initial analysis
+and independent verification. Writer source-image receiving SHALL reuse existing
+admitted whole-page normalization before normalized-source validation/archive.
+None SHALL retain exact old payload/identity behavior. Examples SHALL remain
+labeled data, never target sources, instructions, inferred confirmation or a
+substitute for the independently verified reading. The concrete payload byte
+bounds and intended source/test changes are in runtime-integration-contract.md.
+
+#### Scenario: Reader independent verification with context
+- **WHEN** a captured Reader operation sends its existing analysis and verification calls
+- **THEN** both receive the same frozen example IDs/PNGs and original target images, verification receives no proposed question/answer, and original response formats/agreement/two-recognition-call budget remain.
+
+#### Scenario: Writer recognizes before generating a note
+- **WHEN** an admitted retained source-image operation enters Writer receiving
+- **THEN** examples affect the existing normalization call before validated normalized-source/archive admission, only a whole Page result proceeds, and examples never become source units or note-generation instructions.
+
+#### Scenario: Native ingress remains absent
+- **WHEN** no genuine native Writer source-image or explicit correction-intent input owner exists
+- **THEN** typed receiving fixtures do not claim automatic physical integration and the attachment remains an unfinished delivery task.
+
+### Requirement: Runtime handwriting confirmation requires explicit source-bound intent
+
+Only an explicit handwriting-correction confirmation intent SHALL publish a
+Handwriting1 confirm/update through existing validation/CAS/status on the same
+Store. The adapter SHALL retain exact original conversation/turn/source revision,
+eligible PNG and original/corrected text with caller-asserted provenance. No
+image transformation, synthesized sample, native authority claim or blind retry
+of unknown publication SHALL follow.
+
+#### Scenario: Explicit correction round trip
+- **WHEN** the input owner explicitly confirms corrected handwriting text for an exact eligible retained original source
+- **THEN** the existing record contract stores the exact original sample/text and correction under stable identity, preserves expected-head conflict/status semantics, and exposes it to later admitted profile selection.
+
+#### Scenario: Refinement is not confirmation
+- **WHEN** ordinary Refine, dissatisfaction, model agreement, cancellation or question-mark erasure occurs
+- **THEN** zero handwriting correction records are created unless a separate explicit confirmation intent was supplied.
