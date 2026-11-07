@@ -191,6 +191,20 @@ Shared mode SHALL adjudicate one portable-configuration record under the group-s
 ### Requirement: Shared preferences have guarded effective management
 The Manager SHALL expose shared preference Inspect/Edit/Status through the same guarded private host behavior in browser and Electron. The real versioned Buddy one-shot command SHALL establish selected readiness, exact mode/group/binding/Store/selection or qualified-absence pins and the raw local configuration identity used for the effective projection. Only a successful authoritative Inspect SHALL enable a deliberately confirmed sparse V1 Edit. Saved mode hints, source-only fixtures and saved-file inspection SHALL NOT supply that authority.
 
+For first absence only, Buddy MAY reuse its already-qualified fixed-slot adapter for a bounded GET-only refresh of Drive data under current mode/binding/Store custody, with qualification before credentials. It SHALL revalidate exact root identity, a complete accepted catalog, expected global key/owner, Store generation, epoch and raw local Config pin under existing gates and one original deadline/read budget. The Manager transports SHALL NOT issue provider requests or introduce another engine. This exception SHALL NOT allocate IDs, write Drive data, create OAuth grants/resources, change mode/Config/service state, or move publication/adoption from the existing Worker. Existing separately qualified credential refresh retains its original bounded authorization contract.
+
+#### Scenario: First absence needs complete current evidence
+- WHEN no local preference selection is available and first absence is requested
+- THEN only a verified bootstrap and complete accepted catalog where the exact global key is absent can establish an editable absent guard; an exact-ID 404 alone, missing/partial/invalid/unavailable bootstrap, stale pins, or a known mapping not yet received remain Joining/unavailable without a guard or empty seed.
+
+#### Scenario: First Edit re-admits absence
+- WHEN an Edit presents an original absent Inspect guard
+- THEN Buddy establishes current qualified absence again before conditional local publication; the saved guard grants no live permit, the GET provides no reservation or upstream success, and a later competing registration is adjudicated through the existing catalog/fixed-slot path without rebase of losing user content.
+
+#### Scenario: Established selected work remains offline-capable
+- WHEN an established selected Inspect/Edit or an original Status runs without a provider connection
+- THEN exact current local domain/configuration pins or local original transaction/result custody remain the applicable admission evidence, with no unconditional network prerequisite introduced by first-absence refresh.
+
 #### Scenario: Effective inspection changes before Edit
 - WHEN a selected head, established absence, local fallback configuration, mode or connection changes after inspection
 - THEN the original guard refuses stale Edit, field origins remain distinguishable, and any new edit requires fresh inspection and confirmation rather than rebase or automatic retry.

@@ -176,7 +176,33 @@ The browser and Electron paths use the same guarded private host transport and
 opaque bounded references. A saved shared-group mode only offers the control;
 unsupported older Buddy, busy exclusive Store custody, stale inspection and
 post-dispatch uncertainty remain explicit. No automatic Stop, replay, saved-file
-fallback or provider request is introduced. A verified inspection describes the
+fallback or provider request is introduced by the Manager transports. A verified inspection describes the
 next admitted request's overlay; running activation is unverified. Source-only
 UI/protocol fixtures do not close the real backend/host parity gate, and the
 combined unfinished feature is not independently enabled or merged to main.
+
+Only the real Buddy first-absence path may reuse its already-qualified fixed-slot
+adapter for a bounded GET-only refresh of Drive data. Qualification and current
+mode/binding admission precede credentials. Under existing Store/mode/domain
+custody and one original deadline/read budget, revalidate exact root identity,
+complete accepted catalog, expected global key/owner, Store generation, epoch and
+raw local Config pin. A saved absent Inspect guard establishes correspondence
+only: first Edit must establish current absence again before local conditional
+publication. A competing registration after that read remains subject to the
+existing catalog/fixed-slot arbitration; the GET supplies no reservation or
+upstream-success claim.
+
+An exact-ID 404 alone proves neither absent key nor free slot. Missing bootstrap,
+partial/invalid/unavailable observations, stale pins and a known mapping whose
+content is not received remain Joining/unavailable, without an editable guard or
+empty seed. This path allocates no IDs and creates, updates or deletes no Drive
+data; it introduces no OAuth flow, grant/resource creation, mode transition,
+ordinary fallback, Config rewrite or service action. Existing separately qualified
+credential refresh retains its original bounded authorization contract. Explicit
+local Edit supplies the original selected transaction; the existing Worker alone
+owns catalog/content publication and adoption.
+
+Established selected Inspect/Edit remain local-first/offline with their exact
+current domain/configuration pins. Original Status checks local original receipt
+and result correspondence without a network prerequisite. Neither acquires an
+unconditional provider-read dependency from the first-absence exception.
