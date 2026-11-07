@@ -374,3 +374,9 @@ executable link collision were resolved before the final sequential run.
 Older typed refusal and opaque preservation have source-trace evidence.
 An older-binary round trip, independent exact-source review and hosted
 checks remain open. No native UI, provider or efficacy result is credited.
+
+Buddy f7ecb3b adds exact mixed-context checks through Partial, PartialMath
+and StructuredMath in addition to WholePage and both Reader payload builders.
+The focused offline test passed on this test-only revision. The earlier 74-test
+and Clippy results remain attributed to d20d6dd. An older-binary round trip
+remains open.
