@@ -200,3 +200,40 @@ execution evidence and producer corpus remain unchanged. Task-owned node_modules
 Angular cache, browser builds and rebuilt Linux package remain active pending
 Root review of this correction; review that retention after integration. No
 shared or held inputs were cleaned by this correction.
+
+## Hosted file-selection race correction
+
+Hosted run42312207417 at Manager a9bb5466fbea508ecd8a3beccb91ff1e3c4a956b
+failed on both Linux and Windows at the delayed-Prepare assertion: expected one
+pending request, observed zero. Earlier checks in each job passed. A focused
+browser reproduction held File.arrayBuffer while the scheduled observation
+completed, then released the bytes. The product correctly invalidated selection
+without dispatching Prepare; the old positive oracle failed. This establishes a
+possible failing interleaving, not an observed trace of either hosted failure.
+
+Manager c9a4f2c454c06aa57983a51540944c94c1d32109 changes only the two
+test/fixture files. Its read helper waits for a new completed observation and
+the observed connection UI, rather than already-visible controls. A deterministic
+browser/Electron regression advances the normal clock through an observation
+while file bytes are pending and verifies cleared selection, no confirmation,
+zero pending requests and no additional remote selector or Apply. Existing
+delayed-Prepare Stop, uncertain Apply, original Status/reload, export-byte and
+390px checks remain. Product code, deadlines, output bounds, dependencies,
+lockfiles and producer corpus are unchanged.
+
+The final source passes lint and37 focused portable/ConnectionController Node
+checks, plus actual source browser, source sandboxed Electron, production browser
+and packaged Linux Electron flows. All four host runs exercise the new race
+control. An initial clock-paused experiment blocked Angular rendering; its
+failure is retained separately and that approach was removed. Fresh hosted
+Windows/Linux results remain required before merge; local success is not a
+substitute for those results.
+
+The small correction handoff preserves the native source bundle, original
+reproduction, removed clock-pause failure and passing logs. Root independently
+verified all18 manifest entries and reviewed the complete two-file diff. After
+handoff, the author retired only its unused node_modules/out/dist/development
+outputs:905706532 logical bytes, separately observed free-space increase
+963035136 bytes. All86 retained evidence files rehashed unchanged. This closes
+the earlier task-cache retention exception; source, useful evidence and shared
+or held inputs remain preserved.
