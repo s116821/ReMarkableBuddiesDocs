@@ -196,3 +196,7 @@ Decoder bounds remain32768stdout/8192stderr,32commands,256argv entries per comma
 4096UTF8 bytes per string and exact integer ranges. Validate every array member
 before classification. Both production registries remain empty. This contract
 does not qualify actual Stop, native effects or independent recovery.
+
+The ordinary public qualification successor has a separate
+[typed job receipt precode](public-typed-stop-precode.md). Independent
+review is required before implementation or device selection.
