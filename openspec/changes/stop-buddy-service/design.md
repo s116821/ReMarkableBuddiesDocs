@@ -11,7 +11,7 @@ is historical evidence, not qualification of either current candidate. Existing
 results are retained under their original revisions. Both production registries
 remain empty pending implementation and exact tuple qualification.
 
-Current Manager1f258ce has fixed service observation and no service mutation.
+The original Manager1f258ce baseline had fixed service observation and no service mutation.
 Main sourceb008027 and separately pending APK3f0a10a were verified through all18
 payload hashes/bytes and17original Git blobs. source-assessment.md records precise
 route/Drop/recovery limits; profile-admission.md defines the complete two-profile
@@ -55,6 +55,22 @@ that tuple admits, including active work. A source shape match is not that gate.
 This does not block implementing the now-closed sampler, refusals, protocol,
 transport/queue and UI fixtures after independent precode acceptance. The whole
 paired change remains active until its actual qualification and delivery gates.
+
+## Parent metadata collection
+
+Use one bounded fixed command for each existing ordered parent chain instead of
+opening a channel for every ancestor. The immediate no-symlink/stat pairs and
+strict metadata parser remain unchanged. Validate the complete returned chain
+before leaf metadata/content/hash access, and repeat it independently after the
+protected read. Do not cache parent metadata or replace the second sample.
+
+This deliberately changes the rejected-operation trace: an unsafe ancestor's
+owner/type/mode may be rejected after deeper ancestor metadata was collected.
+Those reads reveal metadata only; no leaf content or hash is allowed before all
+parents pass. A symlink or failed stat still aborts the shell chain immediately.
+Retain exact record count/order/framing, the 4096-byte stdout cap, stderr/EOF
+checks and the same absolute deadline. Fewer synthetic commands are source-cost
+evidence, not a measured target runtime or production profile qualification.
 
 ## Host and UI
 

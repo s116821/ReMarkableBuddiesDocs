@@ -629,3 +629,45 @@ and23 focused controls; its separate hosted integration was still running at
 this checkpoint. Full sampling, actual shutdown/recovery and reviewed production
 tuples remain required. No application release or device installation is claimed
 from these draft-branch results.
+
+## Parent metadata batching source review
+
+The adopted Manager successor is
+`baf0265e7d45e04e86082fdf24094cc624916204`, on the existing Stop branch over
+`31c540fbc6ed781de5f20d1128e5095c620ee148`.
+
+Recovery head `652ab8aefa03e556304a681f86b4786839ada46b` subsequently passed all
+required jobs in [42331720762](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/42331720762),
+including Linux/Windows Integration. Docs successor
+`58629735c66cde2861e53995431f42e726663cc5` passed its three checks in
+[42334974903](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42334974903).
+These close the preceding hosted-check waits, not the remaining target gates.
+
+Independent review verified that only `Sampler.parents` changes in production
+source. Each original ordered no-symlink/stat chain now uses one bounded command;
+the strict parser, transport, hooks, profiles and deadlines are unchanged. The
+contract explicitly records extra ancestor-metadata reads before rejecting an
+unsafe owner/type/mode, while retaining refusal before any leaf metadata,
+content or hash and preserving both independent parent samples.
+
+Two independent synthetic comparisons, with socket creation forbidden, produced
+identical complete raw DTOs and canonical digests. Ordinary-manual commands fell
+from114 to90; resident-installed from606 to314. These are source command counts,
+not target timings. The original14-command observation does not establish the
+duration or success of either complete profile.
+
+The proposal's six focused Linux controls passed, including actual GNU9.4 and
+existing BusyBox1.36.1 producers, precision/quoting, missing/symlink/non-directory
+parents, framing errors and changed second samples. After applying the identical
+candidate bytes to the current checkout, the maintained Windows service-stop
+suite ran52 tests:48 passed and four Linux utility controls were explicitly
+skipped. Its actual Node boundary, EOF, typed-hook and disabled-profile controls
+passed. Independent raw-source/AST checks found no other production-method change.
+
+The candidate sampler SHA256 is
+`965adbf3b8b4a076dc9ff51aa348144eb7f172851d1d1a91cd8fa0b94463882f`;
+the maintained sampler-test SHA256 is
+`190d1a1473d1ea955d88279876a68c8bf9dbef8a31c478199d534f46ba9fe09c`.
+Recovery composition, final paired review/current CI and complete target
+sampling/shutdown/recovery remain separate. No production profile, actual Stop,
+native recovery, package installation or feature completion is claimed.

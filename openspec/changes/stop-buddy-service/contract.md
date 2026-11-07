@@ -131,6 +131,21 @@ and extra diagnostics refuse. Keep existing no-follow, parent identity, mode,
 ownership, size, EOF, shared deadline and output bounds. Source/local utility
 tests do not establish target qualification or enable a production Stop profile.
 
+Each existing ordered parent-directory chain may use one fixed shell command.
+Keep an immediate no-symlink test before each parent's unchanged `stat -c`
+command, joined with `&&`; any failed test/stat aborts the chain. Require exactly
+one three-line metadata record per requested parent, in order, and the final LF.
+Any nonzero status, stderr, partial/extra record or invalid metadata refuses the
+whole chain. Retain the 4096-byte stdout cap and original absolute deadline.
+
+The host validates all returned parent identities, ownership, directory types
+and write permissions before a caller can stat, read or hash the leaf. This
+permits collecting deeper ancestor metadata before rejecting an earlier unsafe
+owner/type/mode; it does not permit leaf access after such rejection. Preserve
+each independent before/after chain and comparison without caching or reusing a
+prior sample. Neither batching nor these sampled checks provides atomic ancestry
+or protection against hostile root replacement.
+
 ## Required qualification
 
 acceptance.md and acceptance-cases.json define concrete fixture variations and

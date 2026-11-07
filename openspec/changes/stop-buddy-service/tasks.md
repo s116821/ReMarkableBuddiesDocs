@@ -83,4 +83,11 @@
 - [x] Admit only exact exit1/empty-stdout GNU or BusyBox optional-final-component absence; cover permission, wrong status, partial output and extra diagnostic refusals.
 - [x] Verify actual local utility quoting, nanosecond precision, no-follow and missing-file behavior where available, plus existing sampler regressions and independent source review.
 - [x] Reconcile the reviewed successor into recovery without changing its owned source; verify the corrected producer against a fresh read-only target observation and current Stop branch hosted checks, without replay or production enrollment.
-- [ ] Finish recovery's own current hosted checks and the separately required full sampling, shutdown/recovery and production-profile acceptance before final paired delivery.
+- [x] Verify recovery's own current hosted Checks, Build and Linux/Windows integration results at its exact composed head.
+- [ ] Finish the separately required full sampling, shutdown/recovery and production-profile acceptance before final paired delivery.
+
+## 12. Bounded parent metadata batching
+- [x] Independently review the exact proposed source/test change and explicitly accept the additional ancestor-metadata reads before host refusal, with no leaf access before all parent validation.
+- [x] Coalesce each original parent chain into one fixed bounded command; retain immediate no-follow tests, strict per-parent framing/parsing, separate before/after chains and unchanged deadlines.
+- [x] Verify identical synthetic full DTOs/digests, reduced command counts, unsafe-parent/drift/framing refusals and actual local GNU/BusyBox producers, with platform evidence kept separate.
+- [ ] Reconcile the exact successor into recovery, verify independent final source/Docs review and current hosted checks; complete actual profile/lifecycle qualification before production admission or final delivery.
