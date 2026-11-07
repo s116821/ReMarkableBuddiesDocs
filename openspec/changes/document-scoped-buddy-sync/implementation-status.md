@@ -437,3 +437,28 @@ Actual qualified first-scope/current-selected producer admission, original-only
 Status, Worker publication/adoption of this owner, effective consumers and real
 CLI/Manager correspondence remain open. This schema/adapter increment does not
 release that command seam or complete the parent.
+
+### Portable raw-parent correction
+
+Independent source review found that original `parents: [P, P]` was normalized
+into one BTreeSet parent before portable arity/graph checks. The new correctly
+rehashed regression confirms both projection and actual Store activation accepted
+that invalid child, after a valid one-parent positive. Source
+[76095e7](https://github.com/s116821/ReMarkableBuddies/commit/76095e7fbea5541a8ec590ed4a4cee8b59716e17),
+parent `8a50104`, shares one portable raw-envelope check before normalization in
+both consumers. Duplicate object fields and raw parent arity are checked before
+the typed set exists; other namespaces retain their existing decode policy.
+
+The valid child now passes while the duplicate raw parent fails projection and
+Store admission with the original selected token/membership unchanged. All 26
+portable configuration cases and 195 storage cases (three default ignored) pass,
+as do strict Clippy, formatting and diff checks. The storage group was rerun
+because the raw hook sits in the shared Store decoder. Contract bytes/fingerprint,
+wire schema and authority rules are unchanged, so no older-reader rebuild or
+relabeling of its prior gate follows. All three committed correction inputs are
+SHA-verified unchanged; independent re-review/publication remain pending.
+
+The subsequent seven-file Worker preference prototype is preserved separately in
+exact-byte custody and excluded from this correction. Full producer binding,
+generation, mode, configuration and selected-token re-admission remain required;
+the pure projection/Condition helpers do not establish them.

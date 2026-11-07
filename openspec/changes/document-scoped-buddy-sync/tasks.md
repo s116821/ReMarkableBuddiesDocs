@@ -258,3 +258,9 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Verify declaration-based no-op versus null/empty/omitted fallback, duplicate raw JSON, foreign/conflicted history, real selected Store reopen and all four legacy-family refusal controls; pass 25 portable configuration and 195 storage cases with their stated non-additive attribution.
 - [x] Execute the unmodified older format5 reader's old-contract positive control / new-contract nonmutating refusal; retain its exact source/binary/schema provenance and three default-ignored gate attribution. Pass strict Clippy, formatting and unchanged final input hashes after the test-only borrow cleanup.
 - [ ] Complete fresh first-scope/current-selected admission, portable Worker registration/publication/adoption, original Status and effective product/Manager command integration; pure record helpers grant no live permit.
+
+## Portable raw-parent correction
+
+- [x] Preserve a valid single-parent positive and correctly rehashed original `[P, P]` failure through both projection and actual Store admission; share one raw portable check before typed set normalization, source `76095e7`.
+- [x] Pass 26 portable configuration / 195 storage cases with 3 explicit default ignored gates, strict Clippy/formatting and unchanged three-file correction hashes; preserve independent Worker drafts outside the correction and keep prior old-reader evidence at its original source.
+- [ ] Obtain the requested independent narrow re-review and coordinator publication; this correction changes no contract fingerprint or live admission rule.
