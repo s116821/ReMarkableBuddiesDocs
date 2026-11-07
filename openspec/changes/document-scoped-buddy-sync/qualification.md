@@ -147,3 +147,47 @@ actually passed it with Rust1.98.1 and the unchanged pre-portable executable SHA
 `32976758b6056c199ba2947bbdc7665df724de29e3bb208ee690725824023ddb`.
 Its old schema SHA256 is
 `14417dc53bf35ead00701737256f4f11dc28fc49645f2c7e4f3db3c0dfef24aa`.
+
+## Shared preference command evidence
+
+Use the actual fixed selector with explicit JSON stdin and the trusted installed
+Config path:
+
+```sh
+reader-buddy --shared-preferences-operation inspect --shared-preferences-input -
+reader-buddy --shared-preferences-operation edit --shared-preferences-input -
+reader-buddy --shared-preferences-operation status --shared-preferences-input -
+```
+
+Requests and private host custody follow
+[the accepted Manager contract](shared-preferences-manager.md); the implemented
+response profile is recorded in [the design](design.md#one-shot-preference-report-profile).
+Do not place private text in command arguments, logs or shared fixtures.
+
+Maintainers can exercise the source admission/GET-only and actual executable
+profiles separately from the Buddy checkout:
+
+```sh
+cargo test --locked --all-features --lib preference_command
+cargo test --locked --all-features --test shared_preferences_cli
+```
+
+The test-only HTTP model exercises positive qualified-adapter admission and real
+Store publication, current selected offline reads/edits, fresh absence versus a
+new catalog mapping, conservative deadline/read exhaustion, raw Config changes,
+actual activation fault and failed output, and historical original proof without
+private patch text. It grants no production qualification. A missing local head
+with unresolved original checkpoint custody is Joining, never fresh absence.
+The mode/domain lease covers admission and CAS; HTTP observers assert that the
+Store mutex is released while GETs run. Output handoff rechecks raw Config; a
+committed edit with changed Config remains unknown until original Status proof.
+
+The real executable cases cover strict bounded duplicate-free stdin, mutual
+selector exclusion, missing existing Store refusal, sealed provider refusal
+before credentials/runtime, and offline original Status after mode/Config change.
+That Status fixture deliberately constructs synthetic original custody to test
+correspondence; it is not a successful Inspect/Edit permission or live provider
+result. Actual editable-command parity in browser/Electron remains a separate
+coordinated gate that these tests do not close. Existing provider/native and old
+reader evidence retains its original source and must not be rerun or relabeled
+solely to populate this profile.

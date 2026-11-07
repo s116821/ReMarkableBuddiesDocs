@@ -506,3 +506,60 @@ Clippy, formatting and diff checks pass. All seven committed Worker inputs match
 the frozen SHA manifest. The existing memory catalog/restart cases remain in the
 storage run. Independent review and hosted successor checks remain coordinator
 gates; no prior build is relabeled as evidence for this commit.
+
+### Shared preference one-shot admission and original Status
+
+Source [b90b2a5](https://github.com/s116821/ReMarkableBuddies/commit/b90b2a55a36f6ab651ade8fbd5e51668ade92060),
+parent `993236a`, implements the accepted fixed stdin Inspect/Edit/Status selector
+and [closed report profile](design.md#one-shot-preference-report-profile). Store
+custody is existing-only; production binding qualification remains sealed before
+credentials. No saved JSON condition can construct the private qualified source.
+
+Inspect/Edit retain actual current shared mode and ordered preference admission
+while rechecking group/key/binding, epoch, Store generation, raw local Config and
+current selected token or fresh qualified absence. Established selection uses only
+local original/root/catalog custody and constructs no provider adapter. First
+absence alone refreshes the exact root and complete accepted catalog through the
+existing GET-only observer with one original deadline/read allowance. Missing or
+unresolved local original custody, partial bootstrap, a known mapping not yet
+received, changed Config or stale pins cannot supply an editable guard or an empty
+seed. Explicit edits use existing Store Initialize/Commit CAS and operation reuse
+checks; the existing Worker alone uploads and adopts. No local Config rewrite or
+second operation index is introduced.
+
+Original Status uses the exact bounded local Initialize/Commit receipt, original
+predecessor and raw result revision bound to actor, operation, original guard,
+patch digest and resulting declaration digest. It works after mode/Config change
+and without credentials, but does not restore effect authority. Received Activate
+transactions and matching effective values cannot stand in for that proof.
+Structural declaration no-ops create no receipt. Failed output or activation-after-
+publication uncertainty resolves through the original operation; Edit is not
+automatically replayed. Late Config change invalidates an editable inspection or
+leaves a possibly committed edit unknown; known non-dispatch/no-change stays known.
+
+Final unchanged nine-file inputs pass 209 all-feature storage cases /3 existing
+ignored gates, including all ten command cases, and 26 portable configuration
+cases. Thirteen real binary argument/default tests and three actual executable
+CLI cases pass. Strict all-target/all-feature Clippy, formatting and diff checks
+pass, and all nine inputs match their frozen hashes at commit. The initial CLI
+interface inventory failure was the missing two new flags in its expected list;
+that failure log is preserved separately from the final passing run. Earlier
+209/26 evidence preceded the output-pin refinement and remains separately
+attributed, with no claim that the earlier binary covered the successor.
+
+The ten core cases use the actual admission and Store APIs with the test-only
+HTTP adapter. They cover current/offline and fresh-absence paths, a catalog race,
+original crash/output recovery, altered original proof, request bounds/deadline,
+Config changes during GET and output, Store mutex release during GET, and
+missing-head original custody. The real executable covers strict bounded stdin,
+selector exclusion, missing existing Store and sealed qualification refusals, and
+Status after mode/Config change from explicitly synthetic original custody. That
+positive Status fixture proves correspondence, not successful executable
+Inspect/Edit admission or live provider qualification. The current executable is
+identified by its frozen input manifest and binary hash; no extra copy is retained.
+
+Independent source/profile review, coordinator publication/hosted checks and real
+Buddy/Manager editable-command parity remain open. Effective product consumers
+are not yet connected at actual request handoff/result admission. Selected
+notebook, handwriting, broader uncertainty and provider/native parent gates also
+remain unfinished; the active parent is neither synced nor archived.

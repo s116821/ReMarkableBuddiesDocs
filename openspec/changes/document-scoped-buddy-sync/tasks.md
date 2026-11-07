@@ -270,5 +270,15 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Extend the existing additive catalog and selected publication/receiving route to the typed portable preference owner, preserving original genesis/proposal/receive custody and exact raw record bytes; do not create another Worker or silently seed an empty declaration.
 - [x] Exercise explicit local edits and passive second-Store receiving, competing first declarations with losing-history retention, original activation-before-checkpoint recovery, and foreign-custody refusal at a known empty mapping through the actual Worker/local HTTP fixture.
 - [x] Verify source `993236a` with 195 default-feature storage cases / 3 existing ignored gates, including all four Worker cases; pass strict all-target/all-feature Clippy, formatting and unchanged seven-file input hashes.
-- [ ] Obtain independent review and coordinated publication of the portable Worker increment; hosted successor CI stays with the coordinator.
+- [x] Obtain independent source review and coordinated publication of Worker `993236a` / Docs `01add2e`; hosted successor CI stays with the coordinator and is not implied by publication.
 - [ ] Implement fresh qualified absence/current-selected Inspect/Edit admission, original-only Status and effective product/Manager consumers; the pure helper, local fixture producer and Worker registration do not supply these permits.
+
+## Shared preference one-shot command increment
+
+- [x] Implement strict fixed stdin Inspect/Edit/Status dispatch with existing-only Store custody, bounded private views and sealed production qualification before credentials.
+- [x] Re-admit exact current mode/group/key/binding/epoch/generation/raw Config plus selected token or fresh qualified root/catalog absence under ordered gates; preserve established selected offline use and keep all provider publication/adoption in the existing Worker.
+- [x] Prove historical local Initialize/Commit receipt, original predecessor and guard/patch/result-bound revision for Status without current mode/configuration admission, patch retention, a second index or Edit replay.
+- [x] Validate unchanged source `b90b2a5`: 209 all-feature storage cases /3 existing ignored, including ten command cases; 26 portable configuration cases; 13 binary argument tests and 3 actual CLI cases; strict Clippy/formatting and nine frozen input hashes. Preserve earlier failures/pre-refinement evidence separately.
+- [ ] Obtain independent source/profile review and coordinated publication of the command increment; the coordinator owns hosted successor checks.
+- [ ] Close the actual Buddy/Manager editable-command parity gate with the domain owner; source HTTP adapter cases and synthetic executable Status custody do not imply positive executable Inspect/Edit or live qualification.
+- [ ] Complete effective Reader/Writer/memory preference consumers under the same ordered admission at actual handoff and result commit, alongside remaining handwriting/notebook/native/provider parent gates.

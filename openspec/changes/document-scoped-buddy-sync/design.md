@@ -206,3 +206,46 @@ Established selected Inspect/Edit remain local-first/offline with their exact
 current domain/configuration pins. Original Status checks local original receipt
 and result correspondence without a network prerequisite. Neither acquires an
 unconditional provider-read dependency from the first-absence exception.
+
+### One-shot preference report profile
+
+The implemented command keeps the accepted fixed stdin selector and request
+fields in the Manager contract. Its version1 response carries `report_version`,
+`operation` (inspect/edit/status), `status`, `disposition` and
+`runtime_activation: unverified`. Inspect includes `guard` and `view` only after
+current admission. Edit/Status preserve the valid original `guard`,
+`original_operation` and compact `patch_sha256` for correspondence; Status never
+includes a view or private patch text. No response claims running activation or
+remote application.
+
+`ok/read-only` is an admitted inspection. `ok/no-change` describes exact raw
+declaration equality without a fabricated receipt. `ok/local-committed` verifies
+a local original selected transaction, with upstream application still unverified.
+Joining/not-admitted has no editable inspection guard. Changed admission conditions
+produce conflict/not-dispatched; unavailable unknown remains uncertain after a
+possible edit. Busy, unsupported and invalid-input refusals retain their ordinary
+meanings. No client may infer a receipt from matching effective values.
+
+Original Status traverses the bounded accepted local chain, requires an explicit
+Initialize or Commit (never a received Activate), checks the exact predecessor
+selection/revision for Commit and the original Store generation, then verifies
+the local actor, operation and unchanged guard/patch/result-bound revision recipe
+against original raw records. This needs no current mode permit, configuration
+hash equality or provider access and creates no second operation index.
+
+Established selected Inspect/Edit construct no provider adapter. First absence
+alone lazily constructs the qualified adapter under current mode/domain custody
+and refreshes only root/catalog observations, with one original sixty-second
+deadline and conservative read allowance. Each observation is charged before
+I/O for its account-identity response, two metadata responses and bounded 64KiB
+descriptor; exhaustion cannot prove absence. Existing qualified token refresh
+retains its separate bounded authorization contract. Local Config/checkpoint and
+selected-original reads share the same allowance. The domain gate remains held
+while Store mutexes are released for GETs; no command allocates/uploads provider
+data. Raw Config is rechecked at conditional publication and output handoff.
+
+The production qualification factory remains sealed. Actual executable evidence
+therefore covers supported parsing/refusal and original Status; the private test
+HTTP adapter covers positive Inspect/Edit admission, crash and correspondence.
+These evidence categories do not establish live provider qualification or complete
+the Manager's real editable-command parity gate.
