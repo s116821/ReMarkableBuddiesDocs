@@ -180,7 +180,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Reconcile protocol review db02c677 and independent domain review 2e03d6af into a preserved successor design; no Rust implementation claimed.
 - [x] Add agreed-binding GET-only observation reusing exact pointer/descriptor checks, typed absence/invalid, and candidate comparison only for an actual prepared candidate; source4063d49, 11 fixed-slot HTTP tests passed.
-- [ ] Implement explicit CreateGroup control on existing mode dispatch/checkpoint: current ordinary admission for allocation only, persisted IDs/body, release/revalidate original token, exact conditional shared choice and current shared lease before create.
+- [x] Implement explicit CreateGroup control on existing mode dispatch/checkpoint: current ordinary admission for allocation only, persisted IDs/body, release/revalidate original token, exact conditional shared choice and current shared lease before create. Source `8c97cc2` verifies the bounded control with real local HTTP and CLI checks; production qualification remains closed and catalog registration/new-scope admission remain unfinished.
 - [ ] Recover never-submitted and uncertain original attempts by current admitted SAME-ID/bytes retry; stale selected attempts observe only, changed namespace admits no old network work.
 - [ ] Persist original receiving custody for first join/passive pull without an outbox; reconcile exact Initialize/Activate receipt before checkpoint/health or outbound retirement.
 - [ ] Gate every affected product/admission/send path on exact staged mixed-genesis registration; factor locked registration publication without recursive gate acquisition and resume the original receipt after crash.

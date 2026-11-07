@@ -290,3 +290,37 @@ checks pass; all12 component inputs are unchanged by commit. Groups overlap.
 The actual selected Source3 producer/model handoff, CreateGroup/catalog/new-scope
 admission, preference/handwriting consumers and CLI/Manager parity, and applicable
 hosted/provider/model/native qualification remain open in this same delivery.
+
+### Original first-group control increment
+
+Source [8c97cc2](https://github.com/s116821/ReMarkableBuddies/commit/8c97cc2384bbe39fdee42582d7f2b77b8253532c),
+parent `dc95e43`, connects the explicit `create-group` mode operation to existing-only
+compound Store custody and the bounded selected branch of `sync/state.json`.
+It retains the original strict stdin request, actor/generation pins, each generated
+ID and exact root/initial-catalog bytes. ID allocation holds OrdinaryModeLease;
+the exact conditional mode transition follows its release. Publication requires
+the resulting receipt to remain current and holds SyncModeLease. A historical
+receipt or raced mode choice grants no old-namespace network continuation.
+
+Actual local HTTP tests cover six controlled interruption/reopen points,
+unchanged original IDs, changed-mode refusal, lost root response resolved by the
+existing exact-ID transport observation, and an existing nonempty catalog that
+is adopted without an empty overwrite. A pull-only Worker remains Joining when
+the initial catalog is missing and sends no upload. HTTP-server callbacks verify
+the allocation/publication leases while the request is active and require the
+Store mutex to be available. These are controlled fixture boundaries, not an
+exhaustive process-kill or real-provider qualification claim.
+
+Seven focused control tests, all 183 storage cases (two existing explicit gates
+ignored by the default harness), ten actual mode CLI cases, strict all-target /
+all-feature Clippy, formatter and diff checks pass. The focused group overlaps
+the storage group. All seven source inputs are SHA-verified unchanged by commit.
+The CLI rejects missing/non-stdin, oversized, duplicate or unknown input fields;
+the valid unqualified request preserves CURRENT, mode, checkpoint and credentials.
+Existing Choose/Inspect output omits the new optional control data.
+
+Production application qualification remains sealed before credential access.
+This control increment does not enable live group creation, establish content
+receiving readiness, register new catalog scopes, release the real preference
+command seam, complete the selected notebook/optional-domain consumers, or close
+the parent delivery and its independent final review/qualification gates.
