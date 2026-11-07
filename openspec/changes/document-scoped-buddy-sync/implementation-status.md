@@ -1,10 +1,12 @@
 # Bounded selected-storage delivery
 
-This change remains active. The ten implemented API requirements are synchronized
-verbatim into `openspec/specs/document-scoped-buddy-sync/spec.md`. The nine
-unfinished end-to-end requirements remain in this change's delta. No change is
-archived, no unperformed qualification is checked off, and this increment does not
-complete the parent change or the full sync feature.
+This change remains active. The historical bounded delivery synchronized ten
+implemented API requirements into `openspec/specs/document-scoped-buddy-sync/spec.md`;
+separately delivered requirements retain their own provenance. The active delta
+and current checklist also include the later worker, notebook, preference and
+handwriting integration requirements. No unfinished parent is archived and no
+unperformed qualification is checked off. Historical counts and receipts below
+retain their original revision and scope.
 
 ## Source and review provenance
 
@@ -34,6 +36,13 @@ The additional ordinary-mode guard uses the exact accepted API blob
 Its final generic hosted result and original tested temporary merge are recorded
 in [receipt6189560452](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6189560452).
 Its separate ordinary-runtime specification lifecycle remains separately owned.
+
+The disconnected opaque-reference Store fixture originated at `a78d0ca`; its
+blob `d37474a2a84aa5a89808685cd38885593845ad06` is identical in that commit,
+the accepted paired API squash `0a258056`, and the current source. The old
+interface/fixture checklist item is reconciled through that historical delivery,
+not a claim of actual domain projection, activation, admission or native effects.
+The preserved ownership agreement and later domain work keep their own scope.
 
 These are bounded source and host-fixture acceptances at their stated revisions.
 They are not current-head CI, live-provider, device, deployment or whole-feature
@@ -131,9 +140,9 @@ This settles only that historical API delivery, not current end-to-end acceptanc
 The parent remains active with all nine unfinished end-to-end requirements.
 
 
-## Current worker continuation
+## Worker design basis before implementation
 
-Current basis: Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 and
+The pre-implementation basis was Buddy72ddbe5557222947f6a85167a7cb58c3601cb0e5 and
 Docsa1f446b8c4857e4f17726a0cb40ed62b8048b71a. Later portable preferences,
 notebook archive/restore and historical outbox status have their own delivered
 archives and are not reopened. [Shared-worker precode](shared-worker-integration.md)
@@ -142,8 +151,9 @@ selected notebook compatibility and producer stage. Current legacy worker,
 foreign/local genesis mapping and notebook-format source conflicts are concrete
 implementation work, not a request to repeat completed primitive tests.
 
-No selected worker implementation, live provider binding or native eligibility
-is established by this proposed amendment. Existing domain admission/projector/
+At that design checkpoint, no selected worker implementation, live provider binding
+or native eligibility was established. Subsequent source increments are recorded
+below; their narrower proofs do not establish live binding or native eligibility. Existing domain admission/projector/
 settlement APIs are reused; actual handoffs, domain coverage and qualification
 retain their stated boundaries. Source/spec review precedes implementation and
 the unfinished parent is not archived as a planning-only delivery.
@@ -324,3 +334,63 @@ This control increment does not enable live group creation, establish content
 receiving readiness, register new catalog scopes, release the real preference
 command seam, complete the selected notebook/optional-domain consumers, or close
 the parent delivery and its independent final review/qualification gates.
+
+### Additive catalog and losing-content custody increment
+
+Source [e1c170f](https://github.com/s116821/ReMarkableBuddies/commit/e1c170f97edfc348027b9cd054bd609713d7a1ad),
+parent `8c97cc2`, supplies the next bounded source increment for independent review.
+The existing worker discovers explicitly registered local memory/document scopes,
+verifies their exact local genesis against the current root and acquires the
+existing ordered catalog/aggregate gates. Original registration, source generation,
+generated genesis slot and exact catalog proposal remain in the same bounded
+worker checkpoint. Local revalidation shares one cumulative read budget.
+
+Registration adds one mapping to the verified accepted catalog set. A different-key
+race can extend the accepted set at its agreed successor; a same-key race adopts
+the accepted typed mapping. Neither operation rebases a user-content candidate.
+Retired proposal bytes remain original evidence, and a staged proposal cannot
+drop a predecessor mapping. A document fact may precede its first conversation:
+the existing document-fact validator establishes memory custody without minting
+a conversation/native projection. Winning activation preserves losing explicit
+content and omitted original media custody, independently of native/model receipts;
+only current selected records supply the active view.
+The new contention fixture proves record custody; media retention uses exact
+manifest media/coverage comparisons without claiming a new complete media-workflow
+qualification.
+
+New tests first reproduced the document-only ownership failure, withdrawal of an
+outbox that had never reached preparation, and missing retained custody for a
+losing explicit fact. Early review also identified the preparation-write crash
+window. The retained regression actually writes the original outbox, injects
+AfterCommit and reopens the Store. Before correction a missing prepared journal
+was wrongly treated as never-submitted staging. Preparation intent is now saved
+conservatively before entering the Store write. A present original journal
+reconciles/withdraws without a new operation or POST; a missing or legacy-unknown
+journal refuses. Only staging that never entered preparation permits its absence.
+Retired staging is retained in the bounded checkpoint. These are durable-write
+fault/reopen tests, not new process-kill or actual-provider evidence.
+
+Final all-feature results on the six unchanged committed inputs: 191 storage
+tests pass with 2 existing opt-in gates ignored, including all 8 catalog cases;
+74 conversation tests, strict all-target/all-feature Clippy, formatting and diff
+checks pass. Cases include original ID across restart with batch_items=1, exact
+passive receiving, simultaneous different-key catalog contention, same-key losing
+fact retention through reopen, unrelated-root refusal, legacy-unknown staging,
+accepted-map corruption refusal and both preparation-boundary recovery outcomes.
+The earlier 190/74 run preceded the preparation-intent correction and retains that
+separate attribution; it is not final-source evidence. Prior mode CLI/old-reader
+and native results keep their original source attribution rather than being rerun
+or relabeled. Independent source review and hosted checks remain coordinator gates.
+
+This discovers existing explicit domain registrations; it does not establish the
+fresh provider-qualified first-scope admission used by future product/Manager
+commands. Portable preference and handwriting scope producers/consumers, actual
+selected notebook runner, broader uncertainty policy and full live/native/parent
+acceptance remain open. Production provider construction remains closed.
+
+The paired checklist also reconciles thirteen historical bounded increment tasks
+against their existing review/delivery receipts and three already reviewed
+connected-core implementation items. It does not obtain new review or qualification
+by changing checkboxes. Broader compound requirements remain open, stale historical
+pointer statements are labeled as history, and current requirements derive from
+the active delta rather than an obsolete requirement count.

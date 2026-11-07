@@ -1,5 +1,11 @@
 # Acceptance and delivery checklist
 
+Historical increment checkboxes are reconciled against their existing exact public
+receipts and paired API delivery in [implementation status](implementation-status.md).
+They are not new current-head test, provider, native or full-feature acceptance.
+Unchecked compound requirements remain open where their end-to-end portion is
+unproven; they do not reopen the individually accepted APIs below.
+
 - [x] Read REM-52 and prerequisite/domain/Manager issue chronology; inspect REM-36 source and central contracts and active REM-37 record types.
 - [x] Inspect provider documentation and maintained sync prior art; distinguish candidate mechanism from live-provider proof.
 - [x] Propose modes, conditional publication, source-document projection, local fencing, media/restore/status contracts before implementation.
@@ -7,12 +13,12 @@
 - [x] Obtain independent review accepting the admission/settlement/projector/application-matrix contract at 7e06d9; no implementation or live qualification follows from this acceptance.
 - [x] Obtain Main's exact0830a9af owner review5442770097 and refreshed673c mapping; SCRAPPY owns storage, Main owns domain/journal/backend paths. Schema2 acceptance remains coordinated separately.
 - [x] Obtain Main's efb8fd73 review accepting the coordinated proposal for an isolated selected-store/projector fixture slice; add history/bitmap admission coverage and propose the precise token/commit/activation/journal interfaces for owner agreement.
-- [ ] Review the precise interfaces/journal extension with Main before shared domain/workflow edits; verify and independently review the disconnected real-store projection fixtures without claiming activation/admission implementation.
+- [x] Complete the bounded interface/ownership agreement (`0830a9af` / accepted `7e06d9`) and disconnected opaque real-Store projection fixture in `a78d0ca`, preserved byte-exact in the independently accepted historical API delivery `0a258056` (blob `d37474a2`). See [provenance](implementation-status.md#source-and-review-provenance); no domain activation/admission or native authority was implemented by that fixture.
 - [x] Read Main's exact0830a9af owner agreement (2026-10-07T13:09:56Z): SCRAPPY's selected storage implementation is unblocked; Main retains domain journal/projector/admission ownership.
-- [ ] Complete and review the selected snapshot read-path increment, then implement guarded commit and one durable winner-plus-retained activation with original-selection replay and fault recovery. Interface agreement is no longer a blocker for this storage work.
-- [ ] Implement and verify the accepted generic adapter slice without enabling shared-mode publication.
+- [x] Complete and review the bounded selected snapshot/guarded commit/atomic activation and original replay/fault-recovery increment. Historical API source `c8fe23c`, the [lineage receipt6072364455](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6072364455), and the paired `0a258056` / `2f69e048` delivery establish this storage completion; full domain/worker acceptance remains open.
+- [x] Implement and verify the bounded generic fixed-ID adapter slice without enabling shared-mode publication: original review `ebf8c72` and the historical API delivery recorded in [implementation status](implementation-status.md#source-and-review-provenance). This is local HTTP/source acceptance, not actual-provider qualification.
 - [ ] Qualify or reject the candidate provider primitive using an explicitly authorized disposable app-data namespace; preserve reproducible evidence without secrets.
-- [ ] Implement accepted generic scope/selection and conditional transport seam, reusing REM-36 domain-opaque storage and bounds.
+- [x] Implement the accepted generic scope/selection and conditional transport seam in historical API source `c8fe23c`, preserving domain-opaque storage/bounds; [the individually scoped receipts](implementation-status.md#source-and-review-provenance) and paired API delivery establish this increment only.
 - [ ] Implement mode/binding isolation, bootstrap/catalog registration, outbox replay and first-winner replacement without stale auto-rebase.
 - [ ] Integrate domain-owned aggregate projection and in-flight operation fence without duplicating REM-37/24/26/53 schemas or granting native authority.
 - [ ] Implement versioned OS/file status, explicit portable configuration/media policy and validated selected-backup maintenance contract for REM-42.
@@ -23,15 +29,15 @@
 - [ ] Publish exact linked Docs/Rust revisions, inspect CI/bot feedback, obtain final independent review and coordinate merge order.
 - [ ] Sync final as-built canonical contracts and archive completed scope only; retain unperformed provider/native qualification as explicit unresolved work rather than checking it off.
 
-- [ ] Independently review the guarded commit/atomic activation increment: bounded hash-linked accepted history, original-selection replay, shared ancestor context, abrupt process-exit recovery, stale token/causal conflicts, media refusal and unrelated scopes.
+- [x] Independently review the bounded guarded commit/atomic activation increment, including history/replay/ancestor/fault/stale/media/unrelated-scope controls: the [lineage receipt6072364455](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6072364455), [host qualification](qualification.md), and historical API delivery retain their exact-source attribution. No actual domain handoff or provider qualification follows.
 - [ ] Implement portable selected backup/restore/migration policy before enabling these maintenance paths for selected stores; current explicit refusal prevents silent metadata loss.
 - [x] Implement and locally verify the [portable selected archive/inspection candidate](portable-selected-maintenance.md), preserving original transaction/history/retained/media and unrelated data without minting portable live tokens; retain explicit restore/migration refusal until activation policy is implemented.
-- [ ] Independently review the linked portable archive/inspection candidate and verify its exact published source/Docs revisions and CI before integration.
+- [x] Independently review portable archive/inspection at source `423 -> 2ed` / Docs `7d -> 540`: [review5495568634](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5495568634). Exact paired publication/CI was subsequently reconciled by the bounded API delivery; broader restore remains separate.
 - [x] Add and locally qualify read-only original-publication predecessor lookup for Main's historical selection-pin validation, without minting live tokens or changing current membership.
-- [ ] Independently review the linked predecessor lookup and its exact published qualification before domain integration.
+- [x] Independently review the bounded original predecessor lookup and its exact-source qualification, preserved in [receipt6072364455](https://github.com/s116821/ReMarkableBuddies/pull/31#issuecomment-6072364455) and historical API integration. This historical lookup grants no current token or native authority.
 
 - [x] Implement the bounded selected snapshot/guarded commit/activation/replay candidate; checkpoint cca7ea9d passed hosted CI, with domain/native/provider integration still disabled.
-- [ ] Independently review retained-only settlement linkage and generation-feature old-reader refusal with exact linked source/Docs revisions; qualify source against the unchanged older reader.
+- [x] Complete bounded retained-only publication and old-reader refusal review/qualification: [the accepted API provenance](implementation-status.md#source-and-review-provenance) and [unchanged-reader procedure/evidence](qualification.md#unchanged-older-reader) retain the original `7d1403c` format1 positive control / format2 refusal. This is historical generic storage proof, separate from format5 and actual domain settlement.
 - [x] Qualify retained-only publication with actual abrupt child-process exit before/after activation, original receipt/media reopen, unrelated-scope preservation and competing activation using one captured token; these are host storage fixtures, not domain/native/provider qualification.
 - [x] Publish a reproducible [host qualification procedure](qualification.md) using the unchanged older test binary, an ordinary-open positive control, selected-format refusal and current-reader reopen; retain the separate domain/native/provider limits.
 - [x] Verify exact noncanonical object/reference preservation and snapshot reference order for Main's immutable ancestor lookup; domain projection must not recompute object identity from parsed JSON. This is storage evidence only; Main's domain fix/review remains separate.
@@ -84,39 +90,40 @@ this paragraph records coordination, not a new implemented wire schema.
 
 - [x] Implement original-operation journal/replay, explicit local withdrawal and current-token/binding/object validation using existing Store/file/slot primitives.
 - [x] Verify real Store restart/fault/replay/stale/binding/generation/media and unrelated-scope controls without network/native effects.
-- [ ] Publish exact paired revisions and independent review; preserve unfinished mode/bootstrap/adjudication/worker/provider/domain/restore/lifecycle gates.
+- [x] Publish and independently accept bounded outbox preparation via [staging-repair review5496789194](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5496789194), preserved in historical source `c8fe23c` and the paired API delivery. Mode/bootstrap/adjudication/worker/provider/domain/restore and full lifecycle retain their own gates.
 
 ## Accepted immutable increments
 
 Independent archive read acceptance is review5495568634 at423->2ed/7d->540;
 budget/lineage is5495556299 at2ed->311/540->c93; custody is5495938187 at311->488/c93->943.
-These close their bounded independent-review portions only. The advertised DocsPR7
-pointer remainsc93 despite correct owned943 branch, so current linked-PR/CI
-reconciliation and whole-delivery lifecycle remain unchecked.
+These close their bounded independent-review portions only. At that historical
+checkpoint DocsPR7 still advertisedc93 despite the correct owned943 branch. Its
+linked-pointer/CI reconciliation was subsequently completed by the paired API
+delivery recorded below; the full end-to-end parent lifecycle remains open.
 
 ## Outbox staging-residue recovery repair
 
 - [x] Reproduce7e4 interruption residue before new intent and beside committed pending/withdrawn journal; reuse exact safe owned staging cleanup.
 - [x] Verify preparation/withdrawal residue recovery, replay/current-token/descriptor/media preservation and unsupported foreign-entry refusal; deterministic residues are not actual process-kill evidence.
-- [ ] Publish exact paired successor and same-reviewer P2 recheck before claiming outbox incremental acceptance; mode/binding proposal stays separate.
+- [x] Publish and independently recheck the outbox staging-residue repair in [review5496789194](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5496789194); the original failed residue reproducer and historical API delivery remain the evidence. This closes the repair only.
 
 ## Explicit mode/binding control
 
 - [x] Implement private mode actor/device/backup identities, current tokens, original-operation replay and mode leases with legacy worker exclusion.
 - [x] Bind selected outbox to shared mode epoch and verify transition/restart/replay/lease/binding/leave-rejoin/refusal/unrelated data preservation through real Store fixtures.
-- [ ] Publish exact paired mode successor and independent review; keep actual worker/bootstrap/provider/domain/native qualification open.
+- [x] Publish and independently accept the bounded mode API and repaired history through [review5496889027](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5496889027), historical source `a40503e` / `c8fe23c` and the paired API delivery. Actual worker/bootstrap/provider/domain/native qualification is separate.
 
 ## Read-only prepared-slot observation
 
 - [x] Reuse exact provider metadata/descriptor validators for prepared GET-only observation and post-create observation.
 - [x] Verify same/different pointer, account/app mismatch, absent/invalid/corrupt slot and no create/allocate/update/delete through host HTTP fixtures.
-- [ ] Publish exact paired successor and independent review; live provider/bootstrap/domain/native authority remains unqualified.
+- [x] Publish and independently accept prepared-slot read-only observation in [review5496892636](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5496892636), preserved by the paired API delivery. Live provider/bootstrap/domain/native authority remains unqualified.
 
 ## Persisted mode identity repair
 
 - [x] Reproduce persisted reused backup identity and same-binding identity discontinuity through actual Store reopening.
 - [x] Enforce load-time continuity and first-use identity; verify snapshot/lease/replay refusal, valid restart/replay and root-only replacement outbox control.
-- [ ] Publish exact linked repair and independent recheck without claiming whole mode/worker acceptance.
+- [x] Publish and independently accept persisted mode identity repair in [review5496889027](https://github.com/s116821/ReMarkableBuddies/pull/31#pullrequestreview-5496889027), preserved by the paired API delivery. This closes identity continuity only, not whole mode/worker acceptance.
 
 ## Read-only outbox inventory
 - [x] Identify missing recovery enumeration and document bounded custody-only contract before code.
@@ -162,11 +169,11 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Establish exact current source/spec bases, retained branch/worktree ownership and existing provider-binding contract; preserve other lanes.
 - [x] Propose the connected worker/public producer/adoption footprint and concrete legacy-worker/local-genesis/notebook-format conflicts before code.
 - [x] Obtain independent maintainer precode and domain-owner review of the r2 retention, portable/local genesis and selected notebook compatibility contract; accepted before implementation. Remaining domain coverage and implementation checks stay open below.
-- [ ] Route existing Worker by actual mode/qualification before credentials; connect real selected Writer/memory edits and bounded Store wake to the selected step.
+- [x] Route the existing Worker by actual mode/qualification before credentials and connect selected Writer/memory edits with Store wake in reviewed source `24c1bb6`; [the connected-core receipt](implementation-status.md#connected-core-source-increment) preserves actual two-Store/local HTTP evidence. Production qualification remains closed.
 - [ ] Implement agreed immutable root/catalog/base/slot and durable original staging/attempt recovery through existing transport/file/outbox primitives.
 - [ ] Enforce mode/current binding and actual domain-gated handoff; never hold Store mutex during network or rebase a stale losing candidate.
 - [ ] Validate complete domain/media winner and apply one atomic winner-plus-local-unresolved closure; recover activation-before-withdraw without resend.
-- [ ] Implement and verify the receiving-local memory genesis/catalog bridge without weakening current local ancestry or changing original fact bytes.
+- [x] Implement and verify the bounded receiving-local memory genesis/catalog bridge in reviewed source `24c1bb6`, including original activation-before-checkpoint recovery and exact fact bytes; [the existing receipt](implementation-status.md#connected-core-source-increment) retains its attribution. Optional-domain and full parent coverage remain separate.
 - [ ] Implement the reviewed selected notebook generation stage, exact Source3/NotebookPlan/NotebookStage validation and actual selected notebook producer within this same feature; preserve ordinary format4 routes and old-reader refusal.
 - [ ] Define and implement required handwriting/portable-preference selected adapters with their domain owners; do not silently claim absent coverage or misuse another namespace.
 - [ ] Publish bounded truthful mode/committed/applied/pending/media status from actual original receipts and explicit failure states.
@@ -182,7 +189,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Add agreed-binding GET-only observation reusing exact pointer/descriptor checks, typed absence/invalid, and candidate comparison only for an actual prepared candidate; source4063d49, 11 fixed-slot HTTP tests passed.
 - [x] Implement explicit CreateGroup control on existing mode dispatch/checkpoint: current ordinary admission for allocation only, persisted IDs/body, release/revalidate original token, exact conditional shared choice and current shared lease before create. Source `8c97cc2` verifies the bounded control with real local HTTP and CLI checks; production qualification remains closed and catalog registration/new-scope admission remain unfinished.
 - [ ] Recover never-submitted and uncertain original attempts by current admitted SAME-ID/bytes retry; stale selected attempts observe only, changed namespace admits no old network work.
-- [ ] Persist original receiving custody for first join/passive pull without an outbox; reconcile exact Initialize/Activate receipt before checkpoint/health or outbound retirement.
+- [x] Persist original passive receiving custody and reconcile exact Initialize/Activate receipts before checkpoint/health or outbound retirement in reviewed source `24c1bb6`; [existing local HTTP / restart evidence](implementation-status.md#connected-core-source-increment) does not imply full provider/domain qualification. Later catalog staging-boundary corrections retain their own evidence below.
 - [ ] Gate every affected product/admission/send path on exact staged mixed-genesis registration; factor locked registration publication without recursive gate acquisition and resume the original receipt after crash.
 - [ ] Validate active winner and exact retained manifests separately; derive local uncertainty only from verified local Commit/predecessor lineage, preserve foreign history without effect authority, and block ambiguous lineage.
 - [ ] Keep own or competing winners containing an exact unresolved local receipt committed-not-applied; test exclusive-retention settlement separately without promising active-intent release.
@@ -236,3 +243,11 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Verify controlled preparation interruptions and four actual subprocess deaths, real ordinary notebook Source3/plan/stage/media preservation, foreign-actor closure/local metadata and format5 Worker recovery; enforce Store-atomic operation reuse across real selected memory producers with exact replay.
 - [x] Execute the separate trusted older-host-executable read-only compatibility gate, retain its format4 positive control and unchanged format5 metadata refusal, and pass175 storage plus17 Reader CLI cases, strict Clippy and formatting; keep default ignored witnesses and actual invocation evidence distinct.
 - [ ] Complete the actual selected Source3 notebook producer/runner, group/catalog/new-scope controls and remaining domain/CLI/consumer/qualification obligations before syncing or archiving the unfinished parent.
+
+## Additive catalog verified increment
+
+- [x] Discover explicitly registered local memory/document scopes from exact current domain registration/genesis, retain original allocation/proposal in the existing checkpoint, and extend only the verified accepted catalog set under current mode and ordered gates; source `e1c170f`, independent review/hosted publication pending.
+- [x] Preserve actual document-only ownership, losing explicit fact custody through reopen and original staging/outbox recovery; reproduce the preparation-write window and persist conservative intent before that write, with actual durable-write fault/reopen controls for present versus missing journals.
+- [x] Verify all 8 catalog HTTP cases within 191 storage tests / 2 existing ignored gates, plus 74 conversation tests, strict Clippy, formatting and unchanged committed input hashes; keep the earlier pre-intent correction run and initial failures separate.
+- [x] Reconcile thirteen obsolete historical increment tasks and three already reviewed connected-core implementation tasks against existing exact-source public receipts and paired delivery, without reopening qualification or closing broad parent work.
+- [ ] Establish fresh provider-qualified first-scope product admission, preference/handwriting registrations and actual commands/consumers; complete selected notebook, uncertainty and final provider/native/delivery gates in this same active parent.
