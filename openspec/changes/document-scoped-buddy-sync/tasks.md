@@ -303,7 +303,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Join Writer, preferences and optional selected memory at the existing owned model submission and result transaction, without nested gate acquisition or holding domain gates across the long model response wait.
 - [x] Connect the actual selected Writer command before new-work policy/credentials while preserving original-only recovery and all local settings outside the portable allowlist.
 - [x] Verify changed pins, disabled policy, delayed/lost/canceled model submission, original recovery and result refusal through the real adapters; report modeled versus live evidence and keep broader consumers/native/provider gates open.
-- [ ] Obtain coordinator independent final source review, coordinated publication and hosted checks for this consumer increment; prior command-batch CI does not cover it.
+- [x] Obtain coordinator independent final source review, coordinated publication and hosted checks for the Writer consumer increment. [Review](https://linear.app/magentumdragon/issue/REM-52#comment-1b3c1f43-c5d3-4c26-8013-f45dd6c90073) and [terminal CI](https://linear.app/magentumdragon/issue/REM-52#comment-6a62407f-12f2-43bf-afa7-3a83e57056d9).
 
 ## Installed resident Reader input
 
