@@ -249,3 +249,45 @@ therefore covers supported parsing/refusal and original Status; the private test
 HTTP adapter covers positive Inspect/Edit admission, crash and correspondence.
 These evidence categories do not establish live provider qualification or complete
 the Manager's real editable-command parity gate.
+
+### Effective selected Writer consumer implementation
+
+The bounded consumer increment connects the actual selected Writer command,
+not a renderer setting or a saved guard, to the same qualified preference
+admission used above. Capture the exact raw Config and a selected preference token
+or privately established absence, and derive the allowed effective Config from
+those bytes. Historical original recovery stays read-only before new-work policy
+and model credentials. Other runtime settings remain local. No Config rewrite,
+new provider sender, serialized permit or operation index follows.
+
+A private request-scoped preference snapshot joins Writer and any selected memory
+catalog/aggregate admission in the existing ordered gate set. Recheck all current
+pins immediately around the synchronous model handoff and the actual result
+transaction. Existing OpenAI owned-request submission remains the only transport.
+An internal guarded-handoff seam wraps the owned request submission, then releases
+domain gates before waiting for its response. Progress and result checks may
+cancel/refuse stale inputs; they must not reacquire a gate recursively from an
+already locked callback. Unsupported model adapters refuse the guarded path.
+
+One original monotonic lifetime covers the 60-second admission window, the
+existing supported model wait of at most 90 seconds and a bounded 60-second
+completion window. The model handoff is single-use and must occur inside the
+original admission window; waiting for a healthy response does not renew it.
+Reserve the finite preference read allowances once from a single charged parent:
+full admission, handoff and completion validation each keep their own allowance,
+while periodic cancellation checks use a separate finite raw-Config/current-header
+allowance sized for the complete 210-second cadence. Dropping an allowance or
+calling progress cannot replenish it. Cheap progress checks issue no token and
+never replace complete object/history verification at the real handoff or result.
+Generated text without an actual guarded owned submission cannot be published.
+
+The result route uses the existing joined selected Writer publication, adding the
+same preference admission and locked verification alongside selected memory pins.
+An equal display value or a newer snapshot cannot authorize completion for an
+older request. Mode/group/binding, raw Config, Store generation and the captured
+selection/absence must still match. Provider qualification remains sealed in
+production and the current executable/Manager evidence retains its previous
+limits. Reader and remaining memory/research consumers remain separate unfinished
+work. Reader has multiple model submissions and needs its own coherent request
+lifetime and custody; the single-submission Writer snapshot is not a ready Reader
+implementation.

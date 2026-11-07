@@ -280,7 +280,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Prove historical local Initialize/Commit receipt, original predecessor and guard/patch/result-bound revision for Status without current mode/configuration admission, patch retention, a second index or Edit replay.
 - [x] Validate unchanged source `b90b2a5`: 209 all-feature storage cases /3 existing ignored, including ten command cases; 26 portable configuration cases; 13 binary argument tests and 3 actual CLI cases; strict Clippy/formatting and nine frozen input hashes. Preserve earlier failures/pre-refinement evidence separately.
 - [x] Obtain coordinator independent source/profile review of the bounded command and constructor correction; no full parent closure follows.
-- [ ] Complete coordinated publication of the bounded command/correction/test batch; the coordinator owns hosted successor checks.
+- [x] Complete coordinated publication of the bounded command/correction/test batch with green Buddy `23f7a70` / Docs `6f0ced3` / Manager `457d2278` hosted checks; these results exclude the effective consumer increment.
 - [ ] Close the actual Buddy/Manager editable-command parity gate with the domain owner; source HTTP adapter cases and synthetic executable Status custody do not imply positive executable Inspect/Edit or live qualification.
 - [ ] Complete effective Reader/Writer/memory preference consumers under the same ordered admission at actual handoff and result commit, alongside remaining handwriting/notebook/native/provider parent gates.
 
@@ -289,10 +289,18 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Reproduce the uncharged constructor checkpoint reread with a boundary that actually reaches four provider GETs on the uncorrected implementation before exhaustion.
 - [x] Reserve that second bounded checkpoint read in the same original request allowance before credential opening in source `143eb62`; pass all eleven command cases, strict lint/formatting and unchanged two-file hashes, with the same boundary making no additional provider request.
 - [x] Obtain the requested independent narrow review of the constructor correction; retain prior broad/executable evidence at its original source.
-- [ ] Complete coordinator publication of that accepted correction in the bounded batch.
+- [x] Complete coordinator publication of that accepted correction in the green `23f7a70` bounded batch.
 
 ## Actual producer to Worker transfer regression
 
 - [x] Connect actual admitted first Edit to Worker publication, second-Store Joining/receive, offline reverse Edit and transfer back with exact membership, no passive POST and local-versus-imported original receipt proof, source `23f7a70`.
 - [x] Pass all twelve command cases including the independent constructor boundary, strict lint/formatting and the unchanged single test-file hash; keep the two different earlier eleven-case runs separately attributed.
-- [ ] Obtain independent review and coordinator batched publication of this test-only increment; effective consumer implementation is excluded from the finite batch.
+- [x] Obtain independent review and coordinator batched publication of this test-only increment, with successful hosted checks at Buddy `23f7a70`, Docs `6f0ced3` and Manager `457d2278`; effective consumer implementation is excluded from that finite batch.
+
+## Effective selected Writer consumer increment
+
+- [x] Factor current preference admission into a private typed request snapshot using exact raw Config and selected/qualified-absence pins; serialized guards and optional settings cannot create it.
+- [x] Join Writer, preferences and optional selected memory at the existing owned model submission and result transaction, without nested gate acquisition or holding domain gates across the long model response wait.
+- [x] Connect the actual selected Writer command before new-work policy/credentials while preserving original-only recovery and all local settings outside the portable allowlist.
+- [x] Verify changed pins, disabled policy, delayed/lost/canceled model submission, original recovery and result refusal through the real adapters; report modeled versus live evidence and keep broader consumers/native/provider gates open.
+- [ ] Obtain coordinator independent final source review, coordinated publication and hosted checks for this consumer increment; prior command-batch CI does not cover it.

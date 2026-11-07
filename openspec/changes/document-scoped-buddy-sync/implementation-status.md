@@ -559,9 +559,10 @@ Inspect/Edit admission or live provider qualification. The current executable is
 identified by its frozen input manifest and binary hash; no extra copy is retained.
 
 Coordinator independent source/profile review accepted the bounded command and
-constructor correction. Publication/hosted checks and real Buddy/Manager
-editable-command parity remain open; full parent review is not closed. Effective product consumers
-are not yet connected at actual request handoff/result admission. Selected
+constructor correction. The finite command/correction/test batch is published with successful hosted checks at
+Buddy `23f7a70`, Docs `6f0ced3` and Manager `457d2278`; coordinator evidence is
+recorded below. Real Buddy/Manager editable-command parity and full parent review
+remain open. Effective product consumers were excluded from that finite batch. Selected
 notebook, handwriting, broader uncertainty and provider/native parent gates also
 remain unfinished; the active parent is neither synced nor archived.
 
@@ -583,7 +584,8 @@ requests. All eleven command cases (the existing ten plus this boundary), strict
 Clippy, formatting and diff checks pass. Both finite correction inputs remain
 unchanged at commit. Prior 209/26 and executable results retain their b90
 attribution; no unrelated check campaign was repeated. Independent narrow
-re-review accepted the correction; coordinator publication remains pending. The independently passing
+re-review accepted the correction, subsequently included in the published green
+`23f7a70` batch. The independently passing
 command/Worker integration prototype is held outside this finite correction and
 provides no evidence for this boundary.
 
@@ -616,6 +618,94 @@ repeated; b90's broader results and executable hash remain at their original
 source. This is actual core/Worker/local HTTP evidence, not positive qualified
 executable Inspect/Edit or real account/native evidence.
 
-Independent review and normal batched publication of this final test increment
-remain with the coordinator. Effective product consumers are not included in the
-finite command/correction/test batch and remain the next separate source scope.
+Coordinator independent review, normal publication and hosted checks accepted this
+finite batch: [Buddy run42416822257](https://github.com/s116821/ReMarkableBuddies/actions/runs/42416822257)
+at `23f7a70`, [Docs run42416817301](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42416817301)
+at `6f0ced3`, and [Manager run42416454927](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/42416454927)
+at `457d2278`. Effective product consumers are excluded from those hosted results
+and remain a separate source increment.
+
+### Effective selected Writer request consumer
+
+Source [c249fa9](https://github.com/s116821/ReMarkableBuddies/commit/c249fa9472b2f3df63699ad91c29883766b97fde),
+parent `5c8d238`, integrates delivered main `cf568ae0` by normal merge
+`5c8d238` before the consumer commit. The merge preserves the three reviewed
+resident client/source/supervisor recovery files; all 16 consumer inputs present
+at integration were restored byte-identically from their preserved hashes.
+
+The actual selected Generate/Refine command now obtains the private request-scoped
+preference view before fresh-work policy and model credential resolution. Families
+1–4 retain their delivered local configuration route. Format5 requires the actual
+qualified binding factory, which remains sealed in production. The consumer
+reuses the command's current readiness helper, exact raw Config and its typed
+local base, selected preference token or privately established absence, current
+SharedGroup epoch/lease, group/binding and Store generation. The portable overlay
+stays in memory and preserves excluded local settings. Optional selected memory
+must also match the qualified root profile/group/binding. Exact original recovery
+precedes these new-work gates and never supplies a fresh model permit.
+
+The existing selected Writer and memory publication paths join preferences through
+one canonical ordered ready gate set at the owned model submission and selected
+result transaction. Locked validation is factored to avoid recursive acquisition.
+The existing OpenAI owned request is handed off exactly once under that set; gates
+are released before waiting, and cancellation still owns and joins the worker.
+Unsupported adapters refuse rather than calling an unguarded fallback. A repeated
+handoff or generated text without a guarded submission cannot publish Generated.
+The command uses the existing single-request/no-redirect transport mode.
+
+An actual healthy 65-second localhost OpenAI response initially returned Stale
+under the old 60-second snapshot lifetime and cumulative full-history progress
+allowance. The corrected request reserves one original 210-second lifetime:
+60 seconds for admission, at most the supported 90-second model wait, and 60 for
+completion. The handoff must remain inside the original admission window. A
+single charged parent irrevocably partitions full preference validation for
+admission/handoff/completion and a finite cheap progress allowance sized to the
+whole lifetime. Progress reads only exact raw Config/current selection header as
+cancellation evidence; it issues no new token or replacement authority. Full
+object/history verification remains mandatory at handoff and final publication.
+The original failing run and first-after success retain their own input manifests;
+neither is relabeled as final-source evidence.
+
+The seven fast consumer cases prove disabled shared Writer and foreign snapshot
+refusal before intent/model, exact raw-Config drift before submission, changed
+preferences after submission without replay, corrupt original preference objects
+rejected by full final proof despite unchanged progress headers, single-use
+handoff, no publication without submission, and optional memory changing before
+or after submission alongside a healthy joined-memory control. The actual
+65-second guarded single-request POST includes the captured shared preference and
+exact supplied source, crosses both the former 60-second and 64-pulse limits, and
+finishes with a Published Generated receipt. No sleeps serve as success evidence;
+that bounded delay is an explicit provider-latency fault.
+
+The actual format5 executable test keeps fresh work unavailable without provider
+qualification, sends no model request and leaves the selected token unchanged.
+Explicitly synthetic original Prepared custody then remains recoverable as
+historical-pending with Writer disabled and without model credentials; changed
+original text refuses. Public guarded OpenAI handoff rejection sends no HTTP
+request, and cancellation after actual request receipt joins before the fixture
+releases its withheld reply. These are core/local HTTP/executable controls, not
+positive qualified executable generation, live model quality or account/device
+qualification. Broader Reader, research, handwriting, notebook and Manager editable
+parity work remains open. Reader's multiple model calls require a separately
+owned request lifetime and input/Prepare integration; this single-use Writer
+snapshot is not a Reader implementation. The parent remains active and unarchived.
+
+Final all-feature checks on the unchanged 17-file input manifest pass: 1055 library
+cases /38 existing ignored gates, 13 binary argument cases, 42 Writer cases,
+7 owned-provider cancellation cases, 10 transport cases, 3 shared-preference
+executable cases and 3 storage configuration cases. The library includes all
+12 command regressions, seven fast consumer cases, the actual 65-second guarded
+response and two reservation invariants. Strict all-target/all-feature Clippy,
+formatting and diff checks pass. The earlier broad result predates six redundant
+borrow removals and relocation of two test modules; the final complete run is
+separately preserved as `preference-consumer-final-integrated-checks.log` with
+those mechanical fixes. Earlier fixture lease and private-helper compile failures
+remain separate from the passing executable/transport runs.
+
+Coordinator independent final review, normal publication and hosted successor
+checks remain open for this new source/Docs pair. The previous published
+`23f7a70`/`6f0ced3`/`457d2278` CI results cover only that earlier finite batch.
+The cached executable was built from these frozen consumer inputs while the
+worktree base was `5c8d238` and the consumer edits were uncommitted; its build
+metadata is not relabeled as a build at commit `c249fa9`. Its hash/input receipt
+is preserved without retaining another binary copy.
