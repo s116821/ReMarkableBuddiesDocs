@@ -106,3 +106,11 @@
 - [x] Verify local real factories/routes/renderer and private entrypoint with synthetic source fixtures for unavailable production gates, approved fixture-only paths, wrong context/handle/input, before/after submission loss, durable uncertainty, no replay, cancellation/late completion and all existing peer boundaries.
 - [ ] Verify required current source/UI/packaged-host checks and independent review, preserving all earlier Stop/native evidence and empty production qualification registries.
 - [ ] Coordinate final same-change canonical sync/archive/delivery only after its selected obligations are complete; source wiring does not waive actual lifecycle qualification or enroll production tuples.
+
+## Ordinary alias private candidate
+
+- [x] Specify exact private alias evidence, digest and retained profile gates.
+- [x] Implement and test fixed alias sampling, private parsing and candidate matching.
+- [x] Verify direct and resident digest compatibility and production refusal in both host factories.
+- [x] Independently review the exact source and paired contract at Manager 82f1c657 and Docs ba64978b.
+- [ ] Qualify a separate stable installed tuple and actual guarded public Stop before any enablement.

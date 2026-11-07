@@ -116,3 +116,22 @@ SHALL follow from compatibility correction alone.
 #### Scenario: Utility output is unsupported or ambiguous
 - **WHEN** output has literal escape characters, wrong precision, extra newlines, partial bytes, permission failure, an unexpected status or a different missing-file diagnostic
 - **THEN** the original observation refuses without interpreting it as absence or trying a substitute command.
+
+### Requirement: Ordinary Stop alias evidence binds the installed target
+The host SHALL limit private ordinary alias evidence to the one compiled layout.
+It SHALL bind the fixed ExecStart argument and resolved executable
+separately, and require protected literal-link, target, process and parent
+identity evidence across both private brackets. The alias evidence SHALL
+participate in the private digest only when present. The public contract and
+existing direct and resident evidence SHALL retain their exact shapes.
+Production profile admission remains empty.
+
+#### Scenario: Exact alias is a candidate only
+
+- **WHEN** the protected alias, target, process, invocation and both brackets match the immutable candidate tuple
+- **THEN** the host may match the ordinary candidate and the production gate still refuses submission.
+
+#### Scenario: Alias, process or bracket drift
+
+- **WHEN** the literal, parent protection, target metadata, argv, executable identity or any bracket differs or is unavailable
+- **THEN** the host refuses the candidate without fallback to a resident layout or Stop submission.

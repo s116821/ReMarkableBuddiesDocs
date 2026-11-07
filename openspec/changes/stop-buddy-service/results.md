@@ -671,3 +671,36 @@ the maintained sampler-test SHA256 is
 Recovery composition, final paired review/current CI and complete target
 sampling/shutdown/recovery remain separate. No production profile, actual Stop,
 native recovery, package installation or feature completion is claimed.
+
+### Ordinary alias candidate source controls
+
+Manager 82f1c65, based on Manager 56 baf0265e, adds a private candidate
+layout without enabling a production profile. The paired Docs base is
+41b770b4 and includes the independent package controls. The sampler checks
+the fixed alias literal and both protected parent chains, the private parser
+keeps ordinary alias facts out of resident classification, and the digest
+includes the alias object only for that layout.
+
+Focused Python controls passed on Windows and in an offline Linux image,
+including the actual Python-to-Node parser/matcher/digest boundary and
+unchanged direct/resident digest vectors. Windows ran 53 with four skipped,
+Linux ran 53 with two skipped for BusyBox availability. All 46 sequential
+Node Stop tests passed. The initial parallel Node invocation encountered
+one existing late-acknowledgment timing assertion. A first new cross-language
+test also caught and corrected alias tuple key ordering. Actual Browser and
+Electron factory controls passed on Node 24.22.1 with the valid alias fixture
+refused by both production gates. Production and development builds and
+targeted lint passed, with the existing initial bundle-budget warning.
+
+The actual prior ordinary diagnostic and exact two-path disposal are
+retained separately in REM-42. This source-only increment supplies no
+installed tuple, public service actuation, native or package qualification.
+
+Independent review accepted Manager 82f1c657 and Docs ba64978b in REM-42
+comment 81807d62. Manager 1357b114 changes only the reciprocal late-ack test.
+It freezes the injected clock during preparation and advances the mocked
+timer only after actual submission has acquired the shared owner. Both
+directions retain the unknown result and prove the late acknowledgment
+cannot release the later peer. All 46 focused Node Stop tests passed in
+parallel. The original parallel failure and sequential pass remain separate
+evidence for the earlier test.
