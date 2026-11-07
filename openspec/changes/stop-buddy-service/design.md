@@ -131,3 +131,15 @@ spelling. Admit only those exact missing-final-component envelopes, not a loose
 substring or locale translation. Keep every timestamp and parent check strict.
 The previous refused attempt remains failed; this correction needs new target
 evidence and does not retrospectively repair it.
+
+## Proposed separate resident-package capability
+
+`package-transition-wiring.md` defines the missing closed host/private bridge,
+public DTO, common browser/Electron route and shared panel. It reuses the existing
+package helpers, including their durable original intents and fixed removal
+coordinator. The existing serviceStop protocol and dispatch semantics stay intact.
+Both capabilities share MaintenanceIO and an unresolved-submission fence; package
+preparation must not dispatch the public Stop action as well as the existing
+private preparation helper. No new Stop command or second transaction engine is
+introduced. Production enrollment and actual package/lifecycle evidence remain
+separate gates. Obtain independent amendment acceptance before implementation.
