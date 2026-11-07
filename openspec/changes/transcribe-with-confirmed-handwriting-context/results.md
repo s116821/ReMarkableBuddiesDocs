@@ -115,3 +115,50 @@ R10 separately scored0/2 strict and0/2 full fidelity; that two-image result does
 not replace historical0/4 or legacy6/6 and does not affect this storage proposal.
 No source/runtime/consumer activation, model/tablet execution, canonical spec sync
 or archive occurs at this precode checkpoint.
+
+
+## Ready-format4 standalone implementation — November 6, 2026
+
+Independent precode acceptance preceded this scoped implementation. Buddy source
+`683ddfc720027a8b5dd52099bb248d4440171a53` implements only the private handwriting admission in
+storage/maintenance.rs: retain the existing selected-aware legacy family and
+include Handwriting in the existing ready-notebook local validation. Generic
+maintenance and notebook legacy publisher/sync remain refused. Existing
+LocalCorrections and successful/refused report custody are reused without new
+provider, prompt, vector, schema or lifetime machinery.
+
+Actual Windows default-feature locked/offline checks:
+
+- Initial handwriting library group: 52 passed; the later ready-notebook group
+  passed 9 tests (8 new handwriting controls plus the existing ordinary-memory
+  neighbor). The strengthened valid-nonlocal-manifest refusal then passed alone.
+- Both actual CLI suites: 3 + 3 passed. The new ready4 absent/LocalOnly control
+  confirms and inspects, captures the exact revision before credential resolution,
+  and refuses a stale revision without a call. Credential environment variables
+  are removed for the subprocess; no model/network execution is claimed.
+- Notebook preferences neighbor: 5 passed. The exact generic-maintenance and
+  generic-inspection notebook-refusal regression: 1 passed.
+- Prepared4 controls cover all existing identity-policy vectors, exact retained
+  PNG/text/revision, confirm/reopen/query/inspect, update/CAS/forget/status,
+  17 refusal variants with unchanged tree/staging, real OS contention,
+  no-Store null context, and legacy selected/feedback family compatibility.
+- Successful, stale/media-refused and canceled reports retain real ownership
+  through partial writes, flush, output error and drop. Notebook legacy publisher
+  and sync remain refused after drop. These are Store/fake-engine mechanics,
+  not recognition, learning or native/runtime qualification.
+
+The original test-only compile failure (Arc-receiver leases called on Store)
+was corrected by using actual Arc owners. Clippy's initial new manual-range
+pattern finding was corrected to 2..=4; original failure logs remain local.
+Two accidental empty test filters are retained and receive no coverage credit.
+Final cargo fmt --check, whitespace and cargo clippy --locked --offline --lib
+--tests -- -D clippy::all pass. Existing platform dead-code warnings remain.
+Docs guidance/provenance (36 files/126 blobs) and strict named OpenSpec pass.
+Independent implementation review and hosted checks remain pending for this
+source revision.
+
+No simulator workflow behavior changes: this increment is the standalone
+explicit Store/CLI path, covered by its real Store and subprocess controls.
+Automatic Reader/Writer use still requires the separate same-Store handoff.
+All frozen recognition failures and remaining delivery/spec-sync/archive tasks
+stay open; both paired drafts remain active.

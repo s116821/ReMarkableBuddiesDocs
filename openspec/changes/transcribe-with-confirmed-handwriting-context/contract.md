@@ -51,7 +51,7 @@ Serialize a single complete report plus newline into at most32768 bytes before a
 Envelope decoding validates all required fields/types, canonical nonnil UUIDs and positive u32 page before echoing invocation. Version is then checked before PNG decoding; target digest becomes available after full target admission. Do not echo unvalidated invocation strings. A no-context successful report has context=null. Unknown provider/server failure details never become report fields. Canceled requires a refused progress callback; an arbitrary provider error is not relabeled cancellation. Arbitrary LLMEngine implementations are cooperative: the default callback runs once before execute and cannot preempt an implementation that ignores later progress. Only the configured OpenAI transport provides owned worker cancellation/joining through its existing progress path. Post-return cancellation checks suppress stale results without claiming earlier interruption; no wrapper worker or automatic retry is added.
 
 
-## Standalone ready-format4 context admission â€” proposed, not implemented
+## Standalone ready-format4 context admission
 
 The existing non-null-context path SHALL additionally admit an ALREADY ready
 ordinary notebook format4 through a handwriting-specific existing-store entry.
@@ -92,7 +92,9 @@ storage-unavailable. Later LocalCorrections UnsupportedMode remains unsupported-
 context invalid/stale/conflict/unavailable/canceled/storage failures retain the
 existing mapping. On context-admission refusal provider_attempt=not-called,
 context=null, every result slot null and confirmed=false; admitted target digest
-may remain. The command does not construct or call a provider on that refusal; no alternate
+may remain. The command does not resolve recognition credentials, construct a recognition
+engine or invoke recognition on that refusal; LocalCorrections is still constructed
+where admission allows and its acquired owner is retained on capture refusal. No alternate
 revision or null-context
 fallback follows a refusal. After valid capture, later failure keeps honest
 captured descriptors and its actual attempted/not-attempted status.
