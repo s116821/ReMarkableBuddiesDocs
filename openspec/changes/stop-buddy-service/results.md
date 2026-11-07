@@ -561,3 +561,40 @@ Recovery PR #57 normally incorporates this test-only successor as
 `0eadfd7e7ced1573adf7f34620bd059e52035d31`. Its nine recovery-specific source
 files remain unchanged. No production profile or tablet/runtime behavior is
 enabled by this correction; actual Stop and recovery acceptance remains open.
+
+## Common GNU and BusyBox stat formats
+
+Manager successor `31c540fbc6ed781de5f20d1128e5095c620ee148` corrects a concrete
+read-only target observation: BusyBox1.36.1 returned exit1, empty stdout and an
+unrecognized `--printf` option. That diagnostic's preceding complete typed
+service group and cleanup passed, but the overall observation remains refused.
+It does not identify the exact cause of an older attempt without raw replies.
+
+The correction uses `-c` with literal internal newlines and one utility-supplied
+final newline, including `-f -c %t` for filesystem type. Metadata parsing, full
+nanoseconds, no-follow/parent checks and read bounds are unchanged. Optional
+absence accepts only the exact C-locale GNU or BusyBox diagnostic for the same
+compiled operand, exit1 and empty stdout. The
+[upstream BusyBox1.36.1 source](https://busybox.net/downloads/busybox-1.36.1.tar.bz2)
+(`coreutils/stat.c`: `print_it`, `human_time`, `do_stat`) supports the format,
+precision and spelling analysis; source does not qualify target build options.
+
+Independent precode and changed-source reviews passed. Windows sampler suite:
+25 methods,23 passed and two actual Linux-utility methods skipped. The actual
+GNU9.4 and installed Ubuntu BusyBox1.36.1 methods then both passed on Linux,
+including quoted existing operands, exact mtime/ctime nanoseconds, link counts,
+no-follow/follow, optional/required absence and dangling-symlink refusal.
+Exact absence-envelope, malformed precision/framing and unsafe-parent controls
+also passed. A separate real statfs comparison passed on local ext filesystem
+type `ef53`; this is not target cgroup2 qualification.
+
+The first GNU fixture failed because its new apostrophe-containing missing name
+received GNU's double-quoted diagnostic. Product optional paths are compiled and
+contain no apostrophes. Only the shared missing-name fixture changed to that
+domain; the quoted existing-name check remains and product error matching did
+not widen. Both original failure and corrected evidence are preserved.
+
+The previous Manager `a4fcdcabcdeecf1192b31ed0b979b26ef526200a` CI run passed all
+required Windows/Linux checks. The new successor still needs its own hosted
+checks, recovery composition and fresh target observation. Production registries
+remain empty; no Stop, native recovery or final feature acceptance follows.

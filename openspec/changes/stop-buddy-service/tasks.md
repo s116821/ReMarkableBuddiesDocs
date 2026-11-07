@@ -75,3 +75,11 @@
 - [x] Replace unsupported bounded `head` reads with one reviewed byte-preserving `dd` helper; retain exact length, nonzero-exit, EOF, deadline and size refusals.
 - [x] Obtain independent composition and sampler-patch review, verify exact source hashes, and retain focused local checks and original failures.
 - [ ] Complete current hosted/package gates and separately qualified target sampling/shutdown/recovery before production enrollment and final paired delivery.
+
+## 11. GNU and BusyBox metadata producer compatibility
+- [x] Retain the actual BusyBox `--printf` refusal and inspect upstream1.36.1 format/newline/nanosecond/error behavior without changing the tablet.
+- [x] Independently review the exact common-format contract before source changes.
+- [x] Use literal-newline `stat -c` metadata and `stat -f -c %t`; preserve strict parsing and all original read guards.
+- [x] Admit only exact exit1/empty-stdout GNU or BusyBox optional-final-component absence; cover permission, wrong status, partial output and extra diagnostic refusals.
+- [x] Verify actual local utility quoting, nanosecond precision, no-follow and missing-file behavior where available, plus existing sampler regressions and independent source review.
+- [ ] Reconcile the reviewed successor into recovery without changing its owned source, then obtain fresh target/hosted evidence separately; no old diagnostic replay or production enrollment.

@@ -104,3 +104,14 @@ textual parsing strict for the other41 properties; use the separate typed hooks
 DTO defined in contract.md for the two command-array properties. One group spans
 the existing repeated captures and is reset on failure. No new executable,
 transport framework, public protocol or production tuple is introduced.
+
+## Common stat producer
+An actual read-only target diagnostic returned BusyBox1.36.1's rejection of
+`--printf`. Use `-c` with literal internal newlines and its automatic terminal
+newline; both upstream GNU and BusyBox support this format without changing the
+metadata schema. BusyBox1.36.1 source retains nanoseconds in `%y`/`%z` and reports
+missing files with `can't stat`, distinct from the existing GNU `cannot statx`
+spelling. Admit only those exact missing-final-component envelopes, not a loose
+substring or locale translation. Keep every timestamp and parent check strict.
+The previous refused attempt remains failed; this correction needs new target
+evidence and does not retrospectively repair it.

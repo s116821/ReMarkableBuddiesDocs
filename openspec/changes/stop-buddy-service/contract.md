@@ -112,6 +112,25 @@ cancel/timer/finally cannot revoke another owner; no delayed global cancel. Remo
 job cancellation/rollback/restart is not performed. Retained reads do no I/O or
 invalidation. Host restart loses custody and never proves no stop occurred.
 
+## Metadata producer compatibility
+
+Use the common GNU/BusyBox `stat -c` interface for the existing fixed-path
+metadata reads. Pass actual newline characters between the numeric, mtime and
+ctime fields, with no final newline in the format argument: `-c` supplies that
+one final newline. The result remains exactly three lines, including nine
+fractional timestamp digits and an explicit numeric UTC offset. Filesystem type
+uses `stat -f -c %t`, with the existing exact cgroup2 magic check. Do not fall
+back to epoch seconds, pad missing precision, repair framing or choose another
+command after refusal.
+
+For an explicitly optional final component under already-bracketed parents,
+absence requires exit1, empty stdout and exactly one of the qualified C-locale
+GNU `cannot statx` or BusyBox `can't stat` messages for that exact operand and
+`No such file or directory`. Permission errors, other exit codes, partial output
+and extra diagnostics refuse. Keep existing no-follow, parent identity, mode,
+ownership, size, EOF, shared deadline and output bounds. Source/local utility
+tests do not establish target qualification or enable a production Stop profile.
+
 ## Required qualification
 
 acceptance.md and acceptance-cases.json define concrete fixture variations and

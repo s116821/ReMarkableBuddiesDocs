@@ -99,3 +99,20 @@ recovery qualification; historical metadata alone SHALL NOT enable Stop.
 #### Scenario: Complete typed evidence without shutdown qualification
 - **WHEN** source fixtures or an actual metadata observation satisfy the typed hook predicate but production shutdown qualification is absent
 - **THEN** Stop remains disabled and actual native cancellation/recovery acceptance remains unfinished.
+
+### Requirement: Compatible metadata collection preserves evidence precision
+Fixed-path metadata collection SHALL use the common `stat -c` interface with
+literal internal newlines and one utility-supplied final newline. The existing
+numeric identity, nanosecond timestamp, offset, no-follow and parent checks SHALL
+remain strict. Optional absence SHALL require exit1, empty stdout and an exact
+qualified GNU or BusyBox C-locale missing-file diagnostic for the same operand.
+No parser repair, precision reduction, fallback command or production enrollment
+SHALL follow from compatibility correction alone.
+
+#### Scenario: Supported utility returns complete metadata
+- **WHEN** GNU or BusyBox returns the existing complete three-line metadata frame
+- **THEN** the unchanged metadata parser preserves both full nanosecond timestamps and the existing file identity checks.
+
+#### Scenario: Utility output is unsupported or ambiguous
+- **WHEN** output has literal escape characters, wrong precision, extra newlines, partial bytes, permission failure, an unexpected status or a different missing-file diagnostic
+- **THEN** the original observation refuses without interpreting it as absence or trying a substitute command.
