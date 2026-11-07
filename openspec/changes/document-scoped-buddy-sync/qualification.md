@@ -191,3 +191,11 @@ result. Actual editable-command parity in browser/Electron remains a separate
 coordinated gate that these tests do not close. Existing provider/native and old
 reader evidence retains its original source and must not be rerun or relabeled
 solely to populate this profile.
+
+The producer/transfer regression is
+`actual_command_producer_worker_second_store_and_reverse_edit_keep_original_custody`
+in the same command test group. It uses the actual private admission/Store path,
+existing Worker and two Store actors under the test-only HTTP adapter. Assert
+original membership and receipt postconditions at each phase; elapsed time alone
+is never success. Its group-sharing fixture does not qualify an external account
+or a production executable command.

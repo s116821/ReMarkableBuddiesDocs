@@ -211,7 +211,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Record the reviewed portable/handwriting domain contracts in the active central change before real core/consumer integration; preserve delivered ordinary/import/Manager behavior.
 - [x] Adopt the independently reviewed portable Artifact/LocalConfigSnapshot adapter through integrated parent458a4cd; this is not the completed selected producer/adopter/consumer route.
-- [ ] Add format5 portable namespace/typed owner, strict original-byte closure validation, explicit Inspect/Edit/Status selector, original receipt/no-op behavior and real Worker/second-Store adoption.
+- [x] Add format5 portable namespace/typed owner, strict original-byte closure validation, explicit Inspect/Edit/Status selector, original receipt/no-op behavior and real Worker/second-Store adoption; bounded command/correction and real producer transfer are recorded at `b90b2a5` / `143eb62` / `23f7a70`. Production qualification and actual consumer/Manager gates stay open.
 - [ ] Capture admitted raw+typed local configuration together and integrate the effective request overlay, selected or established-absence pin, actual Writer/notebook role/prompt gates and ordered handoff/result checks; preserve original recovery and excluded local values.
 - [x] Integrate the disjoint Handwriting1 raw-byte validator/projection/typed preparation adapter through reviewed parent82e11f2; keep ordinary leases and null-original refusal unchanged. Actual selected command/consumer integration remains open below.
 - [ ] Enforce Store-atomic local operation reuse checking across selected producers with bounded existing local transaction evidence, identical replay and imported-operation separation; test concurrent competing scopes/profiles/corrections.
@@ -279,7 +279,8 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Re-admit exact current mode/group/key/binding/epoch/generation/raw Config plus selected token or fresh qualified root/catalog absence under ordered gates; preserve established selected offline use and keep all provider publication/adoption in the existing Worker.
 - [x] Prove historical local Initialize/Commit receipt, original predecessor and guard/patch/result-bound revision for Status without current mode/configuration admission, patch retention, a second index or Edit replay.
 - [x] Validate unchanged source `b90b2a5`: 209 all-feature storage cases /3 existing ignored, including ten command cases; 26 portable configuration cases; 13 binary argument tests and 3 actual CLI cases; strict Clippy/formatting and nine frozen input hashes. Preserve earlier failures/pre-refinement evidence separately.
-- [ ] Obtain independent source/profile review and coordinated publication of the command increment; the coordinator owns hosted successor checks.
+- [x] Obtain coordinator independent source/profile review of the bounded command and constructor correction; no full parent closure follows.
+- [ ] Complete coordinated publication of the bounded command/correction/test batch; the coordinator owns hosted successor checks.
 - [ ] Close the actual Buddy/Manager editable-command parity gate with the domain owner; source HTTP adapter cases and synthetic executable Status custody do not imply positive executable Inspect/Edit or live qualification.
 - [ ] Complete effective Reader/Writer/memory preference consumers under the same ordered admission at actual handoff and result commit, alongside remaining handwriting/notebook/native/provider parent gates.
 
@@ -287,4 +288,11 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Reproduce the uncharged constructor checkpoint reread with a boundary that actually reaches four provider GETs on the uncorrected implementation before exhaustion.
 - [x] Reserve that second bounded checkpoint read in the same original request allowance before credential opening in source `143eb62`; pass all eleven command cases, strict lint/formatting and unchanged two-file hashes, with the same boundary making no additional provider request.
-- [ ] Obtain the requested independent narrow review and coordinator publication of the constructor correction; retain prior broad/executable evidence at its original source.
+- [x] Obtain the requested independent narrow review of the constructor correction; retain prior broad/executable evidence at its original source.
+- [ ] Complete coordinator publication of that accepted correction in the bounded batch.
+
+## Actual producer to Worker transfer regression
+
+- [x] Connect actual admitted first Edit to Worker publication, second-Store Joining/receive, offline reverse Edit and transfer back with exact membership, no passive POST and local-versus-imported original receipt proof, source `23f7a70`.
+- [x] Pass all twelve command cases including the independent constructor boundary, strict lint/formatting and the unchanged single test-file hash; keep the two different earlier eleven-case runs separately attributed.
+- [ ] Obtain independent review and coordinator batched publication of this test-only increment; effective consumer implementation is excluded from the finite batch.

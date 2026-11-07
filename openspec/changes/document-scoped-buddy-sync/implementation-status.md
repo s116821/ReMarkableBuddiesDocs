@@ -558,8 +558,9 @@ positive Status fixture proves correspondence, not successful executable
 Inspect/Edit admission or live provider qualification. The current executable is
 identified by its frozen input manifest and binary hash; no extra copy is retained.
 
-Independent source/profile review, coordinator publication/hosted checks and real
-Buddy/Manager editable-command parity remain open. Effective product consumers
+Coordinator independent source/profile review accepted the bounded command and
+constructor correction. Publication/hosted checks and real Buddy/Manager
+editable-command parity remain open; full parent review is not closed. Effective product consumers
 are not yet connected at actual request handoff/result admission. Selected
 notebook, handwriting, broader uncertainty and provider/native parent gates also
 remain unfinished; the active parent is neither synced nor archived.
@@ -582,6 +583,39 @@ requests. All eleven command cases (the existing ten plus this boundary), strict
 Clippy, formatting and diff checks pass. Both finite correction inputs remain
 unchanged at commit. Prior 209/26 and executable results retain their b90
 attribution; no unrelated check campaign was repeated. Independent narrow
-re-review/publication remain pending. The independently passing
+re-review accepted the correction; coordinator publication remains pending. The independently passing
 command/Worker integration prototype is held outside this finite correction and
 provides no evidence for this boundary.
+
+### Real preference producer and two-Store Worker regression
+
+Test-only source
+[23f7a70](https://github.com/s116821/ReMarkableBuddies/commit/23f7a70b0b324f28cab7e755357fb07f4fdd435c),
+parent `143eb62`, connects the actual admitted preference producer to the existing
+Worker and a second Store, then reverses the edit and transfer. Production code is
+byte-identical to the independently reviewed constructor correction. The only
+source change shares a group in the existing fixture and adds this integration
+case; it supplies no new qualification or permit API.
+
+The first admitted edit creates its real local original with no POST. The Worker
+registers/publishes it; the second Store's Inspect stays Joining without an
+editable guard before receiving that known mapping. Passive adoption transfers
+exact original membership without a POST. The second Store then inspects and
+edits offline, retaining the first declaration; its Worker publishes and the
+first Store receives the revised closure without another passive POST. Effective
+shared field origins/text match the exact declarations. Original Status continues
+to prove each Store's own edit after receiving later data, while the imported
+first edit cannot be claimed as a local original on the second Store.
+
+All twelve command cases pass on the unchanged frozen test input, including the
+separately reviewed constructor boundary. Strict Clippy, formatting and diff
+checks pass. The earlier eleven-case integration prototype lacked that boundary;
+the finite correction's eleven cases lacked this integration. Both keep their
+separate attribution. No unrelated broad/executable/live/native tests were
+repeated; b90's broader results and executable hash remain at their original
+source. This is actual core/Worker/local HTTP evidence, not positive qualified
+executable Inspect/Edit or real account/native evidence.
+
+Independent review and normal batched publication of this final test increment
+remain with the coordinator. Effective product consumers are not included in the
+finite command/correction/test batch and remain the next separate source scope.
