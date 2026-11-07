@@ -85,8 +85,9 @@ record-order behavior and output contract. No new full-store scan or media index
    unexamined remainder; do not call unexamined candidates missing media.
    This declared partial selection may proceed with its admitted subset or None;
    a storage/ownership/cancellation error cannot be relabeled empty.
-7. Invoke existing capture_context EXACTLY ONCE on the same owner with surviving
-   exact IDs. Its fresh bounded selected-key snapshot rechecks current heads,
+7. For a NONEMPTY surviving selection, invoke existing capture_context EXACTLY
+   ONCE on the same owner with surviving exact IDs. Empty selection retains its
+   acquired owner and uses None; capture_context([]) is never called. Its fresh bounded selected-key snapshot rechecks current heads,
    profile/lineage/media and emits existing ContextIdentity. Drift/conflict/
    tombstone/media failure AFTER selection refuses the operation; no reselect,
    refill, null-context retry or second provider call. At most3 additional sample
@@ -294,3 +295,33 @@ Source basis: exact current baseline files, existing bounded query/capture,
 Dispatch/Ledger lifetime, Reader two-pass code, notebook normalizer and Writer
 normalized receiving contracts; independent consumer intake. All additions above
 are proposed design decisions, not observed implementation or runtime behavior.
+
+
+## Accepted-review clarifications and implementation mapping
+
+Independent precode review accepted Docs050b4434. Capture is conditional on a
+nonempty selection. Exact selected-head currentness is freeze-to-capture only:
+a later update/forget does not revoke already captured historical bytes. Target
+hash exclusion detects identical bytes, not disjoint handwriting/crops or efficacy.
+Writer confirmation resolves the actual normalized source unit whose document,
+page and source digest correspond to the retained PNG; generic Generate/Refine
+Turn.text is never used as its OCR interpretation. Unsupported correspondence
+refuses. Caller provenance remains separate from native revision authority.
+
+The implementation reuses existing Ledger prepared Turn/Source publication before
+Writer source-image normalization. Its stable operation-derived stage refuses
+replay/interrupted resume instead of acquiring new examples or repeating a model
+call. The existing bounded Dispatch event-admission set is reused for immediate
+in-process stage/confirmation exclusion; no new registry or persistence schema.
+The successful normalizer result still enters existing normalized Writer receiving.
+A failed/interrupted prepared stage remains for original-operation reconciliation;
+its presence is not evidence that normalization or note generation succeeded.
+
+Reader keeps the successful/refused Capture in its operation owner until outer
+request finalization and failure output settle. An Arc shares the exact immutable
+ConfirmedContext/owner with the two calls; it neither copies a new context snapshot
+nor renews revision currentness. Runtime Dispatch can independently continue pinning
+mode after the operation drops. The first typed image/confirmation adapter supports
+checked ImageUse records and matching normalized source records; other capture
+shapes lacking this exact correspondence refuse. Native input attachment remains
+an unfinished integration task, not an inferred capability.

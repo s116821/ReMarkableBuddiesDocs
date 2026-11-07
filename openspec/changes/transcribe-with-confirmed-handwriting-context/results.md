@@ -190,3 +190,64 @@ contract maps existing same-Store custody, actual Reader two-pass payloads, Writ
 source-image normalization and distinct source-bound confirmation. Native Writer
 ingress/input intent attachment and live learning evidence remain open. No new
 model/API/tablet action, fixture image, gold answer or recognition score change.
+
+
+## Ordinary runtime integration implementation — November 6, 2026
+
+Source `c0ea9d44cf0d484520bfd4ead2b81d25b53f7e7e` implements the accepted
+Docs050b4434 runtime contract in the same paired draft. Configuration defaults
+to disabled; new fields append after the legacy positional Config prefix. Runtime
+recency selection shares existing head/lineage traversal, freezes at most3 exact
+revisions from16 media candidates and captures on the same Store. Conflicts,
+forgotten/unusable entries, target hashes and partial/empty diagnostics remain
+explicit. Public query ordering and standalone v1/v2/v3 vectors stay unchanged.
+
+The actual initial Reader path uses one captured owner for both recognition calls
+and retains successful/refused custody through outer finalization/failure output.
+None keeps old content sequences. Typed Writer source receiving admits the retained
+image, records an existing prepared Turn/Source stage before recognition, normalizes
+WholePage, then enters existing normalized-source Generate receiving. Its existing
+bounded event admission plus durable stage refuse replay/interrupted resume.
+Explicit confirmation resolves actual corresponding normalized page text rather
+than generic Writer request text, freezes CAS/time/operation/input, and publishes
+only through Handwriting1. No new Store/domain/registry/worker or native ingress.
+
+Actual Windows locked/offline evidence:
+
+- Handwriting group66 passed, including unchanged record/query/transcription vectors,
+  real ready4/legacy runtime custody, recency/update/forget/tie/conflict/media/window/
+  target exclusion, foreign Store/cancellation/stale capture, actual Writer receiving,
+  explicit source confirmation, replay and failed-output lifetime.
+- Actual Reader simulator uses the production orchestrator in seven cases: disabled,
+  empty, confirmed examples, cancellation, provider error, independent disagreement
+  and text-byte refusal. It checks both real calls, target/example ordering, no
+  proposed question/answer in verification and exact disabled/empty payload equality.
+- Five actual CLI suites passed13 tests: configuration schema1, correction3,
+  transcription3, portable configuration2 and saved inspection4. No provider/network
+  call. Existing saved-inspection library4 and schema library3 checks also passed;
+  the new declaration projection and positional-prefix checks are in the66 group.
+- Actual emitted schema matched embedded10107-byte document
+  `3d353dd7cebd6d058569de37ee94cb3d2e02d5ab646086cf0652ad4ace337ffb`;
+  existing Ajv8.20.0 validated all59 structural cases with no default mutation.
+  Typed original-byte semantics remain separate from schema acceptance.
+- Formatting/whitespace and Windows default-feature Clippy lib+tests with
+  `-D clippy::all` passed; inherited platform dead-code warnings remain.
+
+Final checkout hardening pins the two new Reader addenda to LF in .gitattributes.
+The focused actual Reader seven-case regression passed again after that correction,
+including the new no-CR/trailing-LF payload assertion. The66/13 prior results retain
+their content-checkpoint attribution; this final change affects only those addenda's
+checkout bytes/test assertion, not existing standalone or CLI contracts.
+
+Retained failures: initial test-only temporary borrow, incorrect fixture assumptions
+(prepared text, ready4 mode transition and simulator trigger setup), and a test
+initializer Clippy finding were corrected without weakening production guards.
+Initial source checks and all failed/passing logs remain local. No broad unchanged
+builds or API/device executions are counted as handwriting evidence.
+
+Independent implementation review and this successor's required hosted checks are
+pending. Native Writer image ingress and explicit intent attachment, confirmed
+learning benefit/nonregression, frozen recognition gates and paired delivery/spec
+sync/archive remain OPEN. Source receiving currently admits checked ImageUse plus
+matching normalized interpretation; unsupported capture correspondence refuses.
+No automatic native activation, live-learning success or whole REM26 completion.
