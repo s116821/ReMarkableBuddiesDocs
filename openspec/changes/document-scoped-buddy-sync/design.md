@@ -291,3 +291,9 @@ limits. Reader and remaining memory/research consumers remain separate unfinishe
 work. Reader has multiple model submissions and needs its own coherent request
 lifetime and custody; the single-submission Writer snapshot is not a ready Reader
 implementation.
+
+### Installed resident Reader input
+
+The [selected Reader input contract](selected-reader-resident-input.md) defines the
+installed source-only constructor, registered document admission, one atomic
+Prepared publication and the effective preference lifetime through Generated.

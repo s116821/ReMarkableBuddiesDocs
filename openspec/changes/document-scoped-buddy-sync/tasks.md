@@ -304,3 +304,11 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Connect the actual selected Writer command before new-work policy/credentials while preserving original-only recovery and all local settings outside the portable allowlist.
 - [x] Verify changed pins, disabled policy, delayed/lost/canceled model submission, original recovery and result refusal through the real adapters; report modeled versus live evidence and keep broader consumers/native/provider gates open.
 - [ ] Obtain coordinator independent final source review, coordinated publication and hosted checks for this consumer increment; prior command-batch CI does not cover it.
+
+## Installed resident Reader input
+
+- [x] Independently review the [selected Reader precode](selected-reader-resident-input.md) and reconcile the final Writer submission API.
+- [x] Verify received pure and mixed document custody, selected Prepared capture and receipt, and original-only recovery with local Store and Worker fixtures.
+- [x] Exercise all three guarded Reader model stages through Generated using identical captured bytes, effective preference invalidation and joined selected memory in the local fixture.
+- [ ] Verify the installed input-only constructor, effective admission at startup and each genuine release, repeat and interruption behavior, and ordinary LocalOnly behavior on the qualified runtime.
+- [ ] Independently review the paired source and contract, reconcile current hosted evidence and complete the later Main-owned installed Reader qualification.
