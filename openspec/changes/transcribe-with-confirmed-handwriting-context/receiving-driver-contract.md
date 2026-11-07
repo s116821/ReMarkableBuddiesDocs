@@ -93,3 +93,22 @@ the same target bytes. The seed PNG may be losslessly re-encoded to satisfy
 the correction sample byte cap when every decoded RGB pixel matches the
 reviewed full frame. The target evaluation material stays outside the runner.
 This single case is exploratory.
+
+### Explicit enrollment comparison after valid abstention
+
+A separately selected fixture may proceed to a human-reviewed seed gate
+after valid WholePage Unreadable. Only the seed cell in this fixture can
+carry the operation-owned Writer abstention capability. Every target still
+requires successful Writer receiving. The reviewed seed gate identifies
+the abstention, exact image, current source and turn, and separate save
+operation. Its distinct approval decision authorizes the fixture owner to
+exercise typed enrollment with the bounded reviewed seed text. This is
+fixture provenance. The review file supplies no native or product intent.
+
+The post-confirmation arm starts only after observed successful publication.
+It uses the same target bytes and ordinary Writer context consumer. A
+malformed, unavailable, stale or unapproved result ends the comparison.
+The earlier live selectors retain their legacy complete-page-only rules.
+Any fresh invocation needs its own unused packet and independent review.
+The maximum remains four calls before confirmation and six total for one
+target. Valid seed abstention naturally uses one fewer call.

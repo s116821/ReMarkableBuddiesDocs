@@ -394,3 +394,10 @@ publication. The prior notebook backup, restore and second export preserved
 both the exact envelope and PNG bytes. Both single-test runs passed.
 The exact sources, adapter patches, binary hashes, receipts and object
 inventory are pinned in the local evidence for the associated REM-26 handoff.
+
+The explicit enrollment receiving driver passed seven offline controls with
+five fixture/live selectors ignored. A declined fixture review stops at
+three engine calls with no confirmation. The accepted synthetic path uses
+five calls, observes a committed nullable-original record and presents the
+exact seed image and controlled text to the paired target normalization
+only. No live run is credited.
