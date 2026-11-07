@@ -73,3 +73,11 @@ Writer source-image normalization and distinct explicit correction intent. Disab
 retains current behavior; no native Writer ingress or implicit Refine confirmation.
 No new Store/domain/retrieval framework or model/device execution. Independent
 precode acceptance precedes source edits; learning efficacy remains unproved.
+
+## Explicit Writer enrollment after abstention
+
+Extend this change with [the reviewed precode candidate](writer-abstention-enrollment.md)
+for an explicit user-supplied transcription of the exact retained image after valid
+WholePage abstention. The typed enrollment boundary preserves image custody and
+correction publication semantics while recording the absence of an original reading.
+Native intent attachment remains separate from source/API qualification.

@@ -144,7 +144,7 @@ model-qualification prerequisite, implicit selector activation or premature arch
 
 ## Explicit image-bound Writer enrollment after abstention
 
-- [x] Draft the [precode amendment](writer-abstention-enrollment.md) and failure matrix.
+- [x] Draft the [precode amendment](writer-abstention-enrollment.md), failure matrix, and active OpenSpec scenarios.
 - [ ] Independently accept the exact custody, intent, compatibility and payload boundaries.
 - [ ] Implement and verify accepted source/API controls, including frozen legacy vectors.
 - [ ] Attach and qualify the real native image and explicit user-intent owner separately.

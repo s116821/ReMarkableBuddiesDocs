@@ -73,14 +73,11 @@ reading exists. Do not send a fabricated original, the abstention token as
 transcript, or evaluator text. Pin each affected profile, payload and identity
 before source implementation.
 
-New consumers accept both shapes. Older readers cannot interpret the new
-variant and must refuse it through existing version/value validation. Before
-implementation, establish whether older store, backup and restore consumers
-refuse the new value before mutation. If this cannot be guaranteed with the
-existing format and validators, require an independently reviewed capability
-boundary before enabling publication. Cover inspection, status, forget,
-backup/restore and sync/portable behavior through the existing scope and
-guards. No new sync behavior or portability claim.
+New consumers accept both shapes. Older typed consumers must refuse unsafe
+interpretation or mutation. Older backup/restore may preserve the new record
+and media as opaque bytes, with no claim of typed support. Require exact
+object preservation through that path. Only an observed unsafe path warrants
+a reviewed capability guard. Existing portability and sync scope applies.
 
 ## Focused acceptance matrix
 
@@ -96,7 +93,7 @@ guards. No new sync behavior or portability claim.
 | Legacy strings, digests, payloads and tests | Exact bytes and old behavior |
 | New valid variant and missing/null/empty/mismatched variants | Only the explicit valid shape admits, with exact media and no synthetic original |
 | Mixed context, query/inspect, update and forget | Correct nullable representation, truthful payload, stable identities and existing exclusion rules |
-| Prior-version reader and current backup/restore round trip | Fail closed before mutation when unsupported, current version preserves exact record and media |
+| Prior-version reader and current backup/restore round trip | Refuse unsafe typed interpretation or mutation; opaque backup/restore preserves exact record and media |
 | Missing native owner | Source/API evidence only, native integration stays open |
 
 This amendment is precode. Independent review must accept the ownership and

@@ -208,3 +208,33 @@ of unknown publication SHALL follow.
 #### Scenario: Refinement is not confirmation
 - **WHEN** ordinary Refine, dissatisfaction, model agreement, cancellation or question-mark erasure occurs
 - **THEN** zero handwriting correction records are created unless a separate explicit confirmation intent was supplied.
+
+### Requirement: Explicit Writer enrollment after abstention
+
+The typed Writer receiving owner SHALL be able to enroll user-confirmed
+transcription text for the exact retained Writer image after valid WholePage
+abstention, subject to explicit user intent, same-Store custody and existing
+correction publication and replay guarantees.
+
+#### Scenario: Explicit enrollment of the retained image
+
+- **WHEN** the admitted owner supplies the user's explicit enrollment intent and current bound abstention evidence
+- **THEN** publication stores the exact admitted PNG and confirmed text with null original and distinct abstention provenance
+- **AND** the operation creates no normalized source or generated note
+
+#### Scenario: Missing intent or invalid custody
+
+- **WHEN** the owner lacks explicit intent or valid current abstention evidence, or image, turn, scope or correction heads changed
+- **THEN** no correction is published and existing records remain unchanged
+
+#### Scenario: Legacy correction and mixed context
+
+- **WHEN** a legacy correction is read or used alone
+- **THEN** its existing representation and payload identity remain unchanged
+- **AND** a context with an enrolled example explicitly represents the absent original and uses the pinned mixed recipe
+
+#### Scenario: Older typed consumer and opaque backup
+
+- **WHEN** an older typed consumer encounters an unsupported enrollment record
+- **THEN** it refuses unsafe interpretation or mutation
+- **AND** supported opaque backup and restore preserve exact record and media bytes
