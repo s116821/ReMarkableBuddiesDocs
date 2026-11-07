@@ -192,3 +192,20 @@ The connected worker, receiving-control/recovery, uncertainty projection and
 format5/current notebook producer remain implementation work in this SAME paired
 delivery. This checkpoint does not sync/archive the unfinished parent, qualify
 production publication or create a separately completed prerequisite PR.
+
+
+## Original-only custody recovery correction
+
+The initial full hosted source run42389886140 at61ed900 found one regression:
+original pending recovery returned unavailable after departed mode. The unchanged
+executable assertion correctly requires historical custody to remain available.
+Correction ad9e372 (descending from integrated portable adapter458a4cd) routes
+recover_original_intent, recover_pending and historical selected Writer recovery
+through ordered read-only gates, independently of current mode/product readiness.
+Actual new preparations, model sends and mutations retain readiness/mode checks.
+
+The exact clean correction commit passed the existing executable recovery test
+on author Linux/Rust1.98.1: one test passed, no assertion weakened. The continued
+Worker work was preserved separately during that exact-commit check. Root owns
+successor full hosted CI; the failed predecessor run remains failure evidence.
+The accepted r2 precode review task is reconciled rather than reopened.
