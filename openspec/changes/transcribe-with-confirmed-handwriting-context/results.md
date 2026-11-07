@@ -260,3 +260,44 @@ is completed-success, including required Checks, application Build and Integrati
 The ready4-specific hosted task is complete. This supersedes only the earlier
 pending snapshot for that exact ready4 revision; it is not CI evidence for later
 runtime source `c0ea9d44cf0d484520bfd4ead2b81d25b53f7e7e`.
+# Local receiving comparison driver
+
+The test-only `runtime_handwriting::receiving_driver` reaches the actual Writer
+image normalizer, Generate receiving and explicit normalized-source confirmation
+on one Store. Its engine is the existing synthetic `Calls` implementation;
+there is no live-provider or public CLI entry. Three empty-profile target cells,
+one seed operation and three confirmed-profile cells produce exactly fourteen
+synthetic calls. The seed is confirmed once through the actual explicit intent
+adapter. The resulting current correction revision remains unchanged; only
+normalization calls receive its exact text and PNG. Internal record IDs are
+deliberately absent from model payloads. Byte-duplicate seed/target and
+target/target inputs, invalid PNGs and zero/four targets refuse before any call.
+A first normalization failure stops after one call and never reaches seed
+confirmation. Fixed baseline-first ordering is mechanics evidence, not randomized
+efficacy or a substitute for later reviewed experimental ordering.
+
+Local validation: `cargo test --locked --offline --lib runtime_handwriting --
+--test-threads=1` passes eleven controls in 47.89 seconds, including the three new
+driver controls and the existing actual Reader two-pass control. This covers the
+small fixture-helper refactor as well as affected same-Store selection,
+ownership/error and replay controls. `cargo clippy --locked --offline --lib
+--tests -- -D clippy::all` passes with the existing platform dead-code warnings.
+No broader unchanged CLI/schema suite is relabeled as rerun for this test-only
+increment. Initial failures are retained: compilation assumed RequestScope was
+Clone; a later control incorrectly expected an internal record ID in the model
+payload. The fixture now supplies the explicit scope fields and checks actual
+seed bytes plus unchanged stored revision, without changing production payloads.
+
+The bounded retained-corpus inventory found controlled historical Hunter
+references with independently read correction/provenance, not personal learning
+records. The Hunter small seed and p1 target belong to the same familiar letter;
+three independent same-writer case-distinction targets and full supported seed
+transcription have not been established. Howe/Einstein-Besso are different
+writers, and the scripted technical sample is synthetic. These are precise gaps
+in this inspected set, not a claim that no suitable lawful corpus exists.
+Confirmation remains distinct caller-asserted intent; a qualification operator
+can exercise supported controlled data honestly without inventing authenticated
+human infrastructure or a native UI event. No API/model/tablet run or new efficacy
+score follows. All original recognition failures and learning/native/delivery
+gates remain unchanged.
+

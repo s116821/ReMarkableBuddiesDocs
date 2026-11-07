@@ -129,3 +129,13 @@ No model/device execution or new recognition experiment is selected here.
 
 These tasks extend the same paired delivery; no new CLI-only completion, broad
 model-qualification prerequisite, implicit selector activation or premature archive.
+
+## Local receiving comparison driver
+
+- [x] Specify the bounded test-only receiving driver and confirmation provenance limits before code in receiving-driver-contract.md.
+- [x] Reuse one actual Store, production Writer normalization/Generate and explicit normalized-source confirmation for the six-cell synthetic comparison.
+- [x] Refuse duplicate images, invalid images and empty/oversized target sets before calls; retain first-failure no-retry behavior.
+- [x] Validate actual receiving controls and inherited ownership/replay/Reader controls; preserve synthetic-only attribution and initial failures.
+- [x] Inventory retained corpus provenance without promoting evaluator truth or controlled fixtures into real user confirmation.
+- [ ] Independently review the exact test-driver source/contract pair and required hosted checks.
+- [ ] Admit a distinct same-writer seed/target corpus and separately reviewed live runner before any efficacy call; no execution is selected by this driver.
