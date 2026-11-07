@@ -529,3 +529,35 @@ Small logs remain under Root's `outputs/rem42-stop-portable-reconcile`, includin
 This is source and local-host qualification. Current hosted/package checks,
 fresh target sampling, actual shutdown/recovery and production enrollment remain
 open; this change is not archived or declared complete.
+
+## November 7 memory-response test synchronization
+
+Recovery integration run `42324911614` failed its Windows memory-forget host
+check while waiting for initial response consumption. Its retained diagnostic
+shows one completed HTTP 200 request, the complete reader lifecycle and all four
+required preview values. That later snapshot does not prove why the earlier
+animation-frame poll timed out. An unchanged local Windows reproduction passed;
+the original hosted failure remains evidence, not a waived check.
+
+Manager `a4fcdcabcdeecf1192b31ed0b979b26ef526200a` adds explicit 100 ms polling
+to only the preparation and reload `waitForFunction` calls. Both predicates,
+strict completion helpers, six-second synthetic delays and original 14-second
+aggregate deadlines remain byte-for-byte unchanged. Independent review verified
+the complete two-option delta. The corrected file is SHA256
+`2312482cdd47377e7f51ec3ec9d8a3d05b8b359573c3c7c60200178ddca92fc7`.
+The helper's two tests pass. Actual changed local Windows browser and source
+Electron flows pass; preparation completed at 6,112 ms and reload at 6,169 ms.
+This removes dependence on animation-frame polling for these response checks;
+the exact hosted timeout cause remains unproved. Current hosted checks must pass.
+
+An initial local application guard expected two generic timeout expressions but
+found three, including an unrelated heading wait. It stopped before any write.
+The command nevertheless ran the unchanged host tests; that run is not candidate
+validation. The corrected application targets only the two function waits and
+retains the heading wait unchanged. Logs distinguish the unchanged rerun from
+`memory-forget-interval-applied-windows.log`.
+
+Recovery PR #57 normally incorporates this test-only successor as
+`0eadfd7e7ced1573adf7f34620bd059e52035d31`. Its nine recovery-specific source
+files remain unchanged. No production profile or tablet/runtime behavior is
+enabled by this correction; actual Stop and recovery acceptance remains open.
