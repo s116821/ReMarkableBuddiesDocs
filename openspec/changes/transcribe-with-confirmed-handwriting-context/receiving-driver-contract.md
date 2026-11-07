@@ -60,3 +60,25 @@ single-request provider option. Frozen target PNGs are identical within each
 pair. Evaluator reference text, masks and anchors stay outside the fixture
 inputs. The controlled seed reading enters only the explicit confirmation
 stage. A reviewed controlled confirmation is fixture provenance.
+
+The diagnostic fixture retains exact engine-returned text up to 64 KiB before
+the production parser receives it. Larger text records only its size and digest.
+Per-cell evidence records the normalization or receiving stage and the existing
+Writer status. An unsuccessful Writer status ends the comparison even when the
+receiving function returned a report. The fixture records no transport headers,
+credentials or provider error messages.
+
+The WholePage instruction advertises a 32,768-byte page limit. The existing
+typed receiving path enforces 4,096 bytes per page and 16,384 bytes for the
+response. This diagnostic leaves the prompt and validation in place to preserve
+the same comparison. The consumed first baseline returned an engine result but
+retained no text, so its exact refusal cause cannot be recovered.
+
+WholePage requires the entire spread to be readable and treats an empty
+`unreadable` response as valid abstention. The receiving fixture cannot use
+that result for Generate or seed confirmation. The Barton evaluation masks
+uncertain spans after receiving, while the actual spread still includes
+overprint, faint ink and ambiguous suffixes. This makes the frozen corpus a
+poor fit for qualifying the complete WholePage receiving chain. A valid
+abstention, malformed response and downstream Writer refusal are recorded
+separately.
