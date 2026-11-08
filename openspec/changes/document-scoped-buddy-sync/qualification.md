@@ -229,3 +229,14 @@ Four selected notebook controls and thirteen ordinary notebook runner and
 persistence regressions passed locally. These are host fixture results.
 Provider, tablet, broader Worker qualification and final paired delivery
 remain open.
+
+### Selected notebook stage interlocks
+
+Buddy #139 successor `0edd8854de9b8dfd9793302a80c455e15baad84d` passed two
+additional Windows host controls. After the first Map was durably generated,
+both tests observed the second Map's original Prepare. A shared Writer
+preference edit then refused the second model submission. In the other test,
+an independent selected global memory edit after submission refused the second
+result while the document token still matched. Both runs stopped with one
+confirmed Map and no Reduce or draft. The existing progress-versus-completion
+read-reservation regression also passed on the same test executable.
