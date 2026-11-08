@@ -311,3 +311,22 @@ The ordinary command subprocess tests cover confirmation, status, query,
 input refusal and the legacy-sync refusal. Selected data transfer leaves
 recognition ingestion, the shared profile-wide Query command, and live
 provider/native qualification open.
+
+#### Selected Reader document uncertainty
+
+Buddy #139 source `5e27c12a3ef8fc75d130531287e2e76a760c7fa2` passed 13 focused
+Reader, Worker, settlement and Writer guard regressions.
+
+The installed Reader policy checks the shared document fence while holding its
+ordered preference, catalog and document gates. Its acquisition, submission
+and result checks use the existing phase allowance for original receipt,
+predecessor, retained fact and exact Worker manifest reads.
+
+A host fixture initially acquired the Reader policy with both an active and
+an exclusively retained unresolved local original. With the fence in place,
+both acquisitions refuse, including the retained case with a different
+conversation root in the same document. A newly published unresolved original
+also refuses at the submission boundary after earlier successful acquisition.
+An unrelated registered document and a verified foreign Worker receipt remain
+admissible. The fixture exercises policy and Store custody without a tablet
+or model call.
