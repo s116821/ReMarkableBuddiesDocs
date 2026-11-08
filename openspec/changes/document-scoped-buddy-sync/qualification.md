@@ -287,3 +287,27 @@ Older receipts can use a surviving incoming copy. When that copy is absent,
 admission requires the saved value to reproduce the original descriptor's
 length and digest exactly. A discarded noncanonical original remains
 unprovable from the old receipt alone.
+
+#### Confirmed handwriting through the selected Worker
+
+Buddy #139 source `fd92de7ca47fc6dd1f3bd214e9c8b8b2853a94b9` passed 13 focused
+host tests and three handwriting CLI subprocess tests.
+
+Local HTTP fixtures use the selected command dispatcher and real format5
+Stores. A first confirmation proves current catalog absence, commits its
+typed original, and becomes discoverable by the existing Worker. The peer
+reopens the Store after interrupted activation and finishes the same local
+receive receipt. The exact sample and envelopes survive transfer. The peer
+does not acquire a local command receipt for the foreign envelope operation.
+
+An identical original replays historically. Changed content or a concurrent
+attempt to publish the same local operation in another correction conflicts.
+A competing update preserves the losing closure. Forget appends a tombstone
+without purging its original sample. Rollback appends a fresh conditional
+update. A missing included sample blocks activation. Explicit omission admits
+metadata with incomplete media and exposes no sample, even with cached bytes.
+
+The ordinary command subprocess tests cover confirmation, status, query,
+input refusal and the legacy-sync refusal. Selected data transfer leaves
+recognition ingestion, the shared profile-wide Query command, and live
+provider/native qualification open.

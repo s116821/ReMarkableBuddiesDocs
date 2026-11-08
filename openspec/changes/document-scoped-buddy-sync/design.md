@@ -151,6 +151,18 @@ handwriting files; core/catalog/Store/format5/admission/CLI/real callers and Doc
 remain coordinated here. No additional review of these accepted seams is required
 before that disjoint component implementation.
 
+### Correction catalog discovery and local transaction custody
+
+The correction command publishes its explicit original through the existing
+selection transaction. Catalog discovery enumerates bounded published
+selection heads, filters for Handwriting in the current binding, and verifies
+the reachable local genesis and exact typed closure under the ordered gates.
+An imported genesis has a receive receipt and cannot register a local
+correction. Staged heads and arbitrary record history grant no discovery.
+The Store's existing format5 operation claim and publication mutex arbitrate
+operation UUID reuse against accepted selection history. No additional journal
+or index is needed.
+
 ### Shared-preference Manager and one-shot command boundary
 
 The coordinated Manager implementation follows the
