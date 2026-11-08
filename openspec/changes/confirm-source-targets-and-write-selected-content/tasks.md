@@ -16,3 +16,4 @@
 - [ ] Sync actually completed canonical specs and archive only after all corresponding acceptance in the same paired delivery.
 - [ ] Implement selected format6 ordinary target archives and generation-local plan-bound restore provenance while preserving format4 encoding/admission and exact global-receipt compatibility.
 - [ ] Verify4→4,6→4,4→target,target→target, exact closure/media, changed archive/base/origin/family refusal and original staging/CURRENT/capabilities recovery under the existing restore owner.
+- [x] Preserve compound Store-wide operation collision custody through validated family6 inheritance and verify real concurrent cross-scope memory producers against both format5 and promoted format6.

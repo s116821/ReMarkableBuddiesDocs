@@ -111,3 +111,45 @@ request window: it preserves all original timestamps, operation and corresponden
 spends the original saved allowance before repeated proof reads and mints no
 policy, token or HTTP/model permit. A later live request requires normal fresh
 admission. No native/live acceptance or completed-change archival follows.
+
+## Currentness and inherited operation custody
+
+Loaded configuration provenance is now an in-process, serde-skipped snapshot of
+exact file bytes or observed absence. Reader target ownership, regional Writer
+stages and saved export proof check that original snapshot, Store mode and ready
+generation headers against one caller-owned cumulative allowance. Tests change
+configuration bytes or capabilities during recognition and verify refusal before
+a second model call or draft publication. Existing serialized configuration stays
+unchanged. Incomplete or unreadable normalization also stops after its first call.
+
+A confirmed-handwriting-context fixture verifies one frozen context across regional
+normalization and generation, and exact saved profile identity after reopen. The
+portable source_target_mask_v1.json fixture binds original and encoded mask bytes,
+RGB8 output and SHA256 d1e59d94527fb228a1363704612192bdd45586d68844dca8bf7abcfbffa3e8c9.
+Its alpha example preserves the original canvas and includes only the selected
+pixel centers. These are synthetic offline checks, not live recognition evidence.
+
+Independent integration review found that the compound Store-wide local-operation
+check was conditional on raw format5 and therefore skipped promoted format6.
+It now uses the validated inherited base family while retaining the original
+mutex-held, bounded reachable-history traversal. A real promoted selected Store
+runs two concurrent memory producers in different scopes with one operation ID;
+exactly one succeeds, the other receives LocalOperationConflict, and the winner's
+original replay is unchanged. The identical format5 control still passes. The new
+test reproduced the missing collision check before the correction; the failed log
+is retained separately from the passing result. Selection-publication regression
+passes58/58, including original-receipt preservation at history saturation, and
+the integrated target selection passes50/50. These results do not complete archive
+restoration, exact Native combination, live/device acceptance or the whole change.
+
+On the same frozen source bytes, the executable --writer-note regression passes:
+normalization receives only the exact original-frame mask, generation receives no
+image, and a restarted Refine uses the original saved regional source. Clippy with
+all features/all targets and warnings denied passes, as does formatting. Central
+strict validation passes128/128 and guidance/provenance36/126. Original failed logs
+remain distinct; the active cache is reused without incremental/debug outputs.
+
+The corresponding source checkpoint is aaea8a3951ac57f6458a4d28918735d0026f726c,
+tree0ff5e3533d85e36493e9d852bf31f71372d832ec. This contains the currentness,
+confirmed-context, portable-vector, executable Writer and inherited operation
+custody continuation. Archive/restore remains subsequent unfinished source work.
