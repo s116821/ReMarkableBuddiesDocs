@@ -357,8 +357,20 @@ evidence and ordinary attachments. Store maintenance retains the distinct
 selected-mode and handwriting admissions. Both recognition calls retain the
 model-content lifetime while using the selected attempt's execution wrapper.
 
-This is source composition, pending independent review and combined validation.
-The imported recognition context still owns local corrections; selected context
-ownership and its submission/result checks remain open in the tasks above.
-No provider, native-input, model-fidelity or complete shared-consumption result
-follows from this merge. Both feature changes remain active and unarchived.
+Independent review reproduced a Query compile error because the imported
+`original_text` is optional. Successor
+`c3806f9fa387854890c4f4a95443e7e923bda904` fixes that compatibility issue and
+explicitly preserves the existing selected null-original refusal. Ordinary
+confirmed enrollment after abstention retains its separate admission rule.
+
+The corrected source passed 55 focused host tests and the Windows non-test
+library compile. Two receiving fixtures passed on the same production diff
+with the preceding test-only fixture iteration. Both frozen Docs composition
+and its requirements passed all 127 strict OpenSpec items. The initial compile
+error, fixture mismatch and overlapping-test Windows relink failure remain
+recorded; hosted Linux CI is still required on the final published source.
+
+The imported recognition context still owns local corrections. Selected context
+ownership and its submission/result checks remain open in the tasks above. No
+provider, native-input, model-fidelity or complete shared-consumption result
+follows from this composition. Both feature changes remain active and unarchived.
