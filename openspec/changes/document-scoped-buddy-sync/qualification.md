@@ -240,3 +240,31 @@ an independent selected global memory edit after submission refused the second
 result while the document token still matched. Both runs stopped with one
 confirmed Map and no Reduce or draft. The existing progress-versus-completion
 read-reservation regression also passed on the same test executable.
+
+### Selected Worker original recovery and intent custody
+
+Buddy #139 source `43fefad54a1988b445ea289a47389120001bd0c9` exercised the
+production Worker protocol with local HTTP and real format5 Stores.
+
+- A restart after durable outbox preparation restores a missing descriptor
+  from its original bytes and provider ID. A create whose observation fails
+  retries the same fixed slot and retires the exact original only after
+  verified local activation. The passive Store records its own receipt.
+- A superseded original only reads its agreed slot. Invalid occupied data is
+  reported as unsupported or corrupt. Changing mode stops old-epoch requests
+  before the HTTP adapter is entered.
+- An exact unresolved local receipt in either the local or competing winner
+  keeps that winner committed and unapplied across Worker restart. A competing
+  winner without the receipt applies once and preserves the losing closure.
+  Health distinguishes observed, committed and applied custody, and an applied
+  optional omission continues to report incomplete media.
+- Active and retained graphs are checked separately. A Writer probe on the
+  passive Store accepts the exact applied foreign receipt/fact pair alongside
+  a retained sibling root, while the foreign operation grants no local original
+  receipt. A copied pair without Worker provenance and locally attributed bytes
+  without an original Commit both refuse. An exclusively retained local
+  original still fences a new request until genuine settlement.
+
+The five Worker recovery tests cover the new custody and status branches.
+Provider qualification, optional domain integrations, broader end-to-end
+delivery and the parent archive remain open.
