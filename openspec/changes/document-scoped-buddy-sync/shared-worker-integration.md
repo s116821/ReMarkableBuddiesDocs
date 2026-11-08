@@ -504,6 +504,59 @@ An old reader must reject format5, rather than silently ignore a new marker.
   ordinary maintenance. New format5 acceptance does not enable the deferred
   --inspect-selected-outbox format4 extension.
 
+### Selected notebook invocation
+
+The selected Writer command envelope carries the exact expected selection
+evidence, raw selected-head digest, root reference and notebook Generate or
+Refine request. Refine additionally carries the exact Source3 and generated
+draft references. The plain notebook command keeps its ordinary format4
+admission and joined export stays on its existing ordinary route. A selected
+notebook request cannot infer an aggregate from a path, conversation ID, or
+title. Its admitted source document must match the qualified scope key. An
+original preparation already in local custody is historical, including one
+observed after reopen or winner activation, and cannot recreate a model grant.
+
+Plan the complete invocation before the first publication. Reuse validated
+source bytes and the existing coverage and payload reservations. The initial
+selected transaction atomically appends the Writer user turn, Source3 (for
+Generate), and plan while advancing the exact root. Refine references the
+existing archive and binds the exact prior draft revision. The producer uses the
+same semantic validation as adoption and reopening. Existing immutable envelope
+bytes, canonical media and exact stage/source references remain in the closure.
+
+Each stage has one original prepare transaction and consumes its own in-process
+submission witness. Preserve the original accepted generation, mode lease and
+600-second invocation lifetime while advancing only through positively observed
+commits. Initial admission is bounded to 60 seconds. Each stage retains the
+ordinary 95-second progress cutoff and requires a guarded adapter whose timeout
+fits within that stage and the remaining parent window. The ordinary OpenAI
+adapter keeps its 90-second default. Release the ordered gates for model
+completion and never renew any window between stages.
+
+Apply the effective Writer role and notebook prompt from one shared preference
+snapshot, including qualified absence. Optional subject memory must be a
+selected query sealed to the original request and document. All other memory
+pins stay exact. If the notebook document also owns memory facts, only the
+notebook invocation's positively observed document token may advance, under
+the same ordered gates and original accepted base. Reserve admission, stage
+handoff, progress and result read allowances once from the original bounded
+call count, with a separate selected-memory allowance when enabled. Progress
+cannot spend the final publication allowance.
+
+Build selected history from the captured projection. Maps stay image-free.
+Reduce uses the same cumulative historical-derivative resolver as ordinary
+receiving, with object reads limited to the selected closure's pinned handles.
+Missing required historical media refuses before model access.
+
+Recheck the exact prepared token and original preference/memory pins under the
+ordered selected admission gates at synchronous submission and result
+publication. A lost acknowledgment, winner, stale pin or exhausted reservation
+ends the invocation without advancing or reconstructing a permit. A commit
+attempt with an unobserved outcome is uncertain, including initial Prepare
+before any model submission. A valid Reduce result can publish one visible
+Writer draft only against that same selected closure. It grants no export or
+native authority.
+
 Required tests use the current product notebook producer to create Source3,
 NotebookPlan and prepared/generated/failed stages with canonical media, then call
 Worker publication/recovery and second-Store adoption. Cover multi-chunk notebooks,

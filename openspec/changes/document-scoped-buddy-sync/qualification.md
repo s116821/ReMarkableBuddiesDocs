@@ -199,3 +199,33 @@ existing Worker and two Store actors under the test-only HTTP adapter. Assert
 original membership and receipt postconditions at each phase; elapsed time alone
 is never success. Its group-sharing fixture does not qualify an external account
 or a production executable command.
+
+## Selected notebook producer and Worker fixture
+
+Buddy #139 source `f8e0e9bebd091c8ea3ce57a5d6d9a0f3d75900f6` adds selected
+Generate and Refine to the existing explicit Writer command. The Windows host
+fixture supplies a validated synthetic notebook buffer and guarded scripted
+model replies. The regular command keeps its platform-specific file admission.
+The selected fixture exercises the production planner, model handoff, format5
+publication, local HTTP Worker transport and second-Store adoption.
+
+- Two Maps submit without images. Reduce receives the four exact validated
+  historical derivatives, the ordered Map results and selected memory from the
+  same document aggregate.
+- The publisher and receiver retain the same record and media bytes, including
+  a noncanonical original envelope and the canonical Source3 object. The
+  receiver adopts the original winning descriptor with its own Store token
+  and refines from the received archive.
+- Required canonical-media omission leaves the observed descriptor unapplied.
+  An optional image omission is reflected in the adopted closure and refuses a
+  later Refine before model submission. A false Reduce preparation reference
+  is refused before activation.
+- Initial AfterCommit and AfterActivation faults are uncertain with zero model
+  entries. Existing-only CLI reopen recognizes the exact request as historical
+  and refuses a changed request. An intervening winner refuses the late result.
+  A failed Map is durable and never starts Reduce.
+
+Four selected notebook controls and thirteen ordinary notebook runner and
+persistence regressions passed locally. These are host fixture results.
+Provider, tablet, broader Worker qualification and final paired delivery
+remain open.
