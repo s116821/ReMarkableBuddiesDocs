@@ -343,3 +343,22 @@ and encoded report limits. A verified empty catalog and a profile with only
 tombstones report complete-empty. Pending local registration and an omitted
 sample report partial without promoting any cached bytes into usable evidence.
 This evidence covers Query and selected Store custody.
+
+#### Composition with confirmed recognition
+
+Buddy source `aa71b2364a264b4b687842fcf5498bd50cc250d8` combines the selected
+Query and test-helper correction at `dab34c8d5dad83c9208da318c02cc75b20553b7b`
+with frozen Buddy #105 `cba080c10c407d9dbb7a536b74bfa6023a7f9fec`.
+The paired documentation combines `6fc331a0c75aa49fb363933d83e17f4647613ba0`
+with frozen Docs #108 `9c2ae290101a44b582bc766edec5d215bed6b564`.
+
+The image loader keeps its supplied bounded read callback for both resident
+evidence and ordinary attachments. Store maintenance retains the distinct
+selected-mode and handwriting admissions. Both recognition calls retain the
+model-content lifetime while using the selected attempt's execution wrapper.
+
+This is source composition, pending independent review and combined validation.
+The imported recognition context still owns local corrections; selected context
+ownership and its submission/result checks remain open in the tasks above.
+No provider, native-input, model-fidelity or complete shared-consumption result
+follows from this merge. Both feature changes remain active and unarchived.
