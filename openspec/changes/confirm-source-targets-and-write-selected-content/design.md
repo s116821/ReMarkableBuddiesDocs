@@ -146,3 +146,33 @@ unfinished behavior or claim predecessor tests qualify combined code. Offline
 fixtures cover actual startup/recovery/Reader transactions/history and Writer
 CLI normalization/refinement/export, invalid media/geometry/ownership, races and
 stage budgets. Representative live and supported-device evidence is separate.
+
+## Ordinary target archives and original restore provenance
+
+The selected archive identifier is format6. Format4 encoding/admission remains
+unchanged. Format6 has explicit validated ordinary source-target origin/feature
+metadata and exact actor/generation, lineage, notebook/target link and record/media
+closure. Neighboring markers, capabilities or arbitrary fields cannot admit it.
+Selected/group/cross-actor restoration stays outside this ordinary path.
+
+New preparation and restore originals are generation-local. Read the existing global
+receipt only for exact compatibility; never overwrite it or admit conflicting local
+and global originals for one generation. Restore has its own local identity bound
+to the existing conditional plan: same actor, archive SHA, base generation/history/
+family/provenance, target generation/history/family and staged configuration. Plan
+comparison includes family/provenance. Restore is neither a startup nor model grant.
+
+Reuse NotebookBackup, its closed object/lineage validators and existing conditional
+restore owner. Explicit additive cases are4→4 unchanged,6→4 yielding a target
+family,4→target retaining target capability, and target→target preserving both
+histories. Source live owner/policy files are not transferable. Stage complete target
+closure, origin receipt and contract before CURRENT; only a typed plan-bound staging
+context may read domain4 before activation. Keep ordinary maintenance gates closed.
+
+At every staging/CURRENT/capabilities interruption, existing-only custody finishes
+or reports the same original operation and unchanged conditions. It never replaces
+an operation, resets a deadline/allowance or grants model/policy/HTTP authority.
+Configuration remains staged for review. Exercise actual backup/inspect/conditional
+restore/reopen, all additive cases, changed archive/base/origin/family, exact media,
+activation/capabilities faults, legacy format4 and selected refusal. Original failed
+checks remain distinct. The same central change and paired delivery own this work.
