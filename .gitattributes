@@ -5,3 +5,4 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 docs/migration/*.zip binary
+**/prompt-math-layout-v1.txt text eol=lf
