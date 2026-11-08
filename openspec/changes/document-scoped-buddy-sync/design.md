@@ -163,6 +163,25 @@ The Store's existing format5 operation claim and publication mutex arbitrate
 operation UUID reuse against accepted selection history. No additional journal
 or index is needed.
 
+Profile-wide Query uses the complete observed catalog tail and its typed
+correction entries for the requested profile. It takes the catalog and
+correction gates in one ordered set, rechecks the catalog pin, and validates
+each current scope and its accepted custody with one cumulative allowance.
+Unreceived or unusable entries and pending local registrations make the
+report incomplete. Tombstones are excluded from matches. Included sample
+coverage alone makes verified sample bytes available. Query reuses the
+Handwriting1 response and its match and encoded-size limits.
+
+The frozen Buddy #105 `ConfirmedContext` owns `LocalCorrections`, and its
+`Runtime` requires a local dispatch lifetime. The combined source must add
+selected ownership to that same context rather than weaken the local lease.
+The selected owner retains the catalog tail and exact correction tokens.
+Reader analysis and verification must use the same context at their existing
+submission and result gates. The selected Writer entry currently accepts
+normalized text, so image context belongs at the typed normalization ingress
+from #105. The combined path must verify static PNG eligibility before the
+existing payload builder and must exclude target images by their exact hashes.
+
 ### Shared-preference Manager and one-shot command boundary
 
 The coordinated Manager implementation follows the

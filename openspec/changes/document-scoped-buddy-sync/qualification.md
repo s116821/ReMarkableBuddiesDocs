@@ -330,3 +330,16 @@ also refuses at the submission boundary after earlier successful acquisition.
 An unrelated registered document and a verified foreign Worker receipt remain
 admissible. The fixture exercises policy and Store custody without a tablet
 or model call.
+
+#### Selected profile-wide handwriting Query
+
+Buddy #139 source `256e2d62ca340a7227429df4f33c342be8fd6984` passed four focused
+selected handwriting tests.
+
+The format5 command checks the complete observed catalog, then rechecks the
+pin under ordered catalog and correction gates. The local HTTP Worker fixture
+queries two transferred correction scopes, filters text, and enforces match
+and encoded report limits. A verified empty catalog and a profile with only
+tombstones report complete-empty. Pending local registration and an omitted
+sample report partial without promoting any cached bytes into usable evidence.
+This evidence covers Query and selected Store custody.
