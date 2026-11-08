@@ -29,3 +29,10 @@ existing global original SHALL neither overwrite it nor accept conflicting origi
 - **WHEN** staging, CURRENT or capabilities publication is interrupted and the application reopens
 - **THEN** it finishes or reports only that same original operation and unchanged archive/base/target/family/provenance/configuration conditions
 - **AND** complete target closure, origin receipt and contract precede CURRENT, with no broadened ordinary maintenance admission, replacement identity, new live policy/model/HTTP permit or reset allowance/deadline
+
+#### Scenario: Empty target histories preserve capability
+
+- **GIVEN** an ordinary ready family6 archive or base with no domain4 records
+- **WHEN** the existing public or conditional restore route applies its additive plan
+- **THEN** the result retains family6 and its plan-bound provenance with a new local restore original
+- **AND** absence of target records does not authorize a family4 downgrade; only legacy4→4 retains family4

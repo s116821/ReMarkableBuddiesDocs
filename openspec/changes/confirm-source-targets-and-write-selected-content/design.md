@@ -176,3 +176,29 @@ Configuration remains staged for review. Exercise actual backup/inspect/conditio
 restore/reopen, all additive cases, changed archive/base/origin/family, exact media,
 activation/capabilities faults, legacy format4 and selected refusal. Original failed
 checks remain distinct. The same central change and paired delivery own this work.
+
+The archive/base family is authoritative independently of record contents. In
+particular, an empty ready family6 archive or base retains family6 on both the
+public and conditional restore routes. Neither an empty index nor absence of
+domain4 records can select the legacy family4 activation writer. Conditional
+comparison must bind that capability/provenance before any possible activation.
+
+Target restore reuses the existing public and conditional notebook owner. The
+legacy family4 writer rejects target-family inputs independently of record count.
+Base and target conditional hashes bind validated family and origin metadata. A
+new local target generation stages its own compact target-restore-original.json
+and a bounded target-restore-history.json snapshot. The original binds actor,
+operation, unchanged Conditions, both origins, local mode and Store paths, staged
+configuration and exact history SHA. Optional restore_sha256 on the generation's
+preparation binds that original without altering old preparation encodings.
+
+The original stores an inert initial read checkpoint and a finite parent allowance
+for the initial proof plus two recovery proofs. Reservation is persisted as spent
+before repeated content reads; neither reopening nor a failed proof resets it.
+Bounds derive from the frozen manifest references and existing metadata limits.
+A private plan-bound context alone validates domain4 before CURRENT. Complete
+objects, manifests, local feature/original and contract precede activation; existing
+only product startup finishes the same operation under one retained Store lease.
+After activation, complete staged data can repair capabilities without the source
+archive. Completed lost acknowledgments remain validate-only. Normal Store open
+and ordinary maintenance do not acquire a general target repair authority.

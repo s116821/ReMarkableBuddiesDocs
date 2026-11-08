@@ -189,3 +189,38 @@ restore combinations remain unfinished; no whole-feature acceptance follows.
 
 Source checkpoint b93ff8addc02d0d23d2765613608626f08cc5222,
 tree99f029d47639b983f2906799fd8d2da38f7a0f07, contains this increment.
+
+## Conditional target activation and original-only recovery increment
+
+Seven real empty-store restore cases first reproduced the capability-loss defect:
+legacy4→4 passed, while all three target archive/base combinations on both public
+and conditional paths reported success but activated family4. The original red
+log is retained. The target owner now stages a new family6 generation with its own
+original, including empty histories; the legacy writer cannot activate a target
+input. Conditional base/target hashes bind family and provenance. Changed base
+family, changed consistent base-feature provenance and a changed valid archive
+origin refuse the original plan before target creation.
+
+The integrated target run passes69/69. It includes all six formerly failing empty
+cases and actual domain4 history restored across BeforeObjects, AfterObjects,
+BeforeCommit, BeforeActivation, after CURRENT/before capabilities, and completed
+lost-acknowledgment boundaries. Reopen retains every original condition and the
+same operation, spends the originally persisted proof allowance, and returns the
+exact recorded conversation closure. Completed acknowledgment recovery makes no
+receipt change. The after-CURRENT case removes the source archive before startup;
+complete staged data still repairs the original operation. Changed staged history
+or configuration refuses without changing CURRENT or replacing original facts.
+
+This remains a bounded source checkpoint. Full nonempty additive combinations,
+individual marker/contract/format interruption boundaries, exact exhaustion and
+remaining actor/selected/mode controls still require completion and independent
+review. Native combination, live handwriting/device acceptance and whole-feature
+spec sync/archive remain open. No predecessor or focused result is credited to an
+unperformed broader validation.
+
+The source checkpoint is af02146b6c8b20b60655ade3807d201632e282a9,
+treebaa7d3fed54018ed874b826b9e27902d4599c3a3. Archive-named checks pass9/9
+(including two new target cases), legacy conditional restore7/7, all-feature/all-target
+Clippy with warnings denied and formatting pass. Central strict128/128 and guidance
+36/126 pass. The earlier empty-store red failures and all original compile/fixture
+logs remain separate from these passing results.
