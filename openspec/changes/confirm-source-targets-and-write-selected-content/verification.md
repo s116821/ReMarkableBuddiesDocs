@@ -90,3 +90,24 @@ joined regional generation/export and complete supported maintenance/retention
 routing. Native and selected Writer input-owner gates remain explicit. The central
 change remains active and unfinished; source progress does not transfer its tracking
 away from the existing issue or duplicate its ownership elsewhere.
+
+## Later receiving, joined export and elapsed-window repair
+
+The next continuation passes43 selected target tests. Saved regional receiving
+resolves the exact committed target/capture, reuses the existing capture validators,
+recreates the deterministic original-frame mask and verifies the normalizer's exact
+image-set and profile identity. A valid unrelated PNG with a consistent replacement
+normalization input hash is refused because it is not that mask. Existing saved
+refinement and prepared export still pass. Joined regional generation/export uses
+the existing destination and original export/reconciliation path with its own
+original regional model slots and300/345s deadlines; later refinement updates the
+same target correlation. Original replay performs no model or remote write.
+
+Independent review identified that selected local recovery incorrectly expired
+with the live request window. Deterministic fixture wall-clock advancement now
+covers elapsed windows across five interruption boundaries, in addition to the
+seven immediate interruption cases. Local repair no longer depends on a live
+request window: it preserves all original timestamps, operation and correspondence,
+spends the original saved allowance before repeated proof reads and mints no
+policy, token or HTTP/model permit. A later live request requires normal fresh
+admission. No native/live acceptance or completed-change archival follows.
