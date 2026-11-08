@@ -268,3 +268,22 @@ production Worker protocol with local HTTP and real format5 Stores.
 The five Worker recovery tests cover the new custody and status branches.
 Provider qualification, optional domain integrations, broader end-to-end
 delivery and the parent archive remain open.
+
+#### Exact received manifest bytes
+
+Buddy #139 source `d1177463505409291dd0144e0a78c44a1cb3dc44` passed all five Worker
+recovery tests, including the original-byte controls below.
+
+The Worker checkpoints a reference to the original manifest before applying
+the received closure. The Writer guard verifies the local bytes against the
+descriptor's length and digest and requires the decoded manifest to equal the
+saved manifest. It then checks the existing application receipt and lineage.
+
+The passive Worker fixture receives pretty-encoded JSON over local HTTP and
+admits its exact foreign receipt. Replacing whitespace at the same length
+fails the digest check even though the parsed value is identical. Changing
+only the saved parsed value also fails. The guard makes no HTTP requests.
+Older receipts can use a surviving incoming copy. When that copy is absent,
+admission requires the saved value to reproduce the original descriptor's
+length and digest exactly. A discarded noncanonical original remains
+unprovable from the old receipt alone.
