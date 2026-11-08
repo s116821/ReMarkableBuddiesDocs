@@ -1,6 +1,6 @@
 ## Implementation and acceptance
 
-- [ ] Create/strictly validate central proposal/design/deltas before source and integrate exact Reader, handwriting and resident-history bases by normal merges.
+- [x] Create/strictly validate central proposal/design/deltas before source and integrate exact Reader, handwriting and resident-history bases by normal merges.
 - [ ] Implement closed domain4/family6/contract-v5 with exhaustive ordinary/selected admission including selected receive/restore.
 - [ ] Implement one-lease preparation-aware product startup, original interrupted recovery, legacy-sync exclusion and carried first-absence witness/allowance.
 - [ ] Implement bounded target geometry, deterministic original-frame masking and exact retained-source resolver.
