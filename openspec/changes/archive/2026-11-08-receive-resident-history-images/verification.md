@@ -8,7 +8,8 @@ Implementation revision: `2555cd6bd4602954626620426e39187c7b4e9045`, tree
 `docs/simulator.md` only. Compiled evidence remains attributed to `2555cd6`.
 The Docs change starts at `a1f446b8c4857e4f17726a0cb40ed62b8048b71a`;
 the exact paired Docs commit is recorded at delivery, avoiding a self-referential
-commit identifier here. No canonical spec sync or archive has occurred yet.
+commit identifier here. The finite correction is synced and archived in this
+paired delivery after independent source and live-result review.
 
 ## Regression and implementation checks
 
@@ -65,16 +66,63 @@ and size 481481664 bytes. No metadata-only rebuild reattributes this evidence.
 Raw logs and manifests are retained for the delivery evidence comment; they are
 not duplicated as execution archives in the reusable source diff.
 
-## Remaining acceptance
+## Current Windows build and live qualification
 
-Independent review remains a delivery gate. The maintained
-resident live case is prepared but has not run. Earlier ImageUse live evidence
-does not qualify this route. Canonical delta sync and archival remain pending
-actual live acceptance in the coordinated source/Docs delivery. Synthetic
-historical correspondence proves neither native acquisition, currentness,
-tablet output, handwriting recognition nor aggregate integration.
+A new Windows build at clean `5f6a873a62121a0d9b78deb157b7bd990fb8d8d4`
+used the locked dependencies without incremental data or debug symbols. Its
+53,211,648-byte executable has SHA-256
+`055e64083ea1c6298951429d1757961c1c0827e151e1383b29fe8ae2ca32c6c4`
+and embeds `dev.v0.77.1-2-g5f6a873`. Its separate scripted seven-stage smoke
+completed with no credential resolution, native effect or export. That report
+hashes to `3d9ae96a2f17fcd9c62680b4cf42eac97faee404d53ccee6366cc6f8c75da844`.
+
+The independently reviewed, freshly selected resident live case then used the
+same executable and original fixture with `gpt-6.1-terra`. Only the maintained
+scenario's output destination changed. Seven requests returned in 29.188 seconds;
+the child exited zero, with no outer timeout or retries. Each request was capped
+at ninety seconds and 4,000 requested completion tokens. A hard 720-second
+operator process cutoff supplemented the runner's cooperative deadline; late
+results or outer timeouts would not count as success. Prompt and image tokens
+are additional to the requested completion-token cap.
+
+Independent raw-result review confirmed:
+
+- Reader recovered Source A as 2 kg times 3 m/s² equals 6 N from the retained image.
+- Writer preserved the source label and units; Refine added the requested
+  dimensional-analysis sentence, and Reader handback identified that addition.
+- The image-free notebook map calculated Source B as 10 N and explicitly declined
+  to invent the unavailable Source A values or comparison.
+- The reducer received the exact map reply plus Source A's four derivatives,
+  calculated the correct 4 N difference, and kept source attribution distinct.
+  Final Reader received that note verbatim and correctly attributed Source B's
+  numbers to the note rather than claiming direct original-text access.
+- Ordered attachment and encoded digests, byte counts, dimensions, source IDs,
+  ordinals and attachment indices matched across the relevant stages. Counts
+  were `[4, 4, 4, 4, 0, 4, 4]`; each independent conversation retained its own
+  source identity. The original PNG was not an attached derivative.
+- Exact history, two ordinary drafts, one notebook draft and the independently
+  recomputed reducer input digest were retained. Memory queries, native effects
+  and external exports were zero.
+
+The original live report SHA-256 is
+`c2ab6105c342ae13ea883eb6f5090a5a1c4c0e28502e4b0ffe8cbbda86f82a16`.
+Its terminal manifest SHA-256 is
+`69dcebf439556fe03fdad998970ceec82406d099b7e8337ff690d9118a09425c`.
+The consumed run's packet, selection, spent marker, exit, output and report remain
+original evidence; the selection is not reusable. The executable and build cache
+are reproducible outputs whose retention ends after this evidence review.
+
+Current source [CI 42428900243](https://github.com/s116821/ReMarkableBuddies/actions/runs/42428900243)
+passed Checks, application Build and Integration. The paired delivery is
+[Buddy #146](https://github.com/s116821/ReMarkableBuddies/pull/146) and
+[Docs #158](https://github.com/s116821/ReMarkableBuddiesDocs/pull/158).
+
+This accepts the finite ordinary receiving correction with a synthetic historical
+fixture. It proves neither native acquisition, currentness, tablet output,
+handwriting recognition nor aggregate integration. Those parent obligations
+remain unfinished; earlier ImageUse evidence was not substituted for this run.
 
 The parent ordinary-memory checkbox is reconciled using the separately delivered
-[ordinary memory verification](../archive/2026-11-06-integrate-ordinary-memory-callers/verification.md)
+[ordinary memory verification](../2026-11-06-integrate-ordinary-memory-callers/verification.md)
 and its canonical subject-memory requirements. Other parent integration tasks
 remain open.

@@ -10,6 +10,6 @@
 
 - [x] Freeze exact source inputs and pass affected tests and strict lint/format checks; record the paired Docs freeze in the delivery evidence.
 - [x] Pass final Docs guidance/preservation and strict OpenSpec checks.
-- [ ] Obtain independent review of the exact paired inputs.
-- [ ] Obtain separately selected representative live resident evidence; prior ImageUse success does not cover this route.
-- [ ] Sync canonical deltas and archive the completed finite correction in the same paired delivery, preserving parent obligations.
+- [x] Obtain independent review of the exact paired inputs.
+- [x] Obtain separately selected representative live resident evidence; prior ImageUse success does not cover this route.
+- [x] Sync canonical deltas and archive the completed finite correction in the same paired delivery, preserving parent obligations.
