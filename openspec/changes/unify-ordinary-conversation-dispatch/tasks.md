@@ -3,8 +3,8 @@
 - [ ] Connect verified native composer text/edit/semantic Submit/currentness and supported gestures through the existing input/SDK owner.
 - [ ] Integrate and qualify actual native composer/status/turn-region prepend/focus/page effects through the unified-page owner.
 - [ ] Qualify real aggregate-apply fencing and stale-operation suppression with the synchronization owner.
-- [ ] Reconcile the separate integrate-ordinary-memory-callers delivery with its owner; do not duplicate its design, tasks or qualification here.
+- [x] Reconcile the separately delivered [ordinary-memory caller integration](../archive/2026-11-06-integrate-ordinary-memory-callers/verification.md), delivered by Buddy #137 (`bafa5cc`) and Docs #151 (`8937483`); preserve its exact evidence and wider memory obligations at that owner.
 - [ ] Verify combined native/receiving/aggregate acceptance and independent exact-head checks, then sync/archive only actually completed integration.
 
-All tasks remain open. The ordinary archive does not complete these tasks or whole
-routing/integrated release acceptance.
+The other integration tasks remain open. The finite ordinary and memory archives
+do not complete native/aggregate or whole routing/integrated release acceptance.
