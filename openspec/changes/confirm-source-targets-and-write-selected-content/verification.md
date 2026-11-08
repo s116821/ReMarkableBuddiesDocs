@@ -153,3 +153,39 @@ The corresponding source checkpoint is aaea8a3951ac57f6458a4d28918735d0026f726c,
 tree0ff5e3533d85e36493e9d852bf31f71372d832ec. This contains the currentness,
 confirmed-context, portable-vector, executable Writer and inherited operation
 custody continuation. Archive/restore remains subsequent unfinished source work.
+
+## Generation-local originals and detached target archives
+
+New preparation receipts live inside their exact generation. Existing global
+receipts remain compatible only for their own generation and stay byte-for-byte
+unchanged. Interrupted compatibility recovery carries the same feature/operation
+into a local receipt; it does not replace its original. The known global typed
+Config pin remains valid for that exact historical original, while new local
+preparations bind loaded-file provenance. Conflicting local/global originals and
+completion regression refuse. A ready global-only open validates without writing.
+Runtime correspondence pins both receipt presence and bytes.
+
+Closed ordinary format6 archives carry explicit target_feature origin metadata.
+Its exact actor/generation, ordinary base kind and feature contract must validate
+before a private detached context can admit domain4 objects. Legacy format4
+encoding stays unchanged, and even real neighboring ready target owner files do
+not supply a missing format6 declaration. Export retains exact record/media bytes
+and lineage and validates target links across the complete archive. The archive
+contains only backup.json and objects; source live owner/preparation files are not
+transferred. Invalid/missing/null origin metadata, changed actor/generation/base
+kind/contract and removal of a referenced target refuse.
+
+The integrated target selection passes57/57, including six old-global interruption
+boundaries and four actual archive tests. All-feature/all-target Clippy with
+warnings denied and formatting pass. Legacy archive controls pass7/7 and legacy
+conditional restore7/7. Two actual executable notebook controls pass, including
+localhost provider HTTP, archive/restore, replay and restarted refinement; these
+are offline/localhost evidence, not live model calls. Original failed fixture and
+compile logs are retained alongside the corrected results.
+
+This is an export/inspection and preparation checkpoint. Plan-bound target-family
+conditional restore, staging/activation/capabilities recovery and all additive
+restore combinations remain unfinished; no whole-feature acceptance follows.
+
+Source checkpoint b93ff8addc02d0d23d2765613608626f08cc5222,
+tree99f029d47639b983f2906799fd8d2da38f7a0f07, contains this increment.
