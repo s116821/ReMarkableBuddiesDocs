@@ -71,23 +71,46 @@ No transport retry, arbitrary command, path or endpoint is introduced.
 
 ### Host ownership and restart recovery
 
-Retain dispatched originals in one additional fixed private JSON file through
-the existing protected host storage helper. Reuse its checked directory, private
-file access, exclusive writer and conditional replacement; do not introduce a
-second credential store, database, arbitrary filename or renderer-supplied path.
-The file contains at most eight original records: an opaque UI reference, the
-connection/boot identity, the full private original snapshot, and exact input
-bytes with their digest. It contains no OAuth tokens or duplicate credentials.
+Retain dispatched originals in fixed `isolated-root-operations.json` through the
+existing protected host storage helper. Reuse its checked directory, private
+file access and conditional replacement; do not introduce a second credential
+store, database, arbitrary filename or renderer-supplied path. Use a separate
+fixed `.isolated-root-operations.lock` held by an OS file lock/exclusive handle
+that releases when its process exits. The lock file may remain; its existence
+is not ownership. Do not reuse the OAuth writer's exclusive-create sentinel or
+alter the existing credential save/disconnect behavior.
 
-The service must durably record and reread the exact original before sending it.
+The version-1 file contains at most eight append-only original records, each
+with `reference`, `connection_id`, `boot_id`, `snapshot`, `input_base64` and
+`input_sha256`. The input is the small host-generated compact V1 provisioning
+body, at most 512 UTF-8 bytes. Each compact record is at most 2,048 bytes and the
+whole file at most 20,480 bytes, below the existing private helper limits.
+Validate the closed record and original snapshot, canonical Base64, input
+digest and parsed input/snapshot agreement on every load. Preserve exact input
+bytes; do not reserialize a recovered request. Actor/epoch and UI references
+are unique, and append/CAS cannot replace an earlier record. No OAuth tokens or
+duplicate credentials are stored.
+
+The service must flush, replace and privately reread the exact original before sending it.
 It releases the private storage writer before transport starts. If persistence
 is uncertain, it does not dispatch. An existing original for that Store/epoch is
 reused only through explicit original recovery, never replaced by a new UUID.
 Retain all originals across lost output, cancellation and helper restart. A
 reloaded original has an unknown result until an explicit original replay
-receives a valid report; an in-memory successful report is not invented after
-restart. No automatic retry or silent eviction occurs when the bounded history
-is full. Changed connection or boot identity refuses dispatch in this increment.
+receives root-verified evidence. A valid pending, authorization-required,
+retry-later, recovery-required, unqualified or command-level refusal report does
+not settle a previous uncertain dispatch. Display that report separately from
+the retained uncertainty. Only root-verified settles this original's current or
+historical evidence; it never releases the actor/epoch uniqueness claim.
+An in-memory successful report is not invented after restart. No automatic retry
+or silent eviction occurs when the bounded history is full. Changed connection
+or boot identity refuses dispatch in this increment.
+
+This increment guarantees original retention across host/helper process restart
+after an acknowledged write, including interruption while holding the OS lock.
+It does not qualify persistence through a system crash, power loss or storage
+rollback. That stronger guarantee needs separately verified platform durable
+replacement and recovery evidence. Storage uncertainty always refuses dispatch.
 
 The public host request accepts only an action, observed connection/boot and an
 opaque reference. It exposes the reduced preview or captured report, and a

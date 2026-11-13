@@ -25,3 +25,18 @@ The privileged host SHALL validate the complete bounded provisioning report and 
 #### Scenario: Explicit original retry is selected
 - **WHEN** the owner deliberately retries an unresolved operation under a valid current connection and retained custody
 - **THEN** the host submits only the exact original input, without rebasing its token, choosing another mode or allocating a replacement intent.
+
+### Requirement: Host process restart preserves original custody
+The host SHALL flush, replace and reread the exact private original before dispatch. Its fixed private version-1 file SHALL retain at most eight append-only originals with a 512-byte input, 2,048-byte record and 20,480-byte aggregate bound. The retention writer SHALL use an independent OS-held lock released on process exit and SHALL NOT change OAuth credential writer behavior. No original SHALL be silently replaced or evicted.
+
+#### Scenario: Helper exits while holding its retention writer
+- **WHEN** the storage helper is interrupted during a write
+- **THEN** another process can acquire the retention lock after that process exits, validates the retained file before use, preserves unrelated credentials, and dispatches nothing unless the original is acknowledged and reread successfully.
+
+#### Scenario: Restart recovers an unresolved original
+- **WHEN** the host reloads a retained operation
+- **THEN** it validates the exact input digest and snapshot agreement, displays unknown outcome independently of any later pending or refusal report, and permits only explicit same-input replay on the retained connection and boot. Only correlated root-verified evidence settles that original, and its actor/epoch reservation remains retained.
+
+#### Scenario: Storage cannot establish custody
+- **WHEN** the retained file is malformed, oversized, stale, full, or cannot be privately read and conditionally updated
+- **THEN** Manager refuses dispatch with a fixed storage error. Process-restart evidence SHALL NOT be represented as system-crash, power-loss or storage-rollback qualification.
