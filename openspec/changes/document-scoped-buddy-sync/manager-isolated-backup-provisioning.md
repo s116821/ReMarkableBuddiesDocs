@@ -41,7 +41,8 @@ does not qualify a connected host action, real provider or tablet execution.
 
 ## Connected action
 
-The following is the remaining consumer work, not a claim of implementation:
+The transport is implemented and fixture-tested. The remaining connected host
+and UI work is not a claim of implementation:
 
 - Add the fixed command to the existing identity-verified wired maintenance
   transport, with the usual shared ownership, deadline and cancellation rules.
@@ -77,7 +78,9 @@ treated as a tablet credential or provider-root binding.
 ## Increment checklist
 
 - [x] Review the private validator and reconcile exact producer-emitted frames.
-- [ ] Connect the fixed wired command with retained original ownership.
+- [x] Add the fixed wired command with separate bounded provisioning timeouts,
+  original stdin/frame bytes and synthetic channel/child cancellation checks.
+- [ ] Connect host-owned original retention and explicit recovery to that command.
 - [ ] Connect the shared browser/Electron review, prepare and recovery UI.
 - [ ] Verify actual host/transport/UI behavior and coordinated source/Docs CI.
 - [ ] Complete separately scoped provider and wired runtime qualification.

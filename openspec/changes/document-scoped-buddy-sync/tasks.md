@@ -354,6 +354,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Implement the host-private input and result validator against the accepted provisioning contract, preserving original identity, errors and historical currency. Focused fixtures include hashed original command-harness bytes plus synthetic adversarial cases; neither is provider or tablet qualification.
 - [x] Reconcile original producer-emitted current, historical and unqualified frames without reserialization.
 - [x] Independently review the [consumer contract](manager-isolated-backup-provisioning.md) and private validator. Manager `fdf8a8f` corrects typed-outcome, token/epoch continuity and redacted-parse-error findings; 13 focused tests include original Buddy frames.
-- [ ] Connect the fixed wired host action with original request retention, bounded ownership and explicit original-only recovery.
+- [x] Extend the existing fixed wired mode transport with provisioning-only deadlines, original-byte forwarding, identity/framing checks and cancellation. Independent review and 12 Python/3 Node child tests pass; no live command was run.
+- [ ] Connect the privileged host service with original request retention, bounded ownership and explicit original-only recovery.
 - [ ] Connect and verify the shared browser/Electron review and prepare action, with completed backup and runtime health remaining separate observations.
 - [ ] Complete coordinated source/Docs checks and separately scoped provider/wired qualification before release.
