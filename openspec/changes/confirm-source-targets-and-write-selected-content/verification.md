@@ -374,17 +374,17 @@ The complete feature is not accepted or archived by this data-only increment.
 
 ## Review correction: operation families and the actual Store boundary
 
-Review ofacf0347 found that different capture/regional child purposes could
+Review of `acf0347` found that different capture/regional child purposes could
 submit again under one parent after an uncertain normalization result. A foreign
 producer's accepted parent could also be detected only after normalization cost.
 The outer cutoff checks did not cover Store mutex wait, locked verification or
 head staging/rename; those reads also escaped the original phase allowance.
 
-The corrected composition is Source928fad43a607812473f8b1897b4cb1d6a9c21ab4,
-tree4d4cea83d411ce55c26789e4bf7d4023936078e7. It normally merges the owned
-consumer5751e960 with independently reviewed Native04fa3ba1 through9933452e,
-then corrects one unnecessary generic callback borrow. Source04fa3ba1 includes
-the guarded-publication2da3f81e implementation and published9fa918b baseline.
+The corrected composition is Buddy `928fad43a607812473f8b1897b4cb1d6a9c21ab4`,
+tree `4d4cea83d411ce55c26789e4bf7d4023936078e7`. Merge `9933452e` combines
+consumer `5751e960` with independently reviewed storage changes `04fa3ba1`,
+followed by one unnecessary generic callback borrow correction. Revision `04fa3ba1`
+includes guarded publication `2da3f81e` and the published `9fa918b` baseline.
 Both existing normalization child IDs and capture fingerprints remain unchanged.
 Command recovery and first admission recognize sibling originals as terminal
 evidence. First publication checks parent plus both children atomically; result
@@ -393,9 +393,9 @@ commits use their original allowance and time/cancel callback inside Store.
 An additional real producer case proved that first-preparation absence is not a
 long-lived reservation. A registered handwriting owner accepted parent X after
 the Writer child but before handoff, without a Worker refresh and with an
-unchanged document winner. Stage0 now checks exact child token and accepted parent
+unchanged document winner. Stage 0 now checks exact child token and accepted parent
 absence under the existing Store mutex, invoking only the immediate submit
-callback before releasing it. The outer joined gates remain. Stage1 keeps its
+callback before releasing it. The outer joined gates remain. Stage 1 keeps its
 own acknowledged parent preparation; it does not require its own parent absent.
 No new durable reservation, transaction schema or operation index was introduced.
 
@@ -408,14 +408,14 @@ fixture refreshes the caller after the completed foreign operation. The after-ch
 case asserts that its actual producer injection ran, preventing an unrelated early
 refusal from counting as success.
 
-On the exact clean928fad43 composition, locked/offline all-feature/all-target
+On the exact clean `928fad43` composition, locked/offline all-feature/all-target
 Cargo check, strict Clippy with warnings denied and formatting pass. Regional
-checks pass5/5: the existing14-case operation matrix plus four actual sibling/
-foreign-parent regressions. New publication-boundary tests pass4/4, including
+checks pass 5/5: the existing 14-case operation matrix plus four actual sibling/
+foreign-parent regressions. New publication-boundary tests pass 4/4, including
 expiry after staged-head sync, original allowance exhaustion, lost acknowledgment
 and cross-scope prerequisites. The immediate-handoff mutex/token/operation/deadline
-test passes1/1. Affected selected-image3/3, handwriting Writer1/1, ordinary regional
-target4/4, selected command3/3 and actual stored-target Writer CLI1/1 also pass.
+test passes 1/1. Affected selected-image 3/3, handwriting Writer 1/1, ordinary regional
+target 4/4, selected command 3/3 and actual stored-target Writer CLI 1/1 also pass.
 These are bounded Linux synthetic/localhost scopes, not a latest full-suite or
 hosted-CI result. Initial fixture compile and strict-lint errors remain separate
 from the final passing checks.
@@ -427,8 +427,8 @@ stopped proposal, never counted as validation or published as authority. The
 ordinary complete-image nullable-profile compatibility mismatch remains a separate
 finite follow-up; accepting it does not justify loosening selected admission.
 
-The paired evidence uses the original explicit Rust1.98.1, existing Linux target,
-all features, jobs4, debug0 and incremental0 with actual flags recorded. No provider,
+The paired evidence uses the original explicit Rust 1.98.1, existing Linux target,
+all features, jobs 4, debug 0 and incremental 0 with actual flags recorded. No provider,
 tablet, Windows executable-copy/path, auth retry, new cache or held cleanup was
 performed. Independent review/publication/hosted CI remain coordinator-owned; fresh
 target/installed scope, Worker receiving, selected/native effects, live/device
