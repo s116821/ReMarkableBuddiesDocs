@@ -314,7 +314,11 @@ unqualified application branches refuse before
 credentials. Missing credentials, unavailable provider and unresolved
 provisioning leave Reader/Writer local; use the versioned redacted health
 with device/backup and the last verified marker for that binding when valid
-local custody is available. Corrupt local mode remains a local refusal.
+local custody is available. A malformed or inaccessible isolated checkpoint,
+publisher-lock failure or blocked staging/session directory prevents only
+the publisher from launching. Record redacted recovery health without
+repairing the offending path. Corrupt local mode or unsupported Store
+family remains a local admission refusal.
 The legacy and selected Worker admissions keep their existing routes.
 
 ## Source ownership and verification
@@ -328,7 +332,16 @@ The legacy and selected Worker admissions keep their existing routes.
 | `src/storage/sync.rs` | Declare the private control boundary and connect qualified ordinary admission to the same Worker. |
 | `src/storage/drive.rs`, `src/storage/drive/slot.rs` if factoring the wire helper | Reuse fixed-ID metadata-only create and exact ID readback, generated IDs, protected grant and bounded request logic. Preserve selected/legacy request and verification behavior. |
 | `src/storage/drive/shared_fixture.rs`, `src/mode_maintenance/tests.rs`, `src/storage/sync/isolated/tests.rs` | Exercise real command/control, durable reopen, adapter and scheduler behavior using localhost only. |
-| `src/storage/inspection.rs`, `src/storage/inspection_v3/scan.rs` | Coordinate with the inspection owner before adding the expected private isolated checkpoint layout. Admission of the exact owned path must preserve bounded no-follow enumeration and expose no checkpoint contents or provider IDs. |
+| `src/storage/inspection.rs`, `src/storage/inspection_v3/scan.rs` | Account for the expected private isolated checkpoint layout using the existing bounded no-follow file accounting. |
+
+Offline inventory recognizes only canonical nonnil UUID directories under
+`data/sync/isolated`. Within one backup directory, regular `publisher.json`
+and `publisher.lock` entries are structural, and canonical `.stage-<uuid>`
+atomic-write remnants are staging. The path is counted by its apparent byte
+length. The scanners do not parse checkpoint contents, return backup or
+provider IDs from these files, descend into unexpected children or repair
+the directory. This inventory confers no root verification or recovery
+authority. Existing global entry and witness limits still apply.
 
 Verify exact same-ID create/request counts for before-allocation, after
 durable pin, uncertain response or commit acknowledgment, 409, corrupt
