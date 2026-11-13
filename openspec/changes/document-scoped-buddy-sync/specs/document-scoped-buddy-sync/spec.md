@@ -11,6 +11,14 @@ The application SHALL expose local-only, isolated device backup and explicitly s
 - WHEN pending work belongs to the old backup/group binding and the device switches mode
 - THEN the old publisher stops, the pending work cannot enter the new namespace, local data remains recoverable, and no other backup/group is deleted.
 
+#### Scenario: Ordinary publication loses its acknowledgment
+- WHEN an isolated publisher may have finished writing a backup marker
+- THEN it reconciles the original provider ID and complete referenced package under the original binding before publishing another revision or reporting the backup as recoverable.
+
+#### Scenario: Ordinary publication encounters a namespace or capacity refusal
+- WHEN the isolated publisher cannot verify its binding, reaches an existing supported bound, or has no committed records to publish
+- THEN local use remains available, status explains the refusal or no work, and previously committed backups remain available under their original identities.
+
 ### Requirement: Document aggregate and independent global keys
 Shared adjudication SHALL group related Buddy records by stable logical source-document identity across conversations, pages and operations. Domain-owned projectors SHALL supply membership without duplicating domain schemas. Global subject memory, handwriting and portable configuration SHALL use independent stable keys.
 

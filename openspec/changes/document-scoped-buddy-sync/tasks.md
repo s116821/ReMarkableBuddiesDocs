@@ -331,3 +331,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Exercise the verified components through existing ordinary data restore and independently confirmed portable import on a distinct destination actor. Buddy `54fc5a2` Windows fixtures verify stale/swap refusal, untouched destination-only declarations, and separate outcome reporting.
 - [ ] Independently review and publish the paired package increment. Verify the Linux rename-acknowledgment fault and hosted checks at the composed source.
 - [ ] Keep additional archive generations, provider publication and the Manager replacement workflow open pending their own acceptance.
+
+## Ordinary isolated backup publication
+
+- [ ] Review the [publisher proposal](isolated-backup-publication.md), namespace verification, original-attempt state, and ordinary runtime ownership.
+- [ ] Exercise the verified package through the existing Worker scheduler and Drive adapter with an injected, qualified fixture binding. Verify marker-last upload, bounded exact-ID recovery and truthful readback.
+- [ ] Connect ordinary format-1 startup to its isolated publisher without relying on legacy sync or selected-group admission. Verify local use while the binding or provider is unavailable.
+- [ ] Verify root/bootstrap and live provider eligibility independently. Keep remote retention, additional generations, and Manager download and explicit restore open.

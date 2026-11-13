@@ -410,3 +410,7 @@ publication, Manager download and explicit replacement restore.
 The [portable preferences in isolated backups](isolated-portable-configuration.md)
 proposal composes the data-only archive with the existing portable V1 artifact.
 It defines a separate completion marker and keeps destination import explicit.
+
+The [ordinary isolated publisher proposal](isolated-backup-publication.md)
+defines the next Worker integration, durable upload custody, and the startup
+admission needed to reach it from the product.
