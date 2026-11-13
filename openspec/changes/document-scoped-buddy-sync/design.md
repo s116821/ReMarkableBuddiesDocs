@@ -414,3 +414,7 @@ It defines a separate completion marker and keeps destination import explicit.
 The [ordinary isolated publisher proposal](isolated-backup-publication.md)
 defines the next Worker integration, durable upload custody, and the startup
 admission needed to reach it from the product.
+
+The [ordinary isolated root provisioning proposal](isolated-root-provisioning.md)
+defines the explicit host control, exact-ID recovery and the qualified
+Worker admission required to establish production root custody.

@@ -338,3 +338,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Exercise the verified package through the existing Worker scheduler and Drive adapter with an injected, qualified fixture binding. Buddy `41dbeb4` Windows fixtures verify marker-last upload, exact package reconstruction, bounded exact-ID recovery, verified media coverage, a saved Config change during capture, and pending work after the frozen revision settles.
 - [x] Admit ordinary format-1 startup to its isolated publisher gate without relying on legacy sync or selected-group admission. Buddy `41dbeb4` verifies offline startup and local-memory Dispatch with an absent Drive credential. Production publication requires supported root provisioning.
 - [ ] Verify root/bootstrap and live provider eligibility independently. Keep remote retention, additional generations, and Manager download and explicit restore open.
+
+## Ordinary isolated root provisioning
+
+- [ ] Review the [provisioning proposal](isolated-root-provisioning.md), public host command and Manager boundary, private reservation and checkpoint, epoch behavior, and Worker constructor.
+- [ ] With accepted source ownership, connect the versioned host control to an existing format-1 Store and trusted provider adapter. Exercise generated-ID persistence, exact readback, stale observation and genuine lost acknowledgments through localhost.
+- [ ] Verify current-epoch Worker admission through the existing scheduler, missing/corrupt custody refusal, offline local continuity, unchanged inspect wire, and new root on leave/re-entry.
+- [ ] Qualify the installed application and protected grant separately against an authorized provider, with independently scoped execution and evidence. Keep production disabled until that qualification exists.
