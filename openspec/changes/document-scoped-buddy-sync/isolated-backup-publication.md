@@ -129,6 +129,11 @@ policy and ownership checks. Do not evict a reachable original or add an
 arbitrary generation count. Ordinary format 1 is the only source family
 this package can publish. Other generations remain explicitly unsupported.
 
+After the publisher durably records a verified revision, it can release the
+settled private local staging package and that attempt's resumable sessions.
+The checkpoint carries the staging identity until local release finishes.
+An unresolved attempt retains its staged bytes and original IDs.
+
 ## Reachability and status
 
 The ordinary startup calls `reader_runtime::ordinary_store`, which currently
@@ -143,7 +148,10 @@ and launch publisher admission from that same Store and explicit saved
 Config. Existing ordinary Reader/Writer behavior stays usable when the
 publisher is disabled or offline. Keep normal maintenance, LocalOnly, legacy
 sync and selected startup admissions unchanged. Coordinate startup/dispatch
-file ownership before that source step.
+file ownership before that source step. Automatic notebook-target
+preparation runs before ordinary Reader admission. The isolated format-1
+route checks the saved configuration and refuses pending target preparation
+before returning the ordinary Store to the existing Dispatch entry point.
 
 Extend the existing versioned file/OS health contract with isolated mode,
 device and backup identities, `latest_verified` marker identity if present,

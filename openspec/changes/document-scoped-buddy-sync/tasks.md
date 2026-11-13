@@ -334,7 +334,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 ## Ordinary isolated backup publication
 
-- [ ] Review the [publisher proposal](isolated-backup-publication.md), namespace verification, original-attempt state, and ordinary runtime ownership.
-- [ ] Exercise the verified package through the existing Worker scheduler and Drive adapter with an injected, qualified fixture binding. Verify marker-last upload, bounded exact-ID recovery and truthful readback.
-- [ ] Connect ordinary format-1 startup to its isolated publisher without relying on legacy sync or selected-group admission. Verify local use while the binding or provider is unavailable.
+- [x] Review the [publisher proposal](isolated-backup-publication.md), namespace verification, original-attempt state, and ordinary runtime ownership.
+- [x] Exercise the verified package through the existing Worker scheduler and Drive adapter with an injected, qualified fixture binding. Buddy `eee3369` Windows fixtures verify marker-last upload, exact package reconstruction, bounded exact-ID recovery and verified media coverage.
+- [x] Admit ordinary format-1 startup to its isolated publisher gate without relying on legacy sync or selected-group admission. Buddy `eee3369` verifies offline startup and local-memory Dispatch with an absent Drive credential. Production publication requires supported root provisioning.
 - [ ] Verify root/bootstrap and live provider eligibility independently. Keep remote retention, additional generations, and Manager download and explicit restore open.
