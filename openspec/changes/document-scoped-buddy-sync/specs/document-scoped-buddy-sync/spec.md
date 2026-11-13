@@ -89,6 +89,14 @@ Backup/sync SHALL include selected Buddy-owned history, bookkeeping, references,
 - WHEN the ordinary Store prepares a snapshot under its current isolated-mode lease
 - THEN the existing format-1 archive preserves committed Buddy history and truthful media coverage, excludes device configuration and credentials, and an empty history produces no archive.
 
+#### Scenario: Preparing an isolated backup that includes portable preferences
+- WHEN an ordinary isolated backup contains committed Buddy history and a valid saved configuration capture
+- THEN one versioned completion marker binds the verified data-only archive and the allowlisted portable artifact, with raw declaration presence preserved.
+
+#### Scenario: Restoring backup data and portable preferences
+- WHEN the operator selects a verified isolated backup for explicit maintenance on a destination tablet
+- THEN each destination operation uses the matching verified component, and restoring Buddy data leaves the saved configuration alone until the operator separately confirms portable import.
+
 ### Requirement: File/OS management status and protected restore
 Versioned file/OS contracts SHALL expose mode/identities, committed/applied revisions, generation, successful-sync time, pending/offline/auth/contention/replacement/recovery state and media coverage. Selected backup restore SHALL be an explicit validated hardwired maintenance transaction with rollback and new local actor identity; no Buddy service API SHALL be introduced.
 
