@@ -345,3 +345,12 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [ ] With accepted source ownership, connect the versioned host control to an existing format-1 Store and trusted provider adapter. Exercise generated-ID persistence, exact readback, stale observation and genuine lost acknowledgments through localhost.
 - [ ] Verify current-epoch Worker admission through the existing scheduler, missing/corrupt custody refusal, offline local continuity, unchanged inspect wire, and new root on leave/re-entry.
 - [ ] Qualify the installed application and protected grant separately against an authorized provider, with independently scoped execution and evidence. Keep production disabled until that qualification exists.
+
+## Manager isolated backup preparation
+
+- [x] Implement the host-private input and result validator against the accepted provisioning contract, preserving original identity, errors and historical currency. Focused fixtures include hashed original command-harness bytes plus synthetic adversarial cases; neither is provider or tablet qualification.
+- [x] Reconcile original producer-emitted current, historical and unqualified frames without reserialization.
+- [ ] Independently review the [consumer contract](manager-isolated-backup-provisioning.md) and private validator.
+- [ ] Connect the fixed wired host action with original request retention, bounded ownership and explicit original-only recovery.
+- [ ] Connect and verify the shared browser/Electron review and prepare action, with completed backup and runtime health remaining separate observations.
+- [ ] Complete coordinated source/Docs checks and separately scoped provider/wired qualification before release.

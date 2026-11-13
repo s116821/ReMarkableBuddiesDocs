@@ -13,6 +13,7 @@ REM-36 provides immutable records, causal branches, recovery bundles and a bound
 - Reuse REM-36 envelopes, content-addressed objects, media coverage, recovery validation, credentials and worker bounds. Add only the aggregate selection, conditional publication and local operation-fencing contracts needed for shared mode.
 - Candidate Drive mechanism: immutable commit slots identified by provider-generated IDs known to all writers of the accepted base. A bounded metadata-only create pointing to a preverified immutable descriptor chooses the winner; no mutable shared head or distributed lease is proposed. Provider qualification remains a gate, with explicit fail-closed behavior if a claimed slot is incomplete or invalid.
 - Versioned OS/file status and maintenance commands for REM-42. UI and transport implementation remain with Manager's owner.
+- The [Manager isolated preparation consumer](manager-isolated-backup-provisioning.md) retains the original private command input and validates reduced root evidence before connecting the fixed wired action to both UI distributions.
 
 Native reMarkable documents, rendered Buddy pages, ink and native file metadata are excluded. Turn screenshots and confirmed-learning samples are Buddy-owned media, with explicit inclusion/omission/completeness reporting. No pairing, firmware change, native mutation or personal-account sync follows from this proposal.
 
