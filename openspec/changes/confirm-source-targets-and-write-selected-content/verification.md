@@ -461,3 +461,79 @@ passing focused logs remain separate. Strict all-feature/all-target lint and
 formatting are recorded against the final checkpoint. No full or earlier regional
 matrix is reattributed to this finite correction. Fresh receiver implementation
 continues under the accepted plan; this checkpoint is not whole-feature completion.
+
+## Gated fresh selected regional receiver
+
+The implementation checkpoint is Buddy
+`7f1beda6a55257f01e7208db07989e8aa269c1ab`, tree
+`34f986da92f4b2aa1fa7f6759842935cfc26ce69`, a clean incremental child of the
+accepted Reader-target correction c3277f94. It implements the concrete runtime
+handoff in fresh-regional-continuation.md. This is focused Linux offline evidence,
+not a whole-feature, provider, device, startup or native-effect acceptance.
+
+The existing gated Resident command now carries an explicit regional intent.
+The installed activation and exact pending bytes are pinned before release-policy
+selection; claim/consume retains the original same-UID0600/single-link/size/expiry
+checks and slot lock through the first publication. The claim is acquired inside
+the existing joined gate order and released before model waits or finalization.
+An expired/changed/missing selected intent cannot fall through to Reader. Ordinary
+installed ingress explicitly refuses fresh regional generation. Startup signatures,
+eligibility and the four coordinator-owned native startup files remain unchanged.
+
+One Writer policy and Store owner begin at the original release. The genuine
+capture, one Prepared Writer user and historic regional child P are committed
+atomically before identification. Interpretation has its own child; identification
+and normalization guard absent X at actual dispatch, and drafting retains its own
+accepted X. The shared normalizer/draft consumer receives the same confirmed
+context, memory view and original partitions. Identification uses min(S+60,now+45),
+normalization S+150, draft S+240 and final publication S+300, without increasing the
+existing sixteen-phase reservation. The user is revised rather than duplicated;
+its final sources are exactly the original capture plus RegionSource.
+
+Generated publication binds the introducing TargetUse to the actual Markdown
+body in the same transaction. A connected reopen check exposed that model context
+intentionally excludes Generated Writer bodies. A separate bounded read-only
+presentation view now includes them; the model filter remains unchanged. The
+history presenter uses that view. Shared About-entry projection requires exact
+body hash and the validated typed Writer Markdown position, preserving Reader's
+prefix recipe. A fresh root remains unbound: its fixture exercises the read-only
+projection directly, without inventing a persisted tablet-page binding. Existing
+bound-page layout calls the same projection after its own identity checks.
+
+Focused checks passed:
+
+- Ten connected tests, containing twenty-eight fixture cases, on the final frozen
+  source: actual file slot/Store plus three guarded scripted submissions; actual
+  resident acquisition and normal Workflow finalization on success and uncertainty;
+  one user/capture/region/About; unchanged model context; complete-empty and nonempty
+  confirmed contexts; frozen memory; policy/context/memory/source joins; mask/example
+  collision; malformed/ambiguous target and cancellation; ineligible family;
+  original time/read bounds; lost P/I/X acknowledgment and no repeated inference.
+  A valid-source, absent-X control proves fresh P fences both historic image routes.
+- Three slot tests include eight page/document/digest/activation/expiry/missing/
+  permissions/hard-link controls, exact consume without lock reentry, and preserving
+  a replacement after changed bytes.
+- Strict all-feature/all-target Clippy and formatting pass after final projection
+  factoring. Its focused generated-note and actual history scenario pass too.
+- Affected legacy regressions passed: regional7 (including its fourteen-case
+  matrix), selected image4, Reader Prepare1, selected context5, geometry4, Reader
+  parser5, maintained history1 and history integration12. The larger legacy set
+  preceded only the final pure About-loop factoring; the complete fresh module
+  and maintained actual history were rerun afterward. The earlier zero-match
+  history filter is retained as a missed selection, not credited as a test.
+- Default-feature all-target check passes. Its existing unused hex_digest and
+  fixture wildcard warnings remain; this is not a clean default lint claim.
+
+Evidence retains the original missing-body reopen failure and all failed fixture/
+lint attempts separately from subsequent passes. The empty-context mutation fixture
+was corrected to preserve its immutable sample while changing confirmed text.
+All model replies are scripted and protocol peers are explicitly owned fixtures.
+No live provider, tablet, native rendering, Writer-only startup qualification,
+production gesture registry or installed output/Submit qualification follows.
+
+The source increment is based on c3277f94 and this Docs increment on c536989d.
+The coordinator's independently published 6ef88ca/c62a7d composition was not
+available in this machine's object stores; its previously invalid GitHub credential
+was not retried. Compact bundles permit the coordinator's normal composition and
+current combined CI. Runtime review, publication, hosted CI, broader native/live
+routes and whole-feature canonical sync/archive remain coordinator-owned and open.
