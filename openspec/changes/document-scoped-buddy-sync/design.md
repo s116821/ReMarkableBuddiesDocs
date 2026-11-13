@@ -172,15 +172,25 @@ report incomplete. Tombstones are excluded from matches. Included sample
 coverage alone makes verified sample bytes available. Query reuses the
 Handwriting1 response and its match and encoded-size limits.
 
-The frozen Buddy #105 `ConfirmedContext` owns `LocalCorrections`, and its
-`Runtime` requires a local dispatch lifetime. The combined source must add
-selected ownership to that same context rather than weaken the local lease.
-The selected owner retains the catalog tail and exact correction tokens.
-Reader analysis and verification must use the same context at their existing
-submission and result gates. The selected Writer entry currently accepts
-normalized text, so image context belongs at the typed normalization ingress
-from #105. The combined path must verify static PNG eligibility before the
-existing payload builder and must exclude target images by their exact hashes.
+Buddy #105's `ConfirmedContext` supports both the ordinary local dispatch
+lifetime and an owner for selected corrections. For selected Reader, an
+explicitly enabled handwriting profile must match the admitted catalog root.
+Automatic selection ranks registered correction metadata by confirmation time,
+then record and revision IDs. It excludes target hashes before sample reads,
+checks up to 16 candidates for Included static PNG data, and carries at most
+three examples into both analysis and verification.
+
+The selected owner retains the shared mode lease, catalog root and last locally
+observed tail, correction selection tokens, and the local correction inventory.
+An observed tail and a complete inventory support a complete-empty result.
+An incomplete inventory without usable examples blocks submission. At each
+model submission and each Reader result write, the request joins the existing
+ordered Reader, preference, correction, and applicable memory gates. The local
+checkpoint read guard spans the handwriting proof and the admitted effect.
+
+The selected Writer entry currently accepts normalized text. Its image context
+belongs at the typed normalization ingress from #105, with the same static PNG
+eligibility and exact target-hash exclusion.
 
 ### Shared-preference Manager and one-shot command boundary
 

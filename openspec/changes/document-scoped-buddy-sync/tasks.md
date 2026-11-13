@@ -219,6 +219,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [ ] Verify remaining cross-profile and cross-producer collision cases in the combined delivery, including the separately owned inherited-base operation guard.
 - [x] Route profile-wide Query through the verified selected catalog and exercise completeness, omission and response bounds across multiple correction scopes at `256e2d6`.
 - [ ] Reconcile compatible existing Reader/Writer receiving interfaces and actual recognition ingress before claiming shared example consumption; Buddy105 remains an explicit separately owned source dependency, not fulfilled by data transfer or archived normalized notebook stages.
+- [x] Complete the automatic selected Reader recognition path through actual submission and result publication, including metadata-first ranking, target exclusion and stale context refusal in the real Store fixture.
 - [ ] Exercise exact selected examples/coverage, target exclusion, bounded ranking/request budgets, stale handoff/result fencing and truthful unavailable/incomplete versus complete-empty behavior through the actual compatible receiving paths.
 - [ ] Keep shared Manager effective-preference view/edit, ordinary promotion policy, broader schemas, isolated backup, live provider, model fidelity/native/device and full-parent qualification open unless independently delivered.
 

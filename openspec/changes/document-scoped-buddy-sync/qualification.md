@@ -385,3 +385,25 @@ The real Store fixture covers unchanged admission, a replaced correction,
 catalog advancement, omitted media, target exclusion, and refusal with
 an exhausted allowance or a foreign Store. The ordinary context still
 holds its local correction owner through report delivery.
+
+#### Automatic selected Reader handwriting context
+
+The resident Prepared receiver captures one context from the current shared
+profile using a metadata-first scan. Real format5 Store fixtures cover an
+unobserved catalog tail, complete-empty, pending local registration,
+omitted media, zero sample reads on exact target exclusion, and three
+selected examples from five eligible corrections. A checkpoint proof blocks
+concurrent local replacement during the admitted effect. A stale Engine
+cannot overwrite a newer checkpoint and refreshes its saved state on the
+next Worker step.
+
+The receiving fixture publishes Prepared and then uses the installed Reader
+receiver with a scripted model handoff. Analysis and verification receive
+identical examples. A correction replacement after analysis blocks the
+verification submission. A replacement after verification blocks the
+Interpreted write and there is no Generated turn. The unchanged case reaches
+Generated. The receiving fixture uses loopback setup and consumes an
+established preference selection through the local Store.
+
+Selected Writer image normalization, model fidelity, live provider and
+tablet qualification remain open.
