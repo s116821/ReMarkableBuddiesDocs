@@ -423,3 +423,51 @@ The fixture uses modeled resident image evidence and a scripted owned model.
 The image command's fresh path still requires live provider qualification.
 Separate source/preference races, lost-acknowledgment fault coverage, live model
 fidelity, circled-target ingress and tablet qualification remain open.
+
+
+#### Combined Linux Reader and Writer validation
+
+The merged Reader/storage source was compiled on SCRAPPY-DOO after importing
+`9e0b31484a4382b962a5835ec7a2ab6b3043a1d2`. Its original-owned restore constructor
+needed the same process-local checkpoint RwLock initialization as normal Store
+opening. That one-line correction is frozen in `a7c10f37e60e8ccc26c82f9ddd3573ef639db8e5`.
+Strict all-feature/all-target Clippy with warnings denied, formatting and all ten
+focused selected-handwriting controls passed on those exact source bytes. The
+controls include the original family5 Reader and real promoted-family6 variant:
+unchanged examples reach both submissions and typed target publication; changed
+corrections prevent later submission or Interpreted/Generated/target publication.
+The archive/restore callers retain full-media verification; metadata-only ranking
+uses the same validation core restricted to handwriting records. Both selected
+context constructors retain boxed ownership.
+
+The ordinary locked/offline/all-features Cargo command was executed from clean
+`a7c10f3`. Its library result was 1,203 passed and 44 ignored; preceding integration
+groups passed, including executable provenance. The command then stopped on the
+old sync-mode diagnostic expectation and is retained as a partial failed run,
+not a passing full suite. A prior dirty-tree provenance failure and the initial
+missing-field compile failure also remain preserved. Test-only `5ccccbea9d386eefa960e7c047d0d759c5520306`
+updates the expected typed Unsupported wording while keeping unsuccessful exit,
+empty stdout, no private data and unchanged filesystem inventory. The affected
+sync-mode executable group then passed all ten tests from a clean checkout.
+
+The accepted Writer image increment `972f81cf8c3a1ad7661ce63e3f4e06259d84e6ae`
+was normally composed with that test-only successor, yielding frozen source
+`f146bb17e6be68ad25506d3ce5bf3516d2703791`, tree
+`2da2c7b2c863d695e5b7b2fcb7d137dcb4c44216`. It differs from coordinator candidate
+`e5cd51b265475e91d1e8705bae791910f8935477` only in that expected diagnostic.
+On this exact clean composition, strict all-target Clippy and formatting pass;
+11 selected handwriting/Reader/Writer controls and four selected-Writer/command
+controls pass. Executable groups pass sync-mode10, unassociated-feedback4,
+compatibility9 and Writer43; the compile-fail documentation test passes1. These
+last groups also cover the tail not reached by the earlier broad command.
+
+Review preserves detached catalog/profile pins, explicit inherited-family
+publication/readiness checks, document registration and budgeted uncertainty
+proof, both boxed constructors, full-media archive/restore and the promoted
+Reader fixture. The image runner retains its joined two-stage source/preference/
+correction/memory checks and original preparation, without treating a later
+ordinary Writer call as a guarded commit. No later test-only fixture successors
+or new runtime drafts are credited to this run. Final hosted CI must qualify the
+published combined head. No ignored provider/hardware qualification was opted
+into, and no live provider, Drive account or tablet was contacted. The active
+changes remain unfinished; this is combined source/fixture evidence only.
