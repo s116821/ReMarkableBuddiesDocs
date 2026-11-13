@@ -112,11 +112,18 @@ It does not qualify persistence through a system crash, power loss or storage
 rollback. That stronger guarantee needs separately verified platform durable
 replacement and recovery evidence. Storage uncertainty always refuses dispatch.
 
-The public host request accepts only an action, observed connection/boot and an
-opaque reference. It exposes the reduced preview or captured report, and a
+The public host request accepts only an action, observed connection/boot, an
+opaque original reference and a fresh caller-generated `wait_id` UUID for each
+begin/prepare/retry invocation. Cancellation carries that invocation's wait ID
+and original reference; matching only the retained original cannot cancel a
+later replay. The wait ID is transient cancellation metadata, not a Buddy
+operation or retained-record identity. It exposes the reduced preview or captured report, and a
 bounded list of retained references. Preparing a new operation uses the shared
 maintenance owner; an invalidated ready preview cannot dispatch, and a stale
-cancel cannot cancel another operation. One invocation has a single 45-second
+cancel cannot cancel another operation. A stale completion returns invalidated
+without a captured report and cannot replace a later replay's evidence. A report
+must match the retained row's connection and boot, as well as its original
+device/backup/epoch; only prepare/retry can return one. One invocation has a single 45-second
 deadline including storage and transport work; the undispatched review expires
 after two minutes. Private storage or parsing failures produce fixed errors.
 These are the next service requirements, not implemented host/IPC/UI behavior.
