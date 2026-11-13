@@ -312,6 +312,18 @@ input refusal and the legacy-sync refusal. Selected data transfer leaves
 recognition ingestion, the shared profile-wide Query command, and live
 provider/native qualification open.
 
+#### Operation custody across preferences and handwriting
+
+A real Store fixture submits a selected preference Edit and a handwriting
+Confirm with the same operation UUID, in both orders on format 5 and on the
+format 6 source-target family with a compound base. When Edit wins,
+Confirm refuses at the inherited cross-scope operation check. When Confirm
+wins, Edit refuses earlier because the record operation ID is already
+committed. The losing scope keeps its previous token or remains absent.
+The single winning Store receipt survives reopening. Both Status routes
+report only originals owned by their domain. Handwriting Confirm and Status
+also refuse a different profile for the same correction UUID.
+
 #### Selected Reader document uncertainty
 
 Buddy #139 source `5e27c12a3ef8fc75d130531287e2e76a760c7fa2` passed 13 focused
