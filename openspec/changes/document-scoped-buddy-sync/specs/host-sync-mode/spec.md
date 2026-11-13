@@ -19,6 +19,10 @@ The host SHALL expose one bounded explicit provisioning command for a chosen ord
 - **WHEN** the provision command reaches an outcome under valid local custody
 - **THEN** it reports the original operation, device, backup, epoch, outcome and currency using the bounded consuming mode report. Credentials and private provider IDs stay outside the result. Status distinguishes verified root, unresolved outcome, authorization, retry, recovery and an unqualified binding. A root result grants no package, runtime or native authority.
 
+#### Scenario: Inspecting private isolated root custody offline
+- **WHEN** an offline owned-data inventory encounters the fixed private isolated publisher layout
+- **THEN** it counts only recognized regular checkpoint, lock and staging files through the existing bounded no-follow traversal. It reports unexpected layout or unsafe entry conditions without disclosing checkpoint contents or granting provider authority.
+
 ## MODIFIED Requirements
 
 ### Requirement: Ordinary startup respects chosen mode
