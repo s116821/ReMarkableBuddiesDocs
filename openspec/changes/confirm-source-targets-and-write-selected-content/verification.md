@@ -224,3 +224,48 @@ treebaa7d3fed54018ed874b826b9e27902d4599c3a3. Archive-named checks pass9/9
 Clippy with warnings denied and formatting pass. Central strict128/128 and guidance
 36/126 pass. The earlier empty-store red failures and all original compile/fixture
 logs remain separate from these passing results.
+
+## Resumed populated restore and remaining controls
+
+The preserved test-only WIP's moved RecordRef fixture is repaired, and the actual
+populated target→target restore retains its older target revision through ContextView,
+its newer subject revision, current view and every exact object byte. The nonempty
+matrix reuses existing target and actual notebook producers across both public and
+conditional routes for4→4,6→4,4→6 and6→6; both conversations and all objects survive
+reopen. The initial matrix fixture incorrectly used the notebook document ID as a
+conversation ID; that original failure is retained separately.
+
+Actual original/marker/contract/format/capabilities write-boundary interruption
+fixtures retain the same conditions and spend only the saved proof allowance.
+The capability case removes the source archive before reopen. Exhaustion remains
+sticky even after the fixture's staged-data fault is repaired; neither a new plan
+nor another original is minted. Foreign actor and changed original actor/paths or
+a valid LocalOnly mode refuse without activation or replacement original facts.
+
+The selected-family control exposed a ready-preparation fast-path defect: a ready
+family6/CompoundSelected Store could enter ordinary no-selection startup. The same
+original bounded factory now checks requested base kind, mode and an explicitly
+provided original operation on its ready path. Ordinary family6 also refuses a
+valid same-actor SharedGroup mode. The original red control remains preserved.
+Broader regression also identified an old compound fixture that reused a Store
+after ordinary startup intentionally promoted it to6; its ordinary control is
+now isolated from the source4 compound fixture. Unsupported route status remains
+an explicit acceptance check rather than being weakened to any failure.
+
+The final target selection passes76/76. Compound-generation regression passes13
+with3 ignored cases: one subprocess-only child and two requiring historical
+reader executables. The parent process-death recovery case passes. The ready-route refusal is preserved as
+Unsupported through the actual Reader startup report, before credentials/model
+construction. These checks use synthetic stores and localhost fixtures; they do
+not establish live-model or tablet acceptance. Original fixture, startup and
+status-report failures remain separately retained alongside corrected results.
+
+Source3844a70cd9b123e7e9e5e4748197fa359859226c,
+tree57b54f0a80ec442465a4fae34dedd36b654f38ef, is frozen for coordinated
+integration. All-feature/all-target Clippy with warnings denied and formatting
+pass. Restore-maintenance tests pass7/7; actual archive CLI8/8, ordinary restore
+CLI5/5 and Writer43/43 pass. Central strict validation passes128/128 and guidance
+checks verify36 current files and126 preserved blobs. The coordinator owns publication, exact REM-52
+composition and independent review; combined validation must use that exact
+integrated revision. Whole-feature Native/live acceptance and spec sync/archive
+remain unfinished.
