@@ -434,6 +434,13 @@ exact original request only. Changed request text and a changed predecessor
 digest refused. The historical command used no Drive or model credential
 file and left the Worker checkpoint and selected token unchanged.
 
+The actual selected subject-memory provider held one query result through both
+Writer stages. The normalization payload excluded memory text. The unchanged
+draft payload included the original relevant fact and committed Generated.
+An independent global fact edit with the document token held constant stopped
+normalized-source publication if made after normalization. The same edit
+after draft submission stopped the final commit.
+
 The fixture uses modeled resident image evidence and a scripted owned model.
 The image command's fresh path still requires live provider qualification.
 Live model fidelity, circled-target ingress and tablet qualification remain open.
