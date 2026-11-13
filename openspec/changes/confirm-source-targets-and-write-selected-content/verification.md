@@ -313,3 +313,123 @@ Drive account or tablet was contacted. The later Reader482bb362 increment and
 reserved Writer normalization work are excluded. Root owns review of this successor,
 publication, final composition/CI and complete paired delivery. Both feature changes
 remain active; no whole-feature acceptance or spec archival follows.
+
+
+## Stored-target selected regional Writer adapter
+
+Sourceacf034719eef531627c7eb34cc7e9f25f77c0274,
+treef7639b0ccd67954f4ca48a9c7b268b1bc6654f46, is the first frozen
+stored-target selected adapter. It descends from81b380b and preserves the existing
+capture request encoding, ResidentCapture numeric-page proof and capture timing.
+The explicit writer-generate-target value uses the existing conversation-operation
+adapter. A private regional proof resolves only the exact selected target/source
+closure and Included media, derives the existing full-canvas mask, and rechecks
+under the same joined document/preference/context/memory gates. It uses the existing
+normalizer and two-stage Writer continuation, committing RegionSource and the mask
+through the original selected transaction rather than manufacturing a capture.
+
+Regional stages share one original300s policy with fixed60/150/240/300s cutoffs.
+Each provider deadline is also capped at90s. Admission progress runs through locked
+source rereads, and the normalization admission, regional result and final result
+all check their respective cutoff immediately before the commit call. Every
+reread spends its original partitioned allowance. Original receipts prevent replay
+from authorizing another model call. The ordinary and selected Writer paths share
+one small presentation helper that rejects model-supplied reserved About labels
+and validates the complete decorated draft against the existing bound.
+
+Strict all-feature/all-target Clippy with warnings denied and formatting pass on
+these exact source bytes. One real adapter test passes its14 serial scenarios:
+exact mask and image-free draft input, original-operation refusal, selected Refine
+retaining one original About and source, reserved-label refusal in Generate and
+Refine, decorated-draft size refusal, cancellation before submission, exact source
+change, exhausted admission/handoff/publication allowances, admission already
+expired, admission crossing its cutoff during the locked reread, late normalization,
+draft and final proof, and a delayed normalization receiving only its fixed-slot
+remainder. These are synthetic offline checks, not live recognition or device proof.
+
+The crossing fixture initially exposed an invalid test-clock assumption: adding
+59s to a live clock could expire before reaching the intended reread. The corrected
+fixture holds the regional clock at original start+59s, advances to+61s during the
+locked continuation source reread, asserts that injection was actually consumed,
+and verifies no normalization-preparation receipt or model call. Original compile,
+lint and failed boundary-fixture logs remain distinct from the final passing run.
+
+Focused existing regressions also pass on cleanacf0347: selected-image3/3,
+selected-handwriting Writer1/1, ordinary regional target4/4, selected command3/3
+and actual ordinary stored-target Writer CLI1/1. The executable check preserves
+exact mask-only normalization and original-source refinement after reopen. These
+scopes are not an unexecuted full-suite claim. Central strict validation passes
+128/128 and guidance verifies36 current files plus126 preserved source blobs.
+The explicit Rust1.98.1 environment reuses the single active target with all
+features, locked/offline dependencies, jobs4, debug0 and incremental0. The evidence
+records actual RUSTFLAGS and target settings rather than relying on shell inheritance.
+
+This local checkpoint excludes the later published cross-producer test-only
+da629264 successor and subsequent Docs guidance; the coordinator composes those
+with this frozen source normally. It does not reattribute their hosted checks to
+this local tree. Fresh target interpretation, installed third-scope ingress, Submit,
+selected/native effects and representative live/device acceptance remain open.
+The complete feature is not accepted or archived by this data-only increment.
+
+
+## Review correction: operation families and the actual Store boundary
+
+Review ofacf0347 found that different capture/regional child purposes could
+submit again under one parent after an uncertain normalization result. A foreign
+producer's accepted parent could also be detected only after normalization cost.
+The outer cutoff checks did not cover Store mutex wait, locked verification or
+head staging/rename; those reads also escaped the original phase allowance.
+
+The corrected composition is Source928fad43a607812473f8b1897b4cb1d6a9c21ab4,
+tree4d4cea83d411ce55c26789e4bf7d4023936078e7. It normally merges the owned
+consumer5751e960 with independently reviewed Native04fa3ba1 through9933452e,
+then corrects one unnecessary generic callback borrow. Source04fa3ba1 includes
+the guarded-publication2da3f81e implementation and published9fa918b baseline.
+Both existing normalization child IDs and capture fingerprints remain unchanged.
+Command recovery and first admission recognize sibling originals as terminal
+evidence. First publication checks parent plus both children atomically; result
+commits use their original allowance and time/cancel callback inside Store.
+
+An additional real producer case proved that first-preparation absence is not a
+long-lived reservation. A registered handwriting owner accepted parent X after
+the Writer child but before handoff, without a Worker refresh and with an
+unchanged document winner. Stage0 now checks exact child token and accepted parent
+absence under the existing Store mutex, invoking only the immediate submit
+callback before releasing it. The outer joined gates remain. Stage1 keeps its
+own acknowledged parent preparation; it does not require its own parent absent.
+No new durable reservation, transaction schema or operation index was introduced.
+
+Original red cases are retained: both sibling directions made a second handoff;
+a foreign parent before preparation made one after caller refresh; the local
+after-child producer also allowed one with the same notebook token. The first
+foreign-parent fixture initially refused for an unrelated changed winner; its
+passing zero-call result is not credited as the defect reproduction. The corrected
+fixture refreshes the caller after the completed foreign operation. The after-child
+case asserts that its actual producer injection ran, preventing an unrelated early
+refusal from counting as success.
+
+On the exact clean928fad43 composition, locked/offline all-feature/all-target
+Cargo check, strict Clippy with warnings denied and formatting pass. Regional
+checks pass5/5: the existing14-case operation matrix plus four actual sibling/
+foreign-parent regressions. New publication-boundary tests pass4/4, including
+expiry after staged-head sync, original allowance exhaustion, lost acknowledgment
+and cross-scope prerequisites. The immediate-handoff mutex/token/operation/deadline
+test passes1/1. Affected selected-image3/3, handwriting Writer1/1, ordinary regional
+target4/4, selected command3/3 and actual stored-target Writer CLI1/1 also pass.
+These are bounded Linux synthetic/localhost scopes, not a latest full-suite or
+hosted-CI result. Initial fixture compile and strict-lint errors remain separate
+from the final passing checks.
+
+The nullable-original review detour did not change selected correction admission:
+that producer/projector explicitly rejects absent original transcriptions. The
+attempted selected fixture was interrupted before execution and preserved as a
+stopped proposal, never counted as validation or published as authority. The
+ordinary complete-image nullable-profile compatibility mismatch remains a separate
+finite follow-up; accepting it does not justify loosening selected admission.
+
+The paired evidence uses the original explicit Rust1.98.1, existing Linux target,
+all features, jobs4, debug0 and incremental0 with actual flags recorded. No provider,
+tablet, Windows executable-copy/path, auth retry, new cache or held cleanup was
+performed. Independent review/publication/hosted CI remain coordinator-owned; fresh
+target/installed scope, Worker receiving, selected/native effects, live/device
+acceptance and whole-feature spec sync/archive remain unfinished.

@@ -19,7 +19,11 @@
 - [x] Preserve compound Store-wide operation collision custody through validated family6 inheritance and verify real concurrent cross-scope memory producers against both format5 and promoted format6.
 - [x] Reproduce and correct empty ready family6 archive/base capability loss through actual public and conditional restore, with unchanged legacy4→4 control.
 
-- [ ] Review the circled-target ingress adapter/ownership and original admission-window arithmetic against the frozen WriterImageRequest continuation before overlapping runtime edits.
+- [x] Review the circled-target ingress adapter/ownership and original admission-window arithmetic against the frozen WriterImageRequest continuation before overlapping runtime edits.
+- [x] Implement and exercise the first stored-target selected regional adapter with private exact-source proof, joined normalization/draft custody, fixed stage cutoffs and one original About through Generate/Refine; retain independent review and the broader route/effect gates below.
 - [ ] Connect fresh/stored target intents through actual third-scope dispatch, shared interpretation and one owned ordinary/selected regional normalizer without fabricated capture/page proof.
 - [ ] Retain RegionSource and typed target provenance through joined selected preparation/result, Worker receiving, Refine and independent note correlation with source/preference/correction/memory race and original-recovery controls.
 - [ ] Complete installed scope/Submit and missing selected/native effect routes plus live/device acceptance; the data-only adapter does not complete these requirements.
+
+- [x] Reproduce and correct sibling-route parent reuse plus accepted foreign-parent collisions before/after the normalization child, using guarded Store publication and immediate stage-0 handoff with original phase allowances.
+- [ ] Qualify ordinary regional complete-image nullable-original profile compatibility without loosening selected correction admission, retaining exact profile/prefix/hash and partial/structured refusal.
