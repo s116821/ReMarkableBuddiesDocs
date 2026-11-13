@@ -269,3 +269,47 @@ checks verify36 current files and126 preserved blobs. The coordinator owns publi
 composition and independent review; combined validation must use that exact
 integrated revision. Whole-feature Native/live acceptance and spec sync/archive
 remain unfinished.
+
+
+## Combined source review and LocalOnly compatibility
+
+The combined source candidate3f7b6a754ab73d259f1aeb98c400af56243372e0
+with Docsc039f43b6b914bae2106954ebb56ebbf4667ef68 was reviewed in the existing
+owned checkout and single build target. Its first compile exposed missing
+catalog-root/profile fields in preference detach/attach and an invalid test
+namespace name. Those exact pins now move through detachment without recapture;
+the discovery fixture uses SubjectMemory. Strict lint also required boxing the
+selected context owner; its mode lease and lifetime remain retained.
+
+Broader Reader regression exposed a real compatibility defect: automatic target
+preparation was attempted on historical selected data after SharedGroup→LocalOnly.
+That data is ineligible for notebook preparation but retains its delivered ordinary
+route. The original transition/admission/reuse test remains, strengthened with a
+byte-for-byte snapshot of Store data and absence of target authority. The existing
+one-lease startup now preserves valid legacy family2/3 LocalOnly selected history
+before any target intent. Normal ready validation still applies. A real producer
+matrix also proves that an existing original or incomplete notebook marker cannot
+use this route; CURRENT, head/token and capabilities remain unchanged. There is no
+compound/selected startup fallback or selected-history promotion/re-rooting.
+
+Sourceaf286b32a7f87bdd14ea02023734cc7c1d1a994e,
+treeae0ed3defd14bc6f69e1fa9438929a1aba4b4a23, freezes this correction. Target
+checks pass77/77; broad Reader71 with6 explicitly ignored; selected handwriting3
+and actual local context/report lifetime1 pass. Actual archive CLI8, ordinary
+restore CLI5, Reader CLI17 and Writer43 pass. Final all-feature/all-target Clippy
+with warnings denied and formatting pass. The CLI SharedGroup refusal retains
+failure/empty-output/no-private-data assertions with the accepted typed Unsupported
+diagnostic. Original compile/lint/Reader/CLI failures and partial interrupted
+fixture checks remain separate from passing evidence.
+
+Earlier combined results for unchanged scope are reused explicitly: compound13
+with3 ignored and selected Worker/receiver27, including real concurrent producer,
+scoped discovery/budget/publication refusal, explicit context custody, notebook
+handoff, recovery and receiving. Review retained all three inherited-base guards,
+Reader registration plus budgeted uncertainty validation, and both model-content
+reborrows. Ignored historical-executable, owned-byte and privileged process cases
+are not newly qualified. All execution is synthetic/local HTTP; no model provider,
+Drive account or tablet was contacted. The later Reader482bb362 increment and
+reserved Writer normalization work are excluded. Root owns review of this successor,
+publication, final composition/CI and complete paired delivery. Both feature changes
+remain active; no whole-feature acceptance or spec archival follows.

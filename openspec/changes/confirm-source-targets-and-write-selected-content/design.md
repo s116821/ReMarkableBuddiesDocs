@@ -20,6 +20,14 @@ selection token/history and inherited receipts. Enabled legacy sync is excluded
 from automatic promotion and retains its supported non-target path. Unsupported,
 isolated, ambiguous, unready or in-flight effect/domain/publisher custody refuses.
 
+Valid historical selected data in a legacy family2/3 Store with an explicit
+LocalOnly choice is not eligible for notebook preparation. Preserve its delivered
+non-target ordinary route in the same Store lease, with unchanged history, family,
+CURRENT and capabilities. This compatibility does not bypass an existing target
+original, incomplete feature or normal ready validation, and does not grant shared
+or target effect authority. Compound5/6 and explicit selected startup retain their
+separate admission rules.
+
 Freeze an original actor/generation/source/config/mode/policy preparation operation
 before publication. Reopen resumes only that exact operation and pins, including
 interruption before ready capabilities; it cannot replace its intent or bless an

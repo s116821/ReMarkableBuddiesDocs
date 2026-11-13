@@ -12,3 +12,10 @@ Normal supported target-producing startup SHALL prepare an eligible Store before
 - **WHEN** ordinary target-producing startup has no selected route
 - **THEN** it reports unsupported before credentials/model/native construction and preserves CURRENT, family and the original preparation
 - **AND** completed preparation does not bypass inherited-base, mode or original-operation checks
+
+#### Scenario: Historical LocalOnly data retains its ordinary route
+- **GIVEN** a valid legacy family2 or family3 Store with historical selected data and an explicit LocalOnly choice
+- **WHEN** ordinary startup has no selected route and no existing target preparation
+- **THEN** it retains the delivered non-target ordinary route under the same Store lease without promoting or re-rooting selected history
+- **AND** family, CURRENT, exact history/object bytes and capabilities remain unchanged; target and selected effect authority are not inferred
+- **AND** an existing target original or incomplete feature cannot use this compatibility route to bypass its normal admission
