@@ -17,6 +17,8 @@
 
 ## Closeout
 - [x] Resolve independent implementation/integration findings and sync/archive only the accepted bounded observation scope.
-- [ ] Obtain final exact-pair lifecycle review of canonical/archive and public-pointer changes.
-- [ ] Coordinate Docs-first/Manager-second squash after required current CI and lifecycle acceptance.
+- [x] Obtain final exact-pair lifecycle review of canonical/archive and public-pointer changes.
+- [x] Coordinate Docs-first/Manager-second squash after required current CI and lifecycle acceptance.
 - [x] Preserve full REM-41 installer and Windows-native/REM-35 gates; no premature issue closure.
+
+Post-merge receipt: [final review, both squashes and stable v0.4.0 release/provenance verification](https://github.com/s116821/ReMarkableBuddiesManager/pull/7#issuecomment-6073743528). This bookkeeping does not complete broader REM-41 qualification.
