@@ -11,6 +11,7 @@ This shared checklist lives in central Docs and applies on every development mac
 
 - Check free space on the actual build and temporary volumes. Estimate working headroom from comparable builds and expected outputs; use no arbitrary universal quota. Resolve insufficient space before starting.
 - Reuse an appropriate active cache when revision, toolchain and concurrent ownership permit; isolate only when needed. Identify its owner and path. Prefer existing validation that covers the exact revision and required checks; rebuild or repeat checks for a concrete change or unresolved concern.
+- Preserve the actual build invocation across shells and handoffs. For Cargo, record the toolchain, target directory, target/features, `RUSTFLAGS`, debug profile overrides and incremental setting; pass required overrides with each command rather than assuming a previous shell retained them. An unintended profile change can rebuild dependencies inside the same directory. If that happens, identify the cause, avoid concurrent replacement builds, and retire redundant outputs after their current use ends.
 
 ## At handoff or delivery
 
