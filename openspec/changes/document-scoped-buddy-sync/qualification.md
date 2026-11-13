@@ -405,5 +405,21 @@ Interpreted write and there is no Generated turn. The unchanged case reaches
 Generated. The receiving fixture uses loopback setup and consumes an
 established preference selection through the local Store.
 
-Selected Writer image normalization, model fidelity, live provider and
-tablet qualification remain open.
+#### Selected Writer image normalization
+
+The real Store fixture exercises the typed source route through its existing
+whole-page normalizer and the selected Writer preparation and finish commits.
+It proves exact target-hash exclusion and a guarded complete-empty context,
+an unregistered correction blocking partial-empty before preparation, and one
+eligible non-target example sent only to normalization. The unchanged path
+publishes one fresh normalized source and one Generated draft. Correction
+replacement before the normalization handoff prevents submission. Replacement
+after the response prevents normalized-source publication and draft submission.
+Replacement after draft submission prevents the final Generated commit. These
+refusals preserve the original preparation and prevent re-entry. A mismatched
+numeric page refuses before preparation or model submission.
+
+The fixture uses modeled resident image evidence and a scripted owned model.
+The image command's fresh path still requires live provider qualification.
+Separate source/preference races, lost-acknowledgment fault coverage, live model
+fidelity, circled-target ingress and tablet qualification remain open.
