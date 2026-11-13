@@ -1,6 +1,6 @@
 # Fresh regional receiver and continuation
 
-Status: concrete interface proposal for coordinator review before runtime edits.
+Status: concrete interface and ownership handoff accepted for implementation.
 Source basis is frozen Buddy928fad43 and paired Docs6eed6d9. The entry points below
 exist in that source; proposed types and transitions are not implemented claims.
 This remains part of the same unfinished delivery and paired PRs.
@@ -121,6 +121,10 @@ SourceTarget/TargetUse/TargetState/root and the interpretation receipt. Invalid 
 ambiguous localization becomes explicit uncertainty; no normalization or old-target/
 page/notebook fallback follows. New-root state has no prior target to inherit.
 
+Resolve current TargetState's use reference as its exact immutable selected member:
+presentation may advance that use's hash revision independently. Keep the active
+state, target and source checks current, including explicit retarget/clear refusal.
+
 Advance current root/token ONLY through the returned P and interpretation receipts.
 Retain the original pre-P selection for memory/policy correspondence. Then resolve
 the newly accepted target through RegionalImage, derive the existing full-canvas
@@ -205,7 +209,7 @@ Native's isolated publisher or shared startup ownership.
 | `src/conversation/selected_reader_write/targets.rs`: interpret record builder | Share bounded record construction with private Writer interpretation, preserving Reader-only admission | SCRAPPY target-record helper |
 | `src/conversation/target.rs`, `selected_writer.rs` and regional child; `src/writer/selected/image.rs` and regional child | Fresh frame, one-use identification, own-receipt advancement, sealed one-user source attachment and existing draft continuation | SCRAPPY existing target/Writer ownership |
 | `src/conversation_layout.rs`: exact hash-bound inline About suppression | Retain Reader prefix recipe; add typed Writer Markdown position validation only after exact body-hash match | SCRAPPY presentation seam; ordinary note formatter stays shared |
-| `src/main.rs`, `src/reader_runtime.rs`, `src/mode_maintenance.rs` | No startup edit selected by this first slice | Shared runtime: Root assigns Native's isolated-startup ranges/signatures before either lane edits |
+| `src/main.rs`, `src/reader_runtime.rs`, `src/mode_maintenance.rs`, `src/workflow/conversation_dispatch.rs` | No startup edit selected by this first slice | Shared runtime: Root assigns Native's isolated-startup ranges/signatures before either lane edits |
 
 If startup signatures change in the coordinated Native work, import the accepted
 composition and adapt the call site after review. Do not independently implement
