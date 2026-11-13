@@ -65,7 +65,7 @@ treated as a tablet credential or provider-root binding.
 
 ## Increment checklist
 
-- [ ] Review the private validator and reconcile exact producer-emitted frames.
+- [x] Review the private validator and reconcile exact producer-emitted frames.
 - [ ] Connect the fixed wired command with retained original ownership.
 - [ ] Connect the shared browser/Electron review, prepare and recovery UI.
 - [ ] Verify actual host/transport/UI behavior and coordinated source/Docs CI.
