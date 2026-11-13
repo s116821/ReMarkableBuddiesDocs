@@ -323,3 +323,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Reuse the format-1 archive collector, validation and writer under a same-Store current isolated lease. Skip empty history and publish the marker only after verified objects.
 - [x] Round-trip committed history and exact screenshot bytes through the existing inspector and ordinary restore to a distinct actor. Local Windows fixtures at Buddy `9f5bfe0` cover media omission, missing/corrupt promised media, wrong-mode/Store/stale leases, empty input, owned-root overlap and exclusion of private configuration and credentials.
 - [x] Obtain independent paired review and coordinator publication of the snapshot increment at Buddy `9f5bfe0`. Keep portable configuration inclusion, cloud binding/publication, Manager download and replacement restore open.
+
+## Portable preferences in ordinary isolated backups
+
+- [ ] Review the [package composition and import policy](isolated-portable-configuration.md), including the exact artifact capture, marker schema and empty-history behavior, before editing runtime code.
+- [ ] Prepare and inspect a package from the same locked ordinary format-1 history and one exact saved declaration capture. Verify byte identity, exclusions, no-work, strict malformed/version/hash rejection, and interruptions before and after publication.
+- [ ] Exercise the verified components through existing ordinary data restore and independently confirmed portable import on a distinct destination actor. Verify stale/swap refusal, untouched destination-only declarations, and separate outcome reporting.
+- [ ] Keep additional archive generations, provider publication and the Manager replacement workflow open pending their own acceptance.

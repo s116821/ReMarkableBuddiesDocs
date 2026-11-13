@@ -406,3 +406,7 @@ the same format and preserve history for a distinct destination actor. The
 full isolated feature still requires the allowlisted portable configuration
 projection, additional archive-generation policy, the verified cloud binding,
 publication, Manager download and explicit replacement restore.
+
+The [portable preferences in isolated backups](isolated-portable-configuration.md)
+proposal composes the data-only archive with the existing portable V1 artifact.
+It defines a separate completion marker and keeps destination import explicit.
