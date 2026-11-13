@@ -313,3 +313,60 @@ Drive account or tablet was contacted. The later Reader482bb362 increment and
 reserved Writer normalization work are excluded. Root owns review of this successor,
 publication, final composition/CI and complete paired delivery. Both feature changes
 remain active; no whole-feature acceptance or spec archival follows.
+
+
+## Stored-target selected regional Writer adapter
+
+Sourceacf034719eef531627c7eb34cc7e9f25f77c0274,
+treef7639b0ccd67954f4ca48a9c7b268b1bc6654f46, is the first frozen
+stored-target selected adapter. It descends from81b380b and preserves the existing
+capture request encoding, ResidentCapture numeric-page proof and capture timing.
+The explicit writer-generate-target value uses the existing conversation-operation
+adapter. A private regional proof resolves only the exact selected target/source
+closure and Included media, derives the existing full-canvas mask, and rechecks
+under the same joined document/preference/context/memory gates. It uses the existing
+normalizer and two-stage Writer continuation, committing RegionSource and the mask
+through the original selected transaction rather than manufacturing a capture.
+
+Regional stages share one original300s policy with fixed60/150/240/300s cutoffs.
+Each provider deadline is also capped at90s. Admission progress runs through locked
+source rereads, and the normalization admission, regional result and final result
+all check their respective cutoff immediately before the commit call. Every
+reread spends its original partitioned allowance. Original receipts prevent replay
+from authorizing another model call. The ordinary and selected Writer paths share
+one small presentation helper that rejects model-supplied reserved About labels
+and validates the complete decorated draft against the existing bound.
+
+Strict all-feature/all-target Clippy with warnings denied and formatting pass on
+these exact source bytes. One real adapter test passes its14 serial scenarios:
+exact mask and image-free draft input, original-operation refusal, selected Refine
+retaining one original About and source, reserved-label refusal in Generate and
+Refine, decorated-draft size refusal, cancellation before submission, exact source
+change, exhausted admission/handoff/publication allowances, admission already
+expired, admission crossing its cutoff during the locked reread, late normalization,
+draft and final proof, and a delayed normalization receiving only its fixed-slot
+remainder. These are synthetic offline checks, not live recognition or device proof.
+
+The crossing fixture initially exposed an invalid test-clock assumption: adding
+59s to a live clock could expire before reaching the intended reread. The corrected
+fixture holds the regional clock at original start+59s, advances to+61s during the
+locked continuation source reread, asserts that injection was actually consumed,
+and verifies no normalization-preparation receipt or model call. Original compile,
+lint and failed boundary-fixture logs remain distinct from the final passing run.
+
+Focused existing regressions also pass on cleanacf0347: selected-image3/3,
+selected-handwriting Writer1/1, ordinary regional target4/4, selected command3/3
+and actual ordinary stored-target Writer CLI1/1. The executable check preserves
+exact mask-only normalization and original-source refinement after reopen. These
+scopes are not an unexecuted full-suite claim. Central strict validation passes
+128/128 and guidance verifies36 current files plus126 preserved source blobs.
+The explicit Rust1.98.1 environment reuses the single active target with all
+features, locked/offline dependencies, jobs4, debug0 and incremental0. The evidence
+records actual RUSTFLAGS and target settings rather than relying on shell inheritance.
+
+This local checkpoint excludes the later published cross-producer test-only
+da629264 successor and subsequent Docs guidance; the coordinator composes those
+with this frozen source normally. It does not reattribute their hosted checks to
+this local tree. Fresh target interpretation, installed third-scope ingress, Submit,
+selected/native effects and representative live/device acceptance remain open.
+The complete feature is not accepted or archived by this data-only increment.
