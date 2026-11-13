@@ -219,3 +219,7 @@ and frozen selected Writer image interfaces to the remaining third-scope flow.
 It defines the private regional adapter, exact phase/ownership boundaries, original
 budget constraint, proposed files and acceptance work. Runtime handoff requires
 coordinator/interface review; the plan does not claim this route is implemented.
+
+The [fresh regional continuation](fresh-regional-continuation.md) fixes the concrete
+receiver/session input, combined first P receipt, identify/normalize/draft custody,
+one-user/About history and immutable released-at budgets for the next review.

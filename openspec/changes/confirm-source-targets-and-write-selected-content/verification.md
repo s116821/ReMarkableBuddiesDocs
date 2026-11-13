@@ -433,3 +433,31 @@ tablet, Windows executable-copy/path, auth retry, new cache or held cleanup was
 performed. Independent review/publication/hosted CI remain coordinator-owned; fresh
 target/installed scope, Worker receiving, selected/native effects, live/device
 acceptance and whole-feature spec sync/archive remain unfinished.
+
+
+## Completed Reader answer retains regional target
+
+A fresh-flow source audit added a real selected Reader Generated publication before
+regional resolution. It reproduced a separate lifecycle defect on928fad43:
+`selected Writer reference stale`. Reader presentation revises TargetUse's inline
+body hash, while current TargetState intentionally keeps its exact immutable
+introducing-use reference. The regional resolver incorrectly required that use
+reference to remain the latest head.
+
+Sourcef89979c7 changes only that use lookup to the selected projection's exact
+immutable reference. Current TargetState, requested SourceTarget and source-head
+checks remain intact. Its positive Reader-to-Writer test and a cleared-active-target
+negative pass on4932ca3d. The clear control publishes the existing validated
+TargetUse(None)/TargetState shape through actual selected Store/root CAS, retaining
+the old target/use; it does not claim that a high-level selected clear command
+exists. The control requires explicit current-target refusal and zero model calls,
+not an unrelated stale-token failure.
+
+Final finite source checkpointc3277f9478760e2f5f07afd0f6084c9bcac0e0e8,
+tree0ec67c30b18ccb2ef77268c41380c4c0438fac05, has identical production bytes to
+f89979c7; its final test-only change merges two identical refreshed-selection
+branches after strict Clippy flagged the duplication. The original red and both
+passing focused logs remain separate. Strict all-feature/all-target lint and
+formatting are recorded against the final checkpoint. No full or earlier regional
+matrix is reattributed to this finite correction. Fresh receiver implementation
+continues under the accepted plan; this checkpoint is not whole-feature completion.

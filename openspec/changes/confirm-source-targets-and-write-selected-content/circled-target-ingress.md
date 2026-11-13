@@ -34,6 +34,9 @@ sharing the normalizer, continuation, request policy and record owners.
 
 ## Inputs and owned stages
 
+The next receiver/session and three-submission handoff is specified in the
+[fresh regional continuation](fresh-regional-continuation.md), pending review.
+
 1. The existing non-conflicting intent registry chooses Circled alongside Page and
    Notebook. It supplies one genuine release/operation and admitted source frame,
    or an explicit existing target reference. No menu navigation, extra daemon or
