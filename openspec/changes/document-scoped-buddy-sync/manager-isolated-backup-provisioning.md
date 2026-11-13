@@ -44,8 +44,8 @@ does not qualify a connected host action, real provider or tablet execution.
 The transport is implemented and fixture-tested. The remaining connected host
 and UI work is not a claim of implementation:
 
-- Add the fixed command to the existing identity-verified wired maintenance
-  transport, with the usual shared ownership, deadline and cancellation rules.
+- Connect the privileged host service to the existing identity-verified wired
+  maintenance transport, with shared ownership, deadline and cancellation rules.
   Do not expose commands, paths, original tokens or credentials through IPC.
 - Provide an explicit review and prepare action for an already selected isolated
   mode in the shared browser/Electron UI. Keep a lost response unresolved; a fresh
@@ -68,6 +68,35 @@ observer has an independently configurable provisioning timeout, defaulting to
 retain their 12-second request and 8-second command bounds. Cancellation still
 owns the child process, and lost or incomplete output is not an acknowledgment.
 No transport retry, arbitrary command, path or endpoint is introduced.
+
+### Host ownership and restart recovery
+
+Retain dispatched originals in one additional fixed private JSON file through
+the existing protected host storage helper. Reuse its checked directory, private
+file access, exclusive writer and conditional replacement; do not introduce a
+second credential store, database, arbitrary filename or renderer-supplied path.
+The file contains at most eight original records: an opaque UI reference, the
+connection/boot identity, the full private original snapshot, and exact input
+bytes with their digest. It contains no OAuth tokens or duplicate credentials.
+
+The service must durably record and reread the exact original before sending it.
+It releases the private storage writer before transport starts. If persistence
+is uncertain, it does not dispatch. An existing original for that Store/epoch is
+reused only through explicit original recovery, never replaced by a new UUID.
+Retain all originals across lost output, cancellation and helper restart. A
+reloaded original has an unknown result until an explicit original replay
+receives a valid report; an in-memory successful report is not invented after
+restart. No automatic retry or silent eviction occurs when the bounded history
+is full. Changed connection or boot identity refuses dispatch in this increment.
+
+The public host request accepts only an action, observed connection/boot and an
+opaque reference. It exposes the reduced preview or captured report, and a
+bounded list of retained references. Preparing a new operation uses the shared
+maintenance owner; an invalidated ready preview cannot dispatch, and a stale
+cancel cannot cancel another operation. One invocation has a single 45-second
+deadline including storage and transport work; the undispatched review expires
+after two minutes. Private storage or parsing failures produce fixed errors.
+These are the next service requirements, not implemented host/IPC/UI behavior.
 
 Tablet credential installation, choosing isolated mode from Manager sign-in,
 provider namespace visibility, backup browsing/download and replacement restore
