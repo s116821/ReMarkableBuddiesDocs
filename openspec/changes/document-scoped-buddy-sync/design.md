@@ -188,9 +188,53 @@ model submission and each Reader result write, the request joins the existing
 ordered Reader, preference, correction, and applicable memory gates. The local
 checkpoint read guard spans the handwriting proof and the admitted effect.
 
-The selected Writer entry currently accepts normalized text. Its image context
-belongs at the typed normalization ingress from #105, with the same static PNG
-eligibility and exact target-hash exclusion.
+#### Selected Writer image normalization plan
+
+The typed Writer receiver will start from a fresh selection token and exact
+conversation root, source and user-turn references in that selected document.
+Resolve the requested image ordinal from the current reciprocal links and read
+only Included, digest-verified selected bytes with the existing bounded
+loader. Validate the registered document, source and pending Reader uncertainty
+before inference. The typed source owner establishes page/image identity;
+retained history and serialized references alone grant no model permit.
+
+Reuse #105's admitted whole-page normalizer and the existing selected
+`ConfirmedContext`. Capture once for the explicitly enabled local profile,
+excluding the exact image digest before ranking. Use the same static PNG,
+prompt, response and example bounds as the existing normalizer. An unobserved
+catalog or partial-empty selection refuses before submission. Complete-empty
+can use the existing prompt while retaining its absence proof. Keep the usual
+normalized-text and archived-notebook entries on their current contracts.
+
+Reserve admission, handoff, progress and completion from one original
+monotonic deadline and read allowance. Verify the same selected document,
+source, preferences and correction proof under one ordered gate set at
+normalization submission and normalized-source publication. Join any memory
+pin already captured by the receiver. Hold the local checkpoint read guard
+across each synchronous effect, and release the gates before waiting on the
+owned request. Adapt the existing normalizer's model execution seam so the
+selected receiver can submit through the guarded handoff.
+
+Keep the ordinary typed normalization's durable Prepared-before-call
+semantics by using the selected Store's existing operation and receipt
+transactions. The Prepared step binds the input references and target digest.
+It must refuse re-entry after an ambiguous or acknowledged original. Publish
+the normalized source through the selected Writer preparation transaction
+with the same proof held through commit and exact receipt readback. Only a
+fresh acknowledgment can supply input for the existing Writer draft handoff.
+Count normalization and draft as distinct, single-use submissions within the
+original bounded request. An unreadable, stale or unacknowledged result
+cannot enter draft generation.
+
+REM-52 owns the normalization execution seam in `src/retrieval/notebook.rs`,
+selected handwriting context and the receiver's focused fixtures. Coordinate
+edits to `src/storage/sync/selected/preference_consumer.rs`,
+`src/conversation/selected_writer.rs` and `src/writer/selected.rs` with the
+coordinator for joined policy, result publication and draft continuation.
+`src/writer/selected_command.rs` and the installed dispatch are shared
+integration surfaces. REM-17 owns source-target storage, startup and the
+circled-target ingress. The plan adds no separate parser, registry or
+notebook workflow.
 
 ### Shared-preference Manager and one-shot command boundary
 
