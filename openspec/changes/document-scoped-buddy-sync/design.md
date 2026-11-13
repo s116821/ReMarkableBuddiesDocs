@@ -386,3 +386,23 @@ implementation.
 The [selected Reader input contract](selected-reader-resident-input.md) defines the
 installed source-only constructor, registered document admission, one atomic
 Prepared publication and the effective preference lifetime through Generated.
+
+### Ordinary data snapshots for isolated backup
+
+The isolated publisher can prepare an ordinary format-1 data snapshot using the
+existing Store archive collector, inventory verifier and marker-last writer.
+Under the Store mutex, confirm that the original isolated lease belongs to that
+Store and still matches its persisted mode, device, epoch, binding and backup
+identity. Capture and write bytes from one generation. An empty history produces
+no work and creates no destination. Check safe paths and overlap with owned
+roots, verify the exact inventory and media coverage, and publish the archive
+marker only after the objects have been verified.
+
+The ordinary snapshot contains the committed Buddy records and retained media
+with their original identities. It does not read the device configuration
+snapshot. Private configuration, credentials and publisher custody stay outside
+the portable archive. The existing inspector and ordinary restore plan verify
+the same format and preserve history for a distinct destination actor. The
+full isolated feature still requires the allowlisted portable configuration
+projection, additional archive-generation policy, the verified cloud binding,
+publication, Manager download and explicit replacement restore.

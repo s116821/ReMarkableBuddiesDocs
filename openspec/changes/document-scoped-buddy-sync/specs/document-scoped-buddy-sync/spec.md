@@ -85,6 +85,10 @@ Backup/sync SHALL include selected Buddy-owned history, bookkeeping, references,
 - WHEN remote policy intentionally omits a large sample or an included sample is unavailable
 - THEN status distinguishes intentional omission from incomplete promised media, retains required local media, and never reports a complete restore for missing included content.
 
+#### Scenario: Preparing an ordinary isolated backup snapshot
+- WHEN the ordinary Store prepares a snapshot under its current isolated-mode lease
+- THEN the existing format-1 archive preserves committed Buddy history and truthful media coverage, excludes device configuration and credentials, and an empty history produces no archive.
+
 ### Requirement: File/OS management status and protected restore
 Versioned file/OS contracts SHALL expose mode/identities, committed/applied revisions, generation, successful-sync time, pending/offline/auth/contention/replacement/recovery state and media coverage. Selected backup restore SHALL be an explicit validated hardwired maintenance transaction with rollback and new local actor identity; no Buddy service API SHALL be introduced.
 
