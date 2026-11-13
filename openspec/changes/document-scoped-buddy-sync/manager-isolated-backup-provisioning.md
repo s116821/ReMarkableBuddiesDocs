@@ -57,6 +57,17 @@ The following is the remaining consumer work, not a claim of implementation:
 - Exercise the real host, transport fixtures, both UI distributions and current
   producer frames. Keep production qualification profiles unchanged.
 
+The transport reuses `local_mode_choice_transport.py` and its fixed sync-mode
+command prefix with the single additional selector `provision-isolated-backup`.
+Only that selector accepts the original version-1 provisioning body and a total
+budget up to 45 seconds, including identity checks. Its command phase is bounded
+to 35 seconds to accommodate Buddy's existing 30-second provider window. The
+observer has an independently configurable provisioning timeout, defaulting to
+45 seconds; its existing ordinary timeout remains unchanged. Other selectors
+retain their 12-second request and 8-second command bounds. Cancellation still
+owns the child process, and lost or incomplete output is not an acknowledgment.
+No transport retry, arbitrary command, path or endpoint is introduced.
+
 Tablet credential installation, choosing isolated mode from Manager sign-in,
 provider namespace visibility, backup browsing/download and replacement restore
 remain explicit following integration. They use this same preparation action and
