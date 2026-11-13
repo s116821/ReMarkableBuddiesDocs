@@ -27,5 +27,5 @@
 
 - [x] Reproduce and correct sibling-route parent reuse plus accepted foreign-parent collisions before/after the normalization child, using guarded Store publication and immediate stage-0 handoff with original phase allowances.
 - [ ] Qualify ordinary regional complete-image nullable-original profile compatibility without loosening selected correction admission, retaining exact profile/prefix/hash and partial/structured refusal.
-- [ ] Review and implement the concrete fresh regional receiver/session intent, combined historic P preparation, shared identify/interpret continuation and original released-at slots without a new owner/context/allowance.
-- [ ] Preserve one fresh Writer user and exact capture-plus-region provenance, then bind one About into the final Generated transaction and reopened typed layout.
+- [x] Review and implement the concrete fresh regional receiver/session intent, combined historic P preparation, shared identify/interpret continuation and original released-at slots without a new owner/context/allowance.
+- [x] Preserve one fresh Writer user and exact capture-plus-region provenance, then bind one About into the final Generated transaction and reopened typed logical presentation; native page binding/rendering remains separately gated.

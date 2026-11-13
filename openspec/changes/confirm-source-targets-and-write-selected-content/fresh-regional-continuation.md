@@ -1,9 +1,10 @@
 # Fresh regional receiver and continuation
 
-Status: concrete interface and ownership handoff accepted for implementation.
-Source basis is frozen Buddy928fad43 and paired Docs6eed6d9. The entry points below
-exist in that source; proposed types and transitions are not implemented claims.
-This remains part of the same unfinished delivery and paired PRs.
+Status: gated selected receiver implemented with focused offline evidence;
+coordinator runtime review and broader qualification remain open. The original
+interface review used Buddy928fad43 and paired Docs6eed6d9; exact implementation
+and evidence revisions are recorded in verification.md. This remains part of the
+same unfinished delivery and paired PRs, not a native or live acceptance claim.
 
 ## Receiver and eligibility
 
@@ -41,7 +42,11 @@ integration gates. This gated receiver grants no native rendering authority.
 The ordinary installed loop must explicitly refuse the new regional-generation
 intent until its own fresh receiver is supplied; it must not start Reader or call
 the selected factory on an ordinary Store. Ordinary stored-target commands retain
-their existing route. The first implementation does not change startup eligibility.
+their existing route. The ordinary slot reader must refuse an observed regional
+intent before refinement's expiry/page filters can return Reader None. Keep
+unexpired matching/foreign queued bytes intact; an expired owned record may be
+retired under its existing lock, but that attempt still refuses. Preserve absent
+input and all existing refinement page/expiry/consume behavior. The first implementation does not change startup eligibility.
 
 ## One operation from release to finalization
 
@@ -181,10 +186,10 @@ actual sibling/foreign-parent regressions for first identification as well as
 normalization. Assert normalization still sees X absent after its own interpretation
 and draft succeeds with its own X present. Keep all old capture wire/ID controls.
 
-SCRAPPY proposes the existing target/parser, selected Writer continuation/command,
-preference window/context, shared preparation/target-record builder and layout
-seams. The installed slot/Session return, selected receiver and acquisition-deadline
-changes require the coordinator's concrete handoff before runtime edits. No edits
+SCRAPPY owns the target/parser, selected Writer continuation/command, preference
+window/context, shared preparation/target-record builder and layout seams. The
+coordinator accepted the concrete installed slot/Session, selected receiver and
+acquisition-deadline handoff before these runtime edits. No edits
 to native recovery/effect qualification, activation permissions or other Native-owned
 work follow from this plan. Live/provider and tablet acceptance remain separately
 owned; full-feature canonical sync and archival remain open.
@@ -192,10 +197,10 @@ owned; full-feature canonical sync and archival remain open.
 
 ## Concrete runtime file handoff
 
-The coordinator assigns these seams before edits; this table does not transfer
+The coordinator assigned these seams before edits; this table does not transfer
 Native's isolated publisher or shared startup ownership.
 
-| File and existing entry point | Proposed narrow edit | Ownership boundary |
+| File and existing entry point | Narrow edit | Ownership boundary |
 | --- | --- | --- |
 | `src/writer/command.rs`: CommandRequest::Resident/dispatch | Decode the new explicit installed submission through the existing command | SCRAPPY Writer consumer |
 | `src/workflow/resident_supervisor/writer_request.rs`: Submission, submit, read, take | Strict regional intent, digest peek/claim and matching consume | SCRAPPY after Session interface handoff; preserve lease/expiry/permissions |
@@ -217,3 +222,20 @@ an isolated-mode startup fix or widen Reader/Writer eligibility. Physical input
 reducer, production scope registry and native effect qualification remain with
 their established owners. Public declaration/inspection of this intent is not
 qualification of a production gesture or tablet output.
+
+## Presentation-context implementation finding
+
+The connected reopened-layout fixture exposed that `context_range` intentionally
+filters Generated Writer turns as model context. A hash-bound layout recipe alone
+cannot inspect a body missing from that view. Add a separate bounded read-only
+presentation view over the same exact ordinary/selected records, including typed
+Writer Generated assistant bodies. Route the existing history presenter through
+that view; keep the model-context filter unchanged. Both views retain their text,
+turn, token and exact selected-media bounds. This is historical data presentation,
+not a selected/native effect route or a new binding. Check both the unchanged
+model filter and the exact body/hash/Markdown-position layout recipe.
+
+The fresh root has no fabricated presentation binding. Its reopened presentation
+context exercises the shared read-only About-entry projection directly; the actual
+bound-page layout calls that same projection after its existing identity checks.
+Native rendering and a real bound tablet page remain independent integration gates.
