@@ -322,4 +322,4 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 - [x] Reuse the format-1 archive collector, validation and writer under a same-Store current isolated lease. Skip empty history and publish the marker only after verified objects.
 - [x] Round-trip committed history and exact screenshot bytes through the existing inspector and ordinary restore to a distinct actor. Local Windows fixtures at Buddy `9f5bfe0` cover media omission, missing/corrupt promised media, wrong-mode/Store/stale leases, empty input, owned-root overlap and exclusion of private configuration and credentials.
-- [ ] Obtain independent paired review and coordinator publication of the snapshot increment. Keep portable configuration inclusion, cloud binding/publication, Manager download and replacement restore open.
+- [x] Obtain independent paired review and coordinator publication of the snapshot increment at Buddy `9f5bfe0`. Keep portable configuration inclusion, cloud binding/publication, Manager download and replacement restore open.
