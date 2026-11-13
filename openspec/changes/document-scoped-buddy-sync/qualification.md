@@ -419,7 +419,21 @@ Replacement after draft submission prevents the final Generated commit. These
 refusals preserve the original preparation and prevent re-entry. A mismatched
 numeric page refuses before preparation or model submission.
 
+Additional real-Store interlocks advanced the selected source revision before
+or after normalization submission. Both stopped the normalized-source commit
+and draft submission. A portable preference edit with the document token
+held constant blocked draft submission when applied before handoff, and
+blocked the final commit when applied after draft handoff.
+
+Store faults before activation and after commit or activation produced no
+model submissions. A pre-activation fault left the selected token unchanged
+and no preparation receipt. Each lost acknowledgment left the original
+preparation durable and prevented a fresh in-process run. The selected
+command reopened the Store and reported historical preparation for the
+exact original request only. Changed request text and a changed predecessor
+digest refused. The historical command used no Drive or model credential
+file and left the Worker checkpoint and selected token unchanged.
+
 The fixture uses modeled resident image evidence and a scripted owned model.
 The image command's fresh path still requires live provider qualification.
-Separate source/preference races, lost-acknowledgment fault coverage, live model
-fidelity, circled-target ingress and tablet qualification remain open.
+Live model fidelity, circled-target ingress and tablet qualification remain open.
