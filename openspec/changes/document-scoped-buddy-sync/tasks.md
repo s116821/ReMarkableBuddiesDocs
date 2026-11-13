@@ -355,6 +355,6 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Reconcile original producer-emitted current, historical and unqualified frames without reserialization.
 - [x] Independently review the [consumer contract](manager-isolated-backup-provisioning.md) and private validator. Manager `fdf8a8f` corrects typed-outcome, token/epoch continuity and redacted-parse-error findings; 13 focused tests include original Buddy frames.
 - [x] Extend the existing fixed wired mode transport with provisioning-only deadlines, original-byte forwarding, identity/framing checks and cancellation. Independent review and 12 Python/3 Node child tests pass; no live command was run.
-- [ ] Connect the privileged host service with original request retention, bounded ownership and explicit original-only recovery.
+- [x] Connect the privileged host service with original request retention, bounded ownership and explicit original-only recovery. Manager `cef7f50` has independently reviewed service/storage and browser/Electron bridge source; 38 private, child, service and loopback tests pass. Actual shared UI and platform storage qualification remain separate.
 - [ ] Connect and verify the shared browser/Electron review and prepare action, with completed backup and runtime health remaining separate observations.
 - [ ] Complete coordinated source/Docs checks and separately scoped provider/wired qualification before release.

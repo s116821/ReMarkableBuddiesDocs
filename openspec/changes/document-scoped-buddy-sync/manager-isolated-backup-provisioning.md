@@ -41,12 +41,13 @@ does not qualify a connected host action, real provider or tablet execution.
 
 ## Connected action
 
-The transport is implemented and fixture-tested. The remaining connected host
-and UI work is not a claim of implementation:
+The transport and privately retained host service are implemented and
+fixture-tested. The browser/Electron bridge is wired; the shared UI and live
+qualification remain unfinished:
 
-- Connect the privileged host service to the existing identity-verified wired
+- The privileged host service uses the existing identity-verified wired
   maintenance transport, with shared ownership, deadline and cancellation rules.
-  Do not expose commands, paths, original tokens or credentials through IPC.
+  Commands, paths, original tokens and credentials stay outside the public IPC.
 - Provide an explicit review and prepare action for an already selected isolated
   mode in the shared browser/Electron UI. Keep a lost response unresolved; a fresh
   inspect cannot stand in for the original provisioning result.
