@@ -1,7 +1,8 @@
 # Circled-target Writer ingress
 
-Status: proposed implementation handoff for coordinator/interface review. No runtime
-file is changed by this plan. This continues the active feature and its existing
+Status: coordinator-reviewed interface/ownership handoff accepted for implementation.
+The first increment is the stored-target selected regional adapter; fresh target,
+third-scope installed ingress and all effect/live obligations remain open. This continues the active feature and its existing
 paired PRs; it is not a completed planning prerequisite or a reduced acceptance scope.
 
 ## Source basis and current boundary
@@ -107,21 +108,22 @@ allowance. Historical inspection/recovery reports evidence, not a new live permi
 
 ## Budget and effect boundary
 
-Preserve the delivered stored-target300s / generate-and-export345s bounds and the
-selected image request's original300s parent,60s admission window and partitioned
-read budgets. Open the owner at the initiating operation, before shared target
-understanding; do not call a fresh policy factory afterward to restart the clock.
-For a fresh circle, target identification must fit that original admission window
-with a clamped one-use model deadline before the two existing normalization/draft
-submissions. Proposed reservation arithmetic is admission60 + normalization90 +
-draft90 + final-proof60 =300s. Target-only identification has a45s ceiling further
-clamped to the remaining admission window after policy/capture; it is not a third
-90s slot. Cold qualified policy reads spend that same admission window. The
-ordinary export variant reserves its existing additional45s within its original
-345s parent, not after a new generation timer. The implementation review must demonstrate the exact reservation
-arithmetic, including cold qualified policy reads and final proof. If the existing
-window cannot support that path, report the concrete conflict and review a bounded
-amendment before implementing a longer lifetime; silently renewing300s is invalid.
+For the new regional operation, retain one monotonic start and original300s parent
+(ordinary export345s). Its cutoffs are fixed offsets from that same start:
+admission60s, normalization150s, draft240s, final proof/publication300s. Target
+identification has at most45s and is further clamped to remaining admission.
+Normalization and draft retain at-most90s provider caps and also get only the
+remainder of their fixed slot. A delayed stage never receives a renewed timeout.
+Existing capture-route timing semantics are unchanged.
+
+Every source/policy/context reread and final proof spends the original partitioned
+read allowance. No new policy owner follows interpretation. Deterministic budget,
+slot-expiration and cancellation controls must enter the actual regional adapter.
+If a derived mask matches an already frozen example, refuse rather than drop or
+reselect examples after first model use. Only an acknowledged own receipt can
+advance target/root correspondence. These bounds and file ownership were accepted
+by the coordinator before runtime edits; there is no outstanding timing-policy
+proposal for this increment.
 
 The ordinary route keeps its existing deliberate draft/refine/export choices.
 The current selected runner is Generate/Refine data-only; this adapter grants no
