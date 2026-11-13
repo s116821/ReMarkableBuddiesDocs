@@ -374,3 +374,14 @@ The imported recognition context still owns local corrections. Selected context
 ownership and its submission/result checks remain open in the tasks above. No
 provider, native-input, model-fidelity or complete shared-consumption result
 follows from this composition. Both feature changes remain active and unarchived.
+
+#### Explicit selected handwriting context
+
+Buddy `227a938e0d714b091abec7a3a892004eaa74a8e8` captured exact registered examples into
+the existing confirmed context. Its selected owner retains the mode lease,
+catalog root and tail, and correction tokens. The phase callback revalidates
+those pins under the caller's ordered gates and charges the same allowance.
+The real Store fixture covers unchanged admission, a replaced correction,
+catalog advancement, omitted media, target exclusion, and refusal with
+an exhausted allowance or a foreign Store. The ordinary context still
+holds its local correction owner through report delivery.
