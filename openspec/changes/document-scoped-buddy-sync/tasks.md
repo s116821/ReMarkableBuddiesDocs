@@ -317,3 +317,9 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Exercise all three guarded Reader model stages through Generated using identical captured bytes, effective preference invalidation and joined selected memory in the local fixture.
 - [ ] Verify the installed input-only constructor, effective admission at startup and each genuine release, repeat and interruption behavior, and ordinary LocalOnly behavior on the qualified runtime.
 - [ ] Independently review the paired source and contract, reconcile current hosted evidence and complete the later Main-owned installed Reader qualification.
+
+## Ordinary data snapshots for isolated backup
+
+- [x] Reuse the format-1 archive collector, validation and writer under a same-Store current isolated lease. Skip empty history and publish the marker only after verified objects.
+- [x] Round-trip committed history and exact screenshot bytes through the existing inspector and ordinary restore to a distinct actor. Local Windows fixtures at Buddy `9f5bfe0` cover media omission, missing/corrupt promised media, wrong-mode/Store/stale leases, empty input, owned-root overlap and exclusion of private configuration and credentials.
+- [ ] Obtain independent paired review and coordinator publication of the snapshot increment. Keep portable configuration inclusion, cloud binding/publication, Manager download and replacement restore open.
