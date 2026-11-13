@@ -42,7 +42,11 @@ integration gates. This gated receiver grants no native rendering authority.
 The ordinary installed loop must explicitly refuse the new regional-generation
 intent until its own fresh receiver is supplied; it must not start Reader or call
 the selected factory on an ordinary Store. Ordinary stored-target commands retain
-their existing route. The first implementation does not change startup eligibility.
+their existing route. The ordinary slot reader must refuse an observed regional
+intent before refinement's expiry/page filters can return Reader None. Keep
+unexpired matching/foreign queued bytes intact; an expired owned record may be
+retired under its existing lock, but that attempt still refuses. Preserve absent
+input and all existing refinement page/expiry/consume behavior. The first implementation does not change startup eligibility.
 
 ## One operation from release to finalization
 

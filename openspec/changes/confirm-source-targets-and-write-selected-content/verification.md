@@ -537,3 +537,32 @@ available in this machine's object stores; its previously invalid GitHub credent
 was not retried. Compact bundles permit the coordinator's normal composition and
 current combined CI. Runtime review, publication, hosted CI, broader native/live
 routes and whole-feature canonical sync/archive remain coordinator-owned and open.
+
+## Ordinary-ingress refusal before expiry/page filtering
+
+Coordinator review found a P2 gap in 7f1beda6: ordinary `writer_request::take`
+returned None for expired or foreign-page pending regional generation before the
+intent reached the explicit unsupported dispatch. The ordinary orchestrator could
+therefore continue as Reader. Matching regional input reached the existing typed
+refusal, but was consumed. The selected peek/claim path was already correct.
+
+Correction source `547f302542ebee23a6547c6580df19cda332ae4f`, tree
+`104320da2e50b2767a55bd7266af42642c1505fc`, checks the observed regional intent in
+the common locked read before applying refinement's expiry/page None rules. Every
+such ordinary attempt errors. Unexpired matching and foreign queued bytes remain
+for the selected receiver. An expired owned record is retired under the existing
+lock, but that attempt still refuses. Absent input and refinement's matching
+consume, foreign-page None and expired removal/None behavior remain unchanged.
+The existing caller propagates the error before Reader preparation/inference.
+
+The retained pre-fix red run has three failed ingress-boundary assertions and two
+passing absent/refinement controls. Expired and foreign-page cases reproduce the
+actual None fallback; matching asserts the stronger direct-refusal/preservation
+contract. The patch and red log preserve that distinction. After the correction,
+the complete slot module passes eight tests, including foreign document/page byte
+preservation and the existing selected lock/consume/replacement controls. Strict
+all-feature/all-target Clippy and formatting pass. Production changes are confined
+to the ordinary slot read; selected peek/claim, native startup/provider files and
+read/time reservations are unchanged. The broader connected/legacy evidence above
+is not claimed as newly rerun. Normal coordinating review/integration/CI and all
+previous native/live/full-feature gates remain open.

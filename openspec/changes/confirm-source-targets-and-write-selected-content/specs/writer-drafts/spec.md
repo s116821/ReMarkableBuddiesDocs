@@ -31,3 +31,9 @@ Circled Writer input SHALL use the existing typed Writer dispatch, shared target
 - **WHEN** identification and complete mask normalization succeed
 - **THEN** the same Writer user retains exact original capture and RegionSource correspondence, with no duplicate user request or broader requested coverage
 - **AND** final Generated publication binds its validated About body so reopened history and note show one confirmation, preserving existing Reader presentation and frozen-source refinement.
+
+#### Scenario: Ordinary installed ingress observes a regional intent
+- **WHEN** the ordinary installed receiver observes queued regional generation, including an expired intent or one naming another document/page
+- **THEN** that attempt explicitly refuses before refinement's expiry/page filtering can return a Reader fallback
+- **AND** unexpired queued bytes remain intact for the selected receiver; an expired owned slot may be retired under its existing lock without authorizing Reader for that attempt
+- **AND** an absent slot and the existing matching/foreign/expired refinement behavior remain unchanged.
