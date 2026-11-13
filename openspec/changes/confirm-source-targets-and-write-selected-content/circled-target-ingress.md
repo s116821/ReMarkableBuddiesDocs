@@ -106,6 +106,16 @@ root/token only through its returned receipt, never an arbitrary fresh snapshot.
 No lost acknowledgment or restart repeats a model call or replenishes an original
 allowance. Historical inspection/recovery reports evidence, not a new live permit.
 
+Both capture and regional inputs recognize the two historical normalization-child
+purposes for one parent operation. First preparation checks parent and both children
+for accepted local evidence atomically under the Store mutex, using the original
+phase allowance. These absence checks create no long-lived parent reservation.
+Immediately before stage-0 submission, recheck the exact child token and parent
+absence under that mutex while retaining the outer joined source/policy/context
+gates. Invoke only the existing immediate worker-spawn callback there; release the
+mutex before waiting for a model response. Stage1 instead retains its acknowledged
+parent preparation and never requires that its own parent be absent.
+
 ## Budget and effect boundary
 
 For the new regional operation, retain one monotonic start and original300s parent
@@ -124,6 +134,16 @@ reselect examples after first model use. Only an acknowledged own receipt can
 advance target/root correspondence. These bounds and file ownership were accepted
 by the coordinator before runtime edits; there is no outstanding timing-policy
 proposal for this increment.
+
+The publication boundary also spends that same allowance for locked history,
+operation inventory and full selected/retained closure validation. A time/cancel
+callback checks after taking the Store mutex and after staging/syncing the head,
+immediately before marker rename. It must neither re-enter Store nor acquire a
+domain gate. Refusal before a marker attempt publishes nothing; a possible marker
+attempt retains exact-head/original-receipt reconciliation. Exceptional whole-Store
+integrity recovery is distinct from pre-publication request proof and is not claimed
+to fit that request allowance. Capture keeps its established60s admission/300s
+parent, with no regional150/240s stage allocation added to it.
 
 The ordinary route keeps its existing deliberate draft/refine/export choices.
 The current selected runner is Generate/Refine data-only; this adapter grants no

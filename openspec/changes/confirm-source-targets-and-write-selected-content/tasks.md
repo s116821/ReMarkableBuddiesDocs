@@ -24,3 +24,6 @@
 - [ ] Connect fresh/stored target intents through actual third-scope dispatch, shared interpretation and one owned ordinary/selected regional normalizer without fabricated capture/page proof.
 - [ ] Retain RegionSource and typed target provenance through joined selected preparation/result, Worker receiving, Refine and independent note correlation with source/preference/correction/memory race and original-recovery controls.
 - [ ] Complete installed scope/Submit and missing selected/native effect routes plus live/device acceptance; the data-only adapter does not complete these requirements.
+
+- [x] Reproduce and correct sibling-route parent reuse plus accepted foreign-parent collisions before/after the normalization child, using guarded Store publication and immediate stage-0 handoff with original phase allowances.
+- [ ] Qualify ordinary regional complete-image nullable-original profile compatibility without loosening selected correction admission, retaining exact profile/prefix/hash and partial/structured refusal.
