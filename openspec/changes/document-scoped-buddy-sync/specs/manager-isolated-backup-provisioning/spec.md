@@ -16,11 +16,11 @@ The privileged host SHALL validate the complete bounded provisioning report and 
 
 #### Scenario: Current or historical result is received
 - **WHEN** a result identifies the original operation, device, backup and epoch
-- **THEN** Manager verifies the stated currency against the actual current mode and original grant binding, rejects another Store actor, and preserves the original outcome independently of newer settings.
+- **THEN** Manager verifies exact current token/epoch agreement, the persisted Store device and original backup grant continuity, rejects contradictory or unconfigured snapshots, and preserves valid historical outcomes independently of newer settings.
 
 #### Scenario: No valid result is received
 - **WHEN** output is lost, partial, malformed or supplies no valid root-result custody
-- **THEN** Manager preserves uncertainty or the explicit early refusal without manufacturing success or retrying a new operation. A later inspect alone does not reconcile the original result.
+- **THEN** Manager preserves uncertainty or the explicit early refusal without manufacturing success or retrying a new operation. Parsing failures expose only a fixed redacted refusal. A later inspect alone does not reconcile the original result.
 
 #### Scenario: Explicit original retry is selected
 - **WHEN** the owner deliberately retries an unresolved operation under a valid current connection and retained custody

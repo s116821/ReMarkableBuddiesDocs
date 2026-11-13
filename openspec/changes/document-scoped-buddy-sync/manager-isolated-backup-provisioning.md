@@ -18,8 +18,14 @@ producer envelope and the existing saved-mode snapshot grammar, and correlates
 the result to the retained original. It preserves early errors without inventing
 result custody. An absent isolated_root member is distinct from a null or
 malformed member. It checks each outcome/status/incomplete combination and derives
-current versus historical from the original device, backup, epoch and grant
-binding. A different Store actor is never an acceptable historical response.
+current versus historical from the original token and immutable epoch choice.
+A result-bearing report must retain the Store actor and persisted device and
+report an explicit current mode. At the original epoch it must retain the full
+original token, backup and grant. A later epoch requires a different token;
+reusing the original backup also requires the original grant. A changed device,
+unconfigured mode or contradictory token cannot be accepted as historical.
+Malformed UTF-8/JSON is reduced to a fixed refusal without input excerpts, and
+outcome values must be literal supported strings before enum lookup.
 
 Only the reduced saved-mode view and result identifiers/outcome/currency may
 leave this parser. Input tokens, grant digests, provider IDs, credentials,
