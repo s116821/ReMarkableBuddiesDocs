@@ -190,13 +190,15 @@ checkpoint read guard spans the handwriting proof and the admitted effect.
 
 #### Selected Writer image normalization plan
 
-The typed Writer receiver will start from a fresh selection token and exact
+The typed Writer receiver starts from a fresh selection token and exact
 conversation root, source and user-turn references in that selected document.
 Resolve the requested image ordinal from the current reciprocal links and read
 only Included, digest-verified selected bytes with the existing bounded
 loader. Validate the registered document, source and pending Reader uncertainty
-before inference. The typed source owner establishes page/image identity;
-retained history and serialized references alone grant no model permit.
+before inference. Resident capture evidence binds both the ordinal and the
+numeric page to the recorded page UUID and order. A generic historical image
+with only a page UUID cannot supply this proof. Retained history and serialized
+references alone grant no model permit.
 
 Reuse #105's admitted whole-page normalizer and the existing selected
 `ConfirmedContext`. Capture once for the explicitly enabled local profile,
@@ -231,10 +233,12 @@ selected handwriting context and the receiver's focused fixtures. Coordinate
 edits to `src/storage/sync/selected/preference_consumer.rs`,
 `src/conversation/selected_writer.rs` and `src/writer/selected.rs` with the
 coordinator for joined policy, result publication and draft continuation.
-`src/writer/selected_command.rs` and the installed dispatch are shared
-integration surfaces. REM-17 owns source-target storage, startup and the
-circled-target ingress. The plan adds no separate parser, registry or
-notebook workflow.
+`src/writer/selected_command.rs` carries the typed route through the existing
+selected command dispatch as `writer-generate-image`. Its wire input contains
+the expected selection evidence, root and image/turn references. Historical
+normalization preparation is available only after matching the original
+request fingerprint and predecessor. REM-17 owns source-target storage,
+startup and the circled-target ingress.
 
 ### Shared-preference Manager and one-shot command boundary
 
