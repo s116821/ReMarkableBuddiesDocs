@@ -1,7 +1,8 @@
 # Portable preferences in ordinary isolated backups
 
-Proposed for review. The first increment prepares and inspects a local package.
-The offline fixture exercises the existing destination maintenance operations.
+Implemented and exercised in local Windows fixtures at Buddy `54fc5a2`. The
+first increment prepares and inspects a local package. The offline fixture
+exercises the existing destination maintenance operations.
 Cloud binding, upload, download, Manager orchestration, additional archive
 generations and runtime activation are outside this increment.
 
@@ -145,3 +146,14 @@ outer marker. Demonstrate actual portable Prepare/Apply separately, with
 private destination settings preserved, plus stale/different artifact and
 already-restored data unaffected. Report host fixture evidence separately
 from later provider, wired, tablet and runtime qualification.
+
+The final Windows build passed the four package tests. Its restore fixture
+used the strict package reader's verified artifact value and the actual
+portable import Prepare, Apply and Status calls. It verified exact screenshot
+bytes and history for a distinct destination actor, unchanged destination
+Config through data restore, and preservation of private and omitted
+destination settings through import. The package fixtures also exercised
+original-marker observation, pre-rename Config change, exact membership,
+invalid preferences under a matching hash, and incomplete media reporting.
+The Linux rename-acknowledgment fault is present in the fixture. Windows
+exercised post-publication readback and original-only observation.
