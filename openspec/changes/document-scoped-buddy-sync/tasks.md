@@ -326,7 +326,8 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 ## Portable preferences in ordinary isolated backups
 
-- [ ] Review the [package composition and import policy](isolated-portable-configuration.md), including the exact artifact capture, marker schema and empty-history behavior, before editing runtime code.
-- [ ] Prepare and inspect a package from the same locked ordinary format-1 history and one exact saved declaration capture. Verify byte identity, exclusions, no-work, strict malformed/version/hash rejection, and interruptions before and after publication.
-- [ ] Exercise the verified components through existing ordinary data restore and independently confirmed portable import on a distinct destination actor. Verify stale/swap refusal, untouched destination-only declarations, and separate outcome reporting.
+- [x] Review the [package composition and import policy](isolated-portable-configuration.md), including the exact artifact capture, marker schema and empty-history behavior, before editing runtime code.
+- [x] Prepare and inspect a package from the same locked ordinary format-1 history and one exact saved declaration capture. Buddy `54fc5a2` Windows fixtures verify byte identity, exclusions, no-work, strict membership/version/hash/validation refusal, before-marker interruption, and original-marker observation after publication.
+- [x] Exercise the verified components through existing ordinary data restore and independently confirmed portable import on a distinct destination actor. Buddy `54fc5a2` Windows fixtures verify stale/swap refusal, untouched destination-only declarations, and separate outcome reporting.
+- [ ] Independently review and publish the paired package increment. Verify the Linux rename-acknowledgment fault and hosted checks at the composed source.
 - [ ] Keep additional archive generations, provider publication and the Manager replacement workflow open pending their own acceptance.
