@@ -68,7 +68,12 @@ Use `unavailable` with `incomplete:true` for unknown, auth or retry,
 `failed` with `incomplete:true` for recovery, and `unsupported` for the
 unqualified gate. Use existing invalid-input, busy and conflict handling
 with no fabricated result. In a safe early refusal the whole `data` may
-be null. Provider IDs, root properties, grant identifiers and digests,
+be null. When `data` is present without valid result custody, the
+`isolated_root` key is omitted. It is never emitted as JSON null.
+For an unqualified production application with an admitted original
+intent, the bounded report includes `data.isolated_root` with
+`provider-binding-unqualified` and its original identities. Provider IDs,
+root properties, grant identifiers and digests,
 resumable URLs, paths and content stay out of the new result. The envelope's
 existing `current_snapshot` remains host-only and can contain mode tokens
 and binding details. One report is emitted while the Store and the applicable
@@ -171,6 +176,34 @@ checkpoint outside portable backup and restore. Restored data on a
 replacement actor goes through that actor's own mode transition and root
 provisioning.
 
+### Interrupted local writes
+
+Both files are written under the existing process Store lease using the
+owned atomic writer. Release the Store index mutex before any provider
+request. After an uncertain local write, reread both files under custody and
+validate their exact operation, backup and epoch correspondence. The
+observable states determine which action is available.
+
+| Durable evidence | Next action |
+| --- | --- |
+| Neither record is present for the current backup | A new current request may reserve a local original. |
+| Prepared checkpoint only, with no allocated ID | Only its exact current operation may finish reservation. A stale request cannot complete it and makes no provider request. |
+| Reservation and matching prepared checkpoint | Only its exact current operation may allocate. A lost allocation response with no durable ID can consume an unused ID, but cannot create a root. |
+| Reservation and matching candidate | Observe the recorded ID first. An authorized current retry may create only at that ID. |
+| Reservation and verified checkpoint | Observe the same root. A missing formerly verified root requires recovery. |
+| Reservation with missing/foreign/corrupt checkpoint, or an allocated checkpoint with no matching reservation | Require recovery before any new allocation or create. |
+
+Root verification and the initial empty publisher progress are one
+checkpoint write. Uncertainty on that write leaves either the candidate
+to observe again or the verified original with its current progress.
+Historical observation may update the original's verification evidence
+without authorizing the current epoch or modifying another backup.
+
+Use a private redacted historical result only when the indexed original
+can be validated. The provisional checkpoint that never acquired a
+reservation is discoverable from the current backup only, so a replay
+after departure returns conflict without an unrelated path lookup.
+
 ## Provider identity, dispatch and recovery
 
 The provision control and Worker first require a separately qualified
@@ -186,13 +219,22 @@ ID alone do not establish client provenance. Reuse the existing refresh and
 `about` transport with an explicit fixed-client refresh proof for initial
 qualification or credential replacement. Scope evidence comes from the
 supported grant installation and the refreshed scope when returned. A refresh
-with reduced scope invalidates admission. Guard refresh persistence against
-replacement of the original protected file using the protected writer's
-exclusive ownership and original-file comparison. Before every create, recheck
+with reduced scope invalidates admission. Isolated refresh keeps the
+replacement bearer and expiry in memory and leaves the protected file under
+the installer owner's custody. Before every create, recheck
 the original protected grant identity, current Store/mode lease, exact
 checkpoint candidate and persisted token. No Store index mutex spans HTTP.
 Missing, revoked or different authorized credentials leave the original for
 recovery and preserve the previous backup.
+
+The legacy Drive refresh helper writes back `drive.json`. The isolated
+adapter keeps refresh results in process and compares the exact original
+protected file revision before and after refresh and before dispatch. A
+replacement ends this invocation's authority even when it projects the
+same grant digest. Supported tablet grants must continue to refresh across
+process restart from the installed material. Any provider refresh-token
+rotation that requires installing a new durable grant belongs to the
+protected installer boundary and must be covered in qualification.
 
 1. Validate or resume the prepared original under exclusive Store ownership.
    Take the exact current mode lease for mutation. After verifying the
@@ -286,6 +328,7 @@ The legacy and selected Worker admissions keep their existing routes.
 | `src/storage/sync.rs` | Declare the private control boundary and connect qualified ordinary admission to the same Worker. |
 | `src/storage/drive.rs`, `src/storage/drive/slot.rs` if factoring the wire helper | Reuse fixed-ID metadata-only create and exact ID readback, generated IDs, protected grant and bounded request logic. Preserve selected/legacy request and verification behavior. |
 | `src/storage/drive/shared_fixture.rs`, `src/mode_maintenance/tests.rs`, `src/storage/sync/isolated/tests.rs` | Exercise real command/control, durable reopen, adapter and scheduler behavior using localhost only. |
+| `src/storage/inspection.rs`, `src/storage/inspection_v3/scan.rs` | Coordinate with the inspection owner before adding the expected private isolated checkpoint layout. Admission of the exact owned path must preserve bounded no-follow enumeration and expose no checkpoint contents or provider IDs. |
 
 Verify exact same-ID create/request counts for before-allocation, after
 durable pin, uncertain response or commit acknowledgment, 409, corrupt
@@ -296,7 +339,10 @@ old/new epoch behavior with and without an outstanding package, away/back
 with new identities, empty history, and the actual runtime Worker admission
 against that rooted checkpoint. Assert zero provider I/O on prequalification
 or rejection and no Store mutex during provider waits. Verify unchanged
-legacy/selected/inspect shapes and redaction of command/health output.
+legacy/selected/inspect shapes and redaction of command/health output. Both
+offline storage scanners currently enumerate known `sync` children. Verify
+that the new private checkpoint layout yields neither a warning for normal
+provisioned custody nor acceptance of foreign entries.
 Hosted Linux and live provider evidence stay separate.
 
 Drive documentation establishes generated IDs, retry of a pre-generated

@@ -341,7 +341,8 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 
 ## Ordinary isolated root provisioning
 
-- [ ] Review the [provisioning proposal](isolated-root-provisioning.md), public host command and Manager boundary, private reservation and checkpoint, epoch behavior, and Worker constructor.
-- [ ] With accepted source ownership, connect the versioned host control to an existing format-1 Store and trusted provider adapter. Exercise generated-ID persistence, exact readback, stale observation and genuine lost acknowledgments through localhost.
-- [ ] Verify current-epoch Worker admission through the existing scheduler, missing/corrupt custody refusal, offline local continuity, unchanged inspect wire, and new root on leave/re-entry.
+- [x] Review the [provisioning proposal](isolated-root-provisioning.md), public host command and Manager boundary, private reservation and checkpoint, epoch behavior, and Worker constructor.
+- [x] Connect the versioned host control to an existing format-1 Store and trusted provider adapter. Buddy `00e45e6` localhost cases verify generated-ID persistence, exact readback, stale observation and a lost creation acknowledgment.
+- [x] Verify current-epoch Worker admission through the existing scheduler, missing/corrupt custody refusal, unchanged inspect wire and a new root on leave/re-entry. Buddy `00e45e6` covers current/historical/unqualified mode reports and retains the format-1 offline runtime admission.
+- [ ] Coordinate recognition of the expected private isolated checkpoint layout in both offline storage inventory scanners. Validate bounded path admission and redaction.
 - [ ] Qualify the installed application and protected grant separately against an authorized provider, with independently scoped execution and evidence. Keep production disabled until that qualification exists.
