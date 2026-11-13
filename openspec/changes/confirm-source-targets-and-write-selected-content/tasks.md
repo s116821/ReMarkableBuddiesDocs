@@ -18,3 +18,8 @@
 - [x] Verify4→4,6→4,4→target,target→target, exact closure/media, changed archive/base/origin/family refusal and original staging/CURRENT/capabilities recovery under the existing restore owner.
 - [x] Preserve compound Store-wide operation collision custody through validated family6 inheritance and verify real concurrent cross-scope memory producers against both format5 and promoted format6.
 - [x] Reproduce and correct empty ready family6 archive/base capability loss through actual public and conditional restore, with unchanged legacy4→4 control.
+
+- [ ] Review the circled-target ingress adapter/ownership and original admission-window arithmetic against the frozen WriterImageRequest continuation before overlapping runtime edits.
+- [ ] Connect fresh/stored target intents through actual third-scope dispatch, shared interpretation and one owned ordinary/selected regional normalizer without fabricated capture/page proof.
+- [ ] Retain RegionSource and typed target provenance through joined selected preparation/result, Worker receiving, Refine and independent note correlation with source/preference/correction/memory race and original-recovery controls.
+- [ ] Complete installed scope/Submit and missing selected/native effect routes plus live/device acceptance; the data-only adapter does not complete these requirements.

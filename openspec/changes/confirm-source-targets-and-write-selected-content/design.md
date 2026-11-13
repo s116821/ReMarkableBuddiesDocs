@@ -210,3 +210,12 @@ only product startup finishes the same operation under one retained Store lease.
 After activation, complete staged data can repair capabilities without the source
 archive. Completed lost acknowledgments remain validate-only. Normal Store open
 and ordinary maintenance do not acquire a general target repair authority.
+
+
+## Remaining circled-target ingress
+
+The [typed ingress plan](circled-target-ingress.md) maps the existing target proof
+and frozen selected Writer image interfaces to the remaining third-scope flow.
+It defines the private regional adapter, exact phase/ownership boundaries, original
+budget constraint, proposed files and acceptance work. Runtime handoff requires
+coordinator/interface review; the plan does not claim this route is implemented.
