@@ -41,9 +41,11 @@ does not qualify a connected host action, real provider or tablet execution.
 
 ## Connected action
 
-The transport and privately retained host service are implemented and
-fixture-tested. The browser/Electron bridge is wired; the shared UI and live
-qualification remain unfinished:
+The transport, privately retained host service and shared browser/Electron UI
+are implemented. Manager `eb0cc55` passes 47 private, transport-child, service,
+loopback and controller tests, plus scoped lint and TypeScript checks. The new
+browser/Electron distribution fixture and platform storage checks still require
+hosted verification; live provider/wired qualification remains unfinished:
 
 - The privileged host service uses the existing identity-verified wired
   maintenance transport, with shared ownership, deadline and cancellation rules.
@@ -127,7 +129,14 @@ must match the retained row's connection and boot, as well as its original
 device/backup/epoch; only prepare/retry can return one. One invocation has a single 45-second
 deadline including storage and transport work; the undispatched review expires
 after two minutes. Private storage or parsing failures produce fixed errors.
-These are the next service requirements, not implemented host/IPC/UI behavior.
+The host and public bridge implement these requirements. The shared UI uses a
+fresh wait ID for each review, prepare or retry, rejects stale results, clears
+reviews on peer actions or page lifetime changes, and requires explicit recovery
+of an unresolved original on its original connection and boot. If Stop occurs
+before a review has returned its reference, it abandons that local wait and
+cancels a late ready preview by its original wait ID. It does not globally cancel
+the observer for that action. Verified root evidence stays separate from package,
+runtime and native-page qualification.
 
 Tablet credential installation, choosing isolated mode from Manager sign-in,
 provider namespace visibility, backup browsing/download and replacement restore
@@ -140,7 +149,7 @@ treated as a tablet credential or provider-root binding.
 - [x] Review the private validator and reconcile exact producer-emitted frames.
 - [x] Add the fixed wired command with separate bounded provisioning timeouts,
   original stdin/frame bytes and synthetic channel/child cancellation checks.
-- [ ] Connect host-owned original retention and explicit recovery to that command.
-- [ ] Connect the shared browser/Electron review, prepare and recovery UI.
+- [x] Connect host-owned original retention and explicit recovery to that command.
+- [x] Connect and review the shared browser/Electron review, prepare and recovery UI.
 - [ ] Verify actual host/transport/UI behavior and coordinated source/Docs CI.
 - [ ] Complete separately scoped provider and wired runtime qualification.

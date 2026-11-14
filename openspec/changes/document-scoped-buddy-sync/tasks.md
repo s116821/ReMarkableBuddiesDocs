@@ -356,7 +356,8 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Independently review the [consumer contract](manager-isolated-backup-provisioning.md) and private validator. Manager `fdf8a8f` corrects typed-outcome, token/epoch continuity and redacted-parse-error findings; 13 focused tests include original Buddy frames.
 - [x] Extend the existing fixed wired mode transport with provisioning-only deadlines, original-byte forwarding, identity/framing checks and cancellation. Independent review and 12 Python/3 Node child tests pass; no live command was run.
 - [x] Connect the privileged host service with original request retention, bounded ownership and explicit original-only recovery. Manager `cef7f50` has independently reviewed service/storage and browser/Electron bridge source; 38 private, child, service and loopback tests pass. Actual shared UI and platform storage qualification remain separate.
-- [ ] Connect and verify the shared browser/Electron review and prepare action, with completed backup and runtime health remaining separate observations.
+- [x] Connect and independently review the shared browser/Electron review, prepare and original-recovery UI. Manager `eb0cc55` passes all 47 focused private/child/service/loopback/controller tests, scoped lint and TypeScript checks; completed backup and runtime health remain separate observations.
+- [ ] Run the new UI fixture against source and packaged browser/Electron distributions on Windows/Linux, and verify the new Windows protected-storage cases in hosted CI.
 - [ ] Complete coordinated source/Docs checks and separately scoped provider/wired qualification before release.
 
 ## Selected notebook publication custody
