@@ -352,15 +352,15 @@ evidence; installed source authority and live model behavior remain separate.
 - [x] Reuse prepared history, passages and verified images through fresh evidence acknowledgment, guarded answer, Generated and existing output ownership. Verify stale, conflicting and uncertain publication boundaries without replay in the ordinary PDF/no-document composition.
 - [x] Qualify the composed ordinary PDF/no-document path in hosted CI against the paired source, including a second follow-up and exact source locators. Retain installed selected resumption and live source admission as separate work.
 - [x] Independently review and implement the ordinary EPUB admission extension. Reuse the existing normalized spine Index and exact original archive digest. Verify one hosted composed follow-up with an exact section locator, changed same-ID archive refusal before retrieval/model and modeled source-currentness loss. Keep installed and notebook source admission separate.
-- [ ] Independently review and integrate default-required research into the existing [ordinary source-aware follow-up](ordinary-reader-source-followups.md#research-in-the-same-source-aware-follow-up). Verify current-question NoInternet and saved Disabled with zero web acquisition, owned Required success and refusal, exact attached context and validated citations, and original-only uncertainty handling in the existing hosted receiver fixture.
+- [x] Independently review and integrate default-required research into the existing [ordinary source-aware follow-up](ordinary-reader-source-followups.md#research-in-the-same-source-aware-follow-up). Verify current-question NoInternet and saved Disabled with zero web acquisition, owned Required success and refusal, exact attached context and validated citations, and original-only uncertainty handling in the existing hosted receiver fixture.
 
 The three PDF/no-document source and hosted tasks are accepted at Buddy
 `5ce177e7e510bdb41fc3329a26de679efbfc910d` with [full hosted CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/43598847099).
 Checks passed 1,303 library tests, including the composed repeated-follow-up
 case, and all ten existing researched groups. Build and retained-command
 emulation passed; those packaged checks do not establish native qualification.
-The separate ordinary research task above remains open, as do live
-source admission, installed selected resumption and the broader Reader change.
+Live source admission, installed selected resumption and the broader Reader
+change remain open.
 
 The EPUB source and hosted task is accepted at Buddy
 `7f961fb23aa9310e6283a9600246e47ca99f97bc` with [full hosted CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/43602485020).
@@ -368,6 +368,18 @@ Checks passed 1,304 library tests, including the composed EPUB follow-up,
 and all ten existing researched groups. Build and retained armv7/aarch64
 emulation passed; native qualification remains unproven. Installed and notebook
 source admission, live model behavior and the broader parent remain open.
+
+The ordinary research source and hosted task is accepted at Buddy
+`b97e0ea81e4a75c8990d70a3aaf50194639284a9` with [full hosted CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/43606363722).
+Checks passed 1,306 library tests, zero failed and 55 ignored, including the
+composed research and complete ordered prompt-bound cases. The retained
+PDF/no-document, EPUB and all ten selected researched groups also passed.
+Build and retained armv7/aarch64 emulation passed. Fault injection covers
+uncertain evidence publication, and the Required cases cover same-operation
+replay refusal. The later lost Generated acknowledgment gate has source review
+only; no separate fault was induced after successful research. Live-provider,
+native input/output, installed source admission and parent acceptance remain
+open.
 
 ## Ordinary data snapshots for isolated backup
 
