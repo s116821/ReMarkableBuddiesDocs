@@ -596,17 +596,25 @@ The separate 14 archive checks passed as well.
 That run compiled the native commands, then failed production UI generation:
 the initial bundle measured 722.77 kB against the existing 720 kB error budget.
 Build failed and native Integration was skipped. The authored source
-browser/Electron positive fixture and packaged default refusal have not yet
-run. The original bundle-budget failure remains separate from the earlier
-controller expectation failure. The test-owned provider, staging, verifier
+browser/Electron positive fixture and packaged default refusal did not run
+in that revision. The original bundle-budget failure remains separate from
+the earlier controller expectation failure. The test-owned provider, staging, verifier
 and wired peer do not establish real Drive or installed qualification.
 
 Manager `deae2f150dee56b51053c416003082eba4f2e1a6` factors repeated App
 controller-reset sequences into three private synchronous helpers, preserving
 the original calls and order. Independent source review confirms the expanded
-TypeScript syntax tree matches the preceding revision. The 720 kB budget and
-test coverage are unchanged; emitted bundle size and native Integration remain
-unverified until the new hosted run completes.
+TypeScript syntax tree matches the preceding revision. Its original hosted
+Build passed, measuring 718.95 kB against the unchanged 720 kB error budget.
+The existing 400 kB warning and test coverage are unchanged. Checks passed
+1,285 Node cases with zero failures and five skips, plus all 14 separate archive
+checks. [Full hosted CI](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43643656430)
+passed both native Integration jobs. The actual loopback browser and source
+Electron fixtures verify the preview, explicit one-Apply and no-change paths
+with test-owned provider, staging, verifier and wired peers. Both packaged
+host modes retain unavailable-preview refusal without a portable command.
+The retained native archive and actual-producer package checks also passed,
+with original command, harness, provenance and ZIP bytes preserved.
 Production factories remain absent. The preceding private-handoff run belongs
 to `26877e8808861046b7378038aa304b8c636495fb`, not this consumer revision.
 
