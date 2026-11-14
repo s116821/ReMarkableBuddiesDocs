@@ -179,6 +179,34 @@ its expected size/hash/target/source and bounded metadata. Refuse missing,
 changed, unqualified or mismatched inputs. Never search PATH, install, recapture,
 refresh, or fall back to a tablet binary.
 
+On Windows, acquire a narrow resource lock helper before the first Node resource
+capture, including availability checks. Use the existing trusted host Python and
+pywin32 boundary. The helper accepts only the trusted canonical local resource
+root and derives the two fixed file names; it never receives a command, arguments
+or backup input. Reuse the existing handle checks through a small shared primitive
+without changing staging or Drive behavior. Reject every reparse component,
+alternate stream, alias, nonlocal path and nonsingle-link leaf. Hold a
+share-accounted handle on each ancestor without delete sharing, and hold each
+leaf with generic read access and read sharing only. Compare held and path file
+identities before readiness and final confirmation. Directory share modes alone
+do not protect arbitrary children.
+
+Node retains the original fixed launch and all provenance, membership and hash
+checks. Monitor the helper throughout the same bounded operation. Stop and join
+the Buddy child before releasing helper handles on failure, cancellation or
+timeout; after success, finish the original checks while handles remain held,
+then release and join the helper before accepting output. Missing or lost guard
+custody refuses success. A helper crash immediately invalidates the attempt and
+aborts/joins Buddy; it does not provide handle retention across that crash.
+
+This requires a trusted interpreter, helper/imports, OS loader, stable local
+volume mapping and installed directory, including ancestor delete-child, ACL,
+metadata and reparse mutation rights. Only trusted host/installer principals may
+alter them. It is not a sandbox against a same-principal attacker or an untrusted
+writable installation. Qualify actual Windows loader/read compatibility, denied
+leaf write/replacement and ancestor rename, leaf/ancestor reparse refusal, guard
+loss, and handle release after success/cancel/timeout before enabling the factory.
+
 Run only `--archive-operation inspect-isolated --archive-input -`, with the
 original root/digest on bounded stdin, shell disabled, hidden Windows console,
 a private working directory and a minimal environment without credentials,
@@ -195,6 +223,15 @@ package bytes/modes and both browser-helper and Electron paths. Exercise the
 runner against an actual isolated-producer package as well as malformed output,
 wrong dependency, cancellation and timeout controls. Keep platform and provider
 qualification incomplete until their own evidence exists.
+
+Retain small synthetic complete and media-omitted packages emitted by the actual
+crate-private isolated exporter for the cross-repository runner controls. Record
+the producer source, exact file inventory/digests, expected redacted report and
+reproduction command with those fixtures. A test-only opt-in emission path may
+reuse the existing producer fixture; do not expose a production export API or
+manually recreate its outer marker. Treat these as synthetic producer evidence,
+separate from live provider publication and native restore. Tests using a retained
+oracle must keep its original executable bytes and source attribution explicit.
 
 Native owns the private Manager coordinator, staging/read-guard adapters and
 their focused offline fixtures. Root owns protected-host integration, UI,

@@ -385,4 +385,6 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [ ] Implement the private Manager selected-download coordinator with original selection/grant checks, bounded streams, qualified private staging and trusted verifier seam; keep synthetic fixtures distinct from actual producer/oracle/platform qualification.
 - [ ] Independently review and compose the actual protected read binding, staging and qualified verifier runner before enabling download in the shared UI; unavailable infrastructure must remain truthful.
 - [ ] Build and qualify the source-pinned normal host oracle on Windows/Linux, preserve its identity/hash/notices and package mode, and exercise retained Electron and browser-helper paths without a new Buddy release asset or runtime installer.
+- [ ] Close Windows original-resource custody with the narrow lock-only helper and actual loader/reparse/write/rename/cancel/timeout qualification; keep the factory disabled until accepted.
+- [ ] Retain source-attributed synthetic actual-isolated-producer fixtures and exercise the real retained oracle through Manager's verifier; do not substitute manually assembled markers for this evidence.
 - [ ] Complete exact wired handoff, existing explicit restore/preferences flows, clean/replacement admission and provider/platform qualification before full workflow delivery.
