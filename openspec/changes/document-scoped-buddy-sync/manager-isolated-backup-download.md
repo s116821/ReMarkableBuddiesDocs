@@ -125,9 +125,9 @@ Manager's existing private host resources, not Buddy's tablet release asset
 inventory. Do not add another binary target, parser, backup format, release
 channel or runtime download-and-execute path.
 
-The initial dependency source is reviewed Buddy commit
-`4192914db255ce9e0c61ed0a0de48b7d9c838302`, tree
-`7a893016a7c92ac26bec69b57102433af2e519d5`, with Cargo.lock SHA-256
+The dependency source is reviewed Buddy commit
+`95b75443629ea455f9b92af7ce48dc0902a42994`, tree
+`16e5a83296ceb70d0a3867098a149e04af03eae9`, with Cargo.lock SHA-256
 `dd6ddeeb756da0a93c8e3d7020d2f7e92ba68026a1492d2312da1ad94b2472d1`
 over the exact Git blob bytes, independent of checkout line-ending conversion.
 This is a development dependency pin, not a published Buddy release or a new
@@ -144,7 +144,9 @@ qualifying a replacement binary compiled with test-only dependency features.
 The Windows path uses Rust's canonical verbatim form. The selector's local
 Cargo-built test proves the harness only; native retained-release results remain
 required. Production code, Cargo.lock and the SDK revision are unchanged by this
-test-only successor.
+test-only successor. Its negative dot-path fixture constructs the spelling as raw
+OS text: Windows verbatim path joining would otherwise normalize away the very
+component the fixture is intended to reject.
 
 The initial, temporary qualification path builds the dependency within the two
 existing platform Integration jobs on PRs. It does not rebuild retained Manager
@@ -178,6 +180,24 @@ cargo-xwin 0.23.1, LLVM/clang-cl 22.1.8, signed Jammy NASM 2.15.05-1, desktop SD
 10.0.26100 and CRT selector 14.44.17.14. Record the actual resolved SDK/CRT inputs
 and compiler versions. These selectors and the initial runner are qualification
 inputs, not a claim of immutable upstream catalogs or universal Linux support.
+The maintained resolver prefers a separately published Universal CRT package
+when present. Guard its actual package/version and notice basis independently;
+the SDK selector and installed directory do not identify that UCRT input.
+The current source candidate records UniversalCRT package 10.0.26624.1, which
+Microsoft identifies with the legacy Windows SDK 10.0.10240 family. Its static
+library redistribution reference is documented, but the exact historical
+accompanying license/notice identity remains unresolved. Passing the functional
+shipping build cannot close that distribution-evidence item or authorize release.
+
+Prime a fresh cargo-xwin cache with maintained xwin 0.10.0: list using VS17,
+then download using that same cached channel and identical architecture,
+variant, SDK and CRT selectors. Retain the actual channel/package files,
+downloaded payload hashes and matching publisher package identities outside
+the managed cache before cargo-xwin's normal first splat. Set its outer setup
+retry count to zero so failure cannot discard that snapshot and fetch a new
+one. Do not fabricate a DONE marker or implement a second package resolver.
+The original metadata and inventory stay in the existing CI-only receipt;
+SDK archives and a duplicate ordinary executable do not ship in that receipt.
 
 Keep Windows CRT linkage static and AWS-LC bundled-source/static with assembly
 enabled and prebuilt NASM fallback disabled. Remove global Rust flag overrides
@@ -187,6 +207,13 @@ and workflow orchestration; do not add a custom SDK downloader, new release asse
 or executable target. Record native PE imports, ELF dependencies/symbol versions
 and matching license/third-party notices. A working compiler alone does not
 establish runtime compatibility or notice completeness.
+
+Copy the reviewed Microsoft SDK RTF files, BuildTools third-party text and
+matching VS2022 terms document byte-for-byte with a compact origin index.
+Use standard archive extraction, bounded downloads and exact input/member
+hashes. Recheck those notice inputs when the resolved SDK/CRT packages change.
+Do not concatenate binary RTF/DOCX into a text notice or substitute installed
+Community-edition files for the verified BuildTools payload.
 
 Copy and hash each normal executable before compiling `archive_cli --no-run`.
 Use Cargo's root-artifact and build-script JSON records for the original
@@ -212,13 +239,23 @@ retain only the bounded original inputs needed for qualification and delivery.
 
 Generate target/default-feature third-party notice JSON with maintained
 cargo-about, locked dependencies and failure on unresolved licenses. Keep its
-default exclusion of local source and carry Buddy's exact root LICENSE and
-THIRD_PARTY_NOTICES separately; do not fabricate a root SPDX declaration. Include
+root-package handling explicit: the pinned generator includes Buddy even though
+its manifest lacks license metadata. Bind a root-only `LicenseRef-Buddy-Repository`
+clarification to the original LICENSE checksum without choosing a GPL version
+qualifier. Carry the exact root LICENSE and THIRD_PARTY_NOTICES separately as
+the authoritative Buddy notice artifacts; the generator's dependency JSON does
+not replace them. Include
 the locked foreign SDK and its notices, all runtime transitive dependencies and
 matching Rust standard-library and native-library notices. Do not blanket-ignore
 unpublished foreign dependencies. Cargo's graph does not account for statically
 linked Microsoft CRT/UCRT objects; retain their resolved input and notice basis
 separately before distribution.
+
+When original Build inputs are supplied, compare the exact notice inventory and
+bytes in each native ZIP with those inputs through the existing bounded ZIP
+reader. An updated outer package digest does not excuse a missing, changed or
+additional notice. Preserve the generated dependency report and vendor texts
+without rewriting them into a custom license format.
 
 ### Package readback and compatibility
 

@@ -129,6 +129,17 @@ or synthetic browser/Electron fixture does not enable live Drive requests.
 Use the maintained OAuth client for the eventual fixed read-only API adapter;
 do not implement another login/token store or expose provider request options.
 
+The unbound host transport implements the existing six reader/download methods
+against fixed Drive GET endpoints. It consumes one captured bearer grant from
+the existing protected auth boundary, preserves raw marker/object bytes and
+enforces caller byte/time limits. It rejects redirects, encoded responses and
+non-success statuses without retry or token refresh. Object iteration yields at
+most 64 KiB per chunk, supports zero-byte objects and joins the original request
+close after abort or iterator return. Its constructor-only loopback origin is
+for offline fixtures; neither renderer nor protocol messages select it.
+Implementing this transport does not enable the production factory or establish
+that a real Manager grant can see Buddy's appData namespace.
+
 Download must separately fetch the pinned closure into owned private staging and
 use the existing `Store::inspect_isolated_package` validation before offering
 restore. Reuse the existing ordinary data restore and explicit portable import
