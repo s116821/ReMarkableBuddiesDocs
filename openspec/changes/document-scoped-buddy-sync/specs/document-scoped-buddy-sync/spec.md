@@ -180,6 +180,11 @@ The selected worker feature SHALL include a reviewed compatibility stage for cur
 - WHEN canonical archive media needed to validate Source3 and plan/stage semantics is absent or intentionally omitted
 - THEN the candidate remains unapplied/incomplete and cannot be reported as a complete domain-valid winner; optional media omission remains separately visible and local evidence is preserved.
 
+#### Scenario: Notebook publication outlives its original phase
+- WHEN a selected notebook commit passes phase prechecks but cancellation, a stage or original cutoff, or original read-allowance exhaustion occurs while waiting or staging publication
+- THEN the existing guarded commit checks that same allowance and pure cancellation/deadline predicate under the publication mutex and before the durable marker, refusing any new stage or draft authority
+- AND no time window, read reservation, model permit or original operation is replaced to continue the attempt.
+
 #### Scenario: Crash during selected notebook preparation
 - WHEN the compatibility operation stops around generation/marker/contract/CURRENT/capability publication
 - THEN recovery exposes the old complete ordinary generation or the complete new supported generation, retains original bytes and intent, and an older reader refuses the new unsupported format without repair.

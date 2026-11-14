@@ -346,7 +346,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Verify current-epoch Worker admission through the existing scheduler, missing/corrupt custody refusal, unchanged inspect wire and a new root on leave/re-entry. Buddy `00e45e6` covers current/historical/unqualified mode reports and retains the format-1 offline runtime admission.
 - [x] Recognize the fixed private isolated checkpoint layout in both offline storage inventory scanners. Buddy `ca5172b` includes the Linux successor and symlink fixtures for hosted execution.
 - [x] Preserve ordinary local operation when an isolated checkpoint, lock, staging or session path is blocked. Verify the valid last marker stays visible in redacted recovery health.
-- [ ] Confirm the Linux-only successor inventory and no-follow fixtures in hosted CI for the composed source.
+- [x] Confirm the Linux-only successor inventory and no-follow fixtures in hosted CI for the composed source. Buddy `9d68e5c` passed full run `43526582411`; its host log records all three isolated inventory/layout/no-follow cases passing. Later Writer changes do not modify these scanner files; final composed CI remains separate.
 - [ ] Qualify the installed application and protected grant separately against an authorized provider, with independently scoped execution and evidence. Keep production disabled until that qualification exists.
 
 ## Manager isolated backup preparation
@@ -358,3 +358,9 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Connect the privileged host service with original request retention, bounded ownership and explicit original-only recovery. Manager `cef7f50` has independently reviewed service/storage and browser/Electron bridge source; 38 private, child, service and loopback tests pass. Actual shared UI and platform storage qualification remain separate.
 - [ ] Connect and verify the shared browser/Electron review and prepare action, with completed backup and runtime health remaining separate observations.
 - [ ] Complete coordinated source/Docs checks and separately scoped provider/wired qualification before release.
+
+## Selected notebook publication custody
+
+- [x] Review the existing producer's publication boundary and the bounded [correction](shared-worker-integration.md#notebook-publication-custody-correction). Reuse the accepted Source3/plan/stage producer and existing guarded commit API rather than reopening its completed implementation.
+- [ ] Retain a failing actual-producer regression after successful phase prechecks, then pass original phase reads and pure cancellation/cutoff checks through begin, prepare, result and final-draft commits.
+- [ ] Verify late mutex/marker refusal, publication read exhaustion, healthy multi-Map/Reduce within unchanged reservations, original-only recovery, memory/winner interlocks and lost acknowledgments. Review exact source and publish with the existing coordinated change.

@@ -566,6 +566,34 @@ stage ancestry, old-reader refusal and CURRENT/capability crash boundaries. Incl
 actual held domain/model/backend interlocks without a live LLM, Drive or tablet.
 An implementation omitting this stage is not this candidate's completed route.
 
+### Notebook publication custody correction
+
+The existing Source3 notebook producer remains the implementation to reuse.
+Carry each original phase's `SelectedReadBudget` through its begin, prepare,
+result and final-draft commits using the existing guarded Store publication API.
+The same pure cancellation/deadline predicate must be checked after acquiring
+the publication mutex and immediately before the marker can become durable.
+It must not re-enter the Store or perform provider/runtime work under that lock.
+Initial admission keeps its original 60-second cutoff; stage result publication
+keeps the existing stage and 600-second parent cutoffs; final draft publication
+keeps that same parent cutoff. No window or allowance is renewed.
+
+Preserve notebook stage IDs, the original Source3/plan references, one-use model
+handoff, `calls * 2 + 3` phase reservation and conservative unknown/historical
+acknowledgment behavior. Notebook plan/stage custody does not use regional
+Writer's absent-parent-operation prerequisite. Do not add that prerequisite,
+a new journal, a schema change or larger budgets to make the correction pass.
+
+Verification must cross the disputed boundary after successful phase prechecks:
+an actual producer commit blocked on the mutex or paused before its marker must
+refuse after cancellation or cutoff. Exhausting the original read allowance
+during publication validation must not reset it or expose a new stage/draft.
+A healthy multi-Map/Reduce control must still fit the existing reservation, and
+original-only recovery, same-document memory, winner and lost-acknowledgment
+controls remain required. A test that times out before entering the publication
+boundary does not cover this correction. Runtime occurrence is unverified until
+these regressions run; this design does not authorize live provider or tablet work.
+
 ## Truthful status and qualification
 
 Extend existing sync/health.json with a bounded versioned shared projection:
