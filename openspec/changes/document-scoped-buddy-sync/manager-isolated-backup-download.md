@@ -184,10 +184,13 @@ The maintained resolver prefers a separately published Universal CRT package
 when present. Guard its actual package/version and notice basis independently;
 the SDK selector and installed directory do not identify that UCRT input.
 The current source candidate records UniversalCRT package 10.0.26624.1, which
-Microsoft identifies with the legacy Windows SDK 10.0.10240 family. Its static
-library redistribution reference is documented, but the exact historical
-accompanying license/notice identity remains unresolved. Passing the functional
-shipping build cannot close that distribution-evidence item or authorize release.
+Microsoft identifies with the legacy Windows SDK 10.0.10240 family. Retain that
+family's original SDK EULA and third-party notice RTFs separately from the newer
+SDK files. The publisher archive's original setup layout contains EULA MSI
+10.0.26624; its read-only File/Media tables identify the two notice members in
+the matching cabinet. Record that association and the publisher's separate
+static-library redistribution reference in the origin index. Passing a build
+alone does not establish runtime compatibility or notice completeness.
 
 Prime a fresh cargo-xwin cache with maintained xwin 0.10.0: list using VS17,
 then download using that same cached channel and identical architecture,
@@ -208,7 +211,7 @@ or executable target. Record native PE imports, ELF dependencies/symbol versions
 and matching license/third-party notices. A working compiler alone does not
 establish runtime compatibility or notice completeness.
 
-Copy the reviewed Microsoft SDK RTF files, BuildTools third-party text and
+Copy the reviewed Microsoft SDK and historical UCRT SDK RTF files, BuildTools third-party text and
 matching VS2022 terms document byte-for-byte with a compact origin index.
 Use standard archive extraction, bounded downloads and exact input/member
 hashes. Recheck those notice inputs when the resolved SDK/CRT packages change.
@@ -321,6 +324,27 @@ scavenging. Extend the existing packaged host tests to launch this actual mode
 and verify its ASAR UI, loopback/session checks, lack of desktop windows, ordinary
 shutdown and truthful unconfigured/unqualified results. The launch mode alone
 does not activate backup download, restore or the installed oracle factory.
+
+Both entry points use one shared host-private composition with one protected
+Drive store, one auth owner, one inspection/selection owner and at most one
+download coordinator. Reuse the store's trusted interpreter and exclude its
+protected root from the explicit staging parent. Resolve only the fixed
+`hostRoot/buddy-oracle` resource and its adjacent installed source pin. Keep
+source-helper and injected-auth fixture behavior without creating a second auth
+owner. The composition's host-only `downloadSelection` obtains the original
+capture from `captureDownload(operation, reference)` itself; callers cannot
+supply a replacement binding, grant, marker or staging path.
+
+Memoize one disposal promise and close admission synchronously. Abort the
+existing owners before awaiting their original work, including cancelled
+inspection predecessors, pending protected guard opens/closes, active provider
+streams and verifier execution. Release owned staging only after those users
+have joined, retaining the existing cleanup-uncertainty result. HTTP close stops
+admission before draining; desktop window close and explicit quit use that same
+drain. Fixtures prove these lifecycle properties without registering a real
+read factory or adding a public download action. Production source continues to
+omit read-factory/staging registration until the installed-host and namespace
+qualification above is accepted.
 
 The verifier adapter is disabled by default. Its trusted host constructor may
 select the resource directory and expected dependency pin; a renderer, user
