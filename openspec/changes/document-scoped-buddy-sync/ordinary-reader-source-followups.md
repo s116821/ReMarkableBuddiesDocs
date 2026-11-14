@@ -75,8 +75,9 @@ Require `SourceFormat::Notebook`, `TextScope::SuppliedNotebook` and unique
 positive page locators in supplied order. Refuse section locators, page-scoped
 input and partial or unavailable supplied sets.
 
-At the existing `Dispatch::reader_with_source` boundary
-(`src/workflow/conversation_dispatch.rs`), require a private admission from
+Use the private `Dispatch::reader_with_notebook` entry in
+`src/workflow/conversation_dispatch.rs` to share the ordinary source-aware
+continuation. Require admission from
 the independent input owner on each request. The owner supplies the ordered
 `retrieval::notebook::PageImage` set, the complete existing whole-page
 `NotebookText` result, a freshly observed `ValidatedNotebook` and a short
@@ -116,12 +117,12 @@ In captured Ledger preparation (`src/conversation/evidence.rs` and
 `src/conversation/resolution.rs`), pin the exact original turn and archive
 `RecordRef` and the canonical media descriptor from that captured archive.
 After releasing the capture lock, verify the committed canonical object
-through `ArchivedNormalizedSource::load` in `src/conversation/notebook.rs`
-and compare the fresh input's raw normalized JSON digest and byte count,
+through `ArchivedNormalizedSource::load` in `src/conversation/notebook.rs`.
+Compare the fresh input's raw normalized JSON digest and byte count,
 canonical media digest and size, document, format, source digest, exact
 extractor revision and ordered units digest against the archive. The raw JSON
-digest and the historical image-set digest represent separate inputs. Build
-the existing `Index` over the independently admitted units. Require its
+digest and the historical image-set digest represent separate inputs. Use
+the existing `Index` built during independent admission. Require its
 complete `IndexKey` to match the archive and, for inheritance, the exact
 prior key, origin-turn reference and archive reference. Query it once using
 the exact new question and existing limits. Preserve page, unit and UTF-8
@@ -130,8 +131,9 @@ range, including exact-key zero matches and a source-bound memory scope.
 Perform input and archive reads, image and JSON validation, hashing, Index
 construction and query outside Store and admission locks. `load` acquires
 the Store lock briefly through `Store::read_object`; never call it from a
-guard already holding that lock. Check the original request deadline around this bounded work and preserve the existing notebook input/object, image, frame,
-passage and prompt bounds. Use only the established short owner-currentness
+guard already holding that lock. Check the original request deadline around
+this bounded work and preserve the existing notebook input and object,
+image, frame, passage and prompt bounds. Use only the established short owner-currentness
 check and captured generation/head/transaction checks at guarded submission,
 result acceptance and output. Reuse the existing deadline and budget
 throughout each request.
@@ -141,6 +143,8 @@ receipt. In `src/conversation/receiving.rs`, admit the archive as retrieval
 origin only for the notebook-aware captured follow-up. Structural historical
 readback validates the pinned origin, archive identity, media descriptor and
 exact key and can report missing media. It can recover the original receipt.
+Archive references in eligible ordinary history also count as historical
+sources when the retrieval source is PDF, EPUB, or explicitly absent.
 The private fresh path requires the separately admitted source and existing
 guarded research, answer and output handoffs. Keep the archive reference and
 its media availability even if the origin precedes the selected history range.
@@ -150,9 +154,9 @@ attachments. In `src/conversation/receiving/answer.rs`, keep the source and
 page/range in the frozen payload and citations and label OCR passages and
 rendered references as unverified historical OCR.
 
-Extend the ordinary source-aware fixture in
-`src/simulator/combined/resident.rs` using the ordinary notebook Store
-setup and archive producer in `src/simulator/combined/qualification.rs`.
+The test `ordinary_reader_notebook_followups_require_fresh_supplied_ocr` in
+`src/simulator/combined/resident.rs` reuses the ordinary notebook Store setup
+and Writer admission used in `src/simulator/combined/qualification.rs`.
 Use the existing normalizer with a scripted whole-page result over three
 nonconsecutive supplied pages, including one declared blank. Seed the actual
 Writer-owned archive, ask an explicit Reader question, then inherit that
