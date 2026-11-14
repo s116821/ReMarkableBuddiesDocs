@@ -470,7 +470,7 @@ open.
 ## Private preferences preview from an isolated backup
 
 - [x] Independently review and implement the [private preferences handoff](manager-isolated-backup-download.md#private-preview-of-verified-backup-preferences) using the existing verified selection and portable Inspect/Prepare owner. Keep one maintenance admission through original source validation, joined cancellation and stage retirement before a reduced preview. Source accepted at Manager `26877e8808861046b7378038aa304b8c636495fb`; hosted execution remains the separate next task.
-- [ ] Verify the existing hosted composition with the exact portable member, original target, Busy and stale refusal, no-change and explicit Confirm, no competing owner during a held read or command, repeated close and reported cleanup uncertainty. Keep public registration, actual provider/installed qualification and the wired data destination separate.
+- [x] Verify the existing hosted composition with the exact portable member, original target, Busy and stale refusal, no-change and explicit Confirm, no competing owner during a held read or command, repeated close and reported cleanup uncertainty. Manager `26877e8808861046b7378038aa304b8c636495fb` passes [full hosted CI](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43634084071), including all 14 authored composition subcases and both native Integration jobs. Public registration, actual provider/installed qualification, the wired data destination and the later UI consumer remain separate.
 
 ## Manager preferences preview from a verified backup
 

@@ -353,9 +353,13 @@ The six-file Manager implementation at
 and scoped syntax/whitespace checks. The existing composition suite has 14
 authored subcases in three groups, including short, excess and wrong member
 readback, original Confirm, held reads/commands and uncertain retirement.
-Hosted Checks in run `43634084071` passed all 14 authored subcases within
-1,274 Node passes, zero failures and five skips. Build also passed; full native
-Integration remains pending. Cleanup uncertainty is returned privately
+Full hosted run `43634084071` passed: Checks includes all 14 authored subcases
+within 1,274 Node passes, zero failures and five skips; Build and both native
+Integration jobs also passed. The existing source/package browser and Electron
+flows use synthetic provider and target responses. Retained native commands
+passed their archive and actual-producer package checks; this does not qualify
+the later UI consumer, real Drive or installed/wired behavior.
+Cleanup uncertainty is returned privately
 and remains retrievable through the backup owner's original cancellation
 result; this does not claim automatic refresh of the ordinary status view.
 
