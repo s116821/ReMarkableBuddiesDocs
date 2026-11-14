@@ -294,3 +294,14 @@ Manager SHALL reuse the existing authenticated provider boundary and ordinary is
 #### Scenario: Inspection loses its authority or complete listing
 - WHEN cancellation, deadline, grant replacement, repeated pagination, ambiguous ancestry or changed selected metadata prevents complete validation
 - THEN no partial view grants a usable selection and no provider write, automatic retry, tablet operation or restore follows.
+
+### Requirement: Selected download reuses the complete isolated package validator
+Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under its original current protected authority, bounded transfer and private staging ownership. Byte hashes and an inventory alone SHALL NOT grant package verification; the existing Buddy isolated package oracle must accept the exact staged marker and closure before a verified handoff. Download SHALL NOT perform restore, import preferences or activate native/runtime state.
+
+#### Scenario: Selected download loses custody or exceeds its operational allowance
+- WHEN the original selection expires, authority changes, a stream is corrupt or incomplete, staging identity changes, or the original byte/disk/call/deadline allowance is exhausted
+- THEN no verified package is exposed, original reads stop, and only proven owned staging is retired; no replacement grant, later revision, path reuse or automatic retry is used.
+
+#### Scenario: A compatible complete package verifier is unavailable
+- WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them
+- THEN Manager reports unavailable or reconstruction-only evidence and does not offer the bytes as a verified restore input or silently introduce another semantic validator.

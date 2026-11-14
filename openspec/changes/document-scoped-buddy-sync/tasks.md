@@ -377,3 +377,11 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Finish independent browser/Electron bridge review. SCRAPPY identified two lifecycle gaps in `c900c05`; correction `a4dc16e` binds incomplete HTTP bodies to the original document and invalidates Electron backup state on trusted main-document navigation. Root retained the failing full-helper regression, then passed all 16 focused checks; SCRAPPY independently accepted both corrections.
 - [ ] Verify the new source and packaged distributions on Windows/Linux without enabling an unqualified binding. The fixture covers real Electron reload during a pending read and after marker selection; no local application build or distribution run is claimed.
 - [ ] Complete qualified namespace visibility, selected package download/validation and guarded existing/clean/replacement target restore before claiming the full Manager backup workflow.
+
+## Selected isolated backup download and existing oracle
+
+- [x] Trace the existing marker, producer inventory, complete package oracle and ordinary restore/preferences seams; record the [bounded download contract](manager-isolated-backup-download.md) before implementation.
+- [ ] Expose the existing full package oracle through the narrow offline archive command and test actual exported producer bytes, corruption, extra membership and wrong-marker refusal without Store/network/runtime activity.
+- [ ] Implement the private Manager selected-download coordinator with original selection/grant checks, bounded streams, qualified private staging and trusted verifier seam; keep synthetic fixtures distinct from actual producer/oracle/platform qualification.
+- [ ] Independently review and compose the actual protected read binding, staging and qualified verifier runner before enabling download in the shared UI; unavailable infrastructure must remain truthful.
+- [ ] Complete exact wired handoff, existing explicit restore/preferences flows, clean/replacement admission and provider/platform qualification before full workflow delivery.
