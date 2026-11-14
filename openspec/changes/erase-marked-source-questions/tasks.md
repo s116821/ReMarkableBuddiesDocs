@@ -38,3 +38,5 @@ The next source increment wires fresh interpretation, bounded erasure and bound 
 The modeled verified-answer continuation and its hosted fixtures are implemented in source. Fresh hosted verification remains pending. The installed pair owner, physical footprint qualification and representative live-model recognition remain open.
 
 The Reader README documents the handwritten question mark and installed availability. The technical guide records the remaining qualification and labels the old v0.1 bounding-box erasure and symbol workflow as historical.
+
+The ordinary marked SDK fixture now includes a pair-capable route with a genuine selected-memory view. The case asserts that the output veto retains the original question and ink and records one unavailable-output draft without navigation or page writes. Hosted verification is pending.
