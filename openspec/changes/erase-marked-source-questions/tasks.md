@@ -13,6 +13,8 @@
 
 ## 2. Verification
 
+- [ ] Exercise a current-generated schema-5 receipt in the existing hosted predecessor action. Establish a readable Prepared baseline, then verify atomic old-reader refusal and unchanged evidence. Exercise current cleanup and selected projection on the same fixture and keep the schema 1/2 encoding controls.
+
 - [ ] In the existing Reader simulator, exercise a nonterminal handwritten mark and shorthand, a usable marked fragment with answer abstention, no mark, printed punctuation and unrelated ink. Verify exact capture/turn/region and fresh acknowledgment precede the sole modeled effect, with no extra provider request or correction record. Cover the user-only Buddy continuation, known-unavailable presentation refusal, and failed later presentation with retained interpretation and no erase replay or fictitious Assistant content.
 - [ ] Exercise invalid, duplicate, out-of-frame or crossing-stroke regions, missing active binding, changed page/session/viewport, stale or uncertain interpretation acknowledgment, and a lost or partial erase result. Assert footprint-based selection independent of fixture labels, one original accepted call, no replay or further device effect after uncertainty, and separate preservation of the underlying raster and neighboring editable ink.
 - [ ] Through ordinary `run_iteration`, exercise a supported verified answer with one fresh draft, one bounded erase, one bound pair edit and one completion of that exact draft. Check original User and source references, exact text and About handling, modeled receipt provenance and preservation of unrelated ink and page content. Retain the unsupported-pair and output-veto controls with intact source ink.
