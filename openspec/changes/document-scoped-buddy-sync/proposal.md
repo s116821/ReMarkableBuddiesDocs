@@ -65,3 +65,9 @@ OAuth/account binding with isolated disposable app-data resources and exact clea
 a new account/project is not mandatory. No live credential/resource action or
 production eligibility is selected. Original precode remains preserved; corrected
 precode acceptance still precedes implementation and the eventual paired lifecycle.
+
+Disconnected isolated-package verification uses the existing normal Buddy
+archive command, delivered as a source-pinned private dependency of Manager.
+The [host delivery decision](manager-isolated-backup-download.md#host-oracle-delivery-decision)
+keeps both desktop platforms and browser-helper qualification explicit and
+introduces no new Buddy release channel or runtime code download.

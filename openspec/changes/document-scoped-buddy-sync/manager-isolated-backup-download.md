@@ -117,6 +117,66 @@ data or grants native authority.
 
 ## Implementation and verification
 
+### Host oracle delivery decision
+
+Use the existing normal `reader-buddy` command as a pinned, offline host
+dependency of Manager. Its Windows x64 and Linux x64 builds belong inside
+Manager's existing private host resources, not Buddy's tablet release asset
+inventory. Do not add another binary target, parser, backup format, release
+channel or runtime download-and-execute path.
+
+The initial dependency source is reviewed Buddy commit
+`958cacf2810f501dc3cb23b525481f0bedf706f2`, tree
+`08612c77637d83388c88e20a4080b3a9d469c764`, with Cargo.lock SHA-256
+`5ae32abe822fd06668d034e09cab8559665dbb0014c6905a8e64a83974cbdaf9`.
+This is a development dependency pin, not a published Buddy release or a new
+application version. Use Buddy's existing Git-derived identity without Manager
+version substitution. A later pin change requires review and fresh applicable
+qualification; it must not silently follow a branch or a latest release.
+
+Keep the pin in one Manager host-owned source record. CI checks out that exact
+Buddy source separately, builds `--locked --release --bin reader-buddy` with
+default features and no native experiment flags on each native host, and tests
+the normal archive command. Reuse maintained checkout/toolchain/artifact
+actions and put orchestration in the existing workflow. Record source/tree,
+lockfile, resolved SDK revision, target, toolchain, feature/profile settings,
+Git-derived identity, executable size/hash and matching notices with the
+retained artifact. Source and native platform claims remain distinct.
+
+Only the matching qualified executable and bounded provenance enter
+`host/buddy-oracle/` in Manager's private resources. Preserve its Linux execute
+bit through ZIP assembly. Verify the embedded source/target/hash and original
+Manager package digests without executing downloaded ZIP contents. Keep the
+existing three Manager ZIP names and size limits; measure before proposing any
+limit change. Source-tree helper mode and browser use must resolve the same
+qualified installed host dependency through the existing local helper contract.
+A static browser ZIP alone does not supply a native verifier.
+
+The verifier adapter is disabled by default. Its trusted host constructor may
+select the resource directory and expected dependency pin; a renderer, user
+setting, provider object or staged package may not select an executable. Before
+and after each invocation, validate the original canonical regular executable,
+its expected size/hash/target/source and bounded metadata. Refuse missing,
+changed, unqualified or mismatched inputs. Never search PATH, install, recapture,
+refresh, or fall back to a tablet binary.
+
+Run only `--archive-operation inspect-isolated --archive-input -`, with the
+original root/digest on bounded stdin, shell disabled, hidden Windows console,
+a private working directory and a minimal environment without credentials,
+configuration or loader overrides. Bound stdout to the existing 16 KiB report,
+refuse stderr and nonzero/ambiguous exit, honor the original remaining deadline
+and cancellation, and join the child before settling or releasing staging.
+Process fixtures may test these mechanics but are not Rust-oracle evidence.
+The coordinator continues to validate exact report semantics and original
+selection authority; the runner must not become another package parser.
+
+Before wiring download, independently verify native Windows compilation and
+normal command behavior, the supported Linux runtime baseline, actual retained
+package bytes/modes and both browser-helper and Electron paths. Exercise the
+runner against an actual isolated-producer package as well as malformed output,
+wrong dependency, cancellation and timeout controls. Keep platform and provider
+qualification incomplete until their own evidence exists.
+
 Native owns the private Manager coordinator, staging/read-guard adapters and
 their focused offline fixtures. Root owns protected-host integration, UI,
 independent staging/verifier qualification, Docs, CI and delivery. SCRAPPY owns

@@ -305,3 +305,11 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 #### Scenario: A compatible complete package verifier is unavailable
 - WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them
 - THEN Manager reports unavailable or reconstruction-only evidence and does not offer the bytes as a verified restore input or silently introduce another semantic validator.
+
+#### Scenario: The host oracle is delivered as a Manager dependency
+- WHEN a supported Manager host can verify the pinned normal Buddy command in its private installed resources
+- THEN the host uses only the fixed offline inspect-isolated command with its original source, target and byte identity, bounded I/O and joined cancellation; it does not obtain code from a provider package, runtime download, renderer input or tablet release archive.
+
+#### Scenario: Platform or distribution qualification is missing
+- WHEN the executable is absent, changed, wrong-platform or unqualified for the actual browser-helper or Electron distribution
+- THEN verification remains unavailable; a working Linux source command, static browser ZIP or successful package build alone cannot claim a qualified Windows or installed-host path.

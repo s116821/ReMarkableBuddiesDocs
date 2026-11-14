@@ -418,3 +418,8 @@ admission needed to reach it from the product.
 The [ordinary isolated root provisioning proposal](isolated-root-provisioning.md)
 defines the explicit host control, exact-ID recovery and the qualified
 Worker admission required to establish production root custody.
+
+The [selected download contract](manager-isolated-backup-download.md#host-oracle-delivery-decision)
+selects the existing normal Buddy command as a pinned private Manager host
+dependency. Its platform qualification, package provenance and browser-helper
+delivery remain explicit work; Buddy's tablet release asset inventory is unchanged.
