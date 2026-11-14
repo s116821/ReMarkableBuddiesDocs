@@ -262,9 +262,12 @@ analysis proposal can never be published as the researched answer.
   descriptor and stat operations. This is 1,280 metadata work items
   across the request, allocated to the acquisition, submission and
   result partitions. Reserve separate IPC byte and work bounds before
-  spawning, using the declared frame caps and at most 2,048 nonblocking
-  read/write attempts, including EOF and any short calls. Poll readiness before attempting I/O and use
-  bounded 32 KiB chunks. Progress may observe input and current selection
+  spawning, using the declared frame caps and at most 8,192 nonblocking
+  read/write attempts, including EOF and any short calls, plus 16,384 poll
+  attempts. This admits the declared 16 MiB input and 9 MiB ready ceilings
+  even when Linux provides 4 KiB pipes; short calls and readiness retries
+  consume the same finite reservation. Poll readiness before attempting I/O
+  and use bounded 32 KiB chunks. Progress may observe input and current selection
   without rereading source content. Reserve the existing bounded memory
   query once, allow a full joined proof for each of the four submission
   slots, and keep progress separate.
