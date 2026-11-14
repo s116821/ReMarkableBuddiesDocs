@@ -127,6 +127,43 @@ Prepare completion. The eventual destination binding must join its actual
 reader or retain cleanup uncertainty without deleting the stage. Do not assume
 an installed target Python broker or treat an injected peer as wired evidence.
 
+The existing private V1 restore owner must enforce this deletion condition for
+both Prepare and Apply before a destination transport is registered. Mark the
+exact stage as possibly being read immediately before the original command is
+submitted. Clear only that command's reader guard after the existing authenticated
+transport returns `reported` and the strict original selector/request parser
+accepts its terminal report, before interpreting archive correspondence or the
+write outcome. Raw `unavailable` or `unsupported` frames, local child exit,
+timeout, cancellation, stale reply suppression, changed identity and malformed
+reports do not settle the reader. A command channel can close without a remote
+exit-status message even when the SSH connection remains open.
+
+Checked destination release is allowed only if no reader was submitted or all
+submitted readers of that stage have this original terminal evidence. Otherwise
+withhold release and carry cleanup uncertainty through the existing private
+handoff and disposal results. A valid terminal Apply report may still say the
+write outcome is unknown; retain its original Status packet independently of
+checked stage retirement. A later Status, including desired-generation-observed,
+cannot settle an earlier uncertain reader or authorize delayed deletion. Reuse
+the existing joined maintenance option through local command and retirement
+settlement so external observer cancellation cannot admit a competing owner.
+This source gate supplies neither remote cancellation nor residue reclamation;
+the future wired adapter still needs its own qualified staging ownership.
+
+The gate is implemented and independently source-reviewed at
+[Manager `6e19e5b`](https://github.com/s116821/ReMarkableBuddiesManager/commit/6e19e5b70da08743ff5f363a589904ae3c74c076).
+Scoped JavaScript lint, Python parsing and whitespace checks pass. The existing
+composition, actual supervisor and authenticated loopback transport fixtures
+contain the new cases. The original [hosted run](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43652329222)
+failed all five supervisor Apply setups because their copied source preview
+excluded configuration while the target and intent still included it. The
+two-line fixture-only correction at
+[Manager `e71518c`](https://github.com/s116821/ReMarkableBuddiesManager/commit/e71518c8d137352e52aa3124dc7dc350f3dc1d02)
+aligns those fields without changing production admission, assertions or timeouts.
+Corrected hosted execution is pending; the original failure remains separate.
+The eventual results must remain distinct from wired staging, real remote
+cancellation and residue recovery.
+
 Transfer and Prepare share one existing maintenance admission. Preserve the
 ordinary command's current bounded payload and execution budget. On cancellation
 or timeout, join the actual transfer/Prepare work before releasing either stage;

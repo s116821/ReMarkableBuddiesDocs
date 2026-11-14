@@ -298,6 +298,8 @@ Manager SHALL reuse the existing authenticated provider boundary and ordinary is
 ### Requirement: Selected download reuses the complete isolated package validator
 Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under its original current protected authority, bounded transfer and private staging ownership. Byte hashes and an inventory alone SHALL NOT grant package verification; the existing Buddy isolated package oracle must accept the exact staged marker and closure before a verified handoff. Download SHALL NOT perform restore, import preferences or activate native/runtime state.
 
+For a private stage-backed restore, Manager SHALL permit checked destination deletion only before a reader is submitted or after the original authenticated Prepare or Apply terminal report is strictly validated. Missing reader completion SHALL retain cleanup uncertainty without deleting the stage. Write-outcome reconciliation SHALL NOT substitute for reader completion.
+
 #### Scenario: Selected download loses custody or exceeds its operational allowance
 - WHEN the original selection expires, authority changes, a stream is corrupt or incomplete, staging identity changes, or the original byte/disk/call/deadline allowance is exhausted
 - THEN no verified package is exposed, original reads stop, and only proven owned staging is retired; no replacement grant, later revision, path reuse or automatic retry is used.
@@ -333,6 +335,18 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 #### Scenario: Cancellation outlives a restore handoff timeout
 - WHEN transfer or Prepare is still closing after the original handoff deadline or cancellation
 - THEN the host joins that work before releasing its stages, preserves uncertain cleanup, and refuses stale preview; a later explicit Confirm requires the original ready intent and still-owned destination, while uncertain Apply Status retains its original reconciliation packet.
+
+#### Scenario: A submitted restore reader loses its terminal report
+- WHEN the original stage-backed Prepare or Apply has no strictly validated authenticated terminal report because of cancellation, timeout, local child exit, missing remote exit status, malformed output or lost target identity
+- THEN the host withholds destination release and reports cleanup uncertainty; repeated close and a later original Status do not convert that uncertainty into deletion authority.
+
+#### Scenario: Apply finishes reading with an unknown write outcome
+- WHEN the original authenticated Apply returns a strictly validated terminal report whose write outcome remains unknown
+- THEN the owner may attempt checked release of that exact destination while preserving the unknown write outcome and original Status packet; it does not retry Apply or claim restoration.
+
+#### Scenario: External cancellation races private restore retirement
+- WHEN an external observer operation attempts to revoke the maintenance lane while a private restore command or checked retirement is still joining
+- THEN the existing joined admission prevents a competing owner until that local work settles, without treating local settlement as proof of remote reader completion.
 
 #### Scenario: The host oracle is delivered as a Manager dependency
 - WHEN a supported Manager host can verify the pinned normal Buddy command in its private installed resources
