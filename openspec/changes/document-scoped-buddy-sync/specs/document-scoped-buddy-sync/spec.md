@@ -315,8 +315,8 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - THEN the UI reports a verified package with omitted media separately from an interrupted or unverified download, validates the summary against the original selected digest, and receives no staging path, restore authority or replacement selection.
 
 #### Scenario: Either Manager host exits with backup work outstanding
-- WHEN desktop or packaged browser-helper shutdown begins while an inspection predecessor, protected guard, provider read or verifier is still closing
-- THEN one shared owner closes admission and waits for the original pending work and checked staging release before shutdown completes; abort notification alone is not completion.
+- WHEN desktop or packaged browser-helper shutdown begins while an inspection predecessor, protected guard, provider read, verifier or private restore destination is still closing
+- THEN one shared owner closes admission and waits for the original pending work and checked staging release before shutdown completes, including when another owner fails; repeated shutdown joins the same drain and unconfirmed cleanup remains in the existing close/error report. Abort notification alone is not completion.
 
 #### Scenario: A compatible complete package verifier is unavailable
 - WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them

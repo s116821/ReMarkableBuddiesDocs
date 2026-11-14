@@ -129,9 +129,19 @@ checked `release`. Only a `true` release confirms removal; refusal or failure
 retains cleanup uncertainty. Private restore disposal joins outstanding work
 and reports unconfirmed release of returned destination handles. The private
 handoff result carries source-stage and failed-transfer cleanup uncertainty.
-Entry-point awaiting and public presentation
-of destination cleanup remain a following bridge increment; the existing public
-restore response shape is unchanged here.
+The existing public restore response shape remains unchanged. The lifecycle
+bridge's existing helper close and desktop quit paths
+share their respective memoized drain and await both ordinary restore owners,
+backup composition and active download quarantine. Close admission first and
+join all owners even if one fails. Preserve reduced cleanup uncertainty in the
+trusted close result and existing shutdown error reporting, without a modal
+prompt or a change to the manual restore response. A repeated close/quit does
+not start another retirement. The public cloud-to-restore consumer remains
+unregistered until its own target and transport acceptance. Source fixtures
+hold original restore, backup and active quarantine cleanup across repeated
+close, including synchronous and asynchronous failure. The retained packaged
+host fixture holds both restore owners across repeated quit; actual execution
+and installed qualification remain separate acceptance work.
 
 Preference preview remains a separate explicit action through the existing
 portable-configuration owner. Do not start it alongside data preview: their
