@@ -363,12 +363,13 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 ## Selected notebook publication custody
 
 - [x] Review the existing producer's publication boundary and the bounded [correction](shared-worker-integration.md#notebook-publication-custody-correction). Reuse the accepted Source3/plan/stage producer and existing guarded commit API rather than reopening its completed implementation.
-- [ ] Retain a failing actual-producer regression after successful phase prechecks, then pass original phase reads and pure cancellation/cutoff checks through begin, prepare, result and final-draft commits.
-- [ ] Verify late mutex/marker refusal, publication read exhaustion, healthy multi-Map/Reduce within unchanged reservations, original-only recovery, memory/winner interlocks and lost acknowledgments. Review exact source and publish with the existing coordinated change.
+- [x] Retain a failing actual-producer regression after successful phase prechecks, then pass original phase reads and pure cancellation/cutoff checks through begin, prepare, result and final-draft commits. Independently reviewed source `549f05fb`, integrated as `893c6912`, retains both observed pre-fix failures and passes 9 actual notebook cases, 5 underlying guarded-Store checks and strict Clippy in the existing Linux cache.
+- [x] Review exact source for late marker refusal, original read exhaustion, healthy multi-Map/Reduce within unchanged reservations, original-only recovery, memory/winner interlocks and lost acknowledgments. The callback runs inside the publication mutex; no forced contended wait or real elapsed timeout was tested.
+- [ ] Verify the composed source in hosted CI and publish this increment with the existing coordinated change; preserve the separate predecessor-fixture failure and correction evidence.
 
 ## Manager disconnected isolated backup inspection
 
 - [x] Reconcile the existing authentication, isolated V1 publisher and ordinary restore contracts; record the bounded [reader design](manager-isolated-backup-reader.md) before implementation.
-- [ ] Implement and independently review the private read-only reader and focused source/fixture checks; retain exact producer-byte provenance separately from synthetic cases.
+- [x] Implement and independently review the private read-only reader and focused source/fixture checks. Both author and coordinator ran all 11 cases successfully; the fixtures are source-derived synthetic JSON, not retained Rust producer bytes or cross-language qualification.
 - [ ] Connect the existing protected auth read boundary, narrow host routes and shared browser/Electron inspection/selection UI; verify both distributions without enabling an unqualified binding.
 - [ ] Complete qualified namespace visibility, selected package download/validation and guarded existing/clean/replacement target restore before claiming the full Manager backup workflow.
