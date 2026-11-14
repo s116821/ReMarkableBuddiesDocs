@@ -23,7 +23,7 @@
 - [ ] Qualify the active installed capture-to-source/viewport binding, actual footprint and persisted source and neighbor preservation on supported technical PDF, notebook and EPUB pages. Check interruption, no-mark behavior and no automatic retry. Keep unsupported routes unavailable.
 - [ ] Qualify the installed question-only Buddy write on the bound conversation after the original source handling. Verify users can find the exact text and its retained source for correction after answer abstention, with honest failure reporting and no erase replay.
 - [ ] Qualify installed pair presentation and completion on the original bound Buddy page using durable exact-operation readback after source handling.
-- [ ] Update the existing Reader user guidance with the convention and supported behavior.
+- [x] Update the existing Reader user guidance with the convention and supported behavior.
 
 ## 3. Delivery
 
@@ -36,3 +36,5 @@ The first source increment implements mark/region parsing and original-question 
 The next source increment wires fresh interpretation, bounded erasure and bound user-only presentation through the ordinary Reader and its simulator. Hosted fixtures cover the original mode lease, renewed request pins, receipt drift, partial and lost erase acknowledgments, and later presentation failure. These cases await hosted execution. Installed capture, erase and presentation still require their owning adapters and qualification.
 
 The modeled verified-answer continuation and its hosted fixtures are implemented in source. Fresh hosted verification remains pending. The installed pair owner, physical footprint qualification and representative live-model recognition remain open.
+
+The Reader README documents the handwritten question mark and installed availability. The technical guide records the remaining qualification and labels the old v0.1 bounding-box erasure and symbol workflow as historical.
