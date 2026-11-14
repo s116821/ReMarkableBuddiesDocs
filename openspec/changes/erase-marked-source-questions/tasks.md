@@ -1,7 +1,7 @@
 ## 1. Contract and source implementation
 
 - [x] Independently review the mark convention, erase boundary, schema 5 receipt and no-answer presentation handoff against the existing ordinary Reader, Ledger and unified-page owner.
-- [ ] Reuse the current source gesture, capture, analysis and interpretation to recognize the mark anywhere in its handwritten fragment, including a usable fragment when the answer abstains. Retain exact wording and preserve independent verification and existing answer, typed and Writer behavior.
+- [x] Reuse the current source gesture, capture, analysis and interpretation to recognize the mark anywhere in its handwritten fragment, including a usable fragment when the answer abstains. Retain exact wording and preserve independent verification and existing answer, typed and Writer behavior.
 - [x] Validate a unique full-frame question-only region and join it to the current source observation and exact retained evidence. Acknowledge the association and interpreted user revision under the original ordinary transaction. Refuse stale, uncertain or historical authority without effect.
 - [x] Validate schema 5 only as the new ordinary receipt, including exact turn/root transaction membership, retained capture and overview readback, preserved schema 1/2 encodings, mutual exclusion from selected intent and truthful refusal by unsupported views.
 - [x] Carry the fresh marked publication and advanced read set into a consumed, request-local continuation in `Attempt`. Join it to the active capture's original source and viewport at modeled acceptance. Keep historical readback and the text-only path free of effect authority.
@@ -15,7 +15,7 @@
 
 - [x] Exercise a current-generated schema-5 receipt in the existing hosted predecessor action. Establish a readable Prepared baseline, then verify atomic old-reader refusal and unchanged evidence. Exercise current cleanup and selected projection on the same fixture and keep the schema 1/2 encoding controls.
 
-- [ ] In the existing Reader simulator, exercise a nonterminal handwritten mark and shorthand, a usable marked fragment with answer abstention, no mark, printed punctuation and unrelated ink. Verify exact capture/turn/region and fresh acknowledgment precede the sole modeled effect, with no extra provider request or correction record. Cover the user-only Buddy continuation, known-unavailable presentation refusal, and failed later presentation with retained interpretation and no erase replay or fictitious Assistant content.
+- [x] In the existing Reader simulator, exercise a nonterminal handwritten mark and shorthand, a usable marked fragment with answer abstention, no mark, printed punctuation and unrelated ink. Verify exact capture/turn/region and fresh acknowledgment precede the sole modeled effect, with no extra provider request or correction record. Cover the user-only Buddy continuation, known-unavailable presentation refusal, and failed later presentation with retained interpretation and no erase replay or fictitious Assistant content.
 - [x] Exercise invalid, duplicate, out-of-frame or crossing-stroke regions, missing active binding, changed page/session/viewport, stale or uncertain interpretation acknowledgment, and a lost or partial erase result. Assert footprint-based selection independent of fixture labels, one original accepted call, no replay or further device effect after uncertainty, and separate preservation of the underlying raster and neighboring editable ink.
 - [x] Through ordinary `run_iteration`, exercise a supported verified answer with one fresh draft, one bounded erase, one bound pair edit and one completion of that exact draft. Check original User and source references, exact text and About handling, modeled receipt provenance and preservation of unrelated ink and page content. Retain the unsupported-pair and output-veto controls with intact source ink.
 - [x] Inject stale or lost draft acknowledgment, a partial or lost erase, pair refusal and wrong-operation or uncertain readback, and completion CAS drift or acknowledgment loss. Check zero erase before fresh draft admission, no navigation after uncertain erase, no duplicate edit or erase, no manufactured completion or history receipt, and no generic exposure of an uncompleted Reader draft.
@@ -53,7 +53,7 @@ with native qualification explicitly absent. The two finite schema-5 rows are
 complete; live recognition, installed effects and final delivery remain open.
 [Hosted run 43627433623](https://github.com/s116821/ReMarkableBuddies/actions/runs/43627433623)
 
-The next test-only increment at Buddy `af6e5a1dad3dc824daa51e09f8db74ccd4febb47`
+The test-only increment at Buddy `297e584231670ec56da4d797343fb6f768e81bb4`
 extends the existing composed test to 37 authored cases. It adds distinct
 printed-punctuation and unrelated-handwriting images with scripted absent-mark
 responses, and makes the no-mark case use unmarked wording. The fixture checks
@@ -62,6 +62,14 @@ and page content, and zero effects on re-entry. The applied case checks the exac
 current marked receipt, User, source capture and applied root before modeled
 erase acceptance. The existing pair case checks that punctuation-normalized
 independent verification leaves the saved and presented wording unchanged.
-Independent source review and scoped Rustfmt/whitespace checks passed. Hosted
-execution remains pending, so both finite recognition rows above remain open.
-These scripts do not qualify live recognition or installed page effects.
+Independent source review and scoped Rustfmt/whitespace checks passed. Full
+hosted Checks, Build and Integration passed at this revision. The named composed
+test passed within 1,312 passing library tests, with zero failures and 56 ignored
+cases. Original Integration output verifies both retained armv7 and aarch64
+packages under emulation only, with native qualification explicitly absent.
+The two finite recognition rows are complete. Live recognition, installed page
+effects and final delivery remain open. The original `af6e5a1` run failed with
+E0277 before executing the fixture; the successor preserves the equality checks
+while removing the assertion's unsupported Debug requirement. That compiler
+failure remains separate from the successful successor run.
+[Hosted run 43631372352](https://github.com/s116821/ReMarkableBuddies/actions/runs/43631372352)

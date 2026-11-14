@@ -471,3 +471,9 @@ open.
 
 - [x] Independently review and implement the [private preferences handoff](manager-isolated-backup-download.md#private-preview-of-verified-backup-preferences) using the existing verified selection and portable Inspect/Prepare owner. Keep one maintenance admission through original source validation, joined cancellation and stage retirement before a reduced preview. Source accepted at Manager `26877e8808861046b7378038aa304b8c636495fb`; hosted execution remains the separate next task.
 - [ ] Verify the existing hosted composition with the exact portable member, original target, Busy and stale refusal, no-change and explicit Confirm, no competing owner during a held read or command, repeated close and reported cleanup uncertainty. Keep public registration, actual provider/installed qualification and the wired data destination separate.
+
+## Manager preferences preview from a verified backup
+
+- [x] Review the [browser and Electron consumer contract](manager-isolated-backup-download.md#manager-preferences-preview-from-a-verified-backup) for the exact selected pair and captured wired target, one shared host attempt, joined cancellation through retirement and still-ready-only discard. Preserve original Confirm and Status custody.
+- [ ] Implement the closed V1 bridge and the shared UI action. Use the existing portable owner and local-only observation pause. Keep source consumption one-shot and shipped namespace/staging factories absent.
+- [ ] Verify hosted controller and adapter races, the actual loopback and source Electron IPC paths with test-owned composition, and packaged default refusal. Record real provider and installed/wired qualifications separately.

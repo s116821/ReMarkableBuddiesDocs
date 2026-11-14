@@ -357,6 +357,214 @@ Hosted execution remains pending. Cleanup uncertainty is returned privately
 and remains retrievable through the backup owner's original cancellation
 result; this does not claim automatic refresh of the ordinary status view.
 
+## Manager preferences preview from a verified backup
+
+The browser and Electron use the same explicit **Review backup preferences**
+action after the selected download reports verified and the destination is
+admitted for portable preferences. The action hands the
+original staged portable member to the existing portable editor. The existing
+Confirm button owns Apply and the existing retained Status owns reconciliation.
+The one-shot handoff precludes using the same stage for data preview. A separate
+data operation needs a fresh verified selection.
+
+### Closed bridge and target admission
+
+Add a separate V1 branch to the existing isolated-backup bridge, with the
+following exact keys.
+
+```text
+{version: 1, action: 'preview-preferences', operation, reference, connection_id, boot_id}
+{version: 1, operation, reference, status, retryable, preview, cleanupPending}
+```
+
+Use the existing 512-byte request cap and strict parsing. Validate both backup
+IDs and the portable connection ID as the existing lowercase 64-hex handles,
+and the boot ID with the existing portable UUID predicate. Keep the bridge
+parser and result branch separate from the ordinary scan/select/download/status/
+cancel contracts consumed by `IsolatedBackupHost.request`. Cap the nested
+portable response at its existing 8 KiB and the full preview frame at 9 KiB.
+Require the reply to echo both original backup IDs. Allow `ready`, `no-change`,
+`busy`, `invalidated`, `capacity`, `unsupported`, `not-dispatched` and
+`unavailable`. Only `ready` and `no-change` carry a preview. Parse it with
+`parsePortableResult` using `{action: 'prepare', connection_id, boot_id}` and the
+existing observation validator, and require the inner state to match the outer
+state. Ready carries the portable editor reference and reduced summary.
+No-change carries no editor reference. Failures carry null preview. Cleanup
+uncertainty also requires a failure status, null preview and `retryable: false`. `retryable` is true only for Busy with the same source still
+available for handoff, checked after the refusal. A portable command can report
+Busy after consumption, which yields Busy with `retryable: false`. No request
+carries an artifact, path, source-device substitution, grant or Apply intent.
+
+Dispatch through the same `POST /manager-isolated-backup` guard and Electron
+`manager:isolated-backup` channel with the existing sandboxed preload's
+single-argument allowlist. Preserve the browser's loopback Host, exact Origin,
+session cookie, content type, body limit and document checks before and after
+the await. Electron rechecks the trusted window, main frame, exact UI URL,
+arity and original document after the await. Capture the connection and boot
+from the raw wired observer's current valid sample at admission and require
+them to match the requested values. Apply the same observed-model, firmware
+and architecture admission criteria as the saved-configuration probe. The
+request is a comparison to that sample. The archived device and the wired
+destination can differ. Use the same portable owner that handles the existing
+route or IPC. It checks the original target during Prepare and Confirm.
+
+### One original attempt and joined cancellation
+
+Create one small host attempt owner per companion instance in
+`host/isolated-backup-preferences.mjs`. The adapters pass their captured
+document, target reader and lifecycle predicate into this owner. The slot
+holds the original document and pair, captured target, abort controller,
+completion and issued Ready object. Reserve it synchronously. A second
+request while it is occupied returns Busy with `retryable: false`. Keep caller/document currentness distinct from whether an individual
+response is still writable. It uses `canHandoff` only
+before consumption and when classifying a Busy refusal. Add a host-only
+`selectionSignal(operation, reference)` to `IsolatedBackupHost` backed by the
+reader's original selection controller. Return only the signal for a current
+exact pair, without copying marker bytes. Selection expiry, cancellation,
+reselection and authority invalidation already abort that controller. Read
+its signal through a host-only reader accessor that uses the existing
+selection currentness check. Watch that signal until attempt retirement.
+Check the exact selection again at final delivery and before Confirm using
+`isSelectionCurrent`. The attempt holds no handles into the retired stage.
+
+Pass the host-only `{signal, current, releaseAttempt}` options through
+composition `preparePreferences` to `portable.prepareHandoff` alongside its
+existing inputs. Refuse an already-aborted signal before taking the lane.
+Attach a one-shot listener to abort only that joined invocation. Check it
+through final adoption, including while source retirement settles. Remove the listener when the
+invocation drains. Continue to join the exact consumed source release and
+original observer child before releasing the maintenance token. The normal
+coordinator retirement also aborts its broker signal, so only the original
+attempt and selection signals stay authoritative for cancellation at final
+adoption. For an exact backup Cancel, capture the slot, abort its controller
+synchronously, and join its completion and the existing backup cancellation
+from outside the private handoff. Repeated cancellation joins the same drain.
+Return the existing bounded cancellation result with the original cleanup
+warning preserved. Unmatched cancels keep their current backup behavior.
+
+Keep the original issued Ready object host-side through publication. Check
+caller, target, selection and `portable.assertCurrent` in a shared final
+publication method immediately before returning the IPC reply or ending the
+HTTP response. If validation or delivery fails, cancel that exact attempt.
+Add `discardHandoffPreview(issued)` as a host-only method on the portable
+owner. It uses the existing issued-result WeakMap and a handoff flag on the
+editor context. In one synchronous check require the exact issued Ready,
+current epoch, same editor object, still-ready state, no possible Apply and
+no active command for that editor. Clear only that editor and its timer,
+wipe its buffers, mark it invalidated and call its `releaseAttempt` hook.
+Return false for a successor, a manual editor, an expired or replaced
+result, or an editor with possible Apply. Use this scoped method for backup
+discard because public portable Cancel can interrupt active Apply. The guard uses the actual issued object,
+never just the string reference or a renderer-supplied result.
+
+Store `current` and `releaseAttempt` only on the backup editor context. Existing
+Confirm checks `current()` at admission and immediately before it marks the
+reference possibly dispatched. The predicate checks the exact attempt,
+original document, selection and target. A failed check refuses dispatch and
+retires only that still-unapplied editor. Recheck the editor identity when
+the predicate itself invalidates the selection. After recording the
+possible-Apply receipt and before starting the raw command, call
+`releaseAttempt`. It synchronously detaches the source listener and clears
+only the captured attempt slot, without cancelling or performing I/O. Use
+the same hook when expiry, peer invalidation or editor replacement drops an
+adopted backup editor. Once Confirm records possible Apply, source
+cancellation leaves the existing Apply and original Status ownership in place. The backup attempt owner
+stores no reconciliation packet. Once dispatch can have occurred, the UI's
+backup Stop/clear only releases the backup selection and leaves the portable
+controller's original-reference retention intact.
+
+Route ordinary backup actions through the existing backup owner. Accepted
+scan or selection replacement invalidates the old exact pair. Release the
+attempt slot and remove its listener on terminal refusal, no-change, discard,
+expiry or possible Apply. A callback from a prior attempt can release only
+what it captured. Old backup Cancel can discard only the matching attempt
+for its admitted document and operation.
+Use the existing navigation and shutdown hooks to invalidate the matching
+attempt, and Electron's renderer-loss event to do the same. The existing
+wrapped observation cancellation also invalidates the portable owner. When
+that peer teardown drops a backup editor, release only the matching attempt
+through `releaseAttempt`. Drive authority replacement aborts the original
+selection. On HTTP response close before finish, cancel the attempt captured
+by that response. Remove that transport listener on normal finish. On a rejected, timed-out or invalid browser response or IPC promise
+the controller cancels the original operation and retires its view. If a
+cancellation reply is lost, report cleanup unconfirmed for that view.
+Delivered responses remain subject to Ready expiry and invalidation. Close
+admission before shutdown and join any pending attempt alongside the existing
+portable and backup drains. Preserve the existing cleanup reporting.
+
+### Shared UI and hosted evidence
+
+The backup controller captures its private operation, selected reference,
+verified download result, deadline and view generation before yielding.
+Associate the portable controller's pending or Ready view with that attempt. Use
+the existing local-only `ConnectionController.pauseObservation()` to drain
+queued observations, then recheck that same selection, target and both
+controller generations. Keep wrapped observer Cancel for deliberate
+disconnect and teardown. Keep the original selection deadline and block
+parallel or automatic starts. Surface a Busy retry only when the matching
+reply explicitly permits it. A new click remains subject to the original
+selection and portable guards. After consumption or ambiguous delivery, another
+preview requires a fresh verified selection.
+
+Adopt the closed result through the existing portable controller's common
+validated result and expiry handling. Show the selected backup as the source
+and direct the operator to the existing preferences panel.
+Expire the view at the earlier of the existing selection deadline and the
+normal portable Ready timer. The host checks its own deadlines.
+Expose Confirm only for the same still-current target and Ready reference.
+Both Stop buttons use the same backup operation while this preview is pending
+or still ready. Clear, Stop, rescan, reselection, Drive changes, target
+changes, visibility or navigation, expiry and disposal fence both views and
+cancel the exact preview
+while it is pending or still ready. Fence cancellation and cleanup warnings by
+the initiating generation. Once Confirm can have dispatched, releasing the
+backup view preserves the existing portable original and Status UI. Retain
+manual file import/export and the shared preference editor as existing flows.
+
+Implementation scope is `host/isolated-backup-protocol.mjs` and `.d.mts`,
+`host/isolated-backup-preferences.mjs`, `host/isolated-backup-host.mjs`,
+`host/isolated-backup-reader.mjs`, `host/isolated-backup-composition.mjs`,
+`host/portable-configuration.mjs`, `host/browser-helper.mjs`,
+`electron/main.cjs`, `src/host.ts`, `src/isolated-backup.ts`,
+`src/portable-configuration.ts`, `src/app.ts` and `src/app.html`.
+The preload capability and the observation controller's pause API already exist.
+
+Extend `tests/isolated-backup-composition.test.mjs` for cancellation while stage
+release is held, exact Ready discard and possible Apply/Status preservation.
+Extend `tests/isolated-backup-helper.test.mjs` for closed frames, original
+origin/document/target, lost response, checked cleanup and stale successor
+controls. Extend `tests/isolated-backup-controller.test.mjs` and
+`tests/portable-configuration-controller.test.mjs` for verified-only action,
+local pause, both generation fences, Busy before and after consumption,
+ready/no-change, one explicit Confirm, original Status and late failure
+recovery. Include a late Ready discarded after a manual or backup successor,
+and one discarded after dispatch where Status still settles the original.
+
+Extend `tests/isolated-backup-hosts.mjs` in the existing hosted Integration jobs.
+Use the existing helper injection for a positive browser case. Extract the
+current Electron backup and portable IPC registrations into
+`registerIsolatedBackupHandler` and `registerPortableConfigurationHandler`
+in the shared host module, used from production main and a test-only main at
+`tests/fixtures/isolated-backup-preferences-electron.cjs`. Launch the source
+fixture with its real `ipcMain`, sandboxed preload, built Angular UI and the
+same exported main-frame/URL guard used by production. Register the real
+navigation and renderer-loss invalidation hook in this fixture. Provide a
+process-local composition created with the real factory and synthetic store,
+binding, stage/verifier and wired peer, using shared test inputs in
+`tests/fixtures/isolated-backup-preferences.mjs`. The fixture supplies
+dependencies to the actual registrations, and the renderer drives the
+existing preload and both real IPC handlers. Browser uses the same fixture
+composition with its real loopback transport. Check changed and no-change,
+zero Apply before Confirm, and exact original reference once Confirm runs.
+Verify default refusal separately using the existing packaged Electron and
+packaged browser-helper launches. Assert the unavailable preview and zero
+portable commands. The existing packaged Drive stub can exercise browsing and
+still leaves the coordinator absent. Keep the existing manual control in
+`tests/portable-configuration-hosts.mjs`. The tests establish source consumer
+behavior with synthetic peers. Shipped startup still supplies neither a
+production namespace factory nor a staging parent, and actual provider and
+installed/wired qualification remain open.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated

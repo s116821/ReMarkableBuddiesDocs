@@ -346,6 +346,26 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - WHEN the user explicitly launches the existing packaged executable with `--browser-helper`
 - THEN the existing fixed-loopback helper serves its packaged browser UI without a desktop window, resolves host resources only from the installed package, and awaits owned shutdown; the mode does not activate an unqualified oracle or grant source-only helper authority.
 
+### Requirement: Manager previews verified backup preferences in both companions
+
+Browser and Electron Manager SHALL offer a deliberate preferences preview for the exact selected and verified backup on the original admitted wired destination. The shared portable owner SHALL publish a preview only after the one-shot source handoff and checked staging retirement. It SHALL accept Apply only through the existing explicit Confirm for that still-ready original. A possibly dispatched Apply SHALL retain its original portable Status route and reference.
+
+#### Scenario: The operator reviews saved preferences from a verified backup
+- WHEN the same verified download and wired connection and boot remain current and the user chooses Review backup preferences
+- THEN both companions use the exact original selected pair, show the reduced preview in the existing preferences panel and allow only explicit Confirm of that prepared reference. No-change has no Confirm.
+
+#### Scenario: The original preview is cancelled while Prepare or retirement settles
+- WHEN the original caller, selection, target or view is invalidated while the host holds the joined Prepare
+- THEN the host fences result delivery, joins the original work and checked retirement, and reports any unconfirmed cleanup against that operation while denying stale preview and automatic retry.
+
+#### Scenario: A cancelled Ready competes with a successor or Confirm
+- WHEN a late cancellation or failed delivery names an older backup attempt
+- THEN only that attempt's exact still-ready editor may be discarded. A newer editor keeps custody and an Apply that may have dispatched remains reconcilable only through its existing original Status.
+
+#### Scenario: A shipped host starts without qualified namespace or staging inputs
+- WHEN either companion uses its default production startup with those inputs absent
+- THEN no verified preferences preview is available and the host dispatches no portable maintenance from the backup path.
+
 ### Requirement: Manager package observation preserves release compatibility
 The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
 
