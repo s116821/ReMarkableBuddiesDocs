@@ -19,6 +19,94 @@ recovery and SHALL NOT replay the capture, admission or model request.
 - **AND** a missing, stale, foreign or unreceived registration refuses without
   ordinary publication, registration or a model call.
 
+### Requirement: Selected researched Reader retains exact original source context
+
+An explicitly enabled researched Reader route SHALL obtain the original
+text-bearing PDF through an owned read-only producer tied to the exact registered
+document and captured original page. It SHALL validate the original bytes,
+page redirect and independently admitted complete index key before retrieval.
+After a fresh Interpret acknowledgment it SHALL preserve the exact question,
+eligible history and original-source association in the existing bounded context
+assembly. It SHALL join the original selected-memory result, including observed
+empty, through research, answering and result publication. Ordinary historical
+receiving contracts and their selected-memory refusal SHALL remain unchanged.
+
+#### Scenario: Original source differs from the visible response or another PDF
+
+- **WHEN** two PDFs are present and the captured request names one original document
+- **THEN** the receiver SHALL query only that document with the unchanged question,
+  retain original page locators and reject a foreign or changed complete index key.
+- **AND** a valid query with no matches SHALL retain its source identity, while
+  unsupported or unavailable source SHALL NOT silently become no-document success.
+
+#### Scenario: Source or selection changes during processing
+
+- **WHEN** original bytes, page mapping, directory/file identity or selected custody
+  changes before an actual handoff or new result publication
+- **THEN** the original request SHALL refuse that handoff or write without replacing
+  its source, obtaining a fresh budget, or publishing an ordinary/native result.
+- **AND** completed filesystem observations SHALL NOT claim an atomic lock against
+  external native writers or a continuous native revision lease.
+
+### Requirement: Selected research intent and processing remain bounded
+
+The researched route SHALL preserve explicit per-request no-web intent and the
+effective saved research policy without rewriting the question or history. It
+SHALL admit non-secret source, route, model and credential-destination eligibility
+before reading a protected credential. Disabled and explicit NoInternet requests
+SHALL make zero web-research submissions. Required but unavailable research SHALL
+refuse rather than publish the earlier analysis proposal as a researched answer.
+NoInternet SHALL NOT be represented as disabling recognition or answer-model
+network requests.
+
+The route SHALL replace legacy enrichment with at most four ordered one-use
+stages: analysis, independent verification, optional research and final answering.
+All source acquisition, processing, selected reads, provider work and publication
+SHALL retain the original 420-second deadline and finite reservations. Processing
+that cannot cooperatively cancel SHALL use an owned terminable boundary. Provider
+handoff SHALL revalidate the original joined pins, release shared gates before
+waiting, and use the selected progress cadence without minting new submissions.
+Cancellation or exhaustion SHALL terminate and reap owned work without a detached
+parser/provider, a retry, or extension of the original request.
+
+#### Scenario: Explicit no-web intent survives research and answer assembly
+
+- **WHEN** the input owner admits NoInternet, or effective research is Disabled
+- **THEN** no research transport SHALL be constructed or submitted, the exact
+  question/history SHALL remain intact and the answer SHALL retain the explicit
+  zero-web provenance rather than inventing research evidence.
+- **AND** ambiguous request intent SHALL NOT silently grant web-research permission.
+
+#### Scenario: Cancellation or deadline occurs during source or provider work
+
+- **WHEN** source processing, a withheld provider response, or actual chunk/read
+  consumption exhausts the original allowance or the request is canceled
+- **THEN** owned work SHALL stop and be reaped without renewed reservations, stale
+  Generated publication or another model call.
+
+### Requirement: Selected researched drafts retain usable citations and original recovery
+
+The selected receiver SHALL validate citation markers against captured source,
+memory and research evidence and retain bounded usable references in the durable
+Generated text. It SHALL publish exactly one draft through the existing joined
+Generate CAS and freeze its exact operation, input references and text for original
+receipt recovery. Clarifications SHALL have no fabricated citations. Overflow,
+invalid references or changed joined state SHALL refuse publication.
+
+#### Scenario: Citation metadata survives publication
+
+- **WHEN** an answer cites admitted PDF passages, memory or web evidence
+- **THEN** the durable text SHALL retain original PDF page/document identity,
+  exact memory record/revision or validated research title/HTTPS locator as
+  applicable, with truthful provenance labels and no unsupported reference.
+
+#### Scenario: Acknowledgment is lost after the researched draft commits
+
+- **WHEN** recovery receives the same operation and frozen original input
+- **THEN** it SHALL return only the original receipt before new source acquisition,
+  current-preference authorization or provider work, and SHALL create no second
+  Generated record or native effect.
+
 ## MODIFIED Requirements
 
 ### Requirement: Selected request and draft publication
@@ -33,8 +121,8 @@ The installed resident Reader SHALL retain the original effective preference
 and canonical selected custody through every actual submission and result
 publication, joining optional selected memory as applicable. It SHALL use one
 cumulative bounded request across analysis, verification and optional
-enrichment, and preserve exact original-only recovery independently of fresh
-admission.
+enrichment, or the explicitly enabled researched-answer stages above, and
+preserve exact original-only recovery independently of fresh admission.
 
 #### Scenario: Original request remains valid across multiple bounded calls
 

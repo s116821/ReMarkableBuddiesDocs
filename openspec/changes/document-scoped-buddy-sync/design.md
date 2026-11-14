@@ -387,6 +387,19 @@ The [selected Reader input contract](selected-reader-resident-input.md) defines 
 installed source-only constructor, registered document admission, one atomic
 Prepared publication and the effective preference lifetime through Generated.
 
+### Selected Reader source retrieval and research
+
+The [researched Reader contract](selected-researched-reader.md) extends that
+receiver after a fresh Interpret acknowledgment. It must obtain a real original
+PDF from an owned read-only producer, independently establish the complete index
+key, preserve exact request/history and join selected memory through research,
+answering and one Generated publication. The existing ordinary historical APIs
+remain unchanged. Expensive source processing and provider work need owned
+cancellation within the original request lifetime; a pre-call check alone is
+insufficient. Explicit no-web intent must survive every stage without altering
+the original question. The leaf is proposed precode until review and source
+verification complete, and it grants neither native effects nor qualification.
+
 ### Ordinary data snapshots for isolated backup
 
 The isolated publisher can prepare an ordinary format-1 data snapshot using the

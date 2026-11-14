@@ -71,3 +71,21 @@ archive command, delivered as a source-pinned private dependency of Manager.
 The [host delivery decision](manager-isolated-backup-download.md#host-oracle-delivery-decision)
 keeps both desktop platforms and browser-helper qualification explicit and
 introduces no new Buddy release channel or runtime code download.
+
+## Selected Reader source retrieval and research
+
+Connect the installed selected Reader's freshly acknowledged interpretation to
+the existing source retrieval, selected-memory and researched-answer machinery,
+ending at one durable Generated draft. The first supported source is a text-bearing
+original PDF associated with the captured document and page. The
+[researched Reader design](selected-researched-reader.md) specifies the missing
+read-only source producer, exact source/index identity, explicit research intent,
+owned processing and provider lifetimes, and durable citation text.
+
+Preserve ordinary receiving APIs and the existing selected preference, memory,
+handwriting and original-receipt guards. Unsupported or changed source input
+must not silently become source-less success. This continuation does not claim
+installed/native qualification, resumed conversation source inheritance, EPUB or
+notebook support, live-model fidelity, or completion of the wider Reader roadmap.
+Its implementation, verification and eventual completed-scope specification sync
+remain part of the existing linked delivery, not a planning-only merge.

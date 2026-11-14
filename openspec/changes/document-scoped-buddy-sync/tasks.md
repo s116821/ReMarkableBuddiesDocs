@@ -326,6 +326,18 @@ The backend's actual busy-Store refusal case is accepted in Buddy [`fa5a3e1`](ht
 - [ ] Verify the installed input-only constructor, effective admission at startup and each genuine release, repeat and interruption behavior, and ordinary LocalOnly behavior on the qualified runtime.
 - [ ] Independently review the paired source and contract, reconcile current hosted evidence and complete the later Main-owned installed Reader qualification.
 
+## Selected Reader source retrieval and research
+
+- [x] Independently accept the original-PDF producer portion of the [researched Reader precode](selected-researched-reader.md): cancellable same-binary processing, complete source/index identity, actual read reservations and short checks under shared gates. This accepts a source contract, not implementation or installed activation.
+- [ ] Accept the remaining researched-route precode before its implementation, including handwritten no-web intent admission and ambiguity handling, gesture arbitration, effective policy and non-secret provider eligibility. Source-producer work may proceed independently; installed researched-route activation remains gated.
+- [ ] Implement the read-only installed source producer and owned processing lifetime. Bind original bytes, active-page redirect and complete normalized index key to the exact admitted capture; reject changed, ambiguous, unsupported or absent source without source-less fallback.
+- [ ] Connect the actual selected receiver after fresh Interpret to exact request/history, one bounded source query and the existing selected-memory result. Preserve ordinary public types and their selected-memory refusal.
+- [ ] Preserve explicit no-web intent and effective saved policy at actual input admission and every later handoff. Keep handwritten intent interpretation, gesture custody and zero-web behavior separately evidenced; neither model inference nor a second gesture may silently override an explicit opt-out.
+- [ ] Integrate four ordered one-use model/research stages within the original deadline and read reservations, with owned cancellation, actual guarded submission and no legacy-enrichment replay on this route.
+- [ ] Validate captured citations and retain useful references in the single Generated text; join source, selected preferences and memory at publication and recover only the original acknowledgment after uncertainty.
+- [ ] Exercise the actual resident receiver and source producer in hosted fixtures: source swaps and redirects, exact-key zero matches, unchanged request/history, pure/mixed/empty memory, opt-out and unavailable research, cancellation/deadline/read exhaustion, changed selection and lost acknowledgments. Preserve the ordinary controls.
+- [ ] Obtain independent paired source review and exact-revision hosted validation, reconcile modeled versus installed/model qualification, and retain explicit remaining work for follow-up source inheritance and unsupported formats. Do not close the broader Reader or shared-sync parent from this first PDF increment.
+
 ## Ordinary data snapshots for isolated backup
 
 - [x] Reuse the format-1 archive collector, validation and writer under a same-Store current isolated lease. Skip empty history and publish the marker only after verified objects.
