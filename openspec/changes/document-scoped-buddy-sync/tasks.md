@@ -475,5 +475,5 @@ open.
 ## Manager preferences preview from a verified backup
 
 - [x] Review the [browser and Electron consumer contract](manager-isolated-backup-download.md#manager-preferences-preview-from-a-verified-backup) for the exact selected pair and captured wired target, one shared host attempt, joined cancellation through retirement and still-ready-only discard. Preserve original Confirm and Status custody.
-- [ ] Implement the closed V1 bridge and the shared UI action. Use the existing portable owner and local-only observation pause. Keep source consumption one-shot and shipped namespace/staging factories absent.
+- [x] Implement the closed V1 bridge and the shared UI action. Manager `c8694e56b8fe9979c37a28dabf7163b9ddab3729` passed independent source review with the existing portable owner, local-only observation pause, one-shot source consumption and absent shipped namespace/staging factories. Hosted execution remains the next task.
 - [ ] Verify hosted controller and adapter races, the actual loopback and source Electron IPC paths with test-owned composition, and packaged default refusal. Record real provider and installed/wired qualifications separately.

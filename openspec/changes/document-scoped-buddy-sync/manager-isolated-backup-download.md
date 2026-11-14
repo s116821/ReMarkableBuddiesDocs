@@ -353,7 +353,9 @@ The six-file Manager implementation at
 and scoped syntax/whitespace checks. The existing composition suite has 14
 authored subcases in three groups, including short, excess and wrong member
 readback, original Confirm, held reads/commands and uncertain retirement.
-Hosted execution remains pending. Cleanup uncertainty is returned privately
+Hosted Checks in run `43634084071` passed all 14 authored subcases within
+1,274 Node passes, zero failures and five skips. Build also passed; full native
+Integration remains pending. Cleanup uncertainty is returned privately
 and remains retrievable through the backup owner's original cancellation
 result; this does not claim automatic refresh of the ordinary status view.
 
@@ -564,6 +566,35 @@ still leaves the coordinator absent. Keep the existing manual control in
 behavior with synthetic peers. Shipped startup still supplies neither a
 production namespace factory nor a staging parent, and actual provider and
 installed/wired qualification remain open.
+
+### Consumer source checkpoint
+
+Manager `c8694e56b8fe9979c37a28dabf7163b9ddab3729` implements this consumer and
+has passed independent source review, scoped syntax/lint and whitespace checks.
+Both host adapters use the same attempt owner. A terminal non-retryable refusal
+after admission or an abandoned HTTP preview response triggers joined retirement
+of the original selection, with unconfirmed cleanup preserved. Still-ready
+discard is scoped to its issued editor. Confirm releases backup cancellation
+after recording possible
+Apply, preserving the original Status record. The synchronous HTTP write-error
+cleanup branch is source-reviewed.
+
+The first hosted Node run passed 1,284 cases, failed one new controller
+expectation about post-Confirm cancellation, and skipped five; Build and
+Integration did not run. The original failure remains in run `43638535370`.
+The fixture-only correction at `c6ad0ce8ee4092bcaeec6b7c26705d2a21e146dd`
+requires no extra backup cancellation after possible Apply and explicitly
+preserves the unknown result, original Status and one Apply. Its hosted
+Checks in run `43638985009` passed 1,285 Node cases with zero failures and
+five skips, including the controller, composed owner and loopback cases.
+The separate 14 archive checks passed as well.
+
+Build and native Integration for the consumer remain pending. The authored
+source browser/Electron positive fixture and packaged default refusal have
+not yet run. The test-owned provider, staging, verifier and wired peer do
+not establish real Drive or installed qualification.
+Production factories remain absent. The preceding private-handoff run belongs
+to `26877e8808861046b7378038aa304b8c636495fb`, not this consumer revision.
 
 ## Owned private staging
 
