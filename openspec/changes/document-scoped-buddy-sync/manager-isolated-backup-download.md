@@ -24,6 +24,15 @@ before streaming. No caller-supplied endpoint, path, token or arbitrary request
 option enters this interface. Check original authority around every asynchronous
 read and while consuming streams, not just when the factory is captured.
 
+Protected record checks must leave cancellation responsive and fit the same
+remaining lifetime. Do not launch a synchronous credential-helper process for
+each stream chunk. Reuse one bounded read-only guard for the original protected
+record digests, with asynchronous checks around reads and accepted chunks,
+including admission before stage creation and completion. In-memory generation,
+expiry and exact-selection predicates must not repeatedly copy marker bytes.
+A file watcher alone does not replace authoritative protected-record checks.
+Guard failure invalidates the original capture; it cannot silently restart.
+
 Read and hash `data/backup.json` first. Its inventory extractor is only a bounded
 way to discover the ordinary V1 producer's exact content-addressed closure; it
 is not another semantic backup validator. Refuse selected/feedback formats,
@@ -67,6 +76,11 @@ It is released after its handoff, expiry, cancellation or disposal, not retained
 as an indefinite cache. Public output has no credentials, provider IDs, staging
 paths, raw settings or personal content.
 
+If a staging child fails after creation but before returning custody, report
+uncertain cleanup even though the coordinator has no stage object. A joined
+process exit alone is not proof of rollback; retain the warning unless explicit
+owned cleanup succeeded. Do not retry deletion or adopt a new process's residue.
+
 ## Reuse the complete Buddy oracle
 
 Expose `Store::inspect_isolated_package(root, Some(original_marker_sha256))`
@@ -90,8 +104,11 @@ a compatible host Buddy executable; host packaging/runner qualification remains
 an explicit delivery task, or verification occurs in a separately qualified
 target path before restore. Do not add an unreviewed download/execute helper.
 
-Only complete oracle success for the original marker can yield a private verified
-stage handoff. The later wired transfer must preserve and recheck that same
+A successful run of the full existing oracle for the original marker can yield
+a private verified stage handoff. Declared media omissions retain the oracle's
+`complete_media=false` and `incomplete=true`; verified package structure never
+means all media is present or that a restore has been applied. The later wired
+transfer must preserve and recheck that same
 closure/digest before feeding its `data/` child to existing ordinary Prepare.
 Portable preferences use the existing explicit import and separate confirmation.
 Clean/replacement target admission and actual provider namespace visibility
@@ -100,9 +117,10 @@ data or grants native authority.
 
 ## Implementation and verification
 
-Native owns the private Manager coordinator and focused offline fixtures. Root
-owns protected-host integration, UI, staging/verifier qualification, Docs, CI and
-delivery. SCRAPPY owns the narrow Buddy oracle command and actual-producer
+Native owns the private Manager coordinator, staging/read-guard adapters and
+their focused offline fixtures. Root owns protected-host integration, UI,
+independent staging/verifier qualification, Docs, CI and delivery. SCRAPPY owns
+the narrow Buddy oracle command and actual-producer
 command tests, using the existing relevant source branch/cache. Review this
 contract before coding; report contradictions without widening other scopes.
 
