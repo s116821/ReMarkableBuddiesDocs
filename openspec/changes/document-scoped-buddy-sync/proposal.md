@@ -99,3 +99,8 @@ The [ordinary follow-up design](ordinary-reader-source-followups.md) defines
 the opt-in input, guarded publication and hosted acceptance. This extends
 `ordinary-conversation-dispatch`; selected installed resumption has its own
 admission requirements.
+
+The same opt-in route will reuse the saved research policy, guarded web
+provider and structured answer for the default-required follow-up. Explicit
+current-question no-internet and saved Disabled use local evidence with zero
+web acquisition.

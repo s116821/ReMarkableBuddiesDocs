@@ -74,9 +74,9 @@ passages with their source and page or section identities. Reuse the same frame 
 projection throughout; do not reread history, requery, or infer context from
 rendered replies. Scope optional ordinary memory from the admitted retrieval
 source. Explicit or inherited no-document runs no document query and names no
-document for memory. Preserve eligible global memory, existing personalization
-and the receiver's existing research behavior. This increment adds no internet
-dispatch or research-policy change.
+document for memory. Preserve eligible global memory and personalization.
+The source-only implementation uses the existing plain answer. The researched
+continuation below adds default research to the same opt-in entry.
 
 Persist the prepared evidence and original receipt through the existing
 captured conditional transaction. For an answering attempt require a definite
@@ -111,6 +111,99 @@ the immutable input visit and source association pinned when rechecking the
 draft revision and admitting or recording its verified result. The guard may
 recheck exact identities or pinned bytes; it must not rebuild context or select
 a successor. Publication uncertainty does not convey output authority.
+
+## Research in the same source-aware follow-up
+
+Extend `Dispatch::reader_with_source` after its definite fresh evidence
+acknowledgment. Use the researched composition in place of the opt-in plain
+answer. Keep ordinary dispatch without source-aware opt-in and the standalone
+historical APIs compatible. The router continues passing the exact question and
+history. It does not select a research backend or run an additional model.
+
+The trusted typed-input owner supplies the existing `ResearchDirective`
+through the private dispatch input, bound to this operation, input visit and
+exact current question bytes. The dispatcher checks that pairing before the
+request append. This is in-process admission, with no new persisted record.
+`UsePolicy` means the owner admitted the question without an explicit web
+restriction. `NoInternet` requires an explicit denial in that same user's
+request. Keep the denial in the question text. Missing, ambiguous or
+mismatched intent refuses before web acquisition. The receiver does not infer
+the directive from prior turns, printed or quoted text, retrieved material or
+an answer proposal. Use existing input ownership and no new gesture. The
+hosted fixture supplies the admitted directive. Installed typed or handwritten
+input still needs an owner that can establish it for the current question.
+
+Freeze `Config::research_policy_snapshot()` from the admitted configuration.
+Absent or null is Required. Explicit NoInternet takes precedence over either
+saved policy. NoInternet and configured Disabled retain their distinct reasons,
+skip search selection and credential resolution, and construct no search
+adapter. Each may still invoke the authorized answering engine with the local
+context. Revocation of the original input or configuration admission stops the
+attempt without replacing the directive or captured policy.
+
+Use the single prepared frame and `FrozenRequestContext::with_memory` with
+the existing admitted `LocalMemory`, profile and request time, or Disabled.
+Keep the current ordinary validation, including refusal of unusable partial
+memory and selected results. Scope the one memory query from the admitted
+document and retain eligible global memory for no-document. Freeze that
+observation for both stages. Resolve the existing verified image attachments
+and their associations from the same prepared data before either network
+stage. Do not reread history or repeat source or memory retrieval.
+
+Compose `FrozenSourceMemoryContext::with_research` once. For Required, the
+trusted host supplies the existing qualified search selection for this request
+and one original deadline. Reuse the existing qualified OpenAI Responses
+destination and credential admission, adapting its private selection helper
+where necessary. The selected-only `reader.researched_pdf` setting does not
+enable the ordinary route. Question text, renderer input and historical
+evidence cannot choose the model, endpoint or credential. Resolve the search
+selection and construct `OpenAIWebResearch::with_guarded_dispatch` only when
+the original directive and policy require it. The current web adapter receives
+the complete frozen source/memory context as text. Verified image bytes remain
+with the answering stage. Missing or incompatible selection, unavailable or
+invalid results, timeout and cancellation refuse before answer. CompleteEmpty
+requires actual completed search witnesses. Any admitted partial result keeps
+its diagnostic and unverified provenance.
+
+Reuse `answer_guarded` and its existing structured citation validator through
+a private attachment-aware entry. Preserve the standalone text-only prompt and
+its digest contract. The composed answer receives stable instructions for the
+attachment-aware variant, the exact frozen researched JSON, personalization,
+and the verified historical image associations and image parts in known order.
+Apply the complete prompt bound and caller count to the ordered content,
+including attachment descriptors and image parts. Use the existing engine
+content representation for the count and digest so they describe the actual
+admitted content before submission.
+Exhaustion refuses without dropping evidence. Reuse the existing S/M/R
+validation and reference rendering for PDF pages, EPUB sections, associative
+memory and provider-asserted research URLs. Distinguish useful citations from
+verified truth. Save the bounded validated answer and rendered references in
+one Generated draft.
+
+Required research and answering each own one guarded submission within the
+original deadline. The handoffs use the same exact input visit, source and
+captured Store generation, root, user, evidence, receipt and anchor as the
+ordinary follow-up. Recheck those identities during progress and before
+accepting each result. Join owned cancellation before release. Stale
+admission, a failed required search, malformed answer or citation, or uncertain
+publication cannot yield a new output effect. A failed model, provider or
+ownership check cannot yield a Generated draft. Only the exact Generated
+acknowledgment may rebind the root for the existing output owner. Historical
+reconciliation may inspect only the original receipt and does not recreate
+either provider request.
+
+Add one hosted group at the existing ordinary receiver seam. Confirm a
+default-required loopback search sees the exact frozen question, history,
+source and ordinary memory, then a guarded structured answer receives the
+same data plus verified images and produces one Generated with validated
+references. Cover explicit NoInternet and saved Disabled with zero search
+adapter construction or calls, including a missing search selection. Cover
+absent or unqualified Required acquisition, a failed or withheld search,
+invalid citations and one guarded drift with no offline answer, Generated
+draft or replay where applicable. Keep existing provenance, publication and
+ordinary compatibility controls. Scripted input or answer peers and loopback
+research establish host composition. Installed source and question ownership,
+live-provider behavior and selected resumption remain separate.
 
 ## Hosted verification
 

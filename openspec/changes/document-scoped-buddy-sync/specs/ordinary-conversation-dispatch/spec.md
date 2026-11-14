@@ -14,8 +14,8 @@ digest. Supported originals SHALL be bounded PDF files or EPUB archives.
 A matching source SHALL be queried once across its full index with the
 new request, including when no passages match. No-document SHALL make zero
 source queries. Memory scope SHALL use the admitted source or omit document
-scope for no-document. Preserve eligible global memory, existing internet
-behavior, the generic resolver and the dispatch without this opt-in. See the
+scope for no-document. Preserve eligible global memory, the generic resolver
+and the dispatch without this opt-in. See the
 [ordinary follow-up design](../../ordinary-reader-source-followups.md).
 
 #### Scenario: Search another part of the inherited source
@@ -67,3 +67,34 @@ query, submission or output. See the
 
 - **WHEN** publication returns an uncertain outcome or only a historical acknowledgment
 - **THEN** the attempt stops without submitting a model request or authorizing output, and reconciliation is restricted to the original evidence operation.
+
+### Requirement: Ordinary source-aware follow-ups honor current research intent
+
+The ordinary source-aware Reader SHALL apply the captured saved research policy
+to the exact current request using intent supplied by its trusted input owner.
+Absent or null policy SHALL require research. Explicit NoInternet SHALL take
+precedence and retain the current question unchanged. NoInternet and configured
+Disabled SHALL make zero search acquisition calls and retain distinct reasons.
+Required SHALL use one admitted bounded owned search, with a distinct guarded
+answer after acquisition succeeds. Both stages SHALL use the same exact frozen
+source, request, history and ordinary-memory context. The answer SHALL retain
+verified image attachments and validate references against the captured
+source, memory and research. Existing publication and output guards SHALL
+remain in force. The unextended ordinary dispatch and standalone historical
+research and answering APIs SHALL keep their existing behavior. See the
+[ordinary follow-up design](../../ordinary-reader-source-followups.md#research-in-the-same-source-aware-follow-up).
+
+#### Scenario: Default-required research reaches the guarded answer
+
+- **WHEN** a current follow-up is admitted under Required with a qualified search selection
+- **THEN** one bounded search precedes the guarded answer, which preserves the verified images and uses only captured citation references in its Generated draft.
+
+#### Scenario: Current denial or saved Disabled
+
+- **WHEN** the current request explicitly denies web research or its saved policy disables it
+- **THEN** the receiver preserves exact text and the applicable reason, makes zero web acquisitions and can answer with the admitted local context.
+
+#### Scenario: Unavailable research or invalidated attempt
+
+- **WHEN** Required search is absent, incompatible, refused, cancelled or fails, or current ownership is lost or citations are invalid
+- **THEN** the receiver refuses further work at that boundary without substituting an offline answer, publishing a new draft or replaying the original operation.
