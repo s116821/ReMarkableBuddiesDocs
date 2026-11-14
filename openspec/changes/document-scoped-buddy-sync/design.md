@@ -62,3 +62,377 @@ Main reviewed exact `ebf8c72cc286de988d0307c98bf34d48dce8f4da` and accepted gene
 Store::selected_attempt_inventory() returns the complete strict local journal as original SelectedAttempt values in deterministic UUID order under one Store lock. Reuse existing actor/fingerprint/filename/item/metadata limits, with whole-read refusal on any corrupt or foreign entry. Do not verify current selection/object availability, fetch provider state, mint live tokens or modify journals; stale and withdrawn intents remain discoverable historical custody. Callers must perform current checks and mode/domain admission separately before any future send/apply.
 
 The remaining live-provider resource and execution boundary is proposed in [provider qualification contract](provider-qualification-contract.md); no live resource or worker activation follows from that proposal.
+
+
+## Current product worker integration precode
+
+[Shared-worker integration](shared-worker-integration.md) maps actual72ddbe55
+interfaces, original-operation handoff/recovery, exact root/catalog/base/slot,
+mode/account/application qualification, complete domain/media winner validation,
+serialized activation/retention and truthful file status. It proposes the required
+notebook format5 compatibility/producer stage rather than pretending format4 is
+already selected-ready. It also preserves local memory genesis validation through
+a receiving-local registration bridge; a foreign local transaction hash is not a
+portable genesis identity. These choices need independent review before code.
+The delivered storage/slot mechanisms are reused; accepted inspection/import/archive
+increments and unrelated domain/native drafts are not reopened.
+
+
+## Shared-worker successor r2 review corrections
+
+The [integration design](shared-worker-integration.md) now specifies read-only
+agreed-slot observation without a candidate; explicit CreateGroup allocation under
+ordinary mode followed by exact conditional shared-mode selection; current-original
+same-ID retry versus stale observe-only recovery; and passive first-join/pull
+receiving custody with receipt-first crash reconciliation. No outbound attempt is
+fabricated. It also makes staged mixed-scope readiness depend on exact local
+registration across all product paths, separates active/retained causal projections
+and imported history from verified local uncertainty, chooses committed-not-applied
+for unresolved selected-receipt overlap, and requires notebook live/reopen validation
+parity and original-only capability reconciliation. These are proposed corrections
+after protocol/domain review, not implementation or runtime evidence.
+
+Later provider qualification may use a suitable existing explicitly authorized
+OAuth/account binding with isolated disposable app-data resources and exact cleanup;
+a new account/project is not mandatory. No live credential/resource action or
+production eligibility is selected. Original precode remains preserved; corrected
+precode acceptance still precedes implementation and the eventual paired lifecycle.
+
+
+## Reviewed optional-domain integration
+
+The active delta now records portable configuration as one independently selected
+group-global record, consumed through the reviewed strict Artifact and admitted
+LocalConfigSnapshot raw merge. Effective values are request-scoped; current saved
+Manager/import editing remains its delivered local contract. Selection/absence
+pins join the same ordered gate set at actual handoff and result commit. Strict
+decoding starts from the original envelope bytes before a Value can collapse
+duplicate nested members.
+
+Confirmed handwriting uses existing Handwriting1 semantics and one typed scope
+per correction, not a whole-profile snapshot or document-derived key. Its raw
+adapter is independently owned; core Store/catalog/Worker/format5/selectors and
+actual consumers stay in this delivery. Local original operation reuse checking
+and publication must be atomic across applicable producers under the existing
+Store mutex and bounded accepted local transaction evidence, with no shadow
+operation database. Imported envelope operations are not local receipts.
+
+The compatible recognition receiving interfaces from
+[Buddy105](https://github.com/s116821/ReMarkableBuddies/pull/105) remain a real
+separate source dependency. Exact correction transfer does not complete Reader
+analysis/verification, Writer image normalization/ingress, null-original admission
+or fidelity/native qualification. Stored samples remain historical data and their
+selected coverage controls usability independently of unrelated cache contents.
+
+
+### Accepted correction adapter interface split
+
+The disjoint `handwriting::selected` component supplies `Owner::new(profile,
+correction)` and `Owner::scope(group, binding_sha256)` using the existing record
+UUID and approved independent scope key. Core matches the typed catalog owner,
+actual group/binding, actor and format5; this value is not current admission.
+
+`Projection::read(owner, manifest, bounded_original_object_loader)` validates
+exact original record/sample references, duplicate-free JSON, existing Handwriting1
+lineage/immutable genesis, one connected head and exact original-sample coverage.
+It exposes the current head, confirmed value or tombstone and verified bytes only
+for an Included current sample. Read each retained closure separately as evidence.
+Storage-valid PNG custody does not establish the stricter static recognition rule.
+
+`Mutation::prepare(owner, actor, ValidatedInput)` produces an envelope/sample and
+fingerprint without Store effects. Original receipt lookup precedes
+`Mutation::check_predecessor(current_projection_or_qualified_absence)` and fresh
+CAS. First Confirm requires separately established catalog/genesis absence; None
+is not an absence permit. Core performs original-operation identity checking and
+selection publication together under the actual Store mutex across applicable
+producers. The component grants no admission, maintains no journal/index and
+exposes no enabled selected dispatch or recognition hook. Native owns its raw
+handwriting files; core/catalog/Store/format5/admission/CLI/real callers and Docs
+remain coordinated here. No additional review of these accepted seams is required
+before that disjoint component implementation.
+
+### Correction catalog discovery and local transaction custody
+
+The correction command publishes its explicit original through the existing
+selection transaction. Catalog discovery enumerates bounded published
+selection heads, filters for Handwriting in the current binding, and verifies
+the reachable local genesis and exact typed closure under the ordered gates.
+An imported genesis has a receive receipt and cannot register a local
+correction. Staged heads and arbitrary record history grant no discovery.
+The Store's existing format5 operation claim and publication mutex arbitrate
+operation UUID reuse against accepted selection history. No additional journal
+or index is needed.
+
+Profile-wide Query uses the complete observed catalog tail and its typed
+correction entries for the requested profile. It takes the catalog and
+correction gates in one ordered set, rechecks the catalog pin, and validates
+each current scope and its accepted custody with one cumulative allowance.
+Unreceived or unusable entries and pending local registrations make the
+report incomplete. Tombstones are excluded from matches. Included sample
+coverage alone makes verified sample bytes available. Query reuses the
+Handwriting1 response and its match and encoded-size limits.
+
+Buddy #105's `ConfirmedContext` supports both the ordinary local dispatch
+lifetime and an owner for selected corrections. For selected Reader, an
+explicitly enabled handwriting profile must match the admitted catalog root.
+Automatic selection ranks registered correction metadata by confirmation time,
+then record and revision IDs. It excludes target hashes before sample reads,
+checks up to 16 candidates for Included static PNG data, and carries at most
+three examples into both analysis and verification.
+
+The selected owner retains the shared mode lease, catalog root and last locally
+observed tail, correction selection tokens, and the local correction inventory.
+An observed tail and a complete inventory support a complete-empty result.
+An incomplete inventory without usable examples blocks submission. At each
+model submission and each Reader result write, the request joins the existing
+ordered Reader, preference, correction, and applicable memory gates. The local
+checkpoint read guard spans the handwriting proof and the admitted effect.
+
+#### Selected Writer image normalization plan
+
+The typed Writer receiver starts from a fresh selection token and exact
+conversation root, source and user-turn references in that selected document.
+Resolve the requested image ordinal from the current reciprocal links and read
+only Included, digest-verified selected bytes with the existing bounded
+loader. Validate the registered document, source and pending Reader uncertainty
+before inference. Resident capture evidence binds both the ordinal and the
+numeric page to the recorded page UUID and order. A generic historical image
+with only a page UUID cannot supply this proof. Retained history and serialized
+references alone grant no model permit.
+
+Reuse #105's admitted whole-page normalizer and the existing selected
+`ConfirmedContext`. Capture once for the explicitly enabled local profile,
+excluding the exact image digest before ranking. Use the same static PNG,
+prompt, response and example bounds as the existing normalizer. An unobserved
+catalog or partial-empty selection refuses before submission. Complete-empty
+can use the existing prompt while retaining its absence proof. Keep the usual
+normalized-text and archived-notebook entries on their current contracts.
+
+Reserve admission, handoff, progress and completion from one original
+monotonic deadline and read allowance. Verify the same selected document,
+source, preferences and correction proof under one ordered gate set at
+normalization submission and normalized-source publication. Join any memory
+pin already captured by the receiver. Hold the local checkpoint read guard
+across each synchronous effect, and release the gates before waiting on the
+owned request. Adapt the existing normalizer's model execution seam so the
+selected receiver can submit through the guarded handoff.
+
+Keep the ordinary typed normalization's durable Prepared-before-call
+semantics by using the selected Store's existing operation and receipt
+transactions. The Prepared step binds the input references and target digest.
+It must refuse re-entry after an ambiguous or acknowledged original. Publish
+the normalized source through the selected Writer preparation transaction
+with the same proof held through commit and exact receipt readback. Only a
+fresh acknowledgment can supply input for the existing Writer draft handoff.
+Count normalization and draft as distinct, single-use submissions within the
+original bounded request. An unreadable, stale or unacknowledged result
+cannot enter draft generation.
+
+REM-52 owns the normalization execution seam in `src/retrieval/notebook.rs`,
+selected handwriting context and the receiver's focused fixtures. Coordinate
+edits to `src/storage/sync/selected/preference_consumer.rs`,
+`src/conversation/selected_writer.rs` and `src/writer/selected.rs` with the
+coordinator for joined policy, result publication and draft continuation.
+`src/writer/selected_command.rs` carries the typed route through the existing
+selected command dispatch as `writer-generate-image`. Its wire input contains
+the expected selection evidence, root and image/turn references. Historical
+normalization preparation is available only after matching the original
+request fingerprint and predecessor. REM-17 owns source-target storage,
+startup and the circled-target ingress.
+
+### Shared-preference Manager and one-shot command boundary
+
+The coordinated Manager implementation follows the
+[accepted shared-preference management contract](shared-preferences-manager.md).
+That leaf is owned by the Manager lane; this design, the requirement delta and
+tasks remain core-owned. Saved-file import/export keep their delivered local
+meaning. The separate shared control uses a successful selected Inspect before
+Edit and a strict sparse V1 patch that contains only deliberate declarations.
+
+The core one-shot Inspect/Edit/Status command must bind original mode epoch,
+group/binding, Store/selection identity, accepted head or established absence,
+and the exact raw local configuration snapshot used for the reviewed effective
+projection. Status retains only the original operation, guard and patch digest;
+the original local transaction and exact result must prove correspondence without
+retaining private patch text, creating a second operation index or retrying Edit.
+An unchanged resulting portable declaration artifact under the existing
+structural/declaration semantics is a no-change outcome without a fabricated
+receipt. Equal effective values alone do not establish no-change: omitted,
+supported null and explicit-default declarations remain distinct, and adding a
+shared declaration may change future fallback despite today's equal value.
+
+The browser and Electron paths use the same guarded private host transport and
+opaque bounded references. A saved shared-group mode only offers the control;
+unsupported older Buddy, busy exclusive Store custody, stale inspection and
+post-dispatch uncertainty remain explicit. No automatic Stop, replay, saved-file
+fallback or provider request is introduced by the Manager transports. A verified inspection describes the
+next admitted request's overlay; running activation is unverified. Source-only
+UI/protocol fixtures do not close the real backend/host parity gate, and the
+combined unfinished feature is not independently enabled or merged to main.
+
+Only the real Buddy first-absence path may reuse its already-qualified fixed-slot
+adapter for a bounded GET-only refresh of Drive data. Qualification and current
+mode/binding admission precede credentials. Under existing Store/mode/domain
+custody and one original deadline/read budget, revalidate exact root identity,
+complete accepted catalog, expected global key/owner, Store generation, epoch and
+raw local Config pin. A saved absent Inspect guard establishes correspondence
+only: first Edit must establish current absence again before local conditional
+publication. A competing registration after that read remains subject to the
+existing catalog/fixed-slot arbitration; the GET supplies no reservation or
+upstream-success claim.
+
+An exact-ID 404 alone proves neither absent key nor free slot. Missing bootstrap,
+partial/invalid/unavailable observations, stale pins and a known mapping whose
+content is not received remain Joining/unavailable, without an editable guard or
+empty seed. This path allocates no IDs and creates, updates or deletes no Drive
+data; it introduces no OAuth flow, grant/resource creation, mode transition,
+ordinary fallback, Config rewrite or service action. Existing separately qualified
+credential refresh retains its original bounded authorization contract. Explicit
+local Edit supplies the original selected transaction; the existing Worker alone
+owns catalog/content publication and adoption.
+
+Established selected Inspect/Edit remain local-first/offline with their exact
+current domain/configuration pins. Original Status checks local original receipt
+and result correspondence without a network prerequisite. Neither acquires an
+unconditional provider-read dependency from the first-absence exception.
+
+### One-shot preference report profile
+
+The implemented command keeps the accepted fixed stdin selector and request
+fields in the Manager contract. Its version1 response carries `report_version`,
+`operation` (inspect/edit/status), `status`, `disposition` and
+`runtime_activation: unverified`. Inspect includes `guard` and `view` only after
+current admission. Edit/Status preserve the valid original `guard`,
+`original_operation` and compact `patch_sha256` for correspondence; Status never
+includes a view or private patch text. No response claims running activation or
+remote application.
+
+`ok/read-only` is an admitted inspection. `ok/no-change` describes exact raw
+declaration equality without a fabricated receipt. `ok/local-committed` verifies
+a local original selected transaction, with upstream application still unverified.
+Joining/not-admitted has no editable inspection guard. Changed admission conditions
+produce conflict/not-dispatched; unavailable unknown remains uncertain after a
+possible edit. Busy, unsupported and invalid-input refusals retain their ordinary
+meanings. No client may infer a receipt from matching effective values.
+
+Original Status traverses the bounded accepted local chain, requires an explicit
+Initialize or Commit (never a received Activate), checks the exact predecessor
+selection/revision for Commit and the original Store generation, then verifies
+the local actor, operation and unchanged guard/patch/result-bound revision recipe
+against original raw records. This needs no current mode permit, configuration
+hash equality or provider access and creates no second operation index.
+
+Established selected Inspect/Edit construct no provider adapter. First absence
+alone lazily constructs the qualified adapter under current mode/domain custody
+and refreshes only root/catalog observations, with one original sixty-second
+deadline and conservative read allowance. Each observation is charged before
+I/O for its account-identity response, two metadata responses and bounded 64KiB
+descriptor; exhaustion cannot prove absence. Existing qualified token refresh
+retains its separate bounded authorization contract. Local Config/checkpoint and
+selected-original reads share the same allowance. The domain gate remains held
+while Store mutexes are released for GETs; no command allocates/uploads provider
+data. Raw Config is rechecked at conditional publication and output handoff.
+
+The production qualification factory remains sealed. Actual executable evidence
+therefore covers supported parsing/refusal and original Status; the private test
+HTTP adapter covers positive Inspect/Edit admission, crash and correspondence.
+These evidence categories do not establish live provider qualification or complete
+the Manager's real editable-command parity gate.
+
+### Effective selected Writer consumer implementation
+
+The bounded consumer increment connects the actual selected Writer command,
+not a renderer setting or a saved guard, to the same qualified preference
+admission used above. Capture the exact raw Config and a selected preference token
+or privately established absence, and derive the allowed effective Config from
+those bytes. Historical original recovery stays read-only before new-work policy
+and model credentials. Other runtime settings remain local. No Config rewrite,
+new provider sender, serialized permit or operation index follows.
+
+A private request-scoped preference snapshot joins Writer and any selected memory
+catalog/aggregate admission in the existing ordered gate set. Recheck all current
+pins immediately around the synchronous model handoff and the actual result
+transaction. Existing OpenAI owned-request submission remains the only transport.
+An internal guarded-handoff seam wraps the owned request submission, then releases
+domain gates before waiting for its response. Progress and result checks may
+cancel/refuse stale inputs; they must not reacquire a gate recursively from an
+already locked callback. Unsupported model adapters refuse the guarded path.
+
+One original monotonic lifetime covers the 60-second admission window, the
+existing supported model wait of at most 90 seconds and a bounded 60-second
+completion window. The model handoff is single-use and must occur inside the
+original admission window; waiting for a healthy response does not renew it.
+Reserve the finite preference read allowances once from a single charged parent:
+full admission, handoff and completion validation each keep their own allowance,
+while periodic cancellation checks use a separate finite raw-Config/current-header
+allowance sized for the complete 210-second cadence. Dropping an allowance or
+calling progress cannot replenish it. Cheap progress checks issue no token and
+never replace complete object/history verification at the real handoff or result.
+Generated text without an actual guarded owned submission cannot be published.
+
+The result route uses the existing joined selected Writer publication, adding the
+same preference admission and locked verification alongside selected memory pins.
+An equal display value or a newer snapshot cannot authorize completion for an
+older request. Mode/group/binding, raw Config, Store generation and the captured
+selection/absence must still match. Provider qualification remains sealed in
+production and the current executable/Manager evidence retains its previous
+limits. Reader and remaining memory/research consumers remain separate unfinished
+work. Reader has multiple model submissions and needs its own coherent request
+lifetime and custody; the single-submission Writer snapshot is not a ready Reader
+implementation.
+
+### Installed resident Reader input
+
+The [selected Reader input contract](selected-reader-resident-input.md) defines the
+installed source-only constructor, registered document admission, one atomic
+Prepared publication and the effective preference lifetime through Generated.
+
+### Selected Reader source retrieval and research
+
+The [researched Reader contract](selected-researched-reader.md) extends that
+receiver after a fresh Interpret acknowledgment. It must obtain a real original
+PDF from an owned read-only producer, independently establish the complete index
+key, preserve exact request/history and join selected memory through research,
+answering and one Generated publication. The existing ordinary historical APIs
+remain unchanged. Expensive source processing and provider work need owned
+cancellation within the original request lifetime; a pre-call check alone is
+insufficient. Explicit no-web intent must survive every stage without altering
+the original question. The leaf is proposed precode until review and source
+verification complete, and it grants neither native effects nor qualification.
+
+### Ordinary data snapshots for isolated backup
+
+The isolated publisher can prepare an ordinary format-1 data snapshot using the
+existing Store archive collector, inventory verifier and marker-last writer.
+Under the Store mutex, confirm that the original isolated lease belongs to that
+Store and still matches its persisted mode, device, epoch, binding and backup
+identity. Capture and write bytes from one generation. An empty history produces
+no work and creates no destination. Check safe paths and overlap with owned
+roots, verify the exact inventory and media coverage, and publish the archive
+marker only after the objects have been verified.
+
+The ordinary snapshot contains the committed Buddy records and retained media
+with their original identities. It does not read the device configuration
+snapshot. Private configuration, credentials and publisher custody stay outside
+the portable archive. The existing inspector and ordinary restore plan verify
+the same format and preserve history for a distinct destination actor. The
+full isolated feature still requires the allowlisted portable configuration
+projection, additional archive-generation policy, the verified cloud binding,
+publication, Manager download and explicit replacement restore.
+
+The [portable preferences in isolated backups](isolated-portable-configuration.md)
+proposal composes the data-only archive with the existing portable V1 artifact.
+It defines a separate completion marker and keeps destination import explicit.
+
+The [ordinary isolated publisher proposal](isolated-backup-publication.md)
+defines the next Worker integration, durable upload custody, and the startup
+admission needed to reach it from the product.
+
+The [ordinary isolated root provisioning proposal](isolated-root-provisioning.md)
+defines the explicit host control, exact-ID recovery and the qualified
+Worker admission required to establish production root custody.
+
+The [selected download contract](manager-isolated-backup-download.md#host-oracle-delivery-decision)
+selects the existing normal Buddy command as a pinned private Manager host
+dependency. Its platform qualification, package provenance and browser-helper
+delivery remain explicit work; Buddy's tablet release asset inventory is unchanged.

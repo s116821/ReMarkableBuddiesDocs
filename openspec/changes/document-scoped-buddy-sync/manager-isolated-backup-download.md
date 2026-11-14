@@ -1,0 +1,542 @@
+# Selected isolated backup download
+
+This continues the existing [reader](manager-isolated-backup-reader.md) and V1
+package contract. Reuse the publisher's content addresses, Buddy's complete
+package validator, protected Drive authority, and existing restore/preferences
+import. Do not add a second backup format, login store or restore engine.
+
+## Original selection and bounded reconstruction
+
+The private coordinator receives the original host operation/selection, a
+callback that revalidates that exact selection, its original invalidation signal,
+and the same captured protected read binding. It must not obtain a replacement
+grant or advance to a newer marker. Selection expiry, rescan, cancellation,
+authority change and disposal invalidate pending reads and staged results. The
+first increment finishes within the remaining two-minute selection lifetime;
+it creates no extended child lease, retry or automatic resume.
+
+The trusted binding adds only fixed object lookup, exact object metadata and
+bounded object streaming. Lookup projects the existing `buddy_isolated`, `kind`,
+`root`, `backup` and `sha256` properties in appData. Complete bounded pagination,
+reject repeated tokens and ambiguous/missing candidates, and recheck the one
+exact candidate's ID, original properties, size, MIME type and non-trashed state
+before streaming. No caller-supplied endpoint, path, token or arbitrary request
+option enters this interface. Check original authority around every asynchronous
+read and while consuming streams, not just when the factory is captured.
+
+Protected record checks must leave cancellation responsive and fit the same
+remaining lifetime. Do not launch a synchronous credential-helper process for
+each stream chunk. Reuse one bounded read-only guard for the original protected
+record digests, with asynchronous checks around reads and accepted chunks,
+including admission before stage creation and completion. In-memory generation,
+expiry and exact-selection predicates must not repeatedly copy marker bytes.
+A file watcher alone does not replace authoritative protected-record checks.
+Guard failure invalidates the original capture; it cannot silently restart.
+
+Read and hash `data/backup.json` first. Its inventory extractor is only a bounded
+way to discover the ordinary V1 producer's exact content-addressed closure; it
+is not another semantic backup validator. Refuse selected/feedback formats,
+unexpected fields, configuration snapshots, duplicate object digests, invalid
+lengths and oversized collections before admitting object reads. Preserve the
+existing 8 MiB data-manifest, 128 KiB preferences, 16 KiB marker, 4,096 manifest/
+object-count and 256 MiB per-object limits; ordinary content objects may be empty.
+
+One desktop attempt additionally allows at most 512 MiB of total staged bytes,
+64 MiB of metadata responses, and 16,384 binding calls. Count before admission;
+one deadline is never renewed by pagination or progress. These are desktop
+operational limits, not a new package format. Refuse an oversized inventory
+before its content downloads. Check free space before creating staging and
+against the known remaining closure before further files, retaining at least
+256 MiB free. Missing disk/authority information refuses safely. The stream is
+bounded before buffering/writing, hashes the original bytes through EOF, and
+refuses short, overlong, substituted or interrupted content.
+
+## Selected download action
+
+Extend the existing closed V1 protocol with
+`{version: 1, action: 'download', operation, reference}`. Both opaque values
+must match the current selected operation and selection reference. Reserve one
+download phase synchronously under that same owner before I/O; reuse its
+original capture and the existing status/cancel requests. Reject repeated or
+stale starts without obtaining another grant, rereading the marker or replacing
+the selection. A missing configured coordinator reports unavailable before
+object reads. Scan/select request and response shapes remain unchanged.
+
+Download responses are the separate closed branch
+`{version, operation, status, inspection, cleanupPending}`. Only a verified
+response carries the existing reduced inspection: original marker digest,
+bounded manifest/object/setting counts and `completeMedia`. Other outcomes have
+no inspection; terminal results preserve the coordinator's cleanup warning.
+The controller compares the reported digest with the original selected revision.
+An interruption is incomplete without a verified summary; a valid package that
+intentionally omits media is verified with `completeMedia: false`.
+
+Show one explicit "Download and verify" action beside the selected revision,
+preserving that selection during progress and showing the specific terminal
+result. Reuse the existing controller, polling, original selection deadline and
+caller/document checks. Download start does not renew the two-minute lifetime.
+Cancel can name the selected operation before start acknowledgement; invalidate
+it immediately, await the exact original release and show any uncertain cleanup
+result only in that operation's still-current view. Late results and old cancels
+cannot replace or affect a successor. Legacy inspection cancellation remains
+immediate.
+
+The browser's existing transport deadline can expire before joined retirement
+finishes. A lost, rejected or invalid cancellation reply leaves cleanup
+unconfirmed in that same current view; it must not imply successful removal.
+Preserve caller/document checks after awaiting the result in both hosts.
+
+Keep verified staging private under the original selection until the existing
+one-shot trusted handoff, expiry or invalidation retires it. Polls revalidate
+ownership without copying marker bytes. Navigation, rescan, authority change,
+cancel and disposal release only the exact operation/reference pair. The UI
+receives no filesystem path or handoff/restore authority. This source increment
+does not register production factories or add an Apply action.
+
+## Host-owned restore preview handoff
+
+Reuse the coordinator's one-shot handoff for the exact verified operation and
+reference. A private composition method may pass the original source to the
+existing ordinary restore owner and a trusted destination stager. Production
+registration remains absent in this source slice; synthetic staging callbacks
+exercise the integration without a tablet transfer or a new public request.
+
+Carry the bounded original file inventory and data/preferences commitments from
+the successful checked writes. Do not reopen Drive, replace the selection or
+introduce another archive parser. The original source deadline and abort signal
+cover transfer and Prepare. Capture the intended wired connection and boot;
+changed target identity or incomplete destination custody refuses Prepare.
+
+Expose bounded source reading through the existing staging broker and its
+original sealed file records. The trusted handoff supplies `readFile(name, write)`
+instead of a local staging path and may read only members of its
+frozen verified inventory, with exact byte length and SHA-256 checked through
+EOF. Use bounded chunks and the original signal/deadline; do not reopen raw
+paths outside the broker or introduce another inventory/parser. Refuse a
+replaced, linked, changed or additional member, concurrent file access, or use
+after handoff retirement. Reader completion or cancellation must join the
+actual file access before the existing owner releases staging. This local
+source capability does not select a tablet runtime or register a destination
+transport. Ending the handoff revokes that reader, joins any admitted read and
+refuses success if the recipient left a read in flight. Retained callbacks
+cannot read after retirement. The writer callback must honor its abort signal;
+a timeout notification alone does not join a callback still using the bytes.
+
+A local SSH child exit or connection loss alone cannot establish remote
+Prepare completion. The eventual destination binding must join its actual
+reader or retain cleanup uncertainty without deleting the stage. Do not assume
+an installed target Python broker or treat an injected peer as wired evidence.
+
+Transfer and Prepare share one existing maintenance admission. Preserve the
+ordinary command's current bounded payload and execution budget. On cancellation
+or timeout, join the actual transfer/Prepare work before releasing either stage;
+the existing timeout race alone must not grant completion or free inputs that
+the trusted callback may still use. Legacy manual behavior remains unchanged.
+
+The trusted destination remains private. Compare the returned Prepare intent's
+archive digest with the original data manifest digest before accepting preview.
+Publish that preview only after the complete source handoff has passed its final
+authority checks; otherwise retire the candidate with any cleanup uncertainty
+preserved. A successful ready intent adopts destination custody under its
+existing bounded preview lifetime. Explicit Confirm rechecks that exact custody
+and target. Cancel, expiry, invalidation and terminal completion retire only that
+destination, while uncertain Apply keeps the existing original reconciliation
+packet. Status must not reopen the archive or silently dispatch Apply.
+
+The trusted destination callback returns a private canonical root,
+`assertOwned` for the captured target and original file inventory, and one
+checked `release`. Only a `true` release confirms removal; refusal or failure
+retains cleanup uncertainty. Private restore disposal joins outstanding work
+and reports unconfirmed release of returned destination handles. The private
+handoff result carries source-stage and failed-transfer cleanup uncertainty.
+The existing public restore response shape remains unchanged. The lifecycle
+bridge's existing helper close and desktop quit paths
+share their respective memoized drain and await both ordinary restore owners,
+backup composition and active download quarantine. Close admission first and
+join all owners even if one fails. Preserve reduced cleanup uncertainty in the
+trusted close result and existing shutdown error reporting, without a modal
+prompt or a change to the manual restore response. A repeated close/quit does
+not start another retirement. The public cloud-to-restore consumer remains
+unregistered until its own target and transport acceptance. Source fixtures
+hold original restore, backup and active quarantine cleanup across repeated
+close, including synchronous and asynchronous failure. The retained packaged
+host fixture holds both restore owners across repeated quit; actual execution
+and installed qualification remain separate acceptance work.
+
+Preference preview remains a separate explicit action through the existing
+portable-configuration owner. Do not start it alongside data preview: their
+shared maintenance lane invalidates competing owners. This increment neither
+adds a public Apply action nor implements provider registration, tablet transfer
+or clean/replacement-target bootstrap.
+
+## Owned private staging
+
+Use one exclusively created private directory under the host's designated
+canonical staging parent, outside credential, Store, checkout and user-document
+roots. Reuse existing protected filesystem and stream/identity utilities where
+appropriate; Windows privacy requires the existing protected ACL checks, not
+POSIX mode bits alone. A trusted constructor may inject a qualified staging
+factory for fixtures; absent/unqualified staging or verifier support reports
+unavailable before provider download, with no renderer-controlled filesystem.
+
+Create only `data/backup.json`, `data/objects/<sha256>`,
+`portable-configuration.json` and the exact retained `isolated-backup.json`.
+Use exclusive file creation, safe canonical membership and original file/directory
+identity checks. Write the outer marker last. No unknown file may appear in the
+completed package. A valid hash inventory alone is not a verified package.
+
+Cancellation stops and joins reads and the verifier before teardown. Delete only
+this attempt's identity-verified owned files/directories. If identity changed or
+cleanup failed, preserve the unknown residue and report that condition; never
+scavenge other attempts or follow replacement paths. Successful staging has one
+explicit owner and remains usable only while the original selection is current.
+It is released after its handoff, expiry, cancellation or disposal, not retained
+as an indefinite cache. Public output has no credentials, provider IDs, staging
+paths, raw settings or personal content.
+
+If a staging child fails after creation but before returning custody, report
+uncertain cleanup even though the coordinator has no stage object. A joined
+process exit alone is not proof of rollback; retain the warning unless explicit
+owned cleanup succeeded. Do not retry deletion or adopt a new process's residue.
+
+## Reuse the complete Buddy oracle
+
+Expose `Store::inspect_isolated_package(root, Some(original_marker_sha256))`
+through the existing bounded offline archive command family as
+`--archive-operation inspect-isolated --archive-input -`. Its closed input is
+`{"path":"<absolute package directory>","marker_sha256":"<original sha256>"}`.
+Reuse the existing input/output byte caps, strict JSON and redacted failures.
+No Store creation, mode switch, credentials, provider call, tablet API, restore
+or runtime activation is permitted. Existing archive command inputs and output
+shapes remain unchanged. The new operation's successful data contains only
+`isolated_package`, the existing redacted `PackageInspection`; errors expose no
+raw paths or settings. A failed check cannot issue a success receipt.
+
+The Manager's trusted verifier seam consumes that original package root/digest,
+honors cancellation/deadline and checks exact bounded output and verifier
+provenance. No available trusted verifier means unavailable, not verified. A
+fixture-injected verifier must be labeled synthetic until exercised against a
+retained real producer package and this actual Buddy command. This increment
+does not claim that existing Windows/Linux Manager distributions already ship
+a compatible host Buddy executable; host packaging/runner qualification remains
+an explicit delivery task, or verification occurs in a separately qualified
+target path before restore. Do not add an unreviewed download/execute helper.
+
+A successful run of the full existing oracle for the original marker can yield
+a private verified stage handoff. Declared media omissions retain the oracle's
+`complete_media=false` and `incomplete=true`; verified package structure never
+means all media is present or that a restore has been applied. The later wired
+transfer must preserve and recheck that same
+closure/digest before feeding its `data/` child to existing ordinary Prepare.
+Portable preferences use the existing explicit import and separate confirmation.
+Clean/replacement target admission and actual provider namespace visibility
+remain their existing separate obligations. No reconstruction result applies
+data or grants native authority.
+
+## Implementation and verification
+
+### Host oracle delivery decision
+
+Use the existing normal `reader-buddy` command as a pinned, offline host
+dependency of Manager. Its Windows x64 and Linux x64 builds belong inside
+Manager's existing private host resources, not Buddy's tablet release asset
+inventory. Do not add another binary target, parser, backup format, release
+channel or runtime download-and-execute path.
+
+The dependency source is reviewed Buddy commit
+`95b75443629ea455f9b92af7ce48dc0902a42994`, tree
+`16e5a83296ceb70d0a3867098a149e04af03eae9`, with Cargo.lock SHA-256
+`dd6ddeeb756da0a93c8e3d7020d2f7e92ba68026a1492d2312da1ad94b2472d1`
+over the exact Git blob bytes, independent of checkout line-ending conversion.
+This is a development dependency pin, not a published Buddy release or a new
+application version. Use Buddy's existing Git-derived identity without Manager
+version substitution. A later pin change requires review and fresh applicable
+qualification; it must not silently follow a branch or a latest release.
+
+This pin includes the reviewed test-only retained-command selector. Copy the
+ordinary executable before compiling tests, bind its exact canonical path, size
+and SHA-256 through the all-or-none `READER_BUDDY_ARCHIVE_TEST_COMMAND`,
+`READER_BUDDY_ARCHIVE_TEST_BYTES` and `READER_BUDDY_ARCHIVE_TEST_SHA256` variables,
+and recheck those same retained bytes after the tests. This avoids accidentally
+qualifying a replacement binary compiled with test-only dependency features.
+The Windows path uses Rust's canonical verbatim form. The selector's local
+Cargo-built test proves the harness only; native retained-release results remain
+required. Production code, Cargo.lock and the SDK revision are unchanged by this
+test-only successor. Its negative dot-path fixture constructs the spelling as raw
+OS text: Windows verbatim path joining would otherwise normalize away the very
+component the fixture is intended to reject.
+
+The initial, temporary qualification path builds the dependency within the two
+existing platform Integration jobs on PRs. It does not rebuild retained Manager
+ZIPs or enable a release path. The final shipping path below replaces that
+temporary compilation; qualification artifacts alone are not installed dependencies.
+
+Keep the pin in one Manager host-owned source record. CI checks out that exact
+Buddy source separately, builds `--locked --release --bin reader-buddy` with
+default features and no native experiment flags for each supported host, and tests
+the normal archive command on the native platform. Reuse maintained checkout/toolchain/artifact
+actions and put orchestration in the existing workflow. Record source/tree,
+lockfile, resolved SDK revision, target, toolchain, feature/profile settings,
+Git-derived identity, executable size/hash and matching notices with the
+retained artifact. Source and native platform claims remain distinct.
+
+Only the matching qualified executable and bounded provenance enter
+`host/buddy-oracle/` in Manager's private resources. Preserve its Linux execute
+bit through ZIP assembly. Verify the embedded source/target/hash and original
+Manager package digests without executing downloaded ZIP contents. Keep the
+existing three Manager ZIP names and size limits; measure before proposing any
+limit change. Source-tree helper mode and browser use must resolve the same
+qualified installed host dependency through the existing local helper contract.
+A static browser ZIP alone does not supply a native verifier.
+
+### Shipping build and native qualification
+
+The final shipping path compiles both dependencies in Manager's existing Build
+job. Use Ubuntu 22.04 as the initial tested Linux baseline, Rust 1.98.1 and the
+normal default-feature release command. Cross-compile Windows x64 with maintained
+cargo-xwin 0.23.1, LLVM/clang-cl 22.1.8, signed Jammy NASM 2.15.05-1, desktop SDK
+10.0.26100 and CRT selector 14.44.17.14. Record the actual resolved SDK/CRT inputs
+and compiler versions. These selectors and the initial runner are qualification
+inputs, not a claim of immutable upstream catalogs or universal Linux support.
+The maintained resolver prefers a separately published Universal CRT package
+when present. Guard its actual package/version and notice basis independently;
+the SDK selector and installed directory do not identify that UCRT input.
+The current source candidate records UniversalCRT package 10.0.26624.1, which
+Microsoft identifies with the legacy Windows SDK 10.0.10240 family. Retain that
+family's original SDK EULA and third-party notice RTFs separately from the newer
+SDK files. The publisher archive's original setup layout contains EULA MSI
+10.0.26624; its read-only File/Media tables identify the two notice members in
+the matching cabinet. Record that association and the publisher's separate
+static-library redistribution reference in the origin index. Passing a build
+alone does not establish runtime compatibility or notice completeness.
+
+Prime a fresh cargo-xwin cache with maintained xwin 0.10.0: list using VS17,
+then download using that same cached channel and identical architecture,
+variant, SDK and CRT selectors. Retain the actual channel/package files,
+downloaded payload hashes and matching publisher package identities outside
+the managed cache before cargo-xwin's normal first splat. Set its outer setup
+retry count to zero so failure cannot discard that snapshot and fetch a new
+one. Do not fabricate a DONE marker or implement a second package resolver.
+The original metadata and inventory stay in the existing CI-only receipt;
+SDK archives and a duplicate ordinary executable do not ship in that receipt.
+
+Keep Windows CRT linkage static and AWS-LC bundled-source/static with assembly
+enabled and prebuilt NASM fallback disabled. Remove global Rust flag overrides
+before applying target-specific flags. Preserve the locked dependency graph,
+original source identity and normal features. Use pinned maintained setup actions
+and workflow orchestration; do not add a custom SDK downloader, new release asset
+or executable target. Record native PE imports, ELF dependencies/symbol versions
+and matching license/third-party notices. A working compiler alone does not
+establish runtime compatibility or notice completeness.
+
+Copy the reviewed Microsoft SDK and historical UCRT SDK RTF files, BuildTools third-party text and
+matching VS2022 terms document byte-for-byte with a compact origin index.
+Use standard archive extraction, bounded downloads and exact input/member
+hashes. Recheck those notice inputs when the resolved SDK/CRT packages change.
+Do not concatenate binary RTF/DOCX into a text notice or substitute installed
+Community-edition files for the verified BuildTools payload.
+
+Copy and hash each normal executable before compiling `archive_cli --no-run`.
+Use Cargo's root-artifact and build-script JSON records for the original
+`READER_BUDDY_VERSION`; do not run Windows code on Linux, substitute Manager's
+version or duplicate Buddy's version algorithm. Retain the test executables and
+build receipts as CI-only inputs outside the three release ZIPs. Both native
+Integration jobs execute those tests against the same oracle bytes extracted
+from their retained Manager package, using the existing all-or-none selector.
+The pinned Linux test also reads two scenario files beneath its compile-time
+`CARGO_MANIFEST_DIR`. Retain their original source bytes and digests, verify that
+the recorded path is the exact assigned checkout path, and restore only those
+two fixtures there before testing. Refuse a changed path or fixture; do not omit
+the test or silently substitute a different source tree.
+
+Compare actual native `--version`, original provenance and command hashes, then
+recheck the command and ZIPs after testing. Do not rebuild or repack in Integration.
+
+Preserve the five existing PR jobs, required status contexts and common-check
+placement. The Linux Integration runner uses the initial Build baseline even if
+its status-context label is retained for repository compatibility. Keep generated
+targets on disposable hosted runners, check free space before compiling, and
+retain only the bounded original inputs needed for qualification and delivery.
+
+Generate target/default-feature third-party notice JSON with maintained
+cargo-about, locked dependencies and failure on unresolved licenses. Keep its
+root-package handling explicit: the pinned generator includes Buddy even though
+its manifest lacks license metadata. Bind a root-only `LicenseRef-Buddy-Repository`
+clarification to the original LICENSE checksum without choosing a GPL version
+qualifier. Carry the exact root LICENSE and THIRD_PARTY_NOTICES separately as
+the authoritative Buddy notice artifacts; the generator's dependency JSON does
+not replace them. Include
+the locked foreign SDK and its notices, all runtime transitive dependencies and
+matching Rust standard-library and native-library notices. Do not blanket-ignore
+unpublished foreign dependencies. Cargo's graph does not account for statically
+linked Microsoft CRT/UCRT objects; retain their resolved input and notice basis
+separately before distribution.
+
+When original Build inputs are supplied, compare the exact notice inventory and
+bytes in each native ZIP with those inputs through the existing bounded ZIP
+reader. An updated outer package digest does not excuse a missing, changed or
+additional notice. Preserve the generated dependency report and vendor texts
+without rewriting them into a custom license format.
+
+### Package readback and compatibility
+
+Extend the existing bounded Manager ZIP observer for embedded dependency checks;
+do not extract or execute an archive, add an asset, or introduce a second ZIP
+parser. Native ZIPs that carry an oracle contain exactly its platform executable
+and provenance in `resources/host/buddy-oracle/`, plus the adjacent host-owned
+source record. Require that record and provenance to agree, validate the existing
+runtime schema and platform, and stream the declared executable to verify its
+exact size, CRC and SHA-256. Preserve current archive, metadata and time limits.
+Require regular 0755 for the Linux command and regular 0644 for the Windows
+command and JSON. Refuse partial pairs, extra members and target-platform aliases
+or collisions into these fixed resources. The static browser ZIP has no oracle.
+
+Runtime download verification checks the downloaded release's own internally
+consistent pin, not the currently installed Manager's older pin. Both native
+ZIPs must agree on their source record. Existing annotated-tag, completion-record
+and asset-digest checks bind the candidate bytes; embedded metadata alone is not
+independent build provenance or update authorization. Keep the existing fixed
+quarantine response and its lack of installation eligibility.
+
+The runtime compatibility boundary is Manager **1.0.0**: earlier versions may
+omit both native oracles, but any present oracle must be complete and both native
+ZIPs must carry it. At and after 1.0.0, both are required. The adjacent source
+record is not a rollout marker because pre-oracle packages already contain it.
+This feature boundary does not create a tag, change version authority, or remove
+the existing premature-1.0 release hold.
+
+Shipping CI is stricter at every candidate version: before upload it requires
+both native oracles, compares their source to the exact candidate checkout pin,
+and checks each against the original retained executable/provenance supplied by
+Build. Reuse the bounded observation core for candidate readback and publication.
+Runtime verification of a future release must still accept a different valid
+embedded pin. Neither a trusted CI expectation nor an executable path may come
+from the renderer or downloaded package.
+
+### Installed host verifier
+
+Provide an explicit value-free `--browser-helper` mode in the existing packaged
+Manager executable. It starts the existing fixed-loopback helper with browser UI
+assets from `app.getAppPath()/dist/manager/browser`, before creating a desktop
+window or registering desktop IPC. Host modules and native resources still come
+from the same installed external resources used by normal Electron mode; only
+static UI reads use ASAR. Do not add an executable, release asset, chosen port or
+path, or runtime code download. Source-only browser helper mode does not acquire
+installed-dependency authority from a lookalike directory.
+
+Normal explicit launches open only the helper's own returned loopback preview
+URL in the user's browser and expose that URL for attached terminals. A trusted
+host test seam may suppress external-browser launch without granting any path,
+credential or verifier choice. Startup failures produce no success URL and must
+not fall through to desktop startup. Normal desktop behavior remains intact.
+Windowless Linux use still needs the supported Electron desktop environment;
+it does not imply display-server-free operation.
+
+Use one idempotent awaited shutdown on signals and explicit quit. Stop admitting
+HTTP requests, invalidate pending owners, close the helper and finish owned
+cleanup before ordinary process exit. When the download coordinator is later
+composed, shutdown must await its existing child join and checked stage disposal.
+Browser page-close signaling is best effort and does not replace host expiry or
+authority checks. Forced process termination cannot prove cleanup or authorize
+scavenging. Extend the existing packaged host tests to launch this actual mode
+and verify its ASAR UI, loopback/session checks, lack of desktop windows, ordinary
+shutdown and truthful unconfigured/unqualified results. The launch mode alone
+does not activate backup download, restore or the installed oracle factory.
+
+Both entry points use one shared host-private composition with one protected
+Drive store, one auth owner, one inspection/selection owner and at most one
+download coordinator. Reuse the store's trusted interpreter and exclude its
+protected root from the explicit staging parent. Resolve only the fixed
+`hostRoot/buddy-oracle` resource and its adjacent installed source pin. Keep
+source-helper and injected-auth fixture behavior without creating a second auth
+owner. The composition's host-only `downloadSelection` obtains the original
+capture from `captureDownload(operation, reference)` itself; callers cannot
+supply a replacement binding, grant, marker or staging path.
+
+Memoize one disposal promise and close admission synchronously. Abort the
+existing owners before awaiting their original work, including cancelled
+inspection predecessors, pending protected guard opens/closes, active provider
+streams and verifier execution. Release owned staging only after those users
+have joined, retaining the existing cleanup-uncertainty result. HTTP close stops
+admission before draining; desktop window close and explicit quit use that same
+drain. Fixtures prove these lifecycle properties without registering a real
+read factory or adding a public download action. Production source continues to
+omit read-factory/staging registration until the installed-host and namespace
+qualification above is accepted.
+
+The verifier adapter is disabled by default. Its trusted host constructor may
+select the resource directory and expected dependency pin; a renderer, user
+setting, provider object or staged package may not select an executable. Before
+and after each invocation, validate the original canonical regular executable,
+its expected size/hash/target/source and bounded metadata. Refuse missing,
+changed, unqualified or mismatched inputs. Never search PATH, install, recapture,
+refresh, or fall back to a tablet binary.
+
+On Windows, acquire a narrow resource lock helper before the first Node resource
+capture, including availability checks. Use the existing trusted host Python and
+pywin32 boundary. The helper accepts only the trusted canonical local resource
+root and derives the two fixed file names; it never receives a command, arguments
+or backup input. Reuse the existing handle checks through a small shared primitive
+without changing staging or Drive behavior. Reject every reparse component,
+alternate stream, alias, nonlocal path and nonsingle-link leaf. Hold a
+share-accounted handle on each ancestor without delete sharing, and hold each
+leaf with generic read access and read sharing only. Compare held and path file
+identities before readiness and final confirmation. Directory share modes alone
+do not protect arbitrary children.
+
+Node retains the original fixed launch and all provenance, membership and hash
+checks. Monitor the helper throughout the same bounded operation. Stop and join
+the Buddy child before releasing helper handles on failure, cancellation or
+timeout; after success, finish the original checks while handles remain held,
+then release and join the helper before accepting output. Missing or lost guard
+custody refuses success. A helper crash immediately invalidates the attempt and
+aborts/joins Buddy; it does not provide handle retention across that crash.
+
+This requires a trusted interpreter, helper/imports, OS loader, stable local
+volume mapping and installed directory, including ancestor delete-child, ACL,
+metadata and reparse mutation rights. Only trusted host/installer principals may
+alter them. It is not a sandbox against a same-principal attacker or an untrusted
+writable installation. Qualify actual Windows loader/read compatibility, denied
+leaf write/replacement and ancestor rename, leaf/ancestor reparse refusal, guard
+loss, and handle release after success/cancel/timeout before enabling the factory.
+
+Run only `--archive-operation inspect-isolated --archive-input -`, with the
+original root/digest on bounded stdin, shell disabled, hidden Windows console,
+a private working directory and a minimal environment without credentials,
+configuration or loader overrides. Bound stdout to the existing 16 KiB report,
+refuse stderr and nonzero/ambiguous exit, honor the original remaining deadline
+and cancellation, and join the child before settling or releasing staging.
+Process fixtures may test these mechanics but are not Rust-oracle evidence.
+The coordinator continues to validate exact report semantics and original
+selection authority; the runner must not become another package parser.
+
+Before wiring download, independently verify native Windows compilation and
+normal command behavior, the supported Linux runtime baseline, actual retained
+package bytes/modes and both browser-helper and Electron paths. Exercise the
+runner against an actual isolated-producer package as well as malformed output,
+wrong dependency, cancellation and timeout controls. Keep platform and provider
+qualification incomplete until their own evidence exists.
+
+Retain small synthetic complete and media-omitted packages emitted by the actual
+crate-private isolated exporter for the cross-repository runner controls. Record
+the producer source, exact file inventory/digests, expected redacted report and
+reproduction command with those fixtures. A test-only opt-in emission path may
+reuse the existing producer fixture; do not expose a production export API or
+manually recreate its outer marker. Treat these as synthetic producer evidence,
+separate from live provider publication and native restore. Tests using a retained
+oracle must keep its original executable bytes and source attribution explicit.
+
+Native owns the private Manager coordinator, staging/read-guard adapters and
+their focused offline fixtures. Root owns protected-host integration, UI,
+independent staging/verifier qualification, Docs, CI and delivery. SCRAPPY owns
+the narrow Buddy oracle command and actual-producer
+command tests, using the existing relevant source branch/cache. Review this
+contract before coding; report contradictions without widening other scopes.
+
+Test complete healthy closure, zero-byte objects, incomplete/duplicate lookup,
+wrong size/hash/EOF, changed authority/selection during a read, original expiry,
+disk/aggregate/call exhaustion, unavailable or failed verifier, exact redacted
+success, and cleanup refusal after identity replacement. Exercise the real
+Buddy oracle with an actual exported ordinary isolated package, corruption,
+extra membership and wrong-marker refusal. No local app build or new Cargo
+cache is required; keep platform/runtime/source evidence distinct.
