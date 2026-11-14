@@ -289,6 +289,22 @@ literal stdin, EOF and silent/stalled pipes. Fixtures remain modeled filesystem
 and process evidence; installed selector availability, actual tablet parent/mount
 layout, free space and wired throughput must be qualified before registration.
 
+### Pre-receipt cleanup warning checkpoint
+
+Manager `1f925377598f0e084f071c2a51db5ed9e1f216cd` retains an
+exactly-true destination transfer cleanup warning in the ordinary owner's
+existing sticky disposal result, even when no stage handle was returned. The
+immediate handoff warning and joined source retirement remain unchanged.
+Independent source review accepts the narrow correction and composed cases for
+true/false/nonboolean flags and disposal joining a held failing transfer.
+Node syntax, scoped lint and whitespace passed.
+[Hosted Checks](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43654958927/job/132631379222)
+passed with 1,310 Node passes, zero failures or cancellations and five skips,
+including the new warning cases and retained remote-reader controls. The
+authenticated SSH channel-close test and separate 14 archive checks also passed.
+Build and native Integration remain pending. No actual tablet upload or cleanup
+is established by these synthetic-peer and host-owner results.
+
 ## Private preview of verified backup preferences
 
 This source increment connects one deliberate preferences-only action to the
