@@ -51,6 +51,48 @@ against the known remaining closure before further files, retaining at least
 bounded before buffering/writing, hashes the original bytes through EOF, and
 refuses short, overlong, substituted or interrupted content.
 
+## Selected download action
+
+Extend the existing closed V1 protocol with
+`{version: 1, action: 'download', operation, reference}`. Both opaque values
+must match the current selected operation and selection reference. Reserve one
+download phase synchronously under that same owner before I/O; reuse its
+original capture and the existing status/cancel requests. Reject repeated or
+stale starts without obtaining another grant, rereading the marker or replacing
+the selection. A missing configured coordinator reports unavailable before
+object reads. Scan/select request and response shapes remain unchanged.
+
+Download responses are the separate closed branch
+`{version, operation, status, inspection, cleanupPending}`. Only a verified
+response carries the existing reduced inspection: original marker digest,
+bounded manifest/object/setting counts and `completeMedia`. Other outcomes have
+no inspection; terminal results preserve the coordinator's cleanup warning.
+The controller compares the reported digest with the original selected revision.
+An interruption is incomplete without a verified summary; a valid package that
+intentionally omits media is verified with `completeMedia: false`.
+
+Show one explicit "Download and verify" action beside the selected revision,
+preserving that selection during progress and showing the specific terminal
+result. Reuse the existing controller, polling, original selection deadline and
+caller/document checks. Download start does not renew the two-minute lifetime.
+Cancel can name the selected operation before start acknowledgement; invalidate
+it immediately, await the exact original release and show any uncertain cleanup
+result only in that operation's still-current view. Late results and old cancels
+cannot replace or affect a successor. Legacy inspection cancellation remains
+immediate.
+
+The browser's existing transport deadline can expire before joined retirement
+finishes. A lost, rejected or invalid cancellation reply leaves cleanup
+unconfirmed in that same current view; it must not imply successful removal.
+Preserve caller/document checks after awaiting the result in both hosts.
+
+Keep verified staging private under the original selection until the existing
+one-shot trusted handoff, expiry or invalidation retires it. Polls revalidate
+ownership without copying marker bytes. Navigation, rescan, authority change,
+cancel and disposal release only the exact operation/reference pair. The UI
+receives no filesystem path or handoff/restore authority. This source increment
+does not register production factories or add an Apply action.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated

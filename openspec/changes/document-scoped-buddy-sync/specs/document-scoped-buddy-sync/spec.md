@@ -302,6 +302,22 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - WHEN the original selection expires, authority changes, a stream is corrupt or incomplete, staging identity changes, or the original byte/disk/call/deadline allowance is exhausted
 - THEN no verified package is exposed, original reads stop, and only proven owned staging is retired; no replacement grant, later revision, path reuse or automatic retry is used.
 
+#### Scenario: Download cancellation precedes its start acknowledgement
+- WHEN the user starts download for the current selected operation and cancels before the start reply arrives
+- THEN the same original operation owns cancellation, its deadline is not renewed, reads and verifier work join before exact owned staging is retired, and any reduced cleanup warning remains associated only with that operation; a late reply or old cancellation cannot replace or affect a successor.
+
+#### Scenario: The download cancellation reply is lost
+- WHEN the current view cancels a download and its transport rejects or cannot validate the joined cancellation reply
+- THEN cleanup remains unconfirmed in that view without changing a later successor; neither host returns the awaited result after the original caller or document loses authority.
+
+#### Scenario: A verified package intentionally omits media
+- WHEN the existing complete package oracle accepts the original selected marker and closure with media intentionally omitted
+- THEN the UI reports a verified package with omitted media separately from an interrupted or unverified download, validates the summary against the original selected digest, and receives no staging path, restore authority or replacement selection.
+
+#### Scenario: Either Manager host exits with backup work outstanding
+- WHEN desktop or packaged browser-helper shutdown begins while an inspection predecessor, protected guard, provider read or verifier is still closing
+- THEN one shared owner closes admission and waits for the original pending work and checked staging release before shutdown completes; abort notification alone is not completion.
+
 #### Scenario: A compatible complete package verifier is unavailable
 - WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them
 - THEN Manager reports unavailable or reconstruction-only evidence and does not offer the bytes as a verified restore input or silently introduce another semantic validator.
