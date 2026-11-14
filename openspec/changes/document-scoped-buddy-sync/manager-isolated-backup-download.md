@@ -135,6 +135,13 @@ application version. Use Buddy's existing Git-derived identity without Manager
 version substitution. A later pin change requires review and fresh applicable
 qualification; it must not silently follow a branch or a latest release.
 
+Initial native qualification runs within the existing two platform Integration
+jobs on PRs, preserving the five-job Manager budget. It builds the new dependency
+for that qualification only; it does not rebuild or replace retained Manager
+ZIPs, repeat Manager's common source checks, or enable a release path. The final
+shipping assembly must also respect the existing pipeline contract before
+production use; qualification artifacts alone are not installed dependencies.
+
 Keep the pin in one Manager host-owned source record. CI checks out that exact
 Buddy source separately, builds `--locked --release --bin reader-buddy` with
 default features and no native experiment flags on each native host, and tests
