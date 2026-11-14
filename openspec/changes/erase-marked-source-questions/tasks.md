@@ -39,4 +39,27 @@ The modeled verified-answer continuation at Buddy `0ab2224ec97b33b670dec23cade5a
 
 The Reader README documents the handwritten question mark and installed availability. The technical guide records the remaining qualification and labels the old v0.1 bounding-box erasure and symbol workflow as historical.
 
-The predecessor compatibility fixture is wired into hosted Checks. Its prepare and publication phases use the current Ledger. Its probes use the pinned old library and the current cleanup and selected projection APIs. Hosted execution remains open.
+The predecessor compatibility fixture passed hosted Checks at Buddy
+`37e52e39e9831444f67706537c858d64d94cec4f`. The five current/old phases establish
+the readable Prepared baseline, whole-transaction refusal by the pinned old
+library, and current receipt readback, cleanup refusal and selected projection
+refusal. Phase inventories preserve the original durable bytes and add only the
+marked manifest and its three record objects; capability/contract descriptors
+are accounted for separately. Root inspected the original receipts and retained
+compiler provenance. The normal host suite passed 1,311 library tests, with the
+dedicated compatibility test run separately after that suite. Full package
+pipeline acceptance remains pending, so the two schema-5 rows remain open.
+[Hosted run 43627433623](https://github.com/s116821/ReMarkableBuddies/actions/runs/43627433623)
+
+The next test-only increment at Buddy `af6e5a1dad3dc824daa51e09f8db74ccd4febb47`
+extends the existing composed test to 37 authored cases. It adds distinct
+printed-punctuation and unrelated-handwriting images with scripted absent-mark
+responses, and makes the no-mark case use unmarked wording. The fixture checks
+the retained image bytes and pixels, failed/no-selection outcome, unchanged ink
+and page content, and zero effects on re-entry. The applied case checks the exact
+current marked receipt, User, source capture and applied root before modeled
+erase acceptance. The existing pair case checks that punctuation-normalized
+independent verification leaves the saved and presented wording unchanged.
+Independent source review and scoped Rustfmt/whitespace checks passed. Hosted
+execution remains pending, so both finite recognition rows above remain open.
+These scripts do not qualify live recognition or installed page effects.
