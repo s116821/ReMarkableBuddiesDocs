@@ -702,9 +702,14 @@ separately preserved as `preference-consumer-final-integrated-checks.log` with
 those mechanical fixes. Earlier fixture lease and private-helper compile failures
 remain separate from the passing executable/transport runs.
 
-Coordinator independent final review, normal publication and hosted successor
-checks remain open for this new source/Docs pair. The previous published
-`23f7a70`/`6f0ced3`/`457d2278` CI results cover only that earlier finite batch.
+Coordinator independent final review and normal publication of this finite
+Writer increment are complete at `c249fa9` / Docs `a1af6c47`. Full
+[Buddy CI42422528662](https://github.com/s116821/ReMarkableBuddies/actions/runs/42422528662)
+and paired
+[Docs CI42422508570](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42422508570)
+passed at those exact revisions. This acceptance remains separate from the
+later Reader/notebook consumers, current composed CI and production qualification;
+it is not an unfinished Writer implementation or whole-feature completion.
 The cached executable was built from these frozen consumer inputs while the
 worktree base was `5c8d238` and the consumer edits were uncommitted; its build
 metadata is not relabeled as a build at commit `c249fa9`. Its hash/input receipt
