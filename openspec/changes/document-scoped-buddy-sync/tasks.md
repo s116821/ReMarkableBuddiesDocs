@@ -331,12 +331,19 @@ The backend's actual busy-Store refusal case is accepted in Buddy [`fa5a3e1`](ht
 - [x] Independently accept the original-PDF producer portion of the [researched Reader precode](selected-researched-reader.md): cancellable same-binary processing, complete source/index identity, actual read reservations and short checks under shared gates. This accepts a source contract, not implementation or installed activation.
 - [x] Accept the remaining researched-route precode: strict agreeing intent from the existing independent readings, unchanged question and ordinary gesture/Writer arbitration, frozen effective policy, answer-credential eligibility and deferred research-profile admission. This accepts the source design only; implemented receiver, hosted, live-model and installed qualification remain open.
 - [x] Implement the read-only installed source producer and owned processing lifetime. Bind original bytes, active-page redirect and complete normalized index key to the exact admitted capture; reject changed, ambiguous, unsupported or absent source without source-less fallback.
-- [ ] Connect the actual selected receiver after fresh Interpret to exact request/history, one bounded source query and the existing selected-memory result. Preserve ordinary public types and their selected-memory refusal.
-- [ ] Preserve handwritten no-web intent and effective saved policy through both independent readings and every later handoff. Refuse disagreement/ambiguity, retain the exact question and existing gesture/Writer arbitration, and qualify zero-web behavior without introducing another gesture. A missing search profile must not block an agreed opt-out; ordinary APIs and prompts remain unchanged.
-- [ ] Integrate four ordered one-use model/research stages within the original deadline and read reservations, with owned cancellation, actual guarded submission and no legacy-enrichment replay on this route.
-- [ ] Validate captured citations and retain useful references in the single Generated text; join source, selected preferences and memory at publication and recover only the original acknowledgment after uncertainty.
+- [x] Connect the actual selected receiver after fresh Interpret to exact request/history, one bounded source query and the existing selected-memory result. Preserve ordinary public types and their selected-memory refusal.
+- [x] Preserve handwritten no-web intent and effective saved policy through both independent readings and every later handoff. Refuse disagreement/ambiguity, retain the exact question and existing gesture/Writer arbitration, and qualify zero-web behavior without introducing another gesture. A missing search profile must not block an agreed opt-out; ordinary APIs and prompts remain unchanged.
+- [x] Integrate four ordered one-use model/research stages within the original deadline and read reservations, with owned cancellation, actual guarded submission and no legacy-enrichment replay on this route.
+- [x] Validate captured citations and retain useful references in the single Generated text; join source, selected preferences and memory at publication and recover only the original acknowledgment after uncertainty.
 - [ ] Exercise the actual resident receiver and source producer in hosted fixtures: source swaps and redirects, exact-key zero matches, unchanged request/history, pure/mixed/empty memory, opt-out and unavailable research, cancellation/deadline/read exhaustion, changed selection and lost acknowledgments. Preserve the ordinary controls.
 - [ ] Obtain independent paired source review and exact-revision hosted validation, reconcile modeled versus installed/model qualification, and retain explicit remaining work for follow-up source inheritance and unsupported formats. Do not close the broader Reader or shared-sync parent from this first PDF increment.
+
+The four receiver/policy/stage/publication source tasks are accepted at Buddy
+`db7d19709aa41c578b81cf435091d405ffde3ea0` with [full hosted CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/43595038270).
+Checks passed 1,302 library tests and ten mandatory composed groups covering
+33 authored subcases. Build and retained-command emulation also passed.
+The remaining fixture task includes unfinished active-parse/kernel-resource
+evidence; installed source authority and live model behavior remain separate.
 
 ## Ordinary Reader follow-up source inheritance
 
