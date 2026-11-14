@@ -348,11 +348,19 @@ evidence; installed source authority and live model behavior remain separate.
 ## Ordinary Reader follow-up source inheritance
 
 - [x] Independently review the [ordinary follow-up contract](ordinary-reader-source-followups.md) and dispatch delta before implementation.
-- [ ] Connect the opt-in ordinary follow-up to one captured evidence preparation and whole-source query. Preserve named inheritance, identical-byte reindexing, deliberate retargeting and explicit no-document while refusing changed original bytes before query or model submission.
-- [ ] Reuse prepared history, passages and verified images through fresh evidence acknowledgment, guarded answer, Generated and existing output ownership. Verify stale, conflicting and uncertain publication boundaries without replay.
-- [ ] Qualify the composed ordinary path in hosted CI against the paired source, including a second follow-up and exact source locators. Retain installed selected resumption and live source admission as separate work.
+- [x] Connect the opt-in ordinary PDF/no-document follow-up to one captured evidence preparation and whole-source query. Preserve named inheritance, identical-byte reindexing, deliberate retargeting and explicit no-document while refusing changed original bytes before query or model submission.
+- [x] Reuse prepared history, passages and verified images through fresh evidence acknowledgment, guarded answer, Generated and existing output ownership. Verify stale, conflicting and uncertain publication boundaries without replay in the ordinary PDF/no-document composition.
+- [x] Qualify the composed ordinary PDF/no-document path in hosted CI against the paired source, including a second follow-up and exact source locators. Retain installed selected resumption and live source admission as separate work.
 - [ ] Independently review and implement the ordinary EPUB admission extension. Reuse the existing normalized spine Index and exact original archive digest. Verify one hosted composed follow-up with an exact section locator, changed same-ID archive refusal before retrieval/model and modeled source-currentness loss. Keep installed and notebook source admission separate.
 - [ ] Independently review and integrate default-required research into the existing [ordinary source-aware follow-up](ordinary-reader-source-followups.md#research-in-the-same-source-aware-follow-up). Verify current-question NoInternet and saved Disabled with zero web acquisition, owned Required success and refusal, exact attached context and validated citations, and original-only uncertainty handling in the existing hosted receiver fixture.
+
+The three PDF/no-document source and hosted tasks are accepted at Buddy
+`5ce177e7e510bdb41fc3329a26de679efbfc910d` with [full hosted CI](https://github.com/s116821/ReMarkableBuddies/actions/runs/43598847099).
+Checks passed 1,303 library tests, including the composed repeated-follow-up
+case, and all ten existing researched groups. Build and retained-command
+emulation passed; those packaged checks do not establish native qualification.
+The separate EPUB and ordinary research tasks above remain open, as do live
+source admission, installed selected resumption and the broader Reader change.
 
 ## Ordinary data snapshots for isolated backup
 
