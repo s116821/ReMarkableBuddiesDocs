@@ -313,3 +313,22 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 #### Scenario: Platform or distribution qualification is missing
 - WHEN the executable is absent, changed, wrong-platform or unqualified for the actual browser-helper or Electron distribution
 - THEN verification remains unavailable; a working Linux source command, static browser ZIP or successful package build alone cannot claim a qualified Windows or installed-host path.
+
+### Requirement: Manager package observation preserves release compatibility
+The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
+
+#### Scenario: An older Manager downloads a newer dependency
+- WHEN an otherwise authenticated Manager release contains a different valid Buddy pin with consistent native provenance and executable bytes
+- THEN bounded runtime observation accepts that dependency consistency without consulting the installed old pin or executing the new command; existing release identity and digest checks still apply.
+
+#### Scenario: Legacy package or mandatory version-1 dependency
+- WHEN both native oracles are absent from a Manager release earlier than 1.0.0
+- THEN legacy quarantine remains available; any present oracle requires complete matching-source native pairs, and Manager 1.0.0 or later requires both pairs. Static browser output contains no native oracle.
+
+#### Scenario: Shipping candidate differs from its reviewed inputs
+- WHEN shipping CI observes a candidate at any version
+- THEN it additionally requires both native pairs to match the candidate checkout pin and Build's original retained executable/provenance, while preserving the same three ZIPs, no-execution observation and premature-1.0 hold.
+
+#### Scenario: Native tests consume a shipping dependency
+- WHEN Build has retained the normal executable before compiling test-only targets
+- THEN the existing native Integration jobs test that exact packaged executable using retained native test inputs, check its original version and bytes, and leave both the command and release ZIPs unchanged; no Integration rebuild or replacement grants shipping qualification.

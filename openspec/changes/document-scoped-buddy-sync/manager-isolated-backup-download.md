@@ -146,17 +146,15 @@ Cargo-built test proves the harness only; native retained-release results remain
 required. Production code, Cargo.lock and the SDK revision are unchanged by this
 test-only successor.
 
-Initial native qualification runs within the existing two platform Integration
-jobs on PRs, preserving the five-job Manager budget. It builds the new dependency
-for that qualification only; it does not rebuild or replace retained Manager
-ZIPs, repeat Manager's common source checks, or enable a release path. The final
-shipping assembly must also respect the existing pipeline contract before
-production use; qualification artifacts alone are not installed dependencies.
+The initial, temporary qualification path builds the dependency within the two
+existing platform Integration jobs on PRs. It does not rebuild retained Manager
+ZIPs or enable a release path. The final shipping path below replaces that
+temporary compilation; qualification artifacts alone are not installed dependencies.
 
 Keep the pin in one Manager host-owned source record. CI checks out that exact
 Buddy source separately, builds `--locked --release --bin reader-buddy` with
-default features and no native experiment flags on each native host, and tests
-the normal archive command. Reuse maintained checkout/toolchain/artifact
+default features and no native experiment flags for each supported host, and tests
+the normal archive command on the native platform. Reuse maintained checkout/toolchain/artifact
 actions and put orchestration in the existing workflow. Record source/tree,
 lockfile, resolved SDK revision, target, toolchain, feature/profile settings,
 Git-derived identity, executable size/hash and matching notices with the
@@ -170,6 +168,94 @@ existing three Manager ZIP names and size limits; measure before proposing any
 limit change. Source-tree helper mode and browser use must resolve the same
 qualified installed host dependency through the existing local helper contract.
 A static browser ZIP alone does not supply a native verifier.
+
+### Shipping build and native qualification
+
+The final shipping path compiles both dependencies in Manager's existing Build
+job. Use Ubuntu 22.04 as the initial tested Linux baseline, Rust 1.98.1 and the
+normal default-feature release command. Cross-compile Windows x64 with maintained
+cargo-xwin 0.23.1, LLVM/clang-cl 22.1.8, signed Jammy NASM 2.15.05-1, desktop SDK
+10.0.26100 and CRT selector 14.44.17.14. Record the actual resolved SDK/CRT inputs
+and compiler versions. These selectors and the initial runner are qualification
+inputs, not a claim of immutable upstream catalogs or universal Linux support.
+
+Keep Windows CRT linkage static and AWS-LC bundled-source/static with assembly
+enabled and prebuilt NASM fallback disabled. Remove global Rust flag overrides
+before applying target-specific flags. Preserve the locked dependency graph,
+original source identity and normal features. Use pinned maintained setup actions
+and workflow orchestration; do not add a custom SDK downloader, new release asset
+or executable target. Record native PE imports, ELF dependencies/symbol versions
+and matching license/third-party notices. A working compiler alone does not
+establish runtime compatibility or notice completeness.
+
+Copy and hash each normal executable before compiling `archive_cli --no-run`.
+Use Cargo's root-artifact and build-script JSON records for the original
+`READER_BUDDY_VERSION`; do not run Windows code on Linux, substitute Manager's
+version or duplicate Buddy's version algorithm. Retain the test executables and
+build receipts as CI-only inputs outside the three release ZIPs. Both native
+Integration jobs execute those tests against the same oracle bytes extracted
+from their retained Manager package, using the existing all-or-none selector.
+The pinned Linux test also reads two scenario files beneath its compile-time
+`CARGO_MANIFEST_DIR`. Retain their original source bytes and digests, verify that
+the recorded path is the exact assigned checkout path, and restore only those
+two fixtures there before testing. Refuse a changed path or fixture; do not omit
+the test or silently substitute a different source tree.
+
+Compare actual native `--version`, original provenance and command hashes, then
+recheck the command and ZIPs after testing. Do not rebuild or repack in Integration.
+
+Preserve the five existing PR jobs, required status contexts and common-check
+placement. The Linux Integration runner uses the initial Build baseline even if
+its status-context label is retained for repository compatibility. Keep generated
+targets on disposable hosted runners, check free space before compiling, and
+retain only the bounded original inputs needed for qualification and delivery.
+
+Generate target/default-feature third-party notice JSON with maintained
+cargo-about, locked dependencies and failure on unresolved licenses. Keep its
+default exclusion of local source and carry Buddy's exact root LICENSE and
+THIRD_PARTY_NOTICES separately; do not fabricate a root SPDX declaration. Include
+the locked foreign SDK and its notices, all runtime transitive dependencies and
+matching Rust standard-library and native-library notices. Do not blanket-ignore
+unpublished foreign dependencies. Cargo's graph does not account for statically
+linked Microsoft CRT/UCRT objects; retain their resolved input and notice basis
+separately before distribution.
+
+### Package readback and compatibility
+
+Extend the existing bounded Manager ZIP observer for embedded dependency checks;
+do not extract or execute an archive, add an asset, or introduce a second ZIP
+parser. Native ZIPs that carry an oracle contain exactly its platform executable
+and provenance in `resources/host/buddy-oracle/`, plus the adjacent host-owned
+source record. Require that record and provenance to agree, validate the existing
+runtime schema and platform, and stream the declared executable to verify its
+exact size, CRC and SHA-256. Preserve current archive, metadata and time limits.
+Require regular 0755 for the Linux command and regular 0644 for the Windows
+command and JSON. Refuse partial pairs, extra members and target-platform aliases
+or collisions into these fixed resources. The static browser ZIP has no oracle.
+
+Runtime download verification checks the downloaded release's own internally
+consistent pin, not the currently installed Manager's older pin. Both native
+ZIPs must agree on their source record. Existing annotated-tag, completion-record
+and asset-digest checks bind the candidate bytes; embedded metadata alone is not
+independent build provenance or update authorization. Keep the existing fixed
+quarantine response and its lack of installation eligibility.
+
+The runtime compatibility boundary is Manager **1.0.0**: earlier versions may
+omit both native oracles, but any present oracle must be complete and both native
+ZIPs must carry it. At and after 1.0.0, both are required. The adjacent source
+record is not a rollout marker because pre-oracle packages already contain it.
+This feature boundary does not create a tag, change version authority, or remove
+the existing premature-1.0 release hold.
+
+Shipping CI is stricter at every candidate version: before upload it requires
+both native oracles, compares their source to the exact candidate checkout pin,
+and checks each against the original retained executable/provenance supplied by
+Build. Reuse the bounded observation core for candidate readback and publication.
+Runtime verification of a future release must still accept a different valid
+embedded pin. Neither a trusted CI expectation nor an executable path may come
+from the renderer or downloaded package.
+
+### Installed host verifier
 
 The verifier adapter is disabled by default. Its trusted host constructor may
 select the resource directory and expected dependency pin; a renderer, user
