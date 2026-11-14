@@ -169,6 +169,183 @@ shared maintenance lane invalidates competing owners. This increment neither
 adds a public Apply action nor implements provider registration, tablet transfer
 or clean/replacement-target bootstrap.
 
+## Private preview of verified backup preferences
+
+This source increment connects one deliberate preferences-only action to the
+portable member of an already verified isolated V1 backup. The accepted
+ordinary data handoff and its destination stager stay separate. Choose one
+consumer for the exact verified operation and reference. The same one-shot
+handoff cannot issue both previews. A later choice needs its own fresh verified
+selection; a retained callback, path or result cannot reopen the old stage.
+
+### Existing owners and admission
+
+Add a host-only `preparePreferences(operation, reference, {portable, target})`
+to `host/isolated-backup-composition.mjs`. Reuse the same exact-pair preflight
+and one-shot consumer used by `prepareRestore`. Check closing, coordinator
+availability and portable owner support first. Call the existing portable
+owner through a private `prepareHandoff(target, handoff)` method. Reserve that owner's existing
+`MaintenanceIO` token before calling `takeVerifiedHandoff`. Even when the
+preflight passes, recheck and consume the exact verified pair only inside
+that admitted call. A Busy, absent/unsupported owner or changed target before
+consumption leaves the verified selection available. The chosen preferences
+action may start only after the competing data action has settled or been
+declined. Keep the existing peer invalidation of stale previews and protect
+against an active data restore with the same shared token. Capture the exact
+wired connection/boot from `observer.lastObservation` and bind it to the
+original portable owner, live observer and epoch throughout the operation.
+
+Keep the selected operation and reference in the composition closure.
+Hand only the existing verified source reader to the private portable entry.
+Use `files` and `components.preferences` to require one member named
+`portable-configuration.json`, with exactly the original byte count and
+SHA-256. Check a positive declared length up to 128 KiB before allocating
+one private buffer of that size. Read only that member with the existing
+`readFile(name, write)` callback. Refuse excess before copying a chunk and
+require exact total length and raw SHA-256 at EOF. The broker continues to
+validate the full original inventory, sealed-file identity and source
+authority. Parse only the completed buffer using `portableArtifactBytes`.
+The raw member digest proves byte identity and the existing canonical
+artifact digest binds the portable Prepare result. Keep both comparisons.
+Do not send a staging path, source bytes or provider identity to a renderer.
+
+In `host/portable-configuration.mjs`, factor the current
+`#read` Inspect and Prepare portion into an internal function that returns
+a private candidate. Keep construction of the reduced result and adoption
+into `#editor` separate. Manual import decodes its existing input and adopts
+the candidate as it does today. The new entry supplies its own validated
+artifact and uses the existing `#raw` selectors, `parsePortableReport`,
+bounded JSON inputs, original intent and Apply-packet hashes, and
+`parsePortableResult` with the same Prepare result context. Do not call
+public `request` or acquire a second token from inside the handoff. A typed
+Inspect or Prepare refusal stays a normal reduced refusal. A verified
+no-change has no editable reference, Apply packet or retained operation. Only a valid prepared candidate can become the existing ready editor.
+Its normal preview lifetime starts at final adoption. Confirm and Status
+remain the existing explicit operations with their own current target checks
+and original uncertainty handling. The handoff never calls Apply.
+
+### Cancellation and publication
+
+Use the joined branch of `OrdinaryRestoreHost.#owned` as the ownership
+pattern. Keep one active private Prepare invocation on the portable owner
+with its exact token, epoch, abort controller, completion promise and
+original deadline. Capture its deadline at initial lane admission. Shorten
+it once from the source handoff's remaining timeout. Since the coordinator
+rounds that value up, use at most `timeoutMs - 1` milliseconds from callback
+entry and refuse an exhausted remainder. Use the earlier cutoff for reading, Inspect,
+Prepare and final adoption, including after cleanup. Preserve the existing
+portable command and request size/time caps. Check the exact active
+invocation, token, epoch, signal, target and deadline before and after
+awaited work and before each command. A late Inspect must never start
+Prepare. A late Prepare must never install an editor.
+
+Current `PortableConfigurationHost.invalidate` releases `#active.token`.
+Give the joined private invocation an abort-only invalidation branch that
+advances the epoch and keeps its active token and buffers until the
+original work settles. Cancel the original observer child if that
+invocation is currently inside `observer.run`. Await its actual promise,
+which the existing observer settles on child close or launch failure. Use
+the original source and invocation signals for member reads and command
+dispatch, with an already-aborted check and an abort listener scoped only
+to the currently running child. To interrupt a held broker read, bind the
+invocation's abort to cancellation of the exact consumed source through
+the existing coordinator `release(operation, reference)`. Trigger it
+without awaiting it from inside the handoff callback because release
+joins that callback. Join the source handoff and any triggered release
+from the outer owner. An abort before consumption cannot release an
+unconsumed selection. A timeout, cancel or disposal requests the same
+abort. None releases the token, returns early via a timeout race,
+zeroes buffers still in use, or lets another owner start on that token.
+This join establishes completion of host-owned work. Remote data-archive
+reader completion remains a distinct wired restore requirement.
+
+The current common observer wrapper must also respect the joined token.
+Both hosts route external observation, cancellation and several legacy
+commands through `MemoryForgetHost.wrap()`. It invalidates peers and then
+calls `MaintenanceIO.revoke()` before running the wrapped command. Today that
+would clear even an active private preview's token and permit another
+owner to use the shared observer. Add a joined acquisition option to
+`MaintenanceIO` for private Prepare. Keep its exact owner until the
+invocation's final release, and make `revoke()` return false while such a
+token is held and true on normal revocation. Only the joined private
+preferences Prepare requests this option. The existing ordinary restore and
+all ordinary tokens retain their current behavior.
+After the existing peer invalidation requests abort, the wrapper must
+honor revocation refusal and avoid calling the raw observer for external
+commands while the joined token is held. Return the existing canceled
+result for wrapped `cancel`; it acknowledges the cancellation request,
+while the original private invocation and its disposal promise still join
+the actual drain. Refuse other methods immediately with a
+bounded host error. The existing Electron IPC path can reject that call.
+Add a catch to the browser helper's generic observation route and return
+a fixed 409 refusal. Its other observer routes already catch errors.
+Do not queue a refused external command for later dispatch. The private
+portable owner uses the raw observer, and its abort listener cancels
+only during the original call while its token still owns the lane.
+
+Hold the private candidate until the handoff has completed final source
+validation, joined the reader and returned from its checked stage
+retirement. The coordinator aborts its source signal as part of normal
+retirement. After the callback finishes, use the handoff's final
+`handed-off` status for source disposition, together with the portable
+invocation's still-current epoch, token, target and deadline. Never
+interpret the normal retirement signal as an independent cancellation or
+treat callback success alone as admission. If stage cleanup is uncertain,
+return `cleanupPending` in the private result and withhold the preview.
+Keep the original cleanup result on the existing backup owner. Refusal,
+source loss, timeout or late output withholds the preview and discards the
+candidate without retry or replacement selection. Wipe owned raw artifact,
+command, report and abandoned candidate buffers at their last use. After
+ready adoption, retain only the existing bounded original report and Apply
+packet needed by Confirm/Status. Clear parsed artifact references once used.
+No new operation ledger or private artifact cache is needed.
+
+Make portable `dispose()` close admission, invalidate the active operation,
+and return one memoized drain promise. The drain awaits the joined private
+invocation and its source release, then clears retained buffers. The
+invocation's finalizer releases its exact token once after all joins and
+buffer disposal are complete. The manual cancellation and request shapes
+stay unchanged. The private cancel path uses the same joined drain.
+Current browser-helper close and Electron quit already await returned
+`portable.dispose()` and backup composition disposal in their memoized
+shutdown. The backup owner already reports source cleanup uncertainty
+there. Reuse those shutdown lists and existing transports. The browser
+helper change is limited to handling observation refusal while the joined
+owner drains.
+
+### Scope and hosted fixture
+
+Use `host/isolated-backup-composition.mjs` and
+`host/portable-configuration.mjs` for the private join. Also scope the
+ownership and refusal changes to `host/maintenance-io.mjs`,
+`host/memory-forget.mjs` and the generic observation catch in
+`host/browser-helper.mjs`. Extend `tests/isolated-backup-composition.test.mjs`
+through the current staged
+selection fixture with the actual portable owner on its shared maintenance
+lane and a scripted wired observer. Verify exact member/hash/count and
+existing V1 Inspect/Prepare input and reduced output. Check a mismatched
+target and Busy before consumption, missing/corrupt member and unsupported
+selector, verified no-change with no Confirm reference, and ready with
+zero Apply before explicit Confirm. Confirm must use only the original
+prepared packet. Keep the existing manual import/export and original-only
+Status coverage.
+
+Hold a broker read or an original Inspect/Prepare promise through cancel,
+deadline or repeated disposal. Assert another owner stays Busy until the
+original work and stage retirement finish, retirement runs once and the
+late response cannot publish a preview or start a successor command. Hold
+stage retirement after successful Prepare to check that neither ready nor
+no-change is published early. Check target/source invalidation and a
+failed release with preserved cleanup uncertainty and no ready result.
+Exercise the real wrapped observer while the joined token is held.
+Its external cancellation must abort the original invocation without
+releasing the lane, and another wrapped command must refuse without
+invoking the raw observer. After the original drain, a fresh action can
+acquire the lane. Retain the existing ordinary-token revocation control.
+Use the existing hosted composition suite with synthetic provider and
+wired responses. Product registration, live namespace and installed/wired
+restore qualification remain under their existing tasks.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated

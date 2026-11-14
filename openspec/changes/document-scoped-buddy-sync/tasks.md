@@ -466,3 +466,8 @@ open.
 - [x] Move final host dependency compilation to the existing Build job with maintained cross-build tooling, complete matching notices and retained native test inputs; verify the original packaged bytes in both Integration jobs without adding jobs, assets or repeated common checks. Full shipping-input CI `43560801971` at `61f1887` passes; the PR run correctly skips Release.
 - [x] Qualify the retained package UI/session/lifecycle path for the explicit browser-helper launch mode at shipping-input `61f1887`. Both Integration jobs pass the actual packaged Electron/Chromium and browser-helper fixtures; the original source increment was `a488de7`. Later restore-owner quit and source-reader changes remain open above, and installed verifier composition remains disabled pending its own qualification.
 - [ ] Complete exact wired handoff, existing explicit restore/preferences flows, clean/replacement admission and provider/platform qualification before full workflow delivery.
+
+## Private preferences preview from an isolated backup
+
+- [ ] Independently review and implement the [private preferences handoff](manager-isolated-backup-download.md#private-preview-of-verified-backup-preferences) using the existing verified selection and portable Inspect/Prepare owner. Keep one maintenance admission through original source validation, joined cancellation and stage retirement before a reduced preview.
+- [ ] Verify the existing hosted composition with the exact portable member, original target, Busy and stale refusal, no-change and explicit Confirm, no competing owner during a held read or command, repeated close and reported cleanup uncertainty. Keep public registration, actual provider/installed qualification and the wired data destination separate.
