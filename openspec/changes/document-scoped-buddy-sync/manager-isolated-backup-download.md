@@ -128,7 +128,8 @@ channel or runtime download-and-execute path.
 The initial dependency source is reviewed Buddy commit
 `958cacf2810f501dc3cb23b525481f0bedf706f2`, tree
 `08612c77637d83388c88e20a4080b3a9d469c764`, with Cargo.lock SHA-256
-`5ae32abe822fd06668d034e09cab8559665dbb0014c6905a8e64a83974cbdaf9`.
+`dd6ddeeb756da0a93c8e3d7020d2f7e92ba68026a1492d2312da1ad94b2472d1`
+over the exact Git blob bytes, independent of checkout line-ending conversion.
 This is a development dependency pin, not a published Buddy release or a new
 application version. Use Buddy's existing Git-derived identity without Manager
 version substitution. A later pin change requires review and fresh applicable
