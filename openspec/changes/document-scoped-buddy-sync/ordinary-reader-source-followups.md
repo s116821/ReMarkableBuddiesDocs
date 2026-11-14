@@ -5,7 +5,8 @@ answers from stored history and verified historical images. Its current input
 visit guards that work, but supplies neither an original-document choice nor
 fresh whole-document retrieval. This increment connects the existing ordinary
 request-evidence preparation to that receiver. It covers the existing bounded
-text-bearing PDF profile and explicit no-document. See the existing
+text-bearing PDF profile, the bounded offline EPUB text profile and explicit
+no-document. See the existing
 [ordinary dispatch](../../specs/ordinary-conversation-dispatch/spec.md),
 [declared receiving](../../specs/declared-source-receiving/spec.md) and
 [source resolution](../../specs/source-request-resolution/spec.md) contracts.
@@ -18,9 +19,9 @@ request and optional history range. A trusted input owner supplies the existing
 `SourceDirective`: either `Inherit` with an exact earlier request-turn ID and
 evidence operation from this conversation, or `Explicit` with an exact
 `RequestSource::Original` or `RequestSource::NoDocument`. An original choice
-requires a complete independently established PDF `IndexKey`, its matching
-bounded query provider and a way to revalidate the admitted source throughout
-the operation. The owner establishes these from current source material.
+requires a complete independently established PDF or EPUB `IndexKey`, its
+matching bounded query provider and a way to revalidate the admitted source
+throughout the operation. The owner establishes these from current source material.
 Historical evidence and a cache hit alone cannot establish current file identity.
 The public receiving and resolver APIs, request-evidence representation and
 dispatch without the opt-in retain their existing behavior.
@@ -41,17 +42,26 @@ existing `prepare_request_evidence_with_directive` path with a private strict
 inheritance check inside that captured read set. It verifies the same earlier
 request and exact retained source record and compares the newly admitted key's
 document, format and original-byte SHA-256 with the named evidence's key before
-querying. Independently validated identical PDF bytes can be reindexed with a
+querying. The digest covers the complete original PDF file or EPUB archive.
+Independently validated identical original bytes can be reindexed with a
 different extractor or normalized digest. The standalone generic resolver
 retains its existing independently reindexed same-document semantics.
 
-For a bound PDF, perform one bounded query of the entire admitted index using
-the exact new request. Prior retrieval results remain historical. A zero-match
+For a bound PDF or EPUB, query the entire admitted index once using the exact new
+request. Prior retrieval results remain historical. A zero-match
 result remains associated with the admitted source. Missing, conflicting,
 foreign, corrupt or changed evidence, absent source material, invalid key and
 same-document changed bytes refuse without a replacement query, model call or
 Generated draft. If the interpreted request has already committed, keep it
 available for normal history and original-operation reconciliation.
+
+For EPUB, reuse the existing [offline normalizer](../../specs/epub-source-normalization/spec.md)
+and exact-key Index. Retrieval uses the declared spine and preserves its
+canonical section paths, with no inferred page number. The same host
+currentness check guards the admitted original archive independently of the
+Buddy-page visit. This composition receives an already admitted source and
+does not add an installed file observer or native page-to-section mapping.
+Notebook sources remain outside this admission.
 
 ## Evidence, submission and output
 
@@ -60,7 +70,7 @@ same capture for the existing follow-up answer assembly. Resolve required
 image bytes through the existing verified historical attachment path and
 preserve its cumulative bounds and deduplication. The answer receives the exact
 request, eligible ordered history, verified associated images and new bounded
-passages with their source and page identities. Reuse the same frame and media
+passages with their source and page or section identities. Reuse the same frame and media
 projection throughout; do not reread history, requery, or infer context from
 rendered replies. Scope optional ordinary memory from the admitted retrieval
 source. Explicit or inherited no-document runs no document query and names no
@@ -119,6 +129,15 @@ observations labeled modeled. Assert the following:
   model call and produce no Generated result. An explicit retarget queries the
   newly named exact origin, retains its own locator and leaves earlier evidence
   intact. A valid zero-match query remains bound to its named source.
+- Add one EPUB composition using the existing ordinary fixture seam and an
+  authored EPUB input through the existing normalizer and Index. A new
+  question on a different Buddy input visit makes one query and retrieves an
+  exact spine section outside the prior result, with no page number. Preserve
+  the exact origin and history. Admit an independently validated reindex only
+  for the same archive bytes. A same-document archive change refuses before
+  retrieval or model submission, even if extracted text is unchanged. Reuse
+  the existing source callback for one modeled currentness-loss refusal.
+  Existing normalization and bounds fixtures retain their coverage.
 - Explicit or inherited no-document makes zero document queries and has no
   document memory scope. Eligible global memory and the exact history remain.
 - Missing or conflicting named evidence refuses. A change before evidence

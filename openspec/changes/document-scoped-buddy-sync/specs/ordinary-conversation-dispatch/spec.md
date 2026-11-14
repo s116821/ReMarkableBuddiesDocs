@@ -10,7 +10,8 @@ or explicit no-document. The current input visit SHALL remain a separate
 ownership check. The dispatcher SHALL prepare one context through the existing
 ordinary evidence capture. Inheritance SHALL require the same exact retained
 source record and independently verified document, format and original-byte
-digest. A matching source SHALL be queried once across its full index with the
+digest. Supported originals SHALL be bounded PDF files or EPUB archives.
+A matching source SHALL be queried once across its full index with the
 new request, including when no passages match. No-document SHALL make zero
 source queries. Memory scope SHALL use the admitted source or omit document
 scope for no-document. Preserve eligible global memory, existing internet
@@ -27,6 +28,12 @@ behavior, the generic resolver and the dispatch without this opt-in. See the
 
 - **WHEN** the owner independently validates a different complete index key for the same original bytes
 - **THEN** the new key is admitted and queried within the same bounds.
+
+#### Scenario: EPUB section provenance
+
+- **WHEN** an admitted follow-up names exact prior EPUB evidence and an independently validated key for the same original archive
+- **THEN** it queries the existing spine index once, preserving the original source and exact section locators without inventing page numbers.
+- **AND** changed archive bytes refuse before retrieval or model submission, even if the normalized text is identical.
 
 #### Scenario: Refuse missing or changed inherited source
 

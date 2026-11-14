@@ -93,8 +93,8 @@ remain part of the existing linked delivery, not a planning-only merge.
 ## Ordinary Reader follow-up source inheritance
 
 Connect the existing ordinary Reader follow-up to the named-source Ledger
-evidence path. Query the original PDF for each new question, preserve explicit
-no-document and deliberate retargeting, and refuse changed original bytes.
+evidence path. Query the original PDF or EPUB for each new question, preserve
+explicit no-document and deliberate retargeting, and refuse changed original bytes.
 The [ordinary follow-up design](ordinary-reader-source-followups.md) defines
 the opt-in input, guarded publication and hosted acceptance. This extends
 `ordinary-conversation-dispatch`; selected installed resumption has its own

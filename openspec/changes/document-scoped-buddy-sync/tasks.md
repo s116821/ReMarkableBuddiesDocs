@@ -351,6 +351,7 @@ evidence; installed source authority and live model behavior remain separate.
 - [ ] Connect the opt-in ordinary follow-up to one captured evidence preparation and whole-source query. Preserve named inheritance, identical-byte reindexing, deliberate retargeting and explicit no-document while refusing changed original bytes before query or model submission.
 - [ ] Reuse prepared history, passages and verified images through fresh evidence acknowledgment, guarded answer, Generated and existing output ownership. Verify stale, conflicting and uncertain publication boundaries without replay.
 - [ ] Qualify the composed ordinary path in hosted CI against the paired source, including a second follow-up and exact source locators. Retain installed selected resumption and live source admission as separate work.
+- [ ] Independently review and implement the ordinary EPUB admission extension. Reuse the existing normalized spine Index and exact original archive digest. Verify one hosted composed follow-up with an exact section locator, changed same-ID archive refusal before retrieval/model and modeled source-currentness loss. Keep installed and notebook source admission separate.
 
 ## Ordinary data snapshots for isolated backup
 

@@ -404,8 +404,8 @@ verification complete, and it grants neither native effects nor qualification.
 
 The [ordinary follow-up contract](ordinary-reader-source-followups.md) joins one
 declared source preparation and exact evidence acknowledgment to the existing
-ordinary receiver. The current input visit and inherited original PDF have
-distinct ownership checks. Keep one prepared frame through answer assembly and
+ordinary receiver. Check ownership of the current input visit and the original
+PDF or EPUB independently. Keep one prepared frame through answer assembly and
 guard the original evidence and source at submission and publication.
 
 ### Ordinary data snapshots for isolated backup
