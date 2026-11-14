@@ -113,9 +113,19 @@ The following UI must distinguish marker selection from a verified downloaded
 package and must clear pending/view state on cancellation, authority turnover
 and lifecycle disposal.
 
-The shared browser/Electron UI will use the same private reader through narrow
-host requests and reduced results. Root owns the existing auth read seam and
-host wiring. A reviewed offline reader does not enable live Drive requests.
+The shared browser/Electron UI uses the same private reader through narrow
+host requests and reduced results. It retains the original completed scan while
+selecting and compares the returned backup, device and raw marker digest to the
+explicitly chosen revision. A late start reply after cancellation is discarded
+and only its returned original operation is cancelled; stale polling cannot
+replace a newer view. Lost replies do not trigger automatic operation retries.
+Drive sign-in, check, cancellation, disconnect, revocation and page lifecycle
+changes clear the view. Selection expiry is measured conservatively from its
+submission, without extending the host's two-minute custody. Cloud browsing does
+not require a tablet connection or invoke tablet operations.
+
+Root owns the existing auth read seam and host wiring. A reviewed offline reader
+or synthetic browser/Electron fixture does not enable live Drive requests.
 Use the maintained OAuth client for the eventual fixed read-only API adapter;
 do not implement another login/token store or expose provider request options.
 
