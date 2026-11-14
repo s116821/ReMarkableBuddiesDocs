@@ -365,3 +365,10 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 - [x] Review the existing producer's publication boundary and the bounded [correction](shared-worker-integration.md#notebook-publication-custody-correction). Reuse the accepted Source3/plan/stage producer and existing guarded commit API rather than reopening its completed implementation.
 - [ ] Retain a failing actual-producer regression after successful phase prechecks, then pass original phase reads and pure cancellation/cutoff checks through begin, prepare, result and final-draft commits.
 - [ ] Verify late mutex/marker refusal, publication read exhaustion, healthy multi-Map/Reduce within unchanged reservations, original-only recovery, memory/winner interlocks and lost acknowledgments. Review exact source and publish with the existing coordinated change.
+
+## Manager disconnected isolated backup inspection
+
+- [x] Reconcile the existing authentication, isolated V1 publisher and ordinary restore contracts; record the bounded [reader design](manager-isolated-backup-reader.md) before implementation.
+- [ ] Implement and independently review the private read-only reader and focused source/fixture checks; retain exact producer-byte provenance separately from synthetic cases.
+- [ ] Connect the existing protected auth read boundary, narrow host routes and shared browser/Electron inspection/selection UI; verify both distributions without enabling an unqualified binding.
+- [ ] Complete qualified namespace visibility, selected package download/validation and guarded existing/clean/replacement target restore before claiming the full Manager backup workflow.

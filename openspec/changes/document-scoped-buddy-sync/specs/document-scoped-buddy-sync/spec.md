@@ -279,3 +279,18 @@ Recognition SHALL use the explicitly selected local profile and a validated cata
 #### Scenario: Receiving interfaces remain unavailable
 - WHEN the compatible Reader analysis/verification and typed Writer normalization interfaces from the separately owned receiving work are not delivered
 - THEN domain transfer does not claim an actual recognition consumer, text-only Writer or archived normalized notebook processing does not masquerade as recognition, and null-original abstention/native ingress and held fidelity/device gates remain explicitly unfinished.
+
+### Requirement: Manager inspects isolated backup revisions without tablet contact
+Manager SHALL reuse the existing authenticated provider boundary and ordinary isolated V1 publisher format for disconnected backup inspection. Only a qualified current read binding may enumerate the publisher namespace. Complete bounded metadata and predecessor validation SHALL distinguish qualified empty from unavailable, corrupt or incomplete listings. Explicit selection SHALL retain the exact verified marker bytes, digest and binding under a bounded opaque host handle; it SHALL NOT imply a verified archive, restore eligibility or current native-page authority.
+
+#### Scenario: Namespace visibility is not established
+- WHEN Manager is signed in but the actual registration/grant cannot prove visibility of the tablet publisher's root, properties, markers and objects
+- THEN backup inspection remains unqualified or unavailable rather than claiming empty backups or borrowing authority from the tablet's provisioning report.
+
+#### Scenario: Selected marker remains the user's historical choice
+- WHEN Manager verifies a revision's exact raw marker and a later revision appears
+- THEN the selection remains tied to its original marker and observed ancestry until expiry or invalidation; Manager does not select by timestamps, silently advance the choice or claim its unverified archive/media are complete.
+
+#### Scenario: Inspection loses its authority or complete listing
+- WHEN cancellation, deadline, grant replacement, repeated pagination, ambiguous ancestry or changed selected metadata prevents complete validation
+- THEN no partial view grants a usable selection and no provider write, automatic retry, tablet operation or restore follows.
