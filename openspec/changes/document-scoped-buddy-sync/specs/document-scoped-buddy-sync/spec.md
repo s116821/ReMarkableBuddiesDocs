@@ -360,6 +360,32 @@ For a private stage-backed restore, Manager SHALL permit checked destination del
 - WHEN the user explicitly launches the existing packaged executable with `--browser-helper`
 - THEN the existing fixed-loopback helper serves its packaged browser UI without a desktop window, resolves host resources only from the installed package, and awaits owned shutdown; the mode does not activate an unqualified oracle or grant source-only helper authority.
 
+### Requirement: Buddy receives isolated restore inputs with exact cleanup ownership
+
+The normal Buddy archive CLI SHALL receive a bounded isolated V1 backup into a
+private configuration-derived staging directory, verify it using the existing
+package oracle and return a receipt bound to the original boot and exact tree.
+It SHALL use the [destination command contract](../../manager-isolated-backup-download.md#buddy-destination-staging-command)
+for framing, limits and descriptor custody. It SHALL NOT restore data, apply
+preferences, start runtime or register a production Manager adapter.
+
+#### Scenario: A complete original upload becomes a restore input
+- WHEN one admitted upload satisfies the fixed framing, deadline, free-space, identity and existing package checks
+- THEN Buddy returns only that stage's bounded receipt, and later check or release requires its original boot, parent, exact members and custody commitment.
+
+#### Scenario: An upload fails while the command still owns its partial files
+- WHEN framing, integrity or validation fails before receipt handoff and the command can still prove exact ownership
+- THEN it attempts bounded descriptor-owned removal of its own partial output; failed or uncertain cleanup is reported, and unrelated, replaced or unexpected entries remain untouched.
+
+#### Scenario: The upload acknowledgement is lost
+- WHEN Manager cannot validate the original terminal receive reply
+- THEN the preallocated stage ID stays tied to that consumed operation and its cleanup warning, with no automatic adoption, retry or deletion from a matched name alone.
+
+#### Scenario: A staged tree or supported execution boundary changes
+- WHEN the original boot, parent, directory membership or member identity changes, or the platform lacks the required descriptor and deadline boundary
+- THEN the command refuses success without claiming cleanup or granting restore authority.
+
+
 ### Requirement: Manager previews verified backup preferences in both companions
 
 Browser and Electron Manager SHALL offer a deliberate preferences preview for the exact selected and verified backup on the original admitted wired destination. The shared portable owner SHALL publish a preview only after the one-shot source handoff and checked staging retirement. It SHALL accept Apply only through the existing explicit Confirm for that still-ready original. A possibly dispatched Apply SHALL retain its original portable Status route and reference.

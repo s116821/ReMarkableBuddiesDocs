@@ -206,6 +206,89 @@ shared maintenance lane invalidates competing owners. This increment neither
 adds a public Apply action nor implements provider registration, tablet transfer
 or clean/replacement-target bootstrap.
 
+## Buddy destination staging command
+
+The selected source increment extends the normal Buddy archive command with
+`receive-isolated-stage`, `check-isolated-stage` and
+`release-isolated-stage`. It uses the existing Rust binary and package validator;
+it adds no target Python, daemon, extra executable, persistent operation registry
+or second restore engine. Production Manager registration remains a later
+qualified adapter step.
+
+Derive the fixed parent
+`Config.paths.data.parent()/.remarkable-buddies-restore-stage-v1`
+from the existing trusted saved configuration. Its existing data parent must
+exist. Accept no input-path or environment override for this stage root. Refuse
+overlap in either direction with configured data, cache, credentials, saved
+configuration directory and protected/native document roots. Pin each ancestor
+with no-follow directory descriptors and recheck its named identity. Create only
+the fixed private parent, owned by the effective user with mode 0700 and an
+exclusive regular single-link mode-0600 V1 owner marker. A preexisting parent
+requires the exact marker and safe ownership/permissions; never adopt an unmarked
+or partly initialized directory. Open no Store, credentials, provider or runtime.
+
+Manager allocates one random V4 stage ID before dispatch and records it with the
+original consumed operation, reference, wired connection/boot and archive
+commitments. Receive exclusively creates `restore-v1-<stage_id>`; it never resumes
+an existing leaf. The literal stdin stream begins with one strict JSON control
+line, at most 4 KiB including LF, containing only version, stage_id, boot_id,
+marker_sha256, inventory_sha256, object_count, payload_bytes and budget_ms.
+Reject duplicate fields and noninteger numeric tokens.
+
+Transmit `data/backup.json`, zero to 4,096 objects sorted by raw SHA-256,
+`portable-configuration.json`, then `isolated-backup.json`. Each record is an
+unsigned big-endian 64-bit length and 32 raw digest bytes followed by exactly
+that many payload bytes. Object filenames derive only from the digest; other
+names are fixed. The inventory SHA-256 commits a versioned domain, big-endian
+32-bit object count and these ordered 40-byte descriptors. Require distinct
+objects, exact count/order, original marker digest and EOF after the final byte.
+Bounds remain the existing download limits: 8 MiB manifest, 128 KiB preferences,
+16 KiB marker, 256 MiB per object and 512 MiB aggregate payload. Metadata members
+are nonempty; objects may be empty. All additions are checked for overflow.
+Require a 256 MiB reserve plus remaining declared bytes on the pinned filesystem
+before allocation and during bounded 64 KiB writes.
+
+One monotonic receive deadline covers header, payload, validation and settlement.
+Its budget is 1 to 12,000 ms and cannot exceed the original host remainder.
+The real Linux stdin path uses deadline-aware polling; a plain blocking generic
+Read implementation is not evidence of deadline enforcement. Check the same
+deadline around disk and validator operations. Kernel I/O can outlive a userspace
+deadline; local process termination never proves remote completion. Other archive
+operations retain their 16 KiB input/output limits. Check/release inputs and all
+reports remain within those limits.
+
+Sync and verify the complete closed package with the existing isolated V1 oracle,
+then return a small receipt containing the original stage ID, boot, marker and
+inventory commitments, canonical root and custody SHA-256. The custody domain
+binds length-prefixed names, fixed-width stat values, parent/stage/child-directory
+device/inode and owner/mode, and every exact member's device/inode, size,
+owner/mode, link count, mtime and ctime. Reopen and verify the original fixed
+parent and entire closed tree before check or release; retain descriptor custody
+and recheck identities during deletion. Do not replace this with path-recursive
+removal. A matched stage ID alone never grants deletion.
+
+An ordinary receive failure before handing off a receipt must attempt bounded
+cleanup of only the directories/files created and still owned by that attempt,
+using retained descriptors and exact membership. Refuse deletion on replacement,
+unexpected membership, expired cleanup bound or uncertain ownership, and retain
+cleanup uncertainty. Do not deliberately retain reproducible partial uploads
+after a cleanly observed failure. Lost acknowledgement or abrupt process death
+may leave the exact original ID unresolved; the host preserves that bounded
+operation-specific warning, without scanning, adoption, reconnect or auto-retry.
+A future Manager adapter must propagate even pre-receipt failure into sticky
+shutdown cleanup reporting. Checked destination release after receipt adoption
+remains subject to the existing Prepare/Apply terminal-reader guard.
+
+First implementation scope is the archive dispatcher, a private Linux staging
+module and focused tests, with only the real stdin dispatch adjustment needed for
+deadline enforcement. Unsupported hosts refuse without filesystem mutation.
+Hosted tests use actual isolated-producer packages for receive, check and release,
+framing/integrity/refusal cases, parent and member replacement, links/extra
+membership, reserve, deadlines and partial cleanup. Real CLI coverage verifies
+literal stdin, EOF and silent/stalled pipes. Fixtures remain modeled filesystem
+and process evidence; installed selector availability, actual tablet parent/mount
+layout, free space and wired throughput must be qualified before registration.
+
 ## Private preview of verified backup preferences
 
 This source increment connects one deliberate preferences-only action to the
