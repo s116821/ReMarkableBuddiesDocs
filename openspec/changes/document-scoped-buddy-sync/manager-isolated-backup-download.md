@@ -107,6 +107,26 @@ introduce another archive parser. The original source deadline and abort signal
 cover transfer and Prepare. Capture the intended wired connection and boot;
 changed target identity or incomplete destination custody refuses Prepare.
 
+Expose bounded source reading through the existing staging broker and its
+original sealed file records. The trusted handoff supplies `readFile(name, write)`
+instead of a local staging path and may read only members of its
+frozen verified inventory, with exact byte length and SHA-256 checked through
+EOF. Use bounded chunks and the original signal/deadline; do not reopen raw
+paths outside the broker or introduce another inventory/parser. Refuse a
+replaced, linked, changed or additional member, concurrent file access, or use
+after handoff retirement. Reader completion or cancellation must join the
+actual file access before the existing owner releases staging. This local
+source capability does not select a tablet runtime or register a destination
+transport. Ending the handoff revokes that reader, joins any admitted read and
+refuses success if the recipient left a read in flight. Retained callbacks
+cannot read after retirement. The writer callback must honor its abort signal;
+a timeout notification alone does not join a callback still using the bytes.
+
+A local SSH child exit or connection loss alone cannot establish remote
+Prepare completion. The eventual destination binding must join its actual
+reader or retain cleanup uncertainty without deleting the stage. Do not assume
+an installed target Python broker or treat an injected peer as wired evidence.
+
 Transfer and Prepare share one existing maintenance admission. Preserve the
 ordinary command's current bounded payload and execution budget. On cancellation
 or timeout, join the actual transfer/Prepare work before releasing either stage;

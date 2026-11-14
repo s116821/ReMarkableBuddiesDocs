@@ -318,6 +318,10 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - WHEN desktop or packaged browser-helper shutdown begins while an inspection predecessor, protected guard, provider read, verifier or private restore destination is still closing
 - THEN one shared owner closes admission and waits for the original pending work and checked staging release before shutdown completes, including when another owner fails; repeated shutdown joins the same drain and unconfirmed cleanup remains in the existing close/error report. Abort notification alone is not completion.
 
+#### Scenario: A trusted restore handoff reads the verified local source
+- WHEN the original handoff reads a member of its frozen verified inventory
+- THEN the existing staging broker checks original file custody and streams bounded bytes under the original deadline and signal, verifies exact length and digest through EOF, refuses changed or additional members and use after retirement, and joins file access before staging release. This capability does not establish a remote destination or prove remote Prepare completion after a lost connection.
+
 #### Scenario: A compatible complete package verifier is unavailable
 - WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them
 - THEN Manager reports unavailable or reconstruction-only evidence and does not offer the bytes as a verified restore input or silently introduce another semantic validator.
