@@ -74,6 +74,45 @@ silently switch the user's selection to that newer revision.
 
 ## Following connected work
 
+### Protected authority and host operation boundary
+
+Reuse `DriveAuth` and its existing protected `DriveStore`; do not add another
+credential store. A constructor-only trusted read factory may receive the
+validated private registration/grant snapshot and a revocation signal. The
+production factory remains absent until namespace visibility and the fixed
+read-only API adapter are qualified. The renderer cannot supply a factory,
+endpoints, credentials, provider IDs, request options or filesystem paths.
+The public `authorizationId` remains revocation-only and `backupReady` remains
+false; neither is a read capability.
+
+Capture requires the current freshly connected authority, matching protected
+registration/grant digests, unexpired credentials and the original auth
+generation. Check those same inputs around every asynchronous read. Disconnect,
+revoke, a new login/check, cancellation of auth work and disposal invalidate
+the captured binding and abort pending reads. External protected-file changes
+are detected on the next admission/completion check. No implicit login, refresh,
+provider retry or credential rewrite occurs through the inspection path.
+
+Reuse the existing host-owned asynchronous operation pattern: explicit scan or
+selection reserves a new random operation reference before work begins; status
+returns only the reduced result for that original reference. A scan's completed
+operation reference identifies its inspection. Selection requires that exact
+inspection plus its opaque choice reference. A new scan replaces the prior view;
+selection never silently changes the selected historical marker. Concurrent
+starts refuse while one read is active. Cancellation matches only the original
+operation reference, including its retained result; a delayed cancel must not
+abort a later scan/selection. There is no automatic resume after process restart.
+
+Keep public requests closed, bounded and versioned. Return observed/empty,
+unqualified/unavailable, invalid/incomplete/invalidated and active scan/selection
+states distinctly; emit no private grant, provider object ID, raw marker or error
+details. Bound the full reduced response to 2 MiB as well as the reader's item
+limits. Shared browser/Electron bridges use their existing origin/session or
+main-frame/arity checks, with no tablet connection required for cloud inspection.
+The following UI must distinguish marker selection from a verified downloaded
+package and must clear pending/view state on cancellation, authority turnover
+and lifecycle disposal.
+
 The shared browser/Electron UI will use the same private reader through narrow
 host requests and reduced results. Root owns the existing auth read seam and
 host wiring. A reviewed offline reader does not enable live Drive requests.
