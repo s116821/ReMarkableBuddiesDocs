@@ -126,14 +126,25 @@ inventory. Do not add another binary target, parser, backup format, release
 channel or runtime download-and-execute path.
 
 The initial dependency source is reviewed Buddy commit
-`958cacf2810f501dc3cb23b525481f0bedf706f2`, tree
-`08612c77637d83388c88e20a4080b3a9d469c764`, with Cargo.lock SHA-256
+`4192914db255ce9e0c61ed0a0de48b7d9c838302`, tree
+`7a893016a7c92ac26bec69b57102433af2e519d5`, with Cargo.lock SHA-256
 `dd6ddeeb756da0a93c8e3d7020d2f7e92ba68026a1492d2312da1ad94b2472d1`
 over the exact Git blob bytes, independent of checkout line-ending conversion.
 This is a development dependency pin, not a published Buddy release or a new
 application version. Use Buddy's existing Git-derived identity without Manager
 version substitution. A later pin change requires review and fresh applicable
 qualification; it must not silently follow a branch or a latest release.
+
+This pin includes the reviewed test-only retained-command selector. Copy the
+ordinary executable before compiling tests, bind its exact canonical path, size
+and SHA-256 through the all-or-none `READER_BUDDY_ARCHIVE_TEST_COMMAND`,
+`READER_BUDDY_ARCHIVE_TEST_BYTES` and `READER_BUDDY_ARCHIVE_TEST_SHA256` variables,
+and recheck those same retained bytes after the tests. This avoids accidentally
+qualifying a replacement binary compiled with test-only dependency features.
+The Windows path uses Rust's canonical verbatim form. The selector's local
+Cargo-built test proves the harness only; native retained-release results remain
+required. Production code, Cargo.lock and the SDK revision are unchanged by this
+test-only successor.
 
 Initial native qualification runs within the existing two platform Integration
 jobs on PRs, preserving the five-job Manager budget. It builds the new dependency
