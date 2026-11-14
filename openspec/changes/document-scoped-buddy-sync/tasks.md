@@ -381,7 +381,7 @@ The separately owned finite [export-portable-configuration](../archive/2026-11-0
 ## Selected isolated backup download and existing oracle
 
 - [x] Trace the existing marker, producer inventory, complete package oracle and ordinary restore/preferences seams; record the [bounded download contract](manager-isolated-backup-download.md) before implementation.
-- [ ] Expose the existing full package oracle through the narrow offline archive command and test actual exported producer bytes, corruption, extra membership and wrong-marker refusal without Store/network/runtime activity.
+- [x] Expose the existing full package oracle through the narrow offline archive command and test actual exported producer bytes, corruption, extra membership and wrong-marker refusal without Store/network/runtime activity. The normal CLI additionally verifies stdin/file framing using real ordinary/portable exports with a fixture-assembled outer marker; it does not replace actual isolated-producer evidence or establish shipped host-verifier qualification.
 - [ ] Implement the private Manager selected-download coordinator with original selection/grant checks, bounded streams, qualified private staging and trusted verifier seam; keep synthetic fixtures distinct from actual producer/oracle/platform qualification.
 - [ ] Independently review and compose the actual protected read binding, staging and qualified verifier runner before enabling download in the shared UI; unavailable infrastructure must remain truthful.
 - [ ] Complete exact wired handoff, existing explicit restore/preferences flows, clean/replacement admission and provider/platform qualification before full workflow delivery.
