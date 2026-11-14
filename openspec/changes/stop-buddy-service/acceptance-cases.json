@@ -1,0 +1,251 @@
+{
+  "kind": "precode acceptance vectors; not executed product tests",
+  "cases": [
+    {
+      "id": "ordinary-manual-disabled",
+      "layer": "profile",
+      "variation": "ordinary-manual source shape matches; qualification absent",
+      "expected": "unsupported; zero submissions"
+    },
+    {
+      "id": "ordinary-manual-qualified-fixture",
+      "layer": "profile",
+      "variation": "ordinary-manual exact accepted synthetic tuple; unchanged brackets",
+      "expected": "review ready; confirm exactly one fixed submission; no restoration claim"
+    },
+    {
+      "id": "resident-installed-disabled",
+      "layer": "profile",
+      "variation": "PACKAGE/Profile6/Lease3/nested companion shape matches; qualification absent",
+      "expected": "unsupported; zero submissions"
+    },
+    {
+      "id": "resident-installed-qualified-fixture",
+      "layer": "profile",
+      "variation": "PACKAGE/Profile6/Lease3 exact synthetic tuple, twelve artifacts and both vendor maps; unchanged brackets",
+      "expected": "review ready; confirm exactly one fixed submission; no restoration claim"
+    },
+    {
+      "id": "manual-latch",
+      "layer": "profile",
+      "variation": "ordinary occupied/partial/refused latch",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "manual-no-binding",
+      "layer": "profile",
+      "variation": "manual digest observed but no accepted source/build binding",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "resident-missing-lease",
+      "layer": "profile",
+      "variation": "resident lease absent/partial/foreign",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "resident-dev-alias",
+      "layer": "profile",
+      "variation": "resident executable or argv uses development /opt alias",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "apk-layout",
+      "layer": "profile",
+      "variation": "pending APK /usr/bin layout",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "platform",
+      "layer": "profile",
+      "variation": "model/firmware/kernel unsupported or absent",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "hooks",
+      "layer": "profile",
+      "variation": "unknown hooks/drop-ins/wrapper/extra argv",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "policy",
+      "layer": "profile",
+      "variation": "policy absent/unknown/infinite/unsafe or mismatched",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "file",
+      "layer": "profile",
+      "variation": "unsafe owner/mode/ancestor; symlink/deleted executable/hash mismatch",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "drift",
+      "layer": "profile",
+      "variation": "second bracket or confirm differs in boot/invocation/PID/start/policy/file",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "mode",
+      "layer": "profile",
+      "variation": "saved local-only file but no runtime mode receipt; only local-only qualified",
+      "expected": "refuse before submission; do not adopt current facts or repair"
+    },
+    {
+      "id": "extra-key",
+      "layer": "private",
+      "variation": "extra/missing nested DTO key or selector mismatch",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "json",
+      "layer": "private",
+      "variation": "duplicate/BOM/invalid UTF8/trailing frame",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "bounds",
+      "layer": "private",
+      "variation": "input/show/profile/lease/envelope/stderr budget exceeded",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "numeric",
+      "layer": "private",
+      "variation": "noncanonical/overflow decimal; invalid invocation/hash/base64",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "args",
+      "layer": "private",
+      "variation": "unexpected argv with secret-bearing extra argument",
+      "expected": "reject complete result; do not echo raw facts; possible submission remains unknown"
+    },
+    {
+      "id": "accepted",
+      "layer": "host",
+      "variation": "original live fixed-command zero exit",
+      "expected": "request-accepted; current OS read separate"
+    },
+    {
+      "id": "lost",
+      "layer": "host",
+      "variation": "possibly submitted lost/nonzero/malformed/late/cancelled result",
+      "expected": "unknown; no automatic retry"
+    },
+    {
+      "id": "inactive",
+      "layer": "host",
+      "variation": "refresh after unknown observes inactive",
+      "expected": "unknown history retained plus current inactive; no restoration or automatic continuation"
+    },
+    {
+      "id": "cancel",
+      "layer": "host",
+      "variation": "stale cancel/finalizer after owner changes",
+      "expected": "no remote cancel; no newer-owner invalidation"
+    },
+    {
+      "id": "busy",
+      "layer": "host",
+      "variation": "each predecessor owns either actual factory",
+      "expected": "Busy; zero competing dispatch/cancel/invalidation"
+    },
+    {
+      "id": "expiry",
+      "layer": "host",
+      "variation": "queued review expires or connection changes before dispatch",
+      "expected": "refuse; zero command"
+    },
+    {
+      "id": "capacity",
+      "layer": "host",
+      "variation": "8 retained attempts or32 fences exhausted",
+      "expected": "refuse without eviction"
+    },
+    {
+      "id": "identities",
+      "layer": "host",
+      "variation": "all public action/current/history combinations and foreign connection/boot",
+      "expected": "accept only contract table; malformed reply cannot clear uncertainty"
+    },
+    {
+      "id": "package-legacy-refusal",
+      "layer": "profile",
+      "variation": "LEGACY paths, Profile1-5, Lease2, mixed /etc-/usr units or bare /usr/bin APK",
+      "expected": "refuse; no version translation, alias, fallback or registry enrollment"
+    },
+    {
+      "id": "package-profile-definition",
+      "layer": "private",
+      "variation": "Profile6 missing or wrong companion/source_mode/native pair; development_output present even null",
+      "expected": "reject complete result; never treat source_mode as effective sync/provider mode"
+    },
+    {
+      "id": "package-nested-baseline",
+      "layer": "private",
+      "variation": "Lease3 companion not original JSON string, wrong baseline version, duplicate/extra/missing nested key or invalid snapshot line",
+      "expected": "reject complete record without echoing private content; no permissive nested decoder"
+    },
+    {
+      "id": "package-original-companion",
+      "layer": "profile",
+      "variation": "historical rm-sync state/process/group is inconsistent, context differs from Buddy, or groups are identical",
+      "expected": "refuse before submission; historical original PID need not still be live"
+    },
+    {
+      "id": "package-vendor-pins",
+      "layer": "profile",
+      "variation": "each companion executable/unit/drop-in digest or either vendor policy projection differs or is incomplete",
+      "expected": "refuse; all three source pins and both closed27-key projections required"
+    },
+    {
+      "id": "package-companion-terminal",
+      "layer": "profile",
+      "variation": "source-valid retained or cleared terminal snapshot and original absent/empty group cases, versus populated/replaced/pending group or new invocation",
+      "expected": "candidate matches only source terminal rules; no native FD ownership or restoration grant"
+    },
+    {
+      "id": "package-conflicting-profile",
+      "layer": "sampler",
+      "variation": "LEGACY recovery exists, both allowed protected missing-component observations fail, or /etc Buddy/helper unit shadows package unit",
+      "expected": "refuse without path repair, secret reads or installed-profile preference"
+    },
+    {
+      "id": "package-companion-drift",
+      "layer": "sampler",
+      "variation": "original group parent/context or current rm-sync snapshot/vendor policy/artifact changes across brackets",
+      "expected": "refuse without dropping companion facts or adopting replacement identity"
+    },
+    {
+      "id": "package-digest-fields",
+      "layer": "private",
+      "variation": "mutate each new raw field/artifact or original nested record byte; compare JS/Python canonical digest",
+      "expected": "digest changes or malformed sample refuses; semantic token permutations never rewrite raw bytes"
+    },
+    {
+      "id": "package-nullability",
+      "layer": "private",
+      "variation": "ordinary/inspect/factless refusal versus resident missing new fields or wrong artifact nullability",
+      "expected": "ordinary/inspect new fields null; resident requires complete companion facts; public contract unchanged"
+    },
+    {
+      "id": "package-bounds-deadline",
+      "layer": "sampler",
+      "variation": "nested snapshot/record, serialized16KiB component or complete256KiB envelope overflow; remaining collection deadline expires",
+      "expected": "refuse within unchanged ceilings; no cap widening, omitted fields or Stop; possible original dispatch remains unknown"
+    },
+    {
+      "id": "package-companion-zero-watchdog",
+      "layer": "profile",
+      "variation": "original or current rm-sync WatchdogUSec is nonzero, including a proposed tuple that agrees with it",
+      "expected": "refuse independently of tuple; preserve vendor OriginalCompanion source invariant"
+    },
+    {
+      "id": "package-empty-production-gates",
+      "layer": "host",
+      "variation": "complete updated fixture and host resource staging while both compiled registries remain empty",
+      "expected": "production Stop refuses before channel IO; synthetic matching never becomes enablement"
+    }
+  ]
+}

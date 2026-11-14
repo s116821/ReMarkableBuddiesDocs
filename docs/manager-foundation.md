@@ -185,6 +185,13 @@ unknown history blocks another initialization for the same connection within the
 host lifetime even after reboot. History is in memory only; restart supplies no
 reconciliation. Physical tablet/provider/native qualification remains separate.
 
+## Service stop qualification
+
+The Stop Buddy controls are under active implementation. Both production profiles
+remain disabled; review reports an unqualified installation and offers no stop.
+See the [current scope and remaining gates](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/service-stop.md).
+Request acceptance, current OS state and native restoration remain separate.
+
 ## Ordinary notebook archives
 
 The paired [notebook archive consumer](manager-notebook-archives.md) adds policy-previewed ordinary notebook export and detached format-4 inspection. Local source/fixture, actual host UI, product interoperability, hosted delivery and physical tablet qualification remain separately attributed in its change results.
