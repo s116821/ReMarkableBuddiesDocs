@@ -593,10 +593,20 @@ Checks in run `43638985009` passed 1,285 Node cases with zero failures and
 five skips, including the controller, composed owner and loopback cases.
 The separate 14 archive checks passed as well.
 
-Build and native Integration for the consumer remain pending. The authored
-source browser/Electron positive fixture and packaged default refusal have
-not yet run. The test-owned provider, staging, verifier and wired peer do
-not establish real Drive or installed qualification.
+That run compiled the native commands, then failed production UI generation:
+the initial bundle measured 722.77 kB against the existing 720 kB error budget.
+Build failed and native Integration was skipped. The authored source
+browser/Electron positive fixture and packaged default refusal have not yet
+run. The original bundle-budget failure remains separate from the earlier
+controller expectation failure. The test-owned provider, staging, verifier
+and wired peer do not establish real Drive or installed qualification.
+
+Manager `deae2f150dee56b51053c416003082eba4f2e1a6` factors repeated App
+controller-reset sequences into three private synchronous helpers, preserving
+the original calls and order. Independent source review confirms the expanded
+TypeScript syntax tree matches the preceding revision. The 720 kB budget and
+test coverage are unchanged; emitted bundle size and native Integration remain
+unverified until the new hosted run completes.
 Production factories remain absent. The preceding private-handoff run belongs
 to `26877e8808861046b7378038aa304b8c636495fb`, not this consumer revision.
 
