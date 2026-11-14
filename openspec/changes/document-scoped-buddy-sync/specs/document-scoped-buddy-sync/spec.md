@@ -322,6 +322,14 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - WHEN the selected bytes are reconstructed but no qualified existing Buddy oracle runner can validate them
 - THEN Manager reports unavailable or reconstruction-only evidence and does not offer the bytes as a verified restore input or silently introduce another semantic validator.
 
+#### Scenario: A verified backup enters the existing restore preview
+- WHEN a trusted host consumer explicitly hands off the exact verified selection to the existing ordinary restore owner for the captured wired target
+- THEN one original maintenance admission covers bounded transfer and Prepare, the returned archive digest must match the original data manifest, and preview is accepted only after complete source handoff and destination custody checks; paths and producer intents remain private and no Apply is dispatched.
+
+#### Scenario: Cancellation outlives a restore handoff timeout
+- WHEN transfer or Prepare is still closing after the original handoff deadline or cancellation
+- THEN the host joins that work before releasing its stages, preserves uncertain cleanup, and refuses stale preview; a later explicit Confirm requires the original ready intent and still-owned destination, while uncertain Apply Status retains its original reconciliation packet.
+
 #### Scenario: The host oracle is delivered as a Manager dependency
 - WHEN a supported Manager host can verify the pinned normal Buddy command in its private installed resources
 - THEN the host uses only the fixed offline inspect-isolated command with its original source, target and byte identity, bounded I/O and joined cancellation; it does not obtain code from a provider package, runtime download, renderer input or tablet release archive.

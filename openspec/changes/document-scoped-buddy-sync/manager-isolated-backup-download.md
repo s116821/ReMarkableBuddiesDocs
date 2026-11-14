@@ -93,6 +93,52 @@ cancel and disposal release only the exact operation/reference pair. The UI
 receives no filesystem path or handoff/restore authority. This source increment
 does not register production factories or add an Apply action.
 
+## Host-owned restore preview handoff
+
+Reuse the coordinator's one-shot handoff for the exact verified operation and
+reference. A private composition method may pass the original source to the
+existing ordinary restore owner and a trusted destination stager. Production
+registration remains absent in this source slice; synthetic staging callbacks
+exercise the integration without a tablet transfer or a new public request.
+
+Carry the bounded original file inventory and data/preferences commitments from
+the successful checked writes. Do not reopen Drive, replace the selection or
+introduce another archive parser. The original source deadline and abort signal
+cover transfer and Prepare. Capture the intended wired connection and boot;
+changed target identity or incomplete destination custody refuses Prepare.
+
+Transfer and Prepare share one existing maintenance admission. Preserve the
+ordinary command's current bounded payload and execution budget. On cancellation
+or timeout, join the actual transfer/Prepare work before releasing either stage;
+the existing timeout race alone must not grant completion or free inputs that
+the trusted callback may still use. Legacy manual behavior remains unchanged.
+
+The trusted destination remains private. Compare the returned Prepare intent's
+archive digest with the original data manifest digest before accepting preview.
+Publish that preview only after the complete source handoff has passed its final
+authority checks; otherwise retire the candidate with any cleanup uncertainty
+preserved. A successful ready intent adopts destination custody under its
+existing bounded preview lifetime. Explicit Confirm rechecks that exact custody
+and target. Cancel, expiry, invalidation and terminal completion retire only that
+destination, while uncertain Apply keeps the existing original reconciliation
+packet. Status must not reopen the archive or silently dispatch Apply.
+
+The trusted destination callback returns a private canonical root,
+`assertOwned` for the captured target and original file inventory, and one
+checked `release`. Only a `true` release confirms removal; refusal or failure
+retains cleanup uncertainty. Private restore disposal joins outstanding work
+and reports unconfirmed release of returned destination handles. The private
+handoff result carries source-stage and failed-transfer cleanup uncertainty.
+Entry-point awaiting and public presentation
+of destination cleanup remain a following bridge increment; the existing public
+restore response shape is unchanged here.
+
+Preference preview remains a separate explicit action through the existing
+portable-configuration owner. Do not start it alongside data preview: their
+shared maintenance lane invalidates competing owners. This increment neither
+adds a public Apply action nor implements provider registration, tablet transfer
+or clean/replacement-target bootstrap.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated
