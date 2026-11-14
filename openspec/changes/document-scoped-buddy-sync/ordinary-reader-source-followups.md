@@ -61,7 +61,119 @@ canonical section paths, with no inferred page number. The same host
 currentness check guards the admitted original archive independently of the
 Buddy-page visit. This composition receives an already admitted source and
 does not add an installed file observer or native page-to-section mapping.
-Notebook sources remain outside this admission.
+
+## Supplied notebook admission
+
+The proposed host route starts with an existing ordinary format-4 conversation
+and its committed `ArchivedNormalizedSource` in `Namespace::Source`. The
+original user turn owns that archive. An explicit first Reader question can
+name that turn and record, including a Writer origin created by the existing
+`Ledger::admit_notebook` path in `src/conversation/notebook/persistence.rs`.
+Later questions inherit through the named earlier **Reader** evidence
+operation. Retargeting requires its own explicit origin and fresh admission.
+Require `SourceFormat::Notebook`, `TextScope::SuppliedNotebook` and unique
+positive page locators in supplied order. Refuse section locators, page-scoped
+input and partial or unavailable supplied sets.
+
+At the existing `Dispatch::reader_with_source` boundary
+(`src/workflow/conversation_dispatch.rs`), require a private admission from
+the independent input owner on each request. The owner supplies the ordered
+`retrieval::notebook::PageImage` set, the complete existing whole-page
+`NotebookText` result, a freshly observed `ValidatedNotebook` and a short
+source-currentness check tied to the explicit original or named evidence
+operation. Reuse `ValidatedNotebook::from_bytes` for an owned buffer or
+`read_document_file` for the existing supported file admission. A Store
+archive, cache, bare `NormalizedDocument` or extractor prefix cannot issue
+admission. This first route accepts the existing `retrieval::notebook::normalize`
+whole-page OCR contract for supplied historical images.
+
+Reuse the input-side checks and hash recipe from `admit_pages` in
+`src/retrieval/notebook.rs` without invoking OCR again. For the bounded ordered
+set of unique positive pages, compare each derived `ImageIdentity` (page, PNG
+SHA-256, byte count and decoded dimensions) to the corresponding
+`NotebookText.images` item. Recompute `document.source_sha256` over
+`notebook-page-image-set-v1` plus a zero byte, the big-endian u32 page count,
+then each big-endian u32 page, big-endian u64 PNG length and exact PNG bytes
+in supplied order. Require one normalized unit per image in that order, with
+the exact page number and no section. Require `blank_pages` to equal the
+ordered page numbers of the empty units. The other units must contain
+nonblank text. An unreadable page, partial transcription, or absent or
+mismatched complete result refuses.
+
+Require the existing public whole-page `Profile` (protocol 1,
+`transcribe-visible-v2`, the declared nonempty model profile and no confirmed
+context). Recompute the extractor revision using
+`notebook-ocr-unverified-v2:` and the SHA-256 of the existing serialized
+`Profile`. Require the entire `NotebookText.document` to equal the document
+parsed from the independently supplied normalized JSON, including the source
+digest, profile-derived revision and ordered units. Completeness applies to
+the declared supplied set. Recognition, blank judgments and the declared model
+profile remain unverified. Keep the complete result at admission and carry
+the existing revision and digests in durable evidence. Input without this
+complete-set OCR contract falls outside the first route.
+
+In captured Ledger preparation (`src/conversation/evidence.rs` and
+`src/conversation/resolution.rs`), pin the exact original turn and archive
+`RecordRef` and the canonical media descriptor from that captured archive.
+After releasing the capture lock, verify the committed canonical object
+through `ArchivedNormalizedSource::load` in `src/conversation/notebook.rs`
+and compare the fresh input's raw normalized JSON digest and byte count,
+canonical media digest and size, document, format, source digest, exact
+extractor revision and ordered units digest against the archive. The raw JSON
+digest and the historical image-set digest represent separate inputs. Build
+the existing `Index` over the independently admitted units. Require its
+complete `IndexKey` to match the archive and, for inheritance, the exact
+prior key, origin-turn reference and archive reference. Query it once using
+the exact new question and existing limits. Preserve page, unit and UTF-8
+range, including exact-key zero matches and a source-bound memory scope.
+
+Perform input and archive reads, image and JSON validation, hashing, Index
+construction and query outside Store and admission locks. `load` acquires
+the Store lock briefly through `Store::read_object`; never call it from a
+guard already holding that lock. Check the original request deadline around this bounded work and preserve the existing notebook input/object, image, frame,
+passage and prompt bounds. Use only the established short owner-currentness
+check and captured generation/head/transaction checks at guarded submission,
+result acceptance and output. Reuse the existing deadline and budget
+throughout each request.
+
+Use the existing `SourceAssociation::Original`, `RequestEvidence` and
+receipt. In `src/conversation/receiving.rs`, admit the archive as retrieval
+origin only for the notebook-aware captured follow-up. Structural historical
+readback validates the pinned origin, archive identity, media descriptor and
+exact key and can report missing media. It can recover the original receipt.
+The private fresh path requires the separately admitted source and existing
+guarded research, answer and output handoffs. Keep the archive reference and
+its media availability even if the origin precedes the selected history range.
+In `src/conversation/receiving/images.rs`, the archive's canonical JSON is
+text provenance. Only the existing verified capture path supplies PNG
+attachments. In `src/conversation/receiving/answer.rs`, keep the source and
+page/range in the frozen payload and citations and label OCR passages and
+rendered references as unverified historical OCR.
+
+Extend the ordinary source-aware fixture in
+`src/simulator/combined/resident.rs` using the ordinary notebook Store
+setup and archive producer in `src/simulator/combined/qualification.rs`.
+Use the existing normalizer with a scripted whole-page result over three
+nonconsecutive supplied pages, including one declared blank. Seed the actual
+Writer-owned archive, ask an explicit Reader question, then inherit that
+Reader evidence on a different Buddy visit with a history range excluding
+the archive's origin. Verify one query per question, a later page and exact
+range absent from the first result, preserved source and history, visible
+unverified OCR and one Generated per successful operation. Verify an
+explicit retarget to another admitted archive.
+
+With the same archive and history, verify structural readback of the original
+out-of-range association. The generic fresh receiver and evidence preparation
+APIs must refuse that archive as the original even with its exact key and an
+Index. The opt-in route must also refuse without independent admission. Check
+zero queries/model submissions on refusal and exact PNG attachments from the
+existing capture path on success, with zero attachments from canonical JSON.
+Refuse changed raw JSON with unchanged units, changed image-set mapping,
+changed profile, changed units, partial or missing input, and unavailable
+archive media before a query or model submission. Reuse source-drift and
+lost-ack cases to verify original receipt recovery without replay, new drafts
+or output. Installed acquisition, native authority and live OCR accuracy
+require their own evidence.
 
 ## Evidence, submission and output
 
