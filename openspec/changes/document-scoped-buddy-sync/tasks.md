@@ -338,6 +338,13 @@ The backend's actual busy-Store refusal case is accepted in Buddy [`fa5a3e1`](ht
 - [ ] Exercise the actual resident receiver and source producer in hosted fixtures: source swaps and redirects, exact-key zero matches, unchanged request/history, pure/mixed/empty memory, opt-out and unavailable research, cancellation/deadline/read exhaustion, changed selection and lost acknowledgments. Preserve the ordinary controls.
 - [ ] Obtain independent paired source review and exact-revision hosted validation, reconcile modeled versus installed/model qualification, and retain explicit remaining work for follow-up source inheritance and unsupported formats. Do not close the broader Reader or shared-sync parent from this first PDF increment.
 
+## Ordinary Reader follow-up source inheritance
+
+- [x] Independently review the [ordinary follow-up contract](ordinary-reader-source-followups.md) and dispatch delta before implementation.
+- [ ] Connect the opt-in ordinary follow-up to one captured evidence preparation and whole-source query. Preserve named inheritance, identical-byte reindexing, deliberate retargeting and explicit no-document while refusing changed original bytes before query or model submission.
+- [ ] Reuse prepared history, passages and verified images through fresh evidence acknowledgment, guarded answer, Generated and existing output ownership. Verify stale, conflicting and uncertain publication boundaries without replay.
+- [ ] Qualify the composed ordinary path in hosted CI against the paired source, including a second follow-up and exact source locators. Retain installed selected resumption and live source admission as separate work.
+
 ## Ordinary data snapshots for isolated backup
 
 - [x] Reuse the format-1 archive collector, validation and writer under a same-Store current isolated lease. Skip empty history and publish the marker only after verified objects.

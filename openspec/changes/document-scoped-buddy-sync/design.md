@@ -400,6 +400,14 @@ insufficient. Explicit no-web intent must survive every stage without altering
 the original question. The leaf is proposed precode until review and source
 verification complete, and it grants neither native effects nor qualification.
 
+### Ordinary Reader follow-up source inheritance
+
+The [ordinary follow-up contract](ordinary-reader-source-followups.md) joins one
+declared source preparation and exact evidence acknowledgment to the existing
+ordinary receiver. The current input visit and inherited original PDF have
+distinct ownership checks. Keep one prepared frame through answer assembly and
+guard the original evidence and source at submission and publication.
+
 ### Ordinary data snapshots for isolated backup
 
 The isolated publisher can prepare an ordinary format-1 data snapshot using the

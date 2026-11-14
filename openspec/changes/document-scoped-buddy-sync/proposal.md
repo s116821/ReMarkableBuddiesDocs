@@ -85,7 +85,17 @@ owned processing and provider lifetimes, and durable citation text.
 Preserve ordinary receiving APIs and the existing selected preference, memory,
 handwriting and original-receipt guards. Unsupported or changed source input
 must not silently become source-less success. This continuation does not claim
-installed/native qualification, resumed conversation source inheritance, EPUB or
+installed/native qualification, selected conversation source inheritance, EPUB or
 notebook support, live-model fidelity, or completion of the wider Reader roadmap.
 Its implementation, verification and eventual completed-scope specification sync
 remain part of the existing linked delivery, not a planning-only merge.
+
+## Ordinary Reader follow-up source inheritance
+
+Connect the existing ordinary Reader follow-up to the named-source Ledger
+evidence path. Query the original PDF for each new question, preserve explicit
+no-document and deliberate retargeting, and refuse changed original bytes.
+The [ordinary follow-up design](ordinary-reader-source-followups.md) defines
+the opt-in input, guarded publication and hosted acceptance. This extends
+`ordinary-conversation-dispatch`; selected installed resumption has its own
+admission requirements.
