@@ -346,6 +346,17 @@ Use the existing hosted composition suite with synthetic provider and
 wired responses. Product registration, live namespace and installed/wired
 restore qualification remain under their existing tasks.
 
+### Source checkpoint
+
+The six-file Manager implementation at
+`26877e8808861046b7378038aa304b8c636495fb` has passed independent source review
+and scoped syntax/whitespace checks. The existing composition suite has 14
+authored subcases in three groups, including short, excess and wrong member
+readback, original Confirm, held reads/commands and uncertain retirement.
+Hosted execution remains pending. Cleanup uncertainty is returned privately
+and remains retrievable through the backup owner's original cancellation
+result; this does not claim automatic refresh of the ordinary status view.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated
