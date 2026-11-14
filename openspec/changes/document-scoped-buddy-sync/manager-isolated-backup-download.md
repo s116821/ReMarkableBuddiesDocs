@@ -257,6 +257,34 @@ from the renderer or downloaded package.
 
 ### Installed host verifier
 
+Provide an explicit value-free `--browser-helper` mode in the existing packaged
+Manager executable. It starts the existing fixed-loopback helper with browser UI
+assets from `app.getAppPath()/dist/manager/browser`, before creating a desktop
+window or registering desktop IPC. Host modules and native resources still come
+from the same installed external resources used by normal Electron mode; only
+static UI reads use ASAR. Do not add an executable, release asset, chosen port or
+path, or runtime code download. Source-only browser helper mode does not acquire
+installed-dependency authority from a lookalike directory.
+
+Normal explicit launches open only the helper's own returned loopback preview
+URL in the user's browser and expose that URL for attached terminals. A trusted
+host test seam may suppress external-browser launch without granting any path,
+credential or verifier choice. Startup failures produce no success URL and must
+not fall through to desktop startup. Normal desktop behavior remains intact.
+Windowless Linux use still needs the supported Electron desktop environment;
+it does not imply display-server-free operation.
+
+Use one idempotent awaited shutdown on signals and explicit quit. Stop admitting
+HTTP requests, invalidate pending owners, close the helper and finish owned
+cleanup before ordinary process exit. When the download coordinator is later
+composed, shutdown must await its existing child join and checked stage disposal.
+Browser page-close signaling is best effort and does not replace host expiry or
+authority checks. Forced process termination cannot prove cleanup or authorize
+scavenging. Extend the existing packaged host tests to launch this actual mode
+and verify its ASAR UI, loopback/session checks, lack of desktop windows, ordinary
+shutdown and truthful unconfigured/unqualified results. The launch mode alone
+does not activate backup download, restore or the installed oracle factory.
+
 The verifier adapter is disabled by default. Its trusted host constructor may
 select the resource directory and expected dependency pin; a renderer, user
 setting, provider object or staged package may not select an executable. Before

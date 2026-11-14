@@ -314,6 +314,10 @@ Manager SHALL reconstruct only the explicitly selected ordinary V1 closure under
 - WHEN the executable is absent, changed, wrong-platform or unqualified for the actual browser-helper or Electron distribution
 - THEN verification remains unavailable; a working Linux source command, static browser ZIP or successful package build alone cannot claim a qualified Windows or installed-host path.
 
+#### Scenario: The packaged Manager starts its browser helper
+- WHEN the user explicitly launches the existing packaged executable with `--browser-helper`
+- THEN the existing fixed-loopback helper serves its packaged browser UI without a desktop window, resolves host resources only from the installed package, and awaits owned shutdown; the mode does not activate an unqualified oracle or grant source-only helper authority.
+
 ### Requirement: Manager package observation preserves release compatibility
 The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
 
