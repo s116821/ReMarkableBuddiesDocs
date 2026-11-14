@@ -11,41 +11,71 @@ Extend `reader_runtime::run_installed_selected` and
 `workflow::selected_resident_reader::run`. Use an optional, local-only
 `reader.researched_pdf` block in the existing trusted Config to admit this
 route for the configured, already registered document. Validate the typed
-block in `reader_runtime::Configuration`. Its fields are the required
-`no_internet_corner` and optional `research_model`. Without that block the
+block in `reader_runtime::Configuration`, with an optional `research_model`.
+Without that block the
 existing selected workflow continues. With it, an unavailable source or
 required research stage ends the request through the existing finalizer.
 Preserve ordinary Ledger APIs, selected Writer routing, and the default
 refusal when installed source or health admission is absent.
 
-Parse both corners with `TriggerCorner::from_string` and reject an unknown
-value or the same parsed corner, including aliases such as `LL` and
-`lower-left`. In `device/{interaction,input_observer,request_input}.rs`,
-enable the second corner only in the installed selected Reader idle observer.
-Both corners require the same stationary single-contact hold, complete
-release, and overlapping quiet-observer checks. Mixed contacts or crossings
-refuse a Reader release. The ordinary corner keeps its existing armed
-regional Writer priority and refusal on unknown slot state. Otherwise it
-supplies `UsePolicy`. The second corner supplies `NoInternet` for Reader
-only and leaves any Writer slot untouched. The resident owner sees the
-same Reader gesture. Re-admit the effective configuration after each release
-and refuse any change to the observer's corner mapping or opt-in block.
+Use the existing genuine Reader release and its current stationary hold,
+complete-release and quiet-observer checks. Preserve regional Writer priority
+and its refusal on unknown slot state. No new corner or input gesture is part of
+this increment. Re-admit the effective configuration after each release and
+refuse a changed or removed opt-in block.
 
-Freeze the typed directive with the release. `NoInternet` dominates effective
-policy throughout the Attempt. Model output, inferred intent and later
-configuration cannot turn research back on. Keep the interpreted question
-and history byte-exact. The second corner disables external web/tool research.
-Recognition, verification and answering still use the configured model service.
-The ordinary corner does not interpret free-form handwritten internet
-instructions. Delivering that form of opt-out requires an explicit intent
-admission with agreement and ambiguity controls before web egress. Its
-acceptance must demonstrate a handwritten denial blocks the research call
-while the exact transcription remains intact. Until then, the installed
-entry documents the second corner as the proposed per-release opt-out.
-Installed researched-route activation remains gated on accepting and implementing
-handwritten intent admission, including ambiguous intent refusal. The original-PDF
-producer and its offline composition can be implemented independently; neither
-that producer nor the proposed second corner closes this activation gate.
+### Handwritten no-web intent
+
+Reuse the existing analysis and independent verification calls. Only the
+researched route selects an additional bounded response contract; ordinary
+prompts, parsers and receiving behavior remain unchanged.
+
+- A private `workflow/reader_intent.rs` parser admits version1 metadata with
+  exactly one intent: `no-restriction`, `no-internet` or `unclear`, plus a
+  literal evidence quote for a denial. Limit its serialized metadata to 4 KiB
+  and its quote to the existing 2 KiB question bound. The analysis header
+  requires one unique QUESTION and one `REQUEST_WEB_JSON` field. Duplicate,
+  missing, unknown, malformed or oversized intent data refuses. Answer prose
+  cannot provide a replacement field. Verification uses a strict JSON envelope
+  containing version1, its own exact transcription and its own request-web
+  metadata; no first-matching-line fallback authorizes intent.
+- Both calls independently read the same acknowledged image batch. Verification
+  receives neither the analysis question nor its proposed answer, intent or
+  quote. Only the current user's handwritten question annotation supplies
+  intent. Printed source prose, quoted examples, selected passage content,
+  prior history, retrieved text and unrelated ink are data. Uncertain negation
+  or annotation association is `unclear`. A denial quote must occur literally
+  in that call's own transcription. A separate note that cannot be bound to
+  the question must be reported as unclear; do not concatenate it into the
+  accepted question or silently ignore it. Confirmed handwriting examples
+  remain letter-form data. A narrow opt-in response-format addendum must avoid
+  the ordinary helper's conflicting one-line verification instruction.
+- Preserve the existing transcription agreement test and keep the analysis
+  question bytes unchanged for Interpret, retrieval and final context. Two
+  `no-restriction` readings defer to the frozen saved policy; two `no-internet`
+  readings produce NoInternet. Any disagreement, unclear reading or invalid
+  packet stops this request before Interpret, web research or final answering.
+  There is no third call, retry, rewritten question or legacy-answer fallback.
+  NoInternet and saved Disabled are code-enforced vetoes. Model output and
+  later configuration cannot turn research back on. NoInternet disables
+  external web/tool research; recognition, verification and answering still
+  use the configured model service.
+- The selected Attempt owns one non-deserializable `AdmittedIntent`. Bind the
+  locally computed exact question digest, both reading/evidence fingerprints,
+  prepared token/root/user/capture and image identities, and frozen policy.
+  After fresh Interpret, verify its exact question/capture and bind its new
+  token/root/user references. Research construction and actual handoff consume
+  this same admission alongside the existing joined gates. A caller's bare
+  `UsePolicy` enum or model-generated hash is insufficient. Keep its fingerprint
+  with the process-owned Interpret/Generated inputs and check it at answer
+  handoff and Generated CAS. No durable schema is added: after process loss,
+  an Interpreted turn cannot reconstruct permission for new research. Uncertain
+  Generated publication allows only original receipt recovery.
+
+Implementation and scripted fixtures must establish this contract before
+researched-route activation. Live handwriting/model qualification must separately
+cover denial paraphrases, negation, abbreviations and source/annotation confusion.
+Agreement between two readings is not proof that both models can never miss ink.
 
 ## Produce and pin the original source
 
@@ -172,14 +202,19 @@ answer prompt part, separate from the exact frozen evidence JSON. Count the
 complete descriptors and label the initial UTF-8 byte counter as a
 conservative request-size bound, without a model tokenizer claim.
 
-Use `ReaderPreferences::config()` for effective research policy and preserve
-the explicit directive. Before reading any credential, admit the exact
-Config, document pin, route, selected memory provider compatibility, and
-model/endpoint configuration. For required research, the local block
+Use `ReaderPreferences::config()` for effective research policy. Before reading
+the protected answer credential, admit the exact Config, document pin, route,
+selected memory provider compatibility, and answer-model/endpoint configuration.
+Freeze the non-secret search declaration then; handwritten intent is not yet
+known. After the two-reading intent admission, validate the search profile only
+if the frozen policy and intent actually require research. The local block then
 selects `research_model` explicitly. Admit only the initial exact pair
 `gpt-5.6-terra` and `https://api.openai.com/v1/responses`, which has
 [retained standalone web-search evidence](../archive/2026-10-25-acquire-openai-web-research/tasks.md).
-Reject a missing or different research profile before reading the secret.
+Reject a missing or different required research profile before constructing the
+research transport, borrowing the request-local secret for that destination or
+submitting a web request. Recognition may already have used the separately
+admitted answer credential; it does not authorize research.
 This allowlist describes the initial search profile. Answering uses the
 configured Chat Completions model independently, including an admitted
 `gpt-6.1-terra` setting. The standalone search evidence establishes no
@@ -193,7 +228,7 @@ use environment or CLI credential overrides in this opt-in route. Split
 non-secret selection from credential resolution in `config.rs` and
 `selected_resident_reader.rs`; use only the resolved request-local secret.
 Tests inject a loopback transport in the existing in-process fixture.
-Disabled and per-release NoInternet produce their existing distinct zero-web
+Disabled and admitted handwritten NoInternet produce their existing distinct zero-web
 reports and skip research transport and search-profile admission. Read the
 protected credential once for the admitted answer model and permit research
 to borrow it only when its required profile was admitted. Required with
@@ -202,7 +237,8 @@ citations labeled by their actual provenance.
 
 Use four ordered one-use stages in `reader_attempt/selected.rs`.
 Analysis and independent verification use the same acknowledged images and
-retain their existing prompts and checks. Interpret must be freshly
+the researched intent response contract above, retaining the existing
+transcription and handwriting custody checks. Interpret must be freshly
 acknowledged before research. Use the research adapter and final answer
 consumer in place of legacy enrichment, then publish one draft. Disabled
 or NoInternet marks research skipped, giving three submissions. The
@@ -273,10 +309,12 @@ digest/key/frame/EOF and abrupt exit. Assert cancellation observes child
 exit and reaps it before another request. Use two candidate PDFs to prove only the
 captured document is queried. Assert unchanged request/history, exact
 outbound stage order, payloads and citation locators, and one durable
-Generated draft. Cover equivalent-corner rejection, crossing, Writer
-arbitration and both release directives, effective Disabled,
-required-but-unavailable, pure and mixed selected memory including empty,
-precredential refusal, drift before a handoff or CAS, withheld responses,
+Generated draft. Cover ordinary Reader/Writer arbitration, handwritten denial
+under Required with no search profile, effective Disabled despite unrestricted
+model readings, disagreement/unclear/duplicate intent, quoted or printed denial
+text, and preservation of exact question bytes. Cover required-but-unavailable
+research, pure and mixed selected memory including empty, answer-credential
+eligibility and late research-profile refusal, drift before a handoff or CAS, withheld responses,
 budget/cadence exhaustion, and lost acknowledgment without replay.
 Retain ordinary no-document, selected-memory refusal, and ordinary
 three-stage controls. Assert zero ordinary or native output mutations.

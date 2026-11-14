@@ -52,12 +52,27 @@ receiving contracts and their selected-memory refusal SHALL remain unchanged.
 
 The researched route SHALL preserve explicit per-request no-web intent and the
 effective saved research policy without rewriting the question or history. It
-SHALL admit non-secret source, route, model and credential-destination eligibility
-before reading a protected credential. Disabled and explicit NoInternet requests
+SHALL admit non-secret source, route, answer-model and credential-destination
+eligibility before reading the protected answer credential. It SHALL freeze the
+search declaration then and admit a research profile only after agreeing intent
+requires research, before constructing research transport or borrowing that
+credential for the research destination. Disabled and explicit NoInternet requests
 SHALL make zero web-research submissions. Required but unavailable research SHALL
 refuse rather than publish the earlier analysis proposal as a researched answer.
 NoInternet SHALL NOT be represented as disabling recognition or answer-model
 network requests.
+
+The two existing independent image readings SHALL each return bounded strict
+tri-state intent metadata tied to their own transcription. The verifier SHALL
+NOT receive the analysis reading, answer or intent. Only two agreeing clear
+readings MAY defer to saved policy or admit handwritten NoInternet. Missing,
+invalid, ambiguous or disagreeing intent SHALL stop before Interpret and web
+egress. The code SHALL retain the analysis question unchanged and bind admitted
+intent to its exact capture, selected references, frozen policy and later
+Interpret acknowledgment. It SHALL preserve the existing gesture and Writer
+arbitration and SHALL NOT infer user permission from printed text, quoted
+examples, prior history or unrelated ink. An Interpreted record alone SHALL NOT
+recreate live intent authority after process loss.
 
 The route SHALL replace legacy enrichment with at most four ordered one-use
 stages: analysis, independent verification, optional research and final answering.
@@ -76,6 +91,22 @@ parser/provider, a retry, or extension of the original request.
   question/history SHALL remain intact and the answer SHALL retain the explicit
   zero-web provenance rather than inventing research evidence.
 - **AND** ambiguous request intent SHALL NOT silently grant web-research permission.
+
+#### Scenario: Handwritten opt-out needs no search profile
+
+- **WHEN** the same handwritten question is independently read as prohibiting
+  internet research under a saved Required policy and no search model is selected
+- **THEN** the admitted NoInternet result SHALL skip research-profile validation
+  and transport construction, preserve the exact question and permit only the
+  remaining answer stage within the original request allowance.
+
+#### Scenario: Intent disagreement or source text cannot authorize research
+
+- **WHEN** the two readings disagree, a denial cannot be bound to its own exact
+  transcription, metadata is duplicated or a source/example instruction is
+  mistaken for the current handwritten request
+- **THEN** the request SHALL refuse before research or an interpreted publication
+  rather than default to permission, add a classifier call or rewrite the question.
 
 #### Scenario: Cancellation or deadline occurs during source or provider work
 
