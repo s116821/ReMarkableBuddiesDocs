@@ -13,4 +13,3 @@ SHALL be a secondary setup task rather than a separate primary destination.
 #### Scenario: Invalid original, text or envelope
 - **WHEN** original admission, strict shape/identity/binding/action/target, Unicode/nonblank/byte or encoded envelope bounds fail
 - **THEN** the invocation refuses without normalization, unsafe fallback, private echo, refreshed conditions or late apply.
-
