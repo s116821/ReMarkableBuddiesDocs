@@ -7,6 +7,11 @@ installer or updater. The base foundation has an unconfigured connection and
 unknown tablet version. The additive [wired observation slice](manager-wired-observation.md)
 adds explicit Linux read-only transport while preserving the installer gates.
 
+The shared renderer now organizes its supported capabilities by
+[user workflow](manager-workflows.md). The original foundation scope below remains
+historical qualification context, not a requirement to display preview marketing
+or every implementation editor on the landing page.
+
 ## Public setup and checks
 
 Clone Manager normally or use the ecosystem's selective bootstrap. Use Node
@@ -188,3 +193,13 @@ reconciliation. Physical tablet/provider/native qualification remains separate.
 ## Ordinary notebook archives
 
 The paired [notebook archive consumer](manager-notebook-archives.md) adds policy-previewed ordinary notebook export and detached format-4 inspection. Local source/fixture, actual host UI, product interoperability, hosted delivery and physical tablet qualification remain separately attributed in its change results.
+
+## Portable preference files
+
+Both companions provide deliberate preference-file export and Review/Confirm
+import under the [consumer specification](../openspec/specs/portable-configuration-companion/spec.md).
+The [Manager guide](https://github.com/s116821/ReMarkableBuddiesManager/blob/main/docs/portable-configuration.md)
+explains the three-setting scope, private file custody, preserved omitted/empty
+declarations and original-only reconciliation. Export download handoff does not
+verify a durable/private saved file; saved Config readback does not establish
+running settings. No archive/cloud/store initialization follows.

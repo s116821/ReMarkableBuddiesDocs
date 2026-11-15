@@ -1,0 +1,7 @@
+# Original reference protocol, scoped notebook admission
+
+The [original contract](../archive/2026-10-22-edit-saved-model-credential-reference/contract.md) remains authoritative for fixed records/bounds/name grammar/hash domains, raw origins/Set/Clear/no-op and uncertainty. No wire/schema change. Scope is only root model_credential, never key bytes or credential-file operations.
+
+Add a distinct reference-only storage entry reusing existing selected-aware Preferences admission under original exclusive custody: complete ready ordinary notebook4, owned identity/current/capabilities, absent/empty selected+retained history, complete local manifests, validated absent/LocalOnly mode. Legacy1/2/3 and their supported mode behavior remain unchanged. Generic configuration, actual Linux credential-file publication and all other callers retain current boundaries.
+
+Preserve exact original source/path/base/change/target conditions, raw sibling values/omissions/nulls, consuming Store/mode custody through write_all/error with no flush, original-only Status and every existing status/outcome. Reports expose reference origin/presence only, never name; every operation remains runtime-unverified. No file existence/private-mode/auth/effective-provider/restart/revocation/two-file setup claim. Root/path metadata checks are retained; key files/data/media/history/identity/staging cannot change. Unknown file history is not settled by a reference edit or a later stale binding refusal.
