@@ -2,7 +2,9 @@
 
 Manager groups controls around the task you want to complete. The browser and
 desktop editions use the same navigation and show the capabilities available on
-their host. Opening a page does not apply settings or run a tablet operation.
+their host. Opening a page does not apply settings or start a new tablet task.
+Leaving an editor can discard its private draft or end its unused review; it does
+not undo a write that may already have happened.
 
 | Destination | What belongs here |
 | --- | --- |

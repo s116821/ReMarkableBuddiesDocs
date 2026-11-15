@@ -22,10 +22,11 @@ authoritative; clearer presentation must not manufacture feature availability.
 
 ## Interaction boundaries
 
-Navigation is local presentation state, not a device command. It must not silently
-apply, retry or claim to cancel operations. Keep pending/unknown results reachable
+Navigation changes presentation and ends unused editor authority when necessary;
+it must not silently apply, retry or claim to undo operations. Keep pending/unknown results reachable
 after navigation. Private drafts must retain the existing controller lifetime and
-clearing guarantees. Direct controls may simplify set/clear/keep terminology but
+clearing guarantees, including nested choices that hide inputs. A hidden or late
+private result must not rearm an empty editor. Direct controls may simplify set/clear/keep terminology but
 must preserve absent, explicit-empty, saved and effective-value distinctions.
 
 Credentials and their protected file references share a model-connection context

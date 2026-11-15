@@ -2,18 +2,22 @@
 
 ### Requirement: Task-oriented Manager navigation
 Both browser and Electron SHALL provide Tablet, Settings, Data, and Backup & sync
-destinations with secondary Troubleshooting. The initial view SHALL prioritize
+destinations with secondary Troubleshooting. The first view in a fresh session SHALL prioritize
 connection and current tablet state. A host protocol or archive generation SHALL
 NOT become a primary navigation destination. Source: maintainer UX correction and
 the public Manager outcomes in the revised roadmap.
 
 #### Scenario: Open Manager without a tablet
-- **WHEN** Manager starts without a current tablet observation
+- **WHEN** Manager starts in a fresh session without a current tablet observation
 - **THEN** it shows a focused connection view, truthful availability and navigation to settings and account management rather than every editor at once.
 
 #### Scenario: Navigate while an outcome is unresolved
 - **WHEN** a user changes destination with an operation pending or uncertain
 - **THEN** navigation does not dispatch or replay it, and its original status remains reachable with the existing lifetime guarantees.
+
+#### Scenario: Hide an unused private editor
+- **WHEN** navigation or a nested choice hides a private input or revealed value
+- **THEN** its existing clearing policy applies, and a late result cannot re-enable a blank or invisible draft for saving; pending or uncertain original outcomes remain reachable.
 
 ### Requirement: Contextual configuration and maintenance
 Related settings and maintenance operations SHALL share a user-task context.
