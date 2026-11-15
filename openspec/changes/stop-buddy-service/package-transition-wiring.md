@@ -259,6 +259,16 @@ Stop exclusion. A failed phase proof never yields completed or submission author
 
 ## User flow and verification
 
+Place package controls in Tablet and expose pending or retained original
+operations through Activity. The opened panel keeps its lazy controller across
+task navigation so a pending change or an unknown/continuable original is not
+lost. An unused initial or remaining-step Ready review is invalidated when hidden,
+including a late review result. The original continuable row and goal reservation
+survive; resuming still requires a fresh review and explicit confirmation of only
+the proven remaining phase. Navigation never renews a deadline or replays a
+package or Stop command. The separate Stop panel and reciprocal busy/epoch guards
+remain unchanged.
+
 The shared panel presents the selected operation's reviewed consequence and an
 explicit confirm. Disable affects startup; removal preserves owned user data;
 replacement reports its host-selected versions and any downgrade impact before
