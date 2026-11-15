@@ -429,6 +429,27 @@ Browser and Electron Manager SHALL offer a deliberate preferences preview for th
 - WHEN either companion uses its default production startup with those inputs absent
 - THEN no verified preferences preview is available and the host dispatches no portable maintenance from the backup path.
 
+### Requirement: Manager previews verified backup data in the existing Ordinary Restore flow
+
+Both companions SHALL offer a deliberate data-only restore preview for the exact verified backup and admitted existing wired target through the [closed preview bridge](../../manager-isolated-backup-download.md#manager-data-restore-preview-from-a-verified-backup). Data and preferences previews SHALL share one attempt owner and one consumable verified download. The ordinary owner SHALL retain the private archive path and stage receipt. The existing explicit Confirm and original Status SHALL remain the Apply and reconciliation routes.
+
+#### Scenario: The operator previews the original verified data
+- WHEN the current document, exact verified backup selection and admitted connection and boot match a deliberate data preview
+- THEN Manager takes only that verified download under the joined maintenance owner, joins source retirement, and delivers a checked data-only Ready in its existing Ordinary Restore panel without a renderer filesystem path or Apply.
+
+#### Scenario: Two preview actions compete for source custody
+- WHEN preferences or data preview is refused Busy while the other action or a maintenance operation holds custody
+- THEN retry permission requires refusal before consumption, no cleanup uncertainty and the same still-eligible original download. A consumed download cannot supply either a rival preview or automatic retry.
+
+#### Scenario: Cancellation races an original preview or Confirm
+- WHEN cancellation, stale authority or failed delivery occurs during a data preview or an outstanding pre-Apply check
+- THEN only the original joined work and exact still-ready editor retire, the original cleanup uncertainty remains visible, and a possible Apply and its original Status reference survive independently of the backup preview.
+
+#### Scenario: A default or unqualified destination is requested
+- WHEN trusted source or destination admission is absent, or the requested target is not an admitted existing wired store
+- THEN the bridge returns no Ready and dispatches no unqualified restore path. Source, host fixture and packaged evidence leaves provider, installed, and clean or replacement target qualification open.
+
+
 ### Requirement: Manager package observation preserves release compatibility
 The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
 

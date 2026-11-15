@@ -873,6 +873,157 @@ with original command, harness, provenance and ZIP bytes preserved.
 Production factories remain absent. The preceding private-handoff run belongs
 to `26877e8808861046b7378038aa304b8c636495fb`, not this consumer revision.
 
+## Manager data restore preview from a verified backup
+
+Add a deliberate **Preview backup data restore** action beside the existing
+preferences action on the verified selection. It feeds the existing Ordinary
+Restore preview, Confirm and Status through the [host-owned handoff](#host-owned-restore-preview-handoff)
+and [streaming adapter](#manager-streaming-adapter). The source may belong to
+another tablet. The destination is the existing admitted Buddy store on the
+current wired connection and boot. The host keeps the stage receipt and
+resolves its data child. Clean or replacement target admission, installation,
+service quiescence, real provider composition and installed qualification
+remain open.
+
+### Closed bridge and publication
+
+Add this V1 branch to the existing isolated-backup bridge.
+
+~~~text
+{version: 1, action: 'preview-restore', operation, reference, connection_id, boot_id, invocation}
+{version: 1, operation, reference, invocation, status, retryable, preview, cleanupPending}
+~~~
+
+The operation and reference are the original verified backup handles. Both
+and the connection ID use the existing lowercase 64-hex predicate. The boot
+and invocation use the ordinary restore UUID predicate. The Ordinary Restore
+controller creates one invocation for this deliberate preview. The host binds
+it to the exact Prepare and editor context. Further ordinary actions keep their
+existing invocation and editor-reference rules. No request contains a path,
+archive bytes, receipt, grant, source-device override or Apply intent.
+
+Use strict parsing, the existing 512-byte request cap and a 9 KiB result cap.
+Echo the exact operation, reference and invocation. Status is `ready`, `busy`,
+`capacity`, `invalidated` or `unavailable`. `retryable` and `cleanupPending`
+are booleans. Only Ready carries the existing ordinary `RestoreResult`, with
+its separate ordinary reference and state `ready`. Apply its existing 8 KiB cap
+and `parseRestoreResult` with the path-free Prepare context
+`{action: 'prepare', connection_id, boot_id, invocation}`. Require the
+observed target to match the admitted request and the preview's source and
+target summaries to be data-only. The host checks exact selected data digest
+and media completeness using the existing Prepare contract. Every failure
+carries null preview. Cleanup uncertainty yields a failure, null preview and
+no retry permission. If source retirement is uncertain, withhold Ready and
+retire the original destination under the existing deadline and reader guards.
+Keep the existing preferences and other isolated-backup frame shapes.
+
+Use the existing loopback route and Electron IPC channel, with their existing
+arity, exact origin/session or main-frame checks. Capture the original document
+and a valid wired observation at admission. Require the same connection and
+boot and the current model, firmware and architecture admission checks.
+The shared UI requires the existing ordinary inspection capability. The
+trusted destination injection binds the stage function to its admitted
+existing target and exact connection and boot. The presence of a wired
+observation alone grants no stage admission. Recheck
+document, original selection, target and the issued ordinary Ready immediately
+before returning the IPC reply or ending the HTTP response. Abandonment
+invalidates only that original attempt. Default hosts keep provider reading,
+local source staging and destination admission unbound. An unavailable
+factory returns a bounded refusal before source consumption or Prepare.
+No new preload capability or device command is needed.
+
+### Shared ownership and restore lifecycle
+
+Extend the existing preferences bridge owner with the data branch. Both actions
+use one synchronous attempt slot for the original action, document, selected
+pair, target, cancellation and issued editor. They share `canHandoff` and
+`takeVerifiedHandoff` in the existing backup host. The winner consumes the
+verified download once inside its joined maintenance admission, after current
+authority is checked. A competing bridge slot may answer Busy without retry
+permission. Otherwise retryable Busy requires no consumption, no cleanup
+uncertainty and the exact original download still eligible at delivery. Target
+refusal after consumption may keep the private ordinary handoff's unavailable
+reduction. A consumed download cannot feed either action again. A later
+deliberate selection and download uses its own identity.
+
+Carry the admitted invocation and host-only `signal`, `current` and
+`releaseAttempt` through `prepareRestore` and its existing joined ordinary
+handoff. Fence only the captured operation through stage receive/check,
+Prepare, source retirement and delivery. The source broker aborts its own
+signal on normal retirement. Final publication therefore uses the original
+document, selection, target and preview attempt, including the ordinary
+owner's current issued result. Keep the exact host-issued Ready object until
+retirement or the possible-Apply boundary.
+
+Backup Cancel, authority expiry, navigation, response abandonment and shutdown
+fence the original pre-Apply attempt and join its writer, child, source and
+admissible destination retirement. Join outside the preparation promise.
+Private preparation abort before taking the verified download grants no
+source-consumer authority. The existing explicit backup Cancel can retire
+that exact original download and returns its existing cancellation frame with
+the joined cleanup warning. Never renew an expired active attempt or use a lost
+terminal reply as cleanup authority. Tablet Stop requires its own explicit
+operation.
+
+Add a host-only Ordinary Restore discard hook patterned on the portable
+issued-preview guard. Require the exact issued object, handoff editor, epoch
+and still-ready state with no possible Apply. Reuse the existing drop and
+checked stage retirement and return its awaited uncertainty to the bridge.
+If cancellation races the same joined Confirm during its pre-Apply stage
+check, fence and join only that invocation before retiring the destination.
+Never delete a stage while its original reader may remain active. Release the
+bridge slot after exact editor retirement settles or when Apply becomes
+possible. A stale result cannot discard a successor, manual editor or possible
+Apply.
+
+Existing explicit Confirm checks backup authority before admission and again
+after the stage check, immediately before it marks Apply possible. Observe
+the backup abort signal only during that pre-Apply interval. Detach the bridge
+owner and abort hook at the same synchronous boundary that marks Apply
+possible. Later backup cancellation or selection loss cannot interrupt that
+Apply, delete its possibly used stage or erase the original Status record.
+Continue using the existing ordinary intent, connection, boot and reference
+for Status. An unknown Apply has no replay or new source route.
+
+### Shared UI and follow-on scope
+
+Reuse the backup controller's preview generation, exact cancel and cleanup
+reporting. Add one path-free adoption entry to the existing Ordinary Restore
+controller, using its reducer, ready reference, invocation and expiry
+bounded by the original selection deadline. The UI compares the same profile,
+selection, generation and captured observation before and after the existing
+local-only observation pause. It never fills the manual path draft. Route a
+backup-backed pending or still-ready Stop through the exact backup Cancel so
+its cleanup warning remains visible. The same interaction sends no second
+ordinary Cancel. Entering Confirm's busy view keeps the backup authority
+through dispatch admission. After possible Apply the existing controller owns
+the outcome and retained Status view. Preserve prior retained rows and manual
+and notebook behaviors.
+
+Future code is limited to `host/isolated-backup-protocol.mjs` and its
+`.d.mts`, `host/isolated-backup-preferences.mjs` for the shared slot,
+`host/isolated-backup-composition.mjs` and `host/ordinary-restore.mjs` for the
+trusted hooks, and existing owner wiring in `host/browser-helper.mjs` and
+`electron/main.cjs`. Reuse `src/host.ts`, `src/isolated-backup.ts`,
+`src/ordinary-restore.ts`, `src/app.ts` and `src/app.html` for dispatch and
+the existing panel. Test-owned composition may inject the existing destination
+adapter. Preserve the existing stage protocol, preferences transaction,
+manual restore protocol and 720 kB initial bundle budget.
+
+Extend `tests/isolated-backup-composition.test.mjs`,
+`tests/isolated-backup-helper.test.mjs`, `tests/isolated-backup-controller.test.mjs`,
+`tests/ordinary-restore-controller.test.mjs` and `tests/isolated-backup-hosts.mjs`
+with their existing source/browser and Electron fixtures. Exercise a retained
+verified package on a modeled existing target, Preview without Apply, then
+explicit Confirm and original Status. Include complete and omitted media,
+strict envelopes, cross-action contention, unconsumed Busy versus consumed
+failure, cancellation during a held writer or Prepare, publication drift,
+ready discard racing Confirm, and selection loss after possible Apply.
+Packaged default refusal proves no staging or maintenance dispatch. Use
+existing hosted checks and packaged integration. Positive test-owned
+composition remains modeled evidence.
+
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated
