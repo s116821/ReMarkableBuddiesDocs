@@ -400,8 +400,13 @@ Node syntax, scoped lint and whitespace passed.
 passed with 1,310 Node passes, zero failures or cancellations and five skips,
 including the new warning cases and retained remote-reader controls. The
 authenticated SSH channel-close test and separate 14 archive checks also passed.
-Build and native Integration remain pending. No actual tablet upload or cleanup
-is established by these synthetic-peer and host-owner results.
+The same [full run](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43654958927)
+passes optimized Build and both native Integration jobs. Linux passes 14 native
+archive tests; Windows passes 12 plus three native custody controls. Both
+platforms pass source and retained browser/Electron checks and the retained
+oracle against actual producer packages, with the original packaged bytes
+preserved. These synthetic-peer and host-owner results do not establish actual
+tablet upload, cleanup or installed/provider qualification.
 
 ### Manager adapter source checkpoint
 
