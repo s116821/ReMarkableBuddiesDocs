@@ -774,18 +774,31 @@ preview requires a fresh verified selection.
 
 Adopt the closed result through the existing portable controller's common
 validated result and expiry handling. Show the selected backup as the source
-and direct the operator to the existing preferences panel.
+and transfer the operator to Settings / Transfer preferences for the existing
+review and confirmation. The deliberate handoff changes the visible destination
+before preparing the consumer while preserving the exact selected source,
+original deadline and consumer receipt. It does not perform a second download or
+confirm an import. Data previews similarly enter Backup & sync / Export & restore
+with the existing older-format restore workflow selected.
 Expire the view at the earlier of the existing selection deadline and the
 normal portable Ready timer. The host checks its own deadlines.
 Expose Confirm only for the same still-current target and Ready reference.
 Both Stop buttons use the same backup operation while this preview is pending
 or still ready. Clear, Stop, rescan, reselection, Drive changes, target
-changes, visibility or navigation, expiry and disposal fence both views and
+changes, visibility or navigation away from the selected consumer, expiry and disposal fence both views and
 cancel the exact preview
 while it is pending or still ready. Fence cancellation and cleanup warnings by
 the initiating generation. Once Confirm can have dispatched, releasing the
 backup view preserves the existing portable original and Status UI. Retain
 manual file import/export and the shared preference editor as existing flows.
+
+The deliberate source-to-consumer handoff is the sole navigation exception to
+that preview clearing rule. A late preview requires the same connection, account
+and exact consumer workflow to remain current; changing destination or restore
+family cannot rearm a hidden confirmation. Unresolved original operations remain
+reachable through Activity. Backup setup and Cloud backups are separate tasks
+under Backup & sync; account sign-in alone establishes neither readiness nor a
+verified backup.
 
 Implementation scope is `host/isolated-backup-protocol.mjs` and `.d.mts`,
 `host/isolated-backup-preferences.mjs`, `host/isolated-backup-host.mjs`,
@@ -1136,6 +1149,14 @@ existing file lets the user proceed to the separately admitted **Prepare
 storage** action. Missing prerequisites block the relevant step with a
 reason. A later read of current configuration may likewise permit a separate
 storage review if all its own prerequisites hold.
+
+Place this flow in Tablet / Setup. Its controller and current/retained state are
+owned by the application, while the panel is disposable presentation. Missing or
+blocked configuration remains missing or blocked after leaving Setup; an
+unmounted panel is not evidence that setup is valid. Pending work and unknown
+original creation outcomes remain reachable through Activity without replay.
+Connection and document lifecycle invalidation keep their original behavior, and
+storage preparation retains its separate admission and confirmation.
 
 Use a distinct closed first-configuration request and response branch, reusing
 the existing UI setup controller pattern, browser local-helper and Electron
