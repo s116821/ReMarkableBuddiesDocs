@@ -11,6 +11,9 @@ Both companions SHALL offer explicit bounded inspection through the exact produc
 contract, show safe saved declarations and their origins, and keep runtime/provider/
 root/credential validity unverified. Inspection SHALL NOT grant settings mutation,
 active mode, reload or service authority; absent schema settings remain explicit gaps.
+The report SHALL be available under Troubleshooting rather than duplicating normal
+settings. Schema gaps and technical origins belong in that report; normal controls
+must still distinguish saved state from effective runtime behavior.
 
 #### Scenario: Deliberate saved snapshot
 - **WHEN** an admitted observed target is explicitly inspected
