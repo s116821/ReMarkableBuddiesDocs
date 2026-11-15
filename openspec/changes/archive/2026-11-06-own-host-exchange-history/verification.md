@@ -1,0 +1,24 @@
+# Host exchange ownership closeout
+
+This is the finite host ownership controller and maintained simulator in [Buddy125](https://github.com/s116821/ReMarkableBuddies/pull/125) / [Docs136](https://github.com/s116821/ReMarkableBuddiesDocs/pull/136). It does not supply a native range adapter or durable native effect settlement. Those unfinished requirements remain in the active `own-unified-exchange-history` change. The original results.md is retained unchanged as historical evidence, including its then-pending hosted checks and preserved failures.
+
+## Exact correspondence
+
+Original accepted source77043c8008a8ccf0d678c24dcd9cb31d4b305383 and Docs8cb350a5d616e311824834a9f1e1a410f3cab135 established the host-only boundary. Source6e0f78cdc59fbfa2c7bb04289ba9eca3d05f08ef resolved the delivered BlankStart integration defect; Docs00020c4b7e7ba057c6d0c5f1398f2b0d91b54610 preserved exact Windows passing/default versus failed-all-feature evidence. Independent source review accepted the initial controller and the later three-file invalidation correction without a blocking finding.
+
+Current source28085d2563283faca98744f9bc8e3a0ad88cf685 normally merges6e0f78c with delivered main86931620875e8144f42eb43daf26083f1d6a01f5. Docs reconciliation71f037ad05175ae334eefa554777d36ebc2a67d4 normally merges00020c4 with main2720aad9373464771f47fbbeb9d5d5bbbbb6a27d. There were no conflicts or intentional source edits. Effective source remains exactly five paths: controller, simulator implementation/scenario, and two module integrations. Controller, simulator implementation and JSON are byte-identical to6e0f78c; module additions remain the same isolated exports/dispatch. Delivered memory, retrieval, configuration, SDK and packaging work is preserved.
+
+## Completed evidence
+
+- Original Windows receipt: strict library Clippy, maintained ownership unit, six layout tests and actual binary20 modeled cases/native_effects0. Original manifest SHA256 `6d0d3f77c354d8de18667bdc11a110c5addbbf4814ee0aa072ed8f716245ecc0` and all three payloads remain retained.
+- BlankStart successor receipt: maintained unit, six layout tests and actual binary22 modeled cases/native_effects0. Default Windows library Clippy completed with inherited warnings. Its separate all-target/all-feature invocation failed with eight inherited resident-client E0425 errors and remains failed, not relabeled. Manifest `nov05-manifest.json` SHA256 `cc4ed019aec37989fc47b9ca20b1601b11b66621cb842ce7cc1f8ea1bcf2763b` retains all seven payloads. The later independent cfg repair was delivered separately in Buddy126; no duplicate repair is included here.
+- Exact6e0f78c [source CI41996108489](https://github.com/s116821/ReMarkableBuddies/actions/runs/41996108489) completed successfully: Title, Checks, application Build and Integration; PR Release skipped. Exact00020c4 [Docs42002324784](https://github.com/s116821/ReMarkableBuddiesDocs/actions/runs/42002324784) passed all three checks. This supersedes historical pending wording only, without changing earlier receipt attribution.
+- Current reconciliation formatting and whitespace checks pass. No local source build, test, model/provider or native/device execution was repeated for unchanged feature bodies. Automatic current-source CI42250261280 is required independently at28085d2; its completion is not inferred from the predecessor pass.
+
+The scenario uses actual Ledger/layout/ownership logic with a modeled page owner. It covers exact latest complete exchange membership, protected/older content, repeated Undo/Redo, stale visits and receipts, changed heads/Store identity, restored/replaced history, refusal/uncertain effects and BlankStart invalidation. It preserves source bytes, transcript and external export associations. This is not a native edit, physical latency or power-loss settlement proof.
+
+## Finite scope and final gates
+
+The canonical owned-exchange-history controller requirement and local-simulator fixture requirement are synchronized verbatim from their accepted deltas. Only this host unit is archived; native effect/settlement tasks remain active and unchecked. Final exact reconciliation CI, final Docs checks and independent final delivery review are still required before paired merge. No actual-main/release outcome or wider feature completion is claimed here. Existing source, failed logs and held evidence remain preserved; no cleanup was performed.
+
+Author closeout validation passed: both named host/native changes before archival, all121 current strict OpenSpec items after archival, documentation guidance36/preserved blobs126, and whitespace checks. All10 original evidence-file length/hash pins were reverified unchanged. The archived results.md Git blob is exactly `f14deee8086d874027abf5a534cd8a84839d7348`, matching the original00020c4 path. No historical failure or pending-at-the-time statement was rewritten into a pass.

@@ -19,7 +19,7 @@ The host SHALL retain original base/path/target evidence privately before one ap
 - **THEN** it has new conditions/reference and preserves the prior diagnostic without claiming rollback or evicting unresolved evidence at capacity.
 
 ### Requirement: Shared explicit editor with preserved session lifetime
-Both browser and Electron SHALL offer the same three-field saved editor using protected fixed host adapters, no-saved-override choices, truthful origins and neutral pending/readback status. Before-I/O external invalidation, original receiver, serialized cancel and after-await generation checks SHALL preserve ready/unknown references and unrelated memory-forget uncertainty.
+Both browser and Electron SHALL expose the same supported saved settings within their relevant workflow using protected fixed host adapters, no-saved-override choices, truthful origins and neutral pending/readback status. Trigger behavior belongs in Settings; diagnostic logging and image dumps belong in Troubleshooting. Presentation grouping SHALL NOT change the bounded three-field host contract. Before-I/O external invalidation, original receiver, serialized cancel and after-await generation checks SHALL preserve ready/unknown references and unrelated memory-forget uncertainty.
 
 #### Scenario: Refresh or navigation races a save
 - **WHEN** cancellation, same-ID refresh, real document navigation or target change occurs
@@ -53,7 +53,7 @@ Both hosts SHALL validate exact bounded public requests/reduced results and comp
 - **THEN** neither host nor UI restores ready/verified authority and original uncertain evidence remains separate from the failed invocation.
 
 ### Requirement: Deliberate bounded three-field save
-The shared editor SHALL expose only three supported finite fields and origin-aware set/clear with dirty keys. One120s ready grant permits at most one prepare/apply under one existing13s budget. One active slot and at most8unresolved original records SHALL remain bounded without eviction or condition refresh.
+The shared controls SHALL edit only the three supported finite fields and preserve origin-aware set/clear with dirty keys, even when behavior and diagnostics appear in separate contexts. One120s ready grant permits at most one prepare/apply under one existing13s budget. One active slot and at most8unresolved original records SHALL remain bounded without eviction or condition refresh.
 
 #### Scenario: Explicit null or unchanged field
 - **WHEN** a declared-null field is deliberately cleared or another field is left untouched

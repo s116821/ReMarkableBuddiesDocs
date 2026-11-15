@@ -1,0 +1,7 @@
+# Unchanged conditional declaration contracts
+
+This adds no wire or schema. Preserve the existing basic_version1/model_settings_version1/memory_settings_version1 requests, version1 reports, explicit config selection, exclusive selectors, exact-dash mutation input,16KiB I/O and1MiB source bounds, operation UUID/path/base/target domains and model/memory canonical patch hashes. Existing strict validators, no-op/stale/altered intent behavior and raw Set/Clear semantics are authoritative.
+
+Scope ONLY basic debug_dump/log_level/trigger_corner, model/base_url and memory enabled/profile Apply admission. Use the existing selected-aware preference entry under its original single custody. Legacy1/2/3 remain compatible; notebook4 requires full ready ordinary local state and no actual selected/retained history. No generic opener widening, credential-reference/credential-file operation, root relocation, profile lookup, provider call, mode change, import/sync/service/native action or Manager protocol update.
+
+Publication, exact readback, report-held Arc/mode custody, consuming write_all/error and original-only Status stay unchanged. No implicit flush or replacement/retry. Basic/model report restart-required after verified save; memory reports runtime unverified. Private model values/profile UUIDs remain excluded from summaries. A saved declaration is not running/provider/profile authority. Notebook/data/root/identity/current/metadata/media bytes cannot change through these writes.
