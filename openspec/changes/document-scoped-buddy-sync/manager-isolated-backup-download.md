@@ -381,8 +381,11 @@ formatting and whitespace checks passed. Original
 [hosted Checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/43655946337/job/132634406000)
 passes with 1,317 library tests and 15 literal-stdin CLI cases, including all five
 new stage-engine groups, the producer round trip and bounded silent/stalled pipe
-controls. Full application and ARM integration remain pending. The Manager
-adapter, installed selectors and target qualification retain their separate gates.
+controls. The same [full run](https://github.com/s116821/ReMarkableBuddies/actions/runs/43655946337)
+also passes Build and Integration using the unchanged retained packages for
+armv7 and aarch64 under emulation. This is not native/tablet qualification. The
+Manager adapter, installed selectors and target qualification retain their
+separate gates.
 
 ### Pre-receipt cleanup warning checkpoint
 
@@ -409,9 +412,17 @@ includes retained producer bytes through the real supervised child pipe and
 Prepare/Confirm/release, held writers and successors, bounded source-reader
 cancellation, and authenticated SSH terminal and failure controls. The local
 fixture child models the Python helper; the SSH cases separately exercise its
-actual execute boundary. Hosted execution is pending. The adapter remains
-unregistered; these source results do not establish installed selectors, real
-provider composition or physical target throughput and cleanup.
+actual execute boundary. The original [hosted Checks](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43659100364/job/132644256568)
+records 1,327 Node passes and five skips; the authenticated selector positives
+pass. The missing-EOF fixture refuses before dispatch under its one-second
+allowance. Reviewed fixture-only `f0fdbc3bdf65e8fcedf17830ed70f9fc62d5a084`
+uses the existing eight-second test allowance and additionally requires complete
+input EOF, sent terminal status and an actual timeout while output EOF remains
+withheld. Production code and its deadline are unchanged. Corrected hosted
+validation is pending in [the successor run](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43659688652);
+the original failure remains separate. The adapter remains unregistered; these
+results do not establish installed selectors, real provider composition or
+physical target throughput and cleanup.
 
 ## Private preview of verified backup preferences
 
