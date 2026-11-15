@@ -450,6 +450,32 @@ Both companions SHALL offer a deliberate data-only restore preview for the exact
 - THEN the bridge returns no Ready and dispatches no unqualified restore path. Source, host fixture and packaged evidence leaves provider, installed, and clean or replacement target qualification open.
 
 
+### Requirement: Manager creates the first target-local saved configuration explicitly
+
+Both companions SHALL expose the same deliberate first-configuration action on
+an admitted compatible installed and quiescent wired target as part of the
+[clean or replacement workflow](../../manager-isolated-backup-download.md#first-saved-configuration-on-a-clean-or-replacement-target).
+On Linux, the fixed Buddy command SHALL validate its own target-local defaults
+and use atomic no-replace publication only when the file is absent. The new
+selectors SHALL refuse before filesystem access on non-Linux. Review and
+current Check SHALL be read-only. Store initialization, backup preview and Apply SHALL
+each retain their existing explicit actions.
+
+#### Scenario: A clean target has no saved configuration
+
+- WHEN a reviewed and confirmed request still matches the installed target, connection and boot and the fixed configuration can safely be created
+- THEN Buddy publishes only its validated target-local default configuration and verifies readback before reporting success. Store initialization, service activation, provider access, mode or group choice, preferences import, and restore require separate actions.
+
+#### Scenario: The fixed configuration exists or target authority is uncertain
+
+- WHEN the file exists, another creator wins, the path or parent is unsafe, or required installed/target authority is absent or stale
+- THEN the action preserves existing bytes and refuses or reports the verified existing file. A safe valid file is reported independently of the absent-or-empty Store roots required for creation. The action does not stage a backup, replace invalid content or infer a clean target from missing metadata.
+
+#### Scenario: A Create response is lost
+
+- WHEN the original Create may have dispatched and no complete original outcome is admitted
+- THEN both companions retain the original as unconfirmed within the host lifetime and do not replay it. A separate read-only Check reports current configuration availability without changing the retained outcome. Only a fresh deliberate setup action can proceed from verified current prerequisites.
+
 ### Requirement: Manager package observation preserves release compatibility
 The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
 

@@ -1029,6 +1029,187 @@ existing hosted checks and packaged integration. Positive test-owned
 composition remains modeled evidence.
 
 
+## First saved configuration on a clean or replacement target
+
+### Existing owners and prerequisite
+
+REM-42 requires both companions to restore a compatible Buddy backup onto a
+clean or replacement tablet. The separate REM-41 package owner must supply a
+compatible, identity-verified ordinary installation. The reviewed package branch
+does disable, remove and replace an installed package under a qualified binding.
+Replacement requires an installed version and uses a no-scripts package action.
+The ordinary APK inventory contains the binary, license and build metadata.
+Neither path supplies the user configuration. [REM-41 package
+controls](https://github.com/s116821/ReMarkableBuddiesManager/blob/d6a18b612228162b4de907f55f58154b557efa5e/docs/resident-package-controls.md)
+· [Replacement
+plan](https://github.com/s116821/ReMarkableBuddiesManager/blob/d6a18b612228162b4de907f55f58154b557efa5e/host/resident_package_replacement.py#L63)
+· [Ordinary APK
+inventory](https://github.com/s116821/ReMarkableBuddies/blob/dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e/cicd/release/apk_payload.py#L13)
+
+Manager's existing Prepare storage invokes Initialize with the fixed explicit
+configuration path. Buddy's explicit load refuses a missing file before opening
+the Store. Normal startup's implicit defaults and its effective-config snapshot
+provide no saved configuration. Saved-config inspection, basic edits and
+portable import require an existing file. A manual file can unblock development,
+while the companion needs an explicit setup action to deliver the requested
+replacement workflow. [Manager storage
+setup](https://github.com/s116821/ReMarkableBuddiesManager/blob/6f9de504a1bc97ac460b104ade83ff0b47c27345/docs/storage-initialization.md#L9)
+· [Buddy config
+load](https://github.com/s116821/ReMarkableBuddies/blob/dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e/src/config.rs#L147)
+· [Initialize
+admission](https://github.com/s116821/ReMarkableBuddies/blob/dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e/src/mode_maintenance.rs#L371)
+
+### Fixed Buddy operation
+
+Extend the existing offline `--configuration-operation` selector with
+`check-initial` and `create-initial`. Keep `inspect` and its version-1 report
+unchanged. Both new selectors accept no stdin or override and address only
+`/home/root/.config/remarkable-buddies/config.json`. Manager uses its existing
+fixed clean environment and `/opt/bin/reader-buddy` via verified wired SSH.
+The production dispatcher rejects any nonfixed environment path before file
+access. Both selectors report `blocked` on non-Linux before inspecting or
+creating a file. Existing `inspect` retains its current platform behavior.
+Carry the existing CLI exclusions and dispatch before normal startup. Validate
+`Config::default()` and its version-1 JSON through the existing config validator
+and strict saved-document reader. The written defaults use target paths, no
+saved credential references and disabled legacy sync. There is no input from
+the verified archive, provider, renderer or source tablet.
+
+Open the fixed path from an anchored directory with the existing no-follow,
+ownership and filesystem identity checks. Admit only the expected trusted
+directory chain and distinguish absence from an uninspectable final entry.
+A symlink, special file, multiple links, wrong owner, untrusted write
+permissions, or unreadable or invalid bounded document is blocked. A safe,
+valid existing regular file yields `present` and is preserved byte-for-byte.
+Return that result without checking the default roots, including when an
+ordinary configured tablet already has data or credentials. Only the absent
+file branch validates the default data, cache and credentials paths without
+opening a Store. Those roots must be absent or empty and safely owned before
+reporting `missing`. Recheck this creation predicate before publication.
+A missing config beside existing data or credentials requires recovery.
+The predicate proves only the checked paths on this admitted target.
+
+Create only missing fixed configuration directories beneath the validated
+`/home/root` anchor, using descriptor-relative exclusive directory creation
+and private permissions on new directories. Leave existing directory modes and
+contents intact. Stage one exclusive private 0600 sibling, sync it, recheck
+the pinned directory chain and publish by descriptor-relative atomic
+no-replace. Keep publication Linux-only. Use the narrow existing syscall
+pattern (`renameat2(RENAME_NOREPLACE)`) and descriptor checks inside the
+first-config module. The resident supervisor and archive stage retain their
+private helpers and lifecycle ownership. A concurrent winner stays untouched.
+If the kernel or filesystem cannot perform atomic no-replace, return `blocked`
+with no final-name publication. Errors after possible publication remain
+`unknown` until a complete original success is available. Sync the containing
+directory and any newly
+created parent links, then reopen the same published inode without following
+links and verify the complete bytes and schema. Only the owned temporary
+entry may be removed, after identity checking. An interrupted operation can
+leave a configuration directory or private stage. Preserve ambiguous residue
+and the final name for explicit inspection. Never remove either as a side
+effect of a later check. [No-replace
+precedent](https://github.com/s116821/ReMarkableBuddies/blob/dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e/src/workflow/resident_supervisor.rs#L572)
+· [Existing staged file
+utilities](https://github.com/s116821/ReMarkableBuddies/blob/dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e/src/storage/files.rs#L422)
+
+Use a separate closed version-1 report for the new selectors. It contains only
+`report_version`, `operation` and `state`, with one JSON line at most 4 KiB.
+Check yields `missing`, `present` or `blocked`. Create yields `created` after
+successful original publication, sync and readback, `present` for a verified
+existing file or concurrent winner, `blocked` when the producer proves no
+configuration was published by this invocation, or `unknown` if publication
+may have succeeded without complete sync and readback. A race with an invalid
+winner is blocked if the producer can still prove no publication, otherwise
+unknown. The fixed command emits no paths, bytes, hashes or settings. No
+selector starts or stops a service, creates Store roots, selects a sync mode
+or group, imports preferences, restores data, or contacts a provider.
+
+### Shared companion flow and original outcome
+
+Add an explicit **Review first configuration** and **Create default
+configuration** to the shared setup panel in both companions. Review issues
+only Check on the currently admitted installed, quiescent wired target. A
+confirmed missing result yields a 120-second review for the same connection
+and boot. Create requires a separate confirmation, consumes that review once,
+and rechecks the original target and file prerequisites at dispatch. A valid
+existing file lets the user proceed to the separately admitted **Prepare
+storage** action. Missing prerequisites block the relevant step with a
+reason. A later read of current configuration may likewise permit a separate
+storage review if all its own prerequisites hold.
+
+Use a distinct closed first-configuration request and response branch, reusing
+the existing UI setup controller pattern, browser local-helper and Electron
+main-frame boundary, `WiredObserver`, shared `MaintenanceIO` and peer
+invalidation. Keep existing storage initialization and saved-config request
+and report shapes intact. Use the existing 12/13/14-second child/host/UI
+ceilings, 512-byte request and 8 KiB reduced response limits, and the existing
+eight-original and 32-invocation bounds for this action. Keep the reference,
+operation and invocation scoped to the exact connection, boot and caller
+document. Renderer input carries only the action and those handles. The
+qualified host checks the installed package/selector and quiescence at
+admission and rechecks the same target before remote execution and output.
+Current production gates keep the action unavailable until those inputs
+exist. Filesystem checks still apply in a fixture with an admitted host.
+
+Retain the original possible submission before calling the child. A known
+pre-dispatch refusal leaves it unsubmitted. Only an admitted complete original
+report can mark it created or establish a producer refusal. Stop or stale
+authority cancels only the captured wait and joins its child before releasing
+the shared lane. Lost, malformed or timed-out output after possible submission
+leaves the original unconfirmed and blocks another Create on that connection
+within the host lifetime, including after a boot change. **Check current
+configuration** is read-only, scoped to a fresh admitted observation and
+separate from the retained original outcome. A present file cannot attribute
+publication to the original attempt, and absence cannot settle it.
+Retained history is bounded in host memory, as in Storage Initialization.
+On host restart offer a fresh read-only Check; any new deliberate creation
+requires a new verified absence and cannot overwrite a file from a surviving
+older attempt. Never issue a Create from Status, reconnect, startup, install,
+download, Initialize or Restore.
+
+### Implementation and evidence plan
+
+- Buddy owns the selectors in `src/config/inspection.rs`, fixed-path dispatch
+  in `src/main.rs`, and the guarded publication code in a narrow initial-config
+  module under `src/config/`. Keep the fixture entry inside that module. The
+  production dispatcher supplies only the fixed location and `Config::default()`.
+  Assert the production defaults without opening the fixed tree. Extend the
+  existing `tests/saved_configuration_cli.rs` harness to run the actual Buddy
+  executable with the two new selectors and its temporary configuration override.
+  Assert early refusal and unchanged fixture files, keep current `inspect`
+  coverage, and use the existing parser conflict checks. The CLI cases exercise
+  refusal only and never run either new selector against `/home/root`.
+- In the existing Linux Rust tests, call the production filesystem code with a
+  pinned private temporary anchor and validated fixture-local Store paths via
+  an internal test entry. Cover absence, a safe valid file with populated roots,
+  corrupt or foreign files, unsafe ancestry, two concurrent creators, unsupported
+  no-replace, and failures immediately before and after publication. Verify
+  original bytes survive every refusal, successful publication is complete, and
+  the initializer emits no Store, credential, sync, service or native writes.
+  Use the existing hosted jobs with no build step or runner added. No path override
+  is exposed to production code through environment, arguments or transport.
+- Manager owns the shared setup panel and controller, first-config protocol
+  and fixed wired transport. Wire the same host owner through
+  `host/browser-helper.mjs` and `electron/main.cjs`, including the existing
+  browser client and Electron preload. Extend the existing storage setup
+  host/transport fixtures to cover confirmation, target and caller drift,
+  shared Busy/cancel, lost outcome, independent current Check, and packaged
+  refusal without a qualified install and target. Use the existing hosted
+  checks without a new workflow.
+- In one Buddy fixture, compose publication through that same internal anchor
+  with the existing Initialize and ordinary Prepare/Apply/Status implementation
+  entry points. Use a verified retained format-1 data archive from another
+  actor. Prove fresh local identity, checked data-only readback, unchanged
+  configuration and secrets, and no publication to a provider. In the existing
+  Manager host fixture, use modeled first-config reports followed by the
+  verified package Preview and original Apply/Status controls. Check that a
+  missing or blocked config stops setup before staging and possible Apply stays
+  recoverable through original Status. These fixtures cover the filesystem and
+  companion composition on private test inputs. Positive fixed-path command
+  execution and installed USB restore remain open alongside install, guarded
+  Stop or quiescence and real provider/host/target registration. No signed-package
+  fixture replay is needed for this source contract.
+
 ## Owned private staging
 
 Use one exclusively created private directory under the host's designated
