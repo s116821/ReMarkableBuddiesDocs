@@ -36,6 +36,20 @@ An absent guard establishes original Inspect correspondence only. First Edit re-
 
 Established selected Inspect/Edit and original Status remain local-first/offline using exact local pins or original transaction/result custody. They gain no unconditional provider-read prerequisite from this first-absence exception. The host keeps the guard opaque and Buddy re-admits its conditions; a saved guard is not a live permit.
 
+## Manager task navigation
+
+Shared group preferences belong in Settings, beside the separate local preference
+editors. Leaving this view clears unused private drafts and revealed prompt text
+from the actual nodes before they are detached. Inspection, submission, expiry
+and explicit clearing use the same reduction. A pending edit keeps its original
+controller; a late hidden result cannot restore the private editor. Unknown
+references and retained original edits remain reachable through Activity and
+their existing status actions. Returning to the view does not retry an edit or
+treat an empty recreated form as a valid saved declaration.
+
+This presentation integration does not qualify shared application, running
+activation, provider behavior or the unfinished wider change.
+
 ## Acceptance and ownership
 
 Manager owns the shared Angular controller/panel and common private host, including browser/Electron guarded routing, sparse patch construction, unknown/recovery and privacy tests. Buddy owns mode, selection, atomic original receipts, truthful Worker status and the supported executable fixture. Test both hosts with the same request and bounds, including older unsupported Buddy, active Store busy, stale pins, lost output and original-only Status. Compare the fixtures to the exact Buddy report producer. Actual executable refusal and original Status with synthetic custody remain separate from positive editable Inspect/Edit through an admitted production binding. Keep the Manager PR coordinated with Buddy139 and the active Docs change.

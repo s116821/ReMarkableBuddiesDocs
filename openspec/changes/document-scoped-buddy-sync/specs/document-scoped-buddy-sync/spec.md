@@ -242,6 +242,10 @@ For first absence only, Buddy MAY reuse its already-qualified fixed-slot adapter
 - WHEN Edit output is lost or canceled after possible dispatch
 - THEN the host retains the original operation/guard/patch digest and unknown disposition without private patch text, and Status proves correspondence from exact existing transaction and result custody or remains unknown; no fresh Edit, alternate ordinary Status or second operation index is used.
 
+#### Scenario: Shared private presentation is removed
+- **WHEN** navigation, submission, reinspection, expiry or clearing removes the shared prompt editor or revealed value
+- **THEN** Manager clears the actual private input and revealed nodes before detaching them, reduces late hidden results without restoring an editor, and keeps pending or uncertain originals reachable without retry or treating a blank form as saved intent.
+
 #### Scenario: Shared command meets a resident Store owner
 - WHEN existing-only command acquisition encounters the resident process's exclusive Store lock or an older Buddy lacks the selector
 - THEN both host paths report busy or unsupported truthfully without stopping the service, using a saved-file fallback or pretending effective shared values are available.
@@ -417,6 +421,10 @@ Browser and Electron Manager SHALL offer a deliberate preferences preview for th
 - WHEN the same verified download and wired connection and boot remain current and the user chooses Review backup preferences
 - THEN both companions use the exact original selected pair, show the reduced preview in the existing preferences panel and allow only explicit Confirm of that prepared reference. No-change has no Confirm.
 
+#### Scenario: Task navigation transfers a verified preview to its consumer
+- **WHEN** the operator deliberately opens a preference or data preview from Cloud backups
+- **THEN** Manager selects the corresponding existing consumer workflow before preparation, preserves the exact source and original deadline, and requires separate confirmation; leaving that consumer invalidates an unused or late preview without replaying an original write.
+
 #### Scenario: The original preview is cancelled while Prepare or retirement settles
 - WHEN the original caller, selection, target or view is invalidated while the host holds the joined Prepare
 - THEN the host fences result delivery, joins the original work and checked retirement, and reports any unconfirmed cleanup against that operation while denying stale preview and automatic retry.
@@ -475,6 +483,10 @@ each retain their existing explicit actions.
 
 - WHEN the original Create may have dispatched and no complete original outcome is admitted
 - THEN both companions retain the original as unconfirmed within the host lifetime and do not replay it. A separate read-only Check reports current configuration availability without changing the retained outcome. Only a fresh deliberate setup action can proceed from verified current prerequisites.
+
+#### Scenario: Setup presentation is unmounted
+- **WHEN** the operator leaves Tablet / Setup while configuration is missing, blocked, pending or uncertain
+- **THEN** application-owned current and original state survives navigation, missing or blocked state does not become valid setup, and pending or uncertain work remains reachable without retry.
 
 ### Requirement: Manager package observation preserves release compatibility
 The existing bounded Manager ZIP observer SHALL verify embedded native oracle metadata and executable bytes without extraction or execution. Native packages SHALL agree on the embedded Buddy source record, and present oracles SHALL have complete platform-specific membership, modes, sizes and hashes. Runtime observation SHALL validate the downloaded release's internal consistency rather than require its dependency to match the older installed Manager pin. The fixed quarantine response SHALL NOT grant installation eligibility.
