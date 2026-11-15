@@ -289,6 +289,96 @@ literal stdin, EOF and silent/stalled pipes. Fixtures remain modeled filesystem
 and process evidence; installed selector availability, actual tablet parent/mount
 layout, free space and wired throughput must be qualified before registration.
 
+### Manager streaming adapter
+
+The next source increment connects the existing private `stageDestination`
+injection to these three commands. Keep it unregistered in production until
+installed qualification. Add `host/isolated-stage-transport.mjs` and the fixed
+`host/isolated_stage_transport.py` helper; use the existing observer child slot,
+ordinary restore owner, sealed download reader and staging broker. Packaging
+already copies the host tree and its sibling imports. No renderer command,
+general command runner, dependency, workflow or new test lane is needed.
+
+Before dispatch, validate and freeze the complete selected inventory, source
+operation/reference, target connection/boot and one random V4 stage ID. Compute
+the existing V1 inventory digest from metadata, order the fixed manifest, sorted
+objects, preferences and marker, and stream their descriptors and bodies through
+the sealed `readFile` callback. Keep one at-most-64-KiB write outstanding and await
+pipe backpressure; do not buffer the package or expose a source path. Retain the
+existing small JSON/Base64 protocol for other maintenance commands.
+
+The stage operation uses `WiredObserver`'s original active child and generation.
+Cancellation fences and kills only that captured child. Its slot stays occupied
+until both child close and the writer settle. A generic successor may cancel the
+stage but must join it and recheck its generation before spawning; a stale caller
+cannot cancel or replace a newer child. The ordinary joined `MaintenanceIO` token
+owns receive, check and Prepare. Supply optional trusted read bounds to the
+sealed reader and broker: intersect original source and restore signals and
+remaining deadlines for authority, open, read and close. An unconfirmed bounded
+close stops and joins that original broker and retains cleanup uncertainty.
+Neither close nor failure cleanup replenishes the original attempt's budget.
+
+Use one fixed `READY\n` prefix and a bounded 24,576-byte control line on the local
+pipe. The helper anchors its monotonic clock before emitting readiness; Node
+then samples its remaining allowance, and the helper clamps it against that
+earlier anchor. A startup watchdog also bounds a missing control line. Recompute
+Buddy's at-most-12,000-ms budget immediately before forwarding its header. Node
+still rejects replies outside its own original cutoff. Check and release carry
+only the original bounded receipt, encoded canonically in the control line.
+
+Reuse existing Linux/Windows wired observation and host-key authentication. The
+helper admits only the three literal archive selectors with the existing fixed
+Buddy executable and configuration. Mark possible dispatch before SSH command
+submission; a lost child reply is conservatively possibly dispatched. Pump stdin
+and drain SSH stdout/stderr concurrently, checking declared lengths, EOF and
+deadlines. Require exact remote exit zero, complete terminal stream draining,
+one strict UTF-8 JSON line within 16 KiB and unchanged original final observation.
+Bound and discard diagnostics at 8 KiB. The local terminal envelope is limited
+to 24,576 bytes in addition to readiness; never forward raw errors or package
+bytes as diagnostics. An authenticated early refusal may stop the upload writer;
+successful receive additionally requires the complete joined writer and EOF.
+
+Reduce only the published version, selector, status/incomplete pair and
+settlement. Receive `sealed` may adopt the matching original receipt;
+`no-output` or `cleaned` may settle that failed receive without cleanup pending.
+Ambiguous or `unconfirmed` receive preserves a sticky warning and one bounded
+private record of the original stage ID, source and target commitments, with no
+payload retention. Only `verified` confirms a check and only `released` confirms
+release, each matching the saved receipt exactly. A later refusal cannot clear
+an already adopted receipt or earlier uncertainty. No rescan, reconnect, stage
+lookup, inferred adoption or retry follows ambiguity.
+
+The host-only stage handle exposes its canonical returned root to Ordinary
+Restore for `root/data`, together with bounded `assertOwned` and one-shot cached
+`release`; none of these reach the renderer. Preserve the existing
+Prepare/Apply reader-completion guard. Cleanup inside an active joined attempt
+uses its live token and remaining cutoff. Expiry, drop or disposal outside it
+may take one new bounded nonwaiting joined lease for that original receipt only
+when the owner slot is idle and the target remains current. A competing owner,
+unresolved reader or exhausted active attempt retains uncertainty; cleanup must
+not cancel somebody else's child or renew an expired attempt.
+
+Extend the existing composition, supervised-child and authenticated SSH peer
+tests with retained producer bytes. Cover complete receive/check/Prepare and
+explicit Confirm/release, true early refusal, partial/stalled writes, missing or
+malformed replies, deadlines, cancellation, child/writer joining, target drift,
+competing ownership and sticky pre-receipt warnings. Existing Node/Python CI
+discovers these tests. Peer evidence, actual Buddy CLI evidence and physical
+tablet qualification remain separate.
+
+### Buddy source checkpoint
+
+Buddy `dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e` implements the
+three fixed archive selectors and has passed independent source review. Receive
+cleanup keeps the original deadline; an expired or changed stage remains
+unconfirmed. The normal CLI tests include a complete receive/check/release path
+using 1,659 bytes of retained synthetic output from the existing isolated-package
+producer, with raw-byte Git attributes and exact file hash assertions. Scoped
+formatting and whitespace checks passed. The original
+[hosted run](https://github.com/s116821/ReMarkableBuddies/actions/runs/43655946337)
+is still pending; source review does not establish compilation or runtime success.
+The Manager adapter, installed selectors and target qualification remain open.
+
 ### Pre-receipt cleanup warning checkpoint
 
 Manager `1f925377598f0e084f071c2a51db5ed9e1f216cd` retains an

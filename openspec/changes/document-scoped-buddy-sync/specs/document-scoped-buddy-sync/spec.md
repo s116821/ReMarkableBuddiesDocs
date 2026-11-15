@@ -386,6 +386,29 @@ preferences, start runtime or register a production Manager adapter.
 - THEN the command refuses success without claiming cleanup or granting restore authority.
 
 
+### Requirement: Manager streams verified restore input through its existing wired owner
+
+The private Manager destination adapter SHALL stream the original sealed
+isolated-package inventory through the existing observed child and joined
+maintenance owner, using the [Manager streaming contract](../../manager-isolated-backup-download.md#manager-streaming-adapter).
+It SHALL intersect source and restore cancellation and deadlines, retain bounded
+buffering and accept only original authenticated terminal evidence. It SHALL
+preserve the existing reader-completion guard and sticky cleanup uncertainty.
+Source or peer tests SHALL NOT enable production registration without installed
+qualification.
+
+#### Scenario: The original verified inventory is uploaded
+- WHEN one current source handoff and target admit the private destination adapter
+- THEN only the fixed framed inventory reaches the original fixed Buddy selector, complete joined transfer and exact receipt checks precede Prepare, and no payload path, arbitrary command or Apply authority reaches the renderer.
+
+#### Scenario: Cancellation interrupts a buffered or stalled write
+- WHEN the original source or restore attempt expires or is cancelled while its source read, pipe writer or SSH child is pending
+- THEN those same owners settle before retirement or successor dispatch, no read or close renews the original deadline, and missing trustworthy terminal evidence retains the preallocated stage identity and cleanup warning without retry.
+
+#### Scenario: Destination release occurs after the original preview call
+- WHEN disposal, drop or expiry requests the stage handle's one-shot release after its original joined call has ended
+- THEN release requires an idle bounded joined maintenance lease and the original still-current target and receipt; a competing owner or unresolved Prepare/Apply reader leaves cleanup unconfirmed and is never cancelled to obtain cleanup access.
+
 ### Requirement: Manager previews verified backup preferences in both companions
 
 Browser and Electron Manager SHALL offer a deliberate preferences preview for the exact selected and verified backup on the original admitted wired destination. The shared portable owner SHALL publish a preview only after the one-shot source handoff and checked staging retirement. It SHALL accept Apply only through the existing explicit Confirm for that still-ready original. A possibly dispatched Apply SHALL retain its original portable Status route and reference.

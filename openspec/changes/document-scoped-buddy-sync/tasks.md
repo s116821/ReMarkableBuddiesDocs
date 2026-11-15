@@ -482,7 +482,7 @@ open.
 
 ## Buddy destination staging for isolated restore
 
-- [ ] Implement and independently review the [finite Buddy destination commands](manager-isolated-backup-download.md#buddy-destination-staging-command), preserving the existing package oracle and ordinary restore engine. Include descriptor-owned partial cleanup and exact real-stdin deadline enforcement.
+- [x] Implement and independently review the [finite Buddy destination commands](manager-isolated-backup-download.md#buddy-destination-staging-command) at Buddy `dfd5d09ad6cdc3d9b3e2b0a3d868cd6841bdd23e`, preserving the existing package oracle and ordinary restore engine. The accepted source includes descriptor-owned partial cleanup within the original deadline and bounded real stdin; compile/runtime verification remains below.
 - [ ] Verify the actual CLI with producer packages and filesystem/process fault controls in hosted CI, retaining original failures and exact source attribution. This does not qualify a tablet.
 - [x] Preserve pre-receipt destination cleanup uncertainty in the existing ordinary owner's sticky disposal result. Manager `1f925377598f0e084f071c2a51db5ed9e1f216cd` passed independent source review with composed boolean/refusal and joined-disposal cases; hosted execution remains below.
 - [ ] Verify the pre-receipt warning correction and retained reader-completion cases in [Manager hosted CI](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43654958927), including original native Integration results; source review alone does not prove runtime behavior.
