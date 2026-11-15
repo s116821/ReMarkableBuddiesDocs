@@ -11,6 +11,10 @@ Both companions SHALL require a separately reviewed, explicitly confirmed stop o
 - **WHEN** the service's invocation, package/unit policy or ordinary/resident source-backed evidence or shutdown qualification is absent, changed or unqualified
 - **THEN** Stop is unavailable before dispatch; no signal, stop job, unit repair or alternate recovery is attempted.
 
+#### Scenario: Navigate away from Stop controls
+- **WHEN** the operator changes tasks after opening the Tablet Stop controls
+- **THEN** pending work and retained original outcomes remain reachable through Activity without replay, while an unused Ready review, including a late hidden review, is invalidated without granting new stop authority.
+
 ### Requirement: Delivered resident package records remain closed and source bound
 Resident Stop admission SHALL use only the independently qualified PACKAGE/Profile6/Lease3 contract defined in package-record-contract.md. The host SHALL bind fixed package paths, all twelve protected artifacts, the original nested rm-sync ServiceBaseline1, current companion identity/group observations, both fixed vendor policy projections and every private fact in the original sample digest. Historical LEGACY schemas, missing or contradictory companion records, observed-policy enrollment and unqualified build tuples SHALL refuse. Both production qualification registries SHALL remain empty during this proposed source reconciliation. The public protocol and unit-scoped Stop intent SHALL remain unchanged.
 

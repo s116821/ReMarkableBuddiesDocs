@@ -74,6 +74,19 @@ evidence, not a measured target runtime or production profile qualification.
 
 ## Host and UI
 
+Stop and package controls belong to Tablet. Once opened, each narrowly scoped
+panel keeps its existing lazy controller mounted across task navigation; the
+other task editors remain conditional. This exception preserves the original
+pending operation and retained outcomes, with Activity linking back to the
+controls. It does not keep an unused confirmation valid: leaving Tablet clears
+an idle Ready review, including one that finishes after the controls are hidden.
+Pending and unknown outcomes keep their original identity and lifetime. Returning
+does not submit, cancel or retry an operation. Existing lazy-import deadlines,
+peer busy guards, reciprocal epochs and document teardown remain in force.
+
+This navigation integration is source/UI work. It does not enable a production
+profile or complete shutdown, recovery, signed-package or native qualification.
+
 Use a distinct serviceStop capability and existing MaintenanceIO across both real
 factories. Derive peers from the admitted final source (storage initialization
 adds a nineteenth predecessor). Review and Confirm acquire ownership before

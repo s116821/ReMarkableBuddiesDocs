@@ -30,6 +30,10 @@ private intents and one absolute deadline without replaying a possible submissio
 - **WHEN** connection, boot, activation, profile, ownership, solver/candidate or ready lifetime differs at confirmation
 - **THEN** confirmation refuses without dispatch or target substitution.
 
+#### Scenario: Navigate with a pending or continuable original operation
+- **WHEN** the operator leaves the Tablet package controls during a change or after an unknown or intermediate result
+- **THEN** the original controller and retained outcome remain reachable through Activity without retry; an unused initial or remaining-step review, including a late hidden Ready result, is invalidated while the original reservation and separate continuation confirmation remain required.
+
 ### Requirement: Wiring preserves existing engines and separate qualification gates
 The package capability SHALL use the existing private prepare/recovery/disable/
 removal/replacement functions and signature/ownership/lock checks without adding
