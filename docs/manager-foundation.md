@@ -7,6 +7,11 @@ installer or updater. The base foundation has an unconfigured connection and
 unknown tablet version. The additive [wired observation slice](manager-wired-observation.md)
 adds explicit Linux read-only transport while preserving the installer gates.
 
+The shared renderer now organizes its supported capabilities by
+[user workflow](manager-workflows.md). The original foundation scope below remains
+historical qualification context, not a requirement to display preview marketing
+or every implementation editor on the landing page.
+
 ## Public setup and checks
 
 Clone Manager normally or use the ecosystem's selective bootstrap. Use Node
