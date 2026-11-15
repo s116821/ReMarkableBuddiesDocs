@@ -160,9 +160,12 @@ excluded configuration while the target and intent still included it. The
 two-line fixture-only correction at
 [Manager `e71518c`](https://github.com/s116821/ReMarkableBuddiesManager/commit/e71518c8d137352e52aa3124dc7dc350f3dc1d02)
 aligns those fields without changing production admission, assertions or timeouts.
-Corrected hosted execution is pending; the original failure remains separate.
-The eventual results must remain distinct from wired staging, real remote
-cancellation and residue recovery.
+Corrected [full hosted CI](https://github.com/s116821/ReMarkableBuddiesManager/actions/runs/43652739440)
+passes Checks, Build and both Windows/Linux Integration jobs. Checks includes all
+ten supervisor cases and the authenticated missing-exit-status control; both
+Integration jobs pass the retained packaged host modes and native archive
+controls. The original failure remains separate. These host and peer results do
+not establish wired staging, real remote cancellation or residue recovery.
 
 Transfer and Prepare share one existing maintenance admission. Preserve the
 ordinary command's current bounded payload and execution budget. On cancellation
@@ -374,10 +377,12 @@ cleanup keeps the original deadline; an expired or changed stage remains
 unconfirmed. The normal CLI tests include a complete receive/check/release path
 using 1,659 bytes of retained synthetic output from the existing isolated-package
 producer, with raw-byte Git attributes and exact file hash assertions. Scoped
-formatting and whitespace checks passed. The original
-[hosted run](https://github.com/s116821/ReMarkableBuddies/actions/runs/43655946337)
-is still pending; source review does not establish compilation or runtime success.
-The Manager adapter, installed selectors and target qualification remain open.
+formatting and whitespace checks passed. Original
+[hosted Checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/43655946337/job/132634406000)
+passes with 1,317 library tests and 15 literal-stdin CLI cases, including all five
+new stage-engine groups, the producer round trip and bounded silent/stalled pipe
+controls. Full application and ARM integration remain pending. The Manager
+adapter, installed selectors and target qualification retain their separate gates.
 
 ### Pre-receipt cleanup warning checkpoint
 
@@ -394,6 +399,19 @@ including the new warning cases and retained remote-reader controls. The
 authenticated SSH channel-close test and separate 14 archive checks also passed.
 Build and native Integration remain pending. No actual tablet upload or cleanup
 is established by these synthetic-peer and host-owner results.
+
+### Manager adapter source checkpoint
+
+Manager `7ce12a03595d435f485d9a32fb5b4726f57cf12d` implements
+the private adapter described above and passes independent source review, scoped
+JavaScript syntax/lint, Python parsing and whitespace checks. Authored coverage
+includes retained producer bytes through the real supervised child pipe and
+Prepare/Confirm/release, held writers and successors, bounded source-reader
+cancellation, and authenticated SSH terminal and failure controls. The local
+fixture child models the Python helper; the SSH cases separately exercise its
+actual execute boundary. Hosted execution is pending. The adapter remains
+unregistered; these source results do not establish installed selectors, real
+provider composition or physical target throughput and cleanup.
 
 ## Private preview of verified backup preferences
 
