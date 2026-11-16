@@ -12,9 +12,14 @@ commands from the selected Rust checkout; resolve component paths there.
 This document is also a manual checklist for contributors using ordinary Git,
 Cargo, SSH/SCP and a screenshot viewer; it does not require Codex, connectors or
 private Linear access. Use available public acceptance criteria and discussions.
-Without an authorized idle tablet, run the documented local simulator/tests,
-record native cases as unverified and let a maintainer complete hardware gates
-before merge. Do not request private credentials or imply hardware was tested.
+Follow [development validation](../../../CONTRIBUTING.md#development-validation):
+when an authorized development tablet is available, build the changed software
+and run it on that tablet, exercise the actual workflow and relevant edge cases, inspect the
+result, and fix/repeat as needed. Leave automated component/regression suites to
+existing CI; host tests, ARM builds and emulation are not tablet acceptance.
+Local simulation/emulation is for parallel work while another worker owns the
+tablet, or contributors without authorized hardware. Record unperformed native
+cases for maintainer acceptance; do not imply hardware was tested.
 
 Apply this workflow only when full unattended SSH is available to a development
 tablet the user is not actively using, and the task authorizes the proposed tests.
@@ -89,8 +94,8 @@ question/text lines; left/right crops previously split a readable question.
 
 Save annotated input and resulting output screenshots, the relevant sanitized
 log, expected result and actual result together. Record failures and subsequent
-repairs without relabeling old evidence as a pass on a newer build. Run code checks
-appropriate to changed behavior, and verify the final installed build on hardware.
+repairs without relabeling old evidence as a pass on a newer build. Read the existing
+CI results for the changed revision and verify the final installed build on hardware.
 Do not equate an architecture build with hardware validation on that device.
 
 Use [the hardware probe](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/examples/hardware_probe.rs) for bounded offline
