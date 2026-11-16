@@ -1,5 +1,10 @@
 ## Unfinished integration
 
+- [ ] Connect development composer observation/key waits and effect dispatch through the existing resident connection, without selecting a Submit shortcut or production activation.
+- [ ] Extend the existing native-effect journal for exact composer requests, durable outcomes, restart consumption and unknown-effect refusal; preserve older evidence.
+- [ ] Require durable exact User text in the existing conversation Store before conditional native clear.
+- [ ] Run automated regression coverage in CI; build/run the selected app on the coordinated tablet for actual draft, idle, changed-text, navigation and recovery cases.
+
 - [ ] Connect verified native composer text/edit/semantic Submit/currentness and supported gestures through the existing input/SDK owner.
 - [ ] Integrate and qualify actual native composer/status/turn-region prepend/focus/page effects through the unified-page owner.
 - [ ] Qualify real aggregate-apply fencing and stale-operation suppression with the synchronization owner.

@@ -15,3 +15,27 @@ qualification SHALL NOT be promoted to enabled-memory evidence.
 #### Scenario: Separately delivered integration
 - **WHEN** the existing owner supplies an independently reviewed selected capability
 - **THEN** integration reuses its admission/lifetime/settlement and proves real source/currentness/stale-operation behavior before completion.
+
+### Requirement: Durable native composer operations
+The composer consumer SHALL reuse the existing resident transport and Store-owned
+effect journal. Provision and clear SHALL reserve exact requests before dispatch,
+retain original outcomes across restart, and refuse replay or continuation after
+unresolved effects. Observation and key facts SHALL NOT imply current edit or
+semantic Submit authority. The development capability SHALL remain unavailable
+in ordinary release builds until its native integration is qualified.
+
+#### Scenario: Lost mutation response
+- **WHEN** a provision or clear may have been sent but its outcome is unknown
+- **THEN** the original request remains consumed and no new effect for that conversation bypasses its unresolved state.
+
+#### Scenario: Exact input retention before clear
+- **WHEN** the consumer requests conditional clear
+- **THEN** the same Store already contains a durable User turn with exactly the submitted text, and the native owner independently compares the selected range, genuine revision and text before editing.
+
+#### Scenario: Changed or malformed input
+- **WHEN** input cannot be converted without loss, durable retention fails, or the live draft differs from the submitted selection
+- **THEN** clear is refused and no success or discarded draft is inferred.
+
+#### Scenario: Idle typing
+- **WHEN** a key wait ends without a native attempt and the runtime owner admits a fresh connection
+- **THEN** a new read-only wait may use the same still-valid native visit and range without provisioning again or replaying an effect.

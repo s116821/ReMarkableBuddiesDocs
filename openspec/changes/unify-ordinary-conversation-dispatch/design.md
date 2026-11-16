@@ -16,3 +16,38 @@ Do not copy its design here or claim the archived memory-disabled live run
 qualifies it. The completed ordinary source and both live attempts are in
 [the finite archive](../archive/2026-11-06-unify-ordinary-conversation-dispatch/verification.md).
 Future native/source/provider evidence needs its own exact attribution.
+
+## Native composer consumer
+
+The development composer consumer uses the existing resident connection and the
+Store-owned native-effect journal. It does not create a second conversation
+store, authority registry, automatic activation path or production SDK pin.
+Provision and conditional clear reserve their exact wire request and digest
+durably before sending. The journal records typed completion or refusal, retains
+unknown outcomes, and refuses reused operation IDs across reconnect/restart.
+Read-only observation and key waits do not reserve a page mutation. A historical
+reply never supplies fresh page, visit or edit authority.
+
+The composer journal extension is explicit schema 3. Existing insertion and
+selection evidence remains readable, with its original bytes and restrictions.
+Only the development build understands composer records; a build without that
+capability refuses them instead of deleting, downgrading or reinterpreting them.
+Use an explicitly selected development Store until the SDK and consumer have
+completed their production integration. Unknown earlier effects still block
+later effects for that conversation. Known composer completion permits a fresh
+operation but never replays the consumed original.
+
+The copied draft remains raw UTF-16 until strict product conversion. Conditional
+clear requires the exact submitted text to exist as a durable User turn in the
+same Store and conversation, and the expected live native range/revision/text.
+Persistence failure, malformed text or changed ownership leaves the draft alone.
+Pre-key observation is not a post-key clear lease: the selected Submit handler
+must separately observe and compare the state after stock key handling and
+advance its own source revision only from the genuine clear result. Submit
+grammar, caret placement, presentation and model dispatch are still unfinished;
+this transport/journal increment must not be presented as completed typing UX.
+
+An idle key wait may be re-armed with a new operation and handshake only through
+the existing runtime owner. The same native visit and opaque range must survive;
+socket replacement, stored IDs or timeout alone grant no effect authority.
+Provider calls and render/export remain downstream of durable input admission.
