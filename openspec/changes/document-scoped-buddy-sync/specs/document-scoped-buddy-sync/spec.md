@@ -506,3 +506,25 @@ The existing bounded Manager ZIP observer SHALL verify embedded native oracle me
 #### Scenario: Native tests consume a shipping dependency
 - WHEN Build has retained the normal executable before compiling test-only targets
 - THEN the existing native Integration jobs test that exact packaged executable using retained native test inputs, check its original version and bytes, and leave both the command and release ZIPs unchanged; no Integration rebuild or replacement grants shipping qualification.
+
+### Requirement: Manager completes Drive authorization without user developer setup
+Both companions SHALL begin normal Drive setup in Manager using an approved
+maintainer-owned desktop registration and Google's system-browser consent.
+Each user SHALL authorize their own account. The private tablet authorization
+purpose SHALL reuse the existing OAuth implementation, preserve the host grant,
+and retain only a distinct, verified, short-lived tablet grant for one private
+handoff. Tokens SHALL NOT enter renderer messages or public status. The
+[connected delivery contract](../../manager-tablet-drive-authorization.md)
+SHALL keep authorization, verified USB installation and completed backup distinct.
+
+#### Scenario: A separate tablet grant is accepted
+- WHEN the new grant has the expected client, exact application-data scope, original account and distinct refresh token and the original protected custody remains current
+- THEN Manager retains it privately until its bounded expiry and exposes only a reduced state, account label and opaque reference; the original host grant is unchanged.
+
+#### Scenario: Pending authorization loses its owner
+- WHEN cancellation, another authentication operation, expiry, disposal or protected registration/grant drift invalidates the pending authorization
+- THEN no stale callback or handoff can recover its credential, and no automatic tablet write or provider retry follows.
+
+#### Scenario: A private handoff is consumed
+- WHEN the trusted host workflow takes the exact current reference for a canonical nonzero collection UUID
+- THEN it receives the existing Buddy V1 record once with expiry converted to UNIX seconds; a second take returns no secret. This helper alone does not establish target authority or installed backup readiness.

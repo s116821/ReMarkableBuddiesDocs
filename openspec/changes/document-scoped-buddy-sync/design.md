@@ -444,3 +444,8 @@ The [selected download contract](manager-isolated-backup-download.md#host-oracle
 selects the existing normal Buddy command as a pinned private Manager host
 dependency. Its platform qualification, package provenance and browser-helper
 delivery remain explicit work; Buddy's tablet release asset inventory is unchanged.
+
+The [Manager tablet authorization design](manager-tablet-drive-authorization.md)
+reuses the existing maintained OAuth flow for a distinct, expiring tablet grant.
+It keeps the user's host grant unchanged and separates private authorization,
+verified USB credential installation and observed ongoing backup.
