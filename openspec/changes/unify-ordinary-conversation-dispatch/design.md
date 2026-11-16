@@ -95,10 +95,18 @@ the caret in the selected disposable page's editable native text region. For the
 typing cue, it must be in the empty interval between the two newly provisioned LF
 separator paragraphs, not merely somewhere on the selected page. If that exact
 location cannot be shown, no confirmation or fixed input is permitted. After
-releasing input for that current cue, the operator atomically publishes a
-separate, single-link byte-for-byte copy of the whole cue in the original control
+releasing input for that current cue, the operator exclusively creates a
+separate, mode-0600 single-link byte-for-byte copy of the whole cue in the original control
 root: `composer.seed-ready` becomes `composer.seed-positioned`, and
-`composer-store/typing-ready.json` becomes `composer.typing-positioned`. These
+`composer-store/typing-ready.json` becomes `composer.typing-positioned`. After
+completing, closing and verifying the exact copy including its final LF, the host
+exclusively creates the empty mode-0600 single-link marker
+`composer.seed-positioned.ready` or `composer.typing-positioned.ready` in that
+same control root. No overwrite, hardlink, phase extension or retry is permitted.
+The actor does not open the payload before the protected empty marker exists;
+it retains and rechecks both pins before admission, during every input check and
+before completion. Missing, replaced or invalid files after marker publication
+refuse the attempt rather than resume a partial transfer. These
 names explicitly attest current visible placement/release; cue existence or
 native arming is insufficient. The actor verifies the original binding, complete
 cue/staged two-link inode pair, confirmation bytes and original target expiry.

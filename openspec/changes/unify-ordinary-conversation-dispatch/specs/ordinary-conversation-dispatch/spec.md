@@ -59,3 +59,7 @@ in ordinary release builds until its native integration is qualified.
 #### Scenario: Return observed before actor release completes
 - **WHEN** native key observation has returned but the actor's final release, full batch or guard result is pending or failed
 - **THEN** the observer cannot durably capture or clear the draft; it requires the protected successful whole-cue completion publication within the original cue expiry and existing settlement bound, followed by quiet readmission and fresh exact same-range observation.
+
+#### Scenario: Placement confirmation publication is incomplete
+- **WHEN** the host is writing the separate mode-0600 single-link exact cue echo
+- **THEN** the actor does not inspect that payload until the host completes, closes and verifies it and exclusively publishes its empty protected `.positioned.ready` marker; both pins remain current before and throughout fixed input, and invalid or replaced publication refuses without retry or a renewed deadline.
