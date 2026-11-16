@@ -1,5 +1,13 @@
 ## Unfinished integration
 
+- [ ] Connect development composer observation/key waits and effect dispatch through the existing resident connection, without selecting a Submit shortcut or production activation.
+- [ ] Extend the existing native-effect journal for exact composer requests, durable outcomes, restart consumption and unknown-effect refusal; preserve older evidence.
+- [ ] Require durable exact User text in the existing conversation Store before conditional native clear.
+- [ ] Run automated regression coverage in CI; build/run the selected app on the coordinated tablet for actual draft, idle, changed-text, navigation and recovery cases.
+- [ ] Review the finite observer trial's same-attempt arming receipt, quiet/typing overlap and exact pre/post-key text checks; run its parser controls in existing CI before building the real tablet candidate.
+- [ ] Cover the seed-only original target monotonic expiry and whole fresh-cue acknowledgement in existing CI, and require that expiry check in the actual operator procedure without extending the phase from host receipt time.
+- [ ] Review and qualify explicitly selected actor-fixed input using the existing controller, pre-guard keyboard lifetime, exact seed-region/owned-interval visual confirmation with single-link payload then protected empty ready marker, before-down deadline/service checks and unconditional release on partial failure; require successful same-cue full-batch publication before durable capture/clear within original bounds, and preserve the separate manual and physical-device obligations.
+
 - [ ] Connect verified native composer text/edit/semantic Submit/currentness and supported gestures through the existing input/SDK owner.
 - [ ] Integrate and qualify actual native composer/status/turn-region prepend/focus/page effects through the unified-page owner.
 - [ ] Qualify real aggregate-apply fencing and stale-operation suppression with the synchronization owner.
