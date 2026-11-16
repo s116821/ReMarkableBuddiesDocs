@@ -18,6 +18,10 @@ Both companions SHALL require a separately reviewed, explicitly confirmed stop o
 - **WHEN** the service's invocation, package/unit policy or ordinary/resident source-backed evidence or shutdown qualification is absent, changed or unqualified
 - **THEN** Stop is unavailable before dispatch; no signal, stop job, unit repair or alternate recovery is attempted.
 
+#### Scenario: Navigate away from Stop controls
+- **WHEN** the operator changes tasks after opening the Tablet Stop controls
+- **THEN** pending work and retained original outcomes remain reachable through Activity without replay, while an unused Ready review, including a late hidden review, is invalidated without granting new stop authority.
+
 ### Requirement: Delivered resident package records remain closed and source bound
 Resident Stop admission SHALL use only the independently qualified PACKAGE/Profile6/Lease3 contract defined in package-record-contract.md. The host SHALL bind fixed package paths, all twelve protected artifacts, the original nested rm-sync ServiceBaseline1, current companion identity/group observations, both fixed vendor policy projections and every private fact in the original sample digest. Historical LEGACY schemas, missing or contradictory companion records, observed-policy enrollment and unqualified build tuples SHALL refuse. Both production qualification registries SHALL remain empty during this proposed source reconciliation. The public protocol and unit-scoped Stop intent SHALL remain unchanged.
 
@@ -123,3 +127,22 @@ SHALL follow from compatibility correction alone.
 #### Scenario: Utility output is unsupported or ambiguous
 - **WHEN** output has literal escape characters, wrong precision, extra newlines, partial bytes, permission failure, an unexpected status or a different missing-file diagnostic
 - **THEN** the original observation refuses without interpreting it as absence or trying a substitute command.
+
+### Requirement: Ordinary Stop alias evidence binds the installed target
+The host SHALL limit private ordinary alias evidence to the one compiled layout.
+It SHALL bind the fixed ExecStart argument and resolved executable
+separately, and require protected literal-link, target, process and parent
+identity evidence across both private brackets. The alias evidence SHALL
+participate in the private digest only when present. The public contract and
+existing direct and resident evidence SHALL retain their exact shapes.
+Production profile admission remains empty.
+
+#### Scenario: Exact alias is a candidate only
+
+- **WHEN** the protected alias, target, process, invocation and both brackets match the immutable candidate tuple
+- **THEN** the host may match the ordinary candidate and the production gate still refuses submission.
+
+#### Scenario: Alias, process or bracket drift
+
+- **WHEN** the literal, parent protection, target metadata, argv, executable identity or any bracket differs or is unavailable
+- **THEN** the host refuses the candidate without fallback to a resident layout or Stop submission.

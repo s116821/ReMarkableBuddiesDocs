@@ -248,3 +248,43 @@ service slot must have both positively typed empty hook observations. A well-for
 nonempty or unknown observation is not eligible, including helper/stock/companion.
 Both production registries remain empty and actual shutdown/recovery qualification
 is unchanged. No formatted-text omission or earlier diagnostic creates a grant.
+
+## Ordinary alias candidate extension
+
+Keep ordinary-manual as the existing profile. A candidate alias layout accepts
+only the exact compiled future installation target
+/home/root/.local/lib/reader-buddy/ordinary/reader-buddy. This source-only path
+does not assert installation or qualify a production tuple. The reviewed
+compiled tuple includes ordinary_alias_target with that exact literal.
+Development, trial, arbitrary and nested link paths remain ineligible.
+
+The fixed sampler may lstat /opt/bin/reader-buddy under protected parents.
+A link requires root uid/gid, mode 0120777, one link, exact literal and byte
+length. A single READLINK result is exact ASCII plus LF, capped at 256 bytes.
+Bracket the link and its parents around the read and the regular target
+artifact. Both chains require real root-owned directories without group or
+other write. Compare the same link, target and parent stamps again after
+the service/process samples and across the two complete observations.
+The target is a root-owned executable regular file admitted by the existing
+128 MiB artifact bound. The expected digest is in the candidate tuple.
+The process retains the existing exact PID, ticks, invocation and group
+checks. argv is exactly [/opt/bin/reader-buddy], while the /proc executable
+literal, file metadata, device/inode and hash equal the protected target.
+
+Only the alias variant adds private ordinary_alias evidence with exact keys
+device, inode, uid, gid, mode, length, mtime_ns, ctime_ns, links, literal,
+link_parents_sha256 and target_parents_sha256. Numeric strings retain the
+artifact bounds, links is exactly "1", and each parent digest hashes sorted
+compact UTF-8 JSON of the existing ordered path/metadata/link-count bracket.
+The private sample digest adds ordinary_alias only if present. Direct and
+resident samples preserve their exact shapes and canonical digests. The
+parser classifies the alias as ordinary through its explicit validated
+evidence. It cannot satisfy resident requirements or admit companion/vendor
+evidence. Public DTOs and fixed Stop dispatch do not change.
+
+Keep both production registries empty. Reject wrong literal, wrong argv0,
+wrong target or process inode/hash, bad ownership/mode, nested link, changing
+link/target/parent metadata, malformed/extra evidence and stale brackets.
+Keep the existing direct and resident compatibility vectors and both
+actual factory refusal controls. The successful diagnostic trial remains
+candidate-specific and does not qualify this persistent alias layout.

@@ -21,8 +21,10 @@ systemd job already requested. Retain uncertainty without automatic replay.
 
 ## Capabilities
 
-New capability: manager-service-stop. No change to the existing storage setup,
-saved-file, Local-only, release source, package installer or selected-outbox wires.
+New capability: manager-service-stop. That Stop capability leaves existing storage
+setup, saved-file, Local-only, release source, package installer and selected-outbox
+wires unchanged. The separately bounded package-transition addition below has its
+own capability and explicit operation intent; it does not expand serviceStop.
 
 ## Exclusions
 
@@ -52,3 +54,20 @@ The accepted precode is imported into this sole central change before code.
 Protocol, refusal, transport, queue and UI fixture implementation can proceed
 without tablet or provider execution. Keep the whole change active until
 actual enablement/qualification and paired delivery; no planning-only merge/archive.
+
+## Proposed shared resident-package wiring addition
+
+Status: precode for independent review before implementation. Manager PR57 has
+existing host-private package transition/recovery/disable/removal/replacement
+helpers, but no public shared-host/renderer route. Add only the closed
+`manager-resident-package-transition` capability described in
+`package-transition-wiring.md`, backed by those helpers and the existing common
+MaintenanceIO/verified wired transport. This is an amendment to the same active
+change and coordinated Manager delivery, not a new installer or planning-only PR.
+
+The serviceStop exclusions above continue to govern that capability. The new
+capability alone can request a reviewed fixed disable/remove/replace transition;
+it does not expose start, arbitrary commands/paths, package creation, trust repair,
+new downloads or a generic workflow engine. All production Stop and package
+qualification gates remain empty; no operation becomes eligible from source tests
+or the separately completed public test-fixture observation.

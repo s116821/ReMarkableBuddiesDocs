@@ -671,3 +671,77 @@ the maintained sampler-test SHA256 is
 Recovery composition, final paired review/current CI and complete target
 sampling/shutdown/recovery remain separate. No production profile, actual Stop,
 native recovery, package installation or feature completion is claimed.
+
+### Ordinary alias candidate source controls
+
+Manager 82f1c65, based on Manager 56 baf0265e, adds a private candidate
+layout without enabling a production profile. The paired Docs base is
+41b770b4 and includes the independent package controls. The sampler checks
+the fixed alias literal and both protected parent chains, the private parser
+keeps ordinary alias facts out of resident classification, and the digest
+includes the alias object only for that layout.
+
+Focused Python controls passed on Windows and in an offline Linux image,
+including the actual Python-to-Node parser/matcher/digest boundary and
+unchanged direct/resident digest vectors. Windows ran 53 with four skipped,
+Linux ran 53 with two skipped for BusyBox availability. All 46 sequential
+Node Stop tests passed. The initial parallel Node invocation encountered
+one existing late-acknowledgment timing assertion. A first new cross-language
+test also caught and corrected alias tuple key ordering. Actual Browser and
+Electron factory controls passed on Node 24.22.1 with the valid alias fixture
+refused by both production gates. Production and development builds and
+targeted lint passed, with the existing initial bundle-budget warning.
+
+The actual prior ordinary diagnostic and exact two-path disposal are
+retained separately in REM-42. This source-only increment supplies no
+installed tuple, public service actuation, native or package qualification.
+
+Independent review accepted Manager 82f1c657 and Docs ba64978b in REM-42
+comment 81807d62. Manager 1357b114 changes only the reciprocal late-ack test.
+It freezes the injected clock during preparation and advances the mocked
+timer only after actual submission has acquired the shared owner. Both
+directions retain the unknown result and prove the late acknowledgment
+cannot release the later peer. All 46 focused Node Stop tests passed in
+parallel. The original parallel failure and sequential pass remain separate
+evidence for the earlier test.
+
+### Typed public Stop source controls
+
+Manager 71f48b5 adds the disabled isolated host adapter and exact owner
+fixture delta against the accepted ordinary trial scripts. Apply the
+fixture patch only against those pinned LF source bytes using
+git -c core.autocrlf=false apply --unidiff-zero. The reproduced owner,
+receipt and trial scripts matched the independently exercised fixture
+bytes. The committed patch is not a device payload or an installation.
+
+All 56 focused Python Stop controls ran with four platform skips. All
+46 focused Node Stop tests passed in parallel. Targeted host lint passed.
+The offline Linux owner fixture reused the actual claim, accepted receipt,
+and ListJobs parser logic. It checked durable success, cutoff expiry,
+malformed binding/reply, reply flush failure, lost acknowledgment and
+duplicate refusal. Same-manager queued job and process presence each
+prevented retirement. Initial fixture CRLF and subshell probe-counter
+failures were corrected locally and retained. No full build was needed.
+
+The patched owner fixture still uses the accepted trial layout. A stable
+installed alias, reviewed tuple, fixed stage/connection inputs and actual
+independent handback must be assembled and reviewed in a later packet.
+No registry or device action was selected here.
+
+Manager b0bc337 adds the publication-failure controls without changing
+71f48b5 production or owner source. The expanded Linux run covers binding
+temporary flush, atomic publish and parent flush, reply/identity/directory
+flush, accepted marker publish and parent flush, and cutoff expiry after
+queue preparation immediately before the method. Each case preserves no
+send or one possible send without acknowledgment or replay. A visible
+accepted marker after injected parent flush failure still yields no
+acknowledgment. All fourteen owner cases passed.
+
+The separate stable-layout source bundle pins its fresh stage and exact
+stable target, publishes the payload within the data filesystem and
+retains the original owner/recovery and readback. The host verifies
+reviewed connection, boot, bus, manager and owner pins before upload.
+Its terminal verifier checks the exact public binding, accepted typed
+reply and settlement queue; the positive and four mutation cases passed.
+This is a source inventory. Exact current tuple/pins, retained release
+materialization and isolated build/seal remain required before admission.

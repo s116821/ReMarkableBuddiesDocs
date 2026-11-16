@@ -96,4 +96,27 @@
 - [x] Review official query/cancellation semantics and compare the same nine fields locally without printing adapter identifiers; preserve UInt64, boolean and null representations.
 - [x] Replace only the fixed per-snapshot PowerShell process with an isolated Python/pythoncom child, preserving the three-second kill-and-wait boundary and all surrounding fresh identity checks.
 - [x] Verify exact matching/ambiguity, malformed values, bounds, child failure/timeout, no cached observations and local same-provider field equivalence; retain separate Stop timing and device qualification gates.
-- [ ] Obtain independent exact-source review and current hosted checks before coordinated delivery; keep production profiles disabled.
+- [x] Obtain independent exact-source review of the bounded child and same-provider/type/timeout evidence.
+- [ ] Complete current hosted checks before coordinated delivery; keep production profiles disabled.
+
+## 12. Proposed common resident-package host/UI wiring
+
+- [x] Reconcile exact Manager57/Docs134 source and identify the explicit Stop-only public-contract exclusion and absent package routes.
+- [x] Specify the narrow separate capability, reused helper mapping, closed public/private boundaries, ownership/fences and disabled production gates before code.
+- [x] Resolve the reviewed intermediate-phase gap in the contract: durable original goal, exact phase proofs, bounded explicit continuation and goal-specific completion/fences.
+- [x] Obtain independent acceptance of this exact wiring amendment including the continuation delta before implementation.
+- [x] Extend only the existing finite coordinator and bounded intent schema for separately reviewed, single-phase continuation; verify local no replay and host-restart reconstruction.
+- [x] Independently accept actual Windows native-lock/read-sharing execution on the exact stable source; corrected module32e9012f/test0631c5e7 match the actual Windows receipt0c421362, with the original guarded-read failure preserved separately. Actual Linux initial/retained writer exclusion also passes.
+- [x] Add only the approved typed private adapter/shared host/protocol and both guarded browser/Electron routes, reusing the existing package helpers and MaintenanceIO.
+- [x] Add the shared App panel/controller with explicit review/confirm, original-operation check/cancel, host-issued handles and reciprocal peer invalidation/Busy behavior.
+- [x] Verify local real factories/routes/renderer and private entrypoint with synthetic source fixtures for unavailable production gates, approved fixture-only paths, wrong context/handle/input, before/after submission loss, durable uncertainty, no replay, cancellation/late completion and all existing peer boundaries.
+- [ ] Verify required current source/UI/packaged-host checks and independent review, preserving all earlier Stop/native evidence and empty production qualification registries.
+- [ ] Coordinate final same-change canonical sync/archive/delivery only after its selected obligations are complete; source wiring does not waive actual lifecycle qualification or enroll production tuples.
+
+## Ordinary alias private candidate
+
+- [x] Specify exact private alias evidence, digest and retained profile gates.
+- [x] Implement and test fixed alias sampling, private parsing and candidate matching.
+- [x] Verify direct and resident digest compatibility and production refusal in both host factories.
+- [x] Independently review the exact source and paired contract at Manager 82f1c657 and Docs ba64978b.
+- [ ] Qualify a separate stable installed tuple and actual guarded public Stop before any enablement.

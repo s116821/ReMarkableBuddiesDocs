@@ -74,6 +74,19 @@ evidence, not a measured target runtime or production profile qualification.
 
 ## Host and UI
 
+Stop and package controls belong to Tablet. Once opened, each narrowly scoped
+panel keeps its existing lazy controller mounted across task navigation; the
+other task editors remain conditional. This exception preserves the original
+pending operation and retained outcomes, with Activity linking back to the
+controls. It does not keep an unused confirmation valid: leaving Tablet clears
+an idle Ready review, including one that finishes after the controls are hidden.
+Pending and unknown outcomes keep their original identity and lifetime. Returning
+does not submit, cancel or retry an operation. Existing lazy-import deadlines,
+peer busy guards, reciprocal epochs and document teardown remain in force.
+
+This navigation integration is source/UI work. It does not enable a production
+profile or complete shutdown, recovery, signed-package or native qualification.
+
 Use a distinct serviceStop capability and existing MaintenanceIO across both real
 factories. Derive peers from the admitted final source (storage initialization
 adds a nineteenth predecessor). Review and Confirm acquire ownership before
@@ -155,3 +168,15 @@ tablet timing, provider qualification or Stop admission.
 References: [COM query semantics](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemservices-execquery),
 [connection wait](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemlocator-connectserver),
 and [subprocess timeout](https://docs.python.org/3.12/library/subprocess.html#subprocess.run).
+
+## Proposed separate resident-package capability
+
+`package-transition-wiring.md` defines the missing closed host/private bridge,
+public DTO, common browser/Electron route and shared panel. It reuses the existing
+package helpers, including their durable original intents and fixed removal
+coordinator. The existing serviceStop protocol and dispatch semantics stay intact.
+Both capabilities share MaintenanceIO and an unresolved-submission fence; package
+preparation must not dispatch the public Stop action as well as the existing
+private preparation helper. No new Stop command or second transaction engine is
+introduced. Production enrollment and actual package/lifecycle evidence remain
+separate gates. Obtain independent amendment acceptance before implementation.
