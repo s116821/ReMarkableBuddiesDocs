@@ -1,8 +1,10 @@
 # Proposed disposable provider qualification contract
 
-Status: reviewable execution contract only. No account, OAuth registration, file,
-namespace, device or service has been created or changed. This is part of the
-unfinished REM-52 delivery, not live-provider acceptance.
+Status: the two-owner Version 2 replacement is pending exact source and fixture
+review. The previously accepted Version 1 contract and pinned executable govern
+existing Version 1 inputs and remain binding until that review. This is part of
+unfinished REM-52 delivery. Live-provider acceptance requires a separate
+selection and execution record.
 
 ## Resource decisions required before execution
 
@@ -46,11 +48,16 @@ or fail closed exactly as before.
 3. Interrupt acknowledgement after an attempted create. Recover by observation of
    the original ID, retaining original descriptor and request identity. Never
    allocate a successor or republish a stale candidate after losing.
-4. Test one account/application across supported browser, Electron and tablet
-   registrations, token refresh and independent sessions. Qualify actual hidden
-   data and private property visibility; equal account IDs or matching project
-   labels alone are not evidence. Test changed account/application refusal before
-   object requests using the existing prepared-context checks.
+4. Use the exact approved desktop registration and same Drive account with
+   independently issued Host and Tablet grants. Verify refresh for each owner.
+   Keep three visibility views (Browser, Electron and Tablet) and verify all
+   nine origin/reader pairs against actual hidden data, literal private
+   properties, pointers and descriptor bytes. Equal account IDs or matching
+   project labels alone do not establish visibility. Test changed
+   account/application refusal before any provider request using synthetic
+   prepared-context controls. A different registration needs separate reviewed
+   visibility evidence. Same-account grants do not establish cross-user
+   isolation, which needs separate second-account provider evidence.
 5. Test missing, corrupt or mismatched descriptor/pointer and an unrelated scope.
    Retained incomplete/corrupt data must refuse without selecting/applying it.
    Keep malformed-object injection confined to owned resource IDs.
@@ -69,31 +76,56 @@ commands. With no command, it prints usage without reading any run or grant.
 Keep the selected Worker and production qualification decisions out of the
 harness.
 
-The private, explicitly approved plan identifies the run, group, source and
-Docs pins, expiry, request and rendezvous bounds, and the actual role-to-grant
-mapping. Browser, Electron and tablet roles may share an existing OAuth
-registration. Record sharing explicitly, use independently issued grants,
-and require each origin's exact pointer, properties and bytes to be visible to
-each reader. An absent or failed mapping leaves that row unqualified. A host
-run using a registration's real grant does not establish platform runtime
-behavior. Observe refresh through the existing expiry-triggered path, record
-whether it was triggered naturally or deliberately, and use protected files
-for dedicated run-only grants. Refresh can rotate those credentials.
+The Version 2 plan fixes the owner map for the supported single registration.
+Browser and Electron are sequential views of Host. Tablet and the second
+contender use Tablet. The two synthetic controls have their own local records
+and never make provider requests. Both real owners use dedicated run-owned
+records, separate from Manager's protected DriveStore and the installed tablet
+credential. The example's Buddy V1 file reader and refresh writer cannot take
+over either installed owner or use a copied grant safely. A host run using the
+approved registration and independently issued grants supplies transport
+evidence. Verify the actual packaged companions and tablet separately.
+
+Open each owner from its current protected record for each new session. At
+most one mutable client holds each owner at a time, with exclusive directory
+ownership throughout the invocation. Host and Tablet can race as separate
+clients. Release both before the fresh Host witness, and release the matrix
+origin before opening a reader. Refresh can rotate the current owner record.
+Observe one expiry-triggered refresh for each owner through the existing path.
+Record whether it was natural or stimulated. Host can carry forward an observed
+allocation refresh without stimulating a second refresh for another role view.
 
 Build the example from the clean Buddy revision selected for the run with
 `cargo build --locked --example drive_slot_qualification --features
 drive-slot-qualification`. Use its `--help` for the argument shape. In a
-dedicated mode-0700 directory, prepare a private `plan.json` with version 1,
+dedicated mode-0700 directory, prepare a private `plan.json` with version 2,
 non-nil distinct `run` and `group` UUIDs, full `buddy_revision` and
 `docs_revision`, `expires_unix`, `request_seconds` set to 10, a
-`rendezvous_millis` bound between 1 and 10000, and six ordered `grants`.
-The order is Browser, Electron, tablet, same-registration contender, wrong
-account and wrong client. Each entry has `binding_sha256` (SHA-256 of the
-adapter's compact JSON tuple of client ID, account permission ID and group)
-and an explicit `stimulate_refresh` boolean. Store the dedicated 0600 grant
-files as `browser.json`, `electron.json`, `tablet.json`, `contender.json`,
-`wrong-account.json` and `wrong-client.json`. The last two grants are local
-refusal controls and do not make provider requests.
+`rendezvous_millis` bound between 1 and 10000, and a closed `owners` object
+with `host`, `tablet`, `wrong_account` and `wrong_client`. Every entry
+contains `binding_sha256` (SHA-256 of the adapter's compact JSON tuple of
+client ID, account permission ID and group), a `stimulate_refresh` boolean,
+and an `acquisition` field. Use the same binding digest for Host and Tablet.
+Store the dedicated 0600 single-link records as `host.json`, `tablet.json`,
+`wrong-account.json` and `wrong-client.json`. Use false refresh flags and
+null acquisition for the controls. Version 1 inputs keep their original
+meaning, resource ledger and executable, including for original follow-up.
+Version 2 refuses Version 1 and provides no conversion.
+
+For each real owner, the approved plan binds an `acquisition` object with a
+nonzero `issuance` UUID, `evidence_sha256` of its reviewed sanitized acquisition
+receipt, `initial_grant_sha256` of that exact protected initial record, and
+true `audience_verified` and `appdata_only_verified` flags. Both owners must
+have distinct issuance, receipt and initial record values. Before approving
+the plan, review each receipt against the supported OAuth exchange for actual
+independent issuance, exact audience, exact app-data scope and selected account.
+Keep those receipts and hashes private. The example checks the approved plan
+hash, attestation shape, independent record values and exact initial bytes
+before allocation. It checks the current owner bytes captured at allocation
+when admitting Run. These are custody checks. Token inequality or an advanced
+expiry do not prove issuance, audience or exact scope, and the Rust About check
+only validates account. Evidence about a refreshed bearer's audience or exact
+scope needs verification in the selected owner flow.
 
 The approved plan byte hash gates `allocate`. The returned frozen hash
 gates `run` and later exact-ID observation. Use `report` for sanitized local
@@ -114,10 +146,14 @@ two contender POSTs. Record each POST result independently of the subsequent
 pointer reads. Record a separate deliberate lost acknowledgement between
 POST and the adapter's same-call read, then recover by exact-ID observation
 in a fresh client.
-After both contenders return, open a fresh client from the selected Browser
-grant for a third exact-ID and byte comparison. This is a fresh transport
-session using the same registration and grant, with no claim of an additional
-OAuth grant.
+After both contenders return and release their clients, open a fresh Host
+client for a third exact-ID and byte comparison. Record both original POST
+results separately. The fresh witness supplies an additional transport
+observation under the Host grant. The sole planned replay uses the winner's
+original owner. The original action and resource index also select the owner
+for follow-up. Browser and Electron matrix IDs stay distinct even though they
+share Host. The second contender's race sends and descriptor index 19 use
+Tablet, as do Tablet's matrix IDs.
 
 Allocate 27 IDs, including two deliberately absent IDs. At most 25 files may
 be created. Ten fresh race slots share two immutable same-base descriptors

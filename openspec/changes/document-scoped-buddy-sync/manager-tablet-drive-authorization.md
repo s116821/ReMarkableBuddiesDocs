@@ -120,10 +120,15 @@ invalidate other grants for the app and must explain that consequence. An
 approved public desktop registration and actual provider/installed USB
 qualification remain required before claiming this workflow delivered.
 
-The existing [provider qualification contract](provider-qualification-contract.md)
-keeps its independently issued Browser, Electron, tablet and contender grants,
-wrong-account/client controls and bounded original ledger. A same-account
-multi-grant test does not establish cross-user isolation.
+The [provider qualification contract](provider-qualification-contract.md)
+proposes two independently issued run-owned grants for the standalone example,
+with sequential Browser and Electron views of Host and the second contender
+using Tablet. It keeps the wrong-account/client controls, all nine origin/reader
+checks and the original bounded ledger. Packaged Browser and Electron can use
+the same protected Manager profile without companion-specific consent. The actual
+tablet still needs its own verified grant. Keep standalone provider, installed
+companion/tablet and cross-user isolation evidence separate. The accepted
+Version 1 contract remains binding pending review of the Version 2 replacement.
 
 ## Verification
 
