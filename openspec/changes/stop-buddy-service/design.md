@@ -169,6 +169,22 @@ References: [COM query semantics](https://learn.microsoft.com/en-us/windows/win3
 [connection wait](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemlocator-connectserver),
 and [subprocess timeout](https://docs.python.org/3.12/library/subprocess.html#subprocess.run).
 
+## Ordinary executable sampling
+
+On the authorized tablet, the ordinary Stop review reached the second capture
+and exceeded the 12-second child budget before producing a Confirm gate. The
+first three executable hash commands each took about 1.5 seconds, including
+drain and closing reads. Each capture can establish the same protected installed
+and running inode before reading it. Hash the running executable once per capture
+and close both identities after that read. Repeat the process and installed-path
+metadata checks at the existing closing service sample.
+
+This removes four of six executable reads from a complete Begin, an estimated
+six seconds at the observed per-command cost. Actual end-to-end timing remains a
+tablet qualification gate. Continue comparing two complete raw samples under
+the typed hook bracket. Confirm collects its own two samples and compares with
+Begin. Keep the resident sampling path and all transport deadlines.
+
 ## Proposed separate resident-package capability
 
 `package-transition-wiring.md` defines the missing closed host/private bridge,

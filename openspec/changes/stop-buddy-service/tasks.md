@@ -120,3 +120,10 @@
 - [x] Verify direct and resident digest compatibility and production refusal in both host factories.
 - [x] Independently review the exact source and paired contract at Manager 82f1c657 and Docs ba64978b.
 - [ ] Qualify a separate stable installed tuple and actual guarded public Stop before any enablement.
+
+## Ordinary executable sampling budget
+
+- [x] Record the tablet Begin timeout and narrow the repeated executable work to one joined path/proc hash per ordinary capture.
+- [x] Preserve opening and closing path, parent, alias, and process identity checks, both capture digests and fresh Confirm sampling. Add targeted regressions for metadata, process and digest drift.
+- [ ] Independently review the paired exact revision and run hosted regressions.
+- [ ] Qualify fresh authorized tablet Begin and Confirm timing with the app under the original operation bounds.

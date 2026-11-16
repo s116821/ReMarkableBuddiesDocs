@@ -146,3 +146,17 @@ Production profile admission remains empty.
 
 - **WHEN** the literal, parent protection, target metadata, argv, executable identity or any bracket differs or is unavailable
 - **THEN** the host refuses the candidate without fallback to a resident layout or Stop submission.
+
+### Requirement: Ordinary executable identity and digest are sampled together
+Each ordinary capture SHALL establish the fixed protected installed executable
+and the running executable as the same full stat tuple, including link count.
+The host SHALL hash the proc executable once within the opening and closing
+identity checks, preserve the independent closing process sample, and collect
+fresh evidence in both captures of both Begin and Confirm. The resident collector,
+public contract, immutable qualified digest comparison and deadlines SHALL remain
+unchanged.
+
+#### Scenario: Executable or process evidence changes
+
+- **WHEN** either path or process identity, parent or alias chain, full metadata, PID start ticks, or captured executable digest differs
+- **THEN** the ordinary candidate refuses before mutation under the existing deadline.

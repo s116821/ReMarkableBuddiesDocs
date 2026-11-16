@@ -146,6 +146,17 @@ each independent before/after chain and comparison without caching or reusing a
 prior sample. Neither batching nor these sampled checks provides atomic ancestry
 or protection against hostile root replacement.
 
+For ordinary direct and alias layouts, independently validate the fixed executable
+path and its parents before leaf access. Join its exact stat tuple with the
+running executable's device, inode, owner, group, mode, length, nanosecond mtime
+and ctime, and link count. Read SHA-256 once from the selected PID's proc executable
+in each capture. Bind the exact hash reply to closing executable stat, original PID
+start ticks, and closing path and parent tuples. Preserve the independent closing
+service and process checks, including exact argv, readlink, uid, gid and cgroup,
+and the protected alias checks where applicable. Keep the public/private digest
+shape and the immutable qualified hash comparison. Neither capture nor request
+may reuse an earlier capture's digest.
+
 ## Required qualification
 
 acceptance.md and acceptance-cases.json define concrete fixture variations and
