@@ -53,5 +53,9 @@ in ordinary release builds until its native integration is qualified.
 - **THEN** the trial retains the original failure and does not invite Return, retry an effect, infer a revision increment, select product Submit semantics or promote the run to native acceptance.
 
 #### Scenario: Explicit actor-fixed diagnostic input
-- **WHEN** the exact selected sidecar enables actor-fixed input and a fresh cue-bound operator confirmation attests visible caret placement and released input
+- **WHEN** the exact selected sidecar enables actor-fixed input and a fresh cue-bound operator confirmation attests visible caret placement in the seed's selected editable region or typing's exact provisioned LF interval, with released input
 - **THEN** only the existing controller may emit the two fixed diagnostic sequences through its continuously owned keyboard, rechecking original deadlines and competing-input/service guards before each key down, attempting release after partial failure and retaining the original outcome without retry or physical-keyboard qualification.
+
+#### Scenario: Return observed before actor release completes
+- **WHEN** native key observation has returned but the actor's final release, full batch or guard result is pending or failed
+- **THEN** the observer cannot durably capture or clear the draft; it requires the protected successful whole-cue completion publication within the original cue expiry and existing settlement bound, followed by quiet readmission and fresh exact same-range observation.

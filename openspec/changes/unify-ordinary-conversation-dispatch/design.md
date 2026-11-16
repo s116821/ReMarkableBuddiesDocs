@@ -90,8 +90,12 @@ renews input admission, and forced kill does not prove a hardware key release.
 
 This mode only emits `seed` plus Return and `composer trial` plus Return, once
 each. It cannot move the caret: native provision supplies LF anchors but no
-caret-placement operation or proof. A person must visibly place the caret and
-release input for each current cue. The operator then atomically publishes a
+caret-placement operation or proof. For the seed cue, a person must visibly place
+the caret in the selected disposable page's editable native text region. For the
+typing cue, it must be in the empty interval between the two newly provisioned LF
+separator paragraphs, not merely somewhere on the selected page. If that exact
+location cannot be shown, no confirmation or fixed input is permitted. After
+releasing input for that current cue, the operator atomically publishes a
 separate, single-link byte-for-byte copy of the whole cue in the original control
 root: `composer.seed-ready` becomes `composer.seed-positioned`, and
 `composer-store/typing-ready.json` becomes `composer.typing-positioned`. These
@@ -99,6 +103,14 @@ names explicitly attest current visible placement/release; cue existence or
 native arming is insufficient. The actor verifies the original binding, complete
 cue/staged two-link inode pair, confirmation bytes and original target expiry.
 Only the actor writes `composer.seed-complete` after successful fixed input.
+For typing, it writes the whole exact cue to `composer.typing-complete` only after
+every fixed down/up pair, release and both final guards succeed with no held key;
+it then publishes the empty `composer.typing-complete.ready` marker after checking
+the original pins, guards and expiry again. Before durable User capture or clear,
+the observer requires this protected complete same-cue publication and readmits
+quiet input. Waiting shares the existing five-second post-key settlement bound
+and original native cue expiry; neither is renewed. Return reaching Qt alone
+cannot stand in for successful actor completion.
 
 Before each key down, the actor repeats existing service/process/selection and
 cancel checks, exact keyboard identity, original target CLOCK_MONOTONIC deadline
