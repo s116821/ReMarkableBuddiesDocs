@@ -43,3 +43,11 @@ in ordinary release builds until its native integration is qualified.
 #### Scenario: Idle typing
 - **WHEN** a key wait ends without a native attempt and the runtime owner admits a fresh connection
 - **THEN** a new read-only wait may use the same still-valid native visit and range without provisioning again or replaying an effect.
+
+#### Scenario: Finite diagnostic typing trial
+- **WHEN** the development observer asks the operator to type synthetic text and Return
+- **THEN** it first validates the actual native wait's same-attempt diagnostic while input remains quiet, preserves input ownership across typing/readmission/teardown, and requires exact historical text followed by exact same-range text plus one newline with a changed native revision before durable capture and conditional clear.
+
+#### Scenario: Diagnostic cannot establish readiness or causality
+- **WHEN** arming evidence is missing, partial, stale or mismatched, input cancellation is queued, or the fresh draft differs from the instructed post-key text
+- **THEN** the trial retains the original failure and does not invite Return, retry an effect, infer a revision increment, select product Submit semantics or promote the run to native acceptance.

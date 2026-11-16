@@ -56,3 +56,40 @@ An idle key wait may be re-armed with a new operation and handshake only through
 the existing runtime owner. The same native visit and opaque range must survive;
 socket replacement, stored IDs or timeout alone grant no effect authority.
 Provider calls and render/export remain downstream of durable input admission.
+
+## Finite tablet mechanics trial
+
+The explicitly compiled observer trial uses the admitted Buddy runtime and its
+existing independent bootstrap controller/recovery. It uses a fresh nonce-owned
+persistent Store beneath the admitted staging directory, retains exact effect
+requests/outcomes before assertions, and never shares the product Store or
+replays an effect. Bounded ordinary seed typing is developer setup on the
+disposable selected page; fresh observation and unchanged native quiet-undo and
+logging checks still decide whether provision is possible. Seed text remains
+outside the owned interval and in the exact same-page preservation accounting.
+
+The trial keeps input quiet until a protected native diagnostic matches the
+actual SDK-prepared AwaitKey frame/digest. Native diagnostic details are owned by
+the SDK's guard-owned-composer-edits change. The consumer pins the log descriptor
+and fresh EOF, reads positionally with finite append/line limits, and rejects
+partial, stale, foreign, duplicate or replaced-inode evidence. The receipt means
+armed at its sample with a bounded remaining budget, never still-live authority.
+Only then does the observer overlap into its explicit typing phase and publish
+the operator-ready instruction. Return remains a diagnostic ordinary newline,
+not a selected product Submit shortcut.
+
+For this synthetic trial, KeyObserved must contain exactly the instructed text
+from the same range. A later same-range observation must contain exactly that
+text plus one newline and a genuinely different native revision. Revision+1 is
+never assumed. The exact fresh text is durably appended as a User turn before
+the once-only conditional clear. Both actor and observer overlap replacement
+quiet guards, drain the old typing observer, reject queued gestures/loss and
+require released input before dropping it; the observer retains this ownership
+through permit teardown. Failure preserves evidence and independent recovery.
+
+These source mechanics are not yet actual-tablet acceptance. Physical folio and
+pen OSK behavior, native selected-instance/profile admission, typing/idle/clear,
+outside-range preservation and recovery remain to be exercised on the tablet.
+Injected input, if selected, cannot qualify physical keyboard reachability.
+Model dispatch, rendered replies, product shortcut and practical page scale
+remain unfinished v1 integration.

@@ -4,6 +4,7 @@
 - [ ] Extend the existing native-effect journal for exact composer requests, durable outcomes, restart consumption and unknown-effect refusal; preserve older evidence.
 - [ ] Require durable exact User text in the existing conversation Store before conditional native clear.
 - [ ] Run automated regression coverage in CI; build/run the selected app on the coordinated tablet for actual draft, idle, changed-text, navigation and recovery cases.
+- [ ] Review the finite observer trial's same-attempt arming receipt, quiet/typing overlap and exact pre/post-key text checks; run its parser controls in existing CI before building the real tablet candidate.
 
 - [ ] Connect verified native composer text/edit/semantic Submit/currentness and supported gestures through the existing input/SDK owner.
 - [ ] Integrate and qualify actual native composer/status/turn-region prepend/focus/page effects through the unified-page owner.
