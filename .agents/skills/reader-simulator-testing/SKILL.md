@@ -1,6 +1,6 @@
 ---
 name: reader-simulator-testing
-description: Develop or debug Reader Buddy locally using deterministic simulator fixtures and authorized live-model checks. Use for scenario selection, regression coverage and interpretation of local test evidence; native device operations use the separate unattended tablet skill.
+description: Use Reader Buddy simulations for parallel development while the authorized tablet is occupied, or for contributors without hardware. Maintain CI regression fixtures and interpret modeled evidence; use the tablet directly whenever it is available.
 ---
 
 
@@ -16,6 +16,15 @@ read complete timestamped private comments when already accessible and publish
 relevant decisions. State genuinely missing context once and continue independent
 work; ask only when a missing decision prevents correct work. A missing optional
 integration is not a reason to request credentials or installation repeatedly.
+
+Follow [development validation](../../../CONTRIBUTING.md#development-validation).
+If the authorized tablet is free, use the
+[tablet workflow](../reader-buddy-testing/SKILL.md) instead of a local simulator or
+emulator run. A local model is useful when another worker is using the tablet,
+but actual end-to-end acceptance still follows on hardware. Automated unit,
+component and regression suites run in existing CI; maintain their coverage
+without routinely rerunning the suites locally. Contributors without authorized
+hardware may use these tools and identify unverified native cases for a maintainer.
 
 ## Choose evidence for the change
 
@@ -43,7 +52,6 @@ limits, then choose maintained scenarios matching the changed behavior. For exam
 ```sh
 cargo run -- --simulate docs/simulator/scenarios/blank-answer.json
 cargo run -- --simulate docs/simulator/scenarios/disagreement.json
-cargo test --test simulator
 ```
 
 These examples remain offline even if local credentials exist. Start from a
