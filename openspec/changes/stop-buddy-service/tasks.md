@@ -91,3 +91,9 @@
 - [x] Coalesce each original parent chain into one fixed bounded command; retain immediate no-follow tests, strict per-parent framing/parsing, separate before/after chains and unchanged deadlines.
 - [x] Verify identical synthetic full DTOs/digests, reduced command counts, unsafe-parent/drift/framing refusals and actual local GNU/BusyBox producers, with platform evidence kept separate.
 - [ ] Reconcile the exact successor into recovery, verify independent final source/Docs review and current hosted checks; complete actual profile/lifecycle qualification before production admission or final delivery.
+
+## 13. Bounded Windows inventory process replacement
+- [x] Review official query/cancellation semantics and compare the same nine fields locally without printing adapter identifiers; preserve UInt64, boolean and null representations.
+- [x] Replace only the fixed per-snapshot PowerShell process with an isolated Python/pythoncom child, preserving the three-second kill-and-wait boundary and all surrounding fresh identity checks.
+- [x] Verify exact matching/ambiguity, malformed values, bounds, child failure/timeout, no cached observations and local same-provider field equivalence; retain separate Stop timing and device qualification gates.
+- [ ] Obtain independent exact-source review and current hosted checks before coordinated delivery; keep production profiles disabled.

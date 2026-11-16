@@ -131,3 +131,27 @@ spelling. Admit only those exact missing-final-component envelopes, not a loose
 substring or locale translation. Keep every timestamp and parent check strict.
 The previous refused attempt remains failed; this correction needs new target
 evidence and does not retrospectively repair it.
+
+## Windows inventory process cost
+
+Replace only the per-snapshot PowerShell inventory subprocess with the current
+configured Python interpreter in isolated, no-bytecode mode. Its fixed local
+COM query uses the same `root/StandardCimv2:MSFT_NetAdapter` provider and the same
+nine fields. Each invocation creates a new query and requires exactly one
+matching interface GUID; no cached observations or provider fallback is allowed.
+Use raw pythoncom dispatch, avoiding generated win32com wrappers/cache writes.
+Preserve strings, booleans and nulls. Convert CIM UInt64 NetLuid's decimal string
+losslessly to the same JSON integer, checking its unsigned 64-bit range.
+
+Keep the existing three-second subprocess kill-and-wait boundary, private
+identifier handling and bounded JSON output. In-process ConnectServer is not a
+replacement: its documented max-wait flag permits two minutes, and the scripting
+enumerator has no three-second cancellation boundary. Keep every existing fresh
+snapshot, native ancestry/route check, notification latch, source binding and
+host-key/authentication fence. Stop's 2/8/12/13/14-second limits and disabled
+qualification profiles do not change. Local field equivalence and speed are not
+tablet timing, provider qualification or Stop admission.
+
+References: [COM query semantics](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemservices-execquery),
+[connection wait](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemlocator-connectserver),
+and [subprocess timeout](https://docs.python.org/3.12/library/subprocess.html#subprocess.run).

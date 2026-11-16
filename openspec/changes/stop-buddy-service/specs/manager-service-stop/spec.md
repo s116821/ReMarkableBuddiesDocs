@@ -1,5 +1,12 @@
 ## ADDED Requirements
 
+### Requirement: Windows inventory optimization preserves fresh identity custody
+Windows snapshot inventory SHALL query the same local MSFT_NetAdapter provider and nine identity/state fields through a fresh fixed query in a bounded isolated subprocess. It SHALL require exactly one selected GUID, preserve boolean/null values and lossless UInt64 identity, and retain the existing three-second subprocess timeout, output bound, notification checks, native ancestry/routes and all Stop deadlines. It SHALL NOT cache observations, fall back to another provider, elevate privileges or qualify Stop from local timing alone.
+
+#### Scenario: Local inventory query stalls or changes identity
+- **WHEN** the inventory child times out, fails, returns malformed/ambiguous results or the independently sampled identity changes
+- **THEN** the existing wired boundary refuses, the child timeout terminates and waits for its process, and no stale observation or alternate query authorizes contact.
+
 ### Requirement: Explicit fixed-service stop with qualified lifecycle admission
 Both companions SHALL require a separately reviewed, explicitly confirmed stop of only the fixed Buddy service on the original verified wired connection and boot. The host SHALL revalidate the original invocation, supported loaded unit/package/runtime identity and source-backed supported-profile predicate and independently accepted shutdown qualification before submission. Unknown or changed native ownership or unsupported stop policy SHALL refuse without mutation. No arbitrary command/unit/PID, start/restart, force-kill fallback, recovery, provider or native page operation SHALL follow.
 
