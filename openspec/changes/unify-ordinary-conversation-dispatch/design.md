@@ -72,10 +72,19 @@ The trial keeps input quiet until a protected native diagnostic matches the
 actual SDK-prepared AwaitKey frame/digest. Native diagnostic details are owned by
 the SDK's guard-owned-composer-edits change. The consumer pins the log descriptor
 and fresh EOF, reads positionally with finite append/line limits, and rejects
-partial, stale, foreign, duplicate or replaced-inode evidence. The receipt means
+partial, stale, foreign, duplicate or replaced-inode evidence. Log opening is
+nonblocking until the regular-file check, fresh EOF must be a complete line
+boundary, and an unterminated trailing line cannot be hidden behind a good
+record in the same sample. The receipt means
 armed at its sample with a bounded remaining budget, never still-live authority.
 Only then does the observer overlap into its explicit typing phase and publish
-the operator-ready instruction. Return remains a diagnostic ordinary newline,
+the operator-ready instruction. Cue contents are durably staged privately;
+original local and native deadlines are checked again after input handoff and
+staging, immediately before atomic publication of the complete ready file.
+Existing runtime and authenticated-transport checks run before as well as after
+the progress callout; the cue cannot bypass an already-required failed check.
+Unavoidable later changes still do not turn this sample into a live lease.
+Return remains a diagnostic ordinary newline,
 not a selected product Submit shortcut.
 
 For this synthetic trial, KeyObserved must contain exactly the instructed text
