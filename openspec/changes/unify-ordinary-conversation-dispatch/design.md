@@ -68,6 +68,17 @@ disposable selected page; fresh observation and unchanged native quiet-undo and
 logging checks still decide whether provision is possible. Seed text remains
 outside the owned interval and in the exact same-page preservation accounting.
 
+The seed-ready cue has its own bounded envelope containing the exact existing
+selection/process/runtime message, a fresh cue nonce and explicit target
+CLOCK_MONOTONIC expiry. The expiry samples that target clock before adding the
+remaining original 20-second phase budget; neither host receipt nor delayed
+publication starts another window. Complete cue bytes are staged before atomic
+publication, with the original deadline and remaining budget checked again.
+The operator must check the target expiry before input and copy the whole fresh
+cue, including its final newline, only after releasing input. A partial, foreign,
+changed or expired acknowledgement is refused. This seed envelope changes no
+ordinary actor/observer handoff and provides no native text/currentness proof.
+
 The trial keeps input quiet until a protected native diagnostic matches the
 actual SDK-prepared AwaitKey frame/digest. Native diagnostic details are owned by
 the SDK's guard-owned-composer-edits change. The consumer pins the log descriptor
