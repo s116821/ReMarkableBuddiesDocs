@@ -25,7 +25,7 @@ python scripts/workspace.py manager
 python scripts/workspace.py --all
 ```
 
-No arguments lists the directory without cloning. Docs tasks require no components. Rust tasks read its AGENTS.md and local-development guide, install Rust stable, then run manifest checks from Rust. Manager tasks read its AGENTS.md/README for supported Node, run `npm ci` then `npm run check` from Manager. Until a pending foundation PR merges, use its reviewed branch for new commands rather than assuming old main contains them.
+No arguments lists the directory without cloning. Docs tasks require no components. Rust tasks read its AGENTS.md and local-development guide and install the supported Rust toolchain. Manager tasks read its AGENTS.md/README for supported Node and dependency setup. Build and run from the component checkout using its current instructions and the development-validation workflow below.
 
 ## Existing clones, worktrees and forks
 
@@ -60,6 +60,33 @@ On every development machine, check build/temp disk headroom and deliberately re
 
 Coordinate with active owners before cleanup. Retire source only after checking that valuable work is preserved upstream, using the normal Git/worktree lifecycle. Follow the shared [development hygiene checklist](.agents/skills/development-hygiene/SKILL.md) for path/process checks and measured closeout.
 
+## Development validation
+
+When the authorized development tablet is available, test on that tablet. Build
+the changed software, run the actual app/workflow, exercise relevant edge cases,
+observe the visible result and any required persisted state, fix failures and
+repeat the affected end-to-end flow. A desktop component test or ARM build/emulator
+does not demonstrate that the tablet feature works.
+
+Coordinate one tablet operator. Use local simulators/emulators for useful parallel
+work only while that tablet is occupied by another worker; return to hardware for
+acceptance when it is free. If a concrete build, connection or runtime problem
+prevents a real run, fix or report that problem instead of substituting a simulated
+pass. Source preparation and review can continue independently.
+
+Keep automated unit, component and regression checks in the existing CI pipeline;
+do not routinely repeat those suites locally. Add meaningful regression coverage
+for observed failures and read the checks for the exact submitted revision. Neither
+CI success nor simulator output replaces the actual end-to-end acceptance result.
+
+Contributors without an authorized development tablet can use the documented local
+tools and clearly identify hardware cases that a maintainer still needs to run.
+Documentation-only changes use source/link review and Docs CI; they do not require
+a tablet run. Follow the [tablet checklist](.agents/skills/reader-buddy-testing/SKILL.md)
+or the applicable [simulator checklist](.agents/skills/reader-simulator-testing/SKILL.md).
+Preserve existing authorization, device ownership, recovery and secret-handling
+requirements; this testing order does not expand any held execution scope.
+
 ## Routing and linked delivery
 
 | Task | Repositories | Central change |
@@ -75,7 +102,7 @@ Linked Docs and code PRs form one reviewed delivery, not a separately completed 
 
 Current user policy is to **squash merge every PR**, including the initial Docs migration, until explicitly changed. [Preserved source evidence](docs/migration/README.md) is independent of topic-branch history and remains verifiable in a shallow clone after squash. Do not change repository settings to enforce or bypass this instruction.
 
-Documentation changes need working examples/checks, not paid model or native runs. Use the shared [simulator checklist](.agents/skills/reader-simulator-testing/SKILL.md) and, only for authorized idle hardware, [tablet checklist](.agents/skills/reader-buddy-testing/SKILL.md) for relevant implementation changes. Label offline, live-model and native evidence separately; unavailable native checks remain maintainer gates. Preserve source documents and secrets. See [licensing](docs/licensing.md).
+Use [development validation](#development-validation) for relevant implementation changes. Label offline, live-model and native evidence separately; unavailable native checks remain maintainer gates. Preserve source documents and secrets. See [licensing](docs/licensing.md).
 
 ## Delivery ownership
 
