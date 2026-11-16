@@ -528,3 +528,19 @@ SHALL keep authorization, verified USB installation and completed backup distinc
 #### Scenario: A private handoff is consumed
 - WHEN the trusted host workflow takes the exact current reference for a canonical nonzero collection UUID
 - THEN it receives the existing Buddy V1 record once with expiry converted to UNIX seconds; a second take returns no secret. This helper alone does not establish target authority or installed backup readiness.
+
+#### Scenario: Tablet connection is confirmed
+- WHEN the selected connection, boot, configured Store, mode token, original credential slot and private account custody still match the reviewed setup
+- THEN the shared host persists its token-free original operation before dispatching the fixed stdin-only credential writer once. Creation requires absence; replacement and removal require the exact original revision, metadata and binding. Buddy serializes publication with Store and mode ownership and reports success only after private atomic publication and checked readback.
+
+#### Scenario: A credential write response is lost across Manager restart
+- WHEN a dispatched credential change has no admitted response and the Manager restarts
+- THEN both companions recover the original readback request from the existing protected store and offer Check without replaying Apply. Desired-state observation proves the current file state, not who wrote it; changed custody stays unresolved. Only verified resolution and a successful protected compare-and-swap retire the original.
+
+#### Scenario: An isolated tablet reconnects after credential removal
+- WHEN the credential slot is absent but an isolated backup mode remains selected
+- THEN setup uses the verified collection and binding retained atomically with the earlier resolution. Missing or mismatched provenance requires recovery before consent, never a guessed collection or implicit mode change. Protected capacity reserves a binding slot for every unresolved target before any write.
+
+#### Scenario: A prepared connection loses its owner
+- WHEN a matching preview detects connection loss, account supersession, protected-record drift, expiry or cancellation
+- THEN it erases its prepared input and permanently retires that reference. Restoring the previous observation cannot make it confirmable again, and a late response cannot release another maintenance owner or restore a private view.
