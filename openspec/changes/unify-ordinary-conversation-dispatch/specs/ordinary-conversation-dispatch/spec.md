@@ -30,7 +30,11 @@ in ordinary release builds until its native integration is qualified.
 
 #### Scenario: Exact input retention before clear
 - **WHEN** the consumer requests conditional clear
-- **THEN** the same Store already contains a durable User turn with exactly the submitted text, and the native owner independently compares the selected range, genuine revision and text before editing.
+- **THEN** this submission has freshly committed a new durable User turn with exactly the submitted text to the same Store, and the native owner independently compares the selected range, genuine revision and text before editing.
+
+#### Scenario: Historical or concurrent identical submission
+- **WHEN** an append returns a historical receipt, a concurrent winner's receipt or a lost commit acknowledgment
+- **THEN** the retained history remains available but that caller receives no new clear proof; identical text alone cannot authorize clearing another draft.
 
 #### Scenario: Changed or malformed input
 - **WHEN** input cannot be converted without loss, durable retention fails, or the live draft differs from the submitted selection
