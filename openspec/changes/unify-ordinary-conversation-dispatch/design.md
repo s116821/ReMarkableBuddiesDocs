@@ -79,6 +79,37 @@ cue, including its final newline, only after releasing input. A partial, foreign
 changed or expired acknowledgement is refused. This seed envelope changes no
 ordinary actor/observer handoff and provides no native text/currentness proof.
 
+The selected sidecar may explicitly choose `input_mode: "actor_fixed"`; missing
+mode remains manual. The existing PID1 actor then owns one fallibly constructed
+virtual keyboard, created before either input inventory and admitted only after
+exactly one actual event node resolves to its owned sysfs identity. It remains
+in both permanent inventories. The descriptor stays alive through actor result
+logging; success follows observer exit/quiet drain, while error still belongs to
+the original PID1 group retirement and independent recovery. Device loss never
+renews input admission, and forced kill does not prove a hardware key release.
+
+This mode only emits `seed` plus Return and `composer trial` plus Return, once
+each. It cannot move the caret: native provision supplies LF anchors but no
+caret-placement operation or proof. A person must visibly place the caret and
+release input for each current cue. The operator then atomically publishes a
+separate, single-link byte-for-byte copy of the whole cue in the original control
+root: `composer.seed-ready` becomes `composer.seed-positioned`, and
+`composer-store/typing-ready.json` becomes `composer.typing-positioned`. These
+names explicitly attest current visible placement/release; cue existence or
+native arming is insufficient. The actor verifies the original binding, complete
+cue/staged two-link inode pair, confirmation bytes and original target expiry.
+Only the actor writes `composer.seed-complete` after successful fixed input.
+
+Before each key down, the actor repeats existing service/process/selection and
+cancel checks, exact keyboard identity, original target CLOCK_MONOTONIC deadline
+and a four-second inner batch cap. A temporary quiet guard excludes only this
+already-proved owned keyboard and rejects competing physical input; permanent
+typing monitors still observe the keyboard. A potential down is tracked before
+emission, so matching release is attempted even after sync error or expiry.
+Original intent and attempted/completed/release counts are retained; partial or
+unknown input is never retried. This exercises injected mechanics, not physical
+folio/OSK reachability or a product Submit choice.
+
 The trial keeps input quiet until a protected native diagnostic matches the
 actual SDK-prepared AwaitKey frame/digest. Native diagnostic details are owned by
 the SDK's guard-owned-composer-edits change. The consumer pins the log descriptor

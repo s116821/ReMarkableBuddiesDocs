@@ -51,3 +51,7 @@ in ordinary release builds until its native integration is qualified.
 #### Scenario: Diagnostic cannot establish readiness or causality
 - **WHEN** arming evidence is missing, partial, stale or mismatched, input cancellation is queued, or the fresh draft differs from the instructed post-key text
 - **THEN** the trial retains the original failure and does not invite Return, retry an effect, infer a revision increment, select product Submit semantics or promote the run to native acceptance.
+
+#### Scenario: Explicit actor-fixed diagnostic input
+- **WHEN** the exact selected sidecar enables actor-fixed input and a fresh cue-bound operator confirmation attests visible caret placement and released input
+- **THEN** only the existing controller may emit the two fixed diagnostic sequences through its continuously owned keyboard, rechecking original deadlines and competing-input/service guards before each key down, attempting release after partial failure and retaining the original outcome without retry or physical-keyboard qualification.
