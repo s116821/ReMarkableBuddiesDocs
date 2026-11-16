@@ -137,7 +137,7 @@ Buddy8fc5d6cc/Docsdfdf4317 accepted only additive inventory in independent revie
 
 ## Disposable provider qualification resource contract
 - [x] Prepare concrete account/application/operator/namespace/budget/evidence/cleanup decisions and primary API basis without live resources.
-- [ ] Independently review and verify the Version 2 two-owner harness, including protected acquisition pins, serial Browser/Electron ownership, distinct Tablet contention, all visibility rows, original IDs/one-shot limits and exact cleanup. Preserve Version 1 original inputs under their pinned executable. Keep this source and fixture checkpoint separate from approval and execution.
+- [x] Independently review and verify the Version 2 two-owner harness at Buddy `11907e7e0023dcb74d7aea91ef22ebd0468a88eb`, including protected acquisition pins, serial Browser/Electron ownership, distinct Tablet contention, all visibility rows, original IDs/one-shot limits and exact cleanup. [Hosted Checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/43811661557/job/133114500836) passed all ten example tests, including the Unix private-directory lease, protected grant path, frozen-ledger reopen and synthetic record replacement/reopen fixtures; six Windows tests passed locally. Version 1 inputs retain their original pinned executable. This source and fixture checkpoint does not qualify actual OAuth rotation, installed restart durability or provider execution.
 - [ ] Obtain coordinator review and explicitly owned disposable binding before executing the live-provider gate.
 - [ ] Execute bounded actual adapter contention/acknowledgement/client visibility checks and retain failures; do not infer native/domain/production acceptance.
 
