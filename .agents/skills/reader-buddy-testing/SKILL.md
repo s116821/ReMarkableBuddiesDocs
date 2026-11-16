@@ -13,8 +13,8 @@ This document is also a manual checklist for contributors using ordinary Git,
 Cargo, SSH/SCP and a screenshot viewer; it does not require Codex, connectors or
 private Linear access. Use available public acceptance criteria and discussions.
 Follow [development validation](../../../CONTRIBUTING.md#development-validation):
-when an authorized development tablet is available, build and run the changed
-software there, exercise the actual workflow and relevant edge cases, inspect the
+when an authorized development tablet is available, build the changed software
+and run it on that tablet, exercise the actual workflow and relevant edge cases, inspect the
 result, and fix/repeat as needed. Leave automated component/regression suites to
 existing CI; host tests, ARM builds and emulation are not tablet acceptance.
 Local simulation/emulation is for parallel work while another worker owns the

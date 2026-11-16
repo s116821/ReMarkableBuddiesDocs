@@ -16,4 +16,6 @@ OpenSpec skills are in `.codex/skills/`; equivalent manual steps remain supporte
 
 Follow [development validation](CONTRIBUTING.md#development-validation): use the authorized development tablet whenever it is available, with one coordinated operator. Build and run the changed software, exercise the actual workflow and relevant edge cases, and observe the result. Automated component/regression checks run in existing CI. Local simulators or emulators are for parallel development while the tablet is occupied, or contributors without authorized hardware; they are not a prerequisite for an available tablet. Feed hardware failures into CI fixtures without presenting modeled results as product completion. Preserve existing execution scopes and independent recovery.
 
+Before an exploratory run, resolve concrete defects threatening that run or its independent rollback, and freeze and isolate its execution inputs from continuing parallel work. Label exploratory evidence as unqualified; required source, native, merge and release verification still applies.
+
 Put reusable documentation under `docs/` in every repository. Central OpenSpec artifacts remain in their standard `openspec/` structure; conventional root entry files such as README, CONTRIBUTING, AGENTS and LICENSE remain appropriate exceptions.

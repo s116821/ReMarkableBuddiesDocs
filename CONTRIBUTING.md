@@ -10,11 +10,11 @@ Install Git and Python 3.11+ using normal platform tools; no Python packages are
 git clone https://github.com/s116821/RemarkableBuddiesDocs.git
 cd RemarkableBuddiesDocs
 python scripts/workspace.py
-python -m unittest discover -s tests -v
-python scripts/check_docs.py
 ```
 
 Windows may use `py -3` instead of `python`. Commands work in PowerShell, cmd, bash and zsh. Quote paths with spaces. No shell scripts, private integrations or tablet are required. Setup never installs packages or accesses hardware.
+
+The existing Docs CI runs the workspace regression suite and documentation checks.
 
 Select only what the task needs; default component destinations are siblings of Docs:
 
