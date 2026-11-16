@@ -38,8 +38,11 @@ later effects for that conversation. Known composer completion permits a fresh
 operation but never replays the consumed original.
 
 The copied draft remains raw UTF-16 until strict product conversion. Conditional
-clear requires the exact submitted text to exist as a durable User turn in the
-same Store and conversation, and the expected live native range/revision/text.
+clear requires the exact submitted text to be appended as a new durable User
+turn by that submission in the same Store and conversation. A historical turn
+with identical text cannot authorize a new clear. The existing page binding and
+retained submission are rechecked after caller progress at transport boundaries;
+native clear still requires the expected live range/revision/text.
 Persistence failure, malformed text or changed ownership leaves the draft alone.
 Pre-key observation is not a post-key clear lease: the selected Submit handler
 must separately observe and compare the state after stock key handling and
