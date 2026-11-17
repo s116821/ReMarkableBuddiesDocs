@@ -22,6 +22,33 @@ Consent belongs beside the existing Reader/Writer destination setting, with Conn
 
 The tablet durably fences a possible code exchange before one token request, validates grant scope/expiry and `GET /space`, publishes the protected grant, then commits its local config pointer against the original digest. Lost replies resolve through original-operation status only. A verified staged grant can finish the same local commit while the original config remains current; an uncertain token exchange cannot replay the code. A tablet-side per-grant owner serializes CLI/daemon credential use, refresh and revocation. Pending rotation must be durable before refresh; publish replacement bytes before reopening the grant. A lost refresh response requires reconnect, never retry of the revoked old token. Every credential reader must honor these lifecycle fences before real OAuth is enabled. Manager never refreshes a second copy.
 
+The grant custody foundation uses a permanent private per-grant lock inode and
+nonblocking OS ownership. All configured exports retain that owner alongside
+their provider destination. Pending exchange, staged, active, pending rotation,
+local disablement, pending revocation and confirmed/unconfirmed retirement are
+closed local states. Visible record bytes alone cannot report durable settlement:
+status, staged activation and access first sync the credential directory and
+recheck the same record digest. Refresh/revocation lend their token once from a
+live permit; the consumer must retain it through the actual request and result.
+A publication error leaves the original operation unresolved until durable status
+reconciles the visible record; it does not authorize a retry.
+
+The first tablet command increment covers exchange and original status/resume.
+It reuses the protected stdin-only CLI and existing config publication/CAS,
+requires an existing compatible Store actor and current boot/config binding,
+and caps its request body at32KiB and original monotonic allowance at30 seconds.
+Each fixed metadata/token/space HTTP operation is limited to10 seconds or the
+remaining original allowance, whichever is smaller. No redirect, proxy fallback
+or automatic retry is allowed. Production registration remains absent, refusing
+new exchange before Store/grant mutation or HTTP. The bound USB connection digest
+is supplied by Manager's trusted transport; the tablet does not claim to observe
+host USB identity. No code or verifier is persisted or returned. The actor stages
+private verified bytes, commits the config pointer last, syncs and rereads that
+exact config before activation. Status/resume cannot create a Store, repeat a
+pending exchange or replace an unrelated config revision. Refresh/revocation CLI
+integration and the confidential Manager transport remain separate unfinished
+steps of this same change.
+
 Disconnect disables local use first and records remote revocation separately. Keep a private revocation-only token until confirmed or deliberately retired. After uncertain rotation, a successful response for an older token cannot prove the unknown successor revoked; guide the user to the provider's Connections page. Reconnect creates a new enrollment and cannot settle an unknown note export or redirect its original association. No grant/code/verifier is part of portable preferences, backups or device clones. Source fixtures can exercise the protocol before a verified client exists; they do not qualify real consent, tablet egress or installed behavior.
 
 Official contracts [OpenAPI](https://developers.capacities.io/openapi.json), [concurrency](https://developers.capacities.io/api/overview/concurrency), [objects](https://developers.capacities.io/api/concepts/objects), [properties](https://developers.capacities.io/api/concepts/properties), and [REST OAuth](https://developers.capacities.io/api/overview/authentication).

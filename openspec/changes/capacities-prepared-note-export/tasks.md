@@ -19,8 +19,12 @@
 - [x] Implement the shared host-only Manager consent broker with PKCE, exact one-use callback, original-tablet binding and credential-free status.
 - [x] Accept Capacities in the existing saved and portable export preferences while preserving default Mem behavior and excluding account grants.
 - [ ] Wire the consent broker and compact connection controls into the existing browser and Electron settings using the confidential tablet transport.
-- [ ] Implement tablet code redemption, private grant publication, original-only uncertain status, sole-owner refresh and revocation; make all grant reads honor lifecycle fences.
-- [ ] Prepare a concrete maintainer registration request with exact redirects and verification steps; obtain the verified public client before enabling real consent.
+- [x] Implement per-grant exclusive ownership, durable pending/staged/active/disabled/retired states and original fences; retain the grant lock for configured exports.
+- [ ] Verify lifecycle publication/parent-sync failures, single-owner exclusion and original-only recovery controls in CI.
+- [ ] Implement the bounded tablet code-redemption command and original-only status/resume with durable staged grant, config CAS last and exact activation readback.
+- [ ] Integrate sole-owner refresh and revocation with their live request/settlement guards.
+- [x] Prepare the maintainer registration draft with exact redirect, scopes and staged verification steps in `oauth-registration.md`; identify missing approved contact, icon and staging build.
+- [ ] Finalize and submit the approved registration package; obtain the verified public client before enabling real consent.
 - [ ] Qualify distributed OAuth, secure credential ownership and the browser and Electron user flows.
 - [ ] Resolve a policy for preserving edits to an existing target block and implement targeted updates.
 - [ ] Run actual tablet export and verify destination content, edited title/body preservation, organization, and uncertain-write behavior.
