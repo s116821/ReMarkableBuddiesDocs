@@ -28,7 +28,7 @@ Please confirm that the exact callback may be registered for both Manager hosts 
 ## Provider verification steps for the staging build
 
 1. Open the local browser or Electron Manager, select the authorized development tablet, and use **Connect to Capacities** in the Reader and Writer settings. Confirm the system browser displays the registered app name and icon and offers selection of a test space under the tester’s own account.
-2. Approve access. The browser returns to the exact registered loopback URI. Confirm Manager reports the verified space and that the tablet verifies the same UUID through `GET /space` before enabling exports.
+2. Approve access. The browser returns to the exact registered loopback URI. Confirm Manager reports the completed connection for the originally selected tablet. Check the retained tablet receipt to verify that the authorized space UUID matches `GET /space` before exports are enabled; the Manager status deliberately does not expose the grant or space identity.
 3. Export a small synthetic prepared note. Confirm it appears in the selected space with the configured test tags and that readback identifies the same object. Repeat sign-in and export in the other Manager host with a separate test enrollment.
 4. Deny a new consent request, then cancel or expire another request before callback. Confirm no enrollment is installed from those attempts. Disconnect a successful test enrollment and verify Capacities reflects the remote revocation and the app disables local use.
 

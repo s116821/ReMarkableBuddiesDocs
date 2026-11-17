@@ -96,9 +96,23 @@ is supplied by Manager's trusted transport; the tablet does not claim to observe
 host USB identity. No code or verifier is persisted or returned. The actor stages
 private verified bytes, commits the config pointer last, syncs and rereads that
 exact config before activation. Status/resume cannot create a Store, repeat a
-pending exchange or replace an unrelated config revision. Refresh/revocation CLI
-integration and the confidential Manager transport remain separate unfinished
-steps of this same change.
+pending exchange or replace an unrelated config revision.
+
+The same protected actor now accepts `grant-status`, `refresh` and `disconnect`
+for an exact original grant and space. The read-only status returns a durable
+record digest; mutations require that exact digest, the current selected grant
+and the original actor/boot/config binding. Refresh retains the exclusive owner
+through a durable pending record, one token request, verified replacement
+publication and receipt. Its latest successful rotation operation supports
+readback after a lost publication acknowledgment without reusing the old token.
+Disconnect durably disables local access before any revocation request. After
+that write it rereads the durable phase and rechecks original configuration,
+cancellation and deadline before reporting success or admitting remote work.
+Failure preserves the committed disablement and unresolved original result.
+An empty successful revoke response confirms acceptance for the supplied
+original token; it cannot prove removal of an unknown rotated successor.
+Automatic refresh during actual exports, Manager disconnect controls and live
+qualification remain unfinished steps of this same change.
 
 The additive read-only `capture` selector accepts contract version1, a bounded
 budget and only the Manager connection digest and expected boot in its binding.

@@ -25,7 +25,9 @@
 - [x] Verify lifecycle publication/parent-sync failures, single-owner exclusion and original-only recovery controls in CI.
 - [x] Implement the bounded tablet code-redemption command and original-only status/resume with durable staged grant, config CAS last and exact activation readback.
 - [ ] Verify initial tablet command and cancellation/publication recovery controls in CI and through the installed transport.
-- [ ] Integrate sole-owner refresh and revocation with their live request/settlement guards.
+- [x] Implement original-grant status, sole-owner refresh and disable-before-revoke in the bounded tablet actor with exact record/configuration settlement guards.
+- [ ] Wire automatic refresh into the actual configured export consumers and disconnect into the existing Manager controls.
+- [ ] Verify refresh, disablement and revocation settlement in hosted CI and with the actual provider on the tablet.
 - [x] Prepare the maintainer registration draft with exact redirect, scopes and staged verification steps in `oauth-registration.md`; identify missing approved contact, icon and staging build.
 - [ ] Finalize and submit the approved registration package; obtain the verified public client before enabling real consent.
 - [ ] Qualify distributed OAuth, secure credential ownership and the browser and Electron user flows.
