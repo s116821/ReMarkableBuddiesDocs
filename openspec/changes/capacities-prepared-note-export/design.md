@@ -1,10 +1,10 @@
 # Capacities prepared note export design
 
-The adapter accepts an access credential from its caller. It compares `GET /space` with the explicitly selected space UUID before reading or writing. It reads `GET /space/structures` and verifies writable title and, when selected, tags. Each configured tag is a known same-space `RootTag` object ID. The initial source supports Pages and their documented `content` block property. One typed create stores the title, selected tags, a text block with the export identity marker and a code block with the exact prepared Markdown source. Rich Markdown presentation remains outside the verified source increment.
+The adapter accepts an access credential from its caller. It compares `GET /space` with the explicitly selected space UUID before reading or writing. Both create and update read `GET /space/structures` and require exactly one writable `content` property on the Page structure. Create additionally verifies writable title and, when selected, tags; each configured tag is a known same-space `RootTag` object ID. One typed create stores the title, selected tags, a stable identity marker and readable Markdown content under a managed GroupBlock. Later updates replace only that verified group. Legacy version1/2 records retain their literal Markdown CodeBlock interpretation and original readback behavior.
 
 The existing ExportAssociation namespace gains a separately versioned Capacities payload under the schema-two export envelope. Its record key deterministically includes provider, space, conversation and the portable correlation. The portable correlation remains in the provider evidence and in the remote identity marker. Structure, source scope and the association key remain immutable. Each attempt carries its own operation identity and exact payload digest. Existing Mem record keys, serialized payloads and dispatch semantics remain intact. The Store already reserves domain schema three for notebook records, so this increment uses the existing export envelope and preserves the installed Store contract files.
 
-A fresh Ledger preparation authorizes at most one polled create. The caller shares the existing Store export owner and cancellation boundary. The preparation receipt binds an effect ID to its first scope within the Store. An explicitly selected different space needs a fresh effect ID. A valid create response provides a candidate ID. Commit that candidate before readback, then verify the exact object, structure, exact attempt marker and exported payload through a same-space `GET /object`. Only verified readback binds the native ID. Candidate IDs cannot be reassigned. If an accepted create has no durably retained ID, later attempts stay unresolved. Search and cursor listing cannot prove identity or absence strongly enough to authorize another write. The shared Ledger governs dispatch within this Store. The provider gives no cross-Store deduplication guarantee.
+A fresh Ledger preparation authorizes at most one polled write. The caller shares the existing Store export owner and cancellation boundary. The preparation receipt binds an effect ID to its first scope within the Store. An explicitly selected different space needs a fresh effect ID. A valid create response provides a candidate ID. Commit that candidate before readback, then verify the exact object, structure, exact attempt marker and exported payload through a same-space `GET /object`. Only verified readback binds the native ID. Candidate IDs cannot be reassigned. If an accepted create has no durably retained ID, later attempts stay unresolved. Search and cursor listing cannot prove identity or absence strongly enough to authorize another write. The shared Ledger governs dispatch within this Store. The provider gives no cross-Store deduplication guarantee.
 
 The existing Writer and notebook flows retain their ExportOwner through Capacities dispatch. A provider-specific dispatch boundary selects the existing conditional-version destination or the Capacities adapter; it does not invent a numeric Capacities revision or reacquire the Store owner. Writer admission compares the portable correlation and effect ID within the provider evidence, and validates the provider-scoped association key. It retains the selected draft/source guards, original deadline, cancellation, and immediate pre-write currentness check. Pending checks use the selected provider and space before starting another generation. Original-only reconciliation reads the original association and never changes its provider or space. Legacy Mem entrypoints and record meanings remain compatible.
 
@@ -14,7 +14,53 @@ Each successful OAuth enrollment receives a grant UUID that survives token rotat
 
 Configured exports bind the enrollment grant in operational Capacities evidence and the Writer intent as well as provider, space and type. Unconfigured adapter fixtures may retain no enrollment identity, but cannot qualify authenticated command reconciliation. New command work resolves its explicit destination and required credentials before Store creation or model invocation. Original-only command reconciliation opens an existing compatible Store without initializing one, finds exactly one matching conversation/correlation association through the existing bounded index, and uses that record's provider, space and enrollment. Ambiguous legacy-plus-Capacities matches, conflicted rows and missing original credentials refuse. The selected current backend, space, tags and writer-enabled flag do not redirect historical reconciliation. Existing ready notebook stores remain supported without admitting an unrelated selected runtime mode.
 
-The API assigns object IDs and does not provide conditional revisions, transactions or idempotency for this call. An existing-object request requiring a change returns unsupported. Block-level patches do not solve concurrent edits to the same block. Distributed OAuth and targeted updates require further reviewed integration and provider acceptance. Private attachments remain outside this increment.
+The API assigns object IDs and provides no conditional revisions, transactions
+or idempotency for these writes. The reviewed update policy changes only the
+app-managed GroupBlock. Compare its exact last-verified identity/content subtree
+before dispatch; an observed edit inside that group conflicts. One targeted
+`PATCH /blocks/block` replaces its children while retaining its group ID/type.
+Omit title, tags, marker and outside siblings. Compare desired semantic content
+on readback, then retain the new verified descendant identities as the next
+baseline. No automatic retry follows a possibly sent write. A concurrent edit
+inside the same group between read and write can still lose under provider LWW;
+this limitation is explicit and is not presented as conditional-write safety.
+
+Before either create or update, require exactly one RootPage structure and one
+`content` property definition with `writable: true`. Create additionally checks
+the title and selected tags. A content-only update does not require those omitted
+properties to remain writable. The provider's structures documentation lists
+block-map IDs in property definitions, but its current type enum has no block-tree
+type; this check deliberately does not invent one or equate richText with blocks.
+Missing or ambiguous content capability refuses pending provider qualification.
+
+Readable content uses the maintained `pulldown-cmark` parser, pinned at 0.13.6
+without default features. Map supported paragraphs, emphasis, links, code, lists,
+tasks, quotes, equations and rules into writable provider blocks under one group.
+Headings use separate bold text with documented Base/0 hierarchy; heading levels
+are deliberately flattened. Do not invent undocumented hierarchy values. Ordered
+lists initially require a starting value of one. Unsupported images, HTML,
+tables, footnotes or formatting combinations refuse before mutation without
+fetching any referenced content. Keep source characters unchanged, with smart
+punctuation disabled. Bound input by existing200000-byte content/256KiB payload
+limits, with at most4096 blocks,16384 tokens and nesting depth32. The semantic
+projection has a fixed mapping revision and excludes provider-assigned IDs;
+identity baselines additionally bind those IDs. Recognize only explicitly defined
+equivalent defaults: absent/false supported text-style flags and absent/null list
+or toggle metadata. This is the mapper's normalization policy, not a promise of
+provider serialization. Other unfamiliar fields or token segmentation
+conservatively fail verification.
+
+Introduce explicit representation evidence version3 for managed groups; retain
+versions1/2 with their original Markdown CodeBlock interpretation and hashes.
+Historical CodeBlocks are never converted or replaced silently. Their original
+readback/reconciliation remains available, while changed content requiring a
+format migration reports unsupported. A fresh association cannot begin with an
+update: its baseline must descend from the verified original association. After
+a crash that leaves an update Prepared despite a possible PATCH, exact-target
+readback may persist the missing candidate transition and then completion; it
+never resends. A newer pending update does not replace an older requested
+operation's retained result. Provider normalization and actual tablet acceptance
+remain pending in this change. Private attachments remain outside scope.
 
 The Manager is an OAuth consent broker; the tablet redeems the authorization code and owns token bytes from their first receipt. Both Manager hosts share a bounded `oauth4webapi`-based S256/state callback implementation. Production metadata discovery is pinned to the Capacities HTTPS issuer and validates the required endpoints, resource and API scopes; advertised MCP registration or another client's public ID does not authorize REST access. Maintainer registration must supply a verified public client ID and exact redirect before consent is enabled. The proposed common redirect is `http://127.0.0.1:48761/oauth/capacities/callback`; no ephemeral-port or alternate-URI fallback is allowed without provider registration.
 
@@ -40,7 +86,12 @@ and caps its request body at32KiB and original monotonic allowance at30 seconds.
 Each fixed metadata/token/space HTTP operation is limited to10 seconds or the
 remaining original allowance, whichever is smaller. No redirect, proxy fallback
 or automatic retry is allowed. Production registration remains absent, refusing
-new exchange before Store/grant mutation or HTTP. The bound USB connection digest
+new exchange before Store/grant mutation or HTTP. Resuming a staged publication
+also requires the approved client to match its original enrollment, and its
+exact staged expiry must remain viable before config CAS and activation.
+An independent armed signal watcher stays responsive during synchronous disk
+settlement; the actor rechecks cancellation and config currentness at the actual
+token-request poll and before starting publication/activation. The bound USB connection digest
 is supplied by Manager's trusted transport; the tablet does not claim to observe
 host USB identity. No code or verifier is persisted or returned. The actor stages
 private verified bytes, commits the config pointer last, syncs and rereads that

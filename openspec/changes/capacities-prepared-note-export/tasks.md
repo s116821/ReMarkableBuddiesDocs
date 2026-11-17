@@ -21,11 +21,15 @@
 - [ ] Wire the consent broker and compact connection controls into the existing browser and Electron settings using the confidential tablet transport.
 - [x] Implement per-grant exclusive ownership, durable pending/staged/active/disabled/retired states and original fences; retain the grant lock for configured exports.
 - [ ] Verify lifecycle publication/parent-sync failures, single-owner exclusion and original-only recovery controls in CI.
-- [ ] Implement the bounded tablet code-redemption command and original-only status/resume with durable staged grant, config CAS last and exact activation readback.
+- [x] Implement the bounded tablet code-redemption command and original-only status/resume with durable staged grant, config CAS last and exact activation readback.
+- [ ] Verify initial tablet command and cancellation/publication recovery controls in CI and through the installed transport.
 - [ ] Integrate sole-owner refresh and revocation with their live request/settlement guards.
 - [x] Prepare the maintainer registration draft with exact redirect, scopes and staged verification steps in `oauth-registration.md`; identify missing approved contact, icon and staging build.
 - [ ] Finalize and submit the approved registration package; obtain the verified public client before enabling real consent.
 - [ ] Qualify distributed OAuth, secure credential ownership and the browser and Electron user flows.
-- [ ] Resolve a policy for preserving edits to an existing target block and implement targeted updates.
+- [x] Review managed-group projection comparison, targeted single PATCH, preserved outside content and explicit same-group LWW race limits.
+- [x] Implement a bounded maintained-parser mapping into readable managed blocks and meaningful CI fixtures.
+- [x] Add version3 group evidence and targeted updates while preserving legacy CodeBlock history and original-only uncertain reconciliation.
+- [ ] Verify managed create, updates, restart recovery, preserved outside content and original legacy history in CI and with the provider.
 - [ ] Run actual tablet export and verify destination content, edited title/body preservation, organization, and uncertain-write behavior.
 - [ ] Sync and archive this change after full acceptance.

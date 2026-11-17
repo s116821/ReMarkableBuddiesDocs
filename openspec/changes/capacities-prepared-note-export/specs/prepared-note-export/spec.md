@@ -2,7 +2,7 @@
 
 ### Requirement: Capacities create and readback use a verified destination scope
 
-The Capacities exporter SHALL verify the authorized space and writable destination shape before preparing one typed object create. An enabled tag selection SHALL resolve to verified same-space tag IDs. Completion SHALL require exact-ID readback with the expected structure, stable correlation, operation marker and content evidence. A request to change an existing object's content SHALL fail closed until a reviewed provider update policy exists.
+The Capacities exporter SHALL verify the authorized space and writable destination shape before preparing one typed object create. An enabled tag selection SHALL resolve to verified same-space tag IDs. Completion SHALL require exact-ID readback with the expected structure, stable correlation, operation marker and content evidence. A request to change an existing object's content SHALL follow the managed-group update contract; legacy representations without that contract SHALL remain unsupported for mutation.
 
 #### Scenario: Create response returns a candidate ID
 
@@ -23,7 +23,7 @@ The Capacities exporter SHALL verify the authorized space and writable destinati
 #### Scenario: Existing object needs a changed export
 
 - **WHEN** the verified association already has a native object and the requested export would change it
-- **THEN** the exporter reports the unsupported operation and sends no mutation.
+- **THEN** only a supported managed-group association may prepare one targeted update after exact baseline checks; legacy or conflicting representations send no mutation.
 
 ### Requirement: Writer dispatch retains the selected source and existing export owner
 
@@ -63,6 +63,50 @@ The product SHALL require an explicit Capacities backend choice and local verifi
 
 - **WHEN** replacement consent creates another enrollment for the same space
 - **THEN** it receives a new grant identity and cannot silently replace the original enrollment of an unresolved attempt.
+
+### Requirement: Capacities content is readable and updates only the verified managed group
+
+New Capacities exports SHALL use a bounded maintained Markdown parser and supported writable blocks under one identified managed group. Unsupported syntax or exceeded limits SHALL refuse before dispatch. Changed exports SHALL compare the exact previously verified managed subtree before one targeted update and SHALL preserve object title, tags, stable marker and all outside siblings. Post-write verification SHALL compare desired semantic content and retain verified descendant identities. The system SHALL disclose provider last-writer-wins behavior and SHALL NOT claim atomic protection against edits racing within the managed group.
+
+#### Scenario: User changes content outside the managed group
+
+- **WHEN** the user changes the object title, tags or outside blocks while the managed group still matches its verified baseline
+- **THEN** a later export updates only that managed group and preserves those unrelated edits.
+
+#### Scenario: User changes the managed group
+
+- **WHEN** a fresh read observes changed managed text, formatting, children or identities
+- **THEN** the update reports conflict and sends no PATCH.
+
+#### Scenario: Provider replaces child identities
+
+- **WHEN** a successful group update returns new child IDs with the expected semantic content
+- **THEN** the verified new identity tree becomes the next baseline without claiming the write excluded a concurrent provider edit.
+
+#### Scenario: Interrupted update lacks its candidate transition
+
+- **WHEN** the original prepared update retains its exact target and a read verifies the desired managed content after an interrupted candidate publication
+- **THEN** reconciliation durably records the missing candidate transition before completion and sends no mutation.
+
+#### Scenario: Replay a completed operation while another update is pending
+
+- **WHEN** the caller requests a retained completed effect while a newer effect on the same association is unresolved
+- **THEN** the response retains the requested historical effect and result rather than substituting the newer operation.
+
+#### Scenario: New association has no verified predecessor
+
+- **WHEN** an update attempts to introduce its own object and group baseline without a prior association
+- **THEN** Ledger admission refuses it rather than adopting the arbitrary object.
+
+#### Scenario: Managed content is unavailable or no longer writable
+
+- **WHEN** the destination does not expose exactly one writable `content` property definition on its selected Page structure
+- **THEN** both create and update refuse without mutation; omitted title and tag properties do not gate a content-only update.
+
+#### Scenario: Unsupported source or legacy representation
+
+- **WHEN** the source requires an unsupported construct, exceeds mapping limits, or the association retains an older CodeBlock representation
+- **THEN** the exporter refuses the unsupported mutation without creating a replacement object or changing historical digest meanings.
 
 ## MODIFIED Requirements
 
