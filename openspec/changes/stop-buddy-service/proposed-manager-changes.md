@@ -66,7 +66,7 @@ retains the accepted mapping, not a completed product qualification claim.
   path from strings, both allowed missing legacy components versus unsafe/EACCES ancestors,
   loaded unit shadowing, source vendor maps, original companion group ENOENT/
   empty/populated/replacement handling and second-sample drift. Require JS/Python
-  digest parity with new fields and unchanged2/8/12/13/14s ceilings. Full serialized
+  digest parity with new fields and current Stop-only2/8/30/31/32s ceilings. Full serialized
   envelope and each16KiB component limit remain independently enforced.
 - tests/service-stop-child.test.mjs: new private payload carriage, fixed resource
   packaging and zero-channel refusal with empty production gate; malformed,

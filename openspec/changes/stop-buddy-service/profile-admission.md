@@ -124,7 +124,7 @@ Lease3/nested ServiceBaseline1 and three new private fields. Public caller field
 cannot supply any of these facts.
 A private child request is exactly
 `{connection_id,boot_id,selector,budget_ms,expected}`: selector review|stop|inspect,
-budget integer1..12000; expected null for review/inspect and otherwise exactly
+budget integer1..30000; expected null for review/inspect and otherwise exactly
 `{profile,sample_sha256}`, where profile ordinary-manual|resident-installed and
 the digest binds the host's canonical original private sample. Input cap4KiB.
 The child recomputes the fixed observations before Stop; a digest is a drift

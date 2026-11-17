@@ -21,7 +21,7 @@ browser/Electron UI. Exercise all action/state/current/reference/connection/boot
 cross-products, not only examples. Enumerate actual maintenance peers from final
 admitted source (currently19 predecessors), both Busy directions, observation
 quiescence, queued late reply/Stop/120s expiry, original cancellation and the
-2/8/12/13/14-second ceilings. Use actual local POSIX SSH/process/systemctl fixtures
+2/8/30/31/32-second ceilings. Use actual local POSIX SSH/process/systemctl fixtures
 with empty stdin, fixed arguments, stdout/stderr flooding and child cleanup.
 Run final Linux/Windows source and retained-package integration; distinguish
 source resource revisions and package hashes. Never relabel a synthetic pass as

@@ -82,8 +82,17 @@ immutable strings and runtime copies have no secure-erasure guarantee.
 
 ## Deadlines, effects and custody
 
-Reuse at most2s channel/8s collection/12s child/13s host/14s UI software ceilings,
-with remaining budgets including observation quiescence. These limit local waits;
+Use Stop-only ceilings of at most2s channel/8s collection/30s child/31s host/32s UI,
+with remaining budgets including observation quiescence. The UI clock starts before
+lazy loading; the controller retains that deadline while it awaits the request.
+The collection limit starts after SSH exec acknowledgement, so the child and
+supervisor bound the full child operation, including that acknowledgement.
+Browser requests, Node and Python each start their own local clock; no identical
+absolute clock is passed between layers. Node passes its bounded remaining
+request duration to Python, whose sampled device cutoff uses remaining child
+time. Qualification also requires its separate immutable outer deadline and
+recovery reserve. Unrelated operation and package transition limits remain
+unchanged. These limit local waits;
 they do not shorten the unit's stop policy or establish that a remote systemd job
 has ended. A delayed/lost submission acknowledgment becomes unknown; the accepted job may
 continue beyond the local wait, including its admitted escalation behavior.

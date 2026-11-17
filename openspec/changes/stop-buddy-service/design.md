@@ -161,7 +161,7 @@ identifier handling and bounded JSON output. In-process ConnectServer is not a
 replacement: its documented max-wait flag permits two minutes, and the scripting
 enumerator has no three-second cancellation boundary. Keep every existing fresh
 snapshot, native ancestry/route check, notification latch, source binding and
-host-key/authentication fence. Stop's 2/8/12/13/14-second limits and disabled
+host-key/authentication fence. Stop's 2/8/30/31/32-second limits and disabled
 qualification profiles do not change. Local field equivalence and speed are not
 tablet timing, provider qualification or Stop admission.
 
@@ -183,7 +183,34 @@ This removes four of six executable reads from a complete Begin, an estimated
 six seconds at the observed per-command cost. Actual end-to-end timing remains a
 tablet qualification gate. Continue comparing two complete raw samples under
 the typed hook bracket. Confirm collects its own two samples and compares with
-Begin. Keep the resident sampling path and all transport deadlines.
+Begin. Keep the resident sampling path. The subsequent Stop-only deadline
+correction below is a separate change from this executable-read reduction.
+
+## Measured Stop operation allowance
+
+The fresh a180 tablet trial reached Begin ready in 11.301 seconds. Confirm's
+fresh sample matched at 10.688 seconds; its dispatch wrapper was entered at
+10.813 seconds, leaving about 1.2 seconds of the old child limit. The command
+still had protected owner/identity checks, a typed job request, durable receipt
+publication and final observation ahead. Confirm returned unknown without a
+typed acknowledgement. The wrapper marker does not prove the method was sent.
+The recovery owner reported canonical Reader restored; independent readback is
+tracked separately. Preserve that failure, not a reconstructed success.
+
+Give only Stop a 30-second child allowance, 31-second host supervision and
+32-second UI deadline. Keep two-second channel settings, eight-second output
+collection, three-second Windows inventory and the 120-second editor lifetime.
+Retain same-boot cutoff calculation, all fresh sampling and custody checks,
+shared maintenance exclusion, uncertain outcomes and disabled production
+qualification. An explicit shorter harness timeout remains supported; sibling
+operations retain their prior budgets. The new source needs a fresh tablet run;
+a wider limit alone does not establish accepted Stop or restored native state.
+
+The immutable qualification caller must use the new Stop-specific allowance,
+with its full Confirm and recorder reservation inside the existing original
+lease and recovery window. Its unrelated observations retain their prior limits.
+An insufficient manual-decision remainder refuses before dispatch; no refresh of
+the lease, replay of a spent candidate or automated manual reviewer is allowed.
 
 ## Proposed separate resident-package capability
 

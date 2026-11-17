@@ -190,7 +190,7 @@ two vendor maps and base64 records fit the existing envelope with bounded
 process/platform/twelve-file metadata. Still enforce the complete256KiB cap;
 do not increase it or skip a field on timeout. The nested source snapshot has its
 own16KiB limit. All new reads/hash/parse/brackets share the existing remaining
-2/8/12/13/14-second ceilings. Unsupported utility/property spelling or deadline
+2/8/30/31/32-second ceilings. Unsupported utility/property spelling or deadline
 refuses. Raw private records/argv/policies never reach logs or renderer.
 
 ## Evidence and next implementation boundary

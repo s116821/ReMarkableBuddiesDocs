@@ -29,7 +29,7 @@
 - [x] Make hung-Begin timeout cleanup independent of remaining time while preserving exact owner/epoch/token checks; test newer-owner and obsolete-timer cases.
 - [x] Wire reciprocal StorageInitialization-to-Stop invalidation in both factories; test an isolated synthetic idle review with production gates unchanged.
 - [x] Clear ordinary export and all26 peer/view controllers from actual Stop preparation; distinguish this from storage's18 outgoing-clear regression assertion.
-- [x] Include on-demand module loading in the same14-second UI deadline and forbid Ready from reusing a retained original.
+- [x] Include on-demand module loading in the same UI deadline (initially14 seconds; Stop allowance correction below) and forbid Ready from reusing a retained original.
 - [x] Complete local source/browser/Electron/package qualification at e8f4ff9, preserving test-only706a4ce attribution.
 - [ ] Obtain independent successor review and hosted final-head platform gates before delivery.
 
@@ -127,3 +127,12 @@
 - [x] Preserve opening and closing path, parent, alias, and process identity checks, both capture digests and fresh Confirm sampling. Add targeted regressions for metadata, process and digest drift.
 - [ ] Independently review the paired exact revision and run hosted regressions.
 - [ ] Qualify fresh authorized tablet Begin and Confirm timing with the app under the original operation bounds.
+
+
+## Measured Stop allowance correction
+
+- [x] Retain actual a180 Begin timing, fresh Confirm sample timing and unknown result without inferring the typed-method send point.
+- [x] Update only Stop to child30s/host31s/UI32s, preserving shorter explicit test limits, sibling budgets, lazy-load deadline sharing, fresh custody and uncertainty rules.
+- [x] Add CI controls for the longer successful sample interval, exact child admission boundary, sibling refusal and unchanged cancellation/late-response ownership.
+- [ ] Independently review exact Manager and Docs revisions and require current hosted checks.
+- [ ] Prepare a new immutable tablet candidate with the full Confirm/recorder reservation inside its original caller and recovery lease; complete actual Begin, manual review, Confirm, independent restoration and cleanup evidence before profile admission.

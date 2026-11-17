@@ -42,10 +42,15 @@ parser. No retry after the durable claim, regardless of outcome.
 
 ## Deadline
 
-Keep the original UI/host/child ceilings of 14/13/12 seconds and the original
-absolute host deadline. Sample same-boot device uptime before dispatch in
-the bounded child. At sample receipt, calculate a conservative device
-uptime cutoff using the sampled uptime plus the remaining host time minus
+Use nested Stop-only UI/host/child ceilings of 32/31/30 seconds. The panel
+and controller share the original UI deadline, including lazy loading. The
+browser request, Node host and Python child each arm their own local clock;
+these clocks are not one cross-process absolute deadline. Node computes the
+remaining private request budget, and the child uses that bounded duration
+after parsing. This replaces the earlier 14/13/12-second proposal after the
+measured tablet Confirm sample consumed 10.688 seconds. Sample same-boot device
+uptime before dispatch in the bounded child. At sample receipt, calculate a conservative device
+uptime cutoff using the sampled uptime plus the remaining child time minus
 a reviewed 100 ms margin, rounding down. Use a bounded canonical uptime
 parser. No send if the remaining allowance cannot accommodate the minimum
 margin or if time is stale/unavailable. The owner independently checks
@@ -54,7 +59,11 @@ method, alongside its existing timer/rollback reserve. A late host result
 cannot extend the cutoff or upgrade an original outcome. A receipt for an
 already-sent action may finish durable publication after the cutoff solely
 for independent recovery. It cannot yield public acceptance after expiry.
-Preserve the original outer and remote recovery limits.
+Preserve the original outer and remote recovery limits. A qualification caller
+must reserve the full 32-second Confirm and its existing recorder allowance
+within its original lease before exposing a manual decision. If that time is
+unavailable, refuse without dispatch; do not extend the lease, reuse a spent
+nonce or borrow recovery time.
 
 ## Durable receipt and acknowledgment
 
