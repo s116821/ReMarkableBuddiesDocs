@@ -8,12 +8,39 @@ Manager SHALL provide Capacities connection controls beside the existing Reader/
 
 - **WHEN** the user starts consent for the selected tablet and completes the provider's space selection
 - **THEN** the host validates the original one-use callback and transfers code/verifier only through the identity-bound confidential tablet command.
-- **AND** the application renderer receives only sanitized pending or connection state, never credentials or callback secrets.
+- **AND** the application renderer receives only sanitized pending or connection state and, in the browser, an opaque local launch ticket, never credentials, provider authorization parameters or callback secrets.
 
 #### Scenario: Callback is stale, duplicated, denied or malformed
 
 - **WHEN** the original flow has expired, changed or been canceled, or callback identity and shape fail validation
 - **THEN** no code exchange is authorized and the UI reports the corresponding bounded result.
+
+#### Scenario: Browser windows or cancellation overlap
+
+- **WHEN** a delayed popup, status or cancellation belongs to an earlier browser launch
+- **THEN** it cannot consume, confirm or cancel a newer launch; each owned request correlates to its original local ticket.
+- **AND** closing the pending Begin response before it finishes cancels that pending host flow; after publication, cancellation uses only the original ticket.
+
+#### Scenario: Connection belongs to another tablet or earlier Manager session
+
+- **WHEN** a global connection status cannot be associated with the current observed tablet and the original consent attempt
+- **THEN** Manager presents it as historical rather than claiming the selected tablet is configured.
+- **AND** it preserves original uncertain exchanges and allows a distinct eligible tablet to start its own consent after earlier custody is settled.
+
+### Requirement: Confidential handoff uses current existing tablet identity
+
+The host SHALL capture the existing tablet actor, boot and durable saved configuration digest through a bounded read-only protected command without creating state, returning raw configuration or contacting the provider. Immediately before confidential handoff it SHALL validate that original identity and the fixed installed executable on the same wired transport. The code and verifier SHALL travel only through stdin, and the private host port SHALL allow at most one possible exchange for the original binding. Receipt parsing SHALL require settled streams and exact identity rather than a temporarily empty receive buffer.
+
+#### Scenario: Tablet identity or available time changes before handoff
+
+- **WHEN** the actor, boot, connection, configuration or executable no longer matches, or the original allowance cannot contain the full actor operation and postflight reserve
+- **THEN** no confidential bytes are sent and the flow reports a bounded refusal.
+- **AND** neither a currentness check nor a new phase clock renews the original consent lifetime.
+
+#### Scenario: Existing tablet state cannot be captured
+
+- **WHEN** compatible saved configuration or Store identity is absent or cannot be proven
+- **THEN** capture reports unresolved without manufacturing a new actor or configuration.
 
 ### Requirement: The tablet exclusively owns OAuth lifecycle and uncertain handoff
 
@@ -24,6 +51,12 @@ The tablet SHALL be the sole token redeemer, credential store, refresh owner and
 - **WHEN** the response or final install acknowledgment is lost
 - **THEN** status distinguishes the exact committed grant/config pair, a verified staged grant awaiting the same local commit, and unresolved exchange.
 - **AND** unresolved exchange does not replay OAuth or authorize export through an uncommitted enrollment.
+
+#### Scenario: A later status sees no grant after an uncertain handoff
+
+- **WHEN** confidential bytes may have been sent and the original invocation has no settled terminal receipt
+- **THEN** a later absent-grant status does not clear uncertainty or authorize another exchange.
+- **AND** the host retains the original binding because the original process may not yet have published its durable fence.
 
 #### Scenario: Refresh outcome is uncertain
 

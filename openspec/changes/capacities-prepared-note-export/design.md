@@ -100,6 +100,56 @@ pending exchange or replace an unrelated config revision. Refresh/revocation CLI
 integration and the confidential Manager transport remain separate unfinished
 steps of this same change.
 
+The additive read-only `capture` selector accepts contract version1, a bounded
+budget and only the Manager connection digest and expected boot in its binding.
+It returns `captured` with the actual existing Store actor UUID, current boot,
+echoed Manager connection digest and exact durable saved configuration SHA256.
+It never creates a Store, configuration or enrollment and never contacts the
+provider or scans unrelated commit/object payloads. Missing or incompatible state returns sanitized `unresolved`. Existing
+exchange/status/resume request and receipt shapes remain unchanged. The trusted
+host obtains identity through this protected command rather than parsing raw
+configuration files or traversing unrelated owned data.
+
+The confidential transport holds the existing MaintenanceIO owner and validates
+the fixed installed executable, boot and USB connection. Before sending the
+code/verifier, it repeats capture and executable metadata checks on the same SSH
+transport; the earlier UI currentness check is not authority to send secrets.
+Only stdin carries the proof. Neither command arguments, renderer messages,
+temporary files nor error logs contain it. The fixed exchange command selects
+an attestation prelude in the running Linux actor. Before reading stdin, config
+or Store state, that actor opens its own `/proc/self/exe` once and hashes the
+exact regular file with an eight-second,128MiB bound. It flushes one fixed
+digest line; Manager compares it with the original capture without disclosing
+the expected digest to the remote command. Only then may USB/deadline checks
+permit the confidential frame on that same SSH channel. The running ELF remains
+the measured recipient across atomic path replacement, and Linux excludes
+ordinary in-place writes while it executes. This protects normal trusted
+installation concurrency; it does not attest against malicious root code.
+The private port consumes its original
+handoff once and permits later status only against that original binding.
+A later status read reporting an absent grant does not settle a possibly sent
+exchange: its original remote process may still be running before its durable
+fence. Only the original settled receipt or positive original terminal evidence
+can retire that uncertainty; absence never permits replay.
+Conversely, a normally closed trusted child that positively reports refusal
+before its first confidential send, or a proven local no-child failure, can
+settle the original handoff as not dispatched. Timeout, termination and partial
+delivery cannot use that disposition.
+Structured receipts require full stream settlement and matching identity; an
+empty receive buffer is not EOF or proof of completion.
+
+Capture/current/status use child12s and host13s. Exchange uses child60s, host61s
+and broker62s, still inside the original five-minute consent lifetime. These
+up-front exchange caps reserve setup separately: a recent protected tablet sample
+took10.688s before remaining owner checks, so an8s setup allowance is insufficient.
+After its
+last identity gate and channel admission/open/exec, before the first confidential byte, the child must have all30s of
+actor allowance plus4s for postflight remaining or refuse without sending.
+Provider metadata retains its10s operation bound. Callback currentness and
+exchange have separate phase clocks without renewing consent; unrelated
+operation budgets remain unchanged. Hosted source checks and installed tablet
+qualification remain separate acceptance steps.
+
 Disconnect disables local use first and records remote revocation separately. Keep a private revocation-only token until confirmed or deliberately retired. After uncertain rotation, a successful response for an older token cannot prove the unknown successor revoked; guide the user to the provider's Connections page. Reconnect creates a new enrollment and cannot settle an unknown note export or redirect its original association. No grant/code/verifier is part of portable preferences, backups or device clones. Source fixtures can exercise the protocol before a verified client exists; they do not qualify real consent, tablet egress or installed behavior.
 
 Official contracts [OpenAPI](https://developers.capacities.io/openapi.json), [concurrency](https://developers.capacities.io/api/overview/concurrency), [objects](https://developers.capacities.io/api/concepts/objects), [properties](https://developers.capacities.io/api/concepts/properties), and [REST OAuth](https://developers.capacities.io/api/overview/authentication).
