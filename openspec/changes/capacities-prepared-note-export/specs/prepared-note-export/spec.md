@@ -25,6 +25,25 @@ The Capacities exporter SHALL verify the authorized space and writable destinati
 - **WHEN** the verified association already has a native object and the requested export would change it
 - **THEN** the exporter reports the unsupported operation and sends no mutation.
 
+### Requirement: Writer dispatch retains the selected source and existing export owner
+
+Writer and notebook export flows SHALL use the selected provider's scoped association key for pending lookup and retain their existing Store export owner through dispatch and reconciliation. Admission SHALL bind the selected draft, source provenance, portable correlation, effect operation and provider scope. The original cancellation and deadline SHALL remain effective. The exporter SHALL revalidate the selected source immediately before polling a write. Existing Mem entrypoints SHALL remain compatible and no provider version or conditional-update guarantee SHALL be synthesized for Capacities.
+
+#### Scenario: Selection changes before the write
+
+- **WHEN** the selected Writer draft or source changes after local preparation but before write polling
+- **THEN** the flow refuses the write and durably records no-send only when no write was polled.
+
+#### Scenario: A scoped export is unresolved
+
+- **WHEN** the selected provider and space have a pending or uncertain association for the conversation and correlation
+- **THEN** another generation/export cycle is blocked and original-only reconciliation can read the retained candidate without changing provider or space or dispatching another create.
+
+#### Scenario: Cancellation or replay
+
+- **WHEN** the original operation is canceled or its result is replayed
+- **THEN** the existing Writer ownership, historical result and uncertain-write rules remain effective without acquiring a second export owner or granting another write.
+
 ## MODIFIED Requirements
 
 ### Requirement: Prepared content uses portable exact correlation

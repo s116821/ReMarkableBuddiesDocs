@@ -5,6 +5,13 @@
 - [ ] Verify caller/ledger admission, cancellation, crash or lost acknowledgement, cross-space refusal and historical replay in CI.
 - [ ] Review the paired Docs and Buddy candidates and record exact verification evidence.
 
+## Writer integration
+
+- [ ] Join the Capacities adapter to the existing Writer and notebook ownership, selected-source admission and cancellation boundaries.
+- [ ] Use provider-scoped association lookup before generation and preserve original-only reconciliation and legacy Mem entrypoints.
+- [ ] Cover stale draft/source, cancellation before write, unknown create, replay and provider/space isolation through the real Writer flow in CI.
+- [ ] Add explicit saved destination configuration and protected connection selection without silently reinterpreting legacy Mem preferences.
+
 ## Remaining acceptance
 
 - [ ] Qualify distributed OAuth, secure credential ownership and the browser and Electron user flows.
