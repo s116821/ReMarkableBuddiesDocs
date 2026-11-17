@@ -1,0 +1,250 @@
+# Fixed service stop and independent lifecycle evidence
+
+## Verified source and scope
+
+Current reconciliation contract: package-record-contract.md binds delivered
+Buddy91dcc601 PACKAGE/Profile6/Lease3, including its original rm-sync baseline,
+fixed vendor artifacts, zero original/current companion watchdog and loaded
+policy checks. The paired successor replaces Manager c013eb2's earlier
+LEGACY/Profile1/Lease2 candidate. The following original source packet
+is historical evidence, not qualification of either current candidate. Existing
+results are retained under their original revisions. Both production registries
+remain empty pending implementation and exact tuple qualification.
+
+The original Manager1f258ce baseline had fixed service observation and no service mutation.
+Main sourceb008027 and separately pending APK3f0a10a were verified through all18
+payload hashes/bytes and17original Git blobs. source-assessment.md records precise
+route/Drop/recovery limits; profile-admission.md defines the complete two-profile
+predicate and private DTO. Committed source is not deployed qualification.
+Existing Store/mode/configuration/native guards remain independent. The current
+native candidate's narrower RM2 reports do not qualify released-source/RM1 safety.
+
+## Systemd semantics
+
+Primary systemd docs distinguish job completion, process exit and application
+cleanup. Without ExecStop, systemd sends the configured termination signal; its
+stop policy may later escalate. Killing the SSH client does not establish that a
+queued remote job stopped or that native resources were restored. Do not assume a
+universal TimeoutStopSec or target systemd version. Read effective properties and
+admit only an explicitly supported loaded unit/lifecycle profile.
+
+References: https://www.freedesktop.org/software/systemd/man/255/systemctl.html,
+https://www.freedesktop.org/software/systemd/man/248/systemd.kill.html and
+https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html.
+These versions explain risks; they do not establish installed firmware behavior.
+
+## Admission decision
+
+The accepted intent is UNIT-SCOPED: request that fixed reader-buddy.service stop.
+Revalidate current connection/boot and the original observed profile/invocation,
+refusing observed drift. Do not claim atomic original-PID targeting, create a
+bespoke lifecycle lock, or require a new compare-and-stop protocol. No stock or
+native mutation authority follows from this intent.
+
+Exactly ordinary-manual and resident-installed candidate profiles are recognized.
+The closed predicates, observations, artifact/path/argv policies, mode-agnostic
+scope, release enablement gates and explicit refusals are in profile-admission.md.
+The manual Type=simple/Restart=on-failure unit and PACKAGE/notify resident
+installation are distinct. The development alias, LEGACY resident contracts and
+bare /usr/bin APK remain unsupported by Stop. Missing/occupied/partial native metadata cannot
+become a readiness grant. There is no invented tablet flag/receipt or native lock.
+
+No profile is enabled by this assessment. Owner qualification must bind the exact
+source/build/unit/effective-policy/platform tuple and cover every runtime mode
+that tuple admits, including active work. A source shape match is not that gate.
+This does not block implementing the now-closed sampler, refusals, protocol,
+transport/queue and UI fixtures after independent precode acceptance. The whole
+paired change remains active until its actual qualification and delivery gates.
+
+## Parent metadata collection
+
+Use one bounded fixed command for each existing ordered parent chain instead of
+opening a channel for every ancestor. The immediate no-symlink/stat pairs and
+strict metadata parser remain unchanged. Validate the complete returned chain
+before leaf metadata/content/hash access, and repeat it independently after the
+protected read. Do not cache parent metadata or replace the second sample.
+
+This deliberately changes the rejected-operation trace: an unsafe ancestor's
+owner/type/mode may be rejected after deeper ancestor metadata was collected.
+Those reads reveal metadata only; no leaf content or hash is allowed before all
+parents pass. A symlink or failed stat still aborts the shell chain immediately.
+Retain exact record count/order/framing, the 4096-byte stdout cap, stderr/EOF
+checks and the same absolute deadline. Fewer synthetic commands are source-cost
+evidence, not a measured target runtime or production profile qualification.
+
+## Host and UI
+
+Stop and package controls belong to Tablet. Once opened, each narrowly scoped
+panel keeps its existing lazy controller mounted across task navigation; the
+other task editors remain conditional. This exception preserves the original
+pending operation and retained outcomes, with Activity linking back to the
+controls. It does not keep an unused confirmation valid: leaving Tablet clears
+an idle Ready review, including one that finishes after the controls are hidden.
+Pending and unknown outcomes keep their original identity and lifetime. Returning
+does not submit, cancel or retry an operation. Existing lazy-import deadlines,
+peer busy guards, reciprocal epochs and document teardown remain in force.
+
+This navigation integration is source/UI work. It does not enable a production
+profile or complete shutdown, recovery, signed-package or native qualification.
+
+Use a distinct serviceStop capability and existing MaintenanceIO across both real
+factories. Derive peers from the admitted final source (storage initialization
+adds a nineteenth predecessor). Review and Confirm acquire ownership before
+invalidation/I/O; Busy has no cancellation or invalidation side effects. Ordinary
+observation polling quiesces before review/confirmation. Ready expires after120s
+and is invalidated by peer/session/invocation/unit drift. Confirm revalidates the
+original private review and never silently upgrades admission. The operation remains unit-scoped and never promises original-PID CAS.
+
+After possible stop submission, lost/nonzero/incomplete/timeout/cancelled output
+is unknown. Even a later inactive observation cannot settle original delivery,
+prove a graceful stop or grant another stop. At most8possible submissions and32
+invocation/fence entries per original, no eviction or renewal. Unknown blocks
+another stop for that connection across reboot within host lifetime. History is
+in-memory only. Cancel targets the original host reference+invocation; it stops
+local waiting, never sends systemctl cancel/start/recovery or a delayed global
+kill. A stale cancellation/finally cannot affect a newer host owner.
+
+Use the existing fixed-command pattern: /bin/systemctl --system --no-pager
+--no-ask-password --no-block --job-mode=fail stop -- reader-buddy.service. This
+is a candidate command supported by current native source usage for another
+fixed unit, not target-version qualification. Success means request accepted by
+PID1, not completed shutdown. A conflicting pending job refuses rather than being
+replaced. No cancellation/restart/recovery command is sent.
+
+Current service observation and historical command outcome are separate. Report
+at most current OS state and whether the original fixed stop request was accepted
+under the admitted contract. Neither field means native restoration/flush success.
+No automatic config save/restart/restore continuation follows. Existing maintenance
+must independently observe current inactive state and acquire its own guards.
+
+## Useful work and real qualification
+
+After current source/policy acceptance, independent work can implement strict
+protocol/action matrix, fixed transport, shared ownership/lifetime/controller,
+closed UI reduction and local process/SSH/systemctl-fixture cases without a tablet
+or provider. These can exercise unavailable profiles, queued/lost requests,
+changed invocation, unsafe unit policy and late output. Final actual host/browser/
+Electron/package/platform checks remain required. Native stop safety and unit
+package compatibility are owner-supplied dependencies, not waived by those tests.
+
+## Typed hook integration
+Reuse the reviewed pure decoder and the existing injected bounded runner. Keep
+textual parsing strict for the other41 properties; use the separate typed hooks
+DTO defined in contract.md for the two command-array properties. One group spans
+the existing repeated captures and is reset on failure. No new executable,
+transport framework, public protocol or production tuple is introduced.
+
+## Common stat producer
+An actual read-only target diagnostic returned BusyBox1.36.1's rejection of
+`--printf`. Use `-c` with literal internal newlines and its automatic terminal
+newline; both upstream GNU and BusyBox support this format without changing the
+metadata schema. BusyBox1.36.1 source retains nanoseconds in `%y`/`%z` and reports
+missing files with `can't stat`, distinct from the existing GNU `cannot statx`
+spelling. Admit only those exact missing-final-component envelopes, not a loose
+substring or locale translation. Keep every timestamp and parent check strict.
+The previous refused attempt remains failed; this correction needs new target
+evidence and does not retrospectively repair it.
+
+## Windows inventory process cost
+
+Replace only the per-snapshot PowerShell inventory subprocess with the current
+configured Python interpreter in isolated, no-bytecode mode. Its fixed local
+COM query uses the same `root/StandardCimv2:MSFT_NetAdapter` provider and the same
+nine fields. Each invocation creates a new query and requires exactly one
+matching interface GUID; no cached observations or provider fallback is allowed.
+Use raw pythoncom dispatch, avoiding generated win32com wrappers/cache writes.
+Preserve strings, booleans and nulls. Convert CIM UInt64 NetLuid's decimal string
+losslessly to the same JSON integer, checking its unsigned 64-bit range.
+
+Keep the existing three-second subprocess kill-and-wait boundary, private
+identifier handling and bounded JSON output. In-process ConnectServer is not a
+replacement: its documented max-wait flag permits two minutes, and the scripting
+enumerator has no three-second cancellation boundary. Keep every existing fresh
+snapshot, native ancestry/route check, notification latch, source binding and
+host-key/authentication fence. Stop's 2/8/30/31/32-second limits and disabled
+qualification profiles do not change. Local field equivalence and speed are not
+tablet timing, provider qualification or Stop admission.
+
+References: [COM query semantics](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemservices-execquery),
+[connection wait](https://learn.microsoft.com/en-us/windows/win32/wmisdk/swbemlocator-connectserver),
+and [subprocess timeout](https://docs.python.org/3.12/library/subprocess.html#subprocess.run).
+
+## Ordinary executable sampling
+
+On the authorized tablet, the ordinary Stop review reached the second capture
+and exceeded the 12-second child budget before producing a Confirm gate. The
+first three executable hash commands each took about 1.5 seconds, including
+drain and closing reads. Each capture can establish the same protected installed
+and running inode before reading it. Hash the running executable once per capture
+and close both identities after that read. Repeat the process and installed-path
+metadata checks at the existing closing service sample.
+
+This removes four of six executable reads from a complete Begin, an estimated
+six seconds at the observed per-command cost. Actual end-to-end timing remains a
+tablet qualification gate. Continue comparing two complete raw samples under
+the typed hook bracket. Confirm collects its own two samples and compares with
+Begin. Keep the resident sampling path. The subsequent Stop-only deadline
+correction below is a separate change from this executable-read reduction.
+
+## Measured Stop operation allowance
+
+The fresh a180 tablet trial reached Begin ready in 11.301 seconds. Confirm's
+fresh sample matched at 10.688 seconds; its dispatch wrapper was entered at
+10.813 seconds, leaving about 1.2 seconds of the old child limit. The command
+still had protected owner/identity checks, a typed job request, durable receipt
+publication and final observation ahead. Confirm returned unknown without a
+typed acknowledgement. The wrapper marker does not prove the method was sent.
+The recovery owner reported canonical Reader restored; independent readback is
+tracked separately. Preserve that failure, not a reconstructed success.
+
+Give only Stop a 30-second child allowance, 31-second host supervision and
+32-second UI deadline. Keep two-second channel settings, eight-second output
+collection, three-second Windows inventory and the 120-second editor lifetime.
+Retain same-boot cutoff calculation, all fresh sampling and custody checks,
+shared maintenance exclusion, uncertain outcomes and disabled production
+qualification. An explicit shorter harness timeout remains supported; sibling
+operations retain their prior budgets. The new source needs a fresh tablet run;
+a wider limit alone does not establish accepted Stop or restored native state.
+
+The immutable qualification caller must use the new Stop-specific allowance,
+with its full Confirm and recorder reservation inside the existing original
+lease and recovery window. Its unrelated observations retain their prior limits.
+An insufficient manual-decision remainder refuses before dispatch; no refresh of
+the lease, replay of a spent candidate or automated manual reviewer is allowed.
+
+## Private Confirm failure diagnostics
+
+A recovered typed Stop receipt can establish device acceptance and retirement
+while the original host response remains unknown. Preserve that distinction.
+The last pre-send trace marker does not establish SSH execution, and an absent
+caller acknowledgement does not identify the failure stage.
+
+Retain only allowlisted, value-free terminal stages and causes in the existing
+private diagnostic path: command-channel opening, execution request, bounded
+reply collection and acknowledgement validation, together with the settled
+child's closed status. Do not retain raw stderr, exception text, credentials,
+command contents or device reply payloads. Diagnostics must stay bounded and
+must not delay or change response settlement. A missing diagnostic is unknown,
+not evidence that a stage did not occur.
+
+The marker records child progress, not final operation success. Outer USB,
+watcher or resource settlement can still fail after an acknowledgement marker;
+the validated settled result remains authoritative. Missing SSH exit status is
+distinct from a reported nonzero exit.
+
+Keep the public response contract, single submission, uncertain-outcome rules,
+two-second channel limit, eight-second reply collection and original operation
+deadlines. A diagnostic cannot authorize replay, qualify production Stop or
+substitute for the typed receipt and independent restoration evidence.
+
+## Proposed separate resident-package capability
+
+`package-transition-wiring.md` defines the missing closed host/private bridge,
+public DTO, common browser/Electron route and shared panel. It reuses the existing
+package helpers, including their durable original intents and fixed removal
+coordinator. The existing serviceStop protocol and dispatch semantics stay intact.
+Both capabilities share MaintenanceIO and an unresolved-submission fence; package
+preparation must not dispatch the public Stop action as well as the existing
+private preparation helper. No new Stop command or second transaction engine is
+introduced. Production enrollment and actual package/lifecycle evidence remain
+separate gates. Obtain independent amendment acceptance before implementation.
