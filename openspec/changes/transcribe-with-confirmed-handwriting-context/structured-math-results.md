@@ -1,0 +1,190 @@
+# Structured mathematical transcription implementation
+
+Implementation revision:
+[`7398569`](https://github.com/s116821/ReMarkableBuddies/commit/7398569235bd9c329b832d06bdbae188502651da).
+
+This successor implements the separately reviewed version 3 boundary in
+[structured-math-contract.md](structured-math-contract.md). It adds no automatic
+consumer, confirmation, renderer, source allocation, training or native action.
+Historical math failures remain NOT MET; the separate six-case legacy-policy
+regression remains attributed to source 5403ae1 and its original receipts.
+
+The isolated parser and complete standalone prompt/context were independently
+prepared, then integrated into the actual operation, normalizer and report.
+The accepted design preceded code. Root reviewed the parser's shared page
+budgets, closed forms, exact ordered child roles and opaque unknown children.
+The new literals have explicit LF checkout rules. Neither target labels nor
+expected target trees appear in the production prompt.
+
+Actual Windows production checks pass 28 transcription tests, 10 parser module
+tests and both CLI subprocess tests. The production tests cover v3 admission,
+exact provenance and unknown-child round trips, legacy receiver refusal,
+duplicate/trailing/deep/oversized replies, selected Store ownership through
+cancellation and report overflow, and the existing literal outcomes. Module
+controls exercise shared span/node/text bounds, every arity, depth, exact Unicode,
+inert strings and positive structure. Wrong source glyphs and attachments can
+still be valid syntax; those tests explicitly preserve that limitation.
+
+Six independently serialized identity vectors exercise real prompt/profile
+recipes with absent, selected, reordered and revision-changed context. Existing
+valid v1/v2 vectors and all their expected report bytes remain unchanged. The
+first run passed 27 tests and failed one obsolete unsupported-version fixture
+that still used version 3. The three unsupported-version requests now use 4;
+their refusal expectations and hashes are unchanged. The failed run is retained
+separately from the successful rerun, not relabeled as passing.
+
+Prompt SHA-256: `c92df4e91e326044cdefa4ced9978301dd5ba18da75ab28c8a6af47503651c5e`.
+Context SHA-256: `1ff470ebb912e42bc7ac081b0e1661292a485ff8796d9fbfccfc4f60322505ac`.
+The synthetic identity fixture is in Buddy at
+`tests/fixtures/structured-math-identity-vectors.json`.
+
+Independent read-only source review found no actionable v3 implementation issue
+and independently reconstructed all six identity vectors. It also accepted the
+three unsupported-version fixture updates and the new LF checkout rules.
+Windows default-feature Clippy completed with `-D clippy::all`; existing dead-code
+warnings remain outside this change. The separate Windows all-feature check with
+`-D warnings` failed in unchanged native/Writer platform paths (missing gated
+helpers and dead code). That failure remains recorded; it is not a passing check
+or a substitute for the required hosted Linux validation.
+
+The exact-source Linux host Checks, ARM Build and Integration passed in
+[run 42103299628](https://github.com/s116821/ReMarkableBuddies/actions/runs/42103299628).
+All three Docs checks passed on `79620ff`; the results-only successor `81dd215`
+also passed its required checks. Recognition and remaining delivery gates are
+separate from those build results.
+
+## Finite live comparison
+
+The fresh four-call Terra experiment completed once under the prospective method
+`245c4ec8c9cb789ca1030e30cc9847b4cc69f6b18cdb9f873669968590f2a61c`.
+It preserved the prior source glyph/attachment criteria, target/context image
+bytes, original condition order and call bounds. All four calls returned complete,
+technically valid structured reports; Store remained unchanged. No retry, output
+repair, altered reference or replacement cell occurred.
+
+**Semantic criterion NOT MET: strict usable structure 0/4; full expression
+fidelity 0/4.** Two reviewers independently froze their arm-blinded scores before
+mapping disclosure and agreed on every criterion and outcome. Sample identity and
+historical failures were known; this was not outcome-naive or sample-blinded.
+
+| Sample / context | Retained output | Semantic failure |
+| --- | --- | --- |
+| A / absent | Union, below-limit, T subscript 0 and final-Q script | `=` replaces `:=`; `<=` replaces membership |
+| A / selected | Union, membership, below-limit, T subscript 0 and final-Q script | Required colon omitted |
+| B / absent | Fraction and radical with opaque radicand | Required subscript outside the radical, inside the denominator omitted |
+| B / selected | Fraction with known numerator and opaque denominator | Required radical, radicand and external subscript relationships absent |
+
+Both B outputs are safe partials only in their retained assertions; neither
+preserves the required usable structure. Both A outputs declare complete coverage
+but contain recognition errors. No foreign technical-context content was observed.
+Representation capacity and valid syntax do not establish correct recognition or
+causal context improvement. Historical v2 math 0/4 and legacy 6/6 remain unchanged.
+
+Reproducibility identifiers:
+
+- Source `7398569235bd9c329b832d06bdbae188502651da`; paired Docs at execution
+  `79620ff73ab3d1abf5ef57a1c96dcb317f415212`.
+- Packet `6c631d3d8e783fdbbdf07ef21ac43bd792319bb3d5c88f3054114c52475f014d`;
+  actual candidate `58e1f61f02326e84a59285ab5fb47cb4b59ee009fb9e11d258c3ee6c66894f0c`.
+- Collection binding all raw/report/meta/terminal receipts:
+  `86158ca375992ee6e0ac812cf02ba0306fa6e59aaf630f7700d83cd9927c6ac3`.
+- Root blinded score `50ac0bc43661f66ce8c971a9b27053b3a40e7350fe00727968e9ff3b8913e1cc`;
+  independent score `0f3423408a6338a2faeb08984d7737844a34a950744d1c581277114e09c816d8`.
+
+Keep this change active and unarchived. A successor must address the demonstrated
+recognition failures and satisfy the existing acceptance criteria; this completed
+experiment and all historical failed packets must not be replayed.
+
+## Same-input Sol comparison
+
+The separately admitted four-call Sol comparison completed once on the same
+source7398569, with Docs81dd215 at execution. Production prompt/context, original
+PNGs, selected correction, order, bounds and semantic criteria stayed fixed.
+Only the model and required fresh experiment/request identities changed. The
+fresh binary's four complete loopback requests passed; unchanged refusal and
+custody controls retain their earlier candidate attribution. All four real calls
+completed technically, with Store unchanged and no retries or output repair.
+
+**Semantic criterion NOT MET: strict0/4; full fidelity0/4**, independently scored
+by two reviewers before arm disclosure. Both A arms retain the principal scoped
+expression but omit the colon in `:=`. Both B arms return `unreadable`, with no
+positive fraction, radical, radicand or external-subscript structure. These are
+safe abstentions, not correct expressions or blank-page results.
+
+One per-criterion disagreement remains explicit: for A with selected context,
+Root rejected the ordinary-union token as insufficient for the required large
+union; the independent reviewer credited the union-shaped token with explicit
+below-condition scope. Both original scores are preserved. Both reviewers still
+fail that cell for the missing colon, so the aggregate does not depend on that
+disagreement. No foreign-context content or metadata blinding breach was found.
+This was arm-blinded, not sample-blinded or outcome-naive.
+
+The model change did not satisfy this finite criterion. It establishes neither
+general model ranking nor context causality, and does not alter the Terra or
+earlier results. Representation support and conservative abstention remain
+distinct from required mathematical recognition and full feature acceptance.
+
+Reproducibility identifiers:
+
+- Packet `ae1737e76518c775825c28e6a8ef63d7c0ab130ec99ff840b343dd60f79da9ba`;
+  method `d8862b132ae46472c8255dde29fcb9f2b0245bb14b0122af9a23a7ae4ab1ff1e`.
+- Candidate `ac1bf19b34120413057c5b55f9d7e20d7ef50c2fd667bdd626b7eccfa54d44c5`;
+  collection `2c90d7c9377ee53a803f6885f497f66472a1622c639c2d55dfaf909ee1b8eac0`.
+- Root score `519d71455a63d34ca0a84f7cf3da40f5c7b47d747b59189ace0dbf271d6551ef`;
+  independent score `863f2b6de903d8534deecc9d849be61ad09e2d4517d8f7315bdc692d3bbe6431`.
+
+## Short-instruction recognition diagnostic
+
+A separate two-image diagnostic used the same original PNGs, Sol and high
+detail with a short literal-transcription instruction and free-form LaTeX.
+It supplied no selected examples or source labels. This bypassed the production
+adapter, parser and profile, so it cannot qualify the feature or replace the
+four-cell production comparison.
+
+The first attempt stopped on TLS certificate verification before any successful
+response. Its Python runtime loaded no default CA certificates. A new reviewed
+attempt loaded the existing system CA bundle explicitly while requiring
+certificate and hostname verification. Both calls completed once, in 17.531s
+and 23.640s; the failed attempt and every earlier outcome remain preserved.
+
+| Target | Observed useful content | Remaining error |
+|---|---|---|
+| A | Q, equality, proposed union/limit, final Q-sigma and lower condition | Omits the colon in `:=`; union identity and limit placement are explicitly uncertain |
+| B | Numerator 1, fraction and denominator radical | Proposed LaTeX puts the final u inside the radicand, with an uncertainty note; the required external subscript is not recovered |
+
+Two independent visual assessments agree that neither result is fully faithful.
+The recovered B structure motivates investigating a shorter generic instruction
+with the existing structured vocabulary; it does not prove a causal explanation
+from two samples. Production strict0/4 and fidelity0/4 remain unchanged.
+
+Reproducibility identifiers:
+
+- Completed diagnostic plan `5492578dc6bf3f0323233be20a8c89eef36c8a937c9faf03a107362b700d3042`;
+  prompt `062967c66daa831292f502ff4985f1eb3d1a8446470b7465df8f95444112c68a`.
+- Raw A response `134a0d63e89546cccdbe99d05a9bbbdf0cdf0d9113c0bd4959f9d3f9640e2090`;
+  raw B response `2cf7ddfc5b0edc3ed3db1ed803f57813c70c67734c618cd2666483bdf96f4bd4`.
+- Root assessment `3779cbcdf8249e3ba6adc69eb9ab299b8625b6984647e5861f75f56ef722beac`;
+  independent assessment `78baf19d425329e41f7724f4a8da07ea6b3b1653ab0d262ecf6dba30cd96e271`.
+
+## Compact structured diagnostic
+
+A new independently reviewed two-call diagnostic shortened the generic
+instructions while requesting the existing closed v3 vocabulary. The original
+images, Sol/high-detail selection, verified transport and limits stayed fixed;
+no source answers or examples were added. Both calls completed once with
+structured JSON, in 11.828s and 25.516s. These were direct diagnostic requests
+with page 1, not production adapter, parser, profile or context qualification.
+
+Both independent visual assessments still find the critical source errors: A
+omits the colon in `:=`; B asserts `msqrt(mrow(∂,u))` as its denominator, placing u in
+the radicand rather than preserving the external subscript, and asserts the
+looped glyph without an unknown marker. Positive fraction/radical structure is
+retained, but neither output is source-faithful. There is no production prompt
+change, new acceptance score or regrading of any earlier result.
+
+- Plan `db04c7907fce4c28332a0079bafda4f559f89579b01fb32a133415153cca3bd3`;
+  prompt `f58f3befd89dfa64a15a3488ef94bb60b3e7e9283240a1314665132f47b78af9`.
+- Raw A response `1438288848f2fe4555156240c44830ebddcf78a1fb5f789e78618ac68c1a011d`;
+  raw B response `486bf7ca92db5906584f46bdd6e4346f7eb1d0860ef00eb38c3e0575102c47b0`.
+- Root assessment `3b3250be317299340acfc34e49ef9d01907dd162009ac7ded6b9db68edff4f43`;
+  independent assessment `10f13f66f3831bc56cd5c0270cc65f89e47bca38e3a887522edec03b31485f96`.
