@@ -125,7 +125,7 @@
 
 - [x] Record the tablet Begin timeout and narrow the repeated executable work to one joined path/proc hash per ordinary capture.
 - [x] Preserve opening and closing path, parent, alias, and process identity checks, both capture digests and fresh Confirm sampling. Add targeted regressions for metadata, process and digest drift.
-- [ ] Independently review the paired exact revision and run hosted regressions.
+- [x] Independently review the paired sampling revision and run hosted regressions at Manager7ae0dce and Docs8ca62b5; retain physical acceptance separately.
 - [ ] Qualify fresh authorized tablet Begin and Confirm timing with the app under the original operation bounds.
 
 
@@ -134,5 +134,11 @@
 - [x] Retain actual a180 Begin timing, fresh Confirm sample timing and unknown result without inferring the typed-method send point.
 - [x] Update only Stop to child30s/host31s/UI32s, preserving shorter explicit test limits, sibling budgets, lazy-load deadline sharing, fresh custody and uncertainty rules.
 - [x] Add CI controls for the longer successful sample interval, exact child admission boundary, sibling refusal and unchanged cancellation/late-response ownership.
-- [ ] Independently review exact Manager and Docs revisions and require current hosted checks.
+- [x] Independently review the allowance correction at Manager7ae0dce and Docs8ca62b5 and verify their complete hosted checks.
 - [ ] Prepare a new immutable tablet candidate with the full Confirm/recorder reservation inside its original caller and recovery lease; complete actual Begin, manual review, Confirm, independent restoration and cleanup evidence before profile admission.
+
+## Private Confirm failure diagnostics
+
+- [x] Distinguish recovered typed device acceptance from an unknown original host response and specify bounded value-free diagnostic retention.
+- [x] Implement and independently review the narrow private terminal-cause path without changing public outcomes, submission or deadlines.
+- [ ] Verify closed diagnostic parsing and failure handling in hosted CI, then use a fresh authorized tablet run to identify the response failure; preserve all earlier spent outcomes.

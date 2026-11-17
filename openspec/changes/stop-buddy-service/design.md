@@ -212,6 +212,31 @@ lease and recovery window. Its unrelated observations retain their prior limits.
 An insufficient manual-decision remainder refuses before dispatch; no refresh of
 the lease, replay of a spent candidate or automated manual reviewer is allowed.
 
+## Private Confirm failure diagnostics
+
+A recovered typed Stop receipt can establish device acceptance and retirement
+while the original host response remains unknown. Preserve that distinction.
+The last pre-send trace marker does not establish SSH execution, and an absent
+caller acknowledgement does not identify the failure stage.
+
+Retain only allowlisted, value-free terminal stages and causes in the existing
+private diagnostic path: command-channel opening, execution request, bounded
+reply collection and acknowledgement validation, together with the settled
+child's closed status. Do not retain raw stderr, exception text, credentials,
+command contents or device reply payloads. Diagnostics must stay bounded and
+must not delay or change response settlement. A missing diagnostic is unknown,
+not evidence that a stage did not occur.
+
+The marker records child progress, not final operation success. Outer USB,
+watcher or resource settlement can still fail after an acknowledgement marker;
+the validated settled result remains authoritative. Missing SSH exit status is
+distinct from a reported nonzero exit.
+
+Keep the public response contract, single submission, uncertain-outcome rules,
+two-second channel limit, eight-second reply collection and original operation
+deadlines. A diagnostic cannot authorize replay, qualify production Stop or
+substitute for the typed receipt and independent restoration evidence.
+
 ## Proposed separate resident-package capability
 
 `package-transition-wiring.md` defines the missing closed host/private bridge,
