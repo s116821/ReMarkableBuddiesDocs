@@ -44,6 +44,26 @@ Writer and notebook export flows SHALL use the selected provider's scoped associ
 - **WHEN** the original operation is canceled or its result is replayed
 - **THEN** the existing Writer ownership, historical result and uncertain-write rules remain effective without acquiring a second export owner or granting another write.
 
+### Requirement: Saved selection and original reconciliation preserve connection identity
+
+The product SHALL require an explicit Capacities backend choice and local verified space and enrollment selection for configured Capacities exports. Absent declarations and legacy Mem preferences SHALL retain their existing meanings. Portable preferences SHALL contain neither account-bound identifiers nor secrets. Each configured attempt SHALL bind its original enrollment independently of rotating token values. A command SHALL resolve required destination credentials before new Store creation or model invocation, and SHALL refuse missing, expired, mismatched or unsupported grants without fallback.
+
+#### Scenario: Import a Capacities preference on another installation
+
+- **WHEN** portable preferences select Capacities but the receiving installation has no local connection
+- **THEN** no account, space, grant, token or external write is inferred and export reports that connection setup is needed.
+
+#### Scenario: Reconcile after changing the active destination
+
+- **WHEN** the current backend or active connection has changed while an original export remains unresolved
+- **THEN** reconciliation uses exactly one retained association's original provider, space and enrollment from an existing compatible Store, without creating a Store, invoking a model or dispatching a new export.
+- **AND** ambiguous or conflicted associations and unavailable original grants refuse instead of choosing a current default.
+
+#### Scenario: Reconnect to the same space
+
+- **WHEN** replacement consent creates another enrollment for the same space
+- **THEN** it receives a new grant identity and cannot silently replace the original enrollment of an unresolved attempt.
+
 ## MODIFIED Requirements
 
 ### Requirement: Prepared content uses portable exact correlation
