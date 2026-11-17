@@ -26,7 +26,8 @@
 - [x] Implement the bounded tablet code-redemption command and original-only status/resume with durable staged grant, config CAS last and exact activation readback.
 - [ ] Verify initial tablet command and cancellation/publication recovery controls in CI and through the installed transport.
 - [x] Implement original-grant status, sole-owner refresh and disable-before-revoke in the bounded tablet actor with exact record/configuration settlement guards.
-- [ ] Wire automatic refresh into the actual configured export consumers and disconnect into the existing Manager controls.
+- [x] Wire automatic refresh into the actual configured export consumers while preserving actor, cancellation and prepared-export ownership.
+- [x] Wire existing saved connection checks and revision-bound disconnect into the compact Manager controls, preserving original-only uncertain reconciliation.
 - [ ] Verify refresh, disablement and revocation settlement in hosted CI and with the actual provider on the tablet.
 - [x] Prepare the maintainer registration draft with exact redirect, scopes and staged verification steps in `oauth-registration.md`; identify missing approved contact, icon and staging build.
 - [ ] Finalize and submit the approved registration package; obtain the verified public client before enabling real consent.

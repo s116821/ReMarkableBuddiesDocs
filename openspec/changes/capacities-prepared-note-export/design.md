@@ -111,8 +111,16 @@ cancellation and deadline before reporting success or admitting remote work.
 Failure preserves the committed disablement and unresolved original result.
 An empty successful revoke response confirms acceptance for the supplied
 original token; it cannot prove removal of an unknown rotated successor.
-Automatic refresh during actual exports, Manager disconnect controls and live
-qualification remain unfinished steps of this same change.
+Configured standalone, Writer and notebook exports retain the original grant
+owner through credential use and possible rotation. Startup and historical replay
+remain local: renewal occurs only after fresh export preparation, with the actual
+Store actor and saved configuration still current. Writer and notebook exports
+additionally require the published selection/source cancellation guard. The Store
+actor must match even for an unexpired grant. Before sending a note, access checks expiry again after
+generation and, if needed, performs at most one rotation within the original
+45-second or tighter operation allowance. It rebuilds the bearer from durably
+published replacement bytes and never retries a note request. Standalone signal
+observation remains responsive during synchronous publication.
 
 The additive read-only `capture` selector accepts contract version1, a bounded
 budget and only the Manager connection digest and expected boot in its binding.
@@ -124,12 +132,26 @@ exchange/status/resume request and receipt shapes remain unchanged. The trusted
 host obtains identity through this protected command rather than parsing raw
 configuration files or traversing unrelated owned data.
 
+The separate `capture-connection` selector preserves the original `capture`
+shape and returns only the saved grant/space identity to the private host. It does
+not validate that grant or expose configuration contents. Explicit Manager Check
+follows this with original-bound `grant-status`; only an actionable durable record
+produces a fresh opaque one-use `connectionRef` for the renderer. Disconnect claims
+that reference once and rechecks the original configuration, actor, boot, grant
+revision and running executable before its mutation. Stale windows cannot borrow
+a newer connection. An uncertain Disconnect retains its exact original operation
+for read-only Check; it never repeats the mutation. Durable pending revocation
+proves local disablement separately from the unknown provider result, including
+after Manager restart. Positive settled states require a durable record revision.
+The controls clear earlier connected indications when Disconnect starts.
+
 The confidential transport holds the existing MaintenanceIO owner and validates
 the fixed installed executable, boot and USB connection. Before sending the
 code/verifier, it repeats capture and executable metadata checks on the same SSH
 transport; the earlier UI currentness check is not authority to send secrets.
 Only stdin carries the proof. Neither command arguments, renderer messages,
-temporary files nor error logs contain it. The fixed exchange command selects
+temporary files nor error logs contain it. Fixed exchange and revision-bound
+Disconnect commands select
 an attestation prelude in the running Linux actor. Before reading stdin, config
 or Store state, that actor opens its own `/proc/self/exe` once and hashes the
 exact regular file with an eight-second,128MiB bound. It flushes one fixed
@@ -152,8 +174,11 @@ delivery cannot use that disposition.
 Structured receipts require full stream settlement and matching identity; an
 empty receive buffer is not EOF or proof of completion.
 
-Capture/current/status use child12s and host13s. Exchange uses child60s, host61s
-and broker62s, still inside the original five-minute consent lifetime. These
+Capture/current/status use child12s and host13s. Explicit connection Check uses
+at most two such reads inside26s total; an uncertain original operation needs
+only one status read. Exchange and Disconnect use
+child60s, host61s and broker62s; exchange also remains inside the original
+five-minute consent lifetime. These
 up-front exchange caps reserve setup separately: a recent protected tablet sample
 took10.688s before remaining owner checks, so an8s setup allowance is insufficient.
 After its

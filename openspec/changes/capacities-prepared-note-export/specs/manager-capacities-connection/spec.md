@@ -68,3 +68,15 @@ The tablet SHALL be the sole token redeemer, credential store, refresh owner and
 - **WHEN** the user disconnects or reconnects
 - **THEN** local-use disabling and remote revocation are reported separately; replacement consent receives a new grant identity.
 - **AND** an unknown export retains its original provider/space/enrollment, and uncertain revocation is not reported as confirmed removal.
+
+#### Scenario: A connection changes after Manager checks it
+
+- **WHEN** a user requests Disconnect using an earlier checked connection
+- **THEN** the host consumes only that check's opaque reference and the tablet verifies the exact grant revision and original saved configuration before mutation.
+- **AND** a stale or consumed reference cannot disable a replacement enrollment.
+
+#### Scenario: Disconnect disables local access but provider removal is uncertain
+
+- **WHEN** durable original pending-revocation evidence proves local disablement without proving provider removal
+- **THEN** Manager reports those results separately and clears its earlier positive connected indication.
+- **AND** subsequent Check reads only the recorded original operation, including after Manager restart, without replaying Disconnect.
