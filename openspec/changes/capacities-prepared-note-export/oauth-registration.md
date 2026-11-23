@@ -15,7 +15,7 @@ This draft is for maintainer review. The production registry remains unconfigure
 | REST resource | `https://api.capacities.io` |
 | Requested scopes | `api:read` for verifying the selected space, writable shape and saved object. `api:write` for creating prepared notes and applying supported updates. `offline_access` for tablet-owned refresh between explicit user sign-ins. |
 | Maintainer contact | ssellers_apps@icloud.com |
-| Provider verification build and access | Pending a reviewer-accessible build and coordinated access to an authorized development tablet or suitable staging setup. |
+| Testing instructions | Follow the steps below with a USB-connected development tablet and a Capacities test space. The maintainer can arrange a session once Capacities issues a public client ID for that callback. |
 
 ## Proposed request
 
@@ -27,12 +27,14 @@ Please confirm that the exact callback may be registered for both Manager hosts 
 
 ## Provider verification steps for the staging build
 
-1. Open the local browser or Electron Manager, select the authorized development tablet, and use **Connect to Capacities** in the Reader and Writer settings. Confirm the system browser displays the registered app name and offers selection of a test space under the tester’s own account.
-2. Approve access. The browser returns to the exact registered loopback URI. Confirm Manager reports the completed connection for the originally selected tablet. Check the retained tablet receipt to verify that the authorized space UUID matches `GET /space` before exports are enabled; the Manager status deliberately does not expose the grant or space identity.
-3. Export a small synthetic prepared note. Confirm it appears in the selected space with the configured test tags and that readback identifies the same object. Repeat sign-in and export in the other Manager host with a separate test enrollment.
-4. Deny a new consent request, then cancel or expire another request before callback. Confirm no enrollment is installed from those attempts. Disconnect a successful test enrollment and verify Capacities reflects the remote revocation and the app disables local use.
+The public source is available for review now. For live sign-in, the maintainer must build Manager and Buddy with the same provider-issued public client ID and the registered callback, install Buddy on the development tablet, and supply the matching Manager revision. Both components currently leave that registration unset. [Manager registration](https://github.com/s116821/ReMarkableBuddiesManager/blob/f4385f356a5481ed2ad3df8c4cc6b8050a8175d0/host/capacities-consent.mjs) · [Buddy registration](https://github.com/s116821/ReMarkableBuddies/blob/c4ec69f6008d71c4278768713d71cce42a9cce4f/src/config/capacities/oauth.rs)
 
-These are planned acceptance steps for an eligible staging build. Provide its exact version and reproducible setup with the request.
+1. Connect the development tablet by USB. To exercise the browser Manager from the supplied source revision, install the locked dependencies with `npm ci`, run `npm run build` and `npm run wired:browser`, and open the printed local URL. For Electron, run `npm run desktop` with the same wired configuration. [Wired host setup](https://github.com/s116821/ReMarkableBuddiesManager/blob/f4385f356a5481ed2ad3df8c4cc6b8050a8175d0/docs/wired-observation.md)
+2. Select the tablet. In **Settings → Reader & Writer**, choose **Edit Reader & Writer**, set **Export backend** to **Capacities**, then **Save Reader & Writer**. Choose **Connect to Capacities** and verify the registered app name in the browser. Select a test space in your own Capacities account and approve access.
+3. Confirm the browser returns to the registered loopback address and Manager shows a connection for the selected tablet. Restart Buddy to apply the saved export setting. Export a small synthetic prepared note and verify it appears in the chosen space. Update the note and verify the same object changes. Repeat in the other Manager host with a separate test enrollment.
+4. Deny a new consent request, then cancel or expire another before callback. Confirm neither creates an enrollment. Disconnect a successful test enrollment and verify Capacities reflects revocation and the app disables local use.
+
+During the live session, the maintainer also checks the tablet receipt against the space UUID returned by `GET /space`, verifies configured test tags and records the exact component versions used.
 
 ## Maintainer acceptance before enabling consent
 
