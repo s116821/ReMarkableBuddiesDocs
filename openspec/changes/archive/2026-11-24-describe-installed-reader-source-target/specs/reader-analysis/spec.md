@@ -9,6 +9,12 @@ The ordinary installed Reader proposal SHALL request a short optional descriptio
 - **WHEN** a verified handwritten question refers to a visible circled or highlighted subject
 - **THEN** Reader retains the question as written and accepts a single bounded description from the same proposal for the marked source
 
+#### Scenario: Literal separator text in the proposal
+
+- **WHEN** the optional subject line contains literal `---`
+- **THEN** Reader keeps the literal characters in the subject and uses the first answer separator outside that field
+- **AND** existing proposals without the field and literal markers in the answer keep their established meaning
+
 #### Scenario: Subject is explicitly uncertain
 
 - **WHEN** a structurally valid proposal returns a single explicit subject abstention and the handwritten question passes verification

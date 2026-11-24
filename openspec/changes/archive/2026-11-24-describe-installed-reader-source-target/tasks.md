@@ -10,5 +10,5 @@
 
 ## 3. Verification and delivery
 
-- [ ] 3.1 Verify the maintained installed fixture, renderer tests and hosted package checks.
-- [ ] 3.2 Pair the reviewed implementation and central specification for delivery.
+- [x] 3.1 Verify the maintained installed fixture, renderer tests and hosted package checks.
+- [x] 3.2 Pair the reviewed implementation and central specification for delivery.
