@@ -89,6 +89,12 @@ The persisted notebook producer SHALL independently bind admitted native order a
 - **THEN** it SHALL normalize the original images in native page order, retain empty transcriptions at their original page positions, and bind the normalized source to the observed order and image digests.
 - **AND** it SHALL use the original request and the existing notebook runner with a fresh draft publication. A missing, reordered or unreadable original page SHALL stop generation.
 
+#### Scenario: More originals are available than one OCR request can hold
+
+- **WHEN** a supported whole notebook has more than four originals and fits the aggregate acquisition and notebook planning budgets
+- **THEN** the service SHALL use successive bounded OCR requests while preserving every original's native position, including blanks and gaps occupied by verified Buddy output.
+- **AND** the service SHALL pass the complete ordered transcript to one existing map/reduce plan. A failed later OCR request or an exceeded aggregate budget SHALL stop Writer generation without publishing a partial draft.
+
 #### Scenario: An earlier acquisition is supplied after another original page is edited
 
 - **WHEN** the current page and native page order are unchanged but another original page's saved scene or layout assets change
