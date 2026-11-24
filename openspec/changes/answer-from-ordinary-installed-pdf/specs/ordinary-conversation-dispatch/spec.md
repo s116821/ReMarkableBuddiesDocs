@@ -16,10 +16,15 @@ The installed ordinary local Reader SHALL support the existing local researched-
 
 #### Scenario: The PDF, source page or request changes
 
-- **WHEN** the source, page, input custody or captured conversation becomes stale during the request
+- **WHEN** the original files, current document, page, page order, input custody or captured conversation becomes stale during the request
 - **THEN** Reader refuses further work before the next guarded handoff and cannot publish a new answer from stale inputs.
 
 #### Scenario: A different Reader route owns the input
 
 - **WHEN** the ordinary opt-in is absent or the guarded page is a known notebook, EPUB or unredirected PDF note page
-- **THEN** the existing Reader route processes the request. Selected Reader keeps its existing admission.
+- **THEN** the existing Reader route processes the request, including a note attached to a PDF above the indexing limit. Selected Reader keeps its existing admission.
+
+#### Scenario: Queued Writer owns a Reader-shaped gesture
+
+- **WHEN** the guarded source capture matches a queued Writer request on a Reader-shaped gesture
+- **THEN** Writer receives the capture within its original acquisition budget without any PDF or page table content read.

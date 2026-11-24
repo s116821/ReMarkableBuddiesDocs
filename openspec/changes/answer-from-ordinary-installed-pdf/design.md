@@ -1,6 +1,6 @@
 ## Acquire and identify the source
 
-Use the existing resident input owner to bracket the original PDF and native page table around the same capture used for Reader. The optional ordinary probe admits only an original PDF redirect that matches the observed page and order. A known EPUB, notebook or unredirected note page stays on its existing path. Defer PDF-specific failures and index start until the current gesture has selected Reader. A recognized PDF that changes or fails admission ends its attempted PDF request.
+Use the existing resident input owner to pin file identities before the shared source capture. Read and hash the files only after Writer arbitration selects Reader, within the original acquisition deadline. The ordinary path matches the current page and order before applying the PDF index limit to an original redirect. A known EPUB, notebook or unredirected note page stays on its existing path, including a note attached to a PDF above the indexing limit. A recognized PDF that changes or fails admission ends its attempted PDF request.
 
 ## Receive the handwritten question
 
@@ -8,4 +8,4 @@ Reuse the two independent readings and the exact intent agreement parser. Once t
 
 ## Publish once
 
-Carry the exact captured evidence through guarded research and answering, then into the existing conditional Generated draft publication and resident output flow. Preserve the Reader source target and captured root across the evidence publication. Revalidate source custody at retrieval, submissions and publication. Drop the index and stop on source, input, deadline or Store drift. Review this branch with the existing selected PDF and ordinary follow-up contracts before integration.
+Pin the Prepared conversation and user revisions across both readings, then carry the exact resulting root through retrieval, evidence and Generated publication. Use the retained SDK session to compare the current document, page and order at each provider handoff and before publishing interpretation, evidence and the draft. Keep existing file, input, deadline, and conditional Store guards. Each observation shares the original request deadline. Drop the index and stop when any of these checks refuses the request.
