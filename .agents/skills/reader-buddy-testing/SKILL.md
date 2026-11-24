@@ -1,6 +1,6 @@
 ---
 name: reader-buddy-testing
-description: Test Reader Buddy compatibility and end-to-end Q&A only with full unattended SSH to an authorized development tablet the user is not actively using. This unattended workflow does not apply to personal or actively used tablets, unavailable full SSH, or unrelated edits.
+description: Verify installed Buddy Reader on an authorized development tablet, from the physical trigger through the live model to the answer visible on the next page. Use for attended product testing and authorized unattended observation.
 ---
 
 
@@ -21,10 +21,10 @@ Local simulation/emulation is for parallel work while another worker owns the
 tablet, or contributors without authorized hardware. Record unperformed native
 cases for maintainer acceptance; do not imply hardware was tested.
 
-Apply this workflow only when full unattended SSH is available to a development
-tablet the user is not actively using, and the task authorizes the proposed tests.
-Access alone is not authorization. This workflow does not apply to a personal or
-actively used tablet, or when full unattended SSH is unavailable.
+Coordinate with the person at the tablet for a finger gesture or a visual check.
+Unattended device access requires an authorized idle development tablet and full
+SSH access. During an attended test, use only the observation or changes agreed
+with the person using that development tablet.
 
 Resume from the current branch, saved edits, build artifacts, service state and
 evidence before repeating work. A saved successful build or screenshot proves
@@ -36,12 +36,11 @@ for each hardware test batch; distinguish earlier results from the current build
 - Identify the device and firmware from live state. Authorization for a development
   tablet does not extend to a paired personal tablet. Announce device changes and
   honor the user's existing scope; this skill grants no new mutation permission.
-- Isolate test runs from the installed service so two instances cannot inject input.
-  Use the explicitly built `reader_once` example for an immediate bounded iteration
-  (environment credentials, default model/LL, no dump), or bound the normal loop
-  externally and verify startup before injecting the trigger. Production no-trigger/once
-  switches are removed; see [build/invocation steps](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#testing).
-  Finish or stop a test process before replacing its binary or manipulating its page.
+- Use the single installed Buddy service with its normal configuration and live
+  provider. Verify the running build before the test. If the service cannot start,
+  diagnose startup and repeat the affected flow once it runs. Exercise one-shot
+  binaries, scripted input and model stubs off the tablet in the existing CI
+  pipeline or simulator.
 - Check free space on both the installation and notebook filesystems. Measure the
   notebook filesystem again after staging. The tablet can refuse to add a page
   while it still reports free space. Stage on a suitable writable partition, retain
@@ -64,11 +63,13 @@ supporting context. Do not impose a source-only restriction. Paper-specific valu
 must still match the paper rather than be invented or replaced from memory. Preserve its
 original bytes and page order; compare hashes and inspect native annotations.
 For an installation with automatic answer-page creation, start with one disposable
-notebook page. Circle some content and write a question that refers to it. Exercise
-the installed service with its configured trigger (lower-right by default). Confirm
-that an adjacent page was created, displays the answer and preserves the source
-ink before inviting someone to try it. The manual binary archive uses a prepared
-blank successor. [Installation modes](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#using-reader-on-the-tablet)
+notebook page. An existing example with handwriting works. For example, circle a
+calculation and write “What is the answer to this?” next to it.
+With the page open, hold one finger in the configured corner (lower-right by
+default) for three seconds and release. Follow that request through the live
+provider and automatic insertion. Confirm that the adjacent page visibly answers
+the question and the original ink is intact. The standalone archive's manual page
+setup applies only when testing that distribution. [Installation modes](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#using-reader-on-the-tablet)
 
 Validate capture → question recognition → relevant concept explanation → next-page
 placement, then a different question appending to the same answer page. Check
@@ -83,9 +84,9 @@ summary after misreading a question is a failure, even if every source fact is t
 The app independently rereads the page without the proposed answer before writing; uncertain
 or differing readings should decline the request. Agreement reduces risk but is
 not proof of correct recognition. Record conservative false rejections too.
-Do not silently replace a failing fixture with easier print or claim universal
-handwriting coverage. Synthetic pen/touch events exercise real device integration
-but are not evidence of human handwriting or a physical finger gesture.
+Retain the failing handwriting when diagnosing a miss. Record whether Buddy saw
+the actual gesture, received a provider response, saved the page, and displayed
+the answer. If a finger press produced no request, record the failed trigger.
 
 Check a short tap versus a held trigger, an occupied successor page, and navigation
 back to the source. Inspect UI state between dependent actions: selecting an eraser
@@ -98,16 +99,15 @@ The normalized screenshot is useful for navigation but can lose dense PDF digits
 Inspect native detail as well. Full-width overlapping strips preserve entire
 question/text lines; left/right crops previously split a readable question.
 
-Save annotated input and resulting output screenshots, the relevant sanitized
-log, expected result and actual result together. Record failures and subsequent
+Record the expected and observed result alongside the relevant sanitized log.
+A direct observation or a single-page screenshot is sufficient for visibility.
+Keep affected editable data when needed for recovery. Record failures and subsequent
 repairs without relabeling old evidence as a pass on a newer build. Read the existing
 CI results for the changed revision and verify the final installed build on hardware.
 Do not equate an architecture build with hardware validation on that device.
 
-Use [the hardware probe](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/examples/hardware_probe.rs) for bounded offline
-input actions and [the fixture guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md)
-for reusable fixture setup and links to PR evidence. Adapt coordinates to observed UI
-state; do not fossilize another machine's paths, addresses or credentials.
+The [sample input guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md)
+contains reusable handwriting and links to PR evidence.
 
 The tablet operator owns cleanup for each completed or rolled-back run. After
 verifying the retained package and evidence, remove that run's obsolete installer
@@ -138,5 +138,4 @@ to reflect env_logger's Rust levels. For extra detail, set the documented scoped
 filter for the authorized test process or service, preserving the prior environment
 and restoring agreed service state afterward. Do not dump the entire environment
 or credential-bearing configuration. Inspect logs/debug images before publishing;
-they may contain document text even when secrets are omitted. These instructions
-do not broaden the idle development-tablet authorization or change runtime defaults.
+they may contain document text even when secrets are omitted.

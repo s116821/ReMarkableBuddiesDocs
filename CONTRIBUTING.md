@@ -63,10 +63,10 @@ Coordinate with active owners before cleanup. Retire source only after checking 
 ## Development validation
 
 When the authorized development tablet is available, test on that tablet. Build
-the changed software, run the actual app/workflow, exercise relevant edge cases,
-observe the visible result and any required persisted state, fix failures and
-repeat the affected end-to-end flow. A desktop component test or ARM build/emulator
-does not demonstrate that the tablet feature works.
+the changed software and exercise the installed service through its normal user
+entry point and configured dependencies. For a gesture, use a physical press.
+A prepared notebook can supply the input. Follow the same request to its visible
+result and any required saved state. Fix failures and repeat the affected flow.
 
 Coordinate one tablet operator. Use local simulators/emulators for useful parallel
 work only while that tablet is occupied by another worker; return to hardware for
