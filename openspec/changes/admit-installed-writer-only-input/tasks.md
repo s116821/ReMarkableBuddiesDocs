@@ -4,5 +4,6 @@
 - [x] Verify a queued note for the current circled target, a replaced generation request and a page change before refinement in the [combined Buddy checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45450880314/job/138647420880).
 - [ ] Connect the current-page action to native source capture, existing Writer generation and guarded draft placement.
 - [ ] Verify a regular Reader question and an unqueued current-page Writer request through the normal source submission. Exercise both combined and Writer-only modes and verify placement on the adjacent Buddy page.
+- [ ] Route an unqueued circled-only note through shared input on a fresh source. Verify exact request retention, masked recognition, About, adjacent placement and refusal of missing geometry.
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.
