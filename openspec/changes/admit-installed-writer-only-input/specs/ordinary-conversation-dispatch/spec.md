@@ -81,6 +81,12 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 
 The shared source submission SHALL retain the exact wording and whole-notebook scope of an explicit notebook note request. The service SHALL admit notebook Writer generation only with a supported acquisition result that covers every original source page in order for the same notebook, including blank pages, and distinguishes Buddy output pages.
 
+#### Scenario: A complete ordered acquisition is supplied
+
+- **WHEN** the receiver has verified the notebook identity, original page order, full-page image for each original and the identities of Buddy output pages
+- **THEN** it SHALL normalize the original images in native page order, retain empty transcriptions at their original page positions, and bind the normalized source to the observed order and image digests.
+- **AND** it SHALL use the original request and the existing notebook runner with a fresh draft publication. A missing, reordered or unreadable original page SHALL stop generation.
+
 #### Scenario: The installed service has only the open window
 
 - **WHEN** the handwritten request asks for a whole-notebook note and no complete ordered source is available

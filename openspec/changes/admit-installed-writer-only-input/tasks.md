@@ -6,6 +6,7 @@
 - [ ] Verify a regular Reader question and an unqueued current-page Writer request through the normal source submission. Exercise both combined and Writer-only modes and verify placement on the adjacent Buddy page.
 - [ ] Route an unqueued circled-only note through shared input on a fresh source. Verify exact request retention, masked recognition, About, adjacent placement and refusal of missing geometry.
 - [ ] Verify that an explicit whole-notebook request stops at acquisition when only the open window is available.
+- [ ] Verify the receiving path with a complete ordered host fixture, a blank page and a confirmed Buddy page. Cover omitted, reordered and unreadable source pages.
 - [ ] Qualify a complete ordered notebook source from the ordinary tablet service, then verify notebook generation and guarded draft placement.
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.
