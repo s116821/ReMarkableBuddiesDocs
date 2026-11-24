@@ -2,6 +2,8 @@
 
 Use the same verified output profile and supervised service as the combined app. A stationary three-finger hold opens or reuses a blank page after all fingers lift. It uses the existing page owner and makes no model request.
 
-In Writer-only mode a released corner hold can select a pending refinement. Check the service activation and request identity before acquiring the source, then verify the captured document, page, draft, operation and expiry before consuming it. A different page or a replaced request leaves the current slot available. An ordinary corner hold without a request leaves the service listening. When Writer is disabled the service must never run a queued refinement.
+At release, select only a refinement already queued in the current service activation. The existing slot records whole seconds since boot. Its queue second must precede the release second. A three-second hold started after queueing meets that condition. Use the same boot clock for the event and queue so a wall-clock adjustment cannot reorder them.
+
+Inspect the selected request for the captured document and page. Claim it after validating the current draft, conversation and page binding, immediately before the Writer operation. Recheck the complete slot and its expiry while holding the queue lock. A different page, stale draft or replaced request leaves the slot available. An unqueued corner hold in Writer-only mode leaves the service listening. Reader-only mode skips the Writer queue.
 
 Keep Reader-only and combined Reader input, history and cancellation behavior. Hardware acceptance uses the installed service, real finger gestures and visible page results.
