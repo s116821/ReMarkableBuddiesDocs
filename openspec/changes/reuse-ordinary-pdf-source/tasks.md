@@ -1,7 +1,9 @@
 ## Implementation
 
-- [ ] Reuse a bounded, verified original PDF source across separate ordinary Reader requests. Keep source admission and one exact lookup per question.
-- [ ] Replace or discard a mismatched entry and retain the cold path for otherwise eligible documents larger than the cache limit.
+- [x] Reuse a bounded, verified original PDF source across separate ordinary Reader requests. Keep source admission and one exact lookup per question.
+- [x] Replace or discard a mismatched entry and retain the cold path for otherwise eligible documents larger than the cache limit.
+
+Buddy's integration branch includes the implementation at `e3e976cf`. The service retains up to 2 MiB of normalized material in memory. [Implementation and review](https://github.com/s116821/ReMarkableBuddies/pull/182)
 
 ## Verification
 
