@@ -57,3 +57,22 @@ When Writer is enabled on the ordinary installed profile, an admitted current-pa
 
 - **WHEN** the request is canceled or the source identity or order changes before generation or draft placement
 - **THEN** Buddy stops the remaining work and submits no draft to a different page
+
+### Requirement: Shared source submission supports an explicit circled-only note
+
+The ordinary installed Writer SHALL accept an explicit request for the circled scope from the shared lower-right submission. It SHALL bind validated geometry to that submission's captured source, preserve the exact handwritten request in one Writer turn, and use the masked region for recognition. Its draft SHALL carry the existing About and region provenance and use guarded placement on the adjacent Buddy page.
+
+#### Scenario: First circled note in a one-page notebook
+
+- **WHEN** the user circles part of a fresh source page and requests a note for that part using one lower-right submission
+- **THEN** Writer generates from the masked region and places a draft in the adjacent Buddy conversation without a preloaded command or earlier Reader request.
+
+#### Scenario: Missing or ambiguous circled selection
+
+- **WHEN** the user requests a circled-only note and the submission has no unambiguous bounded region
+- **THEN** Buddy does not fall back to a current-page note and invokes no destination.
+
+#### Scenario: The circled source changes during the action
+
+- **WHEN** the request is canceled or the source identity or order changes before generation or draft placement
+- **THEN** Buddy stops the remaining work and submits no draft to a different page
