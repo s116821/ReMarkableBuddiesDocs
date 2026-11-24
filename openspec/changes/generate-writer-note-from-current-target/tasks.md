@@ -5,5 +5,6 @@
 
 ## 2. Verification and delivery
 
-- [ ] 2.1 Verify ordinary slot matching, unavailable and foreign targets, the retained geometry, and the existing draft and refinement guards.
-- [ ] 2.2 Pair the reviewed implementation with the central specification and hosted verification.
+- [x] 2.1 Verify ordinary slot matching, unavailable and foreign targets, the retained geometry, and the existing draft and refinement guards.
+- [x] 2.2 Pair the reviewed implementation with the central specification and hosted verification.
+- [ ] 2.3 Sync and archive this specification when the shared Buddy branch reaches main.
