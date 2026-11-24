@@ -29,8 +29,9 @@
 - [x] Wire automatic refresh into the actual configured export consumers while preserving actor, cancellation and prepared-export ownership.
 - [x] Wire existing saved connection checks and revision-bound disconnect into the compact Manager controls, preserving original-only uncertain reconciliation.
 - [ ] Verify refresh, disablement and revocation settlement in hosted CI and with the actual provider on the tablet.
-- [x] Prepare the maintainer registration draft with exact redirect, scopes and staged verification steps in `oauth-registration.md`; identify missing approved contact, icon and staging build.
-- [ ] Finalize and submit the approved registration package; obtain the verified public client before enabling real consent.
+- [x] Prepare the registration fields and staging verification steps in `oauth-registration.md`.
+- [x] Submit the maintainer-approved OAuth client registration for both Manager hosts.
+- [ ] Obtain the public client ID and confirmed callback from Capacities before enabling real consent.
 - [ ] Qualify distributed OAuth, secure credential ownership and the browser and Electron user flows.
 - [x] Review managed-group projection comparison, targeted single PATCH, preserved outside content and explicit same-group LWW race limits.
 - [x] Implement a bounded maintained-parser mapping into readable managed blocks and meaningful CI fixtures.

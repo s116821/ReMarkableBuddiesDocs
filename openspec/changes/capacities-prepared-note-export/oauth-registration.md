@@ -1,10 +1,10 @@
-# Capacities REST OAuth registration draft
+# Capacities REST OAuth registration
 
-This draft is for maintainer review. The production registry remains unconfigured while registration and end-to-end qualification are pending. [Capacities REST registration requirements](https://developers.capacities.io/api/overview/authentication)
+The registration submitted on November 23, 2026 covers both Manager hosts. To prepare a live verification build, use the public client ID and redirect URI confirmed by Capacities. [Capacities REST registration requirements](https://developers.capacities.io/api/overview/authentication)
 
-## Proposed registration fields
+## Registration fields
 
-| Field | Proposed value |
+| Field | Submitted value |
 | --- | --- |
 | Integration name | ReMarkableBuddies Manager |
 | Short description | Connect your Reader and Writer tablet app to Capacities and export prepared notes to a space you choose. |
@@ -17,7 +17,7 @@ This draft is for maintainer review. The production registry remains unconfigure
 | Maintainer contact | ssellers_apps@icloud.com |
 | Testing instructions | Follow the steps below with a USB-connected development tablet and a Capacities test space. The maintainer can arrange a session once Capacities issues a public client ID for that callback. |
 
-## Proposed request
+## Integration and callback
 
 Please register ReMarkableBuddies Manager as a public client for the Capacities REST API. Manager helps users connect their tablet to Capacities and deliberately export prepared notes into a space they authorize. Users sign in with their own Capacities account and select the space in the provider consent screen. OAuth sign-in is the only connection method in Settings.
 
