@@ -4,7 +4,7 @@ Reuse Manager's service-launcher resolver. Its two recognized executable paths c
 
 ## Freshness
 
-Verify the boot and service observation, each protected parent directory, and the executable's metadata. After reading the CLI output, compare the executable metadata, service observation and selected path again. A changed path discards the result even when both files independently pass their metadata checks. A missing or unsafe selected file ends the attempt.
+Verify the boot and service observation, each protected parent directory, and the executable's metadata. After reading the CLI output, sample them again and compare the selected path. Withhold the result when the samples differ. A missing or unsafe selected file ends the attempt. This comparison covers the observed metadata. Running-process identity and package provenance require separate evidence.
 
 ## Verification
 
