@@ -81,6 +81,8 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 
 The shared source submission SHALL retain the exact wording and whole-notebook scope of an explicit notebook note request. The service SHALL admit notebook Writer generation only with a supported acquisition result that covers every original source page in order for the same notebook, including blank pages, and distinguishes verified Buddy output pages. It SHALL require source-owner evidence that pairs the independently observed whole saved-source revision with the digest of the exact ordered images acquired from that revision.
 
+The persisted notebook producer SHALL independently bind admitted native order and original page identities to exact saved scene bytes and the resolved layout and template inputs. It SHALL exclude a page from the source only with a matching Buddy ownership receipt. An absent scene SHALL produce unavailable unless a qualified source positively establishes that the original is blank. A saved-byte revision SHALL confer no permission to generate from incomplete rendering.
+
 #### Scenario: A complete ordered acquisition is supplied
 
 - **WHEN** the receiver has verified the notebook identity, original page order, full-page image for each original and the identities of Buddy output pages
