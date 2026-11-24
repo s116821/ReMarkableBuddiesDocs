@@ -1,0 +1,5 @@
+- [x] Classify explicit current-page export and ambiguous export through the shared handwritten input.
+- [x] Connect fresh draft output to the configured destination and its existing correlation and recovery handling.
+- [x] Show draft/export results and clarification on the Buddy page through its current owner.
+- [ ] Cover placement, clarification, and stale-source behavior through hosted fixtures.
+- [ ] Verify on the tablet when the existing operator and enrollment are available, then sync and archive the completed scope.
