@@ -7,7 +7,9 @@ Buddy's integration branch includes the implementation at `e3e976cf`. The servic
 
 ## Verification
 
-- [ ] In the existing pipeline, send two different questions to one running Reader, with an answer page added between questions. Verify one PDF extraction, two fresh retrievals and citations to the different passages.
-- [ ] Verify a fresh extraction after changing the same document's bytes and after starting a new service. An otherwise supported PDF above the retention limit must answer both questions by cold extraction.
-- [ ] Exercise file or page-order changes on a warm request. Keep the existing Writer-priority and inserted-note cases passing.
+- [x] In the existing pipeline, send two different questions to one running Reader, with an answer page added between questions. Verify one PDF extraction, two fresh retrievals and citations to the different passages.
+- [x] Verify a fresh extraction after changing the same document's bytes and after starting a new service. An otherwise supported PDF above the retention limit must answer both questions by cold extraction.
+- [x] Exercise file or page-order changes on a warm request. Keep the existing Writer-priority and inserted-note cases passing.
 - [ ] Include a second question about the same original PDF in the signed Buddy service check already tracked under `answer-from-ordinary-installed-pdf`.
+
+The hosted Reader check passed on Buddy `9ab66705` using the binary built by the pipeline. [Verification run](https://github.com/s116821/ReMarkableBuddies/actions/runs/45442956578/job/138618957575)
