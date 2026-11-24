@@ -2,7 +2,7 @@
 
 ### Requirement: Installed Writer-only gestures honor the enabled modules
 
-An ordinary local Writer-only service SHALL listen on its qualified installed output profile. It SHALL admit a released blank-start gesture without calling a model. A corner release SHALL only run Writer when a pending refinement for the same service activation, operation, draft, document and page remains eligible. A disabled Reader SHALL never receive a fallback request. A disabled Writer SHALL never receive a refinement.
+An ordinary local Writer-only service SHALL listen on its qualified installed output profile. It SHALL admit a released blank-start gesture without calling a model. A corner release SHALL admit a queued refinement only for the current service activation, operation, draft, document and page. On installations that support generation from the current circled target, it SHALL also accept the selected generation request for that page. Each action SHALL apply at most once to the request selected by the release. A disabled Reader SHALL never receive a fallback request. A disabled Writer SHALL never receive either Writer action.
 
 #### Scenario: Start a blank conversation with only Writer enabled
 
@@ -11,13 +11,23 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 
 #### Scenario: Corner hold without a matching Writer request
 
-- **WHEN** Reader is disabled and the released corner hold has no eligible refinement on this page
+- **WHEN** Reader is disabled and the released corner hold has no eligible Writer request on this page
 - **THEN** Buddy stays available without a model call or a page mutation, and a request for another page remains available for its intended page
 
 #### Scenario: Refine the current draft with only Writer enabled
 
 - **WHEN** a pending refinement is selected by a corner release on its named page and still matches the activation, operation, draft and expiry at consumption
 - **THEN** the existing Writer receiver processes the request once
+
+#### Scenario: Generate a note from the current circled target
+
+- **WHEN** the ordinary service supports generation from the current target, only Writer is enabled, and the corner release selects the queued generation for the open page
+- **THEN** Writer generates its note from that target. If the request is replaced before Buddy claims it, the replacement stays queued for its own gesture.
+
+#### Scenario: The page changes before a refinement is claimed
+
+- **WHEN** the user changes the page or its order after Buddy selects a refinement and before it claims the request
+- **THEN** Buddy leaves the refinement queued and makes no model call or subject-memory query for it
 
 #### Scenario: Reader-only or unsupported installation
 

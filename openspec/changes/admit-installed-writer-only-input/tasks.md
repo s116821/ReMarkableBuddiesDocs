@@ -1,4 +1,5 @@
 - [x] Implement Writer-only startup on the qualified installed output profile and preserve unsupported configuration refusals.
 - [x] Route actual released gestures, honor both module switches and keep unmatched Writer requests available.
-- [ ] Cover disabled Reader, blank start, wrong page and replaced or expired Writer requests in existing CI.
+- [x] Cover disabled Reader, blank start, wrong page and replaced or expired Writer requests in the [installed gesture checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45389939565/job/138430752199).
+- [x] Verify a queued note for the current circled target, a replaced generation request and a page change before refinement in the [combined Buddy checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45450880314/job/138647420880).
 - [ ] Verify the changed service on the designated RM2, record what was observed, sync the spec and archive this change.
