@@ -93,6 +93,11 @@ The shared source submission SHALL retain the exact wording and whole-notebook s
 - **THEN** the receiver SHALL decline the earlier acquisition before OCR if the change is already observed and stop before draft publication if the change is observed during processing. A substitute image with the same page ID SHALL fail the sealed image digest check before OCR.
 - **AND** content changes confined to pages already verified as Buddy output SHALL leave the saved-source revision unchanged. A change to native order remains subject to the order guard.
 
+#### Scenario: A saved page uses a feature outside the supported renderer
+
+- **WHEN** any original page cannot be completely rendered within the bounded profile, including an unverified template, unsupported content or an extent that exceeds the budget
+- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL produce a full blank image at its original position.
+
 #### Scenario: The installed service has only the open window
 
 - **WHEN** the handwritten request asks for a whole-notebook note and no complete ordered source is available
