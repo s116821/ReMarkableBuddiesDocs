@@ -13,3 +13,4 @@
 - [ ] Qualify a complete ordered notebook source from the ordinary tablet service, then verify notebook generation and guarded draft placement.
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.
+- [ ] Exercise drawing-only, mixed and empty originals through Writer dispatch. Assert page/section provenance, distinct writing and model observations, and refusal before planning for unreadable or falsely blank pages.
