@@ -95,6 +95,21 @@ The persisted notebook producer SHALL independently bind admitted native order a
 - **THEN** the receiver SHALL decline the earlier acquisition before OCR if the change is already observed and stop before draft publication if the change is observed during processing. A substitute image with the same page ID SHALL fail the sealed image digest check before OCR.
 - **AND** content changes confined to pages already verified as Buddy output SHALL leave the saved-source revision unchanged. A change to native order remains subject to the order guard.
 
+#### Scenario: The open page changes during notebook generation
+
+- **WHEN** the live resident observation no longer matches the captured document, current page or order, even when all original scenes and paper assets have the same saved revision
+- **THEN** the service SHALL decline further provider calls or draft publication at the next operation boundary. It SHALL consult the live visit and the saved revision independently.
+
+#### Scenario: The supported handwriting contains a punctuation dot
+
+- **WHEN** a black fineliner stroke is a single sample or repeated stationary samples within the supported canvas
+- **THEN** the renderer SHALL preserve the dot on the complete page image.
+
+#### Scenario: A saved page uses a feature outside the supported renderer
+
+- **WHEN** any original page cannot be completely rendered within the bounded profile, including an unverified template, unsupported content or an extent that exceeds the budget
+- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL produce a full blank image at its original position.
+
 #### Scenario: The installed service has only the open window
 
 - **WHEN** the handwritten request asks for a whole-notebook note and no complete ordered source is available
