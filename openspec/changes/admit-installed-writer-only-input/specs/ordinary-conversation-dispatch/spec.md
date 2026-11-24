@@ -9,10 +9,10 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 - **WHEN** the user completes the three-finger blank-start gesture on a qualified page
 - **THEN** Buddy opens or reuses its blank conversation through the installed page owner without recording a fabricated turn
 
-#### Scenario: Corner hold without a matching Writer request
+#### Scenario: The existing queued path finds no matching Writer request
 
-- **WHEN** Reader is disabled and the released corner hold has no eligible Writer request on this page
-- **THEN** Buddy stays available without a model call or a page mutation, and a request for another page remains available for its intended page
+- **WHEN** Reader is disabled and the existing queued input path finds no eligible Writer request on this page
+- **THEN** the queue check claims no request, calls no model, and changes no page. A request for another page remains queued for its intended page. The ordinary installed service passes the unqueued submission to shared source intake for classification.
 
 #### Scenario: Refine the current draft with only Writer enabled
 
@@ -33,3 +33,27 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 
 - **WHEN** Writer is disabled or the installed Writer input profile is unavailable
 - **THEN** Buddy refuses Writer input and preserves the supported Reader behavior
+
+### Requirement: The installed current-page Writer action uses its captured source
+
+When Writer is enabled on the ordinary installed profile, an admitted current-page note action SHALL capture the open source page with the SDK and normalize its full source image. Writer SHALL generate a draft for that page through the existing Writer receiver, with its preset separate from the visible transcript. Buddy SHALL retain the document and page identity and submit the draft through the guarded placement owner for the bound conversation page. The action SHALL respect cancellation and refuse a changed source or page order before placement.
+
+#### Scenario: Draft a note in combined or Writer-only mode
+
+- **WHEN** a user in combined or Writer-only mode uses the lower-right hold with an explicit handwritten request for a note about the open page and the page contains readable notes
+- **THEN** Writer generates from that captured page and places the draft in its Buddy conversation from the one submission. The source page ink is preserved and the ordinary path requires no queued request.
+
+#### Scenario: The same source submission asks a reading question
+
+- **WHEN** a user in combined mode uses the lower-right hold to ask a handwritten question about the circled content
+- **THEN** Reader verifies and answers the question through its ordinary route without making a Writer draft.
+
+#### Scenario: The source submission does not authorize creating a current-page draft
+
+- **WHEN** a source submission is ambiguous, asks for a different note scope, or asks only to export
+- **THEN** the current-page action creates no draft and invokes no destination.
+
+#### Scenario: The source changes during the action
+
+- **WHEN** the request is canceled or the source identity or order changes before generation or draft placement
+- **THEN** Buddy stops the remaining work and submits no draft to a different page
