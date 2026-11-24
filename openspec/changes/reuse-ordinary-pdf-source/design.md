@@ -6,4 +6,4 @@ Keep derived text opaque to the resident service. Start a fresh worker for each 
 
 ## One question at a time
 
-Reuse applies only to preparing the source. Each verified handwritten question searches the entire admitted source again, under its own deadline and evidence budget. Keep the current document, page order, conversation and file checks at provider and publication boundaries. A queued Writer action and an inserted notebook page keep their existing paths.
+Reuse applies only to preparing the source. Inserting an answer page changes the notebook's page table between questions. Read the new table to locate the current original page. An insertion between requests can reuse an unchanged original PDF, while a page or file change during a request still stops that request. Each verified handwritten question searches the entire admitted source again, under its own deadline and evidence budget. Keep the current document, page order, conversation and file checks at provider and publication boundaries. A queued Writer action and a question on an inserted notebook page keep their existing paths.

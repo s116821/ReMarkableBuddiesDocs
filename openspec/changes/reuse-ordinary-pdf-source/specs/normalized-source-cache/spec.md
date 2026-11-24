@@ -6,7 +6,7 @@ The installed ordinary Reader SHALL be able to reuse bounded source material fro
 
 #### Scenario: A second question needs a different page
 
-- **WHEN** Reader receives a second question about the same unchanged original PDF and its verified material still fits in the cache
+- **WHEN** Buddy has inserted an answer page and the user asks a different question on a freshly admitted original page of the same unchanged PDF, with its verified material still in the cache
 - **THEN** it can find passages anywhere in that PDF without extracting the original text again, and the new answer cites the new question's passages.
 
 #### Scenario: The source changes
