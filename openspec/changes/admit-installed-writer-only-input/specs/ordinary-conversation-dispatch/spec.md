@@ -12,7 +12,7 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 #### Scenario: The existing queued path finds no matching Writer request
 
 - **WHEN** Reader is disabled and the existing queued input path finds no eligible Writer request on this page
-- **THEN** Buddy stays available without a model call or a page mutation, and a request for another page remains available for its intended page
+- **THEN** the queue check claims no request, calls no model, and changes no page. A request for another page remains queued for its intended page. The ordinary installed service passes the unqueued submission to shared source intake for classification.
 
 #### Scenario: Refine the current draft with only Writer enabled
 
