@@ -8,12 +8,18 @@ The installed ordinary Writer receiver SHALL offer current-page note export on t
 
 - **WHEN** the user submits an unambiguous handwritten request to create and export a note from the open page
 - **THEN** Writer SHALL generate from that page, submit through the configured destination, and display the draft and observed export result on the bound Buddy page
-- **AND** a later request to save the same current-page note SHALL retain its destination correlation. An explicitly separate note SHALL have a distinct correlation.
+- **AND** a later request to save the same current-page note SHALL retain the source document and page correlation, including across gestures before a Buddy page is bound or after placement fails. The receiver SHALL retain an applicable earlier correlation on the owned conversation. An explicitly separate note SHALL have a distinct correlation.
+
+#### Scenario: The draft and export outcome together exceed the native text limit
+
+- **WHEN** the full Writer exchange cannot be typed on the applicable Buddy page
+- **THEN** the receiver SHALL select a compact truthful result under the same page and text checks, retaining the complete draft and export association in Buddy history
+- **AND** the presentation path SHALL make no additional destination write.
 
 #### Scenario: A save or export request leaves the source or action ambiguous
 
 - **WHEN** a handwritten save or export request lacks an unambiguous supported source or effect
-- **THEN** Buddy SHALL ask for clarification without starting a destination effect.
+- **THEN** Buddy SHALL save the literal request and clarification in the same conversation before presentation. The normal history reader SHALL include both turns. The receiver SHALL make zero destination calls.
 
 #### Scenario: Ownership changes or the destination result is uncertain
 
