@@ -68,8 +68,9 @@ calculation and write “What is the answer to this?” next to it.
 With the page open, hold one finger in the configured corner (lower-right by
 default) for three seconds and release. Follow that request through the live
 provider and automatic insertion. Confirm that the adjacent page visibly answers
-the question and the original ink is intact. The standalone archive's manual page
-setup applies only when testing that distribution. [Installation modes](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#using-reader-on-the-tablet)
+the question and the original ink is intact. A blank successor supplies different
+starting data and skips automatic insertion. Test the standalone archive separately
+when that distribution is the subject of the task. [Installation modes](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#using-reader-on-the-tablet)
 
 Validate capture → question recognition → relevant concept explanation → next-page
 placement, then a different question appending to the same answer page. Check
@@ -106,8 +107,8 @@ repairs without relabeling old evidence as a pass on a newer build. Read the exi
 CI results for the changed revision and verify the final installed build on hardware.
 Do not equate an architecture build with hardware validation on that device.
 
-The [sample input guide](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md)
-contains reusable handwriting and links to PR evidence.
+For a PDF input, use the [reference document](https://github.com/s116821/ReMarkableBuddies/blob/main/docs/validation/README.md#reference-document).
+Exercise it through the installed service and physical gesture described above.
 
 The tablet operator owns cleanup for each completed or rolled-back run. After
 verifying the retained package and evidence, remove that run's obsolete installer
