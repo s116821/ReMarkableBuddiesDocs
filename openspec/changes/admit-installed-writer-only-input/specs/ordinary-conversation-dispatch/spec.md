@@ -120,3 +120,15 @@ The persisted notebook producer SHALL independently bind admitted native order a
 
 - **WHEN** the handwritten request asks for a whole-notebook note and no complete ordered source is available
 - **THEN** the service reports unavailable notebook coverage before generation. It performs no page navigation, draft placement, or destination action and does not substitute a page-only note.
+
+#### Scenario: Original pages contain diagrams and writing
+
+- **WHEN** a sealed original page contains a drawing or image region, with or without writing
+- **THEN** ordinary notebook Writer SHALL pass useful visible observations with original page provenance into the existing note planner, separately from any verbatim user writing
+- **AND** the planner SHALL preserve their unverified observational status in summaries and the draft
+
+#### Scenario: Blank or unreadable original
+
+- **WHEN** a page is genuinely blank
+- **THEN** the producer SHALL preserve its ordinal as an empty unit
+- **AND** an unreadable page or an extraction that falsely declares a marked page blank SHALL stop before notebook planning
