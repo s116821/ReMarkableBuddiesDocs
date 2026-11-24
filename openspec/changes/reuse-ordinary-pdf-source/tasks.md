@@ -5,5 +5,7 @@
 
 ## Verification
 
-- [ ] Use the existing pipeline to show that two different questions search different passages of the same PDF with a single extraction. Exercise a changed or ineligible entry and the existing source guards.
+- [ ] In the existing pipeline, send two different questions to one running Reader. Verify one PDF extraction, two fresh retrievals and citations to the different passages.
+- [ ] Verify a fresh extraction after changing the same document's bytes and after starting a new service. An otherwise supported PDF above the retention limit must answer both questions by cold extraction.
+- [ ] Exercise file or page-order changes on a warm request. Keep the existing Writer-priority and inserted-note cases passing.
 - [ ] Include a second question about the same original PDF in the signed Buddy service check already tracked under `answer-from-ordinary-installed-pdf`.
