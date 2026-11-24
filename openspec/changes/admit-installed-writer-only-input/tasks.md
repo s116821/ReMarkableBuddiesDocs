@@ -1,0 +1,4 @@
+- [ ] Admit Writer-only startup on the qualified installed output profile and preserve unsupported configuration refusals.
+- [ ] Route actual released gestures, honor both module switches and keep unmatched Writer requests available.
+- [ ] Cover disabled Reader, blank start, wrong page and replaced or expired Writer requests in existing CI.
+- [ ] Verify the changed service on the designated RM2, record what was observed, sync the spec and archive this change.
