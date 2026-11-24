@@ -4,4 +4,4 @@ An ordinary local configuration can enable Writer alone. The installed service s
 
 # What changes
 
-Admit those two existing gestures through the installed service in Writer-only mode. Preserve the existing behavior on unsupported hardware and in selected or synchronized modes. The open conversation-routing change continues to own the remaining Writer presets and typed input.
+Admit those two existing gestures through the installed service in Writer-only mode. Preserve the existing behavior on unsupported hardware and in selected or synchronized modes. Add the current-page note action to the same installed service. It takes its input from the open source page and places the Writer draft on the bound conversation page. The existing source-page and continuation submissions are shared by Reader and Writer. The request and context determine the action.
