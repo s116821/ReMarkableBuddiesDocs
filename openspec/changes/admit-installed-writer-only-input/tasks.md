@@ -3,5 +3,6 @@
 - [x] Cover disabled Reader, blank start, wrong page and replaced or expired Writer requests in the [installed gesture checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45389939565/job/138430752199).
 - [x] Verify a queued note for the current circled target, a replaced generation request and a page change before refinement in the [combined Buddy checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45450880314/job/138647420880).
 - [ ] Connect the current-page action to native source capture, existing Writer generation and guarded draft placement.
-- [ ] Verify intent routing from the shared lower-right hold and continuation submit, including Reader, Writer and ambiguous export. Verify blank start separately on RM2.
+- [ ] Verify a regular Reader question and an unqueued current-page Writer request through the normal source submission. Exercise both combined and Writer-only modes and verify placement on the adjacent Buddy page.
+- [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.

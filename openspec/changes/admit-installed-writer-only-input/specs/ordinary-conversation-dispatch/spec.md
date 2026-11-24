@@ -38,10 +38,20 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 
 When Writer is enabled on the ordinary installed profile, an admitted current-page note action SHALL capture the open source page with the SDK and normalize its full source image. Writer SHALL generate a draft for that page through the existing Writer receiver, with its preset separate from the visible transcript. Buddy SHALL retain the document and page identity and submit the draft through the guarded placement owner for the bound conversation page. The action SHALL respect cancellation and refuse a changed source or page order before placement.
 
-#### Scenario: Draft a note from the open source page
+#### Scenario: Draft a note in combined or Writer-only mode
 
-- **WHEN** a request submitted through the shared lower-right hold asks for a note about the open source page and the page contains readable notes
-- **THEN** Writer generates from that captured page and places the draft in its Buddy conversation. The source page ink is preserved.
+- **WHEN** a user in combined or Writer-only mode uses the lower-right hold with an explicit handwritten request for a note about the open page and the page contains readable notes
+- **THEN** Writer generates from that captured page and places the draft in its Buddy conversation from the one submission. The source page ink is preserved and the ordinary path requires no queued request.
+
+#### Scenario: The same source submission asks a reading question
+
+- **WHEN** a user in combined mode uses the lower-right hold to ask a handwritten question about the circled content
+- **THEN** Reader verifies and answers the question through its ordinary route without making a Writer draft.
+
+#### Scenario: The source submission does not authorize creating a current-page draft
+
+- **WHEN** a source submission is ambiguous, asks for a different note scope, or asks only to export
+- **THEN** the current-page action creates no draft and invokes no destination.
 
 #### Scenario: The source changes during the action
 
