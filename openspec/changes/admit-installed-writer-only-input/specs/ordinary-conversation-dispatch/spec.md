@@ -76,3 +76,12 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 
 - **WHEN** the request is canceled or the source identity or order changes before generation or draft placement
 - **THEN** Buddy stops the remaining work and submits no draft to a different page
+
+### Requirement: Whole-notebook Writer requires complete ordered source coverage
+
+The shared source submission SHALL retain the exact wording and whole-notebook scope of an explicit notebook note request. The service SHALL admit notebook Writer generation only with a supported acquisition result that covers every original source page in order for the same notebook, including blank pages, and distinguishes Buddy output pages.
+
+#### Scenario: The installed service has only the open window
+
+- **WHEN** the handwritten request asks for a whole-notebook note and no complete ordered source is available
+- **THEN** the service reports unavailable notebook coverage before generation. It performs no page navigation, draft placement, or destination action and does not substitute a page-only note.

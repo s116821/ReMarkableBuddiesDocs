@@ -21,3 +21,9 @@ Use the existing Writer note preset and draft runner. Keep its system instructio
 ## Circled-only note on a fresh source
 
 The same source submission can explicitly request a note from the circled part. Bind the interpreted request and selected geometry to that submission's original capture. Keep the exact request as one Writer turn. The regional runner masks pixels outside the selected geometry before recognition and saves its existing regional provenance and About description with the draft. Place the draft on the verified adjacent Buddy page, including when a fresh one-page notebook needs its first Buddy page. Ambiguous or missing geometry cannot select the current-page path.
+
+## Whole-notebook source admission
+
+The shared hold recognizes an explicit whole-notebook note request and retains its wording. The current installed capture supplies pixels from the open Reader window and samples the document and page order. Those facts alone cannot prove full-page content or supply pixels for the rest of the notebook. The notebook Writer runner verifies coverage of the supplied normalized units. It needs a supported acquisition result for the same notebook with every original source page accounted for in order, including blank pages. Existing Buddy conversation pages must be distinguished from the notebook's source pages.
+
+Until that input is available, report that complete notebook coverage is unavailable. Keep the present page and existing conversations intact. Context, the open page and a normalized archive whose complete source cannot be verified cannot substitute for the requested notebook. [Installed capture contract](https://github.com/s116821/ReMarkableOpenSDK/blob/a0c6480be6785480c2e0da76a3c06697a18efae4/openspec/changes/archive/2026-11-05-integrate-resident-native-adapter/native-capture.md) · [Notebook Writer contract](../../specs/large-writer-notebooks/spec.md)
