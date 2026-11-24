@@ -14,10 +14,15 @@ The installed ordinary local Reader SHALL support the existing local researched-
 - **WHEN** the independent readings agree the current question explicitly denies web research, or the effective saved policy is Disabled
 - **THEN** Reader makes no web acquisition and can answer using the admitted local context. Required research without an admitted search ends this PDF request.
 
+#### Scenario: The answering provider definitively refuses a current request
+
+- **WHEN** an admitted answer submission receives a definite refusal and the captured conversation, source, input and deadline still match
+- **THEN** Reader records a Failed outcome with the existing ProviderFailure reason on that same verified question, preserving its text, source links and saved request evidence. The existing feedback catalog supplies the user-readable description. No assistant turn or page action is created.
+
 #### Scenario: The PDF, source page or request changes
 
 - **WHEN** the original files, current document, page, page order, input custody or captured conversation becomes stale during the request
-- **THEN** Reader refuses further work before the next guarded handoff and cannot publish a new answer from stale inputs.
+- **THEN** Reader refuses further work before the next guarded handoff and cannot publish a new answer or attach a provider failure to the stale request.
 
 #### Scenario: A different Reader route owns the input
 
