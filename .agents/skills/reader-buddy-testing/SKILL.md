@@ -42,7 +42,9 @@ for each hardware test batch; distinguish earlier results from the current build
   externally and verify startup before injecting the trigger. Production no-trigger/once
   switches are removed; see [build/invocation steps](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#testing).
   Finish or stop a test process before replacing its binary or manipulating its page.
-- Check storage before installation. Stage on a suitable writable partition, retain
+- Check free space on both the installation and notebook filesystems. Measure the
+  notebook filesystem again after staging. The tablet can refuse to add a page
+  while it still reports free space. Stage on a suitable writable partition, retain
   a verified rollback, set executable permissions, then replace atomically. Reload
   service definitions only if changed. Verify the installed binary checksum and
   actual restart behavior; a successful upload alone is not installation evidence.
@@ -61,8 +63,12 @@ selects the topic; surrounding page content and model general knowledge are vali
 supporting context. Do not impose a source-only restriction. Paper-specific values
 must still match the paper rather than be invented or replaced from memory. Preserve its
 original bytes and page order; compare hashes and inspect native annotations.
-Prepare a native blank notes page immediately after the source page: the current
-app does not insert one automatically.
+For an installation with automatic answer-page creation, start with one disposable
+notebook page. Circle some content and write a question that refers to it. Exercise
+the installed service with its configured trigger (lower-right by default). Confirm
+that an adjacent page was created, displays the answer and preserves the source
+ink before inviting someone to try it. The manual binary archive uses a prepared
+blank successor. [Installation modes](https://github.com/s116821/ReMarkableBuddies/blob/main/README.md#using-reader-on-the-tablet)
 
 Validate capture → question recognition → relevant concept explanation → next-page
 placement, then a different question appending to the same answer page. Check
@@ -103,8 +109,15 @@ input actions and [the fixture guide](https://github.com/s116821/ReMarkableBuddi
 for reusable fixture setup and links to PR evidence. Adapt coordinates to observed UI
 state; do not fossilize another machine's paths, addresses or credentials.
 
+The tablet operator owns cleanup for each completed or rolled-back run. After
+verifying the retained package and evidence, remove that run's obsolete installer
+copies, extracted staging files and temporary captures from the tablet. Keep the
+active installation, its rollback, needed evidence and the user's documents.
+Check the free space recovered on the notebook filesystem and name an owner and
+review point for any staging files still needed. [Development hygiene](../development-hygiene/SKILL.md)
+
 Before stopping, restore the agreed service state, leave the test document in a
-known state, and remove or stop only test processes created for this work. Report
+known state, and stop test processes created for this work. Report
 what passed, what failed or remains untested, the installed build, and the next
 concrete step. Firmware changes, pairing/sync, extra providers and new features
 remain outside a compatibility test unless separately authorized.
