@@ -5,7 +5,7 @@ Reader can recognize a circled or highlighted subject while preserving the separ
 ## What Changes
 
 - Ask for a short selection description in the existing installed Reader proposal.
-- Store the description with its original resident capture and show one About line above the exchange when the installed renderer can fit it.
+- Store a recognized description with its original resident capture and show one About line above the exchange when the installed renderer can fit it. Show a neutral uncertainty line when the proposal explicitly cannot identify the subject.
 - Keep ordinary typed continuations tied to the original source without adding another About line.
 
 ## Capabilities

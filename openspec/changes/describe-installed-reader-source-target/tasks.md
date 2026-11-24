@@ -5,7 +5,7 @@
 
 ## 2. Installed presentation
 
-- [x] 2.1 Use the existing installed page renderer to place one About line above fresh Q&A.
+- [x] 2.1 Use the existing installed page renderer to place one About line above fresh Q&A for a recognized or explicitly uncertain subject.
 - [x] 2.2 Preserve plain continuations, Q&A and existing output admission when a subject is missing or exceeds the renderer budget.
 
 ## 3. Verification and delivery

@@ -9,8 +9,13 @@ The ordinary installed Reader proposal SHALL request a short optional descriptio
 - **WHEN** a verified handwritten question refers to a visible circled or highlighted subject
 - **THEN** Reader retains the question as written and accepts a single bounded description from the same proposal for the marked source
 
+#### Scenario: Subject is explicitly uncertain
+
+- **WHEN** a structurally valid proposal returns a single explicit subject abstention and the handwritten question passes verification
+- **THEN** Reader exposes a neutral uncertainty status to the fresh exchange renderer and retains no subject text
+
 #### Scenario: Subject is unavailable
 
-- **WHEN** the proposal omits the subject, explicitly abstains for the field, duplicates it or offers an invalid value
+- **WHEN** the proposal omits or duplicates the subject field or offers an invalid value
 - **THEN** Reader omits the subject and applies its existing question verification and answer rules
 - **AND** it does not substitute the question, answer, center or a later capture for the subject

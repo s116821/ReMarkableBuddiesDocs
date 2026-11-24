@@ -12,5 +12,5 @@ When ordinary installed Reader accepts a source subject, it SHALL retain it on t
 
 #### Scenario: Resume an earlier capture
 
-- **WHEN** a capture was created with no subject description
+- **WHEN** a capture was created with no subject description or explicit subject uncertainty
 - **THEN** earlier image and center data remain readable and no subject is synthesized
