@@ -34,7 +34,7 @@ Current safety bounds are 1 MiB per envelope, 8 MiB aggregate record bytes/metad
 
 ## Configuration and maintenance
 
-Production precedence is explicit CLI, existing relevant environment/.env, file configuration, then existing defaults. The model remains `gpt-5.6-terra`, corner LL, and logging/debug defaults remain unchanged. Model/corner file values apply only when the corresponding CLI argument was not explicit. `REMARKABLE_BUDDIES_CONFIG` selects an alternate configuration file; an explicitly selected missing file is an error. Unknown fields/versions and invalid roots fail before device initialization. Scripted simulation branches before normal configuration/storage/credentials/sync and remains offline.
+Production precedence is explicit CLI, existing relevant environment/.env, file configuration, then existing defaults. The default model is `gpt-5.6-terra` and the default trigger is the lower-right corner (`LR`). Model/corner file values apply only when the corresponding CLI argument was not explicit. `REMARKABLE_BUDDIES_CONFIG` selects an alternate configuration file; an explicitly selected missing file is an error. Unknown fields/versions and invalid roots fail before device initialization. Scripted simulation branches before normal configuration/storage/credentials/sync and remains offline.
 
 No secret value belongs in ordinary configuration. A `model_credential` is a simple filename reference inside the protected credential root; explicit CLI/environment keys still win. Effective-setting descriptors contain source labels, not keys, tokens or upload locations. Configuration supports `model`, `base_url`, `trigger_corner`, `log_level`, `debug_dump`, `paths`, and `sync`; the shipped schema defines their exact shapes/defaults.
 
