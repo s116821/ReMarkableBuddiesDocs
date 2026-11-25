@@ -7,13 +7,13 @@ After a source submission opens a conversation, an unsuccessful request SHALL pr
 #### Scenario: The model cannot answer after the page opens
 
 - **WHEN** the user is on the newly opened conversation and recognition or the provider fails
-- **THEN** Buddy shows a brief explanation as a conversation reply on that page without exposing technical details
+- **THEN** Buddy shows one brief explanation for that request on that page, alongside any wording it already recognized, without exposing technical details
 - **AND** the request finishes with that failure without creating a second page or leaving a pending indicator active.
 
 #### Scenario: A failed result becomes presentable later
 
 - **WHEN** the destination is no longer current when the request fails
-- **THEN** the user can see the retained explanation in the original conversation when it is next displayed
+- **THEN** the user can see the retained explanation in the original conversation when it is next displayed, with the request and its established Reader or Writer mode
 - **AND** Buddy leaves unrelated notebook pages untouched.
 
 #### Scenario: A completed reply exceeds the page renderer's limit
