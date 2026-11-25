@@ -11,3 +11,5 @@ Whole-notebook requests should accept ordinary handwritten RM2 pages made with t
 Apply the active handwriting profile when reading the original pages of a whole-notebook note, as Writer already does for a note from one page.
 
 An explicit request to save a note from the entire notebook should use that whole source and the configured note destination in one submission. Keep the draft available when the destination is disabled, unavailable or uncertain.
+
+An explicit save of a circled selection should use the same guarded regional draft and configured destination from the shared source submission. Preserve review-first requests and keep the exact source association for a retry.
