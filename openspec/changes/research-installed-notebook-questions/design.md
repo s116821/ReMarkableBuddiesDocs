@@ -4,7 +4,7 @@ After Writer arbitration, the ordinary installed Reader handles a verified resid
 
 ## Context
 
-Declare the original capture as historical page evidence without an index. Derive notebook and page identity from that retained capture. The current question and acknowledged image remain the source; whole-notebook OCR and local passages are unavailable on this path. Existing subject-memory filtering uses the capture's document and the active profile, including eligible global facts. Personalization can shape the final answer after the two readings.
+Declare the original capture as historical page evidence without an index. Derive notebook and page identity from that retained capture. The new handwriting capture stays with its own turn. A question from an original page declares that fresh capture even if a Buddy answer page is already adjacent. A follow-up from the current bound Buddy page uses the prior admitted source, or the original page identified by the binding for older conversations. A blank-start conversation without an original stays source-less. Only the admitted original image is sent to the answer model. Whole-notebook OCR and local passages are unavailable on this path. Existing subject-memory filtering uses the capture's document and the active profile, including eligible global facts. Personalization can shape the final answer after the two readings.
 
 ## Policy
 

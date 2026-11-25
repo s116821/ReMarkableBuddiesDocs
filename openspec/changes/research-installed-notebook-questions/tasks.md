@@ -1,5 +1,6 @@
-- [ ] Route ordinary installed captured-page Reader requests through the existing independently verified research and answer flow.
-- [ ] Bind the retained capture to the research frame and notebook memory scope without declaring an index.
+- [x] Route ordinary installed captured-page Reader requests through the existing independently verified research and answer flow.
+- [x] Bind the retained capture to the research frame and notebook memory scope without declaring an index.
+- [ ] Exercise distinct original and Buddy page images across follow-ups and show that blank start stays source-less.
 - [ ] Verify default-required research, explicit NoInternet, configured Disabled, required provider refusal and source drift on the installed entry fixture.
 - [ ] Verify the combined source and Docs candidates in normal CI.
 - [ ] Record installed and live-provider evidence, sync and archive the completed change.
