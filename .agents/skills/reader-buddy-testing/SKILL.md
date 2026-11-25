@@ -26,10 +26,8 @@ Unattended device access requires an authorized idle development tablet and full
 SSH access. During an attended test, use only the observation or changes agreed
 with the person using that development tablet.
 
-Resume from the current branch, saved edits, build artifacts, service state and
-evidence before repeating work. A saved successful build or screenshot proves
-only its recorded state. Record the source revision or diff and binary checksum
-for each hardware test batch; distinguish earlier results from the current build.
+Reuse the verified build and keep the earlier failure evidence. Record the source
+revision or diff and binary checksum for each hardware test batch.
 
 ## Device and service coordination
 
@@ -41,6 +39,15 @@ for each hardware test batch; distinguish earlier results from the current build
   diagnose startup and repeat the affected flow once it runs. Exercise one-shot
   binaries, scripted input and model stubs off the tablet in the existing CI
   pipeline or simulator.
+- Start each independent end-to-end run with clean Buddy test state. Retire the
+  previous run, reset its disposable data through a supported app operation or
+  select a fresh test profile, then restart Buddy normally. Keep the configured
+  provider, credentials, and the user's notebooks. For the one-page Reader test,
+  use a disposable copy of the handwritten input. Before cueing a finger press,
+  verify that the installed service is listening, the copy has exactly one page,
+  and it has no prior requests, page bindings or pending insertions that can
+  affect this run. Resolve a failed setup check before involving the tester.
+  Continuation, upgrade and recovery tests keep the specific history they exercise.
 - Check free space on both the installation and notebook filesystems. Measure the
   notebook filesystem again after staging. The tablet can refuse to add a page
   while it still reports free space. Stage on a suitable writable partition, retain
