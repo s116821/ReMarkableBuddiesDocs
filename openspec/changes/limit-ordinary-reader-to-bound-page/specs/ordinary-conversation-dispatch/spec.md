@@ -16,6 +16,11 @@ Ordinary installed Reader SHALL use the original page immediately left of its Bu
 - **THEN** Reader SHALL preserve the exact turn and conversation history and include only a matching left-page capture as original evidence.
 - **AND** an older indexed request SHALL grant no automatic document-wide scope to the new turn.
 
+#### Scenario: A prior conversation turn links unrelated media
+
+- **WHEN** a retained conversation turn points to an archived transcription or another page's image
+- **THEN** ordinary Reader and shared intent routing SHALL preserve chronological turn text without reading or hashing the unrelated media. Reader SHALL still verify and attach its eligible original page.
+
 #### Scenario: Continuation without an eligible original
 
 - **WHEN** a blank-start conversation or a binding with no matching retained original capture receives a continuation
