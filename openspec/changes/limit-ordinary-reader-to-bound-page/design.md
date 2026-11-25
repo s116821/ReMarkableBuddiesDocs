@@ -1,8 +1,8 @@
 ## Default source
 
-A question on the original page uses the verified capture that opened or reused its adjacent Buddy page. A continuation reuses only retained source capture evidence whose document and page match the recorded immediate left neighbor of the bound Buddy page. Its new input is interpreted separately. A blank start or missing eligible capture has no original attachment.
+A handwritten question submitted from the original page with the lower-right hold uses the verified capture that opened or reused its adjacent Buddy page. A typed follow-up submitted on the bound Buddy page reuses only retained source capture evidence whose document and page match its recorded immediate left neighbor. Reader interprets the typed request separately. A blank start or missing eligible capture has no original attachment.
 
-The receiver retains bounded conversation text and applicable subject memory. Chronological history and shared intent routing use stored turn text. Reader verifies only the retained original attachment, so already-linked off-page captures and normalized archive bodies are left unread. Currentness and provider handoff checks remain in place. The keyboard composer itself is tracked separately.
+The receiver retains bounded conversation text and applicable subject memory. Chronological history and shared intent routing use stored turn text. Reader verifies only the retained original attachment, so already-linked off-page captures and normalized archive bodies are left unread. Currentness and provider handoff checks remain in place. Submission from the keyboard folio or on-screen keyboard is tracked in the composer change.
 
 ## File and index boundary
 
