@@ -114,13 +114,19 @@ The persisted notebook producer SHALL independently bind admitted native order a
 #### Scenario: A saved page uses a feature outside the supported renderer
 
 - **WHEN** any original page cannot be completely rendered within the bounded profile, including an unverified template, unsupported content or an extent that exceeds the budget
-- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL produce a full blank image at its original position.
+- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL keep its original position as a blank source unit.
 
 #### Scenario: Saved handwriting uses ordinary RM2 pens and colours
 
 - **WHEN** an original on verified white paper contains stock pen, pencil, highlighter or brush strokes across visible flat layers
 - **THEN** Writer SHALL render the recorded colours, paint order and full stroke extent into the original page's image, including pages saved with the standard RM2 portrait layout.
 - **AND** an ambiguous layer or stroke order, an unrenderable edit or a stroke extending beyond the allowed canvas SHALL stop acquisition of the notebook before draft generation.
+
+#### Scenario: Saved ruled, grid or dotted paper is visible
+
+- **WHEN** an original has a supported pinned stock-paper asset and a nominal portrait canvas
+- **THEN** Writer SHALL composite the paper under the ink without stretching it. A verified empty scene on that paper SHALL keep its original slot without treating paper marks as notebook content.
+- **AND** malformed, unsupported or mismatched template variants and patterned pages requiring a larger canvas SHALL stop acquisition before OCR.
 
 #### Scenario: The installed service has only the open window
 
