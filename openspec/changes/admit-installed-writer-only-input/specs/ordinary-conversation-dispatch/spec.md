@@ -122,10 +122,11 @@ The persisted notebook producer SHALL independently bind admitted native order a
 - **THEN** Writer SHALL render the recorded colours, paint order and full stroke extent into the original page's image, including pages saved with the standard RM2 portrait layout.
 - **AND** an ambiguous layer or stroke order, an unrenderable edit or a stroke extending beyond the allowed canvas SHALL stop acquisition of the notebook before draft generation.
 
-#### Scenario: Saved ruled, grid or dotted paper is visible
+#### Scenario: An original uses a pinned patterned paper asset
 
 - **WHEN** an original has a supported pinned stock-paper asset and a nominal portrait canvas
-- **THEN** Writer SHALL composite the paper under the ink without stretching it. A verified empty scene on that paper SHALL keep its original slot without treating paper marks as notebook content.
+- **THEN** the saved-source revision SHALL bind the exact template bytes. Writer SHALL render the user's saved strokes at native scale on a plain canvas for OCR, without template headings, ruling, or other printed artwork.
+- **AND** a verified empty scene SHALL keep its original slot as blank, and admitted white strokes on patterned paper SHALL be rendered with a contrasting plain canvas.
 - **AND** malformed, unsupported or mismatched template variants and patterned pages requiring a larger canvas SHALL stop acquisition before OCR.
 
 #### Scenario: The installed service has only the open window
