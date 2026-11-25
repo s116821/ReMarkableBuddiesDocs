@@ -20,4 +20,5 @@
 - [ ] Verify a representative whole-notebook note with confirmed handwriting through the installed Writer and compare the visible draft with the original pages.
 - [x] Route an explicit whole-notebook save through retained notebook generation and the configured Writer destination. Preserve draft-only and current-page routes.
 - [x] Exercise normal save and retry across original pages, a deliberate separate note and an uncertain acknowledgment in the installed host fixture.
-- [ ] Qualify whole-notebook placement when the destination is unavailable, the source or destination changes during export, and on the physical tablet with a live provider.
+- [x] Verify the installed fixture presents the exact notebook request, complete draft and confirmed save result. Verify that an off-screen original changed during destination discovery cancels before writing and retains the draft.
+- [ ] Qualify whole-notebook placement when the destination is unavailable or its configuration changes. Verify whole-notebook save on the physical tablet with a live provider.
