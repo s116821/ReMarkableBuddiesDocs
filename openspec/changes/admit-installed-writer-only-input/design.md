@@ -24,6 +24,8 @@ Use the existing Writer note preset and draft runner. Keep its system instructio
 
 The same source submission can explicitly request a note from the circled part. Bind the interpreted request and selected geometry to that submission's original capture. Keep the exact request as one Writer turn. The regional runner masks pixels outside the selected geometry before recognition and saves its existing regional provenance and About description with the draft. Place the draft on the verified adjacent Buddy page, including when a fresh one-page notebook needs its first Buddy page. Ambiguous or missing geometry cannot select the current-page path.
 
+The source router can recognize a circled draft or save request even when it cannot locate the circle. It returns the handwritten request with an uncertain target. The adjacent conversation can then identify the selection as the problem. An unreadable or ambiguous request gets a clarification about the request itself. Both paths finish after routing.
+
 ## Whole-notebook source admission
 
 The shared hold recognizes an explicit whole-notebook note request and retains its wording. The current installed capture supplies pixels from the open Reader window and samples the document and page order. Those facts alone cannot prove full-page content or supply pixels for the rest of the notebook. The notebook Writer runner verifies coverage of the supplied normalized units. It needs a supported acquisition result for the same notebook with every original source page accounted for in order, including blank pages. Existing Buddy conversation pages must be distinguished from the notebook's source pages.
