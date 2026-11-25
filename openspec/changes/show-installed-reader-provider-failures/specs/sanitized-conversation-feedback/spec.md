@@ -16,6 +16,12 @@ When the ordinary installed Reader durably records a definite provider failure f
 - **THEN** the owned failure fact stays available to the stored feedback receiver, without new page creation or source feedback
 - **AND** an unverified write retains its actual disposition without replay or a fabricated success claim.
 
+#### Scenario: An original book changes during navigation
+
+- **WHEN** the Reader moves to the verified existing Buddy page and the captured PDF or EPUB file changes before rendering
+- **THEN** the next effect boundary refuses before submitting feedback
+- **AND** the retained failure and the caller's original provider result remain available.
+
 #### Scenario: Existing marked or canceled request
 
 - **WHEN** the question follows the marked-question path, the request is canceled, or its source or stored failure changes

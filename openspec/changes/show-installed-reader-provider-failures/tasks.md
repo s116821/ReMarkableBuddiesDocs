@@ -1,4 +1,5 @@
 - [x] Connect the current provider-failure fact to guarded Reader output on an existing verified Buddy page.
 - [x] Exercise provider failure through the ordinary service entry with current, adjacent and unconfirmed targets. Verify the original caller error, exact text on accepted targets and retained fact in each case.
+- [ ] Exercise a PDF or EPUB edit during navigation in the normal composed Reader checks. Verify no text submission and the original retained failure.
 - [ ] Verify the coordinated Buddy and Docs revisions through normal checks.
 - [ ] Qualify feedback on the installed RM2 and close out this scope through canonical spec sync and archival.
