@@ -1,0 +1,3 @@
+- [ ] Cover ordinary startup activity, quiet resumption, input loss and an elapsed original deadline.
+- [ ] Cover ordinary request cancellation and input activity after the protected boundary.
+- [ ] Confirm the paired hosted checks and qualify ordinary startup on RM2.

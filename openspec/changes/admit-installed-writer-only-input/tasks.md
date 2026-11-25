@@ -1,0 +1,31 @@
+- [x] Implement Writer-only startup on the qualified installed output profile and preserve unsupported configuration refusals.
+- [x] Route actual released gestures, honor both module switches and keep unmatched Writer requests available.
+- [x] Cover disabled Reader, blank start, wrong page and replaced or expired Writer requests in the [installed gesture checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45389939565/job/138430752199).
+- [x] Verify a queued note for the current circled target, a replaced generation request and a page change before refinement in the [combined Buddy checks](https://github.com/s116821/ReMarkableBuddies/actions/runs/45450880314/job/138647420880).
+- [ ] Connect the current-page action to native source capture, existing Writer generation and guarded draft placement.
+- [x] Carry writing and drawing evidence from the open page through current-page Writer generation, with one recognition call and the original page provenance. [Buddy implementation and verification](https://github.com/s116821/ReMarkableBuddies/pull/238)
+- [x] Exercise a labeled diagram, unlabeled sketch, plain writing and an empty or unreadable subject through the installed workflow on a host. A real model run saved a note describing the arrow from Pump to Tank. The captured source and draft excluded the handwritten instruction and screen controls. [Current-page Writer verification](https://github.com/s116821/ReMarkableBuddies/pull/238)
+- [ ] On RM2, verify a regular Reader question and an unqueued current-page Writer request through the normal source submission. Exercise combined and Writer-only modes. Confirm that the note appears on the adjacent Buddy page and describes the original drawing.
+- [ ] Route an unqueued circled-only note through shared input on a fresh source. Verify exact request retention, masked recognition, About, adjacent placement and refusal of missing geometry.
+- [x] Verify the distinct adjacent-page replies for a circled draft or save with a missing outline and for a page with no discernible request. Each case used one real routing call on a host, preserved the source image and produced no draft or export. [First model replies and displayed text](https://github.com/s116821/ReMarkableBuddies/pull/241#issuecomment-7168464961)
+- [ ] Verify that an explicit whole-notebook request stops at acquisition when only the open window is available.
+- [ ] Verify the receiving path with a complete ordered host fixture, a blank page and a confirmed Buddy page. Cover omitted, reordered and unreadable source pages. Verify refusal before OCR for substituted pixels or a stale saved-source revision, and before draft publication for an edit to another original with unchanged native order.
+- [x] Verify the independent saved-source revision against native order, ownership, scene and template bytes, and refuse unproven blank or unsupported backing inputs in host fixtures.
+- [ ] Verify bounded saved-scene rendering with flat black ink, a proven empty page, extended paper and refusal of unrendered content or unknown paper.
+- [x] Render a published RM2 page containing all nine stock drawing tools through the saved-notebook path. Check coloured and overlapping ink, full stroke extent, and refusal of unsupported layouts and edits.
+- [ ] Verify that OCR images exclude pinned template artwork, including a printed heading on a page with ink. Cover blank paper-only pages, contrast for white strokes, and refusal on variant or extent mismatch.
+- [ ] Verify an installed-source notebook requiring multiple bounded OCR requests, including a native-order gap, a blank original and failure of a later batch before Writer generation.
+- [ ] Qualify a complete ordered notebook source from the ordinary tablet service, then verify notebook generation and guarded draft placement.
+- [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
+- [ ] Record hosted and tablet evidence, sync the spec and archive this change.
+- [x] Exercise drawing-only, mixed and empty originals through the host Writer dispatch fixture. Assert page/section provenance, distinct writing and model observations, and refusal before planning for unreadable or falsely blank pages.
+- [x] Connect whole-notebook OCR to the active handwriting profile. Verify that a multi-batch request uses the same references throughout, excludes every target from the selection, preserves source provenance and keeps pictures and corrections out of note planning.
+- [ ] Verify a representative whole-notebook note with confirmed handwriting through the installed Writer and compare the visible draft with the original pages.
+- [x] Route an explicit whole-notebook save through retained notebook generation and the configured Writer destination. Preserve draft-only and current-page routes.
+- [x] Exercise normal save and retry across original pages, a deliberate separate note and an uncertain acknowledgment in the installed host fixture.
+- [x] Verify the installed fixture presents the exact notebook request, complete draft and confirmed save result. Verify that an off-screen original changed during destination discovery cancels before writing and retains the draft.
+- [ ] Qualify whole-notebook placement when the destination is unavailable or its configuration changes. Verify whole-notebook save on the physical tablet with a live provider.
+- [x] Route an explicit circled save through regional generation, the retained About and source proof, and the guarded export journal. Preserve draft-only and review-first requests.
+- [x] Exercise an installed successful save, exact retry with subpixel geometry variation, distinct region, deliberate separate save, ambiguous or missing geometry, and lost acknowledgment with a synthetic destination.
+- [ ] Qualify circled save from the physical tablet against a live configured destination.
+- [x] Verify an installed recapture with edited ink retains its exact source proof and updates the previously journaled note for the same raster footprint. Verify disjoint and overlapping controls.
