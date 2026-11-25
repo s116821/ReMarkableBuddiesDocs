@@ -77,6 +77,23 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 - **WHEN** the request is canceled or the source identity or order changes before generation or draft placement
 - **THEN** Buddy stops the remaining work and submits no draft to a different page
 
+### Requirement: Explicit circled saves retain the regional proof and reuse the note
+
+The ordinary installed Writer SHALL send a clear authorized save of one circled selection through the existing regional Writer pipeline and configured destination. It SHALL retain the draft, About and original target proof before export. The normal association SHALL use the exact original document, native page, frame dimensions, exact raster coverage and masked content. The original polygon SHALL remain in the saved target provenance. Different scopes SHALL remain separate. An uncertain earlier write SHALL remain in reconciliation and a deliberate separate save SHALL use its own correlation.
+
+#### Scenario: Save or review a circled note
+
+- **WHEN** a user clearly requests a save of an unambiguous circled selection
+- **THEN** Writer uses its masked pixels and presents the retained draft, About and verified export result when guarded placement is available.
+- **AND** a request to make, show or review the circled draft before sending SHALL retain the draft without invoking the destination.
+
+#### Scenario: Repeat, separate or uncertain selection
+
+- **WHEN** a user saves the same exact proven selection again, including a polygon variation that changes no covered pixel
+- **THEN** Writer reuses its ordinary association.
+- **AND** a different exact region proven disjoint can have its own ordinary association, and explicit separate saves have their own correlations.
+- **AND** missing geometry or an uncertain match against a prior export SHALL cause zero writes. Any draft generated before an ownership or destination refusal remains in history.
+
 ### Requirement: Whole-notebook Writer requires complete ordered source coverage
 
 The shared source submission SHALL retain the exact wording and whole-notebook scope of an explicit notebook note request. The service SHALL admit notebook Writer generation only with a supported acquisition result that covers every original source page in order for the same notebook, including blank pages, and distinguishes verified Buddy output pages. It SHALL require source-owner evidence that pairs the independently observed whole saved-source revision with the digest of the exact ordered images acquired from that revision.
