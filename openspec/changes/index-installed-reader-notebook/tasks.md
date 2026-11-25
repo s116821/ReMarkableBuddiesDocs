@@ -1,5 +1,0 @@
-- [ ] Wire installed entry to exact saved original notebook admission and current normalized local text.
-- [ ] Preserve original page provenance and bounded evidence, with current in-process index reuse.
-- [ ] Verify the cross-page case, repeated reuse, source drift, single page and missing-index fallback.
-- [ ] Integrate paired changes and record exact combined CI.
-- [ ] Qualify installed multi-page behavior, then sync and archive.
