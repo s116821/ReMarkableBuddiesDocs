@@ -1,0 +1,4 @@
+- [ ] Connect the current provider-failure fact to guarded Reader output on an existing verified Buddy page.
+- [ ] Exercise provider failure through the ordinary service entry with current and adjacent bound targets and verify the caller result, exact visible text and retained fact.
+- [ ] Verify the coordinated Buddy and Docs revisions through normal checks.
+- [ ] Qualify feedback on the installed RM2 and close out this scope through canonical spec sync and archival.
