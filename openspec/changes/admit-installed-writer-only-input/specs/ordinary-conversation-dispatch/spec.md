@@ -151,3 +151,27 @@ The persisted notebook producer SHALL independently bind admitted native order a
 - **WHEN** a page is genuinely blank
 - **THEN** the producer SHALL preserve its ordinal as an empty unit
 - **AND** an unreadable page or an extraction that falsely declares a marked page blank SHALL stop before notebook planning
+
+### Requirement: Explicit whole-notebook saves retain the draft and reuse the note
+
+The ordinary installed Writer SHALL route an explicit request to save a note from the whole notebook through complete ordered notebook generation and the configured note destination. It SHALL publish the readable draft before export and use the existing guarded export selection and journal. A normal save SHALL use the notebook identity for correlation. An explicitly separate note SHALL use its own correlation. An unresolved earlier save or a changed destination for the same correlation SHALL prevent a new association. The live capture, saved originals and destination configuration SHALL be current before writing.
+
+#### Scenario: Save the notebook to the configured destination
+
+- **WHEN** a clear handwritten save requests the whole notebook and complete acquisition succeeds
+- **THEN** Buddy saves from the entire ordered set of originals, excludes Buddy output pages, and reports the verified destination result with the retained draft.
+
+#### Scenario: Retry or save a separate note
+
+- **WHEN** the user issues an ordinary save again for the same notebook
+- **THEN** Writer uses the original association, or reports unresolved ownership or delivery. An explicit request for a separate note uses a distinct association.
+
+#### Scenario: The destination is unavailable or the write is uncertain
+
+- **WHEN** the destination is disabled or unavailable, the guarded source or destination changes, or a possible write cannot be verified
+- **THEN** Writer preserves the draft, blocks unsafe writes or retries and reports the appropriate result when the current page can still be used for guarded presentation.
+
+#### Scenario: Draft only
+
+- **WHEN** the notebook request asks for a draft without authorizing an external save
+- **THEN** Writer generates and presents the draft without invoking the destination.

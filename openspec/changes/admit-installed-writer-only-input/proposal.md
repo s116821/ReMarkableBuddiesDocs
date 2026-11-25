@@ -9,3 +9,5 @@ Admit those two existing gestures through the installed service in Writer-only m
 Whole-notebook requests should accept ordinary handwritten RM2 pages made with the stock pens and highlighter. Use the saved pages in notebook order, including their original ink colours and drawings. Keep the pinned paper assets in the saved-source revision and exclude their printed marks from Writer recognition.
 
 Apply the active handwriting profile when reading the original pages of a whole-notebook note, as Writer already does for a note from one page.
+
+An explicit request to save a note from the entire notebook should use that whole source and the configured note destination in one submission. Keep the draft available when the destination is disabled, unavailable or uncertain.
