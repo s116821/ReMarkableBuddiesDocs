@@ -40,7 +40,7 @@ The classifier SHALL compare the current screenshot to white using masked graysc
 - **THEN** it is Invalid; the app does not ask a model to classify its header.
 
 ### Requirement: Header and Q&A rendering
-On Blank pages the system SHALL select body style, type === Reader Buddy Answers === with three newlines, wait 500 ms and attempt to cache the top-150-pixel header. On ExistingQA pages it SHALL omit the header and select body style. Both SHALL enclose each new block in `<Start of Q-A block for Q @ (x, y)>` and `<End of Q-A block for Q @ (x, y)>`, using identical normalized selected-content coordinates formatted to at most two decimal places without redundant trailing zeroes. Between these delimiter lines the system SHALL type Q: question, two newlines and A: answer; a newline SHALL precede the closing delimiter and terminate it. The former --- footer SHALL NOT be emitted for new blocks. Source: REM-31; REM-11 comments55ffdaa9/fedb3b45/71501e9a; src/workflow/mod.rs compose_qa and orchestrator.rs render_answer.
+In the legacy manual/prepared-successor path, on Blank pages the system SHALL select body style, type === Reader Buddy Answers === with three newlines, wait 500 ms and attempt to cache the top-150-pixel header. On ExistingQA pages it SHALL omit the header and select body style. Both SHALL enclose each new block in `<Start of Q-A block for Q @ (x, y)>` and `<End of Q-A block for Q @ (x, y)>`, using identical normalized selected-content coordinates formatted to at most two decimal places without redundant trailing zeroes. Between these delimiter lines the system SHALL type Q: question, two newlines and A: answer; a newline SHALL precede the closing delimiter and terminate it. The former --- footer SHALL NOT be emitted for new blocks. Source: REM-31; REM-11 comments55ffdaa9/fedb3b45/71501e9a; src/workflow/mod.rs compose_qa and orchestrator.rs render_answer.
 
 #### Scenario: Append
 - **WHEN** the successor is recognized as ExistingQA
@@ -62,6 +62,25 @@ On Blank pages the system SHALL select body style, type === Reader Buddy Answers
 #### Scenario: Historical answers
 - **WHEN** an existing page contains plain-Q/--- or Q-@/--- answers
 - **THEN** appending a new delimited block preserves those existing answers exactly without migration, and does not claim to provide follow-up extraction or scrolled-page recognition.
+
+### Requirement: Unified title and plain Reader text on new installed pages
+
+Under the signed installed output profile, Buddy SHALL write the shared `ReMarkableBuddies` heading when it creates a conversation page. On a page created under this display procedure, Reader SHALL render the exact interpreted question before the exact answer with `Q:` and `A:` labels, without application-generated QA delimiters or selection coordinates. The existing guarded target renderer SHALL retain the page's display procedure in its existing binding for reuse. Display choice SHALL NOT confer page association or current write permission. Provenance, role content and turn identities in the ledger SHALL be preserved.
+
+#### Scenario: First Reader answer on a new installed conversation page
+
+- **WHEN** the guarded signed installed renderer writes a verified question and answer to a newly inserted Buddy page
+- **THEN** it submits the unified heading followed by the exact question and answer without application-generated QA delimiters or coordinates.
+
+#### Scenario: Blank start
+
+- **WHEN** the guarded signed installed path creates a blank conversation page
+- **THEN** it submits only the unified heading and spacing, with no fabricated turn or model request. Reopening an already bound page writes nothing.
+
+#### Scenario: A conversation page is reused
+
+- **WHEN** current qualification identifies a previously bound Buddy page
+- **THEN** the renderer uses the display procedure recorded for that page and omits the creation heading. Previously bound legacy output, explicit legacy adoption, manual output and frozen fixture output retain the existing QA format. A heading or other user text SHALL NOT establish page ownership.
 
 ### Requirement: Invalid successor recovery
 In the automatic path, a positively identified non-Buddy successor SHALL be preserved and may permit qualified insertion between the ORIGINAL source and that neighbor after current source/session/order revalidation. An unknown/uncertain successor or recognized Buddy candidate with unresolved association SHALL grant no insertion permission. If restoring the original displayed source is required, recovery SHALL check source identity before navigation, attempt at most one previous-page swipe and verify once; any failure SHALL stop without retry or relocating the insertion anchor.
@@ -549,3 +568,24 @@ queue admission separately from generation, native submission or save.
   places its fresh draft through the same verified insertion or reuse path
 - **AND** the local submitting process does not call the provider or write
   to the tablet page
+
+### Requirement: New installed Reader exchanges show an About line
+
+When an ordinary installed Reader question introduces a recognized or explicitly uncertain source subject, the existing authorized page renderer SHALL put an `About:` line before Q&A within the resolved page's existing format. The line SHALL be emitted once for that exchange. The renderer SHALL preserve valid Q&A on its own when the optional line does not fit the existing output bounds. A plain typed continuation SHALL NOT add About from inherited source metadata.
+
+#### Scenario: Render a fresh exchange on an installed conversation page
+
+- **WHEN** the current authorized Reader exchange has a recognized subject and the renderer can present it
+- **THEN** the page shows that subject on a single About line above the unchanged question and answer
+- **AND** a newly created page keeps its configured title and a reused page adds no title
+
+#### Scenario: Render an explicitly uncertain subject
+
+- **WHEN** a fresh verified Reader exchange has explicit uncertainty about its selection and the renderer can present the line
+- **THEN** the page shows a neutral About line stating the uncertainty above the unchanged Q&A
+- **AND** no inferred subject text is stored for later turns
+
+#### Scenario: Render a plain continuation
+
+- **WHEN** an ordinary typed turn continues a conversation with a stored subject
+- **THEN** only the continuation content is presented for that turn
