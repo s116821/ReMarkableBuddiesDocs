@@ -10,8 +10,11 @@
 - [x] Verify the independent saved-source revision against native order, ownership, scene and template bytes, and refuse unproven blank or unsupported backing inputs in host fixtures.
 - [ ] Verify bounded saved-scene rendering with flat black ink, a proven empty page, extended paper and refusal of unrendered content or unknown paper.
 - [x] Render a published RM2 page containing all nine stock drawing tools through the saved-notebook path. Check coloured and overlapping ink, full stroke extent, and refusal of unsupported layouts and edits.
+- [ ] Verify that OCR images exclude pinned template artwork, including a printed heading on a page with ink. Cover blank paper-only pages, contrast for white strokes, and refusal on variant or extent mismatch.
 - [ ] Verify an installed-source notebook requiring multiple bounded OCR requests, including a native-order gap, a blank original and failure of a later batch before Writer generation.
 - [ ] Qualify a complete ordered notebook source from the ordinary tablet service, then verify notebook generation and guarded draft placement.
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.
 - [x] Exercise drawing-only, mixed and empty originals through the host Writer dispatch fixture. Assert page/section provenance, distinct writing and model observations, and refusal before planning for unreadable or falsely blank pages.
+- [x] Connect whole-notebook OCR to the active handwriting profile. Verify that a multi-batch request uses the same references throughout, excludes every target from the selection, preserves source provenance and keeps pictures and corrections out of note planning.
+- [ ] Verify a representative whole-notebook note with confirmed handwriting through the installed Writer and compare the visible draft with the original pages.

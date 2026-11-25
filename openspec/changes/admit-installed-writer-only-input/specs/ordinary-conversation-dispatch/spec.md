@@ -114,13 +114,20 @@ The persisted notebook producer SHALL independently bind admitted native order a
 #### Scenario: A saved page uses a feature outside the supported renderer
 
 - **WHEN** any original page cannot be completely rendered within the bounded profile, including an unverified template, unsupported content or an extent that exceeds the budget
-- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL produce a full blank image at its original position.
+- **THEN** the notebook request SHALL stop before OCR or placement. A supported empty scene SHALL keep its original position as a blank source unit.
 
 #### Scenario: Saved handwriting uses ordinary RM2 pens and colours
 
 - **WHEN** an original on verified white paper contains stock pen, pencil, highlighter or brush strokes across visible flat layers
 - **THEN** Writer SHALL render the recorded colours, paint order and full stroke extent into the original page's image, including pages saved with the standard RM2 portrait layout.
 - **AND** an ambiguous layer or stroke order, an unrenderable edit or a stroke extending beyond the allowed canvas SHALL stop acquisition of the notebook before draft generation.
+
+#### Scenario: An original uses a pinned patterned paper asset
+
+- **WHEN** an original has a supported pinned stock-paper asset and a nominal portrait canvas
+- **THEN** the saved-source revision SHALL bind the exact template bytes. Writer SHALL render the user's saved strokes at native scale on a plain canvas for OCR, without template headings, ruling, or other printed artwork.
+- **AND** a verified empty scene SHALL keep its original slot as blank, and admitted white strokes on patterned paper SHALL be rendered with a contrasting plain canvas.
+- **AND** malformed, unsupported or mismatched template variants and patterned pages requiring a larger canvas SHALL stop acquisition before OCR.
 
 #### Scenario: The installed service has only the open window
 
@@ -132,6 +139,12 @@ The persisted notebook producer SHALL independently bind admitted native order a
 - **WHEN** a sealed original page contains a drawing or image region, with or without writing
 - **THEN** ordinary notebook Writer SHALL pass useful visible observations with original page provenance into the existing note planner, separately from any verbatim user writing
 - **AND** the planner SHALL preserve their unverified observational status in summaries and the draft
+
+#### Scenario: Confirmed handwriting examples apply across a complete notebook
+
+- **WHEN** the active handwriting profile supplies confirmed examples for a whole-notebook note
+- **THEN** Writer SHALL use one selection for reading handwriting in every OCR batch, exclude examples with the same PNG digest as any original in the notebook, and distinguish the examples from the target pages and drawing evidence.
+- **AND** only the original pages SHALL contribute content to the note. The normalized source SHALL identify the correction revisions used. A disabled profile or empty selection SHALL preserve the original OCR request and unpersonalized extractor identity.
 
 #### Scenario: Blank or unreadable original
 
