@@ -41,8 +41,10 @@ revision or diff and binary checksum for each hardware test batch.
   pipeline or simulator.
 - Start each independent end-to-end run with clean Buddy test state. Retire the
   previous run, reset its disposable data through a supported app operation or
-  select a fresh test profile, then restart Buddy normally. Keep the configured
-  provider, credentials, and the user's notebooks. For the one-page Reader test,
+  select a fresh test profile, then restart Buddy normally. If the earlier run
+  consumed the build's one activation per boot, coordinate a normal tablet reboot
+  and verify readiness after startup. Keep the configured provider, credentials,
+  and the user's notebooks. For the one-page Reader test,
   use a disposable copy of the handwritten input. Before cueing a finger press,
   verify that the installed service is listening, the copy has exactly one page,
   and it has no prior requests, page bindings or pending insertions that can
