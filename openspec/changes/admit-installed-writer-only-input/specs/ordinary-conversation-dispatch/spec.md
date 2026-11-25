@@ -79,7 +79,7 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 
 ### Requirement: Explicit circled saves retain the regional proof and reuse the note
 
-The ordinary installed Writer SHALL send a clear authorized save of one circled selection through the existing regional Writer pipeline and configured destination. It SHALL retain the draft, About and original target proof before export. The normal association SHALL use the exact original document, native page, frame dimensions, exact raster coverage and masked content. The original polygon SHALL remain in the saved target provenance. Different scopes SHALL remain separate. An uncertain earlier write SHALL remain in reconciliation and a deliberate separate save SHALL use its own correlation.
+The ordinary installed Writer SHALL send a clear authorized save of one circled selection through the existing regional Writer pipeline and configured destination. It SHALL retain the draft, About and original target proof before export. The normal association SHALL be resolved by exact original document, native page, frame dimensions and raster coverage. The draft SHALL retain its own exact masked content. The original polygon SHALL remain in the saved target provenance. Different scopes SHALL remain separate. An uncertain earlier write SHALL remain in reconciliation and a deliberate separate save SHALL use its own correlation.
 
 #### Scenario: Save or review a circled note
 
@@ -89,8 +89,8 @@ The ordinary installed Writer SHALL send a clear authorized save of one circled 
 
 #### Scenario: Repeat, separate or uncertain selection
 
-- **WHEN** a user saves the same exact proven selection again, including a polygon variation that changes no covered pixel
-- **THEN** Writer reuses its ordinary association.
+- **WHEN** a user saves the same exact proven selection again, including after editing ink inside that footprint or changing a polygon vertex without changing any covered pixel
+- **THEN** Writer reuses the uniquely proven existing ordinary association and exports the fresh draft while retaining its target proof.
 - **AND** a different exact region proven disjoint can have its own ordinary association, and explicit separate saves have their own correlations.
 - **AND** missing geometry or an uncertain match against a prior export SHALL cause zero writes. Any draft generated before an ownership or destination refusal remains in history.
 

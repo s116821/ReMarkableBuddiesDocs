@@ -25,3 +25,4 @@
 - [x] Route an explicit circled save through regional generation, the retained About and source proof, and the guarded export journal. Preserve draft-only and review-first requests.
 - [x] Exercise an installed successful save, exact retry with subpixel geometry variation, distinct region, deliberate separate save, ambiguous or missing geometry, and lost acknowledgment with a synthetic destination.
 - [ ] Qualify circled save from the physical tablet against a live configured destination.
+- [x] Verify an installed recapture with edited ink retains its exact source proof and updates the previously journaled note for the same raster footprint. Verify disjoint and overlapping controls.
