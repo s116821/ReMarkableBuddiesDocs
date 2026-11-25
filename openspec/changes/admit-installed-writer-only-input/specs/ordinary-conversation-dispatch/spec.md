@@ -91,8 +91,13 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 
 #### Scenario: Missing or ambiguous circled selection
 
-- **WHEN** the user requests a circled-only note and the submission has no unambiguous bounded region
-- **THEN** Buddy does not fall back to a current-page note and invokes no destination.
+- **WHEN** Buddy has opened the adjacent page and can read a request to draft or save a circled selection, but cannot identify one bounded region
+- **THEN** the conversation shows the recognized request and says Buddy could not identify the selected area. Buddy keeps the original capture, generates no draft and invokes no destination.
+
+#### Scenario: Unclear handwritten request
+
+- **WHEN** the adjacent Buddy page has opened and Buddy cannot determine what the handwriting asks it to do
+- **THEN** the conversation asks the user to clarify the request on the source page. Buddy preserves the original capture and does not invent user wording, assume a missing circle or start a Reader or Writer action.
 
 #### Scenario: The circled source changes during the action
 
