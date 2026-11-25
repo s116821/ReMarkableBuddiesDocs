@@ -1,0 +1,5 @@
+- [x] Review the installed trial and the current cancellation path for passive events and owned output.
+- [x] Apply the scoped active-request classification and first-interruption diagnostic.
+- [x] Verify passive and genuine input at the post-insert observation boundary with the original receipt preserved.
+- [ ] Run the paired hosted checks on the combined preview.
+- [ ] Record an operator-owned physical result before canonical sync and archival.
