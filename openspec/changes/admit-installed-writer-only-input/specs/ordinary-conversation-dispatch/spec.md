@@ -48,12 +48,17 @@ The existing recognition call SHALL extract usable writing and drawings together
 #### Scenario: A page contains a labeled drawing
 
 - **WHEN** the user asks for a note from a page with two handwritten labels connected by an arrow
-- **THEN** Writer receives the labels as writing and the visible direction of the arrow as a model observation, each associated with the captured page. The draft can describe the relationship without supplying an unstated purpose for the arrow.
+- **THEN** Writer receives the labels as writing and the visible direction of the arrow as a model observation, each associated with the captured page. The retained draft on the adjacent page uses both labels and gives the direction shown without supplying an unstated purpose for the arrow.
 
 #### Scenario: A drawing is the only usable subject
 
-- **WHEN** the user asks for a note about an unlabeled sketch on the open page
-- **THEN** Writer can draft from the visible sketch without requiring a transcription or searching the rest of the notebook.
+- **WHEN** the user asks for a note about an unlabeled sketch of a circle inside a square on the open page
+- **THEN** the retained draft on the adjacent page describes the circle inside the square without inventing labels or requiring content from another page.
+
+#### Scenario: The request repeats a label
+
+- **WHEN** the diagram includes the label “Pump” and the handwritten request says “Make a note about the pump”
+- **THEN** the source evidence keeps the diagram label and the request remains a separate instruction. Both the evidence and the draft exclude the instruction as subject matter, along with recognizable screen controls and printed paper markings.
 
 #### Scenario: Screen furniture or the instruction is all that can be read
 
