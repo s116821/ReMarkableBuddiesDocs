@@ -92,7 +92,7 @@ The ordinary installed Writer SHALL accept an explicit request for the circled s
 #### Scenario: Missing or ambiguous circled selection
 
 - **WHEN** Buddy has opened the adjacent page and can read a request to draft or save a circled selection, but cannot identify one bounded region
-- **THEN** the conversation shows the recognized request and asks the user to clarify the selection on the source page. Buddy keeps the original capture, generates no draft and invokes no destination.
+- **THEN** the conversation shows the recognized request and says Buddy could not identify the selected area. Buddy keeps the original capture, generates no draft and invokes no destination.
 
 #### Scenario: Unclear handwritten request
 
