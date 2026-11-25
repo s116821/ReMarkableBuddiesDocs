@@ -7,7 +7,7 @@ Ordinary installed Reader SHALL use the original page immediately left of its Bu
 #### Scenario: Ordinary request with a mapped or archived document
 
 - **WHEN** an ordinary request arrives with a mapped PDF or EPUB or a retained notebook transcription
-- **THEN** Reader SHALL answer from the eligible bound page, conversation and relevant memory without acquiring, extracting, revalidating, rebuilding or sending other pages for OCR.
+- **THEN** Reader SHALL answer from the eligible bound page, conversation and relevant memory without acquiring, extracting or revalidating material from other pages to build or supply extra context, and without sending other pages for OCR.
 - **AND** an optional lookup may use immediately available current text only when it is relevant, selective and quick. Such a lookup is not required; a mapping or archive alone does not qualify.
 
 #### Scenario: Continuation on a bound Buddy page
