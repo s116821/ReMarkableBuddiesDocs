@@ -9,4 +9,4 @@
 - [ ] Separately, when typed composer entry is available, submit a typed follow-up on the bound Buddy page through the keyboard shortcut. Verify that the same Buddy page is reused and the request retains its original source and conversation.
 - [ ] Record a live-model answer from the same qualified source-page flow. Check that the request uses the bound source and conversation even when another page or archived notebook text is available.
 
-The prepared `0.79.0_pre8-r0` tablet preview at `11fae9dc` predates the bound-page change. Its results are baseline evidence. The native keyboard entry gate remains in the composer change. The hosted typed fixture verifies the receiving boundary.
+The hosted fixture verifies the typed Reader receiving boundary. On-device submission through the keyboard folio and the on-screen keyboard remains open in the composer change.
