@@ -517,6 +517,12 @@ handoff. Tokens SHALL NOT enter renderer messages or public status. The
 [connected delivery contract](../../manager-tablet-drive-authorization.md)
 SHALL keep authorization, verified USB installation and completed backup distinct.
 
+#### Scenario: First sign-in on a fresh host profile
+- WHEN the distribution supplies its public desktop client ID and the user selects Sign in in either companion
+- THEN Manager uses that registration and saves the verified grant only in that user's protected profile.
+- AND opening Manager or canceling before consent creates no grant or profile directory.
+- AND an existing private client registration retains precedence. A changed registration during consent prevents a grant from being committed under the wrong client.
+
 #### Scenario: A separate tablet grant is accepted
 - WHEN the new grant has the expected client, exact application-data scope, original account and distinct refresh token and the original protected custody remains current
 - THEN Manager retains it privately until its bounded expiry and exposes only a reduced state, account label and opaque reference; the original host grant is unchanged.

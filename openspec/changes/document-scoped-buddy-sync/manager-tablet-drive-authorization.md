@@ -6,6 +6,14 @@ account. Application registration is maintained once for the distribution;
 ordinary users do not create Google Cloud projects or manage token files.
 The existing advanced developer registration remains useful for qualification.
 
+The distribution may ship its public desktop client ID alongside the Manager
+host. A fresh desktop or browser-helper profile uses that ID for the existing
+Sign in action. A successful first consent creates the user's private grant
+directory. Opening Manager or canceling consent leaves the profile empty.
+An explicitly configured private registration takes precedence, including
+for existing grants. A missing or changed registration never silently rebinds
+an account. Each host user signs in to their own Google account.
+
 ## Host authorization increment
 
 Reuse `DriveAuth` and its maintained Google OAuth client, PKCE, one-time state,
