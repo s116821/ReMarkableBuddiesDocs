@@ -9,6 +9,7 @@
 - [ ] Verify the receiving path with a complete ordered host fixture, a blank page and a confirmed Buddy page. Cover omitted, reordered and unreadable source pages. Verify refusal before OCR for substituted pixels or a stale saved-source revision, and before draft publication for an edit to another original with unchanged native order.
 - [x] Verify the independent saved-source revision against native order, ownership, scene and template bytes, and refuse unproven blank or unsupported backing inputs in host fixtures.
 - [ ] Verify bounded saved-scene rendering with flat black ink, a proven empty page, extended paper and refusal of unrendered content or unknown paper.
+- [x] Render a published RM2 page containing all nine stock drawing tools through the saved-notebook path. Check coloured and overlapping ink, full stroke extent, and refusal of unsupported layouts and edits.
 - [ ] Verify an installed-source notebook requiring multiple bounded OCR requests, including a native-order gap, a blank original and failure of a later batch before Writer generation.
 - [ ] Qualify a complete ordered notebook source from the ordinary tablet service, then verify notebook generation and guarded draft placement.
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
