@@ -59,7 +59,7 @@ Reader SHALL present the exact interpreted question and retained source associat
 
 #### Scenario: The installed question has no answer
 
-- **WHEN** a readable marked fragment is saved and answering abstains or the required provider is unavailable
+- **WHEN** a readable marked fragment is saved and answering abstains or the required provider is unavailable, including on an indexed original book
 - **THEN** Reader SHALL use the existing guarded resident Buddy placement to submit only the saved User text if currentness and placement permit it
 - **AND** it SHALL keep the original ink and distinguish a submitted write from durable tablet readback.
 
