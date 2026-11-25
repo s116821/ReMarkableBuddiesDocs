@@ -18,3 +18,7 @@
 - [x] Exercise drawing-only, mixed and empty originals through the host Writer dispatch fixture. Assert page/section provenance, distinct writing and model observations, and refusal before planning for unreadable or falsely blank pages.
 - [x] Connect whole-notebook OCR to the active handwriting profile. Verify that a multi-batch request uses the same references throughout, excludes every target from the selection, preserves source provenance and keeps pictures and corrections out of note planning.
 - [ ] Verify a representative whole-notebook note with confirmed handwriting through the installed Writer and compare the visible draft with the original pages.
+- [x] Route an explicit whole-notebook save through retained notebook generation and the configured Writer destination. Preserve draft-only and current-page routes.
+- [x] Exercise normal save and retry across original pages, a deliberate separate note and an uncertain acknowledgment in the installed host fixture.
+- [x] Verify the installed fixture presents the exact notebook request, complete draft and confirmed save result. Verify that an off-screen original changed during destination discovery cancels before writing and retains the draft.
+- [ ] Qualify whole-notebook placement when the destination is unavailable or its configuration changes. Verify whole-notebook save on the physical tablet with a live provider.
