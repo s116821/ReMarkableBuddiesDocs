@@ -522,6 +522,7 @@ SHALL keep authorization, verified USB installation and completed backup distinc
 - THEN Manager uses that registration and saves the verified grant only in that user's protected profile.
 - AND opening Manager or canceling before consent creates no grant or profile directory.
 - AND an existing private client registration retains precedence. A changed registration during consent prevents a grant from being committed under the wrong client.
+- AND after a distribution changes its client ID, Manager offers fresh host consent. The prior grant remains stored until successful new consent or explicit local disconnect. Only a grant issued for the current client can authorize Drive access or tablet setup.
 
 #### Scenario: A separate tablet grant is accepted
 - WHEN the new grant has the expected client, exact application-data scope, original account and distinct refresh token and the original protected custody remains current
