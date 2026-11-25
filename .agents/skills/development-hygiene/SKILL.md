@@ -1,6 +1,6 @@
 ---
 name: development-hygiene
-description: Plan build storage and clean completed development outputs at handoff or delivery. Use before heavy builds or when retiring caches, package scratch or worktrees across the ecosystem; preserve active work and useful validation evidence.
+description: Manage build and tablet storage across the ecosystem. Use before heavy builds and when retiring caches, packages, tablet test files or worktrees.
 ---
 
 # Development hygiene
@@ -17,6 +17,8 @@ This shared checklist lives in central Docs and applies on every development mac
 - Inventory only the named task/component scope. Check active owners and processes before choosing unused Cargo targets/incremental data, `node_modules`, `dist`, package output or review scratch. Coordinate shared storage; do not delete another lane's active cache.
 - Preserve source commits and lockfiles, dirty/unpushed work, useful failure logs, test/CI references and hashes. Generated intermediates are not evidence merely because they came from a validation run. Delete obsolete caches rather than moving them to a network drive.
 - Retain a binary only for a concrete pending use. Record its exact path, owner, source revision, content hash and expiry or review point; review the exception when that use ends. Preserve genuinely required held inputs without retaining their entire build trees.
+- The worker that stages files on a shared tablet owns their cleanup. At handoff, coordinate with the current tablet operator to remove obsolete installers, extracted tools, run archives and temporary captures. Verify any off-device copy needed for evidence, preserve the active install and rollback, and measure free space on the notebook volume after cleanup.
+- Before retiring a test notebook, match it to its creation record and check that its owner has finished with it. Use the tablet's recoverable file Trash for the whole notebook. See the [tablet testing checklist](../reader-buddy-testing/SKILL.md) for hands-on handoff.
 - Before recursive cleanup on Windows, resolve each exact absolute target and verify it remains inside the named intended scope. Inspect for reparse points and avoid traversal. Use literal paths in one filesystem workflow; do not compose deletion across shells, globally prune caches or retry a policy-blocked operation through another route.
 - Treat source/worktree retirement separately from generated-output cleanup. Verify a clean state, relevant commits pushed and preserved on the intended upstream (merged as applicable), and no active owner/dependency. Preserve unmerged or dirty work first. Remove registered worktrees through normal Git lifecycle, without force or blind directory/shared-metadata deletion.
 
