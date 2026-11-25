@@ -38,10 +38,32 @@ An ordinary local Writer-only service SHALL listen on its qualified installed ou
 
 When Writer is enabled on the ordinary installed profile, an admitted current-page note action SHALL capture the open source page with the SDK and normalize its full source image. Writer SHALL generate a draft for that page through the existing Writer receiver, with its preset separate from the visible transcript. Buddy SHALL retain the document and page identity and submit the draft through the guarded placement owner for the bound conversation page. The action SHALL respect cancellation and refuse a changed source or page order before placement.
 
+The existing recognition call SHALL extract usable writing and drawings together from that one capture. Writer SHALL receive transcribed words and model observations of visible objects or relationships as separate kinds of evidence from the same page. A drawing alone SHALL qualify. Buddy SHALL exclude interface controls, paper markings and the note instruction from the subject matter of the draft, and SHALL avoid attributing invented labels or interpretations to the user.
+
 #### Scenario: Draft a note in combined or Writer-only mode
 
 - **WHEN** a user in combined or Writer-only mode uses the lower-right hold with an explicit handwritten request for a note about the open page and the page contains readable notes
 - **THEN** Writer generates from that captured page and places the draft in its Buddy conversation from the one submission. The source page ink is preserved and the ordinary path requires no queued request.
+
+#### Scenario: A page contains a labeled drawing
+
+- **WHEN** the user asks for a note from a page with two handwritten labels connected by an arrow
+- **THEN** Writer receives the labels as writing and the visible direction of the arrow as a model observation, each associated with the captured page. The retained draft on the adjacent page uses both labels and gives the direction shown without supplying an unstated purpose for the arrow.
+
+#### Scenario: A drawing is the only usable subject
+
+- **WHEN** the user asks for a note about an unlabeled sketch of a circle inside a square on the open page
+- **THEN** the retained draft on the adjacent page describes the circle inside the square without inventing labels or requiring content from another page.
+
+#### Scenario: The request repeats a label
+
+- **WHEN** the diagram includes the label “Pump” and the handwritten request says “Make a note about the pump”
+- **THEN** the source evidence keeps the diagram label and the request remains a separate instruction. Both the evidence and the draft exclude the instruction as subject matter, along with recognizable screen controls and printed paper markings.
+
+#### Scenario: Screen furniture or the instruction is all that can be read
+
+- **WHEN** a displayed page contains only its paper, controls and the note instruction, or recognition cannot distinguish any usable page subject
+- **THEN** Writer generates and saves no note.
 
 #### Scenario: The same source submission asks a reading question
 
