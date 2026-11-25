@@ -136,7 +136,7 @@ The persisted notebook producer SHALL independently bind admitted native order a
 #### Scenario: Confirmed handwriting examples apply across a complete notebook
 
 - **WHEN** the active handwriting profile supplies confirmed examples for a whole-notebook note
-- **THEN** Writer SHALL use one selection for reading handwriting in every OCR batch, excluding examples whose image matches any original in the notebook, and distinguish the examples from the target pages and drawing evidence.
+- **THEN** Writer SHALL use one selection for reading handwriting in every OCR batch, exclude examples with the same PNG digest as any original in the notebook, and distinguish the examples from the target pages and drawing evidence.
 - **AND** only the original pages SHALL contribute content to the note. The normalized source SHALL identify the correction revisions used. A disabled profile or empty selection SHALL preserve the original OCR request and unpersonalized extractor identity.
 
 #### Scenario: Blank or unreadable original

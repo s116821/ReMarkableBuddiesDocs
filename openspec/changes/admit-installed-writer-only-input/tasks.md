@@ -15,5 +15,5 @@
 - [ ] Verify continuation intent routing through its existing submission path and blank start separately on RM2.
 - [ ] Record hosted and tablet evidence, sync the spec and archive this change.
 - [x] Exercise drawing-only, mixed and empty originals through the host Writer dispatch fixture. Assert page/section provenance, distinct writing and model observations, and refusal before planning for unreadable or falsely blank pages.
-- [ ] Connect whole-notebook OCR to the active handwriting profile. Verify that a multi-batch request uses the same references throughout, excludes every target from the selection, preserves source provenance and keeps pictures and corrections out of note planning.
+- [x] Connect whole-notebook OCR to the active handwriting profile. Verify that a multi-batch request uses the same references throughout, excludes every target from the selection, preserves source provenance and keeps pictures and corrections out of note planning.
 - [ ] Verify a representative whole-notebook note with confirmed handwriting through the installed Writer and compare the visible draft with the original pages.
